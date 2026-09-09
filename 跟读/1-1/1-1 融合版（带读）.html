@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>1-1 仇恨言论消解法（强化笔记融合版）</title>
+  <style>
+    :root{
+      --ink:#1d2a34;
+      --muted:#64727d;
+      --paper:#fffdf8;
+      --bg:#eef3f2;
+      --line:#dbe5e1;
+      --green:#0f766e;
+      --green-soft:#e6f5f1;
+      --orange:#c15b24;
+      --orange-soft:#fff0e7;
+      --blue-soft:#eaf2ff;
+      --yellow:#c08a12;
+      --yellow-soft:#fbf3dd;
+      --shadow:0 12px 35px rgba(31,56,52,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #dff4ec 0, transparent 27rem),
+        radial-gradient(circle at 100% 14%, #fff0d9 0, transparent 25rem),
+        var(--bg);
+      font-family:"Noto Serif SC","Songti SC","STSong",serif;
+      line-height:1.9;
+    }
+    .top-nav{
+      position:sticky;top:0;z-index:100;
+      display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+      padding:10px 18px;
+      background:rgba(20,91,85,.96);
+      backdrop-filter:blur(6px);
+      box-shadow:0 4px 14px rgba(20,60,55,.25);
+    }
+    .top-nav .nav-title{
+      color:#baf6e8;font:700 .8rem/1 system-ui,sans-serif;
+      letter-spacing:.14em;margin-right:6px;white-space:nowrap;
+    }
+    .top-nav a{
+      padding:5px 13px;border-radius:999px;
+      color:#fff;background:rgba(255,255,255,.14);
+      text-decoration:none;font:600 .84rem/1.2 system-ui,sans-serif;
+      white-space:nowrap;transition:background .15s;
+    }
+    .top-nav a:hover{background:#198f7c}
+    .top-nav a.to-top{background:rgba(255,255,255,.28)}
+    .wrap{max-width:1080px;margin:auto;padding:32px 24px 72px}
+    section{scroll-margin-top:64px}
+    header{
+      padding:44px 42px 36px;
+      border-radius:24px;
+      color:#fff;
+      background:linear-gradient(135deg,#145b55,#0d766b 58%,#198f7c);
+      box-shadow:var(--shadow);
+    }
+    .eyebrow{
+      margin:0 0 12px;
+      color:#baf6e8;
+      font-size:.82rem;
+      letter-spacing:.16em;
+      font-family:system-ui,sans-serif;
+      font-weight:700;
+    }
+    h1{margin:0;font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.35}
+    header p{margin:14px 0 0;color:#e2fffa;font-size:1rem}
+    nav{
+      display:flex;flex-wrap:wrap;gap:10px;
+      margin:22px 0 30px;
+    }
+    nav a{
+      padding:7px 14px;border:1px solid #cbded9;border-radius:999px;
+      color:#25514b;background:rgba(255,255,255,.74);
+      text-decoration:none;font-family:system-ui,sans-serif;font-size:.88rem;
+    }
+    nav a:hover{background:#fff}
+    section{margin-top:30px}
+    .section-title{
+      display:flex;align-items:center;gap:12px;
+      margin:0 0 15px;font-size:1.42rem;
+    }
+    .section-title span{
+      display:inline-grid;place-items:center;width:32px;height:32px;
+      border-radius:50%;color:#fff;background:var(--green);
+      font-family:system-ui,sans-serif;font-size:.9rem;
+    }
+    .translation{
+      overflow:hidden;border:1px solid var(--line);border-radius:20px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    .language{padding:26px 30px}
+    .language + .language{border-top:1px dashed #cbd8d3}
+    .label{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-bottom:12px;padding:4px 10px;border-radius:999px;
+      color:var(--green);background:var(--green-soft);
+      font:700 .78rem/1.4 system-ui,sans-serif;letter-spacing:.08em;
+    }
+    .label.zh{color:var(--orange);background:var(--orange-soft)}
+    .jp{
+      margin:0;font-size:1.13rem;letter-spacing:.025em;
+      font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+    }
+    .zh{margin:0;font-size:1.02rem}
+    ruby{ruby-position:over;ruby-align:center}
+    rt{font-size:.54em;color:var(--yellow);font-weight:700;letter-spacing:0;user-select:none}
+    rt.en{color:var(--yellow)}
+    .lvl{
+      display:inline-block;padding:1px 7px;border-radius:5px;
+      color:#8a5a10;background:var(--yellow-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+    }
+    .note{
+      margin:14px 0 0;padding:11px 14px;border-left:4px solid #8fc9b6;
+      color:#2b3330;background:var(--green-soft);border-radius:0 10px 10px 0;
+      font-size:.91rem;
+    }
+    .note rt{color:#2f7cc4}
+    .grammar-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+    .card{
+      padding:21px 22px;border:1px solid var(--line);border-radius:16px;
+      background:rgba(255,253,248,.92);box-shadow:0 7px 20px rgba(31,56,52,.06);
+    }
+    .card h3{margin:0 0 9px;font-size:1.03rem;color:#12675e}
+    .card p{margin:7px 0;font-size:.94rem}
+    .pattern{
+      display:inline-block;padding:2px 8px;border-radius:6px;
+      color:#1e4c67;background:var(--blue-soft);
+      font-family:"SFMono-Regular",Consolas,monospace;font-size:.86rem;
+    }
+    .g-num{
+      display:inline-grid;place-items:center;width:22px;height:22px;
+      border-radius:50%;background:var(--orange);color:#fff;
+      font:700 .78rem/1 system-ui,sans-serif;margin-right:7px;
+      vertical-align:1px;
+    }
+    .table-wrap{
+      overflow:auto;border:1px solid var(--line);border-radius:16px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    table{width:100%;border-collapse:collapse;min-width:820px}
+    th,td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{color:#fff;background:#27665e;font:700 .82rem/1.4 system-ui,sans-serif;letter-spacing:.04em}
+    tr:last-child td{border-bottom:0}
+    tr:nth-child(even) td{background:#fbfdfc}
+    td{font-size:.91rem}
+    .word{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:1rem}
+    .pos{
+      display:inline-block;padding:2px 7px;border-radius:5px;
+      color:#075b54;background:var(--green-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+      margin-right:4px;
+    }
+    .notes-grid{display:grid;gap:18px}
+    .note-card{
+      padding:24px 26px;border:1px solid #c9e2d8;border-radius:18px;
+      background:var(--green-soft);box-shadow:0 7px 20px rgba(20,90,70,.07);
+    }
+    .note-card h3{
+      margin:0 0 12px;font-size:1.14rem;color:#1d2a34;
+      border-bottom:2px solid #b8d8cd;padding-bottom:8px;
+    }
+    .note-card h3 .sec{color:#0f766e;font-size:.8rem;margin-right:6px}
+    .note-card h4{
+      margin:16px 0 6px;font-size:.98rem;color:#2b3a36;
+    }
+    .note-card p{margin:8px 0;font-size:.95rem;color:#2b3330}
+    .note-card ul{margin:8px 0;padding-left:22px}
+    .note-card li{margin:7px 0;font-size:.94rem;color:#2b3330}
+    .note-card li .ex{
+      font-family:"Hiragino Mincho ProN","Yu Mincho",serif;color:#14181a;
+    }
+    .note-card li .tr{display:block;color:#64727d;font-size:.9rem;margin-top:2px}
+    .note-card .key{
+      display:inline-block;padding:1px 8px;border-radius:6px;
+      background:#dff2ec;border:1px solid #8fc9b6;color:#0e5a46;
+      font:700 .86rem system-ui,sans-serif;
+    }
+    .note-card rt{color:#2f7cc4}
+    .forms-inline{
+      margin:14px 2px 0;padding:16px 20px;border-radius:16px;
+      background:#203f42;color:#effffb;
+    }
+    .forms-inline h3{margin:0 0 8px;font-size:1.02rem;color:#baf6e8}
+    .forms-inline p{margin:5px 0;color:#d5eee8;font-size:.92rem;line-height:1.7}
+    .forms-inline code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    .back-top{margin:12px 2px 0;text-align:right;font-size:.85rem}
+    .back-top a{color:var(--muted);text-decoration:none}
+    .back-top a:hover{color:var(--green)}
+    footer{margin-top:27px;color:var(--muted);font-size:.82rem;text-align:center}
+    @media(max-width:640px){
+      .wrap{padding:16px 13px 48px}
+      header{padding:30px 24px}
+      .language{padding:22px 20px}
+      .jp{font-size:1.04rem}
+      .top-nav{padding:8px 12px}
+      .top-nav .nav-title{display:none}
+    }
+
+  /* ===== 打印适配：A3 尺寸、左右留出空隙、瀑布不跨页、隐藏页眉页脚 =====
+     索引条只在第一页顶部出现（打印时取消 sticky、保留 .top-nav），
+     正文区第二个导航隐藏；每段/区块末尾的「返回顶部」链接保留。 */
+  @media print {
+    @page { size: A3; margin: 10mm 14mm; }
+    html, body { background: #ffffff !important; }
+    nav { display: none !important; }
+    .top-nav { display: flex !important; position: static !important; box-shadow: none !important; backdrop-filter: none; }
+    section { margin-bottom: 5mm; }
+    .card, .translation, .forms-inline, .note-card, .para-pair,
+    .vocab-card, .grammar-item, .language, .phrase-item,
+    .vocab-group, .analysis-block { break-inside: avoid; page-break-inside: avoid; }
+    h1, h2, h3, h4, .section-title { break-after: avoid; page-break-after: avoid; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    table { font-size: 0.9em; }
+    a { color: inherit; text-decoration: none; }
+    .forms-inline, .note-card, .card, .translation { box-shadow: none !important; }
+    .wrap { max-width: 100%; padding: 0; }
+    .jp { font-size: 0.98em; letter-spacing: 0.02em; }
+    .zh, .note { font-size: 0.95em; }
+    .language { padding: 12px 16px; }
+    .grammar-grid { gap: 8px; }
+    .table-wrap { box-shadow: none; }
+  }
+
+  /* ===== 跟读控制条（注入） ===== */
+  .player-bar{
+    position:sticky;top:56px;z-index:95;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    margin:18px 0 8px;padding:12px 16px;
+    border:1px solid var(--line);border-radius:18px;
+    background:rgba(255,253,248,.95);
+    box-shadow:0 8px 22px rgba(31,56,52,.08);
+  }
+  .pb-btn{
+    width:42px;height:42px;border:0;border-radius:50%;cursor:pointer;
+    display:inline-grid;place-items:center;
+    background:var(--green);color:#fff;font-size:1rem;
+    transition:transform .12s, background .15s;
+  }
+  .pb-btn:hover{background:#198f7c;transform:scale(1.06)}
+  .pb-btn.small{width:34px;height:34px;background:#e8f1ee;color:var(--green);font-size:.9rem}
+  .pb-btn.small:hover{background:#d6e8e3}
+  .pb-btn:disabled{opacity:.35;cursor:default;transform:none}
+  .rate-group{display:flex;gap:5px;margin-left:auto}
+  .rate-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .rate-btn.active{background:var(--green);border-color:var(--green);color:#fff}
+  .mode-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .mode-btn.active{background:var(--orange);border-color:var(--orange);color:#fff}
+  .progress{
+    flex-basis:100%;height:6px;border-radius:3px;
+    background:#e3ece8;position:relative;cursor:pointer;
+  }
+  .progress .fill{
+    position:absolute;left:0;top:0;bottom:0;border-radius:3px;
+    background:linear-gradient(90deg,#0f766e,#2ba98c);width:0%;
+  }
+  .progress .knob{
+    position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:#fff;border:2px solid var(--green);transform:translate(-50%,-50%);
+    left:0%;box-shadow:0 1px 4px rgba(0,0,0,.2);
+  }
+  .sentence-status{
+    flex-basis:100%;color:var(--muted);font:600 .78rem system-ui,sans-serif;
+  }
+  .sentence{
+    cursor:pointer;border-radius:8px;padding:3px 10px;margin:0 -10px;
+    transition:background .18s;
+    border-left:4px solid transparent;
+  }
+  .sentence:hover{background:#eaf4fc}
+  .sentence.playing{
+    background:linear-gradient(90deg, rgba(137,207,240,.60), rgba(137,207,240,.28));
+    border-left-color:#2f7cc4;
+    box-shadow:0 2px 10px rgba(47,124,196,.22);
+  }
+  .sentence .play-ic{
+    display:inline-block;margin-right:4px;color:#2f7cc4;
+    font-size:.72em;opacity:.5;font-family:system-ui,sans-serif;vertical-align:2px;
+  }
+  .sentence.playing .play-ic{opacity:1;color:#1c5f9e;transform:scale(1.1)}
+  @media(max-width:640px){
+    .player-bar{top:50px;padding:10px 12px}
+    .player-bar .rate-group{order:3;margin-left:0}
+  }
+  @media print{
+    .player-bar{display:none !important}
+    .sentence{cursor:default;padding:0;margin:0;border:0}
+    .sentence.playing{background:transparent;box-shadow:none;border:0}
+    .sentence .play-ic{display:none}
+  }
+
+</style>
+</head>
+<body>
+  <nav class="top-nav">
+    <span class="nav-title">索 引</span>
+    <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#p5">第五段</a><a href="#p6">第六段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    <a class="to-top" href="#top">▲ 顶部</a>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header>
+      <p class="eyebrow">JAPANESE × CHINESE · READING &amp; GRAMMAR NOTES</p>
+      <h1>1-1 仇恨言论消解法</h1>
+      <p>日语汉字均标注平假名读音（黄色）；每组内容按日语、中文交替呈现，含瑞译强化笔记精讲。</p>
+    </header>
+
+  <div class="player-bar" id="player-bar">
+    <button class="pb-btn small" id="btn-prev" title="上一句（←）">⏮</button>
+    <button class="pb-btn" id="btn-play" title="播放/暂停（空格）">▶</button>
+    <button class="pb-btn small" id="btn-next" title="下一句（→）">⏭</button>
+    <div class="rate-group" id="rate-group">
+      <button class="rate-btn" data-rate="0.5">0.5x</button>
+      <button class="rate-btn" data-rate="0.75">0.75x</button>
+      <button class="rate-btn active" data-rate="1">1x</button>
+      <button class="rate-btn" data-rate="1.25">1.25x</button>
+      <button class="rate-btn" data-rate="1.5">1.5x</button>
+    </div>
+    <button class="mode-btn" id="btn-mode" title="循环模式">循环: 关</button>
+    <div class="progress" id="progress"><div class="fill" id="progress-fill"></div><div class="knob" id="progress-knob"></div></div>
+    <div class="sentence-status" id="sentence-status">点击下方任意日文句子开始跟读</div>
+  </div>
+
+
+    <nav>
+      <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#p5">第五段</a><a href="#p6">第六段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    </nav>
+
+    <section id="p1"><h2 class="section-title">第一段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="0" data-audio="p1_s1.mp3"><span class="play-ic">▶</span><ruby>外国出身者<rt>がいこくしゅっしんしゃ</rt></ruby>への<ruby>不当<rt>ふとう</rt></ruby>な<ruby>差別的<rt>さべつてき</rt></ruby><ruby>言動<rt>げんどう</rt></ruby>の<ruby>解消<rt>かいしょう</rt></ruby>をめざす「ヘイトスピーチ<ruby>解消法<rt>かいしょうほう</rt></ruby>」が<ruby>施行<rt>しこう</rt></ruby>されて、3<ruby>日<rt>みっか</rt></ruby>で10<ruby>年<rt>じゅうねん</rt></ruby>になった。</span><span class="sentence" data-idx="1" data-audio="p1_s2.mp3"><span class="play-ic">▶</span><ruby>法<rt>ほう</rt></ruby>を<ruby>根拠<rt>こんきょ</rt></ruby>に、<ruby>自治体<rt>じちたい</rt></ruby>でヘイトスピーチを<ruby>禁<rt>とど</rt></ruby>じる<ruby>条例<rt>じょうれい</rt></ruby>の<ruby>制定<rt>せいてい</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がった。</span><span class="sentence" data-idx="2" data-audio="p1_s3.mp3"><span class="play-ic">▶</span><ruby>一方<rt>いっぽう</rt></ruby>で、ネット<ruby>上<rt>じょう</rt></ruby>のヘイトへの<ruby>対処<rt>たいしょ</rt></ruby>には<ruby>限界<rt>げんかい</rt></ruby>がある。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">截至本月3日，《仇恨言论解消法》生效已有10年。该法旨在消除针对外国出身人士的不当歧视性言行。此外，不断有自治体以该法为蓝本，推出各项禁止仇恨言论的相关条例。然而，在应对互联网仇恨言论方面，该法则有些鞭长莫及。</p><p class="note">「<ruby>目指<rt>めざ</rt></ruby>す」（以……为目标）与「<ruby>広<rt>ひろ</rt></ruby>がる」（越来越多）的译法见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>めざす ＝辞书形（连体修饰「法」）：以……为目标的。</p><p>施行されて ＝<ruby>施行<rt>しこう</rt></ruby>する（v3 他）被动て形：被施行。</p><p>なった ＝なる（v1 自）過去形：已有（10年）。</p><p>広がった ＝<ruby>広<rt>ひろ</rt></ruby>がる（v1 自）過去形：不断扩大、越来越多。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p2"><h2 class="section-title">第二段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="3" data-audio="p2_s1.mp3"><span class="play-ic">▶</span><ruby>川崎市<rt>かわさきし</rt></ruby>の<ruby>桜本地区<rt>さくらもとちく</rt></ruby>。</span><span class="sentence" data-idx="4" data-audio="p2_s2.mp3"><span class="play-ic">▶</span><ruby>在日<rt>ざいにち</rt></ruby>コリアンが<ruby>多<rt>おお</rt></ruby>く<ruby>住<rt>す</rt></ruby>む<ruby>町<rt>まち</rt></ruby>で2016<ruby>年<rt>ねん</rt></ruby>1<ruby>月<rt>がつ</rt></ruby>、「<ruby>日本浄化<rt>にほんじょうか</rt></ruby>」と<ruby>称<rt>しょう</rt></ruby>したデモがあった。</span><span class="sentence" data-idx="5" data-audio="p2_s3.mp3"><span class="play-ic">▶</span><ruby>国旗<rt>こっき</rt></ruby>を<ruby>掲<rt>かか</rt></ruby>げた<ruby>参加者<rt>さんかしゃ</rt></ruby>らは<ruby>大勢<rt>おおぜい</rt></ruby>の<ruby>警察官<rt>けいさつかん</rt></ruby>に<ruby>警戒<rt>けいかい</rt></ruby>されながら、<ruby>川崎駅<rt>かわさきえき</rt></ruby>近くの<ruby>公園<rt>こうえん</rt></ruby>から<ruby>桜本<rt>さくらもと</rt></ruby>に<ruby>向<rt>む</rt></ruby>かって<ruby>行進<rt>こうしん</rt></ruby>した。</span><span class="sentence" data-idx="6" data-audio="p2_s4.mp3"><span class="play-ic">▶</span><ruby>抗議<rt>こうぎ</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>たちも<ruby>訪<rt>おとず</rt></ruby>れた。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">川崎市樱本地区是在日韩裔的聚居地之一。2016年1月，该地区爆发了一场名为“净化日本”的游行。游行人员高举日本国旗，在大批警力的警戒下，从川崎站附近一处公园出发，一路前往樱本地区。除了游行队伍以外，现场同样聚集了反对游行的抗议人士。</p><p class="note">「<ruby>警戒<rt>けいかい</rt></ruby>されながら」中的「ながら」不是“一边……一边……”，而是表示前提状态，详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>称した ＝<ruby>称<rt>しょう</rt></ruby>する（v3 他）過去形（连体）：号称……的。</p><p>掲げた ＝<ruby>掲<rt>かか</rt></ruby>げる（v2 他）過去形（连体）：高举的。</p><p>警戒されながら ＝<ruby>警戒<rt>けいかい</rt></ruby>する（v3 他）被动＋ながら：在……戒备之下。</p><p>向かって ＝<ruby>向<rt>む</rt></ruby>かう（v1 自）的て形：朝着。</p><p>行進した ＝<ruby>行進<rt>こうしん</rt></ruby>する（v3 自）過去形：游行前进。</p><p>訪れた ＝<ruby>訪<rt>おとず</rt></ruby>れる（v2 自）過去形：到场、前来。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p3"><h2 class="section-title">第三段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="7" data-audio="p3_s1.mp3"><span class="play-ic">▶</span>この<ruby>日<rt>ひ</rt></ruby>のデモはヘイトスピーチの<ruby>例<rt>れい</rt></ruby>として<ruby>広<rt>ひろ</rt></ruby>く<ruby>知<rt>し</rt></ruby>られることとなり、<ruby>法規制<rt>ほうきせい</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める<ruby>声<rt>こえ</rt></ruby>が<ruby>高<rt>たか</rt></ruby>まった。</span><span class="sentence" data-idx="8" data-audio="p3_s2.mp3"><span class="play-ic">▶</span>デモから<ruby>約<rt>やく</rt></ruby>4<ruby>箇月<rt>かげつ</rt></ruby>後の5<ruby>月<rt>がつ</rt></ruby>、<ruby>解消法<rt>かいしょうほう</rt></ruby>が<ruby>成立<rt>せいりつ</rt></ruby>した。</span><span class="sentence" data-idx="9" data-audio="p3_s3.mp3"><span class="play-ic">▶</span><ruby>解消法<rt>かいしょうほう</rt></ruby>では、ヘイトスピーチを「<ruby>海外出身者<rt>かいがいしゅっしんしゃ</rt></ruby>であることを<ruby>理由<rt>りゆう</rt></ruby>に、<ruby>地域社会<rt>ちいきしゃかい</rt></ruby>から<ruby>排除<rt>はいじょ</rt></ruby>することを<ruby>扇動<rt>せんどう</rt></ruby>する<ruby>不当<rt>ふとう</rt></ruby>な<ruby>差別的<rt>さべつてき</rt></ruby><ruby>言動<rt>げんどう</rt></ruby>」と<ruby>定義<rt>ていぎ</rt></ruby>した。</span><span class="sentence" data-idx="10" data-audio="p3_s4.mp3"><span class="play-ic">▶</span><ruby>理念法<rt>りねんほう</rt></ruby>で、<ruby>罰則規定<rt>ばっそくきてい</rt></ruby>はない。</span><span class="sentence" data-idx="11" data-audio="p3_s5.mp3"><span class="play-ic">▶</span><ruby>法務省<rt>ほうむしょう</rt></ruby>の<ruby>担当者<rt>たんとうしゃ</rt></ruby>は「<ruby>街頭<rt>がいとう</rt></ruby>でのデモは<ruby>減少<rt>げんしょう</rt></ruby>していると<ruby>認識<rt>にんしき</rt></ruby>している」と<ruby>言<rt>い</rt></ruby>う。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">当天的游行后来成为了仇恨言论的知名案例，要求通过立法加以规制的呼声随之日益高涨。当年5月，在游行爆发四个多月后，《仇恨言论解消法》获得通过。该法将仇恨言论定义为“以他人出生海外为由，煽动他人将其驱赶出所在地区的不当歧视性言行”。然而，该法并未设立处罚措施，只是一部“理念法”。</p><p class="note">「〜として<ruby>広<rt>ひろ</rt></ruby>く<ruby>知<rt>し</rt></ruby>られる」＝“作为……广为人知”，中译日时比「<ruby>有名<rt>ゆうめい</rt></ruby>」更地道，详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>知られることとなり ＝<ruby>知<rt>し</rt></ruby>る（v1 他）被动＋こととなる：成为被广为人知。</p><p>高まった ＝<ruby>高<rt>たか</rt></ruby>まる（v1 自）過去形：高涨。</p><p>成立した ＝<ruby>成立<rt>せいりつ</rt></ruby>する（v3 自）過去形：获得通过。</p><p>定義した ＝<ruby>定義<rt>ていぎ</rt></ruby>する（v3 他）過去形：定义为。</p><p>減少している ＝<ruby>減少<rt>げんしょう</rt></ruby>する（v3 自）て形＋いる：正在减少。</p><p>認識している ＝<ruby>認識<rt>にんしき</rt></ruby>する（v3 他）て形＋いる：认为、认知。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p4"><h2 class="section-title">第四段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="12" data-audio="p4_s1.mp3"><span class="play-ic">▶</span><ruby>規制<rt>きせい</rt></ruby>を<ruby>訴<rt>うった</rt></ruby>えてきた<ruby>桜本<rt>さくらもと</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>の<ruby>在日<rt>ざいにち</rt></ruby>コリアン3<ruby>世<rt>せい</rt></ruby>の<ruby>崔江以子<rt>チェ・カンイジャ</rt></ruby>さん（52）は「<ruby>法<rt>ほう</rt></ruby>ができて、<ruby>絶望<rt>ぜつぼう</rt></ruby>が<ruby>希望<rt>きぼう</rt></ruby>で<ruby>上書<rt>うわが</rt></ruby>きをされたと<ruby>感<rt>かん</rt></ruby>じた」と<ruby>話<rt>はな</rt></ruby>す。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">今年52岁的崔江以子是一名出生在樱本地区的第三代在日韩裔。长期以来她一直呼吁国家制定相关法规。她表示：“法律出台后，感觉希望终于战胜了绝望。”</p><p class="note">「<ruby>上書<rt>うわが</rt></ruby>き」＝覆盖、改写，此处译为“希望战胜了绝望”，详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>訴えてきた ＝<ruby>訴<rt>うった</rt></ruby>える（v2 他）て形＋きた：一直呼吁。</p><p>できて ＝できる（v2 自）て形：出台后。</p><p>上書きをされた ＝<ruby>上書<rt>うわが</rt></ruby>きする（v3 他）被动過去：被覆盖、被改写。</p><p>感じた ＝<ruby>感<rt>かん</rt></ruby>じる（v2 自他）過去形：感到。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p5"><h2 class="section-title">第五段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="13" data-audio="p5_s1.mp3"><span class="play-ic">▶</span><ruby>各地<rt>かくち</rt></ruby>で<ruby>差別解消<rt>さべつかいしょう</rt></ruby>やヘイトスピーチに<ruby>関<rt>かん</rt></ruby>する<ruby>条例<rt>じょうれい</rt></ruby>が<ruby>作<rt>つく</rt></ruby>られるようになった。</span><span class="sentence" data-idx="14" data-audio="p5_s2.mp3"><span class="play-ic">▶</span><ruby>法務省<rt>ほうむしょう</rt></ruby>によると、ヘイトスピーチ<ruby>禁止<rt>きんし</rt></ruby>などを<ruby>盛<rt>も</rt></ruby>り<ruby>込<rt>こ</rt></ruby>んだ<ruby>条例<rt>じょうれい</rt></ruby>を<ruby>持<rt>も</rt></ruby>つのは<ruby>現時点<rt>げんじてん</rt></ruby>で10<ruby>自治体<rt>じちたい</rt></ruby>ある。</span><span class="sentence" data-idx="15" data-audio="p5_s3.mp3"><span class="play-ic">▶</span><ruby>今年<rt>ことし</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ってからは、<ruby>奈良市<rt>ならし</rt></ruby>などでも<ruby>条例制定<rt>じょうれいせいてい</rt></ruby>の<ruby>動<rt>うご</rt></ruby>きが<ruby>出<rt>で</rt></ruby><ruby>始<rt>はじ</rt></ruby>めている。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">如今，日本各地陆续制定了有关消除歧视和仇恨言论的条例。日本法务省称，如今已有十个自治体出台了含有禁止仇恨言论内容的相关条例。今年以来，奈良市等地也相继启动了条例制定工作。</p><p class="note">「<ruby>盛<rt>も</rt></ruby>り<ruby>込<rt>こ</rt></ruby>む」＝写入、纳入（计划、意见等），详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>作られるようになった ＝<ruby>作<rt>つく</rt></ruby>る（v1 他）被动＋ようになる：开始被制定。</p><p>盛り込んだ ＝<ruby>盛<rt>も</rt></ruby>り<ruby>込<rt>こ</rt></ruby>む（v1 他）過去形（连体）：写入……的。</p><p>出始めている ＝<ruby>出<rt>で</rt></ruby><ruby>始<rt>はじ</rt></ruby>める（v2 自）て形＋いる：开始出现。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p6"><h2 class="section-title">第六段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="16" data-audio="p6_s1.mp3"><span class="play-ic">▶</span>ただ、<ruby>今<rt>いま</rt></ruby>の<ruby>解消法<rt>かいしょうほう</rt></ruby>や<ruby>条例<rt>じょうれい</rt></ruby>だけでは<ruby>防<rt>ふせ</rt></ruby>ぎきれない<ruby>問題<rt>もんだい</rt></ruby>もある。</span><span class="sentence" data-idx="17" data-audio="p6_s2.mp3"><span class="play-ic">▶</span><ruby>法務省<rt>ほうむしょう</rt></ruby>は<ruby>今年度<rt>こんねんど</rt></ruby>、10<ruby>年<rt>ねん</rt></ruby>ぶりとなるヘイトスピーチの<ruby>実態調査<rt>じったいちょうさ</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う。</span><span class="sentence" data-idx="18" data-audio="p6_s3.mp3"><span class="play-ic">▶</span><ruby>担当者<rt>たんとうしゃ</rt></ruby>は「<ruby>調査結果<rt>ちょうさけっか</rt></ruby>はヘイトスピーチ<ruby>解消<rt>かいしょう</rt></ruby>に<ruby>向<rt>む</rt></ruby>けた<ruby>施策<rt>しさく</rt></ruby>に<ruby>生<rt>い</rt></ruby>かしていきたい」と<ruby>話<rt>はな</rt></ruby>した。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">不过，仅凭现行的《仇恨言论解消法》和地方条例，仍有一些问题难以得到彻底遏制。时隔十年，法务省将于本年度重启仇恨言论实际情况调查。负责人表示：“希望将调查结果运用于消除仇恨言论的相关措施中。”</p><p class="note">「〜に<ruby>向<rt>む</rt></ruby>ける」＝旨在、面向、为了，与「<ruby>目指<rt>めざ</rt></ruby>す」一样带有“朝着某点进发”的语感，详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>防ぎきれない ＝<ruby>防<rt>ふせ</rt></ruby>ぐ（v1 他）连用形＋きれない：防不胜防、无法完全防止。</p><p>なる ＝なる（v1 自）连体：成为（时隔十年的）。</p><p>行う ＝<ruby>行<rt>おこな</rt></ruby>う（v1 他）辞书形（句尾）：实施、进行。</p><p>生かしていきたい ＝<ruby>生<rt>い</rt></ruby>かす（v1 他）て形＋いく＋たい：希望加以运用。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="grammar"><h2 class="section-title"><span>文</span>本文语法</h2><div class="grammar-grid"><article class="card"><h3><span class="g-num">1</span>〜をめざす</h3><p><span class="pattern"><ruby>解消<rt>かいしょう</rt></ruby>をめざす「<ruby>法<rt>ほう</rt></ruby>」</span></p><p>“以……为目标”。含有“朝着一点进发”的感觉，中译日高频表达。</p></article><article class="card"><h3><span class="g-num">2</span>〜て10年になる</h3><p><span class="pattern"><ruby>施行<rt>しこう</rt></ruby>されて、3<ruby>日<rt>みっか</rt></ruby>で10<ruby>年<rt>じゅうねん</rt></ruby>になった</span></p><p>“自……以来已有10年”。“〜て”＋时间＋「になる」表示经过。</p></article><article class="card"><h3><span class="g-num">3</span>〜を根拠に</h3><p><span class="pattern"><ruby>法<rt>ほう</rt></ruby>を<ruby>根拠<rt>こんきょ</rt></ruby>に</span></p><p>“以……为依据、根据……”。</p></article><article class="card"><h3><span class="g-num">4</span>〜が広がる</h3><p><span class="pattern"><ruby>条例<rt>じょうれい</rt></ruby>の<ruby>制定<rt>せいてい</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がった</span></p><p>“……越来越多、不断扩展”。（详见强化笔记）</p></article><article class="card"><h3><span class="g-num">5</span>〜には限界がある</h3><p><span class="pattern"><ruby>対処<rt>たいしょ</rt></ruby>には<ruby>限界<rt>げんかい</rt></ruby>がある</span></p><p>“（应对上）存在局限”。</p></article><article class="card"><h3><span class="g-num">6</span>〜と称した</h3><p><span class="pattern">「<ruby>日本浄化<rt>にほんじょうか</rt></ruby>」と<ruby>称<rt>しょう</rt></ruby>したデモ</span></p><p>“号称……的、名为……的”。</p></article><article class="card"><h3><span class="g-num">7</span>〜に警戒されながら</h3><p><span class="pattern"><ruby>大勢<rt>おおぜい</rt></ruby>の<ruby>警察官<rt>けいさつかん</rt></ruby>に<ruby>警戒<rt>けいかい</rt></ruby>されながら</span></p><p>“在大批警力的警戒下”。“ながら”在此表示前提状态，而非“一边……一边……”。</p></article><article class="card"><h3><span class="g-num">8</span>〜に向かって</h3><p><span class="pattern"><ruby>桜本<rt>さくらもと</rt></ruby>に<ruby>向<rt>む</rt></ruby>かって<ruby>行進<rt>こうしん</rt></ruby>した</span></p><p>“朝着……”。表示方向。</p></article><article class="card"><h3><span class="g-num">9</span>〜として広く知られる</h3><p><span class="pattern">ヘイトスピーチの<ruby>例<rt>れい</rt></ruby>として<ruby>広<rt>ひろ</rt></ruby>く<ruby>知<rt>し</rt></ruby>られる</span></p><p>“作为……广为人知”。中译日时比「<ruby>有名<rt>ゆうめい</rt></ruby>」更地道。</p></article><article class="card"><h3><span class="g-num">10</span>〜を求める声が高まる</h3><p><span class="pattern"><ruby>法規制<rt>ほうきせい</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める<ruby>声<rt>こえ</rt></ruby>が<ruby>高<rt>たか</rt></ruby>まった</span></p><p>“要求……的呼声高涨”。</p></article><article class="card"><h3><span class="g-num">11</span>〜を理由に</h3><p><span class="pattern"><ruby>海外出身者<rt>かいがいしゅっしんしゃ</rt></ruby>であることを<ruby>理由<rt>りゆう</rt></ruby>に</span></p><p>“以……为由”。</p></article><article class="card"><h3><span class="g-num">12</span>〜と定義する</h3><p><span class="pattern">「…<ruby>言動<rt>げんどう</rt></ruby>」と<ruby>定義<rt>ていぎ</rt></ruby>した</span></p><p>“定义为……”。</p></article><article class="card"><h3><span class="g-num">13</span>〜と話す／と言う</h3><p><span class="pattern">「…」と<ruby>話<rt>はな</rt></ruby>す／と<ruby>言<rt>い</rt></ruby>う</span></p><p>引用转述（“他表示……”）。</p></article><article class="card"><h3><span class="g-num">14</span>〜ようになった</h3><p><span class="pattern"><ruby>条例<rt>じょうれい</rt></ruby>が<ruby>作<rt>つく</rt></ruby>られるようになった</span></p><p>“开始……、变得……”。</p></article><article class="card"><h3><span class="g-num">15</span>〜によると</h3><p><span class="pattern"><ruby>法務省<rt>ほうむしょう</rt></ruby>によると</span></p><p>“据……”。表示消息来源。</p></article><article class="card"><h3><span class="g-num">16</span>〜では防ぎきれない</h3><p><span class="pattern"><ruby>解消法<rt>かいしょうほう</rt></ruby>や<ruby>条例<rt>じょうれい</rt></ruby>だけでは<ruby>防<rt>ふせ</rt></ruby>ぎきれない</span></p><p>“仅凭……难以完全防止”。“きれない”表示无法彻底做到。</p></article><article class="card"><h3><span class="g-num">17</span>〜に向けた</h3><p><span class="pattern"><ruby>解消<rt>かいしょう</rt></ruby>に<ruby>向<rt>む</rt></ruby>けた<ruby>施策<rt>しさく</rt></ruby></span></p><p>“面向……的、旨在……的”。</p></article><article class="card"><h3><span class="g-num">18</span>〜に生かしていきたい</h3><p><span class="pattern"><ruby>施策<rt>しさく</rt></ruby>に<ruby>生<rt>い</rt></ruby>かしていきたい</span></p><p>“希望运用于……”。「〜ていく」＋「たい」表示今后的愿望。</p></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="vocab"><h2 class="section-title"><span>词</span>词汇、短语与读音</h2><div class="table-wrap"><table><thead><tr><th>单词／短语</th><th>读音</th><th>词性</th><th>级别</th><th>中文释义</th><th>短语（原型）</th></tr></thead><tbody><tr><td class="word"><ruby>外国出身者<rt>がいこくしゅっしんしゃ</rt></ruby></td><td>がいこくしゅっしんしゃ</td><td><span class="pos">n</span></td><td></td><td>外国出身人士</td><td><ruby>外国出身者<rt>がいこくしゅっしんしゃ</rt></ruby>への</td></tr><tr><td class="word"><ruby>不当<rt>ふとう</rt></ruby></td><td>ふとう</td><td><span class="pos">n</span><span class="pos">ナ形</span></td><td></td><td>不当的</td><td><ruby>不当<rt>ふとう</rt></ruby>な<ruby>差別的<rt>さべつてき</rt></ruby><ruby>言動<rt>げんどう</rt></ruby></td></tr><tr><td class="word"><ruby>差別的<rt>さべつてき</rt></ruby></td><td>さべつてき</td><td><span class="pos">ナ形</span></td><td></td><td>歧视性的</td><td><ruby>不当<rt>ふとう</rt></ruby>な<ruby>差別的<rt>さべつてき</rt></ruby><ruby>言動<rt>げんどう</rt></ruby></td></tr><tr><td class="word"><ruby>言動<rt>げんどう</rt></ruby></td><td>げんどう</td><td><span class="pos">n</span></td><td></td><td>言行</td><td><ruby>差別的<rt>さべつてき</rt></ruby><ruby>言動<rt>げんどう</rt></ruby></td></tr><tr><td class="word"><ruby>解消<rt>かいしょう</rt></ruby></td><td>かいしょう</td><td><span class="pos">n</span></td><td></td><td>消除</td><td><ruby>解消<rt>かいしょう</rt></ruby>をめざす</td></tr><tr><td class="word"><ruby>目指<rt>めざ</rt></ruby>す</td><td>めざす</td><td><span class="pos">v1 他</span></td><td></td><td>以……为目标</td><td><ruby>解消<rt>かいしょう</rt></ruby>をめざす</td></tr><tr><td class="word"><ruby>施行<rt>しこう</rt></ruby>する</td><td>しこうする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>施行</td><td><ruby>施行<rt>しこう</rt></ruby>されて</td></tr><tr><td class="word"><ruby>根拠<rt>こんきょ</rt></ruby></td><td>こんきょ</td><td><span class="pos">n</span></td><td></td><td>依据</td><td><ruby>法<rt>ほう</rt></ruby>を<ruby>根拠<rt>こんきょ</rt></ruby>に</td></tr><tr><td class="word"><ruby>自治体<rt>じちたい</rt></ruby></td><td>じちたい</td><td><span class="pos">n</span></td><td></td><td>自治体、地方政府</td><td><ruby>自治体<rt>じちたい</rt></ruby>で</td></tr><tr><td class="word"><ruby>禁<rt>とど</rt></ruby>じる</td><td>とどじる</td><td><span class="pos">v2 他</span></td><td></td><td>禁止</td><td>ヘイトスピーチを<ruby>禁<rt>とど</rt></ruby>じる</td></tr><tr><td class="word"><ruby>条例<rt>じょうれい</rt></ruby></td><td>じょうれい</td><td><span class="pos">n</span></td><td></td><td>条例</td><td><ruby>条例<rt>じょうれい</rt></ruby>の<ruby>制定<rt>せいてい</rt></ruby></td></tr><tr><td class="word"><ruby>制定<rt>せいてい</rt></ruby></td><td>せいてい</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>制定</td><td><ruby>条例<rt>じょうれい</rt></ruby>の<ruby>制定<rt>せいてい</rt></ruby></td></tr><tr><td class="word"><ruby>広<rt>ひろ</rt></ruby>がる</td><td>ひろがる</td><td><span class="pos">v1 自</span></td><td></td><td>扩展、铺开</td><td><ruby>制定<rt>せいてい</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がった</td></tr><tr><td class="word"><ruby>一方<rt>いっぽう</rt></ruby></td><td>いっぽう</td><td><span class="pos">n</span></td><td></td><td>另一方面</td><td><ruby>一方<rt>いっぽう</rt></ruby>で</td></tr><tr><td class="word"><ruby>対処<rt>たいしょ</rt></ruby></td><td>たいしょ</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td></td><td>应对</td><td>ヘイトへの<ruby>対処<rt>たいしょ</rt></ruby></td></tr><tr><td class="word"><ruby>限界<rt>げんかい</rt></ruby></td><td>げんかい</td><td><span class="pos">n</span></td><td></td><td>局限</td><td><ruby>限界<rt>げんかい</rt></ruby>がある</td></tr><tr><td class="word"><ruby>在日<rt>ざいにち</rt></ruby></td><td>ざいにち</td><td><span class="pos">n</span></td><td></td><td>在日（韩裔）</td><td><ruby>在日<rt>ざいにち</rt></ruby>コリアン</td></tr><tr><td class="word"><ruby>称<rt>しょう</rt></ruby>する</td><td>しょうする</td><td><span class="pos">v3 他</span></td><td></td><td>号称、称为</td><td>「<ruby>日本浄化<rt>にほんじょうか</rt></ruby>」と<ruby>称<rt>しょう</rt></ruby>した</td></tr><tr><td class="word"><ruby>国旗<rt>こっき</rt></ruby></td><td>こっき</td><td><span class="pos">n</span></td><td></td><td>国旗</td><td><ruby>国旗<rt>こっき</rt></ruby>を<ruby>掲<rt>かか</rt></ruby>げた</td></tr><tr><td class="word"><ruby>掲<rt>かか</rt></ruby>げる</td><td>かかげる</td><td><span class="pos">v2 他</span></td><td></td><td>高举</td><td><ruby>国旗<rt>こっき</rt></ruby>を<ruby>掲<rt>かか</rt></ruby>げた</td></tr><tr><td class="word"><ruby>参加者<rt>さんかしゃ</rt></ruby></td><td>さんかしゃ</td><td><span class="pos">n</span></td><td></td><td>参加者</td><td><ruby>参加者<rt>さんかしゃ</rt></ruby>ら</td></tr><tr><td class="word"><ruby>大勢<rt>おおぜい</rt></ruby></td><td>おおぜい</td><td><span class="pos">n</span></td><td></td><td>大批</td><td><ruby>大勢<rt>おおぜい</rt></ruby>の<ruby>警察官<rt>けいさつかん</rt></ruby></td></tr><tr><td class="word"><ruby>警察官<rt>けいさつかん</rt></ruby></td><td>けいさつかん</td><td><span class="pos">n</span></td><td></td><td>警察</td><td><ruby>警察官<rt>けいさつかん</rt></ruby>に<ruby>警戒<rt>けいかい</rt></ruby>されながら</td></tr><tr><td class="word"><ruby>警戒<rt>けいかい</rt></ruby>する</td><td>けいかいする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>警戒</td><td><ruby>警戒<rt>けいかい</rt></ruby>されながら</td></tr><tr><td class="word"><ruby>向<rt>む</rt></ruby>かう</td><td>むかう</td><td><span class="pos">v1 自</span></td><td></td><td>朝向</td><td><ruby>桜本<rt>さくらもと</rt></ruby>に<ruby>向<rt>む</rt></ruby>かって</td></tr><tr><td class="word"><ruby>行進<rt>こうしん</rt></ruby>する</td><td>こうしんする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td></td><td>游行前进</td><td><ruby>行進<rt>こうしん</rt></ruby>した</td></tr><tr><td class="word"><ruby>抗議<rt>こうぎ</rt></ruby>する</td><td>こうぎする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td></td><td>抗议</td><td><ruby>抗議<rt>こうぎ</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>たち</td></tr><tr><td class="word"><ruby>訪<rt>おとず</rt></ruby>れる</td><td>おとずれる</td><td><span class="pos">v2 自</span></td><td></td><td>到访</td><td><ruby>訪<rt>おとず</rt></ruby>れた</td></tr><tr><td class="word"><ruby>例<rt>れい</rt></ruby></td><td>れい</td><td><span class="pos">n</span></td><td></td><td>例子、案例</td><td>ヘイトスピーチの<ruby>例<rt>れい</rt></ruby>として</td></tr><tr><td class="word"><ruby>法規制<rt>ほうきせい</rt></ruby></td><td>ほうきせい</td><td><span class="pos">n</span></td><td></td><td>法律规制</td><td><ruby>法規制<rt>ほうきせい</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める</td></tr><tr><td class="word"><ruby>求<rt>もと</rt></ruby>める</td><td>もとめる</td><td><span class="pos">v2 他</span></td><td></td><td>要求</td><td><ruby>法規制<rt>ほうきせい</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める</td></tr><tr><td class="word"><ruby>高<rt>たか</rt></ruby>まる</td><td>たかまる</td><td><span class="pos">v1 自</span></td><td></td><td>高涨</td><td><ruby>声<rt>こえ</rt></ruby>が<ruby>高<rt>たか</rt></ruby>まった</td></tr><tr><td class="word"><ruby>成立<rt>せいりつ</rt></ruby>する</td><td>せいりつする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td></td><td>成立、通过</td><td><ruby>解消法<rt>かいしょうほう</rt></ruby>が<ruby>成立<rt>せいりつ</rt></ruby>した</td></tr><tr><td class="word"><ruby>海外出身者<rt>かいがいしゅっしんしゃ</rt></ruby></td><td>かいがいしゅっしんしゃ</td><td><span class="pos">n</span></td><td></td><td>海外出身者</td><td><ruby>海外出身者<rt>かいがいしゅっしんしゃ</rt></ruby>であること</td></tr><tr><td class="word"><ruby>理由<rt>りゆう</rt></ruby></td><td>りゆう</td><td><span class="pos">n</span></td><td></td><td>理由</td><td>ことを<ruby>理由<rt>りゆう</rt></ruby>に</td></tr><tr><td class="word"><ruby>地域社会<rt>ちいきしゃかい</rt></ruby></td><td>ちいきしゃかい</td><td><span class="pos">n</span></td><td></td><td>地域社会</td><td><ruby>地域社会<rt>ちいきしゃかい</rt></ruby>から<ruby>排除<rt>はいじょ</rt></ruby>する</td></tr><tr><td class="word"><ruby>排除<rt>はいじょ</rt></ruby>する</td><td>はいじょする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>排除、驱赶</td><td><ruby>地域社会<rt>ちいきしゃかい</rt></ruby>から<ruby>排除<rt>はいじょ</rt></ruby>する</td></tr><tr><td class="word"><ruby>扇動<rt>せんどう</rt></ruby>する</td><td>せんどうする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>煽动</td><td><ruby>排除<rt>はいじょ</rt></ruby>することを<ruby>扇動<rt>せんどう</rt></ruby>する</td></tr><tr><td class="word"><ruby>定義<rt>ていぎ</rt></ruby>する</td><td>ていぎする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>定义</td><td>と<ruby>定義<rt>ていぎ</rt></ruby>した</td></tr><tr><td class="word"><ruby>理念法<rt>りねんほう</rt></ruby></td><td>りねんほう</td><td><span class="pos">n</span></td><td></td><td>理念法（宣示性法律）</td><td><ruby>理念法<rt>りねんほう</rt></ruby>で</td></tr><tr><td class="word"><ruby>罰則規定<rt>ばっそくきてい</rt></ruby></td><td>ばっそくきてい</td><td><span class="pos">n</span></td><td></td><td>罚则规定</td><td><ruby>罰則規定<rt>ばっそくきてい</rt></ruby>はない</td></tr><tr><td class="word"><ruby>法務省<rt>ほうむしょう</rt></ruby></td><td>ほうむしょう</td><td><span class="pos">n</span></td><td></td><td>法务省</td><td><ruby>法務省<rt>ほうむしょう</rt></ruby>の<ruby>担当者<rt>たんとうしゃ</rt></ruby></td></tr><tr><td class="word"><ruby>担当者<rt>たんとうしゃ</rt></ruby></td><td>たんとうしゃ</td><td><span class="pos">n</span></td><td></td><td>负责人</td><td><ruby>法務省<rt>ほうむしょう</rt></ruby>の<ruby>担当者<rt>たんとうしゃ</rt></ruby></td></tr><tr><td class="word"><ruby>街頭<rt>がいとう</rt></ruby></td><td>がいとう</td><td><span class="pos">n</span></td><td></td><td>街头</td><td><ruby>街頭<rt>がいとう</rt></ruby>でのデモ</td></tr><tr><td class="word"><ruby>減少<rt>げんしょう</rt></ruby>する</td><td>げんしょうする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td></td><td>减少</td><td><ruby>減少<rt>げんしょう</rt></ruby>していると</td></tr><tr><td class="word"><ruby>認識<rt>にんしき</rt></ruby>する</td><td>にんしきする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>认识、认为</td><td><ruby>認識<rt>にんしき</rt></ruby>している</td></tr><tr><td class="word"><ruby>規制<rt>きせい</rt></ruby></td><td>きせい</td><td><span class="pos">n</span></td><td></td><td>规制</td><td><ruby>規制<rt>きせい</rt></ruby>を<ruby>訴<rt>うった</rt></ruby>えてきた</td></tr><tr><td class="word"><ruby>訴<rt>うった</rt></ruby>える</td><td>うったえる</td><td><span class="pos">v2 他</span></td><td></td><td>呼吁、申诉</td><td><ruby>規制<rt>きせい</rt></ruby>を<ruby>訴<rt>うった</rt></ruby>えてきた</td></tr><tr><td class="word"><ruby>出身<rt>しゅっしん</rt></ruby></td><td>しゅっしん</td><td><span class="pos">n</span></td><td></td><td>出身</td><td><ruby>桜本<rt>さくらもと</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby></td></tr><tr><td class="word"><ruby>絶望<rt>ぜつぼう</rt></ruby></td><td>ぜつぼう</td><td><span class="pos">n</span></td><td></td><td>绝望</td><td><ruby>絶望<rt>ぜつぼう</rt></ruby>が<ruby>希望<rt>きぼう</rt></ruby>で</td></tr><tr><td class="word"><ruby>希望<rt>きぼう</rt></ruby></td><td>きぼう</td><td><span class="pos">n</span></td><td></td><td>希望</td><td><ruby>絶望<rt>ぜつぼう</rt></ruby>が<ruby>希望<rt>きぼう</rt></ruby>で</td></tr><tr><td class="word"><ruby>上書<rt>うわが</rt></ruby>きする</td><td>うわがきする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>覆盖、改写</td><td><ruby>上書<rt>うわが</rt></ruby>きをされた</td></tr><tr><td class="word"><ruby>差別解消<rt>さべつかいしょう</rt></ruby></td><td>さべつかいしょう</td><td><span class="pos">n</span></td><td></td><td>消除歧视</td><td><ruby>差別解消<rt>さべつかいしょう</rt></ruby>や</td></tr><tr><td class="word"><ruby>関<rt>かん</rt></ruby>する</td><td>かんする</td><td><span class="pos">v3 自</span></td><td></td><td>关于</td><td>ヘイトスピーチに<ruby>関<rt>かん</rt></ruby>する<ruby>条例<rt>じょうれい</rt></ruby></td></tr><tr><td class="word"><ruby>盛<rt>も</rt></ruby>り<ruby>込<rt>こ</rt></ruby>む</td><td>もりこむ</td><td><span class="pos">v1 他</span></td><td></td><td>写入、纳入</td><td><ruby>盛<rt>も</rt></ruby>り<ruby>込<rt>こ</rt></ruby>んだ<ruby>条例<rt>じょうれい</rt></ruby></td></tr><tr><td class="word"><ruby>現時点<rt>げんじてん</rt></ruby></td><td>げんじてん</td><td><span class="pos">n</span></td><td></td><td>现阶段</td><td><ruby>現時点<rt>げんじてん</rt></ruby>で</td></tr><tr><td class="word"><ruby>動<rt>うご</rt></ruby>き</td><td>うごき</td><td><span class="pos">n</span></td><td></td><td>动向</td><td><ruby>条例制定<rt>じょうれいせいてい</rt></ruby>の<ruby>動<rt>うご</rt></ruby>き</td></tr><tr><td class="word"><ruby>出<rt>で</rt></ruby><ruby>始<rt>はじ</rt></ruby>める</td><td>ではじめる</td><td><span class="pos">v2 自</span></td><td></td><td>开始出现</td><td><ruby>動<rt>うご</rt></ruby>きが<ruby>出<rt>で</rt></ruby><ruby>始<rt>はじ</rt></ruby>めている</td></tr><tr><td class="word"><ruby>防<rt>ふせ</rt></ruby>ぐ</td><td>ふせぐ</td><td><span class="pos">v1 他</span></td><td></td><td>防止</td><td><ruby>防<rt>ふせ</rt></ruby>ぎきれない</td></tr><tr><td class="word"><ruby>問題<rt>もんだい</rt></ruby></td><td>もんだい</td><td><span class="pos">n</span></td><td></td><td>问题</td><td><ruby>問題<rt>もんだい</rt></ruby>もある</td></tr><tr><td class="word"><ruby>今年度<rt>こんねんど</rt></ruby></td><td>こんねんど</td><td><span class="pos">n</span></td><td></td><td>本年度</td><td><ruby>今年度<rt>こんねんど</rt></ruby></td></tr><tr><td class="word"><ruby>実態調査<rt>じったいちょうさ</rt></ruby></td><td>じったいちょうさ</td><td><span class="pos">n</span></td><td></td><td>实际情况调查</td><td>ヘイトスピーチの<ruby>実態調査<rt>じったいちょうさ</rt></ruby></td></tr><tr><td class="word"><ruby>行<rt>おこな</rt></ruby>う</td><td>おこなう</td><td><span class="pos">v1 他</span></td><td></td><td>实施</td><td><ruby>実態調査<rt>じったいちょうさ</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う</td></tr><tr><td class="word"><ruby>調査結果<rt>ちょうさけっか</rt></ruby></td><td>ちょうさけっか</td><td><span class="pos">n</span></td><td></td><td>调查结果</td><td><ruby>調査結果<rt>ちょうさけっか</rt></ruby>は</td></tr><tr><td class="word"><ruby>施策<rt>しさく</rt></ruby></td><td>しさく</td><td><span class="pos">n</span></td><td></td><td>施策、措施</td><td><ruby>解消<rt>かいしょう</rt></ruby>に<ruby>向<rt>む</rt></ruby>けた<ruby>施策<rt>しさく</rt></ruby></td></tr><tr><td class="word"><ruby>生<rt>い</rt></ruby>かす</td><td>いかす</td><td><span class="pos">v1 他</span></td><td></td><td>运用</td><td><ruby>施策<rt>しさく</rt></ruby>に<ruby>生<rt>い</rt></ruby>かしていきたい</td></tr></tbody></table></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="notes"><h2 class="section-title"><span>笔</span>强化笔记精讲（瑞译）</h2><div class="notes-grid"><article class="note-card"><h3><span class="sec">段落1</span>「目指す」——朝着一点进发</h3><p>「<span class="ex">目指す（めざす）</span>」一词含有“朝着一点进发”的感觉。请想象一下画面：这个“点”可以是我们的“目标”、我们“追求”的事物等等，只要原文中有“朝着一点进发”的语义，就可以使用该词。</p><ul><li>・谋求跨国合作<span class="tr">国を越えた相互協力を目指す（笔者造句，笔者试译）</span></li><li>・郭沐若先生曾指出，道家都是以“发明黄老道德意”为其指归，故也可称之为黄老学派。<span class="tr">郭沐若氏は、「黄老道德意の発揚」を目指すがゆえの道家が、黄老学派とも呼ばれる、と指摘している。（选自2013年高考语文真题，笔者试译）</span></li></ul></article><article class="note-card"><h3><span class="sec">段落1</span>「広がる」——朝着一面铺开</h3><p>「<span class="ex">広がる（ひろがる）</span>」与「目指す」一样耳熟能详，但两者的画面正好相反：如果说后者是“朝着一点进发”，那么前者则是“朝着一面铺开”。原文中的「条例の制定が広がった」，大白话就是“越来越多”的自治体开始制定相关禁令。</p><ul><li>・成熟的气息荡漾在秋天的空间，丰收的喜悦流淌在人们的心田。<span class="tr">実の息吹は秋の世界に広がり、豊作の喜びは人々の心を弾ませる。（出自《话说今日中国》，笔者试译）</span></li><li>・车夫已经让开道，但伊的破棉背心没有上扣，微风吹着，向外展开，所以终于兜着车把。<span class="tr">車夫はかじを切って道をあけたが、綿のはみ出た袖なしの上着にホックがかけてなかったために、微風にあおられて広がり、それがかじ棒にかぶさったのだ。（出自鲁迅散文《一件小事》，竹内好译）</span></li></ul></article><article class="note-card"><h3><span class="sec">段落2</span>「ながら」——翻译多样化</h3><p>不要任何时候都把「ながら」翻译成“一边……一边……”。“ながら”的翻译是多样化的，参考译文将其译为“在大批警力的警戒下”这种类似状语从句的感觉，非常值得学习。有时也可译为“不仅……而且……”。</p><p><span class="ex">ドイツのハノーバーは第二次大戦で完全に壊滅した都市だ。都市を再生させる時に今までにない新しい要素を取り入れて、街路も拡張し、街を一新させながら、昔の街並みの一部や、まだ町が小さかった頃の古い市庁舎などを完全に復元した。</span></p><p class="tr">德国城市汉诺威曾在二战时期惨遭摧毁。在重建该市时，人们推陈出新，加宽道路，不仅让城市焕然一新，还完全恢复了部分街道以及城市初期的旧市政厅等建筑。（出自2025年瑞译的模考，笔者试译）</p><p>碎碎念：我们看到“不仅……而且……”之类句式时，常常联想到「だけではなく」「のみならず」「にとどまらず」等语法。但实际上，基于本例，“不仅……而且……”同样可以翻译成「ながら」或类似表示并列的「つつ」等语法。</p><p><span class="ex">路旁的梧桐还挂着最后几片叶子，在微凉的晚风里沙沙作响，像是与秋天作着不舍的告别。道ばたのプラタナスには、最後の数枚の葉がまだしがみつき、ひんやりとした夕風に揺られながら、さらさらと音を立て、まるで秋と名残惜しく別れを告げているかのようだった。（例句选自“MTI及CATTI日语考试”公众号）</span></p></article><article class="note-card"><h3><span class="sec">段落3</span>「〜として広く知られる」——中译日技巧</h3><p>原文虽然是日译中，但这里分享一个中译日小技巧。看到“著名”两字，我们大部分中国译者都会字对字地想到「著名・有名」等日语词汇。但实际上，「<span class="ex">〜として広く知られる／親しまれる</span>」「<span class="ex">代表する</span>」等词才是日本人更喜欢的表达方式。</p><ul><li>・足球作为一项风靡全球的知名运动，广受人们追捧。<span class="tr">世界各地に広がっているスポーツとして知られるサッカーは、絶大な人気を誇っている。（笔者造句，笔者试译）</span></li><li>・中国著名导演张艺谋<span class="tr">中国を代表する映画監督・張芸謀（笔者造句，笔者试译）</span></li></ul><p>碎碎念：此外，第一个例句的“风靡”除了可以用「風靡する」「席巻する」，同样可以用前文提到过的“朝着一面铺开”的「広がる」。请各位在进行日汉翻译练习时，也多多思考怎么把地道的日语原文用到自己的日语译文中。</p></article><article class="note-card"><h3><span class="sec">段落4</span>「上書きする」——覆盖、改写</h3><p>「<span class="ex">上書き（うわがき）</span>」＝写在上面、覆盖、遮盖。此处「絶望が希望で上書きをされた」＝“绝望被希望覆盖了”，即“希望终于战胜了绝望”。</p><ul><li>・恐怖の記憶は、無意識のうちに日常を支配し、自分の人生を窮屈にしてしまうことがあります。だからこそ、その記憶を上書きし、新たな一歩を踏み出すための行動計画が必要だ。<span class="tr">那些令人恐惧的过往，常于无形中左右我们的日常，把人困在枷锁里。因此，我们亟需制定行动计划，覆盖（清除、打败）这些回忆，迈出全新一步。</span></li><li>・人間はあの当時から賢明になったのか、それとも愚（ぐ）を上書きしているのか。たぶん後者だろう。<span class="tr">在那之后，人类是更聪明了，还是更愚昧了？我想，答案恐怕是后者。</span></li><li>・时间的流逝没有冲淡人们对她的思念。<span class="tr">いくら時間が経っても、彼女に対する思いは上書きされていない。</span></li><li>・中国新能源汽车产业正不断改写世界汽车产业竞争格局。<span class="tr">中国の新エネルギー車産業は、世界の自動車産業の競争構図を上書きしつつある。</span></li><li>・直到今天，日本部分势力不但不反思历史，更企图淡化甚至掩盖历史真相。<span class="tr">日本の一部勢力はいまなお歴史を反省せず、歴史の真実を薄め、上書きして隠そうとしている。</span></li></ul></article><article class="note-card"><h3><span class="sec">段落5</span>「盛り込む」——写入、纳入</h3><p>「<span class="ex">盛り込む（もりこむ）</span>」本义指把菜肴等盛入其中，或把计划、意见中的各种要素组合进去，常常引申为“在计划和意见中添加内容”，多见于日语社论。</p><ul><li>・据悉，日本政府拟在2024年《外交蓝皮书》中重新写入全面推进日中战略互惠关系。如果属实，将是一个积极信号。<span class="tr">日本政府は2024年の「外交青書」に再び「日中戦略的互恵関係を包括的に推進」という内容を盛り込むことを目指しているという。これが事実であれば、プラスのシグナルになるだろう。（笔者试译）</span></li><li>・太宰治は、自作の四字熟語を作中によく盛り込んだ。例えば『斜陽』にある「含羞旋風（がんしゅうせんぷう）」。一目見て、恥ずかしさが旋風のように飛び込んでくる。未完の『火の鳥』には「七転八苦」という不思議な表現もある。「七転八倒」でも「四苦八苦」でもないのがおかしい。<span class="tr">太宰治在写作中时常使用一些个人独创的“四字成语”。例如，在小说《斜阳》中出现的“含羞旋风”一词，一眼便知是形容羞怯之情如同旋风一般席卷而来。在未写完的《火之鸟》中，更是有“七转八苦”一词。既非“七转八倒”，也非“四苦八苦”，令人难以琢磨。（例句选自“MTI及CATTI日语考试”公众号）</span></li></ul></article><article class="note-card"><h3><span class="sec">段落6</span>「〜に向ける」——旨在、面向</h3><p>「<span class="ex">向ける（むける）</span>」与「目指す」一样带有“朝着某点进发”的感觉，并带有“旨在、目的是、为了”等语感。</p><ul><li>・打造为中欧班列提供数字化贸易服务的平台。<span class="tr">中国と欧州を結ぶ貨物列車「中欧班列」に向けたデジタル貿易サービスのプラットフォームの構築（笔者造句，笔者试译）</span></li><li>・ただ、高額献金被害者の救済と再発防止に向けて残された課題も多く、社会が関心を持ち続けることが必要となる。<span class="tr">但（这并不是结束），对巨额捐款受害者的救助及如何预防此类事件等众多问题，仍需公众持续予以关注。（例句选自“MTI及CATTI日语考试”公众号，译文有修改）</span></li></ul></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <footer>
+      1-1 仇恨言论消解法（强化笔记融合版）｜日语读音（黄色平假名）、语法、词汇、文中变形与强化笔记精讲整理<br>
+      正文依据用户提供的资料整理，仅供个人学习使用。
+    </footer>
+  </main>
+
+<script>
+(function(){
+  const AUDIO_DIR = "audio/";
+  const TOTAL = 19;
+  let current = 0;
+  let playing = false;
+  let rate = 1.0;
+  let loopMode = false;
+  const audio = new Audio();
+  const $ = id => document.getElementById(id);
+
+  function playSentence(idx){
+    if (idx < 0 || idx >= TOTAL) return;
+    current = idx;
+    playing = true;
+    updateUI();
+    const s = document.querySelector('.sentence[data-idx="' + idx + '"]');
+    audio.src = AUDIO_DIR + (s ? s.dataset.audio : 'p1_s1.mp3');
+    audio.playbackRate = rate;
+    audio.currentTime = 0;
+    audio.play().then(() => { playing = true; updateUI(); })
+      .catch(e => { console.error('播放失败:', e); });
+  }
+
+  function togglePlay(){
+    if (playing){ audio.pause(); playing=false; updateUI(); }
+    else if (!audio.src) playSentence(current);
+    else { audio.play().then(()=>{playing=true;updateUI();}); }
+  }
+  function nextSentence(){
+    if (current+1 < TOTAL) playSentence(current+1);
+    else if (loopMode) playSentence(0);
+    else { audio.pause(); playing=false; updateUI(); }
+  }
+  function prevSentence(){ if (current>0) playSentence(current-1); }
+
+  function sentenceInSec(el){
+    const sec = el.closest('section');
+    const all = sec.querySelectorAll('.sentence');
+    for (let i=0;i<all.length;i++) if (all[i]===el) return i+1;
+    return 1;
+  }
+
+  function updateUI(){
+    $('btn-play').textContent = playing ? '⏸' : '▶';
+    document.querySelectorAll('.sentence').forEach(el=>{
+      el.classList.toggle('playing', parseInt(el.dataset.idx)===current);
+    });
+    const s = document.querySelector('.sentence[data-idx="'+current+'"]');
+    if (s){
+      const sec = s.closest('section');
+      const st = sec ? sec.querySelector('.section-title').textContent : '';
+      const n = sentenceInSec(s);
+      $('sentence-status').textContent = (playing?'播放中':'暂停')+' ｜ '+st+' 第'+n+'句';
+      const rect = s.getBoundingClientRect();
+      const bar = $('player-bar').getBoundingClientRect();
+      if (rect.top < bar.bottom || rect.bottom > window.innerHeight){
+        s.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    }
+  }
+
+  audio.addEventListener('ended', nextSentence);
+  audio.addEventListener('timeupdate', ()=>{
+    if (audio.duration){
+      const pct = audio.currentTime/audio.duration*100;
+      $('progress-fill').style.width = pct+'%';
+      $('progress-knob').style.left = pct+'%';
+    }
+  });
+  $('progress').addEventListener('click', e=>{
+    if (!audio.duration) return;
+    const r = $('progress').getBoundingClientRect();
+    audio.currentTime = (e.clientX-r.left)/r.width*audio.duration;
+  });
+  $('rate-group').addEventListener('click', e=>{
+    const b = e.target.closest('.rate-btn'); if(!b) return;
+    rate = parseFloat(b.dataset.rate);
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(x=>x.classList.toggle('active', x===b));
+  });
+  $('btn-mode').addEventListener('click', ()=>{
+    loopMode = !loopMode;
+    $('btn-mode').textContent = '循环: '+(loopMode?'开':'关');
+    $('btn-mode').classList.toggle('active', loopMode);
+  });
+  $('btn-play').addEventListener('click', togglePlay);
+  $('btn-next').addEventListener('click', nextSentence);
+  $('btn-prev').addEventListener('click', prevSentence);
+
+  document.querySelectorAll('.sentence').forEach(el=>{
+    el.addEventListener('click', ()=>playSentence(parseInt(el.dataset.idx)));
+  });
+
+  document.addEventListener('keydown', e=>{
+    if (e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+    switch(e.code){
+      case 'Space': e.preventDefault(); togglePlay(); break;
+      case 'ArrowRight': nextSentence(); break;
+      case 'ArrowLeft': prevSentence(); break;
+      case 'ArrowUp': e.preventDefault(); setRate(Math.min(1.5, rate+0.25)); break;
+      case 'ArrowDown': e.preventDefault(); setRate(Math.max(0.5, rate-0.25)); break;
+    }
+  });
+  function setRate(r){
+    rate = Math.round(r*100)/100;
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(b=>{
+      b.classList.toggle('active', parseFloat(b.dataset.rate)===rate);
+    });
+  }
+  audio.preload = 'auto';
+  window.__reader = { getAudio: () => audio, getState: () => ({current, playing, rate, loopMode}) };
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>第2周 每周自测｜解析融合版</title>
+  <style>
+    :root{
+      --ink:#1d2a34;
+      --muted:#64727d;
+      --paper:#fffdf8;
+      --bg:#eef3f2;
+      --line:#dbe5e1;
+      --green:#0f766e;
+      --green-soft:#e6f5f1;
+      --orange:#c15b24;
+      --orange-soft:#fff0e7;
+      --blue-soft:#eaf2ff;
+      --yellow:#c08a12;            /* 平假名标注色：金黄 */
+      --yellow-soft:#fbf3dd;
+      --shadow:0 12px 35px rgba(31,56,52,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #dff4ec 0, transparent 27rem),
+        radial-gradient(circle at 100% 14%, #fff0d9 0, transparent 25rem),
+        var(--bg);
+      font-family:"Noto Serif SC","Songti SC","STSong",serif;
+      line-height:1.9;
+    }
+    /* 顶部索引：固定在网页最上方，点击跳转对应段落 */
+    .top-nav{
+      position:sticky;top:0;z-index:100;
+      display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+      padding:10px 18px;
+      background:rgba(20,91,85,.96);
+      backdrop-filter:blur(6px);
+      box-shadow:0 4px 14px rgba(20,60,55,.25);
+    }
+    .top-nav .nav-title{
+      color:#baf6e8;font:700 .8rem/1 system-ui,sans-serif;
+      letter-spacing:.14em;margin-right:6px;white-space:nowrap;
+    }
+    .top-nav a{
+      padding:5px 13px;border-radius:999px;
+      color:#fff;background:rgba(255,255,255,.14);
+      text-decoration:none;font:600 .84rem/1.2 system-ui,sans-serif;
+      white-space:nowrap;transition:background .15s;
+    }
+    .top-nav a:hover{background:#198f7c}
+    .top-nav a.to-top{background:rgba(255,255,255,.28)}
+    .wrap{max-width:1060px;margin:auto;padding:32px 20px 72px}
+    section{scroll-margin-top:64px}
+    header{
+      padding:44px 42px 36px;
+      border-radius:24px;
+      color:#fff;
+      background:linear-gradient(135deg,#145b55,#0d766b 58%,#198f7c);
+      box-shadow:var(--shadow);
+    }
+    .eyebrow{
+      margin:0 0 12px;
+      color:#baf6e8;
+      font-size:.82rem;
+      letter-spacing:.16em;
+      font-family:system-ui,sans-serif;
+      font-weight:700;
+    }
+    h1{margin:0;font-size:clamp(1.8rem,4vw,3rem);line-height:1.35}
+    header p{margin:14px 0 0;color:#e2fffa;font-size:1rem}
+    nav{
+      display:flex;flex-wrap:wrap;gap:10px;
+      margin:22px 0 30px;
+    }
+    nav a{
+      padding:7px 14px;border:1px solid #cbded9;border-radius:999px;
+      color:#25514b;background:rgba(255,255,255,.74);
+      text-decoration:none;font-family:system-ui,sans-serif;font-size:.88rem;
+    }
+    nav a:hover{background:#fff}
+    section{margin-top:30px}
+    .section-title{
+      display:flex;align-items:center;gap:12px;
+      margin:0 0 15px;font-size:1.42rem;
+    }
+    .section-title span{
+      display:inline-grid;place-items:center;width:32px;height:32px;
+      border-radius:50%;color:#fff;background:var(--green);
+      font-family:system-ui,sans-serif;font-size:.9rem;
+    }
+    .translation{
+      overflow:hidden;border:1px solid var(--line);border-radius:20px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    .language{padding:26px 30px}
+    .language + .language{border-top:1px dashed #cbd8d3}
+    .label{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-bottom:12px;padding:4px 10px;border-radius:999px;
+      color:var(--green);background:var(--green-soft);
+      font:700 .78rem/1.4 system-ui,sans-serif;letter-spacing:.08em;
+    }
+    .label.zh{color:var(--orange);background:var(--orange-soft)}
+    .jp{
+      margin:0;font-size:1.13rem;letter-spacing:.025em;
+      font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+    }
+    .zh{margin:0;font-size:1.02rem}
+    ruby{ruby-position:over;ruby-align:center}
+    rt{font-size:.54em;color:var(--yellow);font-weight:700;letter-spacing:0;user-select:none}
+    .note{
+      margin:14px 0 0;padding:11px 14px;border-left:4px solid #8fc9b6;
+      color:#2b3330;background:var(--green-soft);border-radius:0 10px 10px 0;
+      font-size:.91rem;
+    }
+    .note rt{color:#2f7cc4}
+    .grammar-grid,.vocab-grid{display:grid;gap:16px}
+    .grammar-grid{grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+    .card{
+      padding:21px 22px;border:1px solid var(--line);border-radius:16px;
+      background:rgba(255,253,248,.92);box-shadow:0 7px 20px rgba(31,56,52,.06);
+    }
+    .card h3{margin:0 0 9px;font-size:1.03rem;color:#12675e}
+    .card p{margin:7px 0;font-size:.94rem}
+    .pattern{
+      display:inline-block;padding:2px 8px;border-radius:6px;
+      color:#1e4c67;background:var(--blue-soft);
+      font-family:"SFMono-Regular",Consolas,monospace;font-size:.86rem;
+    }
+    .g-num{
+      display:inline-grid;place-items:center;width:22px;height:22px;
+      border-radius:50%;background:var(--orange);color:#fff;
+      font:700 .78rem/1 system-ui,sans-serif;margin-right:7px;
+      vertical-align:1px;
+    }
+    .table-wrap{
+      overflow:auto;border:1px solid var(--line);border-radius:16px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    table{width:100%;border-collapse:collapse;min-width:820px}
+    th,td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{color:#fff;background:#27665e;font:700 .82rem/1.4 system-ui,sans-serif;letter-spacing:.04em}
+    tr:last-child td{border-bottom:0}
+    tr:nth-child(even) td{background:#fbfdfc}
+    td{font-size:.91rem}
+    .word{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:1rem}
+    .pos{
+      display:inline-block;padding:2px 7px;border-radius:5px;
+      color:#075b54;background:var(--green-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+    }
+    /* 强化笔记精讲 */
+    .notes-grid{display:grid;gap:18px}
+    .note-card{
+      padding:24px 26px;border:1px solid #c9e2d8;border-radius:18px;
+      background:var(--green-soft);box-shadow:0 7px 20px rgba(20,90,70,.07);
+    }
+    .note-card h3{
+      margin:0 0 12px;font-size:1.14rem;color:#1d2a34;
+      border-bottom:2px solid #b8d8cd;padding-bottom:8px;
+    }
+    .note-card h3 .sec{color:#0f766e;font-size:.8rem;margin-right:6px}
+    .note-card h4{
+      margin:16px 0 6px;font-size:.98rem;color:#2b3a36;
+    }
+    .note-card p{margin:8px 0;font-size:.95rem;color:#2b3330}
+    .note-card ul{margin:8px 0;padding-left:22px}
+    .note-card li{margin:7px 0;font-size:.94rem;color:#2b3330}
+    .note-card li .ex{
+      font-family:"Hiragino Mincho ProN","Yu Mincho",serif;color:#14181a;
+    }
+    .note-card li .tr{display:block;color:#64727d;font-size:.9rem;margin-top:2px}
+    .note-card .key{
+      display:inline-block;padding:1px 8px;border-radius:6px;
+      background:#dff2ec;border:1px solid #8fc9b6;color:#0e5a46;
+      font:700 .86rem system-ui,sans-serif;
+    }
+    .note-card rt{color:#2f7cc4}
+    .forms{
+      margin-top:22px;padding:25px 28px;border-radius:18px;
+      background:#203f42;color:#effffb;
+    }
+    .forms h2{margin:0 0 10px;font-size:1.35rem}
+    .forms p{margin:6px 0;color:#d5eee8;font-size:.94rem}
+    .forms code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    .forms-inline{
+      margin:14px 2px 0;padding:16px 20px;border-radius:16px;
+      background:#203f42;color:#effffb;
+    }
+    .forms-inline h3{margin:0 0 8px;font-size:1.02rem;color:#baf6e8}
+    .forms-inline p{margin:5px 0;color:#d5eee8;font-size:.92rem;line-height:1.7}
+    .forms-inline code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    footer{margin-top:27px;color:var(--muted);font-size:.82rem;text-align:center}
+    @media(max-width:640px){
+      .wrap{padding:16px 13px 48px}
+      header{padding:30px 24px}
+      .language{padding:22px 20px}
+      .jp{font-size:1.04rem}
+      .top-nav{padding:8px 12px}
+      .top-nav .nav-title{display:none}
+    }
+  
+    .back-top{margin:12px 2px 0;text-align:right;font-size:.85rem}
+    .back-top a{color:var(--muted);text-decoration:none}
+    .back-top a:hover{color:var(--green)}
+  /* ===== 打印适配（A4 排版 / PDF 存为 A3 / 隐藏页眉页脚 / 卡片不跨页）===== */
+  @media print {
+    @page { size: A3; margin: 10mm 8mm; }
+    html, body { background: #ffffff !important; }
+    nav { display: none !important; }
+    .top-nav { display: flex !important; position: static !important; box-shadow: none !important; backdrop-filter: none; }
+    section { margin-bottom: 5mm; }
+    .card, .translation, .forms-inline, .note-card, .para-pair,
+    .vocab-card, .grammar-item, .language, .phrase-item,
+    .vocab-group, .analysis-block { break-inside: avoid; page-break-inside: avoid; }
+    h1, h2, h3, h4, .section-title { break-after: avoid; page-break-after: avoid; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    table { font-size: 0.9em; }
+    a { color: inherit; text-decoration: none; }
+    .forms-inline, .note-card, .card, .translation { box-shadow: none !important; }
+    .wrap { max-width: 100%; padding: 0; }
+    .jp { font-size: 0.98em; letter-spacing: 0.02em; }
+    .zh, .note { font-size: 0.95em; }
+    .language { padding: 12px 16px; }
+    .grammar-grid { gap: 8px; }
+    .table-wrap { box-shadow: none; }
+  }
+
+  /* ===== 跟读控制条（注入） ===== */
+  .player-bar{
+    position:sticky;top:56px;z-index:95;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    margin:18px 0 8px;padding:12px 16px;
+    border:1px solid var(--line);border-radius:18px;
+    background:rgba(255,253,248,.95);
+    box-shadow:0 8px 22px rgba(31,56,52,.08);
+  }
+  .pb-btn{
+    width:42px;height:42px;border:0;border-radius:50%;cursor:pointer;
+    display:inline-grid;place-items:center;
+    background:var(--green);color:#fff;font-size:1rem;
+    transition:transform .12s, background .15s;
+  }
+  .pb-btn:hover{background:#198f7c;transform:scale(1.06)}
+  .pb-btn.small{width:34px;height:34px;background:#e8f1ee;color:var(--green);font-size:.9rem}
+  .pb-btn.small:hover{background:#d6e8e3}
+  .pb-btn:disabled{opacity:.35;cursor:default;transform:none}
+  .rate-group{display:flex;gap:5px;margin-left:auto}
+  .rate-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .rate-btn.active{background:var(--green);border-color:var(--green);color:#fff}
+  .mode-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .mode-btn.active{background:var(--orange);border-color:var(--orange);color:#fff}
+  .progress{
+    flex-basis:100%;height:6px;border-radius:3px;
+    background:#e3ece8;position:relative;cursor:pointer;
+  }
+  .progress .fill{
+    position:absolute;left:0;top:0;bottom:0;border-radius:3px;
+    background:linear-gradient(90deg,#0f766e,#2ba98c);width:0%;
+  }
+  .progress .knob{
+    position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:#fff;border:2px solid var(--green);transform:translate(-50%,-50%);
+    left:0%;box-shadow:0 1px 4px rgba(0,0,0,.2);
+  }
+  .sentence-status{
+    flex-basis:100%;color:var(--muted);font:600 .78rem system-ui,sans-serif;
+  }
+  .sentence{
+    cursor:pointer;border-radius:8px;padding:3px 10px;margin:0 -10px;
+    transition:background .18s;
+    border-left:4px solid transparent;
+  }
+  .sentence:hover{background:#eaf4fc}
+  .sentence.playing{
+    background:linear-gradient(90deg, rgba(137,207,240,.60), rgba(137,207,240,.28));
+    border-left-color:#2f7cc4;
+    box-shadow:0 2px 10px rgba(47,124,196,.22);
+  }
+  .sentence .play-ic{
+    display:inline-block;margin-right:4px;color:#2f7cc4;
+    font-size:.72em;opacity:.5;font-family:system-ui,sans-serif;vertical-align:2px;
+  }
+  .sentence.playing .play-ic{opacity:1;color:#1c5f9e;transform:scale(1.1)}
+  @media(max-width:640px){
+    .player-bar{top:50px;padding:10px 12px}
+    .player-bar .rate-group{order:3;margin-left:0}
+  }
+  @media print{
+    .player-bar{display:none !important}
+    .sentence{cursor:default;padding:0;margin:0;border:0}
+    .sentence.playing{background:transparent;box-shadow:none;border:0}
+    .sentence .play-ic{display:none}
+  }
+
+</style>
+</head>
+<body>
+  <!-- 顶部索引 -->
+  <nav class="top-nav">
+    <span class="nav-title">索 引</span>
+    <a href="#p1">第一段</a>
+    <a href="#p2">第二段</a>
+    <a href="#p3">第三段</a>
+    <a href="#p4">第四段</a>
+    <a href="#p5">第五段</a>
+    <a href="#p6">第六段</a>
+    <a href="#p7">第七段</a>
+    <a href="#p8">第八段</a>
+    <a href="#p9">第九段</a>
+    <a href="#p10">第十段</a>
+    <a href="#grammar">语法</a>
+    <a href="#vocab">词汇与变形</a>
+    <a href="#notes">强化笔记</a>
+    <a class="to-top" href="#top">▲ 顶部</a>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header>
+      <p class="eyebrow">JAPANESE × CHINESE · WEEKLY QUIZ &amp; NOTES</p>
+      <h1>第2周 每周自测<br>日译中 5 题 ＋ 中译日 5 题（解析融合版）</h1>
+      <p>日语汉字均标注平假名读音（黄色）；每组内容按日语、中文交替呈现，含瑞译解析精讲。</p>
+    </header>
+
+  <div class="player-bar" id="player-bar">
+    <button class="pb-btn small" id="btn-prev" title="上一句（←）">⏮</button>
+    <button class="pb-btn" id="btn-play" title="播放/暂停（空格）">▶</button>
+    <button class="pb-btn small" id="btn-next" title="下一句（→）">⏭</button>
+    <div class="rate-group" id="rate-group">
+      <button class="rate-btn" data-rate="0.5">0.5x</button>
+      <button class="rate-btn" data-rate="0.75">0.75x</button>
+      <button class="rate-btn active" data-rate="1">1x</button>
+      <button class="rate-btn" data-rate="1.25">1.25x</button>
+      <button class="rate-btn" data-rate="1.5">1.5x</button>
+    </div>
+    <button class="mode-btn" id="btn-mode" title="循环模式">循环: 关</button>
+    <div class="progress" id="progress"><div class="fill" id="progress-fill"></div><div class="knob" id="progress-knob"></div></div>
+    <div class="sentence-status" id="sentence-status">点击下方任意日文句子开始跟读</div>
+  </div>
+
+
+    <nav>
+      <a href="#p1">第一段</a>
+      <a href="#p2">第二段</a>
+      <a href="#p3">第三段</a>
+      <a href="#p4">第四段</a>
+      <a href="#p5">第五段</a>
+      <a href="#p6">第六段</a>
+      <a href="#p7">第七段</a>
+      <a href="#p8">第八段</a>
+      <a href="#p9">第九段</a>
+      <a href="#p10">第十段</a>
+      <a href="#grammar">语法</a>
+      <a href="#vocab">词汇与变形</a>
+      <a href="#notes">强化笔记</a>
+    </nav>
+
+    <section id="p1">
+      <h2 class="section-title">第一段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="0" data-audio="p1_s1.mp3"><span class="play-ic">▶</span>日本商工会議所の<ruby>小林健<rt>こばやしけん</rt></ruby><ruby>会頭<rt>かいとう</rt></ruby>は15<ruby>日<rt>にち</rt></ruby>、<ruby>東京都内<rt>とうきょうとない</rt></ruby>で<ruby>開<rt>ひら</rt></ruby>いた<ruby>夏季政策懇談会<rt>かきせいさくこんだんかい</rt></ruby>後に<ruby>記者会見<rt>きしゃかいけん</rt></ruby>し、2026<ruby>年度<rt>ねんど</rt></ruby>の<ruby>最低賃金<rt>さいていちんぎん</rt></ruby>をめぐる<ruby>議論<rt>ぎろん</rt></ruby>が<ruby>本格化<rt>ほんかくか</rt></ruby>したことを<ruby>受<rt>う</rt></ruby>け「<ruby>企業<rt>きぎょう</rt></ruby>の<ruby>支払<rt>しはら</rt></ruby>い<ruby>能力<rt>のうりょく</rt></ruby>が<ruby>大事<rt>だいじ</rt></ruby>だ」と<ruby>強調<rt>きょうちょう</rt></ruby>した。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            日本商工会议所会长小林健15日，在东京都内开办的夏季政策座谈会后举行记者会，随着围绕2026年度最低工资讨论的全面展开，他强调：“企业的支付能力是很重要的。”
+          </p>
+          <p class="note">「東京」不是“市”而是“都”，不可译为“东京市”；「<ruby>本格化<rt>ほんかくか</rt></ruby>」→“全面展开”。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>開いた</code>＝開く（ひらく，v1 自他）的过去形（连体）：举办的。</p>
+        <p><code>強調した</code>＝強調する（v3 他）的过去形：强调了。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p2">
+      <h2 class="section-title">第二段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="1" data-audio="p2_s1.mp3"><span class="play-ic">▶</span><ruby>韓国<rt>かんこく</rt></ruby>の2027<ruby>年<rt>ねん</rt></ruby>の<ruby>最低賃金<rt>さいていちんぎん</rt></ruby>が、<ruby>時給<rt>じきゅう</rt></ruby>1<ruby>万<rt>まん</rt></ruby>700<ruby>ウォン<rt>ウォン</rt></ruby>（<ruby>約<rt>やく</rt></ruby>1180<ruby>円<rt>えん</rt></ruby>）に<ruby>決<rt>き</rt></ruby>まった。</span><span class="sentence" data-idx="2" data-audio="p2_s2.mp3"><span class="play-ic">▶</span>（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>週<rt>しゅう</rt></ruby>40<ruby>時間勤務<rt>じかんきんむ</rt></ruby>で<ruby>有給<rt>ゆうきゅう</rt></ruby>の<ruby>週休時間<rt>しゅうきゅうじかん</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む<ruby>月<rt>つき</rt></ruby>209<ruby>時間労働<rt>じかんろうどう</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>、<ruby>月額<rt>がつがく</rt></ruby>は223<ruby>万<rt>まん</rt></ruby>6300<ruby>ウォン<rt>ウォン</rt></ruby>（<ruby>約<rt>やく</rt></ruby>24<ruby>万<rt>まん</rt></ruby>6000<ruby>円<rt>えん</rt></ruby>）となり、2026<ruby>年<rt>ねん</rt></ruby>より7<ruby>万<rt>まん</rt></ruby>9420<ruby>ウォン<rt>ウォン</rt></ruby>（<ruby>約<rt>やく</rt></ruby>8700<ruby>円<rt>えん</rt></ruby>）<ruby>増<rt>ふ</rt></ruby>える。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            韩国2027年的最低工资，确定为每小时1万700韩元（约合1180日元）。（略）每周工作40小时，并计入带薪周休时间，每月按209小时计算的话，月工资将达到223万6300韩元（约合24万6000日元），比2026年增加7万9420韩元（约合8700日元）。
+          </p>
+          <p class="note">「ウォン」＝韩元；「<ruby>時給<rt>じきゅう</rt></ruby>」＝时薪；「<ruby>有給<rt>ゆうきゅう</rt></ruby>の<ruby>週休時間<rt>しゅうきゅうじかん</rt></ruby>」＝带薪周休时间（韩国“週休手當”制度）。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>決まった</code>＝決まる（きまる，v1 自）的过去形：确定为。</p>
+        <p><code>含む</code>＝辞书形（连体修饰「労働」）：包含……的。</p>
+        <p><code>増える</code>＝辞书形（句尾）：增加。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p3">
+      <h2 class="section-title">第三段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="3" data-audio="p3_s1.mp3"><span class="play-ic">▶</span><ruby>記録的<rt>きろくてき</rt></ruby>な<ruby>猛暑<rt>もうしょ</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>くヨーロッパで<ruby>山火事<rt>やまかじ</rt></ruby>が<ruby>相次<rt>あいつ</rt></ruby>ぎ、<ruby>甚大<rt>じんだい</rt></ruby>な<ruby>被害<rt>ひがい</rt></ruby>が出ています。</span><span class="sentence" data-idx="4" data-audio="p3_s2.mp3"><span class="play-ic">▶</span>スペイン<ruby>北東部<rt>ほくとうぶ</rt></ruby>では3<ruby>日<rt>にち</rt></ruby>に<ruby>発生<rt>はっせい</rt></ruby>した<ruby>山火事<rt>やまかじ</rt></ruby>が<ruby>強風<rt>きょうふう</rt></ruby>にあおられこれまでに1200ヘクタールが<ruby>焼失<rt>しょうしつ</rt></ruby>しました。</span><span class="sentence" data-idx="5" data-audio="p3_s3.mp3"><span class="play-ic">▶</span>（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）また、ポルトガルでも<ruby>大規模<rt>だいきぼ</rt></ruby>な<ruby>山火事<rt>やまかじ</rt></ruby>が<ruby>発生<rt>はっせい</rt></ruby>しています。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            在持续创纪录高温的欧洲接连发生森林火灾，造成了严重损失。在西班牙东北部，3日发生的森林火灾在强风助长下，截至目前已有1200公顷土地被烧毁。（略）此外，葡萄牙也发生了大规模森林火灾。
+          </p>
+          <p class="note">「<ruby>記録的<rt>きろくてき</rt></ruby>」＝创纪录的（非“值得记录的”）；「<ruby>北東部<rt>ほくとうぶ</rt></ruby>」按中文习惯译为“东北部”。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>相次ぎ</code>＝相次ぐ（あいつぐ，v1 自）的连用形：接连（中顿）。</p>
+        <p><code>出ています</code>＝出る（でる，v2 自）的て形＋いるます形：正在出现。</p>
+        <p><code>あおられ</code>＝あおる（v1 他）的被动连用：被（强风）助长。</p>
+        <p><code>焼失しました</code>＝焼失する（v3 自）的ます形过去：被烧毁。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p4">
+      <h2 class="section-title">第四段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="6" data-audio="p4_s1.mp3"><span class="play-ic">▶</span>シリアの<ruby>国営<rt>こくえい</rt></ruby>メディアによりますと、<ruby>首都<rt>しゅと</rt></ruby>ダマスカスの<ruby>中心部<rt>ちゅうしんぶ</rt></ruby>で7<ruby>日<rt>にち</rt></ruby>、<ruby>少<rt>すく</rt></ruby>なくとも2<ruby>回<rt>かい</rt></ruby>の<ruby>爆発<rt>ばくはつ</rt></ruby>がありました。</span><span class="sentence" data-idx="7" data-audio="p4_s2.mp3"><span class="play-ic">▶</span>いずれもマクロン<ruby>大統領<rt>だいとうりょう</rt></ruby>が<ruby>宿泊<rt>しゅくはく</rt></ruby>するホテルの<ruby>近<rt>ちか</rt></ruby>くで、<ruby>爆発物<rt>ばくはつぶつ</rt></ruby>は<ruby>道路脇<rt>どうろわき</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>とごみ<ruby>箱<rt>ばこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>設置<rt>せっち</rt></ruby>されていたということです。</span><span class="sentence" data-idx="8" data-audio="p4_s3.mp3"><span class="play-ic">▶</span>この<ruby>爆発<rt>ばくはつ</rt></ruby>で<ruby>警察官<rt>けいさつかん</rt></ruby>4<ruby>人<rt>にん</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む18<ruby>人<rt>にん</rt></ruby>がけがをしました。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            据叙利亚官方媒体报道，首都大马士革市中心7日至少发生了两起爆炸事件。据称，两起爆炸均发生在法国总统马克龙下榻的酒店附近，爆炸物分别被放置在路边的汽车内和垃圾桶中。此次爆炸造成包括4名警察在内的18人受伤。
+          </p>
+          <p class="note">「<ruby>爆発<rt>ばくはつ</rt></ruby>」「<ruby>爆発物<rt>ばくはつぶつ</rt></ruby>」＝爆炸／爆炸物（不可望文生义译为“爆发”）；「マクロン<ruby>大統領<rt>だいとうりょう</rt></ruby>」需补出“法国总统”以免歧义。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>設置されていた</code>＝設置する（v3 他）的被动＋ている过去：被放置着。</p>
+        <p><code>含む</code>＝辞书形（连体修饰「18人」）：包括……的。</p>
+        <p><code>けがをしました</code>＝けがをする＋ます过去：受伤了。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p5">
+      <h2 class="section-title">第五段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="9" data-audio="p5_s1.mp3"><span class="play-ic">▶</span><ruby>人生<rt>じんせい</rt></ruby>はチャンスだ。</span><span class="sentence" data-idx="10" data-audio="p5_s2.mp3"><span class="play-ic">▶</span><ruby>結婚<rt>けっこん</rt></ruby>もチャンスだ。</span><span class="sentence" data-idx="11" data-audio="p5_s3.mp3"><span class="play-ic">▶</span><ruby>恋愛<rt>れんあい</rt></ruby>もチャンスだ。</span><span class="sentence" data-idx="12" data-audio="p5_s4.mp3"><span class="play-ic">▶</span>と、したり<ruby>顔<rt>がお</rt></ruby>して<ruby>教<rt>おし</rt></ruby>える<ruby>苦労人<rt>くろうにん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いけれども、<ruby>私<rt>わたし</rt></ruby>は、そうでないと<ruby>思<rt>おも</rt></ruby>う。</span><span class="sentence" data-idx="13" data-audio="p5_s5.mp3"><span class="play-ic">▶</span><ruby>私<rt>わたし</rt></ruby>は<ruby>別段<rt>べつだん</rt></ruby>、れいの<ruby>唯物論的弁証法<rt>ゆいぶつろんてきべんしょうほう</rt></ruby>に<ruby>媚<rt>こ</rt></ruby>こびるわけではないが、<ruby>少<rt>すく</rt></ruby>くとも<ruby>恋愛<rt>れんあい</rt></ruby>は、チャンスでないと<ruby>思<rt>おも</rt></ruby>う。</span><span class="sentence" data-idx="14" data-audio="p5_s6.mp3"><span class="play-ic">▶</span><ruby>私<rt>わたし</rt></ruby>はそれを、<ruby>意志<rt>いし</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>う。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            人生是机遇，结婚也是机遇，恋爱也是机遇。许多饱经世故、历尽艰辛的人，摆出一副看透人生的样子去这样教导着别人。然而，我却并不这么认为。我并不是想刻意迎合所谓的唯物辩证法，但至少，我认为恋爱并不是机遇。我认为，恋爱是意志。
+          </p>
+          <p class="note">「したり<ruby>顔<rt>がお</rt></ruby>」＝得意的面容（此处配合「苦労人」译为“看透人生的样子”）；「れいの」＝所谓的、众所周知的（即「例の」）。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>教える</code>＝辞书形（连体修饰「苦労人」）：教导（的）。</p>
+        <p><code>媚こびる</code>＝辞书形（＋わけではない）：迎合（并不是……）。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p6">
+      <h2 class="section-title">第六段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="15" data-audio="p6_s1.mp3"><span class="play-ic">▶</span>ワールドカップは、<ruby>決<rt>けっ</rt></ruby>してゴールや<ruby>勝敗<rt>しょうはい</rt></ruby>だけの<ruby>大会<rt>たいかい</rt></ruby>ではない。</span><span class="sentence" data-idx="16" data-audio="p6_s2.mp3"><span class="play-ic">▶</span>1930<ruby>年<rt>ねん</rt></ruby>、ウルグアイ・モンテビデオのぬかるんだ<ruby>競技場<rt>きょうぎじょう</rt></ruby>で<ruby>開催<rt>かいさい</rt></ruby>されて<ruby>以来<rt>いらい</rt></ruby>、この<ruby>大会<rt>たいかい</rt></ruby>は<ruby>権力<rt>けんりょく</rt></ruby>、<ruby>政治<rt>せいじ</rt></ruby>、<ruby>資本<rt>しほん</rt></ruby>、そして<ruby>民族的<rt>みんぞくてき</rt></ruby>アイデンティティといった<ruby>複雑<rt>ふくざつ</rt></ruby>な<ruby>要素<rt>ようそ</rt></ruby>と<ruby>深<rt>ふか</rt></ruby>く<ruby>絡<rt>から</rt></ruby>み<ruby>合<rt>あ</rt></ruby>ってきた。</span><span class="sentence" data-idx="17" data-audio="p6_s3.mp3"><span class="play-ic">▶</span>（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）ワールドカップは、<ruby>権力<rt>けんりょく</rt></ruby>と<ruby>栄光<rt>えいこう</rt></ruby>が<ruby>織<rt>お</rt></ruby>り<ruby>成<rt>な</rt></ruby>す<ruby>複雑<rt>ふくざつ</rt></ruby>な<ruby>歴史<rt>れきし</rt></ruby>でもある。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            世界杯从来不只是关于进球与胜负。自1930年乌拉圭蒙得维的亚的泥泞赛场起，这项赛事便与权力、政治、资本和民族认同等复杂因素纠缠不清，（略）更是一部由权力与荣耀交织而成的复杂历史。
+          </p>
+          <p class="note">“泥泞”译为「ぬかるんだ」（不可用「泥まみれ」，那是“沾满泥”）。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>開催されて以来</code>＝開催する（v3 他）被动＋て以来：自举办以来。</p>
+        <p><code>絡み合ってきた</code>＝絡み合う（からみあう，v1 自）的て形＋きた：一直纠缠在一起。</p>
+        <p><code>織り成す</code>＝辞书形（连体修饰「歴史」）：交织而成的。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p7">
+      <h2 class="section-title">第七段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="18" data-audio="p7_s1.mp3"><span class="play-ic">▶</span>BBC<ruby>国際部<rt>こくさいぶ</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>った<ruby>統計分析<rt>とうけいぶんせき</rt></ruby>によると、グループステージから<ruby>準々決勝<rt>じゅんじゅんけっしょう</rt></ruby>までの100<ruby>試合<rt>しあい</rt></ruby>を<ruby>対象<rt>たいしょう</rt></ruby>に<ruby>分析<rt>ぶんせき</rt></ruby>した<ruby>結果<rt>けっか</rt></ruby>、サッカーの<ruby>統括団体<rt>とうかつだんたい</rt></ruby>である<ruby>国際<rt>こくさい</rt></ruby>サッカー<ruby>連盟<rt>れんめい</rt></ruby>（FIFA）が<ruby>導入<rt>どうにゅう</rt></ruby>した<ruby>物議<rt>ぶつぎ</rt></ruby>を<ruby>醸<rt>かも</rt></ruby>している「<ruby>給水<rt>きゅうすい</rt></ruby>タイム（hydration break）」の<ruby>実施後<rt>じっしご</rt></ruby>、<ruby>試合<rt>しあい</rt></ruby>が<ruby>中断<rt>ちゅうだん</rt></ruby>されたことで、<ruby>得点数<rt>とくてんすう</rt></ruby>が<ruby>異常<rt>いじょう</rt></ruby>に<ruby>増加<rt>ぞうか</rt></ruby>したことが<ruby>明<rt>あき</rt></ruby>らかになった。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            BBC国际部取得的一项统计分析显示，从小组赛到八强赛的100场比赛中，足球管理机构国际足协（FIFA）推行具争议性的“补水暂停”（hydration break）后，导致比赛因中断后，出现异常高的入球数目。
+          </p>
+          <p class="note">“统计分析显示”→“<ruby>統計分析<rt>とうけいぶんせき</rt></ruby>によると…ことが<ruby>明<rt>あき</rt></ruby>らかになった”；“八强赛”→<ruby>準々決勝<rt>じゅんじゅんけっしょう</rt></ruby>（四强=準決勝、决赛=決勝戦）。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>行った</code>＝行う（おこなう，v1 他）的过去形（连体）：进行的。</p>
+        <p><code>醸している</code>＝醸す（かもす，v1 他）的て形＋いる：正在引发（争议）。</p>
+        <p><code>中断された</code>＝中断する（v3 自他）的被动过去形：被中断。</p>
+        <p><code>明らかになった</code>＝明らかになる＋た：变得明确。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p8">
+      <h2 class="section-title">第八段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="19" data-audio="p8_s1.mp3"><span class="play-ic">▶</span><ruby>昨年<rt>さくねん</rt></ruby>、<ruby>我<rt>わ</rt></ruby>が<ruby>国<rt>くに</rt></ruby>における<ruby>人工知能<rt>じんこうちのう</rt></ruby>（AI）<ruby>関連産業<rt>かんれんさんぎょう</rt></ruby>の<ruby>規模<rt>きぼ</rt></ruby>は1<ruby>兆元<rt>ちょうげん</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えた。</span><span class="sentence" data-idx="20" data-audio="p8_s2.mp3"><span class="play-ic">▶</span><ruby>今年<rt>ことし</rt></ruby>の<ruby>成長率<rt>せいちょうりつ</rt></ruby>が30％を<ruby>上回<rt>うわまわ</rt></ruby>ると<ruby>予測<rt>よそく</rt></ruby>されている。</span><span class="sentence" data-idx="21" data-audio="p8_s3.mp3"><span class="play-ic">▶</span><ruby>国家発展改革委員会<rt>こっかはってんかいかくいいんかい</rt></ruby>は30か<ruby>所<rt>しょ</rt></ruby>を<ruby>超<rt>こ</rt></ruby>える<ruby>国家<rt>こっか</rt></ruby>AI<ruby>応用実証<rt>おうようじっしょう</rt></ruby>・<ruby>試験拠点<rt>しけんきょてん</rt></ruby>を<ruby>整備<rt>せいび</rt></ruby>するとともに、<ruby>中央企業<rt>ちゅうおうきぎょう</rt></ruby>および<ruby>国有企業<rt>こくゆうきぎょう</rt></ruby>に<ruby>対<rt>たい</rt></ruby>し、1,000<ruby>件<rt>けん</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えるAI<ruby>活用<rt>かつよう</rt></ruby>シーンを<ruby>開放<rt>かいほう</rt></ruby>するよう<ruby>推<rt>お</rt></ruby>し<ruby>進<rt>すす</rt></ruby>めている。</span><span class="sentence" data-idx="22" data-audio="p8_s4.mp3"><span class="play-ic">▶</span><ruby>現在<rt>げんざい</rt></ruby>、<ruby>重点業種<rt>じゅうてんぎょうしゅ</rt></ruby>におけるAIの<ruby>全体的<rt>ぜんたいてき</rt></ruby>な<ruby>導入率<rt>どうにゅうりつ</rt></ruby>は80％を<ruby>突破<rt>とっぱ</rt></ruby>している。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            去年我国人工智能相关产业规模超万亿，初步预测，今年增速会在30％以上。国家发展改革委布局了30余个国家人工智能应用中试基地，推进央国企开放1000余个应用场景。目前，重点行业的人工智能整体渗透率突破80%。
+          </p>
+          <p class="note">“去年”→「<ruby>昨年<rt>さくねん</rt></ruby>」（书面语更正式）；“渗透率”→<ruby>導入率<rt>どうにゅうりつ</rt></ruby>／<ruby>浸透率<rt>しんとうりつ</rt></ruby>。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>超えた</code>＝超える（こえる，v2 他）的过去形：超过了。</p>
+        <p><code>上回ると予測されている</code>＝上回る（うわまわる，v1 他）＋と予測される：预计将超过。</p>
+        <p><code>整備するとともに</code>＝整備する（v3 他）＋とともに：在建设……的同时。</p>
+        <p><code>突破している</code>＝突破する（v3 他）的て形＋いる：正在突破。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p9">
+      <h2 class="section-title">第九段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="23" data-audio="p9_s1.mp3"><span class="play-ic">▶</span>18<ruby>日<rt>にち</rt></ruby>、BYDは、パキスタンの<ruby>首都<rt>しゅと</rt></ruby>イスラマバードで、イスラマバード<ruby>警察署<rt>けいさつしょ</rt></ruby>にBYD<ruby>製<rt>せい</rt></ruby>の<ruby>電気自動車<rt>でんきじどうしゃ</rt></ruby>25<ruby>台<rt>だい</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>き<ruby>渡<rt>わた</rt></ruby>した。</span><span class="sentence" data-idx="24" data-audio="p9_s2.mp3"><span class="play-ic">▶</span><ruby>今年<rt>ことし</rt></ruby>4<ruby>月<rt>がつ</rt></ruby><ruby>以降<rt>いこう</rt></ruby>、イスラマバード<ruby>警察署<rt>けいさつしょ</rt></ruby>はBYDに<ruby>対<rt>たい</rt></ruby>し、100<ruby>台<rt>だい</rt></ruby><ruby>近<rt>ちか</rt></ruby>くの<ruby>電気自動車<rt>でんきじどうしゃ</rt></ruby>を<ruby>発注<rt>はっちゅう</rt></ruby>しており、これまでに58<ruby>台<rt>だい</rt></ruby>が<ruby>段階的<rt>だんかいてき</rt></ruby>に<ruby>納車<rt>のうしゃ</rt></ruby>された。</span><span class="sentence" data-idx="25" data-audio="p9_s3.mp3"><span class="play-ic">▶</span>（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>残<rt>のこ</rt></ruby>りの<ruby>受注<rt>じゅちゅう</rt></ruby>については、<ruby>今月末<rt>こんげつまつ</rt></ruby>までに<ruby>納車<rt>のうしゃ</rt></ruby>が<ruby>完了<rt>かんりょう</rt></ruby>する<ruby>見込<rt>みこ</rt></ruby>みである。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            18日，比亚迪在巴基斯坦首都伊斯兰堡向伊斯兰堡警察局交付了25辆比亚迪电动汽车。今年4月以来，伊斯兰堡警察局已向比亚迪下单订购了近100台电动汽车，目前比亚迪已分批次交付了58台，（略）剩余订单预计将于本月底交付完成。
+          </p>
+          <p class="note">“比亚迪”→“BYD（ビーワイディー）”；“下单订购”=「<ruby>発注<rt>はっちゅう</rt></ruby>」、“订单”=「<ruby>受注<rt>じゅちゅう</rt></ruby>」（外贸高频词）。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>引き渡した</code>＝引き渡す（ひきわたす，v1 他）的过去形：交付了。</p>
+        <p><code>発注しており</code>＝発注する（v3 他）的て形＋いる连用：正在下单（中顿）。</p>
+        <p><code>納車された</code>＝納車する（v3 他）的被动过去形：被交付。</p>
+        <p><code>完了する見込み</code>＝完了する（v3 自他）＋見込み：预计将完成。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p10">
+      <h2 class="section-title">第十段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="26" data-audio="p10_s1.mp3"><span class="play-ic">▶</span>およそ7<ruby>世紀<rt>せいき</rt></ruby><ruby>頃<rt>ころ</rt></ruby>、<ruby>頭<rt>あたま</rt></ruby>に<ruby>白<rt>しろ</rt></ruby>い<ruby>布<rt>ぬの</rt></ruby>を<ruby>巻<rt>ま</rt></ruby>いたアラブ<ruby>商人<rt>しょうにん</rt></ruby>たちが<ruby>東方<rt>とうほう</rt></ruby>の<ruby>唐<rt>とう</rt></ruby>へとやって<ruby>来<rt>き</rt></ruby>た。</span><span class="sentence" data-idx="27" data-audio="p10_s2.mp3"><span class="play-ic">▶</span>彼らは<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>風土<rt>ふうど</rt></ruby>や<ruby>生活<rt>せいかつ</rt></ruby>に<ruby>馴染<rt>なじ</rt></ruby>み、この<ruby>地<rt>ち</rt></ruby>で<ruby>妻<rt>つま</rt></ruby>を<ruby>迎<rt>むか</rt></ruby>えて子どもをもうけ、そのまま<ruby>定住<rt>ていじゅう</rt></ruby>した。</span><span class="sentence" data-idx="28" data-audio="p10_s3.mp3"><span class="play-ic">▶</span>1219<ruby>年<rt>ねん</rt></ruby>、チンギス・ハーンが<ruby>軍<rt>ぐん</rt></ruby>を<ruby>率<rt>ひき</rt></ruby>いて<ruby>西征<rt>せいせい</rt></ruby>し、1258<ruby>年<rt>ねん</rt></ruby>、フレグがバグダードを<ruby>攻略<rt>こうりゃく</rt></ruby>した。</span><span class="sentence" data-idx="29" data-audio="p10_s4.mp3"><span class="play-ic">▶</span>パミール<ruby>高原<rt>こうげん</rt></ruby>の<ruby>西<rt>にし</rt></ruby>から<ruby>黒海<rt>こっかい</rt></ruby>の<ruby>東<rt>ひがし</rt></ruby>に<ruby>至<rt>いた</rt></ruby>るまで、イスラム<ruby>教<rt>きょう</rt></ruby>を<ruby>信仰<rt>しんこう</rt></ruby>する<ruby>諸民族<rt>しょみんぞく</rt></ruby>の<ruby>居住地<rt>きょじゅうち</rt></ruby>は<ruby>相次<rt>あいつ</rt></ruby>いでモンゴル<ruby>貴族<rt>きぞく</rt></ruby>の<ruby>支配下<rt>しはいか</rt></ruby>に<ruby>置<rt>お</rt></ruby>かれ、<ruby>征服者<rt>せいふくしゃ</rt></ruby>は<ruby>被征服民<rt>ひせいふくみん</rt></ruby>を<ruby>大規模<rt>だいきぼ</rt></ruby>に<ruby>東<rt>ひがし</rt></ruby>の方へ<ruby>移住<rt>いじゅう</rt></ruby>させた。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            大约远在公元7世纪，一些头上缠着白布的阿拉伯商人来到了东土大唐，他们习惯了神州大地的水土，在这里娶妻生子，留下来了。1219年成吉思汗率兵西征，1258年旭烈兀攻陷巴格达，葱岭以西、黑海以东，信仰伊斯兰教的各民族的土地被蒙古贵族陆续占领，征服者强迫被征服者大批迁徙到东方。
+          </p>
+          <p class="note">蒙古人名、地名按蒙语音译：“成吉思汗”→“チンギス・ハーン”，“旭烈兀”→“フレグ”；“葱岭”→“パミール高原”（帕米尔高原）。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>巻いた</code>＝巻く（まく，v1 自他）的过去形（连体）：缠着……的。</p>
+        <p><code>馴染み</code>＝馴染む（なじむ，v1 自）的连用形：习惯（中顿）。</p>
+        <p><code>率いて</code>＝率いる（ひきいる，v2 他）的て形：率领。</p>
+        <p><code>攻略した</code>＝攻略する（v3 他）的过去形：攻陷了。</p>
+        <p><code>至るまで</code>＝至る（いたる，v1 自）＋まで：直到……。</p>
+        <p><code>移住させた</code>＝移住する（v3 自）使役过去形：强迫迁徙。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+
+
+    <section id="grammar">
+      <h2 class="section-title"><span>文</span>本次语法</h2>
+      <div class="grammar-grid">
+        <article class="card"><h3><span class="g-num">1</span>〜をめぐる</h3><p><span class="pattern"><ruby>最低賃金<rt>さいていちんぎん</rt></ruby>をめぐる<ruby>議論<rt>ぎろん</rt></ruby></span></p><p>“围绕……的（讨论）”。</p></article>
+        <article class="card"><h3><span class="g-num">2</span>〜ことを<ruby>受<rt>う</rt></ruby>け</h3><p><span class="pattern"><ruby>本格化<rt>ほんかくか</rt></ruby>したことを<ruby>受<rt>う</rt></ruby>け</span></p><p>“鉴于……、随着……”。书面语。</p></article>
+        <article class="card"><h3><span class="g-num">3</span>〜によりますと／〜によると</h3><p><span class="pattern">シリアの<ruby>国営<rt>こくえい</rt></ruby>メディアによりますと</span></p><p>“据……”。礼貌体「によりますと」。</p></article>
+        <article class="card"><h3><span class="g-num">4</span>〜に<ruby>設置<rt>せっち</rt></ruby>されていた</h3><p><span class="pattern"><ruby>道路脇<rt>どうろわき</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>とごみ<ruby>箱<rt>ばこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>設置<rt>せっち</rt></ruby>されていた</span></p><p>“被放置在……”。被动＋持续过去。</p></article>
+        <article class="card"><h3><span class="g-num">5</span>〜けれども</h3><p><span class="pattern"><ruby>苦労人<rt>くろうにん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いけれども</span></p><p>“虽然……但……”。转折。</p></article>
+        <article class="card"><h3><span class="g-num">6</span>〜わけではない</h3><p><span class="pattern"><ruby>媚<rt>こ</rt></ruby>こびるわけではない</span></p><p>“并不是……”。部分否定。</p></article>
+        <article class="card"><h3><span class="g-num">7</span>〜て<ruby>以来<rt>いらい</rt></ruby></h3><p><span class="pattern"><ruby>開催<rt>かいさい</rt></ruby>されて<ruby>以来<rt>いらい</rt></ruby></span></p><p>“自……以来”。</p></article>
+        <article class="card"><h3><span class="g-num">8</span>〜を<ruby>対象<rt>たいしょう</rt></ruby>に<ruby>分析<rt>ぶんせき</rt></ruby>した<ruby>結果<rt>けっか</rt></ruby></h3><p><span class="pattern">100<ruby>試合<rt>しあい</rt></ruby>を<ruby>対象<rt>たいしょう</rt></ruby>に<ruby>分析<rt>ぶんせき</rt></ruby>した<ruby>結果<rt>けっか</rt></ruby></span></p><p>“以……为对象分析的结果”。</p></article>
+        <article class="card"><h3><span class="g-num">9</span>〜を<ruby>上回<rt>うわまわ</rt></ruby>る</h3><p><span class="pattern">30％を<ruby>上回<rt>うわまわ</rt></ruby>る</span></p><p>“超过……、高于……”。注意助词用「を」。</p></article>
+        <article class="card"><h3><span class="g-num">10</span>〜するとともに</h3><p><span class="pattern"><ruby>整備<rt>せいび</rt></ruby>するとともに</span></p><p>“在……的同时，也……”。书面并列。</p></article>
+        <article class="card"><h3><span class="g-num">11</span>〜<ruby>見込<rt>みこ</rt></ruby>みである</h3><p><span class="pattern"><ruby>完了<rt>かんりょう</rt></ruby>する<ruby>見込<rt>みこ</rt></ruby>みである</span></p><p>“预计将……”。</p></article>
+        <article class="card"><h3><span class="g-num">12</span>〜に<ruby>至<rt>いた</rt></ruby>るまで</h3><p><span class="pattern"><ruby>黒海<rt>こっかい</rt></ruby>の<ruby>東<rt>ひがし</rt></ruby>に<ruby>至<rt>いた</rt></ruby>るまで</span></p><p>“直到……、乃至……”。范围之广。</p></article>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="vocab">
+      <h2 class="section-title"><span>词</span>词汇、短语与读音</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>单词／短语</th><th>读音</th><th>词性</th><th>中文释义</th><th>文中用法</th></tr></thead>
+          <tbody>
+            <tr><td class="word">最低賃金</td><td>さいていちんぎん</td><td><span class="pos">n</span></td><td>最低工资</td><td><ruby>最低賃金<rt>さいていちんぎん</rt></ruby></td></tr>
+            <tr><td class="word">会頭</td><td>かいとう</td><td><span class="pos">n</span></td><td>会长</td><td><ruby>小林健<rt>こばやしけん</rt></ruby><ruby>会頭<rt>かいとう</rt></ruby></td></tr>
+            <tr><td class="word">本格化する</td><td>ほんかくかする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td>全面展开、正式化</td><td><ruby>議論<rt>ぎろん</rt></ruby>が<ruby>本格化<rt>ほんかくか</rt></ruby>した</td></tr>
+            <tr><td class="word">支払い能力</td><td>しはらいのうりょく</td><td><span class="pos">n</span></td><td>支付能力</td><td><ruby>企業<rt>きぎょう</rt></ruby>の<ruby>支払<rt>しはら</rt></ruby>い<ruby>能力<rt>のうりょく</rt></ruby></td></tr>
+            <tr><td class="word">時給</td><td>じきゅう</td><td><span class="pos">n</span></td><td>时薪</td><td><ruby>時給<rt>じきゅう</rt></ruby>1<ruby>万<rt>まん</rt></ruby>700<ruby>ウォン<rt>ウォン</rt></ruby></td></tr>
+            <tr><td class="word">有給</td><td>ゆうきゅう</td><td><span class="pos">n</span></td><td>带薪</td><td><ruby>有給<rt>ゆうきゅう</rt></ruby>の<ruby>週休時間<rt>しゅうきゅうじかん</rt></ruby></td></tr>
+            <tr><td class="word">記録的</td><td>きろくてき</td><td><span class="pos">ナ形</span></td><td>创纪录的</td><td><ruby>記録的<rt>きろくてき</rt></ruby>な<ruby>猛暑<rt>もうしょ</rt></ruby></td></tr>
+            <tr><td class="word">山火事</td><td>やまかじ</td><td><span class="pos">n</span></td><td>森林火灾</td><td><ruby>山火事<rt>やまかじ</rt></ruby>が<ruby>相次<rt>あいつ</rt></ruby>ぎ</td></tr>
+            <tr><td class="word">甚大</td><td>じんだい</td><td><span class="pos">ナ形</span></td><td>严重的、巨大的</td><td><ruby>甚大<rt>じんだい</rt></ruby>な<ruby>被害<rt>ひがい</rt></ruby></td></tr>
+            <tr><td class="word">焼失する</td><td>しょうしつする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td>烧毁</td><td>1200ヘクタールが<ruby>焼失<rt>しょうしつ</rt></ruby>した</td></tr>
+            <tr><td class="word">国営</td><td>こくえい</td><td><span class="pos">n</span></td><td>国营</td><td>シリアの<ruby>国営<rt>こくえい</rt></ruby>メディア</td></tr>
+            <tr><td class="word">爆発物</td><td>ばくはつぶつ</td><td><span class="pos">n</span></td><td>爆炸物</td><td><ruby>爆発物<rt>ばくはつぶつ</rt></ruby>は…<ruby>設置<rt>せっち</rt></ruby>されていた</td></tr>
+            <tr><td class="word">道路脇</td><td>どうろわき</td><td><span class="pos">n</span></td><td>路边</td><td><ruby>道路脇<rt>どうろわき</rt></ruby>の<ruby>車<rt>くるま</rt></ruby></td></tr>
+            <tr><td class="word">宿泊する</td><td>しゅくはくする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td>下榻、住宿</td><td>マクロン<ruby>大統領<rt>だいとうりょう</rt></ruby>が<ruby>宿泊<rt>しゅくはく</rt></ruby>する</td></tr>
+            <tr><td class="word">苦労人</td><td>くろうにん</td><td><span class="pos">n</span></td><td>饱经世故的人</td><td><ruby>教<rt>おし</rt></ruby>える<ruby>苦労人<rt>くろうにん</rt></ruby></td></tr>
+            <tr><td class="word">別段</td><td>べつだん</td><td><span class="pos">adv</span></td><td>并不特别（＋否定）</td><td><ruby>私<rt>わたし</rt></ruby>は<ruby>別段<rt>べつだん</rt></ruby>…わけではない</td></tr>
+            <tr><td class="word">唯物論的弁証法</td><td>ゆいぶつろんてきべんしょうほう</td><td><span class="pos">n</span></td><td>唯物辩证法</td><td>れいの<ruby>唯物論的弁証法<rt>ゆいぶつろんてきべんしょうほう</rt></ruby></td></tr>
+            <tr><td class="word">ぬかるんだ</td><td>ぬかるんだ</td><td><span class="pos">v1 自</span></td><td>泥泞的</td><td>ぬかるんだ<ruby>競技場<rt>きょうぎじょう</rt></ruby></td></tr>
+            <tr><td class="word">アイデンティティ</td><td>アイデンティティ</td><td><span class="pos">n</span></td><td>身份认同</td><td><ruby>民族的<rt>みんぞくてき</rt></ruby>アイデンティティ</td></tr>
+            <tr><td class="word">絡み合う</td><td>からみあう</td><td><span class="pos">v1 自</span></td><td>纠缠在一起</td><td><ruby>深<rt>ふか</rt></ruby>く<ruby>絡<rt>から</rt></ruby>み<ruby>合<rt>あ</rt></ruby>ってきた</td></tr>
+            <tr><td class="word">準々決勝</td><td>じゅんじゅんけっしょう</td><td><span class="pos">n</span></td><td>八强赛</td><td>から<ruby>準々決勝<rt>じゅんじゅんけっしょう</rt></ruby>まで</td></tr>
+            <tr><td class="word">物議を醸す</td><td>ぶつぎをかもす</td><td><span class="pos">惯用</span></td><td>引发争议</td><td><ruby>物議<rt>ぶつぎ</rt></ruby>を<ruby>醸<rt>かも</rt></ruby>している</td></tr>
+            <tr><td class="word">給水タイム</td><td>きゅうすいタイム</td><td><span class="pos">n</span></td><td>补水暂停</td><td>「<ruby>給水<rt>きゅうすい</rt></ruby>タイム」</td></tr>
+            <tr><td class="word">導入率</td><td>どうにゅうりつ</td><td><span class="pos">n</span></td><td>渗透率、导入率</td><td>AIの<ruby>導入率<rt>どうにゅうりつ</rt></ruby></td></tr>
+            <tr><td class="word">突破する</td><td>とっぱする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>突破</td><td>80％を<ruby>突破<rt>とっぱ</rt></ruby>している</td></tr>
+            <tr><td class="word">発注</td><td>はっちゅう</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>下单订购</td><td>100<ruby>台<rt>だい</rt></ruby><ruby>近<rt>ちか</rt></ruby>くを<ruby>発注<rt>はっちゅう</rt></ruby>しており</td></tr>
+            <tr><td class="word">受注</td><td>じゅちゅう</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>订单（接单）</td><td><ruby>残<rt>のこ</rt></ruby>りの<ruby>受注<rt>じゅちゅう</rt></ruby></td></tr>
+            <tr><td class="word">納車</td><td>のうしゃ</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>交车、交付</td><td>58<ruby>台<rt>だい</rt></ruby>が…<ruby>納車<rt>のうしゃ</rt></ruby>された</td></tr>
+            <tr><td class="word">馴染む</td><td>なじむ</td><td><span class="pos">v1 自</span></td><td>习惯、适应</td><td><ruby>風土<rt>ふうど</rt></ruby>や<ruby>生活<rt>せいかつ</rt></ruby>に<ruby>馴染<rt>なじ</rt></ruby>み</td></tr>
+            <tr><td class="word">定住する</td><td>ていじゅうする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td>定居</td><td>そのまま<ruby>定住<rt>ていじゅう</rt></ruby>した</td></tr>
+            <tr><td class="word">攻略する</td><td>こうりゃくする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>攻陷</td><td>バグダードを<ruby>攻略<rt>こうりゃく</rt></ruby>した</td></tr>
+            <tr><td class="word">被征服民</td><td>ひせいふくみん</td><td><span class="pos">n</span></td><td>被征服者</td><td><ruby>征服者<rt>せいふくしゃ</rt></ruby>は<ruby>被征服民<rt>ひせいふくみん</rt></ruby>を…<ruby>移住<rt>いじゅう</rt></ruby>させた</td></tr>
+          </tbody>
+        </table>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="notes">
+      <h2 class="section-title"><span>笔</span>解析精讲（瑞译）</h2>
+      <div class="notes-grid">
+        <article class="note-card"><h3><span class="sec">第一段</span>日译中 · 最低工资</h3><ul><li>「東京」是“都”不是“市”，不可译为“东京市”（同理「北海道」≠“北海市”）。</li><li>「<span class="ex">本格化</span>」＝走向正式阶段，可译为“全面展开”。</li></ul></article>
+        <article class="note-card"><h3><span class="sec">第二段</span>日译中 · 韩国最低工资</h3><ul><li>「ウォン」＝韩元（韩语 won，汉字“圓”）；「<span class="ex">時給</span>」＝时薪。</li><li>「<span class="ex">有給の週休時間</span>」＝带薪周休时间（对应韩国“週休手當”制度）。</li></ul></article>
+        <article class="note-card"><h3><span class="sec">第三段</span>日译中 · 欧洲山火</h3><ul><li>「<span class="ex">記録的</span>」＝创纪录的（非“值得记录的”）。</li><li>「北東部」按中文习惯译为“东北部”。</li></ul></article>
+        <article class="note-card"><h3><span class="sec">第四段</span>日译中 · 大马士革爆炸</h3><ul><li>「爆発／爆発物」＝爆炸／爆炸物（不可望文生义译为“爆发”）。</li><li>「マクロン大統領」需补出“法国总统”以免歧义。</li></ul></article>
+        <article class="note-card"><h3><span class="sec">第五段</span>日译中 · 太宰治《机会》</h3><ul><li>「<span class="ex">したり顔</span>」＝得意的面容（配合“苦労人”译为“看透人生的样子”）。</li><li>「れいの」＝所谓的、众所周知的（即「例の」）。</li></ul></article>
+        <article class="note-card"><h3><span class="sec">第六段</span>中译日 · 世界杯</h3><ul><li>“泥泞”→“<span class="ex">ぬかるんだ</span>”（不可用「泥まみれ」，那是“沾满泥”）。</li></ul></article>
+        <article class="note-card"><h3><span class="sec">第七段</span>中译日 · BBC补水暂停</h3><ul><li>“统计分析显示”→“<span class="ex">統計分析によると…ことが明らかになった</span>”。</li><li>“八强赛”→<span class="ex">準々決勝</span>（四强=準決勝、决赛=決勝戦）。</li></ul></article>
+        <article class="note-card"><h3><span class="sec">第八段</span>中译日 · AI产业</h3><ul><li>“去年”→“<span class="ex">昨年</span>”（更书面）；“渗透率”→<span class="ex">導入率／浸透率</span>。</li></ul></article>
+        <article class="note-card"><h3><span class="sec">第九段</span>中译日 · 比亚迪</h3><ul><li>“比亚迪”→“BYD（ビーワイディー）”。</li><li>“下单订购”=「<span class="ex">発注</span>」、“订单”=「<span class="ex">受注</span>」（外贸高频词）。</li></ul></article>
+        <article class="note-card"><h3><span class="sec">第十段</span>中译日 · 穆斯林的葬礼</h3><ul><li>蒙古人名按蒙语音译：“成吉思汗”→“チンギス・ハーン”、“旭烈兀”→“フレグ”。</li><li>“葱岭”→“<span class="ex">パミール高原</span>”（帕米尔高原）。</li></ul></article>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <footer>
+      第2周 每周自测（解析融合版）｜日语读音（黄色平假名）、语法、词汇、文中变形与解析精讲整理<br>
+      正文依据用户提供的资料整理，仅供个人学习使用。
+    </footer>
+  </main>
+
+
+<script>
+(function(){
+  const AUDIO_DIR = "第2周/audio/";
+  const TOTAL = 30;
+  let current = 0;
+  let playing = false;
+  let rate = 1.0;
+  let loopMode = false;
+  const audio = new Audio();
+  const $ = id => document.getElementById(id);
+
+  function playSentence(idx){
+    if (idx < 0 || idx >= TOTAL) return;
+    current = idx;
+    playing = true;
+    updateUI();
+    const s = document.querySelector('.sentence[data-idx="' + idx + '"]');
+    audio.src = AUDIO_DIR + (s ? s.dataset.audio : 'p1_s1.mp3');
+    audio.playbackRate = rate;
+    audio.currentTime = 0;
+    audio.play().then(() => { playing = true; updateUI(); })
+      .catch(e => { console.error('播放失败:', e); });
+  }
+
+  function togglePlay(){
+    if (playing){ audio.pause(); playing=false; updateUI(); }
+    else if (!audio.src) playSentence(current);
+    else { audio.play().then(()=>{playing=true;updateUI();}); }
+  }
+  function nextSentence(){
+    if (current+1 < TOTAL) playSentence(current+1);
+    else if (loopMode) playSentence(0);
+    else { audio.pause(); playing=false; updateUI(); }
+  }
+  function prevSentence(){ if (current>0) playSentence(current-1); }
+
+  function sentenceInSec(el){
+    const sec = el.closest('section');
+    const all = sec.querySelectorAll('.sentence');
+    for (let i=0;i<all.length;i++) if (all[i]===el) return i+1;
+    return 1;
+  }
+
+  function updateUI(){
+    $('btn-play').textContent = playing ? '⏸' : '▶';
+    document.querySelectorAll('.sentence').forEach(el=>{
+      el.classList.toggle('playing', parseInt(el.dataset.idx)===current);
+    });
+    const s = document.querySelector('.sentence[data-idx="'+current+'"]');
+    if (s){
+      const sec = s.closest('section');
+      const st = sec ? sec.querySelector('.section-title').textContent : '';
+      const n = sentenceInSec(s);
+      $('sentence-status').textContent = (playing?'播放中':'暂停')+' ｜ '+st+' 第'+n+'句';
+      const rect = s.getBoundingClientRect();
+      const bar = $('player-bar').getBoundingClientRect();
+      if (rect.top < bar.bottom || rect.bottom > window.innerHeight){
+        s.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    }
+  }
+
+  audio.addEventListener('ended', nextSentence);
+  audio.addEventListener('timeupdate', ()=>{
+    if (audio.duration){
+      const pct = audio.currentTime/audio.duration*100;
+      $('progress-fill').style.width = pct+'%';
+      $('progress-knob').style.left = pct+'%';
+    }
+  });
+  $('progress').addEventListener('click', e=>{
+    if (!audio.duration) return;
+    const r = $('progress').getBoundingClientRect();
+    audio.currentTime = (e.clientX-r.left)/r.width*audio.duration;
+  });
+  $('rate-group').addEventListener('click', e=>{
+    const b = e.target.closest('.rate-btn'); if(!b) return;
+    rate = parseFloat(b.dataset.rate);
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(x=>x.classList.toggle('active', x===b));
+  });
+  $('btn-mode').addEventListener('click', ()=>{
+    loopMode = !loopMode;
+    $('btn-mode').textContent = '循环: '+(loopMode?'开':'关');
+    $('btn-mode').classList.toggle('active', loopMode);
+  });
+  $('btn-play').addEventListener('click', togglePlay);
+  $('btn-next').addEventListener('click', nextSentence);
+  $('btn-prev').addEventListener('click', prevSentence);
+
+  document.querySelectorAll('.sentence').forEach(el=>{
+    el.addEventListener('click', ()=>playSentence(parseInt(el.dataset.idx)));
+  });
+
+  document.addEventListener('keydown', e=>{
+    if (e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+    switch(e.code){
+      case 'Space': e.preventDefault(); togglePlay(); break;
+      case 'ArrowRight': nextSentence(); break;
+      case 'ArrowLeft': prevSentence(); break;
+      case 'ArrowUp': e.preventDefault(); setRate(Math.min(1.5, rate+0.25)); break;
+      case 'ArrowDown': e.preventDefault(); setRate(Math.max(0.5, rate-0.25)); break;
+    }
+  });
+  function setRate(r){
+    rate = Math.round(r*100)/100;
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(b=>{
+      b.classList.toggle('active', parseFloat(b.dataset.rate)===rate);
+    });
+  }
+  audio.preload = 'auto';
+  window.__reader = { getAudio: () => audio, getState: () => ({current, playing, rate, loopMode}) };
+})();
+</script>
+
+</body>
+</html>

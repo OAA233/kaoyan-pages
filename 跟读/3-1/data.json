@@ -1,0 +1,168 @@
+{
+  "title": "3-1 环境设计大于意志力2",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "1970年代、中東の原油禁輸措置によるエネルギー危機が起きたとき、オランダの研究者が国内のエネルギー消費を調査し始めた。",
+      "jp_html": "1970<ruby>年代<rt>ねんだい</rt></ruby>、<ruby>中東<rt>ちゅうとう</rt></ruby>の<ruby>原油<rt>げんゆ</rt></ruby><ruby>禁輸<rt>きんゆ</rt></ruby><ruby>措置<rt>そち</rt></ruby>によるエネルギー<ruby>危機<rt>きき</rt></ruby>が<ruby>起<rt>お</rt></ruby>きたとき、オランダの<ruby>研究者<rt>けんきゅうしゃ</rt></ruby>が<ruby>国内<rt>こくない</rt></ruby>のエネルギー<ruby>消費<rt>しょうひ</rt></ruby>を<ruby>調査<rt>ちょうさ</rt></ruby>し<ruby>始<rt>はじ</rt></ruby>めた。",
+      "zh": "\n            20世纪70年代，中东实施石油禁运，引发能源危机。当时，荷兰的研究人员开始调查本国的能源消费情况。结果，他们在阿姆斯特丹近郊的一个住宅区发现，有几户人家的用电量竟比邻居少了30%。可蹊跷的是，这些房屋面积相同，电费单价也完全一样。\n          ",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "すると、アムステルダム近郊のある住宅地で、電気の使用量が近隣の家より30パーセントも少ない家を何軒か発見した。",
+      "jp_html": "すると、アムステルダム<ruby>近郊<rt>きんこう</rt></ruby>のある<ruby>住宅地<rt>じゅうたくち</rt></ruby>で、<ruby>電気<rt>でんき</rt></ruby>の<ruby>使用量<rt>しようりょう</rt></ruby>が<ruby>近隣<rt>きんりん</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>より30パーセントも<ruby>少<rt>すく</rt></ruby>ない<ruby>家<rt>いえ</rt></ruby>を<ruby>何軒<rt>なんげん</rt></ruby>か<ruby>発見<rt>はっけん</rt></ruby>した。",
+      "zh": "\n            20世纪70年代，中东实施石油禁运，引发能源危机。当时，荷兰的研究人员开始调查本国的能源消费情况。结果，他们在阿姆斯特丹近郊的一个住宅区发现，有几户人家的用电量竟比邻居少了30%。可蹊跷的是，这些房屋面积相同，电费单价也完全一样。\n          ",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 3,
+      "sentence_id": "p1_s3",
+      "jp_plain": "家の大きさも、電気料金の単価も同じなのにである。",
+      "jp_html": "<ruby>家<rt>いえ</rt></ruby>の<ruby>大<rt>おお</rt></ruby>きさも、<ruby>電気料金<rt>でんきりょうきん</rt></ruby>の<ruby>単価<rt>たんか</rt></ruby>も<ruby>同<rt>おな</rt></ruby>じなのにである。",
+      "zh": "\n            20世纪70年代，中东实施石油禁运，引发能源危机。当时，荷兰的研究人员开始调查本国的能源消费情况。结果，他们在阿姆斯特丹近郊的一个住宅区发现，有几户人家的用电量竟比邻居少了30%。可蹊跷的是，这些房屋面积相同，电费单价也完全一样。\n          ",
+      "audio_file": "audio/p1_s3.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "調べてみると、この地域の家はどれもほとんど同じだが、一つだけ異なる点があった。",
+      "jp_html": "<ruby>調<rt>しら</rt></ruby>べてみると、この<ruby>地域<rt>ちいき</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>はどれもほとんど<ruby>同<rt>おな</rt></ruby>じだが、<ruby>一<rt>ひと</rt></ruby>つだけ<ruby>異<rt>こと</rt></ruby>なる<ruby>点<rt>てん</rt></ruby>があった。",
+      "zh": "\n            调查后发现，这一带的房屋几乎完全相同，只有一点有所不同，那就是电表的安装位置。有些房屋的电表装在地下室，另一些则装在二楼中央的走廊里。电表装在中央走廊的家庭，用电量更少。因为用电量一目了然，随时都能查看，住户也因此改变了自己的行为。\n          ",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "それは、電気メーターの設置場所である。",
+      "jp_html": "それは、<ruby>電気<rt>でんき</rt></ruby>メーターの<ruby>設置<rt>せっち</rt></ruby><ruby>場所<rt>ばしょ</rt></ruby>である。",
+      "zh": "\n            调查后发现，这一带的房屋几乎完全相同，只有一点有所不同，那就是电表的安装位置。有些房屋的电表装在地下室，另一些则装在二楼中央的走廊里。电表装在中央走廊的家庭，用电量更少。因为用电量一目了然，随时都能查看，住户也因此改变了自己的行为。\n          ",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 3,
+      "sentence_id": "p2_s3",
+      "jp_plain": "ある家では地下に、他の家では二階の中央廊下にメーターがあった。",
+      "jp_html": "ある<ruby>家<rt>いえ</rt></ruby>では<ruby>地下<rt>ちか</rt></ruby>に、<ruby>他<rt>ほか</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>では<ruby>二階<rt>にかい</rt></ruby>の<ruby>中央<rt>ちゅうおう</rt></ruby><ruby>廊下<rt>ろうか</rt></ruby>にメーターがあった。",
+      "zh": "\n            调查后发现，这一带的房屋几乎完全相同，只有一点有所不同，那就是电表的安装位置。有些房屋的电表装在地下室，另一些则装在二楼中央的走廊里。电表装在中央走廊的家庭，用电量更少。因为用电量一目了然，随时都能查看，住户也因此改变了自己的行为。\n          ",
+      "audio_file": "audio/p2_s3.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 4,
+      "sentence_id": "p2_s4",
+      "jp_plain": "中央廊下にメーターがある家では、電気の使用量が少なかった。",
+      "jp_html": "<ruby>中央<rt>ちゅうおう</rt></ruby><ruby>廊下<rt>ろうか</rt></ruby>にメーターがある<ruby>家<rt>いえ</rt></ruby>では、<ruby>電気<rt>でんき</rt></ruby>の<ruby>使用量<rt>しようりょう</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なかった。",
+      "zh": "\n            调查后发现，这一带的房屋几乎完全相同，只有一点有所不同，那就是电表的安装位置。有些房屋的电表装在地下室，另一些则装在二楼中央的走廊里。电表装在中央走廊的家庭，用电量更少。因为用电量一目了然，随时都能查看，住户也因此改变了自己的行为。\n          ",
+      "audio_file": "audio/p2_s4.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 5,
+      "sentence_id": "p2_s5",
+      "jp_plain": "使用量がはっきり見え、確認しやすかったため、住人たちが行動を変えたのである。",
+      "jp_html": "<ruby>使用量<rt>しようりょう</rt></ruby>がはっきり<ruby>見<rt>み</rt></ruby>え、<ruby>確認<rt>かくにん</rt></ruby>しやすかったため、<ruby>住人<rt>じゅうにん</rt></ruby>たちが<ruby>行動<rt>こうどう</rt></ruby>を<ruby>変<rt>か</rt></ruby>えたのである。",
+      "zh": "\n            调查后发现，这一带的房屋几乎完全相同，只有一点有所不同，那就是电表的安装位置。有些房屋的电表装在地下室，另一些则装在二楼中央的走廊里。电表装在中央走廊的家庭，用电量更少。因为用电量一目了然，随时都能查看，住户也因此改变了自己的行为。\n          ",
+      "audio_file": "audio/p2_s5.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "どの習慣も、きっかけによって始まる。",
+      "jp_html": "どの<ruby>習慣<rt>しゅうかん</rt></ruby>も、きっかけによって<ruby>始<rt>はじ</rt></ruby>まる。",
+      "zh": "\n            任何习惯都是由某种提示触发的，而显眼的提示更容易被人注意到。可惜的是，有时由于触发行动的提示不够明显，生活或工作环境反而会妨碍人们采取相应行动。如果吉他被收进衣柜里，人就不太会想练习；如果书架放在客房的角落里，人也不会想到要读书。\n          ",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "そして、目立つきっかけには気づきやすい。",
+      "jp_html": "そして、<ruby>目立<rt>めだ</rt></ruby>つきっかけには<ruby>気<rt>き</rt></ruby>づきやすい。",
+      "zh": "\n            任何习惯都是由某种提示触发的，而显眼的提示更容易被人注意到。可惜的是，有时由于触发行动的提示不够明显，生活或工作环境反而会妨碍人们采取相应行动。如果吉他被收进衣柜里，人就不太会想练习；如果书架放在客房的角落里，人也不会想到要读书。\n          ",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "残念なことに、行動を引き起こすきっかけが目立たないために、生活や仕事の環境がその行動をしにくくしてしまうことがある。",
+      "jp_html": "<ruby>残念<rt>ざんねん</rt></ruby>なことに、<ruby>行動<rt>こうどう</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>き<ruby>起<rt>お</rt></ruby>こすきっかけが<ruby>目立<rt>めだ</rt></ruby>たないために、<ruby>生活<rt>せいかつ</rt></ruby>や<ruby>仕事<rt>しごと</rt></ruby>の<ruby>環境<rt>かんきょう</rt></ruby>がその<ruby>行動<rt>こうどう</rt></ruby>をしにくくしてしまうことがある。",
+      "zh": "\n            任何习惯都是由某种提示触发的，而显眼的提示更容易被人注意到。可惜的是，有时由于触发行动的提示不够明显，生活或工作环境反而会妨碍人们采取相应行动。如果吉他被收进衣柜里，人就不太会想练习；如果书架放在客房的角落里，人也不会想到要读书。\n          ",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 4,
+      "sentence_id": "p3_s4",
+      "jp_plain": "ギターがクローゼットにしまい込まれていれば、練習する気にならない。",
+      "jp_html": "ギターがクローゼットにしまい<ruby>込<rt>こ</rt></ruby>まれていれば、<ruby>練習<rt>れんしゅう</rt></ruby>する<ruby>気<rt>き</rt></ruby>にならない。",
+      "zh": "\n            任何习惯都是由某种提示触发的，而显眼的提示更容易被人注意到。可惜的是，有时由于触发行动的提示不够明显，生活或工作环境反而会妨碍人们采取相应行动。如果吉他被收进衣柜里，人就不太会想练习；如果书架放在客房的角落里，人也不会想到要读书。\n          ",
+      "audio_file": "audio/p3_s4.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 5,
+      "sentence_id": "p3_s5",
+      "jp_plain": "本棚が客間の隅にあれば、本を読もうと思わない。",
+      "jp_html": "<ruby>本棚<rt>ほんだな</rt></ruby>が<ruby>客間<rt>きゃくま</rt></ruby>の<ruby>隅<rt>すみ</rt></ruby>にあれば、<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>もうと<ruby>思<rt>おも</rt></ruby>わない。",
+      "zh": "\n            任何习惯都是由某种提示触发的，而显眼的提示更容易被人注意到。可惜的是，有时由于触发行动的提示不够明显，生活或工作环境反而会妨碍人们采取相应行动。如果吉他被收进衣柜里，人就不太会想练习；如果书架放在客房的角落里，人也不会想到要读书。\n          ",
+      "audio_file": "audio/p3_s5.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "これに対して、はっきり見えるきっかけを作れば、望ましい習慣へと注意を向けることができる。",
+      "jp_html": "これに対して、はっきり<ruby>見<rt>み</rt></ruby>えるきっかけを<ruby>作<rt>つく</rt></ruby>れば、<ruby>望<rt>のぞ</rt></ruby>ましい<ruby>習慣<rt>しゅうかん</rt></ruby>へと<ruby>注意<rt>ちゅうい</rt></ruby>を<ruby>向<rt>む</rt></ruby>けることができる。",
+      "zh": "\n            相反，如果设置清晰可见的提示，就能把注意力引向理想的习惯。如果让最佳选项变得最为醒目，作出正确的决定就会成为一件自然而容易的事。\n          ",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "最善の選択肢をいちばん目立たせれば、良い決断をすることは自然で簡単なものになる。",
+      "jp_html": "<ruby>最善<rt>さいぜん</rt></ruby>の<ruby>選択肢<rt>せんたくし</rt></ruby>をいちばん<ruby>目立<rt>めだ</rt></ruby>たせれば、<ruby>良<rt>よ</rt></ruby>い<ruby>決断<rt>けつだん</rt></ruby>をすることは<ruby>自然<rt>しぜん</rt></ruby>で<ruby>簡単<rt>かんたん</rt></ruby>なものになる。",
+      "zh": "\n            相反，如果设置清晰可见的提示，就能把注意力引向理想的习惯。如果让最佳选项变得最为醒目，作出正确的决定就会成为一件自然而容易的事。\n          ",
+      "audio_file": "audio/p4_s2.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 1,
+      "sentence_id": "p5_s1",
+      "jp_plain": "環境作りが効果的なのは、周囲との関わり方に影響するからだけではなく、自分で環境を作り変えようとする人が少ないからでもある。",
+      "jp_html": "<ruby>環境<rt>かんきょう</rt></ruby><ruby>作<rt>づく</rt></ruby>りが<ruby>効果的<rt>こうかてき</rt></ruby>なのは、<ruby>周囲<rt>しゅうい</rt></ruby>との<ruby>関<rt>かか</rt></ruby>わり<ruby>方<rt>かた</rt></ruby>に<ruby>影響<rt>えいきょう</rt></ruby>するからだけではなく、<ruby>自分<rt>じぶん</rt></ruby>で<ruby>環境<rt>かんきょう</rt></ruby>を<ruby>作<rt>つく</rt></ruby>り<ruby>変<rt>か</rt></ruby>えようとする<ruby>人<rt>ひと</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ないからでもある。",
+      "zh": "\n            环境营造之所以有效，不仅是因为它会影响我们与周围环境的互动方式，还因为很少有人会主动改变自己的环境。不过，我们完全可以重新布置生活和工作空间，增加接触积极提示的机会，减少接触消极提示的机会。通过主动营造环境，夺回生活的主导权，设计自己的人生。\n          ",
+      "audio_file": "audio/p5_s1.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 2,
+      "sentence_id": "p5_s2",
+      "jp_plain": "しかし、生活や仕事の場所を作り変え、ポジティブなきっかけに触れる機会を増やし、ネガティブなきっかけに触れる機会を減らすことはできる。",
+      "jp_html": "しかし、<ruby>生活<rt>せいかつ</rt></ruby>や<ruby>仕事<rt>しごと</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>作<rt>つく</rt></ruby>り<ruby>変<rt>か</rt></ruby>え、ポジティブなきっかけに<ruby>触<rt>ふ</rt></ruby>れる<ruby>機会<rt>きかい</rt></ruby>を<ruby>増<rt>ふ</rt></ruby>やし、ネガティブなきっかけに<ruby>触<rt>ふ</rt></ruby>れる<ruby>機会<rt>きかい</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らすことはできる。",
+      "zh": "\n            环境营造之所以有效，不仅是因为它会影响我们与周围环境的互动方式，还因为很少有人会主动改变自己的环境。不过，我们完全可以重新布置生活和工作空间，增加接触积极提示的机会，减少接触消极提示的机会。通过主动营造环境，夺回生活的主导权，设计自己的人生。\n          ",
+      "audio_file": "audio/p5_s2.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 3,
+      "sentence_id": "p5_s3",
+      "jp_plain": "環境作りによって主導権を取り戻し、自分の人生を設計しよう。",
+      "jp_html": "<ruby>環境<rt>かんきょう</rt></ruby><ruby>作<rt>づく</rt></ruby>りによって<ruby>主導権<rt>しゅどうけん</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>し、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>人生<rt>じんせい</rt></ruby>を<ruby>設計<rt>せっけい</rt></ruby>しよう。",
+      "zh": "\n            环境营造之所以有效，不仅是因为它会影响我们与周围环境的互动方式，还因为很少有人会主动改变自己的环境。不过，我们完全可以重新布置生活和工作空间，增加接触积极提示的机会，减少接触消极提示的机会。通过主动营造环境，夺回生活的主导权，设计自己的人生。\n          ",
+      "audio_file": "audio/p5_s3.mp3"
+    }
+  ]
+}

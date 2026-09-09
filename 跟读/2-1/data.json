@@ -1,0 +1,123 @@
+{
+  "title": "2-1 最低时薪",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "最低賃金（最賃）改定に向けた2026年度の議論が始まった。",
+      "jp_html": "<ruby>最低賃金<rt>さいていちんぎん</rt></ruby>（<ruby>最賃<rt>さいちん</rt></ruby>）<ruby>改定<rt>かいてい</rt></ruby>に<ruby>向<rt>む</rt></ruby>けた2026<ruby>年度<rt>ねんど</rt></ruby>の<ruby>議論<rt>ぎろん</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まった。",
+      "zh": "日前，2026年度针对最低时薪调整的讨论已经启动。受整体加薪趋势带动，2025年度最低时薪亦实现了较大幅度上调。当前物价持续上涨，民众生活压力不断加重，本年度也应继续推动最低时薪提高。",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "賃上げの流れを受け、25年度は最賃も大幅引き上げが実現した。",
+      "jp_html": "<ruby>賃上<rt>ちんあ</rt></ruby>げの<ruby>流<rt>なが</rt></ruby>れを<ruby>受<rt>う</rt></ruby>け、25<ruby>年度<rt>ねんど</rt></ruby>は<ruby>最賃<rt>さいちん</rt></ruby>も<ruby>大幅<rt>おおはば</rt></ruby>引き<ruby>上<rt>あ</rt></ruby>げが<ruby>実現<rt>じつげん</rt></ruby>した。",
+      "zh": "日前，2026年度针对最低时薪调整的讨论已经启动。受整体加薪趋势带动，2025年度最低时薪亦实现了较大幅度上调。当前物价持续上涨，民众生活压力不断加重，本年度也应继续推动最低时薪提高。",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 3,
+      "sentence_id": "p1_s3",
+      "jp_plain": "物価高騰が生活を圧迫しており、本年度も引き上げを継続したい。",
+      "jp_html": "<ruby>物価高騰<rt>ぶっかこうとう</rt></ruby>が<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>圧迫<rt>あっぱく</rt></ruby>しており、<ruby>本年度<rt>ほんねんど</rt></ruby>も引き<ruby>上<rt>あ</rt></ruby>げを<ruby>継続<rt>けいぞく</rt></ruby>したい。",
+      "zh": "日前，2026年度针对最低时薪调整的讨论已经启动。受整体加薪趋势带动，2025年度最低时薪亦实现了较大幅度上调。当前物价持续上涨，民众生活压力不断加重，本年度也应继续推动最低时薪提高。",
+      "audio_file": "audio/p1_s3.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "最賃は労働者の生活を守るための基本的なルールで、時給で働くパートやアルバイトら非正規雇用の収入に大きな影響を与える。",
+      "jp_html": "<ruby>最賃<rt>さいちん</rt></ruby>は<ruby>労働者<rt>ろうどうしゃ</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>守<rt>まも</rt></ruby>るための<ruby>基本的<rt>きほんてき</rt></ruby>なルールで、<ruby>時給<rt>じきゅう</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>くパートやアルバイトら<ruby>非正規雇用<rt>ひせいきこよう</rt></ruby>の<ruby>収入<rt>しゅうにゅう</rt></ruby>に<ruby>大<rt>おお</rt></ruby>きな<ruby>影響<rt>えいきょう</rt></ruby>を<ruby>与<rt>あた</rt></ruby>える。",
+      "zh": "最低时薪是保障劳动者基本生活的一项基础性制度，对按小时计酬的兼职人员、临时工等非正规就业群体的收入影响尤为显著。",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "厚生労働省の中央最低賃金審議会が議論を経て、7月末ごろに目安額を示す。",
+      "jp_html": "<ruby>厚生労働省<rt>こうせいろうどうしょう</rt></ruby>の<ruby>中央最低賃金審議会<rt>ちゅうおうさいていちんぎんしんぎかい</rt></ruby>が<ruby>議論<rt>ぎろん</rt></ruby>を<ruby>経<rt>へ</rt></ruby>て、7<ruby>月末<rt>がつまつ</rt></ruby>ごろに<ruby>目安額<rt>めやすがく</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>す。",
+      "zh": "日本厚生劳动省中央最低时薪审议会将在讨论后，于7月底前后公布最低时薪的参考标准。各都道府县地方审议会将以此为依据，分别决定本地区的具体上调幅度。2025年度公布的参考标准为全国平均每小时上调63日元，涨幅达6%；最终，各地平均最低时薪上调66日元，涨幅为6.3%，创历史新高，达到每小时1121日元。",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "各都道府県の地方審議会は目安額を基にして個別に引き上げ額を決める。",
+      "jp_html": "<ruby>各都道府県<rt>かくとどうふけん</rt></ruby>の<ruby>地方審議会<rt>ちほうしんぎかい</rt></ruby>は<ruby>目安額<rt>めやすがく</rt></ruby>を<ruby>基<rt>もと</rt></ruby>にして<ruby>個別<rt>こべつ</rt></ruby>に引き<ruby>上<rt>あ</rt></ruby>げ<ruby>額<rt>がく</rt></ruby>を<ruby>決<rt>き</rt></ruby>める。",
+      "zh": "日本厚生劳动省中央最低时薪审议会将在讨论后，于7月底前后公布最低时薪的参考标准。各都道府县地方审议会将以此为依据，分别决定本地区的具体上调幅度。2025年度公布的参考标准为全国平均每小时上调63日元，涨幅达6%；最终，各地平均最低时薪上调66日元，涨幅为6.3%，创历史新高，达到每小时1121日元。",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "25年度の目安額は全国平均63円（6％）増と大幅引き上げとなり、最終的には過去最大の66円（6・3％）増の1121円で決着した。",
+      "jp_html": "25<ruby>年度<rt>ねんど</rt></ruby>の<ruby>目安額<rt>めやすがく</rt></ruby>は<ruby>全国平均<rt>ぜんこくへいきん</rt></ruby>63<ruby>円<rt>えん</rt></ruby>（6％）<ruby>増<rt>ぞう</rt></ruby>と<ruby>大幅<rt>おおはば</rt></ruby>引き<ruby>上<rt>あ</rt></ruby>げとなり、<ruby>最終的<rt>さいしゅうてき</rt></ruby>には<ruby>過去最大<rt>かこさいだい</rt></ruby>の66<ruby>円<rt>えん</rt></ruby>（6・3％）<ruby>増<rt>ぞう</rt></ruby>の1121<ruby>円<rt>えん</rt></ruby>で<ruby>決着<rt>けっちゃく</rt></ruby>した。",
+      "zh": "日本厚生劳动省中央最低时薪审议会将在讨论后，于7月底前后公布最低时薪的参考标准。各都道府县地方审议会将以此为依据，分别决定本地区的具体上调幅度。2025年度公布的参考标准为全国平均每小时上调63日元，涨幅达6%；最终，各地平均最低时薪上调66日元，涨幅为6.3%，创历史新高，达到每小时1121日元。",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "連合によると、今春闘の平均賃上げ率は5％を超えており、労働側は最賃も昨年度並みの水準を維持することを目指している。",
+      "jp_html": "<ruby>連合<rt>れんごう</rt></ruby>によると、<ruby>今春闘<rt>こんしゅんとう</rt></ruby>の<ruby>平均賃上<rt>へいきんちんあ</rt></ruby>げ<ruby>率<rt>りつ</rt></ruby>は5％を<ruby>超<rt>こ</rt></ruby>えており、<ruby>労働側<rt>ろうどうがわ</rt></ruby>は<ruby>最賃<rt>さいちん</rt></ruby>も<ruby>昨年度並<rt>さくねんどな</rt></ruby>みの<ruby>水準<rt>すいじゅん</rt></ruby>を<ruby>維持<rt>いじ</rt></ruby>することを<ruby>目指<rt>めざ</rt></ruby>している。",
+      "zh": "据日本工会总联合会统计，今年春季劳资谈判的平均加薪幅度已超过5%。劳方因此主张，今年最低时薪的上调幅度也应与上一年度持平。",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 1,
+      "sentence_id": "p5_s1",
+      "jp_plain": "これに対し、経営側は、経営実態とかけ離れた最賃引き上げは中小・零細企業の経営を圧迫し、雇用控えも招くとして、引き上げ額の抑制を求めている。",
+      "jp_html": "これに<ruby>対<rt>たい</rt></ruby>し、<ruby>経営側<rt>けいえいがわ</rt></ruby>は、<ruby>経営実態<rt>けいえいじったい</rt></ruby>とかけ<ruby>離<rt>はな</rt></ruby>れた<ruby>最賃<rt>さいちん</rt></ruby>引き<ruby>上<rt>あ</rt></ruby>げは<ruby>中小<rt>ちゅうしょう</rt></ruby>・<ruby>零細企業<rt>れいさいきぎょう</rt></ruby>の<ruby>経営<rt>けいえい</rt></ruby>を<ruby>圧迫<rt>あっぱく</rt></ruby>し、<ruby>雇用控<rt>こようひか</rt></ruby>えも<ruby>招<rt>まね</rt></ruby>くとして、引き<ruby>上<rt>あ</rt></ruby>げ<ruby>額<rt>がく</rt></ruby>の<ruby>抑制<rt>よくせい</rt></ruby>を<ruby>求<rt>もと</rt></ruby>めている。",
+      "zh": "对此，资方则认为，脱离企业实际经营状况大幅提高最低时薪，将进一步加重中小微企业的经营负担，甚至可能导致企业减少用工，因此要求控制上调幅度。",
+      "audio_file": "audio/p5_s1.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 1,
+      "sentence_id": "p6_s1",
+      "jp_plain": "石破茂前政権は最賃を、20年代に全国平均で1500円とする目標を掲げたが、高市早苗首相は近く策定する「日本成長戦略」の原案に「遅くとも30年代前半できる限り早期」と書き込み、事実上の先送りを検討している。",
+      "jp_html": "<ruby>石破茂前政権<rt>いしばしげるぜんせいけん</rt></ruby>は<ruby>最賃<rt>さいちん</rt></ruby>を、20<ruby>年代<rt>ねんだい</rt></ruby>に<ruby>全国平均<rt>ぜんこくへいきん</rt></ruby>で1500<ruby>円<rt>えん</rt></ruby>とする<ruby>目標<rt>もくひょう</rt></ruby>を<ruby>掲<rt>かか</rt></ruby>げたが、<ruby>高市早苗首相<rt>たかいちさなえしゅしょう</rt></ruby>は<ruby>近<rt>ちか</rt></ruby>く<ruby>策定<rt>さくてい</rt></ruby>する「<ruby>日本成長戦略<rt>にほんせいちょうせんりゃく</rt></ruby>」の<ruby>原案<rt>げんあん</rt></ruby>に「<ruby>遅<rt>おそ</rt></ruby>くとも30<ruby>年代<rt>ねんだい</rt></ruby><ruby>前半<rt>ぜんはん</rt></ruby><ruby>できる限<rt>かぎ</rt></ruby>り<ruby>早期<rt>そうき</rt></ruby>」と<ruby>書<rt>か</rt></ruby>き<ruby>込<rt>こ</rt></ruby>み、<ruby>事実上<rt>じじつじょう</rt></ruby>の<ruby>先送<rt>さきおく</rt></ruby>りを<ruby>検討<rt>けんとう</rt></ruby>している。",
+      "zh": "石破茂前政府曾提出，要在2030年之前将全国平均最低时薪提高至1500日元。不过，高市早苗首相正在考虑调整这一目标，并拟在即将制定的《日本增长战略》草案中写入“尽早实现，最迟不过2035年”，这实际上意味着目标期限将被推迟。",
+      "audio_file": "audio/p6_s1.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 1,
+      "sentence_id": "p7_s1",
+      "jp_plain": "20年代に1500円とするには毎年7％超の引き上げが必要だ。",
+      "jp_html": "20<ruby>年代<rt>ねんだい</rt></ruby>に1500<ruby>円<rt>えん</rt></ruby>とするには<ruby>毎年<rt>まいとし</rt></ruby>7％<ruby>超<rt>こ</rt></ruby>の引き<ruby>上<rt>あ</rt></ruby>げが<ruby>必要<rt>ひつよう</rt></ruby>だ。",
+      "zh": "若要在2030年前将最低时薪提高至1500日元，今后每年的涨幅必须超过7%。大幅、快速上调最低时薪对中小微型企业可能造成的冲击，当然需要充分考虑。但在物价持续上涨的背景下，不应中断提高最低时薪的趋势。春季劳资谈判中超过5%的平均加薪幅度，也完全可以成为继续提高最低时薪的重要依据。",
+      "audio_file": "audio/p7_s1.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 2,
+      "sentence_id": "p7_s2",
+      "jp_plain": "急激な引き上げが中小・零細企業に与える影響を考慮すべきは当然だが物価高騰を考えれば、最賃引き上げの流れを断つべきではない。",
+      "jp_html": "<ruby>急激<rt>きゅうげき</rt></ruby>な引き<ruby>上<rt>あ</rt></ruby>げが<ruby>中小<rt>ちゅうしょう</rt></ruby>・<ruby>零細企業<rt>れいさいきぎょう</rt></ruby>に<ruby>与<rt>あた</rt></ruby>える<ruby>影響<rt>えいきょう</rt></ruby>を<ruby>考慮<rt>こうりょ</rt></ruby>すべきは<ruby>当然<rt>とうぜん</rt></ruby>だが<ruby>物価高騰<rt>ぶっかこうとう</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えれば、<ruby>最賃<rt>さいちん</rt></ruby>引き<ruby>上<rt>あ</rt></ruby>げの<ruby>流<rt>なが</rt></ruby>れを<ruby>断<rt>た</rt></ruby>つべきではない。",
+      "zh": "若要在2030年前将最低时薪提高至1500日元，今后每年的涨幅必须超过7%。大幅、快速上调最低时薪对中小微型企业可能造成的冲击，当然需要充分考虑。但在物价持续上涨的背景下，不应中断提高最低时薪的趋势。春季劳资谈判中超过5%的平均加薪幅度，也完全可以成为继续提高最低时薪的重要依据。",
+      "audio_file": "audio/p7_s2.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 3,
+      "sentence_id": "p7_s3",
+      "jp_plain": "5％超の平均賃上げ率は最賃引き上げの根拠にもなり得る。",
+      "jp_html": "5％<ruby>超<rt>こ</rt></ruby>の<ruby>平均賃上<rt>へいきんちんあ</rt></ruby>げ<ruby>率<rt>りつ</rt></ruby>は<ruby>最賃<rt>さいちん</rt></ruby>引き<ruby>上<rt>あ</rt></ruby>げの<ruby>根拠<rt>こんきょ</rt></ruby>にもなり<ruby>得<rt>う</rt></ruby>る。",
+      "zh": "若要在2030年前将最低时薪提高至1500日元，今后每年的涨幅必须超过7%。大幅、快速上调最低时薪对中小微型企业可能造成的冲击，当然需要充分考虑。但在物价持续上涨的背景下，不应中断提高最低时薪的趋势。春季劳资谈判中超过5%的平均加薪幅度，也完全可以成为继续提高最低时薪的重要依据。",
+      "audio_file": "audio/p7_s3.mp3"
+    }
+  ]
+}

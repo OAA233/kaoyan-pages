@@ -1,0 +1,114 @@
+{
+  "title": "4-2 史诗的阅读",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "現代の人々は、叙事詩を紙に印刷された文章として読んでいることが多いだろうが、実際、叙事詩はもともと声によって語られ、歌い継がれてきた口承文学である。",
+      "jp_html": "<ruby>現代<rt>げんだい</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>は、<ruby>叙事詩<rt>じょじし</rt></ruby>を<ruby>紙<rt>かみ</rt></ruby>に<ruby>印刷<rt>いんさつ</rt></ruby>された<ruby>文章<rt>ぶんしょう</rt></ruby>として<ruby>読<rt>よ</rt></ruby>んでいることが<ruby>多<rt>おお</rt></ruby>いだろうが、<ruby>実際<rt>じっさい</rt></ruby>、<ruby>叙事詩<rt>じょじし</rt></ruby>はもともと<ruby>声<rt>こえ</rt></ruby>によって<ruby>語<rt>かた</rt></ruby>られ、<ruby>歌<rt>うた</rt></ruby>い<ruby>継<rt>つ</rt></ruby>がれてきた<ruby>口承文学<rt>こうしょうぶんがく</rt></ruby>である。",
+      "zh": "现代人阅读史诗的经验，大概是把它们当作一种印在纸上的文字来读。可实际上，史诗首先是一种声音，一种被讲述、被演唱的口传文学——想象一片空地上，大家围成一圈，听一位吟诵者演唱史诗，他拉着悠长的调子，根据现场听众的反应变换内容，牵动听众的心。",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "想像してみてください。",
+      "jp_html": "<ruby>想像<rt>そうぞう</rt></ruby>してみてください。",
+      "zh": "现代人阅读史诗的经验，大概是把它们当作一种印在纸上的文字来读。可实际上，史诗首先是一种声音，一种被讲述、被演唱的口传文学——想象一片空地上，大家围成一圈，听一位吟诵者演唱史诗，他拉着悠长的调子，根据现场听众的反应变换内容，牵动听众的心。",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 3,
+      "sentence_id": "p1_s3",
+      "jp_plain": "ある空き地で人々が輪になって集まり、1人の吟者の歌う叙事詩に耳を傾ける。",
+      "jp_html": "ある<ruby>空<rt>あ</rt></ruby>き<ruby>地<rt>ち</rt></ruby>で<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>輪<rt>わ</rt></ruby>になって<ruby>集<rt>あつ</rt></ruby>まり、1<ruby>人<rt>にん</rt></ruby>の<ruby>吟者<rt>ぎんしゃ</rt></ruby>の<ruby>歌<rt>うた</rt></ruby>う<ruby>叙事詩<rt>じょじし</rt></ruby>に<ruby>耳<rt>みみ</rt></ruby>を<ruby>傾<rt>かたむ</rt></ruby>ける。",
+      "zh": "现代人阅读史诗的经验，大概是把它们当作一种印在纸上的文字来读。可实际上，史诗首先是一种声音，一种被讲述、被演唱的口传文学——想象一片空地上，大家围成一圈，听一位吟诵者演唱史诗，他拉着悠长的调子，根据现场听众的反应变换内容，牵动听众的心。",
+      "audio_file": "audio/p1_s3.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 4,
+      "sentence_id": "p1_s4",
+      "jp_plain": "吟者は長く伸びやかな節回しで歌い、聴衆の反応に応じて語りの内容を変えながら、聞き手の心を惹きつける。",
+      "jp_html": "<ruby>吟者<rt>ぎんしゃ</rt></ruby>は<ruby>長<rt>なが</rt></ruby>く<ruby>伸<rt>の</rt></ruby>びやかな<ruby>節回<rt>ふしまわ</rt></ruby>しで<ruby>歌<rt>うた</rt></ruby>い、<ruby>聴衆<rt>ちょうしゅう</rt></ruby>の<ruby>反応<rt>はんのう</rt></ruby>に<ruby>応<rt>おう</rt></ruby>じて<ruby>語<rt>かた</rt></ruby>りの<ruby>内容<rt>ないよう</rt></ruby>を<ruby>変<rt>か</rt></ruby>えながら、<ruby>聞<rt>き</rt></ruby>き<ruby>手<rt>て</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>を<ruby>惹<rt>ひ</rt></ruby>きつける。",
+      "zh": "现代人阅读史诗的经验，大概是把它们当作一种印在纸上的文字来读。可实际上，史诗首先是一种声音，一种被讲述、被演唱的口传文学——想象一片空地上，大家围成一圈，听一位吟诵者演唱史诗，他拉着悠长的调子，根据现场听众的反应变换内容，牵动听众的心。",
+      "audio_file": "audio/p1_s4.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "これは思うに、現在の人々が講談を聴く光景に似ているだろう。",
+      "jp_html": "これは<ruby>思<rt>おも</rt></ruby>うに、<ruby>現在<rt>げんざい</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>講談<rt>こうだん</rt></ruby>を<ruby>聴<rt>き</rt></ruby>く<ruby>光景<rt>こうけい</rt></ruby>に<ruby>似<rt>に</rt></ruby>ているだろう。",
+      "zh": "那个场景，想必都有点儿像如今听评书。许多艺人不识字，他们能够吟诵漫长诗篇，不是靠机械地背诵，而是依靠套语、固定称号、程式化场景和人人熟悉的意象来组织叙事，减轻自己的负担。他们说的话，在表演的场地不见得能让每个人都听清。表演时间长，人们也会走神。史诗里的套语就像成语，听众一听就知道大概，不会落下剧情。",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "語り手の多くが文字を知らずとも、長い詩篇を吟唱できるのは、機械的な暗記ではなく、決まった言葉や定型的な呼称と型にはまった場面設定や、誰もが共有するイメージに頼って物を語り、自ら負担を軽減していたからである。",
+      "jp_html": "<ruby>語<rt>かた</rt></ruby>り<ruby>手<rt>て</rt></ruby>の<ruby>多<rt>おお</rt></ruby>くが<ruby>文字<rt>もじ</rt></ruby>を<ruby>知<rt>し</rt></ruby>らずとも、<ruby>長<rt>なが</rt></ruby>い<ruby>詩篇<rt>しへん</rt></ruby>を<ruby>吟唱<rt>ぎんしょう</rt></ruby>できるのは、<ruby>機械的<rt>きかいてき</rt></ruby>な<ruby>暗記<rt>あんき</rt></ruby>ではなく、<ruby>決<rt>き</rt></ruby>まった<ruby>言葉<rt>ことば</rt></ruby>や<ruby>定型的<rt>ていけいてき</rt></ruby>な<ruby>呼称<rt>こしょう</rt></ruby>と<ruby>型<rt>かた</rt></ruby>にはまった<ruby>場面設定<rt>ばめんせってい</rt></ruby>や、<ruby>誰<rt>だれ</rt></ruby>もが<ruby>共有<rt>きょうゆう</rt></ruby>するイメージに<ruby>頼<rt>たよ</rt></ruby>って<ruby>物<rt>もの</rt></ruby>を<ruby>語<rt>かた</rt></ruby>り、<ruby>自<rt>みずか</rt></ruby>ら<ruby>負担<rt>ふたん</rt></ruby>を<ruby>軽減<rt>けいげん</rt></ruby>していたからである。",
+      "zh": "那个场景，想必都有点儿像如今听评书。许多艺人不识字，他们能够吟诵漫长诗篇，不是靠机械地背诵，而是依靠套语、固定称号、程式化场景和人人熟悉的意象来组织叙事，减轻自己的负担。他们说的话，在表演的场地不见得能让每个人都听清。表演时间长，人们也会走神。史诗里的套语就像成语，听众一听就知道大概，不会落下剧情。",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 3,
+      "sentence_id": "p2_s3",
+      "jp_plain": "彼らの声を聴衆全員が十分に聞き取れたとは限らず、演唱が長く続くと、気が散る人もいただろう。",
+      "jp_html": "彼らの<ruby>声<rt>こえ</rt></ruby>を<ruby>聴衆<rt>ちょうしゅう</rt></ruby><ruby>全員<rt>ぜんいん</rt></ruby>が<ruby>十分<rt>じゅうぶん</rt></ruby>に<ruby>聞<rt>き</rt></ruby>き<ruby>取<rt>と</rt></ruby>れたとは<ruby>限<rt>かぎ</rt></ruby>らず、<ruby>演唱<rt>えんしょう</rt></ruby>が<ruby>長<rt>なが</rt></ruby>く<ruby>続<rt>つづ</rt></ruby>くと、<ruby>気<rt>き</rt></ruby>が<ruby>散<rt>ち</rt></ruby>る<ruby>人<rt>ひと</rt></ruby>もいただろう。",
+      "zh": "那个场景，想必都有点儿像如今听评书。许多艺人不识字，他们能够吟诵漫长诗篇，不是靠机械地背诵，而是依靠套语、固定称号、程式化场景和人人熟悉的意象来组织叙事，减轻自己的负担。他们说的话，在表演的场地不见得能让每个人都听清。表演时间长，人们也会走神。史诗里的套语就像成语，听众一听就知道大概，不会落下剧情。",
+      "audio_file": "audio/p2_s3.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 4,
+      "sentence_id": "p2_s4",
+      "jp_plain": "だが、叙事詩によく使われる決まった言葉は慣用句のようなもので、聞き手が聞けばすぐだいたいの内容がつかめ、物語の内容を聞き漏らすことはない。",
+      "jp_html": "だが、<ruby>叙事詩<rt>じょじし</rt></ruby>によく<ruby>使<rt>つか</rt></ruby>われる<ruby>決<rt>き</rt></ruby>まった<ruby>言葉<rt>ことば</rt></ruby>は<ruby>慣用句<rt>かんようく</rt></ruby>のようなもので、<ruby>聞<rt>き</rt></ruby>き<ruby>手<rt>て</rt></ruby>が<ruby>聞<rt>き</rt></ruby>けばすぐだいたいの<ruby>内容<rt>ないよう</rt></ruby>がつかめ、<ruby>物語<rt>ものがたり</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>を<ruby>聞<rt>き</rt></ruby>き<ruby>漏<rt>も</rt></ruby>らすことはない。",
+      "zh": "那个场景，想必都有点儿像如今听评书。许多艺人不识字，他们能够吟诵漫长诗篇，不是靠机械地背诵，而是依靠套语、固定称号、程式化场景和人人熟悉的意象来组织叙事，减轻自己的负担。他们说的话，在表演的场地不见得能让每个人都听清。表演时间长，人们也会走神。史诗里的套语就像成语，听众一听就知道大概，不会落下剧情。",
+      "audio_file": "audio/p2_s4.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "こうした環境の中で叙事詩は誕生した。",
+      "jp_html": "こうした<ruby>環境<rt>かんきょう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>叙事詩<rt>じょじし</rt></ruby>は<ruby>誕生<rt>たんじょう</rt></ruby>した。",
+      "zh": "这是史诗的诞生环境：它们并非单独某一个人的创作，而是民间吟诵群体经年累月集体创作、层累积淀的结果。它们当下在人们面前的样貌，是某一个或某一群采录者整理出的一个版本。也恰是由于一个群体年复一年面对不同的人表演，史诗把神话、民歌、谚语、宗教仪式乃至地方知识都融入其中，几乎所有史诗都包含了一个民族或共同体共有的记忆。",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "特定の誰かが作ったわけではなく、民間の吟者たちが長い年月をかけて共同で創作し、積み重ねてきた成果なのである。",
+      "jp_html": "<ruby>特定<rt>とくてい</rt></ruby>の<ruby>誰<rt>だれ</rt></ruby>かが<ruby>作<rt>つく</rt></ruby>ったわけではなく、<ruby>民間<rt>みんかん</rt></ruby>の<ruby>吟者<rt>ぎんしゃ</rt></ruby>たちが<ruby>長<rt>なが</rt></ruby>い<ruby>年月<rt>としつき</rt></ruby>をかけて<ruby>共同<rt>きょうどう</rt></ruby>で<ruby>創作<rt>そうさく</rt></ruby>し、<ruby>積<rt>つ</rt></ruby>み<ruby>重<rt>かさ</rt></ruby>ねてきた<ruby>成果<rt>せいか</rt></ruby>なのである。",
+      "zh": "这是史诗的诞生环境：它们并非单独某一个人的创作，而是民间吟诵群体经年累月集体创作、层累积淀的结果。它们当下在人们面前的样貌，是某一个或某一群采录者整理出的一个版本。也恰是由于一个群体年复一年面对不同的人表演，史诗把神话、民歌、谚语、宗教仪式乃至地方知识都融入其中，几乎所有史诗都包含了一个民族或共同体共有的记忆。",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "現在私たちが目にしている姿は、ある採録者あるいは集団がとりまとめたものである。",
+      "jp_html": "<ruby>現在<rt>げんざい</rt></ruby>私たちが<ruby>目<rt>め</rt></ruby>にしている<ruby>姿<rt>すがた</rt></ruby>は、ある<ruby>採録者<rt>さいろくしゃ</rt></ruby>あるいは<ruby>集団<rt>しゅうだん</rt></ruby>がとりまとめたものである。",
+      "zh": "这是史诗的诞生环境：它们并非单独某一个人的创作，而是民间吟诵群体经年累月集体创作、层累积淀的结果。它们当下在人们面前的样貌，是某一个或某一群采录者整理出的一个版本。也恰是由于一个群体年复一年面对不同的人表演，史诗把神话、民歌、谚语、宗教仪式乃至地方知识都融入其中，几乎所有史诗都包含了一个民族或共同体共有的记忆。",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 4,
+      "sentence_id": "p3_s4",
+      "jp_plain": "そして、語り手たちが世代を超えてさまざまな人々に語り続けてきたからこそ、神話や民謡、ことわざ、宗教儀礼、さらに地域特有の知恵までもが叙事詩に取り込まれ、ほとんどすべての叙事詩には、ある民族や共同体が共有する記憶が刻み込まれているのである。",
+      "jp_html": "そして、<ruby>語<rt>かた</rt></ruby>り<ruby>手<rt>て</rt></ruby>たちが<ruby>世代<rt>せだい</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えてさまざまな<ruby>人々<rt>ひとびと</rt></ruby>に<ruby>語<rt>かた</rt></ruby>り<ruby>続<rt>つづ</rt></ruby>けてきたからこそ、<ruby>神話<rt>しんわ</rt></ruby>や<ruby>民謡<rt>みんよう</rt></ruby>、ことわざ、<ruby>宗教儀礼<rt>しゅうきょうぎれい</rt></ruby>、さらに<ruby>地域特有<rt>ちいきとくゆう</rt></ruby>の<ruby>知恵<rt>ちえ</rt></ruby>までもが<ruby>叙事詩<rt>じょじし</rt></ruby>に<ruby>取<rt>と</rt></ruby>り<ruby>込<rt>こ</rt></ruby>まれ、ほとんどすべての<ruby>叙事詩<rt>じょじし</rt></ruby>には、ある<ruby>民族<rt>みんぞく</rt></ruby>や<ruby>共同体<rt>きょうどうたい</rt></ruby>が<ruby>共有<rt>きょうゆう</rt></ruby>する<ruby>記憶<rt>きおく</rt></ruby>が<ruby>刻<rt>きざ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>まれているのである。",
+      "zh": "这是史诗的诞生环境：它们并非单独某一个人的创作，而是民间吟诵群体经年累月集体创作、层累积淀的结果。它们当下在人们面前的样貌，是某一个或某一群采录者整理出的一个版本。也恰是由于一个群体年复一年面对不同的人表演，史诗把神话、民歌、谚语、宗教仪式乃至地方知识都融入其中，几乎所有史诗都包含了一个民族或共同体共有的记忆。",
+      "audio_file": "audio/p3_s4.mp3"
+    }
+  ]
+}

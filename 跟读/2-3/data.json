@@ -1,0 +1,123 @@
+{
+  "title": "2-3 段落双向翻译练习",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "国際地政学情勢が複雑さを増し、世界的に保護主義が台頭するとともに、地政学的要因による貿易・経済摩擦が相次ぐなかにあっても、中国の対外貿易はなお17％弱の高い伸びを実現した。",
+      "jp_html": "<ruby>国際地政学情勢<rt>こくさいちせいがくじょうせい</rt></ruby>が<ruby>複雑<rt>ふくざつ</rt></ruby>さを<ruby>増<rt>ま</rt></ruby>し、<ruby>世界的<rt>せかいてき</rt></ruby>に<ruby>保護主義<rt>ほごしゅぎ</rt></ruby>が<ruby>台頭<rt>たいとう</rt></ruby>するとともに、<ruby>地政学的要因<rt>ちせいがくてきよういん</rt></ruby>による<ruby>貿易<rt>ぼうえき</rt></ruby>・<ruby>経済摩擦<rt>けいざいまさつ</rt></ruby>が<ruby>相次<rt>あいつ</rt></ruby>ぐなかにあっても、<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>対外貿易<rt>たいがいぼうえき</rt></ruby>はなお17％<ruby>弱<rt>じゃく</rt></ruby>の<ruby>高<rt>たか</rt></ruby>い<ruby>伸<rt>の</rt></ruby>びを<ruby>実現<rt>じつげん</rt></ruby>した。",
+      "zh": "在当前国际地缘政治错综复杂、全球保护主义抬头以及地缘经贸摩擦不断的背景下，中国外贸依然能够实现近17%的高速增长，再一次证明了中国产业链供应链的深厚底蕴与无可替代的全球竞争力。",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "これは、中国の産業・サプライチェーンが長年培ってきた強固な基盤と、世界市場における比類なき競争力を改めて示すものである。",
+      "jp_html": "これは、<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>産業<rt>さんぎょう</rt></ruby>・サプライチェーンが<ruby>長年<rt>ながねん</rt></ruby><ruby>培<rt>つちか</rt></ruby>ってきた<ruby>強固<rt>きょうこ</rt></ruby>な<ruby>基盤<rt>きばん</rt></ruby>と、<ruby>世界市場<rt>せかいしじょう</rt></ruby>における<ruby>比類<rt>ひるい</rt></ruby>なき<ruby>競争力<rt>きょうそうりょく</rt></ruby>を<ruby>改<rt>あらた</rt></ruby>めて<ruby>示<rt>しめ</rt></ruby>すものである。",
+      "zh": "在当前国际地缘政治错综复杂、全球保护主义抬头以及地缘经贸摩擦不断的背景下，中国外贸依然能够实现近17%的高速增长，再一次证明了中国产业链供应链的深厚底蕴与无可替代的全球竞争力。",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "台風への対応は、決して油断や気の緩みが許されない、都市の安全が問われる重大な試練である。",
+      "jp_html": "<ruby>台風<rt>たいふう</rt></ruby>への<ruby>対応<rt>たいおう</rt></ruby>は、<ruby>決<rt>けっ</rt></ruby>して<ruby>油断<rt>ゆだん</rt></ruby>や<ruby>気<rt>き</rt></ruby>の<ruby>緩<rt>ゆる</rt></ruby>みが<ruby>許<rt>ゆる</rt></ruby>されない、<ruby>都市<rt>とし</rt></ruby>の<ruby>安全<rt>あんぜん</rt></ruby>が<ruby>問<rt>と</rt></ruby>われる<ruby>重大<rt>じゅうだい</rt></ruby>な<ruby>試練<rt>しれん</rt></ruby>である。",
+      "zh": "应对台风，是容不得侥幸、容不得松懈的城市安全大考。防灾减灾，最怕大意；安全底线，贵在坚守。相关地区必须树牢底线思维、极限思维，摒弃麻痹大意心态，以最严实的举措守住城市安全、守护市民平安。",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "防災・減災において最も警戒すべきは慢心であり、安全確保において重要なのは、守るべき一線を堅持することだ。",
+      "jp_html": "<ruby>防災<rt>ぼうさい</rt></ruby>・<ruby>減災<rt>げんさい</rt></ruby>において<ruby>最<rt>もっと</rt></ruby>も<ruby>警戒<rt>けいかい</rt></ruby>すべきは<ruby>慢心<rt>まんしん</rt></ruby>であり、<ruby>安全確保<rt>あんぜんかくほ</rt></ruby>において<ruby>重要<rt>じゅうよう</rt></ruby>なのは、<ruby>守<rt>まも</rt></ruby>るべき<ruby>一線<rt>いっせん</rt></ruby>を<ruby>堅持<rt>けんじ</rt></ruby>することだ。",
+      "zh": "应对台风，是容不得侥幸、容不得松懈的城市安全大考。防灾减灾，最怕大意；安全底线，贵在坚守。相关地区必须树牢底线思维、极限思维，摒弃麻痹大意心态，以最严实的举措守住城市安全、守护市民平安。",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 3,
+      "sentence_id": "p2_s3",
+      "jp_plain": "関係地域は、最悪の事態を常に想定し、リスクを見据えた姿勢を徹底するとともに、慣れや油断を排さなければならない。",
+      "jp_html": "<ruby>関係地域<rt>かんけいちいき</rt></ruby>は、<ruby>最悪<rt>さいあく</rt></ruby>の<ruby>事態<rt>じたい</rt></ruby>を<ruby>常<rt>つね</rt></ruby>に<ruby>想定<rt>そうてい</rt></ruby>し、リスクを<ruby>見据<rt>みす</rt></ruby>えた<ruby>姿勢<rt>しせい</rt></ruby>を<ruby>徹底<rt>てってい</rt></ruby>するとともに、<ruby>慣<rt>な</rt></ruby>れや<ruby>油断<rt>ゆだん</rt></ruby>を<ruby>排<rt>はい</rt></ruby>さなければならない。",
+      "zh": "应对台风，是容不得侥幸、容不得松懈的城市安全大考。防灾减灾，最怕大意；安全底线，贵在坚守。相关地区必须树牢底线思维、极限思维，摒弃麻痹大意心态，以最严实的举措守住城市安全、守护市民平安。",
+      "audio_file": "audio/p2_s3.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 4,
+      "sentence_id": "p2_s4",
+      "jp_plain": "最も厳格かつ着実な対策を講じ、都市の安全を確保するとともに、市民の生命と暮らしを守り抜く必要がある。",
+      "jp_html": "<ruby>最<rt>もっと</rt></ruby>も<ruby>厳格<rt>げんかく</rt></ruby>かつ<ruby>着実<rt>ちゃくじつ</rt></ruby>な<ruby>対策<rt>たいさく</rt></ruby>を<ruby>講<rt>こう</rt></ruby>じ、<ruby>都市<rt>とし</rt></ruby>の<ruby>安全<rt>あんぜん</rt></ruby>を<ruby>確保<rt>かくほ</rt></ruby>するとともに、<ruby>市民<rt>しみん</rt></ruby>の<ruby>生命<rt>せいめい</rt></ruby>と<ruby>暮<rt>く</rt></ruby>らしを<ruby>守<rt>まも</rt></ruby>り<ruby>抜<rt>ぬ</rt></ruby>く<ruby>必要<rt>ひつよう</rt></ruby>がある。",
+      "zh": "应对台风，是容不得侥幸、容不得松懈的城市安全大考。防灾减灾，最怕大意；安全底线，贵在坚守。相关地区必须树牢底线思维、极限思维，摒弃麻痹大意心态，以最严实的举措守住城市安全、守护市民平安。",
+      "audio_file": "audio/p2_s4.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "少し前のコメ不足から一転、農業協同組合（JA）などの集荷業者や卸売業者が、かつてないほど大量の在庫を抱えている。",
+      "jp_html": "<ruby>少<rt>すこ</rt></ruby>し<ruby>前<rt>まえ</rt></ruby>のコメ<ruby>不足<rt>ぶそく</rt></ruby>から<ruby>一転<rt>いってん</rt></ruby>、<ruby>農業協同組合<rt>のうぎょうきょうどうくみあい</rt></ruby>（JA）などの<ruby>集荷業者<rt>しゅうかぎょうしゃ</rt></ruby>や<ruby>卸売業者<rt>おろしうりぎょうしゃ</rt></ruby>が、かつてないほど<ruby>大量<rt>たいりょう</rt></ruby>の<ruby>在庫<rt>ざいこ</rt></ruby>を<ruby>抱<rt>かか</rt></ruby>えている。",
+      "zh": "不久之前，日本深陷“米荒”，而如今形势却陡然逆转。农业协同组合（JA）等收购方和批发商手中的大米库存已达到前所未有的规模。2025年生产的大米在超市等地也销售不畅，即使降价促销，也难以如愿消化库存。受2024年夏季开始的“令和米荒”影响，日本大米价格长期居高不下，消费者减少大米消费的趋势似乎进一步加剧。为提振大米需求，政府与民间有必要携手采取根本性措施。",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "2025年産米がスーパーなどでも売れず、特売で値下げしても思うようにさばけないという。",
+      "jp_html": "2025<ruby>年産米<rt>ねんさんまい</rt></ruby>がスーパーなどでも<ruby>売<rt>う</rt></ruby>れず、<ruby>特売<rt>とくばい</rt></ruby>で<ruby>値下<rt>ねさ</rt></ruby>げしても<ruby>思<rt>おも</rt></ruby>うようにさばけないという。",
+      "zh": "不久之前，日本深陷“米荒”，而如今形势却陡然逆转。农业协同组合（JA）等收购方和批发商手中的大米库存已达到前所未有的规模。2025年生产的大米在超市等地也销售不畅，即使降价促销，也难以如愿消化库存。受2024年夏季开始的“令和米荒”影响，日本大米价格长期居高不下，消费者减少大米消费的趋势似乎进一步加剧。为提振大米需求，政府与民间有必要携手采取根本性措施。",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "2024年夏に始まった「令和の米騒動」の余波で高値が続き、消費者のコメ離れがさらに進んだとみられる。",
+      "jp_html": "2024<ruby>年<rt>ねん</rt></ruby><ruby>夏<rt>なつ</rt></ruby>に<ruby>始<rt>はじ</rt></ruby>まった「<ruby>令和<rt>れいわ</rt></ruby>の<ruby>米騒動<rt>こめそうどう</rt></ruby>」の<ruby>余波<rt>よは</rt></ruby>で<ruby>高値<rt>たかね</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>き、<ruby>消費者<rt>しょうひしゃ</rt></ruby>のコメ<ruby>離<rt>ばな</rt></ruby>れがさらに<ruby>進<rt>すす</rt></ruby>んだとみられる。",
+      "zh": "不久之前，日本深陷“米荒”，而如今形势却陡然逆转。农业协同组合（JA）等收购方和批发商手中的大米库存已达到前所未有的规模。2025年生产的大米在超市等地也销售不畅，即使降价促销，也难以如愿消化库存。受2024年夏季开始的“令和米荒”影响，日本大米价格长期居高不下，消费者减少大米消费的趋势似乎进一步加剧。为提振大米需求，政府与民间有必要携手采取根本性措施。",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 4,
+      "sentence_id": "p3_s4",
+      "jp_plain": "需要喚起に向けた抜本的な対策に官民で取り組む必要がある。",
+      "jp_html": "<ruby>需要喚起<rt>じゅようかんき</rt></ruby>に<ruby>向<rt>む</rt></ruby>けた<ruby>抜本的<rt>ばっぽんてき</rt></ruby>な<ruby>対策<rt>たいさく</rt></ruby>に<ruby>官民<rt>かんみん</rt></ruby>で<ruby>取<rt>と</rt></ruby>り<ruby>組<rt>く</rt></ruby>む<ruby>必要<rt>ひつよう</rt></ruby>がある。",
+      "zh": "不久之前，日本深陷“米荒”，而如今形势却陡然逆转。农业协同组合（JA）等收购方和批发商手中的大米库存已达到前所未有的规模。2025年生产的大米在超市等地也销售不畅，即使降价促销，也难以如愿消化库存。受2024年夏季开始的“令和米荒”影响，日本大米价格长期居高不下，消费者减少大米消费的趋势似乎进一步加剧。为提振大米需求，政府与民间有必要携手采取根本性措施。",
+      "audio_file": "audio/p3_s4.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "サッカーのワールドカップ北中米大会を巡り、政治権力による介入や関与が問題となっている。",
+      "jp_html": "サッカーのワールドカップ<ruby>北中米大会<rt>ほくちゅうべいたいかい</rt></ruby>を<ruby>巡<rt>めぐ</rt></ruby>り、<ruby>政治権力<rt>せいじけんりょく</rt></ruby>による<ruby>介入<rt>かいにゅう</rt></ruby>や<ruby>関与<rt>かんよ</rt></ruby>が<ruby>問題<rt>もんだい</rt></ruby>となっている。",
+      "zh": "眼下，政治权力对美加墨世界杯的干预和介入正引发争议。体育本应以公平、公正为前提，让人们超越立场差异，共同感受竞技的魅力。倘若政治力量对赛事运营等事务横加干涉，体育本身的价值必将受到损害。任何煽动不满、加剧社会撕裂，甚至引发对立冲突的政治干预和介入，都不应被允许。",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "政治が運営などに注文をつければ、公平、公正を前提に、立場を超えて楽しむはずのスポーツの価値は損なわれる。",
+      "jp_html": "<ruby>政治<rt>せいじ</rt></ruby>が<ruby>運営<rt>うんえい</rt></ruby>などに<ruby>注文<rt>ちゅうもん</rt></ruby>をつければ、<ruby>公平<rt>こうへい</rt></ruby>、<ruby>公正<rt>こうせい</rt></ruby>を<ruby>前提<rt>ぜんてい</rt></ruby>に、<ruby>立場<rt>たちば</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えて<ruby>楽<rt>たの</rt></ruby>しむはずのスポーツの<ruby>価値<rt>かち</rt></ruby>は<ruby>損<rt>そこ</rt></ruby>なわれる。",
+      "zh": "眼下，政治权力对美加墨世界杯的干预和介入正引发争议。体育本应以公平、公正为前提，让人们超越立场差异，共同感受竞技的魅力。倘若政治力量对赛事运营等事务横加干涉，体育本身的价值必将受到损害。任何煽动不满、加剧社会撕裂，甚至引发对立冲突的政治干预和介入，都不应被允许。",
+      "audio_file": "audio/p4_s2.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 3,
+      "sentence_id": "p4_s3",
+      "jp_plain": "不満をあおり、分断や対立を招きかねない政治介入や関与が許されてはならない。",
+      "jp_html": "<ruby>不満<rt>ふまん</rt></ruby>をあおり、<ruby>分断<rt>ぶんだん</rt></ruby>や<ruby>対立<rt>たいりつ</rt></ruby>を<ruby>招<rt>まね</rt></ruby>きかねない<ruby>政治介入<rt>せいじかいにゅう</rt></ruby>や<ruby>関与<rt>かんよ</rt></ruby>が<ruby>許<rt>ゆる</rt></ruby>されてはならない。",
+      "zh": "眼下，政治权力对美加墨世界杯的干预和介入正引发争议。体育本应以公平、公正为前提，让人们超越立场差异，共同感受竞技的魅力。倘若政治力量对赛事运营等事务横加干涉，体育本身的价值必将受到损害。任何煽动不满、加剧社会撕裂，甚至引发对立冲突的政治干预和介入，都不应被允许。",
+      "audio_file": "audio/p4_s3.mp3"
+    }
+  ]
+}

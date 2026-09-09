@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新完全掌握 7-2 政治・法律・歴史</title>
+<style>
+  body {
+    --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
+    --num: #8b8577; --num-border: #5a564d; --muted: .55;
+    font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans CJK JP", "PingFang SC", sans-serif;
+    background: var(--bg); color: var(--fg);
+    margin: 0; padding: 20px; max-width: 1080px;
+    transition: background .2s, color .2s;
+  }
+  body.day { --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8; --num: #8a8373; --num-border: #c4bda9; --muted: .6; }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
+  #themeBtn { border: 1px solid var(--num-border); background: var(--card); color: var(--fg); border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px; }
+  #themeBtn:hover { opacity: .8; }
+  .stats { display: inline-flex; gap: 8px; font-size: 12px; opacity: .7; }
+  .sec { font-size: 13px; font-weight: 700; opacity: .5; margin: 22px 0 8px; letter-spacing: .05em; grid-column: 1 / -1; }
+  #list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: start; }
+  .card { border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; background: var(--card); border-left: 5px solid #555; }
+  .card.cV { border-left-color: #e5484d; }
+  .card.cI { border-left-color: #d63384; }
+  .card.cNA { border-left-color: #7048e8; }
+  .card.cN { border-left-color: #1971c2; }
+  .card.cadv { border-left-color: #2b8a3e; }
+  .row1 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .num { font-size: 11px; font-weight: 700; color: var(--num); border: 1.5px solid var(--num-border); border-radius: 50%; width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; align-self: center; }
+  .word { font-size: 20px; font-weight: 700; cursor: pointer; }
+  ruby.word { ruby-align: center; }
+  ruby.word rt { font-size: 10px; font-weight: 500; opacity: .55; letter-spacing: .02em; }
+  ruby.word rt.en { font-style: italic; opacity: .5; }
+  .word:hover { text-decoration: underline; }
+  .pos { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 7px; color: #fff; }
+  .pos.V { background: #e5484d; }
+  .pos.I { background: #d63384; }
+  .pos.NA { background: #7048e8; }
+  .pos.N { background: #1971c2; }
+  .pos.adv { background: #2b8a3e; }
+  .mean { margin-top: 2px; font-size: 13px; }
+  .phrase { margin-top: 10px; font-size: 13px; }
+  .phrase .jp { font-weight: 600; cursor: pointer; }
+  .phrase .jp:hover { text-decoration: underline; }
+  .phrase .zh { opacity: var(--muted); margin-left: 8px; }
+  .spk { cursor: pointer; font-size: 14px; opacity: .4; margin-left: 4px; user-select: none; }
+  .spk:hover { opacity: 1; }
+  .pair { display: flex; align-items: flex-start; gap: 12px; }
+  .side { flex: 1; min-width: 0; }
+  .side .entry { margin-bottom: 6px; }
+  .side .entry:last-child { margin-bottom: 0; }
+  .vs { font-size: 18px; opacity: .5; flex-shrink: 0; user-select: none; padding-top: 2px; }
+  @media (max-width: 760px) { #list { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>7-2 政治・法律・歴史</h1>
+    <p>新完全掌握 · N1 · 第7章 社会 第2课（书内 p.38–39）<span class="stats">共 <b id="count"></b> 词 · 点击日文发音（edge 女声）</span></p>
+  </div>
+  <button id="themeBtn" onclick="toggleTheme()">🌙 夜间</button>
+</header>
+<div id="list"></div>
+
+<script>
+const DATA = [{"s": "一", "pair": ["促す", "うながす", "促进，促使"], "p": "V1", "ph": "政策の転換を促す", "phz": "促使政策转向"}, {"s": "一", "pair": ["質疑", "しつぎ", "质询"], "p": "N", "ph": "質疑を行う", "phz": "进行质询"}, {"s": "一", "pair": ["異論", "いろん", "异议"], "p": "N", "ph": "異論を唱える", "phz": "提出异议"}, {"s": "一", "pair": ["踏まえる", "ふまえる", "基于，依据"], "p": "V2", "ph": "議論を踏まえる", "phz": "基于讨论"}, {"s": "一", "pair": ["承認", "しょうにん", "批准"], "p": "N", "ph": "国会の承認を得る", "phz": "获得国会批准"}, {"s": "一", "pair": ["採決", "さいけつ", "表决"], "p": "N", "ph": "議長が採決を取る", "phz": "议长组织表决"}, {"s": "一", "pair": ["審議", "しんぎ", "审议"], "p": "N", "ph": "法案が審議される", "phz": "法案被审议"}, {"s": "一", "pair": ["採択", "さいたく", "通过，采纳"], "p": "N", "ph": "法案が採択される", "phz": "法案被通过"}, {"s": "一", "pair": ["成立", "せいりつ", "成立"], "p": "N", "ph": "法案が成立する", "phz": "法案成立"}, {"s": "一", "pair": ["改革", "かいかく", "改革"], "p": "N", "ph": "制度を改革する", "phz": "改革制度"}, {"s": "一", "pair": ["制定", "せいてい", "制定"], "p": "N", "ph": "法律を制定する", "phz": "制定法律"}, {"s": "一", "pair": ["整備", "せいび", "完备，整备"], "p": "N", "ph": "法整備を進める", "phz": "推进法律完善"}, {"s": "一", "pair": ["改定", "かいてい", "修订"], "p": "N", "ph": "法律を改定する", "phz": "修订法律"}, {"s": "一", "pair": ["施行", "しこう", "施行"], "p": "N", "ph": "法律を施行する", "phz": "施行法律"}, {"s": "一", "pair": ["緩和", "かんわ", "缓和，放宽"], "p": "N", "ph": "規制が緩和される", "phz": "管制被放宽"}, {"s": "一", "pair": ["声明", "せいめい", "声明"], "p": "N", "ph": "政府が声明を発表する", "phz": "政府发表声明"}, {"s": "一", "pair": ["措置", "そち", "措施"], "p": "N", "ph": "万全の措置を取る", "phz": "采取万全措施"}, {"s": "一", "pair": ["万全の｜異例の｜寛大な", "ばんぜんの｜いれいの｜かんだいな", "万全的｜破例的｜宽大的"], "p": "N", "ph": "万全の措置", "phz": "万全的措施"}, {"s": "一", "pair": ["調印", "ちょういん", "签署"], "p": "N", "ph": "条約に調印する", "phz": "签署条约"}, {"s": "一", "pair": ["協議", "きょうぎ", "协议，磋商"], "p": "N", "ph": "関係閣僚が協議する", "phz": "相关阁僚磋商"}, {"s": "一", "pair": ["腐敗", "ふはい", "腐败"], "p": "N", "ph": "政治が腐敗する", "phz": "政治腐败"}, {"s": "一", "pair": ["申請", "しんせい", "申请"], "right": ["発給", "はっきゅう", "签发"], "p": "N", "ph": "ビザを申請する", "phz": "申请签证"}, {"s": "一", "pair": ["訴訟", "そしょう", "诉讼"], "p": "N", "ph": "訴訟を起こす", "phz": "提起诉讼"}, {"s": "一", "pair": ["損害", "そんがい", "损害"], "p": "N", "ph": "損害の賠償を求める", "phz": "要求损害赔偿"}, {"s": "一", "pair": ["賠償", "ばいしょう", "赔偿"], "p": "N", "ph": "損害の賠償を求める", "phz": "要求赔偿"}, {"s": "一", "pair": ["検察", "けんさつ", "检察"], "p": "N", "ph": "検察が告訴する", "phz": "检察方起诉"}, {"s": "一", "pair": ["告訴", "こくそ", "起诉，控告"], "p": "N", "ph": "検察が告訴する", "phz": "提起控告"}, {"s": "一", "pair": ["権利", "けんり", "权利"], "p": "N", "ph": "権利を保障する", "phz": "保障权利"}, {"s": "一", "pair": ["保障", "ほしょう", "保障"], "p": "N", "ph": "権利を保障する", "phz": "保障权利"}, {"s": "一", "pair": ["判決", "はんけつ", "判决"], "p": "N", "ph": "判決が下る", "phz": "下达判决"}, {"s": "一", "pair": ["死刑｜懲役", "しけい｜ちょうえき", "死刑｜徒刑"], "p": "N", "ph": "死刑｜懲役", "phz": "死刑／徒刑"}, {"s": "二", "pair": ["形成", "けいせい", "形成"], "p": "N", "ph": "国家を形成する", "phz": "形成国家"}, {"s": "二", "pair": ["侵略", "しんりゃく", "侵略"], "p": "N", "ph": "異民族に侵略される", "phz": "被异民族侵略"}, {"s": "二", "pair": ["復興", "ふっこう", "复兴"], "p": "N", "ph": "戦争から復興する", "phz": "从战争中复兴"}, {"s": "二", "pair": ["繁栄", "はんえい", "繁荣"], "right": ["衰退", "すいたい", "衰退"], "p": "N", "ph": "帝国が繁栄する", "phz": "帝国繁荣"}, {"s": "二", "pair": ["内戦", "ないせん", "内战"], "p": "N", "ph": "内戦が起きる", "phz": "爆发内战"}, {"s": "二", "pair": ["紛争", "ふんそう", "纠纷，争端"], "p": "N", "ph": "紛争が起きる", "phz": "发生争端"}, {"s": "二", "pair": ["分断", "ぶんだん", "分割，分裂"], "p": "N", "ph": "国が東西に分断される", "phz": "国家被分割"}, {"s": "二", "pair": ["遺跡", "いせき", "遗迹"], "p": "N", "ph": "遺跡を発掘する", "phz": "发掘遗迹"}, {"s": "二", "pair": ["発掘", "はっくつ", "发掘"], "p": "N", "ph": "遺跡を発掘する", "phz": "发掘遗迹"}, {"s": "二", "pair": ["増強", "ぞうきょう", "增强"], "p": "N", "ph": "軍事力を増強する", "phz": "增强军力"}, {"s": "三", "pair": ["貧困層", "ひんこんそう", "贫困层"], "p": "N", "ph": "貧困層", "phz": "贫困阶层"}, {"s": "三", "pair": ["異民族", "いみんぞく", "异民族"], "p": "N", "ph": "異民族", "phz": "异民族"}, {"s": "三", "pair": ["異文化", "いぶんか", "异文化"], "p": "N", "ph": "異文化を理解する", "phz": "理解异文化"}, {"s": "三", "pair": ["住居跡", "じゅうきょあと", "居住遗址"], "p": "N", "ph": "住居跡", "phz": "居住遗址"}, {"s": "三", "pair": ["緩和", "かんわ", "缓和"], "p": "N", "ph": "規制を緩和する", "phz": "放宽管制"}, {"s": "四", "pair": ["一見", "いっけん", "乍看"], "p": "adv", "ph": "一見おとなしそうだが", "phz": "乍看很老实，但"}, {"s": "四", "pair": ["直ちに", "ただちに", "立刻"], "p": "adv", "ph": "直ちに撤退する", "phz": "立刻撤退"}, {"s": "四", "pair": ["根本的", "こんぽんてき", "根本性的"], "p": "ナ", "ph": "根本的に改革される", "phz": "被根本性改革"}];
+const SEC = {"一": "1. 政治・法律（立法・行政・司法）", "二": "2. 歴史", "三": "語形成（p.39）", "四": "例文中的副词（p.39）"};
+const LP = ['', '-b', '-c', '-d'];
+const RP = ['-r', '-rb', '-rc', '-rd'];
+
+function applyTheme(day){
+  document.body.classList.toggle('day', day);
+  document.getElementById('themeBtn').textContent = day ? '🌙 夜间' : '☀️ 日间';
+}
+function toggleTheme(){
+  const day = !document.body.classList.contains('day');
+  applyTheme(day);
+  try { localStorage.setItem('n172theme', day ? 'day' : 'night'); } catch(e) {}
+}
+applyTheme((() => { try { return localStorage.getItem('n172theme') === 'day'; } catch(e) { return false; } })());
+
+let curAudio = null;
+function play(num, suffix){
+  if (curAudio) { curAudio.pause(); }
+  curAudio = new Audio(`../audio/N1/N1_7-2_audio/${num}${suffix || ''}.mp3`);
+  curAudio.play();
+}
+
+function rubyHtml(w, k, num, sfx){
+  const kata = w.match(/^([ァ-ヶー]+)/);
+  if (kata) {
+    const en = /^[a-zA-Z]/.test(k);
+    return `<ruby class="word" onclick="play(${num},'${sfx}')">${kata[1]}<rt${en ? ' class="en"' : ''}>${k}</rt></ruby>${w.slice(kata[1].length)}`;
+  }
+  if (/[\u4e00-\u9fff]/.test(w)) {
+    return `<ruby class="word" onclick="play(${num},'${sfx}')">${w}<rt>${k}</rt></ruby>`;
+  }
+  return `<span class="word" onclick="play(${num},'${sfx}')">${w}</span>`;
+}
+
+const list = document.getElementById('list');
+let cur = '';
+let n = 0;
+for (const d of DATA) {
+  if (d.s !== cur) {
+    cur = d.s;
+    const h = document.createElement('div');
+    h.className = 'sec';
+    h.textContent = SEC[cur] || cur;
+    list.appendChild(h);
+  }
+  n++;
+  const posCls = d.p.startsWith('V') ? 'V' : d.p === 'イ' ? 'I' : d.p === 'ナ' ? 'NA' : d.p === 'adv' ? 'adv' : 'N';
+  const card = document.createElement('div');
+  card.className = 'card c' + posCls;
+  const side = (t, prefixes) => {
+    const ws = t[0].split('｜'), ks = t[1].split('｜'), ms = t[2].split('｜');
+    return `<div class="side">` + ws.map((wv, i) => `
+      <div class="entry">
+        <div class="row1">
+          ${rubyHtml(wv, ks[i], n, prefixes[i])}
+          <span class="spk" onclick="play(${n},'${prefixes[i]}')">🔊</span>
+          ${i === 0 ? `<span class="pos ${posCls}">${d.p}</span>` : ''}
+        </div>
+        <div class="mean">${ms[i]}</div>
+      </div>`).join('') + `</div>`;
+  };
+  const inner = d.right
+    ? `<div class="pair">${side(d.pair, LP)}<span class="vs">⇄</span>${side(d.right, RP)}</div>`
+    : side(d.pair, LP);
+  card.innerHTML = `
+    <div class="row1"><span class="num">${n}</span></div>
+    ${inner}
+    <div class="phrase"><span class="jp" onclick="play(${n},'p')">${d.ph}<span class="spk">🔊</span></span><span class="zh">${d.phz}</span></div>`;
+  list.appendChild(card);
+}
+document.getElementById('count').textContent = n;
+</script>
+</body>
+</html>

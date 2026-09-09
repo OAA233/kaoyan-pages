@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3-3 段落双向翻译练习｜コンピュータの遍在化・手机信息裹挟（强化笔记融合版）</title>
+  <style>
+    :root{
+      --ink:#1d2a34;
+      --muted:#64727d;
+      --paper:#fffdf8;
+      --bg:#eef3f2;
+      --line:#dbe5e1;
+      --green:#0f766e;
+      --green-soft:#e6f5f1;
+      --orange:#c15b24;
+      --orange-soft:#fff0e7;
+      --blue-soft:#eaf2ff;
+      --yellow:#c08a12;            /* 平假名标注色：金黄 */
+      --yellow-soft:#fbf3dd;
+      --shadow:0 12px 35px rgba(31,56,52,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #dff4ec 0, transparent 27rem),
+        radial-gradient(circle at 100% 14%, #fff0d9 0, transparent 25rem),
+        var(--bg);
+      font-family:"Noto Serif SC","Songti SC","STSong",serif;
+      line-height:1.9;
+    }
+    /* 顶部索引：固定在网页最上方，点击跳转对应段落 */
+    .top-nav{
+      position:sticky;top:0;z-index:100;
+      display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+      padding:10px 18px;
+      background:rgba(20,91,85,.96);
+      backdrop-filter:blur(6px);
+      box-shadow:0 4px 14px rgba(20,60,55,.25);
+    }
+    .top-nav .nav-title{
+      color:#baf6e8;font:700 .8rem/1 system-ui,sans-serif;
+      letter-spacing:.14em;margin-right:6px;white-space:nowrap;
+    }
+    .top-nav a{
+      padding:5px 13px;border-radius:999px;
+      color:#fff;background:rgba(255,255,255,.14);
+      text-decoration:none;font:600 .84rem/1.2 system-ui,sans-serif;
+      white-space:nowrap;transition:background .15s;
+    }
+    .top-nav a:hover{background:#198f7c}
+    .top-nav a.to-top{background:rgba(255,255,255,.28)}
+    .wrap{max-width:1060px;margin:auto;padding:32px 20px 72px}
+    section{scroll-margin-top:64px}
+    header{
+      padding:44px 42px 36px;
+      border-radius:24px;
+      color:#fff;
+      background:linear-gradient(135deg,#145b55,#0d766b 58%,#198f7c);
+      box-shadow:var(--shadow);
+    }
+    .eyebrow{
+      margin:0 0 12px;
+      color:#baf6e8;
+      font-size:.82rem;
+      letter-spacing:.16em;
+      font-family:system-ui,sans-serif;
+      font-weight:700;
+    }
+    h1{margin:0;font-size:clamp(1.8rem,4vw,3rem);line-height:1.35}
+    header p{margin:14px 0 0;color:#e2fffa;font-size:1rem}
+    nav{
+      display:flex;flex-wrap:wrap;gap:10px;
+      margin:22px 0 30px;
+    }
+    nav a{
+      padding:7px 14px;border:1px solid #cbded9;border-radius:999px;
+      color:#25514b;background:rgba(255,255,255,.74);
+      text-decoration:none;font-family:system-ui,sans-serif;font-size:.88rem;
+    }
+    nav a:hover{background:#fff}
+    section{margin-top:30px}
+    .section-title{
+      display:flex;align-items:center;gap:12px;
+      margin:0 0 15px;font-size:1.42rem;
+    }
+    .section-title span{
+      display:inline-grid;place-items:center;width:32px;height:32px;
+      border-radius:50%;color:#fff;background:var(--green);
+      font-family:system-ui,sans-serif;font-size:.9rem;
+    }
+    .translation{
+      overflow:hidden;border:1px solid var(--line);border-radius:20px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    .language{padding:26px 30px}
+    .language + .language{border-top:1px dashed #cbd8d3}
+    .label{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-bottom:12px;padding:4px 10px;border-radius:999px;
+      color:var(--green);background:var(--green-soft);
+      font:700 .78rem/1.4 system-ui,sans-serif;letter-spacing:.08em;
+    }
+    .label.zh{color:var(--orange);background:var(--orange-soft)}
+    .jp{
+      margin:0;font-size:1.13rem;letter-spacing:.025em;
+      font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+    }
+    .zh{margin:0;font-size:1.02rem}
+    ruby{ruby-position:over;ruby-align:center}
+    rt{font-size:.54em;color:var(--yellow);font-weight:700;letter-spacing:0;user-select:none}
+    .note{
+      margin:14px 0 0;padding:11px 14px;border-left:4px solid #8fc9b6;
+      color:#2b3330;background:var(--green-soft);border-radius:0 10px 10px 0;
+      font-size:.91rem;
+    }
+    .note rt{color:#2f7cc4}
+    .grammar-grid,.vocab-grid{display:grid;gap:16px}
+    .grammar-grid{grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+    .card{
+      padding:21px 22px;border:1px solid var(--line);border-radius:16px;
+      background:rgba(255,253,248,.92);box-shadow:0 7px 20px rgba(31,56,52,.06);
+    }
+    .card h3{margin:0 0 9px;font-size:1.03rem;color:#12675e}
+    .card p{margin:7px 0;font-size:.94rem}
+    .pattern{
+      display:inline-block;padding:2px 8px;border-radius:6px;
+      color:#1e4c67;background:var(--blue-soft);
+      font-family:"SFMono-Regular",Consolas,monospace;font-size:.86rem;
+    }
+    .g-num{
+      display:inline-grid;place-items:center;width:22px;height:22px;
+      border-radius:50%;background:var(--orange);color:#fff;
+      font:700 .78rem/1 system-ui,sans-serif;margin-right:7px;
+      vertical-align:1px;
+    }
+    .table-wrap{
+      overflow:auto;border:1px solid var(--line);border-radius:16px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    table{width:100%;border-collapse:collapse;min-width:820px}
+    th,td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{color:#fff;background:#27665e;font:700 .82rem/1.4 system-ui,sans-serif;letter-spacing:.04em}
+    tr:last-child td{border-bottom:0}
+    tr:nth-child(even) td{background:#fbfdfc}
+    td{font-size:.91rem}
+    .word{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:1rem}
+    .pos{
+      display:inline-block;padding:2px 7px;border-radius:5px;
+      color:#075b54;background:var(--green-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+    }
+    /* 强化笔记精讲 */
+    .notes-grid{display:grid;gap:18px}
+    .note-card{
+      padding:24px 26px;border:1px solid #c9e2d8;border-radius:18px;
+      background:var(--green-soft);box-shadow:0 7px 20px rgba(20,90,70,.07);
+    }
+    .note-card h3{
+      margin:0 0 12px;font-size:1.14rem;color:#1d2a34;
+      border-bottom:2px solid #b8d8cd;padding-bottom:8px;
+    }
+    .note-card h3 .sec{color:#0f766e;font-size:.8rem;margin-right:6px}
+    .note-card h4{
+      margin:16px 0 6px;font-size:.98rem;color:#2b3a36;
+    }
+    .note-card p{margin:8px 0;font-size:.95rem;color:#2b3330}
+    .note-card ul{margin:8px 0;padding-left:22px}
+    .note-card li{margin:7px 0;font-size:.94rem;color:#2b3330}
+    .note-card li .ex{
+      font-family:"Hiragino Mincho ProN","Yu Mincho",serif;color:#14181a;
+    }
+    .note-card li .tr{display:block;color:#64727d;font-size:.9rem;margin-top:2px}
+    .note-card .key{
+      display:inline-block;padding:1px 8px;border-radius:6px;
+      background:#dff2ec;border:1px solid #8fc9b6;color:#0e5a46;
+      font:700 .86rem system-ui,sans-serif;
+    }
+    .note-card rt{color:#2f7cc4}
+    .forms{
+      margin-top:22px;padding:25px 28px;border-radius:18px;
+      background:#203f42;color:#effffb;
+    }
+    .forms h2{margin:0 0 10px;font-size:1.35rem}
+    .forms p{margin:6px 0;color:#d5eee8;font-size:.94rem}
+    .forms code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    .forms-inline{
+      margin:14px 2px 0;padding:16px 20px;border-radius:16px;
+      background:#203f42;color:#effffb;
+    }
+    .forms-inline h3{margin:0 0 8px;font-size:1.02rem;color:#baf6e8}
+    .forms-inline p{margin:5px 0;color:#d5eee8;font-size:.92rem;line-height:1.7}
+    .forms-inline code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    footer{margin-top:27px;color:var(--muted);font-size:.82rem;text-align:center}
+    @media(max-width:640px){
+      .wrap{padding:16px 13px 48px}
+      header{padding:30px 24px}
+      .language{padding:22px 20px}
+      .jp{font-size:1.04rem}
+      .top-nav{padding:8px 12px}
+      .top-nav .nav-title{display:none}
+    }
+  
+    .back-top{margin:12px 2px 0;text-align:right;font-size:.85rem}
+    .back-top a{color:var(--muted);text-decoration:none}
+    .back-top a:hover{color:var(--green)}
+  /* ===== 打印适配（A4 排版 / PDF 存为 A3 / 隐藏页眉页脚 / 卡片不跨页）===== */
+  @media print {
+    @page { size: A3; margin: 10mm 8mm; }
+    html, body { background: #ffffff !important; }
+    nav { display: none !important; }
+    .top-nav { display: flex !important; position: static !important; box-shadow: none !important; backdrop-filter: none; }
+    section { margin-bottom: 5mm; }
+    .card, .translation, .forms-inline, .note-card, .para-pair,
+    .vocab-card, .grammar-item, .language, .phrase-item,
+    .vocab-group, .analysis-block { break-inside: avoid; page-break-inside: avoid; }
+    h1, h2, h3, h4, .section-title { break-after: avoid; page-break-after: avoid; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    table { font-size: 0.9em; }
+    a { color: inherit; text-decoration: none; }
+    .forms-inline, .note-card, .card, .translation { box-shadow: none !important; }
+    .wrap { max-width: 100%; padding: 0; }
+    .jp { font-size: 0.98em; letter-spacing: 0.02em; }
+    .zh, .note { font-size: 0.95em; }
+    .language { padding: 12px 16px; }
+    .grammar-grid { gap: 8px; }
+    .table-wrap { box-shadow: none; }
+  }
+
+  /* ===== 跟读控制条（注入） ===== */
+  .player-bar{
+    position:sticky;top:56px;z-index:95;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    margin:18px 0 8px;padding:12px 16px;
+    border:1px solid var(--line);border-radius:18px;
+    background:rgba(255,253,248,.95);
+    box-shadow:0 8px 22px rgba(31,56,52,.08);
+  }
+  .pb-btn{
+    width:42px;height:42px;border:0;border-radius:50%;cursor:pointer;
+    display:inline-grid;place-items:center;
+    background:var(--green);color:#fff;font-size:1rem;
+    transition:transform .12s, background .15s;
+  }
+  .pb-btn:hover{background:#198f7c;transform:scale(1.06)}
+  .pb-btn.small{width:34px;height:34px;background:#e8f1ee;color:var(--green);font-size:.9rem}
+  .pb-btn.small:hover{background:#d6e8e3}
+  .pb-btn:disabled{opacity:.35;cursor:default;transform:none}
+  .rate-group{display:flex;gap:5px;margin-left:auto}
+  .rate-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .rate-btn.active{background:var(--green);border-color:var(--green);color:#fff}
+  .mode-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .mode-btn.active{background:var(--orange);border-color:var(--orange);color:#fff}
+  .progress{
+    flex-basis:100%;height:6px;border-radius:3px;
+    background:#e3ece8;position:relative;cursor:pointer;
+  }
+  .progress .fill{
+    position:absolute;left:0;top:0;bottom:0;border-radius:3px;
+    background:linear-gradient(90deg,#0f766e,#2ba98c);width:0%;
+  }
+  .progress .knob{
+    position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:#fff;border:2px solid var(--green);transform:translate(-50%,-50%);
+    left:0%;box-shadow:0 1px 4px rgba(0,0,0,.2);
+  }
+  .sentence-status{
+    flex-basis:100%;color:var(--muted);font:600 .78rem system-ui,sans-serif;
+  }
+  .sentence{
+    cursor:pointer;border-radius:8px;padding:3px 10px;margin:0 -10px;
+    transition:background .18s;
+    border-left:4px solid transparent;
+  }
+  .sentence:hover{background:#eaf4fc}
+  .sentence.playing{
+    background:linear-gradient(90deg, rgba(137,207,240,.60), rgba(137,207,240,.28));
+    border-left-color:#2f7cc4;
+    box-shadow:0 2px 10px rgba(47,124,196,.22);
+  }
+  .sentence .play-ic{
+    display:inline-block;margin-right:4px;color:#2f7cc4;
+    font-size:.72em;opacity:.5;font-family:system-ui,sans-serif;vertical-align:2px;
+  }
+  .sentence.playing .play-ic{opacity:1;color:#1c5f9e;transform:scale(1.1)}
+  @media(max-width:640px){
+    .player-bar{top:50px;padding:10px 12px}
+    .player-bar .rate-group{order:3;margin-left:0}
+  }
+  @media print{
+    .player-bar{display:none !important}
+    .sentence{cursor:default;padding:0;margin:0;border:0}
+    .sentence.playing{background:transparent;box-shadow:none;border:0}
+    .sentence .play-ic{display:none}
+  }
+
+</style>
+</head>
+<body>
+  <!-- 顶部索引 -->
+  <nav class="top-nav">
+    <span class="nav-title">索 引</span>
+    <a href="#p1">第一段</a>
+    <a href="#p2">第二段</a>
+    <a href="#p3">第三段</a>
+    <a href="#grammar">语法</a>
+    <a href="#vocab">词汇与变形</a>
+    <a href="#notes">强化笔记</a>
+    <a class="to-top" href="#top">▲ 顶部</a>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header>
+      <p class="eyebrow">JAPANESE × CHINESE · READING &amp; GRAMMAR NOTES</p>
+      <h1>3-3 段落双向翻译练习<br>コンピュータの遍在化 · 手机信息裹挟</h1>
+      <p>日语汉字均标注平假名读音（黄色）；每组内容按日语、中文交替呈现，含瑞译强化笔记精讲。</p>
+    </header>
+
+  <div class="player-bar" id="player-bar">
+    <button class="pb-btn small" id="btn-prev" title="上一句（←）">⏮</button>
+    <button class="pb-btn" id="btn-play" title="播放/暂停（空格）">▶</button>
+    <button class="pb-btn small" id="btn-next" title="下一句（→）">⏭</button>
+    <div class="rate-group" id="rate-group">
+      <button class="rate-btn" data-rate="0.5">0.5x</button>
+      <button class="rate-btn" data-rate="0.75">0.75x</button>
+      <button class="rate-btn active" data-rate="1">1x</button>
+      <button class="rate-btn" data-rate="1.25">1.25x</button>
+      <button class="rate-btn" data-rate="1.5">1.5x</button>
+    </div>
+    <button class="mode-btn" id="btn-mode" title="循环模式">循环: 关</button>
+    <div class="progress" id="progress"><div class="fill" id="progress-fill"></div><div class="knob" id="progress-knob"></div></div>
+    <div class="sentence-status" id="sentence-status">点击下方任意日文句子开始跟读</div>
+  </div>
+
+
+    <nav>
+      <a href="#p1">第一段</a>
+      <a href="#p2">第二段</a>
+      <a href="#p3">第三段</a>
+      <a href="#grammar">语法</a>
+      <a href="#vocab">词汇与变形</a>
+      <a href="#notes">强化笔记</a>
+    </nav>
+
+    <section id="p1">
+      <h2 class="section-title">第一段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="0" data-audio="p1_s1.mp3"><span class="play-ic">▶</span>まず<ruby>重要<rt>じゅうよう</rt></ruby>なのは、<ruby>現代社会<rt>げんだいしゃかい</rt></ruby>におけるコンピュータの「<ruby>遍在化<rt>へんざいか</rt></ruby>」という<ruby>現象<rt>げんしょう</rt></ruby>と、まさにそれゆえに<ruby>人々<rt>ひとびと</rt></ruby>がコンピュータへの<ruby>依存<rt>いぞん</rt></ruby>をさしあたっては<ruby>意識<rt>いしき</rt></ruby>しなくなりつつあるということである。</span><span class="sentence" data-idx="1" data-audio="p1_s2.mp3"><span class="play-ic">▶</span>コンピュータはなにもキーボードとモニタがセットされた<ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>の<ruby>演算装置<rt>えんざんそうち</rt></ruby>だけを<ruby>意味<rt>いみ</rt></ruby>するわけではない。</span><span class="sentence" data-idx="2" data-audio="p1_s3.mp3"><span class="play-ic">▶</span><ruby>航空機<rt>こうくうき</rt></ruby>や<ruby>自動車<rt>じどうしゃ</rt></ruby>から、<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>、<ruby>洗濯機<rt>せんたくき</rt></ruby>などの<ruby>家電製品<rt>かでんせいひん</rt></ruby>やおもちゃにいたるまで、われわれの<ruby>身<rt>み</rt></ruby>の<ruby>回<rt>まわ</rt></ruby>りにはきわめて<ruby>多<rt>おお</rt></ruby>くのコンピュータを<ruby>内蔵<rt>ないぞう</rt></ruby>する<ruby>機器<rt>きき</rt></ruby>が<ruby>存在<rt>そんざい</rt></ruby>しており、われわれはそれを<ruby>無意識<rt>むいしき</rt></ruby>のうちに「<ruby>使<rt>つか</rt></ruby>って」いる。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            首先需要看到，计算机在现代社会已无处不在。也正因为它无处不在，人们目前越来越难以察觉自己对计算机的依赖。这里所说的“计算机”，并不只是摆在桌面上、配有键盘和显示器的运算设备。从飞机、汽车，到冰箱、洗衣机等家用电器，乃至各种玩具，我们身边有大量设备都内置了计算机，而我们也在不知不觉中使用着它们。
+          </p>
+          <p class="note">「さしあたって（は）」＝目前、现阶段（与<ruby>当面<rt>とうめん</rt></ruby>／とりあえず／ひとまず辨析见文末强化笔记）。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>意識しなくなりつつある</code>＝意識する（v3 他）＋なくなる＋つつある：正在变得不再意识。</p>
+        <p><code>意味する</code>＝辞书形：意味着、指。</p>
+        <p><code>内蔵する</code>＝辞书形（连体修饰「機器」）：内置的（设备）。</p>
+        <p><code>存在しており</code>＝存在する（v3 自）的て形＋いる连用：存在（中顿）。</p>
+        <p><code>使って</code>＝使う（つかう，v1 他）的て形：使用。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p2">
+      <h2 class="section-title">第二段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="3" data-audio="p2_s1.mp3"><span class="play-ic">▶</span><ruby>二〇年前<rt>にじゅうねんまえ</rt></ruby>は<ruby>家電製品<rt>かでんせいひん</rt></ruby>のパンフレットに「マイコンチップ<ruby>搭載<rt>とうさい</rt></ruby>」という<ruby>惹句<rt>じゃっく</rt></ruby>をしばしば<ruby>見<rt>み</rt></ruby>かけたが、その<ruby>数<rt>かず</rt></ruby>が<ruby>一定量<rt>いっていりょう</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えたとき、<ruby>広告<rt>こうこく</rt></ruby>はもはや「コンピュータ<ruby>制御<rt>せいぎょ</rt></ruby>」を<ruby>謳<rt>うた</rt></ruby>い<ruby>文句<rt>もんく</rt></ruby>にしなくなった。</span><span class="sentence" data-idx="4" data-audio="p2_s2.mp3"><span class="play-ic">▶</span>きょくたんにいえば、<ruby>近<rt>ちか</rt></ruby>い<ruby>将来<rt>しょうらい</rt></ruby>「コンピュータ」という<ruby>言葉<rt>ことば</rt></ruby>そのものが<ruby>人々<rt>ひとびと</rt></ruby>によって<ruby>使<rt>つか</rt></ruby>われなくなる<ruby>可能性<rt>かのうせい</rt></ruby>すらある。</span><span class="sentence" data-idx="5" data-audio="p2_s3.mp3"><span class="play-ic">▶</span>そのとき、われわれのコンピュータに<ruby>対<rt>たい</rt></ruby>する<ruby>無意識的<rt>むいしきてき</rt></ruby><ruby>依存<rt>いぞん</rt></ruby>は<ruby>真<rt>しん</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>で<ruby>完成<rt>かんせい</rt></ruby>するだろう。</span><span class="sentence" data-idx="6" data-audio="p2_s4.mp3"><span class="play-ic">▶</span>そしてそのことは<ruby>逆<rt>ぎゃく</rt></ruby>に、<ruby>人類<rt>じんるい</rt></ruby>が<ruby>直面<rt>ちょくめん</rt></ruby>する<ruby>多<rt>おお</rt></ruby>くの<ruby>問題<rt>もんだい</rt></ruby>を<ruby>真剣<rt>しんけん</rt></ruby>に<ruby>議論<rt>ぎろん</rt></ruby>しようとする<ruby>際<rt>さい</rt></ruby>に、コンピュータというものの<ruby>存在<rt>そんざい</rt></ruby>を<ruby>暗黙<rt>あんもく</rt></ruby>のうちにせよ<ruby>前提<rt>ぜんてい</rt></ruby>にしないでは、なにも<ruby>語<rt>かた</rt></ruby>れなくなっているということと<ruby>深<rt>ふか</rt></ruby>く<ruby>関係<rt>かんけい</rt></ruby>しているのである。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            二十年前，家电宣传册上还经常把“搭载微机芯片”作为卖点。随着这类产品普及到一定程度，广告便不再特意强调“计算机控制”。说得极端些，也许在不久的将来，甚至连“计算机”这个词本身都不再有人使用。到那时，人们对计算机的依赖才会真正变得无意识。反过来看，这又与这样一种状况密切相关：如今，当我们试图认真讨论人类所面临的诸多问题时，计算机的存在已成为一个即使不明说也必须预设的前提：若不以此为前提，我们甚至什么也无法谈论。
+          </p>
+          <p class="note">「<ruby>惹句<rt>じゃっく</rt></ruby>」「<ruby>謳<rt>うた</rt></ruby>い<ruby>文句<rt>もんく</rt></ruby>」等宣传语词汇辨析见文末强化笔记。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>見かけた</code>＝見かける（みかける，v2 他）的过去形：看到过。</p>
+        <p><code>超えた</code>＝超える（こえる，v2 他）的过去形：超过。</p>
+        <p><code>謳い文句にする</code>＝謳い文句（惯用）＋にする：作为卖点、宣传语。</p>
+        <p><code>使われなくなる</code>＝使う（つかう，v1 他）被动＋なくなる：变得不再被使用。</p>
+        <p><code>完成するだろう</code>＝完成する（v3 自他）＋だろう：将会完成。</p>
+        <p><code>語れなくなっている</code>＝語る（かたる，v1 他）可能否定＋なっている：变得无法谈论。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p3">
+      <h2 class="section-title">第三段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="7" data-audio="p3_s1.mp3"><span class="play-ic">▶</span>スマートフォンでさまざまなアプリを<ruby>開<rt>ひら</rt></ruby>けば、<ruby>次々<rt>つぎつぎ</rt></ruby>と<ruby>押<rt>お</rt></ruby>し<ruby>寄<rt>よ</rt></ruby>せる<ruby>情報<rt>じょうほう</rt></ruby>にのみ<ruby>込<rt>こ</rt></ruby>まれ、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>親<rt>おや</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>に<ruby>自分<rt>じぶん</rt></ruby>を<ruby>知<rt>し</rt></ruby>り<ruby>尽<rt>つ</rt></ruby>くしたアルゴリズムに<ruby>絡<rt>から</rt></ruby>め<ruby>取<rt>と</rt></ruby>られてしまう。</span><span class="sentence" data-idx="8" data-audio="p3_s2.mp3"><span class="play-ic">▶</span><ruby>以前<rt>いぜん</rt></ruby>、<ruby>私<rt>わたし</rt></ruby>がテンセントでプロダクト<ruby>開発<rt>かいはつ</rt></ruby>に<ruby>携<rt>たずさ</rt></ruby>わっていたころ、<ruby>社内<rt>しゃない</rt></ruby>ではこんなことが<ruby>言<rt>い</rt></ruby>われていた。</span><span class="sentence" data-idx="9" data-audio="p3_s3.mp3"><span class="play-ic">▶</span>「<ruby>良<rt>よ</rt></ruby>いプロダクトとは<ruby>何<rt>なに</rt></ruby>か。</span><span class="sentence" data-idx="10" data-audio="p3_s4.mp3"><span class="play-ic">▶</span>それは、ユーザーを<ruby>夢中<rt>むちゅう</rt></ruby>にさせ、そこから<ruby>抜<rt>ぬ</rt></ruby>け<ruby>出<rt>だ</rt></ruby>せなくするプロダクトである。</span><span class="sentence" data-idx="11" data-audio="p3_s5.mp3"><span class="play-ic">▶</span>」<br><br>
+            <ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>は、とっくに<ruby>目<rt>め</rt></ruby>が<ruby>覚<rt>さ</rt></ruby>めているのだから、<ruby>起<rt>お</rt></ruby>き<ruby>上<rt>あ</rt></ruby>がって<ruby>少<rt>すこ</rt></ruby>し<ruby>体<rt>からだ</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かし、<ruby>朝食<rt>ちょうしょく</rt></ruby>を<ruby>取<rt>と</rt></ruby>れば、ずっとすっきりするはずだ。</span><span class="sentence" data-idx="12" data-audio="p3_s6.mp3"><span class="play-ic">▶</span>ところが、いったんショート<ruby>動画<rt>どうが</rt></ruby>を<ruby>見<rt>み</rt></ruby><ruby>始<rt>はじ</rt></ruby>めると、30<ruby>分<rt>ふん</rt></ruby>、ひどい<ruby>場合<rt>ばあい</rt></ruby>には1<ruby>時間<rt>じかん</rt></ruby>も<ruby>見<rt>み</rt></ruby><ruby>続<rt>つづ</rt></ruby>けてしまう。</span><span class="sentence" data-idx="13" data-audio="p3_s7.mp3"><span class="play-ic">▶</span>そうして<ruby>朝一<rt>あさいち</rt></ruby>から、ドーパミンを<ruby>大量<rt>たいりょう</rt></ruby>に<ruby>放出<rt>ほうしゅつ</rt></ruby>させるような<ruby>強<rt>つよ</rt></ruby>い<ruby>刺激<rt>しげき</rt></ruby>にさらされ、<ruby>集中力<rt>しゅうちゅうりょく</rt></ruby>が<ruby>著<rt>いちじる</rt></ruby>しく<ruby>損<rt>そこ</rt></ruby>なわれてしまう。</span><span class="sentence" data-idx="14" data-audio="p3_s8.mp3"><span class="play-ic">▶</span>そこで<ruby>私自身<rt>わたしじしん</rt></ruby>は、アラームが<ruby>鳴<rt>な</rt></ruby>ったあとは、<ruby>一切<rt>いっさい</rt></ruby>スマートフォンに<ruby>触<rt>ふ</rt></ruby>れず、<ruby>出<rt>で</rt></ruby>かけるときになって<ruby>初<rt>はじ</rt></ruby>めて<ruby>手<rt>て</rt></ruby>に<ruby>取<rt>と</rt></ruby>り、そのまま<ruby>持<rt>も</rt></ruby>って<ruby>出<rt>で</rt></ruby>るようにしている。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            一旦你打开手机里的各种APP，你就会被各种各样的信息裹挟，被比你爸妈都懂你的算法抓牢。之前我在腾讯做产品时，有句话是这样说的：什么叫好的产品？好的产品让用户沉迷其中，不能自拔。<br><br>
+            很多人明明早就醒了，起床运动一下，吃个早餐，整个人会精神很多。结果一刷短视频，半个小时甚至一个小时，从一早就开始处于多巴胺的“高指标”刺激下，专注力严重受损。<br><br>
+            基于此，我自己的方法是，手机闹铃响了之后就不再碰手机了，直到出门时再带走它。
+          </p>
+          <p class="note">“裹挟”“沉迷”的日语译法（<ruby>巻<rt>ま</rt></ruby>き<ruby>込<rt>こ</rt></ruby>まれる／<ruby>翻弄<rt>ほんろう</rt></ruby>される／<ruby>夢中<rt>むちゅう</rt></ruby>になる／のめり込む／ハマる）见文末强化笔记。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>開けば</code>＝開く（ひらく，v1 自他）的假定形：如果打开的话。</p>
+        <p><code>のみ込まれ</code>＝呑み込む（のみこむ，v1 他）的被动连用：被吞没（中顿）。</p>
+        <p><code>絡め取られてしまう</code>＝絡め取る（からめとる，v1 他）的被动＋てしまう：被牢牢抓住。</p>
+        <p><code>携わっていた</code>＝携わる（たずさわる，v1 自）的て形＋いる过去：曾从事。</p>
+        <p><code>言われていた</code>＝言う（いう，v1 他）的被动＋ている过去：曾（被）说。</p>
+        <p><code>見始めると</code>＝見る（みる，v2 他）连用形＋始める＋と：一开始看就……。</p>
+        <p><code>さらされ</code>＝さらす（v1 他）的被动连用：被置于、被暴露。</p>
+        <p><code>損なわれてしまう</code>＝損なう（そこなう，v1 他）的被动＋てしまう：被严重损害。</p>
+        <p><code>触れず</code>＝触れる（ふれる，v2 自）的ない形（ず）：不触碰。</p>
+        <p><code>手に取り</code>＝手に取る（惯用）的连用形：拿起。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+
+    <section id="grammar">
+      <h2 class="section-title"><span>文</span>本文语法</h2>
+      <div class="grammar-grid">
+        <article class="card">
+          <h3><span class="g-num">1</span>まず<ruby>重要<rt>じゅうよう</rt></ruby>なのは〜ということである</h3>
+          <p><span class="pattern"><ruby>重要<rt>じゅうよう</rt></ruby>なのは…「<ruby>遍在化<rt>へんざいか</rt></ruby>」という<ruby>現象<rt>げんしょう</rt></ruby>と…ということである</span></p>
+          <p>“首先重要的是……这一事实”。「のは…である」＝重点是……。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">2</span>〜ゆえに</h3>
+          <p><span class="pattern">まさにそれゆえに</span></p>
+          <p>“正因为……”。书面语，表示原因。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">3</span>〜つつある</h3>
+          <p><span class="pattern"><ruby>意識<rt>いしき</rt></ruby>しなくなりつつある</span></p>
+          <p>“正在逐渐……”。表示变化的进行。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">4</span>〜わけではない</h3>
+          <p><span class="pattern">だけを<ruby>意味<rt>いみ</rt></ruby>するわけではない</span></p>
+          <p>“并不是……”。部分否定。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">5</span>〜から…〜にいたるまで</h3>
+          <p><span class="pattern"><ruby>航空機<rt>こうくうき</rt></ruby>や<ruby>自動車<rt>じどうしゃ</rt></ruby>から…おもちゃにいたるまで</span></p>
+          <p>“从……到……（范围之广）”。「にいたるまで」＝乃至。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">6</span>〜さしあたって（は）</h3>
+          <p><span class="pattern">さしあたっては<ruby>意識<rt>いしき</rt></ruby>しなくなりつつある</span></p>
+          <p>“目前、现阶段、暂且”。表示先不考虑将来、就眼前而言。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">7</span>〜すらある</h3>
+          <p><span class="pattern"><ruby>可能性<rt>かのうせい</rt></ruby>すらある</span></p>
+          <p>“甚至有可能……”。举极端例子。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">8</span>〜にしないでは、なにも〜ない</h3>
+          <p><span class="pattern"><ruby>前提<rt>ぜんてい</rt></ruby>にしないでは、なにも<ruby>語<rt>かた</rt></ruby>れない</span></p>
+          <p>“不以……为前提，就什么也无法……”。双重否定强调必要条件。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">9</span>〜と<ruby>深<rt>ふか</rt></ruby>く<ruby>関係<rt>かんけい</rt></ruby>している</h3>
+          <p><span class="pattern">…ということと<ruby>深<rt>ふか</rt></ruby>く<ruby>関係<rt>かんけい</rt></ruby>している</span></p>
+          <p>“与……密切相关”。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">10</span>〜を<ruby>超<rt>こ</rt></ruby>えたとき</h3>
+          <p><span class="pattern">その<ruby>数<rt>かず</rt></ruby>が<ruby>一定量<rt>いっていりょう</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えたとき</span></p>
+          <p>“当……超过……的时候”。时间点＋变化。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">11</span>〜も…〜てしまう</h3>
+          <p><span class="pattern">1<ruby>時間<rt>じかん</rt></ruby>も<ruby>見<rt>み</rt></ruby><ruby>続<rt>つづ</rt></ruby>けてしまう</span></p>
+          <p>“竟然……”。「も」强调数量多，「てしまう」带无奈语气。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">12</span>〜にさらされる／〜が<ruby>損<rt>そこ</rt></ruby>なわれる</h3>
+          <p><span class="pattern"><ruby>強<rt>つよ</rt></ruby>い<ruby>刺激<rt>しげき</rt></ruby>にさらされ、<ruby>集中力<rt>しゅうちゅうりょく</rt></ruby>が<ruby>著<rt>いちじる</rt></ruby>しく<ruby>損<rt>そこ</rt></ruby>なわれる</span></p>
+          <p>“暴露于……／……受到严重损害”。被动表达。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">13</span>〜ず、〜て<ruby>初<rt>はじ</rt></ruby>めて</h3>
+          <p><span class="pattern"><ruby>触<rt>ふ</rt></ruby>れず、…になって<ruby>初<rt>はじ</rt></ruby>めて<ruby>手<rt>て</rt></ruby>に<ruby>取<rt>と</rt></ruby>り</span></p>
+          <p>“不……，直到……才……”。「ず」＝书面否定，「て初めて」＝之后才。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">14</span>〜ようにしている</h3>
+          <p><span class="pattern"><ruby>持<rt>も</rt></ruby>って<ruby>出<rt>で</rt></ruby>るようにしている</span></p>
+          <p>“（平时）尽量……、习惯……”。表示有意识地这样做。</p>
+        </article>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="vocab">
+      <h2 class="section-title"><span>词</span>词汇、短语与读音</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>单词／短语</th>
+              <th>读音</th>
+              <th>词性</th>
+              <th>中文释义</th>
+              <th>文中用法</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="word">遍在化</td><td>へんざいか</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td>无处不在、遍在化</td><td>「<ruby>遍在化<rt>へんざいか</rt></ruby>」という<ruby>現象<rt>げんしょう</rt></ruby></td></tr>
+            <tr><td class="word">依存</td><td>いぞん</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td>依赖</td><td>コンピュータへの<ruby>依存<rt>いぞん</rt></ruby></td></tr>
+            <tr><td class="word">さしあたって（は）</td><td>さしあたっては</td><td><span class="pos">adv</span></td><td>目前、现阶段</td><td>さしあたっては<ruby>意識<rt>いしき</rt></ruby>しない</td></tr>
+            <tr><td class="word">キーボード</td><td>キーボード</td><td><span class="pos">n</span></td><td>键盘</td><td>キーボードとモニタ</td></tr>
+            <tr><td class="word">モニタ</td><td>モニタ</td><td><span class="pos">n</span></td><td>显示器</td><td>キーボードとモニタ</td></tr>
+            <tr><td class="word">演算装置</td><td>えんざんそうち</td><td><span class="pos">n</span></td><td>运算设备</td><td><ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>の<ruby>演算装置<rt>えんざんそうち</rt></ruby></td></tr>
+            <tr><td class="word">航空機</td><td>こうくうき</td><td><span class="pos">n</span></td><td>飞机</td><td><ruby>航空機<rt>こうくうき</rt></ruby>や<ruby>自動車<rt>じどうしゃ</rt></ruby></td></tr>
+            <tr><td class="word">冷蔵庫</td><td>れいぞうこ</td><td><span class="pos">n</span></td><td>冰箱</td><td><ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>、<ruby>洗濯機<rt>せんたくき</rt></ruby></td></tr>
+            <tr><td class="word">家電製品</td><td>かでんせいひん</td><td><span class="pos">n</span></td><td>家用电器</td><td><ruby>家電製品<rt>かでんせいひん</rt></ruby>やおもちゃ</td></tr>
+            <tr><td class="word">内蔵する</td><td>ないぞうする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>内置</td><td>コンピュータを<ruby>内蔵<rt>ないぞう</rt></ruby>する<ruby>機器<rt>きき</rt></ruby></td></tr>
+            <tr><td class="word">無意識</td><td>むいしき</td><td><span class="pos">n</span><span class="pos">ナ形</span></td><td>无意识</td><td><ruby>無意識<rt>むいしき</rt></ruby>のうちに</td></tr>
+            <tr><td class="word">惹句</td><td>じゃっく</td><td><span class="pos">n</span></td><td>宣传语、广告语</td><td>「マイコンチップ<ruby>搭載<rt>とうさい</rt></ruby>」という<ruby>惹句<rt>じゃっく</rt></ruby></td></tr>
+            <tr><td class="word">搭載</td><td>とうさい</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>搭载、装载</td><td>マイコンチップ<ruby>搭載<rt>とうさい</rt></ruby></td></tr>
+            <tr><td class="word">一定量</td><td>いっていりょう</td><td><span class="pos">n</span></td><td>一定数量</td><td>その<ruby>数<rt>かず</rt></ruby>が<ruby>一定量<rt>いっていりょう</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えた</td></tr>
+            <tr><td class="word">広告</td><td>こうこく</td><td><span class="pos">n</span></td><td>广告</td><td><ruby>広告<rt>こうこく</rt></ruby>はもはや</td></tr>
+            <tr><td class="word">制御</td><td>せいぎょ</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>控制</td><td>「コンピュータ<ruby>制御<rt>せいぎょ</rt></ruby>」</td></tr>
+            <tr><td class="word">謳い文句</td><td>うたいもんく</td><td><span class="pos">n</span></td><td>卖点、宣传口号</td><td>を<ruby>謳<rt>うた</rt></ruby>い<ruby>文句<rt>もんく</rt></ruby>にしなくなった</td></tr>
+            <tr><td class="word">可能性</td><td>かのうせい</td><td><span class="pos">n</span></td><td>可能性</td><td><ruby>可能性<rt>かのうせい</rt></ruby>すらある</td></tr>
+            <tr><td class="word">無意識的依存</td><td>むいしきてきいぞん</td><td><span class="pos">n</span></td><td>无意识依赖</td><td><ruby>無意識的<rt>むいしきてき</rt></ruby><ruby>依存<rt>いぞん</rt></ruby></td></tr>
+            <tr><td class="word">直面する</td><td>ちょくめんする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td>直面</td><td><ruby>直面<rt>ちょくめん</rt></ruby>する<ruby>多<rt>おお</rt></ruby>くの<ruby>問題<rt>もんだい</rt></ruby></td></tr>
+            <tr><td class="word">真剣に議論する</td><td>しんけんにぎろんする</td><td><span class="pos">惯用</span></td><td>认真讨论</td><td><ruby>真剣<rt>しんけん</rt></ruby>に<ruby>議論<rt>ぎろん</rt></ruby>しようとする</td></tr>
+            <tr><td class="word">暗黙</td><td>あんもく</td><td><span class="pos">n</span></td><td>默然、心照不宣</td><td><ruby>暗黙<rt>あんもく</rt></ruby>のうちにせよ</td></tr>
+            <tr><td class="word">前提</td><td>ぜんてい</td><td><span class="pos">n</span></td><td>前提</td><td><ruby>前提<rt>ぜんてい</rt></ruby>にしないでは</td></tr>
+            <tr><td class="word">アプリ</td><td>アプリ</td><td><span class="pos">n</span></td><td>APP、应用</td><td>さまざまなアプリを<ruby>開<rt>ひら</rt></ruby>けば</td></tr>
+            <tr><td class="word">押し寄せる</td><td>おしよせる</td><td><span class="pos">v1 自</span></td><td>涌来</td><td><ruby>次々<rt>つぎつぎ</rt></ruby>と<ruby>押<rt>お</rt></ruby>し<ruby>寄<rt>よ</rt></ruby>せる<ruby>情報<rt>じょうほう</rt></ruby></td></tr>
+            <tr><td class="word">呑み込む</td><td>のみこむ</td><td><span class="pos">v1 他</span></td><td>吞没</td><td><ruby>情報<rt>じょうほう</rt></ruby>にのみ<ruby>込<rt>こ</rt></ruby>まれ</td></tr>
+            <tr><td class="word">アルゴリズム</td><td>アルゴリズム</td><td><span class="pos">n</span></td><td>算法</td><td>アルゴリズムに<ruby>絡<rt>から</rt></ruby>め<ruby>取<rt>と</rt></ruby>られる</td></tr>
+            <tr><td class="word">絡め取る</td><td>からめとる</td><td><span class="pos">v1 他</span></td><td>紧紧抓住</td><td>アルゴリズムに<ruby>絡<rt>から</rt></ruby>め<ruby>取<rt>と</rt></ruby>られる</td></tr>
+            <tr><td class="word">携わる</td><td>たずさわる</td><td><span class="pos">v1 自</span></td><td>从事</td><td>プロダクト<ruby>開発<rt>かいはつ</rt></ruby>に<ruby>携<rt>たずさ</rt></ruby>わっていた</td></tr>
+            <tr><td class="word">夢中になる</td><td>むちゅうになる</td><td><span class="pos">惯用</span></td><td>沉迷、入迷</td><td>ユーザーを<ruby>夢中<rt>むちゅう</rt></ruby>にさせ</td></tr>
+            <tr><td class="word">抜け出す</td><td>ぬけだす</td><td><span class="pos">v1 自</span></td><td>摆脱、抽身</td><td>そこから<ruby>抜<rt>ぬ</rt></ruby>け<ruby>出<rt>だ</rt></ruby>せなくする</td></tr>
+            <tr><td class="word">とっくに</td><td>とっくに</td><td><span class="pos">adv</span></td><td>早就、老早</td><td>とっくに<ruby>目<rt>め</rt></ruby>が<ruby>覚<rt>さ</rt></ruby>めている</td></tr>
+            <tr><td class="word">朝食</td><td>ちょうしょく</td><td><span class="pos">n</span></td><td>早餐</td><td><ruby>朝食<rt>ちょうしょく</rt></ruby>を<ruby>取<rt>と</rt></ruby>れば</td></tr>
+            <tr><td class="word">ショート動画</td><td>ショートどうが</td><td><span class="pos">n</span></td><td>短视频</td><td>ショート<ruby>動画<rt>どうが</rt></ruby>を<ruby>見<rt>み</rt></ruby><ruby>始<rt>はじ</rt></ruby>めると</td></tr>
+            <tr><td class="word">ドーパミン</td><td>ドーパミン</td><td><span class="pos">n</span></td><td>多巴胺</td><td>ドーパミンを<ruby>大量<rt>たいりょう</rt></ruby>に<ruby>放出<rt>ほうしゅつ</rt></ruby>させる</td></tr>
+            <tr><td class="word">刺激</td><td>しげき</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>刺激</td><td><ruby>強<rt>つよ</rt></ruby>い<ruby>刺激<rt>しげき</rt></ruby>にさらされる</td></tr>
+            <tr><td class="word">集中力</td><td>しゅうちゅうりょく</td><td><span class="pos">n</span></td><td>专注力</td><td><ruby>集中力<rt>しゅうちゅうりょく</rt></ruby>が<ruby>損<rt>そこ</rt></ruby>なわれる</td></tr>
+            <tr><td class="word">著しく</td><td>いちじるしく</td><td><span class="pos">adv</span></td><td>显著地、严重地</td><td><ruby>著<rt>いちじる</rt></ruby>しく<ruby>損<rt>そこ</rt></ruby>なわれる</td></tr>
+            <tr><td class="word">一切</td><td>いっさい</td><td><span class="pos">n</span><span class="pos">adv</span></td><td>一概、全然（＋否定）</td><td><ruby>一切<rt>いっさい</rt></ruby>…に<ruby>触<rt>ふ</rt></ruby>れず</td></tr>
+            <tr><td class="word">触れる</td><td>ふれる</td><td><span class="pos">v2 自</span></td><td>触碰</td><td>スマートフォンに<ruby>触<rt>ふ</rt></ruby>れず</td></tr>
+            <tr><td class="word">手に取る</td><td>てにとる</td><td><span class="pos">惯用</span></td><td>拿起</td><td>になって<ruby>初<rt>はじ</rt></ruby>めて<ruby>手<rt>て</rt></ruby>に<ruby>取<rt>と</rt></ruby>り</td></tr>
+          </tbody>
+        </table>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+
+    <section id="notes">
+      <h2 class="section-title"><span>笔</span>强化笔记精讲（瑞译）</h2>
+      <div class="notes-grid">
+
+        <article class="note-card">
+          <h3><span class="sec">段落1</span>さしあたって（は）及其近义词</h3>
+          <p><span class="key">さしあたって（は）</span>：基本含义是“先不考虑将来的情况，就目前而言”“眼下”“现阶段”。「（は）」可出现可不出现，起提示、对比作用。</p>
+          <ul>
+            <li><span class="ex">さしあたっては1枚でも多く木版画を作って、自分の技能力も上げて…</span><span class="tr">眼下我想尽可能多创作一些木版画，提高自己的技艺……</span></li>
+          </ul>
+          <h4>近义词拓展</h4>
+          <ul>
+            <li><span class="ex">当面</span>（とうめん）当务之急、当前 ｜ <span class="ex">とりあえず</span> 首先、暂且（先行动）</li>
+            <li><span class="ex">ひとまず</span> 暂且、姑且 ｜ <span class="ex">今のところ</span> 现阶段、目前（客观判断）</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">段落1</span>计算机硬件及周边设备词汇</h3>
+          <ul>
+            <li><span class="ex">CPU（中央処理装置）</span>中央处理器 ｜ <span class="ex">メモリ／RAM</span>内存 ｜ <span class="ex">マザーボード</span>主板</li>
+            <li><span class="ex">ハードディスク／HDD</span>机械硬盘 ｜ <span class="ex">グラフィックボード</span>显卡 ｜ <span class="ex">光学ドライブ</span>光驱</li>
+            <li><span class="ex">マウス</span>鼠标 ｜ <span class="ex">タッチパッド</span>触控板 ｜ <span class="ex">スキャナ</span>扫描仪</li>
+            <li><span class="ex">プリンタ</span>打印机 ｜ <span class="ex">スピーカー</span>扬声器 ｜ <span class="ex">プロジェクタ</span>投影仪</li>
+            <li><span class="ex">USBメモリ</span>U盘 ｜ <span class="ex">外付けハードディスク</span>移动硬盘</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">段落2</span>惹句／謳い文句等宣传语词汇</h3>
+          <ul>
+            <li><span class="ex">惹句</span>（じゃっく）广告语、宣传语（书面色彩较强）</li>
+            <li><span class="ex">キャッチコピー</span> 广告标语（商业广告专业语境更常见）</li>
+            <li><span class="ex">キャッチフレーズ</span> 口号、宣传语（给人深刻印象）</li>
+            <li><span class="ex">謳い文句</span> 宣传中重点标榜的优点、功能或卖点</li>
+            <li><span class="ex">売り文句</span> 促使购买的卖点或推销说辞</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">段落3</span>“裹挟”的日语译法</h3>
+          <ul>
+            <li><span class="ex">〜に巻き込まれる</span> 被卷入（最直接、适用范围最广）</li>
+            <li><span class="ex">〜に翻弄される</span>（ほんろう）被摆布、被左右（负面语感更强）</li>
+            <li><span class="ex">〜に押し流される</span> 被潮流裹挟、随波逐流</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">段落3</span>“沉迷”的日语译法</h3>
+          <ul>
+            <li><span class="ex">夢中になる</span> 沉迷、入迷（可褒可贬）</li>
+            <li><span class="ex">のめり込む</span> 深深陷入、难以抽身（与“不能自拔”最接近，负面）</li>
+            <li><span class="ex">ハマる</span> 迷上、上瘾（口语，语气较轻松）</li>
+          </ul>
+          <p>例句：「良いプロダクトは、ユーザーを夢中にさせ、そこから抜け出せなくするプロダクトである。」（好的产品让用户沉迷其中，不能自拔。）</p>
+        </article>
+
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <footer>
+      3-3 段落双向翻译练习（强化笔记融合版）｜日语读音（黄色平假名）、语法、词汇、文中变形与强化笔记精讲整理<br>
+      正文依据用户提供的资料整理，仅供个人学习使用。
+    </footer>
+  </main>
+
+
+<script>
+(function(){
+  const AUDIO_DIR = "3-3/audio/";
+  const TOTAL = 15;
+  let current = 0;
+  let playing = false;
+  let rate = 1.0;
+  let loopMode = false;
+  const audio = new Audio();
+  const $ = id => document.getElementById(id);
+
+  function playSentence(idx){
+    if (idx < 0 || idx >= TOTAL) return;
+    current = idx;
+    playing = true;
+    updateUI();
+    const s = document.querySelector('.sentence[data-idx="' + idx + '"]');
+    audio.src = AUDIO_DIR + (s ? s.dataset.audio : 'p1_s1.mp3');
+    audio.playbackRate = rate;
+    audio.currentTime = 0;
+    audio.play().then(() => { playing = true; updateUI(); })
+      .catch(e => { console.error('播放失败:', e); });
+  }
+
+  function togglePlay(){
+    if (playing){ audio.pause(); playing=false; updateUI(); }
+    else if (!audio.src) playSentence(current);
+    else { audio.play().then(()=>{playing=true;updateUI();}); }
+  }
+  function nextSentence(){
+    if (current+1 < TOTAL) playSentence(current+1);
+    else if (loopMode) playSentence(0);
+    else { audio.pause(); playing=false; updateUI(); }
+  }
+  function prevSentence(){ if (current>0) playSentence(current-1); }
+
+  function sentenceInSec(el){
+    const sec = el.closest('section');
+    const all = sec.querySelectorAll('.sentence');
+    for (let i=0;i<all.length;i++) if (all[i]===el) return i+1;
+    return 1;
+  }
+
+  function updateUI(){
+    $('btn-play').textContent = playing ? '⏸' : '▶';
+    document.querySelectorAll('.sentence').forEach(el=>{
+      el.classList.toggle('playing', parseInt(el.dataset.idx)===current);
+    });
+    const s = document.querySelector('.sentence[data-idx="'+current+'"]');
+    if (s){
+      const sec = s.closest('section');
+      const st = sec ? sec.querySelector('.section-title').textContent : '';
+      const n = sentenceInSec(s);
+      $('sentence-status').textContent = (playing?'播放中':'暂停')+' ｜ '+st+' 第'+n+'句';
+      const rect = s.getBoundingClientRect();
+      const bar = $('player-bar').getBoundingClientRect();
+      if (rect.top < bar.bottom || rect.bottom > window.innerHeight){
+        s.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    }
+  }
+
+  audio.addEventListener('ended', nextSentence);
+  audio.addEventListener('timeupdate', ()=>{
+    if (audio.duration){
+      const pct = audio.currentTime/audio.duration*100;
+      $('progress-fill').style.width = pct+'%';
+      $('progress-knob').style.left = pct+'%';
+    }
+  });
+  $('progress').addEventListener('click', e=>{
+    if (!audio.duration) return;
+    const r = $('progress').getBoundingClientRect();
+    audio.currentTime = (e.clientX-r.left)/r.width*audio.duration;
+  });
+  $('rate-group').addEventListener('click', e=>{
+    const b = e.target.closest('.rate-btn'); if(!b) return;
+    rate = parseFloat(b.dataset.rate);
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(x=>x.classList.toggle('active', x===b));
+  });
+  $('btn-mode').addEventListener('click', ()=>{
+    loopMode = !loopMode;
+    $('btn-mode').textContent = '循环: '+(loopMode?'开':'关');
+    $('btn-mode').classList.toggle('active', loopMode);
+  });
+  $('btn-play').addEventListener('click', togglePlay);
+  $('btn-next').addEventListener('click', nextSentence);
+  $('btn-prev').addEventListener('click', prevSentence);
+
+  document.querySelectorAll('.sentence').forEach(el=>{
+    el.addEventListener('click', ()=>playSentence(parseInt(el.dataset.idx)));
+  });
+
+  document.addEventListener('keydown', e=>{
+    if (e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+    switch(e.code){
+      case 'Space': e.preventDefault(); togglePlay(); break;
+      case 'ArrowRight': nextSentence(); break;
+      case 'ArrowLeft': prevSentence(); break;
+      case 'ArrowUp': e.preventDefault(); setRate(Math.min(1.5, rate+0.25)); break;
+      case 'ArrowDown': e.preventDefault(); setRate(Math.max(0.5, rate-0.25)); break;
+    }
+  });
+  function setRate(r){
+    rate = Math.round(r*100)/100;
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(b=>{
+      b.classList.toggle('active', parseFloat(b.dataset.rate)===rate);
+    });
+  }
+  audio.preload = 'auto';
+  window.__reader = { getAudio: () => audio, getState: () => ({current, playing, rate, loopMode}) };
+})();
+</script>
+
+</body>
+</html>

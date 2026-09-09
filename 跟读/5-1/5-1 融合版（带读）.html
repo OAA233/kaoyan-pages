@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>5-1 食品消费税｜消費減税と自民——これで責任政党なのか（强化笔记融合版）</title>
+  <style>
+    :root{
+      --ink:#1d2a34;
+      --muted:#64727d;
+      --paper:#fffdf8;
+      --bg:#eef3f2;
+      --line:#dbe5e1;
+      --green:#0f766e;
+      --green-soft:#e6f5f1;
+      --orange:#c15b24;
+      --orange-soft:#fff0e7;
+      --blue-soft:#eaf2ff;
+      --yellow:#c08a12;
+      --yellow-soft:#fbf3dd;
+      --shadow:0 12px 35px rgba(31,56,52,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #dff4ec 0, transparent 27rem),
+        radial-gradient(circle at 100% 14%, #fff0d9 0, transparent 25rem),
+        var(--bg);
+      font-family:"Noto Serif SC","Songti SC","STSong",serif;
+      line-height:1.9;
+    }
+    .top-nav{
+      position:sticky;top:0;z-index:100;
+      display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+      padding:10px 18px;
+      background:rgba(20,91,85,.96);
+      backdrop-filter:blur(6px);
+      box-shadow:0 4px 14px rgba(20,60,55,.25);
+    }
+    .top-nav .nav-title{
+      color:#baf6e8;font:700 .8rem/1 system-ui,sans-serif;
+      letter-spacing:.14em;margin-right:6px;white-space:nowrap;
+    }
+    .top-nav a{
+      padding:5px 13px;border-radius:999px;
+      color:#fff;background:rgba(255,255,255,.14);
+      text-decoration:none;font:600 .84rem/1.2 system-ui,sans-serif;
+      white-space:nowrap;transition:background .15s;
+    }
+    .top-nav a:hover{background:#198f7c}
+    .top-nav a.to-top{background:rgba(255,255,255,.28)}
+    .wrap{max-width:1080px;margin:auto;padding:32px 24px 72px}
+    section{scroll-margin-top:64px}
+    header{
+      padding:44px 42px 36px;
+      border-radius:24px;
+      color:#fff;
+      background:linear-gradient(135deg,#145b55,#0d766b 58%,#198f7c);
+      box-shadow:var(--shadow);
+    }
+    .eyebrow{
+      margin:0 0 12px;
+      color:#baf6e8;
+      font-size:.82rem;
+      letter-spacing:.16em;
+      font-family:system-ui,sans-serif;
+      font-weight:700;
+    }
+    h1{margin:0;font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.35}
+    header p{margin:14px 0 0;color:#e2fffa;font-size:1rem}
+    nav{
+      display:flex;flex-wrap:wrap;gap:10px;
+      margin:22px 0 30px;
+    }
+    nav a{
+      padding:7px 14px;border:1px solid #cbded9;border-radius:999px;
+      color:#25514b;background:rgba(255,255,255,.74);
+      text-decoration:none;font-family:system-ui,sans-serif;font-size:.88rem;
+    }
+    nav a:hover{background:#fff}
+    section{margin-top:30px}
+    .section-title{
+      display:flex;align-items:center;gap:12px;
+      margin:0 0 15px;font-size:1.42rem;
+    }
+    .section-title span{
+      display:inline-grid;place-items:center;width:32px;height:32px;
+      border-radius:50%;color:#fff;background:var(--green);
+      font-family:system-ui,sans-serif;font-size:.9rem;
+    }
+    .translation{
+      overflow:hidden;border:1px solid var(--line);border-radius:20px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    .language{padding:26px 30px}
+    .language + .language{border-top:1px dashed #cbd8d3}
+    .label{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-bottom:12px;padding:4px 10px;border-radius:999px;
+      color:var(--green);background:var(--green-soft);
+      font:700 .78rem/1.4 system-ui,sans-serif;letter-spacing:.08em;
+    }
+    .label.zh{color:var(--orange);background:var(--orange-soft)}
+    .jp{
+      margin:0;font-size:1.13rem;letter-spacing:.025em;
+      font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+    }
+    .zh{margin:0;font-size:1.02rem}
+    ruby{ruby-position:over;ruby-align:center}
+    rt{font-size:.54em;color:var(--yellow);font-weight:700;letter-spacing:0;user-select:none}
+    rt.en{color:var(--yellow)}
+    .lvl{
+      display:inline-block;padding:1px 7px;border-radius:5px;
+      color:#8a5a10;background:var(--yellow-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+    }
+    .note{
+      margin:14px 0 0;padding:11px 14px;border-left:4px solid #8fc9b6;
+      color:#2b3330;background:var(--green-soft);border-radius:0 10px 10px 0;
+      font-size:.91rem;
+    }
+    .note rt{color:#2f7cc4}
+    .grammar-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+    .card{
+      padding:21px 22px;border:1px solid var(--line);border-radius:16px;
+      background:rgba(255,253,248,.92);box-shadow:0 7px 20px rgba(31,56,52,.06);
+    }
+    .card h3{margin:0 0 9px;font-size:1.03rem;color:#12675e}
+    .card p{margin:7px 0;font-size:.94rem}
+    .pattern{
+      display:inline-block;padding:2px 8px;border-radius:6px;
+      color:#1e4c67;background:var(--blue-soft);
+      font-family:"SFMono-Regular",Consolas,monospace;font-size:.86rem;
+    }
+    .g-num{
+      display:inline-grid;place-items:center;width:22px;height:22px;
+      border-radius:50%;background:var(--orange);color:#fff;
+      font:700 .78rem/1 system-ui,sans-serif;margin-right:7px;
+      vertical-align:1px;
+    }
+    .table-wrap{
+      overflow:auto;border:1px solid var(--line);border-radius:16px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    table{width:100%;border-collapse:collapse;min-width:820px}
+    th,td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{color:#fff;background:#27665e;font:700 .82rem/1.4 system-ui,sans-serif;letter-spacing:.04em}
+    tr:last-child td{border-bottom:0}
+    tr:nth-child(even) td{background:#fbfdfc}
+    td{font-size:.91rem}
+    .word{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:1rem}
+    .pos{
+      display:inline-block;padding:2px 7px;border-radius:5px;
+      color:#075b54;background:var(--green-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+      margin-right:4px;
+    }
+    .notes-grid{display:grid;gap:18px}
+    .note-card{
+      padding:24px 26px;border:1px solid #c9e2d8;border-radius:18px;
+      background:var(--green-soft);box-shadow:0 7px 20px rgba(20,90,70,.07);
+    }
+    .note-card h3{
+      margin:0 0 12px;font-size:1.14rem;color:#1d2a34;
+      border-bottom:2px solid #b8d8cd;padding-bottom:8px;
+    }
+    .note-card h3 .sec{color:#0f766e;font-size:.8rem;margin-right:6px}
+    .note-card h4{
+      margin:16px 0 6px;font-size:.98rem;color:#2b3a36;
+    }
+    .note-card p{margin:8px 0;font-size:.95rem;color:#2b3330}
+    .note-card ul{margin:8px 0;padding-left:22px}
+    .note-card li{margin:7px 0;font-size:.94rem;color:#2b3330}
+    .note-card li .ex{
+      font-family:"Hiragino Mincho ProN","Yu Mincho",serif;color:#14181a;
+    }
+    .note-card li .tr{display:block;color:#64727d;font-size:.9rem;margin-top:2px}
+    .note-card .key{
+      display:inline-block;padding:1px 8px;border-radius:6px;
+      background:#dff2ec;border:1px solid #8fc9b6;color:#0e5a46;
+      font:700 .86rem system-ui,sans-serif;
+    }
+    .note-card rt{color:#2f7cc4}
+    .forms-inline{
+      margin:14px 2px 0;padding:16px 20px;border-radius:16px;
+      background:#203f42;color:#effffb;
+    }
+    .forms-inline h3{margin:0 0 8px;font-size:1.02rem;color:#baf6e8}
+    .forms-inline p{margin:5px 0;color:#d5eee8;font-size:.92rem;line-height:1.7}
+    .forms-inline code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    .back-top{margin:12px 2px 0;text-align:right;font-size:.85rem}
+    .back-top a{color:var(--muted);text-decoration:none}
+    .back-top a:hover{color:var(--green)}
+    footer{margin-top:27px;color:var(--muted);font-size:.82rem;text-align:center}
+    @media(max-width:640px){
+      .wrap{padding:16px 13px 48px}
+      header{padding:30px 24px}
+      .language{padding:22px 20px}
+      .jp{font-size:1.04rem}
+      .top-nav{padding:8px 12px}
+      .top-nav .nav-title{display:none}
+    }
+
+  /* ===== 打印适配：A3 尺寸、左右留出空隙、瀑布不跨页、隐藏页眉页脚 =====
+     索引条只在第一页顶部出现（打印时取消 sticky、保留 .top-nav），
+     正文区第二个导航隐藏；每段/区块末尾的「返回顶部」链接保留。 */
+  @media print {
+    @page { size: A3; margin: 10mm 14mm; }
+    html, body { background: #ffffff !important; }
+    nav { display: none !important; }
+    .top-nav { display: flex !important; position: static !important; box-shadow: none !important; backdrop-filter: none; }
+    section { margin-bottom: 5mm; }
+    .card, .translation, .forms-inline, .note-card, .para-pair,
+    .vocab-card, .grammar-item, .language, .phrase-item,
+    .vocab-group, .analysis-block { break-inside: avoid; page-break-inside: avoid; }
+    h1, h2, h3, h4, .section-title { break-after: avoid; page-break-after: avoid; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    table { font-size: 0.9em; }
+    a { color: inherit; text-decoration: none; }
+    .forms-inline, .note-card, .card, .translation { box-shadow: none !important; }
+    .wrap { max-width: 100%; padding: 0; }
+    .jp { font-size: 0.98em; letter-spacing: 0.02em; }
+    .zh, .note { font-size: 0.95em; }
+    .language { padding: 12px 16px; }
+    .grammar-grid { gap: 8px; }
+    .table-wrap { box-shadow: none; }
+  }
+
+  /* ===== 跟读控制条（注入） ===== */
+  .player-bar{
+    position:sticky;top:56px;z-index:95;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    margin:18px 0 8px;padding:12px 16px;
+    border:1px solid var(--line);border-radius:18px;
+    background:rgba(255,253,248,.95);
+    box-shadow:0 8px 22px rgba(31,56,52,.08);
+  }
+  .pb-btn{
+    width:42px;height:42px;border:0;border-radius:50%;cursor:pointer;
+    display:inline-grid;place-items:center;
+    background:var(--green);color:#fff;font-size:1rem;
+    transition:transform .12s, background .15s;
+  }
+  .pb-btn:hover{background:#198f7c;transform:scale(1.06)}
+  .pb-btn.small{width:34px;height:34px;background:#e8f1ee;color:var(--green);font-size:.9rem}
+  .pb-btn.small:hover{background:#d6e8e3}
+  .pb-btn:disabled{opacity:.35;cursor:default;transform:none}
+  .rate-group{display:flex;gap:5px;margin-left:auto}
+  .rate-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .rate-btn.active{background:var(--green);border-color:var(--green);color:#fff}
+  .mode-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .mode-btn.active{background:var(--orange);border-color:var(--orange);color:#fff}
+  .progress{
+    flex-basis:100%;height:6px;border-radius:3px;
+    background:#e3ece8;position:relative;cursor:pointer;
+  }
+  .progress .fill{
+    position:absolute;left:0;top:0;bottom:0;border-radius:3px;
+    background:linear-gradient(90deg,#0f766e,#2ba98c);width:0%;
+  }
+  .progress .knob{
+    position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:#fff;border:2px solid var(--green);transform:translate(-50%,-50%);
+    left:0%;box-shadow:0 1px 4px rgba(0,0,0,.2);
+  }
+  .sentence-status{
+    flex-basis:100%;color:var(--muted);font:600 .78rem system-ui,sans-serif;
+  }
+  .sentence{
+    cursor:pointer;border-radius:8px;padding:3px 10px;margin:0 -10px;
+    transition:background .18s;
+    border-left:4px solid transparent;
+  }
+  .sentence:hover{background:#eaf4fc}
+  .sentence.playing{
+    background:linear-gradient(90deg, rgba(137,207,240,.60), rgba(137,207,240,.28));
+    border-left-color:#2f7cc4;
+    box-shadow:0 2px 10px rgba(47,124,196,.22);
+  }
+  .sentence .play-ic{
+    display:inline-block;margin-right:4px;color:#2f7cc4;
+    font-size:.72em;opacity:.5;font-family:system-ui,sans-serif;vertical-align:2px;
+  }
+  .sentence.playing .play-ic{opacity:1;color:#1c5f9e;transform:scale(1.1)}
+  @media(max-width:640px){
+    .player-bar{top:50px;padding:10px 12px}
+    .player-bar .rate-group{order:3;margin-left:0}
+  }
+  @media print{
+    .player-bar{display:none !important}
+    .sentence{cursor:default;padding:0;margin:0;border:0}
+    .sentence.playing{background:transparent;box-shadow:none;border:0}
+    .sentence .play-ic{display:none}
+  }
+
+</style>
+</head>
+<body>
+  <nav class="top-nav">
+    <span class="nav-title">索 引</span>
+    <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#p5">第五段</a><a href="#p6">第六段</a><a href="#p7">第七段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    <a class="to-top" href="#top">▲ 顶部</a>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header>
+      <p class="eyebrow">JAPANESE × CHINESE · READING &amp; GRAMMAR NOTES</p>
+      <h1>5-1 食品消费税<br>消費減税と自民——これで責任政党なのか</h1>
+      <p>日语汉字均标注平假名读音（黄色）；每组内容按日语、中文交替呈现，含瑞译强化笔记精讲。</p>
+    </header>
+
+  <div class="player-bar" id="player-bar">
+    <button class="pb-btn small" id="btn-prev" title="上一句（←）">⏮</button>
+    <button class="pb-btn" id="btn-play" title="播放/暂停（空格）">▶</button>
+    <button class="pb-btn small" id="btn-next" title="下一句（→）">⏭</button>
+    <div class="rate-group" id="rate-group">
+      <button class="rate-btn" data-rate="0.5">0.5x</button>
+      <button class="rate-btn" data-rate="0.75">0.75x</button>
+      <button class="rate-btn active" data-rate="1">1x</button>
+      <button class="rate-btn" data-rate="1.25">1.25x</button>
+      <button class="rate-btn" data-rate="1.5">1.5x</button>
+    </div>
+    <button class="mode-btn" id="btn-mode" title="循环模式">循环: 关</button>
+    <div class="progress" id="progress"><div class="fill" id="progress-fill"></div><div class="knob" id="progress-knob"></div></div>
+    <div class="sentence-status" id="sentence-status">点击下方任意日文句子开始跟读</div>
+  </div>
+
+
+    <nav>
+      <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#p5">第五段</a><a href="#p6">第六段</a><a href="#p7">第七段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    </nav>
+
+    <section id="p1"><h2 class="section-title">第一段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="0" data-audio="p1_s1.mp3"><span class="play-ic">▶</span><ruby>少子高齢化<rt>しょうしこうれいか</rt></ruby>と<ruby>人口減<rt>じんこうげん</rt></ruby>が<ruby>進<rt>すす</rt></ruby>む<ruby>日本<rt>にほん</rt></ruby>で、<ruby>社会保障<rt>しゃかいほしょう</rt></ruby>を<ruby>支<rt>ささ</rt></ruby>える<ruby>財源<rt>ざいげん</rt></ruby>である<ruby>消費税<rt>しょうひぜい</rt></ruby>を<ruby>初<rt>はじ</rt></ruby>めて<ruby>減税<rt>げんぜい</rt></ruby>する<ruby>政治判断<rt>せいじはんだん</rt></ruby>は<ruby>妥当<rt>だとう</rt></ruby>か。</span><span class="sentence" data-idx="1" data-audio="p1_s2.mp3"><span class="play-ic">▶</span><ruby>極<rt>きわ</rt></ruby>めて<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>政策<rt>せいさく</rt></ruby>の<ruby>方向転換<rt>ほうこうてんかん</rt></ruby>を<ruby>了承<rt>りょうしょう</rt></ruby>した<ruby>自民党<rt>じみんとう</rt></ruby>は、<ruby>国民生活<rt>こくみんせいかつ</rt></ruby>や<ruby>経済<rt>けいざい</rt></ruby>への<ruby>影響<rt>えいきょう</rt></ruby>をはじめ、<ruby>慎重<rt>しんちょう</rt></ruby>に<ruby>考<rt>かんが</rt></ruby>えるべき<ruby>幾多<rt>いくた</rt></ruby>の<ruby>課題<rt>かだい</rt></ruby>を<ruby>置<rt>お</rt></ruby>き<ruby>去<rt>さ</rt></ruby>りにした。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">在少子老龄化和人口减少不断加剧的日本，消费税是支撑社会保障的重要财源。在此背景下，政府或将首次下调消费税，这一政治判断是否妥当？自民党同意了这一重大政策转向，却搁置了对国民生活和经济影响等诸多本应慎重考虑的问题。</p><p class="note">「<ruby>置<rt>お</rt></ruby>き<ruby>去<rt>さ</rt></ruby>り」＝搁置、弃置不顾，详解见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>進む ＝<ruby>進<rt>すす</rt></ruby>む（v1 自）连体：不断加剧的。</p><p>支える ＝<ruby>支<rt>ささ</rt></ruby>える（v2 他）连体：支撑……的。</p><p>減税する ＝<ruby>減税<rt>げんぜい</rt></ruby>する（v3 他）连体：下调（消费税）的。</p><p>了承した ＝<ruby>了承<rt>りょうしょう</rt></ruby>する（v3 他）過去形（连体）：同意了的。</p><p>置き去りにした ＝<ruby>置<rt>お</rt></ruby>き<ruby>去<rt>さ</rt></ruby>りにする＋た：搁置了、弃置不顾。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p2"><h2 class="section-title">第二段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="2" data-audio="p2_s1.mp3"><span class="play-ic">▶</span><ruby>財源確保<rt>ざいげんかくほ</rt></ruby>の<ruby>道筋<rt>みちすじ</rt></ruby>も<ruby>将来世代<rt>しょうらいせだい</rt></ruby>への<ruby>責任<rt>せきにん</rt></ruby>も<ruby>示<rt>しめ</rt></ruby>さず、<ruby>目先<rt>めさき</rt></ruby>の<ruby>人気取<rt>にんきと</rt></ruby>りを<ruby>優先<rt>ゆうせん</rt></ruby>し、<ruby>減税<rt>げんぜい</rt></ruby>へ<ruby>突<rt>つ</rt></ruby>き<ruby>進<rt>すす</rt></ruby>む。</span><span class="sentence" data-idx="3" data-audio="p2_s2.mp3"><span class="play-ic">▶</span>もはや<ruby>責任政党<rt>せきにんせいとう</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>ぶことはできない。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">既不说明如何确保财源，也不体现对下一代的责任，只顾拉拢眼前的选票，一味推进减税。这样的政党，已不能称为负责任的执政党。</p><p class="note">「<ruby>人気取<rt>にんきと</rt></ruby>り」「<ruby>突<rt>つ</rt></ruby>き<ruby>進<rt>すす</rt></ruby>む」「<ruby>責任政党<rt>せきにんせいとう</rt></ruby>」的讲解见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>示さず ＝<ruby>示<rt>しめ</rt></ruby>す（v1 他）ない形＋ず：不说明、不体现（中顿）。</p><p>優先し ＝<ruby>優先<rt>ゆうせん</rt></ruby>する（v3 他）连用形：优先（中顿）。</p><p>突き進む ＝<ruby>突<rt>つ</rt></ruby>き<ruby>進<rt>すす</rt></ruby>む（v1 自）辞书形（句尾）：一味推进。</p><p>呼ぶ ＝<ruby>呼<rt>よ</rt></ruby>ぶ（v1 他）辞书形：称作。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p3"><h2 class="section-title">第三段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="4" data-audio="p3_s1.mp3"><span class="play-ic">▶</span><ruby>党<rt>とう</rt></ruby>は<ruby>全議員<rt>ぜんぎいん</rt></ruby>が<ruby>参加<rt>さんか</rt></ruby>できる<ruby>会合<rt>かいごう</rt></ruby>で、<ruby>高市早苗首相<rt>たかいちさなえしゅしょう</rt></ruby>が<ruby>表明<rt>ひょうめい</rt></ruby>した<ruby>食料品<rt>しょくりょうひん</rt></ruby>の<ruby>消費税率<rt>しょうひぜいりつ</rt></ruby>を2<ruby>年間<rt>ねんかん</rt></ruby>、1％に<ruby>引<rt>ひ</rt></ruby>き<ruby>下<rt>さ</rt></ruby>げる<ruby>方針<rt>ほうしん</rt></ruby>を<ruby>了承<rt>りょうしょう</rt></ruby>した。</span><span class="sentence" data-idx="5" data-audio="p3_s2.mp3"><span class="play-ic">▶</span><ruby>首相<rt>しゅしょう</rt></ruby>は4<ruby>日<rt>にち</rt></ruby>、<ruby>税制改正大綱<rt>ぜいせいかいせいたいこう</rt></ruby>を9<ruby>月<rt>がつ</rt></ruby>にまとめ、<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>法案<rt>ほうあん</rt></ruby>を<ruby>秋<rt>あき</rt></ruby>の<ruby>臨時国会<rt>りんじこっかい</rt></ruby>に<ruby>提出<rt>ていしゅつ</rt></ruby>する<ruby>意向<rt>いこう</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>した。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">在议员大会上，自民党同意了高市早苗首相提出的方针，即将食品消费税税率临时下调至1%，期限为两年。本月4日，首相表示将于9月汇总税制改革大纲，并计划在秋季临时国会上提交相关法案。</p><p class="note">「<ruby>税制改正大綱<rt>ぜいせいかいせいたいこう</rt></ruby>」＝税制改革大纲，相关背景见文末强化笔记。本版参考译文已修正：原译「即在两年内将食品消费税率降至1%」有歧义，现改为「临时下调至1%，期限为两年」。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>参加できる ＝<ruby>参加<rt>さんか</rt></ruby>する（v3 自）可能形：能够参加。</p><p>表明した ＝<ruby>表明<rt>ひょうめい</rt></ruby>する（v3 他）過去形（连体）：表明的。</p><p>引き下げる ＝<ruby>引<rt>ひ</rt></ruby>き<ruby>下<rt>さ</rt></ruby>げる（v2 他）连体：下调的。</p><p>了承した ＝<ruby>了承<rt>りょうしょう</rt></ruby>する（v3 他）過去形：同意。</p><p>まとめ ＝まとめる（v2 他）连用形：汇总（中顿）。</p><p>提出する ＝<ruby>提出<rt>ていしゅつ</rt></ruby>する（v3 他）连体：提交的。</p><p>示した ＝<ruby>示<rt>しめ</rt></ruby>した（過去形）：表示。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p4"><h2 class="section-title">第四段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="6" data-audio="p4_s1.mp3"><span class="play-ic">▶</span><ruby>半年<rt>はんとし</rt></ruby>前、<ruby>首相<rt>しゅしょう</rt></ruby>は<ruby>衆院解散<rt>しゅういんかいさん</rt></ruby>を<ruby>表明<rt>ひょうめい</rt></ruby>した<ruby>会見<rt>かいけん</rt></ruby>で<ruby>減税<rt>げんぜい</rt></ruby>を「<ruby>私自身<rt>わたしじしん</rt></ruby>の<ruby>悲願<rt>ひがん</rt></ruby>」と<ruby>表現<rt>ひょうげん</rt></ruby>し、<ruby>党公約<rt>とうこうやく</rt></ruby>に「<ruby>実現<rt>じつげん</rt></ruby>に<ruby>向<rt>む</rt></ruby>けた<ruby>検討<rt>けんとう</rt></ruby>の<ruby>加速<rt>かそく</rt></ruby>」を<ruby>明記<rt>めいき</rt></ruby>。</span><span class="sentence" data-idx="7" data-audio="p4_s2.mp3"><span class="play-ic">▶</span><ruby>街頭演説<rt>がいとうえんぜつ</rt></ruby>ではこの<ruby>公約<rt>こうやく</rt></ruby>に<ruby>一切<rt>いっさい</rt></ruby><ruby>触<rt>ふ</rt></ruby>れなかったものの、<ruby>圧勝<rt>あっしょう</rt></ruby>した。</span><span class="sentence" data-idx="8" data-audio="p4_s3.mp3"><span class="play-ic">▶</span><ruby>首相<rt>しゅしょう</rt></ruby>は<ruby>表明<rt>ひょうめい</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>に、この<ruby>間<rt>あいだ</rt></ruby>の「<ruby>国民<rt>こくみん</rt></ruby>の<ruby>期待<rt>きたい</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い」ことを<ruby>挙<rt>あ</rt></ruby>げた。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">半年前，首相在宣布解散众议院的记者会上，将减税称为“我个人的夙愿”，并在党的竞选纲领中写明“加快研究，推动实现”。尽管她在街头演说中完全未提及这一承诺，自民党仍取得压倒性胜利。而关于提出减税的理由，她则表示是这段时间“国民非常期待”。</p><p class="note">「<ruby>悲願<rt>ひがん</rt></ruby>」＝心愿、夙愿，详解见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>表明した ＝<ruby>表明<rt>ひょうめい</rt></ruby>する（v3 他）過去形（连体）：宣布的。</p><p>表現し ＝<ruby>表現<rt>ひょうげん</rt></ruby>する（v3 他）连用形：称为。</p><p>明記 ＝<ruby>明記<rt>めいき</rt></ruby>する（v3 他）连用形：写明（中顿）。</p><p>触れなかった ＝<ruby>触<rt>ふ</rt></ruby>れる（v2 自）ない過去：没有提及。</p><p>圧勝した ＝<ruby>圧勝<rt>あっしょう</rt></ruby>する（v3 自）過去形：取得压倒性胜利。</p><p>挙げた ＝<ruby>挙<rt>あ</rt></ruby>げる（v2 他）過去形：举出、表示。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p5"><h2 class="section-title">第五段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="9" data-audio="p5_s1.mp3"><span class="play-ic">▶</span><ruby>党<rt>とう</rt></ruby>の<ruby>会合<rt>かいごう</rt></ruby>は<ruby>前回<rt>ぜんかい</rt></ruby><ruby>会合<rt>かいごう</rt></ruby>の<ruby>反対意見<rt>はんたいいけん</rt></ruby>を<ruby>押<rt>お</rt></ruby>し<ruby>戻<rt>もど</rt></ruby>し、<ruby>発言者<rt>はつげんしゃ</rt></ruby>のうち65<ruby>人<rt>にん</rt></ruby>が<ruby>賛成<rt>さんせい</rt></ruby>、9<ruby>人<rt>にん</rt></ruby>が<ruby>反対<rt>はんたい</rt></ruby>、<ruby>中立的<rt>ちゅうりつてき</rt></ruby>な<ruby>意見<rt>いけん</rt></ruby>が1<ruby>人<rt>にん</rt></ruby>だったという。</span><span class="sentence" data-idx="10" data-audio="p5_s2.mp3"><span class="play-ic">▶</span><ruby>賛成<rt>さんせい</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>は「<ruby>公約<rt>こうやく</rt></ruby>だから」が<ruby>目立<rt>めだ</rt></ruby>ち、「<ruby>新人議員<rt>しんじんぎいん</rt></ruby>にとって<ruby>公約<rt>こうやく</rt></ruby>は<ruby>命<rt>いのち</rt></ruby>」「<ruby>首相<rt>しゅしょう</rt></ruby>が<ruby>決<rt>き</rt></ruby>めたことに<ruby>従<rt>したが</rt></ruby>うべきだ」との<ruby>意見<rt>いけん</rt></ruby>が<ruby>相次<rt>あいつ</rt></ruby>いだ。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">在自民党此次会议上，上一轮会议中出现的反对意见被压了下去。据称，发言者中65人赞成、9人反对、1人持中立意见。赞成理由多为“因为这是竞选承诺”，并接连有人表示“对新议员来说，竞选承诺就是生命”“应当服从首相的决定”。</p><p class="note">「<ruby>押<rt>お</rt></ruby>し<ruby>戻<rt>もど</rt></ruby>す」＝压下去、顶回去，详解见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>押し戻し ＝<ruby>押<rt>お</rt></ruby>し<ruby>戻<rt>もど</rt></ruby>す（v1 他）连用形：压了下去（中顿）。</p><p>目立ち ＝<ruby>目立<rt>めだ</rt></ruby>つ（v1 自）连用形：多为（中顿）。</p><p>相次いだ ＝<ruby>相次<rt>あいつ</rt></ruby>ぐ（v1 自）過去形：接连出现。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p6"><h2 class="section-title">第六段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="11" data-audio="p6_s1.mp3"><span class="play-ic">▶</span><ruby>公約<rt>こうやく</rt></ruby>は、<ruby>政治<rt>せいじ</rt></ruby>への<ruby>信頼<rt>しんらい</rt></ruby>と<ruby>密接<rt>みっせつ</rt></ruby>に<ruby>関<rt>かか</rt></ruby>わる。</span><span class="sentence" data-idx="12" data-audio="p6_s2.mp3"><span class="play-ic">▶</span>だが、<ruby>検討<rt>けんとう</rt></ruby>の<ruby>過程<rt>かてい</rt></ruby>で<ruby>課題<rt>かだい</rt></ruby>が<ruby>明<rt>あき</rt></ruby>らかになれば<ruby>正面<rt>しょうめん</rt></ruby>から<ruby>説明<rt>せつめい</rt></ruby>し、<ruby>修正<rt>しゅうせい</rt></ruby>や<ruby>撤回<rt>てっかい</rt></ruby>もいとわないことが<ruby>国民<rt>こくみん</rt></ruby>から<ruby>選<rt>えら</rt></ruby>ばれた<ruby>議員<rt>ぎいん</rt></ruby>の<ruby>責務<rt>せきむ</rt></ruby>だ。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">竞选承诺与政治信任密切相关。然而，如果在讨论过程中发现问题，就应正面面向国民说明，必要时也应不惜修改或撤回。这才是民选议员的职责。</p><p class="note">「<ruby>責務<rt>せきむ</rt></ruby>」与「<ruby>責任<rt>せきにん</rt></ruby>」的辨析见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>関わる ＝<ruby>関<rt>かか</rt></ruby>わる（v1 自）辞书形（句尾）：密切相关。</p><p>明らかになれば ＝<ruby>明<rt>あき</rt></ruby>らかになる＋ば：如果……变得明确。</p><p>説明し ＝<ruby>説明<rt>せつめい</rt></ruby>する（v3 他）连用形：说明。</p><p>いとわない ＝いとわない（<ruby>厭<rt>いと</rt></ruby>う的ない形）：不惜。</p><p>選ばれた ＝<ruby>選<rt>えら</rt></ruby>ばれる（被动過去，连体）：被选出的。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p7"><h2 class="section-title">第七段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="13" data-audio="p7_s1.mp3"><span class="play-ic">▶</span>（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>減税<rt>げんぜい</rt></ruby>の<ruby>前提<rt>ぜんてい</rt></ruby>となる<ruby>年<rt>ねん</rt></ruby>5<ruby>兆円<rt>ちょうえん</rt></ruby>の<ruby>財源確保<rt>ざいげんかくほ</rt></ruby>や、2<ruby>年後<rt>ねんご</rt></ruby>の「<ruby>増税<rt>ぞうぜい</rt></ruby>」など<ruby>棚上<rt>たなあ</rt></ruby>げした<ruby>課題<rt>かだい</rt></ruby>から<ruby>逃<rt>に</rt></ruby>げず<ruby>未来<rt>みらい</rt></ruby>まで<ruby>視野<rt>しや</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げ、<ruby>解決策<rt>かいけつさく</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>せなければ<ruby>再考<rt>さいこう</rt></ruby>する。</span><span class="sentence" data-idx="14" data-audio="p7_s2.mp3"><span class="play-ic">▶</span><ruby>自民党議員<rt>じみんとうぎいん</rt></ruby>は<ruby>忖度<rt>そんたく</rt></ruby>せず、<ruby>責務<rt>せきむ</rt></ruby>を<ruby>果<rt>は</rt></ruby>たしてほしい。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">（中略）对于减税所需的每年5万亿日元财源，以及两年后的“增税”等被搁置的问题，如果不能正面对待、着眼未来并提出解决方案，就应重新考虑。希望自民党议员不要揣摩上意，而应履行职责。</p><p class="note">「<ruby>棚上<rt>たなあ</rt></ruby>げ」＝搁置、暂不处理；「<ruby>忖度<rt>そんたく</rt></ruby>」＝揣摩上意，详解见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>なる ＝なる（v1 自）连体：作为……的。</p><p>棚上げした ＝<ruby>棚上<rt>たなあ</rt></ruby>げする（v3 他）過去形（连体）：被搁置的。</p><p>逃げず ＝<ruby>逃<rt>に</rt></ruby>げる（v2 自）＋ず：不逃避（中顿）。</p><p>示せなければ ＝<ruby>示<rt>しめ</rt></ruby>す（v1 他）可能形＋なければ：如果无法提出。</p><p>再考する ＝<ruby>再考<rt>さいこう</rt></ruby>する（v3 他）辞书形（句尾）：重新考虑。</p><p>忖度せず ＝<ruby>忖度<rt>そんたく</rt></ruby>する（v3 他）＋ず：不揣摩（上意）。</p><p>果たしてほしい ＝<ruby>果<rt>は</rt></ruby>たす（v1 他）て形＋ほしい：希望……履行。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="grammar"><h2 class="section-title"><span>文</span>本文语法</h2><div class="grammar-grid"><article class="card"><h3><span class="g-num">1</span>〜が進む</h3><p><span class="pattern"><ruby>少子高齢化<rt>しょうしこうれいか</rt></ruby>と<ruby>人口減<rt>じんこうげん</rt></ruby>が<ruby>進<rt>すす</rt></ruby>む<ruby>日本<rt>にほん</rt></ruby></span></p><p>“……不断加剧的日本”。“進む”表示（老龄化、人口减少）不断推进。</p></article><article class="card"><h3><span class="g-num">2</span>〜を支える財源</h3><p><span class="pattern"><ruby>社会保障<rt>しゃかいほしょう</rt></ruby>を<ruby>支<rt>ささ</rt></ruby>える<ruby>財源<rt>ざいげん</rt></ruby></span></p><p>“支撑……的财源”。连体修饰。</p></article><article class="card"><h3><span class="g-num">3</span>〜は妥当か</h3><p><span class="pattern"><ruby>政治判断<rt>せいじはんだん</rt></ruby>は<ruby>妥当<rt>だとう</rt></ruby>か</span></p><p>“……是否妥当”。社论式设问。</p></article><article class="card"><h3><span class="g-num">4</span>〜を了承する</h3><p><span class="pattern"><ruby>政策<rt>せいさく</rt></ruby>の<ruby>方向転換<rt>ほうこうてんかん</rt></ruby>を<ruby>了承<rt>りょうしょう</rt></ruby>した</span></p><p>“同意、批准……”。（会议表决通过）</p></article><article class="card"><h3><span class="g-num">5</span>〜をはじめ</h3><p><span class="pattern"><ruby>国民生活<rt>こくみんせいかつ</rt></ruby>や<ruby>経済<rt>けいざい</rt></ruby>への<ruby>影響<rt>えいきょう</rt></ruby>をはじめ</span></p><p>“以……为首、包括……在内”。</p></article><article class="card"><h3><span class="g-num">6</span>〜べき</h3><p><span class="pattern"><ruby>慎重<rt>しんちょう</rt></ruby>に<ruby>考<rt>かんが</rt></ruby>えるべき<ruby>幾多<rt>いくた</rt></ruby>の<ruby>課題<rt>かだい</rt></ruby></span></p><p>“应该……的”。“べき”表义务、应当。</p></article><article class="card"><h3><span class="g-num">7</span>〜を置き去りにする</h3><p><span class="pattern"><ruby>課題<rt>かだい</rt></ruby>を<ruby>置<rt>お</rt></ruby>き<ruby>去<rt>さ</rt></ruby>りにした</span></p><p>“搁置、弃置不顾”。（详见强化笔记）</p></article><article class="card"><h3><span class="g-num">8</span>〜も〜も〜ず</h3><p><span class="pattern"><ruby>財源確保<rt>ざいげんかくほ</rt></ruby>の<ruby>道筋<rt>みちすじ</rt></ruby>も<ruby>将来世代<rt>しょうらいせだい</rt></ruby>への<ruby>責任<rt>せきにん</rt></ruby>も<ruby>示<rt>しめ</rt></ruby>さず</span></p><p>“既不……也不……”。“ず”为书面否定中顿。</p></article><article class="card"><h3><span class="g-num">9</span>〜を優先する</h3><p><span class="pattern"><ruby>目先<rt>めさき</rt></ruby>の<ruby>人気取<rt>にんきと</rt></ruby>りを<ruby>優先<rt>ゆうせん</rt></ruby>し</span></p><p>“优先……、只顾……”。</p></article><article class="card"><h3><span class="g-num">10</span>〜へ突き進む</h3><p><span class="pattern"><ruby>減税<rt>げんぜい</rt></ruby>へ<ruby>突<rt>つ</rt></ruby>き<ruby>進<rt>すす</rt></ruby>む</span></p><p>“向……一味推进”。（详见强化笔记）</p></article><article class="card"><h3><span class="g-num">11</span>〜とは呼ぶことはできない</h3><p><span class="pattern"><ruby>責任政党<rt>せきにんせいとう</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>ぶことはできない</span></p><p>“已不能称为……”。</p></article><article class="card"><h3><span class="g-num">12</span>〜が参加できる会合</h3><p><span class="pattern"><ruby>全議員<rt>ぜんぎいん</rt></ruby>が<ruby>参加<rt>さんか</rt></ruby>できる<ruby>会合<rt>かいごう</rt></ruby></span></p><p>“全体议员都能参加的会议”。可能形连体。</p></article><article class="card"><h3><span class="g-num">13</span>〜を引き下げる</h3><p><span class="pattern"><ruby>消費税率<rt>しょうひぜいりつ</rt></ruby>を1％に<ruby>引<rt>ひ</rt></ruby>き<ruby>下<rt>さ</rt></ruby>げる</span></p><p>“将……下调至……”。</p></article><article class="card"><h3><span class="g-num">14</span>〜意向を示す</h3><p><span class="pattern"><ruby>提出<rt>ていしゅつ</rt></ruby>する<ruby>意向<rt>いこう</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>した</span></p><p>“表示……的意向”。</p></article><article class="card"><h3><span class="g-num">15</span>〜を「〜」と表現する</h3><p><span class="pattern"><ruby>減税<rt>げんぜい</rt></ruby>を「<ruby>私自身<rt>わたしじしん</rt></ruby>の<ruby>悲願<rt>ひがん</rt></ruby>」と<ruby>表現<rt>ひょうげん</rt></ruby>し</span></p><p>“将……称为……”。</p></article><article class="card"><h3><span class="g-num">16</span>〜ものの</h3><p><span class="pattern"><ruby>触<rt>ふ</rt></ruby>れなかったものの、<ruby>圧勝<rt>あっしょう</rt></ruby>した</span></p><p>“虽然……但是……”。逆接。</p></article><article class="card"><h3><span class="g-num">17</span>〜という（传闻）</h3><p><span class="pattern">65<ruby>人<rt>にん</rt></ruby>が<ruby>賛成<rt>さんせい</rt></ruby>…だったという</span></p><p>“据称……”。传闻转述。</p></article><article class="card"><h3><span class="g-num">18</span>〜にとって</h3><p><span class="pattern"><ruby>新人議員<rt>しんじんぎいん</rt></ruby>にとって<ruby>公約<rt>こうやく</rt></ruby>は<ruby>命<rt>いのち</rt></ruby></span></p><p>“对……来说”。</p></article><article class="card"><h3><span class="g-num">19</span>〜に従うべきだ</h3><p><span class="pattern"><ruby>首相<rt>しゅしょう</rt></ruby>が<ruby>決<rt>き</rt></ruby>めたことに<ruby>従<rt>したが</rt></ruby>うべきだ</span></p><p>“应当服从……”。“べきだ”表当然。</p></article><article class="card"><h3><span class="g-num">20</span>〜と密接に関わる</h3><p><span class="pattern"><ruby>政治<rt>せいじ</rt></ruby>への<ruby>信頼<rt>しんらい</rt></ruby>と<ruby>密接<rt>みっせつ</rt></ruby>に<ruby>関<rt>かか</rt></ruby>わる</span></p><p>“与……密切相关”。</p></article><article class="card"><h3><span class="g-num">21</span>〜が明らかになれば</h3><p><span class="pattern"><ruby>課題<rt>かだい</rt></ruby>が<ruby>明<rt>あき</rt></ruby>らかになれば</span></p><p>“如果……变得明确，就……”。</p></article><article class="card"><h3><span class="g-num">22</span>〜いとわない</h3><p><span class="pattern"><ruby>修正<rt>しゅうせい</rt></ruby>や<ruby>撤回<rt>てっかい</rt></ruby>もいとわない</span></p><p>“不惜……”。</p></article><article class="card"><h3><span class="g-num">23</span>〜から逃げず</h3><p><span class="pattern"><ruby>課題<rt>かだい</rt></ruby>から<ruby>逃<rt>に</rt></ruby>げず</span></p><p>“不逃避……”。书面否定中顿。</p></article><article class="card"><h3><span class="g-num">24</span>〜てほしい</h3><p><span class="pattern"><ruby>責務<rt>せきむ</rt></ruby>を<ruby>果<rt>は</rt></ruby>たしてほしい</span></p><p>“希望……”。向对方提出愿望。</p></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="vocab"><h2 class="section-title"><span>词</span>词汇、短语与读音</h2><div class="table-wrap"><table><thead><tr><th>单词／短语</th><th>读音</th><th>词性</th><th>级别</th><th>中文释义</th><th>短语（原型）</th></tr></thead><tbody><tr><td class="word"><ruby>少子高齢化<rt>しょうしこうれいか</rt></ruby></td><td>しょうしこうれいか</td><td><span class="pos">n</span></td><td></td><td>少子老龄化</td><td><ruby>少子高齢化<rt>しょうしこうれいか</rt></ruby>と<ruby>人口減<rt>じんこうげん</rt></ruby></td></tr><tr><td class="word"><ruby>人口減<rt>じんこうげん</rt></ruby></td><td>じんこうげん</td><td><span class="pos">n</span></td><td></td><td>人口减少</td><td><ruby>少子高齢化<rt>しょうしこうれいか</rt></ruby>と<ruby>人口減<rt>じんこうげん</rt></ruby></td></tr><tr><td class="word"><ruby>進<rt>すす</rt></ruby>む</td><td>すすむ</td><td><span class="pos">v1 自</span></td><td></td><td>加剧、推进</td><td><ruby>少子高齢化<rt>しょうしこうれいか</rt></ruby>と<ruby>人口減<rt>じんこうげん</rt></ruby>が<ruby>進<rt>すす</rt></ruby>む</td></tr><tr><td class="word"><ruby>社会保障<rt>しゃかいほしょう</rt></ruby></td><td>しゃかいほしょう</td><td><span class="pos">n</span></td><td></td><td>社会保障</td><td><ruby>社会保障<rt>しゃかいほしょう</rt></ruby>を<ruby>支<rt>ささ</rt></ruby>える</td></tr><tr><td class="word"><ruby>支<rt>ささ</rt></ruby>える</td><td>ささえる</td><td><span class="pos">v2 他</span></td><td></td><td>支撑</td><td><ruby>社会保障<rt>しゃかいほしょう</rt></ruby>を<ruby>支<rt>ささ</rt></ruby>える<ruby>財源<rt>ざいげん</rt></ruby></td></tr><tr><td class="word"><ruby>財源<rt>ざいげん</rt></ruby></td><td>ざいげん</td><td><span class="pos">n</span></td><td></td><td>财源</td><td><ruby>社会保障<rt>しゃかいほしょう</rt></ruby>を<ruby>支<rt>ささ</rt></ruby>える<ruby>財源<rt>ざいげん</rt></ruby></td></tr><tr><td class="word"><ruby>消費税<rt>しょうひぜい</rt></ruby></td><td>しょうひぜい</td><td><span class="pos">n</span></td><td></td><td>消费税</td><td><ruby>消費税<rt>しょうひぜい</rt></ruby>を<ruby>初<rt>はじ</rt></ruby>めて<ruby>減税<rt>げんぜい</rt></ruby>する</td></tr><tr><td class="word"><ruby>初<rt>はじ</rt></ruby>めて</td><td>はじめて</td><td><span class="pos">adv</span></td><td></td><td>首次</td><td><ruby>消費税<rt>しょうひぜい</rt></ruby>を<ruby>初<rt>はじ</rt></ruby>めて<ruby>減税<rt>げんぜい</rt></ruby>する</td></tr><tr><td class="word"><ruby>減税<rt>げんぜい</rt></ruby>する</td><td>げんぜいする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>减税、下调税率</td><td><ruby>初<rt>はじ</rt></ruby>めて<ruby>減税<rt>げんぜい</rt></ruby>する</td></tr><tr><td class="word"><ruby>政治判断<rt>せいじはんだん</rt></ruby></td><td>せいじはんだん</td><td><span class="pos">n</span></td><td></td><td>政治判断</td><td><ruby>減税<rt>げんぜい</rt></ruby>する<ruby>政治判断<rt>せいじはんだん</rt></ruby></td></tr><tr><td class="word"><ruby>妥当<rt>だとう</rt></ruby></td><td>だとう</td><td><span class="pos">ナ形</span></td><td></td><td>妥当</td><td><ruby>政治判断<rt>せいじはんだん</rt></ruby>は<ruby>妥当<rt>だとう</rt></ruby>か</td></tr><tr><td class="word"><ruby>極<rt>きわ</rt></ruby>めて</td><td>きわめて</td><td><span class="pos">adv</span></td><td></td><td>极其</td><td><ruby>極<rt>きわ</rt></ruby>めて<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>政策<rt>せいさく</rt></ruby></td></tr><tr><td class="word"><ruby>重要<rt>じゅうよう</rt></ruby></td><td>じゅうよう</td><td><span class="pos">n</span><span class="pos">ナ形</span></td><td></td><td>重要</td><td><ruby>極<rt>きわ</rt></ruby>めて<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>政策<rt>せいさく</rt></ruby></td></tr><tr><td class="word"><ruby>政策<rt>せいさく</rt></ruby></td><td>せいさく</td><td><span class="pos">n</span></td><td></td><td>政策</td><td><ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>政策<rt>せいさく</rt></ruby></td></tr><tr><td class="word"><ruby>方向転換<rt>ほうこうてんかん</rt></ruby></td><td>ほうこうてんかん</td><td><span class="pos">n</span></td><td></td><td>方向转变</td><td><ruby>政策<rt>せいさく</rt></ruby>の<ruby>方向転換<rt>ほうこうてんかん</rt></ruby></td></tr><tr><td class="word"><ruby>了承<rt>りょうしょう</rt></ruby>する</td><td>りょうしょうする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>同意、批准</td><td><ruby>方向転換<rt>ほうこうてんかん</rt></ruby>を<ruby>了承<rt>りょうしょう</rt></ruby>した</td></tr><tr><td class="word"><ruby>自民党<rt>じみんとう</rt></ruby></td><td>じみんとう</td><td><span class="pos">n</span></td><td></td><td>自民党</td><td><ruby>了承<rt>りょうしょう</rt></ruby>した<ruby>自民党<rt>じみんとう</rt></ruby></td></tr><tr><td class="word"><ruby>国民生活<rt>こくみんせいかつ</rt></ruby></td><td>こくみんせいかつ</td><td><span class="pos">n</span></td><td></td><td>国民生活</td><td><ruby>国民生活<rt>こくみんせいかつ</rt></ruby>や<ruby>経済<rt>けいざい</rt></ruby>への<ruby>影響<rt>えいきょう</rt></ruby></td></tr><tr><td class="word"><ruby>経済<rt>けいざい</rt></ruby></td><td>けいざい</td><td><span class="pos">n</span></td><td></td><td>经济</td><td><ruby>国民生活<rt>こくみんせいかつ</rt></ruby>や<ruby>経済<rt>けいざい</rt></ruby></td></tr><tr><td class="word"><ruby>影響<rt>えいきょう</rt></ruby></td><td>えいきょう</td><td><span class="pos">n</span></td><td></td><td>影响</td><td><ruby>国民生活<rt>こくみんせいかつ</rt></ruby>や<ruby>経済<rt>けいざい</rt></ruby>への<ruby>影響<rt>えいきょう</rt></ruby></td></tr><tr><td class="word"><ruby>慎重<rt>しんちょう</rt></ruby></td><td>しんちょう</td><td><span class="pos">ナ形</span></td><td></td><td>慎重</td><td><ruby>慎重<rt>しんちょう</rt></ruby>に<ruby>考<rt>かんが</rt></ruby>えるべき</td></tr><tr><td class="word"><ruby>幾多<rt>いくた</rt></ruby></td><td>いくた</td><td><span class="pos">n</span></td><td></td><td>诸多</td><td><ruby>慎重<rt>しんちょう</rt></ruby>に<ruby>考<rt>かんが</rt></ruby>えるべき<ruby>幾多<rt>いくた</rt></ruby>の<ruby>課題<rt>かだい</rt></ruby></td></tr><tr><td class="word"><ruby>課題<rt>かだい</rt></ruby></td><td>かだい</td><td><span class="pos">n</span></td><td></td><td>课题、问题</td><td><ruby>幾多<rt>いくた</rt></ruby>の<ruby>課題<rt>かだい</rt></ruby></td></tr><tr><td class="word"><ruby>置<rt>お</rt></ruby>き<ruby>去<rt>さ</rt></ruby>り</td><td>おきざり</td><td><span class="pos">n</span></td><td></td><td>搁置、遗弃</td><td><ruby>課題<rt>かだい</rt></ruby>を<ruby>置<rt>お</rt></ruby>き<ruby>去<rt>さ</rt></ruby>りにした</td></tr><tr><td class="word"><ruby>財源確保<rt>ざいげんかくほ</rt></ruby></td><td>ざいげんかくほ</td><td><span class="pos">n</span></td><td></td><td>确保财源</td><td><ruby>財源確保<rt>ざいげんかくほ</rt></ruby>の<ruby>道筋<rt>みちすじ</rt></ruby></td></tr><tr><td class="word"><ruby>道筋<rt>みちすじ</rt></ruby></td><td>みちすじ</td><td><span class="pos">n</span></td><td></td><td>路径、眉目</td><td><ruby>財源確保<rt>ざいげんかくほ</rt></ruby>の<ruby>道筋<rt>みちすじ</rt></ruby></td></tr><tr><td class="word"><ruby>将来世代<rt>しょうらいせだい</rt></ruby></td><td>しょうらいせだい</td><td><span class="pos">n</span></td><td></td><td>下一代、未来世代</td><td><ruby>将来世代<rt>しょうらいせだい</rt></ruby>への<ruby>責任<rt>せきにん</rt></ruby></td></tr><tr><td class="word"><ruby>責任<rt>せきにん</rt></ruby></td><td>せきにん</td><td><span class="pos">n</span></td><td></td><td>责任</td><td><ruby>将来世代<rt>しょうらいせだい</rt></ruby>への<ruby>責任<rt>せきにん</rt></ruby></td></tr><tr><td class="word"><ruby>示<rt>しめ</rt></ruby>す</td><td>しめす</td><td><span class="pos">v1 他</span></td><td></td><td>说明、表示</td><td><ruby>道筋<rt>みちすじ</rt></ruby>も<ruby>責任<rt>せきにん</rt></ruby>も<ruby>示<rt>しめ</rt></ruby>さず</td></tr><tr><td class="word"><ruby>目先<rt>めさき</rt></ruby></td><td>めさき</td><td><span class="pos">n</span></td><td></td><td>眼前</td><td><ruby>目先<rt>めさき</rt></ruby>の<ruby>人気取<rt>にんきと</rt></ruby>り</td></tr><tr><td class="word"><ruby>人気取<rt>にんきと</rt></ruby>り</td><td>にんきとり</td><td><span class="pos">n</span></td><td></td><td>博取人气、讨好大众</td><td><ruby>目先<rt>めさき</rt></ruby>の<ruby>人気取<rt>にんきと</rt></ruby>りを<ruby>優先<rt>ゆうせん</rt></ruby>し</td></tr><tr><td class="word"><ruby>優先<rt>ゆうせん</rt></ruby>する</td><td>ゆうせんする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>优先</td><td><ruby>人気取<rt>にんきと</rt></ruby>りを<ruby>優先<rt>ゆうせん</rt></ruby>し</td></tr><tr><td class="word"><ruby>突<rt>つ</rt></ruby>き<ruby>進<rt>すす</rt></ruby>む</td><td>つきすすむ</td><td><span class="pos">v1 自</span></td><td></td><td>一味推进、冲向</td><td><ruby>減税<rt>げんぜい</rt></ruby>へ<ruby>突<rt>つ</rt></ruby>き<ruby>進<rt>すす</rt></ruby>む</td></tr><tr><td class="word"><ruby>責任政党<rt>せきにんせいとう</rt></ruby></td><td>せきにんせいとう</td><td><span class="pos">n</span></td><td></td><td>负责任的政党</td><td><ruby>責任政党<rt>せきにんせいとう</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>ぶ</td></tr><tr><td class="word"><ruby>呼<rt>よ</rt></ruby>ぶ</td><td>よぶ</td><td><span class="pos">v1 他</span></td><td></td><td>称为</td><td><ruby>責任政党<rt>せきにんせいとう</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>ぶことはできない</td></tr><tr><td class="word"><ruby>全議員<rt>ぜんぎいん</rt></ruby></td><td>ぜんぎいん</td><td><span class="pos">n</span></td><td></td><td>全体议员</td><td><ruby>全議員<rt>ぜんぎいん</rt></ruby>が<ruby>参加<rt>さんか</rt></ruby>できる</td></tr><tr><td class="word"><ruby>参加<rt>さんか</rt></ruby>する</td><td>さんかする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td></td><td>参加</td><td><ruby>全議員<rt>ぜんぎいん</rt></ruby>が<ruby>参加<rt>さんか</rt></ruby>できる<ruby>会合<rt>かいごう</rt></ruby></td></tr><tr><td class="word"><ruby>会合<rt>かいごう</rt></ruby></td><td>かいごう</td><td><span class="pos">n</span></td><td></td><td>会议</td><td><ruby>参加<rt>さんか</rt></ruby>できる<ruby>会合<rt>かいごう</rt></ruby></td></tr><tr><td class="word"><ruby>高市早苗首相<rt>たかいちさなえしゅしょう</rt></ruby></td><td>たかいちさなえしゅしょう</td><td><span class="pos">n</span></td><td></td><td>首相高市早苗</td><td><ruby>高市早苗首相<rt>たかいちさなえしゅしょう</rt></ruby>が<ruby>表明<rt>ひょうめい</rt></ruby>した</td></tr><tr><td class="word"><ruby>表明<rt>ひょうめい</rt></ruby>する</td><td>ひょうめいする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>表明、宣布</td><td><ruby>高市早苗首相<rt>たかいちさなえしゅしょう</rt></ruby>が<ruby>表明<rt>ひょうめい</rt></ruby>した</td></tr><tr><td class="word"><ruby>食料品<rt>しょくりょうひん</rt></ruby></td><td>しょくりょうひん</td><td><span class="pos">n</span></td><td></td><td>食品</td><td><ruby>食料品<rt>しょくりょうひん</rt></ruby>の<ruby>消費税率<rt>しょうひぜいりつ</rt></ruby></td></tr><tr><td class="word"><ruby>消費税率<rt>しょうひぜいりつ</rt></ruby></td><td>しょうひぜいりつ</td><td><span class="pos">n</span></td><td></td><td>消费税率</td><td><ruby>食料品<rt>しょくりょうひん</rt></ruby>の<ruby>消費税率<rt>しょうひぜいりつ</rt></ruby></td></tr><tr><td class="word"><ruby>引<rt>ひ</rt></ruby>き<ruby>下<rt>さ</rt></ruby>げる</td><td>ひきさげる</td><td><span class="pos">v2 他</span></td><td></td><td>下调</td><td><ruby>消費税率<rt>しょうひぜいりつ</rt></ruby>を1％に<ruby>引<rt>ひ</rt></ruby>き<ruby>下<rt>さ</rt></ruby>げる</td></tr><tr><td class="word"><ruby>方針<rt>ほうしん</rt></ruby></td><td>ほうしん</td><td><span class="pos">n</span></td><td></td><td>方针</td><td><ruby>引<rt>ひ</rt></ruby>き<ruby>下<rt>さ</rt></ruby>げる<ruby>方針<rt>ほうしん</rt></ruby></td></tr><tr><td class="word"><ruby>首相<rt>しゅしょう</rt></ruby></td><td>しゅしょう</td><td><span class="pos">n</span></td><td></td><td>首相</td><td><ruby>首相<rt>しゅしょう</rt></ruby>は4<ruby>日<rt>にち</rt></ruby></td></tr><tr><td class="word"><ruby>税制改正大綱<rt>ぜいせいかいせいたいこう</rt></ruby></td><td>ぜいせいかいせいたいこう</td><td><span class="pos">n</span></td><td></td><td>税制改革大纲</td><td><ruby>税制改正大綱<rt>ぜいせいかいせいたいこう</rt></ruby>を9<ruby>月<rt>がつ</rt></ruby>にまとめ</td></tr><tr><td class="word"><ruby>法案<rt>ほうあん</rt></ruby></td><td>ほうあん</td><td><span class="pos">n</span></td><td></td><td>法案</td><td><ruby>必要<rt>ひつよう</rt></ruby>な<ruby>法案<rt>ほうあん</rt></ruby></td></tr><tr><td class="word"><ruby>臨時国会<rt>りんじこっかい</rt></ruby></td><td>りんじこっかい</td><td><span class="pos">n</span></td><td></td><td>临时国会</td><td><ruby>秋<rt>あき</rt></ruby>の<ruby>臨時国会<rt>りんじこっかい</rt></ruby></td></tr><tr><td class="word"><ruby>提出<rt>ていしゅつ</rt></ruby>する</td><td>ていしゅつする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>提交</td><td><ruby>臨時国会<rt>りんじこっかい</rt></ruby>に<ruby>提出<rt>ていしゅつ</rt></ruby>する</td></tr><tr><td class="word"><ruby>意向<rt>いこう</rt></ruby></td><td>いこう</td><td><span class="pos">n</span></td><td></td><td>意向</td><td><ruby>提出<rt>ていしゅつ</rt></ruby>する<ruby>意向<rt>いこう</rt></ruby></td></tr><tr><td class="word"><ruby>半年<rt>はんとし</rt></ruby></td><td>はんとし</td><td><span class="pos">n</span></td><td></td><td>半年</td><td><ruby>半年<rt>はんとし</rt></ruby>前</td></tr><tr><td class="word"><ruby>衆院解散<rt>しゅういんかいさん</rt></ruby></td><td>しゅういんかいさん</td><td><span class="pos">n</span></td><td></td><td>解散众议院</td><td><ruby>衆院解散<rt>しゅういんかいさん</rt></ruby>を<ruby>表明<rt>ひょうめい</rt></ruby>した<ruby>会見<rt>かいけん</rt></ruby></td></tr><tr><td class="word"><ruby>会見<rt>かいけん</rt></ruby></td><td>かいけん</td><td><span class="pos">n</span></td><td></td><td>记者会</td><td><ruby>表明<rt>ひょうめい</rt></ruby>した<ruby>会見<rt>かいけん</rt></ruby></td></tr><tr><td class="word"><ruby>私自身<rt>わたしじしん</rt></ruby></td><td>わたしじしん</td><td><span class="pos">n</span></td><td></td><td>我本人</td><td>「<ruby>私自身<rt>わたしじしん</rt></ruby>の<ruby>悲願<rt>ひがん</rt></ruby>」</td></tr><tr><td class="word"><ruby>悲願<rt>ひがん</rt></ruby></td><td>ひがん</td><td><span class="pos">n</span></td><td></td><td>夙愿</td><td>「<ruby>私自身<rt>わたしじしん</rt></ruby>の<ruby>悲願<rt>ひがん</rt></ruby>」</td></tr><tr><td class="word"><ruby>表現<rt>ひょうげん</rt></ruby>する</td><td>ひょうげんする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>表述、称为</td><td><ruby>減税<rt>げんぜい</rt></ruby>を「<ruby>悲願<rt>ひがん</rt></ruby>」と<ruby>表現<rt>ひょうげん</rt></ruby>し</td></tr><tr><td class="word"><ruby>党公約<rt>とうこうやく</rt></ruby></td><td>とうこうやく</td><td><span class="pos">n</span></td><td></td><td>党的竞选纲领</td><td><ruby>党公約<rt>とうこうやく</rt></ruby>に</td></tr><tr><td class="word"><ruby>実現<rt>じつげん</rt></ruby></td><td>じつげん</td><td><span class="pos">n</span></td><td></td><td>实现</td><td>「<ruby>実現<rt>じつげん</rt></ruby>に<ruby>向<rt>む</rt></ruby>けた<ruby>検討<rt>けんとう</rt></ruby>の<ruby>加速<rt>かそく</rt></ruby>」</td></tr><tr><td class="word"><ruby>検討<rt>けんとう</rt></ruby></td><td>けんとう</td><td><span class="pos">n</span></td><td></td><td>研究、讨论</td><td><ruby>実現<rt>じつげん</rt></ruby>に<ruby>向<rt>む</rt></ruby>けた<ruby>検討<rt>けんとう</rt></ruby></td></tr><tr><td class="word"><ruby>加速<rt>かそく</rt></ruby></td><td>かそく</td><td><span class="pos">n</span></td><td></td><td>加速</td><td><ruby>検討<rt>けんとう</rt></ruby>の<ruby>加速<rt>かそく</rt></ruby></td></tr><tr><td class="word"><ruby>明記<rt>めいき</rt></ruby>する</td><td>めいきする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>写明</td><td>「<ruby>実現<rt>じつげん</rt></ruby>に<ruby>向<rt>む</rt></ruby>けた<ruby>検討<rt>けんとう</rt></ruby>の<ruby>加速<rt>かそく</rt></ruby>」を<ruby>明記<rt>めいき</rt></ruby></td></tr><tr><td class="word"><ruby>街頭演説<rt>がいとうえんぜつ</rt></ruby></td><td>がいとうえんぜつ</td><td><span class="pos">n</span></td><td></td><td>街头演说</td><td><ruby>街頭演説<rt>がいとうえんぜつ</rt></ruby>では</td></tr><tr><td class="word"><ruby>一切<rt>いっさい</rt></ruby></td><td>いっさい</td><td><span class="pos">adv</span></td><td></td><td>完全（不）</td><td>この<ruby>公約<rt>こうやく</rt></ruby>に<ruby>一切<rt>いっさい</rt></ruby><ruby>触<rt>ふ</rt></ruby>れなかった</td></tr><tr><td class="word"><ruby>触<rt>ふ</rt></ruby>れる</td><td>ふれる</td><td><span class="pos">v2 自</span></td><td></td><td>提及</td><td><ruby>公約<rt>こうやく</rt></ruby>に<ruby>一切<rt>いっさい</rt></ruby><ruby>触<rt>ふ</rt></ruby>れなかった</td></tr><tr><td class="word"><ruby>圧勝<rt>あっしょう</rt></ruby>する</td><td>あっしょうする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td></td><td>取得压倒性胜利</td><td><ruby>圧勝<rt>あっしょう</rt></ruby>した</td></tr><tr><td class="word"><ruby>理由<rt>りゆう</rt></ruby></td><td>りゆう</td><td><span class="pos">n</span></td><td></td><td>理由</td><td><ruby>表明<rt>ひょうめい</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby></td></tr><tr><td class="word"><ruby>挙<rt>あ</rt></ruby>げる</td><td>あげる</td><td><span class="pos">v2 他</span></td><td></td><td>举出</td><td>「<ruby>国民<rt>こくみん</rt></ruby>の<ruby>期待<rt>きたい</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い」ことを<ruby>挙<rt>あ</rt></ruby>げた</td></tr><tr><td class="word"><ruby>期待<rt>きたい</rt></ruby></td><td>きたい</td><td><span class="pos">n</span></td><td></td><td>期待</td><td><ruby>国民<rt>こくみん</rt></ruby>の<ruby>期待<rt>きたい</rt></ruby></td></tr><tr><td class="word"><ruby>前回<rt>ぜんかい</rt></ruby></td><td>ぜんかい</td><td><span class="pos">n</span></td><td></td><td>上一轮</td><td><ruby>前回<rt>ぜんかい</rt></ruby><ruby>会合<rt>かいごう</rt></ruby></td></tr><tr><td class="word"><ruby>反対意見<rt>はんたいいけん</rt></ruby></td><td>はんたいいけん</td><td><span class="pos">n</span></td><td></td><td>反对意见</td><td><ruby>前回<rt>ぜんかい</rt></ruby><ruby>会合<rt>かいごう</rt></ruby>の<ruby>反対意見<rt>はんたいいけん</rt></ruby></td></tr><tr><td class="word"><ruby>押<rt>お</rt></ruby>し<ruby>戻<rt>もど</rt></ruby>す</td><td>おしもどす</td><td><span class="pos">v1 他</span></td><td></td><td>压下去、顶回</td><td><ruby>反対意見<rt>はんたいいけん</rt></ruby>を<ruby>押<rt>お</rt></ruby>し<ruby>戻<rt>もど</rt></ruby>し</td></tr><tr><td class="word"><ruby>発言者<rt>はつげんしゃ</rt></ruby></td><td>はつげんしゃ</td><td><span class="pos">n</span></td><td></td><td>发言者</td><td><ruby>発言者<rt>はつげんしゃ</rt></ruby>のうち</td></tr><tr><td class="word"><ruby>賛成<rt>さんせい</rt></ruby></td><td>さんせい</td><td><span class="pos">n</span></td><td></td><td>赞成</td><td>65<ruby>人<rt>にん</rt></ruby>が<ruby>賛成<rt>さんせい</rt></ruby></td></tr><tr><td class="word"><ruby>反対<rt>はんたい</rt></ruby></td><td>はんたい</td><td><span class="pos">n</span></td><td></td><td>反对</td><td>9<ruby>人<rt>にん</rt></ruby>が<ruby>反対<rt>はんたい</rt></ruby></td></tr><tr><td class="word"><ruby>中立的<rt>ちゅうりつてき</rt></ruby></td><td>ちゅうりつてき</td><td><span class="pos">ナ形</span></td><td></td><td>中立的</td><td><ruby>中立的<rt>ちゅうりつてき</rt></ruby>な<ruby>意見<rt>いけん</rt></ruby></td></tr><tr><td class="word"><ruby>意見<rt>いけん</rt></ruby></td><td>いけん</td><td><span class="pos">n</span></td><td></td><td>意见</td><td><ruby>中立的<rt>ちゅうりつてき</rt></ruby>な<ruby>意見<rt>いけん</rt></ruby></td></tr><tr><td class="word"><ruby>目立<rt>めだ</rt></ruby>つ</td><td>めだつ</td><td><span class="pos">v1 自</span></td><td></td><td>突出、多为</td><td><ruby>賛成<rt>さんせい</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>は「<ruby>公約<rt>こうやく</rt></ruby>だから」が<ruby>目立<rt>めだ</rt></ruby>ち</td></tr><tr><td class="word"><ruby>新人議員<rt>しんじんぎいん</rt></ruby></td><td>しんじんぎいん</td><td><span class="pos">n</span></td><td></td><td>新议员</td><td><ruby>新人議員<rt>しんじんぎいん</rt></ruby>にとって<ruby>公約<rt>こうやく</rt></ruby>は<ruby>命<rt>いのち</rt></ruby></td></tr><tr><td class="word"><ruby>命<rt>いのち</rt></ruby></td><td>いのち</td><td><span class="pos">n</span></td><td></td><td>生命</td><td><ruby>公約<rt>こうやく</rt></ruby>は<ruby>命<rt>いのち</rt></ruby></td></tr><tr><td class="word"><ruby>従<rt>したが</rt></ruby>う</td><td>したがう</td><td><span class="pos">v1 自</span></td><td></td><td>服从</td><td><ruby>首相<rt>しゅしょう</rt></ruby>が<ruby>決<rt>き</rt></ruby>めたことに<ruby>従<rt>したが</rt></ruby>うべきだ</td></tr><tr><td class="word"><ruby>相次<rt>あいつ</rt></ruby>ぐ</td><td>あいつぐ</td><td><span class="pos">v1 自</span></td><td></td><td>接连不断</td><td>との<ruby>意見<rt>いけん</rt></ruby>が<ruby>相次<rt>あいつ</rt></ruby>いだ</td></tr><tr><td class="word"><ruby>信頼<rt>しんらい</rt></ruby></td><td>しんらい</td><td><span class="pos">n</span></td><td></td><td>信任</td><td><ruby>政治<rt>せいじ</rt></ruby>への<ruby>信頼<rt>しんらい</rt></ruby></td></tr><tr><td class="word"><ruby>密接<rt>みっせつ</rt></ruby></td><td>みっせつ</td><td><span class="pos">ナ形</span></td><td></td><td>密切</td><td><ruby>信頼<rt>しんらい</rt></ruby>と<ruby>密接<rt>みっせつ</rt></ruby>に<ruby>関<rt>かか</rt></ruby>わる</td></tr><tr><td class="word"><ruby>関<rt>かか</rt></ruby>わる</td><td>かかわる</td><td><span class="pos">v1 自</span></td><td></td><td>相关</td><td><ruby>信頼<rt>しんらい</rt></ruby>と<ruby>密接<rt>みっせつ</rt></ruby>に<ruby>関<rt>かか</rt></ruby>わる</td></tr><tr><td class="word"><ruby>過程<rt>かてい</rt></ruby></td><td>かてい</td><td><span class="pos">n</span></td><td></td><td>过程</td><td><ruby>検討<rt>けんとう</rt></ruby>の<ruby>過程<rt>かてい</rt></ruby></td></tr><tr><td class="word"><ruby>明<rt>あき</rt></ruby>らか</td><td>あきらか</td><td><span class="pos">ナ形</span></td><td></td><td>明确</td><td><ruby>課題<rt>かだい</rt></ruby>が<ruby>明<rt>あき</rt></ruby>らかになれば</td></tr><tr><td class="word"><ruby>正面<rt>しょうめん</rt></ruby></td><td>しょうめん</td><td><span class="pos">n</span></td><td></td><td>正面</td><td><ruby>正面<rt>しょうめん</rt></ruby>から<ruby>説明<rt>せつめい</rt></ruby>し</td></tr><tr><td class="word"><ruby>説明<rt>せつめい</rt></ruby>する</td><td>せつめいする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>说明</td><td><ruby>正面<rt>しょうめん</rt></ruby>から<ruby>説明<rt>せつめい</rt></ruby>し</td></tr><tr><td class="word"><ruby>修正<rt>しゅうせい</rt></ruby></td><td>しゅうせい</td><td><span class="pos">n</span></td><td></td><td>修改</td><td><ruby>修正<rt>しゅうせい</rt></ruby>や<ruby>撤回<rt>てっかい</rt></ruby></td></tr><tr><td class="word"><ruby>撤回<rt>てっかい</rt></ruby></td><td>てっかい</td><td><span class="pos">n</span></td><td></td><td>撤回</td><td><ruby>修正<rt>しゅうせい</rt></ruby>や<ruby>撤回<rt>てっかい</rt></ruby>もいとわない</td></tr><tr><td class="word"><ruby>議員<rt>ぎいん</rt></ruby></td><td>ぎいん</td><td><span class="pos">n</span></td><td></td><td>议员</td><td><ruby>国民<rt>こくみん</rt></ruby>から<ruby>選<rt>えら</rt></ruby>ばれた<ruby>議員<rt>ぎいん</rt></ruby></td></tr><tr><td class="word"><ruby>責務<rt>せきむ</rt></ruby></td><td>せきむ</td><td><span class="pos">n</span></td><td></td><td>职责、本分</td><td><ruby>議員<rt>ぎいん</rt></ruby>の<ruby>責務<rt>せきむ</rt></ruby></td></tr><tr><td class="word"><ruby>中略<rt>ちゅうりゃく</rt></ruby></td><td>ちゅうりゃく</td><td><span class="pos">n</span></td><td></td><td>中略</td><td>（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）</td></tr><tr><td class="word"><ruby>前提<rt>ぜんてい</rt></ruby></td><td>ぜんてい</td><td><span class="pos">n</span></td><td></td><td>前提</td><td><ruby>減税<rt>げんぜい</rt></ruby>の<ruby>前提<rt>ぜんてい</rt></ruby></td></tr><tr><td class="word"><ruby>兆円<rt>ちょうえん</rt></ruby></td><td>ちょうえん</td><td><span class="pos">n</span></td><td></td><td>万亿日元</td><td><ruby>年<rt>ねん</rt></ruby>5<ruby>兆円<rt>ちょうえん</rt></ruby></td></tr><tr><td class="word"><ruby>増税<rt>ぞうぜい</rt></ruby></td><td>ぞうぜい</td><td><span class="pos">n</span></td><td></td><td>增税</td><td>2<ruby>年後<rt>ねんご</rt></ruby>の「<ruby>増税<rt>ぞうぜい</rt></ruby>」</td></tr><tr><td class="word"><ruby>棚上<rt>たなあ</rt></ruby>げする</td><td>たなあげする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>搁置、暂不处理</td><td><ruby>棚上<rt>たなあ</rt></ruby>げした<ruby>課題<rt>かだい</rt></ruby></td></tr><tr><td class="word"><ruby>逃<rt>に</rt></ruby>げる</td><td>にげる</td><td><span class="pos">v2 自</span></td><td></td><td>逃避</td><td><ruby>課題<rt>かだい</rt></ruby>から<ruby>逃<rt>に</rt></ruby>げず</td></tr><tr><td class="word"><ruby>未来<rt>みらい</rt></ruby></td><td>みらい</td><td><span class="pos">n</span></td><td></td><td>未来</td><td><ruby>未来<rt>みらい</rt></ruby>まで<ruby>視野<rt>しや</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げ</td></tr><tr><td class="word"><ruby>視野<rt>しや</rt></ruby></td><td>しや</td><td><span class="pos">n</span></td><td></td><td>视野</td><td><ruby>未来<rt>みらい</rt></ruby>まで<ruby>視野<rt>しや</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げ</td></tr><tr><td class="word"><ruby>広<rt>ひろ</rt></ruby>げる</td><td>ひろげる</td><td><span class="pos">v2 他</span></td><td></td><td>拓宽</td><td><ruby>視野<rt>しや</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げ</td></tr><tr><td class="word"><ruby>解決策<rt>かいけつさく</rt></ruby></td><td>かいけつさく</td><td><span class="pos">n</span></td><td></td><td>解决方案</td><td><ruby>解決策<rt>かいけつさく</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>せなければ</td></tr><tr><td class="word"><ruby>再考<rt>さいこう</rt></ruby>する</td><td>さいこうする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>重新考虑</td><td><ruby>再考<rt>さいこう</rt></ruby>する</td></tr><tr><td class="word"><ruby>自民党議員<rt>じみんとうぎいん</rt></ruby></td><td>じみんとうぎいん</td><td><span class="pos">n</span></td><td></td><td>自民党议员</td><td><ruby>自民党議員<rt>じみんとうぎいん</rt></ruby>は</td></tr><tr><td class="word"><ruby>忖度<rt>そんたく</rt></ruby></td><td>そんたく</td><td><span class="pos">n</span></td><td></td><td>揣摩上意</td><td><ruby>忖度<rt>そんたく</rt></ruby>せず</td></tr><tr><td class="word"><ruby>果<rt>は</rt></ruby>たす</td><td>はたす</td><td><span class="pos">v1 他</span></td><td></td><td>履行</td><td><ruby>責務<rt>せきむ</rt></ruby>を<ruby>果<rt>は</rt></ruby>たしてほしい</td></tr></tbody></table></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="notes"><h2 class="section-title"><span>笔</span>强化笔记精讲（瑞译）</h2><div class="notes-grid"><article class="note-card"><h3><span class="sec">段落1</span>「置き去り」——遗弃、弃置不顾</h3><p><span class="key">置き去り（おきざり）</span> 意味：遗弃，弃置不顾。そこに残したまま行ってしまうこと。おきずて。</p><p><span class="ex">今回の豪雨に関しては前日発表の天気予報でもほぼ予測不能だったこともあり、千葉県内では多数の帰宅困難者のほか、自動車の水没事故が相次いでおり、置き去りにされた自動車が今も一部で回収できていないほか、車の中に閉じ込められ命を失ったケースもあるという。</span></p><p class="tr">关于此次暴雨，由于即使前一天发布的天气预报也几乎无法预测其影响，千叶县内不仅出现了大量因暴雨无法回家的滞留人员，还接连发生了多起汽车被洪水淹没的事故。据悉，目前仍有部分被遗弃的车辆尚未被回收，甚至还有人因被困在车内而不幸遇难。（小甜饼试译）</p></article><article class="note-card"><h3><span class="sec">段落2</span>「人気取り」——博取人气、讨好大众</h3><p><span class="key">人気取り（にんきとり）</span> 意味：博取人气、讨好大众。世間の気受けをよくしようとすること。</p><p><span class="ex">岩屋毅前外相（衆院大分３区）が１日、地元・大分県別府市内であった記者会見で、自民党と日本維新の会による政策合意文書に盛り込まれた衆院議員定数１割削減について「人気取りのために突然定数を削減するというのは、いかにも乱暴だと思う」との認識を示した。</span></p><p class="tr">岩屋毅前外相（众议院大分县第3选区议员）于1日在当地大分县别府市举行的记者会上，就自民党与日本维新会达成的政策协议中所写入的削减众议院议员定额10%一事表示：“为了博取人气，突然提出削减议员人数，我认为这种做法实在是太过粗暴了。”（小甜饼试译）</p></article><article class="note-card"><h3><span class="sec">段落2</span>「突き進む」——冲向、迈进</h3><p><span class="key">突き進む（つきすすむ）</span> 意味：冲向，迈进。勢いよく進む。どんどん進む。</p><p><span class="ex">巨額のコスト投入と長期にわたる建設期間、事故のリスクなどを抱えながら、なぜ原発回帰へと突き進むのか。</span></p><p class="tr">在面临巨额的成本投入、漫长的建设周期以及事故风险等问题的情况下，为什么还要继续推进“重返核电”的道路呢？（小甜饼试译）</p></article><article class="note-card"><h3><span class="sec">段落2</span>「責任政党」——负责任的政党</h3><p>「責任政党」指在政党政治中，不一味追求党派利益和政治算计，而是以国民生活为重，并负责任地制定和落实政策的政党。这里介绍一些与之相关的日中对译：</p><ul><li><span class="ex">与党（よとう）</span>：执政党</li><li><span class="ex">野党（やとう）</span>：在野党</li><li><span class="ex">連立政権（れんりつせいけん）</span>：联合政府</li><li><span class="ex">政権担当能力（せいけんたんとうのうりょく）</span>：执政能力</li><li><span class="ex">現実路線（げんじつろせん）</span>：务实路线</li><li><span class="ex">ポピュリズム</span>：民粹主义</li><li><span class="ex">マニフェスト</span>：竞选纲领</li></ul></article><article class="note-card"><h3><span class="sec">段落3</span>「税制改正大綱」——税制改革大纲</h3><p>「税制改正大綱」指的是日本政府或执政党每年汇总的税制改革总体框架与基本方针，是后续制定正式法律案的基石。通常每年12月中旬公布并经内阁会议决定，之后经过国会对相关法案的审议，最终正式确定。</p></article><article class="note-card"><h3><span class="sec">段落4</span>「悲願」——心愿、夙愿</h3><p><span class="key">悲願（ひがん）</span> 意味：心愿，夙愿。どんなことがあってもなしとげようと思う悲壮な願い。</p><p><span class="ex">２００５年に開業したＴＸはもともと東京を起点とする構想だったが、建設費の削減などから秋葉原が起点に変更された。言わば、東京延伸はＴＸ開業以来の悲願だが、そんな「幻の計画」が今、にわかに熱気を帯び始めている。</span></p><p class="tr">2005年开通的TX（筑波快线）原本计划以东京站为起点，但由于削减建设成本等原因，最终将起点改为秋叶原。可以说，延伸至东京站一直是TX自开通以来的夙愿，而如今，这一度被视为“未能实现的构想”的计划正在突然升温，受到越来越多的关注。（小甜饼试译）</p></article><article class="note-card"><h3><span class="sec">段落5</span>「押し戻す」——推回、顶回</h3><p><span class="key">押し戻す（おしもどす）</span> 意味：推回，顶回。押して以前の場所へ戻す。</p><p><span class="ex">風を動力源とするこの船は、海水を取り込み海塩を細かい霧状にして噴射する。すると海上に雲が生まれる仕組みだ。その密度は空の雲よりも高く色も白いため、多くの太陽熱を反射して宇宙に押し戻す。</span></p><p class="tr">这艘以风力为动力的船只会吸入海水，将其中的海盐制成细小的雾状颗粒后喷洒出去。这样一来，海面上便会形成云层。由于这种云层的密度比普通的天空云层更高、颜色也更白，因此能够反射大量太阳热量，将其重新反射回宇宙空间。（小甜饼试译）</p></article><article class="note-card"><h3><span class="sec">段落6</span>「責務」——本分、职责（「責任」vs「責務」辨析）</h3><p><span class="key">責務（せきむ）</span> 意味：本分，责任。自分の責任として果たさねばならない事柄。つとめ。</p><p><span class="ex">「協力して国民に対する究極の責務を負うことができれば、これは大変大切なことだ」。1999年5月、米シカゴで同行記者団に語ったのは時の小渕恵三首相である。野党の公明党に連立政権への参加を求める熱烈なラブコールだった。</span></p><p class="tr">“如果能够携手合作，共同承担对国民的最终责任，那将是一件意义重大的事情。”1999年5月，时任日本首相小渊惠三在美国芝加哥对随行记者团如此表示。这实际上是他向当时的在野党公明党发出的热烈邀约，希望其加入联合政权。（小甜饼试译）</p><h4>拓展：「責任」vs「責務」的辨析</h4><p>「責任」强调对自己的行为、判断及其结果承担责任，常见搭配有<span class="ex">責任を取る</span>（承担责任）、<span class="ex">責任を負う</span>（承担责任）、<span class="ex">責任を持つ</span>（负起责任）等。</p><p>「責務」强调因所处的职位、角色或职务而必须履行的义务，常见搭配有<span class="ex">責務を果たす</span>（履行职责）、<span class="ex">責務を全うする</span>（尽职尽责）、<span class="ex">公務員の責務</span>（公务员的职责）等。</p></article><article class="note-card"><h3><span class="sec">段落7</span>「棚上げ」——搁置、暂不处理</h3><p><span class="key">棚上げ（たなあげ）</span> 意味：搁置，暂不处理。問題の解決・処理を延期すること。</p><p><span class="ex">米IBMは２３日、トランプ政権によるコスト削減の影響で政府との契約１５件が棚上げされたと明らかにした。</span></p><p class="tr">美国IBM公司23日透露，受特朗普政府削减成本措施的影响，公司与美国政府签订的15份合同被暂时搁置。（小甜饼试译）</p></article><article class="note-card"><h3><span class="sec">段落7</span>「忖度」——揣摩上意</h3><p><span class="key">忖度（そんたく）</span> 意味：忖度。他人の心情を推し量ること、また、推し量って相手に配慮することである。</p><p><span class="ex">トップが今どのような立場に置かれ、何を求めているかを過剰なまでに読み取り（忖度）、それを部下に角が立たないように伝達しつつ、現場のマネジメントに反映させていかなければならない。</span></p><p class="tr">必须过度揣摩（忖度）最高领导者目前所处的立场以及其诉求，再以不得罪、不引起冲突的方式将其传达给下属，并将这些意图落实到一线的管理工作中。（小甜饼试译）</p></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <footer>
+      5-1 食品消费税（强化笔记融合版）｜日语读音（黄色平假名）、语法、词汇、文中变形与强化笔记精讲整理<br>
+      正文依据用户提供的资料整理，仅供个人学习使用。
+    </footer>
+  </main>
+
+<script>
+(function(){
+  const AUDIO_DIR = "audio/";
+  const TOTAL = 15;
+  let current = 0;
+  let playing = false;
+  let rate = 1.0;
+  let loopMode = false;
+  const audio = new Audio();
+  const $ = id => document.getElementById(id);
+
+  function playSentence(idx){
+    if (idx < 0 || idx >= TOTAL) return;
+    current = idx;
+    playing = true;
+    updateUI();
+    const s = document.querySelector('.sentence[data-idx="' + idx + '"]');
+    audio.src = AUDIO_DIR + (s ? s.dataset.audio : 'p1_s1.mp3');
+    audio.playbackRate = rate;
+    audio.currentTime = 0;
+    audio.play().then(() => { playing = true; updateUI(); })
+      .catch(e => { console.error('播放失败:', e); });
+  }
+
+  function togglePlay(){
+    if (playing){ audio.pause(); playing=false; updateUI(); }
+    else if (!audio.src) playSentence(current);
+    else { audio.play().then(()=>{playing=true;updateUI();}); }
+  }
+  function nextSentence(){
+    if (current+1 < TOTAL) playSentence(current+1);
+    else if (loopMode) playSentence(0);
+    else { audio.pause(); playing=false; updateUI(); }
+  }
+  function prevSentence(){ if (current>0) playSentence(current-1); }
+
+  function sentenceInSec(el){
+    const sec = el.closest('section');
+    const all = sec.querySelectorAll('.sentence');
+    for (let i=0;i<all.length;i++) if (all[i]===el) return i+1;
+    return 1;
+  }
+
+  function updateUI(){
+    $('btn-play').textContent = playing ? '⏸' : '▶';
+    document.querySelectorAll('.sentence').forEach(el=>{
+      el.classList.toggle('playing', parseInt(el.dataset.idx)===current);
+    });
+    const s = document.querySelector('.sentence[data-idx="'+current+'"]');
+    if (s){
+      const sec = s.closest('section');
+      const st = sec ? sec.querySelector('.section-title').textContent : '';
+      const n = sentenceInSec(s);
+      $('sentence-status').textContent = (playing?'播放中':'暂停')+' ｜ '+st+' 第'+n+'句';
+      const rect = s.getBoundingClientRect();
+      const bar = $('player-bar').getBoundingClientRect();
+      if (rect.top < bar.bottom || rect.bottom > window.innerHeight){
+        s.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    }
+  }
+
+  audio.addEventListener('ended', nextSentence);
+  audio.addEventListener('timeupdate', ()=>{
+    if (audio.duration){
+      const pct = audio.currentTime/audio.duration*100;
+      $('progress-fill').style.width = pct+'%';
+      $('progress-knob').style.left = pct+'%';
+    }
+  });
+  $('progress').addEventListener('click', e=>{
+    if (!audio.duration) return;
+    const r = $('progress').getBoundingClientRect();
+    audio.currentTime = (e.clientX-r.left)/r.width*audio.duration;
+  });
+  $('rate-group').addEventListener('click', e=>{
+    const b = e.target.closest('.rate-btn'); if(!b) return;
+    rate = parseFloat(b.dataset.rate);
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(x=>x.classList.toggle('active', x===b));
+  });
+  $('btn-mode').addEventListener('click', ()=>{
+    loopMode = !loopMode;
+    $('btn-mode').textContent = '循环: '+(loopMode?'开':'关');
+    $('btn-mode').classList.toggle('active', loopMode);
+  });
+  $('btn-play').addEventListener('click', togglePlay);
+  $('btn-next').addEventListener('click', nextSentence);
+  $('btn-prev').addEventListener('click', prevSentence);
+
+  document.querySelectorAll('.sentence').forEach(el=>{
+    el.addEventListener('click', ()=>playSentence(parseInt(el.dataset.idx)));
+  });
+
+  document.addEventListener('keydown', e=>{
+    if (e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+    switch(e.code){
+      case 'Space': e.preventDefault(); togglePlay(); break;
+      case 'ArrowRight': nextSentence(); break;
+      case 'ArrowLeft': prevSentence(); break;
+      case 'ArrowUp': e.preventDefault(); setRate(Math.min(1.5, rate+0.25)); break;
+      case 'ArrowDown': e.preventDefault(); setRate(Math.max(0.5, rate-0.25)); break;
+    }
+  });
+  function setRate(r){
+    rate = Math.round(r*100)/100;
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(b=>{
+      b.classList.toggle('active', parseFloat(b.dataset.rate)===rate);
+    });
+  }
+  audio.preload = 'auto';
+  window.__reader = { getAudio: () => audio, getState: () => ({current, playing, rate, loopMode}) };
+})();
+</script>
+
+</body>
+</html>

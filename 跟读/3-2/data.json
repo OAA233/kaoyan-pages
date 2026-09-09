@@ -1,0 +1,231 @@
+{
+  "title": "3-2 既勤奋又懒惰的学生们2",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "私はこれまで多くの学生を教えてきたが、その大半は同じような矛盾を抱えていた。",
+      "jp_html": "<ruby>私<rt>わたし</rt></ruby>はこれまで<ruby>多<rt>おお</rt></ruby>くの<ruby>学生<rt>がくせい</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてきたが、その<ruby>大半<rt>たいはん</rt></ruby>は<ruby>同<rt>おな</rt></ruby>じような<ruby>矛盾<rt>むじゅん</rt></ruby>を<ruby>抱<rt>かか</rt></ruby>えていた。",
+      "zh": "\n            我教过很多学生，他们中的绝大多数都一样，身上充满了矛盾——他们“既勤奋又懒惰”。\n          ",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "彼らは「勤勉でありながら、怠惰でもある」のだ。",
+      "jp_html": "彼らは「<ruby>勤勉<rt>きんべん</rt></ruby>でありながら、<ruby>怠惰<rt>たいだ</rt></ruby>でもある」のだ。",
+      "zh": "\n            我教过很多学生，他们中的绝大多数都一样，身上充满了矛盾——他们“既勤奋又懒惰”。\n          ",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "彼らはとても勤勉である。",
+      "jp_html": "彼らはとても<ruby>勤勉<rt>きんべん</rt></ruby>である。",
+      "zh": "\n            他们很勤奋，每到周末都要起个大早，在上午8：30之前挤公共汽车赶来上课。他们也许会玩电子游戏，但显然比那些只玩电子游戏的人更勤奋；他们也许会喝酒打牌，但显然比那些只喝酒打牌的人更努力。可与此同时，他们也随时展露懒惰的倾向。\n          ",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "週末になると朝早く起き、午前8時半までに混雑したバスに乗って授業にやって来る。",
+      "jp_html": "<ruby>週末<rt>しゅうまつ</rt></ruby>になると<ruby>朝早<rt>あさはや</rt></ruby>く<ruby>起<rt>お</rt></ruby>き、<ruby>午前<rt>ごぜん</rt></ruby>8<ruby>時半<rt>じはん</rt></ruby>までに<ruby>混雑<rt>こんざつ</rt></ruby>したバスに<ruby>乗<rt>の</rt></ruby>って<ruby>授業<rt>じゅぎょう</rt></ruby>にやって<ruby>来<rt>く</rt></ruby>る。",
+      "zh": "\n            他们很勤奋，每到周末都要起个大早，在上午8：30之前挤公共汽车赶来上课。他们也许会玩电子游戏，但显然比那些只玩电子游戏的人更勤奋；他们也许会喝酒打牌，但显然比那些只喝酒打牌的人更努力。可与此同时，他们也随时展露懒惰的倾向。\n          ",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 3,
+      "sentence_id": "p2_s3",
+      "jp_plain": "ゲームをすることもあるが、ゲームばかりしている人たちよりは、明らかに勤勉である。",
+      "jp_html": "ゲームをすることもあるが、ゲームばかりしている<ruby>人<rt>ひと</rt></ruby>たちよりは、<ruby>明<rt>あき</rt></ruby>らかに<ruby>勤勉<rt>きんべん</rt></ruby>である。",
+      "zh": "\n            他们很勤奋，每到周末都要起个大早，在上午8：30之前挤公共汽车赶来上课。他们也许会玩电子游戏，但显然比那些只玩电子游戏的人更勤奋；他们也许会喝酒打牌，但显然比那些只喝酒打牌的人更努力。可与此同时，他们也随时展露懒惰的倾向。\n          ",
+      "audio_file": "audio/p2_s3.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 4,
+      "sentence_id": "p2_s4",
+      "jp_plain": "酒を飲んだり、トランプや麻雀をしたりすることもあるが、そうしたことばかりしている人たちよりは、はるかに努力している。",
+      "jp_html": "<ruby>酒<rt>さけ</rt></ruby>を<ruby>飲<rt>の</rt></ruby>んだり、トランプや<ruby>麻雀<rt>マージャン</rt></ruby>をしたりすることもあるが、そうしたことばかりしている<ruby>人<rt>ひと</rt></ruby>たちよりは、はるかに<ruby>努力<rt>どりょく</rt></ruby>している。",
+      "zh": "\n            他们很勤奋，每到周末都要起个大早，在上午8：30之前挤公共汽车赶来上课。他们也许会玩电子游戏，但显然比那些只玩电子游戏的人更勤奋；他们也许会喝酒打牌，但显然比那些只喝酒打牌的人更努力。可与此同时，他们也随时展露懒惰的倾向。\n          ",
+      "audio_file": "audio/p2_s4.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 5,
+      "sentence_id": "p2_s5",
+      "jp_plain": "ところがその一方で、彼らは事あるごとに怠惰な一面をのぞかせる。",
+      "jp_html": "ところがその<ruby>一方<rt>いっぽう</rt></ruby>で、彼らは<ruby>事<rt>こと</rt></ruby>あるごとに<ruby>怠惰<rt>たいだ</rt></ruby>な<ruby>一面<rt>いちめん</rt></ruby>をのぞかせる。",
+      "zh": "\n            他们很勤奋，每到周末都要起个大早，在上午8：30之前挤公共汽车赶来上课。他们也许会玩电子游戏，但显然比那些只玩电子游戏的人更勤奋；他们也许会喝酒打牌，但显然比那些只喝酒打牌的人更努力。可与此同时，他们也随时展露懒惰的倾向。\n          ",
+      "audio_file": "audio/p2_s5.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "私が最も得意としている授業は、作文である。",
+      "jp_html": "私が<ruby>最<rt>もっと</rt></ruby>も<ruby>得意<rt>とくい</rt></ruby>としている<ruby>授業<rt>じゅぎょう</rt></ruby>は、<ruby>作文<rt>さくぶん</rt></ruby>である。",
+      "zh": "\n            我教得最好的课程是作文。作文可讲的内容很多，但我很少在课堂上讲语法、词汇、修辞之类的东西，因为这些内容学生可以自学或者很容易自学。我更喜欢讲思维方法，我认为这才是教学的关键所在。我的作文课实际上是思考课。\n          ",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "作文について教えられることは数多くあるが、授業で文法や語彙、修辞といった内容を取り上げることはほとんどない。",
+      "jp_html": "<ruby>作文<rt>さくぶん</rt></ruby>について<ruby>教<rt>おし</rt></ruby>えられることは<ruby>数多<rt>かずおお</rt></ruby>くあるが、<ruby>授業<rt>じゅぎょう</rt></ruby>で<ruby>文法<rt>ぶんぽう</rt></ruby>や<ruby>語彙<rt>ごい</rt></ruby>、<ruby>修辞<rt>しゅうじ</rt></ruby>といった<ruby>内容<rt>ないよう</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げることはほとんどない。",
+      "zh": "\n            我教得最好的课程是作文。作文可讲的内容很多，但我很少在课堂上讲语法、词汇、修辞之类的东西，因为这些内容学生可以自学或者很容易自学。我更喜欢讲思维方法，我认为这才是教学的关键所在。我的作文课实际上是思考课。\n          ",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "そうしたことは、学生が自分で学ぶことができるし、独学するのもそれほど難しくないからだ。",
+      "jp_html": "そうしたことは、<ruby>学生<rt>がくせい</rt></ruby>が<ruby>自分<rt>じぶん</rt></ruby>で<ruby>学<rt>まな</rt></ruby>ぶことができるし、<ruby>独学<rt>どくがく</rt></ruby>するのもそれほど<ruby>難<rt>むずか</rt></ruby>しくないからだ。",
+      "zh": "\n            我教得最好的课程是作文。作文可讲的内容很多，但我很少在课堂上讲语法、词汇、修辞之类的东西，因为这些内容学生可以自学或者很容易自学。我更喜欢讲思维方法，我认为这才是教学的关键所在。我的作文课实际上是思考课。\n          ",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 4,
+      "sentence_id": "p3_s4",
+      "jp_plain": "私はむしろ、ものの考え方を教えるほうが好きである。",
+      "jp_html": "私はむしろ、ものの<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えるほうが<ruby>好<rt>す</rt></ruby>きである。",
+      "zh": "\n            我教得最好的课程是作文。作文可讲的内容很多，但我很少在课堂上讲语法、词汇、修辞之类的东西，因为这些内容学生可以自学或者很容易自学。我更喜欢讲思维方法，我认为这才是教学的关键所在。我的作文课实际上是思考课。\n          ",
+      "audio_file": "audio/p3_s4.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 5,
+      "sentence_id": "p3_s5",
+      "jp_plain": "それこそが教育の要だと考えている。",
+      "jp_html": "それこそが<ruby>教育<rt>きょういく</rt></ruby>の<ruby>要<rt>かなめ</rt></ruby>だと<ruby>考<rt>かんが</rt></ruby>えている。",
+      "zh": "\n            我教得最好的课程是作文。作文可讲的内容很多，但我很少在课堂上讲语法、词汇、修辞之类的东西，因为这些内容学生可以自学或者很容易自学。我更喜欢讲思维方法，我认为这才是教学的关键所在。我的作文课实际上是思考课。\n          ",
+      "audio_file": "audio/p3_s5.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 6,
+      "sentence_id": "p3_s6",
+      "jp_plain": "実際、私の作文の授業は、思考の授業でもある。",
+      "jp_html": "<ruby>実際<rt>じっさい</rt></ruby>、私の<ruby>作文<rt>さくぶん</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>は、<ruby>思考<rt>しこう</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>でもある。",
+      "zh": "\n            我教得最好的课程是作文。作文可讲的内容很多，但我很少在课堂上讲语法、词汇、修辞之类的东西，因为这些内容学生可以自学或者很容易自学。我更喜欢讲思维方法，我认为这才是教学的关键所在。我的作文课实际上是思考课。\n          ",
+      "audio_file": "audio/p3_s6.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "ある日、私は一人の学生にすっかり面食らってしまった。",
+      "jp_html": "ある<ruby>日<rt>ひ</rt></ruby>、私は<ruby>一人<rt>ひとり</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>にすっかり<ruby>面食<rt>めんく</rt></ruby>らってしまった。",
+      "zh": "\n            有一天，我还是被一名学生“打败”了。那天下课之后，一个男孩捧着我的书找我签名，然后他问我“老师你说，如果我把这本书里的作文都背下来，在考场上默写一篇，会不会被判雷同？”当时我一下子失去了耐心，尽管没有发火，但语气里肯定有些东西：“那你说呢？！”那个男孩脸红了一些，迅速走了。\n          ",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "授業が終わったあと、一人の男子学生が私の本を抱えてサインを求めに来て、こう尋ねた。",
+      "jp_html": "<ruby>授業<rt>じゅぎょう</rt></ruby>が<ruby>終<rt>お</rt></ruby>わったあと、<ruby>一人<rt>ひとり</rt></ruby>の<ruby>男子学生<rt>だんしがくせい</rt></ruby>が私の<ruby>本<rt>ほん</rt></ruby>を<ruby>抱<rt>かか</rt></ruby>えてサインを<ruby>求<rt>もと</rt></ruby>めに<ruby>来<rt>き</rt></ruby>て、こう<ruby>尋<rt>たず</rt></ruby>ねた。",
+      "zh": "\n            有一天，我还是被一名学生“打败”了。那天下课之后，一个男孩捧着我的书找我签名，然后他问我“老师你说，如果我把这本书里的作文都背下来，在考场上默写一篇，会不会被判雷同？”当时我一下子失去了耐心，尽管没有发火，但语气里肯定有些东西：“那你说呢？！”那个男孩脸红了一些，迅速走了。\n          ",
+      "audio_file": "audio/p4_s2.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 3,
+      "sentence_id": "p4_s3",
+      "jp_plain": "「先生、この本に載っている作文を全部暗記して、試験会場でそのうちの一篇をそのまま書いたら、盗用だと判定されますか」その瞬間、私は思わず我慢できなくなった。",
+      "jp_html": "「<ruby>先生<rt>せんせい</rt></ruby>、この<ruby>本<rt>ほん</rt></ruby>に<ruby>載<rt>の</rt></ruby>っている<ruby>作文<rt>さくぶん</rt></ruby>を<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>暗記<rt>あんき</rt></ruby>して、<ruby>試験<rt>しけん</rt></ruby><ruby>会場<rt>かいじょう</rt></ruby>でそのうちの<ruby>一篇<rt>いっぺん</rt></ruby>をそのまま<ruby>書<rt>か</rt></ruby>いたら、<ruby>盗用<rt>とうよう</rt></ruby>だと<ruby>判定<rt>はんてい</rt></ruby>されますか」その<ruby>瞬間<rt>しゅんかん</rt></ruby>、私は思わず<ruby>我慢<rt>がまん</rt></ruby>できなくなった。",
+      "zh": "\n            有一天，我还是被一名学生“打败”了。那天下课之后，一个男孩捧着我的书找我签名，然后他问我“老师你说，如果我把这本书里的作文都背下来，在考场上默写一篇，会不会被判雷同？”当时我一下子失去了耐心，尽管没有发火，但语气里肯定有些东西：“那你说呢？！”那个男孩脸红了一些，迅速走了。\n          ",
+      "audio_file": "audio/p4_s3.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 4,
+      "sentence_id": "p4_s4",
+      "jp_plain": "腹を立てて怒鳴ったわけではないが、口調にはきっと苛立ちがにじんでいたに違いない。",
+      "jp_html": "<ruby>腹<rt>はら</rt></ruby>を<ruby>立<rt>た</rt></ruby>てて<ruby>怒鳴<rt>どな</rt></ruby>ったわけではないが、<ruby>口調<rt>くちょう</rt></ruby>にはきっと<ruby>苛立<rt>いらだ</rt></ruby>ちがにじんでいたに<ruby>違<rt>ちが</rt></ruby>いない。",
+      "zh": "\n            有一天，我还是被一名学生“打败”了。那天下课之后，一个男孩捧着我的书找我签名，然后他问我“老师你说，如果我把这本书里的作文都背下来，在考场上默写一篇，会不会被判雷同？”当时我一下子失去了耐心，尽管没有发火，但语气里肯定有些东西：“那你说呢？！”那个男孩脸红了一些，迅速走了。\n          ",
+      "audio_file": "audio/p4_s4.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 5,
+      "sentence_id": "p4_s5",
+      "jp_plain": "「君はどう思うんだ？",
+      "jp_html": "「<ruby>君<rt>きみ</rt></ruby>はどう<ruby>思<rt>おも</rt></ruby>うんだ？",
+      "zh": "\n            有一天，我还是被一名学生“打败”了。那天下课之后，一个男孩捧着我的书找我签名，然后他问我“老师你说，如果我把这本书里的作文都背下来，在考场上默写一篇，会不会被判雷同？”当时我一下子失去了耐心，尽管没有发火，但语气里肯定有些东西：“那你说呢？！”那个男孩脸红了一些，迅速走了。\n          ",
+      "audio_file": "audio/p4_s5.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 6,
+      "sentence_id": "p4_s6",
+      "jp_plain": "！",
+      "jp_html": "！",
+      "zh": "\n            有一天，我还是被一名学生“打败”了。那天下课之后，一个男孩捧着我的书找我签名，然后他问我“老师你说，如果我把这本书里的作文都背下来，在考场上默写一篇，会不会被判雷同？”当时我一下子失去了耐心，尽管没有发火，但语气里肯定有些东西：“那你说呢？！”那个男孩脸红了一些，迅速走了。\n          ",
+      "audio_file": "audio/p4_s6.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 7,
+      "sentence_id": "p4_s7",
+      "jp_plain": "」その男子学生は少し顔を赤らめると、足早に立ち去っていった。",
+      "jp_html": "」その<ruby>男子学生<rt>だんしがくせい</rt></ruby>は<ruby>少<rt>すこ</rt></ruby>し<ruby>顔<rt>かお</rt></ruby>を<ruby>赤<rt>あか</rt></ruby>らめると、<ruby>足早<rt>あしばや</rt></ruby>に<ruby>立<rt>た</rt></ruby>ち<ruby>去<rt>さ</rt></ruby>っていった。",
+      "zh": "\n            有一天，我还是被一名学生“打败”了。那天下课之后，一个男孩捧着我的书找我签名，然后他问我“老师你说，如果我把这本书里的作文都背下来，在考场上默写一篇，会不会被判雷同？”当时我一下子失去了耐心，尽管没有发火，但语气里肯定有些东西：“那你说呢？！”那个男孩脸红了一些，迅速走了。\n          ",
+      "audio_file": "audio/p4_s7.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 1,
+      "sentence_id": "p5_s1",
+      "jp_plain": "他人の文章をそのまま書き写せば、当然、盗用とみなされる。",
+      "jp_html": "<ruby>他人<rt>たにん</rt></ruby>の<ruby>文章<rt>ぶんしょう</rt></ruby>をそのまま<ruby>書<rt>か</rt></ruby>き<ruby>写<rt>うつ</rt></ruby>せば、<ruby>当然<rt>とうぜん</rt></ruby>、<ruby>盗用<rt>とうよう</rt></ruby>とみなされる。",
+      "zh": "\n            抄袭别人肯定会被判为雷同，这还用问吗？！可是竟然决心背下一本书的学生，又怎么会是懒惰的呢？要命的是，不止一个学生曾经这样问，这不是个案。\n          ",
+      "audio_file": "audio/p5_s1.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 2,
+      "sentence_id": "p5_s2",
+      "jp_plain": "そんなことは聞くまでもないではないか。",
+      "jp_html": "そんなことは<ruby>聞<rt>き</rt></ruby>くまでもないではないか。",
+      "zh": "\n            抄袭别人肯定会被判为雷同，这还用问吗？！可是竟然决心背下一本书的学生，又怎么会是懒惰的呢？要命的是，不止一个学生曾经这样问，这不是个案。\n          ",
+      "audio_file": "audio/p5_s2.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 3,
+      "sentence_id": "p5_s3",
+      "jp_plain": "しかし、一冊の本を丸ごと暗記しようと決心した学生は、果たして怠惰だと言えるのだろうか。",
+      "jp_html": "しかし、<ruby>一冊<rt>いっさつ</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を丸ごと<ruby>暗記<rt>あんき</rt></ruby>しようと<ruby>決心<rt>けっしん</rt></ruby>した<ruby>学生<rt>がくせい</rt></ruby>は、果たして<ruby>怠惰<rt>たいだ</rt></ruby>だと<ruby>言<rt>い</rt></ruby>えるのだろうか。",
+      "zh": "\n            抄袭别人肯定会被判为雷同，这还用问吗？！可是竟然决心背下一本书的学生，又怎么会是懒惰的呢？要命的是，不止一个学生曾经这样问，这不是个案。\n          ",
+      "audio_file": "audio/p5_s3.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 4,
+      "sentence_id": "p5_s4",
+      "jp_plain": "さらに厄介なのは、同じことを尋ねた学生が一人だけではないということだ。",
+      "jp_html": "さらに<ruby>厄介<rt>やっかい</rt></ruby>なのは、<ruby>同<rt>おな</rt></ruby>じことを<ruby>尋<rt>たず</rt></ruby>ねた<ruby>学生<rt>がくせい</rt></ruby>が<ruby>一人<rt>ひとり</rt></ruby>だけではないということだ。",
+      "zh": "\n            抄袭别人肯定会被判为雷同，这还用问吗？！可是竟然决心背下一本书的学生，又怎么会是懒惰的呢？要命的是，不止一个学生曾经这样问，这不是个案。\n          ",
+      "audio_file": "audio/p5_s4.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 5,
+      "sentence_id": "p5_s5",
+      "jp_plain": "これは決して例外的なケースではないのである。",
+      "jp_html": "これは<ruby>決<rt>けっ</rt></ruby>して<ruby>例外的<rt>れいがいてき</rt></ruby>なケースではないのである。",
+      "zh": "\n            抄袭别人肯定会被判为雷同，这还用问吗？！可是竟然决心背下一本书的学生，又怎么会是懒惰的呢？要命的是，不止一个学生曾经这样问，这不是个案。\n          ",
+      "audio_file": "audio/p5_s5.mp3"
+    }
+  ]
+}

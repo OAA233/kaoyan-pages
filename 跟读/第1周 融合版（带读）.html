@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>第1周 每周自测｜解析融合版</title>
+  <style>
+    :root{
+      --ink:#1d2a34;
+      --muted:#64727d;
+      --paper:#fffdf8;
+      --bg:#eef3f2;
+      --line:#dbe5e1;
+      --green:#0f766e;
+      --green-soft:#e6f5f1;
+      --orange:#c15b24;
+      --orange-soft:#fff0e7;
+      --blue-soft:#eaf2ff;
+      --yellow:#c08a12;            /* 平假名标注色：金黄 */
+      --yellow-soft:#fbf3dd;
+      --shadow:0 12px 35px rgba(31,56,52,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #dff4ec 0, transparent 27rem),
+        radial-gradient(circle at 100% 14%, #fff0d9 0, transparent 25rem),
+        var(--bg);
+      font-family:"Noto Serif SC","Songti SC","STSong",serif;
+      line-height:1.9;
+    }
+    /* 顶部索引：固定在网页最上方，点击跳转对应段落 */
+    .top-nav{
+      position:sticky;top:0;z-index:100;
+      display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+      padding:10px 18px;
+      background:rgba(20,91,85,.96);
+      backdrop-filter:blur(6px);
+      box-shadow:0 4px 14px rgba(20,60,55,.25);
+    }
+    .top-nav .nav-title{
+      color:#baf6e8;font:700 .8rem/1 system-ui,sans-serif;
+      letter-spacing:.14em;margin-right:6px;white-space:nowrap;
+    }
+    .top-nav a{
+      padding:5px 13px;border-radius:999px;
+      color:#fff;background:rgba(255,255,255,.14);
+      text-decoration:none;font:600 .84rem/1.2 system-ui,sans-serif;
+      white-space:nowrap;transition:background .15s;
+    }
+    .top-nav a:hover{background:#198f7c}
+    .top-nav a.to-top{background:rgba(255,255,255,.28)}
+    .wrap{max-width:1060px;margin:auto;padding:32px 20px 72px}
+    section{scroll-margin-top:64px}
+    header{
+      padding:44px 42px 36px;
+      border-radius:24px;
+      color:#fff;
+      background:linear-gradient(135deg,#145b55,#0d766b 58%,#198f7c);
+      box-shadow:var(--shadow);
+    }
+    .eyebrow{
+      margin:0 0 12px;
+      color:#baf6e8;
+      font-size:.82rem;
+      letter-spacing:.16em;
+      font-family:system-ui,sans-serif;
+      font-weight:700;
+    }
+    h1{margin:0;font-size:clamp(1.8rem,4vw,3rem);line-height:1.35}
+    header p{margin:14px 0 0;color:#e2fffa;font-size:1rem}
+    nav{
+      display:flex;flex-wrap:wrap;gap:10px;
+      margin:22px 0 30px;
+    }
+    nav a{
+      padding:7px 14px;border:1px solid #cbded9;border-radius:999px;
+      color:#25514b;background:rgba(255,255,255,.74);
+      text-decoration:none;font-family:system-ui,sans-serif;font-size:.88rem;
+    }
+    nav a:hover{background:#fff}
+    section{margin-top:30px}
+    .section-title{
+      display:flex;align-items:center;gap:12px;
+      margin:0 0 15px;font-size:1.42rem;
+    }
+    .section-title span{
+      display:inline-grid;place-items:center;width:32px;height:32px;
+      border-radius:50%;color:#fff;background:var(--green);
+      font-family:system-ui,sans-serif;font-size:.9rem;
+    }
+    .translation{
+      overflow:hidden;border:1px solid var(--line);border-radius:20px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    .language{padding:26px 30px}
+    .language + .language{border-top:1px dashed #cbd8d3}
+    .label{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-bottom:12px;padding:4px 10px;border-radius:999px;
+      color:var(--green);background:var(--green-soft);
+      font:700 .78rem/1.4 system-ui,sans-serif;letter-spacing:.08em;
+    }
+    .label.zh{color:var(--orange);background:var(--orange-soft)}
+    .jp{
+      margin:0;font-size:1.13rem;letter-spacing:.025em;
+      font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+    }
+    .zh{margin:0;font-size:1.02rem}
+    ruby{ruby-position:over;ruby-align:center}
+    rt{font-size:.54em;color:var(--yellow);font-weight:700;letter-spacing:0;user-select:none}
+    .note{
+      margin:14px 0 0;padding:11px 14px;border-left:4px solid #8fc9b6;
+      color:#2b3330;background:var(--green-soft);border-radius:0 10px 10px 0;
+      font-size:.91rem;
+    }
+    .note rt{color:#2f7cc4}
+    .grammar-grid,.vocab-grid{display:grid;gap:16px}
+    .grammar-grid{grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+    .card{
+      padding:21px 22px;border:1px solid var(--line);border-radius:16px;
+      background:rgba(255,253,248,.92);box-shadow:0 7px 20px rgba(31,56,52,.06);
+    }
+    .card h3{margin:0 0 9px;font-size:1.03rem;color:#12675e}
+    .card p{margin:7px 0;font-size:.94rem}
+    .pattern{
+      display:inline-block;padding:2px 8px;border-radius:6px;
+      color:#1e4c67;background:var(--blue-soft);
+      font-family:"SFMono-Regular",Consolas,monospace;font-size:.86rem;
+    }
+    .g-num{
+      display:inline-grid;place-items:center;width:22px;height:22px;
+      border-radius:50%;background:var(--orange);color:#fff;
+      font:700 .78rem/1 system-ui,sans-serif;margin-right:7px;
+      vertical-align:1px;
+    }
+    .table-wrap{
+      overflow:auto;border:1px solid var(--line);border-radius:16px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    table{width:100%;border-collapse:collapse;min-width:820px}
+    th,td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{color:#fff;background:#27665e;font:700 .82rem/1.4 system-ui,sans-serif;letter-spacing:.04em}
+    tr:last-child td{border-bottom:0}
+    tr:nth-child(even) td{background:#fbfdfc}
+    td{font-size:.91rem}
+    .word{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:1rem}
+    .pos{
+      display:inline-block;padding:2px 7px;border-radius:5px;
+      color:#075b54;background:var(--green-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+    }
+    /* 强化笔记精讲 */
+    .notes-grid{display:grid;gap:18px}
+    .note-card{
+      padding:24px 26px;border:1px solid #c9e2d8;border-radius:18px;
+      background:var(--green-soft);box-shadow:0 7px 20px rgba(20,90,70,.07);
+    }
+    .note-card h3{
+      margin:0 0 12px;font-size:1.14rem;color:#1d2a34;
+      border-bottom:2px solid #b8d8cd;padding-bottom:8px;
+    }
+    .note-card h3 .sec{color:#0f766e;font-size:.8rem;margin-right:6px}
+    .note-card h4{
+      margin:16px 0 6px;font-size:.98rem;color:#2b3a36;
+    }
+    .note-card p{margin:8px 0;font-size:.95rem;color:#2b3330}
+    .note-card ul{margin:8px 0;padding-left:22px}
+    .note-card li{margin:7px 0;font-size:.94rem;color:#2b3330}
+    .note-card li .ex{
+      font-family:"Hiragino Mincho ProN","Yu Mincho",serif;color:#14181a;
+    }
+    .note-card li .tr{display:block;color:#64727d;font-size:.9rem;margin-top:2px}
+    .note-card .key{
+      display:inline-block;padding:1px 8px;border-radius:6px;
+      background:#dff2ec;border:1px solid #8fc9b6;color:#0e5a46;
+      font:700 .86rem system-ui,sans-serif;
+    }
+    .note-card rt{color:#2f7cc4}
+    .forms{
+      margin-top:22px;padding:25px 28px;border-radius:18px;
+      background:#203f42;color:#effffb;
+    }
+    .forms h2{margin:0 0 10px;font-size:1.35rem}
+    .forms p{margin:6px 0;color:#d5eee8;font-size:.94rem}
+    .forms code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    .forms-inline{
+      margin:14px 2px 0;padding:16px 20px;border-radius:16px;
+      background:#203f42;color:#effffb;
+    }
+    .forms-inline h3{margin:0 0 8px;font-size:1.02rem;color:#baf6e8}
+    .forms-inline p{margin:5px 0;color:#d5eee8;font-size:.92rem;line-height:1.7}
+    .forms-inline code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    footer{margin-top:27px;color:var(--muted);font-size:.82rem;text-align:center}
+    @media(max-width:640px){
+      .wrap{padding:16px 13px 48px}
+      header{padding:30px 24px}
+      .language{padding:22px 20px}
+      .jp{font-size:1.04rem}
+      .top-nav{padding:8px 12px}
+      .top-nav .nav-title{display:none}
+    }
+  
+    .back-top{margin:12px 2px 0;text-align:right;font-size:.85rem}
+    .back-top a{color:var(--muted);text-decoration:none}
+    .back-top a:hover{color:var(--green)}
+  /* ===== 打印适配（A4 排版 / PDF 存为 A3 / 隐藏页眉页脚 / 卡片不跨页）===== */
+  @media print {
+    @page { size: A3; margin: 10mm 8mm; }
+    html, body { background: #ffffff !important; }
+    nav { display: none !important; }
+    .top-nav { display: flex !important; position: static !important; box-shadow: none !important; backdrop-filter: none; }
+    section { margin-bottom: 5mm; }
+    .card, .translation, .forms-inline, .note-card, .para-pair,
+    .vocab-card, .grammar-item, .language, .phrase-item,
+    .vocab-group, .analysis-block { break-inside: avoid; page-break-inside: avoid; }
+    h1, h2, h3, h4, .section-title { break-after: avoid; page-break-after: avoid; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    table { font-size: 0.9em; }
+    a { color: inherit; text-decoration: none; }
+    .forms-inline, .note-card, .card, .translation { box-shadow: none !important; }
+    .wrap { max-width: 100%; padding: 0; }
+    .jp { font-size: 0.98em; letter-spacing: 0.02em; }
+    .zh, .note { font-size: 0.95em; }
+    .language { padding: 12px 16px; }
+    .grammar-grid { gap: 8px; }
+    .table-wrap { box-shadow: none; }
+  }
+
+  /* ===== 跟读控制条（注入） ===== */
+  .player-bar{
+    position:sticky;top:56px;z-index:95;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    margin:18px 0 8px;padding:12px 16px;
+    border:1px solid var(--line);border-radius:18px;
+    background:rgba(255,253,248,.95);
+    box-shadow:0 8px 22px rgba(31,56,52,.08);
+  }
+  .pb-btn{
+    width:42px;height:42px;border:0;border-radius:50%;cursor:pointer;
+    display:inline-grid;place-items:center;
+    background:var(--green);color:#fff;font-size:1rem;
+    transition:transform .12s, background .15s;
+  }
+  .pb-btn:hover{background:#198f7c;transform:scale(1.06)}
+  .pb-btn.small{width:34px;height:34px;background:#e8f1ee;color:var(--green);font-size:.9rem}
+  .pb-btn.small:hover{background:#d6e8e3}
+  .pb-btn:disabled{opacity:.35;cursor:default;transform:none}
+  .rate-group{display:flex;gap:5px;margin-left:auto}
+  .rate-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .rate-btn.active{background:var(--green);border-color:var(--green);color:#fff}
+  .mode-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .mode-btn.active{background:var(--orange);border-color:var(--orange);color:#fff}
+  .progress{
+    flex-basis:100%;height:6px;border-radius:3px;
+    background:#e3ece8;position:relative;cursor:pointer;
+  }
+  .progress .fill{
+    position:absolute;left:0;top:0;bottom:0;border-radius:3px;
+    background:linear-gradient(90deg,#0f766e,#2ba98c);width:0%;
+  }
+  .progress .knob{
+    position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:#fff;border:2px solid var(--green);transform:translate(-50%,-50%);
+    left:0%;box-shadow:0 1px 4px rgba(0,0,0,.2);
+  }
+  .sentence-status{
+    flex-basis:100%;color:var(--muted);font:600 .78rem system-ui,sans-serif;
+  }
+  .sentence{
+    cursor:pointer;border-radius:8px;padding:3px 10px;margin:0 -10px;
+    transition:background .18s;
+    border-left:4px solid transparent;
+  }
+  .sentence:hover{background:#eaf4fc}
+  .sentence.playing{
+    background:linear-gradient(90deg, rgba(137,207,240,.60), rgba(137,207,240,.28));
+    border-left-color:#2f7cc4;
+    box-shadow:0 2px 10px rgba(47,124,196,.22);
+  }
+  .sentence .play-ic{
+    display:inline-block;margin-right:4px;color:#2f7cc4;
+    font-size:.72em;opacity:.5;font-family:system-ui,sans-serif;vertical-align:2px;
+  }
+  .sentence.playing .play-ic{opacity:1;color:#1c5f9e;transform:scale(1.1)}
+  @media(max-width:640px){
+    .player-bar{top:50px;padding:10px 12px}
+    .player-bar .rate-group{order:3;margin-left:0}
+  }
+  @media print{
+    .player-bar{display:none !important}
+    .sentence{cursor:default;padding:0;margin:0;border:0}
+    .sentence.playing{background:transparent;box-shadow:none;border:0}
+    .sentence .play-ic{display:none}
+  }
+
+</style>
+</head>
+<body>
+  <!-- 顶部索引 -->
+  <nav class="top-nav">
+    <span class="nav-title">索 引</span>
+    <a href="#p1">第一段</a>
+    <a href="#p2">第二段</a>
+    <a href="#p3">第三段</a>
+    <a href="#p4">第四段</a>
+    <a href="#p5">第五段</a>
+    <a href="#p6">第六段</a>
+    <a href="#p7">第七段</a>
+    <a href="#p8">第八段</a>
+    <a href="#p9">第九段</a>
+    <a href="#p10">第十段</a>
+    <a href="#grammar">语法</a>
+    <a href="#vocab">词汇与变形</a>
+    <a href="#notes">强化笔记</a>
+    <a class="to-top" href="#top">▲ 顶部</a>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header>
+      <p class="eyebrow">JAPANESE × CHINESE · WEEKLY QUIZ &amp; NOTES</p>
+      <h1>第1周 每周自测<br>日译中 5 题 ＋ 中译日 5 题（解析融合版）</h1>
+      <p>日语汉字均标注平假名读音（黄色）；每组内容按日语、中文交替呈现，含瑞译解析精讲。</p>
+    </header>
+
+  <div class="player-bar" id="player-bar">
+    <button class="pb-btn small" id="btn-prev" title="上一句（←）">⏮</button>
+    <button class="pb-btn" id="btn-play" title="播放/暂停（空格）">▶</button>
+    <button class="pb-btn small" id="btn-next" title="下一句（→）">⏭</button>
+    <div class="rate-group" id="rate-group">
+      <button class="rate-btn" data-rate="0.5">0.5x</button>
+      <button class="rate-btn" data-rate="0.75">0.75x</button>
+      <button class="rate-btn active" data-rate="1">1x</button>
+      <button class="rate-btn" data-rate="1.25">1.25x</button>
+      <button class="rate-btn" data-rate="1.5">1.5x</button>
+    </div>
+    <button class="mode-btn" id="btn-mode" title="循环模式">循环: 关</button>
+    <div class="progress" id="progress"><div class="fill" id="progress-fill"></div><div class="knob" id="progress-knob"></div></div>
+    <div class="sentence-status" id="sentence-status">点击下方任意日文句子开始跟读</div>
+  </div>
+
+
+    <nav>
+      <a href="#p1">第一段</a>
+      <a href="#p2">第二段</a>
+      <a href="#p3">第三段</a>
+      <a href="#p4">第四段</a>
+      <a href="#p5">第五段</a>
+      <a href="#p6">第六段</a>
+      <a href="#p7">第七段</a>
+      <a href="#p8">第八段</a>
+      <a href="#p9">第九段</a>
+      <a href="#p10">第十段</a>
+      <a href="#grammar">语法</a>
+      <a href="#vocab">词汇与变形</a>
+      <a href="#notes">强化笔记</a>
+    </nav>
+
+    <section id="p1">
+      <h2 class="section-title">第一段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="0" data-audio="p1_s1.mp3"><span class="play-ic">▶</span>「ヘイトスピーチ<ruby>解消法<rt>かいしょうほう</rt></ruby>」が<ruby>施行<rt>しこう</rt></ruby>されて6<ruby>月<rt>がつ</rt></ruby>3<ruby>日<rt>にち</rt></ruby>で10<ruby>年<rt>ねん</rt></ruby>を<ruby>迎<rt>むか</rt></ruby>える。</span><span class="sentence" data-idx="1" data-audio="p1_s2.mp3"><span class="play-ic">▶</span><ruby>在日外国人<rt>ざいにちがいこくじん</rt></ruby>の<ruby>排斥<rt>はいせき</rt></ruby>を<ruby>訴<rt>うった</rt></ruby>える<ruby>路上<rt>ろじょう</rt></ruby>での<ruby>露骨<rt>ろこつ</rt></ruby>なヘイトスピーチが<ruby>減<rt>へ</rt></ruby>った<ruby>一方<rt>いっぽう</rt></ruby>で、インターネット<ruby>上<rt>じょう</rt></ruby>の<ruby>差別<rt>さべつ</rt></ruby>的な<ruby>書<rt>か</rt></ruby>き<ruby>込<rt>こ</rt></ruby>みがなくなる<ruby>気配<rt>けはい</rt></ruby>はない。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            《仇恨言论解消法》自施行以来，于6月3日迎来了第10个年头。虽然在街头公开鼓吹排斥在日外国人的露骨仇恨言论有所减少，但互联网上的歧视性言论却丝毫没有消失的迹象。
+          </p>
+          <p class="note">「<ruby>書<rt>か</rt></ruby>き<ruby>込<rt>こ</rt></ruby>み」＝（网络）留言、评论；「〜<ruby>気配<rt>けはい</rt></ruby>はない」＝没有……的迹象。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>迎える</code>＝辞书形（句尾）：迎来。</p>
+        <p><code>減った</code>＝減る（へる，v1 自）的过去形：减少了。</p>
+        <p><code>なくなる</code>＝辞书形（＋気配はない）：（没有）消失的（迹象）。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p2">
+      <h2 class="section-title">第二段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="2" data-audio="p2_s1.mp3"><span class="play-ic">▶</span><ruby>朝鮮学校<rt>ちょうせんがっこう</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>う<ruby>在日<rt>ざいにち</rt></ruby>コリアンの<ruby>少女<rt>しょうじょ</rt></ruby>が<ruby>日本人<rt>にほんじん</rt></ruby>の<ruby>同世代<rt>どうせだい</rt></ruby>との<ruby>交流<rt>こうりゅう</rt></ruby>を<ruby>通<rt>つう</rt></ruby>じて<ruby>世界<rt>せかい</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げ、<ruby>自身<rt>じしん</rt></ruby>のルーツと<ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>い<ruby>葛藤<rt>かっとう</rt></ruby>する<ruby>姿<rt>すがた</rt></ruby>を<ruby>描<rt>えが</rt></ruby>いた<ruby>映画<rt>えいが</rt></ruby>「トロフィー」の<ruby>上映会<rt>じょうえいかい</rt></ruby>が5<ruby>日<rt>にち</rt></ruby>、<ruby>韓国<rt>かんこく</rt></ruby><ruby>京畿道<rt>きょうきどう</rt></ruby><ruby>富川<rt>プチョン</rt></ruby>（プチョン）<ruby>市<rt>し</rt></ruby>で<ruby>開<rt>ひら</rt></ruby>かれた。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            电影《奖杯》讲述了一名就读于朝鲜学校的在日朝鲜裔少女，通过与日本同龄人的交流拓展了自己的世界观，并在面对自己的身份认同的过程中经历迷茫与挣扎。这部电影于5日在韩国京畿道富川市举行了上映会。
+          </p>
+          <p class="note">「<ruby>在日<rt>ざいにち</rt></ruby>コリアン」结合「<ruby>朝鮮学校<rt>ちょうせんがっこう</rt></ruby>」的语境译为“在日朝鲜人”；「ルーツ」＝出身背景、身份认同。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>通う</code>＝辞书形（连体修饰「少女」）：就读于……的。</p>
+        <p><code>広げ</code>＝広げる（ひろげる，v2 他）的连用形：拓展（中顿）。</p>
+        <p><code>向き合い</code>＝向き合う（むきあう，v1 自）的连用形：面对（中顿）。</p>
+        <p><code>描いた</code>＝描く（えがく，v1 他）的过去形（连体）：描绘……的。</p>
+        <p><code>開かれた</code>＝開く（ひらく，v1 自他）的被动过去形：被举行。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p3">
+      <h2 class="section-title">第三段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="3" data-audio="p3_s1.mp3"><span class="play-ic">▶</span>NHK<ruby>放送文化研究所<rt>ほうそうぶんかけんきゅうじょ</rt></ruby>が<ruby>発表<rt>はっぴょう</rt></ruby>した<ruby>最新<rt>さいしん</rt></ruby>の<ruby>国民生活時間調査<rt>こくみんせいかつじかんちょうさ</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>が、メディア<ruby>業界<rt>ぎょうかい</rt></ruby><ruby>内外<rt>ないがい</rt></ruby>で<ruby>話題<rt>わだい</rt></ruby>になった。</span><span class="sentence" data-idx="4" data-audio="p3_s2.mp3"><span class="play-ic">▶</span><ruby>平日<rt>へいじつ</rt></ruby>に15<ruby>分<rt>ふん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>リアルタイムでテレビを<ruby>視聴<rt>しちょう</rt></ruby>した<ruby>人<rt>ひと</rt></ruby>の<ruby>割合<rt>わりあい</rt></ruby>が、<ruby>高齢層<rt>こうれいそう</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>むすべての<ruby>世代<rt>せだい</rt></ruby>で<ruby>減少<rt>げんしょう</rt></ruby>したことが<ruby>明<rt>あき</rt></ruby>らかになったためだ。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            日本放送协会广播文化研究所公布的最新《国民生活时间调查》结果，在媒体业内外引发了广泛关注。因为根据调查显示，在工作日每天收看电视直播15分钟以上的人群比例，在包括老年人在内的所有年龄层中均有所下降。
+          </p>
+          <p class="note">「NHK」应译为“日本放送协会”；「<ruby>話題<rt>わだい</rt></ruby>になった」→“引发了广泛关注”；「リアルタイム」＝实时、直播。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>発表した</code>＝発表する（v3 他）的过去形（连体）：公布的。</p>
+        <p><code>視聴した</code>＝視聴する（v3 他）的过去形（连体）：观看的。</p>
+        <p><code>減少した</code>＝減少する（v3 自）的过去形：下降了。</p>
+        <p><code>明らかになった</code>＝明らかになる＋た：变得明确。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p4">
+      <h2 class="section-title">第四段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="5" data-audio="p4_s1.mp3"><span class="play-ic">▶</span><ruby>中東<rt>ちゅうとう</rt></ruby>オマーンが、ホルムズ<ruby>海峡<rt>かいきょう</rt></ruby>をめぐり<ruby>海峡<rt>かいきょう</rt></ruby>の<ruby>汚染除去<rt>おせんじょきょ</rt></ruby>や<ruby>航行支援<rt>こうこうしえん</rt></ruby>の<ruby>名目<rt>めいもく</rt></ruby>で“<ruby>手数料<rt>てすうりょう</rt></ruby>”が<ruby>発生<rt>はっせい</rt></ruby>する<ruby>可能性<rt>かのうせい</rt></ruby>に<ruby>言及<rt>げんきゅう</rt></ruby>したとアメリカのブルームバーグ<ruby>通信<rt>つうしん</rt></ruby>が26<ruby>日<rt>にち</rt></ruby>、<ruby>報<rt>ほう</rt></ruby>じました。</span><span class="sentence" data-idx="6" data-audio="p4_s2.mp3"><span class="play-ic">▶</span>（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）オマーンはヨーロッパの<ruby>当局者<rt>とうきょくしゃ</rt></ruby>に<ruby>対<rt>たい</rt></ruby>し、ホルムズ<ruby>海峡<rt>かいきょう</rt></ruby>がアメリカとイランの<ruby>戦闘<rt>せんとう</rt></ruby><ruby>前<rt>まえ</rt></ruby>の<ruby>状態<rt>じょうたい</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>るのは<ruby>不可能<rt>ふかのう</rt></ruby>だと<ruby>話<rt>はな</rt></ruby>したということです。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            美国彭博社26日报道称，中东国家阿曼就霍尔木兹海峡问题表示，今后可能会以清除海峡污染和提供航行支援为名，向过往船只收取“手续费”。（略）据悉，阿曼向欧洲有关官员表示，霍尔木兹海峡已不可能恢复到美国与伊朗发生军事冲突之前的状态。
+          </p>
+          <p class="note">「<ruby>手数料<rt>てすうりょう</rt></ruby>」＝手续费（汉译日不能想当然译为「手続費」）；「〜の<ruby>名目<rt>めいもく</rt></ruby>で」＝以……为名。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>報じました</code>＝報じる（ほうじる，v2 他）的ます形过去：报道了。</p>
+        <p><code>話した</code>＝話す（はなす，v1 他）的过去形：说了、表示。</p>
+        <p><code>戻る</code>＝辞书形：恢复、回到。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p5">
+      <h2 class="section-title">第五段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="7" data-audio="p5_s1.mp3"><span class="play-ic">▶</span>メロスは<ruby>激怒<rt>げきど</rt></ruby>した。</span><span class="sentence" data-idx="8" data-audio="p5_s2.mp3"><span class="play-ic">▶</span><ruby>必<rt>かなら</rt></ruby>ず、かの<ruby>邪智暴虐<rt>じゃちぼうぎゃく</rt></ruby>の<ruby>王<rt>おう</rt></ruby>を<ruby>除<rt>のぞ</rt></ruby>かなければならぬと<ruby>決意<rt>けつい</rt></ruby>した。</span><span class="sentence" data-idx="9" data-audio="p5_s3.mp3"><span class="play-ic">▶</span>メロスには<ruby>政治<rt>せいじ</rt></ruby>がわからぬ。</span><span class="sentence" data-idx="10" data-audio="p5_s4.mp3"><span class="play-ic">▶</span>メロスは、<ruby>村<rt>むら</rt></ruby>の<ruby>牧人<rt>ぼくじん</rt></ruby>である。</span><span class="sentence" data-idx="11" data-audio="p5_s5.mp3"><span class="play-ic">▶</span><ruby>笛<rt>ふえ</rt></ruby>を<ruby>吹<rt>ふ</rt></ruby>き、<ruby>羊<rt>ひつじ</rt></ruby>と<ruby>遊<rt>あそ</rt></ruby>んで<ruby>暮<rt>く</rt></ruby>して<ruby>来<rt>き</rt></ruby>た。</span><span class="sentence" data-idx="12" data-audio="p5_s6.mp3"><span class="play-ic">▶</span>けれども<ruby>邪悪<rt>じゃあく</rt></ruby>に<ruby>対<rt>たい</rt></ruby>しては、<ruby>人一倍<rt>ひといったい</rt></ruby>に<ruby>敏感<rt>びんかん</rt></ruby>であった。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            美乐斯愤怒了。他下定决心，无论如何都要除掉那个奸诈残暴的国王。美乐斯不懂政治。美乐斯是一个村里的牧羊人。他一直过着吹笛子、与羊群嬉戏的生活。然而，对于邪恶，他却比任何人都更加敏感。
+          </p>
+          <p class="note">「かの」＝那个；「ぬ」＝「ない」（<ruby>除<rt>のぞ</rt></ruby>かなければならぬ／わからぬ）；「<ruby>人一倍<rt>ひといったい</rt></ruby>」＝比其他人更加、格外。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>激怒した</code>＝激怒する（v3 自）的过去形：愤怒了。</p>
+        <p><code>除かなければならぬ</code>＝除く（のぞく，v1 他）＋なければならぬ（＝ならない）：必须除掉。</p>
+        <p><code>決意した</code>＝決意する（v3 自）的过去形：下定了决心。</p>
+        <p><code>吹き</code>＝吹く（ふく，v1 自他）的连用形：吹（中顿）。</p>
+        <p><code>暮して来た</code>＝暮らす（くらす，v1 自他）的て形＋きた（歴史的仮名遣い）：一直过着（生活）至今。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p6">
+      <h2 class="section-title">第六段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="13" data-audio="p6_s1.mp3"><span class="play-ic">▶</span><ruby>科学<rt>かがく</rt></ruby>の<ruby>未来<rt>みらい</rt></ruby>は<ruby>若者<rt>わかもの</rt></ruby>にかかっている。</span><span class="sentence" data-idx="14" data-audio="p6_s2.mp3"><span class="play-ic">▶</span>（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>研究機関<rt>けんきゅうきかん</rt></ruby>が<ruby>青少年<rt>せいしょうねん</rt></ruby>に<ruby>門戸<rt>もんこ</rt></ruby>を<ruby>開<rt>ひら</rt></ruby>き、ますます<ruby>多<rt>おお</rt></ruby>くの<ruby>科学技術者<rt>かがくぎじゅつしゃ</rt></ruby>が<ruby>科学普及活動<rt>かがくふきゅうかつどう</rt></ruby>に<ruby>携<rt>たずさ</rt></ruby>わり、<ruby>科学普及<rt>かがくふきゅう</rt></ruby>に<ruby>従事<rt>じゅうじ</rt></ruby>する<ruby>人々<rt>ひとびと</rt></ruby>の<ruby>貢献<rt>こうけん</rt></ruby>が<ruby>定量的<rt>ていりょうてき</rt></ruby>に<ruby>評価<rt>ひょうか</rt></ruby>される<ruby>仕組<rt>しく</rt></ruby>みが<ruby>整<rt>ととの</rt></ruby>えば、<ruby>未来<rt>みらい</rt></ruby>の<ruby>科学<rt>かがく</rt></ruby>という<ruby>広大<rt>こうだい</rt></ruby>な<ruby>星空<rt>ほしぞら</rt></ruby>には、<ruby>必<rt>かなら</rt></ruby>ずや<ruby>無数<rt>むすう</rt></ruby>の<ruby>星々<rt>ほしぼし</rt></ruby>が<ruby>輝<rt>かがや</rt></ruby>くことになるだろう。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            科学的未来在青年。（略）当科研机构的大门向青少年敞开，当越来越多的科技工作者投身科普事业，当科普工作者的贡献有了可量化的评价体系，未来科学的浩瀚星空必将群星闪耀。
+          </p>
+          <p class="note">“在青年”处理为「<ruby>若者<rt>わかもの</rt></ruby>にかかっている」更自然；“科技”＝科学技术、“科普”＝科学普及。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>かかっている</code>＝かかる（v1 自）的て形＋いる：取决于、在于。</p>
+        <p><code>開き</code>＝開く（ひらく，v1 自他）的连用形：敞开（中顿）。</p>
+        <p><code>携わり</code>＝携わる（たずさわる，v1 自）的连用形：从事（中顿）。</p>
+        <p><code>評価される</code>＝評価する（v3 他）的被动形：被评价。</p>
+        <p><code>整えば</code>＝整う（ととのう，v1 自）的假定形：如果（体系）建立起来的话。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p7">
+      <h2 class="section-title">第七段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="15" data-audio="p7_s1.mp3"><span class="play-ic">▶</span>ケインズが『チャーチル<ruby>氏<rt>し</rt></ruby>の<ruby>経済的帰結<rt>けいざいてきけっけつ</rt></ruby>』を<ruby>著<rt>あらわ</rt></ruby>した<ruby>目的<rt>もくてき</rt></ruby>は、<ruby>当時<rt>とうじ</rt></ruby>のイギリス<ruby>大蔵大臣<rt>おおくらだいじん</rt></ruby>ウィンストン・チャーチルによる<ruby>金本位制<rt>きんほんいせい</rt></ruby>への<ruby>復帰<rt>ふっき</rt></ruby>を<ruby>批判<rt>ひはん</rt></ruby>することにあった。</span><span class="sentence" data-idx="16" data-audio="p7_s2.mp3"><span class="play-ic">▶</span>ケインズは、<ruby>金本位制<rt>きんほんいせい</rt></ruby>への<ruby>復帰<rt>ふっき</rt></ruby>がイギリスの<ruby>輸出不振<rt>ゆしゅつふぶん</rt></ruby>と<ruby>景気低迷<rt>けいきていめい</rt></ruby>を<ruby>招<rt>まね</rt></ruby>いたと<ruby>指摘<rt>してき</rt></ruby>し、<ruby>仮<rt>かり</rt></ruby>に<ruby>金本位制<rt>きんほんいせい</rt></ruby>へ<ruby>復帰<rt>ふっき</rt></ruby>するにしても、<ruby>適切<rt>てきせつ</rt></ruby>な<ruby>時期<rt>じき</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶか、あるいはポンドと<ruby>金<rt>きん</rt></ruby>との<ruby>交換<rt>こうかん</rt></ruby>レートを<ruby>妥当<rt>だとう</rt></ruby>な<ruby>水準<rt>すいじゅん</rt></ruby>に<ruby>設定<rt>せってい</rt></ruby>すべきであると<ruby>主張<rt>しゅちょう</rt></ruby>した。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            凯恩斯写作《丘吉尔先生的经济后果》这篇文章的目的是对时任英国财政大臣温斯顿·丘吉尔恢复金本位制度提出批评，认为金本位制度造成了英国出口不振、经济低迷，即使恢复金本位制度，也应该选择合适的时机或将英镑与黄金设定在合理的比价水平。
+          </p>
+          <p class="note">“恢复金本位制度”→“<ruby>金本位制<rt>きんほんいせい</rt></ruby>への<ruby>復帰<rt>ふっき</rt></ruby>”（经济学固定说法）；“英镑”→ポンド。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>著した</code>＝著す（あらわす，v1 他）的过去形（连体）：撰写的。</p>
+        <p><code>招いた</code>＝招く（まねく，v1 他）的过去形：招致。</p>
+        <p><code>指摘し</code>＝指摘する（v3 他）的连用形：指出（中顿）。</p>
+        <p><code>復帰するにしても</code>＝復帰する（v3 自）＋にしても：即使恢复……也。</p>
+        <p><code>設定すべき</code>＝設定する（v3 他）＋べき：应当设定。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p8">
+      <h2 class="section-title">第八段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="17" data-audio="p8_s1.mp3"><span class="play-ic">▶</span><ruby>中国外交部<rt>ちゅうごくがいこうぶ</rt></ruby>の<ruby>郭嘉昆<rt>かくかこん</rt></ruby><ruby>報道官<rt>ほうどうかん</rt></ruby>は<ruby>金曜日<rt>きんようび</rt></ruby>（6<ruby>月<rt>がつ</rt></ruby>26<ruby>日<rt>にち</rt></ruby>）の<ruby>定例記者会見<rt>ていれいきしゃかいけん</rt></ruby>で、<ruby>第<rt>だい</rt></ruby>4<ruby>回<rt>かい</rt></ruby><ruby>中国国際<rt>ちゅうごくこくさい</rt></ruby>サプライチェーン<ruby>促進博覧会<rt>そくしんはくらんかい</rt></ruby>が<ruby>月曜日<rt>げつようび</rt></ruby>（22<ruby>日<rt>にち</rt></ruby>）に<ruby>開幕<rt>かいまく</rt></ruby>し、<ruby>日本<rt>にほん</rt></ruby>からの<ruby>多<rt>おお</rt></ruby>くの<ruby>企業<rt>きぎょう</rt></ruby>や<ruby>経済団体<rt>けいざいだんたい</rt></ruby>が<ruby>参加<rt>さんか</rt></ruby>していることを<ruby>明<rt>あき</rt></ruby>らかにし、「これは、<ruby>日本<rt>にほん</rt></ruby>の<ruby>経済界<rt>けいざいかい</rt></ruby>が<ruby>中日関係<rt>ちゅうにちかんけい</rt></ruby>の<ruby>改善<rt>かいぜん</rt></ruby>と<ruby>対中協力<rt>たいちゅうきょうりょく</rt></ruby>の<ruby>推進<rt>すいしん</rt></ruby>を<ruby>強<rt>つよ</rt></ruby>く<ruby>求<rt>もと</rt></ruby>めていることを<ruby>示<rt>しめ</rt></ruby>している」と<ruby>述<rt>の</rt></ruby>べた。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            中国外交部发言人郭嘉昆星期五（6月26日）在例行记者会上说，第四届中国国际供应链促进博览会星期一（22日）开幕，据悉有很多来自日本的企业和经济界团体报名参加，“这体现了日本经济界对于改善中日关系、开展对华合作的迫切需求”。
+          </p>
+          <p class="note">“发言人”→“<ruby>報道官<rt>ほうどうかん</rt></ruby>”；“例行记者会”→“<ruby>定例記者会見<rt>ていれいきしゃかいけん</rt></ruby>”；“报名参加”简化为「<ruby>参加<rt>さんか</rt></ruby>する」。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>開幕し</code>＝開幕する（v3 自）的连用形：开幕（中顿）。</p>
+        <p><code>参加している</code>＝参加する（v3 自）的て形＋いる：正在参加。</p>
+        <p><code>明らかにし</code>＝明らかにする（惯用）的连用形：说明（中顿）。</p>
+        <p><code>述べた</code>＝述べる（のべる，v2 他）的过去形：说道。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p9">
+      <h2 class="section-title">第九段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="18" data-audio="p9_s1.mp3"><span class="play-ic">▶</span>マルクスとエンゲルスが<ruby>創刊<rt>そうかん</rt></ruby>した『<ruby>新ライン新聞<rt>しんラインしんぶん</rt></ruby>』は、レーニンによって「<ruby>革命的<rt>かくめいてき</rt></ruby>プロレタリアートの<ruby>最<rt>もっと</rt></ruby>も<ruby>優<rt>すぐ</rt></ruby>れた<ruby>機関紙<rt>きかんし</rt></ruby>」と<ruby>高<rt>たか</rt></ruby>く<ruby>評価<rt>ひょうか</rt></ruby>され、<ruby>中国<rt>ちゅうごく</rt></ruby>のジャーナリズム<ruby>研究<rt>けんきゅう</rt></ruby>においても<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>し<ruby>引用<rt>いんよう</rt></ruby>される<ruby>古典的<rt>こてんてき</rt></ruby>なテキストとなっている。</span><span class="sentence" data-idx="19" data-audio="p9_s2.mp3"><span class="play-ic">▶</span>しかし、<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>教科書<rt>きょうかしょ</rt></ruby>における<ruby>関連<rt>かんれん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>の<ruby>多<rt>おお</rt></ruby>くは<ruby>定性的<rt>ていせいてき</rt></ruby>な<ruby>結論<rt>けつろん</rt></ruby>にとどまっており、それらの<ruby>結論<rt>けつろん</rt></ruby>がどこに<ruby>由来<rt>ゆらい</rt></ruby>するのか、また『<ruby>新ライン新聞<rt>しんラインしんぶん</rt></ruby>』のどの<ruby>号<rt>ごう</rt></ruby>のどの<ruby>記事<rt>きじ</rt></ruby>を<ruby>根拠<rt>こんきょ</rt></ruby>としているのかについて、<ruby>踏<rt>ふ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>んで<ruby>検証<rt>けんしょう</rt></ruby>する<ruby>研究者<rt>けんきゅうしゃ</rt></ruby>はほとんどいない。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            马克思和恩格斯创办的《新莱茵报》，被列宁盛赞为“革命无产阶级最好最卓越的机关报”，也是国内新闻学界反复引用的经典文本。然而，国内教材中的相关论述多为定性式结论，至于这些结论从何而来、依据的是《新莱茵报》哪一期的哪篇文章，却鲜有学者深入追问。
+          </p>
+          <p class="note">“最好最卓越”→“<ruby>最<rt>もっと</rt></ruby>も<ruby>優<rt>すぐ</rt></ruby>れた”（避免重复啰嗦）；“国内”→译为「<ruby>中国<rt>ちゅうごく</rt></ruby>」以免歧义。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>創刊した</code>＝創刊する（v3 他）的过去形（连体）：创办的。</p>
+        <p><code>評価され</code>＝評価する（v3 他）的被动连用：被评价（中顿）。</p>
+        <p><code>引用される</code>＝引用する（v3 他）的被动形：被引用。</p>
+        <p><code>とどまっており</code>＝とどまる（v1 自）的て形＋いる连用：停留在（中顿）。</p>
+        <p><code>根拠としている</code>＝根拠とする＋ている：以……为依据。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="p10">
+      <h2 class="section-title">第十段</h2>
+      <article class="translation">
+        <div class="language">
+          <div class="label">日本語</div>
+          <p class="jp"><p class="jp">
+  <span class="sentence" data-idx="20" data-audio="p10_s1.mp3"><span class="play-ic">▶</span>共産黨は、その<ruby>主義政見<rt>しゅぎせいけん</rt></ruby>を<ruby>隱蔽<rt>いんぺい</rt></ruby>することを<ruby>恥<rt>はじ</rt></ruby>とする。</span><span class="sentence" data-idx="21" data-audio="p10_s2.mp3"><span class="play-ic">▶</span>彼らは<ruby>公然<rt>こうぜん</rt></ruby>として<ruby>宣言<rt>せんげん</rt></ruby>する。</span><span class="sentence" data-idx="22" data-audio="p10_s3.mp3"><span class="play-ic">▶</span>彼らの<ruby>目的<rt>もくてき</rt></ruby>は、<ruby>一切<rt>いっさい</rt></ruby>從來の<ruby>社會組織<rt>しゃかいそしき</rt></ruby>を<ruby>強力的<rt>きょうりょくてき</rt></ruby>に<ruby>顛覆<rt>てんぷく</rt></ruby>することによつてのみ<ruby>達<rt>たっ</rt></ruby>せられる。</span><span class="sentence" data-idx="23" data-audio="p10_s4.mp3"><span class="play-ic">▶</span><ruby>支配階級<rt>しはいかいきゅう</rt></ruby>をして<ruby>共産主義革命<rt>きょうさんしゅぎかくめい</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>戰慄<rt>せんりつ</rt></ruby>せしめよ。</span><span class="sentence" data-idx="24" data-audio="p10_s5.mp3"><span class="play-ic">▶</span>プロレタリヤは、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>鎖<rt>くさり</rt></ruby>よりほかに<ruby>失<rt>うしな</rt></ruby>ふべき<ruby>何<rt>なに</rt></ruby>ものももたない。</span><span class="sentence" data-idx="25" data-audio="p10_s6.mp3"><span class="play-ic">▶</span>そして彼らは、<ruby>獲得<rt>かくとく</rt></ruby>すべき<ruby>全世界<rt>ぜんせかい</rt></ruby>をもつてゐる。</span>
+</p></p>
+        </div>
+        <div class="language">
+          <div class="label zh">中文</div>
+          <p class="zh">
+            共产党人不屑于隐瞒自己的观点和意图。他们公开宣布：他们的目的只有用暴力推翻全部现存的社会制度才能达到。让统治阶级在共产主义革命面前发抖吧。无产者在这个革命中失去的只是锁链。他们获得的将是整个世界。
+          </p>
+          <p class="note">参考译文为堺利彦、幸德秋水译本，保留日文旧字体与历史假名遣い；「〜をして…せしめる」＝让……（做某事），汉文训读语法。</p>
+        </div>
+      </article>
+      <div class="forms-inline">
+        <h3>文中变形</h3>
+        <p><code>隱蔽することを恥とする</code>＝以隐瞒为耻。</p>
+        <p><code>達せられる</code>＝達する（たっする，v3 自他）的被动形：能够达到。</p>
+        <p><code>戰慄せしめよ</code>＝戰慄する＋せしめる（文语使役）＋よ：让……发抖吧。</p>
+        <p><code>失ふべき</code>＝失う（うしなう，v1 他）＋べき（歴史的仮名遣い）：应当失去的。</p>
+        <p><code>もつてゐる</code>＝持つ（もつ，v1 他）＋ている（歴史的仮名遣い）：拥有着。</p>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+
+    <section id="grammar">
+      <h2 class="section-title"><span>文</span>本次语法</h2>
+      <div class="grammar-grid">
+        <article class="card">
+          <h3><span class="g-num">1</span>〜を<ruby>迎<rt>むか</rt></ruby>える</h3>
+          <p><span class="pattern">10<ruby>年<rt>ねん</rt></ruby>を<ruby>迎<rt>むか</rt></ruby>える</span></p>
+          <p>“迎来……（周年）”。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">2</span>〜<ruby>気配<rt>けはい</rt></ruby>はない</h3>
+          <p><span class="pattern">なくなる<ruby>気配<rt>けはい</rt></ruby>はない</span></p>
+          <p>“没有……的迹象、看不出……”。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">3</span>〜を<ruby>通<rt>つう</rt></ruby>じて</h3>
+          <p><span class="pattern"><ruby>交流<rt>こうりゅう</rt></ruby>を<ruby>通<rt>つう</rt></ruby>じて</span></p>
+          <p>“通过……”。表示手段、媒介。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">4</span>〜と<ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>う</h3>
+          <p><span class="pattern">ルーツと<ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>い<ruby>葛藤<rt>かっとう</rt></ruby>する</span></p>
+          <p>“面对……并（经历）挣扎”。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">5</span>〜が<ruby>話題<rt>わだい</rt></ruby>になる</h3>
+          <p><span class="pattern">メディア<ruby>業界<rt>ぎょうかい</rt></ruby><ruby>内外<rt>ないがい</rt></ruby>で<ruby>話題<rt>わだい</rt></ruby>になった</span></p>
+          <p>“引发广泛关注”。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">6</span>〜が<ruby>明<rt>あき</rt></ruby>らかになる</h3>
+          <p><span class="pattern"><ruby>減少<rt>げんしょう</rt></ruby>したことが<ruby>明<rt>あき</rt></ruby>らかになった</span></p>
+          <p>“（调查）显示、变得明确”。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">7</span>〜をめぐり／〜の<ruby>名目<rt>めいもく</rt></ruby>で</h3>
+          <p><span class="pattern">ホルムズ<ruby>海峡<rt>かいきょう</rt></ruby>をめぐり…の<ruby>名目<rt>めいもく</rt></ruby>で</span></p>
+          <p>“围绕……／以……为名”。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">8</span>〜に<ruby>言及<rt>げんきゅう</rt></ruby>する</h3>
+          <p><span class="pattern"><ruby>可能性<rt>かのうせい</rt></ruby>に<ruby>言及<rt>げんきゅう</rt></ruby>した</span></p>
+          <p>“提及……、谈及……”。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">9</span>〜なければならぬ（＝ならない）</h3>
+          <p><span class="pattern"><ruby>除<rt>のぞ</rt></ruby>かなければならぬ</span></p>
+          <p>“必须……”。文语「ぬ」＝「ない」。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">10</span>〜にかかっている</h3>
+          <p><span class="pattern"><ruby>未来<rt>みらい</rt></ruby>は<ruby>若者<rt>わかもの</rt></ruby>にかかっている</span></p>
+          <p>“在于……、取决于……”。比「にある」更自然。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">11</span>〜にしても</h3>
+          <p><span class="pattern"><ruby>復帰<rt>ふっき</rt></ruby>するにしても</span></p>
+          <p>“即使……也……”。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">12</span>〜に<ruby>とどまる</ruby></h3>
+          <p><span class="pattern"><ruby>定性的<rt>ていせいてき</rt></ruby>な<ruby>結論<rt>けつろん</rt></ruby>にとどまっている</span></p>
+          <p>“停留在……、仅止于……”。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">13</span>〜をして…せしめる</h3>
+          <p><span class="pattern"><ruby>支配階級<rt>しはいかいきゅう</rt></ruby>をして…<ruby>戰慄<rt>せんりつ</rt></ruby>せしめよ</span></p>
+          <p>“让……（做某事）”。文语使役表达（汉文训读）。</p>
+        </article>
+        <article class="card">
+          <h3><span class="g-num">14</span>〜のみ〜<ruby>達<rt>たっ</rt></ruby>せられる</h3>
+          <p><span class="pattern">…することによつてのみ<ruby>達<rt>たっ</rt></ruby>せられる</span></p>
+          <p>“只有通过……才能达到”。「のみ」＝只、仅。</p>
+        </article>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="vocab">
+      <h2 class="section-title"><span>词</span>词汇、短语与读音</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>单词／短语</th>
+              <th>读音</th>
+              <th>词性</th>
+              <th>中文释义</th>
+              <th>文中用法</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="word">解消法</td><td>かいしょうほう</td><td><span class="pos">n</span></td><td>消除法</td><td>ヘイトスピーチ<ruby>解消法<rt>かいしょうほう</rt></ruby></td></tr>
+            <tr><td class="word">施行する</td><td>しこうする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>施行</td><td><ruby>施行<rt>しこう</rt></ruby>されて</td></tr>
+            <tr><td class="word">在日外国人</td><td>ざいにちがいこくじん</td><td><span class="pos">n</span></td><td>在日外国人</td><td><ruby>在日外国人<rt>ざいにちがいこくじん</rt></ruby>の<ruby>排斥<rt>はいせき</rt></ruby></td></tr>
+            <tr><td class="word">排斥</td><td>はいせき</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>排斥</td><td><ruby>排斥<rt>はいせき</rt></ruby>を<ruby>訴<rt>うった</rt></ruby>える</td></tr>
+            <tr><td class="word">露骨</td><td>ろこつ</td><td><span class="pos">ナ形</span></td><td>露骨的</td><td><ruby>露骨<rt>ろこつ</rt></ruby>なヘイトスピーチ</td></tr>
+            <tr><td class="word">書き込み</td><td>かきこみ</td><td><span class="pos">n</span></td><td>（网络）留言、评论</td><td><ruby>差別<rt>さべつ</rt></ruby>的な<ruby>書<rt>か</rt></ruby>き<ruby>込<rt>こ</rt></ruby>み</td></tr>
+            <tr><td class="word">気配</td><td>けはい</td><td><span class="pos">n</span></td><td>迹象、苗头</td><td>なくなる<ruby>気配<rt>けはい</rt></ruby>はない</td></tr>
+            <tr><td class="word">朝鮮学校</td><td>ちょうせんがっこう</td><td><span class="pos">n</span></td><td>朝鲜学校</td><td><ruby>朝鮮学校<rt>ちょうせんがっこう</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>う</td></tr>
+            <tr><td class="word">在日コリアン</td><td>ざいにちコリアン</td><td><span class="pos">n</span></td><td>在日朝鲜人（族裔）</td><td><ruby>在日<rt>ざいにち</rt></ruby>コリアン</td></tr>
+            <tr><td class="word">同世代</td><td>どうせだい</td><td><span class="pos">n</span></td><td>同龄人</td><td><ruby>日本人<rt>にほんじん</rt></ruby>の<ruby>同世代<rt>どうせだい</rt></ruby></td></tr>
+            <tr><td class="word">葛藤する</td><td>かっとうする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td>纠结、挣扎</td><td><ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>い<ruby>葛藤<rt>かっとう</rt></ruby>する</td></tr>
+            <tr><td class="word">上映会</td><td>じょうえいかい</td><td><span class="pos">n</span></td><td>上映会</td><td>「トロフィー」の<ruby>上映会<rt>じょうえいかい</rt></ruby></td></tr>
+            <tr><td class="word">放送文化研究所</td><td>ほうそうぶんかけんきゅうじょ</td><td><span class="pos">n</span></td><td>广播文化研究所</td><td>NHK<ruby>放送文化研究所<rt>ほうそうぶんかけんきゅうじょ</rt></ruby></td></tr>
+            <tr><td class="word">国民生活時間調査</td><td>こくみんせいかつじかんちょうさ</td><td><span class="pos">n</span></td><td>国民生活时间调查</td><td><ruby>最新<rt>さいしん</rt></ruby>の<ruby>国民生活時間調査<rt>こくみんせいかつじかんちょうさ</rt></ruby></td></tr>
+            <tr><td class="word">リアルタイム</td><td>リアルタイム</td><td><span class="pos">n</span></td><td>实时、直播</td><td>リアルタイムでテレビを<ruby>視聴<rt>しちょう</rt></ruby>する</td></tr>
+            <tr><td class="word">視聴する</td><td>しちょうする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>观看（视听）</td><td>テレビを<ruby>視聴<rt>しちょう</rt></ruby>した</td></tr>
+            <tr><td class="word">高齢層</td><td>こうれいそう</td><td><span class="pos">n</span></td><td>老年群体</td><td><ruby>高齢層<rt>こうれいそう</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む</td></tr>
+            <tr><td class="word">汚染除去</td><td>おせんじょきょ</td><td><span class="pos">n</span></td><td>清除污染</td><td><ruby>海峡<rt>かいきょう</rt></ruby>の<ruby>汚染除去<rt>おせんじょきょ</rt></ruby></td></tr>
+            <tr><td class="word">航行支援</td><td>こうこうしえん</td><td><span class="pos">n</span></td><td>航行支援</td><td><ruby>航行支援<rt>こうこうしえん</rt></ruby>の<ruby>名目<rt>めいもく</rt></ruby></td></tr>
+            <tr><td class="word">名目</td><td>めいもく</td><td><span class="pos">n</span></td><td>名目</td><td>…の<ruby>名目<rt>めいもく</rt></ruby>で</td></tr>
+            <tr><td class="word">手数料</td><td>てすうりょう</td><td><span class="pos">n</span></td><td>手续费</td><td>“<ruby>手数料<rt>てすうりょう</rt></ruby>”が<ruby>発生<rt>はっせい</rt></ruby>する</td></tr>
+            <tr><td class="word">言及する</td><td>げんきゅうする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td>提及</td><td><ruby>可能性<rt>かのうせい</rt></ruby>に<ruby>言及<rt>げんきゅう</rt></ruby>した</td></tr>
+            <tr><td class="word">激怒する</td><td>げきどする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td>愤怒</td><td>メロスは<ruby>激怒<rt>げきど</rt></ruby>した</td></tr>
+            <tr><td class="word">邪智暴虐</td><td>じゃちぼうぎゃく</td><td><span class="pos">ナ形</span></td><td>奸诈残暴</td><td>かの<ruby>邪智暴虐<rt>じゃちぼうぎゃく</rt></ruby>の<ruby>王<rt>おう</rt></ruby></td></tr>
+            <tr><td class="word">牧人</td><td>ぼくじん</td><td><span class="pos">n</span></td><td>牧羊人</td><td><ruby>村<rt>むら</rt></ruby>の<ruby>牧人<rt>ぼくじん</rt></ruby></td></tr>
+            <tr><td class="word">人一倍</td><td>ひといったい</td><td><span class="pos">adv</span></td><td>比一般人更加</td><td><ruby>人一倍<rt>ひといったい</rt></ruby>に<ruby>敏感<rt>びんかん</rt></ruby></td></tr>
+            <tr><td class="word">若者</td><td>わかもの</td><td><span class="pos">n</span></td><td>青年</td><td><ruby>科学<rt>かがく</rt></ruby>の<ruby>未来<rt>みらい</rt></ruby>は<ruby>若者<rt>わかもの</rt></ruby>にかかっている</td></tr>
+            <tr><td class="word">門戸を開く</td><td>もんこをひらく</td><td><span class="pos">惯用</span></td><td>敞开大门</td><td><ruby>門戸<rt>もんこ</rt></ruby>を<ruby>開<rt>ひら</rt></ruby>き</td></tr>
+            <tr><td class="word">携わる</td><td>たずさわる</td><td><span class="pos">v1 自</span></td><td>从事</td><td><ruby>科学普及活動<rt>かがくふきゅうかつどう</rt></ruby>に<ruby>携<rt>たずさ</rt></ruby>わり</td></tr>
+            <tr><td class="word">定量的</td><td>ていりょうてき</td><td><span class="pos">ナ形</span></td><td>定量的</td><td><ruby>定量的<rt>ていりょうてき</rt></ruby>に<ruby>評価<rt>ひょうか</rt></ruby>される</td></tr>
+            <tr><td class="word">金本位制</td><td>きんほんいせい</td><td><span class="pos">n</span></td><td>金本位制度</td><td><ruby>金本位制<rt>きんほんいせい</rt></ruby>への<ruby>復帰<rt>ふっき</rt></ruby></td></tr>
+            <tr><td class="word">輸出不振</td><td>ゆしゅつふぶん</td><td><span class="pos">n</span></td><td>出口不振</td><td><ruby>輸出不振<rt>ゆしゅつふぶん</rt></ruby>と<ruby>景気低迷<rt>けいきていめい</rt></ruby></td></tr>
+            <tr><td class="word">報道官</td><td>ほうどうかん</td><td><span class="pos">n</span></td><td>发言人</td><td><ruby>郭嘉昆<rt>かくかこん</rt></ruby><ruby>報道官<rt>ほうどうかん</rt></ruby></td></tr>
+            <tr><td class="word">定例記者会見</td><td>ていれいきしゃかいけん</td><td><span class="pos">n</span></td><td>例行记者会</td><td><ruby>定例記者会見<rt>ていれいきしゃかいけん</rt></ruby>で</td></tr>
+            <tr><td class="word">機関紙</td><td>きかんし</td><td><span class="pos">n</span></td><td>机关报</td><td><ruby>最<rt>もっと</rt></ruby>も<ruby>優<rt>すぐ</rt></ruby>れた<ruby>機関紙<rt>きかんし</rt></ruby></td></tr>
+            <tr><td class="word">定性的</td><td>ていせいてき</td><td><span class="pos">ナ形</span></td><td>定性的</td><td><ruby>定性的<rt>ていせいてき</rt></ruby>な<ruby>結論<rt>けつろん</rt></ruby></td></tr>
+            <tr><td class="word">踏み込む</td><td>ふみこむ</td><td><span class="pos">v1 自</span></td><td>深入</td><td><ruby>踏<rt>ふ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>んで<ruby>検証<rt>けんしょう</rt></ruby>する</td></tr>
+            <tr><td class="word">隱蔽する</td><td>いんぺいする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>隐瞒（旧字体）</td><td>主義政見を<ruby>隱蔽<rt>いんぺい</rt></ruby>する</td></tr>
+            <tr><td class="word">顛覆する</td><td>てんぷくする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td>颠覆（旧字体）</td><td><ruby>社會組織<rt>しゃかいそしき</rt></ruby>を<ruby>顛覆<rt>てんぷく</rt></ruby>する</td></tr>
+            <tr><td class="word">戰慄する</td><td>せんりつする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td>战栗、发抖（旧字体）</td><td><ruby>戰慄<rt>せんりつ</rt></ruby>せしめよ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <section id="notes">
+      <h2 class="section-title"><span>笔</span>解析精讲（瑞译）</h2>
+      <div class="notes-grid">
+
+        <article class="note-card">
+          <h3><span class="sec">第一段</span>日译中 · 仇恨言论解消法</h3>
+          <ul>
+            <li>「ヘイトスピーチ」＝仇恨言论；「<span class="ex">書き込み</span>」＝（网络）留言、评论。</li>
+            <li>「〜<span class="ex">気配はない</span>」＝没有……的迹象、看不出……。</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">第二段</span>日译中 · 电影《奖杯》</h3>
+          <ul>
+            <li>「<span class="ex">在日コリアン</span>」用「コリアン」模糊国籍带来的朝韩政治立场；结合「朝鮮学校」的语境译为“在日朝鲜人”。</li>
+            <li>「<span class="ex">ルーツ</span>」＝出身背景、身份认同、族裔族群。</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">第三段</span>日译中 · NHK国民生活时间调查</h3>
+          <ul>
+            <li>「NHK」要译为中文“日本放送协会”；「<span class="ex">話題になった</span>」→“引发了广泛关注”。</li>
+            <li>「<span class="ex">リアルタイムで視聴</span>」＝观看电视直播（与看录播相对）。</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">第四段</span>日译中 · 阿曼与霍尔木兹海峡</h3>
+          <ul>
+            <li>「<span class="ex">手数料</span>」＝手续费（汉译日不能想当然译为「手続費」）。</li>
+            <li>「〜の<span class="ex">名目で</span>」＝以……为名、以……为理由。</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">第五段</span>日译中 · 太宰治《跑吧！美乐斯》</h3>
+          <ul>
+            <li>「<span class="ex">かの</span>」＝那个（文言指示）；「<span class="ex">ぬ</span>」＝「ない」（除かなければならぬ／わからぬ）。</li>
+            <li>「<span class="ex">人一倍</span>」＝比其他人更加、格外。</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">第六段</span>中译日 · 科学的未来在青年</h3>
+          <ul>
+            <li>“在青年”→“<span class="ex">若者にかかっている</span>”（比「にある」更自然）。</li>
+            <li>“科技”＝科学技术、“科普”＝科学普及（先理解中文再译）。</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">第七段</span>中译日 · 凯恩斯</h3>
+          <ul>
+            <li>“恢复金本位制度”→“<span class="ex">金本位制への復帰</span>”（经济学固定说法）。</li>
+            <li>“英镑”→ポンド／イギリス・ポンド。</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">第八段</span>中译日 · 外交部发言人</h3>
+          <ul>
+            <li>“发言人”→<span class="ex">報道官</span>；“例行记者会”→<span class="ex">定例記者会見</span>。</li>
+            <li>“报名参加”简化为「参加する」即可。</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">第九段</span>中译日 · 新莱茵报</h3>
+          <ul>
+            <li>“最好最卓越”→“<span class="ex">最も優れた</span>”（避免重复啰嗦）。</li>
+            <li>“国内”→译为「<span class="ex">中国</span>／中国国内」以免歧义。</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3><span class="sec">第十段</span>中译日 · 共产党宣言</h3>
+          <ul>
+            <li>参考译文为堺利彦、幸德秋水译本，保留日文旧字体（黨・隱・從・會・戰）与历史假名遣い（失ふ・もつてゐる）。</li>
+            <li>“让……发抖吧”→“<span class="ex">〜をして…せしめる</span>”（汉文训读使役）。</li>
+          </ul>
+        </article>
+
+      </div>
+    <p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <footer>
+      第1周 每周自测（解析融合版）｜日语读音（黄色平假名）、语法、词汇、文中变形与解析精讲整理<br>
+      正文依据用户提供的资料整理，仅供个人学习使用。
+    </footer>
+  </main>
+
+
+<script>
+(function(){
+  const AUDIO_DIR = "第1周/audio/";
+  const TOTAL = 26;
+  let current = 0;
+  let playing = false;
+  let rate = 1.0;
+  let loopMode = false;
+  const audio = new Audio();
+  const $ = id => document.getElementById(id);
+
+  function playSentence(idx){
+    if (idx < 0 || idx >= TOTAL) return;
+    current = idx;
+    playing = true;
+    updateUI();
+    const s = document.querySelector('.sentence[data-idx="' + idx + '"]');
+    audio.src = AUDIO_DIR + (s ? s.dataset.audio : 'p1_s1.mp3');
+    audio.playbackRate = rate;
+    audio.currentTime = 0;
+    audio.play().then(() => { playing = true; updateUI(); })
+      .catch(e => { console.error('播放失败:', e); });
+  }
+
+  function togglePlay(){
+    if (playing){ audio.pause(); playing=false; updateUI(); }
+    else if (!audio.src) playSentence(current);
+    else { audio.play().then(()=>{playing=true;updateUI();}); }
+  }
+  function nextSentence(){
+    if (current+1 < TOTAL) playSentence(current+1);
+    else if (loopMode) playSentence(0);
+    else { audio.pause(); playing=false; updateUI(); }
+  }
+  function prevSentence(){ if (current>0) playSentence(current-1); }
+
+  function sentenceInSec(el){
+    const sec = el.closest('section');
+    const all = sec.querySelectorAll('.sentence');
+    for (let i=0;i<all.length;i++) if (all[i]===el) return i+1;
+    return 1;
+  }
+
+  function updateUI(){
+    $('btn-play').textContent = playing ? '⏸' : '▶';
+    document.querySelectorAll('.sentence').forEach(el=>{
+      el.classList.toggle('playing', parseInt(el.dataset.idx)===current);
+    });
+    const s = document.querySelector('.sentence[data-idx="'+current+'"]');
+    if (s){
+      const sec = s.closest('section');
+      const st = sec ? sec.querySelector('.section-title').textContent : '';
+      const n = sentenceInSec(s);
+      $('sentence-status').textContent = (playing?'播放中':'暂停')+' ｜ '+st+' 第'+n+'句';
+      const rect = s.getBoundingClientRect();
+      const bar = $('player-bar').getBoundingClientRect();
+      if (rect.top < bar.bottom || rect.bottom > window.innerHeight){
+        s.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    }
+  }
+
+  audio.addEventListener('ended', nextSentence);
+  audio.addEventListener('timeupdate', ()=>{
+    if (audio.duration){
+      const pct = audio.currentTime/audio.duration*100;
+      $('progress-fill').style.width = pct+'%';
+      $('progress-knob').style.left = pct+'%';
+    }
+  });
+  $('progress').addEventListener('click', e=>{
+    if (!audio.duration) return;
+    const r = $('progress').getBoundingClientRect();
+    audio.currentTime = (e.clientX-r.left)/r.width*audio.duration;
+  });
+  $('rate-group').addEventListener('click', e=>{
+    const b = e.target.closest('.rate-btn'); if(!b) return;
+    rate = parseFloat(b.dataset.rate);
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(x=>x.classList.toggle('active', x===b));
+  });
+  $('btn-mode').addEventListener('click', ()=>{
+    loopMode = !loopMode;
+    $('btn-mode').textContent = '循环: '+(loopMode?'开':'关');
+    $('btn-mode').classList.toggle('active', loopMode);
+  });
+  $('btn-play').addEventListener('click', togglePlay);
+  $('btn-next').addEventListener('click', nextSentence);
+  $('btn-prev').addEventListener('click', prevSentence);
+
+  document.querySelectorAll('.sentence').forEach(el=>{
+    el.addEventListener('click', ()=>playSentence(parseInt(el.dataset.idx)));
+  });
+
+  document.addEventListener('keydown', e=>{
+    if (e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+    switch(e.code){
+      case 'Space': e.preventDefault(); togglePlay(); break;
+      case 'ArrowRight': nextSentence(); break;
+      case 'ArrowLeft': prevSentence(); break;
+      case 'ArrowUp': e.preventDefault(); setRate(Math.min(1.5, rate+0.25)); break;
+      case 'ArrowDown': e.preventDefault(); setRate(Math.max(0.5, rate-0.25)); break;
+    }
+  });
+  function setRate(r){
+    rate = Math.round(r*100)/100;
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(b=>{
+      b.classList.toggle('active', parseFloat(b.dataset.rate)===rate);
+    });
+  }
+  audio.preload = 'auto';
+  window.__reader = { getAudio: () => audio, getState: () => ({current, playing, rate, loopMode}) };
+})();
+</script>
+
+</body>
+</html>

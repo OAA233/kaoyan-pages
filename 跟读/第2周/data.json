@@ -1,0 +1,276 @@
+{
+  "title": "第2周 每周自测2",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "日本商工会議所の小林健会頭は15日、東京都内で開いた夏季政策懇談会後に記者会見し、2026年度の最低賃金をめぐる議論が本格化したことを受け「企業の支払い能力が大事だ」と強調した。",
+      "jp_html": "日本商工会議所の<ruby>小林健<rt>こばやしけん</rt></ruby><ruby>会頭<rt>かいとう</rt></ruby>は15<ruby>日<rt>にち</rt></ruby>、<ruby>東京都内<rt>とうきょうとない</rt></ruby>で<ruby>開<rt>ひら</rt></ruby>いた<ruby>夏季政策懇談会<rt>かきせいさくこんだんかい</rt></ruby>後に<ruby>記者会見<rt>きしゃかいけん</rt></ruby>し、2026<ruby>年度<rt>ねんど</rt></ruby>の<ruby>最低賃金<rt>さいていちんぎん</rt></ruby>をめぐる<ruby>議論<rt>ぎろん</rt></ruby>が<ruby>本格化<rt>ほんかくか</rt></ruby>したことを<ruby>受<rt>う</rt></ruby>け「<ruby>企業<rt>きぎょう</rt></ruby>の<ruby>支払<rt>しはら</rt></ruby>い<ruby>能力<rt>のうりょく</rt></ruby>が<ruby>大事<rt>だいじ</rt></ruby>だ」と<ruby>強調<rt>きょうちょう</rt></ruby>した。",
+      "zh": "\n            日本商工会议所会长小林健15日，在东京都内开办的夏季政策座谈会后举行记者会，随着围绕2026年度最低工资讨论的全面展开，他强调：“企业的支付能力是很重要的。”\n          ",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "韓国の2027年の最低賃金が、時給1万700ウォン（約1180円）に決まった。",
+      "jp_html": "<ruby>韓国<rt>かんこく</rt></ruby>の2027<ruby>年<rt>ねん</rt></ruby>の<ruby>最低賃金<rt>さいていちんぎん</rt></ruby>が、<ruby>時給<rt>じきゅう</rt></ruby>1<ruby>万<rt>まん</rt></ruby>700<ruby>ウォン<rt>ウォン</rt></ruby>（<ruby>約<rt>やく</rt></ruby>1180<ruby>円<rt>えん</rt></ruby>）に<ruby>決<rt>き</rt></ruby>まった。",
+      "zh": "\n            韩国2027年的最低工资，确定为每小时1万700韩元（约合1180日元）。（略）每周工作40小时，并计入带薪周休时间，每月按209小时计算的话，月工资将达到223万6300韩元（约合24万6000日元），比2026年增加7万9420韩元（约合8700日元）。\n          ",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "（中略）週40時間勤務で有給の週休時間を含む月209時間労働の場合、月額は223万6300ウォン（約24万6000円）となり、2026年より7万9420ウォン（約8700円）増える。",
+      "jp_html": "（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>週<rt>しゅう</rt></ruby>40<ruby>時間勤務<rt>じかんきんむ</rt></ruby>で<ruby>有給<rt>ゆうきゅう</rt></ruby>の<ruby>週休時間<rt>しゅうきゅうじかん</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む<ruby>月<rt>つき</rt></ruby>209<ruby>時間労働<rt>じかんろうどう</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>、<ruby>月額<rt>がつがく</rt></ruby>は223<ruby>万<rt>まん</rt></ruby>6300<ruby>ウォン<rt>ウォン</rt></ruby>（<ruby>約<rt>やく</rt></ruby>24<ruby>万<rt>まん</rt></ruby>6000<ruby>円<rt>えん</rt></ruby>）となり、2026<ruby>年<rt>ねん</rt></ruby>より7<ruby>万<rt>まん</rt></ruby>9420<ruby>ウォン<rt>ウォン</rt></ruby>（<ruby>約<rt>やく</rt></ruby>8700<ruby>円<rt>えん</rt></ruby>）<ruby>増<rt>ふ</rt></ruby>える。",
+      "zh": "\n            韩国2027年的最低工资，确定为每小时1万700韩元（约合1180日元）。（略）每周工作40小时，并计入带薪周休时间，每月按209小时计算的话，月工资将达到223万6300韩元（约合24万6000日元），比2026年增加7万9420韩元（约合8700日元）。\n          ",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "記録的な猛暑が続くヨーロッパで山火事が相次ぎ、甚大な被害が出ています。",
+      "jp_html": "<ruby>記録的<rt>きろくてき</rt></ruby>な<ruby>猛暑<rt>もうしょ</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>くヨーロッパで<ruby>山火事<rt>やまかじ</rt></ruby>が<ruby>相次<rt>あいつ</rt></ruby>ぎ、<ruby>甚大<rt>じんだい</rt></ruby>な<ruby>被害<rt>ひがい</rt></ruby>が出ています。",
+      "zh": "\n            在持续创纪录高温的欧洲接连发生森林火灾，造成了严重损失。在西班牙东北部，3日发生的森林火灾在强风助长下，截至目前已有1200公顷土地被烧毁。（略）此外，葡萄牙也发生了大规模森林火灾。\n          ",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "スペイン北東部では3日に発生した山火事が強風にあおられこれまでに1200ヘクタールが焼失しました。",
+      "jp_html": "スペイン<ruby>北東部<rt>ほくとうぶ</rt></ruby>では3<ruby>日<rt>にち</rt></ruby>に<ruby>発生<rt>はっせい</rt></ruby>した<ruby>山火事<rt>やまかじ</rt></ruby>が<ruby>強風<rt>きょうふう</rt></ruby>にあおられこれまでに1200ヘクタールが<ruby>焼失<rt>しょうしつ</rt></ruby>しました。",
+      "zh": "\n            在持续创纪录高温的欧洲接连发生森林火灾，造成了严重损失。在西班牙东北部，3日发生的森林火灾在强风助长下，截至目前已有1200公顷土地被烧毁。（略）此外，葡萄牙也发生了大规模森林火灾。\n          ",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "（中略）また、ポルトガルでも大規模な山火事が発生しています。",
+      "jp_html": "（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）また、ポルトガルでも<ruby>大規模<rt>だいきぼ</rt></ruby>な<ruby>山火事<rt>やまかじ</rt></ruby>が<ruby>発生<rt>はっせい</rt></ruby>しています。",
+      "zh": "\n            在持续创纪录高温的欧洲接连发生森林火灾，造成了严重损失。在西班牙东北部，3日发生的森林火灾在强风助长下，截至目前已有1200公顷土地被烧毁。（略）此外，葡萄牙也发生了大规模森林火灾。\n          ",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "シリアの国営メディアによりますと、首都ダマスカスの中心部で7日、少なくとも2回の爆発がありました。",
+      "jp_html": "シリアの<ruby>国営<rt>こくえい</rt></ruby>メディアによりますと、<ruby>首都<rt>しゅと</rt></ruby>ダマスカスの<ruby>中心部<rt>ちゅうしんぶ</rt></ruby>で7<ruby>日<rt>にち</rt></ruby>、<ruby>少<rt>すく</rt></ruby>なくとも2<ruby>回<rt>かい</rt></ruby>の<ruby>爆発<rt>ばくはつ</rt></ruby>がありました。",
+      "zh": "\n            据叙利亚官方媒体报道，首都大马士革市中心7日至少发生了两起爆炸事件。据称，两起爆炸均发生在法国总统马克龙下榻的酒店附近，爆炸物分别被放置在路边的汽车内和垃圾桶中。此次爆炸造成包括4名警察在内的18人受伤。\n          ",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "いずれもマクロン大統領が宿泊するホテルの近くで、爆発物は道路脇の車とごみ箱の中に設置されていたということです。",
+      "jp_html": "いずれもマクロン<ruby>大統領<rt>だいとうりょう</rt></ruby>が<ruby>宿泊<rt>しゅくはく</rt></ruby>するホテルの<ruby>近<rt>ちか</rt></ruby>くで、<ruby>爆発物<rt>ばくはつぶつ</rt></ruby>は<ruby>道路脇<rt>どうろわき</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>とごみ<ruby>箱<rt>ばこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>設置<rt>せっち</rt></ruby>されていたということです。",
+      "zh": "\n            据叙利亚官方媒体报道，首都大马士革市中心7日至少发生了两起爆炸事件。据称，两起爆炸均发生在法国总统马克龙下榻的酒店附近，爆炸物分别被放置在路边的汽车内和垃圾桶中。此次爆炸造成包括4名警察在内的18人受伤。\n          ",
+      "audio_file": "audio/p4_s2.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 3,
+      "sentence_id": "p4_s3",
+      "jp_plain": "この爆発で警察官4人を含む18人がけがをしました。",
+      "jp_html": "この<ruby>爆発<rt>ばくはつ</rt></ruby>で<ruby>警察官<rt>けいさつかん</rt></ruby>4<ruby>人<rt>にん</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>む18<ruby>人<rt>にん</rt></ruby>がけがをしました。",
+      "zh": "\n            据叙利亚官方媒体报道，首都大马士革市中心7日至少发生了两起爆炸事件。据称，两起爆炸均发生在法国总统马克龙下榻的酒店附近，爆炸物分别被放置在路边的汽车内和垃圾桶中。此次爆炸造成包括4名警察在内的18人受伤。\n          ",
+      "audio_file": "audio/p4_s3.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 1,
+      "sentence_id": "p5_s1",
+      "jp_plain": "人生はチャンスだ。",
+      "jp_html": "<ruby>人生<rt>じんせい</rt></ruby>はチャンスだ。",
+      "zh": "\n            人生是机遇，结婚也是机遇，恋爱也是机遇。许多饱经世故、历尽艰辛的人，摆出一副看透人生的样子去这样教导着别人。然而，我却并不这么认为。我并不是想刻意迎合所谓的唯物辩证法，但至少，我认为恋爱并不是机遇。我认为，恋爱是意志。\n          ",
+      "audio_file": "audio/p5_s1.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 2,
+      "sentence_id": "p5_s2",
+      "jp_plain": "結婚もチャンスだ。",
+      "jp_html": "<ruby>結婚<rt>けっこん</rt></ruby>もチャンスだ。",
+      "zh": "\n            人生是机遇，结婚也是机遇，恋爱也是机遇。许多饱经世故、历尽艰辛的人，摆出一副看透人生的样子去这样教导着别人。然而，我却并不这么认为。我并不是想刻意迎合所谓的唯物辩证法，但至少，我认为恋爱并不是机遇。我认为，恋爱是意志。\n          ",
+      "audio_file": "audio/p5_s2.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 3,
+      "sentence_id": "p5_s3",
+      "jp_plain": "恋愛もチャンスだ。",
+      "jp_html": "<ruby>恋愛<rt>れんあい</rt></ruby>もチャンスだ。",
+      "zh": "\n            人生是机遇，结婚也是机遇，恋爱也是机遇。许多饱经世故、历尽艰辛的人，摆出一副看透人生的样子去这样教导着别人。然而，我却并不这么认为。我并不是想刻意迎合所谓的唯物辩证法，但至少，我认为恋爱并不是机遇。我认为，恋爱是意志。\n          ",
+      "audio_file": "audio/p5_s3.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 4,
+      "sentence_id": "p5_s4",
+      "jp_plain": "と、したり顔して教える苦労人が多いけれども、私は、そうでないと思う。",
+      "jp_html": "と、したり<ruby>顔<rt>がお</rt></ruby>して<ruby>教<rt>おし</rt></ruby>える<ruby>苦労人<rt>くろうにん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いけれども、<ruby>私<rt>わたし</rt></ruby>は、そうでないと<ruby>思<rt>おも</rt></ruby>う。",
+      "zh": "\n            人生是机遇，结婚也是机遇，恋爱也是机遇。许多饱经世故、历尽艰辛的人，摆出一副看透人生的样子去这样教导着别人。然而，我却并不这么认为。我并不是想刻意迎合所谓的唯物辩证法，但至少，我认为恋爱并不是机遇。我认为，恋爱是意志。\n          ",
+      "audio_file": "audio/p5_s4.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 5,
+      "sentence_id": "p5_s5",
+      "jp_plain": "私は別段、れいの唯物論的弁証法に媚こびるわけではないが、少くとも恋愛は、チャンスでないと思う。",
+      "jp_html": "<ruby>私<rt>わたし</rt></ruby>は<ruby>別段<rt>べつだん</rt></ruby>、れいの<ruby>唯物論的弁証法<rt>ゆいぶつろんてきべんしょうほう</rt></ruby>に<ruby>媚<rt>こ</rt></ruby>こびるわけではないが、<ruby>少<rt>すく</rt></ruby>くとも<ruby>恋愛<rt>れんあい</rt></ruby>は、チャンスでないと<ruby>思<rt>おも</rt></ruby>う。",
+      "zh": "\n            人生是机遇，结婚也是机遇，恋爱也是机遇。许多饱经世故、历尽艰辛的人，摆出一副看透人生的样子去这样教导着别人。然而，我却并不这么认为。我并不是想刻意迎合所谓的唯物辩证法，但至少，我认为恋爱并不是机遇。我认为，恋爱是意志。\n          ",
+      "audio_file": "audio/p5_s5.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 6,
+      "sentence_id": "p5_s6",
+      "jp_plain": "私はそれを、意志だと思う。",
+      "jp_html": "<ruby>私<rt>わたし</rt></ruby>はそれを、<ruby>意志<rt>いし</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>う。",
+      "zh": "\n            人生是机遇，结婚也是机遇，恋爱也是机遇。许多饱经世故、历尽艰辛的人，摆出一副看透人生的样子去这样教导着别人。然而，我却并不这么认为。我并不是想刻意迎合所谓的唯物辩证法，但至少，我认为恋爱并不是机遇。我认为，恋爱是意志。\n          ",
+      "audio_file": "audio/p5_s6.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 1,
+      "sentence_id": "p6_s1",
+      "jp_plain": "ワールドカップは、決してゴールや勝敗だけの大会ではない。",
+      "jp_html": "ワールドカップは、<ruby>決<rt>けっ</rt></ruby>してゴールや<ruby>勝敗<rt>しょうはい</rt></ruby>だけの<ruby>大会<rt>たいかい</rt></ruby>ではない。",
+      "zh": "\n            世界杯从来不只是关于进球与胜负。自1930年乌拉圭蒙得维的亚的泥泞赛场起，这项赛事便与权力、政治、资本和民族认同等复杂因素纠缠不清，（略）更是一部由权力与荣耀交织而成的复杂历史。\n          ",
+      "audio_file": "audio/p6_s1.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 2,
+      "sentence_id": "p6_s2",
+      "jp_plain": "1930年、ウルグアイ・モンテビデオのぬかるんだ競技場で開催されて以来、この大会は権力、政治、資本、そして民族的アイデンティティといった複雑な要素と深く絡み合ってきた。",
+      "jp_html": "1930<ruby>年<rt>ねん</rt></ruby>、ウルグアイ・モンテビデオのぬかるんだ<ruby>競技場<rt>きょうぎじょう</rt></ruby>で<ruby>開催<rt>かいさい</rt></ruby>されて<ruby>以来<rt>いらい</rt></ruby>、この<ruby>大会<rt>たいかい</rt></ruby>は<ruby>権力<rt>けんりょく</rt></ruby>、<ruby>政治<rt>せいじ</rt></ruby>、<ruby>資本<rt>しほん</rt></ruby>、そして<ruby>民族的<rt>みんぞくてき</rt></ruby>アイデンティティといった<ruby>複雑<rt>ふくざつ</rt></ruby>な<ruby>要素<rt>ようそ</rt></ruby>と<ruby>深<rt>ふか</rt></ruby>く<ruby>絡<rt>から</rt></ruby>み<ruby>合<rt>あ</rt></ruby>ってきた。",
+      "zh": "\n            世界杯从来不只是关于进球与胜负。自1930年乌拉圭蒙得维的亚的泥泞赛场起，这项赛事便与权力、政治、资本和民族认同等复杂因素纠缠不清，（略）更是一部由权力与荣耀交织而成的复杂历史。\n          ",
+      "audio_file": "audio/p6_s2.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 3,
+      "sentence_id": "p6_s3",
+      "jp_plain": "（中略）ワールドカップは、権力と栄光が織り成す複雑な歴史でもある。",
+      "jp_html": "（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）ワールドカップは、<ruby>権力<rt>けんりょく</rt></ruby>と<ruby>栄光<rt>えいこう</rt></ruby>が<ruby>織<rt>お</rt></ruby>り<ruby>成<rt>な</rt></ruby>す<ruby>複雑<rt>ふくざつ</rt></ruby>な<ruby>歴史<rt>れきし</rt></ruby>でもある。",
+      "zh": "\n            世界杯从来不只是关于进球与胜负。自1930年乌拉圭蒙得维的亚的泥泞赛场起，这项赛事便与权力、政治、资本和民族认同等复杂因素纠缠不清，（略）更是一部由权力与荣耀交织而成的复杂历史。\n          ",
+      "audio_file": "audio/p6_s3.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 1,
+      "sentence_id": "p7_s1",
+      "jp_plain": "BBC国際部が行った統計分析によると、グループステージから準々決勝までの100試合を対象に分析した結果、サッカーの統括団体である国際サッカー連盟（FIFA）が導入した物議を醸している「給水タイム（hydration break）」の実施後、試合が中断されたことで、得点数が異常に増加したことが明らかになった。",
+      "jp_html": "BBC<ruby>国際部<rt>こくさいぶ</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>った<ruby>統計分析<rt>とうけいぶんせき</rt></ruby>によると、グループステージから<ruby>準々決勝<rt>じゅんじゅんけっしょう</rt></ruby>までの100<ruby>試合<rt>しあい</rt></ruby>を<ruby>対象<rt>たいしょう</rt></ruby>に<ruby>分析<rt>ぶんせき</rt></ruby>した<ruby>結果<rt>けっか</rt></ruby>、サッカーの<ruby>統括団体<rt>とうかつだんたい</rt></ruby>である<ruby>国際<rt>こくさい</rt></ruby>サッカー<ruby>連盟<rt>れんめい</rt></ruby>（FIFA）が<ruby>導入<rt>どうにゅう</rt></ruby>した<ruby>物議<rt>ぶつぎ</rt></ruby>を<ruby>醸<rt>かも</rt></ruby>している「<ruby>給水<rt>きゅうすい</rt></ruby>タイム（hydration break）」の<ruby>実施後<rt>じっしご</rt></ruby>、<ruby>試合<rt>しあい</rt></ruby>が<ruby>中断<rt>ちゅうだん</rt></ruby>されたことで、<ruby>得点数<rt>とくてんすう</rt></ruby>が<ruby>異常<rt>いじょう</rt></ruby>に<ruby>増加<rt>ぞうか</rt></ruby>したことが<ruby>明<rt>あき</rt></ruby>らかになった。",
+      "zh": "\n            BBC国际部取得的一项统计分析显示，从小组赛到八强赛的100场比赛中，足球管理机构国际足协（FIFA）推行具争议性的“补水暂停”（hydration break）后，导致比赛因中断后，出现异常高的入球数目。\n          ",
+      "audio_file": "audio/p7_s1.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 1,
+      "sentence_id": "p8_s1",
+      "jp_plain": "昨年、我が国における人工知能（AI）関連産業の規模は1兆元を超えた。",
+      "jp_html": "<ruby>昨年<rt>さくねん</rt></ruby>、<ruby>我<rt>わ</rt></ruby>が<ruby>国<rt>くに</rt></ruby>における<ruby>人工知能<rt>じんこうちのう</rt></ruby>（AI）<ruby>関連産業<rt>かんれんさんぎょう</rt></ruby>の<ruby>規模<rt>きぼ</rt></ruby>は1<ruby>兆元<rt>ちょうげん</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えた。",
+      "zh": "\n            去年我国人工智能相关产业规模超万亿，初步预测，今年增速会在30％以上。国家发展改革委布局了30余个国家人工智能应用中试基地，推进央国企开放1000余个应用场景。目前，重点行业的人工智能整体渗透率突破80%。\n          ",
+      "audio_file": "audio/p8_s1.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 2,
+      "sentence_id": "p8_s2",
+      "jp_plain": "今年の成長率が30％を上回ると予測されている。",
+      "jp_html": "<ruby>今年<rt>ことし</rt></ruby>の<ruby>成長率<rt>せいちょうりつ</rt></ruby>が30％を<ruby>上回<rt>うわまわ</rt></ruby>ると<ruby>予測<rt>よそく</rt></ruby>されている。",
+      "zh": "\n            去年我国人工智能相关产业规模超万亿，初步预测，今年增速会在30％以上。国家发展改革委布局了30余个国家人工智能应用中试基地，推进央国企开放1000余个应用场景。目前，重点行业的人工智能整体渗透率突破80%。\n          ",
+      "audio_file": "audio/p8_s2.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 3,
+      "sentence_id": "p8_s3",
+      "jp_plain": "国家発展改革委員会は30か所を超える国家AI応用実証・試験拠点を整備するとともに、中央企業および国有企業に対し、1,000件を超えるAI活用シーンを開放するよう推し進めている。",
+      "jp_html": "<ruby>国家発展改革委員会<rt>こっかはってんかいかくいいんかい</rt></ruby>は30か<ruby>所<rt>しょ</rt></ruby>を<ruby>超<rt>こ</rt></ruby>える<ruby>国家<rt>こっか</rt></ruby>AI<ruby>応用実証<rt>おうようじっしょう</rt></ruby>・<ruby>試験拠点<rt>しけんきょてん</rt></ruby>を<ruby>整備<rt>せいび</rt></ruby>するとともに、<ruby>中央企業<rt>ちゅうおうきぎょう</rt></ruby>および<ruby>国有企業<rt>こくゆうきぎょう</rt></ruby>に<ruby>対<rt>たい</rt></ruby>し、1,000<ruby>件<rt>けん</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えるAI<ruby>活用<rt>かつよう</rt></ruby>シーンを<ruby>開放<rt>かいほう</rt></ruby>するよう<ruby>推<rt>お</rt></ruby>し<ruby>進<rt>すす</rt></ruby>めている。",
+      "zh": "\n            去年我国人工智能相关产业规模超万亿，初步预测，今年增速会在30％以上。国家发展改革委布局了30余个国家人工智能应用中试基地，推进央国企开放1000余个应用场景。目前，重点行业的人工智能整体渗透率突破80%。\n          ",
+      "audio_file": "audio/p8_s3.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 4,
+      "sentence_id": "p8_s4",
+      "jp_plain": "現在、重点業種におけるAIの全体的な導入率は80％を突破している。",
+      "jp_html": "<ruby>現在<rt>げんざい</rt></ruby>、<ruby>重点業種<rt>じゅうてんぎょうしゅ</rt></ruby>におけるAIの<ruby>全体的<rt>ぜんたいてき</rt></ruby>な<ruby>導入率<rt>どうにゅうりつ</rt></ruby>は80％を<ruby>突破<rt>とっぱ</rt></ruby>している。",
+      "zh": "\n            去年我国人工智能相关产业规模超万亿，初步预测，今年增速会在30％以上。国家发展改革委布局了30余个国家人工智能应用中试基地，推进央国企开放1000余个应用场景。目前，重点行业的人工智能整体渗透率突破80%。\n          ",
+      "audio_file": "audio/p8_s4.mp3"
+    },
+    {
+      "section": 9,
+      "sentence_index": 1,
+      "sentence_id": "p9_s1",
+      "jp_plain": "18日、BYDは、パキスタンの首都イスラマバードで、イスラマバード警察署にBYD製の電気自動車25台を引き渡した。",
+      "jp_html": "18<ruby>日<rt>にち</rt></ruby>、BYDは、パキスタンの<ruby>首都<rt>しゅと</rt></ruby>イスラマバードで、イスラマバード<ruby>警察署<rt>けいさつしょ</rt></ruby>にBYD<ruby>製<rt>せい</rt></ruby>の<ruby>電気自動車<rt>でんきじどうしゃ</rt></ruby>25<ruby>台<rt>だい</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>き<ruby>渡<rt>わた</rt></ruby>した。",
+      "zh": "\n            18日，比亚迪在巴基斯坦首都伊斯兰堡向伊斯兰堡警察局交付了25辆比亚迪电动汽车。今年4月以来，伊斯兰堡警察局已向比亚迪下单订购了近100台电动汽车，目前比亚迪已分批次交付了58台，（略）剩余订单预计将于本月底交付完成。\n          ",
+      "audio_file": "audio/p9_s1.mp3"
+    },
+    {
+      "section": 9,
+      "sentence_index": 2,
+      "sentence_id": "p9_s2",
+      "jp_plain": "今年4月以降、イスラマバード警察署はBYDに対し、100台近くの電気自動車を発注しており、これまでに58台が段階的に納車された。",
+      "jp_html": "<ruby>今年<rt>ことし</rt></ruby>4<ruby>月<rt>がつ</rt></ruby><ruby>以降<rt>いこう</rt></ruby>、イスラマバード<ruby>警察署<rt>けいさつしょ</rt></ruby>はBYDに<ruby>対<rt>たい</rt></ruby>し、100<ruby>台<rt>だい</rt></ruby><ruby>近<rt>ちか</rt></ruby>くの<ruby>電気自動車<rt>でんきじどうしゃ</rt></ruby>を<ruby>発注<rt>はっちゅう</rt></ruby>しており、これまでに58<ruby>台<rt>だい</rt></ruby>が<ruby>段階的<rt>だんかいてき</rt></ruby>に<ruby>納車<rt>のうしゃ</rt></ruby>された。",
+      "zh": "\n            18日，比亚迪在巴基斯坦首都伊斯兰堡向伊斯兰堡警察局交付了25辆比亚迪电动汽车。今年4月以来，伊斯兰堡警察局已向比亚迪下单订购了近100台电动汽车，目前比亚迪已分批次交付了58台，（略）剩余订单预计将于本月底交付完成。\n          ",
+      "audio_file": "audio/p9_s2.mp3"
+    },
+    {
+      "section": 9,
+      "sentence_index": 3,
+      "sentence_id": "p9_s3",
+      "jp_plain": "（中略）残りの受注については、今月末までに納車が完了する見込みである。",
+      "jp_html": "（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>残<rt>のこ</rt></ruby>りの<ruby>受注<rt>じゅちゅう</rt></ruby>については、<ruby>今月末<rt>こんげつまつ</rt></ruby>までに<ruby>納車<rt>のうしゃ</rt></ruby>が<ruby>完了<rt>かんりょう</rt></ruby>する<ruby>見込<rt>みこ</rt></ruby>みである。",
+      "zh": "\n            18日，比亚迪在巴基斯坦首都伊斯兰堡向伊斯兰堡警察局交付了25辆比亚迪电动汽车。今年4月以来，伊斯兰堡警察局已向比亚迪下单订购了近100台电动汽车，目前比亚迪已分批次交付了58台，（略）剩余订单预计将于本月底交付完成。\n          ",
+      "audio_file": "audio/p9_s3.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 1,
+      "sentence_id": "p10_s1",
+      "jp_plain": "およそ7世紀頃、頭に白い布を巻いたアラブ商人たちが東方の唐へとやって来た。",
+      "jp_html": "およそ7<ruby>世紀<rt>せいき</rt></ruby><ruby>頃<rt>ころ</rt></ruby>、<ruby>頭<rt>あたま</rt></ruby>に<ruby>白<rt>しろ</rt></ruby>い<ruby>布<rt>ぬの</rt></ruby>を<ruby>巻<rt>ま</rt></ruby>いたアラブ<ruby>商人<rt>しょうにん</rt></ruby>たちが<ruby>東方<rt>とうほう</rt></ruby>の<ruby>唐<rt>とう</rt></ruby>へとやって<ruby>来<rt>き</rt></ruby>た。",
+      "zh": "\n            大约远在公元7世纪，一些头上缠着白布的阿拉伯商人来到了东土大唐，他们习惯了神州大地的水土，在这里娶妻生子，留下来了。1219年成吉思汗率兵西征，1258年旭烈兀攻陷巴格达，葱岭以西、黑海以东，信仰伊斯兰教的各民族的土地被蒙古贵族陆续占领，征服者强迫被征服者大批迁徙到东方。\n          ",
+      "audio_file": "audio/p10_s1.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 2,
+      "sentence_id": "p10_s2",
+      "jp_plain": "彼らは中国の風土や生活に馴染み、この地で妻を迎えて子どもをもうけ、そのまま定住した。",
+      "jp_html": "彼らは<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>風土<rt>ふうど</rt></ruby>や<ruby>生活<rt>せいかつ</rt></ruby>に<ruby>馴染<rt>なじ</rt></ruby>み、この<ruby>地<rt>ち</rt></ruby>で<ruby>妻<rt>つま</rt></ruby>を<ruby>迎<rt>むか</rt></ruby>えて子どもをもうけ、そのまま<ruby>定住<rt>ていじゅう</rt></ruby>した。",
+      "zh": "\n            大约远在公元7世纪，一些头上缠着白布的阿拉伯商人来到了东土大唐，他们习惯了神州大地的水土，在这里娶妻生子，留下来了。1219年成吉思汗率兵西征，1258年旭烈兀攻陷巴格达，葱岭以西、黑海以东，信仰伊斯兰教的各民族的土地被蒙古贵族陆续占领，征服者强迫被征服者大批迁徙到东方。\n          ",
+      "audio_file": "audio/p10_s2.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 3,
+      "sentence_id": "p10_s3",
+      "jp_plain": "1219年、チンギス・ハーンが軍を率いて西征し、1258年、フレグがバグダードを攻略した。",
+      "jp_html": "1219<ruby>年<rt>ねん</rt></ruby>、チンギス・ハーンが<ruby>軍<rt>ぐん</rt></ruby>を<ruby>率<rt>ひき</rt></ruby>いて<ruby>西征<rt>せいせい</rt></ruby>し、1258<ruby>年<rt>ねん</rt></ruby>、フレグがバグダードを<ruby>攻略<rt>こうりゃく</rt></ruby>した。",
+      "zh": "\n            大约远在公元7世纪，一些头上缠着白布的阿拉伯商人来到了东土大唐，他们习惯了神州大地的水土，在这里娶妻生子，留下来了。1219年成吉思汗率兵西征，1258年旭烈兀攻陷巴格达，葱岭以西、黑海以东，信仰伊斯兰教的各民族的土地被蒙古贵族陆续占领，征服者强迫被征服者大批迁徙到东方。\n          ",
+      "audio_file": "audio/p10_s3.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 4,
+      "sentence_id": "p10_s4",
+      "jp_plain": "パミール高原の西から黒海の東に至るまで、イスラム教を信仰する諸民族の居住地は相次いでモンゴル貴族の支配下に置かれ、征服者は被征服民を大規模に東の方へ移住させた。",
+      "jp_html": "パミール<ruby>高原<rt>こうげん</rt></ruby>の<ruby>西<rt>にし</rt></ruby>から<ruby>黒海<rt>こっかい</rt></ruby>の<ruby>東<rt>ひがし</rt></ruby>に<ruby>至<rt>いた</rt></ruby>るまで、イスラム<ruby>教<rt>きょう</rt></ruby>を<ruby>信仰<rt>しんこう</rt></ruby>する<ruby>諸民族<rt>しょみんぞく</rt></ruby>の<ruby>居住地<rt>きょじゅうち</rt></ruby>は<ruby>相次<rt>あいつ</rt></ruby>いでモンゴル<ruby>貴族<rt>きぞく</rt></ruby>の<ruby>支配下<rt>しはいか</rt></ruby>に<ruby>置<rt>お</rt></ruby>かれ、<ruby>征服者<rt>せいふくしゃ</rt></ruby>は<ruby>被征服民<rt>ひせいふくみん</rt></ruby>を<ruby>大規模<rt>だいきぼ</rt></ruby>に<ruby>東<rt>ひがし</rt></ruby>の方へ<ruby>移住<rt>いじゅう</rt></ruby>させた。",
+      "zh": "\n            大约远在公元7世纪，一些头上缠着白布的阿拉伯商人来到了东土大唐，他们习惯了神州大地的水土，在这里娶妻生子，留下来了。1219年成吉思汗率兵西征，1258年旭烈兀攻陷巴格达，葱岭以西、黑海以东，信仰伊斯兰教的各民族的土地被蒙古贵族陆续占领，征服者强迫被征服者大批迁徙到东方。\n          ",
+      "audio_file": "audio/p10_s4.mp3"
+    }
+  ]
+}

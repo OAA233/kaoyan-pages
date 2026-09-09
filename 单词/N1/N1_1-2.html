@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新完全掌握 1-2 人間関係・付き合い</title>
+<style>
+  body {
+    --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
+    --num: #8b8577; --num-border: #5a564d; --muted: .55;
+    font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans CJK JP", "PingFang SC", sans-serif;
+    background: var(--bg); color: var(--fg);
+    margin: 0; padding: 14px 16px; max-width: 1080px;
+    transition: background .2s, color .2s;
+  }
+  body.day {
+    --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8;
+    --num: #8a8373; --num-border: #c4bda9; --muted: .6;
+  }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
+  #themeBtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px;
+  }
+  #themeBtn:hover { opacity: .8; }
+  .stats { display: inline-flex; gap: 8px; font-size: 12px; opacity: .7; }
+  .sec { font-size: 13px; font-weight: 700; opacity: .5; margin: 14px 0 6px; letter-spacing: .05em; grid-column: 1 / -1; }
+  #list { }  .row2 { display: flex; gap: 10px; align-items: flex-start; }  .col2 { flex: 1; min-width: 0; }
+  .card {
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 9px 12px; background: var(--card);
+    border-left: 5px solid #555;
+  }
+  .card.cV { border-left-color: #e5484d; }
+  .card.cI { border-left-color: #d63384; }
+  .card.cNA { border-left-color: #7048e8; }
+  .card.cN { border-left-color: #1971c2; }
+  .card.cadv { border-left-color: #2b8a3e; }
+  .card.cIDM { border-left-color: #b08a3e; }
+  .card.cANT { border-left-color: var(--num-border); }
+  .row1 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .num {
+    font-size: 11px; font-weight: 700; color: var(--num);
+    border: 1.5px solid var(--num-border); border-radius: 50%;
+    width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: center;
+  }
+  .word { font-size: 19px; font-weight: 700; cursor: pointer; }
+  ruby.word { ruby-align: center; }
+  ruby.word rt { font-size: 10px; font-weight: 500; opacity: .55; letter-spacing: .02em; }
+  ruby.word rt.en { font-style: italic; opacity: .5; }
+  .word:hover { text-decoration: underline; }
+  .pos { font-size: 11px; font-weight: 700; padding: 2px 6px; white-space: nowrap; border-radius: 7px; color: #fff; }
+  .pos.V { background: #e5484d; }
+  .pos.I { background: #d63384; }
+  .pos.NA { background: #7048e8; }
+  .pos.N { background: #1971c2; }
+  .pos.adv { background: #2b8a3e; }
+  .pos.IDM { background: #b08a3e; }
+  .mean { margin-top: 1px; font-size: 13px; margin-left: 32px; }
+  .phrase { margin-top: 6px; font-size: 13px; margin-left: 32px; }
+  .phrase .jp { font-weight: 600; cursor: pointer; }
+  .phrase .jp:hover { text-decoration: underline; }
+  .phrase .zh { display: block; opacity: var(--muted); margin: 1px 0 0; }
+  /* antonym pair: left/right side by side, arrow between */
+  .entry { margin-bottom: 5px; }
+  .entry:last-child { margin-bottom: 0; }
+  .bra { display: flex; gap: 12px; }
+  .bra .half { flex: 1; min-width: 0; }
+  .bra .vs { width: 0; border-left: 2px solid var(--num-border); flex-shrink: 0; margin: 2px 0; }
+  .bra .vs2 { align-self: center; width: 14px; border-top: 2px solid var(--num-border); flex-shrink: 0; }
+  .side { flex: 1; min-width: 0; }
+  .side .entry { margin-bottom: 3px; }
+  .side .entry:last-child { margin-bottom: 0; }
+  @media (max-width: 760px) { #list { grid-template-columns: 1fr; } }
+
+  /* ---- edit mode ---- */
+  .hbtn { border: 1px solid var(--num-border); background: var(--card); color: var(--fg); border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; }
+  .hbtn:hover { border-color: #4cc2ff; }
+  .hide { display: none !important; }
+  .sec-h { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin: 16px 0 6px; grid-column: 1 / -1; }
+  .sec-title { font-size: 13px; font-weight: 700; opacity: .55; letter-spacing: .05em; }
+  .addbtns { display: inline-flex; gap: 6px; }
+  .addbtns button { border: 1px solid var(--num-border); background: var(--card); color: var(--fg); border-radius: 7px; padding: 2px 8px; font-size: 11px; cursor: pointer; opacity: .75; }
+  .addbtns button:hover { border-color: #4cc2ff; opacity: 1; }
+  body.editing .card { cursor: grab; }
+  body.editing .entry { cursor: grab; position: relative; }
+  .dragging { opacity: .35 !important; }
+  .item.ins-top { box-shadow: 0 -3px 0 #4cc2ff; }
+  .item.ins-bot { box-shadow: 0 3px 0 #4cc2ff; }
+  .half.over { outline: 2px dashed #4cc2ff; outline-offset: 3px; border-radius: 8px; }
+  .edf:focus { outline: 1px dashed #4cc2ff; background: rgba(76,194,255,.08); border-radius: 4px; }
+  .edf.empty:empty::before { content: attr(data-ph); opacity: .35; }
+  .edk { font-size: 12px; opacity: .65; min-width: 20px; }
+  .ede { font-size: 11px; font-style: italic; opacity: .5; min-width: 20px; }
+  .edmean { font-size: 13px; }
+  .edph { font-size: 13px; font-weight: 600; }
+  .edphz { display: block; font-size: 12px; opacity: .6; font-weight: 400; }
+  .sp { position: absolute; top: 2px; right: 24px; opacity: .3; cursor: pointer; font-size: 12px; user-select: none; z-index: 5; }
+  .sp:hover { opacity: 1; color: #4cc2ff; }
+  .x { position: absolute; top: 2px; right: 6px; opacity: .3; cursor: pointer; font-size: 12px; user-select: none; z-index: 5; }
+  .x:hover { opacity: 1; color: #e5484d; }
+  .note { border-left: 3px solid var(--num-border); background: rgba(128,128,128,.08); border-radius: 6px; padding: 6px 10px; font-size: 13px; position: relative; }
+  .gx { position: absolute; top: 3px; right: 6px; opacity: .3; cursor: pointer; font-size: 12px; z-index: 5; }
+  .gx:hover { opacity: 1; color: #e5484d; }
+  .sec-items { display: block; }
+
+  /* ---- 听写模式 ---- */
+  #dict { position: fixed; inset: 0; background: var(--bg); z-index: 500; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  #dict.open { display: flex; }
+  #dictBig { font-size: 20px; padding: 16px 30px; border-radius: 16px; border: 1px solid var(--num-border); background: var(--card); color: var(--fg); cursor: pointer; }
+  #dictAns { min-height: 130px; transition: opacity .2s; }
+  #dictAns.hidden { opacity: 0; pointer-events: none; user-select: none; }
+  .dword { font-size: 30px; font-weight: 800; }
+  .dpos { opacity: .5; font-size: 12px; }
+  .dmean { font-size: 16px; margin-top: 4px; }
+  .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
+  .dphz { opacity: .6; font-size: 13px; }
+  .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+/* ---- 悬浮编辑工具条 ---- */
+  #ftool { position: fixed; right: 18px; bottom: 18px; z-index: 600; display: none; flex-direction: column; gap: 6px; background: var(--card); border: 1px solid var(--accent); border-radius: 14px; padding: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.35); }
+  #ftool.open { display: flex; }
+  #ftool .ft-tip { font-size: 10px; opacity: .5; text-align: center; margin-bottom: 2px; }
+  #ftool button { border: 1px solid var(--num-border); background: var(--bg); color: var(--fg); border-radius: 8px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
+  #ftool button:hover { border-color: var(--accent); color: var(--accent); }
+  .drag-handle { cursor: grab; opacity: .4; font-size: 14px; user-select: none; }
+  .drag-handle:hover { opacity: 1; color: var(--accent); }
+  </style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>1-2 人間関係・付き合い</h1>
+    <p>第2课 人間② 人間関係・付き合い（书内 p.6–7）<span class="stats">共 <b id="count"></b> 词 · 点击日文发音（edge 女声）</span></p>
+  </div>
+  <button id="editBtn" class="hbtn" onclick="toggleEdit()">✏️ 编辑</button>
+  <button id="expBtn" class="hbtn hide" onclick="exportData()">⬇ 导出</button>
+  <button id="rstBtn" class="hbtn hide" onclick="resetAll()">↺ 重置</button>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
+  <button id="themeBtn" onclick="toggleTheme()">🌙 夜间</button>
+</header>
+<div id="list"></div>
+
+<script>
+// DATA: id=固定编号(音频按id播放,拖动排序不变) s=节 w=词 k=注音 en=片假名英语原型
+// m=释义 p=词性 ph/phz=例句/中译 role: ant=竖线组(反义) syn=横杠组(同类) ''=独立
+// side: L/R 组内左右; g=组号(同节同组连续渲染); kind:'note'=自由文本
+let DATA = [{"id": 1, "aid": 1, "asfx": "", "s": "一", "w": "肉親", "k": "にくしん", "en": "", "m": "骨肉至亲", "p": "N", "ph": "肉親の情", "phz": "骨肉之情", "role": "", "side": "", "g": 0}, {"id": 2, "aid": 2, "asfx": "", "s": "一", "w": "親族", "k": "しんぞく", "en": "", "m": "亲属", "p": "N", "ph": "親族が集まる", "phz": "亲属聚在一起", "role": "", "side": "", "g": 0}, {"id": 3, "aid": 3, "asfx": "", "s": "一", "w": "おやじ", "k": "おやじ", "en": "", "m": "老爸（口语）", "p": "N", "ph": "おやじとお袋", "phz": "老爸和老妈", "role": "ant", "side": "L", "g": 1}, {"id": 300, "aid": 210, "asfx": "", "s": "一", "w": "お袋", "k": "おふくろ", "en": "", "m": "老妈（口语）", "p": "N", "ph": "", "phz": "", "role": "ant", "side": "R", "g": 1}, {"id": 47, "aid": 47, "asfx": "", "s": "一", "w": "義理", "k": "ぎり", "en": "", "m": "情义，人情；姻亲关系", "p": "N", "ph": "義理の父母", "phz": "公婆／岳父母", "role": "", "side": "", "g": 0}, {"id": 4, "aid": 4, "asfx": "", "s": "一", "w": "義父", "k": "ぎふ", "en": "", "m": "义父，岳父，公公", "p": "N", "ph": "義理の父母", "phz": "岳父母／公婆", "role": "ant", "side": "L", "g": 2}, {"id": 301, "aid": 211, "asfx": "", "s": "一", "w": "義母", "k": "ぎぼ", "en": "", "m": "义母，岳母，婆婆", "p": "N", "ph": "", "phz": "", "role": "ant", "side": "R", "g": 2}, {"id": 5, "aid": 5, "asfx": "", "s": "一", "w": "配偶者", "k": "はいぐうしゃ", "en": "", "m": "配偶", "p": "N", "ph": "配偶者を選ぶ", "phz": "选择配偶", "role": "", "side": "", "g": 0}, {"id": 6, "aid": 6, "asfx": "", "s": "一", "w": "お婿さん", "k": "おむこさん", "en": "", "m": "女婿", "p": "N", "ph": "婿さんと嫁さん", "phz": "女婿和儿媳", "role": "ant", "side": "L", "g": 3}, {"id": 302, "aid": 212, "asfx": "", "s": "一", "w": "お嫁さん", "k": "およめさん", "en": "", "m": "儿媳", "p": "N", "ph": "", "phz": "", "role": "ant", "side": "R", "g": 3}, {"id": 7, "aid": 7, "asfx": "", "s": "一", "w": "妻子を養う", "k": "さいしをやしなう", "en": "", "m": "养家糊口", "p": "V1", "ph": "妻子を養う", "phz": "养家糊口", "role": "", "side": "", "g": 0}, {"id": 8, "aid": 8, "asfx": "", "s": "一", "w": "円満", "k": "えんまん", "en": "", "m": "圆满的，和睦的", "p": "ナ", "ph": "円満な家庭", "phz": "和睦的家庭", "role": "", "side": "", "g": 0}, {"id": 9, "aid": 9, "asfx": "", "s": "一", "w": "和やか", "k": "なごやか", "en": "", "m": "和气的，融洽的", "p": "ナ", "ph": "和やかな雰囲気", "phz": "融洽的气氛", "role": "", "side": "", "g": 0}, {"id": 10, "aid": 10, "asfx": "", "s": "一", "w": "先代", "k": "せんだい", "en": "", "m": "先人，上代", "p": "N", "ph": "先代が亡くなる", "phz": "先人去世", "role": "", "side": "", "g": 0}, {"id": 11, "aid": 200, "asfx": "", "s": "二", "w": "旧知の仲", "k": "きゅうちのなか", "en": "", "m": "老交情", "p": "N", "ph": "旧知の仲", "phz": "老交情", "role": "", "side": "", "g": 0}, {"id": 303, "aid": 201, "asfx": "", "s": "二", "w": "旧友", "k": "きゅうゆう", "en": "", "m": "旧友", "p": "N", "ph": "", "phz": "", "role": "", "side": "", "g": 0}, {"id": 304, "aid": 202, "asfx": "", "s": "二", "w": "幼なじみ", "k": "おさななじみ", "en": "", "m": "青梅竹马", "p": "N", "ph": "", "phz": "", "role": "", "side": "", "g": 0}, {"id": 12, "aid": 12, "asfx": "", "s": "二", "w": "ライバル同士", "k": "ライバルどうし", "en": "", "m": "竞争对手", "p": "N", "ph": "ライバル同士", "phz": "对手关系", "role": "", "side": "", "g": 0}, {"id": 13, "aid": 13, "asfx": "", "s": "二", "w": "同志", "k": "どうし", "en": "", "m": "同志，志同道合者", "p": "N", "ph": "同志として戦う", "phz": "作为同志并肩战斗", "role": "", "side": "", "g": 0}, {"id": 14, "aid": 14, "asfx": "", "s": "二", "w": "師弟", "k": "してい", "en": "", "m": "师徒", "p": "N", "ph": "師弟関係", "phz": "师徒关系", "role": "", "side": "", "g": 0}, {"id": 15, "aid": 15, "asfx": "", "s": "二", "w": "師匠", "k": "ししょう", "en": "", "m": "师父", "p": "N", "ph": "師匠と弟子", "phz": "师父和徒弟", "role": "ant", "side": "L", "g": 4}, {"id": 305, "aid": 213, "asfx": "", "s": "二", "w": "弟子", "k": "でし", "en": "", "m": "徒弟", "p": "N", "ph": "", "phz": "", "role": "ant", "side": "R", "g": 4}, {"id": 16, "aid": 16, "asfx": "", "s": "二", "w": "恩師", "k": "おんし", "en": "", "m": "恩师", "p": "N", "ph": "恩師と教え子", "phz": "恩师和门生", "role": "ant", "side": "L", "g": 5}, {"id": 306, "aid": 214, "asfx": "", "s": "二", "w": "教え子", "k": "おしえご", "en": "", "m": "门生，弟子", "p": "N", "ph": "", "phz": "", "role": "ant", "side": "R", "g": 5}, {"id": 17, "aid": 17, "asfx": "", "s": "二", "w": "社長", "k": "しゃちょう", "en": "", "m": "社长", "p": "N", "ph": "大統領の側近", "phz": "总统的亲信", "role": "ant", "side": "L", "g": 6}, {"id": 307, "aid": 215, "asfx": "", "s": "二", "w": "側近", "k": "そっきん", "en": "", "m": "亲信，近臣", "p": "N", "ph": "", "phz": "", "role": "ant", "side": "R", "g": 6}, {"id": 18, "aid": 18, "asfx": "", "s": "二", "w": "家族ぐるみ", "k": "かぞくぐるみ", "en": "", "m": "全家一起", "p": "N", "ph": "家族ぐるみの付き合い", "phz": "两家全家的来往", "role": "", "side": "", "g": 0}, {"id": 19, "aid": 19, "asfx": "", "s": "二", "w": "十年来", "k": "じゅうねんらい", "en": "", "m": "十年以来", "p": "N", "ph": "十年来の友", "phz": "十年来的朋友", "role": "", "side": "", "g": 0}, {"id": 45, "aid": 45, "asfx": "", "s": "二", "w": "来賓", "k": "らいひん", "en": "", "m": "宾客；来宾", "p": "N", "ph": "来賓室", "phz": "客房", "role": "", "side": "", "g": 0}, {"id": 20, "aid": 20, "asfx": "", "s": "二", "w": "接待する", "k": "せったいする", "en": "", "m": "接待，款待", "p": "V3", "ph": "客を接待する", "phz": "接待客人", "role": "", "side": "", "g": 0}, {"id": 21, "aid": 21, "asfx": "", "s": "二", "w": "もてなす", "k": "もてなす", "en": "", "m": "款待，招待", "p": "V1", "ph": "客をもてなす", "phz": "招待客人", "role": "", "side": "", "g": 0}, {"id": 22, "aid": 200, "asfx": "", "s": "二", "w": "慣習", "k": "かんしゅう", "en": "", "m": "习俗", "p": "N", "ph": "古くからのしきたり", "phz": "自古以来的惯例", "role": "", "side": "", "g": 0}, {"id": 308, "aid": 201, "asfx": "", "s": "二", "w": "しきたり", "k": "しきたり", "en": "", "m": "惯例", "p": "N", "ph": "", "phz": "", "role": "", "side": "", "g": 0}, {"id": 309, "aid": 202, "asfx": "", "s": "二", "w": "風習", "k": "ふうしゅう", "en": "", "m": "风俗", "p": "N", "ph": "", "phz": "", "role": "", "side": "", "g": 0}, {"id": 23, "aid": 23, "asfx": "", "s": "二", "w": "接する", "k": "せっする", "en": "", "m": "接触，对待", "p": "V3", "ph": "人に接する", "phz": "待人接物", "role": "", "side": "", "g": 0}, {"id": 24, "aid": 24, "asfx": "", "s": "三", "w": "片思いする", "k": "かたおもいする", "en": "", "m": "单恋", "p": "V3", "ph": "片思いしている", "phz": "在单恋", "role": "", "side": "", "g": 0}, {"id": 25, "aid": 25, "asfx": "", "s": "三", "w": "告白する", "k": "こくはくする", "en": "", "m": "告白，表白", "p": "V3", "ph": "恋心を告白する", "phz": "表白爱意", "role": "", "side": "", "g": 0}, {"id": 26, "aid": 26, "asfx": "", "s": "三", "w": "未練がある", "k": "みれんがある", "en": "", "m": "恋恋不舍，放不下", "p": "V1", "ph": "未練がある", "phz": "恋恋不舍", "role": "", "side": "", "g": 0}, {"id": 27, "aid": 27, "asfx": "", "s": "三", "w": "執着する", "k": "しゅうちゃくする", "en": "", "m": "执着，执迷", "p": "V3", "ph": "過去に執着する", "phz": "执着于过去", "role": "", "side": "", "g": 0}, {"id": 28, "aid": 28, "asfx": "", "s": "四", "w": "異性にもてる", "k": "いせいにもてる", "en": "", "m": "受异性欢迎", "p": "V2", "ph": "異性にもてる", "phz": "受异性欢迎", "role": "", "side": "", "g": 0}, {"id": 29, "aid": 29, "asfx": "", "s": "四", "w": "浮気する", "k": "うわきする", "en": "", "m": "出轨，移情", "p": "V3", "ph": "浮気する", "phz": "出轨", "role": "", "side": "", "g": 0}, {"id": 30, "aid": 30, "asfx": "", "s": "四", "w": "弾む", "k": "はずむ", "en": "", "m": "跳，蹦；情绪高涨", "p": "V1", "ph": "心が弾む", "phz": "心情激动", "role": "", "side": "", "g": 0}, {"id": 31, "aid": 31, "asfx": "", "s": "四", "w": "引きずる", "k": "ひきずる", "en": "", "m": "拖拽；无法忘怀，受影响", "p": "V1", "ph": "過去を引きずる", "phz": "沉湎过去", "role": "ant", "side": "L", "g": 7}, {"id": 310, "aid": 216, "asfx": "", "s": "四", "w": "切り替える", "k": "きりかえる", "en": "", "m": "更换，转换，改变", "p": "V2", "ph": "", "phz": "", "role": "ant", "side": "R", "g": 7}, {"id": 32, "aid": 32, "asfx": "", "s": "五", "w": "隣同士", "k": "となりどうし", "en": "", "m": "隔壁邻居", "p": "N", "ph": "隣同士", "phz": "隔壁邻居", "role": "", "side": "", "g": 0}, {"id": 33, "aid": 33, "asfx": "", "s": "五", "w": "町ぐるみ", "k": "まちぐるみ", "en": "", "m": "全镇一起", "p": "N", "ph": "町ぐるみのイベント", "phz": "全镇参与的活动", "role": "", "side": "", "g": 0}, {"id": 34, "aid": 34, "asfx": "", "s": "五", "w": "打ち明ける", "k": "うちあける", "en": "", "m": "坦白，倾诉", "p": "V2", "ph": "秘密を打ち明ける", "phz": "吐露秘密", "role": "", "side": "", "g": 0}, {"id": 35, "aid": 35, "asfx": "", "s": "五", "w": "打ち解ける", "k": "うちとける", "en": "", "m": "融洽，无隔阂", "p": "V2", "ph": "打ち解けた雰囲気", "phz": "融洽的气氛", "role": "", "side": "", "g": 0}, {"id": 36, "aid": 36, "asfx": "", "s": "五", "w": "切り替える", "k": "きりかえる", "en": "", "m": "切换，转换", "p": "V2", "ph": "気持ちを切り替える", "phz": "转换心情", "role": "", "side": "", "g": 0}, {"id": 37, "aid": 37, "asfx": "", "s": "五", "w": "切り出す", "k": "きりだす", "en": "", "m": "开口说出", "p": "V1", "ph": "本題を切り出す", "phz": "切入正题", "role": "", "side": "", "g": 0}, {"id": 38, "aid": 38, "asfx": "", "s": "五", "w": "切り上げる", "k": "きりあげる", "en": "", "m": "结束，告一段落", "p": "V2", "ph": "仕事を切り上げる", "phz": "结束工作", "role": "", "side": "", "g": 0}, {"id": 39, "aid": 39, "asfx": "", "s": "六", "w": "急きょ", "k": "きゅうきょ", "en": "", "m": "急忙，仓促", "p": "adv", "ph": "急きょ変更する", "phz": "临时变更", "role": "", "side": "", "g": 0}, {"id": 40, "aid": 40, "asfx": "", "s": "六", "w": "余程", "k": "よほど", "en": "", "m": "相当，很", "p": "adv", "ph": "余程未練があるのか", "phz": "是相当恋恋不舍吧", "role": "", "side": "", "g": 0}, {"id": 41, "aid": 41, "asfx": "", "s": "六", "w": "突然", "k": "とつぜん", "en": "", "m": "突然", "p": "adv", "ph": "突然告白されて", "phz": "突然被表白", "role": "", "side": "", "g": 0}, {"id": 42, "aid": 42, "asfx": "", "s": "六", "w": "先ごろ", "k": "せんごろ", "en": "", "m": "前些时候", "p": "adv", "ph": "先ごろの出来事", "phz": "前些时候的事", "role": "", "side": "", "g": 0}, {"id": 43, "aid": 43, "asfx": "", "s": "六", "w": "どぎまぎ", "k": "どぎまぎ", "en": "", "m": "惊慌失措，局促不安", "p": "adv", "ph": "どぎまぎしてしまった", "phz": "慌了神", "role": "", "side": "", "g": 0}];
+const SEC = {"一": "1. 親族・家族", "二": "2. 付き合い", "三": "3. 恋愛", "四": "4. その他", "五": "5. 語形成（p.7）", "六": "6. 例文中的副词（p.7）"};
+const LSK = 'n112editv2';
+(function(){ try { const s = localStorage.getItem(LSK); if (s) { const o = JSON.parse(s); if (o && Array.isArray(o.data) && o.data.length) DATA = o.data; } } catch(e) {} })();
+let nextId = Math.max(0, ...DATA.map(d => d.id || 0)) + 1;
+let editing = false, dragD = null, saveT = null;
+
+function save(){ try { localStorage.setItem(LSK, JSON.stringify({data: DATA})); } catch(e) {} }
+function saveSoon(){ clearTimeout(saveT); saveT = setTimeout(save, 400); }
+function resetAll(){ if (confirm('清空所有修改，恢复初始版式？')) { try { localStorage.removeItem(LSK); } catch(e) {} location.reload(); } }
+const byId = id => DATA.find(d => d.id === id);
+
+let curAudio = null;
+function play(id, suffix){
+  if (curAudio) { curAudio.pause(); }
+  curAudio = new Audio(`../audio/N1/N1_1-2_audio/${id}${suffix || ''}.mp3`);
+  if (typeof dictHook === 'function') dictHook(suffix || '');
+  curAudio.play();
+}
+function applyTheme(day){
+  document.body.classList.toggle('day', day);
+  document.getElementById('themeBtn').textContent = day ? '🌙 夜间' : '☀️ 日间';
+}
+function toggleTheme(){
+  const day = !document.body.classList.contains('day');
+  applyTheme(day);
+  try { localStorage.setItem('n112theme', day ? 'day' : 'night'); } catch(e) {}
+}
+applyTheme((() => { try { return localStorage.getItem('n112theme') === 'day'; } catch(e) { return false; } })());
+
+function toggleEdit(){
+  editing = !editing;
+  document.body.classList.toggle('editing', editing);
+  document.getElementById('editBtn').textContent = editing ? '✅ 完成' : '✏️ 编辑';
+  document.getElementById('expBtn').classList.toggle('hide', !editing);
+  document.getElementById('rstBtn').classList.toggle('hide', !editing);
+  if (!editing) save();
+  render();
+}
+
+const posCls = p => (p || '').startsWith('V') ? 'V' : (p || '').includes('イ') ? 'I' : (p || '').includes('ナ') ? 'NA' : (p || '').includes('adv') ? 'adv' : (p || '').includes('惯') ? 'IDM' : 'N';
+const esc = s => String(s == null ? '' : s);
+
+function rubyHtml(d){
+  const w = d.w || '', k = d.k || '', en = d.en || '';
+  const same = !k || k === w;
+  const kata = w.match(/^([ァ-ヶー]+)/);
+  const rtx = same ? '' : (en ? `<rt class="en">${en}</rt>` : `<rt>${k}</rt>`);
+  const click = `onclick="play(${d.id},'')"`;
+  return same ? `<span class="word" ${click}>${w}</span>`
+    : (kata ? `<ruby class="word" ${click}>${kata[1]}${rtx}</ruby>${w.slice(kata[1].length)}`
+            : `<ruby class="word" ${click}>${w}${rtx}</ruby>`);
+}
+const phRead = d => d.ph ? `<div class="phrase"><span class="jp" onclick="play(${d.id},'p')">${esc(d.ph)}</span><span class="zh">${esc(d.phz)}</span></div>` : '';
+const entryRead = d => `<div class="entry"><div class="row1"><span class="num">${d.id}</span>${rubyHtml(d)}<span class="pos ${posCls(d.p)}">${esc(d.p)}</span></div><div class="mean">${esc(d.m)}</div>${phRead(d)}</div>`;
+
+const edSpan = (d, f, cls, ph) => `<span class="edf ${cls}${d[f] ? '' : ' empty'}" contenteditable="true" data-ph="${ph}" data-f="${f}">${esc(d[f])}</span>`;
+const entryEdit = d => `<div class="entry" data-did="${d.id}"><div class="row1"><span class="drag-handle" draggable="true" title="拖动排序/入组">⠿</span><span class="num">${d.aid || d.id}</span>${edSpan(d,'w','word','词')}${edSpan(d,'k','edk','注音')}${edSpan(d,'en','ede','en')}${edSpan(d,'p','pos','词性')}<span class="sp" data-sp="1" title="拆出为独立卡">⇱</span><span class="x" data-x="1" title="删除该词">✕</span></div><div class="mean">${edSpan(d,'m','edmean','释义')}</div><div class="phrase">${edSpan(d,'ph','edph','例句')}${edSpan(d,'phz','edphz','中译')}</div></div>`;
+const noteRead = d => `<div class="notecard">${esc(d.text)}</div>`;
+const noteEdit = d => `<div class="notecard note" data-did="${d.id}"><span class="drag-handle" draggable="true">⠿</span>${edSpan(d,'text','','文本')}<span class="x" data-x="1">✕</span></div>`;
+
+const list = document.getElementById('list');
+
+function wireDrag(el, d){
+  el.draggable = true;
+  el.addEventListener('dragstart', e => { dragD = d; e.dataTransfer.setData('text/plain', 'x'); el.classList.add('dragging'); });
+  el.addEventListener('dragend', () => el.classList.remove('dragging'));
+}
+function removeD(d){
+  const i = DATA.indexOf(d);
+  if (i >= 0) { DATA.splice(i, 1); return true; }
+  return false;
+}
+function secLastIdx(s){
+  let last = -1;
+  DATA.forEach((d, i) => { if (d.s === s) last = i; });
+  return last;
+}
+function addToSecEnd(d, s){
+  d.s = s;
+  const at = secLastIdx(s) + 1;
+  DATA.splice(at, 0, d);
+}
+function newG(){
+  return Math.max(0, ...DATA.map(d => d.g || 0)) + 1;
+}
+
+function render(){
+  list.innerHTML = '';
+  let curS = null, row = null, colA = null, colB = null, wrap = null, alt = 0;
+  let lastG = null, lastRole = null, gHead = null, halves = null, gRole = null, gG = null;
+  for (let i = 0; i < DATA.length; i++){
+    const d = DATA[i];
+    if (d.s !== curS){
+      curS = d.s;
+      const h = document.createElement('div'); h.className = 'sec-h';
+      const t = document.createElement('span'); t.className = 'sec-title'; t.textContent = SEC[curS] || curS;
+      if (editing){
+        const oldS = curS;
+        t.contentEditable = 'true';
+        t.addEventListener('input', () => { const ns = t.textContent; DATA.forEach(x => { if (x.s === oldS) x.s = ns; }); curS = ns; saveSoon(); });
+        const bb = document.createElement('span'); bb.className = 'addbtns';
+        const mk = (label, fn) => { const b = document.createElement('button'); b.textContent = label; b.addEventListener('click', fn); bb.appendChild(b); };
+        mk('+词框', () => { const w = {id: nextId++, s: curS, w: '', k: '', en: '', m: '', p: '', ph: '', phz: '', role: '', side: '', g: 0}; addToSecEnd(w, curS); save(); render(); });
+        mk('+竖线组', () => { const g = newG(); addToSecEnd({id: nextId++, s: curS, w: '', k: '', en: '', m: '', p: '', ph: '', phz: '', role: 'ant', side: 'L', g}, curS); addToSecEnd({id: nextId++, s: curS, w: '', k: '', en: '', m: '', p: '', ph: '', phz: '', role: 'ant', side: 'R', g}, curS); save(); render(); });
+        mk('+横杠组', () => { const g = newG(); addToSecEnd({id: nextId++, s: curS, w: '', k: '', en: '', m: '', p: '', ph: '', phz: '', role: 'syn', side: 'L', g}, curS); addToSecEnd({id: nextId++, s: curS, w: '', k: '', en: '', m: '', p: '', ph: '', phz: '', role: 'syn', side: 'R', g}, curS); save(); render(); });
+        mk('+文本', () => { addToSecEnd({id: nextId++, s: curS, kind: 'note', text: ''}, curS); save(); render(); });
+        h.appendChild(bb);
+      }
+      h.appendChild(t);
+      list.appendChild(h);
+      if (editing){ wrap = document.createElement('div'); wrap.className = 'sec-items'; list.appendChild(wrap);
+        wrap.addEventListener('dragover', e => e.preventDefault());
+        wrap.addEventListener('drop', e => { e.preventDefault(); if (dragD && dragD.s === curS) { removeD(dragD); addToSecEnd(dragD, curS); save(); render(); } });
+      } else {
+        row = document.createElement('div'); row.className = 'row2';
+        colA = document.createElement('div'); colA.className = 'col2';
+        colB = document.createElement('div'); colB.className = 'col2';
+        row.appendChild(colA); row.appendChild(colB);
+        list.appendChild(row);
+      }
+      lastG = null; lastRole = null; alt = 0;
+    }
+    const isNote = d.kind === 'note';
+    const hasRole = !isNote && (d.role === 'ant' || d.role === 'syn');
+    const entryHtml = isNote ? (editing ? noteEdit(d) : noteRead(d)) : (editing ? entryEdit(d) : entryRead(d));
+
+    if (hasRole){
+      if (d.role !== lastRole || d.g !== lastG){
+        lastRole = d.role; lastG = d.g; gRole = d.role; gG = d.g;
+        gHead = document.createElement('div');
+        gHead.className = 'item';
+        gHead.innerHTML = `<div class="card c${posCls(d.p)}"><div class="bra"><div class="half"></div><span class="${d.role === 'ant' ? 'vs' : 'vs2'}" data-bar="${d.g}" title="${editing ? '点击切换 竖线(反义)/横杠(同类)' : ''}"></span><div class="half"></div></div>${editing ? `<span class="gx" data-gx="${d.g}" data-gs="${esc(d.s)}">✕</span>` : ''}</div>`;
+        if (editing){
+          const itemEl = gHead;
+          itemEl.addEventListener('dragover', e => e.preventDefault());
+          attachTopDrop(itemEl, d, curS);
+        }
+        (editing ? wrap : (alt++ % 2 === 0 ? colA : colB)).appendChild(gHead);
+        halves = gHead.querySelectorAll('.half');
+        if (editing){
+          halves.forEach((h, hi) => {
+            h.addEventListener('dragover', e => { e.preventDefault(); e.stopPropagation(); h.classList.add('over'); });
+            h.addEventListener('dragleave', () => h.classList.remove('over'));
+            h.addEventListener('drop', e => {
+              e.preventDefault(); e.stopPropagation(); h.classList.remove('over');
+              if (!dragD) return;
+              removeD(dragD);
+              dragD.role = gRole; dragD.g = gG; dragD.side = hi === 1 ? 'R' : 'L'; dragD.s = curS;
+              let at = -1;
+              DATA.forEach((x, xi) => { if (x.s === curS && x.role === gRole && x.g === gG && x.side === dragD.side) at = xi; });
+              if (at < 0) DATA.forEach((x, xi) => { if (x.s === curS && x.role === gRole && x.g === gG && at < 0) at = xi; });
+              DATA.splice(at + 1, 0, dragD);
+              save(); render();
+            });
+          });
+        }
+      }
+      (d.side === 'R' ? halves[1] : halves[0]).innerHTML += entryHtml;
+    } else {
+      const item = document.createElement('div'); item.className = 'item';
+      const card = document.createElement('div');
+      card.className = 'card c' + posCls(d.p) + (isNote ? ' notecard' : '');
+      card.innerHTML = entryHtml;
+      if (editing){ attachTopDrop(item, d, curS); }
+      item.appendChild(card);
+      (editing ? wrap : (alt++ % 2 === 0 ? colA : colB)).appendChild(item);
+    }
+  }
+  if (editing){
+    list.querySelectorAll('[data-did]').forEach(el => { el.draggable = true; });
+  }
+  const words = DATA.filter(d => d.kind !== 'note').length;
+  document.getElementById('count').textContent = words;
+}
+
+function attachTopDrop(item, d, sec){
+  item.addEventListener('dragover', e => {
+    if (!dragD) return;
+    e.preventDefault();
+    const before = e.offsetY < item.offsetHeight / 2;
+    item.classList.toggle('ins-top', before); item.classList.toggle('ins-bot', !before);
+    item._ins = before ? 'top' : 'bot';
+  });
+  item.addEventListener('dragleave', () => item.classList.remove('ins-top', 'ins-bot'));
+  item.addEventListener('drop', e => {
+    e.preventDefault();
+    const where = item._ins; item.classList.remove('ins-top', 'ins-bot');
+    if (!dragD || !where) return;
+    removeD(dragD);
+    dragD.role = ''; dragD.side = ''; dragD.g = 0; dragD.s = sec;
+    let ti = DATA.indexOf(d);
+    if (ti < 0) ti = DATA.indexOf(d) ;
+    DATA.splice(where === 'top' ? ti : ti + 1, 0, dragD);
+    save(); render();
+  });
+}
+
+// 拖拽委托: 任何 [data-did] 词条都可拖
+list.addEventListener('dragstart', e => {
+  const h = e.target.closest('[data-did]'); if (!h || !editing) return;
+  dragD = byId(+h.dataset.did);
+  e.dataTransfer.setData('text/plain', 'x');
+  e.target.classList.add('dragging');
+});
+list.addEventListener('dragend', e => { e.target.classList && e.target.classList.remove('dragging'); });
+
+// 事件委托: 文字编辑 / 删除 / 组切换
+list.addEventListener('input', e => {
+  const t = e.target.closest('.edf'); if (!t) return;
+  const holder = t.closest('[data-did]'); if (!holder) return;
+  const d = byId(+holder.dataset.did); if (!d) return;
+  d[t.dataset.f] = t.textContent;
+  saveSoon();
+});
+list.addEventListener('click', e => {
+  const sp = e.target.closest('.sp');
+  if (sp){
+    const holder = sp.closest('[data-did]'); if (!holder) return;
+    const d = byId(+holder.dataset.did); if (!d) return;
+    const gi = DATA.indexOf(d);
+    removeD(d);
+    d.role = ''; d.side = ''; d.g = 0;
+    DATA.splice(gi, 0, d);
+    save(); render(); return;
+  }
+  const x = e.target.closest('.x');
+  if (x){
+    const holder = x.closest('[data-did]'); if (!holder) return;
+    const d = byId(+holder.dataset.did); if (!d) return;
+    removeD(d); save(); render(); return;
+  }
+  const gx = e.target.closest('.gx');
+  if (gx){
+    const g = +gx.dataset.gx, s = gx.dataset.gs;
+    for (let i = DATA.length - 1; i >= 0; i--) if (DATA[i].s === s && DATA[i].g === g && DATA[i].role) DATA.splice(i, 1);
+    save(); render(); return;
+  }
+  const bar = e.target.closest('[data-bar]');
+  if (bar && editing){
+    const g = +bar.dataset.bar;
+    let s = null;
+    DATA.forEach(d => { if (d.g === g && d.role && s === null) s = d.s; });
+    DATA.forEach(d => { if (d.s === s && d.g === g && d.role) d.role = d.role === 'ant' ? 'syn' : 'ant'; });
+    save(); render();
+  }
+});
+
+function exportData(){
+  const blob = new Blob([JSON.stringify({page: 'N1_1-1', data: DATA}, null, 1)], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'N1_1-1_layout.json';
+  a.click();
+}
+
+render();
+</script>
+
+<div id="ftool">
+  <div class="ft-tip">添加到最近操作的卡片旁</div>
+  <button onclick="ftAdd('word')">＋ 词框</button>
+  <button onclick="ftAdd('arr')">⇄ 相对组</button>
+  <button onclick="ftAdd('ant')">| 反义组</button>
+  <button onclick="ftAdd('syn')">— 同类组</button>
+  <button onclick="ftAdd('note')">✎ 文本</button>
+</div>
+<script>
+/* ---- 悬浮工具条 + 选字拖动 ---- */
+let lastSpot = null;   // {sec, idx} 最近操作的卡片位置
+list.addEventListener('click', e => {
+  const h = e.target.closest('[data-did]'); if (!h) return;
+  const d = byId(+h.dataset.did); if (!d) return;
+  lastSpot = { sec: d.s, idx: DATA.indexOf(d) };
+}, true);
+list.addEventListener('drop', e => {
+  // drop 后记录目标卡片位置
+  if (lastSpot && dragD) lastSpot = { sec: dragD.s, idx: DATA.indexOf(dragD) };
+}, true);
+
+function ftAdd(kind){
+  if (!editing) { toggleEdit(); }
+  const sec = lastSpot ? lastSpot.sec : (DATA[0] && DATA[0].s);
+  if (!sec) return;
+  const mkWord = () => ({id: nextId++, aid: 0, asfx: '', s: sec, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0});
+  if (kind === 'word'){
+    const w = mkWord();
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, w);
+    lastSpot = { sec, idx: at };
+  } else if (kind === 'note'){
+    const n = {id: nextId++, s: sec, kind: 'note', text: ''};
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, n);
+    lastSpot = { sec, idx: at };
+  } else {
+    const g = newG();
+    const l = mkWord(); l.role = kind; l.side = 'L'; l.g = g;
+    const r = mkWord(); r.role = kind; r.side = 'R'; r.g = g;
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, l, r);
+    lastSpot = { sec, idx: at + 1 };
+  }
+  save(); render();
+}
+
+/* 选中文字拖动 → 词框 */
+document.addEventListener('dragstart', e => {
+  const sel = String(window.getSelection ? window.getSelection() : '').trim();
+  if (sel && !e.target.closest('[data-did]')) {
+    dragD = { __text: sel };
+    e.dataTransfer.setData('text/plain', sel);
+    e.dataTransfer.effectAllowed = 'copy';
+  }
+}, true);
+// attachTopDrop / half drop 里识别 __text：改 drop 处理 —— 在最前注入
+const _origAttach = attachTopDrop;
+attachTopDrop = function(item, d, sec){
+  _origAttach(item, d, sec);
+  item.addEventListener('drop', e => {
+    const txt = (e.dataTransfer.getData('text/plain') || '').trim();
+    if (!txt || !e.target.closest('.edf') && !byId(+((e.target.closest('[data-did]')||{}).dataset?.did || -1))) return;
+    // 若 drop 的是纯文本（非卡片拖动）→ 新词框
+    if (dragD && dragD.__text && dragD.__text === txt){
+      e.preventDefault(); e.stopPropagation();
+      const w = {id: nextId++, aid: 0, asfx: '', s: sec, w: txt, k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0};
+      const ti = DATA.indexOf(d);
+      DATA.splice(ti + 1, 0, w);
+      save(); render();
+    }
+  }, true);
+};
+// 半区 drop 同样支持文本 → 新词入半区
+list.addEventListener('drop', e => {
+  const txt = (e.dataTransfer && e.dataTransfer.getData('text/plain') || '').trim();
+  const half = e.target.closest('.half');
+  if (!txt || !half || !dragD || !dragD.__text) return;
+  e.preventDefault(); e.stopPropagation();
+  const sec = curSFromHalf(half);
+  const w = {id: nextId++, aid: 0, asfx: '', s: sec, w: txt, k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: dragD.role || '', side: dragD.side || '', g: dragD.g || 0};
+  // 插到该半区最后
+  let at = -1;
+  DATA.forEach((x, xi) => { if (x.s === sec && x.g === w.g && x.side === w.side) at = xi; });
+  DATA.splice(at + 1, 0, w);
+  dragD = null;
+  save(); render();
+}, true);
+function curSFromHalf(half){
+  // 从 half 往上找 gx 的 data-gs
+  let el = half;
+  while (el && !el.dataset?.gs) el = el.parentElement;
+  return el ? el.dataset.gs : (DATA[0] && DATA[0].s);
+}
+// toggleEdit 时同步悬浮条
+const _origToggle = toggleEdit;
+toggleEdit = function(){ _origToggle(); document.getElementById('ftool').classList.toggle('open', editing); };
+</script>
+
+
+<div id="dict">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
+  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
+  <div id="dictAns" class="hidden"></div>
+  <div class="dbtns">
+    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
+    <button class="hbtn" id="dictAutoBtn" onclick="dictAutoToggle()">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+  </div>
+  <div style="opacity:.4;font-size:11px;">空格=重播 · →/D=下一个 · ←/A=上一个 · S=显示答案 · Esc=退出</div>
+</div>
+<script>
+/* ---- 听写（N2_1-2: aid+asfx 音频, 词→例句链） ---- */
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [], dictChain = false;
+const DICT_DELAY = 3000;
+const escH = s => String(s == null ? '' : s);
+const dictWords = () => DATA.filter(d => d.aid && !d.kind);
+function dictToggle(){
+  dictOpen = !dictOpen;
+  document.getElementById('dict').classList.toggle('open', dictOpen);
+  if (dictOpen){ if (curAudio) curAudio.pause(); buildOrder(); dictCur = 0; showDict(); }
+  else { if (curAudio) curAudio.pause(); clearTimeout(dictT); }
+}
+function buildOrder(){
+  dictOrder = dictWords().map(d => d.id);
+  if (dictShuffleOn) for (let i = dictOrder.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [dictOrder[i], dictOrder[j]] = [dictOrder[j], dictOrder[i]]; }
+}
+const dictD = () => dictWords().find(d => d.id === dictOrder[dictCur]);
+const playCur = () => {
+  const d = dictD();
+  if (d.ph && !d._tts_ph) { dictChain = true; play(d.aid, d.asfx || ''); }
+  else { dictChain = false; play(d.aid, d.asfx || '', d._tts_ph ? d.ph : d.w); }
+};
+// 播放钩子：词条播完接例句；例句播完且自动 → 下一条
+function dictHook(asfx){
+  if (asfx && asfx.includes('p')) {
+    // 这是例句播完
+    if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY);
+    return;
+  }
+  // 词条播完 → 有例句且未 TTS 兜底则接例句
+  if (dictChain && dictD().ph && !dictD()._tts_ph) {
+    dictChain = false;
+    play(dictD().aid, (dictD().asfx || '') + 'p', dictD().ph);
+  } else if (dictOpen && dictAuto) {
+    dictT = setTimeout(dictNext, DICT_DELAY);
+  }
+}
+function dictStep(dir){
+  clearTimeout(dictT); dictChain = false;
+  dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
+  showDict(); playCur();
+}
+const dictNext = () => dictStep(1);
+const dictPrev = () => dictStep(-1);
+function dictShuffle(){ dictShuffleOn = !dictShuffleOn; buildOrder(); dictCur = 0; showDict(); playCur(); }
+function dictAutoToggle(){
+  dictAuto = !dictAuto;
+  document.getElementById('dictAutoBtn').textContent = '自动: ' + (dictAuto ? '开' : '关');
+  dictChain = false;
+  if (dictAuto) playCur();
+}
+function dictReveal(){
+  const ans = document.getElementById('dictAns');
+  if (ans.classList.contains('hidden')) { renderDictAns(); ans.classList.remove('hidden'); }
+  else ans.classList.add('hidden');
+}
+function renderDictAns(){
+  const d = dictD(), ans = document.getElementById('dictAns');
+  const side = w => `<div class="dword">${escH(w)}</div>`;
+  let body = `<div class="dpos">${escH(d.p)}</div><div class="dword">${escH(d.w)} <span style="font-size:14px;opacity:.6">${escH(d.k)}</span></div><div class="dmean">${escH(d.m)}</div>`;
+  if (d.ph) body += `<div class="dph" onclick="play(${d.aid},'${(d.asfx || '') + 'p'}','${escH(d.ph)}')">${escH(d.ph)}</div><div class="dphz">${escH(d.phz || '')}</div>`;
+  ans.innerHTML = body;
+}
+function showDict(){
+  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  const ans = document.getElementById('dictAns');
+  ans.classList.add('hidden');
+  ans.innerHTML = '';
+}
+document.addEventListener('keydown', e => {
+  if (!dictOpen) return;
+  if (e.code === 'Space'){ e.preventDefault(); playCur(); }
+  else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') dictNext();
+  else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') dictPrev();
+  else if (e.key === 's' || e.key === 'S') dictReveal();
+  else if (e.key === 'Escape') dictToggle();
+});
+</script>
+
+
+
+</body>
+</html>

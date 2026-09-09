@@ -1,0 +1,258 @@
+{
+  "title": "第4周 每周自测2",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "私にとってベートーヴェンは、子供の頃から少し怖い存在でした。",
+      "jp_html": "<ruby>私<rt>わたし</rt></ruby>にとってベートーヴェンは、<ruby>子供<rt>こども</rt></ruby>の<ruby>頃<rt>ころ</rt></ruby>から<ruby>少<rt>すこ</rt></ruby>し<ruby>怖<rt>こわ</rt></ruby>い<ruby>存在<rt>そんざい</rt></ruby>でした。",
+      "zh": "\n            对我来说，贝多芬从小就是一个让我有点害怕的人。（中略）不过，为了这次音乐会而挑战演奏全部钢琴奏鸣曲之后，我渐渐觉得，其实贝多芬说不定是一位非常温柔的人。\n          ",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "（中略）でも、今回の演奏会のためにピアノ・ソナタ全曲に取り組んで、じつはベートーヴェンってとても優しい人だったのではないかと思うようになりました。",
+      "jp_html": "（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）でも、<ruby>今回<rt>こんかい</rt></ruby>の<ruby>演奏会<rt>えんそうかい</rt></ruby>のためにピアノ・ソナタ<ruby>全曲<rt>ぜんきょく</rt></ruby>に<ruby>取<rt>と</rt></ruby>り<ruby>組<rt>く</rt></ruby>んで、じつはベートーヴェンってとても<ruby>優<rt>やさ</rt></ruby>しい<ruby>人<rt>ひと</rt></ruby>だったのではないかと<ruby>思<rt>おも</rt></ruby>うようになりました。",
+      "zh": "\n            对我来说，贝多芬从小就是一个让我有点害怕的人。（中略）不过，为了这次音乐会而挑战演奏全部钢琴奏鸣曲之后，我渐渐觉得，其实贝多芬说不定是一位非常温柔的人。\n          ",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "帝国ホテル東京で行われるインペリアルジャズは、（中略）2024年で20周年を迎えた。",
+      "jp_html": "<ruby>帝国<rt>ていこく</rt></ruby>ホテル<ruby>東京<rt>とうきょう</rt></ruby>で<ruby>行<rt>おこな</rt></ruby>われるインペリアルジャズは、（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）2024<ruby>年<rt>ねん</rt></ruby>で20<ruby>周年<rt>しゅうねん</rt></ruby>を<ruby>迎<rt>むか</rt></ruby>えた。",
+      "zh": "\n            在东京帝国酒店举办的“帝国爵士音乐节”，（中略）于2024年迎来了20周年纪念。来自不同领域的四十多位艺术家，以爵士乐为主，带来了摇摆乐、拉丁乐、流行乐、古典乐、原创作品、歌谣曲以及即兴演奏等丰富多彩的音乐表演。\n          ",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "多彩なアーティスト総勢40余名で、ジャズを主体にスイング、ラテン、ポップス、クラシック、オリジナル、歌謡曲、即興曲などを繰り広げる。",
+      "jp_html": "<ruby>多彩<rt>たさい</rt></ruby>なアーティスト<ruby>総勢<rt>そうぜい</rt></ruby>40<ruby>余名<rt>よめい</rt></ruby>で、ジャズを<ruby>主体<rt>しゅたい</rt></ruby>にスイング、ラテン、ポップス、クラシック、オリジナル、<ruby>歌謡曲<rt>かようきょく</rt></ruby>、<ruby>即興曲<rt>そっきょうきょく</rt></ruby>などを<ruby>繰<rt>く</rt></ruby>り<ruby>広<rt>ひろ</rt></ruby>げる。",
+      "zh": "\n            在东京帝国酒店举办的“帝国爵士音乐节”，（中略）于2024年迎来了20周年纪念。来自不同领域的四十多位艺术家，以爵士乐为主，带来了摇摆乐、拉丁乐、流行乐、古典乐、原创作品、歌谣曲以及即兴演奏等丰富多彩的音乐表演。\n          ",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "中東は危険で、難民はかわいそうで、イスラム教は怖い宗教。",
+      "jp_html": "<ruby>中東<rt>ちゅうとう</rt></ruby>は<ruby>危険<rt>きけん</rt></ruby>で、<ruby>難民<rt>なんみん</rt></ruby>はかわいそうで、イスラム<ruby>教<rt>きょう</rt></ruby>は<ruby>怖<rt>こわ</rt></ruby>い<ruby>宗教<rt>しゅうきょう</rt></ruby>。",
+      "zh": "\n            中东很危险、难民很可怜、伊斯兰教是一个恐怖的宗教——我们是不是在不知不觉中，形成了这样的一种印象呢？然而，新闻所报道的很多情况是“例外”，我们也不能够只是把伊斯兰教理解为极端组织。\n          ",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "そんなイメージを、私たちはいつの間にか持っていないだろうか。",
+      "jp_html": "そんなイメージを、私たちはいつの<ruby>間<rt>ま</rt></ruby>にか<ruby>持<rt>も</rt></ruby>っていないだろうか。",
+      "zh": "\n            中东很危险、难民很可怜、伊斯兰教是一个恐怖的宗教——我们是不是在不知不觉中，形成了这样的一种印象呢？然而，新闻所报道的很多情况是“例外”，我们也不能够只是把伊斯兰教理解为极端组织。\n          ",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "だが、ニュースが伝えるのは多くの場合「例外」であり、イスラム教も過激派だけで理解できるものではない。",
+      "jp_html": "だが、ニュースが<ruby>伝<rt>つた</rt></ruby>えるのは<ruby>多<rt>おお</rt></ruby>くの<ruby>場合<rt>ばあい</rt></ruby>「<ruby>例外<rt>れいがい</rt></ruby>」であり、イスラム<ruby>教<rt>きょう</rt></ruby>も<ruby>過激派<rt>かげきは</rt></ruby>だけで<ruby>理解<rt>りかい</rt></ruby>できるものではない。",
+      "zh": "\n            中东很危险、难民很可怜、伊斯兰教是一个恐怖的宗教——我们是不是在不知不觉中，形成了这样的一种印象呢？然而，新闻所报道的很多情况是“例外”，我们也不能够只是把伊斯兰教理解为极端组织。\n          ",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "高市早苗首相が「苦手」と公言してきた「メシ会」を重ねている。",
+      "jp_html": "<ruby>高市早苗<rt>たかいちさなえ</rt></ruby><ruby>首相<rt>しゅしょう</rt></ruby>が「<ruby>苦手<rt>にがて</rt></ruby>」と<ruby>公言<rt>こうげん</rt></ruby>してきた「メシ<ruby>会<rt>かい</rt></ruby>」を<ruby>重<rt>かさ</rt></ruby>ねている。",
+      "zh": "\n            一直公开表示自己“不擅长”参加“饭局”的高市早苗首相，如今却频繁参加饭局。从去年10月就任首相后的约5个月里，她几乎没有参加饭局，采取了与历任首相不同的独特风格。然而，从就任约半年后的今年4月以后，她与自民党高层等人的聚餐次数却急剧增加。\n          ",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "昨年10月の首相就任から約5カ月間は、ほとんど会食をせず、歴代首相と一線を画す独自のスタイルを取ってきた。",
+      "jp_html": "<ruby>昨年<rt>さくねん</rt></ruby>10<ruby>月<rt>がつ</rt></ruby>の<ruby>首相<rt>しゅしょう</rt></ruby><ruby>就任<rt>しゅうにん</rt></ruby>から<ruby>約<rt>やく</rt></ruby>5カ<ruby>月間<rt>げつかん</rt></ruby>は、ほとんど<ruby>会食<rt>かいしょく</rt></ruby>をせず、<ruby>歴代首相<rt>れきだいしゅしょう</rt></ruby>と<ruby>一線<rt>いっせん</rt></ruby>を<ruby>画<rt>かく</rt></ruby>す<ruby>独自<rt>どくじ</rt></ruby>のスタイルを<ruby>取<rt>と</rt></ruby>ってきた。",
+      "zh": "\n            一直公开表示自己“不擅长”参加“饭局”的高市早苗首相，如今却频繁参加饭局。从去年10月就任首相后的约5个月里，她几乎没有参加饭局，采取了与历任首相不同的独特风格。然而，从就任约半年后的今年4月以后，她与自民党高层等人的聚餐次数却急剧增加。\n          ",
+      "audio_file": "audio/p4_s2.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 3,
+      "sentence_id": "p4_s3",
+      "jp_plain": "だが就任から約半年が経過した今年4月以降は、自民党幹部らとの会食の頻度が急増する。",
+      "jp_html": "だが<ruby>就任<rt>しゅうにん</rt></ruby>から<ruby>約<rt>やく</rt></ruby><ruby>半年<rt>はんとし</rt></ruby>が<ruby>経過<rt>けいか</rt></ruby>した<ruby>今年<rt>ことし</rt></ruby>4<ruby>月<rt>がつ</rt></ruby><ruby>以降<rt>いこう</rt></ruby>は、<ruby>自民党幹部<rt>じみんとうかんぶ</rt></ruby>らとの<ruby>会食<rt>かいしょく</rt></ruby>の<ruby>頻度<rt>ひんど</rt></ruby>が<ruby>急増<rt>きゅうぞう</rt></ruby>する。",
+      "zh": "\n            一直公开表示自己“不擅长”参加“饭局”的高市早苗首相，如今却频繁参加饭局。从去年10月就任首相后的约5个月里，她几乎没有参加饭局，采取了与历任首相不同的独特风格。然而，从就任约半年后的今年4月以后，她与自民党高层等人的聚餐次数却急剧增加。\n          ",
+      "audio_file": "audio/p4_s3.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 1,
+      "sentence_id": "p5_s1",
+      "jp_plain": "高志の大蛇を退治した素戔嗚は、櫛名田姫を娶ると同時に、足名椎が治めてゐた部落の長となる事になつた。",
+      "jp_html": "<ruby>高志<rt>こし</rt></ruby>の<ruby>大蛇<rt>おおろち</rt></ruby>を<ruby>退治<rt>たいじ</rt></ruby>した<ruby>素戔嗚<rt>すさのを</rt></ruby>は、<ruby>櫛名田姫<rt>くしなだひめ</rt></ruby>を<ruby>娶<rt>めと</rt></ruby>ると<ruby>同時<rt>どうじ</rt></ruby>に、<ruby>足名椎<rt>あしなつち</rt></ruby>が<ruby>治<rt>おさ</rt></ruby>めてゐた<ruby>部落<rt>ぶらく</rt></ruby>の<ruby>長<rt>おさ</rt></ruby>となる<ruby>事<rt>こと</rt></ruby>になつた。",
+      "zh": "\n            素戋呜尊击败了高志的大蛇之后，迎娶了櫛名田姬，同时也成为了足名椎所统治部落的首领。足名椎为了这对新婚夫妇，在出云的须贺建造了一座宏伟的宫殿。这座宫殿规模巨大，屋脊两端高耸的千木都仿佛隐没于天上的云层之中。他与新婚妻子一起，开始过上了宁静的生活。\n          ",
+      "audio_file": "audio/p5_s1.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 2,
+      "sentence_id": "p5_s2",
+      "jp_plain": "足名椎は彼等夫婦の為に、出雲の須賀へ八広殿を建てた。",
+      "jp_html": "<ruby>足名椎<rt>あしなつち</rt></ruby>は<ruby>彼等<rt>かれら</rt></ruby><ruby>夫婦<rt>ふうふ</rt></ruby>の<ruby>為<rt>ため</rt></ruby>に、<ruby>出雲<rt>いずも</rt></ruby>の<ruby>須賀<rt>すが</rt></ruby>へ<ruby>八広殿<rt>やひろどの</rt></ruby>を<ruby>建<rt>た</rt></ruby>てた。",
+      "zh": "\n            素戋呜尊击败了高志的大蛇之后，迎娶了櫛名田姬，同时也成为了足名椎所统治部落的首领。足名椎为了这对新婚夫妇，在出云的须贺建造了一座宏伟的宫殿。这座宫殿规模巨大，屋脊两端高耸的千木都仿佛隐没于天上的云层之中。他与新婚妻子一起，开始过上了宁静的生活。\n          ",
+      "audio_file": "audio/p5_s2.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 3,
+      "sentence_id": "p5_s3",
+      "jp_plain": "宮は千木が天雲に隠れる程大きな建築であつた。",
+      "jp_html": "<ruby>宮<rt>みや</rt></ruby>は<ruby>千木<rt>ちぎ</rt></ruby>が<ruby>天雲<rt>あまぐも</rt></ruby>に<ruby>隠<rt>かく</rt></ruby>れる<ruby>程<rt>ほど</rt></ruby><ruby>大<rt>おお</rt></ruby>きな<ruby>建築<rt>けんちく</rt></ruby>であつた。",
+      "zh": "\n            素戋呜尊击败了高志的大蛇之后，迎娶了櫛名田姬，同时也成为了足名椎所统治部落的首领。足名椎为了这对新婚夫妇，在出云的须贺建造了一座宏伟的宫殿。这座宫殿规模巨大，屋脊两端高耸的千木都仿佛隐没于天上的云层之中。他与新婚妻子一起，开始过上了宁静的生活。\n          ",
+      "audio_file": "audio/p5_s3.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 4,
+      "sentence_id": "p5_s4",
+      "jp_plain": "彼は新しい妻と共に、静な朝夕を送り始めた。",
+      "jp_html": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>新<rt>あたら</rt></ruby>しい<ruby>妻<rt>つま</rt></ruby>と<ruby>共<rt>とも</rt></ruby>に、<ruby>静<rt>しず</rt></ruby>な<ruby>朝夕<rt>あさゆう</rt></ruby>を<ruby>送<rt>おく</rt></ruby>り<ruby>始<rt>はじ</rt></ruby>めた。",
+      "zh": "\n            素戋呜尊击败了高志的大蛇之后，迎娶了櫛名田姬，同时也成为了足名椎所统治部落的首领。足名椎为了这对新婚夫妇，在出云的须贺建造了一座宏伟的宫殿。这座宫殿规模巨大，屋脊两端高耸的千木都仿佛隐没于天上的云层之中。他与新婚妻子一起，开始过上了宁静的生活。\n          ",
+      "audio_file": "audio/p5_s4.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 1,
+      "sentence_id": "p6_s1",
+      "jp_plain": "かつて一世を風靡した講談は、次第にその存在感を失い、講談を聴く人も少なくなれば、講談を語る人はさらに少なくなった。",
+      "jp_html": "かつて<ruby>一世<rt>いっせ</rt></ruby>を<ruby>風靡<rt>ふうび</rt></ruby>した<ruby>講談<rt>こうだん</rt></ruby>は、<ruby>次第<rt>しだい</rt></ruby>にその<ruby>存在感<rt>そんざいかん</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>い、<ruby>講談<rt>こうだん</rt></ruby>を<ruby>聴<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>も<ruby>少<rt>すく</rt></ruby>なくなれば、<ruby>講談<rt>こうだん</rt></ruby>を<ruby>語<rt>かた</rt></ruby>る<ruby>人<rt>ひと</rt></ruby>はさらに<ruby>少<rt>すく</rt></ruby>なくなった。",
+      "zh": "\n            曾经红极一时的评书边缘化了，听评书的少了，说评书的更少了。但是，只要有好的评书作品问世，依旧会引来很多书迷围观收听。郭德纲作为相声演员，评书也是他的绝活，一套《济公传》说得亦庄亦谐，也是他的评书代表作。\n          ",
+      "audio_file": "audio/p6_s1.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 2,
+      "sentence_id": "p6_s2",
+      "jp_plain": "しかし、優れた講談作品が世に出れば、依然として多くの講談ファンが集まり、耳を傾ける。",
+      "jp_html": "しかし、<ruby>優<rt>すぐ</rt></ruby>れた<ruby>講談<rt>こうだん</rt></ruby><ruby>作品<rt>さくひん</rt></ruby>が<ruby>世<rt>よ</rt></ruby>に<ruby>出<rt>で</rt></ruby>れば、<ruby>依然<rt>いぜん</rt></ruby>として<ruby>多<rt>おお</rt></ruby>くの<ruby>講談<rt>こうだん</rt></ruby>ファンが<ruby>集<rt>あつ</rt></ruby>まり、<ruby>耳<rt>みみ</rt></ruby>を<ruby>傾<rt>かたむ</rt></ruby>ける。",
+      "zh": "\n            曾经红极一时的评书边缘化了，听评书的少了，说评书的更少了。但是，只要有好的评书作品问世，依旧会引来很多书迷围观收听。郭德纲作为相声演员，评书也是他的绝活，一套《济公传》说得亦庄亦谐，也是他的评书代表作。\n          ",
+      "audio_file": "audio/p6_s2.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 3,
+      "sentence_id": "p6_s3",
+      "jp_plain": "落語や漫才の芸人として知られる郭徳綱は、講談も得意としており、『済公伝』は、厳かでユーモラスな語りを巧みに織り交ぜた代表作の一つである。",
+      "jp_html": "<ruby>落語<rt>らくご</rt></ruby>や<ruby>漫才<rt>まんざい</rt></ruby>の<ruby>芸人<rt>げいにん</rt></ruby>として<ruby>知<rt>し</rt></ruby>られる<ruby>郭徳綱<rt>かくとくこう</rt></ruby>は、<ruby>講談<rt>こうだん</rt></ruby>も<ruby>得意<rt>とくい</rt></ruby>としており、『<ruby>済公伝<rt>さいこうでん</rt></ruby>』は、<ruby>厳<rt>おごそ</rt></ruby>かでユーモラスな<ruby>語<rt>かた</rt></ruby>りを<ruby>巧<rt>たく</rt></ruby>みに<ruby>織<rt>お</rt></ruby>り<ruby>交<rt>ま</rt></ruby>ぜた<ruby>代表作<rt>だいひょうさく</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つである。",
+      "zh": "\n            曾经红极一时的评书边缘化了，听评书的少了，说评书的更少了。但是，只要有好的评书作品问世，依旧会引来很多书迷围观收听。郭德纲作为相声演员，评书也是他的绝活，一套《济公传》说得亦庄亦谐，也是他的评书代表作。\n          ",
+      "audio_file": "audio/p6_s3.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 1,
+      "sentence_id": "p7_s1",
+      "jp_plain": "今年もまた夏休みの季節がやってきた。",
+      "jp_html": "<ruby>今年<rt>ことし</rt></ruby>もまた<ruby>夏休<rt>なつやす</rt></ruby>みの<ruby>季節<rt>きせつ</rt></ruby>がやってきた。",
+      "zh": "\n            又是一年暑期到，你还记得吗？一本翻到泛黄卷边的连环画，定格了金戈铁马；一段收音机里抑扬顿挫的评书“话说东汉末年……”，还犹然飘在耳边；一个夏日蝉鸣阵阵的无忧午后，仿若就在昨天。\n          ",
+      "audio_file": "audio/p7_s1.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 2,
+      "sentence_id": "p7_s2",
+      "jp_plain": "覚えているだろうか。",
+      "jp_html": "<ruby>覚<rt>おぼ</rt></ruby>えているだろうか。",
+      "zh": "\n            又是一年暑期到，你还记得吗？一本翻到泛黄卷边的连环画，定格了金戈铁马；一段收音机里抑扬顿挫的评书“话说东汉末年……”，还犹然飘在耳边；一个夏日蝉鸣阵阵的无忧午后，仿若就在昨天。\n          ",
+      "audio_file": "audio/p7_s2.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 3,
+      "sentence_id": "p7_s3",
+      "jp_plain": "黄ばんで端が擦り切れた一冊の漫画が、戦火に包まれた時代の光景を鮮やかに描き出していた。",
+      "jp_html": "<ruby>黄<rt>き</rt></ruby>ばんで<ruby>端<rt>はし</rt></ruby>が<ruby>擦<rt>す</rt></ruby>り<ruby>切<rt>き</rt></ruby>れた<ruby>一冊<rt>いっさつ</rt></ruby>の<ruby>漫画<rt>まんが</rt></ruby>が、<ruby>戦火<rt>せんか</rt></ruby>に<ruby>包<rt>つつ</rt></ruby>まれた<ruby>時代<rt>じだい</rt></ruby>の<ruby>光景<rt>こうけい</rt></ruby>を<ruby>鮮<rt>あざ</rt></ruby>やかに<ruby>描<rt>えが</rt></ruby>き<ruby>出<rt>だ</rt></ruby>していた。",
+      "zh": "\n            又是一年暑期到，你还记得吗？一本翻到泛黄卷边的连环画，定格了金戈铁马；一段收音机里抑扬顿挫的评书“话说东汉末年……”，还犹然飘在耳边；一个夏日蝉鸣阵阵的无忧午后，仿若就在昨天。\n          ",
+      "audio_file": "audio/p7_s3.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 4,
+      "sentence_id": "p7_s4",
+      "jp_plain": "ラジオから流れてくる抑揚のある講談の「さて、時は後漢末のころ……」という語りが、今もなお、耳に残っている。",
+      "jp_html": "ラジオから<ruby>流<rt>なが</rt></ruby>れてくる<ruby>抑揚<rt>よくよう</rt></ruby>のある<ruby>講談<rt>こうだん</rt></ruby>の「さて、<ruby>時<rt>とき</rt></ruby>は<ruby>後漢末<rt>ごかんまつ</rt></ruby>のころ……」という<ruby>語<rt>かた</rt></ruby>りが、<ruby>今<rt>いま</rt></ruby>もなお、<ruby>耳<rt>みみ</rt></ruby>に<ruby>残<rt>のこ</rt></ruby>っている。",
+      "zh": "\n            又是一年暑期到，你还记得吗？一本翻到泛黄卷边的连环画，定格了金戈铁马；一段收音机里抑扬顿挫的评书“话说东汉末年……”，还犹然飘在耳边；一个夏日蝉鸣阵阵的无忧午后，仿若就在昨天。\n          ",
+      "audio_file": "audio/p7_s4.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 5,
+      "sentence_id": "p7_s5",
+      "jp_plain": "そして、蝉の声が響き渡る夏の日の、何の心配もない午後が、まるで昨日のことのようによみがえる。",
+      "jp_html": "そして、<ruby>蝉<rt>せみ</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>が<ruby>響<rt>ひび</rt></ruby>き<ruby>渡<rt>わた</rt></ruby>る<ruby>夏<rt>なつ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>の、<ruby>何<rt>なに</rt></ruby>の<ruby>心配<rt>しんぱい</rt></ruby>もない<ruby>午後<rt>ごご</rt></ruby>が、まるで<ruby>昨日<rt>きのう</rt></ruby>のことのようによみがえる。",
+      "zh": "\n            又是一年暑期到，你还记得吗？一本翻到泛黄卷边的连环画，定格了金戈铁马；一段收音机里抑扬顿挫的评书“话说东汉末年……”，还犹然飘在耳边；一个夏日蝉鸣阵阵的无忧午后，仿若就在昨天。\n          ",
+      "audio_file": "audio/p7_s5.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 1,
+      "sentence_id": "p8_s1",
+      "jp_plain": "中国気象局国家気候センターの観測によると、赤道中東太平洋では、5月に、エルニーニョ現象の基準を満たし、さらに、6月には、赤道中東太平洋の海面水温が引き続き上昇し、7月以降は、すでに強いエルニーニョ現象の監視対象となっており、スーパーエルニーニョ現象が発生する可能性が高まっている。",
+      "jp_html": "<ruby>中国気象局<rt>ちゅうごくきしょうきょく</rt></ruby><ruby>国家気候センター<rt>こっかきこうセンター</rt></ruby>の<ruby>観測<rt>かんそく</rt></ruby>によると、<ruby>赤道<rt>せきどう</rt></ruby><ruby>中東<rt>ちゅうとう</rt></ruby><ruby>太平洋<rt>たいへいよう</rt></ruby>では、5<ruby>月<rt>がつ</rt></ruby>に、エルニーニョ<ruby>現象<rt>げんしょう</rt></ruby>の<ruby>基準<rt>きじゅん</rt></ruby>を<ruby>満<rt>み</rt></ruby>たし、さらに、6<ruby>月<rt>がつ</rt></ruby>には、<ruby>赤道<rt>せきどう</rt></ruby><ruby>中東<rt>ちゅうとう</rt></ruby><ruby>太平洋<rt>たいへいよう</rt></ruby>の<ruby>海面水温<rt>かいめんすいおん</rt></ruby>が<ruby>引<rt>ひ</rt></ruby>き<ruby>続<rt>つづ</rt></ruby>き<ruby>上昇<rt>じょうしょう</rt></ruby>し、7<ruby>月<rt>がつ</rt></ruby><ruby>以降<rt>いこう</rt></ruby>は、すでに<ruby>強<rt>つよ</rt></ruby>いエルニーニョ<ruby>現象<rt>げんしょう</rt></ruby>の<ruby>監視対象<rt>かんしたいしょう</rt></ruby>となっており、スーパーエルニーニョ<ruby>現象<rt>げんしょう</rt></ruby>が<ruby>発生<rt>はっせい</rt></ruby>する<ruby>可能性<rt>かのうせい</rt></ruby>が<ruby>高<rt>たか</rt></ruby>まっている。",
+      "zh": "\n            中国气象局国家气候中心监测显示，赤道中东太平洋于5月达到厄尔尼诺状态的标准，且6月赤道中东太平洋海温持续增暖，7月开始已经进入强厄尔尼诺事件的监测行列，发生超强厄尔尼诺事件的概率在增大。\n          ",
+      "audio_file": "audio/p8_s1.mp3"
+    },
+    {
+      "section": 9,
+      "sentence_index": 1,
+      "sentence_id": "p9_s1",
+      "jp_plain": "日本銀行は7月31日の金融政策決定会合で、賛成多数により現行の金利を据え置くことを決定した。",
+      "jp_html": "<ruby>日本銀行<rt>にほんぎんこう</rt></ruby>は7<ruby>月<rt>がつ</rt></ruby>31<ruby>日<rt>にち</rt></ruby>の<ruby>金融政策決定会合<rt>きんゆうせいさくけっていかいごう</rt></ruby>で、<ruby>賛成多数<rt>さんせいたすう</rt></ruby>により<ruby>現行<rt>げんこう</rt></ruby>の<ruby>金利<rt>きんり</rt></ruby>を<ruby>据<rt>す</rt></ruby>え<ruby>置<rt>お</rt></ruby>くことを<ruby>決定<rt>けってい</rt></ruby>した。",
+      "zh": "\n            日本央行在7月31日的货币政策会议上以多数赞成票决定维持现行利率不变。（略）随着原油价格上涨、人工智能相关需求急剧扩大以及日元历史性贬值，央行对物价上行风险保持警惕，市场关注焦点已转向下次加息的时机及未来加息步伐是否会加速。\n          ",
+      "audio_file": "audio/p9_s1.mp3"
+    },
+    {
+      "section": 9,
+      "sentence_index": 2,
+      "sentence_id": "p9_s2",
+      "jp_plain": "（中略）原油価格の上昇、人工知能（AI）関連需要の急拡大、さらに歴史的な円安を背景に、日銀は物価上昇リスクへの警戒を強めており、市場の注目は次回の利上げの時期や、今後の利上げペースが加速するかどうかに移っている。",
+      "jp_html": "（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>原油価格<rt>げんゆかかく</rt></ruby>の<ruby>上昇<rt>じょうしょう</rt></ruby>、<ruby>人工知能<rt>じんこうちのう</rt></ruby>（AI）<ruby>関連需要<rt>かんれんじゅよう</rt></ruby>の<ruby>急拡大<rt>きゅうかくだい</rt></ruby>、さらに<ruby>歴史的<rt>れきしてき</rt></ruby>な<ruby>円安<rt>えんやす</rt></ruby>を<ruby>背景<rt>はいけい</rt></ruby>に、<ruby>日銀<rt>にちぎん</rt></ruby>は<ruby>物価上昇<rt>ぶっかじょうしょう</rt></ruby>リスクへの<ruby>警戒<rt>けいかい</rt></ruby>を<ruby>強<rt>つよ</rt></ruby>めており、<ruby>市場<rt>しじょう</rt></ruby>の<ruby>注目<rt>ちゅうもく</rt></ruby>は<ruby>次回<rt>じかい</rt></ruby>の<ruby>利上<rt>りあ</rt></ruby>げの<ruby>時期<rt>じき</rt></ruby>や、<ruby>今後<rt>こんご</rt></ruby>の<ruby>利上<rt>りあ</rt></ruby>げペースが<ruby>加速<rt>かそく</rt></ruby>するかどうかに<ruby>移<rt>うつ</rt></ruby>っている。",
+      "zh": "\n            日本央行在7月31日的货币政策会议上以多数赞成票决定维持现行利率不变。（略）随着原油价格上涨、人工智能相关需求急剧扩大以及日元历史性贬值，央行对物价上行风险保持警惕，市场关注焦点已转向下次加息的时机及未来加息步伐是否会加速。\n          ",
+      "audio_file": "audio/p9_s2.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 1,
+      "sentence_id": "p10_s1",
+      "jp_plain": "「人」という字は、私が幼い頃、啓蒙の読本である『三字経』の中で最初に覚えた字であった。",
+      "jp_html": "「<ruby>人<rt>ひと</rt></ruby>」という<ruby>字<rt>じ</rt></ruby>は、<ruby>私<rt>わたし</rt></ruby>が<ruby>幼<rt>おさな</rt></ruby>い<ruby>頃<rt>ころ</rt></ruby>、<ruby>啓蒙<rt>けいもう</rt></ruby>の<ruby>読本<rt>とくほん</rt></ruby>である『<ruby>三字経<rt>さんじきょう</rt></ruby>』の<ruby>中<rt>なか</rt></ruby>で<ruby>最初<rt>さいしょ</rt></ruby>に<ruby>覚<rt>おぼ</rt></ruby>えた<ruby>字<rt>じ</rt></ruby>であった。",
+      "zh": "\n            “人”，这是我在开蒙读本《三字经》上认识的第一个字，可是在我前半生中一直没有懂得它。有了共产党人，有了改造罪犯的政策，我今天才明白了这个庄严字眼的含义，才做了真正的人。\n          ",
+      "audio_file": "audio/p10_s1.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 2,
+      "sentence_id": "p10_s2",
+      "jp_plain": "しかし、私の前半生において、私はその字の意味を理解することができなかった。",
+      "jp_html": "しかし、<ruby>私<rt>わたし</rt></ruby>の<ruby>前半生<rt>ぜんはんせい</rt></ruby>において、<ruby>私<rt>わたし</rt></ruby>はその<ruby>字<rt>じ</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>することができなかった。",
+      "zh": "\n            “人”，这是我在开蒙读本《三字经》上认识的第一个字，可是在我前半生中一直没有懂得它。有了共产党人，有了改造罪犯的政策，我今天才明白了这个庄严字眼的含义，才做了真正的人。\n          ",
+      "audio_file": "audio/p10_s2.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 3,
+      "sentence_id": "p10_s3",
+      "jp_plain": "共産党員がいて、犯罪者を改造するという政策があったからこそ、私は今日になって初めて、この荘厳な一文字が持つ意味を理解し、真の人間となったのである。",
+      "jp_html": "<ruby>共産党員<rt>きょうさんとういん</rt></ruby>がいて、<ruby>犯罪者<rt>はんざいしゃ</rt></ruby>を<ruby>改造<rt>かいぞう</rt></ruby>するという<ruby>政策<rt>せいさく</rt></ruby>があったからこそ、<ruby>私<rt>わたし</rt></ruby>は<ruby>今日<rt>きょう</rt></ruby>になって<ruby>初<rt>はじ</rt></ruby>めて、この<ruby>荘厳<rt>そうごん</rt></ruby>な<ruby>一文字<rt>ひともじ</rt></ruby>が<ruby>持<rt>も</rt></ruby>つ<ruby>意味<rt>いみ</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>し、<ruby>真<rt>しん</rt></ruby>の<ruby>人間<rt>にんげん</rt></ruby>となったのである。",
+      "zh": "\n            “人”，这是我在开蒙读本《三字经》上认识的第一个字，可是在我前半生中一直没有懂得它。有了共产党人，有了改造罪犯的政策，我今天才明白了这个庄严字眼的含义，才做了真正的人。\n          ",
+      "audio_file": "audio/p10_s3.mp3"
+    }
+  ]
+}

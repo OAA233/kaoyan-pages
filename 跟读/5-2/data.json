@@ -1,0 +1,141 @@
+{
+  "title": "5-2 AI变革",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "AI変革や組織の扁平化と言えば、多くの人はAIが人間の仕事を奪うのではないかと心配するだろう。",
+      "jp_html": "AI<ruby>変革<rt>へんかく</rt></ruby>や<ruby>組織<rt>そしき</rt></ruby>の<ruby>扁平化<rt>へんぺいか</rt></ruby>と<ruby>言<rt>い</rt></ruby>えば、<ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>はAIが<ruby>人間<rt>にんげん</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>を<ruby>奪<rt>うば</rt></ruby>うのではないかと<ruby>心配<rt>しんぱい</rt></ruby>するだろう。",
+      "zh": "提到AI变革、组织扁平化，很多人会担心AI抢走人类的工作。这个担心乍看起来没错：如果全世界的工作是一张饼，AI多拿走一份，人类自然就少一份。",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "この心配は一見するとその通りだと思える。",
+      "jp_html": "この<ruby>心配<rt>しんぱい</rt></ruby>は<ruby>一見<rt>いっけん</rt></ruby>するとその<ruby>通<rt>とお</rt></ruby>りだと<ruby>思<rt>おも</rt></ruby>える。",
+      "zh": "提到AI变革、组织扁平化，很多人会担心AI抢走人类的工作。这个担心乍看起来没错：如果全世界的工作是一张饼，AI多拿走一份，人类自然就少一份。",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 3,
+      "sentence_id": "p1_s3",
+      "jp_plain": "全世界の仕事が一つのパイだとするならば、AIが一つ多く取れば、人間が受け取る分は自から少なくなる。",
+      "jp_html": "<ruby>全世界<rt>ぜんかい</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>が<ruby>一<rt>ひと</rt></ruby>つのパイだとするならば、AIが<ruby>一<rt>ひと</rt></ruby>つ<ruby>多<rt>おお</rt></ruby>く<ruby>取<rt>と</rt></ruby>れば、<ruby>人間<rt>にんげん</rt></ruby>が<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>る<ruby>分<rt>ぶん</rt></ruby>は<ruby>自<rt>おのず</rt></ruby>から<ruby>少<rt>すく</rt></ruby>なくなる。",
+      "zh": "提到AI变革、组织扁平化，很多人会担心AI抢走人类的工作。这个担心乍看起来没错：如果全世界的工作是一张饼，AI多拿走一份，人类自然就少一份。",
+      "audio_file": "audio/p1_s3.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "これは実はAIと人間を対立させているにすぎない。",
+      "jp_html": "これは<ruby>実<rt>じつ</rt></ruby>はAIと<ruby>人間<rt>にんげん</rt></ruby>を<ruby>対立<rt>たいりつ</rt></ruby>させているにすぎない。",
+      "zh": "这其实是把AI和人对立起来了。事实上，由于AI的加入，人类创造的“饼”会放大若干倍。理由有两个，一是人的想象力现在还远远没有完全发挥。我们每个人都有好多点子，但是分身乏术，最终实现的可能连1%都不到。二是人的大脑带宽太有限了，我们的信息输入和输出比AI慢了数千倍；而且人脑是线性的，一次只能想一件事。AI可以帮助人类突破这些瓶颈，放大我们思考和执行的能力。",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "実際には、AIの登場によって、人間が生み出すパイは何倍にも拡大する。",
+      "jp_html": "<ruby>実際<rt>じっさい</rt></ruby>には、AIの<ruby>登場<rt>とうじょう</rt></ruby>によって、<ruby>人間<rt>にんげん</rt></ruby>が<ruby>生<rt>う</rt></ruby>み<ruby>出<rt>だ</rt></ruby>すパイは<ruby>何倍<rt>なんばい</rt></ruby>にも<ruby>拡大<rt>かくだい</rt></ruby>する。",
+      "zh": "这其实是把AI和人对立起来了。事实上，由于AI的加入，人类创造的“饼”会放大若干倍。理由有两个，一是人的想象力现在还远远没有完全发挥。我们每个人都有好多点子，但是分身乏术，最终实现的可能连1%都不到。二是人的大脑带宽太有限了，我们的信息输入和输出比AI慢了数千倍；而且人脑是线性的，一次只能想一件事。AI可以帮助人类突破这些瓶颈，放大我们思考和执行的能力。",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 3,
+      "sentence_id": "p2_s3",
+      "jp_plain": "その理由は二つある。",
+      "jp_html": "その<ruby>理由<rt>りゆう</rt></ruby>は<ruby>二<rt>ふた</rt></ruby>つある。",
+      "zh": "这其实是把AI和人对立起来了。事实上，由于AI的加入，人类创造的“饼”会放大若干倍。理由有两个，一是人的想象力现在还远远没有完全发挥。我们每个人都有好多点子，但是分身乏术，最终实现的可能连1%都不到。二是人的大脑带宽太有限了，我们的信息输入和输出比AI慢了数千倍；而且人脑是线性的，一次只能想一件事。AI可以帮助人类突破这些瓶颈，放大我们思考和执行的能力。",
+      "audio_file": "audio/p2_s3.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 4,
+      "sentence_id": "p2_s4",
+      "jp_plain": "一つは、人間の想像力がまだ十分に発揮されていないことだ。",
+      "jp_html": "<ruby>一<rt>ひと</rt></ruby>つは、<ruby>人間<rt>にんげん</rt></ruby>の<ruby>想像力<rt>そうぞうりょく</rt></ruby>がまだ<ruby>十分<rt>じゅうぶん</rt></ruby>に<ruby>発揮<rt>はっき</rt></ruby>されていないことだ。",
+      "zh": "这其实是把AI和人对立起来了。事实上，由于AI的加入，人类创造的“饼”会放大若干倍。理由有两个，一是人的想象力现在还远远没有完全发挥。我们每个人都有好多点子，但是分身乏术，最终实现的可能连1%都不到。二是人的大脑带宽太有限了，我们的信息输入和输出比AI慢了数千倍；而且人脑是线性的，一次只能想一件事。AI可以帮助人类突破这些瓶颈，放大我们思考和执行的能力。",
+      "audio_file": "audio/p2_s4.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 5,
+      "sentence_id": "p2_s5",
+      "jp_plain": "誰にもたくさんのアイデアがあるが、分身の術もなく、最終的に実現できるのは恐らく1％にも満たない。",
+      "jp_html": "<ruby>誰<rt>だれ</rt></ruby>にもたくさんのアイデアがあるが、<ruby>分身<rt>ぶんしん</rt></ruby>の<ruby>術<rt>じゅつ</rt></ruby>もなく、<ruby>最終的<rt>さいしゅうてき</rt></ruby>に<ruby>実現<rt>じつげん</rt></ruby>できるのは<ruby>恐<rt>おそ</rt></ruby>らく1％にも<ruby>満<rt>み</rt></ruby>たない。",
+      "zh": "这其实是把AI和人对立起来了。事实上，由于AI的加入，人类创造的“饼”会放大若干倍。理由有两个，一是人的想象力现在还远远没有完全发挥。我们每个人都有好多点子，但是分身乏术，最终实现的可能连1%都不到。二是人的大脑带宽太有限了，我们的信息输入和输出比AI慢了数千倍；而且人脑是线性的，一次只能想一件事。AI可以帮助人类突破这些瓶颈，放大我们思考和执行的能力。",
+      "audio_file": "audio/p2_s5.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 6,
+      "sentence_id": "p2_s6",
+      "jp_plain": "もう一つは、人間の脳の能力には限りがあることだ。",
+      "jp_html": "もう<ruby>一<rt>ひと</rt></ruby>つは、<ruby>人間<rt>にんげん</rt></ruby>の<ruby>脳<rt>のう</rt></ruby>の<ruby>能力<rt>のうりょく</rt></ruby>には<ruby>限<rt>かぎ</rt></ruby>りがあることだ。",
+      "zh": "这其实是把AI和人对立起来了。事实上，由于AI的加入，人类创造的“饼”会放大若干倍。理由有两个，一是人的想象力现在还远远没有完全发挥。我们每个人都有好多点子，但是分身乏术，最终实现的可能连1%都不到。二是人的大脑带宽太有限了，我们的信息输入和输出比AI慢了数千倍；而且人脑是线性的，一次只能想一件事。AI可以帮助人类突破这些瓶颈，放大我们思考和执行的能力。",
+      "audio_file": "audio/p2_s6.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 7,
+      "sentence_id": "p2_s7",
+      "jp_plain": "情報の入力と出力はAIより数千倍も遅く、しかも人間の脳は直線的で、同時に一つのことしか考えられない。",
+      "jp_html": "<ruby>情報<rt>じょうほう</rt></ruby>の<ruby>入力<rt>にゅうりょく</rt></ruby>と<ruby>出力<rt>しゅつりょく</rt></ruby>はAIより<ruby>数千倍<rt>すうせんばい</rt></ruby>も<ruby>遅<rt>おそ</rt></ruby>く、しかも<ruby>人間<rt>にんげん</rt></ruby>の<ruby>脳<rt>のう</rt></ruby>は<ruby>直線的<rt>ちょくせんてき</rt></ruby>で、<ruby>同時<rt>どうじ</rt></ruby>に<ruby>一<rt>ひと</rt></ruby>つのことしか<ruby>考<rt>かんが</rt></ruby>えられない。",
+      "zh": "这其实是把AI和人对立起来了。事实上，由于AI的加入，人类创造的“饼”会放大若干倍。理由有两个，一是人的想象力现在还远远没有完全发挥。我们每个人都有好多点子，但是分身乏术，最终实现的可能连1%都不到。二是人的大脑带宽太有限了，我们的信息输入和输出比AI慢了数千倍；而且人脑是线性的，一次只能想一件事。AI可以帮助人类突破这些瓶颈，放大我们思考和执行的能力。",
+      "audio_file": "audio/p2_s7.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 8,
+      "sentence_id": "p2_s8",
+      "jp_plain": "AIは人間がこれらの壁を乗り越え、思考と実行の能力を拡大するのを助けてくれる。",
+      "jp_html": "AIは<ruby>人間<rt>にんげん</rt></ruby>がこれらの<ruby>壁<rt>かべ</rt></ruby>を<ruby>乗<rt>の</rt></ruby>り<ruby>越<rt>こ</rt></ruby>え、<ruby>思考<rt>しこう</rt></ruby>と<ruby>実行<rt>じっこう</rt></ruby>の<ruby>能力<rt>のうりょく</rt></ruby>を<ruby>拡大<rt>かくだい</rt></ruby>するのを<ruby>助<rt>たす</rt></ruby>けてくれる。",
+      "zh": "这其实是把AI和人对立起来了。事实上，由于AI的加入，人类创造的“饼”会放大若干倍。理由有两个，一是人的想象力现在还远远没有完全发挥。我们每个人都有好多点子，但是分身乏术，最终实现的可能连1%都不到。二是人的大脑带宽太有限了，我们的信息输入和输出比AI慢了数千倍；而且人脑是线性的，一次只能想一件事。AI可以帮助人类突破这些瓶颈，放大我们思考和执行的能力。",
+      "audio_file": "audio/p2_s8.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "AIがアイデアを現実のものにする実行の段階を担えるようになれば、一般の人はわずかな時間でAIに指示して、シミュレーションや小規模な試行錯誤を行わせることができる。",
+      "jp_html": "AIがアイデアを<ruby>現実<rt>げんじつ</rt></ruby>のものにする<ruby>実行<rt>じっこう</rt></ruby>の<ruby>段階<rt>だんかい</rt></ruby>を<ruby>担<rt>にな</rt></ruby>えるようになれば、<ruby>一般<rt>いっぱん</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はわずかな<ruby>時間<rt>じかん</rt></ruby>でAIに<ruby>指示<rt>しじ</rt></ruby>して、シミュレーションや<ruby>小規模<rt>しょうきぼ</rt></ruby>な<ruby>試行錯誤<rt>しこうさくご</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>わせることができる。",
+      "zh": "一旦AI可以承接创意落地的执行环节，普通人仅需少量时间指挥AI完成沙盘测试、小规模试错，大量潜在优质创意就能转化为商业价值，国内生产总值规模有望放大数倍。过去，顶尖的创新者一辈子最多能重塑几个行业，现在在AI辅助下，他们有可能孵化出数十上百个新企业，批量诞生具有颠覆性的产业变革。这样，即便AI承接80%的工作，人类可获得的工作机会和经济收益也能成倍增长。",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "すると、潜在する優良なアイデアの多くが商業価値に転化し、国内総生産（GDP）の規模は数倍に拡大する見込みだ。",
+      "jp_html": "すると、<ruby>潜在<rt>せんざい</rt></ruby>する<ruby>優良<rt>ゆうりょう</rt></ruby>なアイデアの<ruby>多<rt>おお</rt></ruby>くが<ruby>商業価値<rt>しょうぎょうかち</rt></ruby>に<ruby>転化<rt>てんか</rt></ruby>し、<ruby>国内総生産<rt>こくないそうせいさん</rt></ruby>（GDP）の<ruby>規模<rt>きぼ</rt></ruby>は<ruby>数倍<rt>すうばい</rt></ruby>に<ruby>拡大<rt>かくだい</rt></ruby>する<ruby>見込<rt>みこ</rt></ruby>みだ。",
+      "zh": "一旦AI可以承接创意落地的执行环节，普通人仅需少量时间指挥AI完成沙盘测试、小规模试错，大量潜在优质创意就能转化为商业价值，国内生产总值规模有望放大数倍。过去，顶尖的创新者一辈子最多能重塑几个行业，现在在AI辅助下，他们有可能孵化出数十上百个新企业，批量诞生具有颠覆性的产业变革。这样，即便AI承接80%的工作，人类可获得的工作机会和经济收益也能成倍增长。",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "かつては最も優れたイノベーターでも、一生のうちに書き換えられる業界はせいぜい数えるほどしかなかったが、今ではAIの支援の下で、数十から百の新企業を生み出し、破壊的な産業変革を量産するかもしれない。",
+      "jp_html": "かつては<ruby>最<rt>もっと</rt></ruby>も<ruby>優<rt>すぐ</rt></ruby>れたイノベーターでも、<ruby>一生<rt>いっしょう</rt></ruby>のうちに<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>か</rt></ruby>えられる<ruby>業界<rt>ぎょうかい</rt></ruby>はせいぜい<ruby>数<rt>かぞ</rt></ruby>えるほどしかなかったが、<ruby>今<rt>いま</rt></ruby>ではAIの<ruby>支援<rt>しえん</rt></ruby>の<ruby>下<rt>もと</rt></ruby>で、<ruby>数<rt>すう</rt></ruby>十から<ruby>百<rt>ひゃく</rt></ruby>の<ruby>新企業<rt>しんきぎょう</rt></ruby>を<ruby>生<rt>う</rt></ruby>み<ruby>出<rt>だ</rt></ruby>し、<ruby>破壊的<rt>はかいてき</rt></ruby>な<ruby>産業変革<rt>さんぎょうへんかく</rt></ruby>を<ruby>量産<rt>りょうさん</rt></ruby>するかもしれない。",
+      "zh": "一旦AI可以承接创意落地的执行环节，普通人仅需少量时间指挥AI完成沙盘测试、小规模试错，大量潜在优质创意就能转化为商业价值，国内生产总值规模有望放大数倍。过去，顶尖的创新者一辈子最多能重塑几个行业，现在在AI辅助下，他们有可能孵化出数十上百个新企业，批量诞生具有颠覆性的产业变革。这样，即便AI承接80%的工作，人类可获得的工作机会和经济收益也能成倍增长。",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 4,
+      "sentence_id": "p3_s4",
+      "jp_plain": "そうなれば、仮にAIが仕事の80％を担っても、人間が得られる仕事の機会も経済的な利益も何倍にも増えるだろう。",
+      "jp_html": "そうなれば、<ruby>仮<rt>かり</rt></ruby>にAIが<ruby>仕事<rt>しごと</rt></ruby>の80％を<ruby>担<rt>にな</rt></ruby>っても、<ruby>人間<rt>にんげん</rt></ruby>が<ruby>得<rt>え</rt></ruby>られる<ruby>仕事<rt>しごと</rt></ruby>の<ruby>機会<rt>きかい</rt></ruby>も<ruby>経済的<rt>けいざいてき</rt></ruby>な<ruby>利益<rt>りえき</rt></ruby>も<ruby>何倍<rt>なんばい</rt></ruby>にも<ruby>増<rt>ふ</rt></ruby>えるだろう。",
+      "zh": "一旦AI可以承接创意落地的执行环节，普通人仅需少量时间指挥AI完成沙盘测试、小规模试错，大量潜在优质创意就能转化为商业价值，国内生产总值规模有望放大数倍。过去，顶尖的创新者一辈子最多能重塑几个行业，现在在AI辅助下，他们有可能孵化出数十上百个新企业，批量诞生具有颠覆性的产业变革。这样，即便AI承接80%的工作，人类可获得的工作机会和经济收益也能成倍增长。",
+      "audio_file": "audio/p3_s4.mp3"
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "title": "第3周 每周自测2",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "通産相だった中曽根康弘氏は、司馬遼太郎の小説を引き合いに、日露戦争での勝利と戦後の高度経済成長を重ね合わせ『坂の上の一朶の雲を見つめて、脇目もふらずに走り上がってきた。",
+      "jp_html": "<ruby>通産相<rt>つうさんしょう</rt></ruby>だった<ruby>中曽根康弘<rt>なかそねやすひろ</rt></ruby><ruby>氏<rt>し</rt></ruby>は、<ruby>司馬遼太郎<rt>しばりょうたろう</rt></ruby>の<ruby>小説<rt>しょうせつ</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>いに、<ruby>日露戦争<rt>にちろせんそう</rt></ruby>での<ruby>勝利<rt>しょうり</rt></ruby>と<ruby>戦後<rt>せんご</rt></ruby>の<ruby>高度経済成長<rt>こうどけいざいせいちょう</rt></ruby>を<ruby>重<rt>かさ</rt></ruby>ね<ruby>合<rt>あ</rt></ruby>わせ『<ruby>坂<rt>さか</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>の<ruby>一朶<rt>いちだ</rt></ruby>の<ruby>雲<rt>くも</rt></ruby>を<ruby>見<rt>み</rt></ruby>つめて、<ruby>脇目<rt>わきめ</rt></ruby>もふらずに<ruby>走<rt>はし</rt></ruby>り<ruby>上<rt>あ</rt></ruby>がってきた。",
+      "zh": "\n            曾任通商产业大臣的中曾根康弘引用司马辽太郎的小说，将日俄战争的胜利与二战后的高速经济增长联系起来。他说：“我们一直盯着山坡上的那朵云，毫不分心一路向上奔跑。但是，它因石油危机而结束了。”\n          ",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "しかし石油危機によってそれは終わったのだ』と語っていました。",
+      "jp_html": "しかし<ruby>石油危機<rt>せきゆきき</rt></ruby>によってそれは<ruby>終<rt>お</rt></ruby>わったのだ』と<ruby>語<rt>かた</rt></ruby>っていました。",
+      "zh": "\n            曾任通商产业大臣的中曾根康弘引用司马辽太郎的小说，将日俄战争的胜利与二战后的高速经济增长联系起来。他说：“我们一直盯着山坡上的那朵云，毫不分心一路向上奔跑。但是，它因石油危机而结束了。”\n          ",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "ホルムズ海峡が「チョークポイント」（急所）となりうることは意識されていましたが、差し迫ったリスクとはみなされていなかった。",
+      "jp_html": "ホルムズ<ruby>海峡<rt>かいきょう</rt></ruby>が「チョークポイント」（<ruby>急所<rt>きゅうしょ</rt></ruby>）となりうることは<ruby>意識<rt>いしき</rt></ruby>されていましたが、<ruby>差<rt>さ</rt></ruby>し<ruby>迫<rt>せま</rt></ruby>ったリスクとはみなされていなかった。",
+      "zh": "\n            人们此前已经有所意识，即霍尔木兹海峡有可能成为一个“咽喉要道”（关键节点），但是并没有把它视为迫在眉睫的风险。美国批评称，这一次伊朗已经把霍尔木兹海峡变成了“经济核武器”，因而，霍尔木兹海峡今后恐有可能长期被当作各国博弈的工具。\n          ",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "今回、イランは海峡を「経済的核兵器」にしてしまった、と米国は批判していますが、ホルムズ海峡は今後、半永久的に武器化される恐れがあります。",
+      "jp_html": "<ruby>今回<rt>こんかい</rt></ruby>、イランは<ruby>海峡<rt>かいきょう</rt></ruby>を「<ruby>経済的<rt>けいざいてき</rt></ruby><ruby>核兵器<rt>かくへいき</rt></ruby>」にしてしまった、と<ruby>米国<rt>べいこく</rt></ruby>は<ruby>批判<rt>ひはん</rt></ruby>していますが、ホルムズ<ruby>海峡<rt>かいきょう</rt></ruby>は<ruby>今後<rt>こんご</rt></ruby>、<ruby>半永久的<rt>はんえいきゅうてき</rt></ruby>に<ruby>武器化<rt>ぶきか</rt></ruby>される<ruby>恐<rt>おそ</rt></ruby>れがあります。",
+      "zh": "\n            人们此前已经有所意识，即霍尔木兹海峡有可能成为一个“咽喉要道”（关键节点），但是并没有把它视为迫在眉睫的风险。美国批评称，这一次伊朗已经把霍尔木兹海峡变成了“经济核武器”，因而，霍尔木兹海峡今后恐有可能长期被当作各国博弈的工具。\n          ",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "不動産経済研究所が21日発表した2026年上半期（1～6月）の首都圏（1都3県）の新築マンション1戸当たりの平均価格は、節目の1億円を上半期として初めて超えた。",
+      "jp_html": "<ruby>不動産経済研究所<rt>ふどうさんけいざいけんきゅうじょ</rt></ruby>が21<ruby>日<rt>にち</rt></ruby><ruby>発表<rt>はっぴょう</rt></ruby>した2026<ruby>年<rt>ねん</rt></ruby><ruby>上半期<rt>かみはんき</rt></ruby>（1～6<ruby>月<rt>がつ</rt></ruby>）の<ruby>首都圏<rt>しゅとけん</rt></ruby>（1<ruby>都<rt>と</rt></ruby>3<ruby>県<rt>けん</rt></ruby>）の<ruby>新築<rt>しんちく</rt></ruby>マンション1<ruby>戸<rt>こ</rt></ruby><ruby>当<rt>あ</rt></ruby>たりの<ruby>平均価格<rt>へいきんかかく</rt></ruby>は、<ruby>節目<rt>ふしめ</rt></ruby>の1<ruby>億円<rt>おくえん</rt></ruby>を<ruby>上半期<rt>かみはんき</rt></ruby>として<ruby>初<rt>はじ</rt></ruby>めて<ruby>超<rt>こ</rt></ruby>えた。",
+      "zh": "\n            不动产经济研究所21日发布的2026年上半年（1~6月）首都圈（1都3县）新建公寓的平均单套价格，首次在上半年突破1亿日元大关。与去年同期相比上涨了13.1%，价格为1亿135万日元，连续两年刷新历史最高纪录。\n          ",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "前年同期比13.1％上昇の1億135万円となり、2年連続で過去最高を更新した。",
+      "jp_html": "<ruby>前年同期比<rt>ぜんねんどうきひ</rt></ruby>13.1％<ruby>上昇<rt>じょうしょう</rt></ruby>の1<ruby>億<rt>おく</rt></ruby>135<ruby>万円<rt>まんえん</rt></ruby>となり、2<ruby>年連続<rt>ねんれんぞく</rt></ruby>で<ruby>過去最高<rt>かこさいこう</rt></ruby>を<ruby>更新<rt>こうしん</rt></ruby>した。",
+      "zh": "\n            不动产经济研究所21日发布的2026年上半年（1~6月）首都圈（1都3县）新建公寓的平均单套价格，首次在上半年突破1亿日元大关。与去年同期相比上涨了13.1%，价格为1亿135万日元，连续两年刷新历史最高纪录。\n          ",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "高市早苗首相が「就任以来、0～3時間睡眠が常態化」していると自身のX（旧ツイッター）に投稿し、波紋を広げている。",
+      "jp_html": "<ruby>高市早苗<rt>たかいちさなえ</rt></ruby><ruby>首相<rt>しゅしょう</rt></ruby>が「<ruby>就任<rt>しゅうにん</rt></ruby><ruby>以来<rt>いらい</rt></ruby>、0～3<ruby>時間睡眠<rt>じかんすいみん</rt></ruby>が<ruby>常態化<rt>じょうたいか</rt></ruby>」していると<ruby>自身<rt>じしん</rt></ruby>のX（<ruby>旧<rt>きゅう</rt></ruby>ツイッター）に<ruby>投稿<rt>とうこう</rt></ruby>し、<ruby>波紋<rt>はもん</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げている。",
+      "zh": "\n            首相高市早苗在自己的X（原推特）上发文称，“自上任以来，0~3个小时的睡眠已经成为常态”，此言一出引发了广泛议论。她还写道，进入7月以来的周末，她待在公邸里，“从清晨到深夜”一直在阅读包括经济财政运营的指导方针“骨太方针”在内的“厚厚的资料”。\n          ",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "7月に入ってからの土日は、経済財政運営の指針「骨太方針」など「分厚い資料を早朝から深夜まで」公邸で読み続けたと記した。",
+      "jp_html": "7<ruby>月<rt>がつ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ってからの<ruby>土日<rt>どにち</rt></ruby>は、<ruby>経済財政運営<rt>けいざいざいせいうんえい</rt></ruby>の<ruby>指針<rt>ししん</rt></ruby>「<ruby>骨太方針<rt>ほねふとほうしん</rt></ruby>」など「<ruby>分厚<rt>ぶあつ</rt></ruby>い<ruby>資料<rt>しりょう</rt></ruby>を<ruby>早朝<rt>そうちょう</rt></ruby>から<ruby>深夜<rt>しんや</rt></ruby>まで」<ruby>公邸<rt>こうてい</rt></ruby>で<ruby>読<rt>よ</rt></ruby>み<ruby>続<rt>つづ</rt></ruby>けたと<ruby>記<rt>しる</rt></ruby>した。",
+      "zh": "\n            首相高市早苗在自己的X（原推特）上发文称，“自上任以来，0~3个小时的睡眠已经成为常态”，此言一出引发了广泛议论。她还写道，进入7月以来的周末，她待在公邸里，“从清晨到深夜”一直在阅读包括经济财政运营的指导方针“骨太方针”在内的“厚厚的资料”。\n          ",
+      "audio_file": "audio/p4_s2.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 1,
+      "sentence_id": "p5_s1",
+      "jp_plain": "隴西の李徴は博学才穎、天宝の末年、若くして名を虎榜に連ね、ついで江南尉に補せられたが、性、狷介、自ら恃むところ頗る厚く、賤吏に甘んずるを潔しとしなかった。",
+      "jp_html": "<ruby>隴西<rt>ろうさい</rt></ruby>の<ruby>李徴<rt>りちょう</rt></ruby>は<ruby>博学才穎<rt>はくがくさいえい</rt></ruby>、<ruby>天宝<rt>てんぽう</rt></ruby>の<ruby>末年<rt>まつねん</rt></ruby>、<ruby>若<rt>わか</rt></ruby>くして<ruby>名<rt>な</rt></ruby>を<ruby>虎榜<rt>こぼう</rt></ruby>に<ruby>連<rt>つら</rt></ruby>ね、ついで<ruby>江南尉<rt>こうなんい</rt></ruby>に<ruby>補<rt>ほ</rt></ruby>せられたが、<ruby>性<rt>せい</rt></ruby>、<ruby>狷介<rt>けんかい</rt></ruby>、<ruby>自<rt>みずか</rt></ruby>ら<ruby>恃<rt>たの</rt></ruby>むところ<ruby>頗<rt>すこぶ</rt></ruby>る<ruby>厚<rt>あつ</rt></ruby>く、<ruby>賤吏<rt>せんり</rt></ruby>に<ruby>甘<rt>あま</rt></ruby>んずるを<ruby>潔<rt>いさぎよ</rt></ruby>しとしなかった。",
+      "zh": "\n            陇西人李征，博学多才，在天宝末年，年纪轻轻便登上虎榜，随后被授予江南尉一职。然而，他性情孤僻耿介，且颇为自负，不屑于位居低微的官职。没过多久他辞官之后，（略）便与人断绝交往，一心沉浸于作诗。\n          ",
+      "audio_file": "audio/p5_s1.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 2,
+      "sentence_id": "p5_s2",
+      "jp_plain": "いくばくもなく官を退いた後は、（中略）人と交りを絶って、ひたすら詩作に耽った。",
+      "jp_html": "いくばくもなく<ruby>官<rt>かん</rt></ruby>を<ruby>退<rt>しりぞ</rt></ruby>いた<ruby>後<rt>あと</rt></ruby>は、（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>人<rt>ひと</rt></ruby>と<ruby>交<rt>まじわ</rt></ruby>りを<ruby>絶<rt>た</rt></ruby>って、ひたすら<ruby>詩作<rt>しさく</rt></ruby>に<ruby>耽<rt>ふけ</rt></ruby>った。",
+      "zh": "\n            陇西人李征，博学多才，在天宝末年，年纪轻轻便登上虎榜，随后被授予江南尉一职。然而，他性情孤僻耿介，且颇为自负，不屑于位居低微的官职。没过多久他辞官之后，（略）便与人断绝交往，一心沉浸于作诗。\n          ",
+      "audio_file": "audio/p5_s2.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 1,
+      "sentence_id": "p6_s1",
+      "jp_plain": "ひとたび全ての人が限りない勤勉に陥ってしまえば、二つの大きな問題が生じる。",
+      "jp_html": "ひとたび<ruby>全<rt>すべ</rt></ruby>ての<ruby>人<rt>ひと</rt></ruby>が<ruby>限<rt>かぎ</rt></ruby>りない<ruby>勤勉<rt>きんべん</rt></ruby>に<ruby>陥<rt>おちい</rt></ruby>ってしまえば、<ruby>二<rt>ふた</rt></ruby>つの<ruby>大<rt>おお</rt></ruby>きな<ruby>問題<rt>もんだい</rt></ruby>が<ruby>生<rt>しょう</rt></ruby>じる。",
+      "zh": "\n            一旦所有人都陷入无休止的勤奋之中，会衍生两大问题。一方面严重挤压就业机会，另一方面人们压缩了休闲时间，随之缩减了休闲层面的消费开支。消费动力萎靡之后，社会产出的大量财富无法流通消化，最终反而会束缚勤奋本身带来的价值。\n          ",
+      "audio_file": "audio/p6_s1.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 2,
+      "sentence_id": "p6_s2",
+      "jp_plain": "一方では、雇用機会が大幅に圧迫され、他方では、人々が余暇の時間を削ることで、余暇に充てる消費支出も減る。",
+      "jp_html": "<ruby>一方<rt>いっぽう</rt></ruby>では、<ruby>雇用機会<rt>こようきかい</rt></ruby>が<ruby>大幅<rt>おおはば</rt></ruby>に<ruby>圧迫<rt>あっぱく</rt></ruby>され、<ruby>他方<rt>たほう</rt></ruby>では、<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>余暇<rt>よか</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>を<ruby>削<rt>けず</rt></ruby>ることで、<ruby>余暇<rt>よか</rt></ruby>に<ruby>充<rt>あ</rt></ruby>てる<ruby>消費支出<rt>しょうひししゅつ</rt></ruby>も<ruby>減<rt>へ</rt></ruby>る。",
+      "zh": "\n            一旦所有人都陷入无休止的勤奋之中，会衍生两大问题。一方面严重挤压就业机会，另一方面人们压缩了休闲时间，随之缩减了休闲层面的消费开支。消费动力萎靡之后，社会产出的大量财富无法流通消化，最终反而会束缚勤奋本身带来的价值。\n          ",
+      "audio_file": "audio/p6_s2.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 3,
+      "sentence_id": "p6_s3",
+      "jp_plain": "消費意欲が低迷すれば、社会で生み出された大量の富が流通・消化されなくなり、最終的には、勤勉そのものがもたらした価値さえも、却って縛られることになる。",
+      "jp_html": "<ruby>消費意欲<rt>しょうひいよく</rt></ruby>が<ruby>低迷<rt>ていめい</rt></ruby>すれば、<ruby>社会<rt>しゃかい</rt></ruby>で<ruby>生<rt>う</rt></ruby>み<ruby>出<rt>だ</rt></ruby>された<ruby>大量<rt>たいりょう</rt></ruby>の<ruby>富<rt>とみ</rt></ruby>が<ruby>流通<rt>りゅうつう</rt></ruby>・<ruby>消化<rt>しょうか</rt></ruby>されなくなり、<ruby>最終的<rt>さいしゅうてき</rt></ruby>には、<ruby>勤勉<rt>きんべん</rt></ruby>そのものがもたらした<ruby>価値<rt>かち</rt></ruby>さえも、<ruby>却<rt>かえ</rt></ruby>って<ruby>縛<rt>しば</rt></ruby>られることになる。",
+      "zh": "\n            一旦所有人都陷入无休止的勤奋之中，会衍生两大问题。一方面严重挤压就业机会，另一方面人们压缩了休闲时间，随之缩减了休闲层面的消费开支。消费动力萎靡之后，社会产出的大量财富无法流通消化，最终反而会束缚勤奋本身带来的价值。\n          ",
+      "audio_file": "audio/p6_s3.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 1,
+      "sentence_id": "p7_s1",
+      "jp_plain": "最近、セルビアのブチッチ大統領は、さまざまな公の場で中国の発展の成果を称賛している。",
+      "jp_html": "<ruby>最近<rt>さいきん</rt></ruby>、セルビアのブチッチ<ruby>大統領<rt>だいとうりょう</rt></ruby>は、さまざまな<ruby>公<rt>おおやけ</rt></ruby>の<ruby>場<rt>ば</rt></ruby>で<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>発展<rt>はってん</rt></ruby>の<ruby>成果<rt>せいか</rt></ruby>を<ruby>称賛<rt>しょうさん</rt></ruby>している。",
+      "zh": "\n            近期，塞尔维亚总统武契奇在多个公开场合赞赏中国发展成就。（略）武契奇表示，中国是一个负责任的国家，他钦佩中国人的勤奋和奉献，也钦佩中国拥有而欧洲人失去的东西，那就是昂扬的斗志。\n          ",
+      "audio_file": "audio/p7_s1.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 2,
+      "sentence_id": "p7_s2",
+      "jp_plain": "（中略）ブチッチ大統領は、「中国は責任ある国だ。",
+      "jp_html": "（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）ブチッチ<ruby>大統領<rt>だいとうりょう</rt></ruby>は、「<ruby>中国<rt>ちゅうごく</rt></ruby>は<ruby>責任<rt>せきにん</rt></ruby>ある<ruby>国<rt>くに</rt></ruby>だ。",
+      "zh": "\n            近期，塞尔维亚总统武契奇在多个公开场合赞赏中国发展成就。（略）武契奇表示，中国是一个负责任的国家，他钦佩中国人的勤奋和奉献，也钦佩中国拥有而欧洲人失去的东西，那就是昂扬的斗志。\n          ",
+      "audio_file": "audio/p7_s2.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 3,
+      "sentence_id": "p7_s3",
+      "jp_plain": "中国人の勤勉さと献身を尊敬している。",
+      "jp_html": "<ruby>中国人<rt>ちゅうごくじん</rt></ruby>の<ruby>勤勉<rt>きんべん</rt></ruby>さと<ruby>献身<rt>けんしん</rt></ruby>を<ruby>尊敬<rt>そんけい</rt></ruby>している。",
+      "zh": "\n            近期，塞尔维亚总统武契奇在多个公开场合赞赏中国发展成就。（略）武契奇表示，中国是一个负责任的国家，他钦佩中国人的勤奋和奉献，也钦佩中国拥有而欧洲人失去的东西，那就是昂扬的斗志。\n          ",
+      "audio_file": "audio/p7_s3.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 4,
+      "sentence_id": "p7_s4",
+      "jp_plain": "また、中国が持っていて、ヨーロッパ人が失ってしまったもの、すなわち、旺盛な闘志にも敬意を抱いている」と述べた。",
+      "jp_html": "また、<ruby>中国<rt>ちゅうごく</rt></ruby>が<ruby>持<rt>も</rt></ruby>っていて、ヨーロッパ<ruby>人<rt>じん</rt></ruby>が<ruby>失<rt>うしな</rt></ruby>ってしまったもの、すなわち、<ruby>旺盛<rt>おうせい</rt></ruby>な<ruby>闘志<rt>とうし</rt></ruby>にも<ruby>敬意<rt>けいい</rt></ruby>を<ruby>抱<rt>いだ</rt></ruby>いている」と<ruby>述<rt>の</rt></ruby>べた。",
+      "zh": "\n            近期，塞尔维亚总统武契奇在多个公开场合赞赏中国发展成就。（略）武契奇表示，中国是一个负责任的国家，他钦佩中国人的勤奋和奉献，也钦佩中国拥有而欧洲人失去的东西，那就是昂扬的斗志。\n          ",
+      "audio_file": "audio/p7_s4.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 1,
+      "sentence_id": "p8_s1",
+      "jp_plain": "在日中国大使館は中国国民に対し、車を運転して外出する際には踏切に注意し、警報音が聞こえた際には、決して踏切内に進入せず、通過する際は踏切内で停まらないよう呼びかけている。",
+      "jp_html": "<ruby>在日中国大使館<rt>ざいにちちゅうごくたいしかん</rt></ruby>は<ruby>中国国民<rt>ちゅうごくこくみん</rt></ruby>に<ruby>対<rt>たい</rt></ruby>し、<ruby>車<rt>くるま</rt></ruby>を<ruby>運転<rt>うんてん</rt></ruby>して<ruby>外出<rt>がいしゅつ</rt></ruby>する<ruby>際<rt>さい</rt></ruby>には<ruby>踏切<rt>ふみきり</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>し、<ruby>警報音<rt>けいほうおん</rt></ruby>が<ruby>聞<rt>き</rt></ruby>こえた<ruby>際<rt>さい</rt></ruby>には、<ruby>決<rt>けっ</rt></ruby>して<ruby>踏切内<rt>ふみきりない</rt></ruby>に<ruby>進入<rt>しんにゅう</rt></ruby>せず、<ruby>通過<rt>つうか</rt></ruby>する<ruby>際<rt>さい</rt></ruby>は<ruby>踏切内<rt>ふみきりない</rt></ruby>で<ruby>停<rt>と</rt></ruby>まらないよう<ruby>呼<rt>よ</rt></ruby>びかけている。",
+      "zh": "\n            中国驻日本大使馆提醒中国公民，驾车出行时应注意铁道路口，听到警报声时切勿进入，正常通过时不要在道口内停留。遵守日本交通规则，留意机动车靠左行驶，防止误入逆向车道。\n          ",
+      "audio_file": "audio/p8_s1.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 2,
+      "sentence_id": "p8_s2",
+      "jp_plain": "日本の交通ルールを守り、自動車は左側通行であることに留意し、誤って対向車線に進入しないよう注意する。",
+      "jp_html": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>交通ルール<rt>こうつうルール</rt></ruby>を<ruby>守<rt>まも</rt></ruby>り、<ruby>自動車<rt>じどうしゃ</rt></ruby>は<ruby>左側通行<rt>ひだりがわつうこう</rt></ruby>であることに<ruby>留意<rt>りゅうい</rt></ruby>し、<ruby>誤<rt>あやま</rt></ruby>って<ruby>対向車線<rt>たいこうしゃせん</rt></ruby>に<ruby>進入<rt>しんにゅう</rt></ruby>しないよう<ruby>注意<rt>ちゅうい</rt></ruby>する。",
+      "zh": "\n            中国驻日本大使馆提醒中国公民，驾车出行时应注意铁道路口，听到警报声时切勿进入，正常通过时不要在道口内停留。遵守日本交通规则，留意机动车靠左行驶，防止误入逆向车道。\n          ",
+      "audio_file": "audio/p8_s2.mp3"
+    },
+    {
+      "section": 9,
+      "sentence_index": 1,
+      "sentence_id": "p9_s1",
+      "jp_plain": "先日、日本の複数の世論調査機関が実施した調査で、高市早苗首相の内閣支持率の下落傾向が続いていることが明らかになった。",
+      "jp_html": "<ruby>先日<rt>せんじつ</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>の<ruby>複数<rt>ふくすう</rt></ruby>の<ruby>世論調査機関<rt>よろんちょうさきかん</rt></ruby>が<ruby>実施<rt>じっし</rt></ruby>した<ruby>調査<rt>ちょうさ</rt></ruby>で、<ruby>高市早苗<rt>たかいちさなえ</rt></ruby><ruby>首相<rt>しゅしょう</rt></ruby>の<ruby>内閣支持率<rt>ないかくしじりつ</rt></ruby>の<ruby>下落傾向<rt>げらくけいこう</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>いていることが<ruby>明<rt>あき</rt></ruby>らかになった。",
+      "zh": "\n            日前，日本多家调查机构的民调显示，首相高市早苗内阁支持率持续下跌。在部分民调中，其不支持率首次超过支持率。日本舆论认为，高市出于政治目的强推争议性政策，长期忽视民生关切，引发日本民众普遍不满，其执政前景饱受质疑。\n          ",
+      "audio_file": "audio/p9_s1.mp3"
+    },
+    {
+      "section": 9,
+      "sentence_index": 2,
+      "sentence_id": "p9_s2",
+      "jp_plain": "一部の世論調査では、不支持率が初めて支持率を上回った。",
+      "jp_html": "<ruby>一部<rt>いちぶ</rt></ruby>の<ruby>世論調査<rt>よろんちょうさ</rt></ruby>では、<ruby>不支持率<rt>ふしじりつ</rt></ruby>が<ruby>初<rt>はじ</rt></ruby>めて<ruby>支持率<rt>しじりつ</rt></ruby>を<ruby>上回<rt>うわまわ</rt></ruby>った。",
+      "zh": "\n            日前，日本多家调查机构的民调显示，首相高市早苗内阁支持率持续下跌。在部分民调中，其不支持率首次超过支持率。日本舆论认为，高市出于政治目的强推争议性政策，长期忽视民生关切，引发日本民众普遍不满，其执政前景饱受质疑。\n          ",
+      "audio_file": "audio/p9_s2.mp3"
+    },
+    {
+      "section": 9,
+      "sentence_index": 3,
+      "sentence_id": "p9_s3",
+      "jp_plain": "日本の世論からは、高市首相が政治的な狙いから賛否の分かれる政策を強引に推し進め、長期にわたって国民の生活に関わる懸念を軽視してきたことが、国民の幅広い不満を招いているとの見方が出ており、その政権運営の先行きにも疑問の声が広がっている。",
+      "jp_html": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>世論<rt>よろん</rt></ruby>からは、<ruby>高市首相<rt>たかいちしゅしょう</rt></ruby>が<ruby>政治<rt>せいじ</rt></ruby>的な<ruby>狙<rt>ねら</rt></ruby>いから<ruby>賛否<rt>さんぴ</rt></ruby>の<ruby>分<rt>わ</rt></ruby>かれる<ruby>政策<rt>せいさく</rt></ruby>を<ruby>強引<rt>ごういん</rt></ruby>に<ruby>推<rt>お</rt></ruby>し<ruby>進<rt>すす</rt></ruby>め、<ruby>長期<rt>ちょうき</rt></ruby>にわたって<ruby>国民<rt>こくみん</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>に<ruby>関<rt>かん</rt></ruby>わる<ruby>懸念<rt>けねん</rt></ruby>を<ruby>軽視<rt>けいし</rt></ruby>してきたことが、<ruby>国民<rt>こくみん</rt></ruby>の<ruby>幅広<rt>はばひろ</rt></ruby>い<ruby>不満<rt>ふまん</rt></ruby>を<ruby>招<rt>まね</rt></ruby>いているとの<ruby>見方<rt>みかた</rt></ruby>が出ており、その<ruby>政権運営<rt>せいけんうんえい</rt></ruby>の<ruby>先行<rt>さきゆ</rt></ruby>きにも<ruby>疑問<rt>ぎもん</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がっている。",
+      "zh": "\n            日前，日本多家调查机构的民调显示，首相高市早苗内阁支持率持续下跌。在部分民调中，其不支持率首次超过支持率。日本舆论认为，高市出于政治目的强推争议性政策，长期忽视民生关切，引发日本民众普遍不满，其执政前景饱受质疑。\n          ",
+      "audio_file": "audio/p9_s3.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 1,
+      "sentence_id": "p10_s1",
+      "jp_plain": "農民たちの主な攻撃の目標は、豪紳や悪徳地主であり、さらにはさまざまな宗法的な思想や制度、都市の汚職官僚や悪徳役人、農村の悪習にも及んだ。",
+      "jp_html": "<ruby>農民<rt>のうみん</rt></ruby>たちの<ruby>主<rt>おも</rt></ruby>な<ruby>攻撃<rt>こうげき</rt></ruby>の<ruby>目標<rt>もくひょう</rt></ruby>は、<ruby>豪紳<rt>ごうしん</rt></ruby>や<ruby>悪徳地主<rt>あくとくじぬし</rt></ruby>であり、さらにはさまざまな<ruby>宗法的<rt>そうほうてき</rt></ruby>な<ruby>思想<rt>しそう</rt></ruby>や<ruby>制度<rt>せいど</rt></ruby>、<ruby>都市<rt>とし</rt></ruby>の<ruby>汚職官僚<rt>おしょくかんりょう</rt></ruby>や<ruby>悪徳役人<rt>あくとくやくにん</rt></ruby>、<ruby>農村<rt>のうそん</rt></ruby>の<ruby>悪習<rt>あくしゅう</rt></ruby>にも<ruby>及<rt>およ</rt></ruby>んだ。",
+      "zh": "\n            农民的主要攻击目标是土豪劣绅，不法地主，旁及各种宗法的思想和制度，城里的贪官污吏，乡村的恶劣习惯。这个攻击的形势，简直是急风暴雨，顺之者存，违之者灭。其结果，把几千年封建地主的特权，打得个落花流水。地主的体面威风，扫地以尽。\n          ",
+      "audio_file": "audio/p10_s1.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 2,
+      "sentence_id": "p10_s2",
+      "jp_plain": "この攻撃の勢いは、まさに疾風迅雷のごとく、これに従うものは生き残り、逆らうものは滅びる。",
+      "jp_html": "この<ruby>攻撃<rt>こうげき</rt></ruby>の<ruby>勢<rt>いきお</rt></ruby>いは、まさに<ruby>疾風迅雷<rt>しっぷうじんらい</rt></ruby>のごとく、これに<ruby>従<rt>したが</rt></ruby>うものは<ruby>生<rt>い</rt></ruby>き<ruby>残<rt>のこ</rt></ruby>り、<ruby>逆<rt>さか</rt></ruby>らうものは<ruby>滅<rt>ほろ</rt></ruby>びる。",
+      "zh": "\n            农民的主要攻击目标是土豪劣绅，不法地主，旁及各种宗法的思想和制度，城里的贪官污吏，乡村的恶劣习惯。这个攻击的形势，简直是急风暴雨，顺之者存，违之者灭。其结果，把几千年封建地主的特权，打得个落花流水。地主的体面威风，扫地以尽。\n          ",
+      "audio_file": "audio/p10_s2.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 3,
+      "sentence_id": "p10_s3",
+      "jp_plain": "その結果、数千年にわたって続いてきた封建地主の特権は、徹底的に打ち砕かれた。",
+      "jp_html": "その<ruby>結果<rt>けっか</rt></ruby>、<ruby>数千年<rt>すうせんねん</rt></ruby>にわたって<ruby>続<rt>つづ</rt></ruby>いてきた<ruby>封建地主<rt>ほうけんじぬし</rt></ruby>の<ruby>特権<rt>とっけん</rt></ruby>は、<ruby>徹底的<rt>てっていてき</rt></ruby>に<ruby>打<rt>う</rt></ruby>ち<ruby>砕<rt>くだ</rt></ruby>かれた。",
+      "zh": "\n            农民的主要攻击目标是土豪劣绅，不法地主，旁及各种宗法的思想和制度，城里的贪官污吏，乡村的恶劣习惯。这个攻击的形势，简直是急风暴雨，顺之者存，违之者灭。其结果，把几千年封建地主的特权，打得个落花流水。地主的体面威风，扫地以尽。\n          ",
+      "audio_file": "audio/p10_s3.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 4,
+      "sentence_id": "p10_s4",
+      "jp_plain": "地主たちの威厳も面目も、すっかり地に落ちたのである。",
+      "jp_html": "<ruby>地主<rt>じぬし</rt></ruby>たちの<ruby>威厳<rt>いげん</rt></ruby>も<ruby>面目<rt>めんぼく</rt></ruby>も、すっかり<ruby>地<rt>ち</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちたのである。",
+      "zh": "\n            农民的主要攻击目标是土豪劣绅，不法地主，旁及各种宗法的思想和制度，城里的贪官污吏，乡村的恶劣习惯。这个攻击的形势，简直是急风暴雨，顺之者存，违之者灭。其结果，把几千年封建地主的特权，打得个落花流水。地主的体面威风，扫地以尽。\n          ",
+      "audio_file": "audio/p10_s4.mp3"
+    }
+  ]
+}

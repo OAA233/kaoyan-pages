@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新完全掌握 1-1 親類・友人・知人</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
+    --num: #8b8577; --num-border: #5a564d; --muted: .55;
+    font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans CJK JP", "PingFang SC", sans-serif;
+    background: var(--bg); color: var(--fg);
+    margin: 0; padding: 20px; max-width: 1080px;
+    transition: background .2s, color .2s;
+  }
+  body.day {
+    --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8;
+    --num: #8a8373; --num-border: #c4bda9;
+    --muted: .6;
+    color-scheme: light;
+  }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
+  #themeBtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px;
+  }
+  #themeBtn:hover { opacity: .8; }
+  .stats { display: inline-flex; gap: 8px; font-size: 12px; opacity: .7; }
+  .sec { font-size: 13px; font-weight: 700; opacity: .5; margin: 22px 0 8px; letter-spacing: .05em; grid-column: 1 / -1; }
+  #list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: start; }
+  .card {
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; background: var(--card);
+    border-left: 5px solid #555;
+  }
+  .card.cV { border-left-color: #e5484d; }
+  .card.cI { border-left-color: #d63384; }
+  .card.cNA { border-left-color: #7048e8; }
+  .card.cN { border-left-color: #1971c2; }
+  .card.cadv { border-left-color: #2b8a3e; }
+  .row1 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .num {
+    font-size: 11px; font-weight: 700; color: var(--num);
+    border: 1.5px solid var(--num-border); border-radius: 50%;
+    width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: center;
+  }
+  .word { font-size: 21px; font-weight: 700; cursor: pointer; }
+  ruby.word { ruby-align: center; }
+  ruby.word rt { font-size: 10px; font-weight: 500; opacity: .55; letter-spacing: .02em; }
+  ruby.word rt.en { font-style: italic; opacity: .5; }
+  .word:hover { text-decoration: underline; }
+  .pos { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 8px; color: #fff; }
+  .pos.V { background: #e5484d; }
+  .pos.I { background: #d63384; }
+  .pos.NA { background: #7048e8; }
+  .pos.N { background: #1971c2; }
+  .pos.adv { background: #2b8a3e; }
+  .mean { margin-top: 6px; font-size: 14px; }
+  .phrase { margin-top: 8px; font-size: 13px; }
+  .phrase .jp { font-weight: 600; cursor: pointer; }
+  .phrase .jp:hover { text-decoration: underline; }
+  .phrase .zh { opacity: var(--muted); margin-left: 8px; }
+  .ref { opacity: .45; font-size: 12px; }
+  .spk { cursor: pointer; font-size: 14px; opacity: .4; margin-left: 4px; user-select: none; }
+  .spk:hover { opacity: 1; }
+  @media (max-width: 760px) { #list { grid-template-columns: 1fr; } }
+
+  /* ---- 听写模式 ---- */
+  #dict { position: fixed; inset: 0; background: var(--bg); z-index: 500; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  #dict.open { display: flex; }
+  #dictBig { font-size: 20px; padding: 16px 30px; border-radius: 16px; border: 1px solid var(--num-border); background: var(--card); color: var(--fg); cursor: pointer; }
+  #dictAns { min-height: 130px; transition: opacity .2s; }
+  #dictAns.hidden { opacity: 0; pointer-events: none; user-select: none; }
+  .dword { font-size: 30px; font-weight: 800; }
+  .dpos { opacity: .5; font-size: 12px; }
+  .dmean { font-size: 16px; margin-top: 4px; }
+  .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
+  .dphz { opacity: .6; font-size: 13px; }
+  .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>1-1 親類・友人・知人</h1>
+    <p>第1课 人間① 親類・友人・知人（书内 p.2–3）<span class="stats">共 <b id="count"></b> 词 · 点击日文发音（edge 女声）</span></p>
+  </div>
+  <button id="dictBtn" onclick="dictToggle()" style="border:1px solid var(--num-border);background:var(--card);color:var(--fg);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;margin-bottom:12px;">🎧 听写</button>
+  <button id="themeBtn" onclick="toggleTheme()">🌙 夜间</button>
+</header>
+<div id="list"></div>
+
+<script>
+const DATA = [
+// ---- 1. 家族／親類 ----
+{s:"一", w:"家族", k:"かぞく", p:"N", m:"家人；家族", ph:"家族で旅行に行く", phz:"全家一起去旅行", book:false},
+{s:"一", w:"親類", k:"しんるい", p:"N", m:"亲戚", ph:"親類の集まりに出る", phz:"参加亲戚聚会"},
+{s:"一", w:"集まり", k:"あつまり", p:"N", m:"聚会", ph:"親類の集まりに出る", phz:"参加亲戚聚会", share:"2"},
+{s:"一", w:"祖先", k:"そせん", p:"N", m:"祖先", ph:"祖先を敬う", phz:"敬重祖先", book:false},
+{s:"一", w:"子孫", k:"しそん", p:"N", m:"子孙", ph:"子孫を残す", phz:"繁衍子孙", book:false},
+{s:"一", w:"祖父母", k:"そふぼ", p:"N", m:"祖父母", ph:"祖父母から孫まで三世代で生活する", phz:"从祖父母到孙子三代人一起生活"},
+{s:"一", w:"三世代", k:"さんせだい", p:"N", m:"三代（人）", ph:"祖父母から孫まで三世代で生活する", phz:"从祖父母到孙子三代人一起生活", share:"6"},
+{s:"一", w:"一家", k:"いっか", p:"N", m:"全家", ph:"一家で出かける", phz:"全家一起出门"},
+{s:"一", w:"親孝行", k:"おやこうこう", p:"N", m:"孝顺父母", ph:"親孝行をする", phz:"孝顺父母"},
+{s:"一", w:"実家", k:"じっか", p:"N", m:"老家；娘家", ph:"実家が懐かしい", phz:"想念老家", share:"11"},
+{s:"一", w:"懐かしい", k:"なつかしい", p:"イ", m:"令人怀念的", ph:"実家が懐かしい", phz:"想念老家"},
+{s:"一", w:"三人姉妹", k:"さんにんしまい", p:"N", m:"三姐妹", ph:"三人姉妹の末っ子", phz:"三姐妹中最小的", share:"13"},
+{s:"一", w:"末っ子", k:"すえっこ", p:"N", m:"最小的孩子", ph:"三人姉妹の末っ子", phz:"三姐妹中最小的"},
+{s:"一", w:"一人っ子", k:"ひとりっこ", p:"N", m:"独生子（女）", ph:"一人っ子／双子", phz:"独生子／双胞胎", share:"15"},
+{s:"一", w:"双子", k:"ふたご", p:"N", m:"双胞胎", ph:"一人っ子／双子", phz:"独生子／双胞胎"},
+// ---- 2. 友人・知り合い ----
+{s:"二", w:"仲良し", k:"なかよし", p:"N", m:"好朋友，要好", ph:"私たちは仲良しです", phz:"我们是好朋友"},
+{s:"二", w:"仕事仲間", k:"しごとなかま", p:"N", m:"工作伙伴，同事", ph:"仕事仲間と飲みに行く", phz:"和工作伙伴去喝酒", book:false},
+{s:"二", w:"知人", k:"ちじん", p:"N", m:"熟人", ph:"知人・知り合いがいる", phz:"有熟人／认识的人", share:"19"},
+{s:"二", w:"知り合い", k:"しりあい", p:"N", m:"相识的人", ph:"知人・知り合いがいる", phz:"有熟人／认识的人"},
+{s:"二", w:"氏", k:"し", p:"N", m:"…先生（敬称）", ph:"（田中）氏・（田中）夫人", phz:"田中先生和夫人", share:"21"},
+{s:"二", w:"夫人", k:"ふじん", p:"N", m:"夫人", ph:"（田中）氏・（田中）夫人", phz:"田中先生和夫人"},
+{s:"二", w:"夫妻", k:"ふさい", p:"N", m:"夫妻，夫妇", ph:"ご夫妻で出席する", phz:"夫妇一起出席", book:false},
+{s:"二", w:"奥様", k:"おくさま", p:"N", m:"太太（敬称）", ph:"奥様・ご主人", phz:"太太和先生", share:"24"},
+{s:"二", w:"ご主人", k:"ごしゅじん", p:"N", m:"先生；丈夫（敬称）", ph:"奥様・ご主人", phz:"太太和先生"},
+{s:"二", w:"お母様", k:"おかあさま", p:"N", m:"母亲（敬称）", ph:"お母様・お父様", phz:"母亲和父亲", share:"26"},
+{s:"二", w:"お父様", k:"おとうさま", p:"N", m:"父亲（敬称）", ph:"お母様・お父様", phz:"母亲和父亲"},
+{s:"二", w:"お嬢ちゃん", k:"おじょうちゃん", p:"N", m:"令爱；小姑娘", ph:"お嬢ちゃん・（お）坊ちゃん", phz:"小女孩和（小）男孩", share:"28"},
+{s:"二", w:"坊ちゃん", k:"ぼうちゃん", p:"N", m:"少爷；小男孩", ph:"お嬢ちゃん・（お）坊ちゃん", phz:"小女孩和（小）男孩"},
+// ---- 3. 付き合い ----
+{s:"三", w:"周囲", k:"しゅうい", p:"N", m:"周围", ph:"周囲の人と付き合う", phz:"和周围的人交往"},
+{s:"三", w:"親しい", k:"したしい", p:"イ", m:"亲近的，亲密的", ph:"親しい付き合いをする", phz:"亲密交往"},
+{s:"三", w:"コミュニケーション", k:"communication", p:"N", m:"交流，沟通", ph:"コミュニケーションを取る", phz:"进行交流"},
+{s:"三", w:"約束", k:"やくそく", p:"N", m:"约定，承诺", ph:"約束を守る・破る・取り消す", phz:"遵守／破坏／取消约定", share:"33"},
+{s:"三", w:"守る", k:"まもる", p:"V1他", m:"遵守；保护", ph:"約束を守る", phz:"遵守约定"},
+{s:"三", w:"破る", k:"やぶる", p:"V1他", m:"破坏（约定）；打破", ph:"約束を破る", phz:"违约"},
+{s:"三", w:"取り消す", k:"とりけす", p:"V1他", m:"取消", ph:"約束を取り消す", phz:"取消约定"},
+{s:"三", w:"職場", k:"しょくば", p:"N", m:"职场，工作单位", ph:"職場の人と仲良くなる", phz:"和同事搞好关系", book:false},
+{s:"三", w:"年上", k:"としうえ", p:"N", m:"年长（的人）", ph:"年上・年下・同じ年", phz:"年长／年少／同龄", share:"38"},
+{s:"三", w:"年下", k:"としした", p:"N", m:"年少（的人）", ph:"年上・年下・同じ年", phz:"年长／年少／同龄", share:"39"},
+{s:"三", w:"同じ年", k:"おなじとし", p:"N", m:"同龄", ph:"年上・年下・同じ年", phz:"年长／年少／同龄"},
+{s:"三", w:"目上", k:"めうえ", p:"N", m:"长辈；上级", ph:"目上・目下", phz:"长辈和晚辈", share:"41"},
+{s:"三", w:"目下", k:"めした", p:"N", m:"晚辈；下级", ph:"目上・目下", phz:"长辈和晚辈"},
+{s:"三", w:"言葉遣い", k:"ことばづかい", p:"N", m:"措辞，说法", ph:"丁寧な言葉遣いで話す", phz:"用礼貌的措辞说话"},
+{s:"三", w:"握手", k:"あくしゅ", p:"N", m:"握手", ph:"初めて会った人と握手する", phz:"和初次见面的人握手"},
+{s:"三", w:"お辞儀", k:"おじぎ", p:"N", m:"鞠躬", ph:"生徒が先生にお辞儀をする", phz:"学生向老师鞠躬"},
+// ---- 語形成（p.3） ----
+{s:"四", w:"勉強仲間", k:"べんきょうなかま", p:"N", m:"学习伙伴", ph:"勉強仲間・飲み仲間", phz:"学习伙伴／酒友", share:"46"},
+{s:"四", w:"飲み仲間", k:"のみなかま", p:"N", m:"酒友", ph:"勉強仲間・飲み仲間", phz:"学习伙伴／酒友"},
+{s:"四", w:"付き合い", k:"つきあい", p:"N", m:"交往，来往", ph:"付き合い・話し合い", phz:"交往／商谈", share:"48"},
+{s:"四", w:"話し合い", k:"はなしあい", p:"N", m:"商谈，协商", ph:"付き合い・話し合い", phz:"交往／商谈"},
+{s:"四", w:"取り出す", k:"とりだす", p:"V1他", m:"取出，拿出", ph:"取り出す・取り替える", phz:"取出／更换", share:"50"},
+{s:"四", w:"取り替える", k:"とりかえる", p:"V2他", m:"更换，换", ph:"取り出す・取り替える", phz:"取出／更换"},
+{s:"四", w:"金遣い", k:"かねづかい", p:"N", m:"花钱方式", ph:"金遣い・気遣い", phz:"花钱／操心", share:"52"},
+{s:"四", w:"気遣い", k:"きづかい", p:"N", m:"顾虑，操心", ph:"金遣い・気遣い", phz:"花钱／操心"},
+// ---- 例文中的副词（p.3） ----
+{s:"五", w:"長年", k:"ながねん", p:"adv", m:"多年，长年", ph:"彼とは長年親しい付き合いをしてきた", phz:"和他保持着多年的亲密交往"},
+{s:"五", w:"たとえ", k:"たとえ", p:"adv", m:"即使，纵然（常与〜ても／でも连用）", ph:"たとえ親でも、話したくないこともある", phz:"即使是父母，也有不想说的事"},
+{s:"五", w:"ちっとも", k:"ちっとも", p:"adv", m:"一点儿也（不）（后接否定）", ph:"ちっとも変わっていなかった", phz:"（他）一点儿也没变"},
+{s:"五", w:"まるで", k:"まるで", p:"adv", m:"简直，宛如（常与〜ようだ连用）", ph:"まるで姉妹のように顔が似ている", phz:"长得简直像姐妹"},
+];
+
+const SEC = {一:"1. 家族／親類", 二:"2. 友人・知り合い", 三:"3. 付き合い", 四:"語形成（p.3）", 五:"例文中的副词（p.3）"};
+
+function applyTheme(day){
+  document.body.classList.toggle('day', day);
+  document.getElementById('themeBtn').textContent = day ? '🌙 夜间' : '☀️ 日间';
+}
+function toggleTheme(){
+  const day = !document.body.classList.contains('day');
+  applyTheme(day);
+  try { localStorage.setItem('n2theme', day ? 'day' : 'night'); } catch(e) {}
+}
+applyTheme((() => { try { return localStorage.getItem('n2theme') === 'day'; } catch(e) { return false; } })());
+
+let curAudio = null;
+function play(num, phrase){
+  if (curAudio) { curAudio.pause(); }
+  curAudio = new Audio(`../audio/N2/N2_1-1_audio/${num}${phrase ? 'p' : ''}.mp3`);
+  if (typeof _dictHook === 'function') _dictHook(phrase);
+  curAudio.play();
+}
+
+const list = document.getElementById('list');
+let cur = '';
+let n = 0;
+for (const d of DATA) {
+  if (d.s !== cur) {
+    cur = d.s;
+    const h = document.createElement('div');
+    h.className = 'sec';
+    h.textContent = SEC[cur] || cur;
+    list.appendChild(h);
+  }
+  n++;
+  const posCls = d.p.startsWith('V') ? 'V' : d.p === 'イ' ? 'I' : d.p === 'ナ' ? 'NA' : d.p === 'adv' ? 'adv' : 'N';
+  const card = document.createElement('div');
+  card.className = 'card c' + posCls;
+  const ph = d.share
+    ? `<span class="ref">短语同 <b>${d.share}</b>（见该序号）</span>`
+    : `<span class="jp" onclick="play(${n},1)">${d.ph}<span class="spk">🔊</span></span><span class="zh">${d.phz}</span>`;
+  const kata = d.w.match(/^([ァ-ヶー]+)/);
+  const en = /^[a-zA-Z]/.test(d.k);
+  const rt = `<rt${en ? ' class="en"' : ''}>${d.k}</rt>`;
+  const ruby = kata
+    ? `<ruby class="word" onclick="play(${n})">${kata[1]}${rt}</ruby>${d.w.slice(kata[1].length)}`
+    : `<ruby class="word" onclick="play(${n})">${d.w}${rt}</ruby>`;
+  card.innerHTML = `
+    <div class="row1">
+      <span class="num">${n}</span>
+      ${ruby}
+      <span class="spk" onclick="play(${n})">🔊</span>
+      <span class="pos ${posCls}">${d.p}</span>
+    </div>
+    <div class="mean">${d.m}</div>
+    <div class="phrase">${ph}</div>`;
+  list.appendChild(card);
+}
+document.getElementById('count').textContent = n;
+</script>
+
+<div id="dict">
+  <button id="themeBtn2" onclick="dictToggle()" style="position:absolute;top:14px;right:18px;border:1px solid var(--num-border);background:var(--card);color:var(--fg);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
+  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
+  <div id="dictAns" class="hidden"></div>
+  <div class="dbtns">
+    <button id="bPrev" onclick="dictPrev()" style="border:1px solid var(--num-border);background:var(--card);color:var(--fg);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;">◀ 上一个</button>
+    <button id="dictAutoBtn" onclick="dictAutoToggle()" style="border:1px solid var(--num-border);background:var(--card);color:var(--fg);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;">自动: 关</button>
+    <button id="bShuf" onclick="dictShuffle()" style="border:1px solid var(--num-border);background:var(--card);color:var(--fg);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;">🔀 随机</button>
+    <button id="bNext" onclick="dictNext()" style="border:1px solid var(--num-border);background:var(--card);color:var(--fg);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;">下一个 ▶</button>
+    <button id="bRev" onclick="dictReveal()" style="border:1px solid var(--num-border);background:var(--card);color:var(--fg);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;">显示答案</button>
+  </div>
+  <div style="opacity:.4;font-size:11px;">空格=重播 · →/D=下一个 · ←/A=上一个 · S=显示答案 · Esc=退出</div>
+</div>
+<script>
+/* ---- 听写（序号即音频号） ---- */
+const escH = s => String(s == null ? '' : s);
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [], dictChain = false;
+const DICT_DELAY = 3000;
+const dictWords = () => DATA;
+function dictToggle(){
+  dictOpen = !dictOpen;
+  document.getElementById('dict').classList.toggle('open', dictOpen);
+  if (dictOpen){ if (curAudio) curAudio.pause(); buildOrder(); dictCur = 0; showDict(); }
+  else { if (curAudio) curAudio.pause(); clearTimeout(dictT); }
+}
+function buildOrder(){
+  dictOrder = dictWords().map((d, i) => i + 1);
+  if (dictShuffleOn) for (let i = dictOrder.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [dictOrder[i], dictOrder[j]] = [dictOrder[j], dictOrder[i]]; }
+}
+const dictD = () => dictWords()[dictOrder[dictCur] - 1];
+const hasPh = d => !d.share && d.ph;
+const playCur = () => {
+  const d = dictD();
+  if (!hasPh(d)) { play(dictOrder[dictCur], 0); return; }
+  dictChain = true;
+  play(dictOrder[dictCur], 0);
+};
+// 播放钩子：单词播完接例句；例句播完且自动模式 → 下一条
+const _dictHook = (isPhrase) => {
+  if (!curAudio) return;
+  curAudio.onended = () => {
+    if (!isPhrase && dictChain && hasPh(dictD())) {
+      dictChain = false;
+      play(dictOrder[dictCur], 1);
+    } else if (dictOpen && dictAuto) {
+      dictT = setTimeout(dictNext, DICT_DELAY);
+    }
+  };
+};
+function dictStep(dir){
+  clearTimeout(dictT); dictChain = false;
+  dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
+  showDict(); playCur();
+}
+const dictNext = () => dictStep(1);
+const dictPrev = () => dictStep(-1);
+function dictShuffle(){ dictShuffleOn = !dictShuffleOn; buildOrder(); dictCur = 0; showDict(); playCur(); }
+function dictAutoToggle(){
+  dictAuto = !dictAuto;
+  document.getElementById('dictAutoBtn').textContent = '自动: ' + (dictAuto ? '开' : '关');
+  dictChain = false;
+  if (dictAuto) playCur();
+}
+function dictReveal(){
+  const ans = document.getElementById('dictAns');
+  if (ans.classList.contains('hidden')) { renderDictAns(); ans.classList.remove('hidden'); }
+  else ans.classList.add('hidden');
+}
+function renderDictAns(){
+  const ans = document.getElementById('dictAns');
+  const d = dictD(), n = dictOrder[dictCur];
+  if (!d.pair) {   // 旧数据条目（无 pair 结构）降级显示
+    ans.innerHTML = `<div class="dword">${d.w || ''} <span style="font-size:14px;opacity:.6">${d.k || ''}</span></div><div class="dpos">${escH(d.p)}</div><div class="dmean">${escH(d.m)}</div>` +
+      (d.ph ? `<div class="dph" onclick="speak(${d.id},'p')">${escH(d.ph)}</div><div class="dphz">${escH(d.phz || '')}</div>` : '');
+    return;
+  }
+  const side = t => {
+    const ws = t[0].split('｜'), ks = t[1].split('｜'), ms = t[2].split('｜');
+    return ws.map((w, i) => `<div class="dword">${w} <span style="font-size:14px;opacity:.6">${ks[i] || ''}</span></div><div class="dmean">${ms[i] || ''}</div>`).join('');
+  };
+  let body = `<div class="dpos">${escH(d.p)}</div>` + side(d.pair);
+  if (d.right) body += `<div style="opacity:.4;margin:6px 0;">⇄</div>` + side(d.right);
+  if (d.ph) body += `<div class="dph" onclick="speak(${d.id},'p')">${escH(d.ph)}</div><div class="dphz">${escH(d.phz || '')}</div>`;
+  ans.innerHTML = body;
+}
+function showDict(){
+  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  const ans = document.getElementById('dictAns');
+  ans.classList.add('hidden');
+  ans.innerHTML = '';   // 隐藏时内容必为空，不可能闪现
+}
+document.addEventListener('keydown', e => {
+  if (!dictOpen) return;
+  if (e.code === 'Space'){ e.preventDefault(); playCur(); }
+  else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') dictNext();
+  else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') dictPrev();
+  else if (e.key === 's' || e.key === 'S') dictReveal();
+  else if (e.key === 'Escape') dictToggle();
+});
+</script>
+</body>
+</html>

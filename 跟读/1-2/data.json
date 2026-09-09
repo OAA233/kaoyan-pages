@@ -1,0 +1,105 @@
+{
+  "title": "1-2 科学教育",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "「科学」の多くの意味のうち、語源に関するものがある。",
+      "jp_html": "「<ruby>科学<rt>かがく</rt></ruby>」の<ruby>多<rt>おお</rt></ruby>くの<ruby>意味<rt>いみ</rt></ruby>のうち、<ruby>語源<rt>ごげん</rt></ruby>に<ruby>関<rt>かん</rt></ruby>するものがある。",
+      "zh": "在“科学”的诸多含义中，有一个与词源相关。现代汉语中，“科学”一词来自日本人对science的翻译，意为“分科之学”。专家认为，这一翻译是因为从19世纪前叶开始，科学进入了专门化、职业化时代。事实上，在科学发展的早期阶段，并不存在这样严格的学科界限，那时人们只是在用追究“本质”的理性思维方式去追寻“自然”。",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "現代中国語では、「科学」という言葉は、日本人が「science」を訳した言葉に由来し、「分科の学問」という意味である。",
+      "jp_html": "<ruby>現代中国語<rt>げんだいちゅうごくご</rt></ruby>では、「<ruby>科学<rt>かがく</rt></ruby>」という<ruby>言葉<rt>ことば</rt></ruby>は、<ruby>日本人<rt>にほんじん</rt></ruby>が「science」を<ruby>訳<rt>やく</rt></ruby>した<ruby>言葉<rt>ことば</rt></ruby>に<ruby>由来<rt>ゆらい</rt></ruby>し、「<ruby>分科<rt>ぶんか</rt></ruby>の<ruby>学問<rt>がくもん</rt></ruby>」という<ruby>意味<rt>いみ</rt></ruby>である。",
+      "zh": "在“科学”的诸多含义中，有一个与词源相关。现代汉语中，“科学”一词来自日本人对science的翻译，意为“分科之学”。专家认为，这一翻译是因为从19世纪前叶开始，科学进入了专门化、职业化时代。事实上，在科学发展的早期阶段，并不存在这样严格的学科界限，那时人们只是在用追究“本质”的理性思维方式去追寻“自然”。",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 3,
+      "sentence_id": "p1_s3",
+      "jp_plain": "専門家によると、このように訳されたのは、19世紀前期から、科学が専門的・職業的な時代に入ったからだという。",
+      "jp_html": "<ruby>専門家<rt>せんもんか</rt></ruby>によると、このように<ruby>訳<rt>やく</rt></ruby>されたのは、19<ruby>世紀前期<rt>せいきぜんき</rt></ruby>から、<ruby>科学<rt>かがく</rt></ruby>が<ruby>専門的<rt>せんもんてき</rt></ruby>・<ruby>職業的<rt>しょくぎょうてき</rt></ruby>な<ruby>時代<rt>じだい</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったからだという。",
+      "zh": "在“科学”的诸多含义中，有一个与词源相关。现代汉语中，“科学”一词来自日本人对science的翻译，意为“分科之学”。专家认为，这一翻译是因为从19世纪前叶开始，科学进入了专门化、职业化时代。事实上，在科学发展的早期阶段，并不存在这样严格的学科界限，那时人们只是在用追究“本质”的理性思维方式去追寻“自然”。",
+      "audio_file": "audio/p1_s3.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 4,
+      "sentence_id": "p1_s4",
+      "jp_plain": "実際には、科学発展の初期段階には、それほど厳格な学科の境界は存在せず、当時の人々はただ「本質」を追究する理性的な考え方で「自然」を追い求めようとしていた。",
+      "jp_html": "<ruby>実際<rt>じっさい</rt></ruby>には、<ruby>科学<rt>かがく</rt></ruby><ruby>発展<rt>はってん</rt></ruby>の<ruby>初期段階<rt>しょきだんかい</rt></ruby>には、それほど<ruby>厳格<rt>げんかく</rt></ruby>な<ruby>学科<rt>がっか</rt></ruby>の<ruby>境界<rt>きょうかい</rt></ruby>は<ruby>存在<rt>そんざい</rt></ruby>せず、<ruby>当時<rt>とうじ</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>はただ「<ruby>本質<rt>ほんしつ</rt></ruby>」を<ruby>追究<rt>ついきゅう</rt></ruby>する<ruby>理性的<rt>りせいてき</rt></ruby>な<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>で「<ruby>自然<rt>しぜん</rt></ruby>」を<ruby>追<rt>お</rt></ruby>い<ruby>求<rt>もと</rt></ruby>めようとしていた。",
+      "zh": "在“科学”的诸多含义中，有一个与词源相关。现代汉语中，“科学”一词来自日本人对science的翻译，意为“分科之学”。专家认为，这一翻译是因为从19世纪前叶开始，科学进入了专门化、职业化时代。事实上，在科学发展的早期阶段，并不存在这样严格的学科界限，那时人们只是在用追究“本质”的理性思维方式去追寻“自然”。",
+      "audio_file": "audio/p1_s4.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "このような大づかみな「自然観」は、実は、すべての子どもが正式な科学教育を受ける前に認識している世界の姿でもある。",
+      "jp_html": "このような<ruby>大<rt>おお</rt></ruby>づかみな「<ruby>自然観<rt>しぜんかん</rt></ruby>」は、<ruby>実<rt>じつ</rt></ruby>は、すべての<ruby>子<rt>こ</rt></ruby>どもが<ruby>正式<rt>せいしき</rt></ruby>な<ruby>科学教育<rt>かがくきょういく</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける<ruby>前<rt>まえ</rt></ruby>に<ruby>認識<rt>にんしき</rt></ruby>している<ruby>世界<rt>せかい</rt></ruby>の<ruby>姿<rt>すがた</rt></ruby>でもある。",
+      "zh": "这种大而化之的“自然观”，其实也是每个孩子在接受正式科学教育前，所认识的世界的样子。眼前的一切对我们来说都曾那么丰富繁杂，我们不理解风的来处、雷的成因，不知雨后蜗牛为何爬出花园，不知道为什么按下开关灯会亮起。",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "目の前のすべては、私たちにとってかつてそれほど豊かで複雑なものであり、私たちは風の来処、雷の成因を理解しておらず、雨上がりにカタツムリがなぜ庭から這い出してくるのか、なぜスイッチを押すと電気がつくのかも知らない。",
+      "jp_html": "<ruby>目<rt>め</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>のすべては、私たちにとってかつてそれほど<ruby>豊<rt>ゆた</rt></ruby>かで<ruby>複雑<rt>ふくざつ</rt></ruby>なものであり、私たちは<ruby>風<rt>かぜ</rt></ruby>の<ruby>来処<rt>きしょ</rt></ruby>、<ruby>雷<rt>かみなり</rt></ruby>の<ruby>成因<rt>せいいん</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>しておらず、<ruby>雨上<rt>あめあ</rt></ruby>がりにカタツムリがなぜ<ruby>庭<rt>にわ</rt></ruby>から<ruby>這<rt>は</rt></ruby>い<ruby>出<rt>だ</rt></ruby>してくるのか、なぜスイッチを<ruby>押<rt>お</rt></ruby>すと<ruby>電気<rt>でんき</rt></ruby>がつくのかも<ruby>知<rt>し</rt></ruby>らない。",
+      "zh": "这种大而化之的“自然观”，其实也是每个孩子在接受正式科学教育前，所认识的世界的样子。眼前的一切对我们来说都曾那么丰富繁杂，我们不理解风的来处、雷的成因，不知雨后蜗牛为何爬出花园，不知道为什么按下开关灯会亮起。",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "幸いなことに、私たちは好奇心を持っている。",
+      "jp_html": "<ruby>幸<rt>さいわ</rt></ruby>いなことに、私たちは<ruby>好奇心<rt>こうきしん</rt></ruby>を<ruby>持<rt>も</rt></ruby>っている。",
+      "zh": "好在我们拥有好奇心。以上的一个个“为什么”就是人类认识世界的起点，回答这些“为什么”，也曾被视为科学课的目标之一。但客观世界在不停变化，单纯的记录、抄写和背诵，能穷尽一切知识吗？",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "以上のような一個ひとつの「なぜ」は、人間が世界を認識する出発点であり、これらの「なぜ」に答えることは、かつて理科の授業の目標の一つと見なされていた。",
+      "jp_html": "<ruby>以上<rt>いじょう</rt></ruby>のような一<ruby>個<rt>こ</rt></ruby>ひとつの「なぜ」は、<ruby>人間<rt>にんげん</rt></ruby>が<ruby>世界<rt>せかい</rt></ruby>を<ruby>認識<rt>にんしき</rt></ruby>する<ruby>出発点<rt>しゅっぱつてん</rt></ruby>であり、これらの「なぜ」に<ruby>答<rt>こた</rt></ruby>えることは、かつて<ruby>理科<rt>りか</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>の<ruby>目標<rt>もくひょう</rt></ruby>の一<ruby>つ<rt>つ</rt></ruby>と<ruby>見<rt>み</rt></ruby>なされていた。",
+      "zh": "好在我们拥有好奇心。以上的一个个“为什么”就是人类认识世界的起点，回答这些“为什么”，也曾被视为科学课的目标之一。但客观世界在不停变化，单纯的记录、抄写和背诵，能穷尽一切知识吗？",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "しかし、客観的な世界は絶えず変化しており、単なる記録や書き写し、暗記で、すべての知識を究め尽くすことができるのだろうか。",
+      "jp_html": "しかし、<ruby>客観的<rt>きゃっかんてき</rt></ruby>な<ruby>世界<rt>せかい</rt></ruby>は<ruby>絶<rt>た</rt></ruby>えず<ruby>変化<rt>へんか</rt></ruby>しており、<ruby>単<rt>たん</rt></ruby>なる<ruby>記録<rt>きろく</rt></ruby>や<ruby>書<rt>か</rt></ruby>き<ruby>写<rt>うつ</rt></ruby>し、<ruby>暗記<rt>あんき</rt></ruby>で、すべての<ruby>知識<rt>ちしき</rt></ruby>を<ruby>究<rt>きわ</rt></ruby>め<ruby>尽<rt>つ</rt></ruby>くすことができるのだろうか。",
+      "zh": "好在我们拥有好奇心。以上的一个个“为什么”就是人类认识世界的起点，回答这些“为什么”，也曾被视为科学课的目标之一。但客观世界在不停变化，单纯的记录、抄写和背诵，能穷尽一切知识吗？",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "これについて、ある専門家は、新課程基準における「科学観念」を説明する際、現在私たちが教えている具体的で、暗記中心の、事実的な知識ばかりが多すぎて、知識をたくさん学んでも必ずしも観念があるとは限らず、「観念」とは科学概念・法則・原理が脳内で内化・昇華されたものであり、形成されれば問題を解決する際に忘れることはない。",
+      "jp_html": "これについて、ある<ruby>専門家<rt>せんもんか</rt></ruby>は、<ruby>新課程基準<rt>しんかていきじゅん</rt></ruby>における「<ruby>科学観念<rt>かがくかんねん</rt></ruby>」を<ruby>説明<rt>せつめい</rt></ruby>する<ruby>際<rt>さい</rt></ruby>、<ruby>現在<rt>げんざい</rt></ruby>私たちが<ruby>教<rt>おし</rt></ruby>えている<ruby>具体的<rt>ぐたいてき</rt></ruby>で、<ruby>暗記<rt>あんき</rt></ruby><ruby>中心<rt>ちゅうしん</rt></ruby>の、<ruby>事実的<rt>じじつてき</rt></ruby>な<ruby>知識<rt>ちしき</rt></ruby>ばかりが<ruby>多<rt>おお</rt></ruby>すぎて、<ruby>知識<rt>ちしき</rt></ruby>をたくさん<ruby>学<rt>まな</rt></ruby>んでも<ruby>必<rt>かなら</rt></ruby>ずしも<ruby>観念<rt>かんねん</rt></ruby>があるとは<ruby>限<rt>かぎ</rt></ruby>らず、「<ruby>観念<rt>かんねん</rt></ruby>」とは<ruby>科学概念<rt>かがくがいねん</rt></ruby>・<ruby>法則<rt>ほうそく</rt></ruby>・<ruby>原理<rt>げんり</rt></ruby>が<ruby>脳内<rt>のうない</rt></ruby>で<ruby>内化<rt>ないか</rt></ruby>・<ruby>昇華<rt>しょうか</rt></ruby>されたものであり、<ruby>形成<rt>けいせい</rt></ruby>されれば<ruby>問題<rt>もんだい</rt></ruby>を<ruby>解決<rt>かいけつ</rt></ruby>する<ruby>際<rt>さい</rt></ruby>に<ruby>忘<rt>わす</rt></ruby>れることはない。",
+      "zh": "对此，有专家在解释新课标中的“科学观念”时指出，当前我们所教的具体、死记硬背、事实性知识太多，知识学了一大堆却不一定有观念，而“观念”是科学概念、规律、原理在大脑中的内化与升华，形成后解决问题时就不会忘掉，因为你已经拥有了“观念”。",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "なぜなら、すでに「観念」を持っているからだ、と指摘した。",
+      "jp_html": "なぜなら、すでに「<ruby>観念<rt>かんねん</rt></ruby>」を<ruby>持<rt>も</rt></ruby>っているからだ、と<ruby>指摘<rt>してき</rt></ruby>した。",
+      "zh": "对此，有专家在解释新课标中的“科学观念”时指出，当前我们所教的具体、死记硬背、事实性知识太多，知识学了一大堆却不一定有观念，而“观念”是科学概念、规律、原理在大脑中的内化与升华，形成后解决问题时就不会忘掉，因为你已经拥有了“观念”。",
+      "audio_file": "audio/p4_s2.mp3"
+    }
+  ]
+}

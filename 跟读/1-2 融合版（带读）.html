@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>1-2 科学教育｜从知识到真实世界（强化笔记融合版）</title>
+  <style>
+    :root{
+      --ink:#1d2a34;
+      --muted:#64727d;
+      --paper:#fffdf8;
+      --bg:#eef3f2;
+      --line:#dbe5e1;
+      --green:#0f766e;
+      --green-soft:#e6f5f1;
+      --orange:#c15b24;
+      --orange-soft:#fff0e7;
+      --blue-soft:#eaf2ff;
+      --yellow:#c08a12;
+      --yellow-soft:#fbf3dd;
+      --shadow:0 12px 35px rgba(31,56,52,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #dff4ec 0, transparent 27rem),
+        radial-gradient(circle at 100% 14%, #fff0d9 0, transparent 25rem),
+        var(--bg);
+      font-family:"Noto Serif SC","Songti SC","STSong",serif;
+      line-height:1.9;
+    }
+    .top-nav{
+      position:sticky;top:0;z-index:100;
+      display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+      padding:10px 18px;
+      background:rgba(20,91,85,.96);
+      backdrop-filter:blur(6px);
+      box-shadow:0 4px 14px rgba(20,60,55,.25);
+    }
+    .top-nav .nav-title{
+      color:#baf6e8;font:700 .8rem/1 system-ui,sans-serif;
+      letter-spacing:.14em;margin-right:6px;white-space:nowrap;
+    }
+    .top-nav a{
+      padding:5px 13px;border-radius:999px;
+      color:#fff;background:rgba(255,255,255,.14);
+      text-decoration:none;font:600 .84rem/1.2 system-ui,sans-serif;
+      white-space:nowrap;transition:background .15s;
+    }
+    .top-nav a:hover{background:#198f7c}
+    .top-nav a.to-top{background:rgba(255,255,255,.28)}
+    .wrap{max-width:1080px;margin:auto;padding:32px 24px 72px}
+    section{scroll-margin-top:64px}
+    header{
+      padding:44px 42px 36px;
+      border-radius:24px;
+      color:#fff;
+      background:linear-gradient(135deg,#145b55,#0d766b 58%,#198f7c);
+      box-shadow:var(--shadow);
+    }
+    .eyebrow{
+      margin:0 0 12px;
+      color:#baf6e8;
+      font-size:.82rem;
+      letter-spacing:.16em;
+      font-family:system-ui,sans-serif;
+      font-weight:700;
+    }
+    h1{margin:0;font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.35}
+    header p{margin:14px 0 0;color:#e2fffa;font-size:1rem}
+    nav{
+      display:flex;flex-wrap:wrap;gap:10px;
+      margin:22px 0 30px;
+    }
+    nav a{
+      padding:7px 14px;border:1px solid #cbded9;border-radius:999px;
+      color:#25514b;background:rgba(255,255,255,.74);
+      text-decoration:none;font-family:system-ui,sans-serif;font-size:.88rem;
+    }
+    nav a:hover{background:#fff}
+    section{margin-top:30px}
+    .section-title{
+      display:flex;align-items:center;gap:12px;
+      margin:0 0 15px;font-size:1.42rem;
+    }
+    .section-title span{
+      display:inline-grid;place-items:center;width:32px;height:32px;
+      border-radius:50%;color:#fff;background:var(--green);
+      font-family:system-ui,sans-serif;font-size:.9rem;
+    }
+    .translation{
+      overflow:hidden;border:1px solid var(--line);border-radius:20px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    .language{padding:26px 30px}
+    .language + .language{border-top:1px dashed #cbd8d3}
+    .label{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-bottom:12px;padding:4px 10px;border-radius:999px;
+      color:var(--green);background:var(--green-soft);
+      font:700 .78rem/1.4 system-ui,sans-serif;letter-spacing:.08em;
+    }
+    .label.zh{color:var(--orange);background:var(--orange-soft)}
+    .jp{
+      margin:0;font-size:1.13rem;letter-spacing:.025em;
+      font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+    }
+    .zh{margin:0;font-size:1.02rem}
+    ruby{ruby-position:over;ruby-align:center}
+    rt{font-size:.54em;color:var(--yellow);font-weight:700;letter-spacing:0;user-select:none}
+    rt.en{color:var(--yellow)}
+    .lvl{
+      display:inline-block;padding:1px 7px;border-radius:5px;
+      color:#8a5a10;background:var(--yellow-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+    }
+    .note{
+      margin:14px 0 0;padding:11px 14px;border-left:4px solid #8fc9b6;
+      color:#2b3330;background:var(--green-soft);border-radius:0 10px 10px 0;
+      font-size:.91rem;
+    }
+    .note rt{color:#2f7cc4}
+    .grammar-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+    .card{
+      padding:21px 22px;border:1px solid var(--line);border-radius:16px;
+      background:rgba(255,253,248,.92);box-shadow:0 7px 20px rgba(31,56,52,.06);
+    }
+    .card h3{margin:0 0 9px;font-size:1.03rem;color:#12675e}
+    .card p{margin:7px 0;font-size:.94rem}
+    .pattern{
+      display:inline-block;padding:2px 8px;border-radius:6px;
+      color:#1e4c67;background:var(--blue-soft);
+      font-family:"SFMono-Regular",Consolas,monospace;font-size:.86rem;
+    }
+    .g-num{
+      display:inline-grid;place-items:center;width:22px;height:22px;
+      border-radius:50%;background:var(--orange);color:#fff;
+      font:700 .78rem/1 system-ui,sans-serif;margin-right:7px;
+      vertical-align:1px;
+    }
+    .table-wrap{
+      overflow:auto;border:1px solid var(--line);border-radius:16px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    table{width:100%;border-collapse:collapse;min-width:820px}
+    th,td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{color:#fff;background:#27665e;font:700 .82rem/1.4 system-ui,sans-serif;letter-spacing:.04em}
+    tr:last-child td{border-bottom:0}
+    tr:nth-child(even) td{background:#fbfdfc}
+    td{font-size:.91rem}
+    .word{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:1rem}
+    .pos{
+      display:inline-block;padding:2px 7px;border-radius:5px;
+      color:#075b54;background:var(--green-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+      margin-right:4px;
+    }
+    .notes-grid{display:grid;gap:18px}
+    .note-card{
+      padding:24px 26px;border:1px solid #c9e2d8;border-radius:18px;
+      background:var(--green-soft);box-shadow:0 7px 20px rgba(20,90,70,.07);
+    }
+    .note-card h3{
+      margin:0 0 12px;font-size:1.14rem;color:#1d2a34;
+      border-bottom:2px solid #b8d8cd;padding-bottom:8px;
+    }
+    .note-card h3 .sec{color:#0f766e;font-size:.8rem;margin-right:6px}
+    .note-card h4{
+      margin:16px 0 6px;font-size:.98rem;color:#2b3a36;
+    }
+    .note-card p{margin:8px 0;font-size:.95rem;color:#2b3330}
+    .note-card ul{margin:8px 0;padding-left:22px}
+    .note-card li{margin:7px 0;font-size:.94rem;color:#2b3330}
+    .note-card li .ex{
+      font-family:"Hiragino Mincho ProN","Yu Mincho",serif;color:#14181a;
+    }
+    .note-card li .tr{display:block;color:#64727d;font-size:.9rem;margin-top:2px}
+    .note-card .key{
+      display:inline-block;padding:1px 8px;border-radius:6px;
+      background:#dff2ec;border:1px solid #8fc9b6;color:#0e5a46;
+      font:700 .86rem system-ui,sans-serif;
+    }
+    .note-card rt{color:#2f7cc4}
+    .forms-inline{
+      margin:14px 2px 0;padding:16px 20px;border-radius:16px;
+      background:#203f42;color:#effffb;
+    }
+    .forms-inline h3{margin:0 0 8px;font-size:1.02rem;color:#baf6e8}
+    .forms-inline p{margin:5px 0;color:#d5eee8;font-size:.92rem;line-height:1.7}
+    .forms-inline code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    .back-top{margin:12px 2px 0;text-align:right;font-size:.85rem}
+    .back-top a{color:var(--muted);text-decoration:none}
+    .back-top a:hover{color:var(--green)}
+    footer{margin-top:27px;color:var(--muted);font-size:.82rem;text-align:center}
+    @media(max-width:640px){
+      .wrap{padding:16px 13px 48px}
+      header{padding:30px 24px}
+      .language{padding:22px 20px}
+      .jp{font-size:1.04rem}
+      .top-nav{padding:8px 12px}
+      .top-nav .nav-title{display:none}
+    }
+
+  /* ===== 打印适配：A3 尺寸、左右留出空隙、瀑布不跨页、隐藏页眉页脚 =====
+     索引条只在第一页顶部出现（打印时取消 sticky、保留 .top-nav），
+     正文区第二个导航隐藏；每段/区块末尾的「返回顶部」链接保留。 */
+  @media print {
+    @page { size: A3; margin: 10mm 14mm; }
+    html, body { background: #ffffff !important; }
+    nav { display: none !important; }
+    .top-nav { display: flex !important; position: static !important; box-shadow: none !important; backdrop-filter: none; }
+    section { margin-bottom: 5mm; }
+    .card, .translation, .forms-inline, .note-card, .para-pair,
+    .vocab-card, .grammar-item, .language, .phrase-item,
+    .vocab-group, .analysis-block { break-inside: avoid; page-break-inside: avoid; }
+    h1, h2, h3, h4, .section-title { break-after: avoid; page-break-after: avoid; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    table { font-size: 0.9em; }
+    a { color: inherit; text-decoration: none; }
+    .forms-inline, .note-card, .card, .translation { box-shadow: none !important; }
+    .wrap { max-width: 100%; padding: 0; }
+    .jp { font-size: 0.98em; letter-spacing: 0.02em; }
+    .zh, .note { font-size: 0.95em; }
+    .language { padding: 12px 16px; }
+    .grammar-grid { gap: 8px; }
+    .table-wrap { box-shadow: none; }
+  }
+
+  /* ===== 跟读控制条（注入） ===== */
+  .player-bar{
+    position:sticky;top:56px;z-index:95;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    margin:18px 0 8px;padding:12px 16px;
+    border:1px solid var(--line);border-radius:18px;
+    background:rgba(255,253,248,.95);
+    box-shadow:0 8px 22px rgba(31,56,52,.08);
+  }
+  .pb-btn{
+    width:42px;height:42px;border:0;border-radius:50%;cursor:pointer;
+    display:inline-grid;place-items:center;
+    background:var(--green);color:#fff;font-size:1rem;
+    transition:transform .12s, background .15s;
+  }
+  .pb-btn:hover{background:#198f7c;transform:scale(1.06)}
+  .pb-btn.small{width:34px;height:34px;background:#e8f1ee;color:var(--green);font-size:.9rem}
+  .pb-btn.small:hover{background:#d6e8e3}
+  .pb-btn:disabled{opacity:.35;cursor:default;transform:none}
+  .rate-group{display:flex;gap:5px;margin-left:auto}
+  .rate-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .rate-btn.active{background:var(--green);border-color:var(--green);color:#fff}
+  .mode-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .mode-btn.active{background:var(--orange);border-color:var(--orange);color:#fff}
+  .progress{
+    flex-basis:100%;height:6px;border-radius:3px;
+    background:#e3ece8;position:relative;cursor:pointer;
+  }
+  .progress .fill{
+    position:absolute;left:0;top:0;bottom:0;border-radius:3px;
+    background:linear-gradient(90deg,#0f766e,#2ba98c);width:0%;
+  }
+  .progress .knob{
+    position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:#fff;border:2px solid var(--green);transform:translate(-50%,-50%);
+    left:0%;box-shadow:0 1px 4px rgba(0,0,0,.2);
+  }
+  .sentence-status{
+    flex-basis:100%;color:var(--muted);font:600 .78rem system-ui,sans-serif;
+  }
+  .sentence{
+    cursor:pointer;border-radius:8px;padding:3px 10px;margin:0 -10px;
+    transition:background .18s;
+    border-left:4px solid transparent;
+  }
+  .sentence:hover{background:#eaf4fc}
+  .sentence.playing{
+    background:linear-gradient(90deg, rgba(137,207,240,.60), rgba(137,207,240,.28));
+    border-left-color:#2f7cc4;
+    box-shadow:0 2px 10px rgba(47,124,196,.22);
+  }
+  .sentence .play-ic{
+    display:inline-block;margin-right:4px;color:#2f7cc4;
+    font-size:.72em;opacity:.5;font-family:system-ui,sans-serif;vertical-align:2px;
+  }
+  .sentence.playing .play-ic{opacity:1;color:#1c5f9e;transform:scale(1.1)}
+  @media(max-width:640px){
+    .player-bar{top:50px;padding:10px 12px}
+    .player-bar .rate-group{order:3;margin-left:0}
+  }
+  @media print{
+    .player-bar{display:none !important}
+    .sentence{cursor:default;padding:0;margin:0;border:0}
+    .sentence.playing{background:transparent;box-shadow:none;border:0}
+    .sentence .play-ic{display:none}
+  }
+
+</style>
+</head>
+<body>
+  <nav class="top-nav">
+    <span class="nav-title">索 引</span>
+    <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    <a class="to-top" href="#top">▲ 顶部</a>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header>
+      <p class="eyebrow">JAPANESE × CHINESE · READING &amp; GRAMMAR NOTES</p>
+      <h1>1-2 科学教育<br>从知识到真实世界：寻找“理想”中的科学教育</h1>
+      <p>本文为中译日练习（中文原文在前、日文译文在后）；日语汉字均标注平假名读音（黄色），含瑞译强化笔记精讲。</p>
+    </header>
+
+  <div class="player-bar" id="player-bar">
+    <button class="pb-btn small" id="btn-prev" title="上一句（←）">⏮</button>
+    <button class="pb-btn" id="btn-play" title="播放/暂停（空格）">▶</button>
+    <button class="pb-btn small" id="btn-next" title="下一句（→）">⏭</button>
+    <div class="rate-group" id="rate-group">
+      <button class="rate-btn" data-rate="0.5">0.5x</button>
+      <button class="rate-btn" data-rate="0.75">0.75x</button>
+      <button class="rate-btn active" data-rate="1">1x</button>
+      <button class="rate-btn" data-rate="1.25">1.25x</button>
+      <button class="rate-btn" data-rate="1.5">1.5x</button>
+    </div>
+    <button class="mode-btn" id="btn-mode" title="循环模式">循环: 关</button>
+    <div class="progress" id="progress"><div class="fill" id="progress-fill"></div><div class="knob" id="progress-knob"></div></div>
+    <div class="sentence-status" id="sentence-status">点击下方任意日文句子开始跟读</div>
+  </div>
+
+
+    <nav>
+      <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    </nav>
+
+    <section id="p1"><h2 class="section-title">第一段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">在“科学”的诸多含义中，有一个与词源相关。现代汉语中，“科学”一词来自日本人对science的翻译，意为“分科之学”。专家认为，这一翻译是因为从19世纪前叶开始，科学进入了专门化、职业化时代。事实上，在科学发展的早期阶段，并不存在这样严格的学科界限，那时人们只是在用追究“本质”的理性思维方式去追寻“自然”。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="0" data-audio="p1_s1.mp3"><span class="play-ic">▶</span>「<ruby>科学<rt>かがく</rt></ruby>」の<ruby>多<rt>おお</rt></ruby>くの<ruby>意味<rt>いみ</rt></ruby>のうち、<ruby>語源<rt>ごげん</rt></ruby>に<ruby>関<rt>かん</rt></ruby>するものがある。</span><span class="sentence" data-idx="1" data-audio="p1_s2.mp3"><span class="play-ic">▶</span><ruby>現代中国語<rt>げんだいちゅうごくご</rt></ruby>では、「<ruby>科学<rt>かがく</rt></ruby>」という<ruby>言葉<rt>ことば</rt></ruby>は、<ruby>日本人<rt>にほんじん</rt></ruby>が「science」を<ruby>訳<rt>やく</rt></ruby>した<ruby>言葉<rt>ことば</rt></ruby>に<ruby>由来<rt>ゆらい</rt></ruby>し、「<ruby>分科<rt>ぶんか</rt></ruby>の<ruby>学問<rt>がくもん</rt></ruby>」という<ruby>意味<rt>いみ</rt></ruby>である。</span><span class="sentence" data-idx="2" data-audio="p1_s3.mp3"><span class="play-ic">▶</span><ruby>専門家<rt>せんもんか</rt></ruby>によると、このように<ruby>訳<rt>やく</rt></ruby>されたのは、19<ruby>世紀前期<rt>せいきぜんき</rt></ruby>から、<ruby>科学<rt>かがく</rt></ruby>が<ruby>専門的<rt>せんもんてき</rt></ruby>・<ruby>職業的<rt>しょくぎょうてき</rt></ruby>な<ruby>時代<rt>じだい</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったからだという。</span><span class="sentence" data-idx="3" data-audio="p1_s4.mp3"><span class="play-ic">▶</span><ruby>実際<rt>じっさい</rt></ruby>には、<ruby>科学<rt>かがく</rt></ruby><ruby>発展<rt>はってん</rt></ruby>の<ruby>初期段階<rt>しょきだんかい</rt></ruby>には、それほど<ruby>厳格<rt>げんかく</rt></ruby>な<ruby>学科<rt>がっか</rt></ruby>の<ruby>境界<rt>きょうかい</rt></ruby>は<ruby>存在<rt>そんざい</rt></ruby>せず、<ruby>当時<rt>とうじ</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>はただ「<ruby>本質<rt>ほんしつ</rt></ruby>」を<ruby>追究<rt>ついきゅう</rt></ruby>する<ruby>理性的<rt>りせいてき</rt></ruby>な<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>で「<ruby>自然<rt>しぜん</rt></ruby>」を<ruby>追<rt>お</rt></ruby>い<ruby>求<rt>もと</rt></ruby>めようとしていた。</span>
+</p></p><p class="note">“词源”“专门化”“职业化”“早期阶段”的日语译法见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>由来し ＝<ruby>由来<rt>ゆらい</rt></ruby>する（v3 自）连用形：源自（中顿）。</p><p>訳された ＝<ruby>訳<rt>やく</rt></ruby>する（v3 他）被动過去：被翻译的。</p><p>入った ＝<ruby>入<rt>はい</rt></ruby>る（v1 自）過去形：进入了。</p><p>追究する ＝<ruby>追究<rt>ついきゅう</rt></ruby>する（v3 他）连体：追究……的。</p><p>追い求めようとしていた ＝<ruby>追<rt>お</rt></ruby>い<ruby>求<rt>もと</rt></ruby>める（v2 他）＋ようとしていた：正在试图追寻。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p2"><h2 class="section-title">第二段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">这种大而化之的“自然观”，其实也是每个孩子在接受正式科学教育前，所认识的世界的样子。眼前的一切对我们来说都曾那么丰富繁杂，我们不理解风的来处、雷的成因，不知雨后蜗牛为何爬出花园，不知道为什么按下开关灯会亮起。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="4" data-audio="p2_s1.mp3"><span class="play-ic">▶</span>このような<ruby>大<rt>おお</rt></ruby>づかみな「<ruby>自然観<rt>しぜんかん</rt></ruby>」は、<ruby>実<rt>じつ</rt></ruby>は、すべての<ruby>子<rt>こ</rt></ruby>どもが<ruby>正式<rt>せいしき</rt></ruby>な<ruby>科学教育<rt>かがくきょういく</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける<ruby>前<rt>まえ</rt></ruby>に<ruby>認識<rt>にんしき</rt></ruby>している<ruby>世界<rt>せかい</rt></ruby>の<ruby>姿<rt>すがた</rt></ruby>でもある。</span><span class="sentence" data-idx="5" data-audio="p2_s2.mp3"><span class="play-ic">▶</span><ruby>目<rt>め</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>のすべては、私たちにとってかつてそれほど<ruby>豊<rt>ゆた</rt></ruby>かで<ruby>複雑<rt>ふくざつ</rt></ruby>なものであり、私たちは<ruby>風<rt>かぜ</rt></ruby>の<ruby>来処<rt>きしょ</rt></ruby>、<ruby>雷<rt>かみなり</rt></ruby>の<ruby>成因<rt>せいいん</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>しておらず、<ruby>雨上<rt>あめあ</rt></ruby>がりにカタツムリがなぜ<ruby>庭<rt>にわ</rt></ruby>から<ruby>這<rt>は</rt></ruby>い<ruby>出<rt>だ</rt></ruby>してくるのか、なぜスイッチを<ruby>押<rt>お</rt></ruby>すと<ruby>電気<rt>でんき</rt></ruby>がつくのかも<ruby>知<rt>し</rt></ruby>らない。</span>
+</p></p><p class="note">“大而化之”（此处指宏观、浑然一体的认知方式）的日语译法见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>認識している ＝<ruby>認識<rt>にんしき</rt></ruby>する（v3 他）て形＋いる：所认识的。</p><p>理解しておらず ＝<ruby>理解<rt>りかい</rt></ruby>する（v3 他）て形＋いる否定连用：并不理解（中顿）。</p><p>這い出してくる ＝<ruby>這<rt>は</rt></ruby>い<ruby>出<rt>だ</rt></ruby>す（v1 自）て形＋くる：爬出来。</p><p>押す ＝<ruby>押<rt>お</rt></ruby>す（v1 他）辞书形：按。</p><p>つく ＝つく（v1 自）辞书形：亮起。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p3"><h2 class="section-title">第三段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">好在我们拥有好奇心。以上的一个个“为什么”就是人类认识世界的起点，回答这些“为什么”，也曾被视为科学课的目标之一。但客观世界在不停变化，单纯的记录、抄写和背诵，能穷尽一切知识吗？</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="6" data-audio="p3_s1.mp3"><span class="play-ic">▶</span><ruby>幸<rt>さいわ</rt></ruby>いなことに、私たちは<ruby>好奇心<rt>こうきしん</rt></ruby>を<ruby>持<rt>も</rt></ruby>っている。</span><span class="sentence" data-idx="7" data-audio="p3_s2.mp3"><span class="play-ic">▶</span><ruby>以上<rt>いじょう</rt></ruby>のような一<ruby>個<rt>こ</rt></ruby>ひとつの「なぜ」は、<ruby>人間<rt>にんげん</rt></ruby>が<ruby>世界<rt>せかい</rt></ruby>を<ruby>認識<rt>にんしき</rt></ruby>する<ruby>出発点<rt>しゅっぱつてん</rt></ruby>であり、これらの「なぜ」に<ruby>答<rt>こた</rt></ruby>えることは、かつて<ruby>理科<rt>りか</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>の<ruby>目標<rt>もくひょう</rt></ruby>の一<ruby>つ<rt>つ</rt></ruby>と<ruby>見<rt>み</rt></ruby>なされていた。</span><span class="sentence" data-idx="8" data-audio="p3_s3.mp3"><span class="play-ic">▶</span>しかし、<ruby>客観的<rt>きゃっかんてき</rt></ruby>な<ruby>世界<rt>せかい</rt></ruby>は<ruby>絶<rt>た</rt></ruby>えず<ruby>変化<rt>へんか</rt></ruby>しており、<ruby>単<rt>たん</rt></ruby>なる<ruby>記録<rt>きろく</rt></ruby>や<ruby>書<rt>か</rt></ruby>き<ruby>写<rt>うつ</rt></ruby>し、<ruby>暗記<rt>あんき</rt></ruby>で、すべての<ruby>知識<rt>ちしき</rt></ruby>を<ruby>究<rt>きわ</rt></ruby>め<ruby>尽<rt>つ</rt></ruby>くすことができるのだろうか。</span>
+</p></p><p class="note">“穷尽”的日语译法（<ruby>究<rt>きわ</rt></ruby>める／<ruby>尽<rt>つ</rt></ruby>くす）见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>持っている ＝<ruby>持<rt>も</rt></ruby>つ（v1 他）て形＋いる：拥有。</p><p>見なされていた ＝<ruby>見<rt>み</rt></ruby>なす（v1 他）被动＋ていた：曾被视为。</p><p>変化しており ＝<ruby>変化<rt>へんか</rt></ruby>する（v3 自）て形＋いる连用：不断变化（中顿）。</p><p>究め尽くす ＝<ruby>究<rt>きわ</rt></ruby>め<ruby>尽<rt>つ</rt></ruby>くす（v1 他）：穷尽。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p4"><h2 class="section-title">第四段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">对此，有专家在解释新课标中的“科学观念”时指出，当前我们所教的具体、死记硬背、事实性知识太多，知识学了一大堆却不一定有观念，而“观念”是科学概念、规律、原理在大脑中的内化与升华，形成后解决问题时就不会忘掉，因为你已经拥有了“观念”。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="9" data-audio="p4_s1.mp3"><span class="play-ic">▶</span>これについて、ある<ruby>専門家<rt>せんもんか</rt></ruby>は、<ruby>新課程基準<rt>しんかていきじゅん</rt></ruby>における「<ruby>科学観念<rt>かがくかんねん</rt></ruby>」を<ruby>説明<rt>せつめい</rt></ruby>する<ruby>際<rt>さい</rt></ruby>、<ruby>現在<rt>げんざい</rt></ruby>私たちが<ruby>教<rt>おし</rt></ruby>えている<ruby>具体的<rt>ぐたいてき</rt></ruby>で、<ruby>暗記<rt>あんき</rt></ruby><ruby>中心<rt>ちゅうしん</rt></ruby>の、<ruby>事実的<rt>じじつてき</rt></ruby>な<ruby>知識<rt>ちしき</rt></ruby>ばかりが<ruby>多<rt>おお</rt></ruby>すぎて、<ruby>知識<rt>ちしき</rt></ruby>をたくさん<ruby>学<rt>まな</rt></ruby>んでも<ruby>必<rt>かなら</rt></ruby>ずしも<ruby>観念<rt>かんねん</rt></ruby>があるとは<ruby>限<rt>かぎ</rt></ruby>らず、「<ruby>観念<rt>かんねん</rt></ruby>」とは<ruby>科学概念<rt>かがくがいねん</rt></ruby>・<ruby>法則<rt>ほうそく</rt></ruby>・<ruby>原理<rt>げんり</rt></ruby>が<ruby>脳内<rt>のうない</rt></ruby>で<ruby>内化<rt>ないか</rt></ruby>・<ruby>昇華<rt>しょうか</rt></ruby>されたものであり、<ruby>形成<rt>けいせい</rt></ruby>されれば<ruby>問題<rt>もんだい</rt></ruby>を<ruby>解決<rt>かいけつ</rt></ruby>する<ruby>際<rt>さい</rt></ruby>に<ruby>忘<rt>わす</rt></ruby>れることはない。</span><span class="sentence" data-idx="10" data-audio="p4_s2.mp3"><span class="play-ic">▶</span>なぜなら、すでに「<ruby>観念<rt>かんねん</rt></ruby>」を<ruby>持<rt>も</rt></ruby>っているからだ、と<ruby>指摘<rt>してき</rt></ruby>した。</span>
+</p></p><p class="note">“新课标”与“死记硬背”的日语译法见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>教えている ＝<ruby>教<rt>おし</rt></ruby>える（v2 他）て形＋いる：正在教的。</p><p>学んでも ＝<ruby>学<rt>まな</rt></ruby>ぶ（v1 他）て形＋も：即使学了……也。</p><p>形成されれば ＝<ruby>形成<rt>けいせい</rt></ruby>する（v3 他）被动假定：一旦形成。</p><p>指摘した ＝<ruby>指摘<rt>してき</rt></ruby>する（v3 他）過去形：指出。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="grammar"><h2 class="section-title"><span>文</span>本文语法</h2><div class="grammar-grid"><article class="card"><h3><span class="g-num">1</span>〜のうち</h3><p><span class="pattern">「<ruby>科学<rt>かがく</rt></ruby>」の<ruby>多<rt>おお</rt></ruby>くの<ruby>意味<rt>いみ</rt></ruby>のうち</span></p><p>“在……之中”。</p></article><article class="card"><h3><span class="g-num">2</span>〜に由来する</h3><p><span class="pattern">「science」を<ruby>訳<rt>やく</rt></ruby>した<ruby>言葉<rt>ことば</rt></ruby>に<ruby>由来<rt>ゆらい</rt></ruby>し</span></p><p>“源自……”。注意：是日本人翻译science的产物，故用「訳した言葉」。</p></article><article class="card"><h3><span class="g-num">3</span>〜とされる／〜という（传闻）</h3><p><span class="pattern"><ruby>専門家<rt>せんもんか</rt></ruby>によると…からだという</span></p><p>“据专家称……”。原因句＋传闻表达。</p></article><article class="card"><h3><span class="g-num">4</span>〜からだ</h3><p><span class="pattern">このように<ruby>訳<rt>やく</rt></ruby>されたのは…からだ</span></p><p>“之所以……是因为……”。解释原因。</p></article><article class="card"><h3><span class="g-num">5</span>〜前期から</h3><p><span class="pattern">19<ruby>世紀前期<rt>せいきぜんき</rt></ruby>から</span></p><p>“自19世纪前叶起”。</p></article><article class="card"><h3><span class="g-num">6</span>〜時代に入る</h3><p><span class="pattern"><ruby>専門的<rt>せんもんてき</rt></ruby>・<ruby>職業的<rt>しょくぎょうてき</rt></ruby>な<ruby>時代<rt>じだい</rt></ruby>に<ruby>入<rt>はい</rt></ruby>った</span></p><p>“进入……时代”。</p></article><article class="card"><h3><span class="g-num">7</span>〜初期段階</h3><p><span class="pattern"><ruby>科学<rt>かがく</rt></ruby><ruby>発展<rt>はってん</rt></ruby>の<ruby>初期段階<rt>しょきだんかい</rt></ruby>には</span></p><p>“在……的早期阶段”。</p></article><article class="card"><h3><span class="g-num">8</span>〜は存在しない</h3><p><span class="pattern"><ruby>厳格<rt>げんかく</rt></ruby>な<ruby>学科<rt>がっか</rt></ruby>の<ruby>境界<rt>きょうかい</rt></ruby>は<ruby>存在<rt>そんざい</rt></ruby>せず</span></p><p>“并不存在……”。“〜ず”为书面否定中顿。</p></article><article class="card"><h3><span class="g-num">9</span>〜ようとしていた</h3><p><span class="pattern"><ruby>追<rt>お</rt></ruby>い<ruby>求<rt>もと</rt></ruby>めようとしていた</span></p><p>“正试图……”。表示努力、意愿（此处“追寻”带有主观努力之意）。</p></article><article class="card"><h3><span class="g-num">10</span>〜前に</h3><p><span class="pattern"><ruby>正式<rt>せいしき</rt></ruby>な<ruby>科学教育<rt>かがくきょういく</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける<ruby>前<rt>まえ</rt></ruby>に</span></p><p>“在……之前”。“〜前”的多样化表达见强化笔记。</p></article><article class="card"><h3><span class="g-num">11</span>〜にとって</h3><p><span class="pattern">私たちにとって</span></p><p>“对……来说”。</p></article><article class="card"><h3><span class="g-num">12</span>〜かつて</h3><p><span class="pattern">かつてそれほど<ruby>豊<rt>ゆた</rt></ruby>かで<ruby>複雑<rt>ふくざつ</rt></ruby>なものであり</span></p><p>“曾经那么……”。“かつて”＋过去状态。</p></article><article class="card"><h3><span class="g-num">13</span>なぜ〜のかも知らない</h3><p><span class="pattern">なぜスイッチを<ruby>押<rt>お</rt></ruby>すと<ruby>電気<rt>でんき</rt></ruby>がつくのかも<ruby>知<rt>し</rt></ruby>らない</span></p><p>“不知道为何……”。连“为什么……也不知道”。</p></article><article class="card"><h3><span class="g-num">14</span>〜とは限らない</h3><p><span class="pattern"><ruby>必<rt>かなら</rt></ruby>ずしも<ruby>観念<rt>かんねん</rt></ruby>があるとは<ruby>限<rt>かぎ</rt></ruby>らず</span></p><p>“不一定……、未必……”。“必ずしも”与否定呼应。</p></article><article class="card"><h3><span class="g-num">15</span>〜ばかり</h3><p><span class="pattern"><ruby>事実的<rt>じじつてき</rt></ruby>な<ruby>知識<rt>ちしき</rt></ruby>ばかりが<ruby>多<rt>おお</rt></ruby>すぎて</span></p><p>“光是一些……”。“太多”带有“不该这么多”的责备语感，故用「ばかり」。</p></article><article class="card"><h3><span class="g-num">16</span>〜からである</h3><p><span class="pattern">すでに「<ruby>観念<rt>かんねん</rt></ruby>」を<ruby>持<rt>も</rt></ruby>っているからだ</span></p><p>“因为……”。句末原因强调。</p></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="vocab"><h2 class="section-title"><span>词</span>词汇、短语与读音</h2><div class="table-wrap"><table><thead><tr><th>单词／短语</th><th>读音</th><th>词性</th><th>级别</th><th>中文释义</th><th>短语（原型）</th></tr></thead><tbody><tr><td class="word"><ruby>科学<rt>かがく</rt></ruby></td><td>かがく</td><td><span class="pos">n</span></td><td></td><td>科学</td><td>「<ruby>科学<rt>かがく</rt></ruby>」の<ruby>多<rt>おお</rt></ruby>くの<ruby>意味<rt>いみ</rt></ruby></td></tr><tr><td class="word"><ruby>意味<rt>いみ</rt></ruby></td><td>いみ</td><td><span class="pos">n</span></td><td></td><td>含义、意义</td><td><ruby>多<rt>おお</rt></ruby>くの<ruby>意味<rt>いみ</rt></ruby>のうち</td></tr><tr><td class="word"><ruby>語源<rt>ごげん</rt></ruby></td><td>ごげん</td><td><span class="pos">n</span></td><td></td><td>词源</td><td><ruby>語源<rt>ごげん</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する</td></tr><tr><td class="word"><ruby>現代中国語<rt>げんだいちゅうごくご</rt></ruby></td><td>げんだいちゅうごくご</td><td><span class="pos">n</span></td><td></td><td>现代汉语</td><td><ruby>現代中国語<rt>げんだいちゅうごくご</rt></ruby>では</td></tr><tr><td class="word"><ruby>訳<rt>やく</rt></ruby>する</td><td>やくする</td><td><span class="pos">v3 他</span></td><td></td><td>翻译</td><td>「science」を<ruby>訳<rt>やく</rt></ruby>した<ruby>言葉<rt>ことば</rt></ruby></td></tr><tr><td class="word"><ruby>由来<rt>ゆらい</rt></ruby>する</td><td>ゆらいする</td><td><span class="pos">v3 自</span></td><td></td><td>源自</td><td><ruby>言葉<rt>ことば</rt></ruby>に<ruby>由来<rt>ゆらい</rt></ruby>し</td></tr><tr><td class="word"><ruby>専門家<rt>せんもんか</rt></ruby></td><td>せんもんか</td><td><span class="pos">n</span></td><td></td><td>专家</td><td><ruby>専門家<rt>せんもんか</rt></ruby>によると</td></tr><tr><td class="word"><ruby>専門的<rt>せんもんてき</rt></ruby></td><td>せんもんてき</td><td><span class="pos">ナ形</span></td><td></td><td>专门化的</td><td><ruby>専門的<rt>せんもんてき</rt></ruby>・<ruby>職業的<rt>しょくぎょうてき</rt></ruby></td></tr><tr><td class="word"><ruby>職業的<rt>しょくぎょうてき</rt></ruby></td><td>しょくぎょうてき</td><td><span class="pos">ナ形</span></td><td></td><td>职业化的</td><td><ruby>専門的<rt>せんもんてき</rt></ruby>・<ruby>職業的<rt>しょくぎょうてき</rt></ruby>な<ruby>時代<rt>じだい</rt></ruby></td></tr><tr><td class="word"><ruby>初期段階<rt>しょきだんかい</rt></ruby></td><td>しょきだんかい</td><td><span class="pos">n</span></td><td></td><td>早期阶段</td><td><ruby>発展<rt>はってん</rt></ruby>の<ruby>初期段階<rt>しょきだんかい</rt></ruby></td></tr><tr><td class="word"><ruby>厳格<rt>げんかく</rt></ruby></td><td>げんかく</td><td><span class="pos">ナ形</span></td><td></td><td>严格的</td><td>それほど<ruby>厳格<rt>げんかく</rt></ruby>な<ruby>学科<rt>がっか</rt></ruby>の<ruby>境界<rt>きょうかい</rt></ruby></td></tr><tr><td class="word"><ruby>学科<rt>がっか</rt></ruby></td><td>がっか</td><td><span class="pos">n</span></td><td></td><td>学科</td><td><ruby>厳格<rt>げんかく</rt></ruby>な<ruby>学科<rt>がっか</rt></ruby></td></tr><tr><td class="word"><ruby>境界<rt>きょうかい</rt></ruby></td><td>きょうかい</td><td><span class="pos">n</span></td><td></td><td>界限</td><td><ruby>学科<rt>がっか</rt></ruby>の<ruby>境界<rt>きょうかい</rt></ruby></td></tr><tr><td class="word"><ruby>存在<rt>そんざい</rt></ruby>する</td><td>そんざいする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td></td><td>存在</td><td><ruby>境界<rt>きょうかい</rt></ruby>は<ruby>存在<rt>そんざい</rt></ruby>せず</td></tr><tr><td class="word"><ruby>本質<rt>ほんしつ</rt></ruby></td><td>ほんしつ</td><td><span class="pos">n</span></td><td></td><td>本质</td><td>「<ruby>本質<rt>ほんしつ</rt></ruby>」を<ruby>追究<rt>ついきゅう</rt></ruby>する</td></tr><tr><td class="word"><ruby>追究<rt>ついきゅう</rt></ruby>する</td><td>ついきゅうする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>追究、探究</td><td>「<ruby>本質<rt>ほんしつ</rt></ruby>」を<ruby>追究<rt>ついきゅう</rt></ruby>する</td></tr><tr><td class="word"><ruby>理性的<rt>りせいてき</rt></ruby></td><td>りせいてき</td><td><span class="pos">ナ形</span></td><td></td><td>理性的</td><td><ruby>理性的<rt>りせいてき</rt></ruby>な<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby></td></tr><tr><td class="word"><ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby></td><td>かんがえかた</td><td><span class="pos">n</span></td><td></td><td>思维方式</td><td><ruby>理性的<rt>りせいてき</rt></ruby>な<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby></td></tr><tr><td class="word"><ruby>追<rt>お</rt></ruby>い<ruby>求<rt>もと</rt></ruby>める</td><td>おいもとめる</td><td><span class="pos">v2 他</span></td><td></td><td>追寻</td><td>「<ruby>自然<rt>しぜん</rt></ruby>」を<ruby>追<rt>お</rt></ruby>い<ruby>求<rt>もと</rt></ruby>める</td></tr><tr><td class="word"><ruby>大<rt>おお</rt></ruby>づかみ</td><td>おおづかみ</td><td><span class="pos">n</span></td><td></td><td>大而化之、宏观把握</td><td><ruby>大<rt>おお</rt></ruby>づかみな「<ruby>自然観<rt>しぜんかん</rt></ruby>」</td></tr><tr><td class="word"><ruby>自然観<rt>しぜんかん</rt></ruby></td><td>しぜんかん</td><td><span class="pos">n</span></td><td></td><td>自然观</td><td><ruby>大<rt>おお</rt></ruby>づかみな「<ruby>自然観<rt>しぜんかん</rt></ruby>」</td></tr><tr><td class="word"><ruby>科学教育<rt>かがくきょういく</rt></ruby></td><td>かがくきょういく</td><td><span class="pos">n</span></td><td></td><td>科学教育</td><td><ruby>正式<rt>せいしき</rt></ruby>な<ruby>科学教育<rt>かがくきょういく</rt></ruby></td></tr><tr><td class="word"><ruby>認識<rt>にんしき</rt></ruby>する</td><td>にんしきする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>认识</td><td><ruby>認識<rt>にんしき</rt></ruby>している<ruby>世界<rt>せかい</rt></ruby>の<ruby>姿<rt>すがた</rt></ruby></td></tr><tr><td class="word"><ruby>豊<rt>ゆた</rt></ruby>か</td><td>ゆたか</td><td><span class="pos">ナ形</span></td><td></td><td>丰富的</td><td><ruby>豊<rt>ゆたか</rt></ruby>かで<ruby>複雑<rt>ふくざつ</rt></ruby>なもの</td></tr><tr><td class="word"><ruby>複雑<rt>ふくざつ</rt></ruby></td><td>ふくざつ</td><td><span class="pos">n</span><span class="pos">ナ形</span></td><td></td><td>复杂的</td><td><ruby>豊<rt>ゆたか</rt></ruby>かで<ruby>複雑<rt>ふくざつ</rt></ruby>なもの</td></tr><tr><td class="word"><ruby>風<rt>かぜ</rt></ruby></td><td>かぜ</td><td><span class="pos">n</span></td><td></td><td>风</td><td><ruby>風<rt>かぜ</rt></ruby>の<ruby>来処<rt>きしょ</rt></ruby></td></tr><tr><td class="word"><ruby>来処<rt>きしょ</rt></ruby></td><td>きしょ</td><td><span class="pos">n</span></td><td></td><td>来处、来源</td><td><ruby>風<rt>かぜ</rt></ruby>の<ruby>来処<rt>きしょ</rt></ruby></td></tr><tr><td class="word"><ruby>雷<rt>かみなり</rt></ruby></td><td>かみなり</td><td><span class="pos">n</span></td><td></td><td>雷</td><td><ruby>雷<rt>かみなり</rt></ruby>の<ruby>成因<rt>せいいん</rt></ruby></td></tr><tr><td class="word"><ruby>成因<rt>せいいん</rt></ruby></td><td>せいいん</td><td><span class="pos">n</span></td><td></td><td>成因</td><td><ruby>雷<rt>かみなり</rt></ruby>の<ruby>成因<rt>せいいん</rt></ruby></td></tr><tr><td class="word"><ruby>理解<rt>りかい</rt></ruby>する</td><td>りかいする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>理解</td><td><ruby>理解<rt>りかい</rt></ruby>しておらず</td></tr><tr><td class="word"><ruby>雨上<rt>あめあ</rt></ruby>がり</td><td>あめあがり</td><td><span class="pos">n</span></td><td></td><td>雨后</td><td><ruby>雨上<rt>あめあ</rt></ruby>がりに</td></tr><tr><td class="word">カタツムリ</td><td>カタツムリ</td><td><span class="pos">n</span></td><td></td><td>蜗牛</td><td>カタツムリがなぜ</td></tr><tr><td class="word"><ruby>這<rt>は</rt></ruby>い<ruby>出<rt>だ</rt></ruby>す</td><td>はいだす</td><td><span class="pos">v1 自</span></td><td></td><td>爬出</td><td><ruby>庭<rt>にわ</rt></ruby>から<ruby>這<rt>は</rt></ruby>い<ruby>出<rt>だ</rt></ruby>してくる</td></tr><tr><td class="word"><ruby>押<rt>お</rt></ruby>す</td><td>おす</td><td><span class="pos">v1 他</span></td><td></td><td>按</td><td>スイッチを<ruby>押<rt>お</rt></ruby>すと</td></tr><tr><td class="word"><ruby>好奇心<rt>こうきしん</rt></ruby></td><td>こうきしん</td><td><span class="pos">n</span></td><td></td><td>好奇心</td><td>私たちは<ruby>好奇心<rt>こうきしん</rt></ruby>を<ruby>持<rt>も</rt></ruby>っている</td></tr><tr><td class="word"><ruby>出発点<rt>しゅっぱつてん</rt></ruby></td><td>しゅっぱつてん</td><td><span class="pos">n</span></td><td></td><td>起点</td><td><ruby>世界<rt>せかい</rt></ruby>を<ruby>認識<rt>にんしき</rt></ruby>する<ruby>出発点<rt>しゅっぱつてん</rt></ruby></td></tr><tr><td class="word"><ruby>答<rt>こた</rt></ruby>える</td><td>こたえる</td><td><span class="pos">v2 自</span></td><td></td><td>回答</td><td>「なぜ」に<ruby>答<rt>こた</rt></ruby>えること</td></tr><tr><td class="word"><ruby>理科<rt>りか</rt></ruby></td><td>りか</td><td><span class="pos">n</span></td><td></td><td>理科、科学课</td><td><ruby>理科<rt>りか</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby></td></tr><tr><td class="word"><ruby>目標<rt>もくひょう</rt></ruby></td><td>もくひょう</td><td><span class="pos">n</span></td><td></td><td>目标</td><td><ruby>目標<rt>もくひょう</rt></ruby>の一<ruby>つ<rt>つ</rt></ruby></td></tr><tr><td class="word"><ruby>見<rt>み</rt></ruby>なす</td><td>みなす</td><td><span class="pos">v1 他</span></td><td></td><td>视为</td><td>と<ruby>見<rt>み</rt></ruby>なされていた</td></tr><tr><td class="word"><ruby>客観的<rt>きゃっかんてき</rt></ruby></td><td>きゃっかんてき</td><td><span class="pos">ナ形</span></td><td></td><td>客观的</td><td><ruby>客観的<rt>きゃっかんてき</rt></ruby>な<ruby>世界<rt>せかい</rt></ruby></td></tr><tr><td class="word"><ruby>絶<rt>た</rt></ruby>えず</td><td>たえず</td><td><span class="pos">adv</span></td><td></td><td>不断地</td><td><ruby>絶<rt>た</rt></ruby>えず<ruby>変化<rt>へんか</rt></ruby>しており</td></tr><tr><td class="word"><ruby>変化<rt>へんか</rt></ruby>する</td><td>へんかする</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td></td><td>变化</td><td><ruby>絶<rt>た</rt></ruby>えず<ruby>変化<rt>へんか</rt></ruby>しており</td></tr><tr><td class="word"><ruby>単<rt>たん</rt></ruby>なる</td><td>たんなる</td><td><span class="pos">连体</span></td><td></td><td>单纯的</td><td><ruby>単<rt>たん</rt></ruby>なる<ruby>記録<rt>きろく</rt></ruby></td></tr><tr><td class="word"><ruby>記録<rt>きろく</rt></ruby></td><td>きろく</td><td><span class="pos">n</span></td><td></td><td>记录</td><td><ruby>単<rt>たん</rt></ruby>なる<ruby>記録<rt>きろく</rt></ruby></td></tr><tr><td class="word"><ruby>書<rt>か</rt></ruby>き<ruby>写<rt>うつ</rt></ruby>し</td><td>かきうつし</td><td><span class="pos">n</span></td><td></td><td>抄写</td><td><ruby>記録<rt>きろく</rt></ruby>や<ruby>書<rt>か</rt></ruby>き<ruby>写<rt>うつ</rt></ruby>し</td></tr><tr><td class="word"><ruby>暗記<rt>あんき</rt></ruby></td><td>あんき</td><td><span class="pos">n</span></td><td></td><td>背诵</td><td><ruby>書<rt>か</rt></ruby>き<ruby>写<rt>うつ</rt></ruby>し、<ruby>暗記<rt>あんき</rt></ruby>で</td></tr><tr><td class="word"><ruby>知識<rt>ちしき</rt></ruby></td><td>ちしき</td><td><span class="pos">n</span></td><td></td><td>知识</td><td>すべての<ruby>知識<rt>ちしき</rt></ruby></td></tr><tr><td class="word"><ruby>究<rt>きわ</rt></ruby>め<ruby>尽<rt>つ</rt></ruby>くす</td><td>きわめつくす</td><td><span class="pos">v1 他</span></td><td></td><td>穷尽</td><td><ruby>知識<rt>ちしき</rt></ruby>を<ruby>究<rt>きわ</rt></ruby>め<ruby>尽<rt>つ</rt></ruby>くす</td></tr><tr><td class="word"><ruby>新課程基準<rt>しんかていきじゅん</rt></ruby></td><td>しんかていきじゅん</td><td><span class="pos">n</span></td><td></td><td>新课标（新课程标准）</td><td><ruby>新課程基準<rt>しんかていきじゅん</rt></ruby>における</td></tr><tr><td class="word"><ruby>科学観念<rt>かがくかんねん</rt></ruby></td><td>かがくかんねん</td><td><span class="pos">n</span></td><td></td><td>科学观念</td><td>「<ruby>科学観念<rt>かがくかんねん</rt></ruby>」を<ruby>説明<rt>せつめい</rt></ruby>する</td></tr><tr><td class="word"><ruby>際<rt>さい</rt></ruby></td><td>さい</td><td><span class="pos">n</span></td><td></td><td>……的时候</td><td><ruby>説明<rt>せつめい</rt></ruby>する<ruby>際<rt>さい</rt></ruby></td></tr><tr><td class="word"><ruby>具体的<rt>ぐたいてき</rt></ruby></td><td>ぐたいてき</td><td><span class="pos">ナ形</span></td><td></td><td>具体的</td><td><ruby>具体的<rt>ぐたいてき</rt></ruby>で、<ruby>暗記<rt>あんき</rt></ruby><ruby>中心<rt>ちゅうしん</rt></ruby>の</td></tr><tr><td class="word"><ruby>事実的<rt>じじつてき</rt></ruby></td><td>じじつてき</td><td><span class="pos">ナ形</span></td><td></td><td>事实性的</td><td><ruby>事実的<rt>じじつてき</rt></ruby>な<ruby>知識<rt>ちしき</rt></ruby></td></tr><tr><td class="word"><ruby>学<rt>まな</rt></ruby>ぶ</td><td>まなぶ</td><td><span class="pos">v1 他</span></td><td></td><td>学习</td><td><ruby>知識<rt>ちしき</rt></ruby>をたくさん<ruby>学<rt>まな</rt></ruby>んでも</td></tr><tr><td class="word"><ruby>限<rt>かぎ</rt></ruby>る</td><td>かぎる</td><td><span class="pos">v1 自他</span></td><td></td><td>限于</td><td>あるとは<ruby>限<rt>かぎ</rt></ruby>らず</td></tr><tr><td class="word"><ruby>科学概念<rt>かがくがいねん</rt></ruby></td><td>かがくがいねん</td><td><span class="pos">n</span></td><td></td><td>科学概念</td><td><ruby>科学概念<rt>かがくがいねん</rt></ruby>・<ruby>法則<rt>ほうそく</rt></ruby>・<ruby>原理<rt>げんり</rt></ruby></td></tr><tr><td class="word"><ruby>法則<rt>ほうそく</rt></ruby></td><td>ほうそく</td><td><span class="pos">n</span></td><td></td><td>规律</td><td><ruby>科学概念<rt>かがくがいねん</rt></ruby>・<ruby>法則<rt>ほうそく</rt></ruby>・<ruby>原理<rt>げんり</rt></ruby></td></tr><tr><td class="word"><ruby>原理<rt>げんり</rt></ruby></td><td>げんり</td><td><span class="pos">n</span></td><td></td><td>原理</td><td><ruby>科学概念<rt>かがくがいねん</rt></ruby>・<ruby>法則<rt>ほうそく</rt></ruby>・<ruby>原理<rt>げんり</rt></ruby></td></tr><tr><td class="word"><ruby>脳内<rt>のうない</rt></ruby></td><td>のうない</td><td><span class="pos">n</span></td><td></td><td>大脑内</td><td><ruby>脳内<rt>のうない</rt></ruby>で<ruby>内化<rt>ないか</rt></ruby>・<ruby>昇華<rt>しょうか</rt></ruby>されたもの</td></tr><tr><td class="word"><ruby>内化<rt>ないか</rt></ruby></td><td>ないか</td><td><span class="pos">n</span></td><td></td><td>内化</td><td><ruby>脳内<rt>のうない</rt></ruby>で<ruby>内化<rt>ないか</rt></ruby></td></tr><tr><td class="word"><ruby>昇華<rt>しょうか</rt></ruby></td><td>しょうか</td><td><span class="pos">n</span></td><td></td><td>升华</td><td><ruby>内化<rt>ないか</rt></ruby>・<ruby>昇華<rt>しょうか</rt></ruby>されたもの</td></tr><tr><td class="word"><ruby>形成<rt>けいせい</rt></ruby>する</td><td>けいせいする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>形成</td><td><ruby>形成<rt>けいせい</rt></ruby>されれば</td></tr><tr><td class="word"><ruby>解決<rt>かいけつ</rt></ruby>する</td><td>かいけつする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>解决</td><td><ruby>問題<rt>もんだい</rt></ruby>を<ruby>解決<rt>かいけつ</rt></ruby>する<ruby>際<rt>さい</rt></ruby></td></tr><tr><td class="word"><ruby>忘<rt>わす</rt></ruby>れる</td><td>わすれる</td><td><span class="pos">v2 他</span></td><td></td><td>忘记</td><td><ruby>忘<rt>わす</rt></ruby>れることはない</td></tr><tr><td class="word"><ruby>指摘<rt>してき</rt></ruby>する</td><td>してきする</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td></td><td>指出</td><td>と<ruby>指摘<rt>してき</rt></ruby>した</td></tr></tbody></table></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="notes"><h2 class="section-title"><span>笔</span>强化笔记精讲（瑞译）</h2><div class="notes-grid"><article class="note-card"><h3><span class="sec">段落1</span>词源 → 語源／エティモロジー</h3><p>“词源”在语言学中指词的形式和意义的来源。根据具体语境可以有多种译法，如：</p><ul><li>① <span class="ex">語源（ごげん）</span><span class="tr">众所周知，现代中国的许多行业与学科名称，转译或借鉴自外来词汇。即便其词源来自古代汉语，古今含义大多已迥然不同，如经济、物理等。周知のとおり、現代中国における多くの学術用語や専門用語は、外国語から翻訳・借用されたものである。たとえその語源が古代中国語に由来するものであっても、「経済」や「物理」に代表されるように、その語義は古代と現代とでは大きく変化している場合がほとんどである。（小甜饼试译）</span></li><li>② <span class="ex">エティモロジー</span><span class="tr">从哲学还原到词源追溯，海德格尔以现象学方法批判现代技术，使农业在解构中回归本质。哲学的還元からエティモロジーに至るまで、ハイデガーは現象学的方法によって近代技術を批判し、脱構築を通じて農業をその本質へと立ち返らせた。（小甜饼试译）</span></li></ul></article><article class="note-card"><h3><span class="sec">段落1</span>专门化 → 専門化／スペシャリゼーション</h3><p>“专门化”是指在特定领域、技能或任务上集中资源、精力或结构，以达到更高效率或适应性的过程。根据具体的语境可以有多种译法，如：</p><ul><li>① <span class="ex">専門化（せんもんか）</span><span class="tr">我国环境司法专门化体系、多元共治的环境司法格局已基本形成，但仍需准确把握环境司法规则尺度，完善环境司法专业化手段使用，提升专门化水平。中国では、環境司法の専門化体系および多元的共治に基づく環境司法の枠組みは、すでにおおむね形成されている。しかし、環境司法における判断基準を的確に把握するとともに、環境司法の専門的手法の活用をさらに充実させ、その専門化の水準を一層向上させる必要がある。（小甜饼试译）</span></li><li>② <span class="ex">スペシャリゼーション</span><span class="tr">体育社会现象的专门化是指在体育运动脱离对其他社会活动的依存、附属关系，逐步形成独立体系的过程中，体育社会现象也被分离出来，成为一种专门的社会现象。スポーツ社会現象におけるスペシャリゼーションとは、スポーツが他の社会的活動への依存的・従属的な関係から脱却し、独立した体系を形成していく過程において、スポーツ社会現象自体も他の社会現象から分化し、一つの専門的な社会現象として成立することをいう。（小甜饼试译）</span></li></ul></article><article class="note-card"><h3><span class="sec">段落1</span>职业化 → 職業化／プロフェッショナル化・プロ化</h3><p>“职业化”指工作状态的标准化、规范化和制度化。根据具体的语境可以有多种译法，如：</p><ul><li>① <span class="ex">職業化（しょくぎょうか）</span><span class="tr">事业合伙人制度的价值，不止于一家公司内部的管理创新。放在整个直播短视频行业的演进脉络里看，它至少有三层意义。第一，它提供了一种破解“零和博弈”的可能。……第二，它推动了主播职业化的进程。事業パートナー制度の価値は、一企業における経営上のイノベーションにとどまらない。ライブ配信・ショート動画業界全体の発展という文脈から見ると、少なくとも三つの意義を有している。第一に、「ゼロサム・ゲーム」を打破する可能性を提示したことである。（中略）第二に、配信者の職業化を促進したことである。（小甜饼试译）</span></li><li>② <span class="ex">プロフェッショナル化／プロ化</span><span class="tr">这是从1994年甲A联赛揭幕，到2023中超赛季收尾，中国足球职业化30年交出的成绩单。都说三十而立，但中国足球谈“而立”，还为时尚早。これは、１９９４年の甲Ａリーグ開幕から２０２３年シーズンの中国スーパーリーグ閉幕まで、中国サッカーのプロ化３０年が残した「成績表」である。「三十にして立つ」という言葉があるが、中国サッカーについて「自立した」と語るには、まだ早すぎる。（小甜饼试译）</span></li></ul></article><article class="note-card"><h3><span class="sec">段落1</span>早期阶段 → 初期段階／黎明期</h3><p>指某个过程、事物或生命发育的最初时期。根据具体语境可有多种译法，如：</p><ul><li>① <span class="ex">初期段階（しょきだんかい）</span><span class="tr">（标题）高盛首席执行官所罗门：人工智能建设仍处于早期阶段。ゴールドマン・サックスのソロモンＣＥＯ、「ＡＩの構築は依然として初期段階にある」（小甜饼试译）</span></li><li>② <span class="ex">黎明期（れいめいき）</span><span class="tr">研究表明，距今5300年前后，中国各区域农业发展、人口增加，区域中心逐步发展为规模宏大的都邑，中华文明进入了“古国”时代的早期阶段，此时的中华文明犹如满天星斗，多元发展。研究によれば、約５３００年前、中国各地では農業の発展と人口の増加が進み、地域の中心は次第に大規模な都市へと発展した。そして、中華文明は「古国」時代の黎明期を迎え、この時期の中華文明は満天の星々のように多元的な発展を遂げていた。（小甜饼试译）</span></li></ul></article><article class="note-card"><h3><span class="sec">段落2</span>大而化之 → 大づかみ／大ざっぱ</h3><p>“大而化之”在本文中并非贬义的“粗心大意”，而是指一种“宏观的、浑然一体的、模糊整体的”认知方式。“大而化之”一词原指发扬美德以教化天下，后多引申为做事马虎草率，根据语境可灵活翻译：</p><ul><li>① <span class="ex">大づかみ（おおづかみ）</span><span class="tr">当全球市场波动频繁、产业链重构加速、新旧动能转换深化，任何大而化之的判断都可能导致决策偏差，错失发展良机。世界市場の変動が激しさを増し、サプライチェーンの再編が加速し、新旧の成長エンジンの転換が深化するなか、物事を大づかみに捉えた判断は、意思決定の誤りを招き、発展の好機を逃すおそれがある。（小甜饼试译）</span></li><li>② <span class="ex">大ざっぱ（おおざっぱ）</span><span class="tr">孩子出现问题，父母要分析原因，这个分析，也要有诚意，不能大而化之。子どもに問題が生じた場合、親はその原因を分析しなければならない。その分析も誠意をもって行い、大ざっぱな判断で済ませてはならない。（小甜饼试译）</span></li></ul></article><article class="note-card"><h3><span class="sec">段落3</span>穷尽 → 究める／（あらゆる〇〇を）尽くす</h3><p>“穷尽”在这里指“把所有的知识都完全掌握／毫无遗漏地搜罗干净”。根据具体的语境不同，可以有多种地道译法：</p><ul><li>① <span class="ex">究める（きわめる）</span><span class="tr">人能不能穷尽真理？对于这个问题的回答，关键在于如何认识什么是真理、真理和人的关系。对这两个方面的不同认识立场，就导致对于人能否穷尽真理的不同回答。人間は真理を究めることができるのか。この問題に対する答えは、真理とは何か、そして真理と人間との関係をいかに捉えるかにかかっている。これら二つの問題に対する立場の違いが、人間は真理を究めることができるのかという問いに対する異なる答えを生み出すのである。（小甜饼试译）</span></li><li>② <span class="ex">（あらゆる〇〇を）尽くす（つくす）</span><span class="tr">让刑法第二十条不再“束之高阁”，让它“活起来”，关键在于几点：一要坚持以证据为中心，穷尽手段调查取证，让法定事实无限向客观事实趋近。……刑法第２０条をもはや「死文化」させず、その実効性を十分に発揮させるためには、以下の点が重要である。第一に、証拠中心主義を堅持し、あらゆる手段を尽くして証拠を収集・調査し、法的に認定される事実を可能な限り客観的事実に近づけることである。……（小甜饼试译）</span></li></ul></article><article class="note-card"><h3><span class="sec">段落4</span>新课标／死记硬背 → 学習指導要領／丸暗記・詰め込み式</h3><p>“新课标（新课程标准）”是中国国家课程纲领性文件，为中国基础教育改革的核心词汇。在日本教育体系中一般可以对应「<span class="ex">学習指導要領（がくしゅうしどうようりょう）</span>」，是由日本文部科学省发布的、规定日本初等教育和中等教育课程标准的官方文件。此处可以直译词汇后加注。</p><p>“死记硬背”指不用理解力去使用记忆力而一味死板地背诵书本。根据具体语境有多种地道译法：</p><ul><li>① <span class="ex">（機械的な）暗記／丸暗記（まるあんき）</span><span class="tr">拿到教材先别急着死记硬背，用两三天快速通读全书，特别注意章节导言和案例。这些内容能帮你建立知识联想，考试时即便记不全也能展开论述。教材を手に入れたら、まず丸暗記しようとせず、２～３日かけて全体に目を通してみよう。特に各章の導入部分や事例に注目するとよい。これらは知識同士のつながりを築く助けとなり、試験では細部まで覚えていなくても論述を展開しやすくなる。（小甜饼试译）</span></li><li>② <span class="ex">詰め込み式（つめこみしき）</span><span class="tr">谈及设置该模式的初衷，该负责人表示，是为鼓励学生自主复习、整理知识点，把学生从“死记硬背”当中解放出来，要从考知识转向考能力。この方式を導入した狙いについて、担当者は「学生が自主的に復習し、知識を整理することを促し、詰め込み式の学習から解放することにある。知識を問う試験から、能力を問う試験へと転換したい」と説明した。（小甜饼试译）</span></li></ul></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <footer>
+      1-2 科学教育（强化笔记融合版）｜日语读音（黄色平假名）、语法、词汇、文中变形与强化笔记精讲整理<br>
+      正文依据用户提供的资料整理，仅供个人学习使用。
+    </footer>
+  </main>
+
+<script>
+(function(){
+  const AUDIO_DIR = "1-2/audio/";
+  const TOTAL = 11;
+  let current = 0;
+  let playing = false;
+  let rate = 1.0;
+  let loopMode = false;
+  const audio = new Audio();
+  const $ = id => document.getElementById(id);
+
+  function playSentence(idx){
+    if (idx < 0 || idx >= TOTAL) return;
+    current = idx;
+    playing = true;
+    updateUI();
+    const s = document.querySelector('.sentence[data-idx="' + idx + '"]');
+    audio.src = AUDIO_DIR + (s ? s.dataset.audio : 'p1_s1.mp3');
+    audio.playbackRate = rate;
+    audio.currentTime = 0;
+    audio.play().then(() => { playing = true; updateUI(); })
+      .catch(e => { console.error('播放失败:', e); });
+  }
+
+  function togglePlay(){
+    if (playing){ audio.pause(); playing=false; updateUI(); }
+    else if (!audio.src) playSentence(current);
+    else { audio.play().then(()=>{playing=true;updateUI();}); }
+  }
+  function nextSentence(){
+    if (current+1 < TOTAL) playSentence(current+1);
+    else if (loopMode) playSentence(0);
+    else { audio.pause(); playing=false; updateUI(); }
+  }
+  function prevSentence(){ if (current>0) playSentence(current-1); }
+
+  function sentenceInSec(el){
+    const sec = el.closest('section');
+    const all = sec.querySelectorAll('.sentence');
+    for (let i=0;i<all.length;i++) if (all[i]===el) return i+1;
+    return 1;
+  }
+
+  function updateUI(){
+    $('btn-play').textContent = playing ? '⏸' : '▶';
+    document.querySelectorAll('.sentence').forEach(el=>{
+      el.classList.toggle('playing', parseInt(el.dataset.idx)===current);
+    });
+    const s = document.querySelector('.sentence[data-idx="'+current+'"]');
+    if (s){
+      const sec = s.closest('section');
+      const st = sec ? sec.querySelector('.section-title').textContent : '';
+      const n = sentenceInSec(s);
+      $('sentence-status').textContent = (playing?'播放中':'暂停')+' ｜ '+st+' 第'+n+'句';
+      const rect = s.getBoundingClientRect();
+      const bar = $('player-bar').getBoundingClientRect();
+      if (rect.top < bar.bottom || rect.bottom > window.innerHeight){
+        s.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    }
+  }
+
+  audio.addEventListener('ended', nextSentence);
+  audio.addEventListener('timeupdate', ()=>{
+    if (audio.duration){
+      const pct = audio.currentTime/audio.duration*100;
+      $('progress-fill').style.width = pct+'%';
+      $('progress-knob').style.left = pct+'%';
+    }
+  });
+  $('progress').addEventListener('click', e=>{
+    if (!audio.duration) return;
+    const r = $('progress').getBoundingClientRect();
+    audio.currentTime = (e.clientX-r.left)/r.width*audio.duration;
+  });
+  $('rate-group').addEventListener('click', e=>{
+    const b = e.target.closest('.rate-btn'); if(!b) return;
+    rate = parseFloat(b.dataset.rate);
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(x=>x.classList.toggle('active', x===b));
+  });
+  $('btn-mode').addEventListener('click', ()=>{
+    loopMode = !loopMode;
+    $('btn-mode').textContent = '循环: '+(loopMode?'开':'关');
+    $('btn-mode').classList.toggle('active', loopMode);
+  });
+  $('btn-play').addEventListener('click', togglePlay);
+  $('btn-next').addEventListener('click', nextSentence);
+  $('btn-prev').addEventListener('click', prevSentence);
+
+  document.querySelectorAll('.sentence').forEach(el=>{
+    el.addEventListener('click', ()=>playSentence(parseInt(el.dataset.idx)));
+  });
+
+  document.addEventListener('keydown', e=>{
+    if (e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+    switch(e.code){
+      case 'Space': e.preventDefault(); togglePlay(); break;
+      case 'ArrowRight': nextSentence(); break;
+      case 'ArrowLeft': prevSentence(); break;
+      case 'ArrowUp': e.preventDefault(); setRate(Math.min(1.5, rate+0.25)); break;
+      case 'ArrowDown': e.preventDefault(); setRate(Math.max(0.5, rate-0.25)); break;
+    }
+  });
+  function setRate(r){
+    rate = Math.round(r*100)/100;
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(b=>{
+      b.classList.toggle('active', parseFloat(b.dataset.rate)===rate);
+    });
+  }
+  audio.preload = 'auto';
+  window.__reader = { getAudio: () => audio, getState: () => ({current, playing, rate, loopMode}) };
+})();
+</script>
+
+</body>
+</html>

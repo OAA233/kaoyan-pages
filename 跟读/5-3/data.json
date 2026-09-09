@@ -1,0 +1,123 @@
+{
+  "title": "5-3 段落双向翻译练习",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "今では、スーパーの棚には華やかなパッケージの炭酸水がずらりと並び、原材料表示には細かな文字がびっしりと書かれている。",
+      "jp_html": "今では、スーパーの<ruby>棚<rt>たな</rt></ruby>には<ruby>華<rt>はな</rt></ruby>やかなパッケージの<ruby>炭酸水<rt>たんさんすい</rt></ruby>がずらりと<ruby>並<rt>なら</rt></ruby>び、<ruby>原材料表示<rt>げんざいりょうひょうじ</rt></ruby>には<ruby>細<rt>こま</rt></ruby>かな<ruby>文字<rt>もじ</rt></ruby>がびっしりと<ruby>書<rt>か</rt></ruby>かれている。",
+      "zh": "如今超市货架上摆满包装精致的气泡水，配料表密密麻麻。人们喝一杯饮品，都要细细计较卡路里，连简单的快乐，也变得小心翼翼。我时常怀念从前朴素的玻璃汽水瓶，不加任何修饰，装着八九十年代最纯粹简单的欢喜。",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "飲み物を一杯飲むにも、人々はカロリーを細かく気にし、ささやかな楽しみさえ、慎重に味わうようになった。",
+      "jp_html": "<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>一杯<rt>いっぱい</rt></ruby><ruby>飲<rt>の</rt></ruby>むにも、<ruby>人々<rt>ひとびと</rt></ruby>はカロリーを<ruby>細<rt>こま</rt></ruby>かく<ruby>気<rt>き</rt></ruby>にし、ささやかな<ruby>楽<rt>たの</rt></ruby>しみさえ、<ruby>慎重<rt>しんちょう</rt></ruby>に<ruby>味<rt>あじ</rt></ruby>わうようになった。",
+      "zh": "如今超市货架上摆满包装精致的气泡水，配料表密密麻麻。人们喝一杯饮品，都要细细计较卡路里，连简单的快乐，也变得小心翼翼。我时常怀念从前朴素的玻璃汽水瓶，不加任何修饰，装着八九十年代最纯粹简单的欢喜。",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 3,
+      "sentence_id": "p1_s3",
+      "jp_plain": "私は時折、昔の素朴なガラス瓶のラムネを懐かしく思う。",
+      "jp_html": "<ruby>私<rt>わたし</rt></ruby>は<ruby>時折<rt>ときおり</rt></ruby>、<ruby>昔<rt>むかし</rt></ruby>の<ruby>素朴<rt>そぼく</rt></ruby>なガラス<ruby>瓶<rt>びん</rt></ruby>のラムネを<ruby>懐<rt>なつ</rt></ruby>かしく<ruby>思<rt>おも</rt></ruby>う。",
+      "zh": "如今超市货架上摆满包装精致的气泡水，配料表密密麻麻。人们喝一杯饮品，都要细细计较卡路里，连简单的快乐，也变得小心翼翼。我时常怀念从前朴素的玻璃汽水瓶，不加任何修饰，装着八九十年代最纯粹简单的欢喜。",
+      "audio_file": "audio/p1_s3.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 4,
+      "sentence_id": "p1_s4",
+      "jp_plain": "飾り気のないその一本には、1980～90年代の、最も素朴で純粋な喜びが詰まっていた。",
+      "jp_html": "<ruby>飾<rt>かざ</rt></ruby>り<ruby>気<rt>け</rt></ruby>のないその<ruby>一本<rt>いっぽん</rt></ruby>には、1980～90<ruby>年代<rt>ねんだい</rt></ruby>の、<ruby>最<rt>もっと</rt></ruby>も<ruby>素朴<rt>そぼく</rt></ruby>で<ruby>純粋<rt>じゅんすい</rt></ruby>な<ruby>喜<rt>よろこ</rt></ruby>びが<ruby>詰<rt>つ</rt></ruby>まっていた。",
+      "zh": "如今超市货架上摆满包装精致的气泡水，配料表密密麻麻。人们喝一杯饮品，都要细细计较卡路里，连简单的快乐，也变得小心翼翼。我时常怀念从前朴素的玻璃汽水瓶，不加任何修饰，装着八九十年代最纯粹简单的欢喜。",
+      "audio_file": "audio/p1_s4.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "上海ブックフェアは、やはり上海という都市と切り離しては語れない。",
+      "jp_html": "上海ブックフェアは、やはり上海という<ruby>都市<rt>とし</rt></ruby>と<ruby>切<rt>き</rt></ruby>り<ruby>離<rt>はな</rt></ruby>しては<ruby>語<rt>かた</rt></ruby>れない。",
+      "zh": "上海书展，终究离不开上海这座城市。上海是中国文化、出版重镇，百年来，鲁迅的健笔，巴金的赤诚，无数作家笔下的弄堂烟火、人情冷暖，早就渗进了斑驳的梧桐影、老洋房的木楼梯、黄浦江两岸的灯火阑珊里，成了这座城市不用言说却人人都懂的底色。上海书展不过是把这份书卷气，用盛大展会的方式，呈现在了每一位爱书人的面前。",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "上海は中国を代表する文化・出版の中心地である。",
+      "jp_html": "上海は<ruby>中国<rt>ちゅうごく</rt></ruby>を<ruby>代表<rt>だいひょう</rt></ruby>する<ruby>文化<rt>ぶんか</rt></ruby>・<ruby>出版<rt>しゅっぱん</rt></ruby>の<ruby>中心地<rt>ちゅうしんち</rt></ruby>である。",
+      "zh": "上海书展，终究离不开上海这座城市。上海是中国文化、出版重镇，百年来，鲁迅的健笔，巴金的赤诚，无数作家笔下的弄堂烟火、人情冷暖，早就渗进了斑驳的梧桐影、老洋房的木楼梯、黄浦江两岸的灯火阑珊里，成了这座城市不用言说却人人都懂的底色。上海书展不过是把这份书卷气，用盛大展会的方式，呈现在了每一位爱书人的面前。",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 3,
+      "sentence_id": "p2_s3",
+      "jp_plain": "この百年、魯迅の鋭い筆致、巴金の真摯な思い、そして無数の作家が描いてきた路地裏の暮らしや人情の機微は、まだらなプラタナスの木陰、古い洋館の木の階段、黄浦江両岸のきらめく灯りの中へと溶け込み、言葉にしなくても誰もが感じ取れる、この街の基調となっている。",
+      "jp_html": "この<ruby>百年<rt>ひゃくねん</rt></ruby>、<ruby>魯迅<rt>ろじん</rt></ruby>の<ruby>鋭<rt>するど</rt></ruby>い<ruby>筆致<rt>ひっち</rt></ruby>、<ruby>巴金<rt>はきん</rt></ruby>の<ruby>真摯<rt>しんし</rt></ruby>な<ruby>思<rt>おも</rt></ruby>い、そして<ruby>無数<rt>むすう</rt></ruby>の<ruby>作家<rt>さっか</rt></ruby>が<ruby>描<rt>えが</rt></ruby>いてきた<ruby>路地裏<rt>ろじうら</rt></ruby>の<ruby>暮<rt>く</rt></ruby>らしや<ruby>人情<rt>にんじょう</rt></ruby>の<ruby>機微<rt>きび</rt></ruby>は、まだらなプラタナスの<ruby>木陰<rt>こかげ</rt></ruby>、<ruby>古<rt>ふる</rt></ruby>い<ruby>洋館<rt>ようかん</rt></ruby>の<ruby>木<rt>き</rt></ruby>の<ruby>階段<rt>かいだん</rt></ruby>、<ruby>黄浦江<rt>こうほこう</rt></ruby><ruby>両岸<rt>りょうがん</rt></ruby>のきらめく<ruby>灯<rt>あか</rt></ruby>りの<ruby>中<rt>なか</rt></ruby>へと<ruby>溶<rt>と</rt></ruby>け<ruby>込<rt>こ</rt></ruby>み、<ruby>言葉<rt>ことば</rt></ruby>にしなくても<ruby>誰<rt>だれ</rt></ruby>もが<ruby>感<rt>かん</rt></ruby>じ<ruby>取<rt>と</rt></ruby>れる、この<ruby>街<rt>まち</rt></ruby>の<ruby>基調<rt>きちょう</rt></ruby>となっている。",
+      "zh": "上海书展，终究离不开上海这座城市。上海是中国文化、出版重镇，百年来，鲁迅的健笔，巴金的赤诚，无数作家笔下的弄堂烟火、人情冷暖，早就渗进了斑驳的梧桐影、老洋房的木楼梯、黄浦江两岸的灯火阑珊里，成了这座城市不用言说却人人都懂的底色。上海书展不过是把这份书卷气，用盛大展会的方式，呈现在了每一位爱书人的面前。",
+      "audio_file": "audio/p2_s3.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 4,
+      "sentence_id": "p2_s4",
+      "jp_plain": "上海ブックフェアは、その街に根づく書物の香りを、大規模な展会という形で、すべての本好きの前に差し出しているにすぎない。",
+      "jp_html": "上海ブックフェアは、その<ruby>街<rt>まち</rt></ruby>に<ruby>根<rt>ね</rt></ruby>づく<ruby>書物<rt>しょもつ</rt></ruby>の<ruby>香<rt>かお</rt></ruby>りを、<ruby>大規模<rt>だいきぼ</rt></ruby>な<ruby>展会<rt>てんかい</rt></ruby>という<ruby>形<rt>かたち</rt></ruby>で、すべての<ruby>本好<rt>ほんず</rt></ruby>きの<ruby>前<rt>まえ</rt></ruby>に<ruby>差<rt>さ</rt></ruby>し<ruby>出<rt>だ</rt></ruby>しているにすぎない。",
+      "zh": "上海书展，终究离不开上海这座城市。上海是中国文化、出版重镇，百年来，鲁迅的健笔，巴金的赤诚，无数作家笔下的弄堂烟火、人情冷暖，早就渗进了斑驳的梧桐影、老洋房的木楼梯、黄浦江两岸的灯火阑珊里，成了这座城市不用言说却人人都懂的底色。上海书展不过是把这份书卷气，用盛大展会的方式，呈现在了每一位爱书人的面前。",
+      "audio_file": "audio/p2_s4.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "被災者を支えるはずの施設が、二次災害の現場になった。",
+      "jp_html": "<ruby>被災者<rt>ひさいしゃ</rt></ruby>を<ruby>支<rt>ささ</rt></ruby>えるはずの<ruby>施設<rt>しせつ</rt></ruby>が、<ruby>二次災害<rt>にじさいがい</rt></ruby>の<ruby>現場<rt>げんば</rt></ruby>になった。",
+      "zh": "本应为受灾群众提供支援的设施，却成了一次灾害的现场。日前，熊本县突发强震，最大震感为震度7。被指定为地区防灾据点的永旺购物中心在强烈震动过后发生爆炸，导致员工遇难。在彻底查明事故原因的同时，也应以此为契机，对全国各地作为防灾据点的商业设施等进行检查，确认其安全管理体制是否完善。",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "熊本県で震度7を観測した地震では、地域の防災拠点に指定されていたイオンモールで強い揺れの後に爆発が起き、従業員が犠牲になった。",
+      "jp_html": "<ruby>熊本県<rt>くまもとけん</rt></ruby>で<ruby>震度<rt>しんど</rt></ruby>7を<ruby>観測<rt>かんそく</rt></ruby>した<ruby>地震<rt>じしん</rt></ruby>では、<ruby>地域<rt>ちいき</rt></ruby>の<ruby>防災拠点<rt>ぼうさいきょてん</rt></ruby>に<ruby>指定<rt>してい</rt></ruby>されていたイオンモールで<ruby>強<rt>つよ</rt></ruby>い<ruby>揺<rt>ゆ</rt></ruby>れの<ruby>後<rt>あと</rt></ruby>に<ruby>爆発<rt>ばくはつ</rt></ruby>が<ruby>起<rt>お</rt></ruby>き、<ruby>従業員<rt>じゅうぎょういん</rt></ruby>が<ruby>犠牲<rt>ぎせい</rt></ruby>になった。",
+      "zh": "本应为受灾群众提供支援的设施，却成了一次灾害的现场。日前，熊本县突发强震，最大震感为震度7。被指定为地区防灾据点的永旺购物中心在强烈震动过后发生爆炸，导致员工遇难。在彻底查明事故原因的同时，也应以此为契机，对全国各地作为防灾据点的商业设施等进行检查，确认其安全管理体制是否完善。",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "事故原因の徹底究明とともに、防災拠点となっている全国各地の商業施設などの安全管理体制を点検する契機としたい。",
+      "jp_html": "<ruby>事故原因<rt>じこげんいん</rt></ruby>の<ruby>徹底究明<rt>てっていきゅうめい</rt></ruby>とともに、<ruby>防災拠点<rt>ぼうさいきょてん</rt></ruby>となっている<ruby>全国各地<rt>ぜんこくかくち</rt></ruby>の<ruby>商業施設<rt>しょうぎょうしせつ</rt></ruby>などの<ruby>安全管理<rt>あんぜんかんり</rt></ruby><ruby>体制<rt>たいせい</rt></ruby>を<ruby>点検<rt>てんけん</rt></ruby>する<ruby>契機<rt>けいき</rt></ruby>としたい。",
+      "zh": "本应为受灾群众提供支援的设施，却成了一次灾害的现场。日前，熊本县突发强震，最大震感为震度7。被指定为地区防灾据点的永旺购物中心在强烈震动过后发生爆炸，导致员工遇难。在彻底查明事故原因的同时，也应以此为契机，对全国各地作为防灾据点的商业设施等进行检查，确认其安全管理体制是否完善。",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "2026年版防衛白書は、中国やロシア、北朝鮮の軍事動向を詳しく分析し、米国や「同志国」と連携しながら抑止力を強化する必要性を強調した。",
+      "jp_html": "2026<ruby>年版<rt>ねんぱん</rt></ruby><ruby>防衛白書<rt>ぼうえいはくしょ</rt></ruby>は、<ruby>中国<rt>ちゅうごく</rt></ruby>やロシア、<ruby>北朝鮮<rt>きたちょうせん</rt></ruby>の<ruby>軍事動向<rt>ぐんじどうこう</rt></ruby>を<ruby>詳<rt>くわ</rt></ruby>しく<ruby>分析<rt>ぶんせき</rt></ruby>し、<ruby>米国<rt>べいこく</rt></ruby>や「<ruby>同志国<rt>どうしこく</rt></ruby>」と<ruby>連携<rt>れんけい</rt></ruby>しながら<ruby>抑止力<rt>よくしりょく</rt></ruby>を<ruby>強化<rt>きょうか</rt></ruby>する<ruby>必要性<rt>ひつようせい</rt></ruby>を<ruby>強調<rt>きょうちょう</rt></ruby>した。",
+      "zh": "2026年版《防卫白皮书》详细分析了中国、俄罗斯和朝鲜的军事动向，并强调有必要与美国及“志同道合国家”加强合作，提升遏制能力。虽然有必要正视严峻的国际形势，但不应一味突出对立，也应强调通过对话缓和地区紧张局势的重要性。",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "厳しい国際情勢を直視する必要はあるものの、対立構図ばかりに偏って発信せず、地域の緊張緩和に向けた対話の重要性も打ち出すべきだ。",
+      "jp_html": "<ruby>厳<rt>きび</rt></ruby>しい<ruby>国際情勢<rt>こくさいじょうせい</rt></ruby>を<ruby>直視<rt>ちょくし</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>はあるものの、<ruby>対立構図<rt>たいりつこうず</rt></ruby>ばかりに<ruby>偏<rt>かたよ</rt></ruby>って<ruby>発信<rt>はっしん</rt></ruby>せず、<ruby>地域<rt>ちいき</rt></ruby>の<ruby>緊張緩和<rt>きんちょうかんわ</rt></ruby>に<ruby>向<rt>む</rt></ruby>けた<ruby>対話<rt>たいわ</rt></ruby>の<ruby>重要性<rt>じゅうようせい</rt></ruby>も<ruby>打<rt>う</rt></ruby>ち<ruby>出<rt>だ</rt></ruby>すべきだ。",
+      "zh": "2026年版《防卫白皮书》详细分析了中国、俄罗斯和朝鲜的军事动向，并强调有必要与美国及“志同道合国家”加强合作，提升遏制能力。虽然有必要正视严峻的国际形势，但不应一味突出对立，也应强调通过对话缓和地区紧张局势的重要性。",
+      "audio_file": "audio/p4_s2.mp3"
+    }
+  ]
+}

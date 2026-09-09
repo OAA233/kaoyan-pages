@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>6-3 段落双向翻译练习｜一定要重视文字・「反省」なき国の行く先（强化笔记融合版）</title>
+  <style>
+    :root{
+      --ink:#1d2a34;
+      --muted:#64727d;
+      --paper:#fffdf8;
+      --bg:#eef3f2;
+      --line:#dbe5e1;
+      --green:#0f766e;
+      --green-soft:#e6f5f1;
+      --orange:#c15b24;
+      --orange-soft:#fff0e7;
+      --blue-soft:#eaf2ff;
+      --yellow:#c08a12;
+      --yellow-soft:#fbf3dd;
+      --shadow:0 12px 35px rgba(31,56,52,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #dff4ec 0, transparent 27rem),
+        radial-gradient(circle at 100% 14%, #fff0d9 0, transparent 25rem),
+        var(--bg);
+      font-family:"Noto Serif SC","Songti SC","STSong",serif;
+      line-height:1.9;
+    }
+    .top-nav{
+      position:sticky;top:0;z-index:100;
+      display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+      padding:10px 18px;
+      background:rgba(20,91,85,.96);
+      backdrop-filter:blur(6px);
+      box-shadow:0 4px 14px rgba(20,60,55,.25);
+    }
+    .top-nav .nav-title{
+      color:#baf6e8;font:700 .8rem/1 system-ui,sans-serif;
+      letter-spacing:.14em;margin-right:6px;white-space:nowrap;
+    }
+    .top-nav a{
+      padding:5px 13px;border-radius:999px;
+      color:#fff;background:rgba(255,255,255,.14);
+      text-decoration:none;font:600 .84rem/1.2 system-ui,sans-serif;
+      white-space:nowrap;transition:background .15s;
+    }
+    .top-nav a:hover{background:#198f7c}
+    .top-nav a.to-top{background:rgba(255,255,255,.28)}
+    .wrap{max-width:1080px;margin:auto;padding:32px 24px 72px}
+    section{scroll-margin-top:64px}
+    header{
+      padding:44px 42px 36px;
+      border-radius:24px;
+      color:#fff;
+      background:linear-gradient(135deg,#145b55,#0d766b 58%,#198f7c);
+      box-shadow:var(--shadow);
+    }
+    .eyebrow{
+      margin:0 0 12px;
+      color:#baf6e8;
+      font-size:.82rem;
+      letter-spacing:.16em;
+      font-family:system-ui,sans-serif;
+      font-weight:700;
+    }
+    h1{margin:0;font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.35}
+    header p{margin:14px 0 0;color:#e2fffa;font-size:1rem}
+    nav{
+      display:flex;flex-wrap:wrap;gap:10px;
+      margin:22px 0 30px;
+    }
+    nav a{
+      padding:7px 14px;border:1px solid #cbded9;border-radius:999px;
+      color:#25514b;background:rgba(255,255,255,.74);
+      text-decoration:none;font-family:system-ui,sans-serif;font-size:.88rem;
+    }
+    nav a:hover{background:#fff}
+    section{margin-top:30px}
+    .section-title{
+      display:flex;align-items:center;gap:12px;
+      margin:0 0 15px;font-size:1.42rem;
+    }
+    .section-title span{
+      display:inline-grid;place-items:center;width:32px;height:32px;
+      border-radius:50%;color:#fff;background:var(--green);
+      font-family:system-ui,sans-serif;font-size:.9rem;
+    }
+    .translation{
+      overflow:hidden;border:1px solid var(--line);border-radius:20px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    .language{padding:26px 30px}
+    .language + .language{border-top:1px dashed #cbd8d3}
+    .label{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-bottom:12px;padding:4px 10px;border-radius:999px;
+      color:var(--green);background:var(--green-soft);
+      font:700 .78rem/1.4 system-ui,sans-serif;letter-spacing:.08em;
+    }
+    .label.zh{color:var(--orange);background:var(--orange-soft)}
+    .jp{
+      margin:0;font-size:1.13rem;letter-spacing:.025em;
+      font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+    }
+    .zh{margin:0;font-size:1.02rem}
+    ruby{ruby-position:over;ruby-align:center}
+    rt{font-size:.54em;color:var(--yellow);font-weight:700;letter-spacing:0;user-select:none}
+    rt.en{color:var(--yellow)}
+    .lvl{
+      display:inline-block;padding:1px 7px;border-radius:5px;
+      color:#8a5a10;background:var(--yellow-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+    }
+    .note{
+      margin:14px 0 0;padding:11px 14px;border-left:4px solid #8fc9b6;
+      color:#2b3330;background:var(--green-soft);border-radius:0 10px 10px 0;
+      font-size:.91rem;
+    }
+    .note rt{color:#2f7cc4}
+    .grammar-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+    .card{
+      padding:21px 22px;border:1px solid var(--line);border-radius:16px;
+      background:rgba(255,253,248,.92);box-shadow:0 7px 20px rgba(31,56,52,.06);
+    }
+    .card h3{margin:0 0 9px;font-size:1.03rem;color:#12675e}
+    .card p{margin:7px 0;font-size:.94rem}
+    .pattern{
+      display:inline-block;padding:2px 8px;border-radius:6px;
+      color:#1e4c67;background:var(--blue-soft);
+      font-family:"SFMono-Regular",Consolas,monospace;font-size:.86rem;
+    }
+    .g-num{
+      display:inline-grid;place-items:center;width:22px;height:22px;
+      border-radius:50%;background:var(--orange);color:#fff;
+      font:700 .78rem/1 system-ui,sans-serif;margin-right:7px;
+      vertical-align:1px;
+    }
+    .table-wrap{
+      overflow:auto;border:1px solid var(--line);border-radius:16px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    table{width:100%;border-collapse:collapse;min-width:820px}
+    th,td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{color:#fff;background:#27665e;font:700 .82rem/1.4 system-ui,sans-serif;letter-spacing:.04em}
+    tr:last-child td{border-bottom:0}
+    tr:nth-child(even) td{background:#fbfdfc}
+    td{font-size:.91rem}
+    .word{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:1rem}
+    .pos{
+      display:inline-block;padding:2px 7px;border-radius:5px;
+      color:#075b54;background:var(--green-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+      margin-right:4px;
+    }
+    .notes-grid{display:grid;gap:18px}
+    .note-card{
+      padding:24px 26px;border:1px solid #c9e2d8;border-radius:18px;
+      background:var(--green-soft);box-shadow:0 7px 20px rgba(20,90,70,.07);
+    }
+    .note-card h3{
+      margin:0 0 12px;font-size:1.14rem;color:#1d2a34;
+      border-bottom:2px solid #b8d8cd;padding-bottom:8px;
+    }
+    .note-card h3 .sec{color:#0f766e;font-size:.8rem;margin-right:6px}
+    .note-card h4{
+      margin:16px 0 6px;font-size:.98rem;color:#2b3a36;
+    }
+    .note-card p{margin:8px 0;font-size:.95rem;color:#2b3330}
+    .note-card ul{margin:8px 0;padding-left:22px}
+    .note-card li{margin:7px 0;font-size:.94rem;color:#2b3330}
+    .note-card li .ex{
+      font-family:"Hiragino Mincho ProN","Yu Mincho",serif;color:#14181a;
+    }
+    .note-card li .tr{display:block;color:#64727d;font-size:.9rem;margin-top:2px}
+    .note-card .key{
+      display:inline-block;padding:1px 8px;border-radius:6px;
+      background:#dff2ec;border:1px solid #8fc9b6;color:#0e5a46;
+      font:700 .86rem system-ui,sans-serif;
+    }
+    .note-card rt{color:#2f7cc4}
+    .forms-inline{
+      margin:14px 2px 0;padding:16px 20px;border-radius:16px;
+      background:#203f42;color:#effffb;
+    }
+    .forms-inline h3{margin:0 0 8px;font-size:1.02rem;color:#baf6e8}
+    .forms-inline p{margin:5px 0;color:#d5eee8;font-size:.92rem;line-height:1.7}
+    .forms-inline code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    .back-top{margin:12px 2px 0;text-align:right;font-size:.85rem}
+    .back-top a{color:var(--muted);text-decoration:none}
+    .back-top a:hover{color:var(--green)}
+    footer{margin-top:27px;color:var(--muted);font-size:.82rem;text-align:center}
+    @media(max-width:640px){
+      .wrap{padding:16px 13px 48px}
+      header{padding:30px 24px}
+      .language{padding:22px 20px}
+      .jp{font-size:1.04rem}
+      .top-nav{padding:8px 12px}
+      .top-nav .nav-title{display:none}
+    }
+
+  /* ===== 打印适配：A3 尺寸、左右留出空隙、瀑布不跨页、隐藏页眉页脚 =====
+     索引条只在第一页顶部出现（打印时取消 sticky、保留 .top-nav），
+     正文区第二个导航隐藏；每段/区块末尾的「返回顶部」链接保留。 */
+  @media print {
+    @page { size: A3; margin: 10mm 14mm; }
+    html, body { background: #ffffff !important; }
+    nav { display: none !important; }
+    .top-nav { display: flex !important; position: static !important; box-shadow: none !important; backdrop-filter: none; }
+    section { margin-bottom: 5mm; }
+    .card, .translation, .forms-inline, .note-card, .para-pair,
+    .vocab-card, .grammar-item, .language, .phrase-item,
+    .vocab-group, .analysis-block { break-inside: avoid; page-break-inside: avoid; }
+    h1, h2, h3, h4, .section-title { break-after: avoid; page-break-after: avoid; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    table { font-size: 0.9em; }
+    a { color: inherit; text-decoration: none; }
+    .forms-inline, .note-card, .card, .translation { box-shadow: none !important; }
+    .wrap { max-width: 100%; padding: 0; }
+    .jp { font-size: 0.98em; letter-spacing: 0.02em; }
+    .zh, .note { font-size: 0.95em; }
+    .language { padding: 12px 16px; }
+    .grammar-grid { gap: 8px; }
+    .table-wrap { box-shadow: none; }
+  }
+
+  /* ===== 跟读控制条（注入） ===== */
+  .player-bar{
+    position:sticky;top:56px;z-index:95;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    margin:18px 0 8px;padding:12px 16px;
+    border:1px solid var(--line);border-radius:18px;
+    background:rgba(255,253,248,.95);
+    box-shadow:0 8px 22px rgba(31,56,52,.08);
+  }
+  .pb-btn{
+    width:42px;height:42px;border:0;border-radius:50%;cursor:pointer;
+    display:inline-grid;place-items:center;
+    background:var(--green);color:#fff;font-size:1rem;
+    transition:transform .12s, background .15s;
+  }
+  .pb-btn:hover{background:#198f7c;transform:scale(1.06)}
+  .pb-btn.small{width:34px;height:34px;background:#e8f1ee;color:var(--green);font-size:.9rem}
+  .pb-btn.small:hover{background:#d6e8e3}
+  .pb-btn:disabled{opacity:.35;cursor:default;transform:none}
+  .rate-group{display:flex;gap:5px;margin-left:auto}
+  .rate-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .rate-btn.active{background:var(--green);border-color:var(--green);color:#fff}
+  .mode-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .mode-btn.active{background:var(--orange);border-color:var(--orange);color:#fff}
+  .progress{
+    flex-basis:100%;height:6px;border-radius:3px;
+    background:#e3ece8;position:relative;cursor:pointer;
+  }
+  .progress .fill{
+    position:absolute;left:0;top:0;bottom:0;border-radius:3px;
+    background:linear-gradient(90deg,#0f766e,#2ba98c);width:0%;
+  }
+  .progress .knob{
+    position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:#fff;border:2px solid var(--green);transform:translate(-50%,-50%);
+    left:0%;box-shadow:0 1px 4px rgba(0,0,0,.2);
+  }
+  .sentence-status{
+    flex-basis:100%;color:var(--muted);font:600 .78rem system-ui,sans-serif;
+  }
+  .sentence{
+    cursor:pointer;border-radius:8px;padding:3px 10px;margin:0 -10px;
+    transition:background .18s;
+    border-left:4px solid transparent;
+  }
+  .sentence:hover{background:#eaf4fc}
+  .sentence.playing{
+    background:linear-gradient(90deg, rgba(137,207,240,.60), rgba(137,207,240,.28));
+    border-left-color:#2f7cc4;
+    box-shadow:0 2px 10px rgba(47,124,196,.22);
+  }
+  .sentence .play-ic{
+    display:inline-block;margin-right:4px;color:#2f7cc4;
+    font-size:.72em;opacity:.5;font-family:system-ui,sans-serif;vertical-align:2px;
+  }
+  .sentence.playing .play-ic{opacity:1;color:#1c5f9e;transform:scale(1.1)}
+  @media(max-width:640px){
+    .player-bar{top:50px;padding:10px 12px}
+    .player-bar .rate-group{order:3;margin-left:0}
+  }
+  @media print{
+    .player-bar{display:none !important}
+    .sentence{cursor:default;padding:0;margin:0;border:0}
+    .sentence.playing{background:transparent;box-shadow:none;border:0}
+    .sentence .play-ic{display:none}
+  }
+
+</style>
+</head>
+<body>
+  <nav class="top-nav">
+    <span class="nav-title">索 引</span>
+    <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#p5">第五段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    <a class="to-top" href="#top">▲ 顶部</a>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header>
+      <p class="eyebrow">JAPANESE × CHINESE · READING &amp; GRAMMAR NOTES</p>
+      <h1>6-3 段落双向翻译练习<br>一定要重视文字、善用文字（内容有编辑）｜「反省」なき国の行く先</h1>
+      <p>日语汉字均标注平假名读音（黄色）；中译日 3 段（李笑来《专注的真相》）＋ 日译中 2 段（东京新闻社说），含瑞译强化笔记精讲。</p>
+    </header>
+
+  <div class="player-bar" id="player-bar">
+    <button class="pb-btn small" id="btn-prev" title="上一句（←）">⏮</button>
+    <button class="pb-btn" id="btn-play" title="播放/暂停（空格）">▶</button>
+    <button class="pb-btn small" id="btn-next" title="下一句（→）">⏭</button>
+    <div class="rate-group" id="rate-group">
+      <button class="rate-btn" data-rate="0.5">0.5x</button>
+      <button class="rate-btn" data-rate="0.75">0.75x</button>
+      <button class="rate-btn active" data-rate="1">1x</button>
+      <button class="rate-btn" data-rate="1.25">1.25x</button>
+      <button class="rate-btn" data-rate="1.5">1.5x</button>
+    </div>
+    <button class="mode-btn" id="btn-mode" title="循环模式">循环: 关</button>
+    <div class="progress" id="progress"><div class="fill" id="progress-fill"></div><div class="knob" id="progress-knob"></div></div>
+    <div class="sentence-status" id="sentence-status">点击下方任意日文句子开始跟读</div>
+  </div>
+
+
+    <nav>
+      <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#p5">第五段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    </nav>
+
+    <section id="p1"><h2 class="section-title">第一段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">我们再换个角度思考一下，当绝大多数人的注意时长都萎缩到2分钟以内，整个社会会发生什么变化呢——越来越多的人不知不觉放弃了文字的使用。2分钟都不到的注意时长，无法支撑任何有意义的阅读，也无法支撑任何深入思考。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="0" data-audio="p1_s1.mp3"><span class="play-ic">▶</span>もう<ruby>一<rt>ひと</rt></ruby>つ<ruby>別<rt>べつ</rt></ruby>の<ruby>角度<rt>かくど</rt></ruby>から<ruby>考<rt>かんが</rt></ruby>えてみよう。</span><span class="sentence" data-idx="1" data-audio="p1_s2.mp3"><span class="play-ic">▶</span><ruby>大多数<rt>だいたすう</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>の<ruby>集中<rt>しゅうちゅう</rt></ruby>できる<ruby>時間<rt>じかん</rt></ruby>が2<ruby>分<rt>ふん</rt></ruby>ないにまで<ruby>縮小<rt>しゅくしょう</rt></ruby>したとしたら、<ruby>社会全体<rt>しゃかいぜんたい</rt></ruby>にはどのような<ruby>変化<rt>へんか</rt></ruby>が<ruby>起<rt>お</rt></ruby>こるのだろうか。</span><span class="sentence" data-idx="2" data-audio="p1_s3.mp3"><span class="play-ic">▶</span>その<ruby>結果<rt>けっか</rt></ruby>として、ますます<ruby>多<rt>おお</rt></ruby>くの<ruby>人々<rt>ひとびと</rt></ruby>が、<ruby>知<rt>し</rt></ruby>らず<ruby>知<rt>し</rt></ruby>らずのうちに<ruby>文字<rt>もじ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うことをやめることになる。</span><span class="sentence" data-idx="3" data-audio="p1_s4.mp3"><span class="play-ic">▶</span>2<ruby>分<rt>ふん</rt></ruby>にも<ruby>満<rt>み</rt></ruby>たない<ruby>集中力<rt>しゅうちゅうりょく</rt></ruby>では、<ruby>意味<rt>いみ</rt></ruby>のあるまとまった<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>読<rt>よ</rt></ruby>むことも、ましてや<ruby>物事<rt>ものごと</rt></ruby>を<ruby>深<rt>ふか</rt></ruby>く<ruby>考<rt>かんが</rt></ruby>えることもできない。</span>
+</p></p><p class="note">①“注意时长”＝人的注意力能够持续集中于某一对象或任务的时间长度；中文的“注意力”≠“专注力”，参考译文用「<ruby>集中<rt>しゅうちゅう</rt></ruby>できる<ruby>時間<rt>じかん</rt></ruby>／<ruby>集中力<rt>しゅうちゅうりょく</rt></ruby>」；②“深入思考”译「<ruby>物事<rt>ものごと</rt></ruby>を<ruby>深<rt>ふか</rt></ruby>く<ruby>考<rt>かんが</rt></ruby>える」。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>考えてみよう ＝<ruby>考<rt>かんが</rt></ruby>える（v2 他）て形＋みる＋意志形：换个角度想想吧。</p><p>縮小したとしたら ＝<ruby>縮小<rt>しゅくしょう</rt></ruby>する（n / v3 自他）＋たとしたら：假如萎缩到……。</p><p>やめることになる ＝<ruby>辞<rt>や</rt></ruby>める（v2 他）＋ことになる：会变得不再……。</p><p>満たない ＝<ruby>満<rt>み</rt></ruby>たない（惯用）：不足、不到。</p><p>ましてや ＝adv：更何况。</p><p>深く考える ＝<ruby>深<rt>ふか</rt></ruby>く<ruby>考<rt>かんが</rt></ruby>える（惯用）：深入思考。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p2"><h2 class="section-title">第二段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">识字却基于种种原因并不使用文字的人，在行为模式上与“文盲”并无差异。他们不用文字输入（阅读），不用文字输出（表达）。很多所谓受过高等教育的人，到一定岁数后压根儿就不阅读、不写作，他们和所谓的“文盲”事实上是同一类人。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="4" data-audio="p2_s1.mp3"><span class="play-ic">▶</span><ruby>読<rt>よ</rt></ruby>み<ruby>書<rt>か</rt></ruby>きの<ruby>能力<rt>のうりょく</rt></ruby>を<ruby>身<rt>み</rt></ruby>につけていても、さまざまな<ruby>理由<rt>りゆう</rt></ruby>で<ruby>文字<rt>もじ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>わない<ruby>人<rt>ひと</rt></ruby>は、<ruby>実際<rt>じっさい</rt></ruby>の<ruby>行動<rt>こうどう</rt></ruby>においては「<ruby>文盲<rt>もんもう</rt></ruby>」と<ruby>何<rt>なに</rt></ruby>ら<ruby>変<rt>か</rt></ruby>わらない。</span><span class="sentence" data-idx="5" data-audio="p2_s2.mp3"><span class="play-ic">▶</span>彼らは<ruby>文字<rt>もじ</rt></ruby>による<ruby>入力<rt>にゅうりょく</rt></ruby>（<ruby>読解<rt>どっかい</rt></ruby>）をせず、<ruby>文字<rt>もじ</rt></ruby>による<ruby>出力<rt>しゅつりょく</rt></ruby>（<ruby>表現<rt>ひょうげん</rt></ruby>）も<ruby>行<rt>おこな</rt></ruby>わない。</span><span class="sentence" data-idx="6" data-audio="p2_s3.mp3"><span class="play-ic">▶</span>いわゆる<ruby>高等教育<rt>こうとうきょういく</rt></ruby>を<ruby>受<rt>う</rt></ruby>けた<ruby>人<rt>ひと</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にも、ある<ruby>年齢<rt>ねんれい</rt></ruby>に<ruby>達<rt>たっ</rt></ruby>すると、まったく<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>読<rt>よ</rt></ruby>まず、<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>かなくなる<ruby>人<rt>ひと</rt></ruby>は<ruby>少<rt>すく</rt></ruby>なくない。</span><span class="sentence" data-idx="7" data-audio="p2_s4.mp3"><span class="play-ic">▶</span>そうした<ruby>人々<rt>ひとびと</rt></ruby>は、<ruby>実際<rt>じっさい</rt></ruby>にはいわゆる「<ruby>文盲<rt>もんもう</rt></ruby>」と<ruby>本質的<rt>ほんしつてき</rt></ruby>に<ruby>同<rt>おな</rt></ruby>じタイプになってしまっている。</span>
+</p></p><p class="note">“并无差异”的多种译法：〜と（<ruby>全<rt>まった</rt></ruby>く）<ruby>差<rt>さ</rt></ruby>がない／〜と<ruby>大差<rt>たいさ</rt></ruby>ない／〜と<ruby>変<rt>か</rt></ruby>わらない／〜に<ruby>等<rt>ひと</rt></ruby>しい。此处参考译文用「<ruby>何<rt>なに</rt></ruby>ら<ruby>変<rt>か</rt></ruby>わらない」（毫无差别）。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>身につけていても ＝<ruby>身<rt>み</rt></ruby>につける（惯用）て形＋いても：即使具备（读写能力）。</p><p>変わらない ＝<ruby>変<rt>か</rt></ruby>わらない（v1 自）否定：毫无差别。</p><p>行わない ＝<ruby>行<rt>おこな</rt></ruby>わない（v1 他）否定：不做。</p><p>受けた ＝<ruby>受<rt>う</rt></ruby>ける（v2 他）过去形（连体）：受过（教育）的。</p><p>達すると ＝<ruby>達<rt>たっ</rt></ruby>する（v3 自）＋と：一到（某岁数）。</p><p>読まず ＝<ruby>読<rt>よ</rt></ruby>む（v1 他）否定连用：不读。</p><p>なってしまっている ＝なる（v1 自）て形＋しまう＋ている：已经变成了。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p3"><h2 class="section-title">第三段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">从电视出现，到短视频横行，科技进步终于带来了一个人类始料不及的副作用（或负作用），别说认真阅读了，你仔细观察一下，今天越来越多的人已经对2小时的电影失去了兴趣——根本坐不住。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="8" data-audio="p3_s1.mp3"><span class="play-ic">▶</span><ruby>テレビ<rt class="en">TV</rt></ruby>の<ruby>登場<rt>とうじょう</rt></ruby>から、<ruby>ショート<rt class="en">short</rt></ruby><ruby>動画<rt>どうが</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>く<ruby>普及<rt>ふきゅう</rt></ruby>する<ruby>現在<rt>げんざい</rt></ruby>に<ruby>至<rt>いた</rt></ruby>るまで、<ruby>科学技術<rt>かがくぎじゅつ</rt></ruby>の<ruby>進歩<rt>しんぽ</rt></ruby>はついに<ruby>人類<rt>じんるい</rt></ruby>が<ruby>予想<rt>よそう</rt></ruby>もしなかった<ruby>副作用<rt>ふくさよう</rt></ruby>（あるいは<ruby>負<rt>ふ</rt></ruby>の<ruby>影響<rt>えいきょう</rt></ruby>）をもたらした。</span><span class="sentence" data-idx="9" data-audio="p3_s2.mp3"><span class="play-ic">▶</span><ruby>真剣<rt>しんけん</rt></ruby>な<ruby>読書<rt>どくしょ</rt></ruby>をしなくなったことは<ruby>言<rt>い</rt></ruby>うまでもなく、<ruby>注意深<rt>ちゅういぶか</rt></ruby>く<ruby>観察<rt>かんさつ</rt></ruby>してみれば、<ruby>今日<rt>きょう</rt></ruby>では2<ruby>時間<rt>じかん</rt></ruby>ほどの<ruby>映画<rt>えいが</rt></ruby>にすら<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>がますます<ruby>増<rt>ふ</rt></ruby>えていることに<ruby>気<rt>き</rt></ruby>づくだろう……そもそも<ruby>最後<rt>さいご</rt></ruby>までじっと<ruby>座<rt>すわ</rt></ruby>って<ruby>見<rt>み</rt></ruby><ruby>続<rt>つづ</rt></ruby>けることができないのだ。</span>
+</p></p><p class="note">①“横行”的多种译法：<ruby>横行<rt>おうこう</rt></ruby>する／はびこる／<ruby>氾濫<rt>はんらん</rt></ruby>する／まかり<ruby>通<rt>とお</rt></ruby>る。此处处理为「ショート<ruby>動画<rt>どうが</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>く<ruby>普及<rt>ふきゅう</rt></ruby>する」+「〜から…に<ruby>至<rt>いた</rt></ruby>るまで」结构；②“始料不及”译「<ruby>予想<rt>よそう</rt></ruby>もしなかった」；③“别说……了”译「〜は<ruby>言<rt>い</rt></ruby>うまでもなく」。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>登場から ＝<ruby>登場<rt>とうじょう</rt></ruby>する（n / v3 自）＋から：从……出现。</p><p>至るまで ＝<ruby>至<rt>いた</rt></ruby>る（v1 自）＋まで：一直到……。</p><p>予想もしなかった ＝<ruby>予想<rt>よそう</rt></ruby>する（n / v3 他）＋も＋しなかった：始料不及的。</p><p>もたらした ＝<ruby>齎<rt>もたら</rt></ruby>す（v1 他）过去形：带来了。</p><p>言うまでもなく ＝<ruby>言<rt>い</rt></ruby>うまでもなく（惯用）：不用说……。</p><p>興味を失っている ＝<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>う（惯用）て形＋いる：对……失去兴趣。</p><p>座って見続ける ＝<ruby>座<rt>すわ</rt></ruby>る（v1 自）て形＋<ruby>見<rt>み</rt></ruby>続ける（v2 他）：坐着一直看。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p4"><h2 class="section-title">第四段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="10" data-audio="p4_s1.mp3"><span class="play-ic">▶</span><ruby>歴史認識<rt>れきしにんしき</rt></ruby>よりも<ruby>深刻<rt>しんこく</rt></ruby>に<ruby>憂慮<rt>ゆうりょ</rt></ruby>すべきは、<ruby>首相主導<rt>しゅしょうしゅどう</rt></ruby>で<ruby>進<rt>すす</rt></ruby>められている<ruby>政策<rt>せいさく</rt></ruby>が「<ruby>戦前回帰<rt>せんぜんかいき</rt></ruby>」を<ruby>志向<rt>しこう</rt></ruby>していることです。</span><span class="sentence" data-idx="11" data-audio="p4_s2.mp3"><span class="play-ic">▶</span>まさに「<ruby>富国強兵<rt>ふこくきょうへい</rt></ruby>」<ruby>路線<rt>ろせん</rt></ruby>というほかありません。</span><span class="sentence" data-idx="12" data-audio="p4_s3.mp3"><span class="play-ic">▶</span><ruby>殺傷能力<rt>さっしょうのうりょく</rt></ruby>のある<ruby>武器輸出<rt>ぶきゆしゅつ</rt></ruby>の<ruby>解禁<rt>かいきん</rt></ruby>は、<ruby>武器生産<rt>ぶきせいさん</rt></ruby>の<ruby>国際競争力<rt>こくさいきょうそうりょく</rt></ruby>を<ruby>高<rt>たか</rt></ruby>めながら<ruby>有事<rt>ゆうじ</rt></ruby>に<ruby>備<rt>そな</rt></ruby>える<ruby>目的<rt>もくてき</rt></ruby>です。</span><span class="sentence" data-idx="13" data-audio="p4_s4.mp3"><span class="play-ic">▶</span><ruby>日本<rt>にほん</rt></ruby>が<ruby>武器輸出<rt>ぶきゆしゅつ</rt></ruby><ruby>大国<rt>たいこく</rt></ruby>だった<ruby>戦前戦中<rt>せんぜんせんちゅう</rt></ruby>も<ruby>似<rt>に</rt></ruby>た<ruby>理屈<rt>りくつ</rt></ruby>で<ruby>軍需産業<rt>ぐんじゅさんぎょう</rt></ruby>を<ruby>振興<rt>しんこう</rt></ruby>しました。</span><span class="sentence" data-idx="14" data-audio="p4_s5.mp3"><span class="play-ic">▶</span><ruby>財政事情<rt>ざいせいじじょう</rt></ruby>が<ruby>苦<rt>くる</rt></ruby>しい<ruby>中<rt>なか</rt></ruby>で<ruby>防衛費<rt>ぼうえいひ</rt></ruby>の<ruby>増額<rt>ぞうがく</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>し、<ruby>肝心<rt>かんじん</rt></ruby>の<ruby>国民生活<rt>こくみんせいかつ</rt></ruby>は<ruby>豊<rt>ゆた</rt></ruby>かさの<ruby>実感<rt>じっかん</rt></ruby>に<ruby>乏<rt>とぼ</rt></ruby>しいことも<ruby>戦前戦中<rt>せんぜんせんちゅう</rt></ruby>と<ruby>共通<rt>きょうつう</rt></ruby>します。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">比历史认识问题更令人担忧的是，在首相主导下推行的一系列政策，正在呈现出“回归战前”的倾向。这无疑是在走“富国强兵”的路线。放开具有杀伤能力的武器出口，旨在提升日本武器制造业国际竞争力的同时，为紧急事态做准备。在战前及战争期间，日本也曾是武器出口大国，当时同样以类似的理由大力发展军需产业。如今，日本在财政状况吃紧的情况下仍力主增加防卫费，而普通民众却难以切身感受到生活的富足，这一点与战前及战争期间颇为相似。</p><p class="note">①「<ruby>志向<rt>しこう</rt></ruby>する」＝追求、倾向于……（意识、思想、行为朝着某个方向发展）；②基于读者意识，“富国强兵”处可作加法处理（补出“明治时期”背景，见文末强化笔记）；③「まさに〜というほかありません」＝正是……、只能说是……。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>憂慮すべき ＝<ruby>憂慮<rt>ゆうりょ</rt></ruby>する（n / v3 他）＋べき：应当担忧的。</p><p>進められている ＝<ruby>進<rt>すす</rt></ruby>める（v2 他）被动て形＋いる：正在推行的。</p><p>志向している ＝<ruby>志向<rt>しこう</rt></ruby>する（n / v3 他）て形＋いる：正在朝着……方向。</p><p>ほかありません ＝惯用（〜というほかありません）：只能说是……。</p><p>高めながら ＝<ruby>高<rt>たか</rt></ruby>める（v2 他）＋ながら：一边提升……一边。</p><p>備える ＝<ruby>備<rt>そな</rt></ruby>える（v2 自他）连体修饰：为……做准备。</p><p>振興しました ＝<ruby>振興<rt>しんこう</rt></ruby>する（n / v3 他）过去形：大力发展了。</p><p>目指し ＝<ruby>目指<rt>めざ</rt></ruby>す（v1 他）连用形：以……为目标。</p><p>乏しい ＝<ruby>乏<rt>とぼ</rt></ruby>しい（イ形）：匮乏、难以（感受到）。</p><p>共通します ＝<ruby>共通<rt>きょうつう</rt></ruby>する（n / v3 自）基本形：与……相同。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p5"><h2 class="section-title">第五段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="15" data-audio="p5_s1.mp3"><span class="play-ic">▶</span><ruby>先<rt>さき</rt></ruby>の<ruby>特別国会<rt>とくべつこっかい</rt></ruby>では、<ruby>戦前回帰<rt>せんぜんかいき</rt></ruby>的な<ruby>法律<rt>ほうりつ</rt></ruby>が<ruby>軒並<rt>のきな</rt></ruby>み<ruby>成立<rt>せいりつ</rt></ruby>しました。</span><span class="sentence" data-idx="16" data-audio="p5_s2.mp3"><span class="play-ic">▶</span><ruby>皇位<rt>こうい</rt></ruby>の<ruby>男系継承<rt>だんけいけいしょう</rt></ruby>に<ruby>固執<rt>こしつ</rt></ruby>した<ruby>皇室典範<rt>こうしつてんぱん</rt></ruby>改正の<ruby>背景<rt>はいけい</rt></ruby>にあるのは<ruby>戦前戦中<rt>せんぜんせんちゅう</rt></ruby>の「<ruby>皇国史観<rt>こうこくしかん</rt></ruby>」にほかなりません。</span><span class="sentence" data-idx="17" data-audio="p5_s3.mp3"><span class="play-ic">▶</span><ruby>国旗損壊罪<rt>こっきそんかいざい</rt></ruby>の<ruby>創設<rt>そうせつ</rt></ruby>、<ruby>国家情報会議創設法<rt>こっかじょうほうかいぎそうせつほう</rt></ruby>は、<ruby>市民<rt>しみん</rt></ruby>が<ruby>互<rt>たが</rt></ruby>いの<ruby>内心<rt>ないしん</rt></ruby>に<ruby>立<rt>た</rt></ruby>ち<ruby>入<rt>い</rt></ruby>って<ruby>相互監視<rt>そうごかんし</rt></ruby>した<ruby>戦前戦中<rt>せんぜんせんちゅう</rt></ruby>の<ruby>息苦<rt>いきぐる</rt></ruby>しさに<ruby>通<rt>つう</rt></ruby>じます。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">在之前结束的特别国会上，一系列带有“回归战前”色彩的法律相继获得通过。此次修订《皇室典范》仍执意坚持皇位由男系继承，其背景无非是战前及战争期间的“皇国史观”。设立“毁坏国旗罪”以及制定《国家情报会议设置法》，让人联想到战前及战争期间那种民众彼此窥探思想、相互监视的压抑社会气氛。</p><p class="note">①「<ruby>軒並<rt>のきな</rt></ruby>み」＝纷纷、普遍、几乎无一例外；②「〜にほかなりません」＝无非是……、正是……；③「〜に<ruby>通<rt>つう</rt></ruby>じます」＝与……一脉相承。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>成立しました ＝<ruby>成立<rt>せいりつ</rt></ruby>する（n / v3 自）过去形：获得通过。</p><p>固執した ＝<ruby>固執<rt>こしつ</rt></ruby>する（n / v3 自）过去形（连体）：固执坚持的。</p><p>ほかなりません ＝惯用（〜にほかならない）：无非是……。</p><p>立ち入って ＝<ruby>立<rt>た</rt></ruby>ち<ruby>入<rt>い</rt></ruby>る（v1 自）て形：介入、窥探。</p><p>相互監視した ＝<ruby>相互監視<rt>そうごかんし</rt></ruby>する（n / v3 他）过去形（连体）：互相监视的。</p><p>通じます ＝<ruby>通<rt>つう</rt></ruby>じる（v2 自）基本形：与……相通、一脉相承。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="grammar"><h2 class="section-title"><span>文</span>本文语法</h2><div class="grammar-grid"><article class="card"><h3><span class="g-num">1</span>〜に満たない <span class="lvl">N2</span></h3><p><span class="pattern">2<ruby>分<rt>ふん</rt></ruby>にも<ruby>満<rt>み</rt></ruby>たない<ruby>集中力<rt>しゅうちゅうりょく</rt></ruby>では、<ruby>意味<rt>いみ</rt></ruby>のあるまとまった<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>読<rt>よ</rt></ruby>むことも……できない。</span></p><p>不足、不到（某数量/标准）。「〜にも満たない」加强语气：连……都不到。</p></article><article class="card"><h3><span class="g-num">2</span>〜は言うまでもなく <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>真剣<rt>しんけん</rt></ruby>な<ruby>読書<rt>どくしょ</rt></ruby>をしなくなったことは<ruby>言<rt>い</rt></ruby>うまでもなく、<ruby>注意深<rt>ちゅういぶか</rt></ruby>く<ruby>観察<rt>かんさつ</rt></ruby>してみれば……</span></p><p>不用说……、……自不待言。对应中文“别说……了”，引出更进一步的情况。</p></article><article class="card"><h3><span class="g-num">3</span>〜というほかありません <span class="lvl">N2</span></h3><p><span class="pattern">まさに「<ruby>富国強兵<rt>ふこくきょうへい</rt></ruby>」<ruby>路線<rt>ろせん</rt></ruby>というほかありません。</span></p><p>只能说是……、正是……。强调没有别的解释，语气笃定。</p></article><article class="card"><h3><span class="g-num">4</span>〜にほかなりません <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>皇位<rt>こうい</rt></ruby>の<ruby>男系継承<rt>だんけいけいしょう</rt></ruby>に<ruby>固執<rt>こしつ</rt></ruby>した<ruby>皇室典範<rt>こうしつてんぱん</rt></ruby>改正の<ruby>背景<rt>はいけい</rt></ruby>にあるのは<ruby>戦前戦中<rt>せんぜんせんちゅう</rt></ruby>の「<ruby>皇国史観<rt>こうこくしかん</rt></ruby>」にほかなりません。</span></p><p>无非是……、正是……。斩钉截铁地揭示本质，与「〜にほかならない」同义。</p></article><article class="card"><h3><span class="g-num">5</span>〜に通じる <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>国旗損壊罪<rt>こっきそんかいざい</rt></ruby>の<ruby>創設<rt>そうせつ</rt></ruby>……は、<ruby>戦前戦中<rt>せんぜんせんちゅう</rt></ruby>の<ruby>息苦<rt>いきぐる</rt></ruby>しさに<ruby>通<rt>つう</rt></ruby>じます。</span></p><p>与……相通、一脉相承。强调某种现象与另一事物在本质上相关联。</p></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="vocab"><h2 class="section-title"><span>词</span>词汇、短语与读音</h2><div class="table-wrap"><table><thead><tr><th>单词／短语</th><th>读音</th><th>词性</th><th>级别</th><th>中文释义</th><th>短语（原型）</th></tr></thead><tbody><tr><td class="word"><ruby>テレビ<rt class="en">TV</rt></ruby></td><td>TV</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>电视</td><td><ruby>テレビ<rt class="en">TV</rt></ruby>の<ruby>登場<rt>とうじょう</rt></ruby>から</td></tr><tr><td class="word"><ruby>ショート<rt class="en">short</rt></ruby><ruby>動画<rt>どうが</rt></ruby></td><td>short video</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>短视频</td><td><ruby>ショート<rt class="en">short</rt></ruby><ruby>動画<rt>どうが</rt></ruby>が<ruby>普及<rt>ふきゅう</rt></ruby>する</td></tr><tr><td class="word"><ruby>縮小<rt>しゅくしょう</rt></ruby></td><td>しゅくしょう</td><td><span class="pos">n</span><span class="pos">v3 自他</span></td><td><span class="lvl">N2</span></td><td>萎缩、缩小</td><td><ruby>集中<rt>しゅうちゅう</rt></ruby>できる<ruby>時間<rt>じかん</rt></ruby>が<ruby>縮小<rt>しゅくしょう</rt></ruby>する</td></tr><tr><td class="word"><ruby>知<rt>し</rt></ruby>らず<ruby>知<rt>し</rt></ruby>らず</td><td>しらずしらず</td><td><span class="pos">adv</span></td><td></td><td>不知不觉</td><td><ruby>知<rt>し</rt></ruby>らず<ruby>知<rt>し</rt></ruby>らずのうちに<ruby>文字<rt>もじ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>う</td></tr><tr><td class="word"><ruby>満<rt>み</rt></ruby>たない</td><td>みたない</td><td><span class="pos">惯用</span></td><td><span class="lvl">N2</span></td><td>不足、不到</td><td>2<ruby>分<rt>ふん</rt></ruby>にも<ruby>満<rt>み</rt></ruby>たない<ruby>集中力<rt>しゅうちゅうりょく</rt></ruby></td></tr><tr><td class="word">ましてや</td><td>ましてや</td><td><span class="pos">adv</span></td><td><span class="lvl">N2</span></td><td>更何况</td><td>ましてや<ruby>物事<rt>ものごと</rt></ruby>を<ruby>深<rt>ふか</rt></ruby>く<ruby>考<rt>かんが</rt></ruby>える</td></tr><tr><td class="word"><ruby>読<rt>よ</rt></ruby>み<ruby>書<rt>か</rt></ruby>き</td><td>よみかき</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>读写（能力）</td><td><ruby>読<rt>よ</rt></ruby>み<ruby>書<rt>か</rt></ruby>きの<ruby>能力<rt>のうりょく</rt></ruby>を<ruby>身<rt>み</rt></ruby>につける</td></tr><tr><td class="word"><ruby>文盲<rt>もんもう</rt></ruby></td><td>もんもう</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>文盲</td><td>「<ruby>文盲<rt>もんもう</rt></ruby>」と<ruby>何<rt>なに</rt></ruby>ら<ruby>変<rt>か</rt></ruby>わらない</td></tr><tr><td class="word"><ruby>出力<rt>しゅつりょく</rt></ruby></td><td>しゅつりょく</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>输出</td><td><ruby>文字<rt>もじ</rt></ruby>による<ruby>出力<rt>しゅつりょく</rt></ruby>（<ruby>表現<rt>ひょうげん</rt></ruby>）</td></tr><tr><td class="word"><ruby>高等教育<rt>こうとうきょういく</rt></ruby></td><td>こうとうきょういく</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>高等教育</td><td><ruby>高等教育<rt>こうとうきょういく</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける</td></tr><tr><td class="word"><ruby>横行<rt>おうこう</rt></ruby></td><td>おうこう</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N1</span></td><td>横行、肆虐</td><td><ruby>詐欺<rt>さぎ</rt></ruby>が<ruby>横行<rt>おうこう</rt></ruby>する</td></tr><tr><td class="word">はびこる</td><td>はびこる</td><td><span class="pos">v1 自</span></td><td><span class="lvl">N1</span></td><td>（坏事）滋生蔓延</td><td><ruby>独善<rt>どくぜん</rt></ruby>と<ruby>独断<rt>どくだん</rt></ruby>がはびこる</td></tr><tr><td class="word"><ruby>氾濫<rt>はんらん</rt></ruby></td><td>はんらん</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N2</span></td><td>泛滥</td><td><ruby>情報<rt>じょうほう</rt></ruby>が<ruby>氾濫<rt>はんらん</rt></ruby>する</td></tr><tr><td class="word">まかり<ruby>通<rt>とお</rt></ruby>る</td><td>まかりとおる</td><td><span class="pos">v1 自</span></td><td><span class="lvl">N1</span></td><td>大行其道、堂而皇之</td><td><ruby>一国主義<rt>いっこくしゅぎ</rt></ruby>がまかり<ruby>通<rt>とお</rt></ruby>る</td></tr><tr><td class="word"><ruby>副作用<rt>ふくさよう</rt></ruby></td><td>ふくさよう</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>副作用</td><td><ruby>人類<rt>じんるい</rt></ruby>が<ruby>予想<rt>よそう</rt></ruby>もしなかった<ruby>副作用<rt>ふくさよう</rt></ruby></td></tr><tr><td class="word"><ruby>歴史認識<rt>れきしにんしき</rt></ruby></td><td>れきしにんしき</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>历史认识</td><td><ruby>歴史認識<rt>れきしにんしき</rt></ruby>よりも<ruby>深刻<rt>しんこく</rt></ruby>に<ruby>憂慮<rt>ゆうりょ</rt></ruby>すべき</td></tr><tr><td class="word"><ruby>憂慮<rt>ゆうりょ</rt></ruby></td><td>ゆうりょ</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>忧虑、担忧</td><td><ruby>深刻<rt>しんこく</rt></ruby>に<ruby>憂慮<rt>ゆうりょ</rt></ruby>すべき</td></tr><tr><td class="word"><ruby>戦前回帰<rt>せんぜんかいき</rt></ruby></td><td>せんぜんかいき</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>回归战前</td><td>「<ruby>戦前回帰<rt>せんぜんかいき</rt></ruby>」を<ruby>志向<rt>しこう</rt></ruby>する</td></tr><tr><td class="word"><ruby>志向<rt>しこう</rt></ruby></td><td>しこう</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>追求、倾向</td><td><ruby>戦前回帰<rt>せんぜんかいき</rt></ruby>を<ruby>志向<rt>しこう</rt></ruby>する</td></tr><tr><td class="word"><ruby>富国強兵<rt>ふこくきょうへい</rt></ruby></td><td>ふこくきょうへい</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>富国强兵</td><td>「<ruby>富国強兵<rt>ふこくきょうへい</rt></ruby>」<ruby>路線<rt>ろせん</rt></ruby></td></tr><tr><td class="word"><ruby>殺傷能力<rt>さっしょうのうりょく</rt></ruby></td><td>さっしょうのうりょく</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>杀伤能力</td><td><ruby>殺傷能力<rt>さっしょうのうりょく</rt></ruby>のある<ruby>武器輸出<rt>ぶきゆしゅつ</rt></ruby></td></tr><tr><td class="word"><ruby>武器輸出<rt>ぶきゆしゅつ</rt></ruby></td><td>ぶきゆしゅつ</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>武器出口</td><td><ruby>武器輸出<rt>ぶきゆしゅつ</rt></ruby>の<ruby>解禁<rt>かいきん</rt></ruby></td></tr><tr><td class="word"><ruby>有事<rt>ゆうじ</rt></ruby></td><td>ゆうじ</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>紧急事态、有事</td><td><ruby>有事<rt>ゆうじ</rt></ruby>に<ruby>備<rt>そな</rt></ruby>える</td></tr><tr><td class="word"><ruby>軍需産業<rt>ぐんじゅさんぎょう</rt></ruby></td><td>ぐんじゅさんぎょう</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>军需产业</td><td><ruby>軍需産業<rt>ぐんじゅさんぎょう</rt></ruby>を<ruby>振興<rt>しんこう</rt></ruby>する</td></tr><tr><td class="word"><ruby>防衛費<rt>ぼうえいひ</rt></ruby></td><td>ぼうえいひ</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>防卫费</td><td><ruby>防衛費<rt>ぼうえいひ</rt></ruby>の<ruby>増額<rt>ぞうがく</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>す</td></tr><tr><td class="word"><ruby>目指<rt>めざ</rt></ruby>す</td><td>めざす</td><td><span class="pos">v1 他</span></td><td><span class="lvl">N2</span></td><td>以……为目标</td><td><ruby>防衛費<rt>ぼうえいひ</rt></ruby>の<ruby>増額<rt>ぞうがく</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>す</td></tr><tr><td class="word"><ruby>豊<rt>ゆた</rt></ruby>かさ</td><td>ゆたかさ</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>富足</td><td><ruby>豊<rt>ゆた</rt></ruby>かさの<ruby>実感<rt>じっかん</rt></ruby></td></tr><tr><td class="word"><ruby>実感<rt>じっかん</rt></ruby></td><td>じっかん</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>切身感受</td><td><ruby>豊<rt>ゆた</rt></ruby>かさの<ruby>実感<rt>じっかん</rt></ruby>に<ruby>乏<rt>とぼ</rt></ruby>しい</td></tr><tr><td class="word"><ruby>乏<rt>とぼ</rt></ruby>しい</td><td>とぼしい</td><td><span class="pos">イ形</span></td><td><span class="lvl">N2</span></td><td>匮乏的、缺少的</td><td><ruby>実感<rt>じっかん</rt></ruby>に<ruby>乏<rt>とぼ</rt></ruby>しい</td></tr><tr><td class="word"><ruby>特別国会<rt>とくべつこっかい</rt></ruby></td><td>とくべつこっかい</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>特别国会</td><td><ruby>先<rt>さき</rt></ruby>の<ruby>特別国会<rt>とくべつこっかい</rt></ruby></td></tr><tr><td class="word"><ruby>軒並<rt>のきな</rt></ruby>み</td><td>のきなみ</td><td><span class="pos">adv</span></td><td><span class="lvl">N2</span></td><td>纷纷、普遍</td><td><ruby>法律<rt>ほうりつ</rt></ruby>が<ruby>軒並<rt>のきな</rt></ruby>み<ruby>成立<rt>せいりつ</rt></ruby>する</td></tr><tr><td class="word"><ruby>男系継承<rt>だんけいけいしょう</rt></ruby></td><td>だんけいけいしょう</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>男系继承</td><td><ruby>皇位<rt>こうい</rt></ruby>の<ruby>男系継承<rt>だんけいけいしょう</rt></ruby>に<ruby>固執<rt>こしつ</rt></ruby>する</td></tr><tr><td class="word"><ruby>皇室典範<rt>こうしつてんぱん</rt></ruby></td><td>こうしつてんぱん</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>《皇室典范》</td><td><ruby>皇室典範<rt>こうしつてんぱん</rt></ruby>改正</td></tr><tr><td class="word"><ruby>皇国史観<rt>こうこくしかん</rt></ruby></td><td>こうこくしかん</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>皇国史观</td><td>「<ruby>皇国史観<rt>こうこくしかん</rt></ruby>」にほかなりません</td></tr><tr><td class="word"><ruby>国旗損壊罪<rt>こっきそんかいざい</rt></ruby></td><td>こっきそんかいざい</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>毁坏国旗罪</td><td><ruby>国旗損壊罪<rt>こっきそんかいざい</rt></ruby>の<ruby>創設<rt>そうせつ</rt></ruby></td></tr><tr><td class="word"><ruby>息苦<rt>いきぐる</rt></ruby>しさ</td><td>いきぐるしさ</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>压抑感、窒息感</td><td><ruby>戦前戦中<rt>せんぜんせんちゅう</rt></ruby>の<ruby>息苦<rt>いきぐる</rt></ruby>しさ</td></tr><tr><td class="word"><ruby>通<rt>つう</rt></ruby>じる</td><td>つうじる</td><td><span class="pos">v2 自</span></td><td><span class="lvl">N2</span></td><td>与……相通、一脉相承</td><td><ruby>息苦<rt>いきぐる</rt></ruby>しさに<ruby>通<rt>つう</rt></ruby>じる</td></tr><tr><td class="word"><ruby>固執<rt>こしつ</rt></ruby></td><td>こしつ</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N2</span></td><td>固执坚持</td><td><ruby>男系継承<rt>だんけいけいしょう</rt></ruby>に<ruby>固執<rt>こしつ</rt></ruby>する</td></tr></tbody></table></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="notes"><h2 class="section-title"><span>笔</span>强化笔记精讲（瑞译）</h2><div class="notes-grid"><article class="note-card"><h3><span class="sec">第一段</span>注意时长与心理学词汇</h3><p><b>“注意时长”</b>：在心理学中与“注意的稳定性”密切相关，指“人的注意力能够持续集中于某一对象或任务的时间长度”。注意：中文的“注意力”不等于“专注力”——注意力是被对象吸引、转移过去的能力或状态（如手机一响就看了一眼），不要求长时间持续；专注力则是把注意持续集中在同一个对象或任务上的能力（如连续半小时不分心看书）。</p><p><b>考试心理学词汇</b>：<ruby>集中力<rt>しゅうちゅうりょく</rt></ruby>（专注力，<ruby>集中力<rt>しゅうちゅうりょく</rt></ruby>が<ruby>高<rt>たか</rt></ruby>まる／<ruby>低下<rt>ていか</rt></ruby>する）；<ruby>思考<rt>しこう</rt></ruby>／<ruby>考<rt>かんが</rt></ruby>える<ruby>力<rt>ちから</rt></ruby>（思考，<ruby>思考<rt>しこう</rt></ruby>を<ruby>深<rt>ふか</rt></ruby>める／<ruby>論理<rt>ろんり</rt></ruby>的に<ruby>考<rt>かんが</rt></ruby>える）；<ruby>感情<rt>かんじょう</rt></ruby>（感情，<ruby>感情<rt>かんじょう</rt></ruby>を<ruby>抱<rt>いだ</rt></ruby>く／ネガティブな<ruby>感情<rt>かんじょう</rt></ruby>——中文“情绪”多对应「<ruby>感情<rt>かんじょう</rt></ruby>」而非「<ruby>情緒<rt>じょうちょ</rt></ruby>」）；<ruby>不安<rt>ふあん</rt></ruby>（焦虑，<ruby>将来<rt>しょうらい</rt></ruby>への<ruby>不安<rt>ふあん</rt></ruby>／<ruby>不安<rt>ふあん</rt></ruby>を<ruby>感<rt>かん</rt></ruby>じる）；<ruby>共感<rt>きょうかん</rt></ruby>（共鸣，<ruby>共感<rt>きょうかん</rt></ruby>する／<ruby>共感<rt>きょうかん</rt></ruby>を<ruby>呼<rt>よ</rt></ruby>ぶ）。</p></article><article class="note-card"><h3><span class="sec">第二段</span>“并无差异”的多种译法</h3><p>“并无差异”近义表达有“和……没有区别／和……一致／大同小异／无异于……”。日译可有多种：</p><ul><li><span class="ex">〜と（<ruby>全<rt>まった</rt></ruby>く）<ruby>差<rt>さ</rt></ruby>がない</span>：最直接客观，适合数据比较、调查研究、客观分析。<span class="tr">例：二つの<ruby>群<rt>ぐん</rt></ruby>の<ruby>会話頻度<rt>かいわひんど</rt></ruby>の<ruby>割合<rt>わりあい</rt></ruby>にほとんど<ruby>差<rt>さ</rt></ruby>はない。</span></li><li><span class="ex">〜と<ruby>大差<rt>たいさ</rt></ruby>ない</span>：没有太大不同。<span class="tr">例：これならどれでも<ruby>大差<rt>たいさ</rt></ruby>ない。</span></li><li><span class="ex">〜と<ruby>変<rt>か</rt></ruby>わらない</span>：与……别无两样。<span class="tr">例：<ruby>日本<rt>にほん</rt></ruby>と<ruby>変<rt>か</rt></ruby>わらない<ruby>環境<rt>かんきょう</rt></ruby>で<ruby>過<rt>す</rt></ruby>ごしている。</span></li><li><span class="ex">〜に<ruby>等<rt>ひと</rt></ruby>しい</span>：等同于……、无异于……。<span class="tr">例：プライバシーはほとんどないに<ruby>等<rt>ひと</rt></ruby>しい。</span></li></ul></article><article class="note-card"><h3><span class="sec">第三段</span>“横行”的四种译法</h3><p>“横行”本义为行为蛮横、仗势作恶，也常引申为令人反感的事物“大量出现、肆意盛行”。日语译法多样：</p><ul><li><span class="ex"><ruby>横行<rt>おうこう</rt></ruby>する</span>：坏事频繁发生、肆意妄为。与“横行”最接近，常与<ruby>詐欺<rt>さぎ</rt></ruby>、<ruby>汚職<rt>おしょく</rt></ruby>、<ruby>犯罪<rt>はんざい</rt></ruby>等负面行为搭配。<span class="tr">例：インターネット<ruby>上<rt>じょう</rt></ruby>には<ruby>模倣品<rt>もほうひん</rt></ruby>や<ruby>海賊版<rt>かいぞくばん</rt></ruby>も<ruby>横行<rt>おうこう</rt></ruby>している。</span></li><li><span class="ex">はびこる</span>：不好的事物势力越来越强并不断扩散，强调“像杂草一样滋生蔓延”。<span class="tr">例：<ruby>独善<rt>どくぜん</rt></ruby>と<ruby>独断<rt>どくだん</rt></ruby>がはびこる<ruby>今<rt>いま</rt></ruby>の<ruby>時代<rt>じだい</rt></ruby>。</span></li><li><span class="ex"><ruby>氾濫<rt>はんらん</rt></ruby>する</span>：不好的东西传播开来、泛滥成灾，强调“数量太多、到处都是”。<span class="tr">例：<ruby>情報<rt>じょうほう</rt></ruby>が<ruby>氾濫<rt>はんらん</rt></ruby>している<ruby>今<rt>いま</rt></ruby>の<ruby>時代<rt>じだい</rt></ruby>。</span></li><li><span class="ex">まかり<ruby>通<rt>とお</rt></ruby>る</span>：“通る／通用する”的加强表达——不合理的东西堂而皇之地得到认可、通行。<span class="tr">例：<ruby>一国主義<rt>いっこくしゅぎ</rt></ruby>がまかり<ruby>通<rt>とお</rt></ruby>ることは<ruby>不可能<rt>ふかのう</rt></ruby>だ。</span></li></ul></article><article class="note-card"><h3><span class="sec">第四段</span>「志向する」与“富国强兵”的加法处理</h3><p><b>「<ruby>志向<rt>しこう</rt></ruby>する」</b>：意识、思想、行为等朝着某个方向发展，可译为“追求……”“倾向于……”“以……为导向”。拓展：<ruby>安全志向<rt>あんぜんしこう</rt></ruby>（重视安全）、<ruby>健康志向<rt>けんこうしこう</rt></ruby>（追求健康）、<ruby>上昇志向<rt>じょうしょうしこう</rt></ruby>（有上进心）。注意与「<ruby>志<rt>こころざ</rt></ruby>す」区分——「志す」是下决心去做某件事、朝自己心中确定的目标前进（<ruby>学問<rt>がくもん</rt></ruby>に<ruby>志<rt>こころざ</rt></ruby>す），多跟梦想、职业等个人理想；「<ruby>志向<rt>しこう</rt></ruby>する」则强调意识、思想、行为朝着某个方向发展。</p><p><b>“富国强兵”的加法处理（基于读者意识）</b>：中文读者可能 get 不到“富国强兵”所指的时代背景，可补出「明治時期」——“这无疑是在走明治时期的‘富国强兵’路线”。这样处理以后时代信息更明确，更有助于中文读者理解原文的历史指涉。考试翻日译中时如果拿不准，可以保守一些，不轻易增加原文没有的连接词；但译中（尤其是新闻等面向普通中文读者的文本）则可根据读者意识适度补出原文隐含的衔接。</p><p><b>段落衔接示意</b>：判断“正在走富国强兵路线”→证据1：放宽武器出口、发展军需→历史对照：战前战中也是如此→证据2：财政吃紧仍增防务费，而民众缺乏富足感→再次与战前战中对照。</p></article><article class="note-card"><h3><span class="sec">第五段</span>「軒並み」与「相次いで」「続々と」辨析</h3><p><b>「<ruby>軒並<rt>のきな</rt></ruby>み」</b>：原指房屋鳞次栉比、每家每户，副词化后表示某一范围内的对象“无一例外地、普遍地呈现出相同状态”，可译为“纷纷、普遍、几乎无一例外”。常与价格、指数、业绩等整体性变化搭配：<ruby>軒並<rt>のきな</rt></ruby>み<ruby>上昇<rt>じょうしょう</rt></ruby>する／<ruby>軒並<rt>のきな</rt></ruby>み<ruby>値上<rt>ねあ</rt></ruby>がりする。</p><p><b>辨析</b>：</p><ul><li><span class="ex"><ruby>軒並<rt>のきな</rt></ruby>み</span>：强调“范围广，大家都这样”。<span class="tr">例：<ruby>旅行業界<rt>りょこうぎょうかい</rt></ruby>は<ruby>軒並<rt>のきな</rt></ruby>み<ruby>活気<rt>かっき</rt></ruby>づいた。</span></li><li><span class="ex"><ruby>相次<rt>あいつ</rt></ruby>いで</span>：强调“一件接着一件发生”。<span class="tr">例：<ruby>殺人<rt>さつじん</rt></ruby>が<ruby>相次<rt>あいつ</rt></ruby>いで<ruby>起<rt>お</rt></ruby>こる。</span></li><li><span class="ex"><ruby>続々<rt>ぞくぞく</rt></ruby>と</span>：强调“接二连三、源源不断”。<span class="tr">例：<ruby>見物人<rt>けんぶつにん</rt></ruby>が<ruby>続々<rt>ぞくぞく</rt></ruby>と<ruby>入場<rt>にゅうじょう</rt></ruby>する。</span></li></ul><p><b>“皇国史观”补充</b>：战前及战争期间以天皇为中心的历史观，是《皇室典范》修订“执意男系继承”的思想背景。另外“男系”处理为“父系”亦可，但中文官方媒体常见的“只能由男性继承”是错误理解。</p></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <footer>
+      6-3 段落双向翻译练习（强化笔记融合版）｜日语读音（黄色平假名）、语法、词汇、文中变形与强化笔记精讲整理<br>
+      正文依据用户提供的资料整理，仅供个人学习使用。
+    </footer>
+  </main>
+
+<script>
+(function(){
+  const AUDIO_DIR = "audio/";
+  const TOTAL = 18;
+  let current = 0;
+  let playing = false;
+  let rate = 1.0;
+  let loopMode = false;
+  const audio = new Audio();
+  const $ = id => document.getElementById(id);
+
+  function playSentence(idx){
+    if (idx < 0 || idx >= TOTAL) return;
+    current = idx;
+    playing = true;
+    updateUI();
+    const s = document.querySelector('.sentence[data-idx="' + idx + '"]');
+    audio.src = AUDIO_DIR + (s ? s.dataset.audio : 'p1_s1.mp3');
+    audio.playbackRate = rate;
+    audio.currentTime = 0;
+    audio.play().then(() => { playing = true; updateUI(); })
+      .catch(e => { console.error('播放失败:', e); });
+  }
+
+  function togglePlay(){
+    if (playing){ audio.pause(); playing=false; updateUI(); }
+    else if (!audio.src) playSentence(current);
+    else { audio.play().then(()=>{playing=true;updateUI();}); }
+  }
+  function nextSentence(){
+    if (current+1 < TOTAL) playSentence(current+1);
+    else if (loopMode) playSentence(0);
+    else { audio.pause(); playing=false; updateUI(); }
+  }
+  function prevSentence(){ if (current>0) playSentence(current-1); }
+
+  function sentenceInSec(el){
+    const sec = el.closest('section');
+    const all = sec.querySelectorAll('.sentence');
+    for (let i=0;i<all.length;i++) if (all[i]===el) return i+1;
+    return 1;
+  }
+
+  function updateUI(){
+    $('btn-play').textContent = playing ? '⏸' : '▶';
+    document.querySelectorAll('.sentence').forEach(el=>{
+      el.classList.toggle('playing', parseInt(el.dataset.idx)===current);
+    });
+    const s = document.querySelector('.sentence[data-idx="'+current+'"]');
+    if (s){
+      const sec = s.closest('section');
+      const st = sec ? sec.querySelector('.section-title').textContent : '';
+      const n = sentenceInSec(s);
+      $('sentence-status').textContent = (playing?'播放中':'暂停')+' ｜ '+st+' 第'+n+'句';
+      const rect = s.getBoundingClientRect();
+      const bar = $('player-bar').getBoundingClientRect();
+      if (rect.top < bar.bottom || rect.bottom > window.innerHeight){
+        s.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    }
+  }
+
+  audio.addEventListener('ended', nextSentence);
+  audio.addEventListener('timeupdate', ()=>{
+    if (audio.duration){
+      const pct = audio.currentTime/audio.duration*100;
+      $('progress-fill').style.width = pct+'%';
+      $('progress-knob').style.left = pct+'%';
+    }
+  });
+  $('progress').addEventListener('click', e=>{
+    if (!audio.duration) return;
+    const r = $('progress').getBoundingClientRect();
+    audio.currentTime = (e.clientX-r.left)/r.width*audio.duration;
+  });
+  $('rate-group').addEventListener('click', e=>{
+    const b = e.target.closest('.rate-btn'); if(!b) return;
+    rate = parseFloat(b.dataset.rate);
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(x=>x.classList.toggle('active', x===b));
+  });
+  $('btn-mode').addEventListener('click', ()=>{
+    loopMode = !loopMode;
+    $('btn-mode').textContent = '循环: '+(loopMode?'开':'关');
+    $('btn-mode').classList.toggle('active', loopMode);
+  });
+  $('btn-play').addEventListener('click', togglePlay);
+  $('btn-next').addEventListener('click', nextSentence);
+  $('btn-prev').addEventListener('click', prevSentence);
+
+  document.querySelectorAll('.sentence').forEach(el=>{
+    el.addEventListener('click', ()=>playSentence(parseInt(el.dataset.idx)));
+  });
+
+  document.addEventListener('keydown', e=>{
+    if (e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+    switch(e.code){
+      case 'Space': e.preventDefault(); togglePlay(); break;
+      case 'ArrowRight': nextSentence(); break;
+      case 'ArrowLeft': prevSentence(); break;
+      case 'ArrowUp': e.preventDefault(); setRate(Math.min(1.5, rate+0.25)); break;
+      case 'ArrowDown': e.preventDefault(); setRate(Math.max(0.5, rate-0.25)); break;
+    }
+  });
+  function setRate(r){
+    rate = Math.round(r*100)/100;
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(b=>{
+      b.classList.toggle('active', parseFloat(b.dataset.rate)===rate);
+    });
+  }
+  audio.preload = 'auto';
+  window.__reader = { getAudio: () => audio, getState: () => ({current, playing, rate, loopMode}) };
+})();
+</script>
+
+</body>
+</html>

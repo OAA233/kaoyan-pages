@@ -1,0 +1,204 @@
+{
+  "title": "第6周 每周自测2",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "情報空間の進化により、わたしたちはかつてないほど多様な情報にアクセスできるようになりました。",
+      "jp_html": "<ruby>情報空間<rt>じょうほうくうかん</rt></ruby>の<ruby>進化<rt>しんか</rt></ruby>により、わたしたちはかつてないほど<ruby>多様<rt>たよう</rt></ruby>な<ruby>情報<rt>じょうほう</rt></ruby>にアクセスできるようになりました。",
+      "zh": "随着信息空间的发展，我们如今能够获取比以往任何时候都更加多样化的信息。自由的信息传播也推动了知识的民主化，并为社会创造了巨大的价值。",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "自由な情報発信は知識の民主化にもつながり、社会に大きな価値をもたらしてきました。",
+      "jp_html": "<ruby>自由<rt>じゆう</rt></ruby>な<ruby>情報発信<rt>じょうほうはっしん</rt></ruby>は<ruby>知識<rt>ちしき</rt></ruby>の<ruby>民主化<rt>みんしゅか</rt></ruby>にもつながり、<ruby>社会<rt>しゃかい</rt></ruby>に<ruby>大<rt>おお</rt></ruby>きな<ruby>価値<rt>かち</rt></ruby>をもたらしてきました。",
+      "zh": "随着信息空间的发展，我们如今能够获取比以往任何时候都更加多样化的信息。自由的信息传播也推动了知识的民主化，并为社会创造了巨大的价值。",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "慶応大は２０日、健全な情報空間の形成を目指す新組織を立ち上げると発表した。",
+      "jp_html": "<ruby>慶応大<rt>けいおうだい</rt></ruby>は２０<ruby>日<rt>にち</rt></ruby>、<ruby>健全<rt>けんぜん</rt></ruby>な<ruby>情報空間<rt>じょうほうくうかん</rt></ruby>の<ruby>形成<rt>けいせい</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>す<ruby>新組織<rt>しんそしき</rt></ruby>を<ruby>立<rt>た</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げると<ruby>発表<rt>はっぴょう</rt></ruby>した。",
+      "zh": "庆应义塾大学于20日宣布，将设置一个旨在构建健康信息空间的新组织，争取在今年秋季成立。该组织将以大学为中心，邀请新闻媒体以及社交网站的运营商等，跨越企业和组织的界限参与其中。",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "今年秋の設立を目指す。",
+      "jp_html": "<ruby>今年<rt>ことし</rt></ruby><ruby>秋<rt>あき</rt></ruby>の<ruby>設立<rt>せつりつ</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>す。",
+      "zh": "庆应义塾大学于20日宣布，将设置一个旨在构建健康信息空间的新组织，争取在今年秋季成立。该组织将以大学为中心，邀请新闻媒体以及社交网站的运营商等，跨越企业和组织的界限参与其中。",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 3,
+      "sentence_id": "p2_s3",
+      "jp_plain": "大学を中心に報道機関や交流サイト（SNS）の事業者が企業、団体の枠を超えて参加する。",
+      "jp_html": "<ruby>大学<rt>だいがく</rt></ruby>を<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>報道機関<rt>ほうどうきかん</rt></ruby>や<ruby>交流<rt>こうりゅう</rt></ruby>サイト（<ruby>SNS<rt class=\"en\">SNS</rt></ruby>）の<ruby>事業者<rt>じぎょうしゃ</rt></ruby>が<ruby>企業<rt>きぎょう</rt></ruby>、<ruby>団体<rt>だんたい</rt></ruby>の<ruby>枠<rt>わく</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えて<ruby>参加<rt>さんか</rt></ruby>する。",
+      "zh": "庆应义塾大学于20日宣布，将设置一个旨在构建健康信息空间的新组织，争取在今年秋季成立。该组织将以大学为中心，邀请新闻媒体以及社交网站的运营商等，跨越企业和组织的界限参与其中。",
+      "audio_file": "audio/p2_s3.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "国民民主党の玉木代表は18日、ロシアのプーチン大統領が北方領土の択捉島へ初めて上陸したことへの高市政権の対応を「弱腰にすぎる」と批判した。",
+      "jp_html": "<ruby>国民民主党<rt>こくみんみんしゅとう</rt></ruby>の<ruby>玉木代表<rt>たまきだいひょう</rt></ruby>は18<ruby>日<rt>にち</rt></ruby>、ロシアのプーチン<ruby>大統領<rt>だいとうりょう</rt></ruby>が<ruby>北方領土<rt>ほっぽうりょうど</rt></ruby>の<ruby>択捉島<rt>えとろふとう</rt></ruby>へ<ruby>初<rt>はじ</rt></ruby>めて<ruby>上陸<rt>じょうりく</rt></ruby>したことへの<ruby>高市政権<rt>たかみちせいけん</rt></ruby>の<ruby>対応<rt>たいおう</rt></ruby>を「<ruby>弱腰<rt>よわごし</rt></ruby>にすぎる」と<ruby>批判<rt>ひはん</rt></ruby>した。",
+      "zh": "国民民主党的党首玉木雄一郎于18日批评道，对于俄罗斯总统普京首次登陆北方四岛之一的择捉岛一事，高市政权的应对“过于软弱”。（中略）他表示：“对中国态度强硬、对俄罗斯态度宽松，以此试图促使中俄分裂的战略，从来没有成功过。”",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "（中略）「中国には厳しくてロシアに甘くして中露の分断を図っていくという戦略は、結果として成功に至ったことはない」との考えを示した。",
+      "jp_html": "（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）「<ruby>中国<rt>ちゅうごく</rt></ruby>には<ruby>厳<rt>きび</rt></ruby>しくてロシアに<ruby>甘<rt>あま</rt></ruby>くして<ruby>中露<rt>ちゅうろ</rt></ruby>の<ruby>分断<rt>ぶんだん</rt></ruby>を<ruby>図<rt>はか</rt></ruby>っていくという<ruby>戦略<rt>せんりゃく</rt></ruby>は、<ruby>結果<rt>けっか</rt></ruby>として<ruby>成功<rt>せいこう</rt></ruby>に<ruby>至<rt>いた</rt></ruby>ったことはない」との<ruby>考<rt>かんが</rt></ruby>えを<ruby>示<rt>しめ</rt></ruby>した。",
+      "zh": "国民民主党的党首玉木雄一郎于18日批评道，对于俄罗斯总统普京首次登陆北方四岛之一的择捉岛一事，高市政权的应对“过于软弱”。（中略）他表示：“对中国态度强硬、对俄罗斯态度宽松，以此试图促使中俄分裂的战略，从来没有成功过。”",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "共産党の小池晃書記局長は17日の記者会見で、NHKの世論調査で共産党が政党支持率で自民党に次ぐ2位となったことについて、「一回の世論調査の結果で一喜一憂することはしない」と強調した。",
+      "jp_html": "<ruby>共産党<rt>きょうさんとう</rt></ruby>の<ruby>小池晃<rt>こいけあきら</rt></ruby><ruby>書記局長<rt>しょききょくちょう</rt></ruby>は17<ruby>日<rt>にち</rt></ruby>の<ruby>記者会見<rt>きしゃかいけん</rt></ruby>で、NHKの<ruby>世論調査<rt>よろんちょうさ</rt></ruby>で<ruby>共産党<rt>きょうさんとう</rt></ruby>が<ruby>政党支持率<rt>せいとうしじりつ</rt></ruby>で<ruby>自民党<rt>じみんとう</rt></ruby>に<ruby>次<rt>つ</rt></ruby>ぐ2<ruby>位<rt>い</rt></ruby>となったことについて、「<ruby>一回<rt>いっかい</rt></ruby>の<ruby>世論調査<rt>よろんちょうさ</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>で<ruby>一喜一憂<rt>いっきいちゆう</rt></ruby>することはしない」と<ruby>強調<rt>きょうちょう</rt></ruby>した。",
+      "zh": "（日本）共产党书记局长小池晃在17日的记者会上，就日本广播协会民意调查显示（日本）共产党的政党支持率排名自民党之后、位居第二的情况，强调说：“我们不会因为一次民意调查的结果而患得患失。”",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 1,
+      "sentence_id": "p5_s1",
+      "jp_plain": "三月になった。",
+      "jp_html": "<ruby>三月<rt>さんがつ</rt></ruby>になった。",
+      "zh": "三月到了。某天下午，我像往常一样，随意散步的时候，顺道路过并走进了节子的家。刚一进门，就看到父亲在门旁的绿化丛中，头戴一顶劳动人民所戴的那种大草帽，手里拿着一把剪刀，正在修剪周围的树木。",
+      "audio_file": "audio/p5_s1.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 2,
+      "sentence_id": "p5_s2",
+      "jp_plain": "或る午後、私がいつものようにぶらっと散歩のついでにちょっと立寄ったとでも云った風に節子の家を訪れると、門をはいったすぐ横の植込みの中に、労働者のかぶるような大きな麦稈帽をかぶった父が、片手に鋏をもちながら、そこいらの木の手入れをしていた。",
+      "jp_html": "<ruby>或<rt>あ</rt></ruby>る<ruby>午後<rt>ごご</rt></ruby>、<ruby>私<rt>わたし</rt></ruby>がいつものようにぶらっと<ruby>散歩<rt>さんぽ</rt></ruby>のついでにちょっと<ruby>立寄<rt>たちよ</rt></ruby>ったとでも<ruby>云<rt>い</rt></ruby>った<ruby>風<rt>ふう</rt></ruby>に<ruby>節子<rt>せつこ</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>を<ruby>訪<rt>おとず</rt></ruby>れると、<ruby>門<rt>もん</rt></ruby>をはいったすぐ<ruby>横<rt>よこ</rt></ruby>の<ruby>植込<rt>うえこ</rt></ruby>みの<ruby>中<rt>なか</rt></ruby>に、<ruby>労働者<rt>ろうどうしゃ</rt></ruby>のかぶるような<ruby>大<rt>おお</rt></ruby>きな<ruby>麦稈帽<rt>むぎわらぼう</rt></ruby>をかぶった<ruby>父<rt>ちち</rt></ruby>が、<ruby>片手<rt>かたて</rt></ruby>に<ruby>鋏<rt>はさみ</rt></ruby>をもちながら、そこいらの<ruby>木<rt>き</rt></ruby>の<ruby>手入<rt>てい</rt></ruby>れをしていた。",
+      "zh": "三月到了。某天下午，我像往常一样，随意散步的时候，顺道路过并走进了节子的家。刚一进门，就看到父亲在门旁的绿化丛中，头戴一顶劳动人民所戴的那种大草帽，手里拿着一把剪刀，正在修剪周围的树木。",
+      "audio_file": "audio/p5_s2.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 1,
+      "sentence_id": "p6_s1",
+      "jp_plain": "オンラインでの交流が広く普及し、メディアツールが急速に発展する中で、人々のコミュニケーション習慣やライフスタイルは変化している。",
+      "jp_html": "<ruby>オンライン<rt class=\"en\">online</rt></ruby>での<ruby>交流<rt>こうりゅう</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>く<ruby>普及<rt>ふきゅう</rt></ruby>し、<ruby>メディアツール<rt class=\"en\">media tool</rt></ruby>が<ruby>急速<rt>きゅうそく</rt></ruby>に<ruby>発展<rt>はってん</rt></ruby>する<ruby>中<rt>なか</rt></ruby>で、<ruby>人々<rt>ひとびと</rt></ruby>の<ruby>コミュニケーション<rt class=\"en\">communication</rt></ruby><ruby>習慣<rt>しゅうかん</rt></ruby>や<ruby>ライフスタイル<rt class=\"en\">lifestyle</rt></ruby>は<ruby>変化<rt>へんか</rt></ruby>している。",
+      "zh": "随着线上社交的广泛普及和媒介工具的快速发展，人们社交习惯和生活方式都在发生改变。在线聊天、建立工作群……不知不觉地，线上成了很多人沟通接洽的“舒适区”，偶尔接到电话还会不自然、不习惯。不少人因此困扰，感到自己线下社交能力退化了。",
+      "audio_file": "audio/p6_s1.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 2,
+      "sentence_id": "p6_s2",
+      "jp_plain": "オンラインでのチャットや、仕事のグループの立ち上げなど、いつの間にか、オンラインが多くの人にとってコミュニケーションを取る際の「コンフォートゾーン」となり、たまに電話がかかってくると、かえって不自然に感じたり、戸惑ったりする。",
+      "jp_html": "<ruby>オンライン<rt class=\"en\">online</rt></ruby>での<ruby>チャット<rt class=\"en\">chat</rt></ruby>や、<ruby>仕事<rt>しごと</rt></ruby>のグループの<ruby>立<rt>た</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げなど、いつの<ruby>間<rt>ま</rt></ruby>にか、<ruby>オンライン<rt class=\"en\">online</rt></ruby>が<ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>にとって<ruby>コミュニケーション<rt class=\"en\">communication</rt></ruby>を<ruby>取<rt>と</rt></ruby>る<ruby>際<rt>さい</rt></ruby>の「<ruby>コンフォートゾーン<rt class=\"en\">comfort zone</rt></ruby>」となり、たまに<ruby>電話<rt>でんわ</rt></ruby>がかかってくると、かえって<ruby>不自然<rt>ふしぜん</rt></ruby>に<ruby>感<rt>かん</rt></ruby>じたり、<ruby>戸惑<rt>とまど</rt></ruby>ったりする。",
+      "zh": "随着线上社交的广泛普及和媒介工具的快速发展，人们社交习惯和生活方式都在发生改变。在线聊天、建立工作群……不知不觉地，线上成了很多人沟通接洽的“舒适区”，偶尔接到电话还会不自然、不习惯。不少人因此困扰，感到自己线下社交能力退化了。",
+      "audio_file": "audio/p6_s2.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 3,
+      "sentence_id": "p6_s3",
+      "jp_plain": "そのため、悩みを抱え、「自分の対面でのコミュニケーション能力が衰えてしまっている」と感じる人も少なくない。",
+      "jp_html": "そのため、<ruby>悩<rt>なや</rt></ruby>みを<ruby>抱<rt>かか</rt></ruby>え、「<ruby>自分<rt>じぶん</rt></ruby>の<ruby>対面<rt>たいめん</rt></ruby>での<ruby>コミュニケーション<rt class=\"en\">communication</rt></ruby><ruby>能力<rt>のうりょく</rt></ruby>が<ruby>衰<rt>おとろ</rt></ruby>えてしまっている」と<ruby>感<rt>かん</rt></ruby>じる<ruby>人<rt>ひと</rt></ruby>も<ruby>少<rt>すく</rt></ruby>なくない。",
+      "zh": "随着线上社交的广泛普及和媒介工具的快速发展，人们社交习惯和生活方式都在发生改变。在线聊天、建立工作群……不知不觉地，线上成了很多人沟通接洽的“舒适区”，偶尔接到电话还会不自然、不习惯。不少人因此困扰，感到自己线下社交能力退化了。",
+      "audio_file": "audio/p6_s3.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 1,
+      "sentence_id": "p7_s1",
+      "jp_plain": "顧維鈞の外交官としての専門的な能力がよく表れているのは、中国の国力について非常に冷静な認識を持っていた点である。",
+      "jp_html": "<ruby>顧維鈞<rt>こいじゅん</rt></ruby>の<ruby>外交官<rt>がいこうかん</rt></ruby>としての<ruby>専門的<rt>せんもんてき</rt></ruby>な<ruby>能力<rt>のうりょく</rt></ruby>がよく<ruby>表<rt>あらわ</rt></ruby>れているのは、<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>国力<rt>こくりょく</rt></ruby>について<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>冷静<rt>れいせい</rt></ruby>な<ruby>認識<rt>にんしき</rt></ruby>を<ruby>持<rt>も</rt></ruby>っていた<ruby>点<rt>てん</rt></ruby>である。",
+      "zh": "顾维钧的外交专业能力很好的表现就是他对中国的国力有非常清醒的认识。在顾维钧从事外交的绝大部分实践中，整个二十世纪上半叶，中国实际上是一个弱国，他也是以弱国来定位中国的国力，并且采取相应的策略。",
+      "audio_file": "audio/p7_s1.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 2,
+      "sentence_id": "p7_s2",
+      "jp_plain": "顧維鈞が外交に携わった時期の大部分において、20世紀前半の中国は実質的に弱国であり、彼もまた中国を弱国として位置づけ、その国力に応じた外交戦略を取っていた。",
+      "jp_html": "<ruby>顧維鈞<rt>こいじゅん</rt></ruby>が<ruby>外交<rt>がいこう</rt></ruby>に<ruby>携<rt>たずさ</rt></ruby>わった<ruby>時期<rt>じき</rt></ruby>の<ruby>大部分<rt>だいぶぶん</rt></ruby>において、20<ruby>世紀<rt>せいき</rt></ruby>前半の<ruby>中国<rt>ちゅうごく</rt></ruby>は<ruby>実質的<rt>じっしつてき</rt></ruby>に<ruby>弱国<rt>じゃっこく</rt></ruby>であり、<ruby>彼<rt>かれ</rt></ruby>もまた<ruby>中国<rt>ちゅうごく</rt></ruby>を<ruby>弱国<rt>じゃっこく</rt></ruby>として<ruby>位置<rt>いち</rt></ruby>づけ、その<ruby>国力<rt>こくりょく</rt></ruby>に<ruby>応<rt>おう</rt></ruby>じた<ruby>外交戦略<rt>がいこうせんりゃく</rt></ruby>を<ruby>取<rt>と</rt></ruby>っていた。",
+      "zh": "顾维钧的外交专业能力很好的表现就是他对中国的国力有非常清醒的认识。在顾维钧从事外交的绝大部分实践中，整个二十世纪上半叶，中国实际上是一个弱国，他也是以弱国来定位中国的国力，并且采取相应的策略。",
+      "audio_file": "audio/p7_s2.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 1,
+      "sentence_id": "p8_s1",
+      "jp_plain": "夏休みに入ってから、大衆文化の消費需要が継続的に顕在化している。",
+      "jp_html": "<ruby>夏休<rt>なつやす</rt></ruby>みに<ruby>入<rt>はい</rt></ruby>ってから、<ruby>大衆文化<rt>たいしゅうぶんか</rt></ruby>の<ruby>消費需要<rt>しょうひじゅよう</rt></ruby>が<ruby>継続的<rt>けいぞくてき</rt></ruby>に<ruby>顕在化<rt>けんざいか</rt></ruby>している。",
+      "zh": "暑期以来，大众文化消费需求持续释放。在江苏南京，颐和路历史文化街区新开放的实体书店凭借独特的氛围，成为市民游客消暑阅读、打卡体验的热门选择。（略）书店火爆的背后，不只是流量的集聚，更是业态模式的迭代升级。",
+      "audio_file": "audio/p8_s1.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 2,
+      "sentence_id": "p8_s2",
+      "jp_plain": "江蘇省南京市では、頤和路歴史文化街区に新たにオープンした実店舗の本屋が、独特の雰囲気で、市民や観光客が暑さをしのぎながら読書を楽しんだり、訪問の記念に写真を撮ったりする人気スポットとなっている。",
+      "jp_html": "<ruby>江蘇省<rt>こうそしょう</rt></ruby><ruby>南京市<rt>なんきんし</rt></ruby>では、<ruby>頤和路歴史文化街区<rt>いわろれきしぶんかがいく</rt></ruby>に<ruby>新<rt>あら</rt></ruby>たにオープンした<ruby>実店舗<rt>じってんぽ</rt></ruby>の<ruby>本屋<rt>ほんや</rt></ruby>が、<ruby>独特<rt>どくとく</rt></ruby>の<ruby>雰囲気<rt>ふんいき</rt></ruby>で、<ruby>市民<rt>しみん</rt></ruby>や<ruby>観光客<rt>かんこうきゃく</rt></ruby>が<ruby>暑<rt>あつ</rt></ruby>さをしのぎながら<ruby>読書<rt>どくしょ</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しんだり、<ruby>訪問<rt>ほうもん</rt></ruby>の<ruby>記念<rt>きねん</rt></ruby>に<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ったりする<ruby>人気<rt>にんき</rt></ruby>スポットとなっている。",
+      "zh": "暑期以来，大众文化消费需求持续释放。在江苏南京，颐和路历史文化街区新开放的实体书店凭借独特的氛围，成为市民游客消暑阅读、打卡体验的热门选择。（略）书店火爆的背后，不只是流量的集聚，更是业态模式的迭代升级。",
+      "audio_file": "audio/p8_s2.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 3,
+      "sentence_id": "p8_s3",
+      "jp_plain": "（中略）本屋の盛況の背景にあるのは、単なる人流の集中だけでなく、業態モデルの刷新や高度化でもある。",
+      "jp_html": "（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>本屋<rt>ほんや</rt></ruby>の<ruby>盛況<rt>せいきょう</rt></ruby>の<ruby>背景<rt>はいけい</rt></ruby>にあるのは、<ruby>単<rt>たん</rt></ruby>なる<ruby>人流<rt>じんりゅう</rt></ruby>の<ruby>集中<rt>しゅうちゅう</rt></ruby>だけでなく、<ruby>業態<rt>ぎょうたい</rt></ruby>モデルの<ruby>刷新<rt>さっしん</rt></ruby>や<ruby>高度化<rt>こうどか</rt></ruby>でもある。",
+      "zh": "暑期以来，大众文化消费需求持续释放。在江苏南京，颐和路历史文化街区新开放的实体书店凭借独特的氛围，成为市民游客消暑阅读、打卡体验的热门选择。（略）书店火爆的背后，不只是流量的集聚，更是业态模式的迭代升级。",
+      "audio_file": "audio/p8_s3.mp3"
+    },
+    {
+      "section": 9,
+      "sentence_index": 1,
+      "sentence_id": "p9_s1",
+      "jp_plain": "広大な山河を行き、歩みを止めることなく、中国の若者たちは多種多様な実践を通じて、文明的な観光の可能性を広げ、その内実を新たな形で豊かにしている。",
+      "jp_html": "<ruby>広大<rt>こうだい</rt></ruby>な<ruby>山河<rt>さんが</rt></ruby>を<ruby>行<rt>ゆ</rt></ruby>き、<ruby>歩<rt>あゆ</rt></ruby>みを<ruby>止<rt>と</rt></ruby>めることなく、<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>若者<rt>わかもの</rt></ruby>たちは<ruby>多種多様<rt>たしゅたよう</rt></ruby>な<ruby>実践<rt>じっせん</rt></ruby>を<ruby>通<rt>つう</rt></ruby>じて、<ruby>文明的<rt>ぶんめいてき</rt></ruby>な<ruby>観光<rt>かんこう</rt></ruby>の<ruby>可能性<rt>かのうせい</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げ、その<ruby>内実<rt>ないじつ</rt></ruby>を<ruby>新<rt>あら</rt></ruby>たな<ruby>形<rt>かたち</rt></ruby>で<ruby>豊<rt>ゆた</rt></ruby>かにしている。",
+      "zh": "山河辽阔，步履不停，一代青年正以多种多样的实践，拓宽文明旅游的边界，创新文明旅游的内涵。当中国青年以文明的姿态行走世界，每一段旅途，都将成为讲好中国故事的生动篇章。",
+      "audio_file": "audio/p9_s1.mp3"
+    },
+    {
+      "section": 9,
+      "sentence_index": 2,
+      "sentence_id": "p9_s2",
+      "jp_plain": "中国の若者たちが文明的な姿勢で世界を旅するとき、一つ一つの旅が、中国の物語を伝える生き生きとした一章となっていく。",
+      "jp_html": "<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>若者<rt>わかもの</rt></ruby>たちが<ruby>文明的<rt>ぶんめいてき</rt></ruby>な<ruby>姿勢<rt>しせい</rt></ruby>で<ruby>世界<rt>せかい</rt></ruby>を<ruby>旅<rt>たび</rt></ruby>するとき、<ruby>一<rt>ひと</rt></ruby>つ<ruby>一<rt>ひと</rt></ruby>つの<ruby>旅<rt>たび</rt></ruby>が、<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>物語<rt>ものがたり</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>える<ruby>生<rt>い</rt></ruby>き<ruby>生<rt>い</rt></ruby>きとした<ruby>一章<rt>いっしょう</rt></ruby>となっていく。",
+      "zh": "山河辽阔，步履不停，一代青年正以多种多样的实践，拓宽文明旅游的边界，创新文明旅游的内涵。当中国青年以文明的姿态行走世界，每一段旅途，都将成为讲好中国故事的生动篇章。",
+      "audio_file": "audio/p9_s2.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 1,
+      "sentence_id": "p10_s1",
+      "jp_plain": "民国二十年、「九一八事変」により日本が東四省を占領した際、私はシンガポールにおいて華僑大会を開催し、電報をもって欧州のジュネーブにある国際連盟およびアメリカ大統領に対し、各種条約を履行し、世界の平和を維持するよう要請した。",
+      "jp_html": "<ruby>民国<rt>みんこく</rt></ruby>二十年、「<ruby>九一八事変<rt>きゅういちはちじへん</rt></ruby>」により<ruby>日本<rt>にほん</rt></ruby>が<ruby>東四省<rt>とうししょう</rt></ruby>を<ruby>占領<rt>せんりょう</rt></ruby>した<ruby>際<rt>さい</rt></ruby>、<ruby>私<rt>わたし</rt></ruby>はシンガポールにおいて<ruby>華僑大会<rt>かきょうたいかい</rt></ruby>を<ruby>開催<rt>かいさい</rt></ruby>し、<ruby>電報<rt>でんぽう</rt></ruby>をもって<ruby>欧州<rt>おうしゅう</rt></ruby>のジュネーブにある<ruby>国際連盟<rt>こくさいれんめい</rt></ruby>およびアメリカ<ruby>大統領<rt>だいとうりょう</rt></ruby>に対し、<ruby>各種条約<rt>かくしゅじょうやく</rt></ruby>を<ruby>履行<rt>りこう</rt></ruby>し、<ruby>世界<rt>せかい</rt></ruby>の<ruby>平和<rt>へいわ</rt></ruby>を<ruby>維持<rt>いじ</rt></ruby>するよう<ruby>要請<rt>ようせい</rt></ruby>した。",
+      "zh": "民二十年“九一八事变”，日本侵占东四省，余在新加坡召开侨民大会，通过发电欧洲日内瓦国际联盟会，及美国总统请履行各种条约，维持世界和平，否则导火线自此发生，将造成将来世界纷乱。",
+      "audio_file": "audio/p10_s1.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 2,
+      "sentence_id": "p10_s2",
+      "jp_plain": "さもなければ、ここを発端として火種が生じ、将来、世界的な混乱を招くことになると訴えた。",
+      "jp_html": "さもなければ、ここを<ruby>発端<rt>ほったん</rt></ruby>として<ruby>火種<rt>ひだね</rt></ruby>が<ruby>生<rt>しょう</rt></ruby>じ、<ruby>将来<rt>しょうらい</rt></ruby>、<ruby>世界的<rt>せかいてき</rt></ruby>な<ruby>混乱<rt>こんらん</rt></ruby>を<ruby>招<rt>まね</rt></ruby>くことになると<ruby>訴<rt>うった</rt></ruby>えた。",
+      "zh": "民二十年“九一八事变”，日本侵占东四省，余在新加坡召开侨民大会，通过发电欧洲日内瓦国际联盟会，及美国总统请履行各种条约，维持世界和平，否则导火线自此发生，将造成将来世界纷乱。",
+      "audio_file": "audio/p10_s2.mp3"
+    }
+  ]
+}

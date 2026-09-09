@@ -1,0 +1,258 @@
+{
+  "title": "第5周 每周自测2",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "政府は、食料品の消費税について、来年4月から2年間、税率を1％に引き下げ、（中略）必要となる財源について、「赤字国債に頼らず確保する」とし、「来年度の予算編成プロセスで結論を得る」としています。",
+      "jp_html": "<ruby>政府<rt>せいふ</rt></ruby>は、<ruby>食料品<rt>しょくりょうひん</rt></ruby>の<ruby>消費税<rt>しょうひぜい</rt></ruby>について、<ruby>来年<rt>らいねん</rt></ruby>4<ruby>月<rt>がつ</rt></ruby>から2<ruby>年間<rt>ねんかん</rt></ruby>、<ruby>税率<rt>ぜいりつ</rt></ruby>を1％に<ruby>引<rt>ひ</rt></ruby>き<ruby>下<rt>さ</rt></ruby>げ、（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>必要<rt>ひつよう</rt></ruby>となる<ruby>財源<rt>ざいげん</rt></ruby>について、「<ruby>赤字国債<rt>あかじこくさい</rt></ruby>に<ruby>頼<rt>たよ</rt></ruby>らず<ruby>確保<rt>かくほ</rt></ruby>する」とし、「<ruby>来年度<rt>らいねんど</rt></ruby>の<ruby>予算編成<rt>よさんへんせい</rt></ruby>プロセスで<ruby>結論<rt>けつろん</rt></ruby>を<ruby>得<rt>え</rt></ruby>る」としています。",
+      "zh": "政府表示，关于食品的消费税，将从明年4月开始的两年，把税率下调至1%，（略）对于所需的财政收入来源，将“在不依赖赤字国债的前提下进行筹措”，并称“将在编制下一年度预算的过程中得出结论”。",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "消費減税で穴が空く年間5兆円は、医療や介護など、社会保障費の主な財源になっています。",
+      "jp_html": "<ruby>消費減税<rt>しょうひげんぜい</rt></ruby>で<ruby>穴<rt>あな</rt></ruby>が<ruby>空<rt>あ</rt></ruby>く<ruby>年間<rt>ねんかん</rt></ruby>5<ruby>兆円<rt>ちょうえん</rt></ruby>は、<ruby>医療<rt>いりょう</rt></ruby>や<ruby>介護<rt>かいご</rt></ruby>など、<ruby>社会保障費<rt>しゃかいほしょうひ</rt></ruby>の<ruby>主<rt>おも</rt></ruby>な<ruby>財源<rt>ざいげん</rt></ruby>になっています。",
+      "zh": "因消费税减税而产生的每年约5兆日元的财政缺口，是医疗、护理等社会保障费用的主要财政收入来源。如果在还没有找到填补这一财源缺口方案的情况下，就实施消费税减税，最终，这笔账还是会转嫁到我们国民身上。",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "その穴を埋める案を見つけないまま消費減税を行えば、結局、わたしたち国民にツケが回ってくることになります。",
+      "jp_html": "その<ruby>穴<rt>あな</rt></ruby>を<ruby>埋<rt>う</rt></ruby>める<ruby>案<rt>あん</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけないまま<ruby>消費減税<rt>しょうひげんぜい</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>えば、<ruby>結局<rt>けっきょく</rt></ruby>、わたしたち<ruby>国民<rt>こくみん</rt></ruby>にツケが<ruby>回<rt>まわ</rt></ruby>ってくることになります。",
+      "zh": "因消费税减税而产生的每年约5兆日元的财政缺口，是医疗、护理等社会保障费用的主要财政收入来源。如果在还没有找到填补这一财源缺口方案的情况下，就实施消费税减税，最终，这笔账还是会转嫁到我们国民身上。",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "きょう令和８年８月８日は、末広がりで縁起がよいとされる「八」がそろう。",
+      "jp_html": "きょう<ruby>令和<rt>れいわ</rt></ruby>８<ruby>年<rt>ねん</rt></ruby>８<ruby>月<rt>がつ</rt></ruby>８<ruby>日<rt>にち</rt></ruby>は、<ruby>末広<rt>すえひろ</rt></ruby>がりで<ruby>縁起<rt>えんぎ</rt></ruby>がよいとされる「<ruby>八<rt>はち</rt></ruby>」がそろう。",
+      "zh": "今天是令和8年8月8日，象征着“越来越好”的吉利数字的“八”齐聚一堂。自治体的办事窗口从今天一大早开始，就有手持结婚登记申请书的情侣排起了长队。在东京都大田区政府，有约100对情侣排着队，区政府将原定上午10点开始的服务时间提前了30分钟办理相关手续。",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "自治体の窓口にはこの日、朝から婚姻届を持ったカップルが列を作った。",
+      "jp_html": "<ruby>自治体<rt>じちたい</rt></ruby>の<ruby>窓口<rt>まどぐち</rt></ruby>にはこの<ruby>日<rt>ひ</rt></ruby>、<ruby>朝<rt>あさ</rt></ruby>から<ruby>婚姻届<rt>こんいんとどけ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ったカップルが<ruby>列<rt>れつ</rt></ruby>を<ruby>作<rt>つく</rt></ruby>った。",
+      "zh": "今天是令和8年8月8日，象征着“越来越好”的吉利数字的“八”齐聚一堂。自治体的办事窗口从今天一大早开始，就有手持结婚登记申请书的情侣排起了长队。在东京都大田区政府，有约100对情侣排着队，区政府将原定上午10点开始的服务时间提前了30分钟办理相关手续。",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "東京都大田区区役所には約１００組が並び、区は午前１０時の予定を３０分前倒しして受付を始めた。",
+      "jp_html": "<ruby>東京都<rt>とうきょうと</rt></ruby><ruby>大田区<rt>おおたく</rt></ruby><ruby>区役所<rt>くやくしょ</rt></ruby>には<ruby>約<rt>やく</rt></ruby>１００<ruby>組<rt>くみ</rt></ruby>が<ruby>並<rt>なら</rt></ruby>び、<ruby>区<rt>く</rt></ruby>は<ruby>午前<rt>ごぜん</rt></ruby>１０<ruby>時<rt>じ</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>を３０<ruby>分<rt>ふん</rt></ruby><ruby>前倒<rt>まえだお</rt></ruby>しして<ruby>受付<rt>うけつけ</rt></ruby>を<ruby>始<rt>はじ</rt></ruby>めた。",
+      "zh": "今天是令和8年8月8日，象征着“越来越好”的吉利数字的“八”齐聚一堂。自治体的办事窗口从今天一大早开始，就有手持结婚登记申请书的情侣排起了长队。在东京都大田区政府，有约100对情侣排着队，区政府将原定上午10点开始的服务时间提前了30分钟办理相关手续。",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "ウクライナのエネルギー施設攻撃で燃料が不足するロシアに韓国で船積みされた精製油が搬入されたことが明らかになったという報道があった。",
+      "jp_html": "ウクライナのエネルギー<ruby>施設攻撃<rt>しせつこうげき</rt></ruby>で<ruby>燃料<rt>ねんりょう</rt></ruby>が<ruby>不足<rt>ふそく</rt></ruby>するロシアに<ruby>韓国<rt>かんこく</rt></ruby>で<ruby>船積<rt>ふなづ</rt></ruby>みされた<ruby>精製油<rt>せいせいゆ</rt></ruby>が<ruby>搬入<rt>はんにゅう</rt></ruby>されたことが<ruby>明<rt>あき</rt></ruby>らかになったという<ruby>報道<rt>ほうどう</rt></ruby>があった。",
+      "zh": "有报道称，俄罗斯因乌克兰袭击能源设施而面临燃料不足，而一批在韩国装船的成品油已被运入俄罗斯。（略）过去韩国向俄罗斯运输燃料的案例，是2022年2月从丽水出发的2.2万桶航空燃料，它们的交付地点是在俄罗斯远东地区的符拉迪沃斯托克。",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "（中略）韓国からロシアへの過去の燃料輸送は、2022年2月に麗水から出発した航空燃料2万2000バレルで、ロシア極東のウラジオストクで引き渡された。",
+      "jp_html": "（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>韓国<rt>かんこく</rt></ruby>からロシアへの<ruby>過去<rt>かこ</rt></ruby>の<ruby>燃料輸送<rt>ねんりょうゆそう</rt></ruby>は、2022<ruby>年<rt>ねん</rt></ruby>2<ruby>月<rt>がつ</rt></ruby>に<ruby>麗水<rt>ヨス</rt></ruby>から<ruby>出発<rt>しゅっぱつ</rt></ruby>した<ruby>航空燃料<rt>こうくうねんりょう</rt></ruby>2<ruby>万<rt>まん</rt></ruby>2000バレルで、ロシア<ruby>極東<rt>きょくとう</rt></ruby>のウラジオストクで<ruby>引<rt>ひ</rt></ruby>き<ruby>渡<rt>わた</rt></ruby>された。",
+      "zh": "有报道称，俄罗斯因乌克兰袭击能源设施而面临燃料不足，而一批在韩国装船的成品油已被运入俄罗斯。（略）过去韩国向俄罗斯运输燃料的案例，是2022年2月从丽水出发的2.2万桶航空燃料，它们的交付地点是在俄罗斯远东地区的符拉迪沃斯托克。",
+      "audio_file": "audio/p4_s2.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 1,
+      "sentence_id": "p5_s1",
+      "jp_plain": "圓明園の文源閣は、咸豐十一年（西暦一八六一）英佛同盟軍侵入の際に燒かれ、南方の三閣は、長髮賊亂に散亂せしが、其の中にて、杭州の文瀾閣のみは、其後散亂の書を集めて不足を補寫し、舊觀に復したるを以て、現在にては四閣の四庫全書存在する譯なり。",
+      "jp_html": "<ruby>圓明園<rt>えんめいえん</rt></ruby>の<ruby>文源閣<rt>ぶんげんかく</rt></ruby>は、<ruby>咸豐<rt>かんぽう</rt></ruby>十一年（<ruby>西暦<rt>せいれき</rt></ruby>一八六一）<ruby>英佛同盟軍<rt>えいふつどうめいぐん</rt></ruby><ruby>侵入<rt>しんにゅう</rt></ruby>の<ruby>際<rt>さい</rt></ruby>に<ruby>燒<rt>や</rt></ruby>かれ、<ruby>南方<rt>なんぽう</rt></ruby>の<ruby>三閣<rt>さんかく</rt></ruby>は、<ruby>長髮賊亂<rt>ちょうはつぞくらん</rt></ruby>に<ruby>散亂<rt>さんらん</rt></ruby>せしが、<ruby>其<rt>そ</rt></ruby>の<ruby>中<rt>うち</rt></ruby>にて、<ruby>杭州<rt>こうしゅう</rt></ruby>の<ruby>文瀾閣<rt>ぶんらんかく</rt></ruby>のみは、<ruby>其後<rt>そのご</rt></ruby><ruby>散亂<rt>さんらん</rt></ruby>の<ruby>書<rt>しょ</rt></ruby>を<ruby>集<rt>あつ</rt></ruby>めて<ruby>不足<rt>ふそく</rt></ruby>を<ruby>補寫<rt>ほしゃ</rt></ruby>し、<ruby>舊觀<rt>きゅうかん</rt></ruby>に<ruby>復<rt>ふく</rt></ruby>したるを<ruby>以<rt>もっ</rt></ruby>て、<ruby>現在<rt>げんざい</rt></ruby>にては<ruby>四閣<rt>しかく</rt></ruby>の<ruby>四庫全書<rt>しこぜんしょ</rt></ruby><ruby>存在<rt>そんざい</rt></ruby>する<ruby>譯<rt>わけ</rt></ruby>なり。",
+      "zh": "圆明园的文源阁，在咸丰十一年（公元1861年）英法联军入侵时被焚毁；南方三阁则在太平天国的战乱中散佚。然而，在其中的杭州文澜阁，后来重新搜集了散佚的书籍，并将不足之处重新抄补，恢复了原来的面貌。因此现在，四阁的《四库全书》全都得以存世。",
+      "audio_file": "audio/p5_s1.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 1,
+      "sentence_id": "p6_s1",
+      "jp_plain": "人工知能（AI）の急速な進展は、たびたび社会に「衝撃」をもたらしているものの、AIによって社会が「大きく変化した」と実感する場面は、必ずしも多くないように見える。",
+      "jp_html": "<ruby>人工知能<rt>じんこうちのう</rt></ruby>（AI）の<ruby>急速<rt>きゅうそく</rt></ruby>な<ruby>進展<rt>しんてん</rt></ruby>は、たびたび<ruby>社会<rt>しゃかい</rt></ruby>に「<ruby>衝撃<rt>しょうげき</rt></ruby>」をもたらしているものの、AIによって<ruby>社会<rt>しゃかい</rt></ruby>が「<ruby>大<rt>おお</rt></ruby>きく<ruby>変化<rt>へんか</rt></ruby>した」と<ruby>実感<rt>じっかん</rt></ruby>する<ruby>場面<rt>ばめん</rt></ruby>は、<ruby>必<rt>かなら</rt></ruby>ずしも<ruby>多<rt>おお</rt></ruby>くないように<ruby>見<rt>み</rt></ruby>える。",
+      "zh": "人工智能（AI）的快速进展高频次引发社会“震撼”，可人们似乎并没看到社会因为AI而产生“巨变”。这种强反差，正应了科创界那句广为流传的话：技术的力量往往在短期内被高估，在长期内被低估。",
+      "audio_file": "audio/p6_s1.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 2,
+      "sentence_id": "p6_s2",
+      "jp_plain": "こうした大きなギャップは、まさにイノベーションの世界で広く知られている、「技術の力は短期的には過大評価され、長期的には過小評価される」という言葉を裏付けている。",
+      "jp_html": "こうした<ruby>大<rt>おお</rt></ruby>きなギャップは、まさにイノベーションの<ruby>世界<rt>せかい</rt></ruby>で<ruby>広<rt>ひろ</rt></ruby>く<ruby>知<rt>し</rt></ruby>られている、「<ruby>技術<rt>ぎじゅつ</rt></ruby>の<ruby>力<rt>ちから</rt></ruby>は<ruby>短期<rt>たんき</rt></ruby>的には<ruby>過大評価<rt>かだいひょうか</rt></ruby>され、<ruby>長期<rt>ちょうき</rt></ruby>的には<ruby>過小評価<rt>かしょうひょうか</rt></ruby>される」という<ruby>言葉<rt>ことば</rt></ruby>を<ruby>裏付<rt>うらづ</rt></ruby>けている。",
+      "zh": "人工智能（AI）的快速进展高频次引发社会“震撼”，可人们似乎并没看到社会因为AI而产生“巨变”。这种强反差，正应了科创界那句广为流传的话：技术的力量往往在短期内被高估，在长期内被低估。",
+      "audio_file": "audio/p6_s2.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 1,
+      "sentence_id": "p7_s1",
+      "jp_plain": "人工知能が急速に進化し、技術の方向性が絶えず変化する中で、人々は常に、次の画期的な革新がどこから生まれるのかを予測しようとする。",
+      "jp_html": "<ruby>人工知能<rt>じんこうちのう</rt></ruby>が<ruby>急速<rt>きゅうそく</rt></ruby>に<ruby>進化<rt>しんか</rt></ruby>し、<ruby>技術<rt>ぎじゅつ</rt></ruby>の<ruby>方向性<rt>ほうこうせい</rt></ruby>が<ruby>絶<rt>た</rt></ruby>えず<ruby>変化<rt>へんか</rt></ruby>する<ruby>中<rt>なか</rt></ruby>で、<ruby>人々<rt>ひとびと</rt></ruby>は<ruby>常<rt>つね</rt></ruby>に、<ruby>次<rt>つぎ</rt></ruby>の<ruby>画期<rt>かっき</rt></ruby>的な<ruby>革新<rt>かくしん</rt></ruby>がどこから<ruby>生<rt>う</rt></ruby>まれるのかを<ruby>予測<rt>よそく</rt></ruby>しようとする。",
+      "zh": "当人工智能快速演进、技术路线不断变化时，人们总想预测下一个颠覆性突破会出现在哪里。（略）真正的重要突破往往在发生之前难以预见，与其预测未来，不如培养能够应对未来的人才。",
+      "audio_file": "audio/p7_s1.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 2,
+      "sentence_id": "p7_s2",
+      "jp_plain": "（中略）真に重要な革新は、それが起こる前には予測することが難しい。",
+      "jp_html": "（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>真<rt>しん</rt></ruby>に<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>革新<rt>かくしん</rt></ruby>は、それが<ruby>起<rt>お</rt></ruby>こる<ruby>前<rt>まえ</rt></ruby>には<ruby>予測<rt>よそく</rt></ruby>することが<ruby>難<rt>むずか</rt></ruby>しい。",
+      "zh": "当人工智能快速演进、技术路线不断变化时，人们总想预测下一个颠覆性突破会出现在哪里。（略）真正的重要突破往往在发生之前难以预见，与其预测未来，不如培养能够应对未来的人才。",
+      "audio_file": "audio/p7_s2.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 3,
+      "sentence_id": "p7_s3",
+      "jp_plain": "未来を予測するよりも、未来に対応できる人材を育成するほうが重要である。",
+      "jp_html": "<ruby>未来<rt>みらい</rt></ruby>を<ruby>予測<rt>よそく</rt></ruby>するよりも、<ruby>未来<rt>みらい</rt></ruby>に<ruby>対応<rt>たいおう</rt></ruby>できる<ruby>人材<rt>じんざい</rt></ruby>を<ruby>育成<rt>いくせい</rt></ruby>するほうが<ruby>重要<rt>じゅうよう</rt></ruby>である。",
+      "zh": "当人工智能快速演进、技术路线不断变化时，人们总想预测下一个颠覆性突破会出现在哪里。（略）真正的重要突破往往在发生之前难以预见，与其预测未来，不如培养能够应对未来的人才。",
+      "audio_file": "audio/p7_s3.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 1,
+      "sentence_id": "p8_s1",
+      "jp_plain": "「大自然のエアコンの中に来たみたい！",
+      "jp_html": "「<ruby>大自然<rt>だいしぜん</rt></ruby>のエアコンの中に<ruby>来<rt>き</rt></ruby>たみたい！",
+      "zh": "“我来到了大自然的空调房！”最近，一位西班牙游客在云南旅游时发出这样的惊叹。来云南之前，他还经历着40摄氏度高温的炙烤，但当航班降落昆明，舱门打开，微风拂面，清爽舒适，顿时感觉这趟“寻凉之旅”来值了。",
+      "audio_file": "audio/p8_s1.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 2,
+      "sentence_id": "p8_s2",
+      "jp_plain": "」最近、雲南を旅行していたスペイン人観光客が、こんな驚きの声を上げた。",
+      "jp_html": "」<ruby>最近<rt>さいきん</rt></ruby>、<ruby>雲南<rt>うんなん</rt></ruby>を<ruby>旅行<rt>りょこう</rt></ruby>していたスペイン人<ruby>観光客<rt>かんこうきゃく</rt></ruby>が、こんな<ruby>驚<rt>おどろ</rt></ruby>きの<ruby>声<rt>こえ</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げた。",
+      "zh": "“我来到了大自然的空调房！”最近，一位西班牙游客在云南旅游时发出这样的惊叹。来云南之前，他还经历着40摄氏度高温的炙烤，但当航班降落昆明，舱门打开，微风拂面，清爽舒适，顿时感觉这趟“寻凉之旅”来值了。",
+      "audio_file": "audio/p8_s2.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 3,
+      "sentence_id": "p8_s3",
+      "jp_plain": "雲南を訪れる前、彼は40度の猛暑にさらされていた。",
+      "jp_html": "<ruby>雲南<rt>うんなん</rt></ruby>を<ruby>訪<rt>おとず</rt></ruby>れる<ruby>前<rt>まえ</rt></ruby>、<ruby>彼<rt>かれ</rt></ruby>は40<ruby>度<rt>ど</rt></ruby>の<ruby>猛暑<rt>もうしょ</rt></ruby>にさらされていた。",
+      "zh": "“我来到了大自然的空调房！”最近，一位西班牙游客在云南旅游时发出这样的惊叹。来云南之前，他还经历着40摄氏度高温的炙烤，但当航班降落昆明，舱门打开，微风拂面，清爽舒适，顿时感觉这趟“寻凉之旅”来值了。",
+      "audio_file": "audio/p8_s3.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 4,
+      "sentence_id": "p8_s4",
+      "jp_plain": "しかし、飛行機が昆明に着陸し、扉が開くと、そよ風が顔を撫で、涼しくて爽やかな空気に包まれた。",
+      "jp_html": "しかし、<ruby>飛行機<rt>ひこうき</rt></ruby>が<ruby>昆明<rt>こんめい</rt></ruby>に<ruby>着陸<rt>ちゃくりく</rt></ruby>し、<ruby>扉<rt>とびら</rt></ruby>が<ruby>開<rt>ひら</rt></ruby>くと、そよ<ruby>風<rt>かぜ</rt></ruby>が<ruby>顔<rt>かお</rt></ruby>を<ruby>撫<rt>な</rt></ruby>で、<ruby>涼<rt>すず</rt></ruby>しくて<ruby>爽<rt>さわ</rt></ruby>やかな<ruby>空気<rt>くうき</rt></ruby>に<ruby>包<rt>つつ</rt></ruby>まれた。",
+      "zh": "“我来到了大自然的空调房！”最近，一位西班牙游客在云南旅游时发出这样的惊叹。来云南之前，他还经历着40摄氏度高温的炙烤，但当航班降落昆明，舱门打开，微风拂面，清爽舒适，顿时感觉这趟“寻凉之旅”来值了。",
+      "audio_file": "audio/p8_s4.mp3"
+    },
+    {
+      "section": 8,
+      "sentence_index": 5,
+      "sentence_id": "p8_s5",
+      "jp_plain": "その瞬間、「涼を求める旅」に来た甲斐があったと感じたという。",
+      "jp_html": "その<ruby>瞬間<rt>しゅんかん</rt></ruby>、「<ruby>涼<rt>すず</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める<ruby>旅<rt>たび</rt></ruby>」に<ruby>来<rt>き</rt></ruby>た<ruby>甲斐<rt>かい</rt></ruby>があったと<ruby>感<rt>かん</rt></ruby>じたという。",
+      "zh": "“我来到了大自然的空调房！”最近，一位西班牙游客在云南旅游时发出这样的惊叹。来云南之前，他还经历着40摄氏度高温的炙烤，但当航班降落昆明，舱门打开，微风拂面，清爽舒适，顿时感觉这趟“寻凉之旅”来值了。",
+      "audio_file": "audio/p8_s5.mp3"
+    },
+    {
+      "section": 9,
+      "sentence_index": 1,
+      "sentence_id": "p9_s1",
+      "jp_plain": "現在、一部の欧米メディアは中国経済の成長をめぐって否定的な論調を煽り立てており、「中国脅威論」がさまざまな言い回しで繰り返し現れている。",
+      "jp_html": "<ruby>現在<rt>げんざい</rt></ruby>、<ruby>一部<rt>いちぶ</rt></ruby>の<ruby>欧米<rt>おうべい</rt></ruby>メディアは<ruby>中国経済<rt>ちゅうごくけいざい</rt></ruby>の<ruby>成長<rt>せいちょう</rt></ruby>をめぐって<ruby>否定<rt>ひてい</rt></ruby>的な<ruby>論調<rt>ろんちょう</rt></ruby>を<ruby>煽<rt>あお</rt></ruby>り<ruby>立<rt>た</rt></ruby>てており、「<ruby>中国脅威論<rt>ちゅうごくきょういろん</rt></ruby>」がさまざまな<ruby>言<rt>い</rt></ruby>い<ruby>回<rt>まわ</rt></ruby>しで<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>し<ruby>現<rt>あらわ</rt></ruby>れている。",
+      "zh": "当前，有部分西方媒体炒作中国经济增长的负面论调，“中国威胁论”以不同的说辞反复出现。这些说法反映的是相关国家对在公平市场竞争中“占不到便宜”的担忧，并不符合实际情况和世界经济发展需要。",
+      "audio_file": "audio/p9_s1.mp3"
+    },
+    {
+      "section": 9,
+      "sentence_index": 2,
+      "sentence_id": "p9_s2",
+      "jp_plain": "こうした主張は、公平な市場競争の中で「優位に立てなくなる」ことへの関係国の懸念を反映したものであり、実際の状況や世界経済の発展の要請にはそぐわない。",
+      "jp_html": "こうした<ruby>主張<rt>しゅちょう</rt></ruby>は、<ruby>公平<rt>こうへい</rt></ruby>な<ruby>市場競争<rt>しじょうきょうそう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で「<ruby>優位<rt>ゆうい</rt></ruby>に<ruby>立<rt>た</rt></ruby>てなくなる」ことへの<ruby>関係国<rt>かんけいこく</rt></ruby>の<ruby>懸念<rt>けねん</rt></ruby>を<ruby>反映<rt>はんえい</rt></ruby>したものであり、<ruby>実際<rt>じっさい</rt></ruby>の<ruby>状況<rt>じょうきょう</rt></ruby>や<ruby>世界経済<rt>せかいけいざい</rt></ruby>の<ruby>発展<rt>はってん</rt></ruby>の<ruby>要請<rt>ようせい</rt></ruby>にはそぐわない。",
+      "zh": "当前，有部分西方媒体炒作中国经济增长的负面论调，“中国威胁论”以不同的说辞反复出现。这些说法反映的是相关国家对在公平市场竞争中“占不到便宜”的担忧，并不符合实际情况和世界经济发展需要。",
+      "audio_file": "audio/p9_s2.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 1,
+      "sentence_id": "p10_s1",
+      "jp_plain": "今の若者は、とかく悲観的になりがちである。",
+      "jp_html": "<ruby>今<rt>いま</rt></ruby>の<ruby>若者<rt>わかもの</rt></ruby>は、とかく<ruby>悲観的<rt>ひかんてき</rt></ruby>になりがちである。",
+      "zh": "今之少年往往作悲观，其取别号则日“寒灰”、“无生”、“死灰”；其作为诗文，则对落日而思暮年，对秋风而思零落，春来则惟恐其速去，花发又惟惧其早谢。此亡国之哀音也，老年人为之犹不可，况少年乎？",
+      "audio_file": "audio/p10_s1.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 2,
+      "sentence_id": "p10_s2",
+      "jp_plain": "別号をつけるにしても、「寒灰」「無生」「死灰」などと名乗る。",
+      "jp_html": "<ruby>別号<rt>べつごう</rt></ruby>をつけるにしても、「<ruby>寒灰<rt>かんかい</rt></ruby>」「<ruby>無生<rt>むしょう</rt></ruby>」「<ruby>死灰<rt>しかい</rt></ruby>」などと<ruby>名乗<rt>なの</rt></ruby>る。",
+      "zh": "今之少年往往作悲观，其取别号则日“寒灰”、“无生”、“死灰”；其作为诗文，则对落日而思暮年，对秋风而思零落，春来则惟恐其速去，花发又惟惧其早谢。此亡国之哀音也，老年人为之犹不可，况少年乎？",
+      "audio_file": "audio/p10_s2.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 3,
+      "sentence_id": "p10_s3",
+      "jp_plain": "詩や文章を書くと、落日を見ては晩年を思い、秋風に吹かれては散りゆく運命を思う。",
+      "jp_html": "<ruby>詩<rt>し</rt></ruby>や<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>くと、<ruby>落日<rt>らくじつ</rt></ruby>を<ruby>見<rt>み</rt></ruby>ては<ruby>晩年<rt>ばんねん</rt></ruby>を<ruby>思<rt>おも</rt></ruby>い、<ruby>秋風<rt>あきかぜ</rt></ruby>に<ruby>吹<rt>ふ</rt></ruby>かれては<ruby>散<rt>ち</rt></ruby>りゆく<ruby>運命<rt>うんめい</rt></ruby>を<ruby>思<rt>おも</rt></ruby>う。",
+      "zh": "今之少年往往作悲观，其取别号则日“寒灰”、“无生”、“死灰”；其作为诗文，则对落日而思暮年，对秋风而思零落，春来则惟恐其速去，花发又惟惧其早谢。此亡国之哀音也，老年人为之犹不可，况少年乎？",
+      "audio_file": "audio/p10_s3.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 4,
+      "sentence_id": "p10_s4",
+      "jp_plain": "春が来れば、それが早く過ぎ去ってしまうことを恐れ、花が咲けば、また早く散ってしまうことを憂える。",
+      "jp_html": "<ruby>春<rt>はる</rt></ruby>が<ruby>来<rt>く</rt></ruby>れば、それが<ruby>早<rt>はや</rt></ruby>く<ruby>過<rt>す</rt></ruby>ぎ<ruby>去<rt>さ</rt></ruby>ってしまうことを<ruby>恐<rt>おそ</rt></ruby>れ、<ruby>花<rt>はな</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>けば、また<ruby>早<rt>はや</rt></ruby>く<ruby>散<rt>ち</rt></ruby>ってしまうことを<ruby>憂<rt>うれ</rt></ruby>える。",
+      "zh": "今之少年往往作悲观，其取别号则日“寒灰”、“无生”、“死灰”；其作为诗文，则对落日而思暮年，对秋风而思零落，春来则惟恐其速去，花发又惟惧其早谢。此亡国之哀音也，老年人为之犹不可，况少年乎？",
+      "audio_file": "audio/p10_s4.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 5,
+      "sentence_id": "p10_s5",
+      "jp_plain": "これはまさに亡国の悲哀の声である。",
+      "jp_html": "これはまさに<ruby>亡国<rt>ぼうこく</rt></ruby>の<ruby>悲哀<rt>ひあい</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>である。",
+      "zh": "今之少年往往作悲观，其取别号则日“寒灰”、“无生”、“死灰”；其作为诗文，则对落日而思暮年，对秋风而思零落，春来则惟恐其速去，花发又惟惧其早谢。此亡国之哀音也，老年人为之犹不可，况少年乎？",
+      "audio_file": "audio/p10_s5.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 6,
+      "sentence_id": "p10_s6",
+      "jp_plain": "たとえ老人がこのようであっても好ましいことではない。",
+      "jp_html": "たとえ<ruby>老人<rt>ろうじん</rt></ruby>がこのようであっても<ruby>好<rt>この</rt></ruby>ましいことではない。",
+      "zh": "今之少年往往作悲观，其取别号则日“寒灰”、“无生”、“死灰”；其作为诗文，则对落日而思暮年，对秋风而思零落，春来则惟恐其速去，花发又惟惧其早谢。此亡国之哀音也，老年人为之犹不可，况少年乎？",
+      "audio_file": "audio/p10_s6.mp3"
+    },
+    {
+      "section": 10,
+      "sentence_index": 7,
+      "sentence_id": "p10_s7",
+      "jp_plain": "ましてや若者においてはなおさらである。",
+      "jp_html": "ましてや<ruby>若者<rt>わかもの</rt></ruby>においてはなおさらである。",
+      "zh": "今之少年往往作悲观，其取别号则日“寒灰”、“无生”、“死灰”；其作为诗文，则对落日而思暮年，对秋风而思零落，春来则惟恐其速去，花发又惟惧其早谢。此亡国之哀音也，老年人为之犹不可，况少年乎？",
+      "audio_file": "audio/p10_s7.mp3"
+    }
+  ]
+}

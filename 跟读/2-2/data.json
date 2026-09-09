@@ -1,0 +1,150 @@
+{
+  "title": "2-2 世界杯2",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "あと数時間で、2026年サッカー・ワールドカップ北中米大会が開幕する。",
+      "jp_html": "あと<ruby>数時間<rt>すうじかん</rt></ruby>で、2026<ruby>年<rt>ねん</rt></ruby>サッカー・ワールドカップ<ruby>北中米大会<rt>ほくちゅうべいたいかい</rt></ruby>が<ruby>開幕<rt>かいまく</rt></ruby>する。",
+      "zh": "\n            再过几个小时，2026美加墨世界杯足球赛就将拉开帷幕。\n          ",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "今大会は、史上最大規模のワールドカップである。",
+      "jp_html": "<ruby>今大会<rt>こんたいかい</rt></ruby>は、<ruby>史上最大規模<rt>しじょうさいだいきぼ</rt></ruby>のワールドカップである。",
+      "zh": "\n            这是史上规模最大的一届世界杯足球赛事：第一次有48支队伍参赛，球员总数第一次达到1248人，第一次进行104场比赛，第一次出现十六分之一淘汰赛……凡此种种，让这场全世界最高规格的足球盛宴变得具象化，也让球迷的期许变得分外炽热。\n          ",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "出場チームは初めて48に拡大し、登録選手数も初めて1248人に達した。",
+      "jp_html": "<ruby>出場<rt>しゅつじょう</rt></ruby>チームは<ruby>初<rt>はじ</rt></ruby>めて48に<ruby>拡大<rt>かくだい</rt></ruby>し、<ruby>登録選手数<rt>とうろくせんしゅすう</rt></ruby>も<ruby>初<rt>はじ</rt></ruby>めて1248<ruby>人<rt>にん</rt></ruby>に<ruby>達<rt>たっ</rt></ruby>した。",
+      "zh": "\n            这是史上规模最大的一届世界杯足球赛事：第一次有48支队伍参赛，球员总数第一次达到1248人，第一次进行104场比赛，第一次出现十六分之一淘汰赛……凡此种种，让这场全世界最高规格的足球盛宴变得具象化，也让球迷的期许变得分外炽热。\n          ",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 3,
+      "sentence_id": "p2_s3",
+      "jp_plain": "試合数は初の104試合となり、新たに決勝トーナメント1回戦も設けられた。",
+      "jp_html": "<ruby>試合数<rt>しあいすう</rt></ruby>は<ruby>初<rt>はじ</rt></ruby>の104<ruby>試合<rt>しあい</rt></ruby>となり、<ruby>新<rt>あら</rt></ruby>たに<ruby>決勝<rt>けっしょう</rt></ruby>トーナメント1<ruby>回戦<rt>かいせん</rt></ruby>も<ruby>設<rt>もう</rt></ruby>けられた。",
+      "zh": "\n            这是史上规模最大的一届世界杯足球赛事：第一次有48支队伍参赛，球员总数第一次达到1248人，第一次进行104场比赛，第一次出现十六分之一淘汰赛……凡此种种，让这场全世界最高规格的足球盛宴变得具象化，也让球迷的期许变得分外炽热。\n          ",
+      "audio_file": "audio/p2_s3.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 4,
+      "sentence_id": "p2_s4",
+      "jp_plain": "こうした数々の「史上初」が、世界最高峰のサッカーの祭典をより鮮明なものとし、世界中のサッカーファンの期待を一段と高めている。",
+      "jp_html": "こうした<ruby>数々<rt>かずかず</rt></ruby>の「<ruby>史上初<rt>しじょうはつ</rt></ruby>」が、<ruby>世界最高峰<rt>せかいさいこうほう</rt></ruby>のサッカーの<ruby>祭典<rt>さいてん</rt></ruby>をより<ruby>鮮明<rt>せんめい</rt></ruby>なものとし、<ruby>世界中<rt>せかいじゅう</rt></ruby>のサッカーファンの<ruby>期待<rt>きたい</rt></ruby>を<ruby>一段<rt>いちだん</rt></ruby>と<ruby>高<rt>たか</rt></ruby>めている。",
+      "zh": "\n            这是史上规模最大的一届世界杯足球赛事：第一次有48支队伍参赛，球员总数第一次达到1248人，第一次进行104场比赛，第一次出现十六分之一淘汰赛……凡此种种，让这场全世界最高规格的足球盛宴变得具象化，也让球迷的期许变得分外炽热。\n          ",
+      "audio_file": "audio/p2_s4.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "だが、変わっているのは数字だけではない。",
+      "jp_html": "だが、<ruby>変<rt>か</rt></ruby>わっているのは<ruby>数字<rt>すうじ</rt></ruby>だけではない。",
+      "zh": "\n            数字的变化只是表面，世界杯变得越来越有“容量”和“格局”，更是令人惊叹的事实。正如国际足联所言，美加墨世界杯参赛球员来自71个国家和地区的449家俱乐部，参赛阵容体现了现代足球的全球化布局。事实上，早在各大洲火热进行的预选赛阶段，人们就对世界杯的“全球化布局”有了直观感受。\n          ",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "ワールドカップがより大きな「包容力」と「スケール」を備えた大会へと発展していることこそ、注目すべき事実である。",
+      "jp_html": "ワールドカップがより<ruby>大<rt>おお</rt></ruby>きな「<ruby>包容力<rt>ほうようりょく</rt></ruby>」と「スケール」を<ruby>備<rt>そな</rt></ruby>えた<ruby>大会<rt>たいかい</rt></ruby>へと<ruby>発展<rt>はってん</rt></ruby>していることこそ、<ruby>注目<rt>ちゅうもく</rt></ruby>すべき<ruby>事実<rt>じじつ</rt></ruby>である。",
+      "zh": "\n            数字的变化只是表面，世界杯变得越来越有“容量”和“格局”，更是令人惊叹的事实。正如国际足联所言，美加墨世界杯参赛球员来自71个国家和地区的449家俱乐部，参赛阵容体现了现代足球的全球化布局。事实上，早在各大洲火热进行的预选赛阶段，人们就对世界杯的“全球化布局”有了直观感受。\n          ",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "国際サッカー連盟（FIFA）によれば、今大会に出場する選手は、71カ国・地域の449クラブに所属しており、その顔触れは、現代サッカーの国際性を如実に示している。",
+      "jp_html": "<ruby>国際<rt>こくさい</rt></ruby>サッカー<ruby>連盟<rt>れんめい</rt></ruby>（FIFA）によれば、<ruby>今大会<rt>こんたいかい</rt></ruby>に<ruby>出場<rt>しゅつじょう</rt></ruby>する<ruby>選手<rt>せんしゅ</rt></ruby>は、71カ<ruby>国<rt>こく</rt></ruby>・<ruby>地域<rt>ちいき</rt></ruby>の449クラブに<ruby>所属<rt>しょぞく</rt></ruby>しており、その<ruby>顔触<rt>かおぶ</rt></ruby>れは、<ruby>現代<rt>げんだい</rt></ruby>サッカーの<ruby>国際性<rt>こくさいせい</rt></ruby>を<ruby>如実<rt>じょじつ</rt></ruby>に<ruby>示<rt>しめ</rt></ruby>している。",
+      "zh": "\n            数字的变化只是表面，世界杯变得越来越有“容量”和“格局”，更是令人惊叹的事实。正如国际足联所言，美加墨世界杯参赛球员来自71个国家和地区的449家俱乐部，参赛阵容体现了现代足球的全球化布局。事实上，早在各大洲火热进行的预选赛阶段，人们就对世界杯的“全球化布局”有了直观感受。\n          ",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 4,
+      "sentence_id": "p3_s4",
+      "jp_plain": "実際、各大陸で熱戦が繰り広げられた予選の段階から、私たちはすでにワールドカップの国際性を目の当たりにしてきた。",
+      "jp_html": "<ruby>実際<rt>じっさい</rt></ruby>、<ruby>各大陸<rt>かくたいりく</rt></ruby>で<ruby>熱戦<rt>ねっせん</rt></ruby>が<ruby>繰<rt>く</rt></ruby>り<ruby>広<rt>ひろ</rt></ruby>げられた<ruby>予選<rt>よせん</rt></ruby>の<ruby>段階<rt>だんかい</rt></ruby>から、私たちはすでにワールドカップの<ruby>国際性<rt>こくさいせい</rt></ruby>を<ruby>目<rt>め</rt></ruby>の<ruby>当<rt>あ</rt></ruby>たりにしてきた。",
+      "zh": "\n            数字的变化只是表面，世界杯变得越来越有“容量”和“格局”，更是令人惊叹的事实。正如国际足联所言，美加墨世界杯参赛球员来自71个国家和地区的449家俱乐部，参赛阵容体现了现代足球的全球化布局。事实上，早在各大洲火热进行的预选赛阶段，人们就对世界杯的“全球化布局”有了直观感受。\n          ",
+      "audio_file": "audio/p3_s4.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "サッカーの実力や経済力、肌の色や言語の違いを問わず、世界中の代表チームが、たった一枚の本大会への出場切符をつかむために全力を尽くし、雄叫びを上げ、涙を流してきた。",
+      "jp_html": "サッカーの<ruby>実力<rt>じつりょく</rt></ruby>や<ruby>経済力<rt>けいざいりょく</rt></ruby>、<ruby>肌<rt>はだ</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>や<ruby>言語<rt>げんご</rt></ruby>の<ruby>違<rt>ちが</rt></ruby>いを<ruby>問<rt>と</rt></ruby>わず、<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>代表<rt>だいひょう</rt></ruby>チームが、たった<ruby>一枚<rt>いちまい</rt></ruby>の<ruby>本大会<rt>ほんたいかい</rt></ruby>への<ruby>出場切符<rt>しゅつじょうきっぷ</rt></ruby>をつかむために<ruby>全力<rt>ぜんりょく</rt></ruby>を<ruby>尽<rt>つ</rt></ruby>くし、<ruby>雄叫<rt>おたけ</rt></ruby>びを<ruby>上<rt>あ</rt></ruby>げ、<ruby>涙<rt>なみだ</rt></ruby>を<ruby>流<rt>なが</rt></ruby>してきた。",
+      "zh": "\n            无论足球实力如何，无论经济实力如何，无论肤色和语言如何，全世界的国家队，都曾为获得一张世界杯参赛券倾尽全力，发出嘶吼，落下热泪。哪怕在一些并无可能打入世界杯的国家，普通民众如饥似渴地观看世界杯比赛的画面也足够常见，这恰是“足球无国界”的生动诠释。\n          ",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "また、出場の可能性がほとんどない国でさえ、人々が夢中になってワールドカップを観戦する光景は珍しくない。",
+      "jp_html": "また、<ruby>出場<rt>しゅつじょう</rt></ruby>の<ruby>可能性<rt>かのうせい</rt></ruby>がほとんどない<ruby>国<rt>くに</rt></ruby>でさえ、<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>夢中<rt>むちゅう</rt></ruby>になってワールドカップを<ruby>観戦<rt>かんせん</rt></ruby>する<ruby>光景<rt>こうけい</rt></ruby>は<ruby>珍<rt>めずら</rt></ruby>しくない。",
+      "zh": "\n            无论足球实力如何，无论经济实力如何，无论肤色和语言如何，全世界的国家队，都曾为获得一张世界杯参赛券倾尽全力，发出嘶吼，落下热泪。哪怕在一些并无可能打入世界杯的国家，普通民众如饥似渴地观看世界杯比赛的画面也足够常见，这恰是“足球无国界”的生动诠释。\n          ",
+      "audio_file": "audio/p4_s2.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 3,
+      "sentence_id": "p4_s3",
+      "jp_plain": "まさに「サッカーに国境はない」ということの生きた証しである。",
+      "jp_html": "まさに「サッカーに<ruby>国境<rt>こっきょう</rt></ruby>はない」ということの<ruby>生<rt>い</rt></ruby>きた<ruby>証<rt>あか</rt></ruby>しである。",
+      "zh": "\n            无论足球实力如何，无论经济实力如何，无论肤色和语言如何，全世界的国家队，都曾为获得一张世界杯参赛券倾尽全力，发出嘶吼，落下热泪。哪怕在一些并无可能打入世界杯的国家，普通民众如饥似渴地观看世界杯比赛的画面也足够常见，这恰是“足球无国界”的生动诠释。\n          ",
+      "audio_file": "audio/p4_s3.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 1,
+      "sentence_id": "p5_s1",
+      "jp_plain": "ワールドカップの意義は、一流の選手たちが世界中の視線を浴びながら、その力を競い合うことだけにあるのではない。",
+      "jp_html": "ワールドカップの<ruby>意義<rt>いぎ</rt></ruby>は、<ruby>一流<rt>いちりゅう</rt></ruby>の<ruby>選手<rt>せんしゅ</rt></ruby>たちが<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>視線<rt>しせん</rt></ruby>を<ruby>浴<rt>あ</rt></ruby>びながら、その<ruby>力<rt>ちから</rt></ruby>を<ruby>競<rt>きそ</rt></ruby>い<ruby>合<rt>あ</rt></ruby>うことだけにあるのではない。",
+      "zh": "\n            世界杯的意义，从来不只是一群优秀运动员在万众瞩目下“秀肌肉”，更在于以平等和包容的理念，唤起全世界民众追逐梦想、释放激情，进而实现“在场”的诉求——这才是足球运动让人疯狂的内因：所有人都可以从四年一度的狂欢中“分得一杯羹”。\n          ",
+      "audio_file": "audio/p5_s1.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 2,
+      "sentence_id": "p5_s2",
+      "jp_plain": "平等と包摂の理念の下、世界の人々に夢を追い、情熱を解き放つ契機を与え、自らもこの祭典に「参加している」と感じられる場を生み出すことにこそ、その本質がある。",
+      "jp_html": "<ruby>平等<rt>びょうどう</rt></ruby>と<ruby>包摂<rt>ほうせつ</rt></ruby>の<ruby>理念<rt>りねん</rt></ruby>の<ruby>下<rt>もと</rt></ruby>、<ruby>世界<rt>せかい</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>に<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>追<rt>お</rt></ruby>い、<ruby>情熱<rt>じょうねつ</rt></ruby>を<ruby>解<rt>と</rt></ruby>き<ruby>放<rt>はな</rt></ruby>つ<ruby>契機<rt>けいき</rt></ruby>を<ruby>与<rt>あた</rt></ruby>え、<ruby>自<rt>みずか</rt></ruby>らもこの<ruby>祭典<rt>さいてん</rt></ruby>に「<ruby>参加<rt>さんか</rt></ruby>している」と<ruby>感<rt>かん</rt></ruby>じられる<ruby>場<rt>ば</rt></ruby>を<ruby>生<rt>う</rt></ruby>み<ruby>出<rt>だ</rt></ruby>すことにこそ、その<ruby>本質<rt>ほんしつ</rt></ruby>がある。",
+      "zh": "\n            世界杯的意义，从来不只是一群优秀运动员在万众瞩目下“秀肌肉”，更在于以平等和包容的理念，唤起全世界民众追逐梦想、释放激情，进而实现“在场”的诉求——这才是足球运动让人疯狂的内因：所有人都可以从四年一度的狂欢中“分得一杯羹”。\n          ",
+      "audio_file": "audio/p5_s2.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 3,
+      "sentence_id": "p5_s3",
+      "jp_plain": "誰もが四年に一度の祭典に熱狂し、喜びを分かち合える。",
+      "jp_html": "<ruby>誰<rt>だれ</rt></ruby>もが<ruby>四年<rt>よねん</rt></ruby>に<ruby>一度<rt>いちど</rt></ruby>の<ruby>祭典<rt>さいてん</rt></ruby>に<ruby>熱狂<rt>ねっきょう</rt></ruby>し、<ruby>喜<rt>よろこ</rt></ruby>びを<ruby>分<rt>わ</rt></ruby>かち<ruby>合<rt>あ</rt></ruby>える。",
+      "zh": "\n            世界杯的意义，从来不只是一群优秀运动员在万众瞩目下“秀肌肉”，更在于以平等和包容的理念，唤起全世界民众追逐梦想、释放激情，进而实现“在场”的诉求——这才是足球运动让人疯狂的内因：所有人都可以从四年一度的狂欢中“分得一杯羹”。\n          ",
+      "audio_file": "audio/p5_s3.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 4,
+      "sentence_id": "p5_s4",
+      "jp_plain": "それこそが、サッカーが世界中の人々を魅了してやまない根源的な理由なのである。",
+      "jp_html": "それこそが、サッカーが<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>を<ruby>魅了<rt>みりょう</rt></ruby>してやまない<ruby>根源的<rt>こんげんてき</rt></ruby>な<ruby>理由<rt>りゆう</rt></ruby>なのである。",
+      "zh": "\n            世界杯的意义，从来不只是一群优秀运动员在万众瞩目下“秀肌肉”，更在于以平等和包容的理念，唤起全世界民众追逐梦想、释放激情，进而实现“在场”的诉求——这才是足球运动让人疯狂的内因：所有人都可以从四年一度的狂欢中“分得一杯羹”。\n          ",
+      "audio_file": "audio/p5_s4.mp3"
+    }
+  ]
+}

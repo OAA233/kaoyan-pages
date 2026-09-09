@@ -1,0 +1,141 @@
+{
+  "title": "5-1 食品消费税",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "少子高齢化と人口減が進む日本で、社会保障を支える財源である消費税を初めて減税する政治判断は妥当か。",
+      "jp_html": "<ruby>少子高齢化<rt>しょうしこうれいか</rt></ruby>と<ruby>人口減<rt>じんこうげん</rt></ruby>が<ruby>進<rt>すす</rt></ruby>む<ruby>日本<rt>にほん</rt></ruby>で、<ruby>社会保障<rt>しゃかいほしょう</rt></ruby>を<ruby>支<rt>ささ</rt></ruby>える<ruby>財源<rt>ざいげん</rt></ruby>である<ruby>消費税<rt>しょうひぜい</rt></ruby>を<ruby>初<rt>はじ</rt></ruby>めて<ruby>減税<rt>げんぜい</rt></ruby>する<ruby>政治判断<rt>せいじはんだん</rt></ruby>は<ruby>妥当<rt>だとう</rt></ruby>か。",
+      "zh": "在少子老龄化和人口减少不断加剧的日本，消费税是支撑社会保障的重要财源。在此背景下，政府或将首次下调消费税，这一政治判断是否妥当？自民党同意了这一重大政策转向，却搁置了对国民生活和经济影响等诸多本应慎重考虑的问题。",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "極めて重要な政策の方向転換を了承した自民党は、国民生活や経済への影響をはじめ、慎重に考えるべき幾多の課題を置き去りにした。",
+      "jp_html": "<ruby>極<rt>きわ</rt></ruby>めて<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>政策<rt>せいさく</rt></ruby>の<ruby>方向転換<rt>ほうこうてんかん</rt></ruby>を<ruby>了承<rt>りょうしょう</rt></ruby>した<ruby>自民党<rt>じみんとう</rt></ruby>は、<ruby>国民生活<rt>こくみんせいかつ</rt></ruby>や<ruby>経済<rt>けいざい</rt></ruby>への<ruby>影響<rt>えいきょう</rt></ruby>をはじめ、<ruby>慎重<rt>しんちょう</rt></ruby>に<ruby>考<rt>かんが</rt></ruby>えるべき<ruby>幾多<rt>いくた</rt></ruby>の<ruby>課題<rt>かだい</rt></ruby>を<ruby>置<rt>お</rt></ruby>き<ruby>去<rt>さ</rt></ruby>りにした。",
+      "zh": "在少子老龄化和人口减少不断加剧的日本，消费税是支撑社会保障的重要财源。在此背景下，政府或将首次下调消费税，这一政治判断是否妥当？自民党同意了这一重大政策转向，却搁置了对国民生活和经济影响等诸多本应慎重考虑的问题。",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "財源確保の道筋も将来世代への責任も示さず、目先の人気取りを優先し、減税へ突き進む。",
+      "jp_html": "<ruby>財源確保<rt>ざいげんかくほ</rt></ruby>の<ruby>道筋<rt>みちすじ</rt></ruby>も<ruby>将来世代<rt>しょうらいせだい</rt></ruby>への<ruby>責任<rt>せきにん</rt></ruby>も<ruby>示<rt>しめ</rt></ruby>さず、<ruby>目先<rt>めさき</rt></ruby>の<ruby>人気取<rt>にんきと</rt></ruby>りを<ruby>優先<rt>ゆうせん</rt></ruby>し、<ruby>減税<rt>げんぜい</rt></ruby>へ<ruby>突<rt>つ</rt></ruby>き<ruby>進<rt>すす</rt></ruby>む。",
+      "zh": "既不说明如何确保财源，也不体现对下一代的责任，只顾拉拢眼前的选票，一味推进减税。这样的政党，已不能称为负责任的执政党。",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "もはや責任政党と呼ぶことはできない。",
+      "jp_html": "もはや<ruby>責任政党<rt>せきにんせいとう</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>ぶことはできない。",
+      "zh": "既不说明如何确保财源，也不体现对下一代的责任，只顾拉拢眼前的选票，一味推进减税。这样的政党，已不能称为负责任的执政党。",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "党は全議員が参加できる会合で、高市早苗首相が表明した食料品の消費税率を2年間、1％に引き下げる方針を了承した。",
+      "jp_html": "<ruby>党<rt>とう</rt></ruby>は<ruby>全議員<rt>ぜんぎいん</rt></ruby>が<ruby>参加<rt>さんか</rt></ruby>できる<ruby>会合<rt>かいごう</rt></ruby>で、<ruby>高市早苗首相<rt>たかいちさなえしゅしょう</rt></ruby>が<ruby>表明<rt>ひょうめい</rt></ruby>した<ruby>食料品<rt>しょくりょうひん</rt></ruby>の<ruby>消費税率<rt>しょうひぜいりつ</rt></ruby>を2<ruby>年間<rt>ねんかん</rt></ruby>、1％に<ruby>引<rt>ひ</rt></ruby>き<ruby>下<rt>さ</rt></ruby>げる<ruby>方針<rt>ほうしん</rt></ruby>を<ruby>了承<rt>りょうしょう</rt></ruby>した。",
+      "zh": "在议员大会上，自民党同意了高市早苗首相提出的方针，即将食品消费税税率临时下调至1%，期限为两年。本月4日，首相表示将于9月汇总税制改革大纲，并计划在秋季临时国会上提交相关法案。",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "首相は4日、税制改正大綱を9月にまとめ、必要な法案を秋の臨時国会に提出する意向を示した。",
+      "jp_html": "<ruby>首相<rt>しゅしょう</rt></ruby>は4<ruby>日<rt>にち</rt></ruby>、<ruby>税制改正大綱<rt>ぜいせいかいせいたいこう</rt></ruby>を9<ruby>月<rt>がつ</rt></ruby>にまとめ、<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>法案<rt>ほうあん</rt></ruby>を<ruby>秋<rt>あき</rt></ruby>の<ruby>臨時国会<rt>りんじこっかい</rt></ruby>に<ruby>提出<rt>ていしゅつ</rt></ruby>する<ruby>意向<rt>いこう</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>した。",
+      "zh": "在议员大会上，自民党同意了高市早苗首相提出的方针，即将食品消费税税率临时下调至1%，期限为两年。本月4日，首相表示将于9月汇总税制改革大纲，并计划在秋季临时国会上提交相关法案。",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "半年前、首相は衆院解散を表明した会見で減税を「私自身の悲願」と表現し、党公約に「実現に向けた検討の加速」を明記。",
+      "jp_html": "<ruby>半年<rt>はんとし</rt></ruby>前、<ruby>首相<rt>しゅしょう</rt></ruby>は<ruby>衆院解散<rt>しゅういんかいさん</rt></ruby>を<ruby>表明<rt>ひょうめい</rt></ruby>した<ruby>会見<rt>かいけん</rt></ruby>で<ruby>減税<rt>げんぜい</rt></ruby>を「<ruby>私自身<rt>わたしじしん</rt></ruby>の<ruby>悲願<rt>ひがん</rt></ruby>」と<ruby>表現<rt>ひょうげん</rt></ruby>し、<ruby>党公約<rt>とうこうやく</rt></ruby>に「<ruby>実現<rt>じつげん</rt></ruby>に<ruby>向<rt>む</rt></ruby>けた<ruby>検討<rt>けんとう</rt></ruby>の<ruby>加速<rt>かそく</rt></ruby>」を<ruby>明記<rt>めいき</rt></ruby>。",
+      "zh": "半年前，首相在宣布解散众议院的记者会上，将减税称为“我个人的夙愿”，并在党的竞选纲领中写明“加快研究，推动实现”。尽管她在街头演说中完全未提及这一承诺，自民党仍取得压倒性胜利。而关于提出减税的理由，她则表示是这段时间“国民非常期待”。",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "街頭演説ではこの公約に一切触れなかったものの、圧勝した。",
+      "jp_html": "<ruby>街頭演説<rt>がいとうえんぜつ</rt></ruby>ではこの<ruby>公約<rt>こうやく</rt></ruby>に<ruby>一切<rt>いっさい</rt></ruby><ruby>触<rt>ふ</rt></ruby>れなかったものの、<ruby>圧勝<rt>あっしょう</rt></ruby>した。",
+      "zh": "半年前，首相在宣布解散众议院的记者会上，将减税称为“我个人的夙愿”，并在党的竞选纲领中写明“加快研究，推动实现”。尽管她在街头演说中完全未提及这一承诺，自民党仍取得压倒性胜利。而关于提出减税的理由，她则表示是这段时间“国民非常期待”。",
+      "audio_file": "audio/p4_s2.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 3,
+      "sentence_id": "p4_s3",
+      "jp_plain": "首相は表明の理由に、この間の「国民の期待が高い」ことを挙げた。",
+      "jp_html": "<ruby>首相<rt>しゅしょう</rt></ruby>は<ruby>表明<rt>ひょうめい</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>に、この<ruby>間<rt>あいだ</rt></ruby>の「<ruby>国民<rt>こくみん</rt></ruby>の<ruby>期待<rt>きたい</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い」ことを<ruby>挙<rt>あ</rt></ruby>げた。",
+      "zh": "半年前，首相在宣布解散众议院的记者会上，将减税称为“我个人的夙愿”，并在党的竞选纲领中写明“加快研究，推动实现”。尽管她在街头演说中完全未提及这一承诺，自民党仍取得压倒性胜利。而关于提出减税的理由，她则表示是这段时间“国民非常期待”。",
+      "audio_file": "audio/p4_s3.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 1,
+      "sentence_id": "p5_s1",
+      "jp_plain": "党の会合は前回会合の反対意見を押し戻し、発言者のうち65人が賛成、9人が反対、中立的な意見が1人だったという。",
+      "jp_html": "<ruby>党<rt>とう</rt></ruby>の<ruby>会合<rt>かいごう</rt></ruby>は<ruby>前回<rt>ぜんかい</rt></ruby><ruby>会合<rt>かいごう</rt></ruby>の<ruby>反対意見<rt>はんたいいけん</rt></ruby>を<ruby>押<rt>お</rt></ruby>し<ruby>戻<rt>もど</rt></ruby>し、<ruby>発言者<rt>はつげんしゃ</rt></ruby>のうち65<ruby>人<rt>にん</rt></ruby>が<ruby>賛成<rt>さんせい</rt></ruby>、9<ruby>人<rt>にん</rt></ruby>が<ruby>反対<rt>はんたい</rt></ruby>、<ruby>中立的<rt>ちゅうりつてき</rt></ruby>な<ruby>意見<rt>いけん</rt></ruby>が1<ruby>人<rt>にん</rt></ruby>だったという。",
+      "zh": "在自民党此次会议上，上一轮会议中出现的反对意见被压了下去。据称，发言者中65人赞成、9人反对、1人持中立意见。赞成理由多为“因为这是竞选承诺”，并接连有人表示“对新议员来说，竞选承诺就是生命”“应当服从首相的决定”。",
+      "audio_file": "audio/p5_s1.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 2,
+      "sentence_id": "p5_s2",
+      "jp_plain": "賛成の理由は「公約だから」が目立ち、「新人議員にとって公約は命」「首相が決めたことに従うべきだ」との意見が相次いだ。",
+      "jp_html": "<ruby>賛成<rt>さんせい</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>は「<ruby>公約<rt>こうやく</rt></ruby>だから」が<ruby>目立<rt>めだ</rt></ruby>ち、「<ruby>新人議員<rt>しんじんぎいん</rt></ruby>にとって<ruby>公約<rt>こうやく</rt></ruby>は<ruby>命<rt>いのち</rt></ruby>」「<ruby>首相<rt>しゅしょう</rt></ruby>が<ruby>決<rt>き</rt></ruby>めたことに<ruby>従<rt>したが</rt></ruby>うべきだ」との<ruby>意見<rt>いけん</rt></ruby>が<ruby>相次<rt>あいつ</rt></ruby>いだ。",
+      "zh": "在自民党此次会议上，上一轮会议中出现的反对意见被压了下去。据称，发言者中65人赞成、9人反对、1人持中立意见。赞成理由多为“因为这是竞选承诺”，并接连有人表示“对新议员来说，竞选承诺就是生命”“应当服从首相的决定”。",
+      "audio_file": "audio/p5_s2.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 1,
+      "sentence_id": "p6_s1",
+      "jp_plain": "公約は、政治への信頼と密接に関わる。",
+      "jp_html": "<ruby>公約<rt>こうやく</rt></ruby>は、<ruby>政治<rt>せいじ</rt></ruby>への<ruby>信頼<rt>しんらい</rt></ruby>と<ruby>密接<rt>みっせつ</rt></ruby>に<ruby>関<rt>かか</rt></ruby>わる。",
+      "zh": "竞选承诺与政治信任密切相关。然而，如果在讨论过程中发现问题，就应正面面向国民说明，必要时也应不惜修改或撤回。这才是民选议员的职责。",
+      "audio_file": "audio/p6_s1.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 2,
+      "sentence_id": "p6_s2",
+      "jp_plain": "だが、検討の過程で課題が明らかになれば正面から説明し、修正や撤回もいとわないことが国民から選ばれた議員の責務だ。",
+      "jp_html": "だが、<ruby>検討<rt>けんとう</rt></ruby>の<ruby>過程<rt>かてい</rt></ruby>で<ruby>課題<rt>かだい</rt></ruby>が<ruby>明<rt>あき</rt></ruby>らかになれば<ruby>正面<rt>しょうめん</rt></ruby>から<ruby>説明<rt>せつめい</rt></ruby>し、<ruby>修正<rt>しゅうせい</rt></ruby>や<ruby>撤回<rt>てっかい</rt></ruby>もいとわないことが<ruby>国民<rt>こくみん</rt></ruby>から<ruby>選<rt>えら</rt></ruby>ばれた<ruby>議員<rt>ぎいん</rt></ruby>の<ruby>責務<rt>せきむ</rt></ruby>だ。",
+      "zh": "竞选承诺与政治信任密切相关。然而，如果在讨论过程中发现问题，就应正面面向国民说明，必要时也应不惜修改或撤回。这才是民选议员的职责。",
+      "audio_file": "audio/p6_s2.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 1,
+      "sentence_id": "p7_s1",
+      "jp_plain": "（中略）減税の前提となる年5兆円の財源確保や、2年後の「増税」など棚上げした課題から逃げず未来まで視野を広げ、解決策を示せなければ再考する。",
+      "jp_html": "（<ruby>中略<rt>ちゅうりゃく</rt></ruby>）<ruby>減税<rt>げんぜい</rt></ruby>の<ruby>前提<rt>ぜんてい</rt></ruby>となる<ruby>年<rt>ねん</rt></ruby>5<ruby>兆円<rt>ちょうえん</rt></ruby>の<ruby>財源確保<rt>ざいげんかくほ</rt></ruby>や、2<ruby>年後<rt>ねんご</rt></ruby>の「<ruby>増税<rt>ぞうぜい</rt></ruby>」など<ruby>棚上<rt>たなあ</rt></ruby>げした<ruby>課題<rt>かだい</rt></ruby>から<ruby>逃<rt>に</rt></ruby>げず<ruby>未来<rt>みらい</rt></ruby>まで<ruby>視野<rt>しや</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げ、<ruby>解決策<rt>かいけつさく</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>せなければ<ruby>再考<rt>さいこう</rt></ruby>する。",
+      "zh": "（中略）对于减税所需的每年5万亿日元财源，以及两年后的“增税”等被搁置的问题，如果不能正面对待、着眼未来并提出解决方案，就应重新考虑。希望自民党议员不要揣摩上意，而应履行职责。",
+      "audio_file": "audio/p7_s1.mp3"
+    },
+    {
+      "section": 7,
+      "sentence_index": 2,
+      "sentence_id": "p7_s2",
+      "jp_plain": "自民党議員は忖度せず、責務を果たしてほしい。",
+      "jp_html": "<ruby>自民党議員<rt>じみんとうぎいん</rt></ruby>は<ruby>忖度<rt>そんたく</rt></ruby>せず、<ruby>責務<rt>せきむ</rt></ruby>を<ruby>果<rt>は</rt></ruby>たしてほしい。",
+      "zh": "（中略）对于减税所需的每年5万亿日元财源，以及两年后的“增税”等被搁置的问题，如果不能正面对待、着眼未来并提出解决方案，就应重新考虑。希望自民党议员不要揣摩上意，而应履行职责。",
+      "audio_file": "audio/p7_s2.mp3"
+    }
+  ]
+}
