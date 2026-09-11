@@ -1,0 +1,13 @@
+prompt 24KB, calling agy...
+exit 0 stdout 2890 stderr 
+fix 10 delete 1 add 5
+ - {"n": 1, "word": "galaxy", "meaning": "n.星系；[the G~]银河系", "ex_en": "The sun is only a very small star in the Galaxy.", "ex_zh": "太阳只是银河系中一颗很小的恒星。", "notes": "源于希腊语gala kt-,意为“牛奶（mi
+ - {"n": 13, "word": "dust", "meaning": "n.尘土，灰尘，粉尘", "ex_en": "The mirror is covered with a film of dust.", "ex_zh": "镜子蒙上了一层灰尘。", "notes": ""}
+ - {"n": 19, "word": "module", "meaning": "n.（航天器上各个独立的）舱；模块", "ex_en": "A module is part of a space vehicle that can work independently.", "ex_zh": "太空舱是太空飞船的一部分，可以独立运作。", "notes": "
+ - {"n": 20, "word": "pressure", "meaning": "n.压力", "ex_en": "We will never capitulate to pressure from outside.", "ex_zh": "我们永远不会屈服于外界的压力。", "notes": "［记］pleasure n.愉悦；乐事 ［搭］blood p
+ - {"n": 21, "word": "dynamics", "meaning": "n.动力学；动态", "ex_en": "And our goal is to find out the dynamics of this problem.", "ex_zh": "我们的目的是弄清这个问题的动态。", "notes": "［记］dynamic adj.动态的
+ - {"n": 35, "word": "diameter", "meaning": "n.直径", "ex_en": "The earth is slightly flat at the poles, so that the polar diameter is slightly less than the equatorial diameter.", "ex_
+ - {"n": 38, "word": "composition", "meaning": "n.成分，构成；作品；创作", "ex_en": "Scientists study the composition of the soil.", "ex_zh": "科学家研究土壤的成分。", "notes": ""}
+ - {"n": 39, "word": "fossil", "meaning": "n.化石", "ex_en": "I know that the majority of the energy we consume comes from fossil fuel energy sources.", "ex_zh": "我知道我们消耗的能源大多来自化石能源。", 
+ - {"n": 53, "word": "method", "meaning": "n.方法", "ex_en": "New methods of teaching foreign languages are adopted in this institute.", "ex_zh": "该学院采用了新的外语教学法。", "notes": "［记］methodol
+ - {"n": 70, "word": "overwhelming", "meaning": "adj.压倒性的", "ex_en": "The flood was overwhelming and the city was soon flooded.", "ex_zh": "洪水来势凶猛，这座城市很快就被淹没了。", "notes": "该词源于动词overw

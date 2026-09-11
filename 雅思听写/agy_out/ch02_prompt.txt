@@ -1,0 +1,884 @@
+你是词汇书数据修复工具。下面给你两部分内容：
+(A) 一本雅思词汇书某章的两栏 PDF 文字层抽取结果（左右栏交替，存在串行、断词、乱码标签如 "［彡列］"、"M列］"、"［傅!J］" 等，正常标签是 ［例］/［搭］/［记］）。
+(B) 该章解析出的、被程序标记为有问题的词条（JSON 数组）。
+
+任务：对照 (A) 的真实文字，逐条修正 (B) 中的问题词条。
+
+修正规则：
+1. 词条字段：word(英文词/词组), meaning(词性+中文释义), ex_en(英文例句), ex_zh(中文翻译), notes(搭配/派生词，可空)。字段缺失用 ""。
+2. 如果 word 是例句碎片（如 "is"、"zoo is situated"、"job is to operate an elev"），要还原成真正的词头（对照原文音标所在行），并补齐它的释义/例句。
+3. 如果 meaning 里混入了例句或邻居条目（过长、含 例/搭/记/］ 等），把例句拆到 ex_en/ex_zh，只保留词性+释义。
+4. 如果 ex_en 混入了别的例句或中文，按原文拆分，只保留该词自己的那句英文；ex_zh 只保留对应中文。
+5. 如果原文里存在某个词条被程序整条吞掉（没出现在 (B) 里但原文明显有独立音标行+释义+例句），在 fix 里用 "add" 输出它，after 填它前面那个词条的 word。
+6. 只要 (B) 里明显是重复/错误的假词条，在 delete 里列出它的 word。
+7. 原文里没有例句的词条（书本身就没印），ex_en 留 ""，不要自己编例句。绝不编造释义，宁可留空。
+
+补充要求（重要）：
+- (B) 里每个词条都有 "n" 字段（原条目编号）。fix 和 delete 里必须原样回填 "n"，否则无法定位。fix 里 "word" 填修正后的词头。
+- 如果某字段原文里确实没有（书本身没印），填空字符串 ""。
+
+只输出一个 JSON 对象，不要任何解释文字、不要 markdown 代码块，格式严格如下：
+{"fix":[{"n":13,"word":"新word","meaning":"...","ex_en":"...","ex_zh":"...","notes":"..."}],"delete":[{"n":40}],"add":[{"after":"前一个词的word","word":"...","meaning":"...","ex_en":"...","ex_zh":"...","notes":""}]}
+
+注意：不要使用任何工具、不要联网、不要读写文件；只根据下面给定的文本作答，直接把 JSON 放在回答里。
+
+================ (A) 原文 ================
+# LESSON ch02
+
+## RAW BOOK TEXT (two-column extraction, may be garbled/interleaved)
+--- PDF page 32 left column ---
+photosynthesis Afsutau'sinO^s^s/
+n.光合作用
+［例］The
+algae capture the sun's energy by
+photosynthesis and store it in organic molecules.
+水藻通过光合作用获得太阳的能量，将它储存在有机分子中。前缀photo表示"光（light）\故该单词的结构是：
+photo（光）+synthesis（合成）t用光合成t光合作用。又如photograph（照片）：photo（光）+
+graph（写，画）-用光来描绘。
+/ri'spaia/
+respire
+V.呼吸
+［例］Plants respire in the same way as animals
+z
+taking in oxygen and giving out carbon dioxide.
+植物和动物的呼吸方式相同，即摄入氧气并释放二氧化碳。
+［记］respiration n.呼吸respiratory adj.呼吸的
+/dai'oksaid/
+dioxide
+n.二氧化物
+［例］Plants can absorb carb on dioxide and release
+oxygen.植物可以吸收二氧化碳并释放氧气。
+［搭］carbon dioxide二氧化碳
+di（二）+oxide（氧化物）t二氧化物。
+/ved39lteijan/
+vegetation
+l
+n・植物，草木
+［例］There is not much vegetation in deserts.沙漠中的植物不多。
+［记vegetable n.蔬菜vegetarian n.素食者
+/h3：b/
+herb
+m药草；香草
+［例］There is a herb garden behind the house.屋后有一个芳草园。
+［记］herbal adj.药草的；香草的herbivore n.食草动物carnivore n.食肉动物
+photosynthesis herb
+respire perennial
+雅思词汇真经botany
+dioxide
+vegetation
+IELTS ecology
+--- PDF page 32 right column ---
+perennial /pa'reniol/
+n.多年生植物adj.长期的，持久的
+［例］These perennials should be planted where they
+can naturalise.应该将这些多年生植物种在它们能适应的环境中。
+/'botoni/
+botany
+m植物学
+［例］He was involved in the structural botany.他潜心于研究结构植物学。
+［记］botanical adj.植物的；植物学的
+botanist n.植物学家
+ecology /i'kDhd3i/
+m生态学；生态
+［例］I am interested in the ecology of the desert.
+我对沙漠的生态感兴趣。
+［记］ecological adj.生态学的；生态的
+ecologist n.生态学家
+ecosystem /'iikau^isUm/
+n.生态系统
+［例］Water is the core of a healthy ecosystem.水是生态系统保持良好状态的核心要素。
+eco（生态）+system（系统）t生态系统。
+eco-friendly /'i:kau（frendli/
+adj.对生态环境友好的，不妨害生态环境的
+［仮!l］Attention to eco-friendly packaging is
+increasing.对生态友好型包装的关注度日益提高。
+［记］use卜friendly adj.便于使用的
+horticulture /'hoitaikAltfs/
+n.园艺学；园艺
+［例］Horticulture is the industry and scienee of plant
+cultivation.园艺是关于植物栽培的产业和科学。
+organism /'oigonizam/
+n.有机体，生物
+［例］This in sect behaves
+like a parasite—an
+organism that lives
+on or in another organism called
+a host.这种昆虫的行为像寄生虫，即一种生活在被称为
+“宿主”的另一个生物身上或体内的生物。
+［记］organ n.器官
+genetics^a'netiks/
+m遗传学
+M列］In genetics, genes were formerly called factors.
+在遗传学上，基因以前被称为因子。
+［记］gene n.基因genetic adj.基因的
+ecosystem genetics
+eco-friendly
+horticulture
+organism
+--- PDF page 33 left column ---
+mutation /mjui'teifan/
+n.突变，变异
+［例］The mutations in plants caused by radiation
+have been found in experiments.已有实验发现辐射引起的植物变异。
+［记］mutate v.改变；（使）突变mutant n.突变体
+variation /iveari'eijan/
+n.变种；变异
+［例］Variation among dogs is limited to the possible
+permutations of their genes.狗的变异受限于其基因可能存在的排列组合方式。
+［记］vary v.变化
+diversity /dai'v3is^ti/
+n.多样性
+［例］This place used to be a flourish!ng forest with
+regional diversity.这里曾是一片有着区域多样性的繁茂森林。
+［记］diverse adj.不同的，多种多样的
+biodiversity n.生物多样性
+hybridisation /ihaibr^dai'zeifan/
+（=hybridization）n.杂交
+［例］Somatic cell hybridisation is a very useful
+technique.体细胞杂交是一种很实用的技术。
+［记］hybrid n.杂种，杂交生成的生物体adj.混合的
+classify /'klaes^fai/
+V.分类
+［例］Librarians spend
+a lot of time classifying
+books.图书馆管理员花许多时间将书分类。
+［记】classification
+n.分类classified adj.机密的，保密的
+［搭］classify...as...把...分类为...
+reproduce /iriiprs'djuis/
+V.繁殖
+［例］When they can't reproduce, cancerous cells die
+off instead of becoming dangerous.若癌细胞无法繁殖，它们就会消亡而不会造成威胁。
+evolve /i'vdIv/
+V.进化；（使）发展，（使）逐步形成
+［例］The
+developmental history of society tells
+us that man has evolved
+from some ancient
+primates.社会发展史告诉我们，人是由某些古灵长目动物进化来的。
+［搭］evolve from从...进化而来字根volu和volv都源自拉丁文volvere,表示“滚，
+mutation hybridisation evolve
+variation f classify fluctuate
+diversity reproduce reclaim
+--- PDF page 33 right column ---
+转（to roll）",所以英语中包含volv和volu的单词多含有此意义：evolve（滚动着展开t发展；进化），
+evolution（进化；发展）, involve（滚在里边t包含，牵涉）, revolve（重新滚动t旋转；围绕），
+revolution（革命）。
+fluctuate /'flAktJueit/
+V.波动，起伏
+［例］The
+price of vegetables fluctuates seas on ally.
+蔬菜的价格随季节波动。
+［记］fluctuation
+n.波动fluctuant adj.波动的，起伏的
+/ri'kleim/
+reclaim
+V.开垦，开拓，利用
+［例］This land was reclaimed from the sea.这块地是填海填出来的。
+/'kAlUveit/
+cultivate
+V.耕作；培养
+［例］The farmer is cultivating his land.农民正在耕耘他的土地。
+［记］cultivation n.耕种；培养
+［搭］cultivate the habit of养成...的习惯
+cultivate a creative mind培养富有创造力的头脑该词的字根cult表示“耕种；培养”。同根词culture意为“文化"，而古时最早的文化之一即农耕文化——怎样播种，如何灌溉，何时收获，等等。
+/sou/
+sow
+V.播种
+［例］These seeds should be sown in April.这些种子应在4月播种。
+cultivate
+sow
+Chapter
+植物研究
+--- PDF page 34 left column ---
+harvest /'ha:v^st/
+V.收割n.收获；收成
+［例］A good summer harvest is not easy to come
+by.夏季的好收成不容易实现。
+harvest在收获的季节
+［搭］at the
+pluck /plAk/
+V.采，摘
+lover.他为情人摘了一
+［例］He plucked a rose for his
+朵玫瑰花。
+pick /pik/
+V.拾;摘
+［例］He picked the watch up from the carpet.他把表从地毯上捡起来。
+yield /ji：ld/
+V.出产；屈服，服从n.产量；投资收益
+［例］This land yields well.这块土地产量高。
+［记］yielding adj.易弯曲的；顺从的
+unyielding adj.坚硬的；不屈不挠的
+/no/
+rear
+V.培养，抚养；饲养n.后部
+［例］Most farmers in this area rear sheep.这个地区的大多数农民都养羊。
+/'aerobal/
+arable
+adj-适于耕种的
+［例］This area changed quickly from arable land to
+desert.这个地区很快就从可耕地变成了沙漠。
+/plau/
+plough
+(=plow)n.犁v.耕(地)
+harvest rear
+pluck arable
+雅思词汇真经pick plough
+IELTS yield spade
+--- PDF page 34 right column ---
+［例］The gro und was ploughed and plan ted with
+corn.这块地被犁过并被种上了谷物。
+/speid/
+spade
+n.铲，锹
+［例］He bought a new spade.他买了把新铲子。
+rake /reik/
+n.耙子v.耙；搜索
+［例］With an an cient rusty rake I went to work.我拿了把古老生锈的耙子去工作。
+stack /stek/
+n.堆，垛v.堆积
+［例］He placed the books in a neat stack.他把书整整齐齐地放成一堆。
+heap /hi:p/
+n.（大而杂乱的）堆
+［例］A heap of old clothes was lying in the corner.
+一堆旧衣服堆在角落里。
+bundle /'bAndl/
+n.捆，包，束
+［例］He collected a bundle of sticks.他收集了一捆树枝。
+bunch /bAntJ/
+（花），一串（钥匙）
+n.—束
+［例］I bought a bunch of lilacs.我买了一束丁香花。
+vase /vaiz/
+n.瓶，花瓶
+valuable.因为这
+［例］This flaw makes the vase less
+处缺陷，这个花瓶不那么值钱了。
+rake bunch
+stack vase
+heap
+：.-bu ndle
+“m----
+--- PDF page 35 left column ---
+sunlight /'sa nlait/
+n.阳光
+［彳列］The sunlight was reflected by the water.水面反射着阳光。
+［搭］expose...to the sunlight把...暴露在阳光下
+get sunlight受到阳光照射
+short«day /〔I o：t dei/
+adj.短日照的
+［例］Soybean is a typical short-day crop.大豆是典型的短日照作物。
+shade-tolerant /'J'eid'tnlsront/
+adj.耐阴的
+［例］He
+highlighted the importanee of shade-
+tolerant plants in gardens.他强调了耐阴植物在庭园中的重要性。
+fungus
+/'fAggas/
+n.真菌
+［例］Don't eat that fungus. It might be poisonous.
+别吃那种菌，可能有毒。
+mould
+/mould/
+(=mold)n.霉菌v.发霉
+［例］The walls were black with mould.墙因发霉而木Eg
+o
+pollen
+/'pobn/
+n.花粉v.给……授粉
+［例］Each spring, pollen from nearby plants is
+blown into the water.每年春天，附近植物的花粉被风吹到水中。
+/也3：1“
+germinate占neit/
+V.(使)发芽；开始生长
+［例］Warmth is needed for the seeds to germinate.
+种子发芽需要一定的温度。
+［记］germ v.萌芽n.萌芽；细菌
+seed
+/si:d/
+m种子，籽；萌芽
+［例］The farmers were scattering seeds over the
+fields.农夫在往田里播撒种子。
+［记］seedling n.秧苗，幼苗
+［搭］sow seeds播种
+burgeon /'b3：d3^n/
+m嫩枝，新芽v.急速增长；发芽，抽枝
+M列］This firm aimed at the burgeoning market for
+sunlight mould burgeon
+short-day pollen bud
+shade>tolerant germinate flower
+fungus seed blossom
+--- PDF page 35 right column ---
+augmented-reality games.这家公司瞄准了快速发展的运用增强现实技术的游戏的市场。
+bud /bAd/
+n.芽，苞，禧蕾
+［例］The
+roses are in bud.玫瑰花正含苞待放。
+［搭］break out into bud发芽
+flower
+/'flauo/
+v.开花n.花朵
+［例］Cherry trees flower in the early spring.樱桃树在早春开花。
+blossom
+/'blosam/
+V.开花n.花朵
+H列］The tree was covered with beautiful pink
+blossom.这棵树开满了美丽的粉红色花朵。
+bloom /bluim/
+n.花朵
+［例］The apple trees are out of bloom.这些苹果树的花已败落。
+［搭］in bloom鲜花盛开
+scent /sent/
+m气味；香味v.使具有香味
+［例］The flower scents the air.空气中弥漫着花香。
+aromatic /^ra'maetik/
+adj.芳香的
+［彳列］Aromatic plants are often used in cooking.烹调中常使用芳香植物。
+ripen /'raipsn/
+V.（使）成熟
+［例］The sun ripens the corn.阳光使谷物成熟。
+［记］ripe adj.熟的；时机成熟的ripener n.催熟剂
+aromatic
+Chapter
+ripen
+植物研究
+--- PDF page 36 left column ---
+fruit /fru:t/field
+v.结果实n.原野；场地；野外
+［例］The apple trees fruited early this year.今年苹果［例］The
+树很早就开始结果了。on
+地质班的学生将把本学年的全部时间用于野外勘探。
+wither /'wids/
+V.（使）枯萎terrace
+［例］The grapes withered on the vine.葡萄藤上的葡n.梯田萄干瘪了。［例］The
+［记］withered adj.凋谢了的，枯萎的irrigation.梯田的沟渠便于灌溉。
+decompose /idiikam'psuz/
+V.（ffi）分解；（使）腐烂timber
+［例］You can apply heat to decompose organic
+compounds.你可以加热来分解有机化合物。
+［记］compose v.构成；写，创作timber.这个农夫花了一天时间在森林里砍木材。
+de（非，使相反）+compose（组成）t分解，腐烂。
+rot /rot/
+v.（使）腐烂，（使）腐坏m腐烂
+［例］Rot the tree trunk caused the tree to fall.
+in
+树干的腐烂导致树倒了。
+［记］rotten adj.腐烂的
+decay /di'kei/
+V.腐烂
+decay.那些蔬菜
+［例］The vegetables have begun to
+已开始腐烂。
+stale /steil/
+adj.不新鲜的；没有新意的，陈腐的
+［例］He always bought two loaves of stale bread.
+他总是要买两条不新鲜的面包。
+［记］staleness n.不新鲜；无趣味
+/'remfor^st/
+rainforest
+n.雨林
+［例］The rainforest is being systematically destroyed.
+雨林正被系统化地毁灭。
+［搭］a rainforest reserve雨林保护区
+jungle /也八曲R/
+热带）丛林，密林
+［例］Tigers are found in the jungle of Asia.在亚洲的丛林中有老虎。
+［搭］in the jungle在丛林里
+/plaen'teif^n/
+plantation
+n.种植园；栽植
+［例］They work on plantations.他们在种植园工作。
+fruit stale
+wither rainforest
+雅思词汇真经decompose jungle
+IELTS rot plantation
+decay field
+--- PDF page 36 right column ---
+/fi：ld/
+students of the geological class will be out
+field explorati on for the du rati on of the school year.
+/'ter^s/
+terrace channels are convenient for
+/'timbs/
+n.木材，木料；林木
+［例］The farmer spent a day in the woods hewing
+charcoal /'tjaikaul/
+n.木炭
+［例］Prepare a fire in a charcoal grill.在木炭烧烤炉里点上火。
+log /log/
+m原木；（航海、飞行）日志
+［例］A log got in his way as he drove.—根原木挡住了他开车的去路。早期，航海时用来测量航行速度的测速仪是用木板
+（log）、铅块和绳子等制成的。所以，log既有“原木"的含义，又有“航行日志”的含义。比如logging
+industry就是“伐木业“，而网络上流行的blog（博客）
+即weblog（网络日志）的缩写。
+logo /'laugsu/
+n.标识，标志，徽标
+［例］The letterhead was impressed with the
+company's logo.信头印着该公司的徽标。
+forestry /'for^stri/
+n.林学；林业
+［例］Mountainous areas, covered by forests, are the
+place for forestry development.森林覆盖的山区
+very
+正是适合发展林业的地方。
+［记］forest n.森林
+branch /bra:ntf/
+n.树枝；（企业或组织的）分支机构，分店
+［例］The company's head office is in this city, but it
+has branches all over the country.公司的总部在这座城市，但是它的分公司遍布全国各地。
+［搭］extend the olive branch伸出橄榄枝，准备讲和
+terrace forestry
+timber branch
+charcoal
+log
+logo
+--- PDF page 37 left column ---
+trunk /trAgk/
+n.树干；躯干；大箱子
+［例］Can she move that trunk by herself?她能自己搬动那只大箱子吗？
+bough /bau/
+n.大树枝
+［例］The window of her car was broken by a bough
+during last night's storm.在昨晚的暴风雨中，她的车窗被一根大树枝打破了。
+root /ru:t/
+n.根v.（使）生根
+［例］The dog is snuffling around the root of a tree.
+那条狗在一棵树的根部嗅来嗅去。
+hay /hei/
+n.干草
+［例］Make hay while the sun shines.趁有太阳时晒干草。（比喻把握时机，趁热打铁）
+［搭］hit the hay±床睡觉
+straw /stro:/
+m稻草，麦秆；吸管
+［例］This hat is made of straw.这帽子是用稻草编的。
+reed
+/ri:d/
+n.芦苇
+［例The roof is made of dried reeds.这房顶是用干芦苇制成的。
+thorn /0o：n/
+n.刺，棘刺；荆棘
+［例］She got her finger pricked by a thorn.她的手指被刺扎了一下。
+［记］thorny adj.多刺的；棘手的
+trunk straw, grass
+bough reed meadow
+root thom-; lawn
+hay weed olive
+--- PDF page 37 right column ---
+weed /wild/
+n.杂草，野草v.除杂草
+［例］The garden is choked with weeds.花园里杂草丛生。
+grass /gra:s/
+n.草；草地
+［例］The grass was wet with dew.草被露水打湿了。
+meadow /'medsu/
+n.草地；牧场
+［例］The children ran free across the meadow.孩子们在草地上自由地奔跑。
+lawn /loin/
+n.草地，草坪
+［例］My lawn.妈妈让
+mother asked me to mow the
+我去修剪草坪。
+olive /'dUv/
+n.橄榄；橄榄树
+［例］The olive branch is the emblem of peace.橄榄枝是和平的象征。
+［搭］an olive branch橄榄枝，和平象征olive oil橄榄油
+《圣经》记载：当洪水（flood）淹没大地时，按照上帝
+（Noah）将所有的动物都成对地带入方的指示，挪亚
+（ark）中。一段时间后，挪亚从方舟的窗户放出一只舟渡鸦（raven）,渡鸦飞来飞去。后来他又放出一只鸽子
+（dove,这里不是在说“德芙”巧克力品牌！）。但是，因为地上都是水，鸽子没有地方落脚，就飞回了方舟。又过了几天，挪亚再次放出鸽子。这次，鸽子回来时，嘴里衔着新拧下的橄榄叶（olive
+leaf）,于是挪亚知道地上的水退了，大地恢复生机。
+pine /pain/
+n.松树；松木
+M列］It's a place noted for its pine trees and springs.
+这是一个以松树和泉水而知名的地方。
+pine
+vix^sZ/
+-¥:
+Chapter
+植物研究
+--- PDF page 38 left column ---
+vine /vain/enzyme
+n.酶
+n.葡萄藤
+［例］The grapes withered on the vine.葡萄藤上的葡［例萄干瘪了。chemical
+发一千次这种化学反应。
+violet catalyst
+/'vaiaUt/
+n.堇菜n.催化剂；促进因素
+［例］The violet is a dainty spring flower.堇菜是种娇［例小的春花。chemical
+物质。
+tulip /'tju：Up/
+［记
+n.郁金香
+［例］She trimmed the stalks of the tulips before
+putting them in a vase.在把郁金香插进花瓶之前，她release
+修剪了一下花茎。V./I1.释放；发布
+［例马，它跑走了。
+emission
+n.排放，散发；排放物，散发物
+［例
+emissions
+world.这次会议旨在减少全球的碳排放或温室气体排放。
+absorb
+V.吸收；吸引全部注意力
+［例］Dry
+［搭
+mint /mint/
+n.薄荷；薄荷糖；铸币厂v.铸造（硬币）circulation
+［例］We sat in the back row, sucking mints.我们坐在后排，嘴里咂着薄荷糖。［例在罗马神话中，希腊神话里的天后赫拉（Hera）的对应circulation
+者是朱诺（Juno）,别名是摩涅塔（Moneta）。她曾多气环流是密切相关的。次警告罗马人即将出现的危险，帮助他们渡过难关（别名［记
+Moneta可能与表示“警告”的拉丁文monere有关）。circulate
+罗马人为她建了一座神庙，后来在神庙里建了铸币厂，希望女神能守护他们的财富，同时告诫他们不因金钱而迷失自我。英语中的money和mint都源自女神的别名，可现exceed
+代人有多少能记得手里的money有
+“警告”的含义呢。V.超过
+［例速驾车。
+reef /riif/
+uptake
+m(暗)礁，礁脉
+［例］The ship was wrecked on a reef.这船触礁失事了。n-摄取；领会
+［例
+alga /'^lga/uptake.医生建议我减少盐的摄入。
+n.海藻，藻
+nutrient
+［例］Some of the algae are edible.有些海藻是可以
+n.营养物质吃的。
+［例
+［记］algal adj.海藻的algae n.［alga的复数形式］藻类
+vine reef
+violet alga
+雅思词汇真经
+tulip enzyme
+IELTS mint catalyst
+--- PDF page 38 right column ---
+/'enzaim/
+］One enzyme can activate a thousand of these
+reactions in an hour.—个酶在一小时内可激
+/k比tgst/
+］A catalyst is a substanee which speeds up a
+reaction.催化剂是一种能加快化学反应的
+］catalyse(=catalyze)v.催化；促成
+/ri'li:s/
+］I released the horse and it ran away.我放了这匹
+/I'mifan/
+］This conf ere nee aims to reduce carb on
+or greenhouse gas emissions around the
+/sb'sorb/
+sand absorbs water.干沙吸收水分。
+］be absorbed in全神贯注在...上
+/|S3：kj^leif^n/
+流通；循环；流传
+］Sea surface temperatures and atmospheric
+are strongly coupled.海洋表面的温度与大
+］circle n.圈v.环绕；盘旋
+v.流传；循环
+/ik'si:d/
+］The driver exceeds the speed limit.那位司机超
+/'Apteik/
+］The doctor advised me to reduce the salt
+/'njuitriont/
+］The nutrient in the soil acts as a stimulus to
+release exceed
+uptake
+emission
+absorb nutrient
+circulation
+--- PDF page 39 left column ---
+growth in plants.土壤中的营养物质能促进植物生长。
+［记］nutrition n.营养字根nutri表示“滋养（to nourish）"美国安利公司的
+o
+营养保健品品牌“纽崔莱"的英文原名就是Nutrilite
+o
+energy /切磁"
+m能源；精力
+［例］The majority of the energy we consume comes
+from fossil fuel energy sources.我们消耗的能源大多来自化石能源。
+surroundings /ss'raundigz/
+n.环境
+［例］The adaptability of the youth to new
+surroundings is one of their good qualities.年轻人适应新环境的能力是他们的优点之一。
+m echanism /'mekomz^m/
+n.机制；构造
+［例］Bones and muscles are parts of the mechanism
+of the body.骨骼和肌肉是身体的部分构造。
+counterbalance
+/'kauntab^bns/n.起平衡作用的事物；抗衡力
+/^aunta'baelsns/v.抵消；对……起平衡作用
+［例］Their strength in defenee counterbalances our
+strength in attack.他们防卫的力量与我们攻击的力量不相上下。
+/prs'tekt/
+protect
+V.保护
+［例］We have to do what it takes to protect our
+parks and protect our planet for generations to
+come.我们必须采取一切措施为子孙后代保护我们的公园和我们的星球。
+［记］protection n.保护protective adj.保护的，防护的
+［搭］protect...from/against保护...免受...的伤害
+/pri'z3：v/
+preserve
+V.保护；维持（原状）；保存
+［例］It is the duty of the police to preserve public
+order.维持公共秩序是警察的职责。
+［记］preservation n.保护
+conservation Akonss'veiJ'an/
+n.（对自然环境的）保护；保存
+［例］Some accommodation between conservation
+and tourism is essential.对自然环境的保护与旅游业之间的相互协调是至关重要的。
+［记］conversation n.交谈
+energy protect extinguish
+surroundings preserve destruct
+mechanism conservation ruin
+counterbalance bush fire perish
+--- PDF page 39 right column ---
+bush fire /'buj fais/
+［例］The friendly fallow deer were trapped by a
+bush fire.这些温顺的黄占鹿被林区大火困住了。
+extinguish /ik'stiggwiJV
+V.扑灭（火）；使（想法、感情等）破灭
+［例］They tried every means to extinguish the fire.
+他们尝试了各种办法来扑火。
+［记］extinguisher n.灭火器
+destruct /di'strAkt/
+V.（使）自毁
+［例］The tape would self-destruct in twenty
+minutes.这盘磁带会在20分钟后自毁。
+［记］destruction n.破坏
+ruin /'ru：4n/
+V.毁坏，摧毁n.毁灭；废墟
+［例］The storm ruined the crops.暴风雨毁坏了庄稼。
+/'perij/
+perish
+V.毁灭，消亡；腐烂
+［例］Flowers perish when frost comes.霜冻一来，花即凋零。西方学术界有一句很有名的话:"Publish or Perish!n
+指的是从事研究的人，如果不能高效地在规定的期刊杂志上持续发表足够数量的论文或学术文章，就无法维持或推进其学术生涯。
+demolish /di'moliJV
+V.拆除；毁坏，破坏；推翻
+［例］The fire demolished the town.大火烧毁了这座城镇。
+infringe /in'fnnds/
+V.侵犯；违反
+［例］The press infringed a copyright agreement.
+这家出版社违反了一项版权协议。
+demolish
+infringe”—
+Chapter
+"-植物研究
+--- PDF page 40 left column ---
+fringe指"边缘”，可以把infringe想象成是从外面走到了边界里面，破坏了边缘，形成了侵犯行为。
+ds'main/
+undermine伽
+V.破坏；逐渐削弱
+［例］The con sta nt criticism was beg inning to
+undermine her confidence.持续的批评开始逐渐削弱她的自信。
+/ik'stirjkJ^n/
+extinction
+n.灭绝
+［例］By 2050, a quarter of the earth's species could
+be threatened with extinction.到2050年，地球上四分之一的物种可能会灭绝。
+［记］extinct adj.已灭绝的
+pattern /'pset^n/
+"•模式；式样；底样
+［例］Training and education follow different
+patterns in different regions.培训和教育在不同的地区遵循不同的模式。
+［搭］a dress pattern衣服的底样
+outcome /'autkAm/
+n-结果
+［例］We are anxiously awaiting the outcome of their
+discussion.我们急切地等待着他们讨论的结果。
+impact /'impaekt/
+n-影响
+［例］We are a flash in time, but our impact is
+forever.我们只是时间长河中的一瞬闪光，但我们的影响是永恒的。
+［搭］have an impact on对...有影响
+seasonal /'siiz^ngl/
+adj.季节性的
+［例］The greatest seasonal change on our planet is
+now under way.地球上最精彩的季节性变化现正上演。
+experi menta I /此sper^'mentl/
+adj.实验的；试验性的
+［例］There is no cure or vaccine, but some patients
+have been given experimental treatments.没有任何治疗方法或疫苗，但是一些病人接受了试验性治疗。
+favourable /'feivarob^l/
+(=favorable)adj.有利的；赞成的，肯定的
+［例］It's
+encouraging to receive a favourable report on
+onezs study.在学习中获得肯定性的反馈，这是令人鼓舞的。
+undermine seasonal
+extinction experimental
+雅思词汇真经
+pattern favourable
+IELTS outcome productive
+impact effective
+--- PDF page 40 right column ---
+productive /prs'd Aktiv/
+adj.多产的
+［例］Once the plants have produced fruit, they
+become less productive.—旦结过果实，这些植物就变得少产了。
+/iTektiv/
+effective
+adj.有效的
+［例］These are effective measures.这些都是有效的措施。
+［记］effect n.效应；结果
+/I'fij'^nt/
+efficient
+adj.效率高的
+［例］This new copy machine is more efficient than
+the old one.这台新复印机比那台旧的效率高。
+considerable /ksn'sidarQb^l/
+adj.相当多的
+［例］It is a considerable sum of money.那是一笔数量可观的钱。
+massive /'maesiv/
+adj.巨大的，大规模的，庞大的
+［例］There are massive mineral resources in the
+west part of China.中国西部地区有着大量的矿产资源。
+［记］mass n.团；大量massively adv.大规模地
+immense /i'mens/
+adj.巨大的
+［傅!I］They plunged into their work with immense
+zeal.他们以极大的热情投入工作。
+maximal /'maeks^mal/
+adj.最大的
+［仮!l］She obtai ned maximal ben efit from the course.
+她从该课程中获益极大。
+minimal /'minimal/
+adj.最小的，极小的
+［例］I
+stayed with friends, so my expenses were
+minimal.我住在朋友家，所以我的花费极小。
+optimal /'opUm^l/
+adj.最佳的，最理想的
+［例］This is the optimal seas on for the growth of
+plants.这是植物生长的最佳季节。
+efficient minimal
+considerable optimal
+massive
+immense
+maximal
+--- PDF page 41 left column ---
+The love for all living creatures is the most noble attribute
+热爱所有生灵是人类最崇高的品质。一查尔斯•达尔文
+--- PDF page 41 right column ---
+of man.—Charles Darwin
+Chapter
+动物保护
+mammal n.哺乳动物
+
+## PARSED ENTRIES FLAGGED AS PROBLEMATIC
+[
+ {
+  "word": "sunlight",
+  "meaning": "n.阳光 ［彳列］The sunlight was reflected by the water.水面反射着阳光。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "expose...to the sunlight把...暴露在阳光下 get sunlight受到阳光照射",
+  "n": 33,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "burgeon",
+  "meaning": "n.嫩枝，新芽v.急速增长；发芽，抽枝 M列］This firm aimed at the burgeoning market for",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 40,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "blossom",
+  "meaning": "V.开花n.花朵 H列］The tree was covered with beautiful pink blossom.这棵树开满了美丽的粉红色花朵。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 43,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "aromatic",
+  "meaning": "adj.芳香的 ［彳列］Aromatic plants are often used in cooking.烹调中常使用芳香植物。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 46,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "students of the geological cl",
+  "meaning": "",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 57,
+  "_why": "empty-meaning"
+ },
+ {
+  "word": "terrace channels are convenie",
+  "meaning": "n.木材，木料；林木",
+  "ex_en": "The farmer spent a day in the woods hewing",
+  "ex_zh": "",
+  "notes": "",
+  "n": 58,
+  "_why": "fake-head-fragment"
+ },
+ {
+  "word": "pine",
+  "meaning": "n.松树；松木 M列］It's a place noted for its pine trees and springs. 这是一个以松树和泉水而知名的地方。 -¥: 植物研究",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 76,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "alga",
+  "meaning": "uptake.医生建议我减少盐的摄入。 n.海藻，藻",
+  "ex_en": "Some of the algae are edible",
+  "ex_zh": "有些海藻是可以\nn.营养物质吃的。",
+  "notes": "algal adj.海藻的algae n.［alga的复数形式］藻类",
+  "n": 82,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "or greenhouse gas emissions around thesand",
+  "meaning": "absorbs water.干沙吸收水分。 ］be absorbed in全神贯注在...上流通；循环；流传 are strongly coupled.海洋表面的温度与大 ］circle n.圈v.环绕；盘旋 v.流传；循环 ］The driver exceeds the speed limit.那位司机超 /'",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 83,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "Apteik",
+  "meaning": "",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 84,
+  "_why": "empty-meaning"
+ },
+ {
+  "word": "counterbalance",
+  "meaning": "n.起平衡作用的事物；抗衡力 /^aunta'baelsns/v.抵消；对……起平衡作用",
+  "ex_en": "Their strength in defenee counterbalances our strength in attack",
+  "ex_zh": "他们防卫的力量与我们攻击的力量不相上下。\nV.保护 We have to do what it takes to protect our\ncome.我们必须采取一切措施为子孙后代保护我们的公园和我们的星球。",
+  "notes": "protection n.保护protective adj.保护的，防护的 protect...",
+  "n": 87,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "bushfire",
+  "meaning": "",
+  "ex_en": "The friendly fallow deer were trapped by a bush fire",
+  "ex_zh": "这些温顺的黄占鹿被林区大火困住了。\nV.扑灭（火）；使（想法、感情等）破灭 They tried every means to extinguish the fire.\n他们尝试了各种办法来扑火。",
+  "notes": "extinguisher n.灭火器",
+  "n": 89,
+  "_why": "empty-meaning"
+ },
+ {
+  "word": "immense",
+  "meaning": "adj.巨大的 ［傅!I］They plunged into their work with immense zeal.他们以极大的热情投入工作。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 105,
+  "_why": "meaning-too-long"
+ }
+]

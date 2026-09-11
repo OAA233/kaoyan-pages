@@ -1,0 +1,486 @@
+# LESSON ch08
+
+## RAW BOOK TEXT (two-column extraction, may be garbled/interleaved)
+--- PDF page 114 left column ---
+language /'12eggwid3/
+n.语言
+［例］His misunderstanding of language was the
+primary cause of his other problems.他对语言的误解是引起其他问题的主要原因。
+［搭】body language身体语言，肢体语言
+/'simbal/
+symbol
+象征；符号，记号
+［例］To them, the monarchy is the special symbol of
+nationhood.在他们看来，君主制是独立国地位的特殊象征。
+［记］symbolise(二symbolize)v.象征
+n.符号；征兆，迹象；手势v.签（名）
+［例］He made a sign for me to follow him.他打了个手势，让我跟着他。
+［记］assign v.指派；分配
+［搭］sign up to do sth.同意参与某事
+gesture /'d3estj9/
+n手势，姿势
+［例］He put his arm round her in a protective
+gesture.他用一只手臂围住她，做出保护的姿势。
+handwriting /'h^nd.raitir）/
+m笔迹；书写
+［例］The address was in Arina's handwriting.地址是安娜的笔迹。
+pictograph /'pikts^rarf/
+n-象形文字
+［例］Gen erally speaki ng, the pictograph is the first
+text.—般而言，象形文字是最早的文字。
+wedge /wed3/
+n.楔子；楔形物；楔形文字
+［例］Put a wedge under the door so that it will stay
+open.在门底下塞一块楔子，让门能保持开着。
+［记］wedgy adj.楔形的
+knot /not/
+m（绳、线等的）结；（树枝上的）节子
+［例］He made a knot in the rope.他在绳子上打了个结。
+［搭］cut the knot快刀斩乱麻
+linguistics /lirj'gwistiks/
+n-语言学
+［例］He linguistics.他从
+is engaged in the studies of
+language pictograph
+symbol wedge
+雅思词汇真经
+sign knot
+IELTS gesture linguistics
+handwriting semantic
+--- PDF page 114 right column ---
+事于语言学的研究。
+［记］linguistic adj.语言的
+/si'm^entik/
+semantic
+n-语义的
+［例］There are two kinds of puns, phonetic pun and
+semantic pun.双关语分为谐音双关和语义双关两类。
+/'sintaeks/
+syntax
+n.句法
+［例］Let's investigate the syntax of Chinese.让我们研究一下汉语的句法。
+/'graemo/
+grammar
+n.语法；语法书
+［例］He was known for his poor grammar and
+punctuation.他不通语法和标点的用法，这是出了名的。
+［记］grammatical adj.语法上的
+phonetics /fo'netiks/
+n.语音学
+［例］Daniel Jones is generally referred to be the
+foremost authority on phonetics.丹尼尔・琼斯通常被认为是语音学方面最具权威性的人。
+［记］phonetic adj.语音的
+pronounce /pra'nauns/
+v.发……的音；宣布
+［例］Did I pronounce your name correctly?我念对你的名字了吗？
+［记］pronunciation n.发音pronounced adj.显著的；表达明确的
+intonation /.inta'neij'an/
+m语调
+［攸!1］Some questions are spoken with a rising
+一些疑问句是以升调说出来的。
+intonation.
+inflection /in'flekjan/
+n语调的抑扬变化
+［例］She
+spoke in a low voice, always without
+inflection.她的嗓音低，说话总是毫无抑扬变化。
+dialect /'daiolekt/
+n・方言，地方话
+［例】The dialect is spoken principally in the
+southern areas.这种方言主要在南部地区使用。
+dia（在……之间）+lect（说）t人与人之间的对话交流
+T区域性的语言T方言°
+syntax inflection
+grammar dialect
+phonetics
+pronounce
+intonation
+--- PDF page 115 left column ---
+accent /'^ksjnt/
+n.重音；口音；读音符号
+［例］He speaks with a strong southern accent.他说话带有很浓的南方口音。
+ac（加强意义）+cent（歌唱），源自从希腊语借译过来的拉丁语单词。希腊原词可能指古希腊诗篇中的音高安排，进而得来“某种特定的发音”或“用于强调某音节的东西“之义，引申得来“重音；口音；读音符号”的含义。
+utterance /'At^rsns/
+n.说话；话语
+［例］His every utterance will be scrutinised.他说的每句话都会被仔细审查。
+oral /b:rol/
+adj.口头的
+［例］Students of English should have a lot of oral
+ckills.学英语的学生应多做口头练习。
+verbal /'v3：b^l/
+口头的；言语的
+adj.
+［例］Don't be afraid of verbal abuse or criticism.
+不要害怕口头上的辱骂或批评。
+［记］nonverbal adj.不用语言的
+syllable /'silabal/
+n-音节
+［例］The stress is on the last syllable.重音在最后一个音节上。
+phoneme /'fauni:m/
+n.音位
+［例］In actual speech, a phoneme is realised
+phonetically as a certain phone.在实际会话中,音位以某个音素的形式通过语音体现出来。
+vowel /'vauol/
+n-元音
+accent syllable alphabet
+utterance phoneme logogram
+oral vowel vocabulary
+verbal consonant dictionary
+--- PDF page 115 right column ---
+［例］Each Ian guage has a d iff ere nt vowel system.
+每种语言都有不同的元音系统。
+consonant /'konsansnt/
+n.辅音
+［例］These are common consonant clusters at the
+beginning of words.这些是单词开头常见的辅音组合。
+alphabet /'aelfsbet/
+n.字母表，（一种语言的）全部字母
+［例］Q comes between P and R in the English alphabet.
+在英语字母表中，Q在P和R之间。
+［记］alphabetical adj.按字母表顺序的
+logogram /'loga^raem/
+n.词符，缩记符
+［例］ACP is the logogram of English of the African,
+Caribbean and Pacific states. ACP是非洲国家、加勒比海国家和太平洋国家的英文缩记符。
+vocabulary /vs'kaebj^lari/
+n.词汇
+［例］His vocabulary was sound and his grammar
+was excellent.他的词汇丰富，语法也很精通。来自VOC（声音），词源同voiceo
+dictionary /'dikjsnari/
+n.词典，字典，辞典
+［例］The dictionary is a vast treasure trove of
+information.那本词典是巨大的信息宝库。
+［记］diction n.吐字；措辞
+/'idiam/
+idiom
+n.习语
+［例］"Never too old to learn/z is an idiom.到老,
+学到老”是个习语。
+idiom
+Chapter
+语言演化
+--- PDF page 116 left column ---
+phrase /freiz/
+n.短语；习语
+［例］The phrase was not meant to be taken
+seriously.该说法是不必当真的。
+/klo:z/
+clause
+m分句，从句；条款
+［例］A con fide ntiality clause was added to the
+contract.合同附加了一条保密条款。
+/ik'sprejan/
+expression
+n.词语；表达；表情
+［例］Her expression of gratitude was simple and
+touching.她把感激之情表达得简单而动人。
+tense /tens/
+n.时态adj.紧张的
+［例］Dart who had at first been very tense, at last
+z
+relaxed.达特起初非常紧张，最后放松下来。
+［记］tensions张力，拉力；紧张，不安v.拉紧
+root /ru:t/
+m词根，字根；根源
+［例］The word"intoxicated"comes from the same
+root as the word"detoxify".单词intoxicated和单词
+detoxify有同样的字根。
+prefix /'pri:fiks/
+"•词首，前缀；前置代号
+［例］To make calls from Canada, use the prefix
+01133 before the numbers given here.如果从加拿大打电话过来，要在我们给的号码前加拨01133。
+suffix /'sAfiks/
+m后缀，词尾；尾标
+［例］These ships were all numbered with the same
+suffix.这些船都有编号，且尾标是一样的。
+abbreviation /o.briivi'eij^n/
+n.缩写形式
+Broadcasting
+［仞!I］BBC is an abbreviation for British
+Corporation. BBC是“英国广播公司”的缩写。
+［记］abbreviate v.缩写，缩简
+synonym /'sinonim/
+n-同义词
+［例］Don't mix up this pair of synonyms.不要混淆这对同义词。
+phrase prefix
+clause suffix
+雅思词汇真经abbreviation
+expression
+synonym
+IELTS tense
+antonym
+root
+--- PDF page 116 right column ---
+antonym /'iEntonim/
+n-反义词
+［例］"Happy"is an antonym of"sad".“快乐”是“悲伤”的反义词。
+noun /naun/
+n名词
+［例］The word"person"is a countable noun,
+person这个词是个可数名词。
+/'sirjgj^lo/
+singular
+n.单数adj.单数的；非凡的
+［例］The young man has a singular ear for music.
+这个年轻人对音乐有非凡的鉴赏力。
+［记］single adj.单个的
+/'plusrol/
+plural
+m复数adj.复数的；多元的
+［例］A plural marriage is forbidden by many
+countries.一夫多妻或一妻多夫形式的婚姻被许多国家禁止。
+［记］pluralism n.多元主义；多元化；兼职
+［搭］a plural society多元社会
+/'prounaun
+pronoun
+fi.代词
+［例］He always put the stress on the pronoun.他总是重读代词。
+/v3：b/
+verb
+n.动词
+［例］A sentence usually contains a subject and a
+verb.一个句子通常包含主语和动词。
+adjective /'aed35ktiv/
+n-形容词
+［攸0］The function of an adjective is to describe or
+add to the meaning of a noun.形容词的作用是描述某个名词或对其含义进行补充说明。
+adverb /'aedv3：b/
+n.副词
+［傅叮Adverb is to describe a verb or an action.畐!J词是用来描述一个动词或动作的。
+preposition /ipreps'zijan/
+n.介词
+［例］You should cross out this preposition in the
+noun adjective
+singular adverb
+plural preposition
+pronoun
+verb
+--- PDF page 117 left column ---
+sentence.你应该删去句子中的这个介词。
+［记］position n.位置
+conjunction /kon'dj人悶加
+n.连词；结合
+［例］The word is a temporal conjunction.该词是表示时间的连词。
+［记］junction n.汇合处；交叉路口
+con sistent /kan'sist^nt/
+adj.—致的；（观点或看法）连贯的
+［例］The policies which will be put into place are clear
+and consistent.将要实施的这些政策内容清楚连贯。
+［记］inconsistent adj.不一致的consist v.由...组成与...一致*
+［搭］be consistent with
+complicated /'kompUkeiUd/
+adj.复杂的
+organism.
+［例］The business is a large, complicated
+该企业是一个大而复杂的有机组织。
+［记］complicate v.使复杂化
+/'kompleks/
+complex
+adj.复杂的
+［例］As tools have become more and more complex,
+we need more complex controls to control them.随着工具变得越来越复杂，我们需要更复杂的操控装置来控制它们。
+/ksm'pail/
+compile
+V.编纂
+［例］It takes years of hard work to compile a good
+dictionary.编纂一部好词典需要数年的艰苦工作。
+/'v3：J>n/
+version
+n.译本；版本
+［例］These books are Chinese versions of Shakespeare.
+这些书是莎士比亚作品的中文译本。
+translate^traens'leit/
+V.翻译；（使）转变
+［例］No matter how well a poem is translated,
+something of the spirit of the original work is lost.
+无论一首诗被翻译得多好，原作中的一些神韵也会丢失。
+［记］translator n.翻译者
+［搭］translate from Chinese into English从中文翻译成英文
+conjunction compile interpret
+consistent version narrate
+complicated translate illuminate
+complex paraphrase decipher
+--- PDF page 117 right column ---
+人们
+people
+paraphrase /'paerafreiz/
+v./n.意译，改述
+［例］The teacher asked his students to paraphrase
+the long sentence.老师让学生改述这个长句。
+interpret /in't3ipr^t/
+口译；解释，说明；领会，理解
+V.
+［例］He interpreted the silence as con tempt.他把这沉默看作轻蔑的表示。
+［记］interpretationn.口译；解释interpreter n.口译员
+narrate /no'reit/
+V.讲（故事），叙述
+I讦e story to me in the
+［例］The sailor narrated his
+tavern.那个水手在酒馆里向我讲述了他的人生经历。
+［记］narration n.叙述，讲述
+/i'lu:m^neit/
+illuminate
+V.阐释，说明；照亮
+［例］We use pictures and drawings to illuminate our
+subject.我们用照片和图画来阐明主题。前缀il表示“进入”，字根lumin表示“光"。本义是“照亮”，引申义是“阐释，说明"。
+/di'saifo/
+decipher
+V.译解；辨认
+［例］We can decipher the code intercepted by the
+broadcasting station.我们能破译电台截获的密码。
+/'elskwsns/
+eloquence
+n.雄辩；流利的口才
+［例］The audienee are struck by her simple,
+spellbinding eloquence.观众们被她那简洁、迷人的雄辩打动了。
+［记］eloquent adj.雄辩的，有口才的
+eloquence
+Chapter
+语言演化
+--- PDF page 118 left column ---
+communicate /ko'mju:nikeit/
+V.沟通，交流；传达
+［例］We communicated mostly by e-mail.我们主要通过电子邮件来交流。
+［记］communication n.通信；交流
+［搭］communicate with与...沟通
+/di'sk Aj>n/
+discussion
+n.讨论，谈论
+［例］After a lot of discussion among the directors,
+the matter was settled in the end.经过董事们的大量讨论，问题最终得到解决。
+［记］discuss V.讨论字根cuss表示“摇（to shake）",如：dis（分开）+
+cuss（摇）t摇散t意见不---discuss（讨论）；per
+（完全的）+cuss（摇）t percuss（轻敲）；percussion
+（打击乐器）O
+brain sto rm /'breinstoim/
+n.集体自由讨论，头脑风暴v.集思广益，进行头脑风暴
+［停！I］Managers get together and brainstorm a more
+permanent solution to the problem.经理们聚在一起，群策群力，设法找到一个更长久的解决办法。
+communicate bbrraaiinnssttoorrmm
+discussion ddeebbaattee
+雅思词汇真经
+IELT§
+--- PDF page 118 right column ---
+/di'beit/
+debate
+v./n.辩论；争论，讨论
+［例］The government is debating about the
+education laws.政府正在就教育法进行讨论。
+［记］debatable adj.有争议的
+［搭］debate about/on/upon sth.就某事物进行讨论
+have a debate with sb.与某人进行辩论
+commenta ry /'komantari/
+n.评论，评注；批评；实况报道
+［例］The con elusion of the commentary really hit
+the bulKs-eye.评论最后的结论真是一语破的。
+［记］comment n.意见，评论v.发表意见，评论
+negotiate /m'goujieit/
+V.协商，谈判
+［彳列］We are not about to negotiate with terrorists.
+我们是不会和恐怖分子谈判的。
+［记］negotiation n.协商，谈判
+［搭］negotiate about就...进行协商
+contention /kgn'tenjan/
+n.争论，争辩；观点
+［例］My contention is that the scheme will never
+work.我的观点是这个方案行不通。
+［记］content n.内容
+commentary contention
+negotiate
+--- PDF page 119 left column ---
+Art is not a handicraft, it is the transmission of feeling the
+艺术不是手艺，它是艺术家体验到的感情的传递。——列夫•托尔斯泰
+ballet
+athlete n.运动员
+--- PDF page 119 right column ---
+artist has experienced.—eo lolstoy
+n.芭蕾舞
+Chapter
+娱乐运动—
+perform v.演出
+magic n.魔术
+
+## PARSED ENTRIES FLAGGED AS PROBLEMATIC
+[
+ {
+  "word": "symbol",
+  "meaning": "象征；符号，记号",
+  "ex_en": "To them, the monarchy is the special symbol of nationhood",
+  "ex_zh": "在他们看来，君主制是独立国地位的特殊象征。 He made a sign for me to follow him.他打了个手势，让我跟着他。",
+  "notes": "symbolise(二symbolize)v.象征 n.符号；征兆，迹象；手势v.签（名） assign v.指派；分配 sign up to do sth.同意参与某事",
+  "n": 2,
+  "_why": "meaning-has-tag-residue"
+ },
+ {
+  "word": "intonation",
+  "meaning": "n.语调 ［攸!1］Some questions are spoken with a rising 一些疑问句是以升调说出来的。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 14,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "logogram",
+  "meaning": "n.词符，缩记符",
+  "ex_en": "ACP is the logogram of English of the African, Caribbean and Pacific states. ACP",
+  "ex_zh": "是非洲国家、加勒比海国家和太平洋国家的英文缩记符。",
+  "notes": "",
+  "n": 26,
+  "_why": "meaning-has-tag-residue"
+ },
+ {
+  "word": "abbreviation",
+  "meaning": "n.缩写形式 ［仞!I］BBC is an abbreviation for British Corporation. BBC是“英国广播公司”的缩写。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "abbreviate v.缩写，缩简",
+  "n": 37,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "adjective",
+  "meaning": "n-形容词 ［攸0］The function of an adjective is to describe or add to the meaning of a noun.形容词的作用是描述某个名词或对其含义进行补充说明。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 44,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "adverb",
+  "meaning": "n.副词 ［傅叮Adverb is to describe a verb or an action.畐!J词是用来描述一个动词或动作的。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 45,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "brain sto rm",
+  "meaning": "n.集体自由讨论，头脑风暴v.集思广益，进行头脑风暴 ［停！I］Managers get together and brainstorm a more permanent solution to the problem.经理们聚在一起，群策群力，设法找到一个更长久的解决办法。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 58,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "debate aboutupon",
+  "meaning": "sth.就某事物进行讨论 have a debate with sb.与某人进行辩论",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 60,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "negotiate",
+  "meaning": "V.协商，谈判 ［彳列］We are not about to negotiate with terrorists. 我们是不会和恐怖分子谈判的。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "negotiation n.协商，谈判 negotiate about就...进行协商",
+  "n": 62,
+  "_why": "meaning-too-long"
+ }
+]

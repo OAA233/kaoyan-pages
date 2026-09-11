@@ -1,0 +1,14 @@
+prompt 34KB, calling agy...
+exit 0 stdout 3002 stderr 
+fix 11 delete 0 add 5
+ - {"n": 1, "word": "technology", "meaning": "n.技术", "ex_en": "Life is made so much easier with modern science and technology.", "ex_zh": "有了现代科学技术，生活变得比以往惬意得多。", "notes": "technologi
+ - {"n": 27, "word": "apply", "meaning": "", "ex_en": "We should not only know the theory but also how to apply it to practice.", "ex_zh": "我们不仅要知道理论，还要知道怎样把理论应用于实践。", "notes": "appli
+ - {"n": 32, "word": "instrument", "meaning": "n.仪器；工具；乐器", "ex_en": "A plough is an instrument used for farming.", "ex_zh": "犁是一种用于耕作的工具。", "notes": ""}
+ - {"n": 39, "word": "byproduct", "meaning": "n.副产品", "ex_en": "Happiness is not a goal; it is a byproduct.", "ex_zh": "幸福不是一种目标，而是一种副产品。", "notes": "bypass n.旁路bypath n.旁道，小路 bywork 
+ - {"n": 44, "word": "microscope", "meaning": "n.显微镜", "ex_en": "The optical microscope magrHfies the object 1,000 times.", "ex_zh": "这架光学显微镜把物像放大了一千倍。", "notes": "microphone n.麦克风，话筒
+ - {"n": 54, "word": "laptop", "meaning": "n.笔记本电脑", "ex_en": "A laptop would be really useful when I'm working on the train.", "ex_zh": "我在火车上工作时，笔记本电脑真的很有用。", "notes": ""}
+ - {"n": 55, "word": "software", "meaning": "n.软件", "ex_en": "This is a computer software shop.", "ex_zh": "这是一家卖计算机软件的商店。", "notes": "hardware n.硬件；五金器具"}
+ - {"n": 90, "word": "transform", "meaning": "V.使改变形态；使改观", "ex_en": "She transformed the room by painting it.", "ex_zh": "她漆了房间，使它焕然一新。", "notes": "transformation n.变化，转变 trans（转移）+f
+ - {"n": 98, "word": "accurate", "meaning": "adj.准确的，正确无误的", "ex_en": "Hearsay definitely can't be regarded as accurate information.", "ex_zh": "传闻当然不能算是准确消息。", "notes": "accuracyn.精确
+ - {"n": 105, "word": "fault", "meaning": "缺点；故障v.找出缺点", "ex_en": "It is hard to fault the way he runs his own operation.", "ex_zh": "他经营自己的公司的方式无可指摘。", "notes": "faulty adj.有错误的；有缺点的
+ - {"n": 106, "word": "contingency", "meaning": "n.意外事件，可能发生的事", "ex_en": "We must always be prepared for every contingency.", "ex_zh": "我们必须始终灘殆种盛准备。", "notes": ""}

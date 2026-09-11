@@ -1,0 +1,131 @@
+{
+ "fix": [
+  {
+   "n": 1,
+   "word": "galaxy",
+   "meaning": "n.星系；[the G~]银河系",
+   "ex_en": "The sun is only a very small star in the Galaxy.",
+   "ex_zh": "太阳只是银河系中一颗很小的恒星。",
+   "notes": "源于希腊语gala kt-,意为“牛奶（milk）”,所以在现代英语中银河也被称为the Milky Way（奶路）。在希腊神话中，宙斯（Zeus）与凡人生下私生子赫剌克勒斯（Heracles）。宙斯偷偷把赫剌克勒斯放在熟睡的妻子赫拉（Hera）身旁，让孩子吮吸乳汁。后来，赫拉突然醒来，发现这不是自己的孩子，便将其推开，而乳汁就喷了出来，形成银河。"
+  },
+  {
+   "n": 13,
+   "word": "dust",
+   "meaning": "n.尘土，灰尘，粉尘",
+   "ex_en": "The mirror is covered with a film of dust.",
+   "ex_zh": "镜子蒙上了一层灰尘。",
+   "notes": ""
+  },
+  {
+   "n": 19,
+   "word": "module",
+   "meaning": "n.（航天器上各个独立的）舱；模块",
+   "ex_en": "A module is part of a space vehicle that can work independently.",
+   "ex_zh": "太空舱是太空飞船的一部分，可以独立运作。",
+   "notes": ""
+  },
+  {
+   "n": 20,
+   "word": "pressure",
+   "meaning": "n.压力",
+   "ex_en": "We will never capitulate to pressure from outside.",
+   "ex_zh": "我们永远不会屈服于外界的压力。",
+   "notes": "［记］pleasure n.愉悦；乐事 ［搭］blood pressure 血压 under pressure 被迫；在压力之下；受到压力"
+  },
+  {
+   "n": 21,
+   "word": "dynamics",
+   "meaning": "n.动力学；动态",
+   "ex_en": "And our goal is to find out the dynamics of this problem.",
+   "ex_zh": "我们的目的是弄清这个问题的动态。",
+   "notes": "［记］dynamic adj.动态的；动力的；有活力的"
+  },
+  {
+   "n": 35,
+   "word": "diameter",
+   "meaning": "n.直径",
+   "ex_en": "The earth is slightly flat at the poles, so that the polar diameter is slightly less than the equatorial diameter.",
+   "ex_zh": "地球的两极稍扁，所以南北极之间的直径略小于赤道直径。",
+   "notes": "dia（通过）+meter（测量）t测量通过中心的线段长度T直径。"
+  },
+  {
+   "n": 38,
+   "word": "composition",
+   "meaning": "n.成分，构成；作品；创作",
+   "ex_en": "Scientists study the composition of the soil.",
+   "ex_zh": "科学家研究土壤的成分。",
+   "notes": ""
+  },
+  {
+   "n": 39,
+   "word": "fossil",
+   "meaning": "n.化石",
+   "ex_en": "I know that the majority of the energy we consume comes from fossil fuel energy sources.",
+   "ex_zh": "我知道我们消耗的能源大多来自化石能源。",
+   "notes": ""
+  },
+  {
+   "n": 53,
+   "word": "method",
+   "meaning": "n.方法",
+   "ex_en": "New methods of teaching foreign languages are adopted in this institute.",
+   "ex_zh": "该学院采用了新的外语教学法。",
+   "notes": "［记］methodology n.方法学，方法论"
+  },
+  {
+   "n": 70,
+   "word": "overwhelming",
+   "meaning": "adj.压倒性的",
+   "ex_en": "The flood was overwhelming and the city was soon flooded.",
+   "ex_zh": "洪水来势凶猛，这座城市很快就被淹没了。",
+   "notes": "该词源于动词overwhelm,其中whelm一词本身含义为“淹没；覆盖；压倒”，而over表示“在……上”，故overwhelm表示“压倒；淹没”。"
+  }
+ ],
+ "delete": [
+  {
+   "n": 32
+  }
+ ],
+ "add": [
+  {
+   "after": "dust",
+   "word": "ash",
+   "meaning": "n.灰烬",
+   "ex_en": "Don't drop your cigarette ash on the carpet. Use an ashtray.",
+   "ex_zh": "不要把你的烟灰掉在地毯上，用烟灰缸。",
+   "notes": ""
+  },
+  {
+   "after": "module",
+   "word": "propulsion",
+   "meaning": "n.推进力",
+   "ex_en": "This aircraft works by jet propulsion.",
+   "ex_zh": "这架飞机是喷气推进的。",
+   "notes": ""
+  },
+  {
+   "after": "composition",
+   "word": "compound",
+   "meaning": "n.混合物；化合物adj.复合的，组合的v.混合",
+   "ex_en": "English loves compound words: \"washing machine\" and that sort of thing.",
+   "ex_zh": "英语喜欢用复合词，就像是“洗衣机”这一类的。",
+   "notes": ""
+  },
+  {
+   "after": "fossil",
+   "word": "sample",
+   "meaning": "n.样品，样本",
+   "ex_en": "I need nothing but a sample.",
+   "ex_zh": "我需要的不过是一件样品而已。",
+   "notes": ""
+  },
+  {
+   "after": "sample",
+   "word": "specimen",
+   "meaning": "n.样品，标本",
+   "ex_en": "The biologist brought out a specimen box and showed the items one by one.",
+   "ex_zh": "生物学家拿出标本箱，一件一件地把标本拿出来。",
+   "notes": "［记］species n.物种"
+  }
+ ]
+}

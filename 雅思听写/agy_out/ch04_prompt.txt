@@ -1,0 +1,608 @@
+你是词汇书数据修复工具。下面给你两部分内容：
+(A) 一本雅思词汇书某章的两栏 PDF 文字层抽取结果（左右栏交替，存在串行、断词、乱码标签如 "［彡列］"、"M列］"、"［傅!J］" 等，正常标签是 ［例］/［搭］/［记］）。
+(B) 该章解析出的、被程序标记为有问题的词条（JSON 数组）。
+
+任务：对照 (A) 的真实文字，逐条修正 (B) 中的问题词条。
+
+修正规则：
+1. 词条字段：word(英文词/词组), meaning(词性+中文释义), ex_en(英文例句), ex_zh(中文翻译), notes(搭配/派生词，可空)。字段缺失用 ""。
+2. 如果 word 是例句碎片（如 "is"、"zoo is situated"、"job is to operate an elev"），要还原成真正的词头（对照原文音标所在行），并补齐它的释义/例句。
+3. 如果 meaning 里混入了例句或邻居条目（过长、含 例/搭/记/］ 等），把例句拆到 ex_en/ex_zh，只保留词性+释义。
+4. 如果 ex_en 混入了别的例句或中文，按原文拆分，只保留该词自己的那句英文；ex_zh 只保留对应中文。
+5. 如果原文里存在某个词条被程序整条吞掉（没出现在 (B) 里但原文明显有独立音标行+释义+例句），在 fix 里用 "add" 输出它，after 填它前面那个词条的 word。
+6. 只要 (B) 里明显是重复/错误的假词条，在 delete 里列出它的 word。
+7. 原文里没有例句的词条（书本身就没印），ex_en 留 ""，不要自己编例句。绝不编造释义，宁可留空。
+
+补充要求（重要）：
+- (B) 里每个词条都有 "n" 字段（原条目编号）。fix 和 delete 里必须原样回填 "n"，否则无法定位。fix 里 "word" 填修正后的词头。
+- 如果某字段原文里确实没有（书本身没印），填空字符串 ""。
+
+只输出一个 JSON 对象，不要任何解释文字、不要 markdown 代码块，格式严格如下：
+{"fix":[{"n":13,"word":"新word","meaning":"...","ex_en":"...","ex_zh":"...","notes":"..."}],"delete":[{"n":40}],"add":[{"after":"前一个词的word","word":"...","meaning":"...","ex_en":"...","ex_zh":"...","notes":""}]}
+
+注意：不要使用任何工具、不要联网、不要读写文件；只根据下面给定的文本作答，直接把 JSON 放在回答里。
+
+================ (A) 原文 ================
+# LESSON ch04
+
+## RAW BOOK TEXT (two-column extraction, may be garbled/interleaved)
+--- PDF page 56 left column ---
+/'gaebksi/
+galaxy
+n.星系；［the G~］银河系
+［例］The sun is only a very small star in the Galaxy.
+太阳只是银河系中一颗很小的恒星。
+（milk）"
+源于希腊语gala kt-,意为“牛奶,所以在现代英语中银河也被称为the Milky Way（奶路）。在希腊神话中，宙斯（Zeus）与凡人生下私生子赫剌克勒斯
+（Heracles）。宙斯偷偷把赫剌克勒斯放在熟睡的妻子赫
+（Hera）身旁，让孩子吮吸乳汁。后来，赫拉突然醒拉来，发现这不是自己的孩子，便将其推开，而乳汁就喷了岀来，形成银河。
+cosmos /'kozmos/
+n.宇宙
+［例］Our world is but a small part of the cosmos.
+我们的世界仅仅是宇宙的一小部分而已。
+universe /'juiniv3：s/
+n.宇宙；万物，世界
+［例］The depth of the universe is immeasurable.
+宇宙无限深广。
+［记］universal adj.全世界的，普遍的字根uni表示"一（one）",字根vers表示“转（to
+turn）”，故universe原本含有“万物旋转成为一体”的意思。其他含vers的词如：diverse（转向不同方向t不同的），adverse（转向t对立t不利的），conversation（转向一起，面对面t交谈），
+university（包含万物知识t大学）。
+interstellar /iintg'stelo/
+adj.星际的
+［例］These elements become part of the interstellar
+gas and dust.这些元素成了星际气体和星际尘埃的一部分。字根stell表示“星（star）":
+interstellar:inter（在之间）+stell（星）+ar（后缀）
+t星星之间的t星际的。constellation:（—起）
+con
++stell（星）+ation（后缀）-在一起的星星t星座。
+terrestrial /U'restrisl/
+edj.地球的；（动植物）陆地的
+［例］Forests are home to over 80%of terrestrial
+biodiversity.陆地生物多样性有八成以上靠森林维持。
+［记］extraterrestrial adj.地球外的n.外星人（=E.T）
+celestial /s^'lestisl/
+adj.天上的
+［例］The rosy light beamed like a celestial dawn.
+玫瑰色的光芒闪耀，好像天上的朝霞。
+galaxy terrestrial
+'cosmos celestial
+雅思词汇糞经
+universe astronomy
+IELTS interstellar astrology
+--- PDF page 56 right column ---
+astronomy /s'strnnsmi/
+n.天文学
+［例］Physics and astronomy are cognate sciences.
+物理学与天文学是互有关联的学科。
+［记］astronomical adj.天文学的；天体的字根astr指“星（star）”。
+/a'strDbd3i/
+astrology
+n.占星学；占星术
+［例］Some who follow Chinese astrology expect it
+to be a good year.中国占星术的一些追随者预期今年是个吉祥年。
+astronaut /'^strsnoit/
+n.宇航员
+［例］An American astronaut is beginning a year­
+long trip in space.—名美国宇航员开始了长达一年的太空旅行。
+naut源自希腊语naus u船（ship）”，故astronaut就是“在星星间航行的人”；同源词如nausea（晕船t恶心）。相关字根nav也表示“船（ship）",女口：navy（海军），naval（海军的）, navigate（航行）。
+comet /'kom^t/
+n.彗星
+［例］The probes will travel with the comet for a full
+year.这些探测器将和彗星一起旅行一整年。
+meteorite /'miitiarait/
+n.陨石
+［例］He discovered an unusual meteorite.他发现了
+—块奇异的陨石。
+crater /'kreito/
+n.（撞击或爆炸形成的）坑
+［例］They came to the lip of a dead volcanic crater.
+他们来到了一座死火山的火山口。
+/dAst/
+dust
+n.尘土，灰尘，粉尘
+［例］The mirror is covered with a film of dust.镜子蒙上了一层灰尘。
+/aeJ7
+ash
+n.灰烬
+［例］Don't drop your cigarette ash on the carpet.
+Use an ashtray.不要把你的烟灰掉在地毯上，用烟灰缸。
+astronaut dust
+comet ash
+meteorite
+crater
+--- PDF page 57 left column ---
+/'envslaup/
+envelope
+n.外裹物，外层
+［例］The surface of the sun is a glowing gas
+envelope.太阳的表面是一层发着光的气体。
+/tj'Aijk/
+chunk
+n.厚块
+［例］My mother bought a chunk of meat.我妈妈买了
+—大块肉。
+［搭］a chunk of—大块，一厚块
+spacecraft /'speis-kra:ft/
+n.宇宙飞船
+［例］The spacecraft is orbiting the moon.宇宙飞船正绕月球飞行。
+［记］aircraft n.飞行器
+spaceship /'speisjip/
+n.宇宙飞船
+［例］The scientists are able to calculate accurately
+when the spaceship will reach the moon.科学家能准确计算出宇宙飞船什么时候抵达月球。
+probe /proub/
+n.太空探测器；详尽调查
+［例］Their probe into the cause of the fire proved
+futile.他们对起火原因的调查没有任何收获。
+module /'modju:!/
+n.（航天器上各个独立的）舱；模块
+part of a space vehicle that can
+［例］A module is
+independently.太空舱是太空飞船的一部分，可
+work
+以独立运作。
+/prs'p
+propulsion
+n.推进力
+propulsion.这架飞机
+［例］This aircraft works by jet
+是喷气推进的。
+/'prejo/
+pressure
+n.压力
+capitulate to pressure from
+［例］We will never
+outside.我们永远不会屈服于外界的压力。
+n.愉悦；乐事
+［记］pleasure
+血压underpressure被迫；在
+［搭］blood pressure
+压力之下；受到压力
+dynamics /dai'nasmiks/
+Fl.动力学；动态
+［例］And our goal is to find out the dynamics of this
+envelope probe dynamics
+chunk module motion
+spacecraft propulsion vent
+spaceship pressure tail
+--- PDF page 57 right column ---
+problem.我们的目的是弄清这个问题的动态。
+adj.动态的；动力的；有活力的
+［记J dynamic
+/'msujan/
+motion
+n.动作；移动
+［例］Parts of the film were shown again in slow
+motion.影片的一些部分被以慢动作重放。
+［记］motive adj.发动的，导致运动的n.动机
+/vent/
+vent
+n.排气口v.排放；发泄
+［例］When gases and steam can get vented from
+a volcano's cracks, it's probably not about to erupt.
+当气体和蒸汽可以从火山的裂缝中排放时，它可能就不会很快喷发。
+tail /teil/
+n.尾部
+［例］He drove into the back of my truck and
+smashed the tail light.他开车追尾了我的卡车，把尾灯撞得粉碎。
+curve /k3：v/
+n.曲线，弧线
+［例］The stairs ascended in a graceful curve.楼梯以优美的曲线上升。
+［记］curvy adj.弯曲的；有曲线美的
+exploration /leksplo'reij an/
+n.探索
+［例］The Elizabethan age was a time of exploration
+and discovery.英国伊丽莎白女王一世时代是探索和发现的时代。
+expedition /leksp^'dijan/
+n.远征，探险
+［例］This is an expedition to find the beg inning of
+theYangtze River.这是一次寻找长江源头的探险。示"足（foot）",如：expedition（使脚向字根ped表外t远征，探险），pedal（用脚操作的东西t踏板），
+（步行者）‘impede（双脚被缠住了妨碍），
+pedestrian
+pedicab（用脚蹬的计程车［载客的人力］三轮车）。
+flyby /'flaiibai/
+（航天器对行星或卫星的）飞掠
+m
+［例］Because of the flyby height, the plane resembles
+an increasingly big bird.由于飞掠高度，飞机就像越来越大的鸟。
+curve
+exploration
+expedition Chapter
+flyby太空探索
+--- PDF page 58 left column ---
+observatory /ab'zaivatari/
+n.天文台
+［例］According to the observatory, there will be a
+total solar eclipse tomorrow.天文台预测，明天将会出现日全食。
+/'teUskaup/
+telescope
+n.望远镜
+［例］What is the range of this telescope?这架望远镜的观测距离是多远？科学家研究土壤的成分。
+/'spektgkal/
+spectacle
+n.壮观的景象；奇观；卜s］眼镜/'kDmpaund/
+［例］The sunrise was a splendid spectacle.日出是个/kam'paund/
+壮观的景象。
+［记］spectacular adj.壮观的，壮丽的machine"
+字根spec（t）/spic表示"看（to look）",故spectacle就像是“洗衣机”这一类的。是“用来看的东西”，引申为“壮观的景象”等含义。同根词：prospect（向前看t前途；展望）, inspect
+（往里看t检查；视察）, respect（往回看t尊敬），fossil
+suspect（从下往上看t偷偷瞟t怀疑）, retrospect n.化石
+（往回看t回顾）。最后说一下spectrum（光谱）这个词：［例］I
+大千世界都是因为光才可见，而第一次对光谱的研究是牛consume
+顿发现太阳光（白光）通过棱镜后被分解成了从红光到紫道我们消耗的能源大多来自化石能源。光的各色光。
+orbit /'oib^t/
+n.轨道
+［例］The earth moves in an approximately circular
+orbit around the sun.地球在一个近似正圆的轨道上绕着太阳运行。
+ecliptic /fkliptik/
+n.黄道
+［例］Five bright planets move among
+the stars near
+the ecliptic.五颗明亮的行星在黄道附近的恒星当中移动。
+diameter /dai'aem^ts/
+n.直径
+［仮！I sample
+］The earth is slightly flat at the poles, so that the
+polar diameter is slightly less than the equatorial n.样品，样本
+diameter.地球的两极稍扁，所以南北极之间的直径略小
+［例］I
+于赤道直径。件样品而已。
+（通过）+（测量）t测量通过中心的线段长
+dia meter
+度T直径。specimen
+n.样品，标本
+radius /'reidiss/［例］The
+n.半径
+showed
+［例］They—件一件地把标本拿出来。
+searched within one mile radius of the
+school.他们在学校周围半径一英里的范围内搜索。［记］species
+observatory ecliptic
+telescope diameter
+雅思词汇奠经
+spectacle radius
+IELTS orbit substance
+--- PDF page 58 right column ---
+/'sa bstons/
+substance
+m物质；实质，要旨
+［例］Is there a basic substance that everything else
+is made of?是否存在一种组成了万物的基本物质？
+［记］substantial adj.大量的；牢固的
+/ikompo'zij'an/
+composition
+m成分，构成；作品；创作
+［例］Scientists study the composition of the soil.
+compound
+n.混合物；化合物adj.复合的，组合的
+v.混合
+［例］English loves compound words:"washing
+and that sort of thing.英语喜欢用复合词，
+/'fosal/
+know that the majority of the energy
+we
+comes from fossil fuel energy sources.我知
+/'saimpal/
+need nothing but a sample.我需要的不过是一
+/'spessm^n/
+biologist brought out a specimen box and
+the items one by one.生物学家拿岀标本箱，
+n.物种
+composition
+compound
+fossil
+sample
+--- PDF page 59 left column ---
+particle /'paitikal/
+m颗粒，微粒；极小量
+［例］There are particles of dust everywhere.到处都是尘埃微粒。
+molecule /'molikju:l/
+n.分子
+separator in the lab.实验室
+［例］There is a molecule
+里有一台分子分离器。
+atom /'^tam/
+n.原子
+atoms
+［例］A molecule of water is made up of two
+of hydrogen and one atom of oxygen.—个水分子是由两个氢原子和一个氧原子构成的。源自希腊语atomos,表示不能再分割的物质（日【否定］
++tomos［切割］）。有古代哲学家认为万物由小得不能再分割的微粒构成。后来，物理学家根据这个词将原子命名为atom（但实际上原子并非不可分割）。再回忆一个包含tom的单词：anatomy（解剖学）。
+/'aian/
+ion
+n.离子
+［例］Both of these particles can produce ion pairs.
+这两种粒子都能产生离子对。
+electron /I'lektron/
+n.电子
+［例］Electrons are negatively charged with electricity.
+电子带负电荷。
+quantum /'kwontom/
+n.量子
+［例］In this example, we employed the quantum mechanics
+principle.在本例中，我们运用了量子力学原理。
+liquid /'likw^d/
+n.液体adj.液态的
+［例］If you add too much liquid, the mixture will not
+be thick enough.如果你加入了太多液体，该混合液的浓度就不够了。
+［搭］liquid assets流动资产
+fluid /'flu:^d/
+n.液体，流体adj.流动的
+［例］When you are sick, you should drink plenty of
+fluids.生病时应该多喝流质。
+solid /'soUd/
+n.固体adj.固体的；牢固的
+particle electron solid
+molecule quantum synthesise
+atom liquid formation
+ion fluid method
+--- PDF page 59 right column ---
+［仅!1］The new office building has a very solid
+construction.新建的办公楼结构非常坚固。
+synthesise /'sinQ^saiz/
+(=synthesize)v.合成；综合
+［例］Darwinian theory has been synthesised with
+modern genetics.达尔文的理论已经和现代遗传学融合在一起了。
+［记］synthetic adj.合成的
+formation /foi'meijan/
+n.形成
+［例］In planet formation, as in adolesce nee, you've
+got your late bloomers.在青春期时，有些人的发育晚于同龄人，而行星的形成也存在这种情况。
+method /'meOsd/
+n.方法
+［例］New methods of teaching foreign languages
+institute.该学院采用了新的外语
+are adopted in this
+教学法。
+n.方法学，方法论
+［记］methodology
+/'spektrsm/
+spectrum
+m光谱；范围
+［例］A spectrum is formed by a ray of light passing
+through a prism.—束光通过棱镜就会形成光谱。
+/dai'menjan/
+dimension
+n.范围；维（度）
+［例］A line has one dimension and a square has two.
+—条线只包含一个维度，而一个正方形包含两个维度。
+3D打印机和3D电影中的D代表dimension 1D是线性，
+o
+2D是平面，3D即三维立体。爱因斯坦（Einstein）在相对论中提出宇宙是4D的，即空间上的三个维度加时间维度，4D空间又称为四维空间、四次元。
+frequency /'fri:kwonsi/
+n.频率；发生次数
+［例］This radio signal has a frequency of
+kilohertz.这个无线电信号的频率是800千赫。
+［记］frequent adj.时常发生的，频繁的
+/'signal/
+signal
+n.信号
+［例］Her speech yesterday was a signal that her
+view has changed.她昨天的讲话是一个信号，反映出她的观点已经转变。
+［记］signn.符号；指示牌
+spectrum
+dimension
+frequency Chapter
+signal太空探索
+--- PDF page 60 left column ---
+antenna /aen'tena/
+n.天线
+［例］You should
+fix the television antenna before
+receiving programmes.接收节目前，你应该先修好电视的天线。
+circuit /'s3ik^t/
+n.线路，电路；巡回
+［例］For many years, he was top banana on the
+circuit.许多年来，他都是巡回剧团里的主角。
+refraction /ri'fraekjan/
+n.折射
+［例］Over water the diurnal change in refraction is
+likely to be small.在水上，折射的周日变化可能是很小的。
+ultraviolet /lAltro'vaisUt/
+n.紫外辐射adj.紫外线的
+［例］The ozone layer absorbs most of the sun's
+ultraviolet radiation.臭氧层吸收了太阳的大部分紫外辐射。
+［记］infrared n.红外辐射adj.红外线的
+radioactive /ireidisu'^ktiv/
+adj.放射性的
+［例］Nuclear energy gives millions heat light, and
+z
+power, just as it creates unwanted radioactive side
+effects.核能源带给无数人热、光和电力，却也带来了人们并不想得到的放射性副作用。
+radio（发光，发热）+active（活性的）t放射性的。
+distinct /di'stiijkt/
+adj.明显的；截然不同的
+［例］Those two ideas are quite distinct from each
+other.这两种观点截然不同。
+antenna ultraviolet
+circuit radioactive
+雅思词汇真经
+refraction distinct
+IELTS
+--- PDF page 60 right column ---
+［记］distinctive adj.有特色的
+distinctionn.差另I」；区分
+distinguish v.区分，辨别；认出distinguished adj.著名的，卓越的
+［搭］distinct from与...完全不同
+discernible /di'ssin^b^l/
+adj.可辨别的，看得清的
+［例］Night fell, but the outline of the factory
+buildings was still discernible.夜幕降临了，但厂房的轮廓还是能看清的。
+［记］indiscernible adj.看不清的，隐约的
+invisible /in'viz^bal/
+adj.看不见的
+［例］Some stars are invisible to the naked eye.有些恒星是肉眼看不见的。
+collision /ka'l 13^11/
+□.碰撞事故；冲突
+［例］He is responsible for the rear-end collision.
+他要为这起追尾撞车事故负责。
+［搭］a collision with与……的碰撞事故来自collide（v.碰撞）。
+squash /skwDj/
+v.压扁n.壁球
+［例］I sat on my hat and squashed it.我坐在自己的帽子上，把它给压扁了。关于壁球的起源，说法不一『其中一个是：1820年，英国的哈罗公学因运动场地小，就发明了让学生用球拍对墙击球的运动，因球猛烈触墙时发出的声音类似squash
+的发音而得名。
+fragment
+/'fraegmsnt/n.碎片，片断/fraeg'ment/v.（使）碎裂
+［例］He was still in bad condition and could give
+discernible squash
+invisible fragment
+collision
+--- PDF page 61 left column ---
+accident.他的情况
+only a fragmented account of the
+仍然不好，关于这场事故，只能给出支离破碎的说明。
+cataclysmic /k氏tdklizmik/
+adj.剧变的；灾难性的
+［例］One can readily trace the disappearanee of
+dinosaurs to a cataclysmic event.人们可以很容易地把恐龙消失的原因追究到一场灾难性事件上。
+overwhelming /lOuvo'wclmig/
+adj.压倒性的
+M列］The flood was overwhelming and the city was
+soon flooded.洪水来势凶猛，这座城市很快就被淹没了。该词源于动词overwhelm,其中whelm一词本身含义为“淹没；覆盖；压倒”，而over表示“在……上”，故
+overwhelm表示“压倒；淹没"。
+despair
+/di'spea/
+v./n.绝望
+cataclysmic despair hopeless
+overwhelming desperate
+--- PDF page 61 right column ---
+［例］This boy is his mother's last despair.这个男孩使他的妈妈十分绝望。
+［搭］despair of对...绝望
+desperate /'desp^r^t/
+adj.绝望的；极需要的
+desert was desperate for
+［例］The man lost in the
+water.这个在沙漠中迷失方向的人极想喝水。字根sper表示“希望（to hope）",而前缀de表示“没有（without）”，故desperate表示"没有希望的"，即绝望的”。其他同根词如：prosper（前面有希望t繁荣，成功），prosperity（繁荣），desperation（绝望），
+（绝望的人t亡命之徒）。
+desperado
+hopeless /'houphs/
+日贞•无望的；极差的
+［例］He feels that his ch a nces of winning the con test
+are hopeless.他感觉自己没有希望在竞赛中获胜。形容词后缀less表示“没有……的”。
+U
+Chapter
+太空探索
+--- PDF page 62 left column ---
+
+--- PDF page 62 right column ---
+
+--- PDF page 63 left column ---
+No matter what you want to do with your不论你的生活志向是什么，我敢肯定你必须上
+lifeI guarantee that you'll need an education学读书才能实现它。
+to do it.—贝拉克・奥巴马
+—Barack Obama
+n,专科院校
+academy
+nn nn
+mentor
+graduate n.大学毕业生
+--- PDF page 63 right column ---
+Chapter
+I
+学校教育
+campus n.校园口□
+n.导师
+(«■£>
+MEi>
+
+## PARSED ENTRIES FLAGGED AS PROBLEMATIC
+[
+ {
+  "word": "galaxy",
+  "meaning": "n.星系；［the G~］银河系",
+  "ex_en": "The sun is only a very small star in the Galaxy",
+  "ex_zh": "太阳只是银河系中一颗很小的恒星。\n源于希腊语gala kt-,意为“牛奶,所以在现代英语中银河也被称为the Milky Way（奶路）。在希腊神话中，宙斯（Zeus）与凡人生下私生子赫剌克勒斯\n（Heracles）。宙斯偷偷把赫剌克勒斯放在熟睡的妻子赫\n（Hera）身旁，让孩子吮吸乳汁。后来，赫拉突然醒拉来，发现这不是自己的孩子，便将其推开，而乳汁就喷了岀来，形成银河。",
+  "notes": "",
+  "n": 1,
+  "_why": "meaning-has-tag-residue"
+ },
+ {
+  "word": "dust",
+  "meaning": "n.尘土，灰尘，粉尘",
+  "ex_en": "The mirror is covered with a film of dust",
+  "ex_zh": "镜子蒙上了一层灰尘。\n/aeJ7\nash\nn.灰烬 Don't drop your cigarette ash on the carpet.\nUse an ashtray.不要把你的烟灰掉在地毯上，用烟灰缸。",
+  "notes": "",
+  "n": 13,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "module",
+  "meaning": "n.（航天器上各个独立的）舱；模块",
+  "ex_en": "A module is independently",
+  "ex_zh": "太空舱是太空飞船的一部分，可\n以独立运作。\nn.推进力\npropulsion.这架飞机 This aircraft works by jet\n是喷气推进的。",
+  "notes": "",
+  "n": 19,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "pressure",
+  "meaning": "n.压力",
+  "ex_en": "We will never outside",
+  "ex_zh": "我们永远不会屈服于外界的压力。\nn.愉悦；乐事",
+  "notes": "血压underpressure被迫；在 blood pressure 压力之下；受到压力",
+  "n": 20,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "dynamics",
+  "meaning": "Fl.动力学；动态",
+  "ex_en": "And our goal is to find out the dynamics of this envelope probe dynamics chunk module motion spacecraft propulsion vent spaceship pressure tail",
+  "ex_zh": "",
+  "notes": "",
+  "n": 21,
+  "_why": "ex-en-too-long"
+ },
+ {
+  "word": "kDmpaund",
+  "meaning": "壮观的景象。",
+  "ex_en": "I",
+  "ex_zh": "大千世界都是因为光才可见，而第一次对光谱的研究是牛consume\n顿发现太阳光（白光）通过棱镜后被分解成了从红光到紫道我们消耗的能源大多来自化石能源。光的各色光。",
+  "notes": "spectacular adj.壮观的，壮丽的machine\" 字根spec（t）/spic表示\"看（to look）\",故spectacle就像是“洗衣机”这一类的。是“用来看的东西”，引申为“壮观的景象”等含义。同根词：prospect（向前看t前途；展望）, inspect （往里看t检查；视察）, respect（往回看t尊敬），fossil suspect（从下往上看t偷偷瞟t怀疑）, retrospect n.化石 （往回看t回顾）。最后说一下spectrum（光谱）这个词：",
+  "n": 32,
+  "_why": "weird-word"
+ },
+ {
+  "word": "diameter",
+  "meaning": "n.直径",
+  "ex_en": "sample ］The earth is slightly flat at the poles, so that the polar diameter is slightly less than the equatorial n",
+  "ex_zh": "样品，样本\ndiameter.地球的两极稍扁，所以南北极之间的直径略小 I\n于赤道直径。件样品而已。\n（通过）+（测量）t测量通过中心的线段长\n度T直径。specimen\nn.样品，标本",
+  "notes": "",
+  "n": 35,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "compositio",
+  "meaning": "n m成分，构成；作品；创作",
+  "ex_en": "Scientists study the composition of the soil. compound n",
+  "ex_zh": "混合物；化合物adj.复合的，组合的\nv.混合 English loves compound words:\"washing\nand that sort of thing.英语喜欢用复合词，",
+  "notes": "",
+  "n": 38,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "knowthatthemawe",
+  "meaning": "comes from fossil fuel energy sources.我知",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 39,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "method",
+  "meaning": "n.方法",
+  "ex_en": "New methods of teaching foreign languages institute",
+  "ex_zh": "该学院采用了新的外语\n教学法。\nn.方法学，方法论",
+  "notes": "",
+  "n": 53,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "overwhelming",
+  "meaning": "adj.压倒性的 M列］The flood was overwhelming and the city was soon flooded.洪水来势凶猛，这座城市很快就被淹没了。该词源于动词overwhelm,其中whelm一词本身含义为“淹没；覆盖；压倒”，而over表示“在……上”，故 overwhelm表示“压倒；淹没\"。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 70,
+  "_why": "meaning-too-long"
+ }
+]

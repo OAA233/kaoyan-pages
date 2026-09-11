@@ -1,0 +1,1225 @@
+你是词汇书数据修复工具。下面给你两部分内容：
+(A) 一本雅思词汇书某章的两栏 PDF 文字层抽取结果（左右栏交替，存在串行、断词、乱码标签如 "［彡列］"、"M列］"、"［傅!J］" 等，正常标签是 ［例］/［搭］/［记］）。
+(B) 该章解析出的、被程序标记为有问题的词条（JSON 数组）。
+
+任务：对照 (A) 的真实文字，逐条修正 (B) 中的问题词条。
+
+修正规则：
+1. 词条字段：word(英文词/词组), meaning(词性+中文释义), ex_en(英文例句), ex_zh(中文翻译), notes(搭配/派生词，可空)。字段缺失用 ""。
+2. 如果 word 是例句碎片（如 "is"、"zoo is situated"、"job is to operate an elev"），要还原成真正的词头（对照原文音标所在行），并补齐它的释义/例句。
+3. 如果 meaning 里混入了例句或邻居条目（过长、含 例/搭/记/］ 等），把例句拆到 ex_en/ex_zh，只保留词性+释义。
+4. 如果 ex_en 混入了别的例句或中文，按原文拆分，只保留该词自己的那句英文；ex_zh 只保留对应中文。
+5. 如果原文里存在某个词条被程序整条吞掉（没出现在 (B) 里但原文明显有独立音标行+释义+例句），在 fix 里用 "add" 输出它，after 填它前面那个词条的 word。
+6. 只要 (B) 里明显是重复/错误的假词条，在 delete 里列出它的 word。
+7. 原文里没有例句的词条（书本身就没印），ex_en 留 ""，不要自己编例句。绝不编造释义，宁可留空。
+
+补充要求（重要）：
+- (B) 里每个词条都有 "n" 字段（原条目编号）。fix 和 delete 里必须原样回填 "n"，否则无法定位。fix 里 "word" 填修正后的词头。
+- 如果某字段原文里确实没有（书本身没印），填空字符串 ""。
+
+只输出一个 JSON 对象，不要任何解释文字、不要 markdown 代码块，格式严格如下：
+{"fix":[{"n":13,"word":"新word","meaning":"...","ex_en":"...","ex_zh":"...","notes":"..."}],"delete":[{"n":40}],"add":[{"after":"前一个词的word","word":"...","meaning":"...","ex_en":"...","ex_zh":"...","notes":""}]}
+
+注意：不要使用任何工具、不要联网、不要读写文件；只根据下面给定的文本作答，直接把 JSON 放在回答里。
+
+================ (A) 原文 ================
+# LESSON ch09
+
+## RAW BOOK TEXT (two-column extraction, may be garbled/interleaved)
+--- PDF page 120 left column ---
+medium /'miidism/
+n.媒介adj.中间的，中等的
+［例］Present's speech was broadcast through the
+medium of television.总统的演说通过电视媒介播送。
+［记］multimedia n.多媒体mediator n.斡旋者
+media n.大众传播媒介，媒体（如电视、广播等）
+press /pres/
+n.新闻界，记者；报刊；出版社
+［例］The power of the press is very great.新闻界的力量非常大。字根press指“压"。单词press作动词时有“挤压”的含义，同源词又如：compress（大家一起压-压紧，压缩），depress（向下压使沮丧：使萧条），
+express（挤压出来t表示；快递服务）, impress（压进去T给……留下印象）。
+/也3：曲
+journalist 1-匆/
+（!•记者，新闻工作者
+［例］No journalist was bold eno ugh to challe nge the
+Prime Minister.没有一个记者大胆到敢挑战首相。源自法语，法语中的journal表示“每天的：日记，日志；日报”，而“期刊，杂志"的含义是后来引由来的：所以
+journalist就是“把每天发生的事情都记录下来的人”，
+journalism是这样的行业'即“新闻业”。
+critic /'kritik/
+n.批评家；挑剔的人
+［例］The critics said the new movie would not do well
+at the box office.评论家说那部新电影的票房不会太好。
+［记］critical adj.批评的；挑剔的criticism n.批评，扌旨责criticise（=criticize）v.扌岀评
+［搭］a movie critic影评人a theatre critic剧评家字根crit指“判断（to judge）",如：crit（判断）+erion
+（名词后缀）t判断的东西，判断的依据t criterion（标准）,,
+commentator /'kom^nteito/
+Fl.评论员；实况解说员
+medium commentator
+press exponent
+雅思词汇真经
+journalist announcer
+IELTS critic correspondent
+--- PDF page 120 right column ---
+［例］I enjoy this sports commentator's commentaries
+very much.我非常喜欢这位体育运动实况解说员的解说。
+exponent ik'spsun^nt
+n.阐述者，倡导者，拥护者
+［例］He is an exponent of the opinions of Einstein.
+他是爱因斯坦理论的拥护者。
+?'nauns^
+announcer
+n.广播员，播音员
+［例］The announcer started with the day's top
+stories.播音员一上来就播报了一天中的头条新闻。
+［记］announce v.宣布；播报
+correspondent ikor^spondsnt/
+n.通信者；通讯员，记者
+［例］That war correspondent proudly outgunned
+the army sharpshooters.那位战地记者比军队神枪手的枪法还准，觉得很自豪。
+［搭］a war correspondent战地记者
+messenger'mesmc^a
+n.邮递员，信使
+［例］The messenger brought your note today.信使今天带来了给你的短笺。
+［记］message n.信息v.给...发（电子）信息
+editor'edus/
+m编辑，校订者；（电台或电视台的）记者，编辑
+［例］She gave the editor a dish on est acco unt of this
+event.她给了记者一份有关该事件的不实叙述。
+［记］edit v.编辑，校订；剪辑
+［搭］chief editor主编，总编
+typist'taip^st
+n.打字员
+［例］The two typists have already worked all day.
+这两位打字员已经工作一整天了。
+［记］type v.打字
+［搭］a shorthand typist速记打字员
+handout /'haendaut/
+n.传单；讲义
+［例］Please read the handout carefully.请仔细阅读这份讲义。
+leaflet"li：Mt/
+n.传单v.散发传单
+［例］We were paid to leaflet advertisements in the
+shopping mall.有人雇我们在购物中心发放广告传单。
+messenger leaflet
+editor
+typist
+handout
+--- PDF page 121 left column ---
+propaganda /.propa'gaendo/
+n.宣传，鼓吹
+［例］These reports clearly contain elements of
+propaganda.这些报道明显含有一些宣传元素。
+publish /'pAblif/
+公布；岀版，发行
+V.
+［例］News of the pop star's sudden death was not
+published for several days.那位明星突然死亡的消息有好几天没有公布。
+［记］public n.公众adj.公众的publicity n.关注，宣传publication n.出版物；出版，发行
+disseminate /di'semineit/
+散布，传播
+V.
+［例］The agency would collect and disseminate
+information.通讯社会收集和传播信息。
+foresee /foi'si:/
+预见，预知
+V.
+［例】They cannot foresee how things will turn out.
+他们不可能预知事情的结果。前缀fore表示“前面的”，如：foresee（预见）, forearm（前臂）,forebear（以前生［bear］的人t祖先）, forefather（爸爸之前的爸爸-祖先）。
+anticipate /aen'tis右peit/
+预期，预料
+V.
+［例］Sales are better than they have anticipated.
+销售情况比他们预想的好。
+［记］participate v.参与
+expect /ik'spekt/
+预料，预期
+V.
+［例］The managers expect exceptional sales growth
+in the last quarter.经理们预期在最后一个季度会出现极好的销售增长。
+［记］expectation n.期待，期望
+await /Jweit/
+等候，期待；将降临到……身上
+V.
+［例］If you are lucky eno ugh to vacation in the Alps,
+what delights will await you?如果你有幸到阿尔卑斯山度假的话，有什么乐事会等着你呢？
+pastime /'pa:staim/
+n.消遣，娱乐
+［傍！］］Listening to music is the favourite pastime of
+propaganda anticipate entertain
+publish expect recreation
+disseminate await amuse
+foresee pastime gossip
+--- PDF page 121 right column ---
+people all over the world.听音乐是全世界许多
+many
+人最喜爱的消遣。
+entertain
+/lento'tein/
+V.娱乐；招待；心存，怀有
+［例］This television programme is designed to
+educate and to entertain as well.这台电视节目旨在又有教育作用，又能让大家快乐。
+［记］entertainment n.娱乐，消遣；款待
+recreation /irekri'eijan//
+休闲，娱乐
+Fl.
+［例］She is in charge of recreation.她负责娱乐活动。
+［搭］a recreation ground公共娱乐场
+amuse /o'mjuiz/
+v.逗乐；给……提供娱乐
+［例］Harry makes up funny stories to amuse his
+little brother.哈利编有趣的故事来逗他的弟弟。
+［搭］amuse oneself自娱自乐可能与缪斯（Muse）有关，即司历史、音乐、文学等的九位女神之一。动词muse有“沉思”之义，而amuse
+最初是指“使沉思““使目不转睛地盯着"。
+amusement park是“游乐场”，猜猜下面这些词对应的英语表达：过山车，碰碰车，摩天轮，旋转木马。这些都是现在小学英语课本收录的词语：roller coaster,
+bumper car, big wheel /Ferris wheel, merry-go-
+round。
+gossip /'gos^p/
+n.闲聊；流言蜚语
+［例］I've read about it in the gossip column.我在八卦栏目曾看过有关这件事的报道。
+rumour /'ruimo/
+（=rumor）n.谣言，传闻
+［例］The rumour soon swept the entire company.
+mmour
+Chapter
+:娱乐运动
+--- PDF page 122 left column ---
+谣言很快传遍了全公司。注意拼写：rumour humor。联想
+=rumor; humour=
+记忆：rude（粗鲁的幽默）t（谣言）。
+humour rumour
+与gossip的区别：gossip指
+“流言，八卦消息”，如
+celebrity gossip就是“名人的八卦新闻"。
+consensus /kan'sensss/
+ii.共识，一致的意见
+［例］Could
+we reach a consensus on this issue? Let's
+take a vote.我们能在该问题上达成一致吗？让我们来投票表决吧。
+/'fesUval/
+festival
+n.节日；（音乐、电影等的）节
+［例］This music festival will feature fireworks, live
+music, and barbecue.该音乐节上将有烟花表演、现场音乐表演和烧烤野餐。
+/fi:st/
+feast
+n.盛宴；（宗教）节日
+［例］The feast was served by his mother and
+sisters.这顿美餐是他母亲和他的姐妹们准备的。
+programme /'praugrsem/
+（=program）n.节目；方案；（演出或活动的）程序
+v.为（系统）设定程序；计划
+［例］There was an interesting programme on TV
+yesterday.昨天有个很有趣的电视节目。
+［记］programmer n.程序设计员
+rehearsal /ri'h3：sal/
+n.排练
+［例］The play is in rehearsal now.这出戏正在排演中。
+perform /p$fo:m/
+V.表演，演出
+［例］A jazz band will perform live at tomorrow's
+party.—个爵士乐队将在明天的聚会上进行现场表演。
+imitate /'im^teit/
+V.模仿，效仿
+［例］He imitates other people to perfection.他模仿别人模仿得惟妙惟肖。
+mimic /'mimik/
+V.模仿；戏仿
+［例］He mimicked the teacher's accent.他模仿老师的口音。
+consensus rehearsal
+festival perform
+雅思词汇真经
+feast imitate
+IELTS programme mimic
+--- PDF page 122 right column ---
+simulate /'sniij^leit/
+v.模拟；假装，冒充
+［例］We can use computers to simulate many
+situations.我们可以用计算机模拟各种情况。
+［记］simulative adj.模拟的；假装的
+/'s3：kgs/
+circus
+n.马戏团；圆形广场（常用于地名）
+［例］Last Christmas, the circus owner decided to
+take some presents to a children's hospital.去年圣诞节，马戏团老板决定给一家儿童医院送些礼物。
+［搭］a circus clown马戏团小丑
+magic /lm<ed3ik/
+n.魔术；魔法
+M列］The magician thrilled his audienee with his
+magic.魔术师用他的魔术使观众们激动万分。
+drama /'draims/
+n.戏，剧；戏剧艺术
+［例］My brother was studying a course in drama at
+university.我哥哥正在大学里学习戏剧课程。
+［记］dramatic adj.戏剧性的
+concert /'konsat/
+n.音乐会
+［例］Various performers will present
+a concert to
+raise money for AIDS charities.众多表演艺术家将会出席一场音乐会来为艾滋病慈善机构募捐。
+［记］musicale n.社交音乐会concertmaster n.首席小提琴手concertgoer n.常去听音乐会者concerto n.协奏曲conductor n.（管弦乐队、合唱团等的）指挥melody
+n.旋律rhythm n.节奏lyrics n.歌词score n.总谱
+［搭］in concert with与...合作
+simulate concert
+circus
+magic
+drama
+--- PDF page 123 left column ---
+/'simfoni/
+symphony
+n.交响乐
+［例］The Royal Stockholm Philharmonic Orchestra
+played Beethoven's Ninth Symphony.皇家斯德哥尔摩爱乐交响乐团演奏了贝多芬的《第九交响曲》。
+orchestra /'oik^stro/
+n.管弦乐队
+［例］This orchestra has been established under the
+patr on age of the government.这个管弦乐队是在政府的赞助下成立的。
+ballet /'baelei/
+n.芭蕾舞；芭蕾舞剧
+［例］I wanted to be a ballet dancer when I was a
+child.当我还是个孩子时，我想成为芭蕾舞演员。
+［搭］ice ballet冰上芭蕾舞water ballet水上芭蕾舞
+LakelW］著名的芭蕾舞剧《天鹅湖》。
+Swan
+opera /'opars/
+n.歌剧
+［傍！j］She joined the Royal Opera House the following
+year.她于次年加入了皇家歌剧院。
+［搭］Beijing/Peking opera京剧
+comedy /'komgdi/
+n.喜剧
+［例］Dwayne Johnson talked about his experiences of
+starring in comedies.道恩•强森谈论了自己主演喜剧片的经历。
+tragedy /'traed3adi/
+n.悲剧；悲惨的事
+［例］She was too exhausted and distressed to talk
+about the tragedy.她太累了，而且无比悲伤，没法谈论那场悲剧。
+symphony comedy
+movie
+tragedy X-rated
+orchestra
+ballet animation artist
+film craftsman
+opera
+--- PDF page 123 right column ---
+animation /isens'meifan/
+n.动画片；动画制作
+［例］It is this cartoon that brought the animation
+dead.正是这部卡通片使动画产
+industry back from the
+业起死回生。
+/film/
+film
+n.影片；胶卷
+［例］A good film will be on this weekend.这周末会有一部精彩的电影上映。
+/'mu:vi/
+movie
+n.电影
+［例］This movie was hyped up in the media before it
+was screened.这部影片在上映前被媒体大肆吹捧了一番。
+X-rated /'eks reiUd/
+(
+adj. X级的，青少年不宜的
+［例］When Logan was showed in cinema, it was
+X-rated.«金刚狼3》在电影院上映时被定为了X级。
+/'a：Ust/
+artist
+n.艺术家
+［例］He was not the kind of artist who could work
+collaboratively.他不是那种能够与人合作的艺术家。
+［记］art n.艺术artistic adj.艺术的；艺术家的
+craftsman /'kra:ftsmon/
+n.工匠，工艺师
+［例］The origi nal desig ns were made by highly skilled
+craftsmen.原始的图案是由技艺高超的工匠绘制的。
+［记］craft n. I艺v.精心制作
+painter /'peints/
+n.画家；油漆匠
+［例］This painter is not first-class.这位画家并非一流。
+role /rsul/
+仇角色；作用；职能
+［例］I played the role of the mean aunt in the play.
+我在剧中扮演了刻薄的姨母这一角色。
+［搭］play a role in在...中起作用
+scene /si:n/
+n.景色；现场；（戏剧的）场面
+［例］The scene is perfect when you see the sun rising
+slowly in the east.观看太阳从东方慢慢升起，这种景色太美了。
+painter... T O
+role
+scene
+Chapter
+,娱乐运动
+--- PDF page 124 left column ---
+stage /steid3/
+n.舞台；阶段；［the T
+戏剧演出
+［例］Each stage of the battle was carried off
+flawlessly.战斗的每个阶段都进展顺利。
+gallery /'gaelsri/
+n.美术馆
+］The pictures in the gallery were well spaced
+［例
+out.画廊中各幅画的间隔安排得很好。
+/leks^'bijan/
+exhibition
+n.展览
+［例］They are coming to the exhibition as my
+guests.他们作为我邀请的客人来参观展览。
+/i:s'0etik/
+aesthetic
+(=esthetic)adj.审美的n.审美观
+［例］His aesthetic standards are quite different from
+mine.他的审美标准与我的相当不同。
+collect /ks'lekt/
+V.收集；收藏
+［例］He used to collect stamps, but now he likes to
+collect coins.他以前收集邮票，现在却喜欢收集硬币。
+［记］collection n.收集；收藏品
+select /s^'lekt/
+V.选择，挑选adj.精选的
+［例］They were selected from many applicants.他们是从许多申请人中选出来的。
+［记］selection n.选择
+opt /opt/
+v.选择
+［例］My aunt opted for early retirement.我姑姑选择了提早退休。
+［记］option n.选择；选择权
+［搭］opt for sth.选择某事物
+photograph /'fautsgraif?
+n.照片，相片
+［例］His photograph showed how the plant turned
+out.他的照片展示了这株植物长成了什么样。
+［记］photographic adj.摄影的，摄制的
+gram/graph（y）指"写（towrite）,画（to draw）",女口：
+grammar（书写的方法t语法）；bio（生命）+graphy
+（写）t书写生命tbiography（传记）；photo（光）
++graphy（写，画）t用光来描绘t photography（摄影，照相术）。
+stage collect
+gallery select
+雅思词汇真经
+exhibition opt
+IELTS aesthetic photograph
+--- PDF page 124 right column ---
+portrait /'poitr^t/
+n.肖像，半身画像
+［例］Her portrait hangs in the lobby of the library.
+她的肖像挂在图书馆的大厅里。
+painting /'peintig/
+n.油画，绘画；作画；涂漆
+［例］This painting is invaluable.这幅画是非常珍贵的。
+sculpture /'sk A lpg
+n.雕塑
+［例］The smooth contour of the sculpture is wonderful.
+这座雕塑流畅的轮廓线真是太美了。
+draw /dro:/
+V.画；拉；拔出
+［例］Draw a line with a ruler.用尺子画一条线。
+［记］drawing n.图画，素描画；绘图（技巧）
+sketch /sketj/
+n.素描，速写，草图v.画素描，画速写
+［例］I sketched the cat sleeping in the yard.我给正在院子里睡觉的那只猫画了个速写。
+［搭］sketch out画出……的轮廓；简略地叙述
+depict /di'pikt/
+V.描述，描写；描绘
+［例］In this new biography, she is depicted as a
+lonely and unhappy woman.在这本新的传记中,她被描写为孤独且不快乐的女人。字根pict指“画（to paint）",如：depict（画下来t描绘；描写），pictograph（用画画来写字t象形文字），
+picture（画；照片）。
+describe /di'skraib/
+V.描述，形容
+［例］Words cannot describe the beauty of the seene.
+portrait sketch
+painting depict
+sculpture describe
+draw
+--- PDF page 125 left column ---
+语言难以描述出这景色的优美。
+［记］description n.描述
+carve /ka:v/
+V.雕刻；切下
+［例］The statue was carved out of marble.这尊雕塑是用大理石雕成的。
+［搭］carve up瓜分，划分
+improvise /'imprsvaiz/
+V.临时做；即兴创作
+［例］If an actor forgets his lines on stage, he has to
+improvise.如果一个演员在舞台上忘了台词，他就不得不即兴发挥。
+［记］improvisation n.即兴创作
+im（否定）+pro（预先）+vise（看见）t预先没有看见t
+即兴创作；临时做。字根vis指“看见（to see）”，女口：
+provision（事先看到t供应；预备），previse（预见），
+supervise（从上往下看t监督；管理）。
+musical /'mju:zikal/
+adj.音乐的；悦耳的
+［仮！J】The musical instruments.
+drum is one of the oldest
+鼓是最古老的乐器之一。
+n.音乐家，作曲家
+［记］musician
+classical /'klaesikal/
+adj.古典的，传统的
+［例］Beethoven is regarded as one of the immortals of
+dassical music.贝多芬被认为是古典音乐界的不朽人物之一。
+jazz心氏z/
+m爵士乐
+jaz乙他精通
+［例］He is well versed in many styles of
+多种风格的爵士乐。
+rock /rok/
+m摇滚乐；岩石
+［例］Glam rock developed in the early 1970s and
+David Bowie was one of the most in flue ntial glam
+rock artists.华丽摇滚发展于20世纪70年代早期，大卫•鲍伊是最具影响力的华丽摇滚艺术家之一。
+hip-hop /'hip hop/
+n-嘻哈文化
+［例］Hip-hop sin gers like to wear blin g-bli ng in their
+fancy.在音乐录影带里，嘻哈歌
+music videos to look
+手喜欢穿得珠光宝气，让自己看起来很炫。
+carve jazz lyric
+improvise rock band
+musical hip-hop solo
+classical POP melody
+--- PDF page 125 right column ---
+/pop/
+pop
+流行音乐，流行乐曲
+［例］The radio had fed him a stream of pop songs.
+他从广播里听到了一连串流行歌曲。
+pop表示“流行音乐"时源自popular（流行的）。pop
+还可表示“发砰砰声；爆裂；突然岀现“，这些词义源自拟声。
+lyric /'link/
+九抒情诗；卜s］歌词日dj.抒情的
+［例］I don't understand the lyrics, which are in
+French, but the song sounds peaceful.我听不懂法语歌词，但是这首歌听起来让人感觉很宁静。
+band /baend/
+m乐队；带；波段
+［例］The band will play on request.该乐队会按点播要求演奏节目。
+solo /'soulau/
+n.独奏，独唱edj.独奏的，独唱的；单独的
+［例］She as this country's
+has acquired a reputation
+violinist.她赢得了该国首席小提琴独奏家
+premier solo
+的名誉。
+melody /'meladi/
+n.乐曲；旋律
+［例］I really
+like that song, because its melody is
+pleasant.我喜欢那首歌，因为它的旋律十分悦耳。
+rhythm /'nd^m/
+九节奏，韵律
+［例］I without a good rhythm.
+can't dance to music
+没有好的节奏我就不能跟着音乐跳舞。
+［记］rhythmical adj.有节奏的，有韵律的
+rhythm
+Chapter
+娱乐运动
+--- PDF page 126 left column ---
+目前较流行的音乐曲风R&B指的就是urhythm and
+blues1',即“节奏布鲁斯"。
+tone /tsun/
+n.音色；声调；腔调
+［例］This
+violin has a very good tone.这把小提琴的音色很好。
+tune /tju：n/
+n.曲调；短乐曲v.调试
+［例］The violin seems to be out of tune.小提琴的声音好像走调了。
+［记］tuner
+n.调音者
+disc /disk/
+(=disk)m光碟；唱片；［英］(计算机)磁碟，磁盘
+［例］There is no disc that interest m e.这里没有一张碟片让我感兴趣。
+piano /pi'aenou/
+n.钢琴
+［例］He started to learn the piano when he was very
+young.他很小的时候就开始学习钢琴了。
+violin /ivaia'lin/
+n-小提琴
+M列］The violin is not quite in tune with the piano.
+小提琴跟钢琴的调子不太和谐。
+tournament
+/'tfebu/
+cello n.锦标赛，联赛
+n-大提琴［例
+［例］She plays the cello in an orchestra.她在管弦乐队中演奏大提琴。
+Olympic
+/gi'tai/
+guitar adj奥林匹克运动会的n.
+n.吉他［例
+［例］She strummed her guitar, singing her own song.
+她弹着吉他，唱着自己写的歌。
+sponsor
+harmonica /hai'inomka/n.
+n-口琴［例
+［例］He played a tune on his harmonica.他用口琴吹奏了一支曲子。［记］sponsorship
+/'trAmp^t/
+trumpet patron
+n.喇叭，小号n.赞助人；顾客，老主顾
+［例］His performanee as a trumpet player was quite［例］A
+revolutionary.他作为小号手的演奏独具一格。study
+tone violin
+tune cetlo
+雅思词汇奠经disc guitar
+IELTS piano harmonica
+--- PDF page 126 right column ---
+drum /dr am/
+n.鼓；鼓状物；大桶
+［例］The drum beats were steady and slow.鼓声平稳而缓慢。
+/flu：t/
+flute
+n-长笛
+［例］The long-draw n-out sound of a flute is comi ng
+from far to near.悠长的笛声由远而近。
+/ikomp^'tij^n/
+competition
+n.竞争；比赛
+［例］There is a rise in unemployment, so the
+competition for jobs is very fierce.失业人数上升了，所以求职竞争十分激烈。
+［记］compete v.竞争competitor n.竞争者，对手
+/'tusnsmsnt/
+］He has tournament wins to his name.他获得过65次联赛冠军。
+/o'limpik/
+［the~s］奥林匹克运动会
+］The most important part of the Olympics is to
+participate rather than to win.在奥林匹克运动会中，最重要的是参与，而不是取胜。
+/'sponss/
+发起人；主办人；赞助人v.发起；主办；赞助
+］The company had sponsored the football
+match.公司已为这场足球赛提供了赞助。
+n.资助
+/'peitran/
+wealthy patron has promised to send him to
+overseas.—个富有的赞助人答应要送他出国留学。
+trumpet tournament
+drum Olympic
+flute sponsor
+competition patron
+--- PDF page 127 left column ---
+/'ae01i:t/
+athlete
+n.运动员；［英］田径运动员
+［例］The boy first showed promise as an athlete in
+primary school.这个男孩在上小学的时候就初次显示出成为运动员的潜力。
+［记】athletics n.体育运动；田径运动
+/'tjaempian/
+champion
+m冠军，第一名v.拥护，支持
+［例］As the defending champion, she is expected to
+reach the final.作为卫冕冠军，人们预计她会进入决赛。
+［记］championship n.冠军地位；锦标赛字根champ/camp指“场地（field）",所以camp作名词时指"营地”，作动词时指“宿营”，summer camp是"夏令营”。campus指“校园”，可记忆为：camp（营地）+
+us（我们）t我们的营地t校园。campaign（战役；运动）原表示“在开阔区域的军事行动”。而champion源自
+“在战场上战斗的人；（古罗马）角斗士”。
+spectator /spek'teits/
+n-观众
+［例］The match attracted over 40,000 spectators.
+这场比赛吸引了4万多名观众。
+audience表示“观众”时主要指戏剧、音乐会等室内活动的观众或听众，强调“听”，而spectator主要指体育比赛（常指室外体育活动）的观看者，强调“看"。
+volunteer /ivolsn'tia/
+n-志愿者v.自愿做
+［例］Many people volunteer to work on the farms.
+许多人自愿到农场劳动。字根volunt指“意志，意愿（will）",源自拉丁语
+voluntas,表示“自由意志（free will）"按自己意愿
+o
+做事的人就是“志愿者”。
+famous /'feimss/
+adj.著名的，出名的
+［例］Wuthering Heights is one of the most famous
+athlete volunteer energetic
+champion, famous vigorous-
+spectator well-known stadium
+--- PDF page 127 right column ---
+novels in the world.《呼啸山庄》是世界上最著名的小说之一。
+［记］fame n.名声以...闻名
+［搭］be famous for
+well-known />wel'nsuii/
+adj.众所周知的，出名的
+prolific works.
+［例］The writer is well-known for his
+该作家因其创作的大量作品而闻名。
+energetic
+日dj.充满活力的，精力充沛的
+［例］He is an energetic basketball player.他是一名精力充沛的篮球运动员。
+［记］energy n.精力，活力；能量
+/'vigsrss/
+vigorous
+adj.充满活力的；活跃的，积极的
+［例］Our attack was very vigorous and the enemy
+retreated back to the river bank.我方的进攻很猛烈，敌人撤退到了河岸。
+［记］vigour（=vigoij n.精力，活力
+“有生气的（lively）”。字根vig指
+/'steidiom/
+stadium
+n.体育场，运动场
+［矽11］The stadium has been fitted with seating for
+100,000 spectators.这个体育场配备了10万个观众座席。
+gym
+m体育活动；（=gymnasiuni）健身房，体育馆
+［例］Both able-bodied and disabled people can use
+this gym.健全人士和残障人士都可使用这家健身房。源自希腊语gymnasion（逬行体育训练的地方），该词又源自gymnazein（赤裸着身体进行训练）。古希腊运动员曾有在训练和比赛时赤身裸体的传统。所以从字面上讲：gymnast（体操运动员）是“做裸体运动的人"；gymnastics（体操）是"裸体运动"；gym
+（gymnasium）当然就是“裸体运动的地方”啦。
+“gym
+•w
+Chapter
+娱乐运动
+--- PDF page 128 left column ---
+/'treinig/
+training
+m训练，锻炼；培训
+［例］Training is a prerequisite for compete nee.接受训练是掌握技能的前提。
+exercise /'eksssaiz/
+九锻炼，运动；习题，练习v.锻炼
+［例］Swimming is probably the best form of exercise
+you can get.游泳或许是你能进行的最佳锻炼方式。
+indoor /'indo:/
+adj.室内的
+［例］Billiards is a good indoor game.台球是不错的室内游戏。
+［记］indoors adv.在室内
+outdoor /laut'do:/
+adj.户外的，室外的
+［例］If
+you enjoy outdoor activities, this is the trip
+for you.如果你喜欢户外运动，这个旅行很适合你。
+［记］outdoors
+adv.在室夕卜，在户夕卜
+motion /'moufan/
+V•做动作，示意
+［例］She motioned for us to hide ourselves.她示意我们躲藏起来。
+mobile /'maubail/
+adj.可移动的；流动的
+［例］The mobile phone business actually was the
+company's bread and butter.该公司的主业实际上是移动电话业务。
+/'muivmsnt/
+movement
+n-（身体部位的）活动；运动；移动
+［例］Her every movement is very graceful.她的一举
+—动都很优美。
+［记］move v.移动
+/'jouga/
+yoga
+瑜伽
+［例］Some people practise yoga to aid relaxation.
+有些人通过练瑜伽来帮助放松。
+/spro:l/
+sprawl
+V.伸开四肢坐着（或躺着）；延伸，蔓延n.（城市）杂乱无序扩展的地区
+［例］He sprawled on the sofa.他手脚摊开，躺在沙发上。
+training motion
+exercise mobile
+雅思词汇真经indoor movement
+IELTS outdoor yoga
+--- PDF page 128 right column ---
+stretch /stretf/
+V.伸展；伸长（胳膊、腿）
+［例］He stretched out his hand, reaching for a book.
+他伸出手，去拿一本书。
+strain /strein/
+V.拉紧；拉伤，扭伤n.张力，拉力；（精神上的）紧张
+［例］I
+strained my back when I lifted the box.我抬箱子的时候拉伤了背。
+chess /tjes/
+n.国际象棋
+［例］Games like chess are intellectual pursuits.棋类比赛是费脑力的娱乐活动。
+badmi nto n /'baedmintsn/
+m羽毛球
+［例］Badminton can be played by two or four
+people.羽毛球可由两个人或四个人来打。
+［搭a badminton tournament羽毛球锦标赛在英格兰有一个伯明顿（Badminton）庄园，据说现代羽毛球运动的英文名得名于此。但现代羽毛球运动的比赛规则最初于19世纪草拟于印度，后来正式在英国岀版。羽毛球运动中的球拍叫racket,而羽毛球叫
+shuttlecock,该词还指踢犍的“龍子”。
+/golf/
+golf
+高尔夫球
+H列］Hundreds of private golf clubs took part in a recent
+study.数百家私人高尔夫俱乐部参与了最近的研究。
+/'biljsdz/
+billiards
+n.台球
+［例］He spent a whole after noon playi ng billiards.
+他打了整整一个下午的台球。
+pool是大家比较常玩的一种台球，pool还有一个常见词
+sprawl badminton
+stretch golf
+strain billiards
+chess
+--- PDF page 129 left column ---
+义是“游泳池”。那种台球桌比较大，要求先打红球再打彩球的是斯诺克（snooker）snooker—词有“阻挠”
+o
+的含义，也指在打球时故意给对手制造障碍。billiards
+可泛指pool、snooker等台球运动。
+soccer /'soka/
+n.（英式）足球
+［例］In soccer, only the goalkeeper can play the ball
+with his hands.在足球运动中，只有守门员可以用手触球。
+tennis /'tenis/
+n.网球
+［例］He is a professional tennis player.他是一名职业网球运动员。
+volleyball /'volibod/
+n.排球
+［例］They are watching a live TV broadcast of the
+volleyball match.他们正在观看另厮排球赛的电视直播节目。
+hockey /'hoki/
+n.曲棍球；冰球
+［例］She played hockey for the national team.她在国家队打曲棍球。
+cricket /'krikat/
+n.板球
+rain.板球
+［例］The cricket match was washed out by
+比赛因下雨而取消。
+goal /goul/
+m球门；进球得分；目的
+［仅!J］The home side rubbed in their superiority with
+goal.主队再进一球，从而奠定了优势。
+a further
+bat /baet/
+n.球拍，球棒，球板
+［例］I cricket bat.我想要买一个新
+want to buy a new
+板球板。
+soccer cricket kick
+tennis goal knock
+volleyball bat flip
+hockey racket pitch
+--- PDF page 129 right column ---
+/'raek^t/
+racket
+n.（网球、羽毛球等的）球拍
+［例］Can I borrow your tennis racket?我能借用你的网球拍吗？
+/kik/
+kick
+v./n.踢
+［例］Don't kick the ball into the road.不要把球踢到马路上。
+［搭］kick the bucket—命呜呼，翘辫子，死
+knock /nok/
+V.敲，击；撞
+［例］I was so hurried that I knocked into my teacher.
+我非常匆忙，撞到了老师身上。
+［搭］knock at the door敲门
+flip /flip/
+V.掷；（使）快速翻动adj.随便的，轻率的
+［例］Let's flip a coin to see who goes first.咱们来掷硬币，看看谁先去。
+pitch /pitj/
+V.投，掷！!•球场；（棒球中的）投球
+［例］She pitched the ball as far as she could.她尽力把球投得远一些。
+［搭］invade the pitch涌逬球场throw a pitch投球
+throw /Orsu/
+V.投，掷，抛，扔
+［例］Throw the stone in the air.把石头抛向空中。
+toss /tDS/
+v.扔，抛，掷；（使）颠簸
+［例］The among the eddies.
+canoe was tossed about
+独木舟在涡流之中摇晃打转。
+turn辗转反侧
+［搭］toss and
+slide /slaid/
+V.滑动；逐渐降低n.滑行；下跌
+［例］House slide.房子的价值可
+values may begin to
+能要开始逐渐降低了。
+slip /slip/
+v.滑跤；滑落；溜n.滑倒
+［例］She the stairs.她滑倒了，
+slipped and fell down
+从楼梯上摔了下来。
+［搭］a口误，失言
+slip of the tongue
+throw
+toss
+slide Chapter^
+slip娱乐运动
+--- PDF page 130 left column ---
+glide /glaid/
+v.滑动，掠过m滑行V•纵身投入；猛跌；（使）投
+［例］The beautiful swan glides gracefully on the［例］He
+pond.美丽的天鹅在池中优雅地游动。他跳入水中救小孩。
+［搭］plunge
+tumble /'tAmbal/
+联想记忆：想想一个人跳入水中时发出的声音，是不是和plunge的发音很像？
+V.摔倒，滚下
+［例］She
+tumbled on the slick, damp ground.她在这
+spring
+又滑又湿的地上摔倒了。
+v./m跳，跃
+［例］The
+ski /ski:/
+备起跳。
+V.滑雪n.滑雪板
+hop
+［例］The students often go skiing during winter
+vacations.学生们在寒假期间经常去滑雪。V.跳上
+［例］The
+强盗迅速跳进汽车，匆匆离去。
+V.滑冰
+［例］What fun it is to throw snowballs, and to skate bounce
+on the ice!打雪仗和滑冰是多么有趣！V.（使）反弹，（使）弹起；（使）跳动
+［例］The
+cycling /'saiklig/
+墙上又反弹开。
+m骑自行车运动
+［例］He likes cycling very much and wants to buy a
+bicycle.他非常喜欢骑自行车，并且想买一辆。tent
+［记］cyclist n.骑自行车的人bicycle n.自行车n.帐篷
+［例］He
+the
+/daiv/
+dive
+V.跳水；潜水；俯冲camp
+［例］Diving is a part of this expedition.潜水是这次探m营地；阵营险活动的一部分。［例］At
+nowhere.黄昏时，我们在茫茫荒野中扎营。
+drift /drift/
+V•飘移，漂流；流浪，漂泊picnic
+［例］The dead body drifted ashore on the beach. n・野餐；野餐食物尸体被冲到了沙滩上。［例］Let's
+［搭］drift from one country to another从一国流浪到旁吃野餐吧。另一国［搭】go
+jump /d3Amp/
+v.跳；暴涨；跳过
+［例］He jumped when he heard the news.他听到那消息时，跳了起来。
+［搭］from the jump从一开始
+leap /li：p/
+V.跳，跃n.跳跃
+［例］The thief leaped over the wall and ran away.
+小偷越墙逃跑了。
+、回"L cycling
+壬glide.
+dive
+/tumble
+雅魚词'汇真径砒ski drift
+skate jump
+才
+--- PDF page 130 right column ---
+plunge /pknd3/
+身II.跳水；猛跌
+plunged
+into the water to save the child.
+whole-heartedly全心全意地投入
+/sprig/
+cat crouched ready to spring.那只猫俯身准
+/hop/
+（或下）；单脚跳行；齐足跳行
+robber hopped into his car and rushed off.
+/bauns/
+ball hit the wall and bounced off it.球打在
+/tent/
+drew back the tent flap and strode out into
+blizzard.他拉开帐篷的门帘，大步走进暴风雪中。
+/k&mp/
+dusk, we pitched camp in the middle of
+/'piknik/
+匕野餐
+eat our picnic by the waterfall.咱们在瀑布
+for a picnic去野餐
+leap bounce
+plunge tent
+spring camp
+hop picnic
+--- PDF page 131 left column ---
+/hAnt
+hunt
+fl.打猎；搜寻V.猎恥搜寻
+［例］Parent birds began to hunt for food for their
+young.亲鸟开始为幼鸟寻找食物。
+【记］hunter n.猎人
+［搭］hunt for寻找
+race /reis/
+n.赛跑，速度竞赛；人种，种族
+［例］The horse is racing against five others.这匹马正在和其他五匹马比赛。
+marathon'maeraOan/
+n.马拉松赛跑；马拉松式的活动
+［例］Gallard completed the marathon in less than
+three hours.加勒德在不到三个小时的时间里就跑完了马拉松。
+pedestrian /pa'destrion/
+n.步行者，行人
+［例］In the accident, a pedestrian and a cyclist were
+injured.在这场事故中，一位行人和一位骑车人受了伤。
+［搭］a pedestrian crossing入行横道
+pace /peisz
+m步速，速度；步调，节奏v.来回踱步
+［例］Are wages keeping pace with inflation?工资与通货膨胀保持同步吗？
+［搭］set the pace确立标准，领先
+step /step/
+n.步伐；步骤
+［例］One thing you can do is trying to solve it step
+by step.你能做的一件事就是试着逐步解决问题。
+［记］footstep n.脚步声；足迹
+［搭］step by step—步一步，逐步
+excursion /ik'sk3：J>n/
+n.远足，短程旅行
+［例］We went on an excursion to that town.我们至U
+那座城镇去旅行了。该词的字面意思为：跑(cur)到外面(e x)去了。
+cruise /kru：z/
+V.乘船游览；以平稳的速度行驶
+［例］The car was cruising along at kilometres an
+hour.这辆汽车以每小时60公里的速度平稳行驶。
+［记】cruiser n.巡洋舰；舱式游艇；巡逻警车
+hunt step hike
+race excursion jog
+marathon
+cruise stride
+pedestrian
+trip wander
+pace
+vacation linger
+--- PDF page 131 right column ---
+trip /trip/
+v.绊倒n.旅行；绊倒
+uncomfortable.
+［例］The trip was expensive and
+这次旅行既昂贵又受罪。
+vacation /v^'keifan/
+V.休假n.休假；假期
+［例］I was too busy to spare time for a vacation.
+我太忙，抽不出休假的时间。
+［记］vocation n.职业
+/haik/
+hike
+v./n.徒步旅行，远足
+［例］It may rain, in which case the hike will be canceled.
+或许会下雨，如果是那样，徒步旅行将会被取消。
+［记］hiking n.徒步旅行
+jog /d3og/
+V.慢跑
+［例］The old bus jogged steadily down the road.
+那辆旧公共汽车顺着马路平缓地行驶。
+［记］jogger n.慢跑锻炼的人jogging n.慢跑
+stride /straid/
+V.大步走，阔步行走
+［例］They are striding forward both in English and
+in mathematics.他们的英语和数学都在大步取得进步。
+wander /'wDnds/
+V.闲逛，漫步；走神，开小差
+［例］It is fun to wander the world.漫游世界是非常有意思的。
+linger /'lirjga/
+V.逗留，流连；继续存留
+［例］We lingered at the beach the whole summer.我们整个夏天都在海滩上待着。
+lag /laeg/
+V•落后II.间隔，时间差
+［例］Let not a single classmate lag behind.不要让一个同学掉队。
+［搭］lag behind sb./sth.落后于某人/某物
+climb /klaim/
+V.攀登，爬
+［例］It is not easy to climb a steep mountain.登上陡悄的山可不容易。
+［记］limbn.肢；树枝
+lag
+UE9U
+climb
+Chapter
+娱乐运动
+--- PDF page 132 left column ---
+pull /pul/
+v・拉，拖，扯；划（小船）
+［例］They pulled the boat toward the lighthouse.
+他们把小船划向灯塔。
+drag /draeg/
+V.拖，拉，拽
+［例］Use your mouse to drag the pictures into that
+folder.用鼠标把图片拖到那个文件夹里。
+bend /bend/
+V・俯身，弯腰；使弯曲
+U列］He bent his walking cHrection toward me.他转身向我走来。
+［搭］bend over backwards to do sth.竭尽全力去做某事
+1］皤puli bend
+drag bow
+雅思词汇真经
+IELTS
+--- PDF page 132 right column ---
+bow /bau/
+v-/n.鞠躬
+［例］He can't agree with her, but bowed to her greater
+knowledge.虽然他不同意她的意见，但
+experience and
+不得不承认她的经验和知识更丰富。
+［搭］take a bow谢幕
+--- PDF page 133 left column ---
+People are naturally curious. So as they worked人天性好奇。所以，在研究这些材料时，他们就开始发问：“这是什么东西？世界是由什么
+with these materials, they began to wonder
+组成的？
+"What is this stuff? What is world made of?"
+——《物质之谜》
+—The Mystery of Matter
+detergent n.洗涤剂
+--- PDF page 133 right column ---
+”
+n.—件物品
+item
+Chapter
+物品材料
+
+## PARSED ENTRIES FLAGGED AS PROBLEMATIC
+[
+ {
+  "word": "press",
+  "meaning": "n.新闻界，记者；报刊；出版社",
+  "ex_en": "The power of the press is very great",
+  "ex_zh": "新闻界的力量非常大。字根press指“压\"。单词press作动词时有“挤压”的含义，同源词又如：compress（大家一起压-压紧，压缩），depress（向下压使沮丧：使萧条），\nexpress（挤压出来t表示；快递服务）, impress（压进去T给……留下印象）。\n/也3：曲\njournalist 1-匆/\n（!•记者，新闻工作者 No journalist was bold eno ugh to challe nge the\nPrime Minister.没有一个记者大胆到敢挑战首相。源自法语，法语中的journal表示“每天的：日记，日志；日报”，而“期刊，杂志\"的含义是后来引由来的：所以\njournalist就是“把每天发生的事情都记录下来的人”，\njournalism是这样的行业'即“新闻业”。",
+  "notes": "",
+  "n": 2,
+  "_why": "meaning-has-tag-residue"
+ },
+ {
+  "word": "handout",
+  "meaning": "n.传单；讲义",
+  "ex_en": "Please read the handout carefully",
+  "ex_zh": "请仔细阅读这份讲义。\nn.传单v.散发传单 We were paid to leaflet advertisements in the\nshopping mall.有人雇我们在购物中心发放广告传单。",
+  "notes": "",
+  "n": 5,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "pastime",
+  "meaning": "n.消遣，娱乐",
+  "ex_en": "］Listening to music is the favourite pastime of propaganda anticipate entertain publish expect recreation disseminate await amuse foresee pastime gossip",
+  "ex_zh": "",
+  "notes": "",
+  "n": 13,
+  "_why": "ex-en-too-long"
+ },
+ {
+  "word": "programme",
+  "meaning": "（=program）n.节目；方案；（演出或活动的）程序 v.为（系统）设定程序；计划",
+  "ex_en": "There was an interesting programme on TV yesterday",
+  "ex_zh": "昨天有个很有趣的电视节目。",
+  "notes": "programmer n.程序设计员",
+  "n": 22,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "magic",
+  "meaning": "n.魔术；魔法 M列］The magician thrilled his audienee with his magic.魔术师用他的魔术使观众们激动万分。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 29,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "painting",
+  "meaning": "n.油画，绘画；作画；涂漆",
+  "ex_en": "This painting is invaluable",
+  "ex_zh": "这幅画是非常珍贵的。\nn.雕塑 The smooth contour of the sculpture is wonderful.\n这座雕塑流畅的轮廓线真是太美了。",
+  "notes": "",
+  "n": 54,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "musical",
+  "meaning": "adj.音乐的；悦耳的",
+  "ex_en": "The musical instruments. drum is one of the oldest",
+  "ex_zh": "鼓是最古老的乐器之一。\nn.音乐家，作曲家",
+  "notes": "",
+  "n": 61,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "violin",
+  "meaning": "n-小提琴 M列］The violin is not quite in tune with the piano. 小提琴跟钢琴的调子不太和谐。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 75,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "wealthy patron has promised to sen",
+  "meaning": "overseas.—个富有的赞助人答应要送他出国留学。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 83,
+  "_why": "fake-head-fragment"
+ },
+ {
+  "word": "stadium",
+  "meaning": "n.体育场，运动场 ［矽11］The stadium has been fitted with seating for 100,000 spectators.这个体育场配备了10万个观众座席。 gym m体育活动；（=gymnasiuni）健身房，体育馆",
+  "ex_en": "Both able-bodied and disabled people can use this gym",
+  "ex_zh": "健全人士和残障人士都可使用这家健身房。源自希腊语gymnasion（逬行体育训练的地方），该词又源自gymnazein（赤裸着身体进行训练）。古希腊运动员曾有在训练和比赛时赤身裸体的传统。所以从字面上讲：gymnast（体操运动员）是“做裸体运动的人\"；gymnastics（体操）是\"裸体运动\"；gym\n（gymnasium）当然就是“裸体运动的地方”啦。\n“gym\n•w\n娱乐运动",
+  "notes": "",
+  "n": 91,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "spr",
+  "meaning": "awl V.伸开四肢坐着（或躺着）；延伸，蔓延n.（城市）杂乱无序扩展的地区",
+  "ex_en": "He sprawled on the sofa",
+  "ex_zh": "他手脚摊开，躺在沙发上。",
+  "notes": "",
+  "n": 100,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "golf",
+  "meaning": "高尔夫球 H列］Hundreds of private golf clubs took part in a recent study.数百家私人高尔夫俱乐部参与了最近的研究。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 104,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "goal",
+  "meaning": "n.球门；进球得分；目的 ［仅!J］The home side rubbed in their superiority with goal.主队再进一球，从而奠定了优势。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 111,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "tumble",
+  "meaning": "联想记忆：想想一个人跳入水中时发出的声音，是不是和plunge的发音很像？ V.摔倒，滚下",
+  "ex_en": "She tumbled on the slick, damp ground",
+  "ex_zh": "她在这\n又滑又湿的地上摔倒了。\nv./m跳，跃 The",
+  "notes": "",
+  "n": 123,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "the",
+  "meaning": "V.跳水；潜水；俯冲camp",
+  "ex_en": "Diving is a part of this expedition",
+  "ex_zh": "潜水是这次探m营地；阵营险活动的一部分。 At\nnowhere.黄昏时，我们在茫茫荒野中扎营。",
+  "notes": "",
+  "n": 126,
+  "_why": "fake-head-fragment"
+ },
+ {
+  "word": "cat crouched ready to spri",
+  "meaning": "ng.那只猫俯身准 /hop/ （或下）；单脚跳行；齐足跳行",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 131,
+  "_why": "fake-head-fragment"
+ },
+ {
+  "word": "ball hit the wall and bounced",
+  "meaning": "off it.球打在",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 132,
+  "_why": "fake-head-fragment"
+ },
+ {
+  "word": "mp",
+  "meaning": "匕野餐 eat our picnic by the waterfall.咱们在瀑布 for a picnic去野餐",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 134,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "race",
+  "meaning": "n.赛跑，速度竞赛；人种，种族",
+  "ex_en": "The horse is racing against five others",
+  "ex_zh": "这匹马正在和其他五匹马比赛。\nn.马拉松赛跑；马拉松式的活动 Gallard completed the marathon in less than\nthree hours.加勒德在不到三个小时的时间里就跑完了马拉松。",
+  "notes": "",
+  "n": 135,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "bend",
+  "meaning": "V・俯身，弯腰；使弯曲 U列］He bent his walking cHrection toward me.他转身向我走来。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "bend over backwards to do sth.竭尽全力去做某事 1］皤puli bend",
+  "n": 151,
+  "_why": "meaning-too-long"
+ }
+]

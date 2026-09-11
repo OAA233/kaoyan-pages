@@ -1,0 +1,15 @@
+prompt 122KB, calling agy...
+exit 0 stdout 16534 stderr 
+fix 72 delete 6 add 17
+ - {"n": 17, "word": "controversial", "meaning": "adj.有争议的", "ex_en": "They tried to stay away from controversial topics at the dinner party.", "ex_zh": "晚宴上，他们尽力避免谈论有争议的话题。", "notes"
+ - {"n": 22, "word": "cram", "meaning": "v.把……塞进；（为应考）临时死记硬背", "ex_en": "Lectures were all called off, so students could cram for the semester finals.", "ex_zh": "课都取消了，所以学生可以突击复习，准备期
+ - {"n": 32, "word": "indulge", "meaning": "v.迁就，放任；沉湎；让……享受一下", "ex_en": "You can indulge yourself without spending a fortune.", "ex_zh": "你不必花大把钱就可以好好犒劳一下自己。", "notes": "indulgent a
+ - {"n": 34, "word": "abuse", "meaning": "v.滥用；虐待 n.滥用；虐待", "ex_en": "It's easy to abuse one's power.", "ex_zh": "人很容易滥用权力。", "notes": "alcohol abuse酗酒"}
+ - {"n": 39, "word": "genius", "meaning": "n.天才人物；天赋", "ex_en": "His genius is not confined to maths and physics.", "ex_zh": "他的天赋不单体现在数学和物理学上。", "notes": "字根gen意为“生（to beget）”，如：geni
+ - {"n": 40, "word": "elite", "meaning": "n.精英人物；精华；上层人士", "ex_en": "The army was controlled by a small ruling elite.", "ex_zh": "军队由少数上层统治精英控制。", "notes": ""}
+ - {"n": 42, "word": "aptitude", "meaning": "n.天生的才能，资质", "ex_en": "That student has an aptitude for music.", "ex_zh": "那个学生有音乐方面的天赋。", "notes": "apt adj.恰当的；聪明的"}
+ - {"n": 47, "word": "prestige", "meaning": "n.威望，声望", "ex_en": "These new policies will affect the president's national and international prestige.", "ex_zh": "这些新政策将会影响该总统在全国及国际上的声望
+ - {"n": 51, "word": "respect", "meaning": "n./v.尊敬，敬重", "ex_en": "You should know how to respect yourself before you can get respect from others.", "ex_zh": "你该先知道如何自尊，然后你才能得到别人的尊重。"
+ - {"n": 52, "word": "diligent", "meaning": "adj.勤勉的，勤奋的", "ex_en": "She is diligent and busy with all kinds of experiments all the time.", "ex_zh": "她真勤快，一直都在忙于进行各种实验。", "notes": "di
+ - {"n": 54, "word": "skill", "meaning": "n.技巧，技能", "ex_en": "It requires an athlete to have great skill, cool nerves and quick reflexes.", "ex_zh": "那需要运动员有高超的技巧、冷静的头脑和迅速的反应能力。", "no
+ - {"n": 64, "word": "lecturer", "meaning": "n.［英］（大学的）讲师", "ex_en": "I have to submit this report to my lecturer.", "ex_zh": "我得把这份报告交给讲师。", "notes": "lecture n.演讲，讲课v.开讲座，讲课"}

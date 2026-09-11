@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雅思词汇真经 Ch.06 科技发明</title>
+<style>
+  body {
+    --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
+    --num: #8b8577; --num-border: #5a564d; --muted: .55;
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif;
+    background: var(--bg); color: var(--fg);
+    margin: 0; padding: 14px 16px; max-width: 1080px;
+    transition: background .2s, color .2s;
+  }
+  body.day {
+    --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8;
+    --num: #8a8373; --num-border: #c4bda9; --muted: .6;
+  }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
+  .hbtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px;
+  }
+  .hbtn:hover { opacity: .8; }
+  .stats { display: inline; gap: 8px; font-size: 12px; opacity: .7; }
+  .row2 { display: flex; gap: 10px; align-items: flex-start; }
+  .col2 { flex: 1; min-width: 0; }
+  .card {
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 9px 12px; background: var(--card);
+    border-left: 5px solid #555; margin-bottom: 10px;
+  }
+  .card.cV { border-left-color: #e5484d; }
+  .card.cI { border-left-color: #d63384; }
+  .card.cN { border-left-color: #1971c2; }
+  .card.cadv { border-left-color: #2b8a3e; }
+  .row1 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .num {
+    font-size: 11px; font-weight: 700; color: var(--num);
+    border: 1.5px solid var(--num-border); border-radius: 50%;
+    width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: center;
+  }
+  .word { font-size: 19px; font-weight: 700; cursor: pointer; }
+  .word:hover { text-decoration: underline; }
+  .pos { font-size: 11px; font-weight: 700; padding: 2px 6px; white-space: nowrap; border-radius: 7px; color: #fff; }
+  .pos.V { background: #e5484d; }
+  .pos.I { background: #d63384; }
+  .pos.N { background: #1971c2; }
+  .pos.adv { background: #2b8a3e; }
+  .mean { margin-top: 1px; font-size: 13px; margin-left: 32px; }
+  .phrase { margin-top: 6px; font-size: 13px; margin-left: 32px; }
+  .phrase .jp { font-weight: 600; cursor: pointer; }
+  .phrase .jp:hover { text-decoration: underline; }
+  .phrase .zh { display: block; opacity: var(--muted); margin: 1px 0 0; }
+  .note-line { margin-top: 4px; font-size: 12px; margin-left: 32px; opacity: var(--muted); }
+  @media (max-width: 760px) { .row2 { flex-direction: column; } .col2 { width: 100%; } }
+
+  /* ---- 听写 ---- */
+  #dict { position: fixed; inset: 0; background: var(--bg); z-index: 500; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  #dict.open { display: flex; }
+  #dictBig { font-size: 20px; padding: 16px 30px; border-radius: 16px; border: 1px solid var(--num-border); background: var(--card); color: var(--fg); cursor: pointer; }
+  #dictAns { min-height: 150px; transition: opacity .2s; }
+  #dictAns.hidden { opacity: 0; pointer-events: none; user-select: none; }
+  .dword { font-size: 30px; font-weight: 800; }
+  .dpos { opacity: .5; font-size: 12px; }
+  .dmean { font-size: 16px; margin-top: 4px; }
+  .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
+  .dphz { opacity: .6; font-size: 13px; }
+  .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>雅思词汇真经 Ch.06 科技发明</h1>
+    <p><span class="stats">共 <b id="count"></b> 词 · 点击单词/例句发音（edge 女声）</span></p>
+  </div>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
+  <button id="themeBtn" class="hbtn" onclick="toggleTheme()">🌙 夜间</button>
+</header>
+<div id="list"></div>
+
+<script>
+let DATA = [{"word": "technology", "meaning": "n.技术", "ex_en": "Life is made so much easier with modern science and technology.", "ex_zh": "有了现代科学技术，生活变得比以往惬意得多。", "notes": "technological adj.技术上的 advanced technology先进的技术", "n": 1}, {"word": "tech", "meaning": "n.技巧；技术", "ex_en": "I want to learn the latest technique in toy making", "ex_zh": "我想学习制作玩具的最新技术。", "notes": "technical adj.技术的，技能的，工艺的 technician n.技术员，技师", "n": 2}, {"word": "polytechnic", "meaning": "adj.有关多种工艺的n.理工学院", "ex_en": "Your trainees will acquire polytechnic training", "ex_zh": "你方受训人员将得到有关多种工艺的培训。\nengineer伽加皿/\nm工程师，技师 Each engineer needs to be in touch with the\nentire engineering department.每个工程师都需要和整个工程部交流。", "notes": "engine n.引擎engineering n. I程；工程学", "n": 3}, {"word": "mechanic", "meaning": "n.技工，机械师，机修工", "ex_en": "This car has broken down again! I'll have to ring the mechanic", "ex_zh": "这辆车又坏了！我必须给机修工打电话。", "notes": "machine n.机器，机械n.机制；机 械装置", "n": 4}, {"word": "advance", "meaning": "m/v.发展；前进", "ex_en": "We have advanced greatly in our knowledge of the universe", "ex_zh": "我们对宇宙的认识已经深入了很多。", "notes": "advanced adj.先进的；高级的 in advance预先，提前", "n": 5}, {"word": "innovate", "meaning": "V.创新，改革", "ex_en": "We must innovate in order to make progress", "ex_zh": "我们必须改革以取得进步。", "notes": "innovation n.创新，改革innovator n.改革者，创新者", "n": 6}, {"word": "breakthrough", "meaning": "n.突破", "ex_en": "Surgeons have made a great breakthrough in technology mechanic technique advance", "ex_zh": "", "notes": "", "n": 7}, {"word": "gizmo", "meaning": "n.小装置", "ex_en": "The modern world is increasingly populated by intelligent gizmos whose universal existenee has removed much human labour", "ex_zh": "现代社会里的智能装置越来越多，其广泛存在节约了大量人力。", "notes": "", "n": 8}, {"word": "patent", "meaning": "n.专利，专利权v.得到……的专利权；给……专利证", "ex_en": "The government patented the device to its inventor", "ex_zh": "政府给发明者授予了该装置的专利证。", "notes": "", "n": 9}, {"word": "devise", "meaning": "V.设计，发明", "ex_en": "The team is trying to devise a new system for handling mail orders", "ex_zh": "这个小组正设法设计一个新的邮购品处理系统。", "notes": "device n.装置，设备", "n": 10}, {"word": "invent", "meaning": "V.发明，创造", "ex_en": "Do you know who invented the magnetic needle?", "ex_zh": "你知道指磁针是谁发明的吗？", "notes": "inventionn.发明，创造inventorn.发明者，创造者", "n": 11}, {"word": "discover", "meaning": "V.发现", "ex_en": "He discovered his tale nt for fashi on design when he was very young", "ex_zh": "他很年轻的时候就发现了自己在时尚设计方面的天赋。", "notes": "discovery n.发现；被发现的事物", "n": 12}, {"word": "disclose", "meaning": "v.揭露，透露", "ex_en": "", "ex_zh": "", "notes": "", "n": 13}, {"word": "reveal", "meaning": "V.展现；显示，透露", "ex_en": "His deed revealed him to be a kind man", "ex_zh": "他的行为显示他是个好心的人。", "notes": "", "n": 14}, {"word": "uncover", "meaning": "V.揭露，发现", "ex_en": "The detective must uncover the murderer by deduction of facts", "ex_zh": "侦探必须根据事实进行推理，从而找出凶手。", "notes": "", "n": 15}, {"word": "expose", "meaning": "V.使暴露；揭发，使曝光", "ex_en": "The crime of the corrupt officials must be exposed without any reserve", "ex_zh": "对于贪官污吏的罪行，一定要毫无保留地进行揭发。", "notes": "exposure n.暴露；揭露", "n": 16}, {"word": "domain", "meaning": "n.（活动、学问等的）领域；领土，领地", "ex_en": "This domain", "ex_zh": "这不属于我的领域。\n字根dom意为“房子后引申为“主\n人，领主”的意思。领主的地产即领土。同根词又如：\n（国内的；家庭的），dominate（行使领主的\n权利t统治，控制），dominant!占优势的；主要的）。", "notes": "", "n": 17}, {"word": "field", "meaning": "n.领域 ［攸9竹eld.他在自己的领域里已经出名了。", "ex_en": "", "ex_zh": "", "notes": "", "n": 18}, {"word": "realm", "meaning": "n.领域", "ex_en": "Such an idea only belongs in the realm of science fiction", "ex_zh": "这样的理念只适合科幻领域。", "notes": "", "n": 19}, {"word": "foundation", "meaning": "n.基础；地基；基金会", "ex_en": "He laid the foundations of his success by hard work", "ex_zh": "勤奋奠定了他成功的基础。", "notes": "founder n.奠基人，创建人 a基础课程", "n": 20}, {"word": "specialise", "meaning": "v.专攻", "ex_en": "Many engineering", "ex_zh": "许多", "notes": "", "n": 21}, {"word": "absorb", "meaning": "V.理解；掌握", "ex_en": "His ability to absorb bits of disconnected information was astonishing", "ex_zh": "他理解互不相关的零碎信息的能力惊人。前缀ab表示“离开”，字根是sorb（吸收，吮吸）。", "notes": "", "n": 22}, {"word": "concentrate", "meaning": "V.集中（心思）；（使）浓缩", "ex_en": "They will concentrate on teachi ng the basics of reading, writing and arithmetic", "ex_zh": "他们将专注于教授阅读、写作和算术的基础知识。", "notes": "concentration n.专心；浓度 concentrate on专心于", "n": 23}, {"word": "focus", "meaning": "v.（把……）集中（于）n.焦点", "ex_en": "Today he was able to focus his message economy", "ex_zh": "今天，他得以将主题全部\n集中在经济方面。", "notes": "focus on集中于源自拉丁语focus（壁炉），引申词义为“焦点”。 (=utilize)v.利用 H列In order to utilise land more fully, they adopted close planting.为了更充分地利用土地，他们采取了密植的办法。 utility n.效用，有用utilities n.(水、电、燃气等) 公用事业utilisation(=utilization)n.利用，使用", "n": 24}, {"word": "usage", "meaning": "n.使用；(词语的)用法 、", "ex_en": "", "ex_zh": "", "notes": "", "n": 25}, {"word": "tester", "meaning": "n.测试仪；测试员", "ex_en": "The battery tester is in my garage", "ex_zh": "电池测试仪在我的车库里。", "notes": "", "n": 26}, {"word": "apply", "meaning": "v.应用，适用；申请", "ex_en": "We should not only know the theory but also how to apply it to practice.", "ex_zh": "我们不仅要知道理论，还要知道怎样把理论应用于实践。", "notes": "application n.应用；申请；应用程序\napplicable adj.适用的，合适的\nappliance n.应用；（家用）器具\napply to 适用于\napply A to B 把A应用于B", "n": 27}, {"word": "device", "meaning": "n.装置，设备；手段，策略", "ex_en": "These month", "ex_zh": "这些新设计的装置将在下个\n月的展览会上展出。", "notes": "", "n": 28}, {"word": "appliance", "meaning": "n.应用；（家用）器具", "ex_en": "The household appliances were just him for his family", "ex_zh": "他刚为家里买回来几件家用器具。", "notes": "a kitchen appliance厨房用具", "n": 29}, {"word": "facility", "meaning": "n.设备；便利", "ex_en": "This facility is open to both new and existing borrowers", "ex_zh": "这套设备向新老借用者开放。源自拉丁语facilis（简单的），即促进事物简化的设施或工具，后词义通用化。", "notes": "", "n": 30}, {"word": "equipment", "meaning": "n.设备", "ex_en": "We should make a better use of the existing equipment", "ex_zh": "我们应该更好地利用现有设备。", "notes": "equip v.装备，配备", "n": 31}, {"word": "instrument", "meaning": "n.仪器；工具；乐器", "ex_en": "A plough is an instrument used for farming.", "ex_zh": "犁是一种用于耕作的工具。", "notes": "", "n": 32}, {"word": "tool", "meaning": "n.工具", "ex_en": "Advertising is a tool that nearly every company is utilising", "ex_zh": "广告是一种几乎每家公司都在使用的工具。", "notes": "", "n": 33}, {"word": "gauge", "meaning": "n.测量仪器v.测量；判断", "ex_en": "It was difficult to gauge how people would respond", "ex_zh": "很难判断人们会有何反应。", "notes": "", "n": 34}, {"word": "measure", "meaning": "v.测量n.衡量；措施", "ex_en": "Measure this impedanee and you can measure how much it has rained", "ex_zh": "测量该阻抗，你就可以测岀雨量的多少。", "notes": "measurable adj.可测量的measurement n.衡量，测量；尺寸 take measures采取措施莎士比亚(Shakespeare)名剧《一报还一报》(Measure for Measure｝的剧名一般被认为出自《圣经•马太福音》：For with what judgment ye judge, ye shall be", "n": 35}, {"word": "calculate", "meaning": "V.计算；考虑，打算", "ex_en": "Our price has already been closely calculated; there is no room for reduction", "ex_zh": "我们的价格是经过精密计算的，无让步余地。 I compute my loss at dollars.我估计我的损失有500美元。", "notes": "calculation n.计算calculator n.计算器 V.计算；估计 computer n.计算机", "n": 36}, {"word": "count", "meaning": "V.计算", "ex_en": "It is gauge count measure calculate compute", "ex_zh": "", "notes": "", "n": 37}, {"word": "assess", "meaning": "V.评估；估算", "ex_en": "We will assess the damage caused by the flood", "ex_zh": "我们将估算洪灾造成的损失。 The research project has only been under way for\n这个研究项目才进行了三个月，所以要评价它的成绩为时尚早。 Car accessories in elude the roof rack and radio.\n汽车配件包括车顶架和收音机。", "notes": "assessment n.评估；估价 V.评价，评估 evaluate sb. as把某人作为……进行评价 evaluate sb. by sth.以某事物来评价某人字根val指\"值...钱（be worth）”，如I：evaluate（评估岀［前缀e表示“向外'’］价值-评价），value（价值）. invaluable（无法估量其价值的非常宝贵的）， devaluation（贬值）° n附件，配件", "n": 38}, {"word": "byproduct", "meaning": "n.副产品", "ex_en": "Happiness is not a goal; it is a byproduct.", "ex_zh": "幸福不是一种目标，而是一种副产品。", "notes": "bypass n.旁路bypath n.旁道，小路 bywork n.业余活计byname n.绰号", "n": 39}, {"word": "auxiliary", "meaning": "adj.辅助的，协助的；备用的", "ex_en": "When there is power shortage, they count on the auxiliary power supply.", "ex_zh": "停电的时候，他们依赖后备供电设施。", "notes": "", "n": 40}, {"word": "versatile", "meaning": "adj.多功能的，多用途的", "ex_en": "Plastics are a versatile material in industry.", "ex_zh": "在工业中，塑料是一种多用途材料。", "notes": "", "n": 41}, {"word": "accumulate", "meaning": "V.积累；（数额）逐渐增加", "ex_en": "Dust and dirt soon accumulate if you don't clean your house regularly", "ex_zh": "如果不经常打扫房屋，尘土很快就越积越多。\nV.集合，聚集 A large crowd had assembled outside the\nAmerican embassy.—大群人聚集在美国使馆外。", "notes": "", "n": 42}, {"word": "gather", "meaning": "v.聚集；采集", "ex_en": "He took the trouble to gather the materials for me", "ex_zh": "他不辞辛劳地为我收集资料。\nattach dt氏tj/\nV.使依附；附加；缚，系，贴 China will not attach itself to any big power.\n中国不会依附任何大国。", "notes": "attachment n.附件，附属物 attach importance to重视", "n": 43}, {"word": "belong", "meaning": "V.应在（某处）；适合（某种情形）", "ex_en": "Russia is a major oil exporter, but does not belong to OPEC", "ex_zh": "俄罗斯是石油出口大国，但不属于石油输出国组织。", "notes": "belong to属于", "n": 44}, {"word": "optics", "meaning": "n-光学", "ex_en": "Newt on published his first work on optics", "ex_zh": "牛顿发表了他的第一部光学著作。", "notes": "", "n": 45}, {"word": "microscope", "meaning": "n.显微镜", "ex_en": "The optical microscope magrHfies the object 1,000 times.", "ex_zh": "这架光学显微镜把物像放大了一千倍。", "notes": "microphone n.麦克风，话筒microwave n.微波炉；微波microbe n.微生物", "n": 46}, {"word": "lens", "meaning": "n.透镜；(照相机等的)镜头", "ex_en": "When viewing through the lens, we can see the thing clearer, larger or smaller", "ex_zh": "通过透镜，我们可以把物体看得更清楚、更大或更小。", "notes": "", "n": 47}, {"word": "radar", "meaning": "n.雷达，无线电定位装置", "ex_en": "Officials want to sean the tomb with radar in the hope of unlocking the mystery", "ex_zh": "官方想用雷达来扫描墓室，希望借此解开墓室之谜。", "notes": "", "n": 48}, {"word": "echo", "meaning": "n.回声v.发回声；模仿；重复", "ex_en": "The cathedral is echoing with joyous hymns", "ex_zh": "教堂里回响着欢乐的赞美诗。希腊神话中，厄科(Echo)是居于山林水泽的仙女，但她丧失了独立说话的能力，只能重复别人说的话的尾音。之后，她爱上了一位美少年，但遭到拒绝，从此终日抑郁，憔悴而死，山林间只留下她的声音。现在，当我们在山间高喊时，仔细听一听，有厄科的声音在回应。", "notes": "", "n": 49}, {"word": "sensor", "meaning": "n.传感器", "ex_en": "Place the sensor on a flat surface and rotate it slowly through 360°", "ex_zh": "把传感器放在一个平面上，慢慢转动360°o", "notes": "sense n.感受sensory adj.感觉的，感官的 sensitivity n.敏感性", "n": 50}, {"word": "multimedia", "meaning": "n-多媒体", "ex_en": "As part of the celebrations, they staged a big, open-air multimedia event", "ex_zh": "作为庆典的一部分，他们举行了大型露天多媒体活动。", "notes": "", "n": 51}, {"word": "network", "meaning": "n.网络；广播网，电视网", "ex_en": "Preside nt Bush's speech was broadcast on nati onal television networks", "ex_zh": "布什总统的演说由国家电视网播送。", "notes": "net n.网；网状物v.（用网）捕", "n": 52}, {"word": "browser", "meaning": "n.浏览器", "ex_en": "In your Web browser's cache are the most recent Web files that you have downloaded", "ex_zh": "网页浏览器的高速缓存区里有你最近下载的网页文件。", "notes": "", "n": 53}, {"word": "dial", "meaning": "V.拨（电话号码）", "ex_en": "She picked up the phone, and began to dial his number", "ex_zh": "她拿起电话，开始拨他的号码。", "notes": "", "n": 54}, {"word": "microcomputer", "meaning": "n.微型计算机", "ex_en": "A newly-devised microcomputer can act as a guide for a blind person.—", "ex_zh": "种新设计的微型计算机能够充任盲人的向导。", "notes": "", "n": 55}, {"word": "laptop", "meaning": "n.笔记本电脑", "ex_en": "A laptop would be really useful when I'm working on the train.", "ex_zh": "我在火车上工作时，笔记本电脑真的很有用。", "notes": "", "n": 56}, {"word": "software", "meaning": "n.软件", "ex_en": "This is a computer software shop.", "ex_zh": "这是一家卖计算机软件的商店。", "notes": "hardware n.硬件；五金器具", "n": 57}, {"word": "keyboard", "meaning": "n.键盘", "ex_en": "The machine is operated through the keyboard", "ex_zh": "这台机器是用键盘操作的。", "notes": "", "n": 58}, {"word": "screen", "meaning": "n.屏；屏幕v.遮蔽", "ex_en": "A list of items is repeatedly flashed up on the screen", "ex_zh": "一个选项列表反复岀现在屏幕上。", "notes": "", "n": 59}, {"word": "loudspeaker", "meaning": "n.扬声器，喇叭", "ex_en": "The loudspeaker announced each airplane as it landed at the airport", "ex_zh": "每架飞机在机场一着陆，扬声器就发岀通知。", "notes": "", "n": 60}, {"word": "microphone", "meaning": "n.话筒，麦克风", "ex_en": "Unfortunately, I didn't have a microphone at that time to record us", "ex_zh": "不幸的是，我当时没有麦克风，无法把我们说的话录下来。", "notes": "", "n": 61}, {"word": "cassette", "meaning": "n.盒式磁带；底片盒", "ex_en": "He inserted a cassette into the machine", "ex_zh": "他把―\n盒磁带放入机器。来自case（箱）。ette是表示“小”的后缀。", "notes": "", "n": 62}, {"word": "tape", "meaning": "n・磁带，录音带；胶带", "ex_en": "A technician loads a video tape into one of the machines", "ex_zh": "一名技师把一盒录影带装进其中一台机器。", "notes": "", "n": 63}, {"word": "binary", "meaning": "adj.二进制的；二元的", "ex_en": "e machine does binary calculations", "ex_zh": "这台机器采用二进制的计算法。", "notes": "", "n": 64}, {"word": "digital", "meaning": "adj.数字的", "ex_en": "The BBC has just successfully dem on strated a new digital radio transmission system", "ex_zh": "英国广播公司刚刚成功演示了一套新的数字无线电传输系统。", "notes": "", "n": 65}, {"word": "wireless", "meaning": "adj.不用电线的，无线的", "ex_en": "We still don't have the wireless network", "ex_zh": "我们仍然没有无线网络。\n®是无线保真(wireless\nWi-Fi fidelity)的缩写。", "notes": "", "n": 66}, {"word": "audio", "meaning": "adj.声音的", "ex_en": "The reproductive quality of audio tapes has improved enormously", "ex_zh": "录音带的复制质量有了很大改进。", "notes": "", "n": 67}, {"word": "vision", "meaning": "n.视觉，视力", "ex_en": "I've had my eyes tested and the report says that my vision is perfect", "ex_zh": "我检查过眼睛了，检查报告说我的视力非常好。", "notes": "visual adj.视觉的，视力的visible adj.看得见的", "n": 68}, {"word": "fantasy", "meaning": "n.幻想", "ex_en": "He is unable to divorce fantasy from reality", "ex_zh": "他不能将幻想与现实分开。", "notes": "fantastic adj.奇异的，奇妙的", "n": 69}, {"word": "science fiction", "meaning": "(=sci-fi)n.科幻作品", "ex_en": "Science fiction films are very popular with youngsters", "ex_zh": "科幻电影在年轻人中非常受欢迎。", "notes": "", "n": 70}, {"word": "pump", "meaning": "n.泵v.(用泵)抽", "ex_en": "At the farm, there was an old-fashioned pump for drawing water from a well", "ex_zh": "那个农场上有一台老式的用来从井里抽水的泵。\n.\n科技发明", "notes": "", "n": 71}, {"word": "generator", "meaning": "n.发电机", "ex_en": "A new type of wind generator may offer an answer to that problem.—", "ex_zh": "种新型的风力发电机可能会解决这一问题。", "notes": "generate v.产生（能量），发（电）", "n": 72}, {"word": "gear", "meaning": "n.齿轮，传动装置v.使适合", "ex_en": "Education should be geared to children's needs", "ex_zh": "应对教育进行调整以适应孩子们的需要。", "notes": "in high gear以高速挡；高速地gear up换高速挡；促进", "n": 73}, {"word": "pivot", "meaning": "n.枢轴，支点；中心，重点", "ex_en": "The mother is often the pivot of family I", "ex_zh": "讦e.\n母亲往往是家庭生活的中心人物。", "notes": "", "n": 74}, {"word": "hydraulic", "meaning": "adj.水力的，液压的", "ex_en": "The boat has no fewer than five hydraulic pumps", "ex_zh": "这艘船配有不少于五个液压泵。", "notes": "", "n": 75}, {"word": "drainage", "meaning": "n.排水系统；排水", "ex_en": "The drainage of the city is poor, some of the pipes are broken", "ex_zh": "这座城市的排水系统很差，有些排水管都破裂了。\n］improve the drainage改善排水系统", "notes": "", "n": 76}, {"word": "sewage", "meaning": "n.（下水道的）污水", "ex_en": "Discharge of raw sewage into the sea is unsanitary and unsafe", "ex_zh": "把未经处理的污水排放到海里既不卫生也不安全。", "notes": "", "n": 77}, {"word": "ventilation", "meaning": "n.通风；通风设备", "ex_en": "Some people think that ventilation is the same thing as air conditioning", "ex_zh": "有些人以为通风设备和空调是一回事。\nV.压紧，压缩 Reining in inflatio n can in crease in come inequality\nsoar.抑制通货膨胀会扩大收入差距，因为它一方面会压缩劳动报酬，另一方面又允许资产价格飞涨。", "notes": "", "n": 78}, {"word": "conde", "meaning": "nse V.简缩，精简；（使气体）凝结", "ex_en": "A long story may be condensed into a few sentences.—", "ex_zh": "个长篇故事可被缩写成几句话。", "notes": "", "n": 79}, {"word": "refine", "meaning": "V.精炼，提纯", "ex_en": "The purpose of oil refinery is to refine crude petroleum", "ex_zh": "炼油厂的工作目的是提炼原油。", "notes": "refine on对……进行精微改进", "n": 80}, {"word": "simplify", "meaning": "V.简化，精简", "ex_en": "Try to simplify your explanation for the children", "ex_zh": "设法解释得简单些，好让孩子们听得懂。", "notes": "simplicity n.简单；质朴simple adj.简单的 simply adv.简单地；仅仅", "n": 81}, {"word": "purify", "meaning": "v.净化，使纯净", "ex_en": "They open the windows to purify the air of the room", "ex_zh": "他们打开窗户以净化室内空气。 shutters.阳光从百叶窗的缝隙中透过来。", "notes": "purity n.纯洁，纯净pure adj.纯净的；单纯的 v.过滤；（光或声）透n.过滤器过 Sun light filtered through the chinks of the filter through（消息等）慢慢传开，走漏", "n": 82}, {"word": "distil", "meaning": "（=distill）v.蒸憾；提取……的精华", "ex_en": "You can distil the water from the lake and make it drinkable", "ex_zh": "你可以蒸懾湖里的水，使其可以饮用。", "notes": "", "n": 83}, {"word": "mode", "meaning": "n.模式；方式", "ex_en": "This fever will return from time to time, if it follows its usual mode", "ex_zh": "按照这种热病通常的出现规律，每隔一阵子，它就会再出现。字根mod指“方式，方法（measure, manner）\",如：\n（温\nmodel（成为一种方式t模型；模特儿），modest\n（改和、适当的方式t不自视过高t谦虚的），modify\n变方式t稍作修改）。", "notes": "", "n": 84}, {"word": "mould", "meaning": "（=mold）v.浇铸；塑造n.模子", "ex_en": "It can be moulded and shaped at will", "ex_zh": "它可被随意塑造加工。", "notes": "", "n": 85}, {"word": "prototype", "meaning": "n.原型；雏形", "ex_en": "The prototype for future school building was showed in the library", "ex_zh": "图书馆里展示了未来的学校建筑的雏形。\nfra", "notes": "", "n": 86}, {"word": "mework", "meaning": "n.框架，结构；体系", "ex_en": "This bridge over the river has a steel framework", "ex_zh": "这座跨河大桥是钢骨结构的。", "notes": "", "n": 87}, {"word": "aspect", "meaning": "n.（问题、事物等的）方面", "ex_en": "We must consider a problem in all its aspects", "ex_zh": "我们必须全面地考虑问题。", "notes": "", "n": 88}, {"word": "phase", "meaning": "n.阶段，时期", "ex_en": "The first phase of the project has been completed", "ex_zh": "该工程的第一阶段已经完成。", "notes": "", "n": 89}, {"word": "operate", "meaning": "V.操作；运营；做手术", "ex_en": "It's too difficult for machine", "ex_zh": "对他来说，操作这台复杂的新机\n器太难了。", "notes": "operation n.操作；企业；手术", "n": 90}, {"word": "facilitate", "meaning": "V.使便利，促进", "ex_en": "Many modern inventions facilitate housework", "ex_zh": "许多现代发明有利于做家务。", "notes": "", "n": 91}, {"word": "transform", "meaning": "V.使改变形态；使改观", "ex_en": "She transformed the room by painting it.", "ex_zh": "她漆了房间，使它焕然一新。", "notes": "transformation n.变化，转变 trans（转移）+form（形状）t使改变形态。\"变形金刚”的英文是Transformer o", "n": 92}, {"word": "convert", "meaning": "v.（使）转变；（使）改变（信仰、观点等） n.皈依者", "ex_en": "The solar cell can convert the energy of sunlight into electric energy", "ex_zh": "太阳能电池可以把阳光的能量转化为电能。", "notes": "conversion n.转变；换算 convert defeat into victory转败为胜", "n": 93}, {"word": "alter", "meaning": "v.改变，变更", "ex_en": "If it is not a convenient time, we can alter the date", "ex_zh": "如果您在那天不方便的话，我们可以更改日期。", "notes": "alternative adj.可供选择的 an alter ego知己；个性的另一面源自拉丁语alter,意为“其他的（other）\"alter ego 就是世界上的另一个自我，引申义为“知己，至交”。", "n": 94}, {"word": "shift", "meaning": "V.转移，变换II.转移，变换；轮班", "ex_en": "The wind shifted to the north", "ex_zh": "风转向北吹。", "notes": "the day shift H班then ight shift夜班", "n": 95}, {"word": "turn", "meaning": "V.转；翻n.（依次轮到的）机会", "ex_en": "It was your turn last time; it's always your turn to be the boss", "ex_zh": "上次就是你，每次都是你在发号施令。", "notes": "turning n.旋转；转弯处", "n": 96}, {"word": "adapt", "meaning": "V.适应；改编", "ex_en": "There will be more than one person who can adapt to your personality", "ex_zh": "能与你性格相合的人不会只有一个。", "notes": "adaptation n.适应 apt to sth.适应某事物", "n": 97}, {"word": "adjust", "meaning": "V.调节；改变（行为或观点）以适应", "ex_en": "He soon adjusted to army life", "ex_zh": "他很快就适应了军中生活。\n科技发明", "notes": "", "n": 98}, {"word": "pinpoint", "meaning": "V•精确指明……的位置n.针尖；极小的事物", "ex_en": "With this device, we can pinpoint your exact location", "ex_zh": "有了这台仪器，我们可以准确找出你的确切彳立置。", "notes": "", "n": 99}, {"word": "accurate", "meaning": "adj.准确的，正确无误的", "ex_en": "Hearsay definitely can't be regarded as accurate information.", "ex_zh": "传闻当然不能算是准确消息。", "notes": "accuracyn.精确（度），准确（性） inaccurate adj.有错误的，不准确的", "n": 100}, {"word": "precise", "meaning": "adj.精确的，准确的；一丝不苟的", "ex_en": "A lawyer needs a precise mind", "ex_zh": "律师需要一丝不苟的头脑。", "notes": "ecisely adv.正是；恰好地 at that precise moment恰好在那个时刻", "n": 101}, {"word": "correct", "meaning": "adj.正确的", "ex_en": "The correct answers can be found at the bottom of page 8", "ex_zh": "正确答案在第8页末。", "notes": "correction n.改正incorrect adj.错误的", "n": 102}, {"word": "error", "meaning": "n.错误，过失", "ex_en": "The accident was caused by human error", "ex_zh": "这次事故是由人为过错造成的。", "notes": "", "n": 103}, {"word": "mistake", "meaning": "n.错误v.误解", "ex_en": "I may have made a mistake in that regard", "ex_zh": "在那一点上，我可能犯了一个错误。", "notes": "by mistake错误地，由于差错 make a mistake犯错误", "n": 104}, {"word": "flaw", "meaning": "： m缺陷；错误", "ex_en": "This flaw makes the vase less valuable", "ex_zh": "因为这处缺陷，这个花瓶不那么值钱了。", "notes": "awless adj.完美的，没有瑕疵的", "n": 105}, {"word": "wrong", "meaning": "adj.错误的adv.错误地", "ex_en": "In stead of complai ning about whafs wrong, be grateful for what's right", "ex_zh": "要对对的事心存感恩，而不是抱怨哪里出错了。", "notes": "go wrong出现问题；出差错", "n": 106}, {"word": "fault", "meaning": "缺点；故障v.找出缺点", "ex_en": "It is hard to fault the way he runs his own operation.", "ex_zh": "他经营自己的公司的方式无可指摘。", "notes": "faulty adj.有错误的；有缺点的false adj.不正确的 find fault with挑错，挑剔，抱怨", "n": 107}, {"word": "stumble", "meaning": "V.犯错误；绊脚；跌跌撞撞地走", "ex_en": "The sudden weakness in her legs made her stumble.", "ex_zh": "她突然两腿发软，踉跄了一下。", "notes": "stumble over在……绊了一下", "n": 108}, {"word": "contingency", "meaning": "n.意外事件，可能发生的事", "ex_en": "We must always be prepared for every contingency.", "ex_zh": "我们必须始终灘殆种盛准备。", "notes": "", "n": 109}, {"word": "circumstance", "meaning": "n.情况；环境；条件；卜s］境遇", "ex_en": "Circumstances are the rulers of the weak, the wise", "ex_zh": "弱者困于环境，智者利用环境。", "notes": "er/in no circumstances决不 circum/circ/cycl（o）都和“圆，环”有关，如1:circumstanee （站在周围t环境），circle（圆圈；周期），circulate （循环），cyclist（骑自行车的人），bicycle（有两个轮子t自行车），cyclone（旋风），recycle（回收利用）。", "n": 110}];
+let curAudio = null;
+const AUDIO_DIR = 'audio/ch06';
+function play(id, suffix){
+  if (curAudio) curAudio.pause();
+  curAudio = new Audio(`${AUDIO_DIR}/${id}${suffix || ''}.mp3`);
+  if (typeof _dictHook === 'function') _dictHook();
+  curAudio.play();
+}
+function applyTheme(day){
+  document.body.classList.toggle('day', day);
+  document.getElementById('themeBtn').textContent = day ? '🌙 夜间' : '☀️ 日间';
+}
+function toggleTheme(){
+  const day = !document.body.classList.contains('day');
+  applyTheme(day);
+  try { localStorage.setItem('ielts_theme', day ? 'day' : 'night'); } catch(e) {}
+}
+applyTheme((() => { try { return localStorage.getItem('ielts_theme') === 'day'; } catch(e) { return false; } })());
+
+const esc = s => String(s == null ? '' : s);
+// 词性色: v→V红 adj→I粉 adv→绿 其余→N蓝; chip 显示词性, 释义里去掉词性缩写
+const POS_RE = /^(n\.|adj\.|adv\.|v\.|vi\.|vt\.)\s*/;
+function posOf(d){
+  const toks = [];
+  let m = d.meaning, t;
+  while ((t = m.match(POS_RE)) && toks.length < 2) { toks.push(t[1]); m = m.slice(t[0].length); }
+  return { toks, rest: m.trim() || d.meaning };
+}
+const posCls = p => p.startsWith('v') ? 'V' : p.startsWith('adj') ? 'I' : p.startsWith('adv') ? 'adv' : 'N';
+const chipOf = d => {
+  const { toks } = posOf(d);
+  if (!toks.length) return '';
+  const cls = posCls(toks[0]);
+  return `<span class="pos ${cls}">${toks.join(' ')}</span>`;
+};
+const meanOf = d => posOf(d).rest;
+
+const entryHtml = d => `
+  <div class="row1"><span class="num">${d.n}</span><span class="word" onclick="play(${d.n},'w')">${esc(d.word)}</span>${chipOf(d)}</div>
+  <div class="mean">${esc(meanOf(d))}</div>
+  ${d.ex_en ? `<div class="phrase"><span class="jp" onclick="play(${d.n},'e')">${esc(d.ex_en)}</span><span class="zh">${esc(d.ex_zh)}</span></div>` : ''}
+  ${d.notes ? `<div class="note-line">${esc(d.notes)}</div>` : ''}`;
+
+const list = document.getElementById('list');
+function render(){
+  list.innerHTML = '';
+  let colA = null, colB = null, alt = 0;
+  let row = document.createElement('div'); row.className = 'row2';
+  colA = document.createElement('div'); colA.className = 'col2';
+  colB = document.createElement('div'); colB.className = 'col2';
+  row.appendChild(colA); row.appendChild(colB); list.appendChild(row);
+  for (const d of DATA){
+    const card = document.createElement('div');
+    card.className = 'card c' + posCls((posOf(d).toks[0] || 'n'));
+    card.innerHTML = entryHtml(d);
+    (alt++ % 2 === 0 ? colA : colB).appendChild(card);
+  }
+  document.getElementById('count').textContent = DATA.length;
+}
+render();
+</script>
+
+<div id="dict">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
+  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
+  <div id="dictAns" class="hidden"></div>
+  <div class="dbtns">
+    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
+    <button class="hbtn" id="dictAuto" onclick="dictAutoToggle()">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+  </div>
+  <div style="opacity:.4;font-size:11px;">空格=重播 · →=下一个 · ←=上一个 · S=显示答案 · Esc=退出</div>
+</div>
+<script>
+/* ---- 听写 ---- */
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [];
+const DICT_DELAY = 3000;
+const dictWords = () => DATA;
+function dictToggle(){
+  dictOpen = !dictOpen;
+  document.getElementById('dict').classList.toggle('open', dictOpen);
+  if (dictOpen){ if (curAudio) curAudio.pause(); buildOrder(); dictCur = 0; showDict(); }
+  else { if (curAudio) curAudio.pause(); clearTimeout(dictT); }
+}
+function buildOrder(){
+  dictOrder = dictWords().map(d => d.n);
+  if (dictShuffleOn) for (let i = dictOrder.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [dictOrder[i], dictOrder[j]] = [dictOrder[j], dictOrder[i]]; }
+}
+const dictD = () => dictWords().find(d => d.n === dictOrder[dictCur]);
+let dictChain = false;
+const playCur = () => {
+  const d = dictD();
+  if (!d.ex_en) { play(d.n, 'w'); return; }
+  dictChain = true;
+  play(d.n, 'w');
+};
+const _dictHook = () => {
+  curAudio.onended = () => {
+    if (dictChain && dictD().ex_en) {
+      dictChain = false;
+      play(dictD().n, 'e');
+      curAudio.onended = () => { if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY); };
+    } else if (dictOpen && dictAuto) {
+      dictT = setTimeout(dictNext, DICT_DELAY);
+    }
+  };
+};
+function dictStep(dir){
+  clearTimeout(dictT); dictChain = false;
+  dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
+  showDict(); playCur();
+}
+const dictNext = () => dictStep(1);
+const dictPrev = () => dictStep(-1);
+function dictShuffle(){ dictShuffleOn = !dictShuffleOn; buildOrder(); dictCur = 0; showDict(); playCur(); }
+function dictAutoToggle(){
+  dictAuto = !dictAuto;
+  document.getElementById('dictAuto').textContent = '自动: ' + (dictAuto ? '开' : '关');
+  dictChain = false;
+  if (dictAuto) playCur();
+}
+function dictReveal(){
+  const ans = document.getElementById('dictAns');
+  if (ans.classList.contains('hidden')) { renderDictAns(); ans.classList.remove('hidden'); }
+  else ans.classList.add('hidden');
+}
+function renderDictAns(){
+  const ans = document.getElementById('dictAns');
+  const d = dictD();
+  ans.innerHTML = `<div class="dword">${esc(d.word)}</div><div class="dpos">${esc(d.m)}</div>` +
+    (d.ex_en ? `<div class="dph" onclick="play(${d.n},'e')">${esc(d.ex_en)}</div><div class="dphz">${esc(d.ex_zh)}</div>` : '');
+}
+function showDict(){
+  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  const ans = document.getElementById('dictAns');
+  ans.classList.add('hidden');
+  ans.innerHTML = '';
+}
+document.addEventListener('keydown', e => {
+  if (!dictOpen) return;
+  if (e.code === 'Space'){ e.preventDefault(); playCur(); }
+  else if (e.key === 'ArrowRight') dictNext();
+  else if (e.key === 'ArrowLeft') dictPrev();
+  else if (e.key === 's' || e.key === 'S') dictReveal();
+  else if (e.key === 'Escape') dictToggle();
+});
+</script>
+</body>
+</html>

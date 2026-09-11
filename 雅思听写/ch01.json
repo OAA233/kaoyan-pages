@@ -80,20 +80,12 @@
   "n": 10
  },
  {
-  "word": "takeup",
-  "meaning": "接受披风），语出 《圣经》。先知以利亚曾用自己的披风分开约旦河水。后来他被接引上天后留下了这件披风，他的继承者拾起披风，借此同样分幵了约旦河水。所以mantle在西方文化中被视为法力或权力传承的媒介。西方魔术师的标准行头里就少不了一件mantle。",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 11
- },
- {
   "word": "longitude",
   "meaning": "n.经度",
   "ex_en": "The captain determines the latitude and longitude of his ship",
   "ex_zh": "船长查明船的经纬度。",
   "notes": "a line of longitude经线",
-  "n": 12
+  "n": 11
  },
  {
   "word": "latitude",
@@ -101,7 +93,7 @@
   "ex_en": "Our position is degrees north latitude",
   "ex_zh": "我们的位置是北纬40度。",
   "notes": "high latitudes高纬度地区",
-  "n": 13
+  "n": 12
  },
  {
   "word": "horizon",
@@ -109,7 +101,7 @@
   "ex_en": "I could see a ship on the horizon",
   "ex_zh": "我看见地平线上有一艘轮船。",
   "notes": "horizontal adj.水平的",
-  "n": 14
+  "n": 13
  },
  {
   "word": "broaden sb",
@@ -117,7 +109,7 @@
   "ex_en": "We are currently flying at an altitude of 8,000 metres",
   "ex_zh": "我们目前正在海拔8000米的高空飞行。\nalt（高）+itude（表示性质、状态等）-高度。",
   "notes": "",
-  "n": 15
+  "n": 14
  },
  {
   "word": "disaster",
@@ -125,7 +117,7 @@
   "ex_en": "There was a great flood disaster in East China",
   "ex_zh": "华东发生了严重的水灾。",
   "notes": "sastrous adj.灾难性的 a disaster film/movie灾难片古人爱夜观星相。某一天晚上，人们突然发现：咦，有",
-  "n": 16
+  "n": 15
  },
  {
   "word": "mishap",
@@ -133,7 +125,7 @@
   "ex_en": "A mishap prevented him from meeting",
   "ex_zh": "他遇到点儿麻烦，没能来参\n加公司的例会。不幸。\nmis（坏的，错的，不好的）+hap（运气）t",
   "notes": "",
-  "n": 17
+  "n": 16
  },
  {
   "word": "catastrophic",
@@ -141,15 +133,15 @@
   "ex_en": "If the forecast had been wrong, the consequences could have been catastrophic",
   "ex_zh": "如果这个预报是错误的，那么结果本可能会是灾难性的。",
   "notes": "",
-  "n": 18
+  "n": 17
  },
  {
   "word": "calamity",
-  "meaning": "n.灾难，不幸的事 ［停!1］A hurricane would be a calamity for this low- lying coastal region.对于这片地势低洼的沿海地区，飓风会带来灾难。",
-  "ex_en": "",
-  "ex_zh": "",
+  "meaning": "n.灾难，不幸的事",
+  "ex_en": "A hurricane would be a calamity for this low-lying coastal region.",
+  "ex_zh": "对于这片地势低洼的沿海地区，飓风会带来灾难。",
   "notes": "cause a calamity酿成灾祸",
-  "n": 19
+  "n": 18
  },
  {
   "word": "endanger",
@@ -157,7 +149,7 @@
   "ex_en": "If you work hard without rest, you will endanger your health",
   "ex_zh": "你若辛勤工作而不休息，会把身体弄坏的。",
   "notes": "endangered adj.濒临灭绝的 en（使）4-danger（危险）t使遭受危险。",
-  "n": 20
+  "n": 19
  },
  {
   "word": "jeopardise",
@@ -165,7 +157,7 @@
   "ex_en": "If you are rude to the boss, your chances of success may be jeopardised",
   "ex_zh": "如果你对老板没有礼貌，就有可能危害到你成功的机会。",
   "notes": "",
-  "n": 21
+  "n": 20
  },
  {
   "word": "jeopardise sb",
@@ -173,15 +165,15 @@
   "ex_en": "Jealousy is an extremely destructive emotion",
   "ex_zh": "嫉妒是一种极具破坏性的情绪。",
   "notes": "destroy v.摧毁 de（除去）+struct（建造）+ive（形容词后缀）t毁坏建筑t破坏性的。",
-  "n": 22
+  "n": 21
  },
  {
   "word": "El Nino",
   "meaning": "n.厄尔尼诺现象（赤道附近东太平洋水域大范围海水反常增温、鱼群大量死亡的现象）",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "What changed the equation that year was El Nino.",
+  "ex_zh": "那年是厄尔尼诺现象打破了这种平衡。",
   "notes": "",
-  "n": 23
+  "n": 22
  },
  {
   "word": "greenhouse",
@@ -189,7 +181,7 @@
   "ex_en": "The flowers are grown in the greenhouse",
   "ex_zh": "这些花是在温室里栽培的。",
   "notes": "the greenhouse effect温室效应 a greenhouse gas温室气体",
-  "n": 24
+  "n": 23
  },
  {
   "word": "phenomenon",
@@ -197,7 +189,7 @@
   "ex_en": "Snow is an almost unknown phenomenon in Egypt",
   "ex_zh": "在埃及，雪几乎是种不为人知的现象。",
   "notes": "复数形式：phenomena a natural phenomenon自然现象 a social phenomenon社会现象 pheno（显示，出现）+menon（名词后缀）现象。",
-  "n": 25
+  "n": 24
  },
  {
   "word": "pebble",
@@ -205,7 +197,7 @@
   "ex_en": "The boy put his hand into the money bag and drew out a pebble",
   "ex_zh": "男孩把手伸进钱袋中，拿出了一粒鹅卵石。",
   "notes": "",
-  "n": 26
+  "n": 25
  },
  {
   "word": "magnet",
@@ -213,7 +205,7 @@
   "ex_en": "He picked all the pins up with a magnet",
   "ex_zh": "他用磁铁捡起了所有的大头针。",
   "notes": "magnetic adj.磁的，有磁性的；有吸引力的希腊人在马格内西亚（Magnesia）地区发现了一种神奇的矿石，这种矿石可以吸引金属。希腊人将这种矿石称为“马格内西亚的石头“。",
-  "n": 27
+  "n": 26
  },
  {
   "word": "ore",
@@ -221,7 +213,7 @@
   "ex_en": "This mountain area is rich in iron ore",
   "ex_zh": "这片山区富含铁矿。",
   "notes": "",
-  "n": 28
+  "n": 27
  },
  {
   "word": "mineral",
@@ -229,7 +221,7 @@
   "ex_en": "China is rich in mineral resources",
   "ex_zh": "中国的矿产资源丰富。来自mine（矿山）的东西t矿物。",
   "notes": "",
-  "n": 29
+  "n": 28
  },
  {
   "word": "marble",
@@ -237,7 +229,7 @@
   "ex_en": "They used marble to build the steps",
   "ex_zh": "他们用大理石修建台阶。",
   "notes": "",
-  "n": 30
+  "n": 29
  },
  {
   "word": "quartz",
@@ -245,7 +237,7 @@
   "ex_en": "Have you bought the quartz clock?",
   "ex_zh": "你买那座石英钟了吗？",
   "notes": "",
-  "n": 31
+  "n": 30
  },
  {
   "word": "granite",
@@ -253,7 +245,7 @@
   "ex_en": "His grave is made of granite",
   "ex_zh": "他的墓是用花岗石造的。",
   "notes": "bite on granite白费力气，徒劳无功 gran（颗粒）+ite（名词后缀）t有颗粒的石头t 花岗岩。",
-  "n": 32
+  "n": 31
  },
  {
   "word": "gust",
@@ -261,7 +253,7 @@
   "ex_en": "A gust of wind blew the leaves off the trees. —",
   "ex_zh": "阵狂风把树叶从树上吹落。",
   "notes": "",
-  "n": 33
+  "n": 32
  },
  {
   "word": "breeze",
@@ -269,7 +261,7 @@
   "ex_en": "We are enjoying the cool breeze that comes from the lake",
   "ex_zh": "我们享受着湖面上吹来的凉爽微风。",
   "notes": "",
-  "n": 34
+  "n": 33
  },
  {
   "word": "monsoon",
@@ -277,7 +269,7 @@
   "ex_en": "The monsoon brings rain to us",
   "ex_zh": "季风给我们带来了降雨。",
   "notes": "monsoon seas on雨季",
-  "n": 35
+  "n": 34
  },
  {
   "word": "gale",
@@ -285,7 +277,7 @@
   "ex_en": "We got our roof blown off in a gale last night",
   "ex_zh": "昨夜的大风把我们的房顶给掀掉了。",
   "notes": "a severe gale—阵大风",
-  "n": 36
+  "n": 35
  },
  {
   "word": "hurricane",
@@ -293,7 +285,7 @@
   "ex_en": "The hurricane flung their motorboat upon the rocks",
   "ex_zh": "飓风把他们的摩托艇抛到岩石上。",
   "notes": "",
-  "n": 37
+  "n": 36
  },
  {
   "word": "tornado",
@@ -301,7 +293,7 @@
   "ex_en": "When a tornado touches the ground, it does a lot of damage",
   "ex_zh": "当龙卷风到达地面时，会造成很大破坏。",
   "notes": "",
-  "n": 38
+  "n": 37
  },
  {
   "word": "typhoon",
@@ -309,7 +301,7 @@
   "ex_en": "The typhoon is gathering strength",
   "ex_zh": "台风的风力正逐渐增强。\ntyphoon通常指发生在太平洋西部海洋和南海海域的热带气旋。该词的形成与汉语广东方言“大风”的发音有关。",
   "notes": "",
-  "n": 39
+  "n": 38
  },
  {
   "word": "volcano",
@@ -317,15 +309,7 @@
   "ex_en": "The volcano erupted and two small tow ns were buried under metres of hot ash, mud and bits of molten rock",
   "ex_zh": "这次火山爆发将两座小镇掩埋于数米厚炽热的火山灰、泥浆和熔岩碎块之下。",
   "notes": "",
-  "n": 40
- },
- {
-  "word": "an active",
-  "meaning": "extinct volcano 5舌/休目民/死火山sit on a volcano处境危险该词来自罗马神话中的火神武尔坎（Vulcan）,他的妻子是鼎鼎大名的司爱情与美丽的女神维纳斯（Venus）。后来维纳斯爱上了战神帅哥，红杏出墙，还生下了私生子丘比特（Cupid）!武尔坎招惹不起强大的情敌，只好躲在地底下打铁，胸中的怒火、妒火和炉火同时喷发，于是火星和浓烟从山顶喷岀，形成火山（volcano）爆发。",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 41
+  "n": 39
  },
  {
   "word": "erupt",
@@ -333,7 +317,7 @@
   "ex_en": "Hot lava erupted from the crust",
   "ex_zh": "从地壳中喷发出了滚烫的熔岩。",
   "notes": "eruption n.喷发，爆发 tornado-*八IS\"i藝鑿真 typhoon赚。 il!",
-  "n": 42
+  "n": 40
  },
  {
   "word": "magma",
@@ -341,7 +325,7 @@
   "ex_en": "Some types of minerals are made when magma cools and solidifies",
   "ex_zh": "有些类型的矿物是在岩浆冷却凝固的过程中形成的。字根mag意为“揉，捏”，另外在希腊语中magma意为\n“浓厚的软膏”，后引申为岩浆，因其流动起来柔软如膏。",
   "notes": "",
-  "n": 43
+  "n": 41
  },
  {
   "word": "thermodynamic",
@@ -349,7 +333,7 @@
   "ex_en": "His theory violates current thermodynamic laws",
   "ex_zh": "他的理论违反了当前的热力学定律。",
   "notes": "thermodynamics n.热力学 thermo（热）+dynamic（力的；力学）t热力的；热力学的。",
-  "n": 44
+  "n": 42
  },
  {
   "word": "smog",
@@ -357,7 +341,7 @@
   "ex_en": "The smog was so bad that schoolchildren were advised to stay indoors",
   "ex_zh": "雾霾太严重，建议小学生们留在室内。",
   "notes": "smoggy adj.烟雾弥漫的英文中的混合构词法：smoke+fogtsmog（烟雾）； motor+hotel t motel（汽车旅馆）; helicopter+ airport t heliport（直升机机场）; breakfast+lunch t brunch（早午餐）。",
-  "n": 45
+  "n": 43
  },
  {
   "word": "fume",
@@ -365,7 +349,7 @@
   "ex_en": "Petrol fumes from cars are poisoning the atmosphere",
   "ex_zh": "汽车排放的汽油烟气正在污染大气。",
   "notes": "",
-  "n": 46
+  "n": 44
  },
  {
   "word": "mist",
@@ -373,7 +357,7 @@
   "ex_en": "She could hardly recognise her son through a mist of tears",
   "ex_zh": "她泪眼模糊，几乎不能认出自己的儿子。",
   "notes": "",
-  "n": 47
+  "n": 45
  },
  {
   "word": "tsunami",
@@ -381,7 +365,7 @@
   "ex_en": "A terrible tsunami followed the earthquake",
   "ex_zh": "一场骇人的海啸跟随地震而来。",
   "notes": "",
-  "n": 48
+  "n": 46
  },
  {
   "word": "drought",
@@ -389,7 +373,7 @@
   "ex_en": "Many areas in Africa have suffered severe drought this year",
   "ex_zh": "今年，非洲的很多地区遭受了严重的干旱。\n（adj.干的，干燥的）。词源同dry",
   "notes": "",
-  "n": 49
+  "n": 47
  },
  {
   "word": "flooding",
@@ -397,7 +381,7 @@
   "ex_en": "Since the flooding began last month, people have died statewide",
   "ex_zh": "自上个月洪水暴发以来，全州已有16人死亡。",
   "notes": "flood V.淹没；充满n.洪水",
-  "n": 50
+  "n": 48
  },
  {
   "word": "torrent",
@@ -405,7 +389,7 @@
   "ex_en": "A torrent of water poured down the mountain",
   "ex_zh": "激流从山上奔流而下。",
   "notes": "",
-  "n": 51
+  "n": 49
  },
  {
   "word": "earthquake",
@@ -413,7 +397,7 @@
   "ex_en": "Several countries in eastern Europe are counting the losses caused by yesterday's earthquake",
   "ex_zh": "东欧的几个国家正在统计昨天地震造成的人员伤亡。",
   "notes": "quake v.震动，颤动 earth（地球）+quake（震动）t地震。",
-  "n": 52
+  "n": 50
  },
  {
   "word": "seismic",
@@ -421,7 +405,7 @@
   "ex_en": "The discovery of seismic activity suggests geological activity could provide large amounts of heat and minerals",
   "ex_zh": "地震活动的发现表明地质运动可以提供大量的热量和矿物质。",
   "notes": "a seismic wave地震波",
-  "n": 53
+  "n": 51
  },
  {
   "word": "avalanche",
@@ -429,7 +413,7 @@
   "ex_en": "Yesterday's avalanche destroyed several trees",
   "ex_zh": "昨天的雪崩毁坏了一些树木。",
   "notes": "",
-  "n": 54
+  "n": 52
  },
  {
   "word": "terrain",
@@ -437,7 +421,7 @@
   "ex_en": "He climbed a tree to view the surrounding In terrain",
   "ex_zh": "他爬上一棵树去查看周围的地形。",
   "notes": "a terrain feature地形特征",
-  "n": 55
+  "n": 53
  },
  {
   "word": "landscape",
@@ -445,7 +429,7 @@
   "ex_en": "The The trees and the m ountains made the beautiful",
   "ex_zh": "树木和山脉使风景变得很美。\n（陆地）+（表示性质、状况等）t地貌。\nland scape源于希腊字母表的第四个字母厶，因为状似三角，被用来表示“三角洲”。",
   "notes": "",
-  "n": 56
+  "n": 54
  },
  {
   "word": "continent",
@@ -453,7 +437,7 @@
   "ex_en": "It is generally thought that Columbus discovered n",
   "ex_zh": "平\ncontinents.人们通常认为是哥伦布发现了\n美洲大陆。\nthe",
   "notes": "continental adj.大陆的，大陆性的原上漫步。",
-  "n": 57
+  "n": 55
  },
  {
   "word": "plateau",
@@ -461,23 +445,23 @@
   "ex_en": "The This cave was used by smugglers in the eighteenth century",
   "ex_zh": "该洞穴曾在18世纪被走私者使用。",
   "notes": "plateau explore a cave勘探山洞某些法语词在被借入英语中时仍然保留了其拼写习惯，如法语字母组合eau:",
-  "n": 58
+  "n": 56
  },
  {
   "word": "cliff",
-  "meaning": "府机构的］局）, n.悬崖，峭壁男友），nouveau",
-  "ex_en": "The narrow path leads to a wooden hut on the cliff",
-  "ex_zh": "这条狭窄的小径通向悬崖上的一个小木屋。oasis\nn.绿洲；宜入之地",
+  "meaning": "n.悬崖，峭壁",
+  "ex_en": "The narrow path leads to a wooden hut on the cliff.",
+  "ex_zh": "这条狭窄的小径通向悬崖上的一个小木屋。",
   "notes": "",
-  "n": 59
+  "n": 57
  },
  {
-  "word": "gl",
-  "meaning": "",
-  "ex_en": "Oasis n",
-  "ex_zh": "冰河，冰川在沙漠地区象征着一种希望。 The glacier dislocated the great stones.冰川使巨石脱离原位。",
+  "word": "glacier",
+  "meaning": "n.冰河，冰川",
+  "ex_en": "The glacier dislocated the great stones.",
+  "ex_zh": "冰川使巨石脱离原位。",
   "notes": "",
-  "n": 60
+  "n": 58
  },
  {
   "word": "thesw",
@@ -485,23 +469,31 @@
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
+  "n": 59
+ },
+ {
+  "word": "delta",
+  "meaning": "n.三角洲",
+  "ex_en": "The Nile Delta used to be a fertile land.",
+  "ex_zh": "尼罗河三角洲曾是一片肥沃的土地。",
+  "notes": "源于希腊字母表的第四个字母Δ，因为状似三角，被用来表示“三角洲”。",
+  "n": 60
+ },
+ {
+  "word": "plain",
+  "meaning": "n.平原adj.简朴的；明白的",
+  "ex_en": "Once there were 70 million buffalo roaming the Great Plains.",
+  "ex_zh": "曾经有7000万头野牛在北美洲大平原上漫步。",
+  "notes": "",
   "n": 61
  },
  {
-  "word": "lan",
-  "meaning": "d.尼罗河三角洲曾是一片肥沃的土地。原adj.简朴的；明白的 Great Plains.曾经有7000万头野牛在北美洲大平",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
+  "word": "plateau",
+  "meaning": "n.高原",
+  "ex_en": "The atmosphere is thin on the plateau.",
+  "ex_zh": "高原的空气稀薄。",
+  "notes": "plateau climate高原气候 某些法语词在被借入英语中时仍然保留了其拼写习惯，如法语字母组合eau: plateau（高原），bureau（［政府机构的］局）, tableau（静态画面），beau（情郎，男友），nouveau riche（暴发户），等等。",
   "n": 62
- },
- {
-  "word": "atmosphere is thin on the plate",
-  "meaning": "au.高原的空气稀薄。 climate高原气候 plateau（高原），bureau（［政 tableau（静态画面），beau（情郎， riche（暴发户），等等。",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 63
  },
  {
   "word": "symbolises",
@@ -509,15 +501,15 @@
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
-  "n": 64
+  "n": 63
  },
  {
   "word": "globe",
-  "meaning": "n.球体；地球仪；［the-］地球",
-  "ex_en": "There are people in almost every habitable part of this globe",
-  "ex_zh": "地球上几乎每一处适于居住的地方都有人在。\n【记］global adj.全球的；总体的",
-  "notes": "avel around the globe环游世界",
-  "n": 65
+  "meaning": "n.球体；地球仪；(the-)地球",
+  "ex_en": "There are people in almost every habitable part of this globe.",
+  "ex_zh": "地球上几乎每一处适于居住的地方都有人在。",
+  "notes": "travel around the globe环游世界 global adj.全球的；总体的",
+  "n": 64
  },
  {
   "word": "hemisphere",
@@ -525,7 +517,7 @@
   "ex_en": "In the northern hemisphere, you can hardly see the Magellanic Clouds",
   "ex_zh": "在北半球，你几乎看不到麦哲伦云。",
   "notes": "hemispheric adj.半球形状的；半球的 the northern hemisphere北半球 hemi（半）+sphere（球）t半球。",
-  "n": 66
+  "n": 65
  },
  {
   "word": "equator",
@@ -533,15 +525,15 @@
   "ex_en": "The equator is an imag in ary line around the middle of the earth",
   "ex_zh": "赤道是一条假想的环绕地球中部的线。",
   "notes": "equal adj.平等的",
-  "n": 67
+  "n": 66
  },
  {
   "word": "arctic",
-  "meaning": "adj.极冷的；［A~］北极的n.［theA~］北极地区，北极",
-  "ex_en": "The polar bear's habitat is the icy waters of the Arctic",
+  "meaning": "adj.极冷的；(A~)北极的n.(the A~)北极地区，北极",
+  "ex_en": "The polar bear's habitat is the icy waters of the Arctic.",
   "ex_zh": "北极熊的栖息地是冰冷的北极海域。",
   "notes": "the Arctic Ocean北冰洋",
-  "n": 68
+  "n": 67
  },
  {
   "word": "Antarctic",
@@ -549,7 +541,7 @@
   "ex_en": "Because of the extreme cold, the environment in the Antarctic is uniquely fragile",
   "ex_zh": "极度严寒造成了南极地区绝无仅有的脆弱环境。\nant（对面的）+arctic（北极）t北极的对面t南极。",
   "notes": "",
-  "n": 69
+  "n": 68
  },
  {
   "word": "pole",
@@ -557,7 +549,7 @@
   "ex_en": "English is spoken from pole to pole",
   "ex_zh": "英语在世界各地都通用。",
   "notes": "the South Pole南极",
-  "n": 70
+  "n": 69
  },
  {
   "word": "polar",
@@ -565,7 +557,7 @@
   "ex_en": "In these polar regions, the balanee of nature has already been disrupted",
   "ex_zh": "在南极地区和北极地区，大自然的平衡已被破坏。",
   "notes": "a polar bear北极熊",
-  "n": 71
+  "n": 70
  },
  {
   "word": "axis",
@@ -573,7 +565,7 @@
   "ex_en": "The earth's axis is the line between the North and South Poles",
   "ex_zh": "地轴是南北极之间的线。",
   "notes": "",
-  "n": 72
+  "n": 71
  },
  {
   "word": "deterior",
@@ -581,7 +573,7 @@
   "ex_en": "Relations between the two countries have deteriorated sharply in recent weeks",
   "ex_zh": "最近几周，另B两个国家间的关系严重恶化了。",
   "notes": "deterioration n.恶化，变坏",
-  "n": 73
+  "n": 72
  },
  {
   "word": "aggravate",
@@ -589,7 +581,7 @@
   "ex_en": "Grief aggravated her illness",
   "ex_zh": "痛苦加重了她的病。",
   "notes": "gravity n.重力aggregate v./n.合计，总计 aggravate the differences加深分歧 ag（加强意义）+grav（重的）+ate（使）t使变重，加重。",
-  "n": 74
+  "n": 73
  },
  {
   "word": "degrade",
@@ -597,15 +589,15 @@
   "ex_en": "A dishonest action like that will degrade you",
   "ex_zh": "这样不诚实的行为有辱你的身份。",
   "notes": "gradation n.恶化 de（向下）4-grade（层级）降级。",
-  "n": 75
+  "n": 74
  },
  {
   "word": "upgrade",
-  "meaning": "V.使升级；提高，改善 ［彳列］The antivirus software should often be upgraded.杀毒软件应当经常升级。",
-  "ex_en": "",
-  "ex_zh": "",
+  "meaning": "v.使升级；提高，改善",
+  "ex_en": "The antivirus software should often be upgraded.",
+  "ex_zh": "杀毒软件应当经常升级。",
   "notes": "upgrade（sth.）to sth.（把某物）升级为某物 up（向上）+grade（层级）t升级。",
-  "n": 76
+  "n": 75
  },
  {
   "word": "erode",
@@ -613,7 +605,7 @@
   "ex_en": "The waves erode the rocks on the shore",
   "ex_zh": "海浪侵蚀着岸边的岩石。",
   "notes": "erosion n.侵蚀，腐蚀 :LU!£i ■",
-  "n": 77
+  "n": 76
  },
  {
   "word": "Mediterranean",
@@ -621,23 +613,23 @@
   "ex_en": "This dish is a cross between Asian and Mediterranean food",
   "ex_zh": "这道菜融合了亚洲和地中海的风味。",
   "notes": "",
-  "n": 78
+  "n": 77
  },
  {
   "word": "Atlantic",
-  "meaning": "adj.大西洋的n.［the-］大西洋",
-  "ex_en": "The Atlantic coast is within sight of the hotel",
+  "meaning": "adj.大西洋的n.(the-)大西洋",
+  "ex_en": "The Atlantic coast is within sight of the hotel.",
   "ex_zh": "从宾馆可以看见大西洋海岸。",
   "notes": "",
-  "n": 79
+  "n": 78
  },
  {
   "word": "pacific",
-  "meaning": "adj.平静的，和平的；［P~］太平洋的n.［the P~］太平洋 this is!这是",
-  "ex_en": "What a beautiful and pacific place",
-  "ex_zh": "一个多么美丽而平静的地方啊！",
-  "notes": "Asian-Pacific region亚太地区Asian-Pacific Cooperation(APEC)亚太经合组织Organization of (OPEC)石油输出 国组织 (v.平息，安抚，使平静)。来自pacify",
-  "n": 80
+  "meaning": "adj.平静的，和平的；(P~)太平洋的n.(the P~)太平洋",
+  "ex_en": "What a beautiful and pacific place this is!",
+  "ex_zh": "这是一个多么美丽而平静的地方啊！",
+  "notes": "Asian-Pacific region亚太地区 Asian-Pacific Economic Cooperation(APEC)亚太经合组织 Organization of the Petroleum Exporting Countries(OPEC)石油输出国组织 来自pacify(v.平息，安抚，使平静)。",
+  "n": 79
  },
  {
   "word": "ocean",
@@ -645,14 +637,22 @@
   "ex_en": "These creatures live in the depth of the Pacific Ocean",
   "ex_zh": "这些生物生活在太平洋的深处。",
   "notes": "",
+  "n": 80
+ },
+ {
+  "word": "marine",
+  "meaning": "adj.海生的，海洋的；海事的n.水兵",
+  "ex_en": "It is true that a lot of people like marine plants as their food.",
+  "ex_zh": "确实有很多人喜欢食用海洋植物。",
+  "notes": "a marine product海产品；船用产品字根mar表示\"海（sea）\",又如：mariner（水手，海员），submarine（海底的；潜艇）。",
   "n": 81
  },
  {
-  "word": "an ocean of",
-  "meaning": "adj.海生的，海洋的；海事的n.水兵",
-  "ex_en": "It is true that a lot of people like marine plants as their food",
-  "ex_zh": "确实有很多人喜欢食用海洋植物。 Navigation is a game for brave people.航海是勇敢者的游戏。",
-  "notes": "a marine product海产品；船用产品字根mar表示\"海（sea）\",又如：mariner（水手，海员），submarine（海底的；潜艇）。 n.航行；航海 navigator n.航海家；导航员，领航员",
+  "word": "navigation",
+  "meaning": "n.航行；航海",
+  "ex_en": "Navigation is a game for brave people.",
+  "ex_zh": "航海是勇敢者的游戏。",
+  "notes": "navigator n.航海家；导航员，领航员",
   "n": 82
  },
  {
@@ -721,10 +721,10 @@
  },
  {
   "word": "source",
-  "meaning": "n.河的源头；根源 ［傅11］I've heard from reliable sources that the tide source三J s )",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
+  "meaning": "n.河的源头；根源",
+  "ex_en": "I've heard from reliable sources that the company is in trouble.",
+  "ex_zh": "我听到来源可靠的消息称，公司遇到了麻烦。",
+  "notes": "resource n.资源",
   "n": 91
  },
  {
@@ -801,8 +801,8 @@
  },
  {
   "word": "narrow",
-  "meaning": "adj.狭窄的；有局限的n.［~s］海峡v.变窄",
-  "ex_en": "The only access to the garden is by a narrow path at the side of the house",
+  "meaning": "adj.狭窄的；有局限的n.(~s)海峡v.变窄",
+  "ex_en": "The only access to the garden is by a narrow path at the side of the house.",
   "ex_zh": "到花园去的唯一途径是走房屋侧面的一条窄窄的小路。",
   "notes": "narrow down减少；限制",
   "n": 101
@@ -897,10 +897,10 @@
  },
  {
   "word": "moist",
-  "meaning": "adj.潮湿的，湿润的 tears.泪水润湿了他的",
-  "ex_en": "His eyes were moist with",
-  "ex_zh": "眼睛。\nn.潮气，湿气；水分",
-  "notes": "",
+  "meaning": "adj.潮湿的，湿润的",
+  "ex_en": "His eyes were moist with tears.",
+  "ex_zh": "泪水润湿了他的眼睛。",
+  "notes": "moisture n.潮气，湿气；水分",
   "n": 113
  },
  {
@@ -1057,10 +1057,10 @@
  },
  {
   "word": "Celsius",
-  "meaning": "V.倾斜；有 adj.摄氏的n.摄氏温度",
-  "ex_en": "He The maximum temperature in July may be degrees Celsius. 7",
-  "ex_zh": "月的最高温度可能达到36摄氏度。\nadj.华氏的n.华氏温度valley The",
-  "notes": "以摄氏温标最初的提出者，即18世纪的瑞典科学家Anders n.山谷，溪谷 Celsius的名字命名。",
+  "meaning": "adj.摄氏的n.摄氏温度",
+  "ex_en": "The maximum temperature in July may be 36 degrees Celsius.",
+  "ex_zh": "7月的最高温度可能达到36摄氏度。",
+  "notes": "Fahrenheit adj.华氏的n.华氏温度 以摄氏温标最初的提出者，即18世纪的瑞典科学家Anders Celsius的名字命名。",
   "n": 133
  },
  {
@@ -1089,8 +1089,8 @@
  },
  {
   "word": "mount",
-  "meaning": "V.渐渐增加；爬上，登上n.［M~］山",
-  "ex_en": "The old lady can only mount the stairs with difficulty",
+  "meaning": "v.渐渐增加；爬上，登上n.(M~)山",
+  "ex_en": "The old lady can only mount the stairs with difficulty.",
   "ex_zh": "这位老妇人上楼梯十分艰难。",
   "notes": "",
   "n": 137
@@ -1104,20 +1104,36 @@
   "n": 138
  },
  {
-  "word": "ra",
-  "meaning": "nge of hills rose on our left.山脉在我们左方出现。 the range of在...范围内；在...射程内 /rid^/ v.使隆起脉 brightened.山脊上方的天空变得明亮起来。坡度n.山坡；斜坡 top of the hill.他跑上斜坡，来到山顶。",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
+  "word": "range",
+  "meaning": "n.山脉；范围",
+  "ex_en": "A range of hills rose on our left.",
+  "ex_zh": "山脉在我们左方出现。",
+  "notes": "in the range of在...范围内；在...射程内",
   "n": 139
  },
  {
-  "word": "valley was hidden from",
-  "meaning": "溪谷隐没在雾霭之中，看不见了。 a valley在山谷里",
-  "ex_en": "",
-  "ex_zh": "",
+  "word": "ridge",
+  "meaning": "n.山脊，山脉v.使隆起",
+  "ex_en": "The sky above the ridge of the mountains brightened.",
+  "ex_zh": "山脊上方的天空变得明亮起来。",
   "notes": "",
   "n": 140
+ },
+ {
+  "word": "slope",
+  "meaning": "v.倾斜；有坡度n.山坡；斜坡",
+  "ex_en": "He ran up the slope to the top of the hill.",
+  "ex_zh": "他跑上斜坡，来到山顶。",
+  "notes": "",
+  "n": 141
+ },
+ {
+  "word": "valley",
+  "meaning": "n.山谷，溪谷",
+  "ex_en": "The valley was hidden from view in the mist.",
+  "ex_zh": "溪谷隐没在雾霭之中，看不见了。",
+  "notes": "in a valley在山谷里",
+  "n": 142
  },
  {
   "word": "hillside",
@@ -1125,7 +1141,7 @@
   "ex_en": "The path steepened as they climbed the hillside",
   "ex_zh": "他们顺着山坡往上爬，小径愈发陡峭。",
   "notes": "",
-  "n": 141
+  "n": 143
  },
  {
   "word": "overlook",
@@ -1133,7 +1149,7 @@
   "ex_en": "The house on the hill overlooks the village",
   "ex_zh": "从小山上的房子可以俯瞰村庄。",
   "notes": "be easily overlooked容易被忽略的 over（在上）+look（看）t在上面往下看t俯瞰。",
-  "n": 142
+  "n": 144
  },
  {
   "word": "southern",
@@ -1141,7 +1157,7 @@
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
-  "n": 143
+  "n": 145
  },
  {
   "word": "southeast",
@@ -1149,7 +1165,7 @@
   "ex_en": "Austria lies to the southeast of Germany",
   "ex_zh": "奥地利在德国的东南边。",
   "notes": "",
-  "n": 144
+  "n": 146
  },
  {
   "word": "southwest",
@@ -1157,7 +1173,7 @@
   "ex_en": "eland is in the southwest of the British Isles",
   "ex_zh": "爱尔兰在不列颠群岛的西南部。",
   "notes": "",
-  "n": 145
+  "n": 147
  },
  {
   "word": "northeast",
@@ -1165,7 +1181,7 @@
   "ex_en": "Snow in October is nothing strange in northeast China",
   "ex_zh": "在中国东北部，10月下雪不是什么奇怪的事。",
   "notes": "",
-  "n": 146
+  "n": 148
  },
  {
   "word": "northwest",
@@ -1173,7 +1189,7 @@
   "ex_en": "ere is a large hilly area in the",
   "ex_zh": "西北部有一大片丘陵地带。",
   "notes": "",
-  "n": 147
+  "n": 149
  },
  {
   "word": "eastern",
@@ -1181,7 +1197,7 @@
   "ex_en": "The eastern situation is similarly intense",
   "ex_zh": "东咅B\n的情况同样紧张。",
   "notes": "",
-  "n": 148
+  "n": 150
  },
  {
   "word": "oriental",
@@ -1189,7 +1205,7 @@
   "ex_en": "She has studied the cultures of oriental countries",
   "ex_zh": "她研究过东方各国的文化。字根ori意为“升起\"t太阳升起的地方t东方的。同字根的又如：origin（太阳升起的地方t起源），originator\n（发起人）, orient（太阳升起的地方->东方t向东t确定方向）。在英美等地的一些大学，在新学年开始前后有一周叫0-Week,即Orientation Week,会给新生介绍大学的各种情况，让他们摸清方向，尽快适应。",
   "notes": "",
-  "n": 149
+  "n": 151
  },
  {
   "word": "inevitable",
@@ -1197,7 +1213,7 @@
   "ex_en": "Such a difficult operation may not succeed, but it's an inevitable gamble",
   "ex_zh": "难度如此之大的手术可能会失败，但我们必须冒险一试。",
   "notes": "evitable adj.可避免的 in（不）+evitable（可避免的）t不可避免的。 adj.不可逆转的；不可挽回的",
-  "n": 150
+  "n": 152
  },
  {
   "word": "irregularly",
@@ -1205,15 +1221,15 @@
   "ex_en": "The patient is breathing irregularly",
   "ex_zh": "病人的呼吸很不均匀。",
   "notes": "regularly adv.有规律地",
-  "n": 151
+  "n": 153
  },
  {
   "word": "inappropriate",
-  "meaning": "adj.不合适的 M列］Your bright red coat would be quite inappropriate for a funeral.你鲜艳的红大衣很不适合葬礼。",
-  "ex_en": "",
-  "ex_zh": "",
+  "meaning": "adj.不合适的",
+  "ex_en": "Your bright red coat would be quite inappropriate for a funeral.",
+  "ex_zh": "你鲜艳的红大衣很不适合葬礼。",
   "notes": "appropriate adj.恰当的，合适的",
-  "n": 152
+  "n": 154
  },
  {
   "word": "abnormal",
@@ -1221,7 +1237,7 @@
   "ex_en": "El Nino will result in the abnormal weather",
   "ex_zh": "厄尔尼诺现象将会导致异常的天气。",
   "notes": "an abnormal climate异常气候 ab（不）+normal（正常的）t不正常的。",
-  "n": 153
+  "n": 155
  },
  {
   "word": "sediment",
@@ -1229,7 +1245,7 @@
   "ex_en": "The sediment of coffee will settle",
   "ex_zh": "咖啡渣会沉淀下去。",
   "notes": "",
-  "n": 154
+  "n": 156
  },
  {
   "word": "silt",
@@ -1237,7 +1253,7 @@
   "ex_en": "River sediments gradually silted up the harbour",
   "ex_zh": "河流的沉积物逐渐使港口淤塞。",
   "notes": "",
-  "n": 155
+  "n": 157
  },
  {
   "word": "muddy",
@@ -1245,7 +1261,7 @@
   "ex_en": "We left the car and struck out along the muddy track",
   "ex_zh": "我们下了车，开始沿着泥泞的小路前行。",
   "notes": "mud n.泥",
-  "n": 156
+  "n": 158
  },
  {
   "word": "clay",
@@ -1253,7 +1269,7 @@
   "ex_en": "Bricks and dishes are made from various kinds of clay",
   "ex_zh": "砖和盘子由各种黏土制成。",
   "notes": "",
-  "n": 157
+  "n": 159
  },
  {
   "word": "dirt",
@@ -1261,23 +1277,23 @@
   "ex_en": "The children were outside, playing happily in the dirt",
   "ex_zh": "孩子们正在外面的泥土地里开心地玩耍。",
   "notes": "dirty adj.脏的；下流的 w dirt",
-  "n": 158
+  "n": 160
  },
  {
   "word": "rural",
-  "meaning": "adj.农村的，乡村的；田园的 ［傅!I］The disease occurs most frequently in rural areas.那种疾病多见于农村地区。",
-  "ex_en": "",
-  "ex_zh": "",
+  "meaning": "adj.农村的，乡村的；田园的",
+  "ex_en": "The disease occurs most frequently in rural areas.",
+  "ex_zh": "那种疾病多见于农村地区。",
   "notes": "rural areas农村地区",
-  "n": 159
+  "n": 161
  },
  {
   "word": "suburb",
-  "meaning": "n.郊区，郊外，近郊 ［彳列］They proposed setting up a school in the suburbs.他们建议在郊区成立一所学校。",
-  "ex_en": "",
-  "ex_zh": "",
+  "meaning": "n.郊区，郊外，近郊",
+  "ex_en": "They proposed setting up a school in the suburbs.",
+  "ex_zh": "他们建议在郊区成立一所学校。",
   "notes": "suburban adj.郊区的 sub（接近）+urb（城市）t城市附近。",
-  "n": 160
+  "n": 162
  },
  {
   "word": "outskirts",
@@ -1285,7 +1301,7 @@
   "ex_en": "We live on the outskirts of the city",
   "ex_zh": "我们住在这座城市的郊区。",
   "notes": "",
-  "n": 161
+  "n": 163
  },
  {
   "word": "remote",
@@ -1293,7 +1309,7 @@
   "ex_en": "She came from a remote village",
   "ex_zh": "她来自一个偏远的村子。",
   "notes": "a remote control遥控器",
-  "n": 162
+  "n": 164
  },
  {
   "word": "desolate",
@@ -1301,7 +1317,7 @@
   "ex_en": "So how should they escape from these desolate canyons?",
   "ex_zh": "那么他们要怎样逃出这些荒凉的峡谷呢？",
   "notes": "",
-  "n": 163
+  "n": 165
  },
  {
   "word": "distant",
@@ -1309,7 +1325,7 @@
   "ex_en": "It snows all year round in that distant little village",
   "ex_zh": "那个遥远的小村落整年下雪。",
   "notes": "distance n.距离，间距；远处 the distant past遥远的过去",
-  "n": 164
+  "n": 166
  },
  {
   "word": "adjacent",
@@ -1317,7 +1333,7 @@
   "ex_en": "We stayed in adjacent rooms",
   "ex_zh": "我们待在相邻的房间。",
   "notes": "adjacent to与...毗连的",
-  "n": 165
+  "n": 167
  },
  {
   "word": "toxic",
@@ -1325,7 +1341,7 @@
   "ex_en": "All medicines are toxic",
   "ex_zh": "所有药物都有毒性。",
   "notes": "poisonous adj.有毒的 toxic waste有毒废物highly toxic剧毒的来源于希腊语toxon,意为“弓（bow）”，在荷马史诗《伊利亚特》中还能寻到其踪迹。后来在战争中，",
-  "n": 166
+  "n": 168
  },
  {
   "word": "pollution",
@@ -1333,7 +1349,7 @@
   "ex_en": "Waste water from the factory is the main cause of pollution in local rivers",
   "ex_zh": "来自那家工厂的污水是造成当地河流污染的主要原因。",
   "notes": "pollute v.弄脏，污染 pollution control污染控制",
-  "n": 167
+  "n": 169
  },
  {
   "word": "pollutant",
@@ -1341,15 +1357,15 @@
   "ex_en": "Coal is a heavy pollutant",
   "ex_zh": "煤是一种重污染物。",
   "notes": "atmospheric pollutants大气污染物",
-  "n": 168
+  "n": 170
  },
  {
   "word": "contaminate",
-  "meaning": "V.弄脏，污染 ［仞！I］The river was contaminated with waste.这条j可被垃圾污染了。",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "contamination n.污染 contaminated water受到污染的水 con（共同）+tam（接触）+in（里面）+ate（动词后缀） T大家一起在里面摸来摸去-污染。",
-  "n": 169
+  "meaning": "v.弄脏，污染",
+  "ex_en": "The river was contaminated with waste.",
+  "ex_zh": "这条河被垃圾污染了。",
+  "notes": "contamination n.污染 contaminated water受到污染的水 con（共同）+tam（接触）+in（里面）+ate（动词后缀）t大家一起在里面摸来摸去-污染。",
+  "n": 171
  },
  {
   "word": "geology",
@@ -1357,7 +1373,7 @@
   "ex_en": "He devoted all his life to the research of the agricultural geology",
   "ex_zh": "他把一生奉献给了农业地质学的研究事业。",
   "notes": "geological adj.地质（学）的",
-  "n": 170
+  "n": 172
  },
  {
   "word": "border",
@@ -1365,7 +1381,7 @@
   "ex_en": "The border incident lead to the war between pollution border pollutant contaminate geology",
   "ex_zh": "",
   "notes": "",
-  "n": 171
+  "n": 173
  },
  {
   "word": "plate",
@@ -1373,7 +1389,7 @@
   "ex_en": "It is gen erally accepted that earthquakes are caused by two tectonic plates bumping into each other",
   "ex_zh": "人们普遍认为，地震是由两块构造板块互相碰撞造成的。",
   "notes": "",
-  "n": 172
+  "n": 174
  },
  {
   "word": "debris",
@@ -1381,7 +1397,7 @@
   "ex_en": "We are searchi ng for his corpse among the debris after the explosion",
   "ex_zh": "爆炸后，我在瓦砾堆中寻找着他的尸体。",
   "notes": "",
-  "n": 173
+  "n": 175
  },
  {
   "word": "crack",
@@ -1389,7 +1405,7 @@
   "ex_en": "The door opened just a crack",
   "ex_zh": "这扇门只打开一条缝。 There are wide gaps in my knowledge of",
   "notes": "cause a crack弄出裂缝 gap /g比p n.缺口，裂缝；差距；空白",
-  "n": 174
+  "n": 176
  },
  {
   "word": "grand",
@@ -1397,7 +1413,7 @@
   "ex_en": "He was born in the purple and palace",
   "ex_zh": "他出身于皇族，在宏伟的宫\n殿中长大。",
   "notes": "",
-  "n": 175
+  "n": 177
  },
  {
   "word": "magnificent",
@@ -1405,7 +1421,7 @@
   "ex_en": "The king lived in this magnificent palace",
   "ex_zh": "国王住在这座宏伟的宫殿里。",
   "notes": "magnificenee n.宏伟，耳土丽",
-  "n": 176
+  "n": 178
  },
  {
   "word": "super",
@@ -1413,7 +1429,7 @@
   "ex_en": "I've discovered a super restaura nt near here!",
   "ex_zh": "我在附近发现一家超级棒的餐馆！",
   "notes": "",
-  "n": 177
+  "n": 179
  },
  {
   "word": "interesting",
@@ -1421,7 +1437,7 @@
   "ex_en": "There is an interesting programme on television tonight",
   "ex_zh": "今天晚上有一档有趣的电视节目。",
   "notes": "interested adj.感兴趣的；有利害关系的",
-  "n": 178
+  "n": 180
  },
  {
   "word": "dramatic",
@@ -1429,7 +1445,7 @@
   "ex_en": "She made a dramatic speech at the meeting",
   "ex_zh": "她在会上发表了激动人心的演说。",
   "notes": "drama n.戏剧 a dramatic event令人印象深刻的事件",
-  "n": 179
+  "n": 181
  },
  {
   "word": "wilderness",
@@ -1437,7 +1453,7 @@
   "ex_en": "From his attic window, he looked out over a beautiful wilderness",
   "ex_zh": "从阁楼的窗户望去，他看到一片美丽的荒野。",
   "notes": "wild adj.野生的；荒芜的 a wilderness area保留自然环境面貌的地区 'dezst n.沙漠lll'Z3：t V.离弃，遗弃；擅离",
-  "n": 180
+  "n": 182
  },
  {
   "word": "deforest",
@@ -1445,7 +1461,7 @@
   "ex_en": "The land is severely eroded as a result of widespread deforesting and intensive farming",
   "ex_zh": "土地因乱砍滥伐和密集耕种而受到严重侵蚀。",
   "notes": "n.毁林，滥伐森林",
-  "n": 181
+  "n": 183
  },
  {
   "word": "barren",
@@ -1453,7 +1469,7 @@
   "ex_en": "That remote barren land has blossomed into rich granaries",
   "ex_zh": "过去的穷乡僻壤变成了富饶的谷仓。",
   "notes": "a barren desert荒漠知名组合“男孩地带”（Boyzone）有一首经典歌曲No Matter What,其中一段歌词为\"No matter where it's barren, a dream is being born\",即\"不论是什么荒芜的地方，都有梦在诞生”。",
-  "n": 182
+  "n": 184
  },
  {
   "word": "fertile",
@@ -1461,7 +1477,7 @@
   "ex_en": "There's enough to transform barren coral atolls into fertile groves",
   "ex_zh": "这足以将贫瘠的环礁变成富饶的丛林。",
   "notes": "",
-  "n": 183
+  "n": 185
  },
  {
   "word": "fertilise",
@@ -1469,7 +1485,7 @@
   "ex_en": "I fertilised the lawn and pulled out the weeds",
   "ex_zh": "我为草坪施了肥又除了杂草。",
   "notes": "fertiliser（=fertilizer）n.肥料n.日食；月食",
-  "n": 184
+  "n": 186
  },
  {
   "word": "solar",
@@ -1477,7 +1493,7 @@
   "ex_en": "This toy is operated by solar energy",
   "ex_zh": "这个玩具是太阳能驱动的。dusk The\n起来。\nfestivals.中国传统节日的时间都是按照阴历定的。n.天堂；极 Our\n来自拉丁语luna,意为“月亮”。我们在那座热带小岛上待了一周，简直太开心了。",
   "notes": "a solar system太阳系solar energy太阳能n.黄昏，傍晚来自拉丁语so/,意为“太阳”。ar是形容词后缀。 by adj.月亮的，月球的 a lunar eclipse月食",
-  "n": 185
+  "n": 187
  },
  {
   "word": "calendar",
@@ -1485,7 +1501,7 @@
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
-  "n": 186
+  "n": 188
  },
  {
   "word": "sunset",
@@ -1493,23 +1509,23 @@
   "ex_en": "By sunset we had covered thirty miles",
   "ex_zh": "到日落的时候，我们已走了30英里。",
   "notes": "at sunset日落时a sunset industry夕阳产业 （逐渐没落的产业）sunset glow晚霞",
-  "n": 187
+  "n": 189
  },
  {
   "word": "eclipse",
-  "meaning": "",
-  "ex_en": "It will take about an hour to reach full eclipse stage",
+  "meaning": "n.日食；月食",
+  "ex_en": "It will take about an hour to reach full eclipse stage.",
   "ex_zh": "要历时大约一个小时才能进入全食阶段。",
-  "notes": "",
-  "n": 188
+  "notes": "a solar/lunar eclipse日/月食",
+  "n": 190
  },
  {
-  "word": "street lights go on at",
-  "meaning": "dusk.街灯在黄昏时亮 dusk到黄昏时乐（之地）；［the~s］天空",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 189
+  "word": "dusk",
+  "meaning": "n.黄昏，傍晚",
+  "ex_en": "The street lights go on at dusk.",
+  "ex_zh": "街灯在黄昏时亮起来。",
+  "notes": "by dusk到黄昏时",
+  "n": 191
  },
  {
   "word": "sunshine",
@@ -1517,7 +1533,7 @@
   "ex_en": "I was sitting in the garden, enjoying the sunshine",
   "ex_zh": "我坐在庭院里，享受着阳光。",
   "notes": "be bathed in sunshine沐浴在阳光中",
-  "n": 190
+  "n": 192
  },
  {
   "word": "shade",
@@ -1525,7 +1541,7 @@
   "ex_en": "He tried to shade his house with thick trees",
   "ex_zh": "他试图用茂密的树木给房子遮阳。",
   "notes": "shady adj.成荫的；阴凉的 provide shade提供阴凉处",
-  "n": 191
+  "n": 193
  },
  {
   "word": "shadow",
@@ -1533,7 +1549,7 @@
   "ex_en": "The willow's shadow falls on the lake",
   "ex_zh": "垂柳的影子投在湖面上。",
   "notes": "cast a shadow投下阴影",
-  "n": 192
+  "n": 194
  },
  {
   "word": "vapour",
@@ -1541,15 +1557,15 @@
   "ex_en": "When water ch a nges to water vapour, we say evaporates",
   "ex_zh": "当水变成水蒸气时，我们就称水蒸发了。\nit",
   "notes": "",
-  "n": 193
+  "n": 195
  },
  {
   "word": "evaporate",
-  "meaning": "V.（使）蒸发；消失",
-  "ex_en": "The pool of water on the sun",
-  "ex_zh": "操场上的那摊水在阳光下蒸发了。\nn.蒸发",
-  "notes": "",
-  "n": 194
+  "meaning": "v.（使）蒸发；消失",
+  "ex_en": "The pool of water on the playground evaporated in the sun.",
+  "ex_zh": "操场上的那摊水在阳光下蒸发了。",
+  "notes": "evaporation n.蒸发",
+  "n": 196
  },
  {
   "word": "evaporation",
@@ -1557,15 +1573,15 @@
   "ex_en": "Circulating blood helps transfer air",
   "ex_zh": "循环的血液会促进体内的热量散到\n体外。",
   "notes": "circulation n.流通，循环；传播",
-  "n": 195
+  "n": 197
  },
  {
-  "word": "precipit",
-  "meaning": "ate V.（水汽等）凝结；沉淀",
-  "ex_en": "Clouds usually precipitate as rain or",
-  "ex_zh": "云常会凝结成雨或雪。\nn.沉淀；降水量；陡然下落",
-  "notes": "",
-  "n": 196
+  "word": "precipitate",
+  "meaning": "v.（水汽等）凝结；沉淀",
+  "ex_en": "Clouds usually precipitate as rain or snow.",
+  "ex_zh": "云常会凝结成雨或雪。",
+  "notes": "precipitation n.沉淀；降水量；陡然下落",
+  "n": 198
  },
  {
   "word": "reservoir",
@@ -1573,15 +1589,15 @@
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
-  "n": 197
+  "n": 199
  },
  {
   "word": "waterfall",
-  "meaning": "n.瀑布 ［攸！I］They were filled with wonder at the new waterfall.他们对新瀑布感到非常惊奇。",
-  "ex_en": "",
-  "ex_zh": "",
+  "meaning": "n.瀑布",
+  "ex_en": "They were filled with wonder at the new waterfall.",
+  "ex_zh": "他们对新瀑布感到非常惊奇。",
   "notes": "",
-  "n": 198
+  "n": 200
  },
  {
   "word": "fountain",
@@ -1589,7 +1605,7 @@
   "ex_en": "Social life is the fountain of wisdom for writers",
   "ex_zh": "社会生活是作家们智慧的源泉。",
   "notes": "",
-  "n": 199
+  "n": 201
  },
  {
   "word": "spring",
@@ -1597,7 +1613,7 @@
   "ex_en": "It can be quite windy there, especially in spring",
   "ex_zh": "那里的天气相当多风，特别是在春季。",
   "notes": "springtime n.春季，春天",
-  "n": 200
+  "n": 202
  },
  {
   "word": "dew",
@@ -1605,7 +1621,7 @@
   "ex_en": "Dew dripped from the leaves",
   "ex_zh": "露水从叶子上滴下来。",
   "notes": "",
-  "n": 201
+  "n": 203
  },
  {
   "word": "pour",
@@ -1613,7 +1629,7 @@
   "ex_en": "Tears poured from her eyes",
   "ex_zh": "泪水从她眼中涌出。",
   "notes": "downpour n.倾盆大雨",
-  "n": 202
+  "n": 204
  },
  {
   "word": "drain",
@@ -1621,7 +1637,7 @@
   "ex_en": "They drain the swamp and turn it into fertile land",
   "ex_zh": "他们排干沼泽地的水，将它变成了肥沃的土地。",
   "notes": "drainage n.排水；排水装置词源同dry（adj.干的）。 自然迪理",
-  "n": 203
+  "n": 205
  },
  {
   "word": "drip",
@@ -1629,7 +1645,7 @@
   "ex_en": "Be careful! Your paintbrush is dripping",
   "ex_zh": "小心！你的漆刷正在往下滴漆。",
   "notes": "drip down滴下 drip和drop都是象声词一一仔细听一听雨滴落在地上的声音。",
-  "n": 204
+  "n": 206
  },
  {
   "word": "drown",
@@ -1637,15 +1653,31 @@
   "ex_en": "She attempted to drown herself in the river",
   "ex_zh": "她企图投河自尽。",
   "notes": "",
-  "n": 205
+  "n": 207
  },
  {
   "word": "blow",
-  "meaning": "V.吹；（风）吹；吹动n.用力的一击；打击，挫折",
-  "ex_en": "Now, Peter, make a wish and blow out the candles",
-  "ex_zh": "彼得，现在许个愿，然后吹灭蜡烛。 Don't puff cigarette smoke in my face.不要向我脸上喷烟。\n/gAj?\nv./n.涌出 In a moment more, the crowd began to gush\nforth from the doors of the church.过了一会儿，人群便开始从教堂的几扇门里蜂拥而出。",
-  "notes": "strike a blow for维护（某种信念、原则等） /pAf/ V.喷出；喘息II.（吹出的）一股，一缕 gush out涌出，喷出gush from从...喷出",
-  "n": 206
+  "meaning": "v.吹；（风）吹；吹动n.用力的一击；打击，挫折",
+  "ex_en": "Now, Peter, make a wish and blow out the candles.",
+  "ex_zh": "彼得，现在许个愿，然后吹灭蜡烛。",
+  "notes": "strike a blow for维护（某种信念、原则等）",
+  "n": 208
+ },
+ {
+  "word": "puff",
+  "meaning": "v.喷出；喘息n.（吹出的）一股，一缕",
+  "ex_en": "Don't puff cigarette smoke in my face.",
+  "ex_zh": "不要向我脸上喷烟。",
+  "notes": "",
+  "n": 209
+ },
+ {
+  "word": "gush",
+  "meaning": "v./n.涌出",
+  "ex_en": "In a moment more, the crowd began to gush forth from the doors of the church.",
+  "ex_zh": "过了一会儿，人群便开始从教堂的几扇门里蜂拥而出。",
+  "notes": "gush out涌出，喷出gush from从...喷出",
+  "n": 210
  },
  {
   "word": "dense",
@@ -1653,7 +1685,7 @@
   "ex_en": "There will be dense fog in northern parts of the country tomorrow",
   "ex_zh": "该国北部地区明天将有浓雾。",
   "notes": "density n.密度",
-  "n": 207
+  "n": 211
  },
  {
   "word": "intensity",
@@ -1661,23 +1693,23 @@
   "ex_en": "I was surprised by the intensity of his anxiety",
   "ex_zh": "我对他的强烈焦虑感到吃惊。",
   "notes": "intense adj.强烈的；紧张的",
-  "n": 208
+  "n": 212
  },
  {
   "word": "intensive",
   "meaning": "adj.加强的，集中的，密集的",
-  "ex_en": "Intensive care in hospitals is given to the condition seriously ill",
-  "ex_zh": "在医院里，危重病人会得到加强护理。n.条件；情况，状态 I\nintensively adv.深入地，密集地",
-  "notes": "surrounding intense adj.剧烈的，强烈的 intensive care unit(ICU)重症监护室 accept",
-  "n": 209
+  "ex_en": "Intensive care in hospitals is given to the seriously ill.",
+  "ex_zh": "在医院里，危重病人会得到加强护理。",
+  "notes": "intense adj.剧烈的，强烈的 intensively adv.深入地，密集地 intensive care unit(ICU)重症监护室",
+  "n": 213
  },
  {
-  "word": "fl",
-  "meaning": "ash V.（使）闪光；（使）闪现；（通过计算机、卫星等）快速发送n.闪光（灯）；闪现",
-  "ex_en": "The good news was flashed across the country",
+  "word": "flash",
+  "meaning": "v.（使）闪光；（使）闪现；（通过计算机、卫星等）快速发送n.闪光（灯）；闪现",
+  "ex_en": "The good news was flashed across the country.",
   "ex_zh": "这个好消息迅速传遍全国。",
-  "notes": "",
-  "n": 210
+  "notes": "flash through sb/s mind闪过某人的脑海",
+  "n": 214
  },
  {
   "word": "flash through sb",
@@ -1685,7 +1717,7 @@
   "ex_en": "The smell of roses floated around",
   "ex_zh": "玫瑰花的芳香在四周飘荡。",
   "notes": "",
-  "n": 211
+  "n": 215
  },
  {
   "word": "environment",
@@ -1693,7 +1725,7 @@
   "ex_en": "An increasing number of people are concerned about the pollution of the environment",
   "ex_zh": "越来越多的人关心环境污染问题。",
   "notes": "environmental adj.自然环境保护的；有关环境的",
-  "n": 212
+  "n": 216
  },
  {
   "word": "surrounding",
@@ -1701,15 +1733,15 @@
   "ex_en": "The polluted waste is often dumped unceremoniously, making the surrounding land infertile",
   "ex_zh": "被污染的废料经常被随意倒掉，周边土地因此变得贫瘠。\nenvironment周围环境",
   "notes": "",
-  "n": 213
+  "n": 217
  },
  {
-  "word": "had almost decided to accept their conditionsat",
-  "meaning": "that time.当时，我差不多已决定要接受他们的条件了。 a condition接受条件",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 214
+  "word": "condition",
+  "meaning": "n.条件；情况，状态",
+  "ex_en": "I had almost decided to accept their conditions at that time.",
+  "ex_zh": "当时，我差不多已决定要接受他们的条件了。",
+  "notes": "accept a condition接受条件",
+  "n": 218
  },
  {
   "word": "situatio",
@@ -1717,7 +1749,7 @@
   "ex_en": "e to poor management, they finally got into a difficult financial situation",
   "ex_zh": "由于管理不善，他们最终陷入财政困境。",
   "notes": "situate v.使坐落于，使位于 in this situation在这种场合/形势/情况下",
-  "n": 215
+  "n": 219
  },
  {
   "word": "nature",
@@ -1725,15 +1757,15 @@
   "ex_en": "In fact, nature is much better at recycling than we humans are",
   "ex_zh": "事实上，自然界在循环利用方面比人类做得好很多。",
   "notes": "destroy nature破坏大自然",
-  "n": 216
+  "n": 220
  },
  {
   "word": "natural",
-  "meaning": "adj.自然的；天然的 M列］It is natural that he should fall in love with such a beautiful girl.他爱上如此美丽的姑娘，这是很自然的事。",
-  "ex_en": "",
-  "ex_zh": "",
+  "meaning": "adj.自然的；天然的",
+  "ex_en": "It is natural that he should fall in love with such a beautiful girl.",
+  "ex_zh": "他爱上如此美丽的姑娘，这是很自然的事。",
   "notes": "naturally adv.自然地；天然地",
-  "n": 217
+  "n": 221
  },
  {
   "word": "artificial",
@@ -1741,7 +1773,7 @@
   "ex_en": "is fruit juice contains absolutely no artificial colourings",
   "ex_zh": "这种果扌惟不含AiB周味品或色素。\n字根art意为“技巧（skill）;技艺（art）”；字根fic等同于字根fa ct,意为“制作（to make）\"。同字根的单词例如：artefact（用技艺制作出来的物品，非天然的t\n人造物品；手工艺品）, factory（制作的地方t工厂）。",
   "notes": "",
-  "n": 218
+  "n": 222
  },
  {
   "word": "synthetic",
@@ -1749,7 +1781,7 @@
   "ex_en": "Nylon is not from is a synthetic material; it nature",
   "ex_zh": "尼龙是一种合成材料，不是天然物质。",
   "notes": "",
-  "n": 219
+  "n": 223
  },
  {
   "word": "petrol",
@@ -1757,7 +1789,7 @@
   "ex_en": "My new car really eats up petrol",
   "ex_zh": "我的新汽车真是太耗油了。",
   "notes": "",
-  "n": 220
+  "n": 224
  },
  {
   "word": "gas",
@@ -1765,7 +1797,7 @@
   "ex_en": "There are reports that some gas stations have run out of gas",
   "ex_zh": "有报道称，一些加油站的汽油已经用光了。",
   "notes": "a gas station加油站",
-  "n": 221
+  "n": 225
  },
  {
   "word": "gasoline",
@@ -1773,7 +1805,7 @@
   "ex_en": "he price of gasoline is unstable",
   "ex_zh": "汽油价格不稳定。",
   "notes": "",
-  "n": 222
+  "n": 226
  },
  {
   "word": "petroleum",
@@ -1781,6 +1813,6 @@
   "ex_en": "Petroleum is an Important natural resource",
   "ex_zh": "石油是一种重要的自然资源。字根petr指“石头”，女口：petrology（岩石学）。记得\nsurprise, amaze, astonish, astound这些表示\"使惊奇”的词吗？要表达最高程度的“惊奇”，就用petrify（v.\n［使］石化；使吓呆）。\n自然地理",
   "notes": "",
-  "n": 223
+  "n": 227
  }
 ]

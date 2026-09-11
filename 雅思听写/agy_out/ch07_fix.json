@@ -1,0 +1,111 @@
+{
+ "fix": [
+  {
+   "n": 3,
+   "word": "renaissance",
+   "meaning": "n.［the R~］文艺复兴时期",
+   "ex_en": "The Renaissance was an epoch of unparalleled cultural achievement.",
+   "ex_zh": "文艺复兴时期是一个在文化上取得空前成就的时代。",
+   "notes": ""
+  },
+  {
+   "n": 7,
+   "word": "convention",
+   "meaning": "n.惯例；大型会议",
+   "ex_en": "The handshake is a social convention.",
+   "ex_zh": "握手是社交惯例。",
+   "notes": "conventional adj.传统的；通常的"
+  },
+  {
+   "n": 12,
+   "word": "aboriginal",
+   "meaning": "n.［A~］澳大利亚土著人adj.本土原有的；土著的",
+   "ex_en": "Many Aboriginals do not like the idea of a day to celebrate the British landing.",
+   "ex_zh": "许多澳大利亚土著并不喜欢庆祝英国人登陆的日子。",
+   "notes": "original adj.原本的，最初的origin n.起源"
+  },
+  {
+   "n": 22,
+   "word": "inherit",
+   "meaning": "v.继承（财产等）；经遗传获得",
+   "ex_en": "He inherited a house from his father.",
+   "ex_zh": "他从父亲那里继承了一所房子。",
+   "notes": "inheritance n.继承；遗产"
+  },
+  {
+   "n": 41,
+   "word": "missionary",
+   "meaning": "n.传教士",
+   "ex_en": "The missionary was sent to India last year.",
+   "ex_zh": "这名传教士去年被派到印度。",
+   "notes": "mission n.使命"
+  },
+  {
+   "n": 62,
+   "word": "lord",
+   "meaning": "n.（英国）贵族；［L~］阁下，大人；［theL~］上帝",
+   "ex_en": "The young lord with the red-gold hair bowed, \"As you command, Lord Edward.\"",
+   "ex_zh": "金红头发的年轻贵族鞠躬道：“悉听尊命，艾德大人。”",
+   "notes": ""
+  },
+  {
+   "n": 63,
+   "word": "knight",
+   "meaning": "n.骑士v.封（某人）为爵士",
+   "ex_en": "He was knighted for his war services.",
+   "ex_zh": "他因战功而被封为爵士。",
+   "notes": ""
+  },
+  {
+   "n": 64,
+   "word": "guardian",
+   "meaning": "n.保卫者；监护人adj.守护的",
+   "ex_en": "He became the legal guardian of his brother's daughter.",
+   "ex_zh": "他成为他侄女的合法监护人。",
+   "notes": "guard v.保护n.守卫"
+  },
+  {
+   "n": 66,
+   "word": "homesick",
+   "meaning": "adj.思乡的",
+   "ex_en": "My American friend tells me, she is never as homesick as during this time of year, around Thanksgiving.",
+   "ex_zh": "我的美国朋友跟我说，每年的这段时间，即感恩节前后，是她最想家的时候。",
+   "notes": "homesickness n.思乡情绪"
+  },
+  {
+   "n": 70,
+   "word": "experience",
+   "meaning": "n.经验；（一次）经历，体验",
+   "ex_en": "It was a truly memorable experience.",
+   "ex_zh": "这真是一次难忘的经历。",
+   "notes": "experienced adj.经验丰富的"
+  },
+  {
+   "n": 74,
+   "word": "thrive",
+   "meaning": "v.繁荣，兴旺发达；茁壮生长",
+   "ex_en": "First thrive and then wive.",
+   "ex_zh": "先立业，后成家。",
+   "notes": ""
+  }
+ ],
+ "delete": [],
+ "add": [
+  {
+   "after": "convention",
+   "word": "custom",
+   "meaning": "n.习俗；(个人的)习惯",
+   "ex_en": "The custom prevails over the whole area.",
+   "ex_zh": "该风俗盛行于这整个地区。",
+   "notes": "customs n.海关；关税"
+  },
+  {
+   "after": "moral",
+   "word": "tribe",
+   "meaning": "n.部落",
+   "ex_en": "The tribe's development was more primitive than that of their neighbours.",
+   "ex_zh": "该部落所处的发展阶段比邻近部落更原始。",
+   "notes": ""
+  }
+ ]
+}

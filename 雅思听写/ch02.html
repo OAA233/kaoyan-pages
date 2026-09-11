@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雅思词汇真经 Ch.02 植物研究</title>
+<style>
+  body {
+    --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
+    --num: #8b8577; --num-border: #5a564d; --muted: .55;
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif;
+    background: var(--bg); color: var(--fg);
+    margin: 0; padding: 14px 16px; max-width: 1080px;
+    transition: background .2s, color .2s;
+  }
+  body.day {
+    --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8;
+    --num: #8a8373; --num-border: #c4bda9; --muted: .6;
+  }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
+  .hbtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px;
+  }
+  .hbtn:hover { opacity: .8; }
+  .stats { display: inline; gap: 8px; font-size: 12px; opacity: .7; }
+  .row2 { display: flex; gap: 10px; align-items: flex-start; }
+  .col2 { flex: 1; min-width: 0; }
+  .card {
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 9px 12px; background: var(--card);
+    border-left: 5px solid #555; margin-bottom: 10px;
+  }
+  .card.cV { border-left-color: #e5484d; }
+  .card.cI { border-left-color: #d63384; }
+  .card.cN { border-left-color: #1971c2; }
+  .card.cadv { border-left-color: #2b8a3e; }
+  .row1 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .num {
+    font-size: 11px; font-weight: 700; color: var(--num);
+    border: 1.5px solid var(--num-border); border-radius: 50%;
+    width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: center;
+  }
+  .word { font-size: 19px; font-weight: 700; cursor: pointer; }
+  .word:hover { text-decoration: underline; }
+  .pos { font-size: 11px; font-weight: 700; padding: 2px 6px; white-space: nowrap; border-radius: 7px; color: #fff; }
+  .pos.V { background: #e5484d; }
+  .pos.I { background: #d63384; }
+  .pos.N { background: #1971c2; }
+  .pos.adv { background: #2b8a3e; }
+  .mean { margin-top: 1px; font-size: 13px; margin-left: 32px; }
+  .phrase { margin-top: 6px; font-size: 13px; margin-left: 32px; }
+  .phrase .jp { font-weight: 600; cursor: pointer; }
+  .phrase .jp:hover { text-decoration: underline; }
+  .phrase .zh { display: block; opacity: var(--muted); margin: 1px 0 0; }
+  .note-line { margin-top: 4px; font-size: 12px; margin-left: 32px; opacity: var(--muted); }
+  @media (max-width: 760px) { .row2 { flex-direction: column; } .col2 { width: 100%; } }
+
+  /* ---- 听写 ---- */
+  #dict { position: fixed; inset: 0; background: var(--bg); z-index: 500; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  #dict.open { display: flex; }
+  #dictBig { font-size: 20px; padding: 16px 30px; border-radius: 16px; border: 1px solid var(--num-border); background: var(--card); color: var(--fg); cursor: pointer; }
+  #dictAns { min-height: 150px; transition: opacity .2s; }
+  #dictAns.hidden { opacity: 0; pointer-events: none; user-select: none; }
+  .dword { font-size: 30px; font-weight: 800; }
+  .dpos { opacity: .5; font-size: 12px; }
+  .dmean { font-size: 16px; margin-top: 4px; }
+  .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
+  .dphz { opacity: .6; font-size: 13px; }
+  .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>雅思词汇真经 Ch.02 植物研究</h1>
+    <p><span class="stats">共 <b id="count"></b> 词 · 点击单词/例句发音（edge 女声）</span></p>
+  </div>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
+  <button id="themeBtn" class="hbtn" onclick="toggleTheme()">🌙 夜间</button>
+</header>
+<div id="list"></div>
+
+<script>
+let DATA = [{"word": "dioxide", "meaning": "n.二氧化物", "ex_en": "Plants can absorb carb on dioxide and release oxygen", "ex_zh": "植物可以吸收二氧化碳并释放氧气。", "notes": "carbon dioxide二氧化碳 di（二）+oxide（氧化物）t二氧化物。", "n": 1}, {"word": "vegetatio", "meaning": "n l n・植物，草木", "ex_en": "There is not much vegetation in deserts", "ex_zh": "沙漠中的植物不多。 There is a herb garden behind the house.屋后有一个芳草园。", "notes": "etable n.蔬菜vegetarian n.素食者 /h3：b/ m药草；香草 herbal adj.药草的；香草的herbivore n.食草动物carnivore n.食肉动物", "n": 2}, {"word": "perennial", "meaning": "n.多年生植物adj.长期的，持久的", "ex_en": "These perennials should be planted where they can naturalise", "ex_zh": "应该将这些多年生植物种在它们能适应的环境中。", "notes": "", "n": 3}, {"word": "bota", "meaning": "ny m植物学", "ex_en": "He was involved in the structural botany", "ex_zh": "他潜心于研究结构植物学。", "notes": "botanical adj.植物的；植物学的 botanist n.植物学家", "n": 4}, {"word": "ecology", "meaning": "n.生态学；生态", "ex_en": "I am interested in the ecology of the desert", "ex_zh": "我对沙漠的生态感兴趣。", "notes": "ecological adj.生态学的；生态的 ecologist n.生态学家", "n": 5}, {"word": "ecosystem", "meaning": "n.生态系统", "ex_en": "Water is the core of a healthy ecosystem", "ex_zh": "水是生态系统保持良好状态的核心要素。\neco（生态）+system（系统）t生态系统。", "notes": "", "n": 6}, {"word": "eco-friendly", "meaning": "adj.对生态环境友好的，不妨害生态环境的", "ex_en": "Attention to eco-friendly packaging is increasing", "ex_zh": "对生态友好型包装的关注度日益提高。", "notes": "use卜friendly adj.便于使用的", "n": 7}, {"word": "horticulture", "meaning": "n.园艺学；园艺", "ex_en": "Horticulture is the industry and scienee of plant cultivation", "ex_zh": "园艺是关于植物栽培的产业和科学。", "notes": "", "n": 8}, {"word": "organism", "meaning": "n.有机体，生物", "ex_en": "This in sect behaves like a parasite—an organism that lives on or in another organism called a host", "ex_zh": "这种昆虫的行为像寄生虫，即一种生活在被称为\n“宿主”的另一个生物身上或体内的生物。", "notes": "organ n.器官 m遗传学 In genetics, genes were formerly called factors. 在遗传学上，基因以前被称为因子。 gene n.基因genetic adj.基因的", "n": 9}, {"word": "mutation", "meaning": "n.突变，变异", "ex_en": "The mutations in plants caused by radiation have been found in experiments", "ex_zh": "已有实验发现辐射引起的植物变异。", "notes": "mutate v.改变；（使）突变mutant n.突变体", "n": 10}, {"word": "variation", "meaning": "n.变种；变异", "ex_en": "Variation among dogs is limited to the possible permutations of their genes", "ex_zh": "狗的变异受限于其基因可能存在的排列组合方式。", "notes": "vary v.变化", "n": 11}, {"word": "diversity", "meaning": "n.多样性", "ex_en": "This place used to be a flourish!ng forest with regional diversity", "ex_zh": "这里曾是一片有着区域多样性的繁茂森林。", "notes": "diverse adj.不同的，多种多样的 biodiversity n.生物多样性", "n": 12}, {"word": "hybridisation", "meaning": "（=hybridization）n.杂交", "ex_en": "Somatic cell hybridisation is a very useful technique", "ex_zh": "体细胞杂交是一种很实用的技术。", "notes": "hybrid n.杂种，杂交生成的生物体adj.混合的", "n": 13}, {"word": "classify", "meaning": "V.分类", "ex_en": "Librarians spend a lot of time classifying books", "ex_zh": "图书馆管理员花许多时间将书分类。", "notes": "n.分类classified adj.机密的，保密的 classify...as...把...分类为...", "n": 14}, {"word": "reproduce", "meaning": "V.繁殖", "ex_en": "When they can't reproduce, cancerous cells die off instead of becoming dangerous", "ex_zh": "若癌细胞无法繁殖，它们就会消亡而不会造成威胁。", "notes": "", "n": 15}, {"word": "evolve", "meaning": "V.进化；（使）发展，（使）逐步形成", "ex_en": "The developmental history of society tells us that man has evolved from some ancient primates", "ex_zh": "社会发展史告诉我们，人是由某些古灵长目动物进化来的。", "notes": "evolve from从...进化而来字根volu和volv都源自拉丁文volvere,表示“滚，", "n": 16}, {"word": "fluctuate", "meaning": "V.波动，起伏", "ex_en": "The price of vegetables fluctuates seas on ally", "ex_zh": "蔬菜的价格随季节波动。", "notes": "n.波动fluctuant adj.波动的，起伏的", "n": 17}, {"word": "recl", "meaning": "aim V.开垦，开拓，利用", "ex_en": "This land was reclaimed from the sea", "ex_zh": "这块地是填海填出来的。", "notes": "", "n": 18}, {"word": "cultiv", "meaning": "ate V.耕作；培养", "ex_en": "The farmer is cultivating his land", "ex_zh": "农民正在耕耘他的土地。 These seeds should be sown in April.这些种子应在4月播种。\nsow\n植物研究", "notes": "cultivation n.耕种；培养 cultivate the habit of养成...的习惯 cultivate a creative mind培养富有创造力的头脑该词的字根cult表示“耕种；培养”。同根词culture意为“文化\"，而古时最早的文化之一即农耕文化——怎样播种，如何灌溉，何时收获，等等。 /sou/ sow V.播种", "n": 19}, {"word": "harvest", "meaning": "V.收割n.收获；收成", "ex_en": "A good summer harvest is not easy to come by", "ex_zh": "夏季的好收成不容易实现。\nharvest在收获的季节", "notes": "", "n": 20}, {"word": "pluck", "meaning": "V.采，摘 lover.他为情人摘了一", "ex_en": "He plucked a rose for his", "ex_zh": "朵玫瑰花。", "notes": "", "n": 21}, {"word": "pick", "meaning": "V.拾;摘", "ex_en": "He picked the watch up from the carpet", "ex_zh": "他把表从地毯上捡起来。", "notes": "", "n": 22}, {"word": "yield", "meaning": "V.出产；屈服，服从n.产量；投资收益", "ex_en": "This land yields well", "ex_zh": "这块土地产量高。", "notes": "yielding adj.易弯曲的；顺从的 unyielding adj.坚硬的；不屈不挠的", "n": 23}, {"word": "re", "meaning": "ar V.培养，抚养；饲养n.后部", "ex_en": "Most farmers in this area rear sheep", "ex_zh": "这个地区的大多数农民都养羊。", "notes": "", "n": 24}, {"word": "arable", "meaning": "adj-适于耕种的", "ex_en": "This area changed quickly from arable land to desert", "ex_zh": "这个地区很快就从可耕地变成了沙漠。\n(=plow)n.犁v.耕(地)", "notes": "", "n": 25}, {"word": "spade", "meaning": "n.铲，锹", "ex_en": "He bought a new spade", "ex_zh": "他买了把新铲子。", "notes": "", "n": 26}, {"word": "rake", "meaning": "n.耙子v.耙；搜索", "ex_en": "With an an cient rusty rake I went to work", "ex_zh": "我拿了把古老生锈的耙子去工作。", "notes": "", "n": 27}, {"word": "stack", "meaning": "n.堆，垛v.堆积", "ex_en": "He placed the books in a neat stack", "ex_zh": "他把书整整齐齐地放成一堆。", "notes": "", "n": 28}, {"word": "heap", "meaning": "n.（大而杂乱的）堆", "ex_en": "A heap of old clothes was lying in the corner", "ex_zh": "一堆旧衣服堆在角落里。", "notes": "", "n": 29}, {"word": "bundle", "meaning": "n.捆，包，束", "ex_en": "He collected a bundle of sticks", "ex_zh": "他收集了一捆树枝。", "notes": "", "n": 30}, {"word": "bunch", "meaning": "（花），一串（钥匙） n.—束", "ex_en": "I bought a bunch of lilacs", "ex_zh": "我买了一束丁香花。", "notes": "", "n": 31}, {"word": "vase", "meaning": "n.瓶，花瓶 valuable.因为这", "ex_en": "This flaw makes the vase less", "ex_zh": "处缺陷，这个花瓶不那么值钱了。\n“m----", "notes": "", "n": 32}, {"word": "sunlight", "meaning": "n.阳光", "ex_en": "The sunlight was reflected by the water.", "ex_zh": "水面反射着阳光。", "notes": "expose...to the sunlight把...暴露在阳光下 get sunlight受到阳光照射", "n": 33}, {"word": "day", "meaning": "adj.短日照的", "ex_en": "Soybean is a typical short-day crop", "ex_zh": "大豆是典型的短日照作物。", "notes": "", "n": 34}, {"word": "shade-tolerant", "meaning": "adj.耐阴的", "ex_en": "He highlighted the importanee of shade- tolerant plants in gardens", "ex_zh": "他强调了耐阴植物在庭园中的重要性。", "notes": "", "n": 35}, {"word": "fungus", "meaning": "n.真菌", "ex_en": "Don't eat that fungus. It might be poisonous", "ex_zh": "别吃那种菌，可能有毒。", "notes": "", "n": 36}, {"word": "mould", "meaning": "(=mold)n.霉菌v.发霉", "ex_en": "The walls were black with mould", "ex_zh": "墙因发霉而木Eg\no", "notes": "", "n": 37}, {"word": "pollen", "meaning": "n.花粉v.给……授粉", "ex_en": "Each spring, pollen from nearby plants is blown into the water", "ex_zh": "每年春天，附近植物的花粉被风吹到水中。\n/也3：1“\ngerminate占neit/\nV.(使)发芽；开始生长 Warmth is needed for the seeds to germinate.\n种子发芽需要一定的温度。", "notes": "germ v.萌芽n.萌芽；细菌", "n": 38}, {"word": "seed", "meaning": "n.种子，籽；萌芽", "ex_en": "The farmers were scattering seeds over the fields", "ex_zh": "农夫在往田里播撒种子。", "notes": "seedling n.秧苗，幼苗 sow seeds播种", "n": 39}, {"word": "burgeon", "meaning": "n.嫩枝，新芽v.急速增长；发芽，抽枝", "ex_en": "This firm aimed at the burgeoning market for augmented-reality games.", "ex_zh": "这家公司瞄准了快速发展的运用增强现实技术的游戏的市场。", "notes": "", "n": 40}, {"word": "bud", "meaning": "n.芽，苞，禧蕾", "ex_en": "The roses are in bud", "ex_zh": "玫瑰花正含苞待放。", "notes": "break out into bud发芽", "n": 41}, {"word": "flower", "meaning": "v.开花n.花朵", "ex_en": "Cherry trees flower in the early spring", "ex_zh": "樱桃树在早春开花。", "notes": "", "n": 42}, {"word": "blossom", "meaning": "v.开花n.花朵", "ex_en": "The tree was covered with beautiful pink blossom.", "ex_zh": "这棵树开满了美丽的粉红色花朵。", "notes": "", "n": 43}, {"word": "bloom", "meaning": "n.花朵", "ex_en": "The apple trees are out of bloom", "ex_zh": "这些苹果树的花已败落。", "notes": "in bloom鲜花盛开", "n": 44}, {"word": "scent", "meaning": "n.气味；香味v.使具有香味", "ex_en": "The flower scents the air", "ex_zh": "空气中弥漫着花香。", "notes": "", "n": 45}, {"word": "aromatic", "meaning": "adj.芳香的", "ex_en": "Aromatic plants are often used in cooking.", "ex_zh": "烹调中常使用芳香植物。", "notes": "", "n": 46}, {"word": "ripen", "meaning": "V.（使）成熟", "ex_en": "The sun ripens the corn", "ex_zh": "阳光使谷物成熟。", "notes": "ripe adj.熟的；时机成熟的ripener n.催熟剂 植物研究", "n": 47}, {"word": "fruit", "meaning": "v.结果实n.原野；场地；野外", "ex_en": "The apple trees fruited early this year", "ex_zh": "今年苹果 The\n树很早就开始结果了。on\n地质班的学生将把本学年的全部时间用于野外勘探。", "notes": "", "n": 48}, {"word": "wither", "meaning": "V.（使）枯萎terrace", "ex_en": "The grapes withered on the vine", "ex_zh": "葡萄藤上的葡n.梯田萄干瘪了。 The", "notes": "withered adj.凋谢了的，枯萎的irrigation.梯田的沟渠便于灌溉。", "n": 49}, {"word": "decompose", "meaning": "V.（ffi）分解；（使）腐烂timber", "ex_en": "You can apply heat to decompose organic compounds", "ex_zh": "你可以加热来分解有机化合物。", "notes": "compose v.构成；写，创作timber.这个农夫花了一天时间在森林里砍木材。 de（非，使相反）+compose（组成）t分解，腐烂。", "n": 50}, {"word": "rot", "meaning": "v.（使）腐烂，（使）腐坏m腐烂", "ex_en": "Rot the tree trunk caused the tree to fall. in", "ex_zh": "树干的腐烂导致树倒了。", "notes": "rotten adj.腐烂的", "n": 51}, {"word": "decay", "meaning": "V.腐烂 decay.那些蔬菜", "ex_en": "The vegetables have begun to", "ex_zh": "已开始腐烂。", "notes": "", "n": 52}, {"word": "stale", "meaning": "adj.不新鲜的；没有新意的，陈腐的", "ex_en": "He always bought two loaves of stale bread", "ex_zh": "他总是要买两条不新鲜的面包。", "notes": "staleness n.不新鲜；无趣味", "n": 53}, {"word": "rainforest", "meaning": "n.雨林", "ex_en": "The rainforest is being systematically destroyed", "ex_zh": "雨林正被系统化地毁灭。", "notes": "a rainforest reserve雨林保护区", "n": 54}, {"word": "jungle", "meaning": "热带）丛林，密林", "ex_en": "Tigers are found in the jungle of Asia", "ex_zh": "在亚洲的丛林中有老虎。", "notes": "in the jungle在丛林里", "n": 55}, {"word": "plantation", "meaning": "n.种植园；栽植", "ex_en": "They work on plantations", "ex_zh": "他们在种植园工作。", "notes": "", "n": 56}, {"word": "field", "meaning": "n.原野；场地；野外", "ex_en": "The students of the geological class will be out on field exploration for the duration of the school year.", "ex_zh": "地质班的学生将把本学年的全部时间用于野外勘探。", "notes": "", "n": 57}, {"word": "terrace", "meaning": "n.梯田", "ex_en": "The terrace channels are convenient for irrigation.", "ex_zh": "梯田的沟渠便于灌溉。", "notes": "", "n": 58}, {"word": "timber", "meaning": "n.木材，木料；林木", "ex_en": "The farmer spent a day in the woods hewing timber.", "ex_zh": "这个农夫花了一天时间在森林里砍木材。", "notes": "", "n": 59}, {"word": "charcoal", "meaning": "n.木炭", "ex_en": "Prepare a fire in a charcoal grill", "ex_zh": "在木炭烧烤炉里点上火。", "notes": "", "n": 60}, {"word": "log", "meaning": "n.原木；（航海、飞行）日志", "ex_en": "A log got in his way as he drove.—", "ex_zh": "根原木挡住了他开车的去路。早期，航海时用来测量航行速度的测速仪是用木板\n（log）、铅块和绳子等制成的。所以，log既有“原木\"的含义，又有“航行日志”的含义。比如logging\nindustry就是“伐木业“，而网络上流行的blog（博客）\n即weblog（网络日志）的缩写。", "notes": "", "n": 61}, {"word": "logo", "meaning": "n.标识，标志，徽标", "ex_en": "The letterhead was impressed with the company's logo", "ex_zh": "信头印着该公司的徽标。", "notes": "", "n": 62}, {"word": "forestry", "meaning": "n.林学；林业", "ex_en": "Mountainous areas, covered by forests, are the place for forestry development", "ex_zh": "森林覆盖的山区\n正是适合发展林业的地方。", "notes": "forest n.森林", "n": 63}, {"word": "branch", "meaning": "n.树枝；（企业或组织的）分支机构，分店", "ex_en": "The company's head office is in this city, but it has branches all over the country", "ex_zh": "公司的总部在这座城市，但是它的分公司遍布全国各地。", "notes": "extend the olive branch伸出橄榄枝，准备讲和 log", "n": 64}, {"word": "trunk", "meaning": "n.树干；躯干；大箱子", "ex_en": "Can she move that trunk by herself?", "ex_zh": "她能自己搬动那只大箱子吗？", "notes": "", "n": 65}, {"word": "bough", "meaning": "n.大树枝", "ex_en": "The window of her car was broken by a bough during last night's storm", "ex_zh": "在昨晚的暴风雨中，她的车窗被一根大树枝打破了。", "notes": "", "n": 66}, {"word": "root", "meaning": "n.根v.（使）生根", "ex_en": "The dog is snuffling around the root of a tree", "ex_zh": "那条狗在一棵树的根部嗅来嗅去。", "notes": "", "n": 67}, {"word": "hay", "meaning": "n.干草", "ex_en": "Make hay while the sun shines", "ex_zh": "趁有太阳时晒干草。（比喻把握时机，趁热打铁）", "notes": "hit the hay±床睡觉", "n": 68}, {"word": "straw", "meaning": "n.稻草，麦秆；吸管", "ex_en": "This hat is made of straw", "ex_zh": "这帽子是用稻草编的。", "notes": "", "n": 69}, {"word": "reed", "meaning": "n.芦苇", "ex_en": "roof is made of dried reeds", "ex_zh": "这房顶是用干芦苇制成的。", "notes": "", "n": 70}, {"word": "thorn", "meaning": "n.刺，棘刺；荆棘", "ex_en": "She got her finger pricked by a thorn", "ex_zh": "她的手指被刺扎了一下。", "notes": "thorny adj.多刺的；棘手的", "n": 71}, {"word": "weed", "meaning": "n.杂草，野草v.除杂草", "ex_en": "The garden is choked with weeds", "ex_zh": "花园里杂草丛生。", "notes": "", "n": 72}, {"word": "grass", "meaning": "n.草；草地", "ex_en": "The grass was wet with dew", "ex_zh": "草被露水打湿了。", "notes": "", "n": 73}, {"word": "meadow", "meaning": "n.草地；牧场", "ex_en": "The children ran free across the meadow", "ex_zh": "孩子们在草地上自由地奔跑。", "notes": "", "n": 74}, {"word": "lawn", "meaning": "n.草地，草坪", "ex_en": "My lawn", "ex_zh": "妈妈让\n我去修剪草坪。", "notes": "", "n": 75}, {"word": "olive", "meaning": "n.橄榄；橄榄树", "ex_en": "The olive branch is the emblem of peace", "ex_zh": "橄榄枝是和平的象征。", "notes": "an olive branch橄榄枝，和平象征olive oil橄榄油 《圣经》记载：当洪水（flood）淹没大地时，按照上帝 （Noah）将所有的动物都成对地带入方的指示，挪亚 （ark）中。一段时间后，挪亚从方舟的窗户放出一只舟渡鸦（raven）,渡鸦飞来飞去。后来他又放出一只鸽子 （dove,这里不是在说“德芙”巧克力品牌！）。但是，因为地上都是水，鸽子没有地方落脚，就飞回了方舟。又过了几天，挪亚再次放出鸽子。这次，鸽子回来时，嘴里衔着新拧下的橄榄叶（olive leaf）,于是挪亚知道地上的水退了，大地恢复生机。", "n": 76}, {"word": "pine", "meaning": "n.松树；松木", "ex_en": "It's a place noted for its pine trees and springs.", "ex_zh": "这是一个以松树和泉水而知名的地方。", "notes": "", "n": 77}, {"word": "vine", "meaning": "n.酶 n.葡萄藤", "ex_en": "The grapes withered on the vine", "ex_zh": "葡萄藤上的葡了。chemical\n发一千次这种化学反应。", "notes": "", "n": 78}, {"word": "violet catalyst", "meaning": "n.堇菜n.催化剂；促进因素", "ex_en": "The violet is a dainty spring flower", "ex_zh": "堇菜是种娇花。chemical\n物质。", "notes": "", "n": 79}, {"word": "tulip", "meaning": "n.排放，散发；排放物，散发物", "ex_en": "She trimmed the stalks of the tulips before putting them in a vase", "ex_zh": "在把郁金香插进花瓶之前，她release\n修剪了一下花茎。V./I1.释放；发布跑走了。\nworld.这次会议旨在减少全球的碳排放或温室气体排放。\nV.吸收；吸引全部注意力 Dry", "notes": "n.郁金香", "n": 80}, {"word": "mint", "meaning": "n.薄荷；薄荷糖；铸币厂v.铸造（硬币）circulation", "ex_en": "We sat in the back row, sucking mints", "ex_zh": "我们坐在后排，嘴里咂着薄荷糖。神话中，希腊神话里的天后赫拉（Hera）的对应circulation\n者是朱诺（Juno）,别名是摩涅塔（Moneta）。她曾多气环流是密切相关的。次警告罗马人即将出现的危险，帮助他们渡过难关（别名。", "notes": "Moneta可能与表示“警告”的拉丁文monere有关）。circulate 罗马人为她建了一座神庙，后来在神庙里建了铸币厂，希望女神能守护他们的财富，同时告诫他们不因金钱而迷失自我。英语中的money和mint都源自女神的别名，可现exceed 代人有多少能记得手里的money有 “警告”的含义呢。V.超过", "n": 81}, {"word": "reef", "meaning": "m(暗)礁，礁脉", "ex_en": "The ship was wrecked on a reef", "ex_zh": "这船触礁失事了。n-摄取；领会", "notes": "", "n": 82}, {"word": "alga", "meaning": "n.海藻，藻", "ex_en": "Some of the algae are edible.", "ex_zh": "有些海藻是可以吃的。", "notes": "algal adj.海藻的algae n.［alga的复数形式］藻类", "n": 83}, {"word": "emission", "meaning": "n.排放，散发；排放物，散发物", "ex_en": "This conference aims to reduce carbon or greenhouse gas emissions around the world.", "ex_zh": "这次会议旨在减少全球的碳排放或温室气体排放。", "notes": "", "n": 84}, {"word": "absorb", "meaning": "v.吸收；吸引全部注意力", "ex_en": "Dry sand absorbs water.", "ex_zh": "干沙吸收水分。", "notes": "be absorbed in全神贯注在...上", "n": 85}, {"word": "circulation", "meaning": "n.流通；循环；流传", "ex_en": "Sea surface temperatures and atmospheric circulation are strongly coupled.", "ex_zh": "海洋表面的温度与大气环流是密切相关的。", "notes": "circle n.圈v.环绕；盘旋 circulate v.流传；循环", "n": 86}, {"word": "exceed", "meaning": "v.超过", "ex_en": "The driver exceeds the speed limit.", "ex_zh": "那位司机超速驾车。", "notes": "", "n": 87}, {"word": "uptake", "meaning": "n.摄取；领会", "ex_en": "The doctor advised me to reduce the salt uptake.", "ex_zh": "医生建议我减少盐的摄入。", "notes": "", "n": 88}, {"word": "nutrient", "meaning": "n.营养物质", "ex_en": "The nutrient in the soil acts as a stimulus to growth in plants.", "ex_zh": "土壤中的营养物质能促进植物生长。", "notes": "nutrition n.营养", "n": 89}, {"word": "surroundings", "meaning": "n.环境", "ex_en": "The adaptability of the youth to new surroundings is one of their good qualities", "ex_zh": "年轻人适应新环境的能力是他们的优点之一。", "notes": "", "n": 90}, {"word": "m echanism", "meaning": "n.机制；构造", "ex_en": "Bones and muscles are parts of the mechanism of the body", "ex_zh": "骨骼和肌肉是身体的部分构造。", "notes": "", "n": 91}, {"word": "counterbalance", "meaning": "n.起平衡作用的事物；抗衡力 v.抵消；对……起平衡作用", "ex_en": "Their strength in defenee counterbalances our strength in attack.", "ex_zh": "他们防卫的力量与我们攻击的力量不相上下。", "notes": "", "n": 92}, {"word": "protect", "meaning": "v.保护", "ex_en": "We have to do what it takes to protect our parks and protect our planet for generations to come.", "ex_zh": "我们必须采取一切措施为子孙后代保护我们的公园和我们的星球。", "notes": "protection n.保护protective adj.保护的，防护的 protect...from/against保护...免受...的伤害", "n": 93}, {"word": "from", "meaning": "V.保护；维持（原状）；保存", "ex_en": "It is the duty of the police to preserve public order", "ex_zh": "维持公共秩序是警察的职责。 Some accommodation between conservation\nand tourism is essential.对自然环境的保护与旅游业之间的相互协调是至关重要的。", "notes": "preservation n.保护 n.（对自然环境的）保护；保存 conversation n.交谈", "n": 94}, {"word": "extinguish", "meaning": "v.扑灭（火）；使（想法、感情等）破灭", "ex_en": "They tried every means to extinguish the fire.", "ex_zh": "他们尝试了各种办法来扑火。", "notes": "extinguisher n.灭火器", "n": 95}, {"word": "destruct", "meaning": "V.（使）自毁", "ex_en": "The tape would self-destruct in twenty minutes", "ex_zh": "这盘磁带会在20分钟后自毁。", "notes": "destruction n.破坏", "n": 96}, {"word": "ruin", "meaning": "V.毁坏，摧毁n.毁灭；废墟", "ex_en": "The storm ruined the crops", "ex_zh": "暴风雨毁坏了庄稼。\nV.毁灭，消亡；腐烂 Flowers perish when frost comes.霜冻一来，花即凋零。西方学术界有一句很有名的话:\"Publish or Perish!n\n指的是从事研究的人，如果不能高效地在规定的期刊杂志上持续发表足够数量的论文或学术文章，就无法维持或推进其学术生涯。\nV.拆除；毁坏，破坏；推翻 The fire demolished the town.大火烧毁了这座城镇。", "notes": "", "n": 97}, {"word": "infringe", "meaning": "V.侵犯；违反", "ex_en": "The press infringed a copyright agreement", "ex_zh": "这家出版社违反了一项版权协议。\n\"-植物研究", "notes": "", "n": 98}, {"word": "extinction", "meaning": "n.灭绝", "ex_en": "By 2050, a quarter of the earth's species could be threatened with extinction", "ex_zh": "到2050年，地球上四分之一的物种可能会灭绝。", "notes": "extinct adj.已灭绝的", "n": 99}, {"word": "pattern", "meaning": "\"•模式；式样；底样", "ex_en": "Training and education follow different patterns in different regions", "ex_zh": "培训和教育在不同的地区遵循不同的模式。", "notes": "a dress pattern衣服的底样", "n": 100}, {"word": "outcome", "meaning": "n-结果", "ex_en": "We are anxiously awaiting the outcome of their discussion", "ex_zh": "我们急切地等待着他们讨论的结果。", "notes": "", "n": 101}, {"word": "impact", "meaning": "n-影响", "ex_en": "We are a flash in time, but our impact is forever", "ex_zh": "我们只是时间长河中的一瞬闪光，但我们的影响是永恒的。", "notes": "have an impact on对...有影响", "n": 102}, {"word": "seasonal", "meaning": "adj.季节性的", "ex_en": "The greatest seasonal change on our planet is now under way", "ex_zh": "地球上最精彩的季节性变化现正上演。", "notes": "", "n": 103}, {"word": "ad", "meaning": "j.实验的；试验性的", "ex_en": "There is no cure or vaccine, but some patients have been given experimental treatments", "ex_zh": "没有任何治疗方法或疫苗，但是一些病人接受了试验性治疗。", "notes": "", "n": 104}, {"word": "favourable", "meaning": "(=favorable)adj.有利的；赞成的，肯定的", "ex_en": "It's encouraging to receive a favourable report on onezs study", "ex_zh": "在学习中获得肯定性的反馈，这是令人鼓舞的。", "notes": "", "n": 105}, {"word": "productive", "meaning": "adj.多产的", "ex_en": "Once the plants have produced fruit, they become less productive.—", "ex_zh": "旦结过果实，这些植物就变得少产了。", "notes": "", "n": 106}, {"word": "effective", "meaning": "adj.有效的", "ex_en": "These are effective measures", "ex_zh": "这些都是有效的措施。", "notes": "effect n.效应；结果", "n": 107}, {"word": "efficient", "meaning": "adj.效率高的", "ex_en": "This new copy machine is more efficient than the old one", "ex_zh": "这台新复印机比那台旧的效率高。", "notes": "", "n": 108}, {"word": "considerable", "meaning": "adj.相当多的", "ex_en": "It is a considerable sum of money", "ex_zh": "那是一笔数量可观的钱。", "notes": "", "n": 109}, {"word": "massive", "meaning": "adj.巨大的，大规模的，庞大的", "ex_en": "There are massive mineral resources in the west part of China", "ex_zh": "中国西部地区有着大量的矿产资源。", "notes": "mass n.团；大量massively adv.大规模地", "n": 110}, {"word": "immense", "meaning": "adj.巨大的", "ex_en": "They plunged into their work with immense zeal.", "ex_zh": "他们以极大的热情投入工作。", "notes": "", "n": 111}, {"word": "maximal", "meaning": "adj.最大的", "ex_en": "She obtai ned maximal ben efit from the course", "ex_zh": "她从该课程中获益极大。", "notes": "", "n": 112}, {"word": "minimal", "meaning": "adj.最小的，极小的", "ex_en": "I stayed with friends, so my expenses were minimal", "ex_zh": "我住在朋友家，所以我的花费极小。", "notes": "", "n": 113}, {"word": "optimal", "meaning": "adj.最佳的，最理想的", "ex_en": "This is the optimal seas on for the growth of plants", "ex_zh": "这是植物生长的最佳季节。", "notes": "", "n": 114}];
+let curAudio = null;
+const AUDIO_DIR = 'audio/ch02';
+function play(id, suffix){
+  if (curAudio) curAudio.pause();
+  curAudio = new Audio(`${AUDIO_DIR}/${id}${suffix || ''}.mp3`);
+  if (typeof _dictHook === 'function') _dictHook();
+  curAudio.play();
+}
+function applyTheme(day){
+  document.body.classList.toggle('day', day);
+  document.getElementById('themeBtn').textContent = day ? '🌙 夜间' : '☀️ 日间';
+}
+function toggleTheme(){
+  const day = !document.body.classList.contains('day');
+  applyTheme(day);
+  try { localStorage.setItem('ielts_theme', day ? 'day' : 'night'); } catch(e) {}
+}
+applyTheme((() => { try { return localStorage.getItem('ielts_theme') === 'day'; } catch(e) { return false; } })());
+
+const esc = s => String(s == null ? '' : s);
+// 词性色: v→V红 adj→I粉 adv→绿 其余→N蓝; chip 显示词性, 释义里去掉词性缩写
+const POS_RE = /^(n\.|adj\.|adv\.|v\.|vi\.|vt\.)\s*/;
+function posOf(d){
+  const toks = [];
+  let m = d.meaning, t;
+  while ((t = m.match(POS_RE)) && toks.length < 2) { toks.push(t[1]); m = m.slice(t[0].length); }
+  return { toks, rest: m.trim() || d.meaning };
+}
+const posCls = p => p.startsWith('v') ? 'V' : p.startsWith('adj') ? 'I' : p.startsWith('adv') ? 'adv' : 'N';
+const chipOf = d => {
+  const { toks } = posOf(d);
+  if (!toks.length) return '';
+  const cls = posCls(toks[0]);
+  return `<span class="pos ${cls}">${toks.join(' ')}</span>`;
+};
+const meanOf = d => posOf(d).rest;
+
+const entryHtml = d => `
+  <div class="row1"><span class="num">${d.n}</span><span class="word" onclick="play(${d.n},'w')">${esc(d.word)}</span>${chipOf(d)}</div>
+  <div class="mean">${esc(meanOf(d))}</div>
+  ${d.ex_en ? `<div class="phrase"><span class="jp" onclick="play(${d.n},'e')">${esc(d.ex_en)}</span><span class="zh">${esc(d.ex_zh)}</span></div>` : ''}
+  ${d.notes ? `<div class="note-line">${esc(d.notes)}</div>` : ''}`;
+
+const list = document.getElementById('list');
+function render(){
+  list.innerHTML = '';
+  let colA = null, colB = null, alt = 0;
+  let row = document.createElement('div'); row.className = 'row2';
+  colA = document.createElement('div'); colA.className = 'col2';
+  colB = document.createElement('div'); colB.className = 'col2';
+  row.appendChild(colA); row.appendChild(colB); list.appendChild(row);
+  for (const d of DATA){
+    const card = document.createElement('div');
+    card.className = 'card c' + posCls((posOf(d).toks[0] || 'n'));
+    card.innerHTML = entryHtml(d);
+    (alt++ % 2 === 0 ? colA : colB).appendChild(card);
+  }
+  document.getElementById('count').textContent = DATA.length;
+}
+render();
+</script>
+
+<div id="dict">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
+  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
+  <div id="dictAns" class="hidden"></div>
+  <div class="dbtns">
+    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
+    <button class="hbtn" id="dictAuto" onclick="dictAutoToggle()">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+  </div>
+  <div style="opacity:.4;font-size:11px;">空格=重播 · →=下一个 · ←=上一个 · S=显示答案 · Esc=退出</div>
+</div>
+<script>
+/* ---- 听写 ---- */
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [];
+const DICT_DELAY = 3000;
+const dictWords = () => DATA;
+function dictToggle(){
+  dictOpen = !dictOpen;
+  document.getElementById('dict').classList.toggle('open', dictOpen);
+  if (dictOpen){ if (curAudio) curAudio.pause(); buildOrder(); dictCur = 0; showDict(); }
+  else { if (curAudio) curAudio.pause(); clearTimeout(dictT); }
+}
+function buildOrder(){
+  dictOrder = dictWords().map(d => d.n);
+  if (dictShuffleOn) for (let i = dictOrder.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [dictOrder[i], dictOrder[j]] = [dictOrder[j], dictOrder[i]]; }
+}
+const dictD = () => dictWords().find(d => d.n === dictOrder[dictCur]);
+let dictChain = false;
+const playCur = () => {
+  const d = dictD();
+  if (!d.ex_en) { play(d.n, 'w'); return; }
+  dictChain = true;
+  play(d.n, 'w');
+};
+const _dictHook = () => {
+  curAudio.onended = () => {
+    if (dictChain && dictD().ex_en) {
+      dictChain = false;
+      play(dictD().n, 'e');
+      curAudio.onended = () => { if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY); };
+    } else if (dictOpen && dictAuto) {
+      dictT = setTimeout(dictNext, DICT_DELAY);
+    }
+  };
+};
+function dictStep(dir){
+  clearTimeout(dictT); dictChain = false;
+  dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
+  showDict(); playCur();
+}
+const dictNext = () => dictStep(1);
+const dictPrev = () => dictStep(-1);
+function dictShuffle(){ dictShuffleOn = !dictShuffleOn; buildOrder(); dictCur = 0; showDict(); playCur(); }
+function dictAutoToggle(){
+  dictAuto = !dictAuto;
+  document.getElementById('dictAuto').textContent = '自动: ' + (dictAuto ? '开' : '关');
+  dictChain = false;
+  if (dictAuto) playCur();
+}
+function dictReveal(){
+  const ans = document.getElementById('dictAns');
+  if (ans.classList.contains('hidden')) { renderDictAns(); ans.classList.remove('hidden'); }
+  else ans.classList.add('hidden');
+}
+function renderDictAns(){
+  const ans = document.getElementById('dictAns');
+  const d = dictD();
+  ans.innerHTML = `<div class="dword">${esc(d.word)}</div><div class="dpos">${esc(d.m)}</div>` +
+    (d.ex_en ? `<div class="dph" onclick="play(${d.n},'e')">${esc(d.ex_en)}</div><div class="dphz">${esc(d.ex_zh)}</div>` : '');
+}
+function showDict(){
+  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  const ans = document.getElementById('dictAns');
+  ans.classList.add('hidden');
+  ans.innerHTML = '';
+}
+document.addEventListener('keydown', e => {
+  if (!dictOpen) return;
+  if (e.code === 'Space'){ e.preventDefault(); playCur(); }
+  else if (e.key === 'ArrowRight') dictNext();
+  else if (e.key === 'ArrowLeft') dictPrev();
+  else if (e.key === 's' || e.key === 'S') dictReveal();
+  else if (e.key === 'Escape') dictToggle();
+});
+</script>
+</body>
+</html>

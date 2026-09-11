@@ -1,0 +1,618 @@
+[
+ {
+  "word": "galaxy",
+  "meaning": "n.星系；[the G~]银河系",
+  "ex_en": "The sun is only a very small star in the Galaxy.",
+  "ex_zh": "太阳只是银河系中一颗很小的恒星。",
+  "notes": "源于希腊语gala kt-,意为“牛奶（milk）”,所以在现代英语中银河也被称为the Milky Way（奶路）。在希腊神话中，宙斯（Zeus）与凡人生下私生子赫剌克勒斯（Heracles）。宙斯偷偷把赫剌克勒斯放在熟睡的妻子赫拉（Hera）身旁，让孩子吮吸乳汁。后来，赫拉突然醒来，发现这不是自己的孩子，便将其推开，而乳汁就喷了出来，形成银河。",
+  "n": 1
+ },
+ {
+  "word": "cosmos",
+  "meaning": "n.宇宙",
+  "ex_en": "Our world is but a small part of the cosmos",
+  "ex_zh": "我们的世界仅仅是宇宙的一小部分而已。",
+  "notes": "",
+  "n": 2
+ },
+ {
+  "word": "universe",
+  "meaning": "n.宇宙；万物，世界",
+  "ex_en": "The depth of the universe is immeasurable",
+  "ex_zh": "宇宙无限深广。",
+  "notes": "universal adj.全世界的，普遍的字根uni表示\"一（one）\",字根vers表示“转（to turn）”，故universe原本含有“万物旋转成为一体”的意思。其他含vers的词如：diverse（转向不同方向t不同的），adverse（转向t对立t不利的），conversation（转向一起，面对面t交谈）， university（包含万物知识t大学）。",
+  "n": 3
+ },
+ {
+  "word": "interstellar",
+  "meaning": "adj.星际的",
+  "ex_en": "These elements become part of the interstellar gas and dust",
+  "ex_zh": "这些元素成了星际气体和星际尘埃的一部分。字根stell表示“星（star）\":\ninterstellar:inter（在之间）+stell（星）+ar（后缀）\nt星星之间的t星际的。constellation:（—起）\ncon\n+stell（星）+ation（后缀）-在一起的星星t星座。",
+  "notes": "",
+  "n": 4
+ },
+ {
+  "word": "terrestrial",
+  "meaning": "edj.地球的；（）陆地的",
+  "ex_en": "Forests are home to over 80%of terrestrial biodiversity",
+  "ex_zh": "陆地生物多样性有八成以上靠森林维持。",
+  "notes": "extraterrestrial adj.地球外的n.外星人（=E.T）",
+  "n": 5
+ },
+ {
+  "word": "celestial",
+  "meaning": "adj.天上的",
+  "ex_en": "The rosy light beamed like a celestial dawn",
+  "ex_zh": "玫瑰色的光芒闪耀，好像天上的朝霞。\n雅思词汇糞经",
+  "notes": "",
+  "n": 6
+ },
+ {
+  "word": "astronomy",
+  "meaning": "n.天文学",
+  "ex_en": "Physics and astronomy are cognate sciences",
+  "ex_zh": "物理学与天文学是互有关联的学科。",
+  "notes": "astronomical adj.天文学的；天体的字根astr指“星（star）”。",
+  "n": 7
+ },
+ {
+  "word": "astrology",
+  "meaning": "n.占星学；占星术",
+  "ex_en": "Some who follow Chinese astrology expect it to be a good year",
+  "ex_zh": "中国占星术的一些追随者预期今年是个吉祥年。",
+  "notes": "",
+  "n": 8
+ },
+ {
+  "word": "astronaut",
+  "meaning": "n.宇航员",
+  "ex_en": "An American astronaut is beginning a year­ long trip in space.—",
+  "ex_zh": "名美国宇航员开始了长达一年的太空旅行。\nnaut源自希腊语naus u船（ship）”，故astronaut就是“在星星间航行的人”；同源词如nausea（晕船t恶心）。相关字根nav也表示“船（ship）\",女口：navy（海军），naval（海军的）, navigate（航行）。",
+  "notes": "",
+  "n": 9
+ },
+ {
+  "word": "comet",
+  "meaning": "n.彗星",
+  "ex_en": "The probes will travel with the comet for a full year",
+  "ex_zh": "这些探测器将和彗星一起旅行一整年。",
+  "notes": "",
+  "n": 10
+ },
+ {
+  "word": "meteorite",
+  "meaning": "n.陨石",
+  "ex_en": "He discovered an unusual meteorite",
+  "ex_zh": "他发现了\n—块奇异的陨石。",
+  "notes": "",
+  "n": 11
+ },
+ {
+  "word": "crater",
+  "meaning": "n.（撞击或爆炸形成的）坑",
+  "ex_en": "They came to the lip of a dead volcanic crater",
+  "ex_zh": "他们来到了一座死火山的火山口。",
+  "notes": "",
+  "n": 12
+ },
+ {
+  "word": "dust",
+  "meaning": "n.尘土，灰尘，粉尘",
+  "ex_en": "The mirror is covered with a film of dust.",
+  "ex_zh": "镜子蒙上了一层灰尘。",
+  "notes": "",
+  "n": 13
+ },
+ {
+  "word": "ash",
+  "meaning": "n.灰烬",
+  "ex_en": "Don't drop your cigarette ash on the carpet. Use an ashtray.",
+  "ex_zh": "不要把你的烟灰掉在地毯上，用烟灰缸。",
+  "notes": "",
+  "n": 14
+ },
+ {
+  "word": "envelope",
+  "meaning": "n.外裹物，外层",
+  "ex_en": "The surface of the sun is a glowing gas envelope",
+  "ex_zh": "太阳的表面是一层发着光的气体。",
+  "notes": "",
+  "n": 15
+ },
+ {
+  "word": "chunk",
+  "meaning": "n.厚块",
+  "ex_en": "My mother bought a chunk of meat",
+  "ex_zh": "我妈妈买了\n—大块肉。",
+  "notes": "a chunk of—大块，一厚块",
+  "n": 16
+ },
+ {
+  "word": "spacecraft",
+  "meaning": "n.宇宙飞船",
+  "ex_en": "The spacecraft is orbiting the moon",
+  "ex_zh": "宇宙飞船正绕月球飞行。",
+  "notes": "aircraft n.飞行器",
+  "n": 17
+ },
+ {
+  "word": "spaceship",
+  "meaning": "n.宇宙飞船",
+  "ex_en": "The scientists are able to calculate accurately when the spaceship will reach the moon",
+  "ex_zh": "科学家能准确计算出宇宙飞船什么时候抵达月球。",
+  "notes": "",
+  "n": 18
+ },
+ {
+  "word": "probe",
+  "meaning": "n.太空探测器；详尽调查",
+  "ex_en": "Their probe into the cause of the fire proved futile",
+  "ex_zh": "他们对起火原因的调查没有任何收获。",
+  "notes": "",
+  "n": 19
+ },
+ {
+  "word": "module",
+  "meaning": "n.（航天器上各个独立的）舱；模块",
+  "ex_en": "A module is part of a space vehicle that can work independently.",
+  "ex_zh": "太空舱是太空飞船的一部分，可以独立运作。",
+  "notes": "",
+  "n": 20
+ },
+ {
+  "word": "propulsion",
+  "meaning": "n.推进力",
+  "ex_en": "This aircraft works by jet propulsion.",
+  "ex_zh": "这架飞机是喷气推进的。",
+  "notes": "",
+  "n": 21
+ },
+ {
+  "word": "pressure",
+  "meaning": "n.压力",
+  "ex_en": "We will never capitulate to pressure from outside.",
+  "ex_zh": "我们永远不会屈服于外界的压力。",
+  "notes": "pleasure n.愉悦；乐事 blood pressure 血压 under pressure 被迫；在压力之下；受到压力",
+  "n": 22
+ },
+ {
+  "word": "dynamics",
+  "meaning": "n.动力学；动态",
+  "ex_en": "And our goal is to find out the dynamics of this problem.",
+  "ex_zh": "我们的目的是弄清这个问题的动态。",
+  "notes": "dynamic adj.动态的；动力的；有活力的",
+  "n": 23
+ },
+ {
+  "word": "motion",
+  "meaning": "n.动作；移动",
+  "ex_en": "Parts of the film were shown again in slow motion",
+  "ex_zh": "影片的一些部分被以慢动作重放。",
+  "notes": "motive adj.发动的，导致运动的n.动机",
+  "n": 24
+ },
+ {
+  "word": "vent",
+  "meaning": "n.排气口v.排放；发泄",
+  "ex_en": "When gases and steam can get vented from a volcano's cracks, it's probably not about to erupt",
+  "ex_zh": "当气体和蒸汽可以从火山的裂缝中排放时，它可能就不会很快喷发。",
+  "notes": "",
+  "n": 25
+ },
+ {
+  "word": "tail",
+  "meaning": "n.尾部",
+  "ex_en": "He drove into the back of my truck and smashed the tail light",
+  "ex_zh": "他开车追尾了我的卡车，把尾灯撞得粉碎。",
+  "notes": "",
+  "n": 26
+ },
+ {
+  "word": "curve",
+  "meaning": "n.曲线，弧线",
+  "ex_en": "The stairs ascended in a graceful curve",
+  "ex_zh": "楼梯以优美的曲线上升。",
+  "notes": "curvy adj.弯曲的；有曲线美的",
+  "n": 27
+ },
+ {
+  "word": "exploration",
+  "meaning": "n.探索",
+  "ex_en": "The Elizabethan age was a time of exploration and discovery",
+  "ex_zh": "英国伊丽莎白女王一世时代是探索和发现的时代。",
+  "notes": "",
+  "n": 28
+ },
+ {
+  "word": "expedition",
+  "meaning": "n.远征，探险",
+  "ex_en": "This is an expedition to find the beg inning of theYangtze River",
+  "ex_zh": "这是一次寻找长江源头的探险。示\"足（foot）\",如：expedition（使脚向字根ped表外t远征，探险），pedal（用脚操作的东西t踏板），\n（步行者）‘impede（双脚被缠住了妨碍），\npedicab（用脚蹬的计程车［载客的人力］三轮车）。",
+  "notes": "",
+  "n": 29
+ },
+ {
+  "word": "flyby",
+  "meaning": "（航天器对行星或卫星的）飞掠",
+  "ex_en": "Because of the flyby height, the plane resembles an increasingly big bird",
+  "ex_zh": "由于飞掠高度，飞机就像越来越大的鸟。\nflyby太空探索",
+  "notes": "",
+  "n": 30
+ },
+ {
+  "word": "observatory",
+  "meaning": "n.天文台",
+  "ex_en": "According to the observatory, there will be a total solar eclipse tomorrow",
+  "ex_zh": "天文台预测，明天将会出现日全食。",
+  "notes": "",
+  "n": 31
+ },
+ {
+  "word": "telescope",
+  "meaning": "n.望远镜",
+  "ex_en": "What is the range of this telescope?",
+  "ex_zh": "这架望远镜的观测距离是多远？科学家研究土壤的成分。",
+  "notes": "",
+  "n": 32
+ },
+ {
+  "word": "spectacle",
+  "meaning": "n.壮观的景象；奇观；卜s］眼镜/'",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 33
+ },
+ {
+  "word": "orbit",
+  "meaning": "n.轨道",
+  "ex_en": "The earth moves in an approximately circular orbit around the sun",
+  "ex_zh": "地球在一个近似正圆的轨道上绕着太阳运行。",
+  "notes": "",
+  "n": 34
+ },
+ {
+  "word": "ecliptic",
+  "meaning": "n.黄道",
+  "ex_en": "Five bright planets move among the stars near the ecliptic",
+  "ex_zh": "五颗明亮的行星在黄道附近的恒星当中移动。",
+  "notes": "",
+  "n": 35
+ },
+ {
+  "word": "diameter",
+  "meaning": "n.直径",
+  "ex_en": "The earth is slightly flat at the poles, so that the polar diameter is slightly less than the equatorial diameter.",
+  "ex_zh": "地球的两极稍扁，所以南北极之间的直径略小于赤道直径。",
+  "notes": "dia（通过）+meter（测量）t测量通过中心的线段长度T直径。",
+  "n": 36
+ },
+ {
+  "word": "radius",
+  "meaning": "n.半径",
+  "ex_en": "The showed They—",
+  "ex_zh": "件一件地把标本拿出来。\nschool.他们在学校周围半径一英里的范围内搜索。",
+  "notes": "",
+  "n": 37
+ },
+ {
+  "word": "substa",
+  "meaning": "nce m物质；实质，要旨",
+  "ex_en": "Is there a basic substance that everything else is made of?",
+  "ex_zh": "是否存在一种组成了万物的基本物质？",
+  "notes": "substantial adj.大量的；牢固的",
+  "n": 38
+ },
+ {
+  "word": "composition",
+  "meaning": "n.成分，构成；作品；创作",
+  "ex_en": "Scientists study the composition of the soil.",
+  "ex_zh": "科学家研究土壤的成分。",
+  "notes": "",
+  "n": 39
+ },
+ {
+  "word": "compound",
+  "meaning": "n.混合物；化合物adj.复合的，组合的v.混合",
+  "ex_en": "English loves compound words: \"washing machine\" and that sort of thing.",
+  "ex_zh": "英语喜欢用复合词，就像是“洗衣机”这一类的。",
+  "notes": "",
+  "n": 40
+ },
+ {
+  "word": "fossil",
+  "meaning": "n.化石",
+  "ex_en": "I know that the majority of the energy we consume comes from fossil fuel energy sources.",
+  "ex_zh": "我知道我们消耗的能源大多来自化石能源。",
+  "notes": "",
+  "n": 41
+ },
+ {
+  "word": "sample",
+  "meaning": "n.样品，样本",
+  "ex_en": "I need nothing but a sample.",
+  "ex_zh": "我需要的不过是一件样品而已。",
+  "notes": "",
+  "n": 42
+ },
+ {
+  "word": "specimen",
+  "meaning": "n.样品，标本",
+  "ex_en": "The biologist brought out a specimen box and showed the items one by one.",
+  "ex_zh": "生物学家拿出标本箱，一件一件地把标本拿出来。",
+  "notes": "species n.物种",
+  "n": 43
+ },
+ {
+  "word": "need nothing buta",
+  "meaning": "sample.我需要的不过是一",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 44
+ },
+ {
+  "word": "biologist brought outthe",
+  "meaning": "items one by one.生物学家拿岀标本箱， n.物种",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 45
+ },
+ {
+  "word": "particle",
+  "meaning": "n.颗粒，微粒；极小量",
+  "ex_en": "There are particles of dust everywhere",
+  "ex_zh": "到处都是尘埃微粒。",
+  "notes": "",
+  "n": 46
+ },
+ {
+  "word": "molecule",
+  "meaning": "n.分子 separator in the lab.实验室",
+  "ex_en": "There is a molecule",
+  "ex_zh": "里有一台分子分离器。",
+  "notes": "",
+  "n": 47
+ },
+ {
+  "word": "atom",
+  "meaning": "n.原子",
+  "ex_en": "A molecule of water is made up of two of hydrogen and one atom of oxygen.—",
+  "ex_zh": "个水分子是由两个氢原子和一个氧原子构成的。源自希腊语atomos,表示不能再分割的物质（日【否定］\n+tomos［切割］）。有古代哲学家认为万物由小得不能再分割的微粒构成。后来，物理学家根据这个词将原子命名为atom（但实际上原子并非不可分割）。再回忆一个包含tom的单词：anatomy（解剖学）。",
+  "notes": "",
+  "n": 48
+ },
+ {
+  "word": "ion",
+  "meaning": "n.离子",
+  "ex_en": "Both of these particles can produce ion pairs",
+  "ex_zh": "这两种粒子都能产生离子对。",
+  "notes": "",
+  "n": 49
+ },
+ {
+  "word": "electron",
+  "meaning": "n.电子",
+  "ex_en": "Electrons are negatively charged with electricity",
+  "ex_zh": "电子带负电荷。",
+  "notes": "",
+  "n": 50
+ },
+ {
+  "word": "quantum",
+  "meaning": "n.量子",
+  "ex_en": "In this example, we employed the quantum mechanics principle",
+  "ex_zh": "在本例中，我们运用了量子力学原理。",
+  "notes": "",
+  "n": 51
+ },
+ {
+  "word": "liquid",
+  "meaning": "n.液体adj.液态的",
+  "ex_en": "If you add too much liquid, the mixture will not be thick enough",
+  "ex_zh": "如果你加入了太多液体，该混合液的浓度就不够了。",
+  "notes": "liquid assets流动资产",
+  "n": 52
+ },
+ {
+  "word": "fluid",
+  "meaning": "n.液体，流体adj.流动的",
+  "ex_en": "When you are sick, you should drink plenty of fluids",
+  "ex_zh": "生病时应该多喝流质。",
+  "notes": "",
+  "n": 53
+ },
+ {
+  "word": "solid",
+  "meaning": "n.固体adj.固体的；牢固的",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 54
+ },
+ {
+  "word": "synthesise",
+  "meaning": "(=synthesize)v.合成；综合",
+  "ex_en": "Darwinian theory has been synthesised with modern genetics",
+  "ex_zh": "达尔文的理论已经和现代遗传学融合在一起了。",
+  "notes": "synthetic adj.合成的",
+  "n": 55
+ },
+ {
+  "word": "formation",
+  "meaning": "n.形成",
+  "ex_en": "In planet formation, as in adolesce nee, you've got your late bloomers",
+  "ex_zh": "在青春期时，有些人的发育晚于同龄人，而行星的形成也存在这种情况。",
+  "notes": "",
+  "n": 56
+ },
+ {
+  "word": "method",
+  "meaning": "n.方法",
+  "ex_en": "New methods of teaching foreign languages are adopted in this institute.",
+  "ex_zh": "该学院采用了新的外语教学法。",
+  "notes": "methodology n.方法学，方法论",
+  "n": 57
+ },
+ {
+  "word": "methodology",
+  "meaning": "n.光谱；范围",
+  "ex_en": "A spectrum is formed by a ray of light passing through a prism.—",
+  "ex_zh": "束光通过棱镜就会形成光谱。",
+  "notes": "",
+  "n": 58
+ },
+ {
+  "word": "dimension",
+  "meaning": "n.范围；维（度）",
+  "ex_en": "A line has one dimension and a square has two. —",
+  "ex_zh": "条线只包含一个维度，而一个正方形包含两个维度。\n3D打印机和3D电影中的D代表dimension 1D是线性，\no\n2D是平面，3D即三维立体。爱因斯坦（Einstein）在相对论中提出宇宙是4D的，即空间上的三个维度加时间维度，4D空间又称为四维空间、四次元。",
+  "notes": "",
+  "n": 59
+ },
+ {
+  "word": "frequency",
+  "meaning": "n.频率；发生次数",
+  "ex_en": "This radio signal has a frequency of kilohertz",
+  "ex_zh": "这个无线电信号的频率是800千赫。",
+  "notes": "frequent adj.时常发生的，频繁的",
+  "n": 60
+ },
+ {
+  "word": "signal",
+  "meaning": "n.信号",
+  "ex_en": "Her speech yesterday was a signal that her view has changed",
+  "ex_zh": "她昨天的讲话是一个信号，反映出她的观点已经转变。",
+  "notes": "signn.符号；指示牌 signal",
+  "n": 61
+ },
+ {
+  "word": "antenna",
+  "meaning": "n.天线",
+  "ex_en": "You should fix the television antenna before receiving programmes",
+  "ex_zh": "接收节目前，你应该先修好电视的天线。",
+  "notes": "",
+  "n": 62
+ },
+ {
+  "word": "circuit",
+  "meaning": "n.线路，电路；巡回",
+  "ex_en": "For many years, he was top banana on the circuit",
+  "ex_zh": "许多年来，他都是巡回剧团里的主角。",
+  "notes": "",
+  "n": 63
+ },
+ {
+  "word": "refraction",
+  "meaning": "n.折射",
+  "ex_en": "Over water the diurnal change in refraction is likely to be small",
+  "ex_zh": "在水上，折射的周日变化可能是很小的。",
+  "notes": "",
+  "n": 64
+ },
+ {
+  "word": "ultraviolet",
+  "meaning": "n.紫外辐射adj.紫外线的",
+  "ex_en": "The ozone layer absorbs most of the sun's ultraviolet radiation",
+  "ex_zh": "臭氧层吸收了太阳的大部分紫外辐射。",
+  "notes": "infrared n.红外辐射adj.红外线的",
+  "n": 65
+ },
+ {
+  "word": "radioactive",
+  "meaning": "adj.放射性的",
+  "ex_en": "Nuclear energy gives millions heat light, and z power, just as it creates unwanted radioactive side effects",
+  "ex_zh": "核能源带给无数人热、光和电力，却也带来了人们并不想得到的放射性副作用。\nradio（发光，发热）+active（活性的）t放射性的。",
+  "notes": "",
+  "n": 66
+ },
+ {
+  "word": "distinct",
+  "meaning": "adj.明显的；截然不同的",
+  "ex_en": "Those two ideas are quite distinct from each other",
+  "ex_zh": "这两种观点截然不同。",
+  "notes": "",
+  "n": 67
+ },
+ {
+  "word": "discernible",
+  "meaning": "adj.可辨别的，看得清的",
+  "ex_en": "Night fell, but the outline of the factory buildings was still discernible",
+  "ex_zh": "夜幕降临了，但厂房的轮廓还是能看清的。",
+  "notes": "indiscernible adj.看不清的，隐约的",
+  "n": 68
+ },
+ {
+  "word": "invisible",
+  "meaning": "adj.看不见的",
+  "ex_en": "Some stars are invisible to the naked eye",
+  "ex_zh": "有些恒星是肉眼看不见的。",
+  "notes": "",
+  "n": 69
+ },
+ {
+  "word": "collision",
+  "meaning": "□.碰撞事故；冲突",
+  "ex_en": "He is responsible for the rear-end collision",
+  "ex_zh": "他要为这起追尾撞车事故负责。",
+  "notes": "a collision with与……的碰撞事故来自collide（v.碰撞）。",
+  "n": 70
+ },
+ {
+  "word": "squash",
+  "meaning": "v.压扁n.壁球",
+  "ex_en": "I sat on my hat and squashed it",
+  "ex_zh": "我坐在自己的帽子上，把它给压扁了。关于壁球的起源，说法不一『其中一个是：1820年，英国的哈罗公学因运动场地小，就发明了让学生用球拍对墙击球的运动，因球猛烈触墙时发出的声音类似squash\n的发音而得名。",
+  "notes": "",
+  "n": 71
+ },
+ {
+  "word": "fragment",
+  "meaning": "n.碎片，片断/fraeg'ment/v.（使）碎裂",
+  "ex_en": "He was still in bad condition and could give discernible squash invisible fragment collision",
+  "ex_zh": "",
+  "notes": "",
+  "n": 72
+ },
+ {
+  "word": "cataclysmic",
+  "meaning": "adj.剧变的；灾难性的",
+  "ex_en": "One can readily trace the disappearanee of dinosaurs to a cataclysmic event",
+  "ex_zh": "人们可以很容易地把恐龙消失的原因追究到一场灾难性事件上。",
+  "notes": "",
+  "n": 73
+ },
+ {
+  "word": "overwhelming",
+  "meaning": "adj.压倒性的",
+  "ex_en": "The flood was overwhelming and the city was soon flooded.",
+  "ex_zh": "洪水来势凶猛，这座城市很快就被淹没了。",
+  "notes": "该词源于动词overwhelm,其中whelm一词本身含义为“淹没；覆盖；压倒”，而over表示“在……上”，故overwhelm表示“压倒；淹没”。",
+  "n": 74
+ },
+ {
+  "word": "despair",
+  "meaning": "v./n.绝望",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 75
+ },
+ {
+  "word": "desperate",
+  "meaning": "adj.绝望的；极需要的",
+  "ex_en": "The man lost in the water",
+  "ex_zh": "这个在沙漠中迷失方向的人极想喝水。字根sper表示“希望（to hope）\",而前缀de表示“没有（without）”，故desperate表示\"没有希望的\"，即绝望的”。其他同根词如：prosper（前面有希望t繁荣，成功），prosperity（繁荣），desperation（绝望），\n（绝望的人t亡命之徒）。",
+  "notes": "",
+  "n": 76
+ },
+ {
+  "word": "hopeless",
+  "meaning": "日贞•无望的；极差的",
+  "ex_en": "He feels that his ch a nces of winning the con test are hopeless",
+  "ex_zh": "他感觉自己没有希望在竞赛中获胜。形容词后缀less表示“没有……的”。\nU\n太空探索",
+  "notes": "",
+  "n": 77
+ }
+]

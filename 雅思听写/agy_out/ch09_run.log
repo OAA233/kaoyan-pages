@@ -1,0 +1,15 @@
+prompt 46KB, calling agy...
+exit 0 stdout 3832 stderr 
+fix 20 delete 0 add 5
+ - {"n": 2, "word": "press", "meaning": "n.新闻界，记者；报刊；出版社", "ex_en": "The power of the press is very great.", "ex_zh": "新闻界的力量非常大。", "notes": ""}
+ - {"n": 5, "word": "handout", "meaning": "n.传单；讲义", "ex_en": "Please read the handout carefully.", "ex_zh": "请仔细阅读这份讲义。", "notes": ""}
+ - {"n": 13, "word": "pastime", "meaning": "n.消遣，娱乐", "ex_en": "Listening to music is the favourite pastime of many people all over the world.", "ex_zh": "听音乐是全世界许多人最喜爱的消遣。", "notes":
+ - {"n": 22, "word": "programme", "meaning": "（=program）n.节目；方案；（演出或活动的）程序 v.为（系统）设定程序；计划", "ex_en": "There was an interesting programme on TV yesterday.", "ex_zh": "昨天有个很有趣的电视节目。", "
+ - {"n": 29, "word": "magic", "meaning": "n.魔术；魔法", "ex_en": "The magician thrilled his audienee with his magic.", "ex_zh": "魔术师用他的魔术使观众们激动万分。", "notes": ""}
+ - {"n": 54, "word": "painting", "meaning": "n.油画，绘画；作画；涂漆", "ex_en": "This painting is invaluable.", "ex_zh": "这幅画是非常珍贵的。", "notes": ""}
+ - {"n": 61, "word": "musical", "meaning": "adj.音乐的；悦耳的", "ex_en": "The drum is one of the oldest musical instruments.", "ex_zh": "鼓是最古老的乐器之一。", "notes": "musician n.音乐家，作曲家"}
+ - {"n": 75, "word": "violin", "meaning": "n.小提琴", "ex_en": "The violin is not quite in tune with the piano.", "ex_zh": "小提琴跟钢琴的调子不太和谐。", "notes": ""}
+ - {"n": 83, "word": "patron", "meaning": "n.赞助人；顾客，老主顾", "ex_en": "A wealthy patron has promised to send him to study overseas.", "ex_zh": "一个富有的赞助人答应要送他出国留学。", "notes": ""}
+ - {"n": 91, "word": "stadium", "meaning": "n.体育场，运动场", "ex_en": "The stadium has been fitted with seating for 100,000 spectators.", "ex_zh": "这个体育场配备了10万个观众座席。", "notes": ""}
+ - {"n": 100, "word": "sprawl", "meaning": "v.伸开四肢坐着（或躺着）；延伸，蔓延n.（城市）杂乱无序扩展的地区", "ex_en": "He sprawled on the sofa.", "ex_zh": "他手脚摊开，躺在沙发上。", "notes": ""}
+ - {"n": 104, "word": "golf", "meaning": "n.高尔夫球", "ex_en": "Hundreds of private golf clubs took part in a recent study.", "ex_zh": "数百家私人高尔夫俱乐部参与了最近的研究。", "notes": ""}

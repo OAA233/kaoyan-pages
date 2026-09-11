@@ -1,0 +1,167 @@
+{
+ "fix": [
+  {
+   "n": 33,
+   "word": "sunlight",
+   "meaning": "n.阳光",
+   "ex_en": "The sunlight was reflected by the water.",
+   "ex_zh": "水面反射着阳光。",
+   "notes": "［搭］expose...to the sunlight把...暴露在阳光下 get sunlight受到阳光照射"
+  },
+  {
+   "n": 40,
+   "word": "burgeon",
+   "meaning": "n.嫩枝，新芽v.急速增长；发芽，抽枝",
+   "ex_en": "This firm aimed at the burgeoning market for augmented-reality games.",
+   "ex_zh": "这家公司瞄准了快速发展的运用增强现实技术的游戏的市场。",
+   "notes": ""
+  },
+  {
+   "n": 43,
+   "word": "blossom",
+   "meaning": "v.开花n.花朵",
+   "ex_en": "The tree was covered with beautiful pink blossom.",
+   "ex_zh": "这棵树开满了美丽的粉红色花朵。",
+   "notes": ""
+  },
+  {
+   "n": 46,
+   "word": "aromatic",
+   "meaning": "adj.芳香的",
+   "ex_en": "Aromatic plants are often used in cooking.",
+   "ex_zh": "烹调中常使用芳香植物。",
+   "notes": ""
+  },
+  {
+   "n": 57,
+   "word": "field",
+   "meaning": "n.原野；场地；野外",
+   "ex_en": "The students of the geological class will be out on field exploration for the duration of the school year.",
+   "ex_zh": "地质班的学生将把本学年的全部时间用于野外勘探。",
+   "notes": ""
+  },
+  {
+   "n": 58,
+   "word": "terrace",
+   "meaning": "n.梯田",
+   "ex_en": "The terrace channels are convenient for irrigation.",
+   "ex_zh": "梯田的沟渠便于灌溉。",
+   "notes": ""
+  },
+  {
+   "n": 76,
+   "word": "pine",
+   "meaning": "n.松树；松木",
+   "ex_en": "It's a place noted for its pine trees and springs.",
+   "ex_zh": "这是一个以松树和泉水而知名的地方。",
+   "notes": ""
+  },
+  {
+   "n": 82,
+   "word": "alga",
+   "meaning": "n.海藻，藻",
+   "ex_en": "Some of the algae are edible.",
+   "ex_zh": "有些海藻是可以吃的。",
+   "notes": "［记］algal adj.海藻的algae n.［alga的复数形式］藻类"
+  },
+  {
+   "n": 83,
+   "word": "emission",
+   "meaning": "n.排放，散发；排放物，散发物",
+   "ex_en": "This conference aims to reduce carbon or greenhouse gas emissions around the world.",
+   "ex_zh": "这次会议旨在减少全球的碳排放或温室气体排放。",
+   "notes": ""
+  },
+  {
+   "n": 84,
+   "word": "uptake",
+   "meaning": "n.摄取；领会",
+   "ex_en": "The doctor advised me to reduce the salt uptake.",
+   "ex_zh": "医生建议我减少盐的摄入。",
+   "notes": ""
+  },
+  {
+   "n": 87,
+   "word": "counterbalance",
+   "meaning": "n.起平衡作用的事物；抗衡力 /^aunta'baelsns/v.抵消；对……起平衡作用",
+   "ex_en": "Their strength in defenee counterbalances our strength in attack.",
+   "ex_zh": "他们防卫的力量与我们攻击的力量不相上下。",
+   "notes": ""
+  },
+  {
+   "n": 89,
+   "word": "bush fire",
+   "meaning": "",
+   "ex_en": "The friendly fallow deer were trapped by a bush fire.",
+   "ex_zh": "这些温顺的黄占鹿被林区大火困住了。",
+   "notes": ""
+  },
+  {
+   "n": 105,
+   "word": "immense",
+   "meaning": "adj.巨大的",
+   "ex_en": "They plunged into their work with immense zeal.",
+   "ex_zh": "他们以极大的热情投入工作。",
+   "notes": ""
+  }
+ ],
+ "delete": [],
+ "add": [
+  {
+   "after": "terrace",
+   "word": "timber",
+   "meaning": "n.木材，木料；林木",
+   "ex_en": "The farmer spent a day in the woods hewing timber.",
+   "ex_zh": "这个农夫花了一天时间在森林里砍木材。",
+   "notes": ""
+  },
+  {
+   "after": "emission",
+   "word": "absorb",
+   "meaning": "v.吸收；吸引全部注意力",
+   "ex_en": "Dry sand absorbs water.",
+   "ex_zh": "干沙吸收水分。",
+   "notes": "［搭］be absorbed in全神贯注在...上"
+  },
+  {
+   "after": "absorb",
+   "word": "circulation",
+   "meaning": "n.流通；循环；流传",
+   "ex_en": "Sea surface temperatures and atmospheric circulation are strongly coupled.",
+   "ex_zh": "海洋表面的温度与大气环流是密切相关的。",
+   "notes": "［记］circle n.圈v.环绕；盘旋 circulate v.流传；循环"
+  },
+  {
+   "after": "circulation",
+   "word": "exceed",
+   "meaning": "v.超过",
+   "ex_en": "The driver exceeds the speed limit.",
+   "ex_zh": "那位司机超速驾车。",
+   "notes": ""
+  },
+  {
+   "after": "uptake",
+   "word": "nutrient",
+   "meaning": "n.营养物质",
+   "ex_en": "The nutrient in the soil acts as a stimulus to growth in plants.",
+   "ex_zh": "土壤中的营养物质能促进植物生长。",
+   "notes": "［记］nutrition n.营养"
+  },
+  {
+   "after": "counterbalance",
+   "word": "protect",
+   "meaning": "v.保护",
+   "ex_en": "We have to do what it takes to protect our parks and protect our planet for generations to come.",
+   "ex_zh": "我们必须采取一切措施为子孙后代保护我们的公园和我们的星球。",
+   "notes": "［记］protection n.保护protective adj.保护的，防护的 ［搭］protect...from/against保护...免受...的伤害"
+  },
+  {
+   "after": "bush fire",
+   "word": "extinguish",
+   "meaning": "v.扑灭（火）；使（想法、感情等）破灭",
+   "ex_en": "They tried every means to extinguish the fire.",
+   "ex_zh": "他们尝试了各种办法来扑火。",
+   "notes": "［记］extinguisher n.灭火器"
+  }
+ ]
+}

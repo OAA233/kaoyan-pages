@@ -1,0 +1,135 @@
+{
+ "fix": [
+  {
+   "n": 1,
+   "word": "technology",
+   "meaning": "n.技术",
+   "ex_en": "Life is made so much easier with modern science and technology.",
+   "ex_zh": "有了现代科学技术，生活变得比以往惬意得多。",
+   "notes": "technological adj.技术上的 advanced technology先进的技术"
+  },
+  {
+   "n": 27,
+   "word": "apply",
+   "meaning": "",
+   "ex_en": "We should not only know the theory but also how to apply it to practice.",
+   "ex_zh": "我们不仅要知道理论，还要知道怎样把理论应用于实践。",
+   "notes": "application n.应用；申请；应用程序 applicable adj.适用的，合适的appliance n.应用；（家用）器具 apply to适用于apply A to B把A应用于B 手机上的应用软件常被称为“app”，那就是application 的缩略。"
+  },
+  {
+   "n": 32,
+   "word": "instrument",
+   "meaning": "n.仪器；工具；乐器",
+   "ex_en": "A plough is an instrument used for farming.",
+   "ex_zh": "犁是一种用于耕作的工具。",
+   "notes": ""
+  },
+  {
+   "n": 39,
+   "word": "byproduct",
+   "meaning": "n.副产品",
+   "ex_en": "Happiness is not a goal; it is a byproduct.",
+   "ex_zh": "幸福不是一种目标，而是一种副产品。",
+   "notes": "bypass n.旁路bypath n.旁道，小路 bywork n.业余活计byname n.绰号"
+  },
+  {
+   "n": 44,
+   "word": "microscope",
+   "meaning": "n.显微镜",
+   "ex_en": "The optical microscope magrHfies the object 1,000 times.",
+   "ex_zh": "这架光学显微镜把物像放大了一千倍。",
+   "notes": "microphone n.麦克风，话筒microwave n.微波炉；微波microbe n.微生物"
+  },
+  {
+   "n": 54,
+   "word": "laptop",
+   "meaning": "n.笔记本电脑",
+   "ex_en": "A laptop would be really useful when I'm working on the train.",
+   "ex_zh": "我在火车上工作时，笔记本电脑真的很有用。",
+   "notes": ""
+  },
+  {
+   "n": 55,
+   "word": "software",
+   "meaning": "n.软件",
+   "ex_en": "This is a computer software shop.",
+   "ex_zh": "这是一家卖计算机软件的商店。",
+   "notes": "hardware n.硬件；五金器具"
+  },
+  {
+   "n": 90,
+   "word": "transform",
+   "meaning": "V.使改变形态；使改观",
+   "ex_en": "She transformed the room by painting it.",
+   "ex_zh": "她漆了房间，使它焕然一新。",
+   "notes": "transformation n.变化，转变 trans（转移）+form（形状）t使改变形态。\"变形金刚”的英文是Transformer o"
+  },
+  {
+   "n": 98,
+   "word": "accurate",
+   "meaning": "adj.准确的，正确无误的",
+   "ex_en": "Hearsay definitely can't be regarded as accurate information.",
+   "ex_zh": "传闻当然不能算是准确消息。",
+   "notes": "accuracyn.精确（度），准确（性） inaccurate adj.有错误的，不准确的"
+  },
+  {
+   "n": 105,
+   "word": "fault",
+   "meaning": "缺点；故障v.找出缺点",
+   "ex_en": "It is hard to fault the way he runs his own operation.",
+   "ex_zh": "他经营自己的公司的方式无可指摘。",
+   "notes": "faulty adj.有错误的；有缺点的false adj.不正确的 find fault with挑错，挑剔，抱怨"
+  },
+  {
+   "n": 106,
+   "word": "contingency",
+   "meaning": "n.意外事件，可能发生的事",
+   "ex_en": "We must always be prepared for every contingency.",
+   "ex_zh": "我们必须始终灘殆种盛准备。",
+   "notes": ""
+  }
+ ],
+ "delete": [],
+ "add": [
+  {
+   "after": "utilise",
+   "word": "usage",
+   "meaning": "n.使用；(词语的)用法",
+   "ex_en": "The College Board says words on the new test will relate to usage.",
+   "ex_zh": "大学理事会称，新考试中的词汇将和用法关联起来。",
+   "notes": ""
+  },
+  {
+   "after": "usage",
+   "word": "tester",
+   "meaning": "n.测试仪；测试员",
+   "ex_en": "The battery tester is in my garage.",
+   "ex_zh": "电池测试仪在我的车库里。",
+   "notes": ""
+  },
+  {
+   "after": "byproduct",
+   "word": "auxiliary",
+   "meaning": "adj.辅助的，协助的；备用的",
+   "ex_en": "When there is power shortage, they count on the auxiliary power supply.",
+   "ex_zh": "停电的时候，他们依赖后备供电设施。",
+   "notes": ""
+  },
+  {
+   "after": "auxiliary",
+   "word": "versatile",
+   "meaning": "adj.多功能的，多用途的",
+   "ex_en": "Plastics are a versatile material in industry.",
+   "ex_zh": "在工业中，塑料是一种多用途材料。",
+   "notes": ""
+  },
+  {
+   "after": "fault",
+   "word": "stumble",
+   "meaning": "V.犯错误；绊脚；跌跌撞撞地走",
+   "ex_en": "The sudden weakness in her legs made her stumble.",
+   "ex_zh": "她突然两腿发软，踉跄了一下。",
+   "notes": "stumble over在……绊了一下"
+  }
+ ]
+}

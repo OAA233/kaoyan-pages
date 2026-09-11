@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雅思词汇真经 Ch.10 物品材料</title>
+<style>
+  body {
+    --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
+    --num: #8b8577; --num-border: #5a564d; --muted: .55;
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif;
+    background: var(--bg); color: var(--fg);
+    margin: 0; padding: 14px 16px; max-width: 1080px;
+    transition: background .2s, color .2s;
+  }
+  body.day {
+    --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8;
+    --num: #8a8373; --num-border: #c4bda9; --muted: .6;
+  }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
+  .hbtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px;
+  }
+  .hbtn:hover { opacity: .8; }
+  .stats { display: inline; gap: 8px; font-size: 12px; opacity: .7; }
+  .row2 { display: flex; gap: 10px; align-items: flex-start; }
+  .col2 { flex: 1; min-width: 0; }
+  .card {
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 9px 12px; background: var(--card);
+    border-left: 5px solid #555; margin-bottom: 10px;
+  }
+  .card.cV { border-left-color: #e5484d; }
+  .card.cI { border-left-color: #d63384; }
+  .card.cN { border-left-color: #1971c2; }
+  .card.cadv { border-left-color: #2b8a3e; }
+  .row1 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .num {
+    font-size: 11px; font-weight: 700; color: var(--num);
+    border: 1.5px solid var(--num-border); border-radius: 50%;
+    width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: center;
+  }
+  .word { font-size: 19px; font-weight: 700; cursor: pointer; }
+  .word:hover { text-decoration: underline; }
+  .pos { font-size: 11px; font-weight: 700; padding: 2px 6px; white-space: nowrap; border-radius: 7px; color: #fff; }
+  .pos.V { background: #e5484d; }
+  .pos.I { background: #d63384; }
+  .pos.N { background: #1971c2; }
+  .pos.adv { background: #2b8a3e; }
+  .mean { margin-top: 1px; font-size: 13px; margin-left: 32px; }
+  .phrase { margin-top: 6px; font-size: 13px; margin-left: 32px; }
+  .phrase .jp { font-weight: 600; cursor: pointer; }
+  .phrase .jp:hover { text-decoration: underline; }
+  .phrase .zh { display: block; opacity: var(--muted); margin: 1px 0 0; }
+  .note-line { margin-top: 4px; font-size: 12px; margin-left: 32px; opacity: var(--muted); }
+  @media (max-width: 760px) { .row2 { flex-direction: column; } .col2 { width: 100%; } }
+
+  /* ---- 听写 ---- */
+  #dict { position: fixed; inset: 0; background: var(--bg); z-index: 500; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  #dict.open { display: flex; }
+  #dictBig { font-size: 20px; padding: 16px 30px; border-radius: 16px; border: 1px solid var(--num-border); background: var(--card); color: var(--fg); cursor: pointer; }
+  #dictAns { min-height: 150px; transition: opacity .2s; }
+  #dictAns.hidden { opacity: 0; pointer-events: none; user-select: none; }
+  .dword { font-size: 30px; font-weight: 800; }
+  .dpos { opacity: .5; font-size: 12px; }
+  .dmean { font-size: 16px; margin-top: 4px; }
+  .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
+  .dphz { opacity: .6; font-size: 13px; }
+  .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>雅思词汇真经 Ch.10 物品材料</h1>
+    <p><span class="stats">共 <b id="count"></b> 词 · 点击单词/例句发音（edge 女声）</span></p>
+  </div>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
+  <button id="themeBtn" class="hbtn" onclick="toggleTheme()">🌙 夜间</button>
+</header>
+<div id="list"></div>
+
+<script>
+let DATA = [{"word": "Stuff", "meaning": "n-东西；原料", "ex_en": "I've got quite a lot of stuff to read", "ex_zh": "我有许多东西要读。", "notes": "", "n": 1}, {"word": "item", "meaning": "n.—件物品，一件商品", "ex_en": "She could n't wedge ano ther item into the suitcase", "ex_zh": "她无法再往箱子里多塞东西了。", "notes": "", "n": 2}, {"word": "merchandise", "meaning": "n-商品", "ex_en": "We often call these goods merchandise", "ex_zh": "我们常把这些货称为商品。", "notes": "", "n": 3}, {"word": "souvenir", "meaning": "n-纪念品", "ex_en": "These souvenirs were gathered from all parts of the world", "ex_zh": "这些纪念品是从世界各地收集来的。", "notes": "", "n": 4}, {"word": "artefact", "meaning": "n.人造物品；手工艺品", "ex_en": "Software is a cultural artefact of the modern world", "ex_zh": "软件是现代社会的一种文化人造品。", "notes": "artificial adj.人造的；矫揉造作的，虚伪的 字根fact指“制作(to如factory(制作的地方t工厂)。art指“技艺故artefact是“用 技艺制作出来的东西，非天然的东西”，即“人造物品；手工艺品”。", "n": 5}, {"word": "material", "meaning": "n.材料，原料；人才adj.物质的", "ex_en": "There is sin ger material among these young girls", "ex_zh": "在这些年轻姑娘中有当歌手的料。", "notes": "", "n": 6}, {"word": "raw", "meaning": "adj.天然的，未经加工的；(感情)原始的", "ex_en": "", "ex_zh": "", "notes": "", "n": 7}, {"word": "crude", "meaning": "adj.天然的，未经加工的；粗糙的m原油", "ex_en": "The price of crude oil has come down recently", "ex_zh": "最近，原油的价格下降了。", "notes": "", "n": 8}, {"word": "necessity", "meaning": "n.必需品，必不可少的事物；必要", "ex_en": "Water is a necessity of life", "ex_zh": "水是维持生命必不可少的。", "notes": "necessary adj.必需的，必要的", "n": 9}, {"word": "outfit", "meaning": "n.全套服装；全套装备v.配备，装备", "ex_en": "e football team were wearing orange outfits", "ex_zh": "这支足球队的队员都穿着一身橘色运动服。", "notes": "", "n": 10}, {"word": "kit", "meaning": "成套工具", "ex_en": "There is a repair kit provided in the boot of each car", "ex_zh": "每辆车的行李箱内都备有一套修理工具。", "notes": "", "n": 11}, {"word": "utensil", "meaning": "n.(家庭)用具，器皿", "ex_en": "He took a camping utensil that can serve as a knife, fork and spoon to school", "ex_zh": "他把一个可以用作刀、叉和勺子的野营用具带到学校去了。", "notes": "", "n": 12}, {"word": "garbage", "meaning": "Fl.［尤美］垃圾，废物", "ex_en": "They fouled the water by throwing in garbage", "ex_zh": "他们向水中扔垃圾，弄脏了水。", "notes": "a garbage can垃圾箱，垃圾筒 kit", "n": 13}, {"word": "rubbish", "meaning": "n.［尤英］垃圾，废弃物，废话", "ex_en": "The dustman comes once a week to collect the rubbish", "ex_zh": "清洁工每周来收一次垃圾。", "notes": "clear away the rubbish清除垃圾", "n": 14}, {"word": "trash", "meaning": "n.［美］垃圾", "ex_en": "Trash can do great damage to the environment", "ex_zh": "垃圾会对环境造成很大危害。", "notes": "", "n": 15}, {"word": "recycle", "meaning": "V.使再循环，回收利用；反复应用", "ex_en": "I plan on recycling old warehouses as condominiums", "ex_zh": "我打算把旧仓库改建成公寓。\ncycle意为“循环；一圈”，源自表示“圆圈，轮\"的希腊语，相关单词如：mono（—个）+cycle（轮）t\n（独轮车）；bi（两个）+cycle（轮）t bicycle\n（三个）+（轮）t（三轮车）；\n（自行车）；tri cycle tricycle\n（来自（摩托\nmotor（引擎）+cycle bicycle）t motorcycle\n（骑自行车的人）；re（重复）+（循环）t\n车）；cyclist cycle\nrecycle（回收利用）。", "notes": "", "n": 16}, {"word": "reuse", "meaning": "V.再次使用", "ex_en": "These bottles are designed to be reused up to times", "ex_zh": "这些瓶子被设计成可以重复使用多达20次。", "notes": "", "n": 17}, {"word": "litter", "meaning": "n.垃圾，废弃物v.乱丢东西", "ex_en": "Litter covered the cinema floor after the film", "ex_zh": "电影结束后，电影院的地上全是垃圾。", "notes": "", "n": 18}, {"word": "waste", "meaning": "n.废物；浪费v.浪费", "ex_en": "It's a waste of time to speak to her", "ex_zh": "和她说话是在浪费时间。", "notes": "", "n": 19}, {"word": "junk", "meaning": "n.无用的东西，废物", "ex_en": "What about junk food?", "ex_zh": "垃圾食品怎么样？", "notes": "junk food n.垃圾食品", "n": 20}, {"word": "landfill", "meaning": "n.垃圾填埋地；垃圾填埋", "ex_en": "Americans send more than million tons of food to the landfill every year", "ex_zh": "美国人每年将3000余万吨食物丢进垃圾填埋场。", "notes": "", "n": 21}, {"word": "sewerage", "meaning": "n.排水系统，污水处理系统；（=sewage）污水", "ex_en": "Our town has a modern sewerage system", "ex_zh": "我们城镇有一套现代化的污水处理系统。", "notes": "", "n": 22}, {"word": "detergent", "meaning": "n.洗涤剂", "ex_en": "He recommended a new detergent to me.", "ex_zh": "他向我推荐一种新的洗涤剂。", "notes": "", "n": 23}, {"word": "lotion", "meaning": "n.洁肤乳；润肤乳", "ex_en": "This lotion helps brighten and smooth your skin", "ex_zh": "这款乳液可帮你提亮肤色并使皮肤更光滑。", "notes": "", "n": 24}, {"word": "shampoo", "meaning": "v.用洗发剂洗（头发）n.洗发剂", "ex_en": "She hair and then put shampoo on wetted her it", "ex_zh": "她把头发弄湿，然后抹上洗发剂。", "notes": "", "n": 25}, {"word": "soap", "meaning": "n.肥皂v.用肥皂擦洗", "ex_en": "Don't touch anything before you soap hands", "ex_zh": "没用肥皂洗手之前，什么都不要碰。", "notes": "a soap opera肥皂剧", "n": 26}, {"word": "tub", "meaning": "n.桶，盆；［美］浴缸，浴盆", "ex_en": "She comforted her husband by putting his feet water", "ex_zh": "她把丈夫的两只脚放在一桶热水\n中，使他舒服一些。", "notes": "", "n": 27}, {"word": "plug", "meaning": "n.塞子；插头v.把……塞住", "ex_en": "You don't need to plug your ears since the music loud", "ex_zh": "你不用塞住耳朵，音乐又不是很吵。", "notes": "", "n": 28}, {"word": "isnotsotap", "meaning": "n.旋塞，龙头 '茎 、»", "ex_en": "", "ex_zh": "", "notes": "", "n": 29}, {"word": "pipe", "meaning": "n.管子，管道；烟斗", "ex_en": "All through the after noon and the eve ning, he went on thinking silently, and smoking pipe after pipe", "ex_zh": "整个下午乃至傍晚，他都一声不吭地思考着，抽了\n—烟斗又一烟斗的烟。", "notes": "peline n.管道，管线", "n": 30}, {"word": "tube", "meaning": "n.管；（电视机的）显像管；［英］（伦敦）地铁", "ex_en": "She passed me a tube of toothpaste.", "ex_zh": "她递给我一管牙膏。", "notes": "", "n": 31}, {"word": "mop", "meaning": "n・拖把v.用拖把擦", "ex_en": "She mopped up the water", "ex_zh": "她用拖把把水擦干净了。", "notes": "", "n": 32}, {"word": "broom", "meaning": "我进门前在地垫上蹭了蹭鞋。 n.扫帚v.用扫帚扫", "ex_en": "She used a broom to sweep up the scraps of paper", "ex_zh": "她用一把扫帚清扫纸屑。n.软垫 She", "notes": "", "n": 33}, {"word": "sweep", "meaning": "v.打扫；（迅猛地）吹走；掠过", "ex_en": "I saw the tops of trees moving in circles, and pieces of wood were swept up into the air.", "ex_zh": "我看见树梢来回摆动，木片被风卷上了天空。", "notes": "短语sweep the board指（在比赛中）囊括所有奖项“，源于赌博。board指“赌桌”。可能源于某人独胜时将桌面上所有的筹码和钱一扫（sweep）而空的情景，引申为“（在比赛中）囊括所有奖项”。", "n": 34}, {"word": "mattress", "meaning": "n.床垫", "ex_en": "A mattress is filled with feathers, cotton, or straw.", "ex_zh": "床垫里填充着羽毛、棉花或稻草。", "notes": "", "n": 35}, {"word": "carpet", "meaning": "ii.地毯，毡毯，毛毯", "ex_en": "The armchair blends well with the colour of the carpet", "ex_zh": "扶手椅与地毯的颜色很好地融为一体。", "notes": "red carpet（迎接贵宾用的）红地毯", "n": 36}, {"word": "rug", "meaning": "n.小地毯；（盖肩或腿的）小毯子", "ex_en": "He bargained with the merchant for an hour before he bought the rug", "ex_zh": "他与那商人讨价还价了一个小时才买下这块小地毯。", "notes": "", "n": 37}, {"word": "mat", "meaning": "n.地垫，地席", "ex_en": "I wiped my shoes on the mat before I came in", "ex_zh": "", "notes": "", "n": 38}, {"word": "cushion", "meaning": "n.软垫", "ex_en": "She plumps up the sofa cushion.", "ex_zh": "她把沙发垫拍得鼓鼓的。", "notes": "a back cushion靠背垫a sofa cushion沙发垫", "n": 39}, {"word": "pad", "meaning": "n.衬垫，垫；便笺本v.（用软材料）填塞", "ex_en": "She always kept a pad and a pencil by the phone.", "ex_zh": "她总在电话机旁准备便笺本和铅笔。", "notes": "", "n": 40}, {"word": "blanket", "meaning": "n.毛毯，毯子", "ex_en": "She huddled herself in the blanket.", "ex_zh": "她裹着毯子缩成一团。", "notes": "", "n": 41}, {"word": "quilt", "meaning": "n.被子", "ex_en": "If you air your quilt on such a wet day, it'll soak up the moisture.", "ex_zh": "如果在这么潮湿的天晾被子，被子就会把湿气都吸进去。", "notes": "", "n": 42}, {"word": "sheet", "meaning": "n.被单，床单；一张（纸）；薄板", "ex_en": "We change the sheet every week.", "ex_zh": "我们每个星期换一次床单。", "notes": "", "n": 43}, {"word": "pillow", "meaning": "n.枕头", "ex_en": "My daughter asked me to buy her a pillow stuffed with feathers.", "ex_zh": "我女儿请求我给她买一个羽绒枕头。", "notes": "", "n": 44}, {"word": "towel", "meaning": "n.毛巾，手巾", "ex_en": "I dry my hands and face with a towel", "ex_zh": "我用毛巾擦干了双手和面部。", "notes": "wring a towel拧毛巾", "n": 45}, {"word": "staple", "meaning": "n.订书钉；主要部分", "ex_en": "He used a pair of scissors to take the staple out of the document", "ex_zh": "他用剪刀将订书钉从文件上取了下来。", "notes": "", "n": 46}, {"word": "nail", "meaning": "n.指甲；钉子v.（用钉子）钉住", "ex_en": "Please hammer a nail into the wall", "ex_zh": "请在墙上钉个钉子。", "notes": "", "n": 47}, {"word": "razor", "meaning": "n.剃刀v.（用剃刀）剃", "ex_en": "He razored his face clean of his beard", "ex_zh": "他用弟［j刀将脸上的胡须刮干净。", "notes": "an razor电动剃须刀", "n": 48}, {"word": "shave", "meaning": "V.剃须，刮脸", "ex_en": "I started to shave", "ex_zh": "我在脸\n上打了肥皂，然后开始刮胡子。", "notes": "shaver n.理发师；电动剃须刀", "n": 49}, {"word": "fuse", "meaning": "n.保险丝；导火线v.（使）熔化；（使）融合", "ex_en": "We and tin to make bronze", "ex_zh": "我们把\n铜和锡熔制成青铜。", "notes": "", "n": 50}, {"word": "cable", "meaning": "n.电缆；缆绳，钢索；电报；有线电视", "ex_en": "This country has almost million subscribers to satellite and cable television", "ex_zh": "该国有将近1500万卫星电视和有线电视用户。", "notes": "a cable car缆车", "n": 51}, {"word": "cord", "meaning": "n.细绳，粗线", "ex_en": "Our voices depend on our vocal cords", "ex_zh": "我们的声音取决于声带。\n（catgut）”源自表示“肠线的希腊语。与cord相关的同源词是chord（［乐器的］弦；和音；心弦），", "notes": "", "n": 52}, {"word": "strike", "meaning": "with sb.就是“拨动某人心弦”“引起某人共鸣\"的意思。", "ex_en": "", "ex_zh": "", "notes": "", "n": 53}, {"word": "strand", "meaning": "缕，股；滨，岸", "ex_en": "One strand of silk does n't make a thread; one tree doesn't make a forest", "ex_zh": "单丝不成线，独木不成林。", "notes": "", "n": 54}, {"word": "match", "meaning": "n.火柴；比赛；匹配的人或物v.与……匹配", "ex_en": "A high standard of play marked the match between the two teams", "ex_zh": "这两队之间的比赛表现了很高的技术水平。", "notes": "meet one's match遇到某人的对手", "n": 55}, {"word": "candle", "meaning": "n.蜡烛", "ex_en": "The candle was blown out by the wind", "ex_zh": "蜡烛被风吹灭了。", "notes": "", "n": 56}, {"word": "light", "meaning": "吹灭蜡烛", "ex_en": "", "ex_zh": "", "notes": "", "n": 57}, {"word": "wax", "meaning": "n.蜡；蜂蜡", "ex_en": "The candle gutters when the melted wax runs down its sides", "ex_zh": "熔化的蜡从蜡烛的边上淌下时，烛光摇曳不定。", "notes": "", "n": 58}, {"word": "portfolio", "meaning": "n.文件夹，公事包", "ex_en": "She has left her portfolio in a chair", "ex_zh": "她把文件夹落在椅子上了。\nw\nwax\n物品材料", "notes": "", "n": 59}, {"word": "paperback", "meaning": "n.简装书，平装书", "ex_en": "This bookshop only sells paperbacks", "ex_zh": "这家书店只出售平装书。", "notes": "", "n": 60}, {"word": "pamphlet", "meaning": "n.小册子", "ex_en": "I took a few pamphlets from the travel agency.", "ex_zh": "我从旅行社拿了几本小册子。", "notes": "booklet n.小册子，资料手册leaflet n.传单 brochure n.（广告或资料）手册", "n": 61}, {"word": "tissue", "meaning": "n.薄绢，薄纸；组织；面巾纸", "ex_en": "She wiped off the sweat from her face with a tissue", "ex_zh": "她用一张面巾纸擦掉脸上的汗水。", "notes": "", "n": 62}, {"word": "cover", "meaning": "n.封面；盖子；套子", "ex_en": "The front cover of the novel has been torn off.", "ex_zh": "这本小说的封面已被撕掉。", "notes": "", "n": 63}, {"word": "duplicate", "meaning": "v.重复/'dju:pUkit/n.副本，复制品", "ex_en": "Don't duplicate what you have already done", "ex_zh": "不要重复你已经做过的事。", "notes": "", "n": 64}, {"word": "memorandum", "meaning": "n.备忘录；建议书；（二memo）（公司或组织内部的） 公务便条", "ex_en": "They agreed on the memorandum", "ex_zh": "他们就这份备忘录达成了一致意见。字根memor指“记着的（mindful, remembering）”，如I:\nmemorandum（备忘录）；com（加强意义）+memor（记着的）+ate（动词后缀）t提醒你记住t commemorate\n薩思词汇奠经", "notes": "", "n": 65}, {"word": "stationery", "meaning": "n.文具；信纸", "ex_en": "Stationery can be imprinted with your message or logo", "ex_zh": "可以把你的信息或标志印在信纸上。", "notes": "ationer n文具店；文具商", "n": 66}, {"word": "glue", "meaning": "n.胶，胶水", "ex_en": "Stick them on the card using a small amount of glue", "ex_zh": "用少量胶水把它们贴到卡片上。", "notes": "", "n": 67}, {"word": "ink", "meaning": "n.墨水，油墨", "ex_en": "If the ink sinks in, it'll be hard to remove it", "ex_zh": "如果墨水渗入，就很难去除。", "notes": "", "n": 68}, {"word": "rubber", "meaning": "n.橡胶；［英］橡皮擦", "ex_en": "Rubber is the country's principal export", "ex_zh": "橡胶是该国主要的出口产品。", "notes": "", "n": 69}, {"word": "scissors", "meaning": "n.剪刀，剪子", "ex_en": "It is rumoured that Leonardo Da Vinci invented the scissors", "ex_zh": "有传言称是达•芬奇发明了剪刀。", "notes": "", "n": 70}, {"word": "shear", "meaning": "n.卜s］（尤指修剪篱笆用的）大剪刀V.剪", "ex_en": "With a few quick snips of the shears, he pruned the bush", "ex_zh": "他用大剪刀几下子就把灌木给修剪好了。", "notes": "", "n": 71}, {"word": "edge", "meaning": "n.边缘，边；刀口", "ex_en": "Look out! You could fall off the edge here!", "ex_zh": "小心！你会从这边缘掉下去的！", "notes": "", "n": 72}, {"word": "rim", "meaning": "n.（圆形物的）外缘，边缘", "ex_en": "Mike liked very much the golden rims of his glasses", "ex_zh": "麦克很喜欢他的眼镜的金色边框。", "notes": "", "n": 73}, {"word": "element", "meaning": "n.（化学中的）元素；组成部分；基本部分", "ex_en": "Both hydrogen and oxygen are elements", "ex_zh": "氢和氧都是化学元素。\n$新\n”element垃*心；", "notes": "", "n": 74}, {"word": "factor", "meaning": "n.因素，要素", "ex_en": "Her friendly manner is an important factor in her rapid success", "ex_zh": "待人友好是她迅速获得成功的一重要因素。", "notes": "", "n": 75}, {"word": "section", "meaning": "n.部分；章，节", "ex_en": "One section of the class was reading and the other section was writing", "ex_zh": "这堂课一部分讲阅读，另一部分讲写作。字根sect指“切割（to cut）\",如：insect（躯体分割成一节一节的t昆虫），sect（派别；教派；党派），bisect\n（将……一分为二），intersection（相互切割，纵横切割-\n交叉；十字路口），vivisect（切割活的东西t活体解剖）\no", "notes": "", "n": 76}, {"word": "tag", "meaning": "n.标签；称号", "ex_en": "Don't forget to put tags suitcases", "ex_zh": "别忘了在你的箱子上贴上\n写有你的姓名和住址的标签。", "notes": "", "n": 77}, {"word": "label", "meaning": "n-标签，标贴", "ex_en": "I read the information on the labels before deciding which jam to buy", "ex_zh": "在决定买哪种果酱之前，我先看了看标签上的说明。", "notes": "", "n": 78}, {"word": "badge", "meaning": "n.徽章；证章；标志，象征", "ex_en": "Wisdom is the badge of maturity", "ex_zh": "智慧是成熟的标志。", "notes": "", "n": 79}, {"word": "bolt", "meaning": "n.螺栓；插销v.闩上（门、窗）", "ex_en": "We need an eye bolt to fit this valve", "ex_zh": "我们需要\n—个有眼螺栓来固定这个阀门。", "notes": "", "n": 80}, {"word": "knob", "meaning": "n.球形把手；旋钮", "ex_en": "He twisted the knob of the door and went inside", "ex_zh": "他转动门把手，然后走了进去。", "notes": "", "n": 81}, {"word": "handle", "meaning": "fl.柄；把手V.拿；处理", "ex_en": "You have to press on the handle to turn it; ifs very stiff", "ex_zh": "你必须用力压这个把手才能转动它，它很不灵活。", "notes": "handle with care小心轻放", "n": 82}, {"word": "shutter", "meaning": "n.百叶窗；（相机）快门v.停止（营业）", "ex_en": "The company shuttered its Hong Kong investment banking business a year ago", "ex_zh": "该公司一年前停止了其香港投资银行的业务。", "notes": "", "n": 83}, {"word": "curtai", "meaning": "n 11.窗帘；帘；幕布V.给……装上帘子", "ex_en": "I have eno ugh material to curtain all the windows", "ex_zh": "我有足够的料子，可以给所有窗户都挂上窗帘。", "notes": "", "n": 84}, {"word": "pane", "meaning": "n.（—块）窗玻璃", "ex_en": "He suffered a lot of pain after he accidentally broke glass", "ex_zh": "他意外将一块窗玻璃打碎后，疼痛万分。", "notes": "", "n": 85}, {"word": "opacity", "meaning": "n.不透明性", "ex_en": "They have chosen the frosted opacity", "ex_zh": "他们选择了这种磨砂玻璃，因为它不透明。\nits I can't get the lid off this jar.我打不开这个广口瓶的盖子。", "notes": "opaque n.不透明物adj.不透明的 jar 心。:/ ii.罐，广口瓶；猛烈震动", "n": 86}, {"word": "barrel", "meaning": "n.桶", "ex_en": "The wine is aged in oak barrels", "ex_zh": "酒在橡木桶里陈化。", "notes": "", "n": 87}, {"word": "bucket", "meaning": "n.（有提手的）桶", "ex_en": "One bucket of paint will be eno ugh for the ceiling", "ex_zh": "刷天花板，一桶油漆足够用了。", "notes": "a drop in the bucket沧海一粟 jar", "n": 88}, {"word": "pail", "meaning": "n.［尤美］（通常是金属或木制的）桶，提桶", "ex_en": "My evening", "ex_zh": "我的冰箱昨晚突然出了故障。 He tipped the slops out of the pail.他倒出桶里的脏水。", "notes": "", "n": 89}, {"word": "phone", "meaning": "n.冰箱 m电话；电话机；电话听筒", "ex_en": "We swapped phone numbers", "ex_zh": "我们交换了电话号码。取出冰箱后会变软。", "notes": "a cell phone /mobile phone手机make a phone call打电话vacuum on the phone在打（或接）电话 n.真空；真", "n": 90}, {"word": "bell", "meaning": "n.钟；铃存在真空包装中。", "ex_en": "I was roused by the sound of the bell this", "ex_zh": "字根\nmorning.今天早晨，我被铃声唤醒。空）；e", "notes": "ring a bell听起来有印象去岀来t", "n": 91}, {"word": "camera", "meaning": "fan", "ex_en": "You'd better declare the camera to the official. n", "ex_zh": "扇子；风扇；狂你最好向海关官员申报这台照相机。 He", "notes": "a built-in camera（手机）内置照相机of 的支持者行列。", "n": 92}, {"word": "portable", "meaning": "adj.手提式的，便携式的switch", "ex_en": "The new portable computers are selling like n", "ex_zh": "开关；转\nhot cakes.这款新的便携式电脑十分畅销。开关，看看灯会不会亮。", "notes": "", "n": 93}, {"word": "spotlight", "meaning": "n.聚光灯；聚光灯照出的光圈hurdle", "ex_en": "The spotlight followed the dancer round the n", "ex_zh": "栏架；跨栏赛跑\nstage.聚光灯的光圈追随着舞者在舞台上转。", "notes": "", "n": 94}, {"word": "lantern", "meaning": "她能在跨栏赛跑中击败所有对手。 n.提灯，灯笼", "ex_en": "The Ice Lantern Festival held in Harbin every fence winter is fantastic", "ex_zh": "哈尔滨每年冬天举办的冰灯节非常棒。n.栅栏；围栏", "notes": "", "n": 95}, {"word": "bulb", "meaning": "栏是校园的边界。 n.电灯泡；球茎；球茎状物", "ex_en": "An efficient bulb may lighten the load of power stations.—", "ex_zh": "个节能灯泡也许就能减轻发电站的负荷。", "notes": "", "n": 96}, {"word": "flashlight", "meaning": "n.（闪光灯的）闪光；手电筒", "ex_en": "You can use the flashlight when you take a photo indoors", "ex_zh": "你在室内拍照时可用闪光灯。", "notes": "", "n": 97}, {"word": "refrigerator", "meaning": "n.冰箱bell lantern", "ex_en": "", "ex_zh": "", "notes": "", "n": 98}, {"word": "hurdle", "meaning": "n.栏架；跨栏赛跑", "ex_en": "With her speed and agility, she can beat all her competitors in the hurdle race.", "ex_zh": "以她的速度和敏捷性，她能在跨栏赛跑中击败所有对手。", "notes": "", "n": 99}, {"word": "fence", "meaning": "n.栅栏；围栏", "ex_en": "That fence is the limit of the schoolyard.", "ex_zh": "那道围栏是校园的边界。", "notes": "set up fences设立栅栏", "n": 100}, {"word": "pedal", "meaning": "n.踏板v.踩踏板", "ex_en": "One of the pedals has come off my bicycle", "ex_zh": "我那辆自行车有一个踏板脱落了。", "notes": "", "n": 101}, {"word": "shelf", "meaning": "n.架子，搁板", "ex_en": "The shelf is too weak to hold all those books", "ex_zh": "这架子不结实，承受不了所有那些书。", "notes": "", "n": 102}, {"word": "ladder", "meaning": "九梯子；（进步、晋升等的）阶梯", "ex_en": "Diligence success", "ex_zh": "勤奋常常\n是通往成功的阶梯。", "notes": "climb爬梯子", "n": 103}, {"word": "lift", "meaning": "V.提，抬；提高m［英］电梯（美式英语用elevator）", "ex_en": "This box is too heavy for me to lift", "ex_zh": "这箱子太重，我抬不起来。", "notes": "", "n": 104}, {"word": "stool", "meaning": "n-凳子", "ex_en": "Because of that stool and a pair of computers, I gained a best friend", "ex_zh": "因为那个凳子和两台电脑，我得到了一个最好的朋友。", "notes": "", "n": 105}, {"word": "drawer", "meaning": "n-抽屉", "ex_en": "The keys are in the back left-hand corner of the drawer", "ex_zh": "钥匙在抽屉最里面的左边一角。", "notes": "", "n": 106}, {"word": "umbrella", "meaning": "n伞，雨伞", "ex_en": "e wind blew my umbrella inside out", "ex_zh": "风把我的伞吹得翻过去了。", "notes": "", "n": 107}, {"word": "raincoat", "meaning": "n.雨衣", "ex_en": "He had no raincoat on when the rain started", "ex_zh": "开始下雨时，他没穿雨衣。", "notes": "", "n": 108}, {"word": "dredge", "meaning": "n.挖泥船，挖掘机v.挖掘；撒（糖、面粉等）", "ex_en": "She dredged a little sugar over the cake", "ex_zh": "她在蛋糕上撒了点糖。", "notes": "", "n": 109}, {"word": "can", "meaning": "V.把（食品）装罐保存n.罐头，听", "ex_en": "She was carrying an armful of cat-food cans and herself", "ex_zh": "她正抱着一堆猫食罐头自言自语。", "notes": "", "n": 110}, {"word": "mill", "meaning": "n・磨粉机；磨坊v.碾碎；无目的地乱转", "ex_en": "Corn mill", "ex_zh": "谷物在磨坊里\n被磨成粉。", "notes": "", "n": 111}, {"word": "forge", "meaning": "n.锻铁炉v.锻造；伪造", "ex_en": "These machine parts have been forged with the finest steel", "ex_zh": "这些机器零件是用优质钢材锻造的。", "notes": "", "n": 112}, {"word": "alloy", "meaning": "n.合金；（金属的）成色", "ex_en": "Brass is an alloy of copper and zinc", "ex_zh": "黄铜是铜和锌的合金。", "notes": "", "n": 113}, {"word": "metal", "meaning": "n金属", "ex_en": "A gust of wind pried loose a section of sheet-metal roofing.—", "ex_zh": "阵狂风把一块用来铺屋顶的板料刮松动了。", "notes": "", "n": 114}, {"word": "iro", "meaning": "n m铁；熨斗v.熨，烫", "ex_en": "They an a lysed the ore and found iron in it", "ex_zh": "他们分析了该矿砂，从中发现了铁。", "notes": "", "n": 115}, {"word": "lead", "meaning": "n.铅", "ex_en": "Lead is one of the softer metals", "ex_zh": "铅是硬度较低的金属之一。", "notes": "", "n": 116}, {"word": "brass", "meaning": "n.黄铜；黄铜制品", "ex_en": "Brass is formed by the fusion of copper and zinc", "ex_zh": "黄铜是由铜和锌熔合制成的。\nw\n物品材料", "notes": "", "n": 117}, {"word": "bronze", "meaning": "n.青铜；青铜艺术品", "ex_en": "We fuse copper and tin to make bronze.", "ex_zh": "我们把铜和锡熔制成青铜。", "notes": "", "n": 118}, {"word": "cement", "meaning": "n.水泥；胶接剂v.使黏结", "ex_en": "The mixed cement has been hoisted up the building.", "ex_zh": "拌好的水泥已被吊上建筑物。", "notes": "cementer n.水泥工人", "n": 119}, {"word": "knit", "meaning": "v.编织，针织", "ex_en": "My grandmother knitted me some socks.", "ex_zh": "祖母给我织了一些袜子。", "notes": "", "n": 120}, {"word": "pitch", "meaning": "n.沥青", "ex_en": "They used pitch to cover roofs.", "ex_zh": "他们用沥青涂盖屋顶。", "notes": "", "n": 121}, {"word": "lime", "meaning": "n.石灰", "ex_en": "Lime in the soil is detrimental to some plants.", "ex_zh": "土壤里的石灰对某些植物有害。", "notes": "", "n": 122}, {"word": "plaster", "meaning": "n.灰泥；熟石膏", "ex_en": "The plaster had started to come away from the wall.", "ex_zh": "灰泥已经开始从墙上脱落。", "notes": "", "n": 123}, {"word": "leather", "meaning": "n.皮革；（尤指骑摩托车者穿的）皮衣", "ex_en": "Wax polish preserves wood and leather.", "ex_zh": "上光蜡可以保护木材和皮革。", "notes": "", "n": 124}, {"word": "plastic", "meaning": "n.棉；棉线；棉布 n.塑料adj.有塑性的；塑料的", "ex_en": "The Many items in daily use are made out of plastic", "ex_zh": "棉花已摘下来，并已称重。很多日常生活用品是塑料制的。", "notes": "", "n": 125}, {"word": "fibre", "meaning": "（二竹ber）n.纤维；纤维素n.尼龙", "ex_en": "", "ex_zh": "", "notes": "", "n": 126}, {"word": "fabric", "meaning": "n.织物，布料", "ex_en": "The jacket is comfortable because the fabric breathes.", "ex_zh": "这件短上衣穿着很舒适，因为这种布料透气。", "notes": "", "n": 127}, {"word": "grandmother knitted", "meaning": "me some socks.祖母", "ex_en": "", "ex_zh": "", "notes": "", "n": 128}, {"word": "weave", "meaning": "v.编织；编造", "ex_en": "We are weaving garlands of flowers for heroes.", "ex_zh": "我们在为英雄编织花环。", "notes": "", "n": 129}, {"word": "canvas", "meaning": "n.帆布；油画布", "ex_en": "They carried canvas sacks over their shoulders.", "ex_zh": "他们肩上扛着帆布袋。", "notes": "", "n": 130}, {"word": "linen", "meaning": "n.亚麻布；亚麻织品", "ex_en": "Low elasticity, imparting a hard and smooth texture, makes linen subject to wrinkling.", "ex_zh": "较差的弹性使亚麻布质地硬而光滑，但也容易起皱纹。", "notes": "fine linen细亚麻布fresh linen干净的床单和枕套", "n": 131}, {"word": "cotton", "meaning": "n.棉；棉线；棉布", "ex_en": "The cotton has been picked and weighed up.", "ex_zh": "棉花已摘下来，并已称重。", "notes": "", "n": 132}, {"word": "nylon", "meaning": "n.尼龙", "ex_en": "This dress is 80%nylon.", "ex_zh": "这件连衣裙的料子含有80%的尼龙。", "notes": "", "n": 133}, {"word": "lumber", "meaning": "n.木材，木料", "ex_en": "Forested areas have been expanding every year, with the amount of the increase in standing timber greater than that of felled lumber.", "ex_zh": "森林面积每年都在增加，常备林木的增长量大于被砍伐的木材量。", "notes": "", "n": 134}, {"word": "wooden", "meaning": "adj.木制的；呆板的", "ex_en": "re is a wooden porch over the sidewalk", "ex_zh": "人行道上有一个木制的门廊。", "notes": "", "n": 135}, {"word": "mine", "meaning": "n.矿，矿井；地雷", "ex_en": "The mine was closed owing to exhaustion", "ex_zh": "这个矿井因矿源枯竭而被关闭。", "notes": "miner n.矿工mineral n.矿物adj.矿物的", "n": 136}, {"word": "pit", "meaning": "n.深坑；煤矿；潜在危险", "ex_en": "When you fall into a pit, you either die or get out", "ex_zh": "若你落入险境，要么等死，要么设法逃脱。", "notes": "", "n": 137}, {"word": "fuel", "meaning": "n.燃料v.给……加燃料", "ex_en": "We aim for a 10%saving in fuel", "ex_zh": "我们的目标是节省10%的燃料。", "notes": "add fuel to给...加燃料burn up fuel烧完燃料lack fuel缺少燃料", "n": 138}, {"word": "lubricate", "meaning": "v.润滑，加润滑油于", "ex_en": "We find it necessary to lubricate machines", "ex_zh": "我们发现给机器加润滑油是必要的。", "notes": "lubricating oil润滑油", "n": 139}, {"word": "diamond", "meaning": "n.金刚石，钻石；菱形", "ex_en": "The diamond ring on her fin ger glittered in the light", "ex_zh": "她手指上的钻石戒指在光下闪闪发光。", "notes": "", "n": 140}, {"word": "crystal", "meaning": "n.水晶；结晶，晶体", "ex_en": "People imitate diamonds with crystal", "ex_zh": "人们用水晶仿造钻石。", "notes": "", "n": 141}, {"word": "inferior", "meaning": "adj.差的；下级的，低等的n.级&|（或地位）低的入；次品", "ex_en": "I grudge paying so much for such inferior goods", "ex_zh": "花这么多钱买这种次品，我很不情愿。", "notes": "inferiority n.低等，劣等", "n": 142}, {"word": "counterfeit", "meaning": "adj.假冒的v.伪造", "ex_en": "It is against the law to counterfeit money", "ex_zh": "伪造货币是违法的。\ncounter（反）+feit（做）t反着做t伪造。", "notes": "", "n": 143}, {"word": "fake", "meaning": "adj.假冒的n.冒充者；假货", "ex_en": "On closer exami nation, the painti ng was proved to be a fake", "ex_zh": "经过更仔细的检查，那幅画被证实是贋品。", "notes": "", "n": 144}, {"word": "fragile", "meaning": "adj.易碎的；脆弱的", "ex_en": "Glass is fragile and must be han died with great care", "ex_zh": "玻璃制品易碎，必须轻拿轻放。", "notes": "", "n": 145}, {"word": "miniature", "meaning": "adj.微型的，很小的n.缩微模型；微型画", "ex_en": "The locket contained a miniature portrait of her late husband", "ex_zh": "这个盒式项链坠里有她已故丈夫的微型肖像。", "notes": "", "n": 146}, {"word": "available", "meaning": "adj可获得的", "ex_en": "Water and electric hook-ups are available and facilities are good", "ex_zh": "水和电都可以接通，设施也很不错。", "notes": "be sth.可用于做某事", "n": 147}, {"word": "durable", "meaning": "adj.耐用的，持久的", "ex_en": "Some parts of the machine have to be made from durable materials", "ex_zh": "机器里的一些部分必须由耐用材料制成。\nas®\n物品材料", "notes": "", "n": 148}];
+let curAudio = null;
+const AUDIO_DIR = 'audio/ch10';
+function play(id, suffix){
+  if (curAudio) curAudio.pause();
+  curAudio = new Audio(`${AUDIO_DIR}/${id}${suffix || ''}.mp3`);
+  if (typeof _dictHook === 'function') _dictHook();
+  curAudio.play();
+}
+function applyTheme(day){
+  document.body.classList.toggle('day', day);
+  document.getElementById('themeBtn').textContent = day ? '🌙 夜间' : '☀️ 日间';
+}
+function toggleTheme(){
+  const day = !document.body.classList.contains('day');
+  applyTheme(day);
+  try { localStorage.setItem('ielts_theme', day ? 'day' : 'night'); } catch(e) {}
+}
+applyTheme((() => { try { return localStorage.getItem('ielts_theme') === 'day'; } catch(e) { return false; } })());
+
+const esc = s => String(s == null ? '' : s);
+// 词性色: v→V红 adj→I粉 adv→绿 其余→N蓝; chip 显示词性, 释义里去掉词性缩写
+const POS_RE = /^(n\.|adj\.|adv\.|v\.|vi\.|vt\.)\s*/;
+function posOf(d){
+  const toks = [];
+  let m = d.meaning, t;
+  while ((t = m.match(POS_RE)) && toks.length < 2) { toks.push(t[1]); m = m.slice(t[0].length); }
+  return { toks, rest: m.trim() || d.meaning };
+}
+const posCls = p => p.startsWith('v') ? 'V' : p.startsWith('adj') ? 'I' : p.startsWith('adv') ? 'adv' : 'N';
+const chipOf = d => {
+  const { toks } = posOf(d);
+  if (!toks.length) return '';
+  const cls = posCls(toks[0]);
+  return `<span class="pos ${cls}">${toks.join(' ')}</span>`;
+};
+const meanOf = d => posOf(d).rest;
+
+const entryHtml = d => `
+  <div class="row1"><span class="num">${d.n}</span><span class="word" onclick="play(${d.n},'w')">${esc(d.word)}</span>${chipOf(d)}</div>
+  <div class="mean">${esc(meanOf(d))}</div>
+  ${d.ex_en ? `<div class="phrase"><span class="jp" onclick="play(${d.n},'e')">${esc(d.ex_en)}</span><span class="zh">${esc(d.ex_zh)}</span></div>` : ''}
+  ${d.notes ? `<div class="note-line">${esc(d.notes)}</div>` : ''}`;
+
+const list = document.getElementById('list');
+function render(){
+  list.innerHTML = '';
+  let colA = null, colB = null, alt = 0;
+  let row = document.createElement('div'); row.className = 'row2';
+  colA = document.createElement('div'); colA.className = 'col2';
+  colB = document.createElement('div'); colB.className = 'col2';
+  row.appendChild(colA); row.appendChild(colB); list.appendChild(row);
+  for (const d of DATA){
+    const card = document.createElement('div');
+    card.className = 'card c' + posCls((posOf(d).toks[0] || 'n'));
+    card.innerHTML = entryHtml(d);
+    (alt++ % 2 === 0 ? colA : colB).appendChild(card);
+  }
+  document.getElementById('count').textContent = DATA.length;
+}
+render();
+</script>
+
+<div id="dict">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
+  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
+  <div id="dictAns" class="hidden"></div>
+  <div class="dbtns">
+    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
+    <button class="hbtn" id="dictAuto" onclick="dictAutoToggle()">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+  </div>
+  <div style="opacity:.4;font-size:11px;">空格=重播 · →=下一个 · ←=上一个 · S=显示答案 · Esc=退出</div>
+</div>
+<script>
+/* ---- 听写 ---- */
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [];
+const DICT_DELAY = 3000;
+const dictWords = () => DATA;
+function dictToggle(){
+  dictOpen = !dictOpen;
+  document.getElementById('dict').classList.toggle('open', dictOpen);
+  if (dictOpen){ if (curAudio) curAudio.pause(); buildOrder(); dictCur = 0; showDict(); }
+  else { if (curAudio) curAudio.pause(); clearTimeout(dictT); }
+}
+function buildOrder(){
+  dictOrder = dictWords().map(d => d.n);
+  if (dictShuffleOn) for (let i = dictOrder.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [dictOrder[i], dictOrder[j]] = [dictOrder[j], dictOrder[i]]; }
+}
+const dictD = () => dictWords().find(d => d.n === dictOrder[dictCur]);
+let dictChain = false;
+const playCur = () => {
+  const d = dictD();
+  if (!d.ex_en) { play(d.n, 'w'); return; }
+  dictChain = true;
+  play(d.n, 'w');
+};
+const _dictHook = () => {
+  curAudio.onended = () => {
+    if (dictChain && dictD().ex_en) {
+      dictChain = false;
+      play(dictD().n, 'e');
+      curAudio.onended = () => { if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY); };
+    } else if (dictOpen && dictAuto) {
+      dictT = setTimeout(dictNext, DICT_DELAY);
+    }
+  };
+};
+function dictStep(dir){
+  clearTimeout(dictT); dictChain = false;
+  dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
+  showDict(); playCur();
+}
+const dictNext = () => dictStep(1);
+const dictPrev = () => dictStep(-1);
+function dictShuffle(){ dictShuffleOn = !dictShuffleOn; buildOrder(); dictCur = 0; showDict(); playCur(); }
+function dictAutoToggle(){
+  dictAuto = !dictAuto;
+  document.getElementById('dictAuto').textContent = '自动: ' + (dictAuto ? '开' : '关');
+  dictChain = false;
+  if (dictAuto) playCur();
+}
+function dictReveal(){
+  const ans = document.getElementById('dictAns');
+  if (ans.classList.contains('hidden')) { renderDictAns(); ans.classList.remove('hidden'); }
+  else ans.classList.add('hidden');
+}
+function renderDictAns(){
+  const ans = document.getElementById('dictAns');
+  const d = dictD();
+  ans.innerHTML = `<div class="dword">${esc(d.word)}</div><div class="dpos">${esc(d.m)}</div>` +
+    (d.ex_en ? `<div class="dph" onclick="play(${d.n},'e')">${esc(d.ex_en)}</div><div class="dphz">${esc(d.ex_zh)}</div>` : '');
+}
+function showDict(){
+  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  const ans = document.getElementById('dictAns');
+  ans.classList.add('hidden');
+  ans.innerHTML = '';
+}
+document.addEventListener('keydown', e => {
+  if (!dictOpen) return;
+  if (e.code === 'Space'){ e.preventDefault(); playCur(); }
+  else if (e.key === 'ArrowRight') dictNext();
+  else if (e.key === 'ArrowLeft') dictPrev();
+  else if (e.key === 's' || e.key === 'S') dictReveal();
+  else if (e.key === 'Escape') dictToggle();
+});
+</script>
+</body>
+</html>

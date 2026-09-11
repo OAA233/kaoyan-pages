@@ -1,0 +1,1068 @@
+你是词汇书数据修复工具。下面给你两部分内容：
+(A) 一本雅思词汇书某章的两栏 PDF 文字层抽取结果（左右栏交替，存在串行、断词、乱码标签如 "［彡列］"、"M列］"、"［傅!J］" 等，正常标签是 ［例］/［搭］/［记］）。
+(B) 该章解析出的、被程序标记为有问题的词条（JSON 数组）。
+
+任务：对照 (A) 的真实文字，逐条修正 (B) 中的问题词条。
+
+修正规则：
+1. 词条字段：word(英文词/词组), meaning(词性+中文释义), ex_en(英文例句), ex_zh(中文翻译), notes(搭配/派生词，可空)。字段缺失用 ""。
+2. 如果 word 是例句碎片（如 "is"、"zoo is situated"、"job is to operate an elev"），要还原成真正的词头（对照原文音标所在行），并补齐它的释义/例句。
+3. 如果 meaning 里混入了例句或邻居条目（过长、含 例/搭/记/］ 等），把例句拆到 ex_en/ex_zh，只保留词性+释义。
+4. 如果 ex_en 混入了别的例句或中文，按原文拆分，只保留该词自己的那句英文；ex_zh 只保留对应中文。
+5. 如果原文里存在某个词条被程序整条吞掉（没出现在 (B) 里但原文明显有独立音标行+释义+例句），在 fix 里用 "add" 输出它，after 填它前面那个词条的 word。
+6. 只要 (B) 里明显是重复/错误的假词条，在 delete 里列出它的 word。
+7. 原文里没有例句的词条（书本身就没印），ex_en 留 ""，不要自己编例句。绝不编造释义，宁可留空。
+
+补充要求（重要）：
+- (B) 里每个词条都有 "n" 字段（原条目编号）。fix 和 delete 里必须原样回填 "n"，否则无法定位。fix 里 "word" 填修正后的词头。
+- 如果某字段原文里确实没有（书本身没印），填空字符串 ""。
+
+只输出一个 JSON 对象，不要任何解释文字、不要 markdown 代码块，格式严格如下：
+{"fix":[{"n":13,"word":"新word","meaning":"...","ex_en":"...","ex_zh":"...","notes":"..."}],"delete":[{"n":40}],"add":[{"after":"前一个词的word","word":"...","meaning":"...","ex_en":"...","ex_zh":"...","notes":""}]}
+
+注意：不要使用任何工具、不要联网、不要读写文件；只根据下面给定的文本作答，直接把 JSON 放在回答里。
+
+================ (A) 原文 ================
+# LESSON ch10
+
+## RAW BOOK TEXT (two-column extraction, may be garbled/interleaved)
+--- PDF page 134 left column ---
+Stuff /stAf/
+n-东西；原料
+［例］I've got quite a lot of stuff to read.我有许多东西要读。
+item /'aitam/
+n.—件物品，一件商品
+［例］She could n't wedge ano ther item into the
+suitcase.她无法再往箱子里多塞东西了。
+/'m3：tj^ndaiz/
+merchandise
+n-商品
+［例］We often call these goods merchandise.我们常把这些货称为商品。
+souvenir /isuiva'nis/
+n-纪念品
+［例］These souvenirs were gathered from all parts
+of the world.这些纪念品是从世界各地收集来的。
+artefact /'aiUfaekt/
+n.人造物品；手工艺品
+(=artifact)
+［例］Software is a cultural artefact of the modern
+world.软件是现代社会的一种文化人造品。
+［记］artificial adj.人造的；矫揉造作的，虚伪的
+make)n,
+字根fact指“制作(to如factory(制作的地方t工厂)。art指“技艺故artefact是“用
+(skill)\
+技艺制作出来的东西，非天然的东西”，即“人造物品；手工艺品”。
+material /mo'tisrisl/
+n.材料，原料；人才adj.物质的
+［例］There is sin ger material among these young
+girls.在这些年轻姑娘中有当歌手的料。
+raw /ro:/
+adj.天然的，未经加工的；(感情)原始的
+stuff artefact
+item materia!
+雅思词汇真经merchandise raw
+IELTS souvenir crude
+--- PDF page 134 right column ---
+［例］Today, the main sources of raw cotton are
+China and India.如今，主要的原棉产国是中国和印度。
+［搭］raw material原材料
+crude /kru:d/
+adj.天然的，未经加工的；粗糙的m原油
+［例］The price of crude oil has come down recently.
+最近，原油的价格下降了。
+necessity /n^'ses^ti/
+n.必需品，必不可少的事物；必要
+［例］Water is a necessity of life.水是维持生命必不可少的。
+［记］necessary adj.必需的，必要的
+outfit /'autfit/
+n.全套服装；全套装备v.配备，装备
+［例】The football team were wearing orange outfits.
+这支足球队的队员都穿着一身橘色运动服。
+kit /kit/
+成套工具
+［例］There
+is a repair kit provided in the boot of
+each car.每辆车的行李箱内都备有一套修理工具。
+utensil /ju:'tensal/
+n.(家庭)用具，器皿
+［例］He took a camping utensil that can serve as a
+knife, fork and spoon to school.他把一个可以用作刀、叉和勺子的野营用具带到学校去了。
+garbage /'ga:bid3/
+Fl.［尤美］垃圾，废物
+［例］They fouled the water by throwing in garbage.
+他们向水中扔垃圾，弄脏了水。
+［搭］a garbage can垃圾箱，垃圾筒
+necessity garbage
+outfit
+kit
+utensil
+--- PDF page 135 left column ---
+rubbish /'rAbif/
+n.［尤英］垃圾，废弃物，废话
+［例］The dustman comes once a week to collect the
+rubbish.清洁工每周来收一次垃圾。
+［搭］clear away the rubbish清除垃圾
+trash /tnej/
+m［美］垃圾
+［例］Trash can do great damage to the environment.
+垃圾会对环境造成很大危害。
+recycle /irii'saikal/
+V.使再循环，回收利用；反复应用
+［例］I plan on recycling old warehouses as
+condominiums.我打算把旧仓库改建成公寓。
+cycle意为“循环；一圈”，源自表示“圆圈，轮"的希腊语，相关单词如：mono（—个）+cycle（轮）t
+（独轮车）；bi（两个）+cycle（轮）t bicycle
+monocycle
+（三个）+（轮）t（三轮车）；
+（自行车）；tri cycle tricycle
+（来自（摩托
+motor（引擎）+cycle bicycle）t motorcycle
+（骑自行车的人）；re（重复）+（循环）t
+车）；cyclist cycle
+recycle（回收利用）。
+reuse /irii'juiz/
+V.再次使用
+［例］These bottles are designed to be reused up to
+times.这些瓶子被设计成可以重复使用多达20次。
+/'lito/
+litter
+n.垃圾，废弃物v.乱丢东西
+［例］Litter covered the cinema floor after the film.
+电影结束后，电影院的地上全是垃圾。
+/weist/
+waste
+n.废物；浪费v.浪费
+［例］It's a waste of time to speak to her.和她说话是在浪费时间。
+rubbish litter sewerage
+trash waste detergent
+recycle junk lotion
+reuse landfill shampoo
+--- PDF page 135 right column ---
+/d3M）k/
+junk
+n.无用的东西，废物
+［例］What about junk food?垃圾食品怎么样？
+［记］junk food n.垃圾食品
+landfill /'laendfil/
+n.垃圾填埋地；垃圾填埋
+［例］Americans send more than million tons of
+food to the landfill every year.美国人每年将3000余万吨食物丢进垃圾填埋场。
+sewerage /'sjui9nd3/
+n.排水系统，污水处理系统；（=sewage）污水
+［例］Our town has a modern sewerage system.我们城镇有一套现代化的污水处理系统。
+detergent /di't3：d3ant/
+［例］He recommended a new detergent to me.他向我推荐一种新的洗涤剂。
+lotion /'loufan/
+n.洁肤乳；润肤乳
+［例］This lotion helps brighten and smooth your
+skin.这款乳液可帮你提亮肤色并使皮肤更光滑。
+shampoo /Jaem'pu:/
+v.用洗发剂洗（头发）n.洗发剂
+［例］She hair and then put shampoo on
+wetted her
+it.她把头发弄湿，然后抹上洗发剂。
+/soup/
+soap
+n.肥皂v.用肥皂擦洗
+your
+［例］Don't touch anything before you soap
+hands.没用肥皂洗手之前，什么都不要碰。
+［搭］a soap opera肥皂剧
+/tAb/
+tub
+n.桶，盆；［美］浴缸，浴盆
+［例］She comforted her husband by putting his feet
+water.她把丈夫的两只脚放在一桶热水
+in a tub of hot
+中，使他舒服一些。
+/pkg/
+plug
+n.塞子；插头v.把……塞住
+［例］You don't need to plug your ears since the music
+loud.你不用塞住耳朵，音乐又不是很吵。
+is not so
+/taep/
+tap
+n.旋塞，龙头
+'茎
+、»
+--- PDF page 136 left column ---
+［例］He rigged a rubber hose to the tap in the
+kitchen.他将一条橡皮软管安装在厨房的水龙头上。
+pipe /paip/
+m管子，管道；烟斗
+［例］All through
+the after noon and the eve ning, he
+went on thinking silently, and
+smoking pipe after
+pipe.整个下午乃至傍晚，他都一声不吭地思考着，抽了
+—烟斗又一烟斗的烟。
+［记】pipeline n.管道，管线
+tube /tju:b/
+n・管；（电视机的）显像管；［英］（伦敦）地铁
+【例］She passed me a tube of toothpaste.她递给我
+—管牙膏。
+mop /mop/
+n・拖把v.用拖把擦
+［例］She mopped up the water.她用拖把把水擦干净了。
+broom
+/bru:m/我进门前在地垫上蹭了蹭鞋。
+n.扫帚v.用扫帚扫
+cushion
+［例］She used a broom to sweep up the scraps of
+paper.她用一把扫帚清扫纸屑。n.软垫
+［例］She
+sweep
+/swi:p/得鼓鼓的。
+V.打扫；（迅猛地）吹走；掠过［搭］a
+［例］I saw the tops of trees moving in circles, and
+pieces of wood were swept up into the air.我看见树pad
+梢来回摆动，木片被风卷上了天空。仇衬垫，垫；便笺本短语sweep the board指（在比赛中）囊括所有奖项“,［例］She
+源于赌博。board指“赌桌"。可能源于某人独胜时将桌phone.她总在电话机旁准备便笺本和铅笔。面上所有的筹码和钱一扫（sweep）而空的情景，引申为
+“（在比赛中）囊括所有奖项”。
+blanket
+n.毛毯，毯子
+［例］She
+缩成一团。
+quilt
+n.被子
+［例］If
+up
+会把湿气都吸进去。
+sheet
+n.被单，床单；一张（纸）；薄板
+［例］We
+换一次床单。
+pipe sweep
+tube mattress
+雅思词汇真经
+mop carpet
+IELTS broom rug
+--- PDF page 136 right column ---
+mattress /'msetr^s/
+n.床垫
+［攸!I］
+A mattress is filled with feathers, cotton, or
+straw.床垫里填充着羽毛、棉花或稻草。
+carpet /'ka:p^t/
+ii.地毯，毡毯，毛毯
+［仮!J］The armchair blends well with the colour of the
+carpet.扶手椅与地毯的颜色很好地融为一体。
+［搭］red carpet（迎接贵宾用的）红地毯
+rug
+/rAg/
+n.小地毯；（盖肩或腿的）小毯子
+［例］He bargained with the merchant for an hour
+before he bought the rug.他与那商人讨价还价了一个小时才买下这块小地毯。
+mat
+/maet/
+m地垫，地席
+［例］I wiped my shoes on the mat before I came in.
+/'kuj^n/
+plumps up the sofa cushion.她把沙发垫拍
+back cushion靠背垫a sofa cushion沙发垫
+/p比d/
+认（用软材料）填塞
+always kept a pad and a pencil by the
+/'blaeijk^t/
+huddled herself in the blanket.她裹着毯子
+/kwilt/
+you air your quilt on such a wet day, it'll soak
+the moisture.如果在这么潮湿的天晾被子，被子就
+/ji：t/
+change the sheet every week.我们每个星期
+mat quilt
+cushion sheet
+pad
+blanket
+--- PDF page 137 left column ---
+/'pihu/
+pillow
+n.枕头
+［例］My daughter asked me to buy her a pillow stuffed
+with feathers.我女儿请求我给她买一个羽绒枕头。
+sponge郎人吨/
+n.海绵
+［例］That child soaks up new facts like a sponge!
+那孩子像海绵一样吸收着新知识！
+towel /'tauol/
+n.毛巾，手巾
+［例］I dry my hands and face with a towel.我用毛巾擦干了双手和面部。
+［搭］wring a towel拧毛巾
+staple /'steipal/
+n.订书钉；主要部分
+［例］He used a pair of scissors to take the staple out
+of the document.他用剪刀将订书钉从文件上取了下来。
+nail /neil/
+n.指甲；钉子v.（用钉子）钉住
+［例］Please hammer a nail into the wall.请在墙上钉个钉子。
+razor /'reiza/
+n.剃刀v.（用剃刀）剃
+［例］He razored his face clean of his beard.他用弟［j刀将脸上的胡须刮干净。
+［搭］an razor电动剃须刀
+electric
+shave /Jeiv/
+V.剃须，刮脸
+［例］I started to shave.我在脸
+lathered my face and
+上打了肥皂，然后开始刮胡子。
+［记］shaver n.理发师；电动剃须刀
+fuse /fju:z/
+n.保险丝；导火线v.（使）熔化；（使）融合
+［例］We and tin to make bronze.我们把
+fuse copper
+铜和锡熔制成青铜。
+cable /'keibal/
+m电缆；缆绳，钢索；电报；有线电视
+［例］This country has almost million subscribers
+to satellite and cable television.该国有将近1500万卫星电视和有线电视用户。
+［搭］a cable car缆车
+pillow nail cable
+sponge razor cord
+towel shave strand
+staple fuse match
+--- PDF page 137 right column ---
+/koid/
+cord
+n.细绳，粗线
+［例］Our voices depend on our vocal cords.我们的声音取决于声带。
+（catgut）”源自表示“肠线的希腊语。与cord相关的同源词是chord（［乐器的］弦；和音；心弦），strike/
+touch a chord in/with sb.就是“拨动某人心弦”“引起某人共鸣"的意思。
+strand /straend/
+缕，股；滨，岸
+［例］One strand of silk does n't make a thread; one
+tree doesn't make a forest.单丝不成线，独木不成林。
+match /maetj/
+n.火柴；比赛；匹配的人或物v.与……匹配
+［例］A high standard of play marked the match between
+the two teams.这两队之间的比赛表现了很高的技术水平。
+［搭］meet one's match遇到某人的对手
+candle /'kaendl/
+n.蜡烛
+［例］The candle was blown out by the wind.蜡烛被风吹灭了。
+［搭］light /blow out a candle点亮/吹灭蜡烛
+wax /w^eks/
+n.蜡；蜂蜡
+［例］The candle gutters when the melted wax runs
+down its sides.熔化的蜡从蜡烛的边上淌下时，烛光摇曳不定。
+portfolio /poit'fsulisu/
+n.文件夹，公事包
+［例］She has left her portfolio in a chair.她把文件夹落在椅子上了。
+w
+candle
+wax
+portfolio Chapter
+物品材料
+--- PDF page 138 left column ---
+［记］briefcase n.公事包字根port指“拿，带，运（to carry）”，如：portfolio
+（运纸［folio指“对开本”］的东西t公事包）；
+portable（可带着的t便携的）；porter（运送之人t
+搬运工）；transportation（运过去t运输）。此外，单词port有“港口”之义，同根词如：passport
+（通过港口必要的东西t护照），opportunity（当船来到港口，就可能获得补给，开展贸易，大发一笔t
+机会）。
+paperback /'peipobaek/
+n.简装书，平装书
+［例］This bookshop only sells paperbacks.这家书店只出售平装书。
+pamphlet /'paemfl^t/
+n.小册子
+［莎9］I took a few pamphlets from the travel agency.
+我从旅行社拿了几本小册子。
+［记］booklet n.小册子，资料手册leaflet n.传单
+brochure n.（广告或资料）手册
+/'tiju:/
+tissue
+n.薄绢，薄纸；组织；面巾纸
+［例］She wiped off the sweat from her face with a
+tissue.她用一张面巾纸擦掉脸上的汗水。
+/'kAvs/
+cover
+n.封面；盖子；套子
+［例］The front cover of the novel has been torn off.
+这本小说的封面已被撕掉。
+Xerox®/'ziaroks/
+n.施乐复印件
+［例］He kept the original copy and gave her only a
+Xerox.他保留下了原本，只给了她一份复印件。
+［搭］a Xerox machine施乐复印机a Xerox copy施乐复印件
+duplicate
+/'dju:pUkeit/v.重复/'dju:pUkit/n.副本，复制品
+［例］Don't duplicate what you have already done.
+不要重复你已经做过的事。
+memorandum /imemo'raendom/
+n.备忘录；建议书；（二memo）（公司或组织内部的）
+公务便条
+［例］They agreed on the memorandum.他们就这份备忘录达成了一致意见。字根memor指“记着的（mindful, remembering）”，如I:
+memorandum（备忘录）；com（加强意义）+memor（记着的）+ate（动词后缀）t提醒你记住t commemorate
+paperback Xerox
+pamphlet duplicate
+薩思词汇奠经
+tissue memorandum
+IELTS cover
+--- PDF page 138 right column ---
+（纪念）; re（回来）+member（IE着的）-回想起来
+t remember（记起，想起）。
+stationery /'steifonari/
+n.文具；信纸
+［例］Stationery can be imprinted with your message
+or logo.可以把你的信息或标志印在信纸上。
+［记［stationer n文具店；文具商
+/glu：/
+glue
+n.胶，胶水
+［例］Stick them on the card using a small amount of
+glue.用少量胶水把它们贴到卡片上。
+/ir)k/
+ink
+n.墨水，油墨
+［例］If the ink sinks in, it'll be hard to remove it.如果墨水渗入，就很难去除。
+rubber /Ia b。/
+n.橡胶；［英］橡皮擦
+［例］Rubber is the country's principal export.橡胶是该国主要的出口产品。
+scissors /'sizoz/
+n.剪刀，剪子
+［例］It is rumoured that Leonardo Da Vinci invented
+the scissors.有传言称是达•芬奇发明了剪刀。
+shear /J'ia/
+n.卜s］（尤指修剪篱笆用的）大剪刀V.剪
+［例］With a few quick snips of the shears, he pruned
+the bush.他用大剪刀几下子就把灌木给修剪好了。
+edge /迪/
+n.边缘，边；刀口
+［例］Look out! You could fall off the edge here!
+小心！你会从这边缘掉下去的！
+rim /rim/
+n.（圆形物的）外缘，边缘
+［例］Mike liked very much the golden rims of his
+glasses.麦克很喜欢他的眼镜的金色边框。
+element /'eUmsnt/
+n.（化学中的）元素；组成部分；基本部分
+［例］Both hydrogen and oxygen are elements.氢和氧都是化学元素。
+glue-s<shear+
+ink-；/^t*：'edge
+$新
+. rubber*
+scissors w
+”element垃*心；
+--- PDF page 139 left column ---
+factor /'faekts/
+n.因素，要素
+［例］Her friendly manner is an important factor in her
+rapid success.待人友好是她迅速获得成功的一重要因素。
+section /'sekj^n/
+n.部分；章，节
+［例］One section of the class was reading and the
+other section was writing.这堂课一部分讲阅读，另一部分讲写作。字根sect指“切割（to cut）",如：insect（躯体分割成一节一节的t昆虫），sect（派别；教派；党派），bisect
+（将……一分为二），intersection（相互切割，纵横切割-
+交叉；十字路口），vivisect（切割活的东西t活体解剖）
+o
+tag /taeg/
+m标签；称号
+with your name and
+［例］Don't forget to put tags
+suitcases.别忘了在你的箱子上贴上
+address on your
+写有你的姓名和住址的标签。
+label /'leib^l/
+n-标签，标贴
+［例］I read the information on the labels before
+deciding which jam to buy.在决定买哪种果酱之前，我先看了看标签上的说明。
+badge /baed3/
+n.徽章；证章；标志，象征
+［例］Wisdom is the badge of maturity.智慧是成熟的标志。
+bolt /bsult/
+n.螺栓；插销v.闩上（门、窗）
+［例］We need an eye bolt to fit this valve.我们需要
+—个有眼螺栓来固定这个阀门。
+knob /nob/
+n.球形把手；旋钮
+［例］He twisted the knob of the door and went
+inside.他转动门把手，然后走了进去。
+handle /'haendl/
+fl.柄；把手V.拿；处理
+［例］You have to press on the handle to turn it; ifs very
+stiff.你必须用力压这个把手才能转动它，它很不灵活。
+［搭］handle with care小心轻放
+factor badge shutter
+section bolt curtain
+tag knob pane
+label handle opacity
+--- PDF page 139 right column ---
+/'JAta/
+shutter
+n.百叶窗；（相机）快门v.停止（营业）
+［例］The company shuttered its Hong Kong
+investment banking business a year ago.该公司一年前停止了其香港投资银行的业务。
+/'k3：tn/
+curtain
+11.窗帘；帘；幕布V.给……装上帘子
+［例］I have eno ugh material to curtain all the windows.
+我有足够的料子，可以给所有窗户都挂上窗帘。
+pane /pein/
+n.（—块）窗玻璃
+［例］He suffered a lot of pain after he accidentally broke
+glass.他意外将一块窗玻璃打碎后，疼痛万分。
+a pane of
+opacity /su'p^s^ti/
+n.不透明性
+glass owing to
+［例］They have chosen the frosted
+opacity.他们选择了这种磨砂玻璃，因为它不透明。
+its
+［记］opaque n.不透明物adj.不透明的
+jar
+心。:/
+ii.罐，广口瓶；猛烈震动
+［例］I can't get the lid off this jar.我打不开这个广口瓶的盖子。
+barrel /'baeral/
+n.桶
+［例］The wine is aged in oak barrels.酒在橡木桶里陈化。
+bucket /'bAk^t/
+n.（有提手的）桶
+［例］One bucket of paint will be eno ugh for the
+ceiling.刷天花板，一桶油漆足够用了。
+［搭］a drop in the bucket沧海一粟
+jar
+barrel
+bucket Chapter
+物品材料
+--- PDF page 140 left column ---
+pail /peil/
+［例］My
+n.［尤美］（通常是金属或木制的）桶，提桶
+evening.我的冰箱昨晚突然出了故障。
+［例］He tipped the slops out of the pail.他倒出桶里的脏水。
+［记
+fridge
+phone /faun/
+n.冰箱
+m电话；电话机；电话听筒［例
+［例］We
+swapped phone numbers.我们交换了电话号码。取出冰箱后会变软。
+［搭］a
+cell phone /mobile phone手机make a phone
+call打电话vacuum
+on the phone在打（或接）电话
+n.真空；真
+bell /bel/
+［例
+n.钟；铃存在真空包装中。
+［例］I was roused by the sound of the bell this字根
+morning.今天早晨，我被铃声唤醒。空）；e
+［搭］ring a bell听起来有印象去岀来t
+camera /'k^maro/
+fan
+［例］You'd better declare the camera to the official. n.扇子；风扇；狂你最好向海关官员申报这台照相机。［例］He
+［搭］a built-in camera（手机）内置照相机of
+的支持者行列。
+/'poitab^l/
+portable
+adj.手提式的，便携式的switch
+［例］The new portable computers are selling like n.开关；转
+hot cakes.这款新的便携式电脑十分畅销。［例按一下开关，看看灯会不会亮。
+spotlight /'spotlait/
+n.聚光灯；聚光灯照出的光圈hurdle
+［例］The spotlight followed the dancer round the n.栏架；跨栏赛跑
+stage.聚光灯的光圈追随着舞者在舞台上转。［彳列］
+competitors
+lantern /'l^ntan/她能在跨栏赛跑中击败所有对手。
+n.提灯，灯笼
+［例］The Ice Lantern Festival held in Harbin every fence
+winter is fantastic.哈尔滨每年冬天举办的冰灯节非常棒。n.栅栏；围栏
+［例
+bulb /bAlb/栏是校园的边界。
+n.电灯泡；球茎；球茎状物［搭
+［例］An efficient bulb may lighten the load of power
+stations.—个节能灯泡也许就能减轻发电站的负荷。
+flashlight /'flaej'lait/
+n.（闪光灯的）闪光；手电筒
+［例］You can use the flashlight when you take a
+photo indoors.你在室内拍照时可用闪光灯。
+refrigerator /rilfrid3areit0/
+n.冰箱
+pail portable
+phone spotlight
+雅思词汇奠经bell lantern
+camera bulb
+IELTS■
+--- PDF page 140 right column ---
+refrigerator suddenly broke down yesterday
+］refrigeration n.冷藏
+/frid3/
+］The butter will soften out of the fridge.黄油被
+/'vaekjusm/
+空吸尘器adj.真空的
+］The food is kept in a vacuum pack.该食物被保
+vac（u）/void表示“空（empty）",如］:vacuum（真
+（出）+vacu（空）+ate（动词后缀）t空出
+t evacuate（疏散，撤离）;a（岀）+void（空）-»空
+avoid（回避）。
+/faen/
+热爱好者v.扇
+has charmed most of them into membership
+his fan club.他施展魅力，让他们大部分人都加入了他
+/switj/
+换v.转换
+］Press the switch to see if the light comes on.
+/'h3：dl/
+With her speed and agility, she can beat all her
+in the hurdle race.以她的速度和敏捷性，
+/fens/
+］That fence is the limit of the schoolyard.那道围
+］set up fences设立栅栏
+flashlight fan
+refrigerator
+switch
+fridge hurdle
+vacuum fence
+--- PDF page 141 left column ---
+pedal /'pedl/
+n.踏板v.踩踏板
+［例］One of the pedals has come off my bicycle.
+我那辆自行车有一个踏板脱落了。
+shelf /Jelf/
+m架子，搁板
+［例］The
+shelf is too weak to hold all those books.
+这架子不结实，承受不了所有那些书。
+ladder /'laedo/
+九梯子；（进步、晋升等的）阶梯
+［例］Diligence success.勤奋常常
+is often a ladder to
+是通往成功的阶梯。
+［搭］climb爬梯子
+a ladder
+lift /lift/
+V.提，抬；提高m［英］电梯（美式英语用elevator）
+［例］This box is too heavy for me to lift.这箱子太重，我抬不起来。
+stool /stu:l/
+n-凳子
+［例］Because of that stool and a pair of computers,
+I gained a best friend.因为那个凳子和两台电脑，我得到了一个最好的朋友。
+drawer /dro:/
+n-抽屉
+［例］The keys are in the back left-hand corner of the
+drawer.钥匙在抽屉最里面的左边一角。
+umbrella /Am'breh/
+n伞，雨伞
+［例】The wind blew my umbrella inside out.风把我的伞吹得翻过去了。
+pedal drawer mill
+shelf umbretla forge
+ladder raincoat alloy
+lift dredge metal
+stool can iron
+--- PDF page 141 right column ---
+raincoat /'reinkout/
+n.雨衣
+［例］He had no raincoat on when the rain started.
+开始下雨时，他没穿雨衣。
+dredge /dred3/
+n.挖泥船，挖掘机v.挖掘；撒（糖、面粉等）
+［例］She dredged a little sugar over the cake.她在蛋糕上撒了点糖。
+can /kaen/
+V.把（食品）装罐保存n.罐头，听
+［例］She was carrying an armful of cat-food cans and
+herself.她正抱着一堆猫食罐头自言自语。
+talking to
+mill /mil/
+n・磨粉机；磨坊v.碾碎；无目的地乱转
+［例］Corn mill.谷物在磨坊里
+is ground into flour in a
+被磨成粉。
+forge /fo：d3/
+m锻铁炉v.锻造；伪造
+［例］These machine parts have been forged with
+the finest steel.这些机器零件是用优质钢材锻造的。
+alloy /空
+bi/
+n.合金；（金属的）成色
+［例］Brass is an alloy of copper and zinc.黄铜是铜和锌的合金。
+metal /'metl/
+n金属
+［例］A gust of wind pried loose a section of sheet-metal
+roofing.—阵狂风把一块用来铺屋顶的板料刮松动了。
+/'aisn/
+iron
+m铁；熨斗v.熨，烫
+［例］They an a lysed the ore and found iron in it.
+他们分析了该矿砂，从中发现了铁。
+/led/
+lead
+n.铅
+［例］Lead is one of the softer metals.铅是硬度较低的金属之一。
+/bra:s/
+brass
+n.黄铜；黄铜制品
+［例］Brass is formed by the fusion of copper and
+zinc.黄铜是由铜和锌熔合制成的。
+w
+lead
+brass
+Chapter
+物品材料
+--- PDF page 142 left column ---
+bronze /bronz/［例］Scientists
+n.青铜；青铜艺术品
+more
+［例］We fuse copper and tin to make bronze.我们把铜和锡熔制成青铜。
+fabric
+n.织物，布料
+［例］The
+breathes.这件短上衣穿着很舒适，因为这种布料透气。
+/si'ment/
+cement
+11.水泥；胶接剂V.使黏结
+［例］The mixed cement has been hoisted up the
+building.拌好的水泥已被吊上建筑物。knit
+［记］cementer n.水泥工人V.编织，针织
+［例］My
+pitch /pitjV给我织了一些袜子。
+n.沥青
+［例］They used pitch to cover roofs.他们用沥青涂盖weave
+屋顶。V.编织；编造
+［例］We
+lime /laim/我们在为英雄编织花环。
+n.石灰
+［例］Lime in the soil is detrimental to some plants.
+土壤里的石灰对某些植物有害。canvas
+n.帆布；油画布
+plaster /'plaists/［例］They
+n.灰泥；熟石膏他们肩上扛着帆布袋。
+［傅!I］The plaster had started to come away from the
+wall.灰泥已经开始从墙上脱落。linen
+n.亚麻布；亚麻织品
+［例］Low
+leather /'leds/texture,
+皮革；（尤指骑摩托车者穿的）皮衣使亚麻布质地硬而光滑，但也容易起皱纹。
+•
+［例］Wax polish preserves wood and leather.上光蜡［搭］fine
+可以保护木材和皮革。
+cotton
+plastic /'plaestik/n.棉；棉线；棉布
+n.塑料adj.有塑性的；塑料的［例］The
+［例］Many items in daily use are made out of plastic.棉花已摘下来，并已称重。很多日常生活用品是塑料制的。
+fibre /'faiba/nylon
+（二竹ber）n.纤维；纤维素n.尼龙
+--- PDF page 142 right column ---
+are recommending that people eat
+fibre.科学家建议人们多吃些纤维素。
+/'faebrik/
+jacket is comfortable because the fabric
+/mt/
+grandmother knitted me some socks.祖母
+/wiiv/
+are weaving garlands of flowers for heroes.
+/'kaenvas/
+carried canvas sacks over their shoulders.
+/"InUn/
+elasticity, imparting a hard and smooth
+makes linen subject to wrinkling.较差的弹性
+linen细亚麻布fresh linen干净的床单和枕套
+/'kotn/
+cotton has been picked and weighed up.
+/'naihn/
+--- PDF page 143 left column ---
+［例］This dress is 80%nylon.这件连衣裙的料子含有
+80%的尼龙。
+/'lAmbs/
+lumber
+n.木材，木料
+［例］Forested areas have been expanding every
+year, with the amount of the increase in standing
+timber greater than that of felled lumber.森林面积每年都在增加，常备林木的增长量大于被砍伐的木材量。
+wooden /'wudn/
+adj.木制的；呆板的
+［例There is a wooden porch over the sidewalk.
+人行道上有一个木制的门廊。
+mine /main/
+n.矿，矿井；地雷
+［例］The mine was closed owing to exhaustion.
+这个矿井因矿源枯竭而被关闭。
+［记］miner n.矿工mineral n.矿物adj.矿物的
+pit /pit/
+m深坑；煤矿；潜在危险
+［例］When you fall into a pit, you either die or get
+out.若你落入险境，要么等死，要么设法逃脱。
+fuel /'fju:ol/
+n.燃料v.给……加燃料
+［例］We aim for a 10%saving in fuel.我们的目标是节省10%的燃料。
+［搭］add fuel to给...加燃料burn up fuel烧完燃料lack fuel缺少燃料
+lubricate /'luibrikeit/
+v.润滑，加润滑油于
+［例］
+We find it necessary to lubricate machines.
+我们发现给机器加润滑油是必要的。
+［搭］lubricating oil润滑油
+diamond /'daiamsnd/
+n.金刚石，钻石；菱形
+［例］The diamond ring on her fin ger glittered in the
+light.她手指上的钻石戒指在光下闪闪发光。
+crystal /'kristl/
+n.水晶；结晶，晶体
+［例］People imitate diamonds with crystal.人们用水晶仿造钻石。
+lumber
+fuel inferior
+wooden
+lubricate counterfeit
+mine
+diamond fake
+P»t crystal fragile
+--- PDF page 143 right column ---
+/in'fisrio/
+inferior
+adj.差的；下级的，低等的n.级&|（或地位）低的入；次品
+［例］I grudge paying so much for such inferior
+goods.花这么多钱买这种次品，我很不情愿。
+［记］inferiority n.低等，劣等
+counterfeit /'kauntafit/
+adj.假冒的v.伪造
+［例］It is against the law to counterfeit money.伪造货币是违法的。
+counter（反）+feit（做）t反着做t伪造。
+fake /feik/
+adj.假冒的n.冒充者；假货
+［例］On closer exami nation, the painti ng was proved
+to be a fake.经过更仔细的检查，那幅画被证实是贋品。
+fragile /'fr^a il/
+adj.易碎的；脆弱的
+［例］Glass is fragile and must be han died with great
+care.玻璃制品易碎，必须轻拿轻放。
+miniature /'minitjo/
+adj.微型的，很小的n.缩微模型；微型画
+［例］The
+locket contained a miniature portrait of her late
+husband.这个盒式项链坠里有她已故丈夫的微型肖像。
+available /a'veilabal/
+adj可获得的
+［例］Water
+and electric hook-ups are available and
+facilities are good.水和电都可以接通，设施也很不错。
+［搭］be sth.可用于做某事
+available to do
+durable /'djusrob^l/
+adj.耐用的，持久的
+［例］Some parts of the machine have to be made
+from durable materials.机器里的一些部分必须由耐用材料制成。
+as®
+miniature
+available
+durable Chapter
+物品材料
+--- PDF page 144 left column ---
+
+--- PDF page 144 right column ---
+
+--- PDF page 145 left column ---
+Fashions fade, style is eternal.—Yves Saint Laurent
+时尚易朽，风格永存。——伊夫•圣洛朗
+--- PDF page 145 right column ---
+
+
+## PARSED ENTRIES FLAGGED AS PROBLEMATIC
+[
+ {
+  "word": "detergent",
+  "meaning": "",
+  "ex_en": "He recommended a new detergent to me",
+  "ex_zh": "他向我推荐一种新的洗涤剂。",
+  "notes": "",
+  "n": 23,
+  "_why": "empty-meaning"
+ },
+ {
+  "word": "tube",
+  "meaning": "n・管；（电视机的）显像管；［英］（伦敦）地铁 【例］She passed me a tube of toothpaste.她递给我 —管牙膏。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 31,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "sweep",
+  "meaning": "得鼓鼓的。 V.打扫；（迅猛地）吹走；掠过",
+  "ex_en": "I saw the tops of trees moving in circles, and pieces of wood were swept up into the air",
+  "ex_zh": "我看见树pad\n梢来回摆动，木片被风卷上了天空。仇衬垫，垫；便笺本短语sweep the board指（在比赛中）囊括所有奖项“, She\n源于赌博。board指“赌桌\"。可能源于某人独胜时将桌phone.她总在电话机旁准备便笺本和铅笔。面上所有的筹码和钱一扫（sweep）而空的情景，引申为\n“（在比赛中）囊括所有奖项”。\nn.毛毯，毯子 She\n缩成一团。\nn.被子 If\nup\n会把湿气都吸进去。\nn.被单，床单；一张（纸）；薄板 We\n换一次床单。",
+  "notes": "a",
+  "n": 34,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "mattress",
+  "meaning": "n.床垫 ［攸!I］ straw.床垫里填充着羽毛、棉花或稻草。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 35,
+  "_why": "meaning-has-tag-residue"
+ },
+ {
+  "word": "plumps up the sofa cushio",
+  "meaning": "n.她把沙发垫拍 back cushion靠背垫a sofa cushion沙发垫 /p比d/ 认（用软材料）填塞",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 39,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "a pencil by the",
+  "meaning": "huddled herself in the blanket.她裹着毯子",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 40,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "you air your quilt on suchthe",
+  "meaning": "moisture.如果在这么潮湿的天晾被子，被子就",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 41,
+  "_why": "spaced-head"
+ },
+ {
+  "word": "cha",
+  "meaning": "nge the sheet every week.我们每个星期 pad",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 42,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "pillow",
+  "meaning": "n.枕头",
+  "ex_en": "My daughter asked me to buy her a pillow stuffed with feathers",
+  "ex_zh": "我女儿请求我给她买一个羽绒枕头。\nsponge郎人吨/\nn.海绵 That child soaks up new facts like a sponge!\n那孩子像海绵一样吸收着新知识！",
+  "notes": "",
+  "n": 43,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "pamphlet",
+  "meaning": "n.小册子 ［莎9］I took a few pamphlets from the travel agency. 我从旅行社拿了几本小册子。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "booklet n.小册子，资料手册leaflet n.传单 brochure n.（广告或资料）手册",
+  "n": 60,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "cover",
+  "meaning": "n.封面；盖子；套子",
+  "ex_en": "The front cover of the novel has been torn off",
+  "ex_zh": "这本小说的封面已被撕掉。\nn.施乐复印件 He kept the original copy and gave her only a\nXerox.他保留下了原本，只给了她一份复印件。",
+  "notes": "a Xerox machine施乐复印机a Xerox copy施乐复印件",
+  "n": 62,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "With her speed andin",
+  "meaning": "the hurdle race.以她的速度和敏捷性， ］That fence is the limit of the schoolyard.那道围 ］set up fences设立栅栏",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 98,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "bronze",
+  "meaning": "n.青铜；青铜艺术品",
+  "ex_en": "Scientists more We fuse copper and tin to make bronze",
+  "ex_zh": "我们把铜和锡熔制成青铜。\nn.织物，布料 The\nbreathes.这件短上衣穿着很舒适，因为这种布料透气。",
+  "notes": "",
+  "n": 116,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "ceme",
+  "meaning": "nt 11.水泥；胶接剂V.使黏结",
+  "ex_en": "The mixed cement has been hoisted up the building",
+  "ex_zh": "拌好的水泥已被吊上建筑物。knit My\npitch /pitjV给我织了一些袜子。\nn.沥青 They used pitch to cover roofs.他们用沥青涂盖weave\n屋顶。V.编织；编造 We",
+  "notes": "cementer n.水泥工人V.编织，针织",
+  "n": 117,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "lime",
+  "meaning": "我们在为英雄编织花环。 n.石灰",
+  "ex_en": "Lime in the soil is detrimental to some plants",
+  "ex_zh": "土壤里的石灰对某些植物有害。canvas\nn.帆布；油画布",
+  "notes": "",
+  "n": 118,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "plaster",
+  "meaning": "n.灰泥；熟石膏他们肩上扛着帆布袋。",
+  "ex_en": "They ［",
+  "ex_zh": "傅!I］The plaster had started to come away from the\nwall.灰泥已经开始从墙上脱落。linen\nn.亚麻布；亚麻织品 Low",
+  "notes": "",
+  "n": 119,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "leather",
+  "meaning": "皮革；（尤指骑摩托车者穿的）皮衣使亚麻布质地硬而光滑，但也容易起皱纹。 •",
+  "ex_en": "Wax polish preserves wood and leather",
+  "ex_zh": "上光蜡",
+  "notes": "可以保护木材和皮革。",
+  "n": 120,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "jacket is comfortable bec",
+  "meaning": "",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 123,
+  "_why": "empty-meaning"
+ },
+ {
+  "word": "are weaving garlan",
+  "meaning": "",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 125,
+  "_why": "empty-meaning"
+ },
+ {
+  "word": "carried canvas sacks over their shoul",
+  "meaning": "",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 126,
+  "_why": "empty-meaning"
+ },
+ {
+  "word": "el",
+  "meaning": "makes linen subject to wrinkling.较差的弹性 linen细亚麻布fresh linen干净的床单和枕套",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 127,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "cotton has been picked and weighed",
+  "meaning": "up.",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 128,
+  "_why": "spaced-head"
+ },
+ {
+  "word": "lumber",
+  "meaning": "n.木材，木料",
+  "ex_en": "Forested areas have been expanding every year, with the amount of the increase in standing timber greater than that of felled lumber",
+  "ex_zh": "森林面积每年都在增加，常备林木的增长量大于被砍伐的木材量。",
+  "notes": "",
+  "n": 129,
+  "_why": "ex-en-too-long"
+ }
+]

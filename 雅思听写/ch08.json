@@ -1,0 +1,498 @@
+[
+ {
+  "word": "language",
+  "meaning": "n.语言",
+  "ex_en": "His misunderstanding of language was the primary cause of his other problems",
+  "ex_zh": "他对语言的误解是引起其他问题的主要原因。",
+  "notes": "dy language身体语言，肢体语言",
+  "n": 1
+ },
+ {
+  "word": "symbol",
+  "meaning": "象征；符号，记号",
+  "ex_en": "To them, the monarchy is the special symbol of nationhood.",
+  "ex_zh": "在他们看来，君主制是独立国地位的特殊象征。",
+  "notes": "symbolise(二symbolize)v.象征",
+  "n": 2
+ },
+ {
+  "word": "gesture",
+  "meaning": "n手势，姿势",
+  "ex_en": "He put his arm round her in a protective gesture",
+  "ex_zh": "他用一只手臂围住她，做出保护的姿势。",
+  "notes": "",
+  "n": 3
+ },
+ {
+  "word": "handwriting",
+  "meaning": "n.笔迹；书写",
+  "ex_en": "The address was in Arina's handwriting",
+  "ex_zh": "地址是安娜的笔迹。",
+  "notes": "",
+  "n": 4
+ },
+ {
+  "word": "pictograph",
+  "meaning": "n-象形文字",
+  "ex_en": "Gen erally speaki ng, the pictograph is the first text.—",
+  "ex_zh": "般而言，象形文字是最早的文字。",
+  "notes": "",
+  "n": 5
+ },
+ {
+  "word": "wedge",
+  "meaning": "n.楔子；楔形物；楔形文字",
+  "ex_en": "Put a wedge under the door so that it will stay open",
+  "ex_zh": "在门底下塞一块楔子，让门能保持开着。",
+  "notes": "wedgy adj.楔形的",
+  "n": 6
+ },
+ {
+  "word": "knot",
+  "meaning": "m（绳、线等的）结；（树枝上的）节子",
+  "ex_en": "He made a knot in the rope",
+  "ex_zh": "他在绳子上打了个结。",
+  "notes": "cut the knot快刀斩乱麻",
+  "n": 7
+ },
+ {
+  "word": "linguistics",
+  "meaning": "n-语言学",
+  "ex_en": "He linguistics",
+  "ex_zh": "他从",
+  "notes": "",
+  "n": 8
+ },
+ {
+  "word": "semantic",
+  "meaning": "n-语义的",
+  "ex_en": "There are two kinds of puns, phonetic pun and semantic pun",
+  "ex_zh": "双关语分为谐音双关和语义双关两类。",
+  "notes": "",
+  "n": 9
+ },
+ {
+  "word": "syntax",
+  "meaning": "n.句法",
+  "ex_en": "Let's investigate the syntax of Chinese",
+  "ex_zh": "让我们研究一下汉语的句法。",
+  "notes": "",
+  "n": 10
+ },
+ {
+  "word": "grammar",
+  "meaning": "n.语法；语法书",
+  "ex_en": "He was known for his poor grammar and punctuation",
+  "ex_zh": "他不通语法和标点的用法，这是出了名的。",
+  "notes": "grammatical adj.语法上的",
+  "n": 11
+ },
+ {
+  "word": "phonetics",
+  "meaning": "n.语音学",
+  "ex_en": "Daniel Jones is generally referred to be the foremost authority on phonetics",
+  "ex_zh": "丹尼尔・琼斯通常被认为是语音学方面最具权威性的人。",
+  "notes": "phonetic adj.语音的",
+  "n": 12
+ },
+ {
+  "word": "pronounce",
+  "meaning": "v.发……的音；宣布",
+  "ex_en": "Did I pronounce your name correctly?",
+  "ex_zh": "我念对你的名字了吗？",
+  "notes": "pronunciation n.发音pronounced adj.显著的；表达明确的",
+  "n": 13
+ },
+ {
+  "word": "intonation",
+  "meaning": "n.语调",
+  "ex_en": "Some questions are spoken with a rising intonation.",
+  "ex_zh": "一些疑问句是以升调说出来的。",
+  "notes": "",
+  "n": 14
+ },
+ {
+  "word": "inflection",
+  "meaning": "n语调的抑扬变化",
+  "ex_en": "She spoke in a low voice, always without inflection",
+  "ex_zh": "她的嗓音低，说话总是毫无抑扬变化。",
+  "notes": "",
+  "n": 15
+ },
+ {
+  "word": "dialect",
+  "meaning": "n・方言，地方话",
+  "ex_en": "e dialect is spoken principally in the southern areas",
+  "ex_zh": "这种方言主要在南部地区使用。\ndia（在……之间）+lect（说）t人与人之间的对话交流\nT区域性的语言T方言°",
+  "notes": "",
+  "n": 16
+ },
+ {
+  "word": "accent",
+  "meaning": "n.重音；口音；读音符号",
+  "ex_en": "He speaks with a strong southern accent",
+  "ex_zh": "他说话带有很浓的南方口音。\nac（加强意义）+cent（歌唱），源自从希腊语借译过来的拉丁语单词。希腊原词可能指古希腊诗篇中的音高安排，进而得来“某种特定的发音”或“用于强调某音节的东西“之义，引申得来“重音；口音；读音符号”的含义。",
+  "notes": "",
+  "n": 17
+ },
+ {
+  "word": "utterance",
+  "meaning": "n.说话；话语",
+  "ex_en": "His every utterance will be scrutinised",
+  "ex_zh": "他说的每句话都会被仔细审查。",
+  "notes": "",
+  "n": 18
+ },
+ {
+  "word": "oral",
+  "meaning": "adj.口头的",
+  "ex_en": "Students of English should have a lot of oral ckills",
+  "ex_zh": "学英语的学生应多做口头练习。",
+  "notes": "",
+  "n": 19
+ },
+ {
+  "word": "verbal",
+  "meaning": "口头的；言语的 adj.",
+  "ex_en": "Don't be afraid of verbal abuse or criticism",
+  "ex_zh": "不要害怕口头上的辱骂或批评。",
+  "notes": "nonverbal adj.不用语言的",
+  "n": 20
+ },
+ {
+  "word": "syllable",
+  "meaning": "n-音节",
+  "ex_en": "The stress is on the last syllable",
+  "ex_zh": "重音在最后一个音节上。",
+  "notes": "",
+  "n": 21
+ },
+ {
+  "word": "phoneme",
+  "meaning": "n.音位",
+  "ex_en": "In actual speech, a phoneme is realised phonetically as a certain phone",
+  "ex_zh": "在实际会话中,音位以某个音素的形式通过语音体现出来。",
+  "notes": "",
+  "n": 22
+ },
+ {
+  "word": "vowel",
+  "meaning": "n-元音",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 23
+ },
+ {
+  "word": "consonant",
+  "meaning": "n.辅音",
+  "ex_en": "These are common consonant clusters at the beginning of words",
+  "ex_zh": "这些是单词开头常见的辅音组合。",
+  "notes": "",
+  "n": 24
+ },
+ {
+  "word": "alphabet",
+  "meaning": "n.字母表，（一种语言的）全部字母",
+  "ex_en": "Q comes between P and R in the English alphabet",
+  "ex_zh": "在英语字母表中，Q在P和R之间。",
+  "notes": "alphabetical adj.按字母表顺序的",
+  "n": 25
+ },
+ {
+  "word": "logogram",
+  "meaning": "n.词符，缩记符",
+  "ex_en": "ACP is the logogram of English of the African, Caribbean and Pacific states.",
+  "ex_zh": "ACP是非洲国家、加勒比海国家和太平洋国家的英文缩记符。",
+  "notes": "",
+  "n": 26
+ },
+ {
+  "word": "vocabulary",
+  "meaning": "n.词汇",
+  "ex_en": "His vocabulary was sound and his grammar was excellent",
+  "ex_zh": "他的词汇丰富，语法也很精通。来自VOC（声音），词源同voiceo",
+  "notes": "",
+  "n": 27
+ },
+ {
+  "word": "dictionary",
+  "meaning": "n.词典，字典，辞典",
+  "ex_en": "The dictionary is a vast treasure trove of information",
+  "ex_zh": "那本词典是巨大的信息宝库。",
+  "notes": "diction n.吐字；措辞",
+  "n": 28
+ },
+ {
+  "word": "idiom",
+  "meaning": "n.习语",
+  "ex_en": "\"Never too old to learn/z is an idiom",
+  "ex_zh": "到老,\n学到老”是个习语。\n语言演化",
+  "notes": "",
+  "n": 29
+ },
+ {
+  "word": "phrase",
+  "meaning": "n.短语；习语",
+  "ex_en": "The phrase was not meant to be taken seriously",
+  "ex_zh": "该说法是不必当真的。",
+  "notes": "",
+  "n": 30
+ },
+ {
+  "word": "cl",
+  "meaning": "n.分句，从句；条款",
+  "ex_en": "A con fide ntiality clause was added to the contract",
+  "ex_zh": "合同附加了一条保密条款。",
+  "notes": "",
+  "n": 31
+ },
+ {
+  "word": "expression",
+  "meaning": "n.词语；表达；表情",
+  "ex_en": "Her expression of gratitude was simple and touching",
+  "ex_zh": "她把感激之情表达得简单而动人。",
+  "notes": "",
+  "n": 32
+ },
+ {
+  "word": "tense",
+  "meaning": "n.时态adj.紧张的",
+  "ex_en": "Dart who had at first been very tense, at last z relaxed",
+  "ex_zh": "达特起初非常紧张，最后放松下来。",
+  "notes": "tensions张力，拉力；紧张，不安v.拉紧",
+  "n": 33
+ },
+ {
+  "word": "root",
+  "meaning": "n.词根，字根；根源",
+  "ex_en": "The word\"intoxicated\"comes from the same root as the word\"detoxify\"",
+  "ex_zh": "单词intoxicated和单词\ndetoxify有同样的字根。",
+  "notes": "",
+  "n": 34
+ },
+ {
+  "word": "prefix",
+  "meaning": "\"•词首，前缀；前置代号",
+  "ex_en": "To make calls from Canada, use the prefix 01133 before the numbers given here",
+  "ex_zh": "如果从加拿大打电话过来，要在我们给的号码前加拨01133。",
+  "notes": "",
+  "n": 35
+ },
+ {
+  "word": "suffix",
+  "meaning": "n.后缀，词尾；尾标",
+  "ex_en": "These ships were all numbered with the same suffix",
+  "ex_zh": "这些船都有编号，且尾标是一样的。",
+  "notes": "",
+  "n": 36
+ },
+ {
+  "word": "abbreviation",
+  "meaning": "n.缩写形式",
+  "ex_en": "BBC is an abbreviation for British Broadcasting Corporation.",
+  "ex_zh": "BBC是“英国广播公司”的缩写。",
+  "notes": "abbreviate v.缩写，缩简",
+  "n": 37
+ },
+ {
+  "word": "synonym",
+  "meaning": "n-同义词",
+  "ex_en": "Don't mix up this pair of synonyms",
+  "ex_zh": "不要混淆这对同义词。",
+  "notes": "",
+  "n": 38
+ },
+ {
+  "word": "antonym",
+  "meaning": "n-反义词",
+  "ex_en": "\"Happy\"is an antonym of\"sad\".“",
+  "ex_zh": "快乐”是“悲伤”的反义词。",
+  "notes": "",
+  "n": 39
+ },
+ {
+  "word": "noun",
+  "meaning": "n名词",
+  "ex_en": "The word\"person\"is a countable noun, person",
+  "ex_zh": "这个词是个可数名词。",
+  "notes": "",
+  "n": 40
+ },
+ {
+  "word": "singular",
+  "meaning": "n.单数adj.单数的；非凡的",
+  "ex_en": "The young man has a singular ear for music",
+  "ex_zh": "这个年轻人对音乐有非凡的鉴赏力。",
+  "notes": "single adj.单个的",
+  "n": 41
+ },
+ {
+  "word": "plur",
+  "meaning": "al m复数adj.复数的；多元的",
+  "ex_en": "A plural marriage is forbidden by many countries",
+  "ex_zh": "一夫多妻或一妻多夫形式的婚姻被许多国家禁止。 He always put the stress on the pronoun.他总是重读代词。",
+  "notes": "pluralism n.多元主义；多元化；兼职 a plural society多元社会 fi.代词",
+  "n": 42
+ },
+ {
+  "word": "verb",
+  "meaning": "n.动词",
+  "ex_en": "A sentence usually contains a subject and a verb",
+  "ex_zh": "一个句子通常包含主语和动词。",
+  "notes": "",
+  "n": 43
+ },
+ {
+  "word": "adjective",
+  "meaning": "n.形容词",
+  "ex_en": "The function of an adjective is to describe or add to the meaning of a noun.",
+  "ex_zh": "形容词的作用是描述某个名词或对其含义进行补充说明。",
+  "notes": "",
+  "n": 44
+ },
+ {
+  "word": "adverb",
+  "meaning": "n.副词",
+  "ex_en": "Adverb is to describe a verb or an action.",
+  "ex_zh": "副词是用来描述一个动词或动作的。",
+  "notes": "",
+  "n": 45
+ },
+ {
+  "word": "preposition",
+  "meaning": "n.介词",
+  "ex_en": "You should cross out this preposition in the noun adjective singular adverb plural preposition pronoun verb",
+  "ex_zh": "",
+  "notes": "",
+  "n": 46
+ },
+ {
+  "word": "con sistent",
+  "meaning": "adj.—致的；（观点或看法）连贯的",
+  "ex_en": "The policies which will be put into place are clear and consistent",
+  "ex_zh": "将要实施的这些政策内容清楚连贯。",
+  "notes": "inconsistent adj.不一致的consist v.由...组成与...一致* be consistent with",
+  "n": 47
+ },
+ {
+  "word": "complicated",
+  "meaning": "adj.复杂的",
+  "ex_en": "The business is a large, complicated",
+  "ex_zh": "该企业是一个大而复杂的有机组织。",
+  "notes": "complicate v.使复杂化",
+  "n": 48
+ },
+ {
+  "word": "complex",
+  "meaning": "adj.复杂的",
+  "ex_en": "As tools have become more and more complex, we need more complex controls to control them",
+  "ex_zh": "随着工具变得越来越复杂，我们需要更复杂的操控装置来控制它们。\nV.编纂 It takes years of hard work to compile a good\ndictionary.编纂一部好词典需要数年的艰苦工作。",
+  "notes": "",
+  "n": 49
+ },
+ {
+  "word": "version",
+  "meaning": "n.译本；版本",
+  "ex_en": "These books are Chinese versions of Shakespeare",
+  "ex_zh": "这些书是莎士比亚作品的中文译本。\nV.翻译；（使）转变 No matter how well a poem is translated,\n无论一首诗被翻译得多好，原作中的一些神韵也会丢失。",
+  "notes": "translator n.翻译者 translate from Chinese into English从中文翻译成英文",
+  "n": 50
+ },
+ {
+  "word": "paraphrase",
+  "meaning": "v./n.意译，改述",
+  "ex_en": "The teacher asked his students to paraphrase the long sentence",
+  "ex_zh": "老师让学生改述这个长句。",
+  "notes": "",
+  "n": 51
+ },
+ {
+  "word": "interpret",
+  "meaning": "口译；解释，说明；领会，理解 V.",
+  "ex_en": "He interpreted the silence as con tempt",
+  "ex_zh": "他把这沉默看作轻蔑的表示。",
+  "notes": "interpretationn.口译；解释interpreter n.口译员",
+  "n": 52
+ },
+ {
+  "word": "narrate",
+  "meaning": "V.讲（故事），叙述 I讦e story to me in the",
+  "ex_en": "The sailor narrated his tavern",
+  "ex_zh": "那个水手在酒馆里向我讲述了他的人生经历。",
+  "notes": "narration n.叙述，讲述",
+  "n": 53
+ },
+ {
+  "word": "illumin",
+  "meaning": "ate V.阐释，说明；照亮",
+  "ex_en": "We use pictures and drawings to illuminate our subject",
+  "ex_zh": "我们用照片和图画来阐明主题。前缀il表示“进入”，字根lumin表示“光\"。本义是“照亮”，引申义是“阐释，说明\"。\nV.译解；辨认 We can decipher the code intercepted by the\nbroadcasting station.我们能破译电台截获的密码。",
+  "notes": "",
+  "n": 54
+ },
+ {
+  "word": "eloquence",
+  "meaning": "n.雄辩；流利的口才",
+  "ex_en": "The audienee are struck by her simple, spellbinding eloquence",
+  "ex_zh": "观众们被她那简洁、迷人的雄辩打动了。",
+  "notes": "eloquent adj.雄辩的，有口才的",
+  "n": 55
+ },
+ {
+  "word": "communicate",
+  "meaning": "V.沟通，交流；传达",
+  "ex_en": "We communicated mostly by e-mail",
+  "ex_zh": "我们主要通过电子邮件来交流。",
+  "notes": "communication n.通信；交流 communicate with与...沟通",
+  "n": 56
+ },
+ {
+  "word": "discussion",
+  "meaning": "n.讨论，谈论",
+  "ex_en": "After a lot of discussion among the directors, the matter was settled in the end",
+  "ex_zh": "经过董事们的大量讨论，问题最终得到解决。",
+  "notes": "discuss V.讨论字根cuss表示“摇（to shake）\",如：dis（分开）+ cuss（摇）t摇散t意见不---discuss（讨论）；per （完全的）+cuss（摇）t percuss（轻敲）；percussion （打击乐器）O",
+  "n": 57
+ },
+ {
+  "word": "brainstorm",
+  "meaning": "n.集体自由讨论，头脑风暴v.集思广益，进行头脑风暴",
+  "ex_en": "Managers get together and brainstorm a more permanent solution to the problem.",
+  "ex_zh": "经理们聚在一起，群策群力，设法找到一个更长久的解决办法。",
+  "notes": "",
+  "n": 58
+ },
+ {
+  "word": "debate",
+  "meaning": "v./n.辩论；争论，讨论",
+  "ex_en": "The government is debating about the education laws",
+  "ex_zh": "政府正在就教育法进行讨论。",
+  "notes": "debatable adj.有争议的",
+  "n": 59
+ },
+ {
+  "word": "commenta ry",
+  "meaning": "n.评论，评注；批评；实况报道",
+  "ex_en": "The con elusion of the commentary really hit the bulKs-eye",
+  "ex_zh": "评论最后的结论真是一语破的。",
+  "notes": "comment n.意见，评论v.发表意见，评论",
+  "n": 60
+ },
+ {
+  "word": "negotiate",
+  "meaning": "v.协商，谈判",
+  "ex_en": "We are not about to negotiate with terrorists.",
+  "ex_zh": "我们是不会和恐怖分子谈判的。",
+  "notes": "negotiation n.协商，谈判 negotiate about就...进行协商",
+  "n": 61
+ },
+ {
+  "word": "contention",
+  "meaning": "n.争论，争辩；观点",
+  "ex_en": "My contention is that the scheme will never work",
+  "ex_zh": "我的观点是这个方案行不通。",
+  "notes": "content n.内容",
+  "n": 62
+ }
+]

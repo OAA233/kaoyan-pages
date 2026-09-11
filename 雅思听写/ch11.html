@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雅思词汇真经 Ch.11 时尚潮流</title>
+<style>
+  body {
+    --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
+    --num: #8b8577; --num-border: #5a564d; --muted: .55;
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif;
+    background: var(--bg); color: var(--fg);
+    margin: 0; padding: 14px 16px; max-width: 1080px;
+    transition: background .2s, color .2s;
+  }
+  body.day {
+    --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8;
+    --num: #8a8373; --num-border: #c4bda9; --muted: .6;
+  }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
+  .hbtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px;
+  }
+  .hbtn:hover { opacity: .8; }
+  .stats { display: inline; gap: 8px; font-size: 12px; opacity: .7; }
+  .row2 { display: flex; gap: 10px; align-items: flex-start; }
+  .col2 { flex: 1; min-width: 0; }
+  .card {
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 9px 12px; background: var(--card);
+    border-left: 5px solid #555; margin-bottom: 10px;
+  }
+  .card.cV { border-left-color: #e5484d; }
+  .card.cI { border-left-color: #d63384; }
+  .card.cN { border-left-color: #1971c2; }
+  .card.cadv { border-left-color: #2b8a3e; }
+  .row1 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .num {
+    font-size: 11px; font-weight: 700; color: var(--num);
+    border: 1.5px solid var(--num-border); border-radius: 50%;
+    width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: center;
+  }
+  .word { font-size: 19px; font-weight: 700; cursor: pointer; }
+  .word:hover { text-decoration: underline; }
+  .pos { font-size: 11px; font-weight: 700; padding: 2px 6px; white-space: nowrap; border-radius: 7px; color: #fff; }
+  .pos.V { background: #e5484d; }
+  .pos.I { background: #d63384; }
+  .pos.N { background: #1971c2; }
+  .pos.adv { background: #2b8a3e; }
+  .mean { margin-top: 1px; font-size: 13px; margin-left: 32px; }
+  .phrase { margin-top: 6px; font-size: 13px; margin-left: 32px; }
+  .phrase .jp { font-weight: 600; cursor: pointer; }
+  .phrase .jp:hover { text-decoration: underline; }
+  .phrase .zh { display: block; opacity: var(--muted); margin: 1px 0 0; }
+  .note-line { margin-top: 4px; font-size: 12px; margin-left: 32px; opacity: var(--muted); }
+  @media (max-width: 760px) { .row2 { flex-direction: column; } .col2 { width: 100%; } }
+
+  /* ---- 听写 ---- */
+  #dict { position: fixed; inset: 0; background: var(--bg); z-index: 500; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  #dict.open { display: flex; }
+  #dictBig { font-size: 20px; padding: 16px 30px; border-radius: 16px; border: 1px solid var(--num-border); background: var(--card); color: var(--fg); cursor: pointer; }
+  #dictAns { min-height: 150px; transition: opacity .2s; }
+  #dictAns.hidden { opacity: 0; pointer-events: none; user-select: none; }
+  .dword { font-size: 30px; font-weight: 800; }
+  .dpos { opacity: .5; font-size: 12px; }
+  .dmean { font-size: 16px; margin-top: 4px; }
+  .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
+  .dphz { opacity: .6; font-size: 13px; }
+  .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>雅思词汇真经 Ch.11 时尚潮流</h1>
+    <p><span class="stats">共 <b id="count"></b> 词 · 点击单词/例句发音（edge 女声）</span></p>
+  </div>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
+  <button id="themeBtn" class="hbtn" onclick="toggleTheme()">🌙 夜间</button>
+</header>
+<div id="list"></div>
+
+<script>
+let DATA = [{"word": "fashion", "meaning": "n.时尚v.制作，制成", "ex_en": "Loose trousers are the latest fashion", "ex_zh": "穿宽大的裤子是最新的时尚。", "notes": "fashionable adj.流行的 me into fashion流行起来，开始风行 out of fashion过时的", "n": 1}, {"word": "style", "meaning": "n.风格；样式；时尚", "ex_en": "The style of this skirt is just in season", "ex_zh": "这条裙子的样式正在流行。", "notes": "stylish adj.时髦的，有格调的", "n": 2}, {"word": "trend", "meaning": "n.趋势，倾向", "ex_en": "The youth like to follow the latest trends in fashion", "ex_zh": "年轻人喜好追随最新的时尚潮流。", "notes": "", "n": 3}, {"word": "tendency", "meaning": "n.趋势，倾向", "ex_en": "There is a growing tendency for people to work at home instead of in offices", "ex_zh": "入们在家里而不是在办公室里工作的趋势日益显著。", "notes": "tend v.趋向；易于", "n": 4}, {"word": "current", "meaning": "n.潮流，趋势 adj.当前的", "ex_en": "Newspapers influence the current of thought", "ex_zh": "报纸影响着思想潮流。", "notes": "against the current 逆流而行的；与潮流相反的", "n": 5}, {"word": "vogue", "meaning": "n.流行", "ex_en": "Long hair for men and high boots for ladies are no longer in vogue", "ex_zh": "男士留长发和女士穿高筒靴不再流行了。", "notes": "in vogue流行的", "n": 6}, {"word": "prevail", "meaning": "v.盛行；获胜", "ex_en": "Truth will ultimately prevail", "ex_zh": "真理终究会获胜。", "notes": "prevalence n.流行，普遍存在 prevailing adj.盛行的", "n": 7}, {"word": "prevail", "meaning": "v.盛行；获胜", "ex_en": "Truth will ultimately prevail", "ex_zh": "真理终究会获胜。", "notes": "prevalence n.流行，普遍存在\nprevailing adj.盛行的\nprevail over/against 压倒，战胜", "n": 8}, {"word": "model", "meaning": "n.模型；模范；模特儿v.使模仿", "ex_en": "After a brief spell as a model, she got into singing", "ex_zh": "在短暂地当过一阵子模特儿后，她进入歌唱界。", "notes": "", "n": 9}, {"word": "icon", "meaning": "n.偶像；图标", "ex_en": "That sin ger is one of the pop culture icons of 1980s", "ex_zh": "那位歌手是20世纪80年代的流行文化偶像之一。", "notes": "", "n": 10}, {"word": "idol", "meaning": "n.偶像，受到崇拜的人或物；神像", "ex_en": "That football player is the idol of many young people", "ex_zh": "这位足球运动员是许多年轻入的偶像。", "notes": "", "n": 11}, {"word": "luxury", "meaning": "n.奢侈；奢侈品", "ex_en": "The in creasing sales of luxuries are an indication of the country's prosperity", "ex_zh": "奢侈品的销售量日益升高，这是该国繁荣的表现。", "notes": "luxurious adj.奢侈的，豪华的", "n": 12}, {"word": "extravagant", "meaning": "adj.奢侈的；过分的", "ex_en": "clothes", "ex_zh": "她很铺张浪费---她把所有的钱都\n用来买衣服。", "notes": "", "n": 13}, {"word": "jewellery", "meaning": "n.珠宝，首饰 (jewellery = jewelry)", "ex_en": "This piece of jewellery is priceless", "ex_zh": "这件首饰是无价之宝。", "notes": "", "n": 14}, {"word": "jewel", "meaning": "n.宝石", "ex_en": "That jewel has a beautiful shimmer", "ex_zh": "那颗宝石闪着美丽的光。", "notes": "", "n": 15}, {"word": "gem", "meaning": "n.宝石；珍品", "ex_en": "This collection", "ex_zh": "这幅画\n是这些藏品中的珍品。", "notes": "gene n.基因n.细菌", "n": 16}, {"word": "jade", "meaning": "n.玉石，翡翠", "ex_en": "I have a pair of jade bracelets", "ex_zh": "我有一对翡翠手镯。", "notes": "", "n": 17}, {"word": "adorn", "meaning": "v.装饰，装扮", "ex_en": "She likes to adorn herself with jewels", "ex_zh": "她喜欢用珠宝来装扮自己。", "notes": "", "n": 18}, {"word": "ornament", "meaning": "n.装饰品/'□insment/v.装饰", "ex_en": "Clearness ornaments profound thought", "ex_zh": "清晰性能为深刻的思想增辉。\nV.修饰 The door of the old church was embellished with\nintricate carvings.老教堂的门是用复杂的雕饰美化的。", "notes": "", "n": 19}, {"word": "embroider", "meaning": "V.对（故事等）加以渲染；在……上刺绣", "ex_en": "Her shirt is embroidered with roses", "ex_zh": "她的衬衣上绣着玫瑰花。", "notes": "", "n": 20}, {"word": "hairdressing", "meaning": "n.美发，理发", "ex_en": "She has spent much money and time on hairdressing", "ex_zh": "她在美发上花了不少钱和时间。", "notes": "", "n": 21}, {"word": "pigment", "meaning": "n.色素；颜料", "ex_en": "This pigment is a good and comm on food additive", "ex_zh": "该色素是一种优质且常见的食品添加剂。", "notes": "", "n": 22}, {"word": "dye", "meaning": "n.染料；（染上的）颜色V.染", "ex_en": "My roommate has dyed her hair red—it looks so unnatural", "ex_zh": "我的室友把头发染成了红色，看起来很不自然。", "notes": "", "n": 23}, {"word": "masquerade", "meaning": "n.化装舞会v.化装；假扮", "ex_en": "", "ex_zh": "", "notes": "", "n": 24}, {"word": "veil", "meaning": "n.面纱；遮蔽物", "ex_en": "The bride's face was covered with a white veil", "ex_zh": "新娘的脸上蒙着白色的面纱。", "notes": "", "n": 25}, {"word": "costume", "meaning": "n.戏服；（某历史时期或某地的）服装", "ex_en": "Her national costume showed which country she came from", "ex_zh": "她的民族服装显示了她来自哪个国家。", "notes": "academic costume学位服a costume ball化装舞会 cosplay简化自costume play,意思是“角色扮演”或 “服饰装扮”，主要指动漫、游戏爱好者将自己装扮成所喜爱的动漫或游戏角色的表演活动。如果你小时候曾经拿条毛巾当披风、用鸡毛择子作宝剑扮过大侠的话，就能完全理解这个单词的含义。", "n": 26}, {"word": "fascinate", "meaning": "V.迷住", "ex_en": "This city fascinates him", "ex_zh": "这座城市令他着迷。", "notes": "fascinating adj.迷人的 be fascinated with迷上", "n": 27}, {"word": "decent", "meaning": "adj.得体的；尚好的", "ex_en": "He made a decent record", "ex_zh": "他成绩尚佳。", "notes": "indecent adj.下流的", "n": 28}, {"word": "exquisite", "meaning": "adj.精致的；雅致的", "ex_en": "He has exquisite taste and decent marrners", "ex_zh": "他有高雅的情趣和得体的举止。字根quisit指“追求（to seek）\",如：exquisite（追求到的，选拔出来的t精致的），acquisition（获得），\n时尚潮流.", "notes": "", "n": 29}, {"word": "grace", "meaning": "n.优美，优雅", "ex_en": "She was a beautiful girl with the grace and poise of a natural model", "ex_zh": "她是一个美丽的姑娘，天生有着模特儿的那种优雅仪态。", "notes": "graceful adj.优雅的", "n": 30}, {"word": "elegance", "meaning": "n.文雅，典雅", "ex_en": "He is adm", "ex_zh": "汁ed for the elegance of his writing.\n他文风典雅，受人钦佩。 No one expects you to be perfect, but we do\nexpect you to do your best always.没人指望你完美无缺，但是我们盼望你永远尽最大的努力。", "notes": "elegant adj.优雅的 adj.完美的 perfect!on n.完美", "n": 31}, {"word": "appearance", "meaning": "n.外貌；出现", "ex_en": "Don't judge by appearances", "ex_zh": "不能以貌取人。", "notes": "appear v.出现", "n": 32}, {"word": "cosmetics", "meaning": "n.化妆品", "ex_en": "We have many types of cosmetics for sale", "ex_zh": "我们有许多类型的化妆品在售。字根cosm（o）来源于希腊语kosmos,有两个意思：一是指\"装饰（ornament）\",如cosmetics（脸部的装饰世界（world）\"。\n-化妆品）；二是指“秩序（order）;\n古希腊人认为宇宙是一个有序的地方，所以cosmic就是\"宇宙的\"。而cosmopolitan（世界性的）来源于\nkosmos（世界）和polites（市民）的结合。", "notes": "", "n": 33}, {"word": "make-up", "meaning": "n.化妆品；组成成分；性格", "ex_en": "I cannot tell who's who when the women take off their make-up", "ex_zh": "女士们卸了妆，我就分辨不出谁是谁。", "notes": "make up化妆", "n": 34}, {"word": "handsome", "meaning": "adj.数量大的；英俊的", "ex_en": "The waitress received a handsome tip", "ex_zh": "女侍者收到了数量可观的小费。", "notes": "", "n": 35}, {"word": "beautiful", "meaning": "adj.美丽的", "ex_en": "Looking at a satisfaction", "ex_zh": "观赏一幅美丽的图画总能给人一种满足感。", "notes": "", "n": 36}, {"word": "clothe", "meaning": "v.给……穿衣；为・・・・・•提供衣服", "ex_en": "He had to work hard to feed and clothe the large family", "ex_zh": "他必须努力工作才能使一大家子人有饭吃，有衣穿。", "notes": "clothes n.衣服clothing n.衣服", "n": 37}, {"word": "uniform", "meaning": "n-制服adj.—致的", "ex_en": "Do you have to wear a uniform if you work at McDonald's?", "ex_zh": "在麦当劳供职时必须穿制服吗？单一的形式t\nuni（单一的）+form（形状，形式）t\n制服。", "notes": "", "n": 38}, {"word": "do", "meaning": "iron the laundry洗/晾/熨衣物", "ex_en": "", "ex_zh": "", "notes": "", "n": 39}, {"word": "wardrobe", "meaning": "n.衣柜；（某人的）全部服装", "ex_en": "Can you hang these in the wardrobe, please?", "ex_zh": "你能把这些挂在衣柜里吗？", "notes": "", "n": 40}, {"word": "robe", "meaning": "n.长袍；浴袍", "ex_en": "She was simply dressed in a plain white robe", "ex_zh": "她只穿了一件朴素的白色长袍。", "notes": "", "n": 41}, {"word": "gown", "meaning": "n.长外衣；女礼服", "ex_en": "She put on her silk gown and went to the ball", "ex_zh": "她穿上丝质的礼服，前去参加舞会。", "notes": "", "n": 42}, {"word": "sweater", "meaning": "n.毛衣，线衣", "ex_en": "This woollen sweater may keep you warm in winter", "ex_zh": "这件羊毛衫可以让你在冬天保暖。", "notes": "", "n": 43}, {"word": "skirt", "meaning": "n.裙子", "ex_en": "How have?", "ex_zh": "你有多少条裙子？", "notes": "", "n": 44}, {"word": "trousers", "meaning": "n.［尤英］裤子", "ex_en": "This pair of trousers is too tight for me", "ex_zh": "这条裤子对我来说太紧了。", "notes": "", "n": 45}, {"word": "clasp", "meaning": "n.搭扣v.扣住", "ex_en": "The button won't clasp", "ex_zh": "这颗扣子扣不上。", "notes": "unbutton v.解开的纽扣；如解开纽扣一样解开", "n": 46}, {"word": "glove", "meaning": "n.手套", "ex_en": "It's getting cold and I have to take out my woollen gloves", "ex_zh": "天气变冷了，我不得不把毛线手套拿出来了。", "notes": "", "n": 47}, {"word": "hat", "meaning": "n（常指带檐的）帽子", "ex_en": "She bought a hat yesterday", "ex_zh": "她昨天买了一顶帽子。", "notes": "", "n": 48}, {"word": "cap", "meaning": "m（有帽舌的）帽子；（经费等的）最高限额", "ex_en": "The cap goes well with your suit", "ex_zh": "这顶帽子跟你的套装很配。", "notes": "", "n": 49}, {"word": "brim", "meaning": "n.边缘；帽檐", "ex_en": "He drank at the fountain's brim", "ex_zh": "他在喷泉边喝酒。", "notes": "", "n": 50}, {"word": "scarf", "meaning": "n.围巾，头巾", "ex_en": "The price of this scarf is below ten dollars", "ex_zh": "这条围巾的价格不到10美元。", "notes": "", "n": 51}, {"word": "handkerchief", "meaning": "n.手帕", "ex_en": "He was playing with his handkerchief all the speech", "ex_zh": "演讲期间，他一直在摆弄手帕。\nhat\ncap\nscarf时尚潮流", "notes": "", "n": 52}, {"word": "purse", "meaning": "n.［尤英］钱包；【美］小手提包", "ex_en": "The loss of her purse caused her much irwnvenience", "ex_zh": "丢失鏈给她带来了诸多不便。", "notes": "", "n": 53}, {"word": "wallet", "meaning": "n.钱包，皮夹子", "ex_en": "She placed the receipt in her wallet", "ex_zh": "她把收条放到皮夹子里了。\nm［英］汗衫；［美］西装背心\n【例One button on the vest is loose.西装背心上的一粒纽扣松了。", "notes": "", "n": 54}, {"word": "wr", "meaning": "ap m披肩", "ex_en": "r her shoulders was a much-mended wrap", "ex_zh": "她的肩上搭着一条被多次缝补的披肩。", "notes": "", "n": 55}, {"word": "cloak", "meaning": "n・斗篷；覆盖物", "ex_en": "She picked up the old brown cloak and handed it to him", "ex_zh": "她捡起棕色的旧斗篷递给他。", "notes": "", "n": 56}, {"word": "collar", "meaning": "n.衣领；项圈", "ex_en": "He turned up his coat collar against the chilly wind", "ex_zh": "他竖起大衣领来抵御寒风。", "notes": "", "n": 57}, {"word": "sleeve", "meaning": "n-袖子", "ex_en": "A stranger pulled at my sleeve as I was leaving", "ex_zh": "我刚要离去，一个陌生人拽了拽我的袖子。", "notes": "", "n": 58}, {"word": "sock", "meaning": "n.短袜", "ex_en": "There is a hole in my sock", "ex_zh": "我的短袜上有个洞。", "notes": "", "n": 59}, {"word": "stocking", "meaning": "n（女式）长筒袜", "ex_en": "The thief masked his face with a stocking", "ex_zh": "那个贼套上长筒袜遮住脸。", "notes": "", "n": 60}, {"word": "slipper", "meaning": "n.拖鞋", "ex_en": "No slipper is allowed in the laboratory", "ex_zh": "实验室里不允许穿拖鞋。", "notes": "", "n": 61}, {"word": "boot", "meaning": "n.靴子", "ex_en": "My foot won't go into this boot", "ex_zh": "我的脚穿不上这只靴子。", "notes": "", "n": 62}, {"word": "lace", "meaning": "n.鞋带；花边", "ex_en": "He stopped to tie the laces of his sneakers", "ex_zh": "他停下来把运动鞋的鞋带系上。", "notes": "", "n": 63}, {"word": "tailor", "meaning": "n.裁缝v.专门制作", "ex_en": "The tailor can alter your new coat to fit you", "ex_zh": "裁缝会将你的新外套改合体。", "notes": "", "n": 64}, {"word": "sew", "meaning": "V.缝制，缝补", "ex_en": "The skirt is finished and rm now going to sew a pocket", "ex_zh": "裙子做好了，我现在要再缝上个口袋。", "notes": "", "n": 65}, {"word": "spin", "meaning": "V.纺；（使）旋转n.高速旋转；（乘车）兜风", "ex_en": "We took a spin around the town", "ex_zh": "我们乘车在城里兜了一圈。", "notes": "", "n": 66}, {"word": "needle", "meaning": "n.针", "ex_en": "The needle pierced her finger", "ex_zh": "针刺进了她的手指。", "notes": "thread a needle穿针，纫针 sew", "n": 67}, {"word": "pin", "meaning": "n.别针，大头针v.别住，钉住", "ex_en": "Pin the bills together so you won't lose them", "ex_zh": "把账单钉在一起以防遗失。", "notes": "", "n": 68}, {"word": "string", "meaning": "n.线；一串", "ex_en": "We have had a string of complaints about the programme", "ex_zh": "我们已经收到了对该节目的一连串投诉。", "notes": "", "n": 69}, {"word": "thread", "meaning": "n.线；螺纹", "ex_en": "She is looking for threads which match the cloth", "ex_zh": "她在找和这块布相配的线。", "notes": "", "n": 70}, {"word": "strap", "meaning": "n.带子v.用带子系（或捆、扎）", "ex_en": "A falling", "ex_zh": "安全带\n被用来防止滑落。", "notes": "", "n": 71}, {"word": "stripe", "meaning": "n.条纹", "ex_en": "The body of a zebra is marked by black and white stripes", "ex_zh": "斑马的身体特征是有黑白条纹。", "notes": "", "n": 72}, {"word": "ribbon", "meaning": "n.缎带，丝带", "ex_en": "Her hair was tied up with a ribbon", "ex_zh": "她的头发用\n—条丝带扎着。", "notes": "", "n": 73}, {"word": "belt", "meaning": "n.腰带，皮带；地带，地区", "ex_en": "A belt of trees grew between the two fields", "ex_zh": "两块田之间有一条树木带。", "notes": "", "n": 74}, {"word": "fasten", "meaning": "松开皮带 ii.链子，链条", "ex_en": "She wore a silver chain around her neck", "ex_zh": "她的脖子上戴着一条银链子。", "notes": "", "n": 75}, {"word": "bracelet", "meaning": "n.手镯", "ex_en": "rd like you to take this bracelet as a gift", "ex_zh": "我希望你把这只手镯作为礼物收下。", "notes": "", "n": 76}, {"word": "necklace", "meaning": "n.项链", "ex_en": "I value this necklace at 5,000 dollars", "ex_zh": "我估计这条项链值5000美元。", "notes": "", "n": 77}, {"word": "bead", "meaning": "仇珠子；（液体的）小滴v.形成珠状", "ex_en": "She wore a string of beads round her neck", "ex_zh": "她的脖子上挂了一串珠子。源自表示“祈祷”的古英语。后来西方开始盛行在祈祷。时手拨念珠，就演化岀表示“念珠”的中古英语b ede\n最后发展为现在的bead,表意的范畴也扩大了，可表示\n“珠子”“（液体的）小滴”等。复数形式beads仍常被用来指“念珠”，比如在英语短语count one's beads（数念珠祷告）中。", "notes": "", "n": 78}, {"word": "textile", "meaning": "n.纺织品adj.纺织的", "ex_en": "He intends to retail textile goods", "ex_zh": "他打算零售纺织类的商品。", "notes": "", "n": 79}, {"word": "velvet", "meaning": "n.丝绒，天鹅绒", "ex_en": "The lawn looks like green velvet", "ex_zh": "草坪看上去就像绿色的天鹅绒。", "notes": "", "n": 80}, {"word": "wool", "meaning": "m（羊等的）毛；毛线", "ex_en": "He found a job of shearing wool from sheep", "ex_zh": "他找到一份剪羊毛的工作。 She sewed a patch onto the knee of the\ntrousers.她在裤子的膝部缝了个补丁。", "notes": "woollen（=woolen）adj.羊毛的 n.补丁；（与周围不同的）小片v.补缀 patchwork n.拼布工艺；混杂物", "n": 81}, {"word": "rag", "meaning": "n.破布", "ex_en": "She wrapped the box with an old rag", "ex_zh": "她用一块破旧的布包住这个盒子。", "notes": "ragged adj.破旧的", "n": 82}, {"word": "shabby", "meaning": "adj.破旧的；衣衫褴褛的", "ex_en": "His shabby appearanee creates a bad impression", "ex_zh": "他衣衫褴褛的样子给人留下不好的印象。", "notes": "", "n": 83}, {"word": "tight", "meaning": "adj.紧的", "ex_en": "This drawer is too tight for me to open it", "ex_zh": "这抽屉太紧了，我打不开。", "notes": "tighten v.(使)变紧；使更加严格", "n": 84}, {"word": "colour", "meaning": "(=color)n.颜色；颜料", "ex_en": "Due to the use of natural pigments, these folk paintings retain their colour w ell", "ex_zh": "因为使用了天然颜料，这些民俗画的颜色很好地保留了下来。", "notes": "colourful(=colorful)adj.富于色彩的", "n": 85}, {"word": "white", "meaning": "adj.白的n.白色 fury.他气得脸色发白。", "ex_en": "He was white with fury", "ex_zh": "他气得脸色发白。", "notes": "whitewash v.粉刷，刷石灰水", "n": 86}, {"word": "yellow", "meaning": "adj.黄的n.黄色", "ex_en": "The leaves turn yellow in autumn", "ex_zh": "秋天时，叶子变黄。", "notes": "", "n": 87}, {"word": "brown", "meaning": "adj.褐色的n.褐色", "ex_en": "He had brown skin", "ex_zh": "他的皮肤是褐色的。", "notes": "", "n": 88}, {"word": "grey", "meaning": "adj.灰色的 n.灰色 (grey = gray)", "ex_en": "He dressed in grey", "ex_zh": "他穿着灰色衣服。", "notes": "", "n": 89}, {"word": "pink", "meaning": "adj.粉红色的m粉红色", "ex_en": "She carried a spray of pink roses", "ex_zh": "她拿着一簇粉红色的玫瑰花。", "notes": "in the pink容光焕发", "n": 90}, {"word": "purple", "meaning": "adj.紫的n.紫色", "ex_en": "That girl like to wear purple dresses", "ex_zh": "那个女孩喜欢穿紫色的连衣裙。", "notes": "", "n": 91}, {"word": "tan", "meaning": "adj.棕黄色的 n.棕黄色；晒成的棕褐色", "ex_en": "It took me all summer to get this tan", "ex_zh": "我花了整个夏天才晒出这样的棕褐色。", "notes": "", "n": 92}, {"word": "fade", "meaning": "V.逐渐消失；（使）褪色", "ex_en": "Beauty fades like a flower", "ex_zh": "红颜易逝如花败。", "notes": "fade away 衰弱；病重死亡", "n": 93}, {"word": "stain", "meaning": "v.染污 n.污渍", "ex_en": "The coffee stained his shirt brown", "ex_zh": "咖啡把他的衬衫染上了棕色。", "notes": "stainless adj.无瑕疵的；不锈钢制的", "n": 94}, {"word": "blot", "meaning": "n.污点", "ex_en": "The new power station is a blot on the landscape", "ex_zh": "那座新建的发电厂大煞风景。", "notes": "", "n": 95}, {"word": "figure", "meaning": "n.身材；身影；重要人物；数字 v.认为", "ex_en": "I could see a tall figure near the door", "ex_zh": "我可以看见门附近有一个高大的身影。", "notes": "figure out 理解，弄明白\na slender/slim figure 苗条的身材\na curvy figure 有曲线美的身段\nan hourglass figure 沙漏型身材", "n": 96}, {"word": "slender", "meaning": "adj.苗条的；微弱的", "ex_en": "All of us admired her slender figure", "ex_zh": "我们都羡慕她的苗条身材。", "notes": "", "n": 97}, {"word": "slight", "meaning": "adj.纤细的；轻微的", "ex_en": "Our army suffered a slight reverse", "ex_zh": "我们的部队遭受了轻微的损失。", "notes": "slightly adv.稍微", "n": 98}];
+let curAudio = null;
+const AUDIO_DIR = 'audio/ch11';
+function play(id, suffix){
+  if (curAudio) curAudio.pause();
+  curAudio = new Audio(`${AUDIO_DIR}/${id}${suffix || ''}.mp3`);
+  if (typeof _dictHook === 'function') _dictHook();
+  curAudio.play();
+}
+function applyTheme(day){
+  document.body.classList.toggle('day', day);
+  document.getElementById('themeBtn').textContent = day ? '🌙 夜间' : '☀️ 日间';
+}
+function toggleTheme(){
+  const day = !document.body.classList.contains('day');
+  applyTheme(day);
+  try { localStorage.setItem('ielts_theme', day ? 'day' : 'night'); } catch(e) {}
+}
+applyTheme((() => { try { return localStorage.getItem('ielts_theme') === 'day'; } catch(e) { return false; } })());
+
+const esc = s => String(s == null ? '' : s);
+// 词性色: v→V红 adj→I粉 adv→绿 其余→N蓝; chip 显示词性, 释义里去掉词性缩写
+const POS_RE = /^(n\.|adj\.|adv\.|v\.|vi\.|vt\.)\s*/;
+function posOf(d){
+  const toks = [];
+  let m = d.meaning, t;
+  while ((t = m.match(POS_RE)) && toks.length < 2) { toks.push(t[1]); m = m.slice(t[0].length); }
+  return { toks, rest: m.trim() || d.meaning };
+}
+const posCls = p => p.startsWith('v') ? 'V' : p.startsWith('adj') ? 'I' : p.startsWith('adv') ? 'adv' : 'N';
+const chipOf = d => {
+  const { toks } = posOf(d);
+  if (!toks.length) return '';
+  const cls = posCls(toks[0]);
+  return `<span class="pos ${cls}">${toks.join(' ')}</span>`;
+};
+const meanOf = d => posOf(d).rest;
+
+const entryHtml = d => `
+  <div class="row1"><span class="num">${d.n}</span><span class="word" onclick="play(${d.n},'w')">${esc(d.word)}</span>${chipOf(d)}</div>
+  <div class="mean">${esc(meanOf(d))}</div>
+  ${d.ex_en ? `<div class="phrase"><span class="jp" onclick="play(${d.n},'e')">${esc(d.ex_en)}</span><span class="zh">${esc(d.ex_zh)}</span></div>` : ''}
+  ${d.notes ? `<div class="note-line">${esc(d.notes)}</div>` : ''}`;
+
+const list = document.getElementById('list');
+function render(){
+  list.innerHTML = '';
+  let colA = null, colB = null, alt = 0;
+  let row = document.createElement('div'); row.className = 'row2';
+  colA = document.createElement('div'); colA.className = 'col2';
+  colB = document.createElement('div'); colB.className = 'col2';
+  row.appendChild(colA); row.appendChild(colB); list.appendChild(row);
+  for (const d of DATA){
+    const card = document.createElement('div');
+    card.className = 'card c' + posCls((posOf(d).toks[0] || 'n'));
+    card.innerHTML = entryHtml(d);
+    (alt++ % 2 === 0 ? colA : colB).appendChild(card);
+  }
+  document.getElementById('count').textContent = DATA.length;
+}
+render();
+</script>
+
+<div id="dict">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
+  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
+  <div id="dictAns" class="hidden"></div>
+  <div class="dbtns">
+    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
+    <button class="hbtn" id="dictAuto" onclick="dictAutoToggle()">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+  </div>
+  <div style="opacity:.4;font-size:11px;">空格=重播 · →=下一个 · ←=上一个 · S=显示答案 · Esc=退出</div>
+</div>
+<script>
+/* ---- 听写 ---- */
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [];
+const DICT_DELAY = 3000;
+const dictWords = () => DATA;
+function dictToggle(){
+  dictOpen = !dictOpen;
+  document.getElementById('dict').classList.toggle('open', dictOpen);
+  if (dictOpen){ if (curAudio) curAudio.pause(); buildOrder(); dictCur = 0; showDict(); }
+  else { if (curAudio) curAudio.pause(); clearTimeout(dictT); }
+}
+function buildOrder(){
+  dictOrder = dictWords().map(d => d.n);
+  if (dictShuffleOn) for (let i = dictOrder.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [dictOrder[i], dictOrder[j]] = [dictOrder[j], dictOrder[i]]; }
+}
+const dictD = () => dictWords().find(d => d.n === dictOrder[dictCur]);
+let dictChain = false;
+const playCur = () => {
+  const d = dictD();
+  if (!d.ex_en) { play(d.n, 'w'); return; }
+  dictChain = true;
+  play(d.n, 'w');
+};
+const _dictHook = () => {
+  curAudio.onended = () => {
+    if (dictChain && dictD().ex_en) {
+      dictChain = false;
+      play(dictD().n, 'e');
+      curAudio.onended = () => { if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY); };
+    } else if (dictOpen && dictAuto) {
+      dictT = setTimeout(dictNext, DICT_DELAY);
+    }
+  };
+};
+function dictStep(dir){
+  clearTimeout(dictT); dictChain = false;
+  dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
+  showDict(); playCur();
+}
+const dictNext = () => dictStep(1);
+const dictPrev = () => dictStep(-1);
+function dictShuffle(){ dictShuffleOn = !dictShuffleOn; buildOrder(); dictCur = 0; showDict(); playCur(); }
+function dictAutoToggle(){
+  dictAuto = !dictAuto;
+  document.getElementById('dictAuto').textContent = '自动: ' + (dictAuto ? '开' : '关');
+  dictChain = false;
+  if (dictAuto) playCur();
+}
+function dictReveal(){
+  const ans = document.getElementById('dictAns');
+  if (ans.classList.contains('hidden')) { renderDictAns(); ans.classList.remove('hidden'); }
+  else ans.classList.add('hidden');
+}
+function renderDictAns(){
+  const ans = document.getElementById('dictAns');
+  const d = dictD();
+  ans.innerHTML = `<div class="dword">${esc(d.word)}</div><div class="dpos">${esc(d.m)}</div>` +
+    (d.ex_en ? `<div class="dph" onclick="play(${d.n},'e')">${esc(d.ex_en)}</div><div class="dphz">${esc(d.ex_zh)}</div>` : '');
+}
+function showDict(){
+  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  const ans = document.getElementById('dictAns');
+  ans.classList.add('hidden');
+  ans.innerHTML = '';
+}
+document.addEventListener('keydown', e => {
+  if (!dictOpen) return;
+  if (e.code === 'Space'){ e.preventDefault(); playCur(); }
+  else if (e.key === 'ArrowRight') dictNext();
+  else if (e.key === 'ArrowLeft') dictPrev();
+  else if (e.key === 's' || e.key === 'S') dictReveal();
+  else if (e.key === 'Escape') dictToggle();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,875 @@
+你是词汇书数据修复工具。下面给你两部分内容：
+(A) 一本雅思词汇书某章的两栏 PDF 文字层抽取结果（左右栏交替，存在串行、断词、乱码标签如 "［彡列］"、"M列］"、"［傅!J］" 等，正常标签是 ［例］/［搭］/［记］）。
+(B) 该章解析出的、被程序标记为有问题的词条（JSON 数组）。
+
+任务：对照 (A) 的真实文字，逐条修正 (B) 中的问题词条。
+
+修正规则：
+1. 词条字段：word(英文词/词组), meaning(词性+中文释义), ex_en(英文例句), ex_zh(中文翻译), notes(搭配/派生词，可空)。字段缺失用 ""。
+2. 如果 word 是例句碎片（如 "is"、"zoo is situated"、"job is to operate an elev"），要还原成真正的词头（对照原文音标所在行），并补齐它的释义/例句。
+3. 如果 meaning 里混入了例句或邻居条目（过长、含 例/搭/记/］ 等），把例句拆到 ex_en/ex_zh，只保留词性+释义。
+4. 如果 ex_en 混入了别的例句或中文，按原文拆分，只保留该词自己的那句英文；ex_zh 只保留对应中文。
+5. 如果原文里存在某个词条被程序整条吞掉（没出现在 (B) 里但原文明显有独立音标行+释义+例句），在 fix 里用 "add" 输出它，after 填它前面那个词条的 word。
+6. 只要 (B) 里明显是重复/错误的假词条，在 delete 里列出它的 word。
+7. 原文里没有例句的词条（书本身就没印），ex_en 留 ""，不要自己编例句。绝不编造释义，宁可留空。
+
+补充要求（重要）：
+- (B) 里每个词条都有 "n" 字段（原条目编号）。fix 和 delete 里必须原样回填 "n"，否则无法定位。fix 里 "word" 填修正后的词头。
+- 如果某字段原文里确实没有（书本身没印），填空字符串 ""。
+
+只输出一个 JSON 对象，不要任何解释文字、不要 markdown 代码块，格式严格如下：
+{"fix":[{"n":13,"word":"新word","meaning":"...","ex_en":"...","ex_zh":"...","notes":"..."}],"delete":[{"n":40}],"add":[{"after":"前一个词的word","word":"...","meaning":"...","ex_en":"...","ex_zh":"...","notes":""}]}
+
+注意：不要使用任何工具、不要联网、不要读写文件；只根据下面给定的文本作答，直接把 JSON 放在回答里。
+
+================ (A) 原文 ================
+# LESSON ch06
+
+## RAW BOOK TEXT (two-column extraction, may be garbled/interleaved)
+--- PDF page 96 left column ---
+technology /tek'nDhd3i/
+n.技术
+M列］Life is made so much easier with modern
+science and technology.有了现代科学技术，生活变得比以往惬意得多。
+［记］technological adj.技术上的
+［搭］advanced technology先进的技术
+/tek'ni:k/
+technique
+m技巧；技术
+［傍！I］I want to learn the latest technique in toy making.
+我想学习制作玩具的最新技术。
+［记］technical adj.技术的，技能的，工艺的
+technician n.技术员，技师
+polytechnic /ipoli'teknik/
+adj.有关多种工艺的n.理工学院
+［例］Your trainees will acquire polytechnic training.
+你方受训人员将得到有关多种工艺的培训。
+engineer伽加皿/
+m工程师，技师
+［例］Each engineer needs to be in touch with the
+entire engineering department.每个工程师都需要和整个工程部交流。
+［记］engine n.引擎engineering n. I程；工程学
+mechanic /mi'kaemk/
+m技工，机械师，机修工
+［例］This car has broken down again! I'll have to ring
+the mechanic.这辆车又坏了！我必须给机修工打电话。
+［记］machine n.机器，机械n.机制；机
+mechanism
+械装置
+advance /sd'vains/
+m/v.发展；前进
+［例］We have advanced greatly in our knowledge of
+the universe.我们对宇宙的认识已经深入了很多。
+［记］advanced adj.先进的；高级的
+［搭］in advance预先，提前
+innovate /'inaveit/
+V.创新，改革
+［例］We must innovate in order to make progress.
+我们必须改革以取得进步。
+［记］innovation n.创新，改革innovator n.改革者，创新者
+breakthrough /'breik0ru:/
+n.突破
+［例］Surgeons have made a great breakthrough in
+technology mechanic
+technique advance
+雅思词汇真经
+polytechnic innovate
+IELTS engineer breakthrough
+--- PDF page 96 right column ---
+kidney transplantation.外科医生们在肾移植方面取得了重大突破。
+/'gizmsu/
+gizmo
+n.小装置
+［例］The modern world is increasingly populated
+by intelligent gizmos whose universal existenee has
+removed much human labour.现代社会里的智能装置越来越多，其广泛存在节约了大量人力。
+/'peitnt/
+patent
+n.专利，专利权v.得到……的专利权；给……专利证
+［例］The government patented the device to its
+inventor.政府给发明者授予了该装置的专利证。
+devise /di'vaiz/
+V.设计，发明
+［例］The
+team is trying to devise a new system for
+handling mail orders.这个小组正设法设计一个新的邮购品处理系统。
+［记］device n.装置，设备
+invent /in'vent/
+V.发明，创造
+［例］Do you know who invented the magnetic
+needle?你知道指磁针是谁发明的吗？
+［记］inventionn.发明，创造inventorn.发明者，创造者
+discover /dis'kavo/
+V.发现
+［例］He discovered his tale nt for fashi on design
+when he was very young.他很年轻的时候就发现了自己在时尚设计方面的天赋。
+［记］discovery n.发现；被发现的事物
+disclose /dis'kbuz/
+v.揭露，透露
+gizmo discover
+patent disclose
+devise
+invent
+--- PDF page 97 left column ---
+［^0］The authorities fin ally disclosed the truth to the
+press.当局终于向新闻界公开了真相。
+reveal /n'vi:l/
+V.展现；显示，透露
+［例］His deed revealed him to be a kind man.他的行为显示他是个好心的人。
+uncover /An'kAvo/
+V.揭露，发现
+［例］The detective must uncover the murderer by
+deduction of facts.侦探必须根据事实进行推理，从而找出凶手。
+expose /ik'spauz/
+V.使暴露；揭发，使曝光
+［例］The crime of the corrupt officials must be exposed
+without any reserve.对于贪官污吏的罪行，一定要毫无保留地进行揭发。
+［记］exposure n.暴露；揭露
+domain /do'mein/
+n.（活动、学问等的）领域；领土，领地
+［例］This domain.这不属于我的领域。
+is out of my
+字根dom意为“房子后引申为“主
+（house）",
+人，领主”的意思。领主的地产即领土。同根词又如：
+（国内的；家庭的），dominate（行使领主的
+domestic
+权利t统治，控制），dominant!占优势的；主要的）。
+field /fi：ld/
+n.领域
+［攸9竹eld.他在自
+］He has become famous in his own
+己的领域里已经出名了。
+realm /relm/
+n.领域
+［例］Such an idea only belongs in the realm of
+science fiction.这样的理念只适合科幻领域。
+/faun'deijan/
+foundation
+n.基础；地基；基金会
+［例］He laid the foundations of his success by hard
+work.勤奋奠定了他成功的基础。
+［记］founder n.奠基人，创建人
+［搭］a基础课程
+foundation course
+specialise /'spejolaiz/
+v.专攻
+(=specialize)
+［例］Many engineering.许多
+students specialise in
+reveal field absorb
+uncover realm concentrate
+expose foundation focus
+domain specialise utilise
+--- PDF page 97 right column ---
+学生专攻工程学。
+［搭］specialise in专攻，专门研究；专门经营
+absorb /sb'soib/
+V.理解；掌握
+［例］His ability to absorb bits of disconnected
+information was astonishing.他理解互不相关的零碎信息的能力惊人。前缀ab表示“离开”，字根是sorb（吸收，吮吸）。
+concentrate /'konsantreit/
+V.集中（心思）；（使）浓缩
+［例］They will concentrate on teachi ng the basics of
+reading, writing and arithmetic.他们将专注于教授阅读、写作和算术的基础知识。
+［记］concentration n.专心；浓度
+［搭］concentrate on专心于
+focus /'fsukos/
+v.（把……）集中（于）n.焦点
+［例］Today he was able to focus his message
+economy.今天，他得以将主题全部
+exclusively on the
+集中在经济方面。
+［搭］focus on集中于源自拉丁语focus（壁炉），引申词义为“焦点”。
+/'ju：Ulaiz/
+utilise
+(=utilize)v.利用
+H列］In order to utilise land more fully, they adopted
+close planting.为了更充分地利用土地，他们采取了密植的办法。
+［记］utility n.效用，有用utilities n.(水、电、燃气等)
+公用事业utilisation(=utilization)n.利用，使用
+/'ju:sid3/
+usage
+n.使用；(词语的)用法
+usage
+^Chapter
+、科技发明
+--- PDF page 98 left column ---
+［例］The College Board says words on the new test
+will relate to usage.大学理事会称，新考试中的词汇将和用法关联起来。
+tester /'tests/
+n.测试仪；测试员
+［例］The battery tester is in my garage.电池测试仪在我的车库里。
+apply /o'plai/
+［例］We should not only know the theory but also
+how to apply it to practice.我们不仅要知道理论，还要知道怎样把理论应用于实践。
+［记］application n.应用；申请；应用程序
+applicable adj.适用的，合适的appliance n.应用；（家用）器具
+［搭］apply to适用于apply A to B把A应用于B
+手机上的应用软件常被称为“app”，那就是application
+的缩略。
+device /di'vais/
+n.装置，设备；手段，策略
+newly-designed devices will appear in
+［例］These
+month.这些新设计的装置将在下个
+the exhibition next
+月的展览会上展出。
+/o'plaisns/
+appliance
+n.应用；（家用）器具
+bought by
+［例］The household appliances were just
+him for his family.他刚为家里买回来几件家用器具。
+［搭］a kitchen appliance厨房用具
+/fo'silgti/
+facility
+n.设备；便利
+［例］This facility is open to both new and existing
+borrowers.这套设备向新老借用者开放。源自拉丁语facilis（简单的），即促进事物简化的设施或工具，后词义通用化。
+equipment /I'kwipmsnt/
+n.设备
+［例］We should make a better use of the existing
+equipment.我们应该更好地利用现有设备。
+［记］equip v.装备，配备
+/'instr^msnt/
+instrument
+n.仪器；工具；乐器
+［仞!J］A plough is an instrument used for farming.
+犁是一种用于耕作的工具。
+tester facility
+apply equipment
+雅思词汇真经device instrument
+IELTS appliance tool
+--- PDF page 98 right column ---
+/tu:l/
+tool
+n.工具
+［例］Advertising is a tool that nearly every company
+is utilising.广告是一种几乎每家公司都在使用的工具。
+gauge /geid3/
+n.测量仪器v.测量；判断
+［例］It was difficult to gauge how people would
+respond.很难判断人们会有何反应。
+measure /'me39/
+v.测量n.衡量；措施
+［例］Measure this impedanee and you can measure
+how much it has rained.测量该阻抗，你就可以测岀雨量的多少。
+［记］measurable adj.可测量的measurement n.衡量，测量；尺寸
+［搭］take measures采取措施莎士比亚(Shakespeare)名剧《一报还一报》(Measure
+for Measure｝的剧名一般被认为出自《圣经•马太福音》：For with what judgment ye judge, ye shall be
+judged, and with what measure ye mete, it shall be
+measured unto you again.
+calculate /'kaelkj^leit/
+V.计算；考虑，打算
+［例］Our price has already been closely calculated;
+there is no room for reduction.我们的价格是经过精密计算的，无让步余地。
+［记］calculation n.计算calculator n.计算器
+/kom'pjuit/
+compute
+V.计算；估计
+［例］I compute my loss at dollars.我估计我的损失有500美元。
+［记］computer n.计算机
+count /kaunt/
+V.计算
+impossible to count the stars in the sky.
+［例］It is
+gauge count
+measure
+calculate
+compute
+--- PDF page 99 left column ---
+天空中的星星是数不清的。
+［记］counter n.柜台；计数器
+estimate
+cstmt n.估价；估计；评价'est^meit v.估价；估计
+［例］Now I've realised that my estimate of her
+character was one-sided.现在我认识到我对她品格的评价是片面的。
+assess /a'ses/
+V.评估；估算
+［例］We will assess the damage caused by the
+flood.我们将估算洪灾造成的损失。
+［记］assessment n.评估；估价
+evaluate I'v^eljueiV
+V.评价，评估
+［例］The research project has only been under way for
+three months, so it's too early to evaluate its success.
+这个研究项目才进行了三个月，所以要评价它的成绩为时尚早。
+［搭］evaluate sb. as把某人作为……进行评价
+evaluate sb. by sth.以某事物来评价某人字根val指"值...钱（be worth）”，如I：evaluate（评估岀［前缀e表示“向外'’］价值-评价），value（价值）. invaluable（无法估量其价值的非常宝贵的），
+devaluation（贬值）°
+accessory /ok'sesori
+n附件，配件
+［例］Car accessories in elude the roof rack and radio.
+汽车配件包括车顶架和收音机。
+byproduct /'bai.prod Akt/
+n.副产品
+［例］Happiness is not a goal; it is a byproduct.幸福不是一种目标，而是一种副产品。
+［记］bypass n.旁路bypath n.旁道，小路
+bywork n.业余活计byname n.绰号
+auxiliary oig'ziljsri/
+adj.辅助的，协助的；备用的
+［例］When there is power shortage, they count on
+the auxiliary power supply.停电的时候，他们依赖后备供电设施。
+versatile'v3：s9tail/
+adj.多功能的，多用途的
+［例］Plastics are a versatile material in industry.
+在工业中，塑料是一种多用途材料。
+estimate byproduct aceum ulate
+assess auxiliary assemble
+evaluate versatile gather
+accessory add attach
+--- PDF page 99 right column ---
+add Aed/
+V.添加；附加
+［例］He didn't add milk nor sugar to his coffee.他的咖啡里既不加牛奶，也不加糖。
+［记］addition n.添加物；加法additional adj.附加的
+［搭］add up to合计达，总计达
+accumulate /a'kjuimj^leit/
+V.积累；（数额）逐渐增加
+［例］Dust and dirt soon accumulate if you don't
+clean your house regularly.如果不经常打扫房屋，尘土很快就越积越多。
+assemble dsembol/
+V.集合，聚集
+［例］A large crowd had assembled outside the
+American embassy.—大群人聚集在美国使馆外。
+gather /'g^do/
+v.聚集；采集
+［例］He took the trouble to gather the materials for
+me.他不辞辛劳地为我收集资料。
+attach dt氏tj/
+V.使依附；附加；缚，系，贴
+［傍!1］China will not attach itself to any big power.
+中国不会依附任何大国。
+［记］attachment n.附件，附属物
+［搭］attach importance to重视
+belong /bi'log/
+V.应在（某处）；适合（某种情形）
+［例］Russia is a major oil exporter, but does not
+belong to OPEC.俄罗斯是石油出口大国，但不属于石油输出国组织。
+［搭］belong to属于
+optics /'optiks/
+n-光学
+［例］Newt on published his first work on optics.牛顿发表了他的第一部光学著作。
+microscope
+/'maikrsskaup/
+n.显微镜
+M列］The optical microscope magrHfies the object
+1,000 times.这架光学显微镜把物像放大了一千倍。
+［记］microphone n.麦克风，话筒microwave n.微波炉；微波microbe n.微生物
+optics
+microscope Chapters
+科技发明
+--- PDF page 100 left column ---
+lens /lenz/
+n.透镜；(照相机等的)镜头
+［例］When viewing through the lens, we can see
+the thing clearer, larger or smaller.通过透镜，我们可以把物体看得更清楚、更大或更小。
+radar /'reida:/
+n.雷达，无线电定位装置
+［例］Officials want to sean the tomb with radar in
+the hope of unlocking the mystery.官方想用雷达来扫描墓室，希望借此解开墓室之谜。
+echo /'eksu/
+n.回声v.发回声；模仿；重复
+［例］The cathedral is echoing with joyous hymns.
+教堂里回响着欢乐的赞美诗。希腊神话中，厄科(Echo)是居于山林水泽的仙女，但她丧失了独立说话的能力，只能重复别人说的话的尾音。之后，她爱上了一位美少年，但遭到拒绝，从此终日抑郁，憔悴而死，山林间只留下她的声音。现在，当我们在山间高喊时，仔细听一听，有厄科的声音在回应。
+/'senso/
+sensor
+n.传感器
+［例］Place the sensor on a flat surface and rotate it
+slowly through 360°.把传感器放在一个平面上，慢慢转动360°o
+［记］sense n.感受sensory adj.感觉的，感官的
+sensitivity n.敏感性
+/imAlti'miidis/
+multimedia
+n-多媒体
+［例］As part of the celebrations, they staged a big,
+open-air multimedia event.作为庆典的一部分，他们举行了大型露天多媒体活动。
+lens sensor
+radar multimedia
+雅思词汇真经echo network
+IEUS
+--- PDF page 100 right column ---
+network /'netw3：k/
+n.网络；广播网，电视网
+［例］Preside nt Bush's speech was broadcast on nati onal
+television networks.布什总统的演说由国家电视网播送。
+［记］net n.网；网状物v.（用网）捕
+/'brauza/
+browser
+n.浏览器
+［例］In your Web browser's cache are the most
+recent Web files that you have downloaded.网页浏览器的高速缓存区里有你最近下载的网页文件。
+dial /'daisl/
+V.拨（电话号码）
+［例］She picked up the phone, and began to dial his
+number.她拿起电话，开始拨他的号码。
+microcomputer /'maikrsukomipjuits/
+n.微型计算机
+［例］A newly-devised microcomputer can act as a
+guide for a blind person.—种新设计的微型计算机能够充任盲人的向导。
+laptop /'laeptop/
+n.笔记本电脑
+［例］A laptop would be really useful when I'm
+working on the train.我在火车上工作时，笔记本电脑真的很有用。
+software /'softwes/
+n.软件
+shop.这是一家卖计
+［例］This is a computer software
+算机软件的商店。
+n.硬件；五金器具
+［记］hardware
+browser laptop
+dial software
+microcomputer
+--- PDF page 101 left column ---
+keyboard /'ki：bo:d/
+n.键盘
+［例］The machine is operated through the keyboard.
+这台机器是用键盘操作的。
+screen /skri:n/
+n.屏；屏幕v.遮蔽
+［例］A list of items is repeatedly flashed up on the
+screen.一个选项列表反复岀现在屏幕上。
+loudspeaker /,laud'spi:k9/
+n.扬声器，喇叭
+［例］The loudspeaker announced each airplane as it
+landed at the airport.每架飞机在机场一着陆，扬声器就发岀通知。
+microphone /'maikrsfsun/
+n.话筒，麦克风
+［例］Unfortunately, I didn't have a microphone at
+that time to record us.不幸的是，我当时没有麦克风，无法把我们说的话录下来。
+/ka'set/
+cassette
+n.盒式磁带；底片盒
+［例］He inserted a cassette into the machine.他把―
+盒磁带放入机器。来自case（箱）。ette是表示“小”的后缀。
+/teip/
+tape
+n・磁带，录音带；胶带
+［例］A technician loads a video tape into one of the
+machines.一名技师把一盒录影带装进其中一台机器。
+/'bainori/
+binary
+adj.二进制的；二元的
+［例】The machine does binary calculations.这台机器采用二进制的计算法。
+digital /'did3^tl/
+adj.数字的
+［例］The BBC has just successfully dem on strated a
+new digital radio transmission system.英国广播公司刚刚成功演示了一套新的数字无线电传输系统。
+/'waislss/
+wireless
+adj.不用电线的，无线的
+［例］We still don't have the wireless network.我们仍然没有无线网络。
+®是无线保真(wireless
+Wi-Fi fidelity)的缩写。
+keyboard cassette wireless
+screen tape high^-definition
+loudspeaker binary audio
+microphone digital vision
+--- PDF page 101 right column ---
+high-definition Ahai defjnijon/
+adj.高分辨率的
+［例］High-definition pictures can show detail very
+clearly.高分辨率图像能够非常清晰地展示细节。
+audio /'oidisu/
+adj.声音的
+［例］The reproductive quality of audio tapes has
+improved enormously.录音带的复制质量有了很大改进。
+vision /'vi3an/
+n.视觉，视力
+［例］I've had my eyes tested and the report says
+that my vision is perfect.我检查过眼睛了，检查报告说我的视力非常好。
+［记］visual adj.视觉的，视力的visible adj.看得见的
+fantasy /'fsentasi/
+n.幻想
+［例］He is unable to divorce fantasy from reality.
+他不能将幻想与现实分开。
+［记］fantastic adj.奇异的，奇妙的
+/isaisns'fikfan/
+science fiction
+(=sci-fi)n.科幻作品
+［例］Science fiction films are very popular with
+youngsters.科幻电影在年轻人中非常受欢迎。
+/pAmp/
+pump
+n.泵v.(用泵)抽
+［例］At the farm, there was an old-fashioned pump
+for drawing water from a well.那个农场上有一台老式的用来从井里抽水的泵。
+fa?tasv
+.
+science Action^**
+pump Chapter
+科技发明
+--- PDF page 102 left column ---
+/1d3enareit9/
+generator
+n.发电机
+［例］A new type of wind generator may offer an
+answer to that problem.—种新型的风力发电机可能会解决这一问题。
+［记］generate v.产生（能量），发（电）
+gear /go/
+n.齿轮，传动装置v.使适合
+［例］Education should be geared to children's needs.
+应对教育进行调整以适应孩子们的需要。
+［搭］in high gear以高速挡；高速地gear up换高速挡；促进
+pivot /"pivot/
+n.枢轴，支点；中心，重点
+［例］The mother is often the pivot of family I讦e.
+母亲往往是家庭生活的中心人物。
+hydraulic /hai'drolik/
+adj.水力的，液压的
+［例］The boat has no fewer than five hydraulic
+pumps.这艘船配有不少于五个液压泵。
+drainage /'drcimd^,/
+n.排水系统；排水
+［傍!］］The drainage of the city is poor, some of the
+pipes are broken.这座城市的排水系统很差，有些排水管都破裂了。
+］improve the drainage改善排水系统
+［搭
+sewage /'sju:id3/
+n.（下水道的）污水
+［例］Discharge of raw sewage into the sea is
+unsanitary and unsafe.把未经处理的污水排放到海里既不卫生也不安全。
+/ivenU'leiJan/
+ventilation
+n.通风；通风设备
+［例］Some people think that ventilation is the same
+thing as air conditioning.有些人以为通风设备和空调是一回事。
+/kam'pres/
+compress
+V.压紧，压缩
+［仮！I］Reining in inflatio n can in crease in come inequality
+by compressing wages while allowing asset prices to
+soar.抑制通货膨胀会扩大收入差距，因为它一方面会压缩劳动报酬，另一方面又允许资产价格飞涨。
+generator drainage
+gear sewage
+雅思词汇真经pivot ventilation
+IELTS hydraulic compress
+--- PDF page 102 right column ---
+/kon'dens/
+condense
+V.简缩，精简；（使气体）凝结
+［例］A long story may be condensed into a few
+sentences.—个长篇故事可被缩写成几句话。
+refine /ri'fain/
+V.精炼，提纯
+［例］The purpose of oil refinery is to refine crude
+petroleum.炼油厂的工作目的是提炼原油。
+［搭］refine on对……进行精微改进
+simplify /'simpUfai/
+V.简化，精简
+［例］Try to simplify your explanation for the children.
+设法解释得简单些，好让孩子们听得懂。
+［记］simplicity n.简单；质朴simple adj.简单的
+simply adv.简单地；仅仅
+purify /'pjuorsfai/
+v.净化，使纯净
+［例］They open the windows to purify the air of the
+room.他们打开窗户以净化室内空气。
+［记］purity n.纯洁，纯净pure adj.纯净的；单纯的
+filter"filtn
+v.过滤；（光或声）透n.过滤器过
+］Sun light filtered through the chinks of the
+［例
+shutters.阳光从百叶窗的缝隙中透过来。
+［搭］filter through（消息等）慢慢传开，走漏
+/di'stil/
+distil
+（=distill）v.蒸憾；提取……的精华
+［例］You can distil the water from the lake and make
+it drinkable.你可以蒸懾湖里的水，使其可以饮用。
+condense filter
+refine distil
+simplify
+purify”
+--- PDF page 103 left column ---
+/maud/
+mode
+n.模式；方式
+［例］This fever will return from time to time, if it
+follows its usual mode.按照这种热病通常的出现规律，每隔一阵子，它就会再出现。字根mod指“方式，方法（measure, manner）",如：
+（温
+model（成为一种方式t模型；模特儿），modest
+（改和、适当的方式t不自视过高t谦虚的），modify
+变方式t稍作修改）。
+/mould/
+mould
+（=mold）v.浇铸；塑造n.模子
+［例］It can be moulded and shaped at will.它可被随意塑造加工。
+prototype /'prsutstaip/
+m原型；雏形
+［例］The prototype for future school building was
+showed in the library.图书馆里展示了未来的学校建筑的雏形。
+fra m ewo rk /'freimw3ik/
+n.框架，结构；体系
+［例］This bridge over the river has a steel framework.
+这座跨河大桥是钢骨结构的。
+aspect /'ffispekt/
+n.（问题、事物等的）方面
+［例］We must consider a problem in all its aspects.
+我们必须全面地考虑问题。
+phase /feiz/
+n.阶段，时期
+［例］The first phase of the project has been
+completed.该工程的第一阶段已经完成。
+operate /'opsreit/
+V.操作；运营；做手术
+him to operate this new
+［例］It's too difficult for
+machine.对他来说，操作这台复杂的新机
+sophisticated
+器太难了。
+［记］operation n.操作；企业；手术
+facilitate /fa'silgteit/
+V.使便利，促进
+［例］Many modern inventions facilitate housework.
+许多现代发明有利于做家务。
+mode aspect transform
+mould phase convert
+prototype operate alter
+framework facilitate shift
+--- PDF page 103 right column ---
+transform /traens'foim/
+V.使改变形态；使改观
+［例）She transformed the room by painting it.她漆了房间，使它焕然一新。
+n.变化，转变
+［记］transformation
+trans（转移）+form（形状）t使改变形态。"变形金刚”的英文是Transformer
+o
+convert
+/ksn'v3：t/
+v.（使）转变；（使）改变（信仰、观点等）
+/'kDnv3：t/
+n.皈依者
+［例］The solar cell can convert the energy of
+sunlight into electric energy.太阳能电池可以把阳光的能量转化为电能。
+［记］conversion n.转变；换算
+［搭］convert defeat into victory转败为胜
+/'oilto/
+alter
+v.改变，变更
+［例］If it is not a convenient time, we can alter the
+date.如果您在那天不方便的话，我们可以更改日期。
+［记］alternative adj.可供选择的
+［搭］an alter ego知己；个性的另一面源自拉丁语alter,意为“其他的（other）"alter ego
+就是世界上的另一个自我，引申义为“知己，至交”。
+shift /lift/
+V.转移，变换II.转移，变换；轮班
+［例］The wind shifted to the north.风转向北吹。
+［搭］the day shift H班then ight shift夜班
+turn /t3：n/
+V.转；翻n.（依次轮到的）机会
+［例］It was your turn last time; it's always your turn
+to be the boss.上次就是你，每次都是你在发号施令。
+［记］turning n.旋转；转弯处
+adapt /dd氏pt/
+V.适应；改编
+［例］There will be more than one person who can
+adapt to your personality.能与你性格相合的人不会只有一个。
+［记］adaptation n.适应
+［搭】adapt to sth.适应某事物
+adjust /dgAst/
+V.调节；改变（行为或观点）以适应
+［例］He soon adjusted to army life.他很快就适应了军中生活。
+turn
+adapt
+Chapter
+adjust
+科技发明
+--- PDF page 104 left column ---
+［记］adjustment n.调整，调节
+［搭］adjust to适应
+pinpoint /'pinpoint/
+V•精确指明……的位置n.针尖；极小的事物
+［例］With this device, we can pinpoint your exact
+location.有了这台仪器，我们可以准确找出你的确切彳立置。
+accurate /'sekj^rst/
+adj.准确的，正确无误的
+［例］Hearsay definitely can't be regarded as
+accurate information.传闻当然不能算是准确消息。
+【记］accuracyn.精确（度），准确（性）
+inaccurate adj.有错误的，不准确的
+/pri'sais/
+precise
+adj.精确的，准确的；一丝不苟的
+［例］A lawyer needs a precise mind.律师需要一丝不苟的头脑。
+［记】precisely adv.正是；恰好地
+［搭］at that precise moment恰好在那个时刻
+/ka'rekt/
+correct
+adj.正确的
+［例］The correct answers can be found at the
+bottom of page 8.正确答案在第8页末。
+［记］correction n.改正incorrect adj.错误的
+error /'ers/
+m错误，过失
+［例］The accident was caused by human error.这次事故是由人为过错造成的。
+mistake /m^'steik/
+n.错误v.误解
+［例］I may have made a mistake in that regard.在那一点上，我可能犯了一个错误。
+［搭］by mistake错误地，由于差错
+make a mistake犯错误
+flaw /flo/：
+m缺陷；错误
+［例］This flaw makes the vase less valuable.因为这处缺陷，这个花瓶不那么值钱了。
+［记】flawless adj.完美的，没有瑕疵的
+pinpoint correct
+accurate error
+雅思词汇真经
+precise mistake
+IELTS
+--- PDF page 104 right column ---
+wrong /roij/
+adj.错误的adv.错误地
+［例］In stead of complai ning about whafs wrong, be
+grateful for what's right.要对对的事心存感恩，而不是抱怨哪里出错了。
+［搭］go wrong出现问题；出差错
+fault /foilt/
+缺点；故障v.找出缺点
+H列］It is hard to fault the way he runs his own operation.
+他经营自己的公司的方式无可指摘。
+［记］faulty adj.有错误的；有缺点的false adj.不正确的
+［搭］find fault with挑错，挑剔，抱怨
+/'stA mbol/
+stumble
+V.犯错误；绊脚；跌跌撞撞地走
+［例］The sudden weakness in her legs made her
+stumble.她突然两腿发软，踉跄了一下。
+［搭］stumble over在……绊了一下
+contingency /k9n,tind3onsi/
+m意外事件，可能发生的事
+H列］We must always be prepared for every contingency.
+我们必须始终灘殆种盛准备。
+circumstance /'s3：k9mstens/
+m情况；环境；条件；卜s］境遇
+［例］Circumstances are the rulers of the weak, the
+wise.弱者困于环境，智者利用环境。
+instruments of the
+［搭under/in no circumstances决不
+circum/circ/cycl（o）都和“圆，环”有关，如1:circumstanee
+（站在周围t环境），circle（圆圈；周期），circulate
+（循环），cyclist（骑自行车的人），bicycle（有两个轮子t自行车），cyclone（旋风），recycle（回收利用）。
+flaw stumble
+wrong contingency
+fault circumstance
+--- PDF page 105 left column ---
+历史是时代的见证，真理的火炬，记忆的生命
+History is the witness of the times, the torch of
+truth, the life of memory, the teacher of life, the人生的导师，远古的使者。
+messenger of antiquity.——西塞罗
+—Marcus Tullius Cicero
+A
+civilisation n.文明
+archaeology
+--- PDF page 105 right column ---
+antique n.古董化历史
+n.博物馆
+museum
+—h—i
+?
+I B I
+n.考古学l.8.b
+
+## PARSED ENTRIES FLAGGED AS PROBLEMATIC
+[
+ {
+  "word": "technology",
+  "meaning": "n.技术 M列］Life is made so much easier with modern science and technology.有了现代科学技术，生活变得比以往惬意得多。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "technological adj.技术上的 advanced technology先进的技术",
+  "n": 1,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "apply",
+  "meaning": "",
+  "ex_en": "We should not only know the theory but also how to apply it to practice",
+  "ex_zh": "我们不仅要知道理论，还要知道怎样把理论应用于实践。",
+  "notes": "application n.应用；申请；应用程序 applicable adj.适用的，合适的appliance n.应用；（家用）器具 apply to适用于apply A to B把A应用于B 手机上的应用软件常被称为“app”，那就是application 的缩略。",
+  "n": 27,
+  "_why": "empty-meaning"
+ },
+ {
+  "word": "instrument",
+  "meaning": "n.仪器；工具；乐器 ［仞!J］A plough is an instrument used for farming. 犁是一种用于耕作的工具。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 32,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "byproduct",
+  "meaning": "n.副产品",
+  "ex_en": "Happiness is not a goal; it is a byproduct",
+  "ex_zh": "幸福不是一种目标，而是一种副产品。 When there is power shortage, they count on\nthe auxiliary power supply.停电的时候，他们依赖后备供电设施。\nadj.多功能的，多用途的 Plastics are a versatile material in industry.\n在工业中，塑料是一种多用途材料。",
+  "notes": "bypass n.旁路bypath n.旁道，小路 bywork n.业余活计byname n.绰号 adj.辅助的，协助的；备用的",
+  "n": 39,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "microscope",
+  "meaning": "n.显微镜 M列］The optical microscope magrHfies the object 1,000 times.这架光学显微镜把物像放大了一千倍。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "microphone n.麦克风，话筒microwave n.微波炉；微波microbe n.微生物",
+  "n": 44,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "laptop",
+  "meaning": "n.笔记本电脑",
+  "ex_en": "A laptop would be really useful when I'm working on the train",
+  "ex_zh": "我在火车上工作时，笔记本电脑真的很有用。",
+  "notes": "",
+  "n": 54,
+  "_why": "meaning-has-tag-residue"
+ },
+ {
+  "word": "software",
+  "meaning": "n.软件 shop.这是一家卖计",
+  "ex_en": "This is a computer software",
+  "ex_zh": "算机软件的商店。\nn.硬件；五金器具",
+  "notes": "",
+  "n": 55,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "transform",
+  "meaning": "V.使改变形态；使改观",
+  "ex_en": "e transformed the room by painting it",
+  "ex_zh": "她漆了房间，使它焕然一新。\nn.变化，转变",
+  "notes": "trans（转移）+form（形状）t使改变形态。\"变形金刚”的英文是Transformer o",
+  "n": 90,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "accurate",
+  "meaning": "adj.准确的，正确无误的",
+  "ex_en": "Hearsay definitely can't be regarded as accurate information",
+  "ex_zh": "传闻当然不能算是准确消息。\n【记］accuracyn.精确（度），准确（性）\ninaccurate adj.有错误的，不准确的",
+  "notes": "",
+  "n": 98,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "fault",
+  "meaning": "缺点；故障v.找出缺点 H列］It is hard to fault the way he runs his own operation. 他经营自己的公司的方式无可指摘。",
+  "ex_en": "The sudden weakness in her legs made her stumble",
+  "ex_zh": "她突然两腿发软，踉跄了一下。",
+  "notes": "faulty adj.有错误的；有缺点的false adj.不正确的 find fault with挑错，挑剔，抱怨 V.犯错误；绊脚；跌跌撞撞地走 stumble over在……绊了一下",
+  "n": 105,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "contingency",
+  "meaning": "n.意外事件，可能发生的事 H列］We must always be prepared for every contingency. 我们必须始终灘殆种盛准备。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 106,
+  "_why": "meaning-too-long"
+ }
+]

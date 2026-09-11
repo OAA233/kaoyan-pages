@@ -1,0 +1,207 @@
+{
+ "fix": [
+  {
+   "n": 2,
+   "word": "press",
+   "meaning": "n.新闻界，记者；报刊；出版社",
+   "ex_en": "The power of the press is very great.",
+   "ex_zh": "新闻界的力量非常大。",
+   "notes": ""
+  },
+  {
+   "n": 5,
+   "word": "handout",
+   "meaning": "n.传单；讲义",
+   "ex_en": "Please read the handout carefully.",
+   "ex_zh": "请仔细阅读这份讲义。",
+   "notes": ""
+  },
+  {
+   "n": 13,
+   "word": "pastime",
+   "meaning": "n.消遣，娱乐",
+   "ex_en": "Listening to music is the favourite pastime of many people all over the world.",
+   "ex_zh": "听音乐是全世界许多人最喜爱的消遣。",
+   "notes": ""
+  },
+  {
+   "n": 22,
+   "word": "programme",
+   "meaning": "（=program）n.节目；方案；（演出或活动的）程序 v.为（系统）设定程序；计划",
+   "ex_en": "There was an interesting programme on TV yesterday.",
+   "ex_zh": "昨天有个很有趣的电视节目。",
+   "notes": "programmer n.程序设计员"
+  },
+  {
+   "n": 29,
+   "word": "magic",
+   "meaning": "n.魔术；魔法",
+   "ex_en": "The magician thrilled his audienee with his magic.",
+   "ex_zh": "魔术师用他的魔术使观众们激动万分。",
+   "notes": ""
+  },
+  {
+   "n": 54,
+   "word": "painting",
+   "meaning": "n.油画，绘画；作画；涂漆",
+   "ex_en": "This painting is invaluable.",
+   "ex_zh": "这幅画是非常珍贵的。",
+   "notes": ""
+  },
+  {
+   "n": 61,
+   "word": "musical",
+   "meaning": "adj.音乐的；悦耳的",
+   "ex_en": "The drum is one of the oldest musical instruments.",
+   "ex_zh": "鼓是最古老的乐器之一。",
+   "notes": "musician n.音乐家，作曲家"
+  },
+  {
+   "n": 75,
+   "word": "violin",
+   "meaning": "n.小提琴",
+   "ex_en": "The violin is not quite in tune with the piano.",
+   "ex_zh": "小提琴跟钢琴的调子不太和谐。",
+   "notes": ""
+  },
+  {
+   "n": 83,
+   "word": "patron",
+   "meaning": "n.赞助人；顾客，老主顾",
+   "ex_en": "A wealthy patron has promised to send him to study overseas.",
+   "ex_zh": "一个富有的赞助人答应要送他出国留学。",
+   "notes": ""
+  },
+  {
+   "n": 91,
+   "word": "stadium",
+   "meaning": "n.体育场，运动场",
+   "ex_en": "The stadium has been fitted with seating for 100,000 spectators.",
+   "ex_zh": "这个体育场配备了10万个观众座席。",
+   "notes": ""
+  },
+  {
+   "n": 100,
+   "word": "sprawl",
+   "meaning": "v.伸开四肢坐着（或躺着）；延伸，蔓延n.（城市）杂乱无序扩展的地区",
+   "ex_en": "He sprawled on the sofa.",
+   "ex_zh": "他手脚摊开，躺在沙发上。",
+   "notes": ""
+  },
+  {
+   "n": 104,
+   "word": "golf",
+   "meaning": "n.高尔夫球",
+   "ex_en": "Hundreds of private golf clubs took part in a recent study.",
+   "ex_zh": "数百家私人高尔夫俱乐部参与了最近的研究。",
+   "notes": ""
+  },
+  {
+   "n": 111,
+   "word": "goal",
+   "meaning": "n.球门；进球得分；目的",
+   "ex_en": "The home side rubbed in their superiority with a further goal.",
+   "ex_zh": "主队再进一球，从而奠定了优势。",
+   "notes": ""
+  },
+  {
+   "n": 123,
+   "word": "tumble",
+   "meaning": "v.摔倒，滚下",
+   "ex_en": "She tumbled on the slick, damp ground.",
+   "ex_zh": "她在这又滑又湿的地上摔倒了。",
+   "notes": ""
+  },
+  {
+   "n": 126,
+   "word": "dive",
+   "meaning": "v.跳水；潜水；俯冲",
+   "ex_en": "Diving is a part of this expedition.",
+   "ex_zh": "潜水是这次探险活动的一部分。",
+   "notes": ""
+  },
+  {
+   "n": 131,
+   "word": "spring",
+   "meaning": "v./n.跳，跃",
+   "ex_en": "The cat crouched ready to spring.",
+   "ex_zh": "那只猫俯身准备起跳。",
+   "notes": ""
+  },
+  {
+   "n": 132,
+   "word": "bounce",
+   "meaning": "v.（使）反弹，（使）弹起；（使）跳动",
+   "ex_en": "The ball hit the wall and bounced off it.",
+   "ex_zh": "球打在墙上又反弹开。",
+   "notes": ""
+  },
+  {
+   "n": 134,
+   "word": "picnic",
+   "meaning": "n.野餐；野餐食物",
+   "ex_en": "Let's eat our picnic by the waterfall.",
+   "ex_zh": "咱们在瀑布旁吃野餐吧。",
+   "notes": "go for a picnic去野餐"
+  },
+  {
+   "n": 135,
+   "word": "race",
+   "meaning": "n.赛跑，速度竞赛；人种，种族",
+   "ex_en": "The horse is racing against five others.",
+   "ex_zh": "这匹马正在和其他五匹马比赛。",
+   "notes": ""
+  },
+  {
+   "n": 151,
+   "word": "bend",
+   "meaning": "v.俯身，弯腰；使弯曲",
+   "ex_en": "He bent his walking cHrection toward me.",
+   "ex_zh": "他转身向我走来。",
+   "notes": "bend over backwards to do sth.竭尽全力去做某事"
+  }
+ ],
+ "delete": [],
+ "add": [
+  {
+   "after": "press",
+   "word": "journalist",
+   "meaning": "n.记者，新闻工作者",
+   "ex_en": "No journalist was bold eno ugh to challe nge the Prime Minister.",
+   "ex_zh": "没有一个记者大胆到敢挑战首相。",
+   "notes": ""
+  },
+  {
+   "after": "handout",
+   "word": "leaflet",
+   "meaning": "n.传单v.散发传单",
+   "ex_en": "We were paid to leaflet advertisements in the shopping mall.",
+   "ex_zh": "有人雇我们在购物中心发放广告传单。",
+   "notes": ""
+  },
+  {
+   "after": "painting",
+   "word": "sculpture",
+   "meaning": "n.雕塑",
+   "ex_en": "The smooth contour of the sculpture is wonderful.",
+   "ex_zh": "这座雕塑流畅的轮廓线真是太美了。",
+   "notes": ""
+  },
+  {
+   "after": "stadium",
+   "word": "gym",
+   "meaning": "n.体育活动；（=gymnasium）健身房，体育馆",
+   "ex_en": "Both able-bodied and disabled people can use this gym.",
+   "ex_zh": "健全人士和残障人士都可使用这家健身房。",
+   "notes": ""
+  },
+  {
+   "after": "race",
+   "word": "marathon",
+   "meaning": "n.马拉松赛跑；马拉松式的活动",
+   "ex_en": "Gallard completed the marathon in less than three hours.",
+   "ex_zh": "加勒德在不到三个小时的时间里就跑完了马拉松。",
+   "notes": ""
+  }
+ ]
+}

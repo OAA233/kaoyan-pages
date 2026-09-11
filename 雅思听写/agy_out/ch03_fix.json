@@ -1,0 +1,183 @@
+{
+ "fix": [
+  {
+   "n": 5,
+   "word": "mammal",
+   "meaning": "n.哺乳动物",
+   "ex_en": "Human beings also belong to the mammal species.",
+   "ex_zh": "人类也属于哺乳动物。",
+   "notes": ""
+  },
+  {
+   "n": 8,
+   "word": "reptile",
+   "meaning": "n.爬行动物",
+   "ex_en": "It is said that he hates reptiles.",
+   "ex_zh": "据说他讨厌爬行动物。",
+   "notes": ""
+  },
+  {
+   "n": 15,
+   "word": "species",
+   "meaning": "n.［单复数同形］种，物种",
+   "ex_en": "Some species of animals have become extinct because they could not adapt to a changing environment.",
+   "ex_zh": "有些动物物种已经灭绝，因为它们不能适应环境的变化。",
+   "notes": ""
+  },
+  {
+   "n": 29,
+   "word": "offspring",
+   "meaning": "n.［单复数同形］后代，子孙；产物",
+   "ex_en": "They have two offspring.",
+   "ex_zh": "他们有两个子女。",
+   "notes": ""
+  },
+  {
+   "n": 31,
+   "word": "feed",
+   "meaning": "v.供养；喂，饲养；进食",
+   "ex_en": "He has to work hard to feed and clothe his family.",
+   "ex_zh": "他必须努力工作以供给全家吃穿。",
+   "notes": "feed on以……为食物，以……为生"
+  },
+  {
+   "n": 33,
+   "word": "interbreed",
+   "meaning": "v.（使）品种间杂交，（使）生混种",
+   "ex_en": "Fish of different shapes are difficult to interbreed.",
+   "ex_zh": "不同形态的鱼很难杂交。",
+   "notes": ""
+  },
+  {
+   "n": 51,
+   "word": "feather",
+   "meaning": "n.羽毛，翎毛",
+   "ex_en": "A feather is very light, so that we say \"(as) light as a feather\".",
+   "ex_zh": "羽毛很轻，因此我们说“轻如羽毛”(形容重量、脚步等极轻)。",
+   "notes": ""
+  },
+  {
+   "n": 65,
+   "word": "whale",
+   "meaning": "n.鲸鱼v.捕鲸；猛击",
+   "ex_en": "We may live to see the extinction of the whale.",
+   "ex_zh": "我们或许能亲眼见到鲸的灭绝。",
+   "notes": ""
+  },
+  {
+   "n": 72,
+   "word": "bear",
+   "meaning": "n.熊",
+   "ex_en": "The bear is a large, heavy animal with thick fur.",
+   "ex_zh": "熊是体大而笨重、皮毛很厚的动物。",
+   "notes": "a polar bear北极熊"
+  },
+  {
+   "n": 94,
+   "word": "sparrow",
+   "meaning": "n.麻雀",
+   "ex_en": "A sparrow is very alert in its movement.",
+   "ex_zh": "麻雀的动作很敏捷。",
+   "notes": ""
+  },
+  {
+   "n": 110,
+   "word": "creep",
+   "meaning": "v.爬行；悄悄地缓慢行进",
+   "ex_en": "We take off our shoes and creep cautiously along the passage.",
+   "ex_zh": "我们脱掉了鞋，小心地在走廊中蹑手蹑脚地往前走。",
+   "notes": "creep along沿着...爬行"
+  },
+  {
+   "n": 113,
+   "word": "nest",
+   "meaning": "n.巢，窝，穴",
+   "ex_en": "The male hunts for food while his mate guards the nest.",
+   "ex_zh": "雌性动物守巢时，雄性动物去猎食。",
+   "notes": ""
+  },
+  {
+   "n": 114,
+   "word": "hive",
+   "meaning": "n.蜂房；繁忙的场所v.（使）（蜂）入蜂箱；（像蜜蜂般）密集群居",
+   "ex_en": "This marketplace was once a hive of activity.",
+   "ex_zh": "这个市场一度是一个繁忙的闹市。",
+   "notes": ""
+  },
+  {
+   "n": 123,
+   "word": "bacteria",
+   "meaning": "n.［bacterium的复数形式］细菌",
+   "ex_en": "Bacteria in drinking water have spread the illness.",
+   "ex_zh": "饮水中的细菌传播了该疾病。",
+   "notes": ""
+  },
+  {
+   "n": 124,
+   "word": "virus",
+   "meaning": "n.病毒",
+   "ex_en": "My computer was accidentally infected with a virus called Trojan Horse.",
+   "ex_zh": "我的电脑不小心感染了一种被称作“木马”的病毒。",
+   "notes": ""
+  },
+  {
+   "n": 152,
+   "word": "subsistence",
+   "meaning": "n.勉强维持生活",
+   "ex_en": "The standard of living at that time was on the edge of subsistence.",
+   "ex_zh": "当时的生活水平处于勉强维生的边缘。",
+   "notes": ""
+  }
+ ],
+ "delete": [],
+ "add": [
+  {
+   "after": "reptile",
+   "word": "herbivore",
+   "meaning": "n.食草动物",
+   "ex_en": "Pandas are classified as carnivores but they have a diet mainly of an herbivore.",
+   "ex_zh": "大熊猫被归为食肉动物，但它们的日常主要饮食像食草动物。",
+   "notes": ""
+  },
+  {
+   "after": "feather",
+   "word": "fur",
+   "meaning": "n.（动物的）软毛；（用于制衣等的）毛皮",
+   "ex_en": "Alice is allergic to the fur of cats.",
+   "ex_zh": "艾丽斯对猫毛过敏。",
+   "notes": ""
+  },
+  {
+   "after": "whale",
+   "word": "kangaroo",
+   "meaning": "n.袋鼠",
+   "ex_en": "The kangaroo is native to Australia.",
+   "ex_zh": "袋鼠原产于澳大利亚。",
+   "notes": ""
+  },
+  {
+   "after": "sparrow",
+   "word": "pigeon",
+   "meaning": "n.鸽子",
+   "ex_en": "An old man sat on the park bench and fed the pigeons.",
+   "ex_zh": "一位老人坐在公园的长凳上喂鸽子。",
+   "notes": ""
+  },
+  {
+   "after": "virus",
+   "word": "microbe",
+   "meaning": "n.微生物",
+   "ex_en": "Would the good microbes do battle with the bad microbes and help to restore their health?",
+   "ex_zh": "这些好的微生物会不会与坏的微生物斗争，从而帮助患者恢复健康呢？",
+   "notes": "microbiology n.微生物学microbial adj.微生物（或细菌）的；由微生物（或细菌）引起的 micro（微小）+be（=bi生命）t微小的生命t微生物。"
+  },
+  {
+   "after": "subsistence",
+   "word": "exist",
+   "meaning": "v.存在；生存",
+   "ex_en": "Most scientists believe that water doesn't exist on the surface of the moon.",
+   "ex_zh": "多数科学家认为，月球表面不存在水。",
+   "notes": "existence n.存在；生活方式"
+  }
+ ]
+}

@@ -1,0 +1,613 @@
+你是词汇书数据修复工具。下面给你两部分内容：
+(A) 一本雅思词汇书某章的两栏 PDF 文字层抽取结果（左右栏交替，存在串行、断词、乱码标签如 "［彡列］"、"M列］"、"［傅!J］" 等，正常标签是 ［例］/［搭］/［记］）。
+(B) 该章解析出的、被程序标记为有问题的词条（JSON 数组）。
+
+任务：对照 (A) 的真实文字，逐条修正 (B) 中的问题词条。
+
+修正规则：
+1. 词条字段：word(英文词/词组), meaning(词性+中文释义), ex_en(英文例句), ex_zh(中文翻译), notes(搭配/派生词，可空)。字段缺失用 ""。
+2. 如果 word 是例句碎片（如 "is"、"zoo is situated"、"job is to operate an elev"），要还原成真正的词头（对照原文音标所在行），并补齐它的释义/例句。
+3. 如果 meaning 里混入了例句或邻居条目（过长、含 例/搭/记/］ 等），把例句拆到 ex_en/ex_zh，只保留词性+释义。
+4. 如果 ex_en 混入了别的例句或中文，按原文拆分，只保留该词自己的那句英文；ex_zh 只保留对应中文。
+5. 如果原文里存在某个词条被程序整条吞掉（没出现在 (B) 里但原文明显有独立音标行+释义+例句），在 fix 里用 "add" 输出它，after 填它前面那个词条的 word。
+6. 只要 (B) 里明显是重复/错误的假词条，在 delete 里列出它的 word。
+7. 原文里没有例句的词条（书本身就没印），ex_en 留 ""，不要自己编例句。绝不编造释义，宁可留空。
+
+补充要求（重要）：
+- (B) 里每个词条都有 "n" 字段（原条目编号）。fix 和 delete 里必须原样回填 "n"，否则无法定位。fix 里 "word" 填修正后的词头。
+- 如果某字段原文里确实没有（书本身没印），填空字符串 ""。
+
+只输出一个 JSON 对象，不要任何解释文字、不要 markdown 代码块，格式严格如下：
+{"fix":[{"n":13,"word":"新word","meaning":"...","ex_en":"...","ex_zh":"...","notes":"..."}],"delete":[{"n":40}],"add":[{"after":"前一个词的word","word":"...","meaning":"...","ex_en":"...","ex_zh":"...","notes":""}]}
+
+注意：不要使用任何工具、不要联网、不要读写文件；只根据下面给定的文本作答，直接把 JSON 放在回答里。
+
+================ (A) 原文 ================
+# LESSON ch07
+
+## RAW BOOK TEXT (two-column extraction, may be garbled/interleaved)
+--- PDF page 106 left column ---
+culture /'kAltJs/
+n・文化，文明；教养
+［例］China plays an important role in promoting
+Asian
+culture.中国在推动亚洲文化发展方面发挥着重要作用。
+［记］cultural adj.文化的multicultural adj.文化多样的
+（to
+字根cult指“耕种till）”。人类最早的文化之一就是农耕文化——怎样播种，如何灌溉，何时收获，等等。
+civilisation /iSiv^lai'zeiJ'an/
+(=civilization)n.文明
+［例］Western civilisation was cradled in Ancient
+Greece.古希腊滋养了西方文明。
+［IS］civilise（=civilize）v.使文明；开化
+/ri'neisans/
+renaissance
+n.［the R~］文艺复兴时期
+［例］The Renaissance was an epoch of unparalleled
+cultural achievement.文艺复兴时期是一个在文化上取得空前成就的时代。
+/'epik/
+epic
+n.史诗adj.宏大的
+［例］Their epic fight is the subject of a new film.他们的伟大战斗是一部新电影的主题。
+ideology /iaidilDlad3i/
+n.意识形态，思想体系
+［例］An obsolete ideology can hamper an economy.
+过时的意识形态会束缚经济。
+tradition /trs'dijan/
+n.传统
+［例］Asia has a long tradition of tea-drinking. China is
+no exception.亚洲有着饮茶的悠久传统，中国也不例外。
+［记］traditional adj.传统的；惯例的
+［搭］by tradition根据传说；依照传统
+tribe
+磁・culture ideology
+^civilisation
+tradition
+雅思词汇奠经
+renaissance convention
+IEITS#«epic custom
+--- PDF page 106 right column ---
+convention /ksn'venj汕/
+ii.惯例；大型会议
+［例］The handshake is a social convention.握手是社交惯例。
+［记］conventional adj.传统的；通常的
+/'kAstsm/
+custom
+Fl.习俗；(个人的)习惯
+［例］The custom prevails over the whole area.该风俗盛行于这整个地区。
+［记］customs n.海关；关税
+/'fjuidl-iz^m/
+feudalism
+n.封建主义；封建制度
+［例］Feudalism was not abolished in England until
+1660.英国直到1660年才废除封建制度。
+［记］feudal adj.封建的
+slavery /'sleivori/
+n.奴隶制
+［例］They thought slavery was morally wrong.他们认为奴隶制在道德上是错误的。
+［记］slave n.奴隶
+ethical /'eQikal/
+日dj.伦理的，道德的
+［例］You can't divorce scienee from ethical questions.
+不能把科学与伦理问题割裂开。
+moral /'moral/
+adj.道德上的；有道德的n.卜s］道德
+［仮!I］The old gentleman claimed himself to be a very
+moral man, who had never told a lie in his life.这位老先生称自己是个很有道德的人，一生中从未说过谎。
+［记］immoral adj.不道德的
+［搭］moral principles道德准贝！J moral standards
+道德水准
+/traib/
+n.部落
+M列］The tribe's development was more primitive
+than that of their neighbours.该部落所处的发展阶段比邻近部落更原始。源自拉丁语tribus,卢梭在《社会契约论》中曾提到了其词源：古罗马成立时，人民由阿尔班人（Albain）、沙宾人（Sabin）和异邦人三种人构成，故把这三种入称为三个tribus（旳［三］+bus［存在］t三个存在）。字根tribut也源自tribus,指“付（to pay）,分配（to
+assign）”，在古罗马三个“部落”间分配、支付的财物就是tribute（礼物；贡品）。其他同源词还有contribute（捐
+feudalism tribe
+slavery
+ethical
+moral
+--- PDF page 107 left column ---
+献，捐赠），distribute（分发），attribute（把...归因于;
+属性）‘tributary（支流）
+o
+aboriginal
+/役bdridsSnR/
+n・［A~］澳大利亚土著人adj.本土原有的；土著的
+do not like the idea of a day
+［例］Many Aboriginals
+to celebrate the British landing.许多澳大利亚土著并不喜欢庆祝英国人登陆的日子。
+［记］original adj.原本的，最初的origin n.起源
+inhabitant /in'haeb^tsnt/
+n.居民
+［例］The local inhabitants do not like noisy tourists
+in summer.当地居民不喜欢夏季喧闹的游客。
+［记］inhabit v.居住于，栖息于
+in（进入）+habit（持有，握住t居住）+ant（后缀）t
+居民。
+native
+/'neitiv/
+adj.本土的n.本地人
+［例］He is a native of Beijing.他是北京本地人。
+［搭］native to原产自...的native tongue母语
+local /'lauk^l/
+adj.当地的n.当地人
+［例］He provided local delicacies for his guests.
+他用当地的美味佳肴来招待客人。
+［记］localise（=localize）v.使局部化
+exotic
+/ig'zotik/
+adj.外来的；异国情调的
+［例］The exotic atmosphere will fascinate you.这里具有异国情调的氛围将会把你迷住。注意和erotic（色情的）区分开。exotic来源于希腊语
+ex。（外面的），而erotic则源自希腊语eros（爱），也指希腊神话中的爱神厄洛斯（Eros）厄洛斯是一位长有
+o
+（Cupid）。双翼的美少年，相当于罗马神话中的丘比特
+aboriginal local alien
+inhabitant exotic anthropologist
+native foreigner humanitarian
+--- PDF page 107 right column ---
+foreigner /'for^no/
+n.外国人
+［例］Some foreigners assimilate easily into our way
+of life.有些外国人很容易被我们的生活方式同化。
+alien /'eilisn/
+m外侨；外星生物adj.外国的；陌生的
+［例］I ran into an old friend in the alien land.我在异国他乡遇到故知。
+［记］alienatev.使疏远，使不友好；离间
+［搭］an alien culture异域文化
+anthropologist /役n0rdpDbd36st/
+n.人类学家
+［例］The anthropologist contrasted two cultures in
+his lecture.这位人类学家在讲座中将两种文化进行对比。
+［记］anthropology n.人类学
+humanitarian /hjui.maen^'teorisn/
+n.人道主义者edj.人道主义的，博爱的
+［例］Hepburn is known as a great humanitarian.
+大家都知道赫本是一位了不起的人道主义者。
+heritage /'her^tid3/
+仇（国家的）遗产
+［例］They take great pride in their cultural heritage.
+他们为自己的文化遗产深感自豪。
+inherit /in'her^t/
+V.继承（财产等）；经遗传获得
+a house from his father.他从父亲
+［例］He inherited
+那里继承了一所房子。
+［记］inheritance n.继承；遗产
+antique
+/aen'ti:k/
+（
+n.古董adj.古董的
+［例］He wears designer clothes and drives an
+heritage
+inherit
+antique Chapter
+―各化历史
+--- PDF page 108 left column ---
+antique car.他穿着著名设计师设计的服装，开着一辆古董车。
+/Q：kibbd3i/
+archaeology
+m考古学
+［例］Archaeology is the study of ancient civilisations.
+考古学研究古代文明。
+［记］archaeological adj.考古学的
+archaeologist n.考古学家
+/'eksksveit/
+excavate
+［例］It took a long time to excavate the ancient city
+of Troy.挖掘古老的特洛伊城花了很长时间。
+［记］excavation n.挖掘，发掘
+museum /mjui'ziam/
+n.博物馆
+［例］A visit to the museum is an unforgettable
+experience.参观这家博物馆是一段令人难忘的经历。来自Muse（缪斯女神），um表示地点，故字面意思即缪斯女神的圣殿，也就是向缪斯女神学习的地方。该词在古希腊时期指学校、图书馆、艺术学校，现在仅指博物馆。
+pottery /'pntari/
+n.陶器
+［例］Modern pottery is usually ornamental.现代陶器通常被用作装饰品。
+［记］pot n.壶，罐子
+engrave /in'greiv/
+V.在……上雕刻
+［例］The jeweller will engrave the inside of the ring
+with her name.珠宝匠将在戒指的内表面上刻上她的名字。
+archaeology pottery
+excavate engrave
+雅思词汇真经
+museum decorate
+IELTS
+--- PDF page 108 right column ---
+/'deksreit/
+decorate
+认装饰
+［例］Using extremely different decorating schemes in
+adjoining rooms may result in lack of unity in style.相邻的房间用悬殊太大的装饰方案会导致风格不够统一。
+［记］decoration n.装饰；装饰品decorative adj.装饰性的
+［搭］decorate A with B用B装饰A
+religion /ri'lidjan/
+n・宗教，宗教信仰
+［例］There are many religions in the world.在世界上有许多种宗教。
+［记］religious adj.宗教的
+ritual /'ritjusl/
+n.仪式
+［例］The scientists found that personal involvement in a
+ritual is necessary.科学家发现，亲自参与仪式是必要的。
+etiquette /'etiket/
+n.礼仪，礼节
+［例］He felt very sorry for his breach of etiquette.
+他为他的失礼行为深感抱歉。法语借词，原指“标签，签条"。法国宫廷礼节曾极为繁琐，故宫廷在举办活动前要发给参加的宾客一张纸片签条，上面写着需要遵守的宫廷礼节和穿着要求等。英语中的ticket（票，入场券）一词与该词同源，读音近似。
+belief /b^'li：f/
+n.信念；信仰
+［例］His
+firmness in his beliefs supported him
+difficulties.他坚定的信仰支撑着他渡过困境。
+through
+［记］believe v.相信；认为
+soul /soul/
+n.灵魂；心灵；精神
+［例］No words can express the secret agony of my
+soul.没有任何语言能够表达我心灵的隐痛。
+［搭］put one's heart and soul into sth.全心全意地投入到某事中
+spirit /'spirit/
+n.精神，心灵
+［例］
+We need a spirit of enterprise if we are to overcome
+difficulties.如果要克服困难，我们就要有进取精神。
+our
+［记］spiritual adj.精神上的
+religion belief
+ritual soul
+etiquette spirit
+--- PDF page 109 left column ---
+/'seikr^d/
+sacred
+adj.神圣的；宗教的
+［例］This area was hallowed by sacred memories.
+这个地区因一些神圣的回忆而受尊崇。
+hallowed /'haebud/
+日dj.神圣的；受尊崇的
+［例］The Ganges is hallowed as a sacred, cleansing
+river.恒河被奉为有净化作用的圣河。
+holy /'hsuli/
+日dj.神圣的；圣洁的，虔诚的
+［例］A holy person is spiritually pure.圣洁的人在精神上十分纯洁。
+Pope /psop/
+n.教皇
+［例］The election of a new Pope is coming.新教皇的选举即将到来。
+bishop /'bijop/
+n.主教
+［例］/ve heard a whisper that the Bishop intends to
+leave.我听到有谣传说主教打算离开。
+missionary /'mifsn^ri/
+n.传教士
+［例］The missionary was sent to India last year.
+这名传教士去年被派到印度。
+n.使命
+［记］mission
+priest /pri:st/
+n.牧师；神父；教士
+him to give up his bad
+［例］The priest persuaded
+habit.牧师劝他放弃坏习惯。
+Bible /'baibl/
+n.基督教的《圣经》
+Genesis.《圣经》的开
+［例］The Bible begins with the
+篇是《创世记》。
+church /tj3：t|/
+n.教堂
+to the church to see the priest.
+［例］I'm just going
+我正要去教堂见牧师。
+sacred bishop church
+hallowed missionary cathedral
+holy priest choir
+pope Bible monk
+--- PDF page 109 right column ---
+t
+/ka'eijdrsi/
+cathedral
+n.大教堂
+［例］This cathedral was regarded as a miracle in
+architectural history.这座大教堂被认为是建筑史上的奇迹。
+choir /kwaio/
+n.唱诗班
+［例］The choir sang the Amens beautifully.唱诗班吟唱的“阿门”非常优美。
+monk /rnAqk/
+n.僧侣
+［例］The man was a monk from Mount Emei.那人是来自峨眉山的僧人。
+temple /'temp^l/
+n.寺院，庙宇
+［例］The temple has been considered an example
+of classic design.这座庙被视为古典设计的范例。
+pagoda /pa'gsuda/
+n.佛塔
+［例］The pagoda perches on top of the hill.佛塔立在山顶之上。
+empire /'empaia/
+n.帝国
+［例］The empire had for years been falling into
+decadence.这个帝国多年来一直在走向腐朽堕落。
+imperial /im'piorisl/
+adj.帝国的
+［例］They made an objection to the imperial system
+with resolution.他们坚决反对这种帝国制度。
+temple
+pagoda
+Chapter
+empire
+文化历史
+imperial
+--- PDF page 110 left column ---
+royal /'roisl/
+adj.皇家的；高贵的
+］Britain has
+［例always had a large navy, called the
+Royal Navy.英国一直有支强大的海军，被称为“皇家海军”。
+［记］royalty n.王室成员，皇族
+dynasty /'dinssti/
+n.朝代
+［例］TheTang Dynasty is a period remarkable for its
+liberality.唐朝是一段以开明著称的时期。
+/kralnol9d3i/
+chronology
+n.年表，事件发生顺序表；年代学
+［例］It seems that the paper has conf used the
+chronology of these events.这篇论文好像把这些事件发生的顺序搞混了。字根chron意为“时间（time）",如：chronology（年代学；年表），chronic（长期的，慢性的）。希腊神话中宙斯
+（Zeus）的父亲叫克洛诺斯（Cronos）,因和希腊语中表示
+“时间”的词chronos在拼写和读音上很相似，后来被描述为时间之神。克洛诺斯害怕自己的子女推翻自己，曾吞食了自己的后代，就像时间的无情。正如谚语所说的：时间吞噬一切。
+/'empara/
+emperor
+n.皇帝
+［例］The emperor unified the country by the sword.
+那位皇帝用武力统一了全国。
+king /kig/
+n.国王
+［例］The king is the most important person in a
+kingdom.国王是一个王国中最重要的人物。
+［记］kingdom n.王国
+queen /kwiin/
+n.王后；女王
+［例］They were bowing as the king and queen
+walked in.当国王和王后进来时，他们屈膝致敬。
+prince /prins/
+n.王子；亲王
+［傍!I］The prince fell in love with a fair young maiden.
+王子爱上了一位年轻美丽的少女。
+princess /iprin'ses/
+n.公主；王妃
+［例］The princess was ostracised for marrying a
+rich bourgeois man.公主因与一位富有的资本家结婚而遭到排挤。硕、•‘royal king
+queen
+dynasty
+雅思词汇糞经
+chronology prince
+emperor princess
+--- PDF page 110 right column ---
+/'m^d3gsti/
+majesty
+m威严，壮观；陛下
+［例］I enjoyed all the majesty of royal ceremonies.
+我很欣赏皇家仪典的富丽堂皇。
+［记］majestic adj.宏伟的，庄严的
+nobility /nsu'biliti/
+n.高尚的品质；贵族
+［例］Virtue is the only true nobility.万事不如美德高。
+［记］noble adj.贵族的；高贵的n.贵族成员
+（□rd /lo:d/
+«!•（英国）贵族；［L~］阁下，大人；［theL~］上帝
+［例］The young lord with the red-gold hair bowed,
+"As you command, Lord Edward/'金红头发的年轻贵族鞠躬道：“悉听尊命，艾德大人。”
+knight /nait/
+n.骑士v.封（某人）为爵士
+［例］He was knighted for his war services.他因战功而被封为爵士。在国际象棋（chess）中，knight代表“马"，其他棋子包括"车（rook/castle）""象（bishop）""兵（pawn）”等。从chess和Chinese chess（中国象棋）看东西方差异:
+chess中的king可以到处走，而中国象棋里的“将/帅”不出"宫”（九宫，象棋术语）；chess里有queen,可横竖斜着满棋盘跑，威力无穷、彪悍泼辣一一西方历史上的女王统治屡见不鲜（著名的如英国女王、丹麦女王等），而中国象棋里根本没有“后”这个棋子，在一定程度上反映了中国古代的父权封建制度。
+guardian /'gaidisn/
+n.保卫者；监护人adj.守护的
+H列］He became the legal guardian of his brother's
+majesty guardian
+nobility
+lord
+knight
+--- PDF page 111 left column ---
+daughter.他成为他侄女的合法监护人。
+［记］guard v.保护n.守卫在英国很有影响力的一份报纸是《卫报》（The Guardian）,
+且该报会刊登较权威的英国大学排名。
+nostalgia /ndstaelds。/
+n.思乡之情；怀旧之情
+［例］The soldiers were filled with nostalgia.士兵0］
+心中充满了乡愁。
+homesick /'hsuniiSik/
+adj.思乡的
+［仅!l］My American friend tells me, she is never
+as homesick as during this time of year, around
+Thanksgiving.我的美国朋友跟我说，每年的这段时间，即感恩节前后，是她最想家的时候。
+［记］homesickness n.思乡情绪
+celebrity /s^'lebr^ti/
+n.名人；名誉
+［例］Celebrity, money and possessions are too often
+the touchstones for teenagers.名誉、金钱和财产常常成为青少年们衡量事物的标准。
+status
+/'steitas/
+n.地位，身份
+［例］Being an engineer gives him a high social
+status.做工程师给了他很高的社会地位。
+［搭］social status社会地位
+background /'b<ekgraund/
+m背景；（个人出身、受教育）经历
+［例］He is a man with a special cultural background.
+他是拥有特殊文化背景的人。
+experience /ik'spiarians/
+n.经验；（一次）经历，体验
+memorable experience.这真是一
+［例］It was a truly
+nostalgia background incident
+homesick experience thrive
+celebrity anecdote prosperity
+status accident setback
+--- PDF page 111 right column ---
+次难忘的经历。
+［记］experienced adj.经验丰富的
+anecdote /'aenikdsut/
+n.轶事，奇闻
+［例］He preceded his lecture with a humorous
+anecdote.他以一则幽默的轶事开始他的演说。
+（to，字根don/dot表示"给give）”如］：an（否定）+
+ec（向外）+dote（给）t没有给外面的，没有传到外面的事情t anecdote（轶事，奇闻）；blood donor（给血的人t献血者）；par（完全的）+don（给）t完全给予，诚恳地给予t pardon（原谅,宽恕）。
+accident /'aeks^dant/
+n.事故；意外，偶然的事
+［例】His left knee was hurt in a traffic accident.他的左膝在一次交通事故中受伤了。
+［记］accidental adj.意外的，偶然的；附属的
+［搭］by accident偶然an aviation accident航空器失事，空难
+incident /'ins^dant/
+ii.（尤指不寻常的、重要的或暴力的）事件；（两国间的）
+冲突
+［例］A serious incident along the border increased
+our fears of war.边境上的一起严重冲突使我们更加担心战争的爆发。
+［记］incidental adj.附带的，次要的
+thrive /0raiv/
+V.繁荣，兴旺发达；茁壮生长
+thrive and then wive.先立业，后成家。
+［例］First
+prosperity /pro'sper^ti/
+ii.繁荣，兴旺
+［仮!I］The empire was on the wane after its period of
+prosperity.帝国在历经繁盛以后逐渐衰落。
+［记］prosper v.成功，繁荣prosperous adj.繁荣的
+［搭］a business prosperity商业繁荣
+setback /'setback/
+n.挫折，阻碍
+keenness.
+［例］This setback has drained away my
+这次挫折使我的热情荡然无存。
+［搭］a business setback生意上的挫折
+adversity /?cTv3：s右ti/
+n.逆境
+man to meet adversity.又艮难
+［例］Hardship disposes
+困苦使人愿意去克服逆境。
+adversity WO
+Chapter
+文化历史
+--- PDF page 112 left column ---
+
+--- PDF page 112 right column ---
+
+--- PDF page 113 left column ---
+Think like a wise man but communicate in the language of
+像聪明人一样思考，用普通人的语言讲话。——威廉•叶芝二£二二三-二举一，二春弄丁…冥灵
+—=:-U—”I-
+M T
+M\.-„_朗嘉工
+»linguistics n.语言学！>■'
+i liH illi 1$I
+書會鬻轟議囂蠶嘗倉二*>
+)..
+文
+I
+:…I j
+handwriting n.笔迹；甘写总二二-扌.一计匸
+--- PDF page 113 right column ---
+the people.一William\bats
+Chapter
+语言演化
+pictograph n.象形文字主匸甘
+
+## PARSED ENTRIES FLAGGED AS PROBLEMATIC
+[
+ {
+  "word": "renaissance",
+  "meaning": "n.［the R~］文艺复兴时期",
+  "ex_en": "The Renaissance was an epoch of unparalleled cultural achievement",
+  "ex_zh": "文艺复兴时期是一个在文化上取得空前成就的时代。",
+  "notes": "",
+  "n": 3,
+  "_why": "meaning-has-tag-residue"
+ },
+ {
+  "word": "convention",
+  "meaning": "ii.惯例；大型会议",
+  "ex_en": "The handshake is a social convention",
+  "ex_zh": "握手是社交惯例。 The custom prevails over the whole area.该风俗盛行于这整个地区。",
+  "notes": "conventional adj.传统的；通常的 Fl.习俗；(个人的)习惯 customs n.海关；关税",
+  "n": 7,
+  "_why": "meaning-has-tag-residue"
+ },
+ {
+  "word": "aboriginal",
+  "meaning": "n・［A~］澳大利亚土著人adj.本土原有的；土著的",
+  "ex_en": "Many Aboriginals to celebrate the British landing",
+  "ex_zh": "许多澳大利亚土著并不喜欢庆祝英国人登陆的日子。",
+  "notes": "original adj.原本的，最初的origin n.起源",
+  "n": 12,
+  "_why": "meaning-has-tag-residue"
+ },
+ {
+  "word": "inherit",
+  "meaning": "V.继承（财产等）；经遗传获得 a house from his father.他从父亲",
+  "ex_en": "He inherited",
+  "ex_zh": "那里继承了一所房子。",
+  "notes": "inheritance n.继承；遗产",
+  "n": 22,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "missionary",
+  "meaning": "n.传教士",
+  "ex_en": "The missionary was sent to India last year",
+  "ex_zh": "这名传教士去年被派到印度。\nn.使命",
+  "notes": "",
+  "n": 41,
+  "_why": "ex-zh-has-neighbor"
+ },
+ {
+  "word": "rd",
+  "meaning": "«!•（英国）贵族；［L~］阁下，大人；［theL~］上帝",
+  "ex_en": "The young lord with the red-gold hair bowed, \"As you command,",
+  "ex_zh": "",
+  "notes": "",
+  "n": 62,
+  "_why": "meaning-has-tag-residue"
+ },
+ {
+  "word": "Lord Edward",
+  "meaning": "n.骑士v.封（某人）为爵士",
+  "ex_en": "He was knighted for his war services",
+  "ex_zh": "他因战功而被封为爵士。在国际象棋（chess）中，knight代表“马\"，其他棋子包括\"车（rook/castle）\"\"象（bishop）\"\"兵（pawn）”等。从chess和Chinese chess（中国象棋）看东西方差异:\nchess中的king可以到处走，而中国象棋里的“将/帅”不出\"宫”（九宫，象棋术语）；chess里有queen,可横竖斜着满棋盘跑，威力无穷、彪悍泼辣一一西方历史上的女王统治屡见不鲜（著名的如英国女王、丹麦女王等），而中国象棋里根本没有“后”这个棋子，在一定程度上反映了中国古代的父权封建制度。",
+  "notes": "",
+  "n": 63,
+  "_why": "spaced-head"
+ },
+ {
+  "word": "guardian",
+  "meaning": "n.保卫者；监护人adj.守护的 H列］He became the legal guardian of his brother's",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "",
+  "n": 64,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "homesick",
+  "meaning": "adj.思乡的 ［仅!l］My American friend tells me, she is never Thanksgiving.我的美国朋友跟我说，每年的这段时间，即感恩节前后，是她最想家的时候。",
+  "ex_en": "",
+  "ex_zh": "",
+  "notes": "homesickness n.思乡情绪",
+  "n": 66,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "experience",
+  "meaning": "n.经验；（一次）经历，体验 memorable experience.这真是一",
+  "ex_en": "It was a truly nostalgia background incident homesick experience thrive celebrity anecdote prosperity status accident setback",
+  "ex_zh": "",
+  "notes": "",
+  "n": 70,
+  "_why": "meaning-too-long"
+ },
+ {
+  "word": "thrive",
+  "meaning": "V.繁荣，兴旺发达；茁壮生长 thrive and then wive.先立业，后成家。",
+  "ex_en": "First",
+  "ex_zh": "",
+  "notes": "",
+  "n": 74,
+  "_why": "meaning-too-long"
+ }
+]
