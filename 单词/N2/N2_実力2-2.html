@@ -1,0 +1,2544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新完全掌握 N2 実力2-2 名詞・動詞</title>
+<style>
+  body {
+    --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
+    --num: #8b8577; --num-border: #5a564d; --muted: .55; --accent: #4cc2ff;
+    font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans CJK JP", "PingFang SC", sans-serif;
+    background: var(--bg); color: var(--fg);
+    margin: 0; padding: 14px 16px; max-width: 1080px;
+    transition: background .2s, color .2s;
+  }
+  body.day {
+    --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8;
+    --num: #8a8373; --num-border: #c4bda9; --muted: .6;
+  }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
+  #themeBtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px;
+  }
+  #themeBtn:hover { opacity: .8; }
+  .stats { display: inline-flex; gap: 8px; font-size: 12px; opacity: .7; }
+  .sec-h { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin: 16px 0 6px; grid-column: 1 / -1; }
+  .sec-title { font-size: 13px; font-weight: 700; opacity: .55; letter-spacing: .05em; }
+  
+  /* 浏览排版 */
+  #list { }
+  .row2 { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; }
+  .col2 { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+  .card {
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 10px 14px; background: var(--card);
+    border-left: 5px solid #555; position: relative;
+  }
+  .card.cV { border-left-color: #e5484d; }
+  .card.cI { border-left-color: #d63384; }
+  .card.cNA { border-left-color: #7048e8; }
+  .card.cN { border-left-color: #1971c2; }
+  .card.cadv { border-left-color: #2b8a3e; }
+  .card.cIDM { border-left-color: #b08a3e; }
+
+  .row1 { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .num {
+    font-size: 11px; font-weight: 700; color: var(--num);
+    border: 1.5px solid var(--num-border); border-radius: 50%;
+    width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: center;
+  }
+  .word { font-size: 19px; font-weight: 700; cursor: pointer; }
+  ruby.word { ruby-align: center; }
+  ruby.word rt { font-size: 10px; font-weight: 500; opacity: .55; letter-spacing: .02em; }
+  ruby.word rt.en { font-style: italic; opacity: .5; }
+  .word:hover { text-decoration: underline; }
+  .pos { font-size: 11px; font-weight: 700; padding: 2px 7px; white-space: nowrap; border-radius: 7px; color: #fff; }
+  .pos.V { background: #e5484d; }
+  .pos.I { background: #d63384; }
+  .pos.NA { background: #7048e8; }
+  .pos.N { background: #1971c2; }
+  .pos.adv { background: #2b8a3e; }
+  .pos.IDM { background: #b08a3e; }
+  .mean { margin-top: 3px; font-size: 13px; margin-left: 30px; }
+  .phrase { margin-top: 6px; font-size: 13px; margin-left: 30px; }
+  .phrase .jp { font-weight: 600; cursor: pointer; }
+  .phrase .jp:hover { text-decoration: underline; }
+  .phrase .zh { display: block; opacity: var(--muted); margin-top: 1px; font-weight: 400; }
+
+  /* 对立组/同类组 */
+  .entry { margin-bottom: 6px; }
+  .entry:last-child { margin-bottom: 0; }
+  .bra { display: flex; gap: 10px; align-items: stretch; position: relative; }
+  .bra .half { flex: 1; min-width: 0; }
+  
+  /* 中间相对/关系符号 */
+  .bar-wrap {
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; user-select: none; padding: 0 4px;
+  }
+  .vs-arr { font-size: 16px; opacity: .65; color: var(--num); font-weight: 700; }
+  .vs-ant { width: 0; border-left: 2px solid var(--num-border); height: 100%; min-height: 26px; }
+  .vs-syn { width: 14px; border-top: 2px solid var(--num-border); }
+
+  @media (max-width: 760px) {
+    .row2 { flex-direction: column; }
+    .bra { flex-direction: column; }
+    .bar-wrap { padding: 6px 0; }
+    .vs-ant { width: 100%; height: 0; border-left: none; border-top: 2px solid var(--num-border); }
+  }
+
+  /* ---- 编辑模式样式 ---- */
+  .hbtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer;
+  }
+  .hbtn:hover { border-color: var(--accent); }
+  .hbtn.pri { border-color: var(--accent); color: var(--accent); }
+  .hide { display: none !important; }
+
+  .addbtns { display: inline-flex; gap: 6px; }
+  .addbtns button {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 7px; padding: 2px 8px; font-size: 11px; cursor: pointer; opacity: .8;
+  }
+  .addbtns button:hover { border-color: var(--accent); opacity: 1; }
+
+  body.editing .card { cursor: grab; }
+  body.editing .entry { cursor: grab; position: relative; }
+  .dragging { opacity: .35 !important; }
+  .item { margin-bottom: 10px; }
+  .item.ins-top { box-shadow: 0 -3px 0 var(--accent); }
+  .item.ins-bot { box-shadow: 0 3px 0 var(--accent); }
+  .half.over { outline: 2px dashed var(--accent); outline-offset: 3px; border-radius: 8px; }
+
+  body.editing .bar-wrap {
+    cursor: pointer; border-radius: 6px; padding: 2px 6px;
+    border: 1px dashed transparent;
+  }
+  body.editing .bar-wrap:hover {
+    border-color: var(--accent); background: rgba(76,194,255,.12);
+  }
+
+  .wpair { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .wside { display: inline-flex; align-items: baseline; }
+  .wmid { width: 2px; align-self: stretch; background: var(--num-border); opacity: .6; margin: 0 2px; }
+  .mid-dot { opacity: .45; margin: 0 2px; font-weight: 400; }
+  .merge-bar { display: flex; gap: 6px; justify-content: center; margin: 2px 0 6px; opacity: .75; }
+  .mb-btn { border: 1px dashed var(--num-border); background: var(--card); color: var(--fg); border-radius: 6px; padding: 1px 10px; font-size: 13px; cursor: pointer; }
+  .mb-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---- 悬浮编辑工具条 ---- */
+  #ftool { position: fixed; right: 18px; bottom: 18px; z-index: 600; display: none; flex-direction: column; gap: 6px; background: var(--card); border: 1px solid var(--accent); border-radius: 14px; padding: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.35); }
+  #ftool.open { display: flex; }
+  #ftool .ft-tip { font-size: 10px; opacity: .5; text-align: center; margin-bottom: 2px; }
+  #ftool button { border: 1px solid var(--num-border); background: var(--bg); color: var(--fg); border-radius: 8px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
+  #ftool button:hover { border-color: var(--accent); color: var(--accent); }
+  .drag-handle { cursor: grab; opacity: .4; font-size: 14px; user-select: none; }
+  .drag-handle:hover { opacity: 1; color: var(--accent); }
+  .edf:focus { outline: 1px dashed var(--accent); background: rgba(76,194,255,.08); border-radius: 4px; }
+  .edf.empty:empty::before { content: attr(data-ph); opacity: .35; }
+  .edk { font-size: 12px; opacity: .65; min-width: 20px; }
+  .ede { font-size: 11px; font-style: italic; opacity: .5; min-width: 20px; }
+  .edmean { font-size: 13px; }
+  .edph { font-size: 13px; font-weight: 600; }
+  .edphz { display: block; font-size: 12px; opacity: .6; font-weight: 400; }
+  .sp { position: absolute; top: 2px; right: 24px; opacity: .3; cursor: pointer; font-size: 12px; user-select: none; z-index: 5; }
+  .sp:hover { opacity: 1; color: #4cc2ff; }
+  .x { position: absolute; top: 2px; right: 6px; opacity: .3; cursor: pointer; font-size: 12px; user-select: none; z-index: 5; }
+  .x:hover { opacity: 1; color: #e5484d; }
+  .gx { position: absolute; top: 4px; right: 8px; opacity: .35; cursor: pointer; font-size: 13px; z-index: 5; }
+  .gx:hover { opacity: 1; color: #e5484d; }
+  .note { border-left: 3px solid var(--num-border); background: rgba(128,128,128,.08); border-radius: 6px; padding: 6px 10px; font-size: 13px; position: relative; }
+  .sec-items { display: block; }
+
+  /* Modal */
+  .modal-mask {
+    position: fixed; inset: 0; background: rgba(0,0,0,.6); backdrop-filter: blur(2px);
+    display: none; align-items: center; justify-content: center; z-index: 100;
+  }
+  .modal-mask.open { display: flex; }
+  .modal-box {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    width: 90%; max-width: 620px; max-height: 85vh; padding: 20px; box-sizing: border-box;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .modal-btns { display: flex; justify-content: flex-end; gap: 8px; }
+
+  /* ---- 听写模式 ---- */
+  #dict { position: fixed; inset: 0; background: var(--bg); z-index: 700; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  #dict.open { display: flex; }
+  #dictBig { font-size: 20px; padding: 16px 30px; border-radius: 16px; border: 1px solid var(--num-border); background: var(--card); color: var(--fg); cursor: pointer; }
+  #dictAns { min-height: 130px; transition: opacity .2s; }
+  #dictAns.hidden { opacity: 0; pointer-events: none; user-select: none; }
+  .dword { font-size: 30px; font-weight: 800; }
+  .dpos { opacity: .5; font-size: 12px; }
+  .dmean { font-size: 16px; margin-top: 4px; }
+  .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
+  .dphz { display: block; opacity: .6; font-size: 13px; }
+  .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>実力2-2 名詞・動詞</h1>
+    <p>2章 意味が似ている言葉 2課 名詞・動詞（PDF p.124–128）<span class="stats">共 <b id="count"></b> 词 · 点击日文发音（edge 女声）</span></p>
+  </div>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
+  <button id="editBtn" class="hbtn" onclick="toggleEdit()">✏️ 编辑</button>
+  <button id="expBtn" class="hbtn pri hide" onclick="exportData()">⬇ 导出 JSON</button>
+  <button id="rstBtn" class="hbtn hide" onclick="resetAll()">↺ 重置</button>
+  <button id="themeBtn" onclick="toggleTheme()">🌙 夜间</button>
+</header>
+<div id="list"></div>
+
+<!-- 导出 Modal -->
+<div class="modal-mask" id="exportModal">
+  <div class="modal-box">
+    <h3 style="margin:0;">导出当前数据 (JSON)</h3>
+    <p style="font-size:12px;opacity:.6;margin:0;">已自动触发文件下载。您也可以直接复制下方 JSON 数据备份：</p>
+    <textarea id="exportText" rows="14" style="width:100%;box-sizing:border-box;font-family:monospace;font-size:11px;background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:6px;padding:8px;"></textarea>
+    <div class="modal-btns">
+      <button class="hbtn" onclick="document.getElementById('exportModal').classList.remove('open')">关闭</button>
+      <button class="hbtn pri" onclick="copyExportText()">复制到剪贴板</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// DATA 结构说明:
+// id: 独立编号 | aid: 音频编号 (对应 N2_1-2_audio/*.mp3) | asfx: 音频后缀 (如 '-r', 'p')
+// s: 章节名 | w: 单词 | k: 假名注音 | en: 外来语英语原型
+// m: 中文释义 | p: 词性 | ph: 例句 | phz: 例句中译
+// role: 'arr' (相对 ⇄) / 'ant' (竖线反义 |) / 'syn' (横杠同类 —) / '' (独立单卡)
+// side: 'L' / 'R' 组内左右 | g: 组号 (同一章节内同组连续渲染) | kind: 'note'=文本卡片
+const INITIAL_DATA = [
+ {
+  "s": "1. 名詞",
+  "w": "アイデア",
+  "k": "アイデア",
+  "en": "",
+  "m": "主意，想法，点子",
+  "p": "N",
+  "ph": "みんなで話しているといい（アイデア・考え）が出てくる。",
+  "phz": "大家一起讨论，就会冒出好（主意）。",
+  "id": 1,
+  "aid": 1,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 1
+ },
+ {
+  "s": "1. 名詞",
+  "w": "考え",
+  "k": "かんがえ",
+  "en": "",
+  "m": "想法，看法，观点",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 2,
+  "aid": 2,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 1
+ },
+ {
+  "s": "1. 名詞",
+  "w": "伝言",
+  "k": "でんごん",
+  "en": "",
+  "m": "口信，留言，传话",
+  "p": "N",
+  "ph": "留守番電話に（伝言・メッセージ）を残す。",
+  "phz": "在电话答录机上（留言）。",
+  "id": 3,
+  "aid": 3,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 2
+ },
+ {
+  "s": "1. 名詞",
+  "w": "メッセージ",
+  "k": "メッセージ",
+  "en": "message",
+  "m": "消息，留言；致辞",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 4,
+  "aid": 4,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 2
+ },
+ {
+  "s": "1. 名詞",
+  "w": "真実",
+  "k": "しんじつ",
+  "en": "",
+  "m": "真实，真相",
+  "p": "N",
+  "ph": "（真実・事実・本当のこと）を明らかにする必要がある。",
+  "phz": "有必要查明（真相）。",
+  "id": 5,
+  "aid": 5,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 3
+ },
+ {
+  "s": "1. 名詞",
+  "w": "事実",
+  "k": "じじつ",
+  "en": "",
+  "m": "事实",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 6,
+  "aid": 6,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 3
+ },
+ {
+  "s": "1. 名詞",
+  "w": "本当のこと",
+  "k": "ほんとうのこと",
+  "en": "",
+  "m": "真实的事情，真话",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 7,
+  "aid": 7,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 3
+ },
+ {
+  "s": "1. 名詞",
+  "w": "でたらめ",
+  "k": "でたらめ",
+  "en": "",
+  "m": "胡说，荒唐，一派胡言",
+  "p": "ナ",
+  "ph": "そのうわさは（でたらめだ・うそだ・本当ではない）と思う。",
+  "phz": "我觉得那个传闻（纯属胡说）。",
+  "id": 8,
+  "aid": 8,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 4
+ },
+ {
+  "s": "1. 名詞",
+  "w": "うそ",
+  "k": "うそ",
+  "en": "",
+  "m": "谎话，假话；搞错",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 9,
+  "aid": 9,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 4
+ },
+ {
+  "s": "1. 名詞",
+  "w": "本当ではない",
+  "k": "ほんとうではない",
+  "en": "",
+  "m": "不是真的",
+  "p": "IDM",
+  "ph": "",
+  "phz": "",
+  "id": 10,
+  "aid": 10,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 4
+ },
+ {
+  "s": "1. 名詞",
+  "w": "チャンス",
+  "k": "チャンス",
+  "en": "chance",
+  "m": "机会，良机",
+  "p": "N",
+  "ph": "（チャンス・機会）があれば、海外で働いてみたい。",
+  "phz": "如果有（机会），想去国外工作试试。",
+  "id": 11,
+  "aid": 11,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 5
+ },
+ {
+  "s": "1. 名詞",
+  "w": "機会",
+  "k": "きかい",
+  "en": "",
+  "m": "机会，时机",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 12,
+  "aid": 12,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 5
+ },
+ {
+  "s": "1. 名詞",
+  "w": "用途",
+  "k": "ようと",
+  "en": "",
+  "m": "用途",
+  "p": "N",
+  "ph": "これまでの資金の（用途・使い道）について報告する。",
+  "phz": "就至今为止资金的（用途）作报告。",
+  "id": 13,
+  "aid": 13,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 6
+ },
+ {
+  "s": "1. 名詞",
+  "w": "使い道",
+  "k": "つかみち",
+  "en": "",
+  "m": "用处，用途",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 14,
+  "aid": 14,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 6
+ },
+ {
+  "s": "1. 名詞",
+  "w": "各々",
+  "k": "おのおの",
+  "en": "",
+  "m": "各，各自，各人",
+  "p": "N",
+  "ph": "（各々・それぞれ）の考えを自由に話す機会を作った。",
+  "phz": "创造了让（各人）自由谈想法的机会。",
+  "id": 15,
+  "aid": 15,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 7
+ },
+ {
+  "s": "1. 名詞",
+  "w": "それぞれ",
+  "k": "それぞれ",
+  "en": "",
+  "m": "各自，分别，每个",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 16,
+  "aid": 16,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 7
+ },
+ {
+  "s": "1. 名詞",
+  "w": "打ち合わせ",
+  "k": "うちあわせ",
+  "en": "",
+  "m": "（事先的）商量，碰头会",
+  "p": "N",
+  "ph": "（打ち合わせ・ミーティング・会議）は午後二時から始めます。",
+  "phz": "（碰头会）从下午两点开始。",
+  "id": 17,
+  "aid": 17,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 8
+ },
+ {
+  "s": "1. 名詞",
+  "w": "ミーティング",
+  "k": "ミーティング",
+  "en": "meeting",
+  "m": "会议，碰头会",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 18,
+  "aid": 18,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 8
+ },
+ {
+  "s": "1. 名詞",
+  "w": "会議",
+  "k": "かいぎ",
+  "en": "",
+  "m": "会议",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 19,
+  "aid": 19,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 8
+ },
+ {
+  "s": "1. 名詞",
+  "w": "苦情",
+  "k": "くじょう",
+  "en": "",
+  "m": "投诉，抱怨，不满",
+  "p": "N",
+  "ph": "客からの（苦情・クレーム・文句）が新しい商品のアイデアになることがある。",
+  "phz": "顾客的（投诉）有时会变成新商品的创意。",
+  "id": 20,
+  "aid": 20,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 9
+ },
+ {
+  "s": "1. 名詞",
+  "w": "クレーム",
+  "k": "クレーム",
+  "en": "claim",
+  "m": "投诉，不满，索赔",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 21,
+  "aid": 21,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 9
+ },
+ {
+  "s": "1. 名詞",
+  "w": "文句",
+  "k": "もんく",
+  "en": "",
+  "m": "牢骚，意见，不满",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 22,
+  "aid": 22,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 9
+ },
+ {
+  "s": "1. 名詞",
+  "w": "礼儀",
+  "k": "れいぎ",
+  "en": "",
+  "m": "礼节，礼仪",
+  "p": "N",
+  "ph": "私の両親は（礼儀・マナー）に厳しかった。",
+  "phz": "我父母对（礼节）要求很严。",
+  "id": 23,
+  "aid": 23,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 10
+ },
+ {
+  "s": "1. 名詞",
+  "w": "マナー",
+  "k": "マナー",
+  "en": "manner",
+  "m": "礼貌，规矩，礼仪",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 24,
+  "aid": 24,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 10
+ },
+ {
+  "s": "1. 名詞",
+  "w": "訓練",
+  "k": "くんれん",
+  "en": "",
+  "m": "训练",
+  "p": "N",
+  "ph": "プロの選手は（訓練・トレーニング・練習）をし続ける必要がある。",
+  "phz": "职业选手有必要坚持（训练）。",
+  "id": 25,
+  "aid": 25,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 11
+ },
+ {
+  "s": "1. 名詞",
+  "w": "トレーニング",
+  "k": "トレーニング",
+  "en": "training",
+  "m": "训练，锻炼",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 26,
+  "aid": 26,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 11
+ },
+ {
+  "s": "1. 名詞",
+  "w": "練習",
+  "k": "れんしゅう",
+  "en": "",
+  "m": "练习",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 27,
+  "aid": 27,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 11
+ },
+ {
+  "s": "1. 名詞",
+  "w": "スケジュール",
+  "k": "スケジュール",
+  "en": "schedule",
+  "m": "日程，日程表",
+  "p": "N",
+  "ph": "来週の（スケジュール・予定）を確認する。",
+  "phz": "确认下周的（日程安排）。",
+  "id": 28,
+  "aid": 28,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 12
+ },
+ {
+  "s": "1. 名詞",
+  "w": "予定",
+  "k": "よてい",
+  "en": "",
+  "m": "预定，计划，安排",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 29,
+  "aid": 29,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 12
+ },
+ {
+  "s": "1. 名詞",
+  "w": "契機",
+  "k": "けいき",
+  "en": "",
+  "m": "契机，转机",
+  "p": "N",
+  "ph": "新しい技術の開発が（契機・きっかけ）となり、会社が発展していった。",
+  "phz": "以新技术的开发为（契机），公司逐步发展起来。",
+  "id": 30,
+  "aid": 30,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 13
+ },
+ {
+  "s": "1. 名詞",
+  "w": "きっかけ",
+  "k": "きっかけ",
+  "en": "",
+  "m": "契机，开端，起因",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 31,
+  "aid": 31,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 13
+ },
+ {
+  "s": "1. 名詞",
+  "w": "分野",
+  "k": "ぶんや",
+  "en": "",
+  "m": "领域，方面",
+  "p": "N",
+  "ph": "経済は自分の専門の（分野・ジャンル）ではないので、よくわからない。",
+  "phz": "经济不是我的专业（领域），所以不太懂。",
+  "id": 32,
+  "aid": 32,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 14
+ },
+ {
+  "s": "1. 名詞",
+  "w": "ジャンル",
+  "k": "ジャンル",
+  "en": "genre",
+  "m": "（作品的）类型，门类",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 33,
+  "aid": 33,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 14
+ },
+ {
+  "s": "1. 名詞",
+  "w": "娯楽",
+  "k": "こらく",
+  "en": "",
+  "m": "娱乐，消遣",
+  "p": "N",
+  "ph": "（娯楽・レジャー）にどれくらいのお金と時間を使っていますか。",
+  "phz": "你在（娱乐）上花多少钱和时间？",
+  "id": 34,
+  "aid": 34,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 15
+ },
+ {
+  "s": "1. 名詞",
+  "w": "レジャー",
+  "k": "レジャー",
+  "en": "leisure",
+  "m": "闲暇；娱乐活动",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 35,
+  "aid": 35,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 15
+ },
+ {
+  "s": "1. 名詞",
+  "w": "眺め",
+  "k": "ながめ",
+  "en": "",
+  "m": "景致，眺望的景色",
+  "p": "N",
+  "ph": "このホテルは窓から見える（眺め・風景・景色）がとてもすばらしい。",
+  "phz": "这家酒店从窗户看到的（景致）非常美。",
+  "id": 36,
+  "aid": 36,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 16
+ },
+ {
+  "s": "1. 名詞",
+  "w": "風景",
+  "k": "ふうけい",
+  "en": "",
+  "m": "风景，景象",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 37,
+  "aid": 37,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 16
+ },
+ {
+  "s": "1. 名詞",
+  "w": "景色",
+  "k": "けしき",
+  "en": "",
+  "m": "景色，风景",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 38,
+  "aid": 38,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 16
+ },
+ {
+  "s": "1. 名詞",
+  "w": "試供品",
+  "k": "しきょうひん",
+  "en": "",
+  "m": "试用品，免费样品",
+  "p": "N",
+  "ph": "化粧品の（試供品・サンプル・見本）をもらった。",
+  "phz": "领到了化妆品的（试用装）。",
+  "id": 39,
+  "aid": 39,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 17
+ },
+ {
+  "s": "1. 名詞",
+  "w": "サンプル",
+  "k": "サンプル",
+  "en": "sample",
+  "m": "样品，样本",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 40,
+  "aid": 40,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 17
+ },
+ {
+  "s": "1. 名詞",
+  "w": "見本",
+  "k": "みほん",
+  "en": "",
+  "m": "样品，样例；榜样",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 41,
+  "aid": 41,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 17
+ },
+ {
+  "s": "1. 名詞",
+  "w": "援助",
+  "k": "えんじょ",
+  "en": "",
+  "m": "援助，资助",
+  "p": "N",
+  "ph": "両親の（援助・サポート・助け）がなければ、留学できなかった。",
+  "phz": "如果没有父母的（资助），就没法留学了。",
+  "id": 42,
+  "aid": 42,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 18
+ },
+ {
+  "s": "1. 名詞",
+  "w": "サポート",
+  "k": "サポート",
+  "en": "support",
+  "m": "支持，支援；辅助",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 43,
+  "aid": 43,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 18
+ },
+ {
+  "s": "1. 名詞",
+  "w": "助け",
+  "k": "たすけ",
+  "en": "",
+  "m": "帮助，援助；救助",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "id": 44,
+  "aid": 44,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 18
+ },
+ {
+  "s": "2. 動詞",
+  "w": "破る",
+  "k": "やぶる",
+  "en": "",
+  "m": "打败，战胜；撕破；违反",
+  "p": "V1他",
+  "ph": "昨年の優勝チームを（破った・負かした）。",
+  "phz": "打败了去年的冠军队。",
+  "id": 45,
+  "aid": 45,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 19
+ },
+ {
+  "s": "2. 動詞",
+  "w": "負かす",
+  "k": "まかす",
+  "en": "",
+  "m": "打败，战胜",
+  "p": "V1他",
+  "ph": "",
+  "phz": "",
+  "id": 46,
+  "aid": 46,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 19
+ },
+ {
+  "s": "2. 動詞",
+  "w": "あがる",
+  "k": "あがる",
+  "en": "",
+  "m": "怯场，紧张；上去；进入",
+  "p": "V1自",
+  "ph": "面接で（あがって・緊張して）しまい、質問にきちんと答えられなかった。",
+  "phz": "面试时（怯场）了，没能好好回答问题。",
+  "id": 47,
+  "aid": 47,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 20
+ },
+ {
+  "s": "2. 動詞",
+  "w": "緊張する",
+  "k": "きんちょうする",
+  "en": "",
+  "m": "紧张",
+  "p": "V3自",
+  "ph": "",
+  "phz": "",
+  "id": 48,
+  "aid": 48,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 20
+ },
+ {
+  "s": "2. 動詞",
+  "w": "頭に来る",
+  "k": "あたまにくる",
+  "en": "",
+  "m": "生气，恼火",
+  "p": "IDM",
+  "ph": "失礼な態度を取られて、（頭に来た・腹が立った・怒った）。",
+  "phz": "对方态度无礼，（火冒三丈）。",
+  "id": 49,
+  "aid": 49,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 21
+ },
+ {
+  "s": "2. 動詞",
+  "w": "腹が立つ",
+  "k": "はらがたつ",
+  "en": "",
+  "m": "生气，发火",
+  "p": "IDM",
+  "ph": "",
+  "phz": "",
+  "id": 50,
+  "aid": 50,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 21
+ },
+ {
+  "s": "2. 動詞",
+  "w": "怒る",
+  "k": "おこる",
+  "en": "",
+  "m": "生气，发怒；训斥",
+  "p": "V1自",
+  "ph": "",
+  "phz": "",
+  "id": 51,
+  "aid": 51,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 21
+ },
+ {
+  "s": "2. 動詞",
+  "w": "冷静になる",
+  "k": "れいせいになる",
+  "en": "",
+  "m": "冷静下来，沉着下来",
+  "p": "IDM",
+  "ph": "少し（冷静になって・頭を冷やして・落ち着いて）から話し合ったほうがいいだろう。",
+  "phz": "还是先（冷静下来）再商量为好。",
+  "id": 52,
+  "aid": 52,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 22
+ },
+ {
+  "s": "2. 動詞",
+  "w": "頭を冷やす",
+  "k": "あたまをひやす",
+  "en": "",
+  "m": "冷静下来，清醒一下头脑",
+  "p": "IDM",
+  "ph": "",
+  "phz": "",
+  "id": 53,
+  "aid": 53,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 22
+ },
+ {
+  "s": "2. 動詞",
+  "w": "落ち着く",
+  "k": "おちつく",
+  "en": "",
+  "m": "平静下来，沉住气；安定",
+  "p": "V1自",
+  "ph": "",
+  "phz": "",
+  "id": 54,
+  "aid": 54,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 22
+ },
+ {
+  "s": "2. 動詞",
+  "w": "落ち込む",
+  "k": "おちこむ",
+  "en": "",
+  "m": "消沉，郁闷，情绪低落",
+  "p": "V1自",
+  "ph": "どうしてそんなに（落ち込んで・へこんで・がっかりして）いるんですか。",
+  "phz": "你怎么那么（消沉）啊？",
+  "id": 55,
+  "aid": 55,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 23
+ },
+ {
+  "s": "2. 動詞",
+  "w": "へこむ",
+  "k": "へこむ",
+  "en": "",
+  "m": "瘪，凹陷；泄气，气馁",
+  "p": "V1自",
+  "ph": "",
+  "phz": "",
+  "id": 56,
+  "aid": 56,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 23
+ },
+ {
+  "s": "2. 動詞",
+  "w": "がっかりする",
+  "k": "がっかりする",
+  "en": "",
+  "m": "失望，沮丧，泄气",
+  "p": "V3自",
+  "ph": "",
+  "phz": "",
+  "id": 57,
+  "aid": 57,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 23
+ },
+ {
+  "s": "2. 動詞",
+  "w": "失望する",
+  "k": "しつぼうする",
+  "en": "",
+  "m": "失望",
+  "p": "V3自",
+  "ph": "自分が支持する政治家の不正のニュースを聞き、（失望した・がっかりした）。",
+  "phz": "听到自己支持的政治家渎职舞弊的新闻，（大失所望）。",
+  "id": 58,
+  "aid": 58,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 24
+ },
+ {
+  "s": "2. 動詞",
+  "w": "がっかりする",
+  "k": "がっかりする",
+  "en": "",
+  "m": "失望，沮丧，泄气",
+  "p": "V3自",
+  "ph": "",
+  "phz": "",
+  "id": 59,
+  "aid": 59,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 24
+ },
+ {
+  "s": "2. 動詞",
+  "w": "悔やむ",
+  "k": "くやむ",
+  "en": "",
+  "m": "懊悔，后悔；惋惜",
+  "p": "V1他",
+  "ph": "学生時代にしっかり勉強しなかったことを（悔やんで・後悔して）いる。",
+  "phz": "（后悔）学生时代没有好好学习。",
+  "id": 60,
+  "aid": 60,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 25
+ },
+ {
+  "s": "2. 動詞",
+  "w": "後悔する",
+  "k": "こうかいする",
+  "en": "",
+  "m": "后悔，懊悔",
+  "p": "V3他",
+  "ph": "",
+  "phz": "",
+  "id": 61,
+  "aid": 61,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 25
+ },
+ {
+  "s": "2. 動詞",
+  "w": "驚く",
+  "k": "おどろく",
+  "en": "",
+  "m": "吃惊，惊讶；出乎意料",
+  "p": "V1自",
+  "ph": "世界には（驚く・びっくりする）ことがたくさんある。",
+  "phz": "世界上有很多令人（吃惊）的事。",
+  "id": 62,
+  "aid": 62,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 26
+ },
+ {
+  "s": "2. 動詞",
+  "w": "びっくりする",
+  "k": "びっくりする",
+  "en": "",
+  "m": "吃惊，吓一跳",
+  "p": "V3自",
+  "ph": "",
+  "phz": "",
+  "id": 63,
+  "aid": 63,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 26
+ },
+ {
+  "s": "2. 動詞",
+  "w": "お詫びする",
+  "k": "おわびする",
+  "en": "",
+  "m": "道歉，致歉",
+  "p": "V3他",
+  "ph": "こちらのミスを（お詫びする・謝る）。",
+  "phz": "为我方的失误（致歉）。",
+  "id": 64,
+  "aid": 64,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 27
+ },
+ {
+  "s": "2. 動詞",
+  "w": "謝る",
+  "k": "あやまる",
+  "en": "",
+  "m": "道歉，谢罪",
+  "p": "V1他",
+  "ph": "",
+  "phz": "",
+  "id": 65,
+  "aid": 65,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 27
+ },
+ {
+  "s": "2. 動詞",
+  "w": "主張する",
+  "k": "しゅちょうする",
+  "en": "",
+  "m": "主张",
+  "p": "V3他",
+  "ph": "お互いに自分の考えを（主張した・言い張った）ので、結論が出なかった。",
+  "phz": "因为彼此都（坚持主张）自己的想法，没能得出结论。",
+  "id": 66,
+  "aid": 66,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 28
+ },
+ {
+  "s": "2. 動詞",
+  "w": "言い張る",
+  "k": "いいはる",
+  "en": "",
+  "m": "坚持说，坚决主张",
+  "p": "V1他",
+  "ph": "",
+  "phz": "",
+  "id": 67,
+  "aid": 67,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 28
+ },
+ {
+  "s": "2. 動詞",
+  "w": "打ち消す",
+  "k": "うちけす",
+  "en": "",
+  "m": "打消，取消；否定",
+  "p": "V1他",
+  "ph": "彼は「そんなはずはない」と言って自分の考えを（打ち消した・否定した）。",
+  "phz": "他嘴里说着“不可能”，把（打消）了自己的想法。",
+  "id": 68,
+  "aid": 68,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 29
+ },
+ {
+  "s": "2. 動詞",
+  "w": "否定する",
+  "k": "ひていする",
+  "en": "",
+  "m": "否定，否认",
+  "p": "V3他",
+  "ph": "",
+  "phz": "",
+  "id": 69,
+  "aid": 69,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 29
+ },
+ {
+  "s": "2. 動詞",
+  "w": "参る",
+  "k": "まいる",
+  "en": "",
+  "m": "（比不过而）服输；敬语“去”；吃不消",
+  "p": "V1自",
+  "ph": "あなたの熱意には（参りました・負けました）。仕事を引き受けましょう。",
+  "phz": "我算是（输给）你的热情了。这份工作就接下来吧。",
+  "id": 70,
+  "aid": 70,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 30
+ },
+ {
+  "s": "2. 動詞",
+  "w": "負ける",
+  "k": "まける",
+  "en": "",
+  "m": "输，败；屈服",
+  "p": "V2自",
+  "ph": "",
+  "phz": "",
+  "id": 71,
+  "aid": 71,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 30
+ },
+ {
+  "s": "2. 動詞",
+  "w": "くるむ",
+  "k": "くるむ",
+  "en": "",
+  "m": "包，裹；卷入",
+  "p": "V1他",
+  "ph": "畑で取れたばかりのニンジンを新聞紙で（くるんで・包んで）持って帰った。",
+  "phz": "把刚从地里拔的胡萝卜用报纸（包）起来带了回去。",
+  "id": 72,
+  "aid": 72,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 31
+ },
+ {
+  "s": "2. 動詞",
+  "w": "包む",
+  "k": "つつむ",
+  "en": "",
+  "m": "包，裹；笼罩",
+  "p": "V1他",
+  "ph": "",
+  "phz": "",
+  "id": 73,
+  "aid": 73,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 31
+ },
+ {
+  "s": "2. 動詞",
+  "w": "担ぐ",
+  "k": "かつぐ",
+  "en": "",
+  "m": "扛，挑；拥立",
+  "p": "V1他",
+  "ph": "重い荷物を（担いで・背負って）、山に登る。",
+  "phz": "（扛）着重行李登山。",
+  "id": 74,
+  "aid": 74,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 32
+ },
+ {
+  "s": "2. 動詞",
+  "w": "背負う",
+  "k": "せおう",
+  "en": "",
+  "m": "背；担负",
+  "p": "V1他",
+  "ph": "",
+  "phz": "",
+  "id": 75,
+  "aid": 75,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 32
+ },
+ {
+  "s": "2. 動詞",
+  "w": "引き返す",
+  "k": "ひきかえす",
+  "en": "",
+  "m": "返回，折回",
+  "p": "V1自",
+  "ph": "財布を忘れてきたことに気付き、家に（引き返した・戻った）。",
+  "phz": "发现忘带了钱包，（折返）回了家。",
+  "id": 76,
+  "aid": 76,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 33
+ },
+ {
+  "s": "2. 動詞",
+  "w": "戻る",
+  "k": "もどる",
+  "en": "",
+  "m": "返回，回到",
+  "p": "V1自",
+  "ph": "",
+  "phz": "",
+  "id": 77,
+  "aid": 77,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 33
+ },
+ {
+  "s": "2. 動詞",
+  "w": "移転する",
+  "k": "いてんする",
+  "en": "",
+  "m": "搬迁，（机构）迁址",
+  "p": "V3自",
+  "ph": "（移転した・転居した・引っ越した）ところの住所をお知らせします。",
+  "phz": "现将（搬迁）后新址的地址告知您。",
+  "id": 78,
+  "aid": 78,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 34
+ },
+ {
+  "s": "2. 動詞",
+  "w": "転居する",
+  "k": "てんきょする",
+  "en": "",
+  "m": "迁居，搬家",
+  "p": "V3自",
+  "ph": "",
+  "phz": "",
+  "id": 79,
+  "aid": 79,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 34
+ },
+ {
+  "s": "2. 動詞",
+  "w": "引っ越す",
+  "k": "ひっこす",
+  "en": "",
+  "m": "搬家，搬迁",
+  "p": "V1自",
+  "ph": "",
+  "phz": "",
+  "id": 80,
+  "aid": 80,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 34
+ },
+ {
+  "s": "2. 動詞",
+  "w": "くたびれる",
+  "k": "くたびれる",
+  "en": "",
+  "m": "疲惫，累；（东西）用旧",
+  "p": "V2自",
+  "ph": "朝からずっと立ちっぱなしで（くたびれた・疲れた）。",
+  "phz": "从早上就一直站着，（累）坏了。",
+  "id": 81,
+  "aid": 81,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 35
+ },
+ {
+  "s": "2. 動詞",
+  "w": "疲れる",
+  "k": "つかれる",
+  "en": "",
+  "m": "疲劳，累",
+  "p": "V2自",
+  "ph": "",
+  "phz": "",
+  "id": 82,
+  "aid": 82,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 35
+ },
+ {
+  "s": "2. 動詞",
+  "w": "くつろぐ",
+  "k": "くつろぐ",
+  "en": "",
+  "m": "轻松，惬意，舒展放松",
+  "p": "V1自",
+  "ph": "自宅に帰って家族といるときが、一番（くつろぐ・リラックスする）時間だ。",
+  "phz": "回家和家人待在一起是最（放松）的时间。",
+  "id": 83,
+  "aid": 83,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 36
+ },
+ {
+  "s": "2. 動詞",
+  "w": "リラックスする",
+  "k": "リラックスする",
+  "en": "relax",
+  "m": "放松，松弛",
+  "p": "V3自",
+  "ph": "",
+  "phz": "",
+  "id": 84,
+  "aid": 84,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 36
+ },
+ {
+  "s": "2. 動詞",
+  "w": "怠ける",
+  "k": "なまける",
+  "en": "",
+  "m": "懒惰，懈怠；不认真",
+  "p": "V2他",
+  "ph": "ピアノの練習を（怠けて・サボって）いたら、上手に弾けなくなってしまった。",
+  "phz": "钢琴练习（偷懒）了，结果弹得不如从前了。",
+  "id": 85,
+  "aid": 85,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 37
+ },
+ {
+  "s": "2. 動詞",
+  "w": "サボる",
+  "k": "サボる",
+  "en": "",
+  "m": "旷（工），逃（课），偷懒",
+  "p": "V1他",
+  "ph": "",
+  "phz": "",
+  "id": 86,
+  "aid": 86,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 37
+ },
+ {
+  "s": "2. 動詞",
+  "w": "回復する",
+  "k": "かいふくする",
+  "en": "",
+  "m": "恢复，康复；好转",
+  "p": "V3自",
+  "ph": "一時、命が危なかったが、少しずつ（回復して・持ち直して・よくなって）きた。",
+  "phz": "一度生命垂危，但正在一点点（恢复）。",
+  "id": 87,
+  "aid": 87,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 38
+ },
+ {
+  "s": "2. 動詞",
+  "w": "持ち直す",
+  "k": "もちなおす",
+  "en": "",
+  "m": "好转，回升",
+  "p": "V1自",
+  "ph": "",
+  "phz": "",
+  "id": 88,
+  "aid": 88,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 38
+ },
+ {
+  "s": "2. 動詞",
+  "w": "よくなる",
+  "k": "よくなる",
+  "en": "",
+  "m": "好转，变好",
+  "p": "IDM",
+  "ph": "",
+  "phz": "",
+  "id": 89,
+  "aid": 89,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 38
+ },
+ {
+  "s": "2. 動詞",
+  "w": "訂正する",
+  "k": "ていせいする",
+  "en": "",
+  "m": "订正，更正",
+  "p": "V3他",
+  "ph": "間違いに気づいたので、資料を提出する前に（訂正した・修正した・直した）。",
+  "phz": "发现了错误，所以在提交资料之前（订正）了。",
+  "id": 90,
+  "aid": 90,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 39
+ },
+ {
+  "s": "2. 動詞",
+  "w": "修正する",
+  "k": "しゅうせいする",
+  "en": "",
+  "m": "修改，修正",
+  "p": "V3他",
+  "ph": "",
+  "phz": "",
+  "id": 91,
+  "aid": 91,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 39
+ },
+ {
+  "s": "2. 動詞",
+  "w": "直す",
+  "k": "なおす",
+  "en": "",
+  "m": "改正，纠正；修理",
+  "p": "V1他",
+  "ph": "",
+  "phz": "",
+  "id": 92,
+  "aid": 92,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 39
+ },
+ {
+  "s": "2. 動詞",
+  "w": "調整する",
+  "k": "ちょうせいする",
+  "en": "",
+  "m": "调整，调节",
+  "p": "V3他",
+  "ph": "売り上げによって生産量を（調整する・コントロールする）。",
+  "phz": "根据销售额（调整）生产量。",
+  "id": 93,
+  "aid": 93,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 40
+ },
+ {
+  "s": "2. 動詞",
+  "w": "コントロールする",
+  "k": "コントロールする",
+  "en": "control",
+  "m": "控制，支配；调节",
+  "p": "V3他",
+  "ph": "",
+  "phz": "",
+  "id": 94,
+  "aid": 94,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 40
+ },
+ {
+  "s": "2. 動詞",
+  "w": "貢献する",
+  "k": "こうけんする",
+  "en": "",
+  "m": "贡献",
+  "p": "V3自",
+  "ph": "将来、社会に（貢献する・役に立つ）活動をしたいと考えている。",
+  "phz": "想做将来能（贡献）社会的活动。",
+  "id": 95,
+  "aid": 95,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 41
+ },
+ {
+  "s": "2. 動詞",
+  "w": "役に立つ",
+  "k": "やくにたつ",
+  "en": "",
+  "m": "有用，起作用",
+  "p": "IDM",
+  "ph": "",
+  "phz": "",
+  "id": 96,
+  "aid": 96,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 41
+ },
+ {
+  "s": "2. 動詞",
+  "w": "普及する",
+  "k": "ふきゅうする",
+  "en": "",
+  "m": "普及，推广",
+  "p": "V3自",
+  "ph": "現在、携帯電話の利用は子供にまで（普及している・広まっている）。",
+  "phz": "现在，手机的使用已经（普及）到孩子中间了。",
+  "id": 97,
+  "aid": 97,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 42
+ },
+ {
+  "s": "2. 動詞",
+  "w": "広まる",
+  "k": "ひろまる",
+  "en": "",
+  "m": "扩大，传播，普及",
+  "p": "V1自",
+  "ph": "",
+  "phz": "",
+  "id": 98,
+  "aid": 98,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 42
+ },
+ {
+  "s": "2. 動詞",
+  "w": "一致する",
+  "k": "いっちする",
+  "en": "",
+  "m": "一致，吻合",
+  "p": "V3自",
+  "ph": "調査結果は、私の予測と（一致していた・ぴったりだった・同じだった）。",
+  "phz": "调查结果与我的预测（完全一致）。",
+  "id": 99,
+  "aid": 99,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 43
+ },
+ {
+  "s": "2. 動詞",
+  "w": "ぴったり",
+  "k": "ぴったり",
+  "en": "",
+  "m": "恰好，正合适；分毫不差",
+  "p": "ナ",
+  "ph": "",
+  "phz": "",
+  "id": 100,
+  "aid": 100,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 43
+ },
+ {
+  "s": "2. 動詞",
+  "w": "同じ",
+  "k": "おなじ",
+  "en": "",
+  "m": "相同，一样",
+  "p": "ナ",
+  "ph": "",
+  "phz": "",
+  "id": 101,
+  "aid": 101,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 43
+ },
+ {
+  "s": "2. 動詞",
+  "w": "報じる",
+  "k": "ほうじる",
+  "en": "",
+  "m": "报道；报答",
+  "p": "V2他",
+  "ph": "新聞各紙は選挙結果を一斉に（報じた・伝えた）。",
+  "phz": "各大报纸同时（报道）了选举结果。",
+  "id": 102,
+  "aid": 102,
+  "asfx": "",
+  "role": "syn",
+  "side": "L",
+  "g": 44
+ },
+ {
+  "s": "2. 動詞",
+  "w": "伝える",
+  "k": "つたえる",
+  "en": "",
+  "m": "传达，转告，传播",
+  "p": "V2他",
+  "ph": "",
+  "phz": "",
+  "id": 103,
+  "aid": 103,
+  "asfx": "",
+  "role": "syn",
+  "side": "R",
+  "g": 44
+ }
+];
+let DATA = [];
+const STORAGE_KEY = 'n2112edit';
+(function(){
+  try {
+    const s = localStorage.getItem(STORAGE_KEY);
+    if (s) {
+      const o = JSON.parse(s);
+      if (o && Array.isArray(o.data) && o.data.length) DATA = o.data;
+    }
+  } catch(e) {}
+  if (!DATA || !DATA.length) DATA = JSON.parse(JSON.stringify(INITIAL_DATA));
+})();
+
+let nextId = Math.max(0, ...DATA.map(d => d.id || 0)) + 1;
+let editing = false, dragD = null, saveTimer = null;
+
+function save(){
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify({page: 'N2_1-2', data: DATA})); } catch(e) {}
+}
+function saveSoon(){
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(save, 400);
+}
+function resetAll(){
+  if (confirm('确定清空所有修改，恢复初始版式与数据吗？')) {
+    try { localStorage.removeItem(STORAGE_KEY); } catch(e) {}
+    DATA = JSON.parse(JSON.stringify(INITIAL_DATA));
+    save();
+    render();
+  }
+}
+const byId = id => DATA.find(d => d.id === id);
+
+/* 音频与 Web Speech 朗读兜底 */
+let curAudio = null;
+function chooseVoice(){
+  if (!('speechSynthesis' in window)) return null;
+  const vs = speechSynthesis.getVoices().filter(v => /^ja/i.test(v.lang));
+  const cleanVs = vs.filter(v => !/eddy|flo|grandma|grandpa|rocko|reed|sandy|shelley/i.test(v.name));
+  return cleanVs.find(v => /nanami|kyoko|haruka|ayumi|female|女/i.test(v.name))
+      || cleanVs.find(v => /siri|microsoft|edge/i.test(v.name))
+      || cleanVs[0]
+      || vs.find(v => /kyoko/i.test(v.name))
+      || vs[0];
+}
+if ('speechSynthesis' in window) {
+  speechSynthesis.onvoiceschanged = chooseVoice;
+}
+function speakTTS(text){
+  if (!('speechSynthesis' in window) || !text) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'ja-JP';
+  u.rate = 0.9;
+  const v = chooseVoice();
+  if (v) u.voice = v;
+  speechSynthesis.speak(u);
+}
+function play(aid, asfx, text){
+  if (curAudio) { curAudio.pause(); }
+  if (aid) {
+    const p = `../audio/N2/N2_実力2-2_audio/${aid}${asfx || ''}.mp3?v=1`;
+    curAudio = new Audio(p);
+    curAudio.onended = () => { if (typeof dictHook === 'function') dictHook(asfx); };
+    curAudio.play().catch(() => {
+      if (text) speakTTS(text);
+    });
+  } else if (text) {
+    speakTTS(text);
+  }
+}
+
+function applyTheme(day){
+  document.body.classList.toggle('day', day);
+  document.getElementById('themeBtn').textContent = day ? '🌙 夜间' : '☀️ 日间';
+}
+function toggleTheme(){
+  const day = !document.body.classList.contains('day');
+  applyTheme(day);
+  try { localStorage.setItem('n221edit_theme', day ? 'day' : 'night'); } catch(e) {}
+}
+applyTheme((() => { try { return localStorage.getItem('n221edit_theme') === 'day'; } catch(e) { return false; } })());
+
+function toggleEdit(){
+  editing = !editing;
+  document.body.classList.toggle('editing', editing);
+  document.getElementById('editBtn').textContent = editing ? '✅ 完成' : '✏️ 编辑';
+  document.getElementById('expBtn').classList.toggle('hide', !editing);
+  document.getElementById('rstBtn').classList.toggle('hide', !editing);
+  if (!editing) save();
+  render();
+}
+
+const posCls = p => !p ? 'N' : (p.includes('惯') ? 'IDM' : (p.includes('V') ? 'V' : (p.includes('イ') ? 'I' : (p.includes('ナ') ? 'NA' : (p.includes('adv') ? 'adv' : 'N')))));
+const esc = s => String(s == null ? '' : s);
+
+function rubyHtml(d){
+  const w = d.w || '', k = d.k || '', en = d.en || '';
+  const safeW = w.replace(/'/g, "\\'");
+  const click = `onclick="play(${d.aid || 0},'${d.asfx || ''}','${safeW}')"`;
+  const one = (wv, kv) => {
+    const same = !kv || kv === wv;
+    const kata = wv.match(/^([ァ-ヶー]+)/);
+    const rtx = same ? '' : (en ? `<rt class="en">${en}</rt>` : `<rt>${kv}</rt>`);
+    return same ? `<span class="word" ${click}>${wv}</span>`
+      : (kata ? `<ruby class="word" ${click}>${kata[1]}${rtx}</ruby>${wv.slice(kata[1].length)}`
+              : `<ruby class="word" ${click}>${wv}${rtx}</ruby>`);
+  };
+  if (w.includes('・')) {          // ・ 多词 → 左右相对（同义对照），各带注音
+    const ws = w.split('・'), ks = k.split('・');
+    return `<span class="wpair">` + ws.map((wv, i) => `<span class="wside">${one(wv, ks[i] || '')}</span>`).join('<span class="wmid"></span>') + `</span>`;
+  }
+  return one(w, k);
+}
+
+const phRead = d => {
+  if (!d.ph) return '';
+  const jp = d.ph.split('｜').map(s => s.trim()).filter(Boolean);
+  const zh = (d.phz || '').split('｜').map(s => s.trim());
+  const multi = jp.length > 1;
+  return jp.map((s, i) => {
+    const sfx = d._tts_ph ? '' : (multi ? 'p' + (i + 1) : 'p');
+    const aid = d._tts_ph ? 0 : (d.aid || 0);
+    const txt = s.replace(/'/g, "\'");
+    return `
+  <div class="phrase">
+    <span class="jp" onclick="play(${aid},'${sfx}','${txt}')">${esc(s)}</span>
+    <span class="zh">${esc(zh[i] || '')}</span>
+  </div>`;
+  }).join('');
+};
+
+const entryRead = d => `
+  <div class="entry">
+    <div class="row1">
+      <span class="num">${d.aid || d.id}</span>
+      ${rubyHtml(d)}
+      <span class="pos ${posCls(d.p)}">${esc(d.p)}</span>
+    </div>
+    <div class="mean">${esc(d.m)}</div>
+    ${phRead(d)}
+  </div>`;
+
+const edSpan = (d, f, cls, ph) => `<span class="edf ${cls}${d[f] ? '' : ' empty'}" contenteditable="true" data-ph="${ph}" data-f="${f}">${esc(d[f])}</span>`;
+
+const entryEdit = d => `
+  <div class="entry" data-did="${d.id}">
+    <div class="row1">
+      <span class="drag-handle" draggable="true" title="拖动排序/入组">⠿</span>
+      <span class="num">${d.aid || d.id}</span>
+      ${edSpan(d,'w','word','词')}
+      ${edSpan(d,'k','edk','注音')}
+      ${edSpan(d,'en','ede','en')}
+      ${edSpan(d,'p','pos ' + posCls(d.p),'词性')}
+      <span class="sp" data-sp="1" title="拆出为独立卡">⇱</span><span class="x" data-x="1" title="删除该词">✕</span>
+    </div>
+    <div class="mean">${edSpan(d,'m','edmean','释义')}</div>
+    <div class="phrase">
+      ${edSpan(d,'ph','edph','例句')}
+      ${edSpan(d,'phz','edphz','中译')}
+    </div>
+  </div>`;
+
+const noteRead = d => `<div class="notecard note">${esc(d.text)}</div>`;
+const noteEdit = d => `<div class="notecard note" data-did="${d.id}"><span class="drag-handle" draggable="true" title="拖动排序">⠿</span>${edSpan(d,'text','','文本')}<span class="x" data-x="1" title="删除备注">✕</span></div>`;
+
+function getBarHtml(role, g){
+  const title = editing ? 'title="点击切换符号：⇄ (相对) / | (竖线反义) / — (横杠同类)"' : '';
+  if (role === 'ant') {
+    return `<div class="bar-wrap" data-bar="${g}" ${title}><span class="vs-ant"></span></div>`;
+  } else if (role === 'syn') {
+    return `<div class="bar-wrap" data-bar="${g}" ${title}><span class="vs-syn"></span></div>`;
+  } else {
+    return `<div class="bar-wrap" data-bar="${g}" ${title}><span class="vs-arr">⇄</span></div>`;
+  }
+}
+
+const list = document.getElementById('list');
+
+function removeD(d){
+  const i = DATA.indexOf(d);
+  if (i >= 0) { DATA.splice(i, 1); return true; }
+  return false;
+}
+function secLastIdx(s){
+  let last = -1;
+  DATA.forEach((d, i) => { if (d.s === s) last = i; });
+  return last;
+}
+function addToSecEnd(d, s){
+  d.s = s;
+  const at = secLastIdx(s);
+  DATA.splice(at + 1, 0, d);
+}
+function newG(){
+  return Math.max(0, ...DATA.map(d => d.g || 0)) + 1;
+}
+
+function render(){
+  list.innerHTML = '';
+  let curS = null, row = null, colA = null, colB = null, wrap = null, alt = 0;
+  let lastG = null, lastRole = null, gHead = null, halves = null, gRole = null, gG = null;
+
+  for (let i = 0; i < DATA.length; i++){
+    const d = DATA[i];
+    if (d.s !== curS){
+      curS = d.s;
+      const h = document.createElement('div'); h.className = 'sec-h';
+      const t = document.createElement('span'); t.className = 'sec-title'; t.textContent = curS;
+      if (editing){
+        const oldS = curS;
+        t.contentEditable = 'true';
+        t.addEventListener('input', () => {
+          const ns = t.textContent;
+          DATA.forEach(x => { if (x.s === oldS) x.s = ns; });
+          curS = ns;
+          saveSoon();
+        });
+        const bb = document.createElement('span'); bb.className = 'addbtns';
+        const mk = (label, fn) => {
+          const b = document.createElement('button');
+          b.textContent = label;
+          b.addEventListener('click', fn);
+          bb.appendChild(b);
+        };
+        mk('+词框', () => {
+          // 插到本节最前面（第一个该节条目之前）= 组的上面
+          const at = DATA.findIndex(x => x.s === curS);
+          DATA.splice(at < 0 ? DATA.length : at, 0, {id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0});
+          save(); render();
+        });
+        mk('+相对组 (⇄)', () => {
+          const g = newG();
+          addToSecEnd({id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'arr', side: 'L', g}, curS);
+          addToSecEnd({id: nextId++, aid: 0, asfx: '-r', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'arr', side: 'R', g}, curS);
+          save(); render();
+        });
+        mk('+反义组 (|)', () => {
+          const g = newG();
+          addToSecEnd({id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'ant', side: 'L', g}, curS);
+          addToSecEnd({id: nextId++, aid: 0, asfx: '-r', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'ant', side: 'R', g}, curS);
+          save(); render();
+        });
+        mk('+同类组 (—)', () => {
+          const g = newG();
+          addToSecEnd({id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'syn', side: 'L', g}, curS);
+          addToSecEnd({id: nextId++, aid: 0, asfx: '-r', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'syn', side: 'R', g}, curS);
+          save(); render();
+        });
+        mk('+文本', () => {
+          addToSecEnd({id: nextId++, s: curS, kind: 'note', text: ''}, curS);
+          save(); render();
+        });
+        h.appendChild(bb);
+      }
+      h.appendChild(t);
+      list.appendChild(h);
+
+      if (editing){
+        wrap = document.createElement('div'); wrap.className = 'sec-items'; list.appendChild(wrap);
+        wrap.addEventListener('dragover', e => e.preventDefault());
+        wrap.addEventListener('drop', e => {
+          e.preventDefault();
+          if (dragD && dragD.s === curS) {
+            removeD(dragD); addToSecEnd(dragD, curS); save(); render();
+          }
+        });
+      } else {
+        row = document.createElement('div'); row.className = 'row2';
+        colA = document.createElement('div'); colA.className = 'col2';
+        colB = document.createElement('div'); colB.className = 'col2';
+        row.appendChild(colA); row.appendChild(colB);
+        list.appendChild(row);
+      }
+      lastG = null; lastRole = null; alt = 0;
+    }
+
+    const isNote = d.kind === 'note';
+    const hasRole = !isNote && (d.role === 'arr' || d.role === 'ant' || d.role === 'syn');
+    const entryHtml = isNote ? (editing ? noteEdit(d) : noteRead(d)) : (editing ? entryEdit(d) : entryRead(d));
+
+    if (hasRole){
+      if (d.role !== lastRole || d.g !== lastG){
+        lastRole = d.role; lastG = d.g; gRole = d.role; gG = d.g;
+        gHead = document.createElement('div');
+        gHead.className = 'item';
+        gHead.innerHTML = `
+          <div class="card c${posCls(d.p)}">
+            <div class="bra">
+              <div class="half"></div>
+              ${getBarHtml(d.role, d.g)}
+              <div class="half"></div>
+            </div>
+            ${editing ? `<span class="gx" data-gx="${d.g}" data-gs="${esc(d.s)}" title="删除整个成对组">✕</span>` : ''}
+          </div>`;
+        if (editing){
+          const itemEl = gHead;
+          itemEl.addEventListener('dragover', e => e.preventDefault());
+          attachTopDrop(itemEl, d, curS);
+        }
+        (editing ? wrap : (alt++ % 2 === 0 ? colA : colB)).appendChild(gHead);
+        halves = gHead.querySelectorAll('.half');
+        if (editing){
+          halves.forEach((h, hi) => {
+            h.addEventListener('dragover', e => { e.preventDefault(); e.stopPropagation(); h.classList.add('over'); });
+            h.addEventListener('dragleave', () => h.classList.remove('over'));
+            h.addEventListener('drop', e => {
+              e.preventDefault(); e.stopPropagation(); h.classList.remove('over');
+              if (!dragD) return;
+              removeD(dragD);
+              dragD.role = gRole; dragD.g = gG; dragD.side = hi === 1 ? 'R' : 'L'; dragD.s = curS;
+              let at = -1;
+              DATA.forEach((x, xi) => { if (x.s === curS && x.role === gRole && x.g === gG && x.side === dragD.side) at = xi; });
+              if (at < 0) DATA.forEach((x, xi) => { if (x.s === curS && x.role === gRole && x.g === gG && at < 0) at = xi; });
+              DATA.splice(at + 1, 0, dragD);
+              save(); render();
+            });
+          });
+        }
+      }
+      (d.side === 'R' ? halves[1] : halves[0]).innerHTML += entryHtml;
+    } else {
+      // 编辑模式：上一项也是独立词 → 显示合并按钮（⇄ | —）
+      if (editing && !isNote){
+        const prev = DATA[i-1];
+        if (prev && prev.s === d.s && prev.kind !== 'note' && !(prev.role === 'arr' || prev.role === 'ant' || prev.role === 'syn')){
+          const mb = document.createElement('div'); mb.className = 'merge-bar';
+          mb.innerHTML = ['arr', 'ant', 'syn'].map(r =>
+            `<button class="mb-btn" data-mr="${r}" title="${r === 'arr' ? '相对⇄' : r === 'ant' ? '竖线反义|' : '横杠同类—'}">${r === 'arr' ? '⇄' : r === 'ant' ? '|' : '—'}</button>`).join('');
+          mb.addEventListener('click', e => {
+            const btn = e.target.closest('.mb-btn'); if (!btn) return;
+            const role = btn.dataset.mr, g = newG();
+            prev.role = role; prev.side = 'L'; prev.g = g;
+            d.role = role; d.side = 'R'; d.g = g;
+            save(); render();
+          });
+          wrap.appendChild(mb);
+        }
+      }
+      const item = document.createElement('div'); item.className = 'item';
+      const card = document.createElement('div');
+      card.className = 'card c' + posCls(d.p) + (isNote ? ' notecard' : '');
+      card.innerHTML = entryHtml;
+      if (editing){ attachTopDrop(item, d, curS); }
+      item.appendChild(card);
+      (editing ? wrap : (alt++ % 2 === 0 ? colA : colB)).appendChild(item);
+    }
+  }
+
+  if (editing){
+    list.querySelectorAll('.drag-handle').forEach(el => { el.draggable = true; });
+  }
+  const words = DATA.filter(d => d.kind !== 'note').length;
+  document.getElementById('count').textContent = words;
+}
+
+function attachTopDrop(item, d, sec){
+  item.addEventListener('dragover', e => {
+    if (!dragD) return;
+    e.preventDefault();
+    const before = e.offsetY < item.offsetHeight / 2;
+    item.classList.toggle('ins-top', before); item.classList.toggle('ins-bot', !before);
+    item._ins = before ? 'top' : 'bot';
+  });
+  item.addEventListener('dragleave', () => item.classList.remove('ins-top', 'ins-bot'));
+  item.addEventListener('drop', e => {
+    e.preventDefault(); e.stopPropagation();   // 防冒泡到 sec-items wrap 的 drop（会再次移动到节尾）
+    const where = item._ins; item.classList.remove('ins-top', 'ins-bot');
+    if (!dragD || !where) return;
+    removeD(dragD);
+    dragD.role = ''; dragD.side = ''; dragD.g = 0; dragD.s = sec;
+    let ti = DATA.indexOf(d);
+    DATA.splice(where === 'top' ? ti : ti + 1, 0, dragD);
+    save(); render();
+  });
+}
+
+/* 拖拽委托 */
+list.addEventListener('dragstart', e => {
+  const h = e.target.closest('[data-did]'); if (!h || !editing) return;
+  dragD = byId(+h.dataset.did);
+  e.dataTransfer.setData('text/plain', 'x');
+  e.dataTransfer.effectAllowed = 'move';
+  h.classList.add('dragging');
+});
+list.addEventListener('dragend', e => {
+  const h = e.target.closest && e.target.closest('[data-did]');
+  if (h) h.classList.remove('dragging');
+  document.querySelectorAll('.dragging').forEach(el => el.classList.remove('dragging'));
+});
+
+/* 事件委托: 文字编辑 / 删除 / 相对符号切换 */
+list.addEventListener('input', e => {
+  const t = e.target.closest('.edf'); if (!t) return;
+  const holder = t.closest('[data-did]'); if (!holder) return;
+  const d = byId(+holder.dataset.did); if (!d) return;
+  d[t.dataset.f] = t.textContent;
+  saveSoon();
+});
+
+list.addEventListener('click', e => {
+  // 拆出为独立卡
+  const sp = e.target.closest('.sp');
+  if (sp){
+    const holder = sp.closest('[data-did]'); if (!holder) return;
+    const d = byId(+holder.dataset.did); if (!d) return;
+    const gi = DATA.indexOf(d);
+    removeD(d);
+    d.role = ''; d.side = ''; d.g = 0;
+    DATA.splice(gi, 0, d);   // 原位放回 = 组后第一个位置
+    save(); render(); return;
+  }
+  // 删除单卡
+  const x = e.target.closest('.x');
+  if (x){
+    const holder = x.closest('[data-did]'); if (!holder) return;
+    const d = byId(+holder.dataset.did); if (!d) return;
+    removeD(d); save(); render(); return;
+  }
+  // 删除整组
+  const gx = e.target.closest('.gx');
+  if (gx){
+    const g = +gx.dataset.gx, s = gx.dataset.gs;
+    for (let i = DATA.length - 1; i >= 0; i--) {
+      if (DATA[i].s === s && DATA[i].g === g && DATA[i].role) DATA.splice(i, 1);
+    }
+    save(); render(); return;
+  }
+  // 点击符号循环切换: arr (⇄) -> ant (|) -> syn (—) -> arr (⇄)
+  const bar = e.target.closest('[data-bar]');
+  if (bar && editing){
+    const g = +bar.dataset.bar;
+    let s = null, currentRole = 'arr';
+    DATA.forEach(d => {
+      if (d.g === g && d.role && s === null) { s = d.s; currentRole = d.role; }
+    });
+    const nextRole = currentRole === 'arr' ? 'ant' : (currentRole === 'ant' ? 'syn' : 'arr');
+    DATA.forEach(d => {
+      if (d.s === s && d.g === g && d.role) d.role = nextRole;
+    });
+    save(); render();
+  }
+});
+
+/* 导出 JSON 功能 */
+function exportData(){
+  const dataStr = JSON.stringify({page: 'N2_1-2', data: DATA}, null, 2);
+  const blob = new Blob([dataStr], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'N2_1-2_layout.json';
+  a.click();
+
+  document.getElementById('exportText').value = dataStr;
+  document.getElementById('exportModal').classList.add('open');
+}
+
+function copyExportText(){
+  const t = document.getElementById('exportText');
+  t.select();
+  navigator.clipboard.writeText(t.value).then(() => {
+    alert('已成功复制最新 JSON 数据到剪贴板！');
+  });
+}
+
+render();
+</script>
+
+<div id="ftool">
+  <div class="ft-tip">添加到最近操作的卡片旁</div>
+  <button onclick="ftAdd('word')">＋ 词框</button>
+  <button onclick="ftAdd('arr')">⇄ 相对组</button>
+  <button onclick="ftAdd('ant')">| 反义组</button>
+  <button onclick="ftAdd('syn')">— 同类组</button>
+  <button onclick="ftAdd('note')">✎ 文本</button>
+</div>
+<script>
+/* ---- 悬浮工具条 + 选字拖动 ---- */
+let lastSpot = null;   // {sec, idx} 最近操作的卡片位置
+list.addEventListener('click', e => {
+  const h = e.target.closest('[data-did]'); if (!h) return;
+  const d = byId(+h.dataset.did); if (!d) return;
+  lastSpot = { sec: d.s, idx: DATA.indexOf(d) };
+}, true);
+list.addEventListener('drop', e => {
+  // drop 后记录目标卡片位置
+  if (lastSpot && dragD) lastSpot = { sec: dragD.s, idx: DATA.indexOf(dragD) };
+}, true);
+
+function ftAdd(kind){
+  if (!editing) { toggleEdit(); }
+  const sec = lastSpot ? lastSpot.sec : (DATA[0] && DATA[0].s);
+  if (!sec) return;
+  const mkWord = () => ({id: nextId++, aid: 0, asfx: '', s: sec, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0});
+  if (kind === 'word'){
+    const w = mkWord();
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, w);
+    lastSpot = { sec, idx: at };
+  } else if (kind === 'note'){
+    const n = {id: nextId++, s: sec, kind: 'note', text: ''};
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, n);
+    lastSpot = { sec, idx: at };
+  } else {
+    const g = newG();
+    const l = mkWord(); l.role = kind; l.side = 'L'; l.g = g;
+    const r = mkWord(); r.role = kind; r.side = 'R'; r.g = g;
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, l, r);
+    lastSpot = { sec, idx: at + 1 };
+  }
+  save(); render();
+}
+
+/* 选中文字拖动 → 词框 */
+document.addEventListener('dragstart', e => {
+  const sel = String(window.getSelection ? window.getSelection() : '').trim();
+  if (sel && !e.target.closest('[data-did]')) {
+    dragD = { __text: sel };
+    e.dataTransfer.setData('text/plain', sel);
+    e.dataTransfer.effectAllowed = 'copy';
+  }
+}, true);
+// attachTopDrop / half drop 里识别 __text：改 drop 处理 —— 在最前注入
+const _origAttach = attachTopDrop;
+attachTopDrop = function(item, d, sec){
+  _origAttach(item, d, sec);
+  item.addEventListener('drop', e => {
+    const txt = (e.dataTransfer.getData('text/plain') || '').trim();
+    if (!txt || !e.target.closest('.edf') && !byId(+((e.target.closest('[data-did]')||{}).dataset?.did || -1))) return;
+    // 若 drop 的是纯文本（非卡片拖动）→ 新词框
+    if (dragD && dragD.__text && dragD.__text === txt){
+      e.preventDefault(); e.stopPropagation();
+      const w = {id: nextId++, aid: 0, asfx: '', s: sec, w: txt, k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0};
+      const ti = DATA.indexOf(d);
+      DATA.splice(ti + 1, 0, w);
+      save(); render();
+    }
+  }, true);
+};
+// 半区 drop 同样支持文本 → 新词入半区
+list.addEventListener('drop', e => {
+  const txt = (e.dataTransfer && e.dataTransfer.getData('text/plain') || '').trim();
+  const half = e.target.closest('.half');
+  if (!txt || !half || !dragD || !dragD.__text) return;
+  e.preventDefault(); e.stopPropagation();
+  const sec = curSFromHalf(half);
+  const w = {id: nextId++, aid: 0, asfx: '', s: sec, w: txt, k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: dragD.role || '', side: dragD.side || '', g: dragD.g || 0};
+  // 插到该半区最后
+  let at = -1;
+  DATA.forEach((x, xi) => { if (x.s === sec && x.g === w.g && x.side === w.side) at = xi; });
+  DATA.splice(at + 1, 0, w);
+  dragD = null;
+  save(); render();
+}, true);
+function curSFromHalf(half){
+  // 从 half 往上找 gx 的 data-gs
+  let el = half;
+  while (el && !el.dataset?.gs) el = el.parentElement;
+  return el ? el.dataset.gs : (DATA[0] && DATA[0].s);
+}
+// toggleEdit 时同步悬浮条
+const _origToggle = toggleEdit;
+toggleEdit = function(){ _origToggle(); document.getElementById('ftool').classList.toggle('open', editing); };
+</script>
+
+
+<div id="dict">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
+  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
+  <div id="dictAns" class="hidden"></div>
+  <div class="dbtns">
+    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
+    <button class="hbtn" id="dictAutoBtn" onclick="dictAutoToggle()">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+  </div>
+  <div style="opacity:.4;font-size:11px;">空格=重播 · →/D=下一个 · ←/A=上一个 · S=显示答案 · Esc=退出</div>
+</div>
+<script>
+/* ---- 听写（N2_1-2: aid+asfx 音频, 词→例句链） ---- */
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [], dictChain = false;
+const DICT_DELAY = 3000;
+const escH = s => String(s == null ? '' : s);
+const dictWords = () => DATA.filter(d => d.aid && !d.kind);
+const dictSents = d => (d.ph || '').split('｜').map(s => s.trim()).filter(Boolean);
+const dictSfx = d => { const n = dictSents(d).length; return n > 1 ? dictSents(d).map((_, i) => 'p' + (i + 1)) : (n === 1 ? ['p'] : []); };
+let dictSentI = 0;
+
+function dictToggle(){
+  dictOpen = !dictOpen;
+  document.getElementById('dict').classList.toggle('open', dictOpen);
+  if (dictOpen){ if (curAudio) curAudio.pause(); buildOrder(); dictCur = 0; showDict(); }
+  else { if (curAudio) curAudio.pause(); clearTimeout(dictT); }
+}
+function buildOrder(){
+  dictOrder = dictWords().map(d => d.id);
+  if (dictShuffleOn) for (let i = dictOrder.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [dictOrder[i], dictOrder[j]] = [dictOrder[j], dictOrder[i]]; }
+}
+const dictD = () => dictWords().find(d => d.id === dictOrder[dictCur]);
+const playCur = () => {
+  const d = dictD();
+  dictSentI = 0;
+  if (d.ph && !d._tts_ph) { dictChain = true; play(d.aid, d.asfx || ''); }
+  else { dictChain = false; play(d.aid, d.asfx || '', d._tts_ph ? d.ph : d.w); }
+};
+// 播放钩子：词条播完接例句；例句播完且自动 → 下一条
+function dictHook(asfx){
+  const d = dictD();
+  if (asfx && asfx.includes('p')) {          // 一句例句播完
+    const sfx = dictSfx(d);
+    if (dictChain && dictSentI + 1 < sfx.length) {
+      dictSentI++; play(d.aid, sfx[dictSentI], dictSents(d)[dictSentI]); return;
+    }
+    dictChain = false;
+    if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY);
+    return;
+  }
+  if (dictChain) {                            // 词条播完 → 接第一句
+    const sfx = dictSfx(d);
+    if (sfx.length) { dictSentI = 0; play(d.aid, sfx[0], dictSents(d)[0]); return; }
+  }
+  dictChain = false;
+  if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY);
+}
+function dictStep(dir){
+  clearTimeout(dictT); dictChain = false;
+  dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
+  showDict(); playCur();
+}
+const dictNext = () => dictStep(1);
+const dictPrev = () => dictStep(-1);
+function dictShuffle(){ dictShuffleOn = !dictShuffleOn; buildOrder(); dictCur = 0; showDict(); playCur(); }
+function dictAutoToggle(){
+  dictAuto = !dictAuto;
+  document.getElementById('dictAutoBtn').textContent = '自动: ' + (dictAuto ? '开' : '关');
+  dictChain = false;
+  if (dictAuto) playCur();
+}
+function dictReveal(){
+  const ans = document.getElementById('dictAns');
+  if (ans.classList.contains('hidden')) { renderDictAns(); ans.classList.remove('hidden'); }
+  else ans.classList.add('hidden');
+}
+function renderDictAns(){
+  const d = dictD(), ans = document.getElementById('dictAns');
+  const side = w => `<div class="dword">${escH(w)}</div>`;
+  let body = `<div class="dpos">${escH(d.p)}</div><div class="dword">${escH(d.w)} <span style="font-size:14px;opacity:.6">${escH(d.k)}</span></div><div class="dmean">${escH(d.m)}</div>`;
+  if (d.ph) {
+    const sfx = dictSfx(d), sents = dictSents(d), zhs = (d.phz || '').split('｜').map(s => s.trim());
+    body += sents.map((s, i) => `<div class="dph" onclick="play(${d.aid},'${sfx[i] || 'p'}','${escH(s).replace(/'/g, "\'")}')">${escH(s)}</div><div class="dphz">${escH(zhs[i] || '')}</div>`).join('');
+  }
+  ans.innerHTML = body;
+}
+function showDict(){
+  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  const ans = document.getElementById('dictAns');
+  ans.classList.add('hidden');
+  ans.innerHTML = '';
+}
+document.addEventListener('keydown', e => {
+  if (!dictOpen) return;
+  if (e.code === 'Space'){ e.preventDefault(); playCur(); }
+  else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') dictNext();
+  else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') dictPrev();
+  else if (e.key === 's' || e.key === 'S') dictReveal();
+  else if (e.key === 'Escape') dictToggle();
+});
+</script>
+
+</body>
+</html>
