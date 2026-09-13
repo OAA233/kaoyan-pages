@@ -179,7 +179,7 @@
   .dpos { opacity: .5; font-size: 12px; }
   .dmean { font-size: 16px; margin-top: 4px; }
   .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
-  .dphz { opacity: .6; font-size: 13px; }
+  .dphz { display: block; opacity: .6; font-size: 13px; }
   .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
 </style>
 </head>
@@ -187,7 +187,7 @@
 <header>
   <div>
     <h1>2-3 健康</h1>
-    <p>第3课 健康（书内 p.22–24）<span class="stats">共 <b id="count"></b> 词 · 点击日文发音（edge 女声）</span></p>
+    <p>第1部 2章 3課 健康<span class="stats">共 <b id="count"></b> 词 · 点击日文发音（edge 女声）</span></p>
   </div>
   <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
   <button id="editBtn" class="hbtn" onclick="toggleEdit()">✏️ 编辑</button>
@@ -1485,11 +1485,22 @@ function rubyHtml(d){
   return one(w, k);
 }
 
-const phRead = d => d.ph ? `
+const phRead = d => {
+  if (!d.ph) return '';
+  const jp = d.ph.split('｜').map(s => s.trim()).filter(Boolean);
+  const zh = (d.phz || '').split('｜').map(s => s.trim());
+  const multi = jp.length > 1;
+  return jp.map((s, i) => {
+    const sfx = d._tts_ph ? '' : (multi ? 'p' + (i + 1) : 'p');
+    const aid = d._tts_ph ? 0 : (d.aid || 0);
+    const txt = s.replace(/'/g, "\'");
+    return `
   <div class="phrase">
-    <span class="jp" onclick="play(${d._tts_ph ? 0 : (d.aid || 0)},'${d._tts_ph ? '' : (d.asfx || '') + 'p'}','${(d.ph || '').replace(/'/g, "\\'")}')">${esc(d.ph)}</span>
-    <span class="zh">${esc(d.phz)}</span>
-  </div>` : '';
+    <span class="jp" onclick="play(${aid},'${sfx}','${txt}')">${esc(s)}</span>
+    <span class="zh">${esc(zh[i] || '')}</span>
+  </div>`;
+  }).join('');
+};
 
 const entryRead = d => `
   <div class="entry">
@@ -1947,6 +1958,10 @@ let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dict
 const DICT_DELAY = 3000;
 const escH = s => String(s == null ? '' : s);
 const dictWords = () => DATA.filter(d => d.aid && !d.kind);
+const dictSents = d => (d.ph || '').split('｜').map(s => s.trim()).filter(Boolean);
+const dictSfx = d => { const n = dictSents(d).length; return n > 1 ? dictSents(d).map((_, i) => 'p' + (i + 1)) : (n === 1 ? ['p'] : []); };
+let dictSentI = 0;
+
 function dictToggle(){
   dictOpen = !dictOpen;
   document.getElementById('dict').classList.toggle('open', dictOpen);
@@ -1960,23 +1975,28 @@ function buildOrder(){
 const dictD = () => dictWords().find(d => d.id === dictOrder[dictCur]);
 const playCur = () => {
   const d = dictD();
+  dictSentI = 0;
   if (d.ph && !d._tts_ph) { dictChain = true; play(d.aid, d.asfx || ''); }
   else { dictChain = false; play(d.aid, d.asfx || '', d._tts_ph ? d.ph : d.w); }
 };
 // 播放钩子：词条播完接例句；例句播完且自动 → 下一条
 function dictHook(asfx){
-  if (asfx && asfx.includes('p')) {
-    // 这是例句播完
+  const d = dictD();
+  if (asfx && asfx.includes('p')) {          // 一句例句播完
+    const sfx = dictSfx(d);
+    if (dictChain && dictSentI + 1 < sfx.length) {
+      dictSentI++; play(d.aid, sfx[dictSentI], dictSents(d)[dictSentI]); return;
+    }
+    dictChain = false;
     if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY);
     return;
   }
-  // 词条播完 → 有例句且未 TTS 兜底则接例句
-  if (dictChain && dictD().ph && !dictD()._tts_ph) {
-    dictChain = false;
-    play(dictD().aid, (dictD().asfx || '') + 'p', dictD().ph);
-  } else if (dictOpen && dictAuto) {
-    dictT = setTimeout(dictNext, DICT_DELAY);
+  if (dictChain) {                            // 词条播完 → 接第一句
+    const sfx = dictSfx(d);
+    if (sfx.length) { dictSentI = 0; play(d.aid, sfx[0], dictSents(d)[0]); return; }
   }
+  dictChain = false;
+  if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY);
 }
 function dictStep(dir){
   clearTimeout(dictT); dictChain = false;
@@ -2001,7 +2021,10 @@ function renderDictAns(){
   const d = dictD(), ans = document.getElementById('dictAns');
   const side = w => `<div class="dword">${escH(w)}</div>`;
   let body = `<div class="dpos">${escH(d.p)}</div><div class="dword">${escH(d.w)} <span style="font-size:14px;opacity:.6">${escH(d.k)}</span></div><div class="dmean">${escH(d.m)}</div>`;
-  if (d.ph) body += `<div class="dph" onclick="play(${d.aid},'${(d.asfx || '') + 'p'}','${escH(d.ph)}')">${escH(d.ph)}</div><div class="dphz">${escH(d.phz || '')}</div>`;
+  if (d.ph) {
+    const sfx = dictSfx(d), sents = dictSents(d), zhs = (d.phz || '').split('｜').map(s => s.trim());
+    body += sents.map((s, i) => `<div class="dph" onclick="play(${d.aid},'${sfx[i] || 'p'}','${escH(s).replace(/'/g, "\'")}')">${escH(s)}</div><div class="dphz">${escH(zhs[i] || '')}</div>`).join('');
+  }
   ans.innerHTML = body;
 }
 function showDict(){
