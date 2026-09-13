@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新完全掌握 N1 実力6-2 体の言葉を使った慣用表現②・その他の慣用表現</title>
+<style>
+  body {
+    --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
+    --num: #8b8577; --num-border: #5a564d; --muted: .55; --accent: #4cc2ff;
+    font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans CJK JP", "PingFang SC", sans-serif;
+    background: var(--bg); color: var(--fg);
+    margin: 0; padding: 14px 16px; max-width: 1080px;
+    transition: background .2s, color .2s;
+  }
+  body.day {
+    --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8;
+    --num: #8a8373; --num-border: #c4bda9; --muted: .6;
+  }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
+  #themeBtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px;
+  }
+  #themeBtn:hover { opacity: .8; }
+  .stats { display: inline-flex; gap: 8px; font-size: 12px; opacity: .7; }
+  .sec-h { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin: 16px 0 6px; grid-column: 1 / -1; }
+  .sec-title { font-size: 13px; font-weight: 700; opacity: .55; letter-spacing: .05em; }
+  
+  /* 浏览排版 */
+  #list { }
+  .row2 { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; }
+  .col2 { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+  .card {
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 10px 14px; background: var(--card);
+    border-left: 5px solid #555; position: relative;
+  }
+  .card.cV { border-left-color: #e5484d; }
+  .card.cI { border-left-color: #d63384; }
+  .card.cNA { border-left-color: #7048e8; }
+  .card.cN { border-left-color: #1971c2; }
+  .card.cadv { border-left-color: #2b8a3e; }
+  .card.cIDM { border-left-color: #b08a3e; }
+
+  .row1 { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .num {
+    font-size: 11px; font-weight: 700; color: var(--num);
+    border: 1.5px solid var(--num-border); border-radius: 50%;
+    width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: center;
+  }
+  .word { font-size: 19px; font-weight: 700; cursor: pointer; }
+  ruby.word { ruby-align: center; }
+  ruby.word rt { font-size: 10px; font-weight: 500; opacity: .55; letter-spacing: .02em; }
+  ruby.word rt.en { font-style: italic; opacity: .5; }
+  .word:hover { text-decoration: underline; }
+  .pos { font-size: 11px; font-weight: 700; padding: 2px 7px; white-space: nowrap; border-radius: 7px; color: #fff; }
+  .pos.V { background: #e5484d; }
+  .pos.I { background: #d63384; }
+  .pos.NA { background: #7048e8; }
+  .pos.N { background: #1971c2; }
+  .pos.adv { background: #2b8a3e; }
+  .pos.IDM { background: #b08a3e; }
+  .mean { margin-top: 3px; font-size: 13px; margin-left: 30px; }
+  .phrase { margin-top: 6px; font-size: 13px; margin-left: 30px; }
+  .phrase .jp { font-weight: 600; cursor: pointer; }
+  .phrase .jp:hover { text-decoration: underline; }
+  .phrase .zh { display: block; opacity: var(--muted); margin-top: 1px; font-weight: 400; }
+
+  /* 对立组/同类组 */
+  .entry { margin-bottom: 6px; }
+  .entry:last-child { margin-bottom: 0; }
+  .bra { display: flex; gap: 10px; align-items: stretch; position: relative; }
+  .bra .half { flex: 1; min-width: 0; }
+  
+  /* 中间相对/关系符号 */
+  .bar-wrap {
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; user-select: none; padding: 0 4px;
+  }
+  .vs-arr { font-size: 16px; opacity: .65; color: var(--num); font-weight: 700; }
+  .vs-ant { width: 0; border-left: 2px solid var(--num-border); height: 100%; min-height: 26px; }
+  .vs-syn { width: 14px; border-top: 2px solid var(--num-border); }
+
+  @media (max-width: 760px) {
+    .row2 { flex-direction: column; }
+    .bra { flex-direction: column; }
+    .bar-wrap { padding: 6px 0; }
+    .vs-ant { width: 100%; height: 0; border-left: none; border-top: 2px solid var(--num-border); }
+  }
+
+  /* ---- 编辑模式样式 ---- */
+  .hbtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer;
+  }
+  .hbtn:hover { border-color: var(--accent); }
+  .hbtn.pri { border-color: var(--accent); color: var(--accent); }
+  .hide { display: none !important; }
+
+  .addbtns { display: inline-flex; gap: 6px; }
+  .addbtns button {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 7px; padding: 2px 8px; font-size: 11px; cursor: pointer; opacity: .8;
+  }
+  .addbtns button:hover { border-color: var(--accent); opacity: 1; }
+
+  body.editing .card { cursor: grab; }
+  body.editing .entry { cursor: grab; position: relative; }
+  .dragging { opacity: .35 !important; }
+  .item { margin-bottom: 10px; }
+  .item.ins-top { box-shadow: 0 -3px 0 var(--accent); }
+  .item.ins-bot { box-shadow: 0 3px 0 var(--accent); }
+  .half.over { outline: 2px dashed var(--accent); outline-offset: 3px; border-radius: 8px; }
+
+  body.editing .bar-wrap {
+    cursor: pointer; border-radius: 6px; padding: 2px 6px;
+    border: 1px dashed transparent;
+  }
+  body.editing .bar-wrap:hover {
+    border-color: var(--accent); background: rgba(76,194,255,.12);
+  }
+
+  .wpair { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .wside { display: inline-flex; align-items: baseline; }
+  .wmid { width: 2px; align-self: stretch; background: var(--num-border); opacity: .6; margin: 0 2px; }
+  .mid-dot { opacity: .45; margin: 0 2px; font-weight: 400; }
+  .merge-bar { display: flex; gap: 6px; justify-content: center; margin: 2px 0 6px; opacity: .75; }
+  .mb-btn { border: 1px dashed var(--num-border); background: var(--card); color: var(--fg); border-radius: 6px; padding: 1px 10px; font-size: 13px; cursor: pointer; }
+  .mb-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---- 悬浮编辑工具条 ---- */
+  #ftool { position: fixed; right: 18px; bottom: 18px; z-index: 600; display: none; flex-direction: column; gap: 6px; background: var(--card); border: 1px solid var(--accent); border-radius: 14px; padding: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.35); }
+  #ftool.open { display: flex; }
+  #ftool .ft-tip { font-size: 10px; opacity: .5; text-align: center; margin-bottom: 2px; }
+  #ftool button { border: 1px solid var(--num-border); background: var(--bg); color: var(--fg); border-radius: 8px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
+  #ftool button:hover { border-color: var(--accent); color: var(--accent); }
+  .drag-handle { cursor: grab; opacity: .4; font-size: 14px; user-select: none; }
+  .drag-handle:hover { opacity: 1; color: var(--accent); }
+  .edf:focus { outline: 1px dashed var(--accent); background: rgba(76,194,255,.08); border-radius: 4px; }
+  .edf.empty:empty::before { content: attr(data-ph); opacity: .35; }
+  .edk { font-size: 12px; opacity: .65; min-width: 20px; }
+  .ede { font-size: 11px; font-style: italic; opacity: .5; min-width: 20px; }
+  .edmean { font-size: 13px; }
+  .edph { font-size: 13px; font-weight: 600; }
+  .edphz { display: block; font-size: 12px; opacity: .6; font-weight: 400; }
+  .sp { position: absolute; top: 2px; right: 24px; opacity: .3; cursor: pointer; font-size: 12px; user-select: none; z-index: 5; }
+  .sp:hover { opacity: 1; color: #4cc2ff; }
+  .x { position: absolute; top: 2px; right: 6px; opacity: .3; cursor: pointer; font-size: 12px; user-select: none; z-index: 5; }
+  .x:hover { opacity: 1; color: #e5484d; }
+  .gx { position: absolute; top: 4px; right: 8px; opacity: .35; cursor: pointer; font-size: 13px; z-index: 5; }
+  .gx:hover { opacity: 1; color: #e5484d; }
+  .note { border-left: 3px solid var(--num-border); background: rgba(128,128,128,.08); border-radius: 6px; padding: 6px 10px; font-size: 13px; position: relative; }
+  .sec-items { display: block; }
+
+  /* Modal */
+  .modal-mask {
+    position: fixed; inset: 0; background: rgba(0,0,0,.6); backdrop-filter: blur(2px);
+    display: none; align-items: center; justify-content: center; z-index: 100;
+  }
+  .modal-mask.open { display: flex; }
+  .modal-box {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    width: 90%; max-width: 620px; max-height: 85vh; padding: 20px; box-sizing: border-box;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .modal-btns { display: flex; justify-content: flex-end; gap: 8px; }
+
+  /* ---- 听写模式 ---- */
+  #dict { position: fixed; inset: 0; background: var(--bg); z-index: 700; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  #dict.open { display: flex; }
+  #dictBig { font-size: 20px; padding: 16px 30px; border-radius: 16px; border: 1px solid var(--num-border); background: var(--card); color: var(--fg); cursor: pointer; }
+  #dictAns { min-height: 130px; transition: opacity .2s; }
+  #dictAns.hidden { opacity: 0; pointer-events: none; user-select: none; }
+  .dword { font-size: 30px; font-weight: 800; }
+  .dpos { opacity: .5; font-size: 12px; }
+  .dmean { font-size: 16px; margin-top: 4px; }
+  .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
+  .dphz { display: block; opacity: .6; font-size: 13px; }
+  .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>実力6-2 体の言葉を使った慣用表現②・その他の慣用表現</h1>
+    <p>第2部 6章 慣用表現 2課 体の言葉を使った慣用表現②・その他の慣用表現<span class="stats">共 <b id="count"></b> 词 · 点击日文发音（edge 女声）</span></p>
+  </div>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
+  <button id="editBtn" class="hbtn" onclick="toggleEdit()">✏️ 编辑</button>
+  <button id="expBtn" class="hbtn pri hide" onclick="exportData()">⬇ 导出 JSON</button>
+  <button id="rstBtn" class="hbtn hide" onclick="resetAll()">↺ 重置</button>
+  <button id="themeBtn" onclick="toggleTheme()">🌙 夜间</button>
+</header>
+<div id="list"></div>
+
+<!-- 导出 Modal -->
+<div class="modal-mask" id="exportModal">
+  <div class="modal-box">
+    <h3 style="margin:0;">导出当前数据 (JSON)</h3>
+    <p style="font-size:12px;opacity:.6;margin:0;">已自动触发文件下载。您也可以直接复制下方 JSON 数据备份：</p>
+    <textarea id="exportText" rows="14" style="width:100%;box-sizing:border-box;font-family:monospace;font-size:11px;background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:6px;padding:8px;"></textarea>
+    <div class="modal-btns">
+      <button class="hbtn" onclick="document.getElementById('exportModal').classList.remove('open')">关闭</button>
+      <button class="hbtn pri" onclick="copyExportText()">复制到剪贴板</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// DATA 结构说明:
+// id: 独立编号 | aid: 音频编号 (对应 N1_実力6-2_audio/*.mp3) | asfx: 音频后缀 (如 '-r', 'p')
+// s: 章节名 | w: 单词 | k: 假名注音 | en: 外来语英语原型
+// m: 中文释义 | p: 词性 | ph: 例句 | phz: 例句中译
+// role: 'arr' (相对 ⇄) / 'ant' (竖线反义 |) / 'syn' (横杠同类 —) / '' (独立单卡)
+// side: 'L' / 'R' 组内左右 | g: 组号 (同一章节内同组连续渲染) | kind: 'note'=文本卡片
+const INITIAL_DATA = [
+ {
+  "s": "腹",
+  "w": "腹をくくる",
+  "k": "はらをくくる",
+  "p": "IDM",
+  "m": "下定决心（承担任何后果）；横下心，豁出去",
+  "ph": "自信がなくても、腹をくくってやるしかない。",
+  "phz": "就算没有自信，也只能横下心来干。",
+  "id": 1,
+  "aid": 1,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "腹",
+  "w": "腹を読む",
+  "k": "はらをよむ",
+  "p": "IDM",
+  "m": "猜测对方的心思，摸清对方的想法",
+  "ph": "どんな条件を出してくるのか、相手の腹を読む。",
+  "phz": "对方会抛出什么条件，（得）揣摩对方的心思。",
+  "id": 2,
+  "aid": 2,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "腹",
+  "w": "腹を割る",
+  "k": "はらをわる",
+  "p": "IDM",
+  "m": "开诚布公，推心置腹",
+  "ph": "お互いに腹を割って話さないと、真に理解し合うことはできない。",
+  "phz": "不彼此开诚布公地谈，就无法真正相互理解。",
+  "id": 3,
+  "aid": 3,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "胸",
+  "w": "胸が詰まる",
+  "k": "むねがつまる",
+  "p": "IDM",
+  "m": "心中充满喜悦、悲伤或怜悯，（激动得）心头一紧",
+  "ph": "今日でお別れかと思うと、胸が詰まった。",
+  "phz": "一想到今天就要分别，心里就堵得难受。",
+  "id": 4,
+  "aid": 4,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "胸",
+  "w": "胸を貸す",
+  "k": "むねをかす",
+  "p": "IDM",
+  "m": "（给对方）当练习对手，做陪练",
+  "ph": "試合前、先輩に胸を貸してもらい／借りて、何度も練習をした。",
+  "phz": "比赛前，请前辈当陪练，练习了很多次。",
+  "id": 5,
+  "aid": 5,
+  "asfx": "",
+  "en": "",
+  "role": "arr",
+  "side": "L",
+  "g": 1
+ },
+ {
+  "s": "胸",
+  "w": "胸を借りる",
+  "k": "むねをかりる",
+  "p": "IDM",
+  "m": "请对方当（练习）对手，请人陪练",
+  "ph": "",
+  "phz": "",
+  "id": 6,
+  "aid": 6,
+  "asfx": "",
+  "en": "",
+  "role": "arr",
+  "side": "R",
+  "g": 1
+ },
+ {
+  "s": "胸",
+  "w": "胸を突く",
+  "k": "むねをつく",
+  "p": "IDM",
+  "m": "直击内心，使心头一震",
+  "ph": "先生が私のことを心配して言った真剣な言葉が私の胸を突いた。",
+  "phz": "老师出于关心对我说的一番恳切的话，深深触动了我的心。",
+  "id": 7,
+  "aid": 7,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "懐",
+  "w": "懐が暖かい",
+  "k": "ふところがあたたかい",
+  "p": "IDM",
+  "m": "手头宽裕，有钱",
+  "ph": "昨日は給料日で懐が暖かかったので、仕事の後、みんなと飲みに行った。",
+  "phz": "昨天是发薪日手头宽裕，下班后和大家去喝了酒。",
+  "id": 8,
+  "aid": 8,
+  "asfx": "",
+  "en": "",
+  "role": "ant",
+  "side": "L",
+  "g": 2
+ },
+ {
+  "s": "懐",
+  "w": "懐が寒い",
+  "k": "ふところがさむい",
+  "p": "IDM",
+  "m": "手头紧，囊中羞涩",
+  "ph": "",
+  "phz": "",
+  "id": 9,
+  "aid": 9,
+  "asfx": "",
+  "en": "",
+  "role": "ant",
+  "side": "R",
+  "g": 2
+ },
+ {
+  "s": "懐",
+  "w": "懐が深い",
+  "k": "ふところがふかい",
+  "p": "IDM",
+  "m": "宽宏大量，有包容力",
+  "ph": "社長は懐が深い人で、ライバル会社が倒産しそうなときに援助をした。",
+  "phz": "总经理为人宽厚，在对手公司眼看要倒闭时伸出了援手。",
+  "id": 10,
+  "aid": 10,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "足",
+  "w": "足が早い",
+  "k": "あしがはやい",
+  "p": "IDM",
+  "m": "（食物）容易腐坏",
+  "ph": "豆腐は足が早い食べ物なので、今日中に食べてください。",
+  "phz": "豆腐是容易变质的食品，请今天之内吃完。",
+  "id": 11,
+  "aid": 11,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "足",
+  "w": "足が出る",
+  "k": "あしがでる",
+  "p": "IDM",
+  "m": "超支，出现亏空（赤字）",
+  "ph": "予想よりもお金がかかって、足が出てしまった。",
+  "phz": "花的钱超出预期，出现了亏空。",
+  "id": 12,
+  "aid": 12,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "足",
+  "w": "足を洗う",
+  "k": "あしをあらう",
+  "p": "IDM",
+  "m": "金盆洗手，改邪归正",
+  "ph": "昔は悪いことをしていたが、今は足を洗って、真面目な生活をしている。",
+  "phz": "以前干过坏事，如今已金盆洗手，过着正经的生活。",
+  "id": 13,
+  "aid": 13,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "身",
+  "w": "身を立てる",
+  "k": "みをたてる",
+  "p": "IDM",
+  "m": "以（某职业、技术）谋生，安身立命",
+  "ph": "料理人として身を立てていきたい。",
+  "phz": "想以厨师这一行安身立命。",
+  "id": 14,
+  "aid": 14,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "身",
+  "w": "身を引く",
+  "k": "みをひく",
+  "p": "IDM",
+  "m": "退出，抽身而退；引退",
+  "ph": "私よりも後輩のほうが適任だと思ったので、身を引いた。",
+  "phz": "觉得比起我，后辈更胜任，于是就退出了。",
+  "id": 15,
+  "aid": 15,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "身",
+  "w": "身にしみる",
+  "k": "みにしみる",
+  "p": "IDM",
+  "m": "切身感到，刻骨铭心",
+  "ph": "会社に就職して、自分の日本語力が足りないことが身にしみてわかった。",
+  "phz": "进公司工作后，痛切地体会到自己的日语能力还不够。",
+  "id": 16,
+  "aid": 16,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "気",
+  "w": "気が引ける",
+  "k": "きがひける",
+  "p": "IDM",
+  "m": "感到心虚、理亏而顾虑，不好意思",
+  "ph": "前の借金をまだ返していないので、また借金を頼むのは気が引ける。",
+  "phz": "之前的债还没还，再开口借钱实在不好意思。",
+  "id": 17,
+  "aid": 17,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "気",
+  "w": "気が置けない",
+  "k": "きがおけない",
+  "p": "IDM",
+  "m": "不用客气的，不见外的（关系）",
+  "ph": "彼は幼稚園からずっと付き合っている、気が置けない友達だ。",
+  "phz": "他是从幼儿园起就一直来往的、可以不见外的朋友。",
+  "id": 18,
+  "aid": 18,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "気",
+  "w": "気が晴れる",
+  "k": "きがはれる",
+  "p": "IDM",
+  "m": "（烦心事消失）心情畅快，郁结尽消",
+  "ph": "言いたいことを言ったら、気が晴れた。",
+  "phz": "把想说的话说了出来，心情舒畅了。",
+  "id": 19,
+  "aid": 19,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "気",
+  "w": "気に障る",
+  "k": "きにさわる",
+  "p": "IDM",
+  "m": "令人生气，使人不快",
+  "ph": "私の言い方が悪くて、気に障ったとしたら、すみません。",
+  "phz": "如果我的说法不当惹你不快，还请原谅。",
+  "id": 20,
+  "aid": 20,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "気",
+  "w": "気に病む",
+  "k": "きにやむ",
+  "p": "IDM",
+  "m": "忧虑，烦恼，耿耿于怀",
+  "ph": "失敗したことを気に病むよりも、これからどうするか考えたほうがいい。",
+  "phz": "与其为失败而苦恼，不如想想今后怎么办。",
+  "id": 21,
+  "aid": 21,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "気",
+  "w": "気を利かせる",
+  "k": "きをきかせる",
+  "p": "IDM",
+  "m": "体贴，机灵地顾虑（他人情绪、场合）",
+  "ph": "二人だけで話をしたそうだったので、気を利かせて部屋を出た。",
+  "phz": "听说他们俩想单独谈谈，我便知趣地走出了房间。",
+  "id": 22,
+  "aid": 22,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "気",
+  "w": "気を抜く",
+  "k": "きをぬく",
+  "p": "IDM",
+  "m": "放松，松懈，疏忽大意",
+  "ph": "これまで順調に進んでいるが、最後まで気を抜かないようにしよう。",
+  "phz": "目前为止进展顺利，但要坚持到最后不可松懈。",
+  "id": 23,
+  "aid": 23,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "気",
+  "w": "気を紛らわす",
+  "k": "きをまぎらわす",
+  "p": "IDM",
+  "m": "排解烦闷，消愁解闷",
+  "ph": "結果が気になるのはわかりますが、散歩でもして気を紛らわしたらどうですか。",
+  "phz": "我知道您惦记结果，不妨散散步排解一下心情如何？",
+  "id": 24,
+  "aid": 24,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "気",
+  "w": "気を紛らす",
+  "k": "きをまぎらす",
+  "p": "IDM",
+  "m": "排解烦闷，消愁解闷（＝気を紛らわす）",
+  "ph": "",
+  "phz": "",
+  "id": 25,
+  "aid": 25,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "気",
+  "w": "気を持たせる",
+  "k": "きをもたせる",
+  "p": "IDM",
+  "m": "让对方抱有期待，吊人胃口",
+  "ph": "付き合う気もないのに気を持たせるような態度を取るべきではない。",
+  "phz": "不该摆出一副让人抱有期待、自己却无意交往的态度。",
+  "id": 26,
+  "aid": 26,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "息",
+  "w": "息が詰まる",
+  "k": "いきがつまる",
+  "p": "IDM",
+  "m": "（过度紧张）喘不过气，憋闷",
+  "ph": "試験前で皆がピリピリしていて、教室にいると息が詰まる。",
+  "phz": "考试前大家都很紧张，待在教室里让人喘不过气。",
+  "id": 27,
+  "aid": 27,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "息",
+  "w": "息を呑む",
+  "k": "いきをのむ",
+  "p": "IDM",
+  "m": "（吃惊得）屏住呼吸，倒吸一口气",
+  "ph": "あまりの美しさに息を呑んだ。",
+  "phz": "美得令人屏息。",
+  "id": 28,
+  "aid": 28,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "息",
+  "w": "息を引き取る",
+  "k": "いきをひきとる",
+  "p": "IDM",
+  "m": "断气，咽气，去世",
+  "ph": "祖母は家族に見守られて、静かに息を引き取った。",
+  "phz": "祖母在家人的守护下安然离世。",
+  "id": 29,
+  "aid": 29,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "息",
+  "w": "息をつく",
+  "k": "いきをつく",
+  "p": "IDM",
+  "m": "松一口气；喘口气",
+  "ph": "息をつく暇もないくらい忙しい。",
+  "phz": "忙得连喘口气的工夫都没有。",
+  "id": 30,
+  "aid": 30,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "心",
+  "w": "心が通う",
+  "k": "こころがかよう",
+  "p": "IDM",
+  "m": "心灵相通，彼此理解",
+  "ph": "彼とは性格も趣味も違うのに、なぜか心の通う友達になった。",
+  "phz": "和他性格、爱好都不同，却不知为何成了心意相通的朋友。",
+  "id": 31,
+  "aid": 31,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "心",
+  "w": "心を奪われる",
+  "k": "こころをうばわれる",
+  "p": "IDM",
+  "m": "被深深吸引，看得入迷",
+  "ph": "ストーリーだけでなく映像や音楽のすばらしさに心を奪われた。",
+  "phz": "不只是故事情节，影像与音乐的精彩也令人着迷。",
+  "id": 32,
+  "aid": 32,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "心",
+  "w": "心を砕く",
+  "k": "こころをくだく",
+  "p": "IDM",
+  "m": "费尽心思，操心",
+  "ph": "親は子供が幸せになるように心を砕いている。",
+  "phz": "父母为让孩子幸福而费尽心思。",
+  "id": 33,
+  "aid": 33,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "虫",
+  "w": "虫がいい",
+  "k": "むしがいい",
+  "p": "IDM",
+  "m": "（想法）自私，光考虑自己合算",
+  "ph": "自分に都合がいい条件のときだけ引き受けるなんて、虫がいい。",
+  "phz": "只在条件对自己有利时才肯接，这打算也太自私了。",
+  "id": 34,
+  "aid": 34,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "虫",
+  "w": "虫が好かない",
+  "k": "むしがすかない",
+  "p": "IDM",
+  "m": "不称心，喜欢不上来",
+  "ph": "どうもあの人にはばかにされている気がして、虫が好かない。",
+  "phz": "总觉得被那人当傻子看待，怎么也喜欢不起来。",
+  "id": 35,
+  "aid": 35,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "泥",
+  "w": "泥をかぶる",
+  "k": "どろをかぶる",
+  "p": "IDM",
+  "m": "背黑锅，代人受过",
+  "ph": "選挙違反をした政治家を守るため、秘書が泥をかぶって逮捕された。",
+  "phz": "为了包庇违反选举法的政治家，秘书背了黑锅被逮捕。",
+  "id": 36,
+  "aid": 36,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "泥",
+  "w": "顔に泥を塗る",
+  "k": "かおにどろをぬる",
+  "p": "IDM",
+  "m": "让（父母等）丢脸，使人蒙羞",
+  "ph": "親の顔に泥を塗るような行動をしてはいけない。",
+  "phz": "不能做出让父母丢脸的事。",
+  "id": 37,
+  "aid": 37,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "その他",
+  "w": "花が咲く",
+  "k": "はながさく",
+  "p": "IDM",
+  "m": "（谈话等）热烈起来，聊得火热",
+  "ph": "高校時代の友人と話していると、昔話に花が咲く。",
+  "phz": "和高中时代的朋友一聊起往事，就聊得热火朝天。",
+  "id": 38,
+  "aid": 38,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "その他",
+  "w": "芽が出る",
+  "k": "めがでる",
+  "p": "IDM",
+  "m": "显现成功的迹象，崭露头角",
+  "ph": "五年間、先生の下で演技を学んでいたが、ようやく芽が出てきた。",
+  "phz": "在老师门下学了五年表演，终于崭露头角。",
+  "id": 39,
+  "aid": 39,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "その他",
+  "w": "根に持つ",
+  "k": "ねにもつ",
+  "p": "IDM",
+  "m": "记仇，怀恨在心",
+  "ph": "彼は私が十年前に言った悪口をまだ根に持っている。",
+  "phz": "我十年前说他坏话的事，他至今还记恨着。",
+  "id": 40,
+  "aid": 40,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "その他",
+  "w": "猫をかぶる",
+  "k": "ねこをかぶる",
+  "p": "IDM",
+  "m": "装老实，佯装温顺",
+  "ph": "本当はにぎやかな性格だが、今日は猫をかぶっておとなしくしている。",
+  "phz": "他其实性格活泼爱热闹，今天却装得文静老实。",
+  "id": 41,
+  "aid": 41,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "その他",
+  "w": "尾を引く",
+  "k": "おをひく",
+  "p": "IDM",
+  "m": "（不良影响）持续，留下后遗症",
+  "ph": "最初の失敗が尾を引いて、最後まで自分の力を出すことができなかった。",
+  "phz": "开头的失败影响挥之不去，始终没能发挥出实力。",
+  "id": 42,
+  "aid": 42,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "s": "その他",
+  "w": "しっぽをつかむ",
+  "k": "しっぽをつかむ",
+  "p": "IDM",
+  "m": "抓住（做坏事的）把柄",
+  "ph": "捜査を続けていた警察は、ついに犯人のしっぽをつかんだ。",
+  "phz": "持续搜查的警察终于抓住了罪犯的把柄。",
+  "id": 43,
+  "aid": 43,
+  "asfx": "",
+  "en": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ }
+];
+let DATA = [];
+const STORAGE_KEY = 'n1seki62edit';
+(function(){
+  try {
+    const s = localStorage.getItem(STORAGE_KEY);
+    if (s) {
+      const o = JSON.parse(s);
+      if (o && Array.isArray(o.data) && o.data.length) DATA = o.data;
+    }
+  } catch(e) {}
+  if (!DATA || !DATA.length) DATA = JSON.parse(JSON.stringify(INITIAL_DATA));
+})();
+
+let nextId = Math.max(0, ...DATA.map(d => d.id || 0)) + 1;
+let editing = false, dragD = null, saveTimer = null;
+
+function save(){
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify({page: 'N1_実力6-2', data: DATA})); } catch(e) {}
+}
+function saveSoon(){
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(save, 400);
+}
+function resetAll(){
+  if (confirm('确定清空所有修改，恢复初始版式与数据吗？')) {
+    try { localStorage.removeItem(STORAGE_KEY); } catch(e) {}
+    DATA = JSON.parse(JSON.stringify(INITIAL_DATA));
+    save();
+    render();
+  }
+}
+const byId = id => DATA.find(d => d.id === id);
+
+/* 音频与 Web Speech 朗读兜底 */
+let curAudio = null;
+function chooseVoice(){
+  if (!('speechSynthesis' in window)) return null;
+  const vs = speechSynthesis.getVoices().filter(v => /^ja/i.test(v.lang));
+  const cleanVs = vs.filter(v => !/eddy|flo|grandma|grandpa|rocko|reed|sandy|shelley/i.test(v.name));
+  return cleanVs.find(v => /nanami|kyoko|haruka|ayumi|female|女/i.test(v.name))
+      || cleanVs.find(v => /siri|microsoft|edge/i.test(v.name))
+      || cleanVs[0]
+      || vs.find(v => /kyoko/i.test(v.name))
+      || vs[0];
+}
+if ('speechSynthesis' in window) {
+  speechSynthesis.onvoiceschanged = chooseVoice;
+}
+function speakTTS(text){
+  if (!('speechSynthesis' in window) || !text) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'ja-JP';
+  u.rate = 0.9;
+  const v = chooseVoice();
+  if (v) u.voice = v;
+  speechSynthesis.speak(u);
+}
+function play(aid, asfx, text){
+  if (curAudio) { curAudio.pause(); }
+  if (aid) {
+    const p = `../audio/N1/N1_実力6-2_audio/${aid}${asfx || ''}.mp3?v=1`;
+    curAudio = new Audio(p);
+    curAudio.onended = () => { if (typeof dictHook === 'function') dictHook(asfx); };
+    curAudio.play().catch(() => {
+      if (text) speakTTS(text);
+    });
+  } else if (text) {
+    speakTTS(text);
+  }
+}
+
+function applyTheme(day){
+  document.body.classList.toggle('day', day);
+  document.getElementById('themeBtn').textContent = day ? '🌙 夜间' : '☀️ 日间';
+}
+function toggleTheme(){
+  const day = !document.body.classList.contains('day');
+  applyTheme(day);
+  try { localStorage.setItem('n1seki62edit_theme', day ? 'day' : 'night'); } catch(e) {}
+}
+applyTheme((() => { try { return localStorage.getItem('n1seki62edit_theme') === 'day'; } catch(e) { return false; } })());
+
+function toggleEdit(){
+  editing = !editing;
+  document.body.classList.toggle('editing', editing);
+  document.getElementById('editBtn').textContent = editing ? '✅ 完成' : '✏️ 编辑';
+  document.getElementById('expBtn').classList.toggle('hide', !editing);
+  document.getElementById('rstBtn').classList.toggle('hide', !editing);
+  if (!editing) save();
+  render();
+}
+
+const posCls = p => !p ? 'N' : (p.includes('惯') ? 'IDM' : (p.includes('V') ? 'V' : (p.includes('イ') ? 'I' : (p.includes('ナ') ? 'NA' : (p.includes('adv') ? 'adv' : 'N')))));
+const esc = s => String(s == null ? '' : s);
+
+function rubyHtml(d){
+  const w = d.w || '', k = d.k || '', en = d.en || '';
+  const safeW = w.replace(/'/g, "\\'");
+  const click = `onclick="play(${d.aid || 0},'${d.asfx || ''}','${safeW}')"`;
+  const one = (wv, kv) => {
+    const same = !kv || kv === wv;
+    const kata = wv.match(/^([ァ-ヶー]+)/);
+    const rtx = same ? '' : (en ? `<rt class="en">${en}</rt>` : `<rt>${kv}</rt>`);
+    return same ? `<span class="word" ${click}>${wv}</span>`
+      : (kata ? `<ruby class="word" ${click}>${kata[1]}${rtx}</ruby>${wv.slice(kata[1].length)}`
+              : `<ruby class="word" ${click}>${wv}${rtx}</ruby>`);
+  };
+  if (w.includes('・')) {          // ・ 多词 → 左右相对（同义对照），各带注音
+    const ws = w.split('・'), ks = k.split('・');
+    return `<span class="wpair">` + ws.map((wv, i) => `<span class="wside">${one(wv, ks[i] || '')}</span>`).join('<span class="wmid"></span>') + `</span>`;
+  }
+  return one(w, k);
+}
+
+const phRead = d => {
+  if (!d.ph) return '';
+  const jp = d.ph.split('｜').map(s => s.trim()).filter(Boolean);
+  const zh = (d.phz || '').split('｜').map(s => s.trim());
+  const multi = jp.length > 1;
+  return jp.map((s, i) => {
+    const sfx = d._tts_ph ? '' : (multi ? 'p' + (i + 1) : 'p');
+    const aid = d._tts_ph ? 0 : (d.aid || 0);
+    const txt = s.replace(/'/g, "\'");
+    return `
+  <div class="phrase">
+    <span class="jp" onclick="play(${aid},'${sfx}','${txt}')">${esc(s)}</span>
+    <span class="zh">${esc(zh[i] || '')}</span>
+  </div>`;
+  }).join('');
+};
+
+const entryRead = d => `
+  <div class="entry">
+    <div class="row1">
+      <span class="num">${d.aid || d.id}</span>
+      ${rubyHtml(d)}
+      <span class="pos ${posCls(d.p)}">${esc(d.p)}</span>
+    </div>
+    <div class="mean">${esc(d.m)}</div>
+    ${phRead(d)}
+  </div>`;
+
+const edSpan = (d, f, cls, ph) => `<span class="edf ${cls}${d[f] ? '' : ' empty'}" contenteditable="true" data-ph="${ph}" data-f="${f}">${esc(d[f])}</span>`;
+
+const entryEdit = d => `
+  <div class="entry" data-did="${d.id}">
+    <div class="row1">
+      <span class="drag-handle" draggable="true" title="拖动排序/入组">⠿</span>
+      <span class="num">${d.aid || d.id}</span>
+      ${edSpan(d,'w','word','词')}
+      ${edSpan(d,'k','edk','注音')}
+      ${edSpan(d,'en','ede','en')}
+      ${edSpan(d,'p','pos ' + posCls(d.p),'词性')}
+      <span class="sp" data-sp="1" title="拆出为独立卡">⇱</span><span class="x" data-x="1" title="删除该词">✕</span>
+    </div>
+    <div class="mean">${edSpan(d,'m','edmean','释义')}</div>
+    <div class="phrase">
+      ${edSpan(d,'ph','edph','例句')}
+      ${edSpan(d,'phz','edphz','中译')}
+    </div>
+  </div>`;
+
+const noteRead = d => `<div class="notecard note">${esc(d.text)}</div>`;
+const noteEdit = d => `<div class="notecard note" data-did="${d.id}"><span class="drag-handle" draggable="true" title="拖动排序">⠿</span>${edSpan(d,'text','','文本')}<span class="x" data-x="1" title="删除备注">✕</span></div>`;
+
+function getBarHtml(role, g){
+  const title = editing ? 'title="点击切换符号：⇄ (相对) / | (竖线反义) / — (横杠同类)"' : '';
+  if (role === 'ant') {
+    return `<div class="bar-wrap" data-bar="${g}" ${title}><span class="vs-ant"></span></div>`;
+  } else if (role === 'syn') {
+    return `<div class="bar-wrap" data-bar="${g}" ${title}><span class="vs-syn"></span></div>`;
+  } else {
+    return `<div class="bar-wrap" data-bar="${g}" ${title}><span class="vs-arr">⇄</span></div>`;
+  }
+}
+
+const list = document.getElementById('list');
+
+function removeD(d){
+  const i = DATA.indexOf(d);
+  if (i >= 0) { DATA.splice(i, 1); return true; }
+  return false;
+}
+function secLastIdx(s){
+  let last = -1;
+  DATA.forEach((d, i) => { if (d.s === s) last = i; });
+  return last;
+}
+function addToSecEnd(d, s){
+  d.s = s;
+  const at = secLastIdx(s);
+  DATA.splice(at + 1, 0, d);
+}
+function newG(){
+  return Math.max(0, ...DATA.map(d => d.g || 0)) + 1;
+}
+
+function render(){
+  list.innerHTML = '';
+  let curS = null, row = null, colA = null, colB = null, wrap = null, alt = 0;
+  let lastG = null, lastRole = null, gHead = null, halves = null, gRole = null, gG = null;
+
+  for (let i = 0; i < DATA.length; i++){
+    const d = DATA[i];
+    if (d.s !== curS){
+      curS = d.s;
+      const h = document.createElement('div'); h.className = 'sec-h';
+      const t = document.createElement('span'); t.className = 'sec-title'; t.textContent = curS;
+      if (editing){
+        const oldS = curS;
+        t.contentEditable = 'true';
+        t.addEventListener('input', () => {
+          const ns = t.textContent;
+          DATA.forEach(x => { if (x.s === oldS) x.s = ns; });
+          curS = ns;
+          saveSoon();
+        });
+        const bb = document.createElement('span'); bb.className = 'addbtns';
+        const mk = (label, fn) => {
+          const b = document.createElement('button');
+          b.textContent = label;
+          b.addEventListener('click', fn);
+          bb.appendChild(b);
+        };
+        mk('+词框', () => {
+          // 插到本节最前面（第一个该节条目之前）= 组的上面
+          const at = DATA.findIndex(x => x.s === curS);
+          DATA.splice(at < 0 ? DATA.length : at, 0, {id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0});
+          save(); render();
+        });
+        mk('+相对组 (⇄)', () => {
+          const g = newG();
+          addToSecEnd({id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'arr', side: 'L', g}, curS);
+          addToSecEnd({id: nextId++, aid: 0, asfx: '-r', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'arr', side: 'R', g}, curS);
+          save(); render();
+        });
+        mk('+反义组 (|)', () => {
+          const g = newG();
+          addToSecEnd({id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'ant', side: 'L', g}, curS);
+          addToSecEnd({id: nextId++, aid: 0, asfx: '-r', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'ant', side: 'R', g}, curS);
+          save(); render();
+        });
+        mk('+同类组 (—)', () => {
+          const g = newG();
+          addToSecEnd({id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'syn', side: 'L', g}, curS);
+          addToSecEnd({id: nextId++, aid: 0, asfx: '-r', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'syn', side: 'R', g}, curS);
+          save(); render();
+        });
+        mk('+文本', () => {
+          addToSecEnd({id: nextId++, s: curS, kind: 'note', text: ''}, curS);
+          save(); render();
+        });
+        h.appendChild(bb);
+      }
+      h.appendChild(t);
+      list.appendChild(h);
+
+      if (editing){
+        wrap = document.createElement('div'); wrap.className = 'sec-items'; list.appendChild(wrap);
+        wrap.addEventListener('dragover', e => e.preventDefault());
+        wrap.addEventListener('drop', e => {
+          e.preventDefault();
+          if (dragD && dragD.s === curS) {
+            removeD(dragD); addToSecEnd(dragD, curS); save(); render();
+          }
+        });
+      } else {
+        row = document.createElement('div'); row.className = 'row2';
+        colA = document.createElement('div'); colA.className = 'col2';
+        colB = document.createElement('div'); colB.className = 'col2';
+        row.appendChild(colA); row.appendChild(colB);
+        list.appendChild(row);
+      }
+      lastG = null; lastRole = null; alt = 0;
+    }
+
+    const isNote = d.kind === 'note';
+    const hasRole = !isNote && (d.role === 'arr' || d.role === 'ant' || d.role === 'syn');
+    const entryHtml = isNote ? (editing ? noteEdit(d) : noteRead(d)) : (editing ? entryEdit(d) : entryRead(d));
+
+    if (hasRole){
+      if (d.role !== lastRole || d.g !== lastG){
+        lastRole = d.role; lastG = d.g; gRole = d.role; gG = d.g;
+        gHead = document.createElement('div');
+        gHead.className = 'item';
+        gHead.innerHTML = `
+          <div class="card c${posCls(d.p)}">
+            <div class="bra">
+              <div class="half"></div>
+              ${getBarHtml(d.role, d.g)}
+              <div class="half"></div>
+            </div>
+            ${editing ? `<span class="gx" data-gx="${d.g}" data-gs="${esc(d.s)}" title="删除整个成对组">✕</span>` : ''}
+          </div>`;
+        if (editing){
+          const itemEl = gHead;
+          itemEl.addEventListener('dragover', e => e.preventDefault());
+          attachTopDrop(itemEl, d, curS);
+        }
+        (editing ? wrap : (alt++ % 2 === 0 ? colA : colB)).appendChild(gHead);
+        halves = gHead.querySelectorAll('.half');
+        if (editing){
+          halves.forEach((h, hi) => {
+            h.addEventListener('dragover', e => { e.preventDefault(); e.stopPropagation(); h.classList.add('over'); });
+            h.addEventListener('dragleave', () => h.classList.remove('over'));
+            h.addEventListener('drop', e => {
+              e.preventDefault(); e.stopPropagation(); h.classList.remove('over');
+              if (!dragD) return;
+              removeD(dragD);
+              dragD.role = gRole; dragD.g = gG; dragD.side = hi === 1 ? 'R' : 'L'; dragD.s = curS;
+              let at = -1;
+              DATA.forEach((x, xi) => { if (x.s === curS && x.role === gRole && x.g === gG && x.side === dragD.side) at = xi; });
+              if (at < 0) DATA.forEach((x, xi) => { if (x.s === curS && x.role === gRole && x.g === gG && at < 0) at = xi; });
+              DATA.splice(at + 1, 0, dragD);
+              save(); render();
+            });
+          });
+        }
+      }
+      (d.side === 'R' ? halves[1] : halves[0]).innerHTML += entryHtml;
+    } else {
+      // 编辑模式：上一项也是独立词 → 显示合并按钮（⇄ | —）
+      if (editing && !isNote){
+        const prev = DATA[i-1];
+        if (prev && prev.s === d.s && prev.kind !== 'note' && !(prev.role === 'arr' || prev.role === 'ant' || prev.role === 'syn')){
+          const mb = document.createElement('div'); mb.className = 'merge-bar';
+          mb.innerHTML = ['arr', 'ant', 'syn'].map(r =>
+            `<button class="mb-btn" data-mr="${r}" title="${r === 'arr' ? '相对⇄' : r === 'ant' ? '竖线反义|' : '横杠同类—'}">${r === 'arr' ? '⇄' : r === 'ant' ? '|' : '—'}</button>`).join('');
+          mb.addEventListener('click', e => {
+            const btn = e.target.closest('.mb-btn'); if (!btn) return;
+            const role = btn.dataset.mr, g = newG();
+            prev.role = role; prev.side = 'L'; prev.g = g;
+            d.role = role; d.side = 'R'; d.g = g;
+            save(); render();
+          });
+          wrap.appendChild(mb);
+        }
+      }
+      const item = document.createElement('div'); item.className = 'item';
+      const card = document.createElement('div');
+      card.className = 'card c' + posCls(d.p) + (isNote ? ' notecard' : '');
+      card.innerHTML = entryHtml;
+      if (editing){ attachTopDrop(item, d, curS); }
+      item.appendChild(card);
+      (editing ? wrap : (alt++ % 2 === 0 ? colA : colB)).appendChild(item);
+    }
+  }
+
+  if (editing){
+    list.querySelectorAll('.drag-handle').forEach(el => { el.draggable = true; });
+  }
+  const words = DATA.filter(d => d.kind !== 'note').length;
+  document.getElementById('count').textContent = words;
+}
+
+function attachTopDrop(item, d, sec){
+  item.addEventListener('dragover', e => {
+    if (!dragD) return;
+    e.preventDefault();
+    const before = e.offsetY < item.offsetHeight / 2;
+    item.classList.toggle('ins-top', before); item.classList.toggle('ins-bot', !before);
+    item._ins = before ? 'top' : 'bot';
+  });
+  item.addEventListener('dragleave', () => item.classList.remove('ins-top', 'ins-bot'));
+  item.addEventListener('drop', e => {
+    e.preventDefault(); e.stopPropagation();   // 防冒泡到 sec-items wrap 的 drop（会再次移动到节尾）
+    const where = item._ins; item.classList.remove('ins-top', 'ins-bot');
+    if (!dragD || !where) return;
+    removeD(dragD);
+    dragD.role = ''; dragD.side = ''; dragD.g = 0; dragD.s = sec;
+    let ti = DATA.indexOf(d);
+    DATA.splice(where === 'top' ? ti : ti + 1, 0, dragD);
+    save(); render();
+  });
+}
+
+/* 拖拽委托 */
+list.addEventListener('dragstart', e => {
+  const h = e.target.closest('[data-did]'); if (!h || !editing) return;
+  dragD = byId(+h.dataset.did);
+  e.dataTransfer.setData('text/plain', 'x');
+  e.dataTransfer.effectAllowed = 'move';
+  h.classList.add('dragging');
+});
+list.addEventListener('dragend', e => {
+  const h = e.target.closest && e.target.closest('[data-did]');
+  if (h) h.classList.remove('dragging');
+  document.querySelectorAll('.dragging').forEach(el => el.classList.remove('dragging'));
+});
+
+/* 事件委托: 文字编辑 / 删除 / 相对符号切换 */
+list.addEventListener('input', e => {
+  const t = e.target.closest('.edf'); if (!t) return;
+  const holder = t.closest('[data-did]'); if (!holder) return;
+  const d = byId(+holder.dataset.did); if (!d) return;
+  d[t.dataset.f] = t.textContent;
+  saveSoon();
+});
+
+list.addEventListener('click', e => {
+  // 拆出为独立卡
+  const sp = e.target.closest('.sp');
+  if (sp){
+    const holder = sp.closest('[data-did]'); if (!holder) return;
+    const d = byId(+holder.dataset.did); if (!d) return;
+    const gi = DATA.indexOf(d);
+    removeD(d);
+    d.role = ''; d.side = ''; d.g = 0;
+    DATA.splice(gi, 0, d);   // 原位放回 = 组后第一个位置
+    save(); render(); return;
+  }
+  // 删除单卡
+  const x = e.target.closest('.x');
+  if (x){
+    const holder = x.closest('[data-did]'); if (!holder) return;
+    const d = byId(+holder.dataset.did); if (!d) return;
+    removeD(d); save(); render(); return;
+  }
+  // 删除整组
+  const gx = e.target.closest('.gx');
+  if (gx){
+    const g = +gx.dataset.gx, s = gx.dataset.gs;
+    for (let i = DATA.length - 1; i >= 0; i--) {
+      if (DATA[i].s === s && DATA[i].g === g && DATA[i].role) DATA.splice(i, 1);
+    }
+    save(); render(); return;
+  }
+  // 点击符号循环切换: arr (⇄) -> ant (|) -> syn (—) -> arr (⇄)
+  const bar = e.target.closest('[data-bar]');
+  if (bar && editing){
+    const g = +bar.dataset.bar;
+    let s = null, currentRole = 'arr';
+    DATA.forEach(d => {
+      if (d.g === g && d.role && s === null) { s = d.s; currentRole = d.role; }
+    });
+    const nextRole = currentRole === 'arr' ? 'ant' : (currentRole === 'ant' ? 'syn' : 'arr');
+    DATA.forEach(d => {
+      if (d.s === s && d.g === g && d.role) d.role = nextRole;
+    });
+    save(); render();
+  }
+});
+
+/* 导出 JSON 功能 */
+function exportData(){
+  const dataStr = JSON.stringify({page: 'N1_実力6-2', data: DATA}, null, 2);
+  const blob = new Blob([dataStr], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'N1_実力6-2_layout.json';
+  a.click();
+
+  document.getElementById('exportText').value = dataStr;
+  document.getElementById('exportModal').classList.add('open');
+}
+
+function copyExportText(){
+  const t = document.getElementById('exportText');
+  t.select();
+  navigator.clipboard.writeText(t.value).then(() => {
+    alert('已成功复制最新 JSON 数据到剪贴板！');
+  });
+}
+
+render();
+</script>
+
+<div id="ftool">
+  <div class="ft-tip">添加到最近操作的卡片旁</div>
+  <button onclick="ftAdd('word')">＋ 词框</button>
+  <button onclick="ftAdd('arr')">⇄ 相对组</button>
+  <button onclick="ftAdd('ant')">| 反义组</button>
+  <button onclick="ftAdd('syn')">— 同类组</button>
+  <button onclick="ftAdd('note')">✎ 文本</button>
+</div>
+<script>
+/* ---- 悬浮工具条 + 选字拖动 ---- */
+let lastSpot = null;   // {sec, idx} 最近操作的卡片位置
+list.addEventListener('click', e => {
+  const h = e.target.closest('[data-did]'); if (!h) return;
+  const d = byId(+h.dataset.did); if (!d) return;
+  lastSpot = { sec: d.s, idx: DATA.indexOf(d) };
+}, true);
+list.addEventListener('drop', e => {
+  // drop 后记录目标卡片位置
+  if (lastSpot && dragD) lastSpot = { sec: dragD.s, idx: DATA.indexOf(dragD) };
+}, true);
+
+function ftAdd(kind){
+  if (!editing) { toggleEdit(); }
+  const sec = lastSpot ? lastSpot.sec : (DATA[0] && DATA[0].s);
+  if (!sec) return;
+  const mkWord = () => ({id: nextId++, aid: 0, asfx: '', s: sec, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0});
+  if (kind === 'word'){
+    const w = mkWord();
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, w);
+    lastSpot = { sec, idx: at };
+  } else if (kind === 'note'){
+    const n = {id: nextId++, s: sec, kind: 'note', text: ''};
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, n);
+    lastSpot = { sec, idx: at };
+  } else {
+    const g = newG();
+    const l = mkWord(); l.role = kind; l.side = 'L'; l.g = g;
+    const r = mkWord(); r.role = kind; r.side = 'R'; r.g = g;
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, l, r);
+    lastSpot = { sec, idx: at + 1 };
+  }
+  save(); render();
+}
+
+/* 选中文字拖动 → 词框 */
+document.addEventListener('dragstart', e => {
+  const sel = String(window.getSelection ? window.getSelection() : '').trim();
+  if (sel && !e.target.closest('[data-did]')) {
+    dragD = { __text: sel };
+    e.dataTransfer.setData('text/plain', sel);
+    e.dataTransfer.effectAllowed = 'copy';
+  }
+}, true);
+// attachTopDrop / half drop 里识别 __text：改 drop 处理 —— 在最前注入
+const _origAttach = attachTopDrop;
+attachTopDrop = function(item, d, sec){
+  _origAttach(item, d, sec);
+  item.addEventListener('drop', e => {
+    const txt = (e.dataTransfer.getData('text/plain') || '').trim();
+    if (!txt || !e.target.closest('.edf') && !byId(+((e.target.closest('[data-did]')||{}).dataset?.did || -1))) return;
+    // 若 drop 的是纯文本（非卡片拖动）→ 新词框
+    if (dragD && dragD.__text && dragD.__text === txt){
+      e.preventDefault(); e.stopPropagation();
+      const w = {id: nextId++, aid: 0, asfx: '', s: sec, w: txt, k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0};
+      const ti = DATA.indexOf(d);
+      DATA.splice(ti + 1, 0, w);
+      save(); render();
+    }
+  }, true);
+};
+// 半区 drop 同样支持文本 → 新词入半区
+list.addEventListener('drop', e => {
+  const txt = (e.dataTransfer && e.dataTransfer.getData('text/plain') || '').trim();
+  const half = e.target.closest('.half');
+  if (!txt || !half || !dragD || !dragD.__text) return;
+  e.preventDefault(); e.stopPropagation();
+  const sec = curSFromHalf(half);
+  const w = {id: nextId++, aid: 0, asfx: '', s: sec, w: txt, k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: dragD.role || '', side: dragD.side || '', g: dragD.g || 0};
+  // 插到该半区最后
+  let at = -1;
+  DATA.forEach((x, xi) => { if (x.s === sec && x.g === w.g && x.side === w.side) at = xi; });
+  DATA.splice(at + 1, 0, w);
+  dragD = null;
+  save(); render();
+}, true);
+function curSFromHalf(half){
+  // 从 half 往上找 gx 的 data-gs
+  let el = half;
+  while (el && !el.dataset?.gs) el = el.parentElement;
+  return el ? el.dataset.gs : (DATA[0] && DATA[0].s);
+}
+// toggleEdit 时同步悬浮条
+const _origToggle = toggleEdit;
+toggleEdit = function(){ _origToggle(); document.getElementById('ftool').classList.toggle('open', editing); };
+</script>
+
+
+<div id="dict">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
+  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
+  <div id="dictAns" class="hidden"></div>
+  <div class="dbtns">
+    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
+    <button class="hbtn" id="dictAutoBtn" onclick="dictAutoToggle()">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+  </div>
+  <div style="opacity:.4;font-size:11px;">空格=重播 · →/D=下一个 · ←/A=上一个 · S=显示答案 · Esc=退出</div>
+</div>
+<script>
+/* ---- 听写（N1_実力6-2: aid+asfx 音频, 词→例句链） ---- */
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [], dictChain = false;
+const DICT_DELAY = 3000;
+const escH = s => String(s == null ? '' : s);
+const dictWords = () => DATA.filter(d => d.aid && !d.kind);
+const dictSents = d => (d.ph || '').split('｜').map(s => s.trim()).filter(Boolean);
+const dictSfx = d => { const n = dictSents(d).length; return n > 1 ? dictSents(d).map((_, i) => 'p' + (i + 1)) : (n === 1 ? ['p'] : []); };
+let dictSentI = 0;
+
+function dictToggle(){
+  dictOpen = !dictOpen;
+  document.getElementById('dict').classList.toggle('open', dictOpen);
+  if (dictOpen){ if (curAudio) curAudio.pause(); buildOrder(); dictCur = 0; showDict(); }
+  else { if (curAudio) curAudio.pause(); clearTimeout(dictT); }
+}
+function buildOrder(){
+  dictOrder = dictWords().map(d => d.id);
+  if (dictShuffleOn) for (let i = dictOrder.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [dictOrder[i], dictOrder[j]] = [dictOrder[j], dictOrder[i]]; }
+}
+const dictD = () => dictWords().find(d => d.id === dictOrder[dictCur]);
+const playCur = () => {
+  const d = dictD();
+  dictSentI = 0;
+  if (d.ph && !d._tts_ph) { dictChain = true; play(d.aid, d.asfx || ''); }
+  else { dictChain = false; play(d.aid, d.asfx || '', d._tts_ph ? d.ph : d.w); }
+};
+// 播放钩子：词条播完接例句；例句播完且自动 → 下一条
+function dictHook(asfx){
+  const d = dictD();
+  if (asfx && asfx.includes('p')) {          // 一句例句播完
+    const sfx = dictSfx(d);
+    if (dictChain && dictSentI + 1 < sfx.length) {
+      dictSentI++; play(d.aid, sfx[dictSentI], dictSents(d)[dictSentI]); return;
+    }
+    dictChain = false;
+    if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY);
+    return;
+  }
+  if (dictChain) {                            // 词条播完 → 接第一句
+    const sfx = dictSfx(d);
+    if (sfx.length) { dictSentI = 0; play(d.aid, sfx[0], dictSents(d)[0]); return; }
+  }
+  dictChain = false;
+  if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY);
+}
+function dictStep(dir){
+  clearTimeout(dictT); dictChain = false;
+  dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
+  showDict(); playCur();
+}
+const dictNext = () => dictStep(1);
+const dictPrev = () => dictStep(-1);
+function dictShuffle(){ dictShuffleOn = !dictShuffleOn; buildOrder(); dictCur = 0; showDict(); playCur(); }
+function dictAutoToggle(){
+  dictAuto = !dictAuto;
+  document.getElementById('dictAutoBtn').textContent = '自动: ' + (dictAuto ? '开' : '关');
+  dictChain = false;
+  if (dictAuto) playCur();
+}
+function dictReveal(){
+  const ans = document.getElementById('dictAns');
+  if (ans.classList.contains('hidden')) { renderDictAns(); ans.classList.remove('hidden'); }
+  else ans.classList.add('hidden');
+}
+function renderDictAns(){
+  const d = dictD(), ans = document.getElementById('dictAns');
+  const side = w => `<div class="dword">${escH(w)}</div>`;
+  let body = `<div class="dpos">${escH(d.p)}</div><div class="dword">${escH(d.w)} <span style="font-size:14px;opacity:.6">${escH(d.k)}</span></div><div class="dmean">${escH(d.m)}</div>`;
+  if (d.ph) {
+    const sfx = dictSfx(d), sents = dictSents(d), zhs = (d.phz || '').split('｜').map(s => s.trim());
+    body += sents.map((s, i) => `<div class="dph" onclick="play(${d.aid},'${sfx[i] || 'p'}','${escH(s).replace(/'/g, "\'")}')">${escH(s)}</div><div class="dphz">${escH(zhs[i] || '')}</div>`).join('');
+  }
+  ans.innerHTML = body;
+}
+function showDict(){
+  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  const ans = document.getElementById('dictAns');
+  ans.classList.add('hidden');
+  ans.innerHTML = '';
+}
+document.addEventListener('keydown', e => {
+  if (!dictOpen) return;
+  if (e.code === 'Space'){ e.preventDefault(); playCur(); }
+  else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') dictNext();
+  else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') dictPrev();
+  else if (e.key === 's' || e.key === 'S') dictReveal();
+  else if (e.key === 'Escape') dictToggle();
+});
+</script>
+
+</body>
+</html>

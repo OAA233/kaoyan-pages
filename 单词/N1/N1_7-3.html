@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7-3 社会問題</title>
+<style>
+  body {
+    --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
+    --num: #8b8577; --num-border: #5a564d; --muted: .55; --accent: #4cc2ff;
+    font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans CJK JP", "PingFang SC", sans-serif;
+    background: var(--bg); color: var(--fg);
+    margin: 0; padding: 14px 16px; max-width: 1080px;
+    transition: background .2s, color .2s;
+  }
+  body.day {
+    --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8;
+    --num: #8a8373; --num-border: #c4bda9; --muted: .6;
+  }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
+  #themeBtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px;
+  }
+  #themeBtn:hover { opacity: .8; }
+  .stats { display: inline-flex; gap: 8px; font-size: 12px; opacity: .7; }
+  .sec-h { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin: 16px 0 6px; grid-column: 1 / -1; }
+  .sec-title { font-size: 13px; font-weight: 700; opacity: .55; letter-spacing: .05em; }
+  
+  /* 浏览排版 */
+  #list { }
+  .row2 { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; }
+  .col2 { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+  .card {
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 10px 14px; background: var(--card);
+    border-left: 5px solid #555; position: relative;
+  }
+  .card.cV { border-left-color: #e5484d; }
+  .card.cI { border-left-color: #d63384; }
+  .card.cNA { border-left-color: #7048e8; }
+  .card.cN { border-left-color: #1971c2; }
+  .card.cadv { border-left-color: #2b8a3e; }
+  .card.cIDM { border-left-color: #b08a3e; }
+
+  .row1 { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .num {
+    font-size: 11px; font-weight: 700; color: var(--num);
+    border: 1.5px solid var(--num-border); border-radius: 50%;
+    width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: center;
+  }
+  .word { font-size: 19px; font-weight: 700; cursor: pointer; }
+  ruby.word { ruby-align: center; }
+  ruby.word rt { font-size: 10px; font-weight: 500; opacity: .55; letter-spacing: .02em; }
+  ruby.word rt.en { font-style: italic; opacity: .5; }
+  .word:hover { text-decoration: underline; }
+  .pos { font-size: 11px; font-weight: 700; padding: 2px 7px; white-space: nowrap; border-radius: 7px; color: #fff; }
+  .pos.V { background: #e5484d; }
+  .pos.I { background: #d63384; }
+  .pos.NA { background: #7048e8; }
+  .pos.N { background: #1971c2; }
+  .pos.adv { background: #2b8a3e; }
+  .pos.IDM { background: #b08a3e; }
+  .mean { margin-top: 3px; font-size: 13px; margin-left: 30px; }
+  .phrase { margin-top: 6px; font-size: 13px; margin-left: 30px; }
+  .phrase .jp { font-weight: 600; cursor: pointer; }
+  .phrase .jp:hover { text-decoration: underline; }
+  .phrase .zh { display: block; opacity: var(--muted); margin-top: 1px; font-weight: 400; }
+
+  /* 对立组/同类组 */
+  .entry { margin-bottom: 6px; }
+  .entry:last-child { margin-bottom: 0; }
+  .bra { display: flex; gap: 10px; align-items: stretch; position: relative; }
+  .bra .half { flex: 1; min-width: 0; }
+  
+  /* 中间相对/关系符号 */
+  .bar-wrap {
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; user-select: none; padding: 0 4px;
+  }
+  .vs-arr { font-size: 16px; opacity: .65; color: var(--num); font-weight: 700; }
+  .vs-ant { width: 0; border-left: 2px solid var(--num-border); height: 100%; min-height: 26px; }
+  .vs-syn { width: 14px; border-top: 2px solid var(--num-border); }
+
+  @media (max-width: 760px) {
+    .row2 { flex-direction: column; }
+    .bra { flex-direction: column; }
+    .bar-wrap { padding: 6px 0; }
+    .vs-ant { width: 100%; height: 0; border-left: none; border-top: 2px solid var(--num-border); }
+  }
+
+  /* ---- 编辑模式样式 ---- */
+  .hbtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer;
+  }
+  .hbtn:hover { border-color: var(--accent); }
+  .hbtn.pri { border-color: var(--accent); color: var(--accent); }
+  .hide { display: none !important; }
+
+  .addbtns { display: inline-flex; gap: 6px; }
+  .addbtns button {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 7px; padding: 2px 8px; font-size: 11px; cursor: pointer; opacity: .8;
+  }
+  .addbtns button:hover { border-color: var(--accent); opacity: 1; }
+
+  body.editing .card { cursor: grab; }
+  body.editing .entry { cursor: grab; position: relative; }
+  .dragging { opacity: .35 !important; }
+  .item { margin-bottom: 10px; }
+  .item.ins-top { box-shadow: 0 -3px 0 var(--accent); }
+  .item.ins-bot { box-shadow: 0 3px 0 var(--accent); }
+  .half.over { outline: 2px dashed var(--accent); outline-offset: 3px; border-radius: 8px; }
+
+  body.editing .bar-wrap {
+    cursor: pointer; border-radius: 6px; padding: 2px 6px;
+    border: 1px dashed transparent;
+  }
+  body.editing .bar-wrap:hover {
+    border-color: var(--accent); background: rgba(76,194,255,.12);
+  }
+
+  .wpair { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .wside { display: inline-flex; align-items: baseline; }
+  .wmid { width: 2px; align-self: stretch; background: var(--num-border); opacity: .6; margin: 0 2px; }
+  .mid-dot { opacity: .45; margin: 0 2px; font-weight: 400; }
+  .merge-bar { display: flex; gap: 6px; justify-content: center; margin: 2px 0 6px; opacity: .75; }
+  .mb-btn { border: 1px dashed var(--num-border); background: var(--card); color: var(--fg); border-radius: 6px; padding: 1px 10px; font-size: 13px; cursor: pointer; }
+  .mb-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---- 悬浮编辑工具条 ---- */
+  #ftool { position: fixed; right: 18px; bottom: 18px; z-index: 600; display: none; flex-direction: column; gap: 6px; background: var(--card); border: 1px solid var(--accent); border-radius: 14px; padding: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.35); }
+  #ftool.open { display: flex; }
+  #ftool .ft-tip { font-size: 10px; opacity: .5; text-align: center; margin-bottom: 2px; }
+  #ftool button { border: 1px solid var(--num-border); background: var(--bg); color: var(--fg); border-radius: 8px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
+  #ftool button:hover { border-color: var(--accent); color: var(--accent); }
+  .drag-handle { cursor: grab; opacity: .4; font-size: 14px; user-select: none; }
+  .drag-handle:hover { opacity: 1; color: var(--accent); }
+  .edf:focus { outline: 1px dashed var(--accent); background: rgba(76,194,255,.08); border-radius: 4px; }
+  .edf.empty:empty::before { content: attr(data-ph); opacity: .35; }
+  .edk { font-size: 12px; opacity: .65; min-width: 20px; }
+  .ede { font-size: 11px; font-style: italic; opacity: .5; min-width: 20px; }
+  .edmean { font-size: 13px; }
+  .edph { font-size: 13px; font-weight: 600; }
+  .edphz { display: block; font-size: 12px; opacity: .6; font-weight: 400; }
+  .sp { position: absolute; top: 2px; right: 24px; opacity: .3; cursor: pointer; font-size: 12px; user-select: none; z-index: 5; }
+  .sp:hover { opacity: 1; color: #4cc2ff; }
+  .x { position: absolute; top: 2px; right: 6px; opacity: .3; cursor: pointer; font-size: 12px; user-select: none; z-index: 5; }
+  .x:hover { opacity: 1; color: #e5484d; }
+  .gx { position: absolute; top: 4px; right: 8px; opacity: .35; cursor: pointer; font-size: 13px; z-index: 5; }
+  .gx:hover { opacity: 1; color: #e5484d; }
+  .note { border-left: 3px solid var(--num-border); background: rgba(128,128,128,.08); border-radius: 6px; padding: 6px 10px; font-size: 13px; position: relative; }
+  .sec-items { display: block; }
+
+  /* Modal */
+  .modal-mask {
+    position: fixed; inset: 0; background: rgba(0,0,0,.6); backdrop-filter: blur(2px);
+    display: none; align-items: center; justify-content: center; z-index: 100;
+  }
+  .modal-mask.open { display: flex; }
+  .modal-box {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    width: 90%; max-width: 620px; max-height: 85vh; padding: 20px; box-sizing: border-box;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .modal-btns { display: flex; justify-content: flex-end; gap: 8px; }
+
+  /* ---- 听写模式 ---- */
+  #dict { position: fixed; inset: 0; background: var(--bg); z-index: 700; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  #dict.open { display: flex; }
+  #dictBig { font-size: 20px; padding: 16px 30px; border-radius: 16px; border: 1px solid var(--num-border); background: var(--card); color: var(--fg); cursor: pointer; }
+  #dictAns { min-height: 130px; transition: opacity .2s; }
+  #dictAns.hidden { opacity: 0; pointer-events: none; user-select: none; }
+  .dword { font-size: 30px; font-weight: 800; }
+  .dpos { opacity: .5; font-size: 12px; }
+  .dmean { font-size: 16px; margin-top: 4px; }
+  .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
+  .dphz { display: block; opacity: .6; font-size: 13px; }
+  .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>7-3 社会問題</h1>
+    <p>第1部 2章 3課 健康<span class="stats">共 <b id="count"></b> 词 · 点击日文发音（edge 女声）</span></p>
+  </div>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
+  <button id="editBtn" class="hbtn" onclick="toggleEdit()">✏️ 编辑</button>
+  <button id="expBtn" class="hbtn pri hide" onclick="exportData()">⬇ 导出 JSON</button>
+  <button id="rstBtn" class="hbtn hide" onclick="resetAll()">↺ 重置</button>
+  <button id="themeBtn" onclick="toggleTheme()">🌙 夜间</button>
+</header>
+<div id="list"></div>
+
+<!-- 导出 Modal -->
+<div class="modal-mask" id="exportModal">
+  <div class="modal-box">
+    <h3 style="margin:0;">导出当前数据 (JSON)</h3>
+    <p style="font-size:12px;opacity:.6;margin:0;">已自动触发文件下载。您也可以直接复制下方 JSON 数据备份：</p>
+    <textarea id="exportText" rows="14" style="width:100%;box-sizing:border-box;font-family:monospace;font-size:11px;background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:6px;padding:8px;"></textarea>
+    <div class="modal-btns">
+      <button class="hbtn" onclick="document.getElementById('exportModal').classList.remove('open')">关闭</button>
+      <button class="hbtn pri" onclick="copyExportText()">复制到剪贴板</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// DATA 结构说明:
+// id: 独立编号 | aid: 音频编号 (对应 N1_7-3_audio/*.mp3) | asfx: 音频后缀 (如 '-r', 'p')
+// s: 章节名 | w: 单词 | k: 假名注音 | en: 外来语英语原型
+// m: 中文释义 | p: 词性 | ph: 例句 | phz: 例句中译
+// role: 'arr' (相对 ⇄) / 'ant' (竖线反义 |) / 'syn' (横杠同类 —) / '' (独立单卡)
+// side: 'L' / 'R' 组内左右 | g: 组号 (同一章节内同组连续渲染) | kind: 'note'=文本卡片
+const INITIAL_DATA = [
+  {
+    "s": "1. 格差社会",
+    "w": "格差",
+    "k": "かくさ",
+    "p": "N",
+    "m": "差距，差别，格差",
+    "ph": "格差が急速に広がる",
+    "phz": "差距急速扩大",
+    "id": 1,
+    "aid": 1,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "貧困層",
+    "k": "ひんこんそう",
+    "p": "N",
+    "m": "贫困阶层",
+    "ph": "収入の少ない貧困層が拡大した。",
+    "phz": "收入微薄的贫困阶层扩大了。",
+    "id": 2,
+    "aid": 2,
+    "asfx": "",
+    "en": "",
+    "role": "ant",
+    "side": "L",
+    "g": 1
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "富裕層",
+    "k": "ふゆうそう",
+    "p": "N",
+    "m": "富裕阶层",
+    "ph": "",
+    "phz": "",
+    "id": 3,
+    "aid": 3,
+    "asfx": "",
+    "en": "",
+    "role": "ant",
+    "side": "R",
+    "g": 1
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "急速",
+    "k": "きゅうそく",
+    "p": "ナ",
+    "m": "急速，快速，迅速",
+    "ph": "ここ数年で、社会は急速に変化した。",
+    "phz": "这几年间，社会发生了急剧的变化。",
+    "id": 4,
+    "aid": 4,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "雇用",
+    "k": "こよう",
+    "p": "N",
+    "m": "雇佣，就业",
+    "ph": "非正規の雇用が増加する",
+    "phz": "非正规雇佣增加",
+    "id": 5,
+    "aid": 5,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "安定",
+    "k": "あんてい",
+    "p": "N",
+    "m": "稳定",
+    "ph": "雇用の安定を図る",
+    "phz": "谋求就业稳定",
+    "id": 6,
+    "aid": 6,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "健康保険",
+    "k": "けんこうほけん",
+    "p": "N",
+    "m": "健康保险，医疗保险",
+    "ph": "健康保険に加入する",
+    "phz": "加入健康保险",
+    "id": 7,
+    "aid": 7,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "加入する",
+    "k": "かにゅうする",
+    "p": "V3自",
+    "m": "加入，参加（保险、团体等）",
+    "ph": "社会保険に加入している",
+    "phz": "参加了社会保险",
+    "id": 8,
+    "aid": 8,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "就業",
+    "k": "しゅうぎょう",
+    "p": "N",
+    "m": "就业，就职",
+    "ph": "女性の就業を支援する",
+    "phz": "支援女性就业",
+    "id": 9,
+    "aid": 9,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "促進する",
+    "k": "そくしんする",
+    "p": "V3他",
+    "m": "促进，促使",
+    "ph": "高齢者や女性の就業をもっと促進する。",
+    "phz": "进一步促进老年人和女性的就业。",
+    "id": 10,
+    "aid": 10,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "推進する",
+    "k": "すいしんする",
+    "p": "V3他",
+    "m": "推进，推行",
+    "ph": "女性の社会進出を推進する",
+    "phz": "推进女性走向社会",
+    "id": 11,
+    "aid": 11,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "年金",
+    "k": "ねんきん",
+    "p": "N",
+    "m": "养老金，年金",
+    "ph": "老後に備えて年金を納める",
+    "phz": "为晚年生活缴纳养老金",
+    "id": 12,
+    "aid": 12,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "受給する",
+    "k": "じゅきゅうする",
+    "p": "V3他",
+    "m": "领取，领受（年金、福利金等）",
+    "ph": "政府から年金を受給する",
+    "phz": "从政府领取养老金",
+    "id": 13,
+    "aid": 13,
+    "asfx": "",
+    "en": "",
+    "role": "arr",
+    "side": "L",
+    "g": 2
+  },
+  {
+    "s": "1. 格差社会",
+    "w": "支給する",
+    "k": "しきゅうする",
+    "p": "V3他",
+    "m": "支付，发放，给付",
+    "ph": "",
+    "phz": "",
+    "id": 14,
+    "aid": 14,
+    "asfx": "",
+    "en": "",
+    "role": "arr",
+    "side": "R",
+    "g": 2
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "少子化",
+    "k": "しょうしか",
+    "p": "N",
+    "m": "少子化，出生率下降",
+    "ph": "日本で少子化が急速に進んでいる",
+    "phz": "日本少子化正在急速加剧",
+    "id": 15,
+    "aid": 15,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "高齢化",
+    "k": "こうれいか",
+    "p": "N",
+    "m": "老龄化",
+    "ph": "社会の高齢化が進む",
+    "phz": "社会的老龄化加剧",
+    "id": 16,
+    "aid": 16,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "少子高齢化",
+    "k": "しょうしこうれいか",
+    "p": "N",
+    "m": "少子老龄化",
+    "ph": "少子高齢化が深刻な社会問題になる",
+    "phz": "少子老龄化成为严重的社会问题",
+    "id": 17,
+    "aid": 17,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "出生率",
+    "k": "しゅっしょうりつ",
+    "p": "N",
+    "m": "出生率",
+    "ph": "近年、出生率が低下している",
+    "phz": "近年来出生率有所下降",
+    "id": 18,
+    "aid": 18,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "未婚率",
+    "k": "みこんりつ",
+    "p": "N",
+    "m": "未婚率",
+    "ph": "若者の間で未婚率が上昇する",
+    "phz": "年轻群体中未婚率上升",
+    "id": 19,
+    "aid": 19,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "平均寿命",
+    "k": "へいきんじゅみょう",
+    "p": "N",
+    "m": "平均寿命",
+    "ph": "医療の進歩で平均寿命が延びる",
+    "phz": "随着医疗进步，平均寿命延长",
+    "id": 20,
+    "aid": 20,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "長寿国",
+    "k": "ちょうじゅこく",
+    "p": "N",
+    "m": "长寿国",
+    "ph": "日本は世界一の長寿国と言われている",
+    "phz": "日本被称为世界上数一数二的长寿国",
+    "id": 21,
+    "aid": 21,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "還暦",
+    "k": "かんれき",
+    "p": "N",
+    "m": "花甲，六十岁（还历）",
+    "ph": "母は来年還暦を迎える",
+    "phz": "母亲明年迎来六十花甲",
+    "id": 22,
+    "aid": 22,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "人口構造",
+    "k": "じんこうこうぞう",
+    "p": "N",
+    "m": "人口结构",
+    "ph": "少子高齢化により人口構造が変化する",
+    "phz": "因少子老龄化，人口结构发生变化",
+    "id": 23,
+    "aid": 23,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "介護福祉士",
+    "k": "かいごふくしし",
+    "p": "N",
+    "m": "介护福祉士（国家资格护理师）",
+    "ph": "試験に合格して介護福祉士になる",
+    "phz": "通过考试成为介护福祉士",
+    "id": 24,
+    "aid": 24,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "介護士",
+    "k": "かいごし",
+    "p": "N",
+    "m": "护理员，介护员",
+    "ph": "介護士として高齢者施設で働く",
+    "phz": "作为介护员在养老机构工作",
+    "id": 25,
+    "aid": 25,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "高齢者",
+    "k": "こうれいしゃ",
+    "p": "N",
+    "m": "老年人，高龄者",
+    "ph": "高齢者を社会全体で支える",
+    "phz": "全社会共同扶助老年人",
+    "id": 26,
+    "aid": 26,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "介護する",
+    "k": "かいごする",
+    "p": "V3他",
+    "m": "介护，照料（老人、伤残者）",
+    "ph": "自宅で寝たきりの祖父を介護する",
+    "phz": "在家里照料卧床不起的祖父",
+    "id": 27,
+    "aid": 27,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "ケアする",
+    "k": "ケアする",
+    "p": "V3他",
+    "m": "照料，关怀，照看",
+    "ph": "高齢者の心と体をケアする",
+    "phz": "关爱老年人的身心健康",
+    "id": 28,
+    "aid": 28,
+    "asfx": "",
+    "en": "care",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "看護する",
+    "k": "かんごする",
+    "p": "V3他",
+    "m": "看护，护理（病患）",
+    "ph": "病気の家族を病院で看護する",
+    "phz": "在医院看护生病的家人",
+    "id": 29,
+    "aid": 29,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "老いる",
+    "k": "おいる",
+    "p": "V2自",
+    "m": "年老，衰老",
+    "ph": "年をとるにつれて父母が老いる",
+    "phz": "随着岁月流逝父母渐渐衰老",
+    "id": 30,
+    "aid": 30,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "老ける",
+    "k": "ふける",
+    "p": "V2自",
+    "m": "上年纪，显老，衰老",
+    "ph": "苦労が重なって、あの人は急に老けた",
+    "phz": "因为操劳过度，那个人一下子显老了",
+    "id": 31,
+    "aid": 31,
+    "asfx": "",
+    "en": "",
+    "role": "ant",
+    "side": "L",
+    "g": 3
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "若返る",
+    "k": "わかがえる",
+    "p": "V1自",
+    "m": "变年轻，显年轻，恢复活力",
+    "ph": "",
+    "phz": "",
+    "id": 32,
+    "aid": 32,
+    "asfx": "",
+    "en": "",
+    "role": "ant",
+    "side": "R",
+    "g": 3
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "老後",
+    "k": "ろうご",
+    "p": "N",
+    "m": "晚年，老年，老后",
+    "ph": "老後の生活に備えて貯金する",
+    "phz": "为晚年生活做准备而存钱",
+    "id": 33,
+    "aid": 33,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "乳幼児",
+    "k": "にゅうようじ",
+    "p": "N",
+    "m": "婴幼儿",
+    "ph": "乳幼児の健やかな成長を見守る",
+    "phz": "守护婴幼儿的健康成长",
+    "id": 34,
+    "aid": 34,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "死亡率",
+    "k": "しぼうりつ",
+    "p": "N",
+    "m": "死亡率",
+    "ph": "近年、乳幼児の死亡率が大幅に低下した",
+    "phz": "近年来婴幼儿死亡率大幅下降",
+    "id": 35,
+    "aid": 35,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "激減する",
+    "k": "げきげんする",
+    "p": "V3自",
+    "m": "剧减，锐减，急剧减少",
+    "ph": "不景気の影響で観光客が激減した",
+    "phz": "受经济不景气影响游客数量急剧减少",
+    "id": 36,
+    "aid": 36,
+    "asfx": "",
+    "en": "",
+    "role": "ant",
+    "side": "L",
+    "g": 4
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "激増する",
+    "k": "げきぞうする",
+    "p": "V3自",
+    "m": "激增，暴增，急剧增加",
+    "ph": "",
+    "phz": "",
+    "id": 37,
+    "aid": 37,
+    "asfx": "",
+    "en": "",
+    "role": "ant",
+    "side": "R",
+    "g": 4
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "産休",
+    "k": "さんきゅう",
+    "p": "N",
+    "m": "产假",
+    "ph": "出産を控えて産休を取る",
+    "phz": "临近分娩休产假",
+    "id": 38,
+    "aid": 38,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "産前産後休暇",
+    "k": "さんぜんさんごきゅうか",
+    "p": "N",
+    "m": "产前产后假（产假全称）",
+    "ph": "法律に基づいて産前産後休暇を取得する",
+    "phz": "依法享受产前产后假期",
+    "id": 39,
+    "aid": 39,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "育休",
+    "k": "いくきゅう",
+    "p": "N",
+    "m": "育儿假（育休）",
+    "ph": "子供が1歳になるまで育休を取る",
+    "phz": "休育儿假直到孩子满一岁",
+    "id": 40,
+    "aid": 40,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "育児休暇",
+    "k": "いくじきゅうか",
+    "p": "N",
+    "m": "育儿假（育休全称）",
+    "ph": "男性社員も育児休暇を取りやすい環境を作る",
+    "phz": "营造男员工也便于休育儿假的环境",
+    "id": 41,
+    "aid": 41,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "福利厚生",
+    "k": "ふくりこうせい",
+    "p": "N",
+    "m": "福利待遇，员工福利",
+    "ph": "企業が福利厚生を充実させる",
+    "phz": "企业充实员工福利待遇",
+    "id": 42,
+    "aid": 42,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "充実させる",
+    "k": "じゅうじつさせる",
+    "p": "V3他",
+    "m": "使充实，完善，丰富",
+    "ph": "教育制度や研修内容を充実させる",
+    "phz": "充实完善教育制度和培训内容",
+    "id": 43,
+    "aid": 43,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "取り組む",
+    "k": "とりくむ",
+    "p": "V1自",
+    "m": "致力于，专心处理，全力解决",
+    "ph": "政府は少子化問題に積極的に取り組む",
+    "phz": "政府积极致力于解决少子化问题",
+    "id": 44,
+    "aid": 44,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "軽視する",
+    "k": "けいしする",
+    "p": "V3他",
+    "m": "轻视，忽视，不看重",
+    "ph": "喫煙の人体への悪影響を軽視してはいけない",
+    "phz": "不可忽视吸烟对人体的负面影响",
+    "id": 45,
+    "aid": 45,
+    "asfx": "",
+    "en": "",
+    "role": "ant",
+    "side": "L",
+    "g": 5
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "重視する",
+    "k": "じゅうしする",
+    "p": "V3他",
+    "m": "重视，看重",
+    "ph": "",
+    "phz": "",
+    "id": 46,
+    "aid": 46,
+    "asfx": "",
+    "en": "",
+    "role": "ant",
+    "side": "R",
+    "g": 5
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "両立させる",
+    "k": "りょうりつさせる",
+    "p": "V3他",
+    "m": "兼顾，使两全，两者兼得",
+    "ph": "仕事と育児を両立させる",
+    "phz": "兼顾工作与育儿",
+    "id": 47,
+    "aid": 47,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "2. 少子高齢化",
+    "w": "こなす",
+    "k": "こなす",
+    "p": "V1他",
+    "m": "熟练掌握；处理，应付",
+    "ph": "彼女はどんな仕事でも確実にこなす",
+    "phz": "任何工作她都能切实利落地处理好",
+    "id": 48,
+    "aid": 48,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "3. 語形成",
+    "w": "若年層",
+    "k": "じゃくねんそう",
+    "p": "N",
+    "m": "青年阶层，年轻群体",
+    "ph": "若年層を中心に就業率が低下している",
+    "phz": "以年轻阶层为中心，就业率有所下降",
+    "id": 49,
+    "aid": 49,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "3. 語形成",
+    "w": "中高年層",
+    "k": "ちゅうこうねんそう",
+    "p": "N",
+    "m": "中老年阶层，中高龄群体",
+    "ph": "健康への関心が中高年層で高まっている",
+    "phz": "中老年群体对健康的关注度正在提升",
+    "id": 50,
+    "aid": 50,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "3. 語形成",
+    "w": "失業率",
+    "k": "しつぎょうりつ",
+    "p": "N",
+    "m": "失业率",
+    "ph": "不況に伴い、失業率が上昇した",
+    "phz": "随着经济萧条，失业率上升了",
+    "id": 51,
+    "aid": 51,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "3. 語形成",
+    "w": "先進国",
+    "k": "せんしんこく",
+    "p": "N",
+    "m": "发达国家",
+    "ph": "先進国における少子化が問題視されている",
+    "phz": "发达国家的少子化问题受到关注",
+    "id": 52,
+    "aid": 52,
+    "asfx": "",
+    "en": "",
+    "role": "ant",
+    "side": "L",
+    "g": 6
+  },
+  {
+    "s": "3. 語形成",
+    "w": "発展途上国",
+    "k": "はってんとじょうこく",
+    "p": "N",
+    "m": "发展中国家",
+    "ph": "",
+    "phz": "",
+    "id": 53,
+    "aid": 53,
+    "asfx": "",
+    "en": "",
+    "role": "ant",
+    "side": "R",
+    "g": 6
+  },
+  {
+    "s": "3. 語形成",
+    "w": "平均年齢",
+    "k": "へいきんねんれい",
+    "p": "N",
+    "m": "平均年龄",
+    "ph": "社員の平均年齢が徐々に上がっている",
+    "phz": "员工的平均年龄正在逐渐上升",
+    "id": 54,
+    "aid": 54,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "3. 語形成",
+    "w": "産業構造",
+    "k": "さんぎょうこうぞう",
+    "p": "N",
+    "m": "产业结构",
+    "ph": "時代の変化に合わせて産業構造を改革する",
+    "phz": "顺应时代变化改革产业结构",
+    "id": 55,
+    "aid": 55,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "3. 語形成",
+    "w": "保育士",
+    "k": "ほいくし",
+    "p": "N",
+    "m": "保育员，幼教老师",
+    "ph": "子供が好きなので、保育士の資格を取りたい",
+    "phz": "因为喜欢小孩子，所以想考取保育员资格",
+    "id": 56,
+    "aid": 56,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "3. 語形成",
+    "w": "失業者",
+    "k": "しつぎょうしゃ",
+    "p": "N",
+    "m": "失业者",
+    "ph": "失業者への職業訓練と支援が必要だ",
+    "phz": "需要为失业者提供职业培训和支持",
+    "id": 57,
+    "aid": 57,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "3. 語形成",
+    "w": "障害者",
+    "k": "しょうがいしゃ",
+    "p": "N",
+    "m": "残疾人，身心障碍者",
+    "ph": "障害者が働きやすい社会環境を整備する",
+    "phz": "改善和完善便于身心障碍者工作的社会环境",
+    "id": 58,
+    "aid": 58,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "3. 語形成",
+    "w": "長期休暇",
+    "k": "ちょうききゅうか",
+    "p": "N",
+    "m": "长期休假，长假",
+    "ph": "夏に長期休暇を取って海外旅行に行く",
+    "phz": "夏天休长假去海外旅游",
+    "id": 59,
+    "aid": 59,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "4. 例文中的副词",
+    "w": "てきぱき",
+    "k": "てきぱき",
+    "p": "adv",
+    "m": "麻利，利索，爽快",
+    "ph": "彼女はいつも家事と育児をてきぱきこなしている。",
+    "phz": "她总是干脆利落地兼顾家务与育儿。",
+    "id": 60,
+    "aid": 60,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "4. 例文中的副词",
+    "w": "いよいよ",
+    "k": "いよいよ",
+    "p": "adv",
+    "m": "终于，总算；越发，愈加",
+    "ph": "私は来年いよいよ還暦を迎える。",
+    "phz": "我明年终于要迎来六十花甲了。",
+    "id": 61,
+    "aid": 61,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "4. 例文中的副词",
+    "w": "しっかり",
+    "k": "しっかり",
+    "p": "adv",
+    "m": "扎实，牢靠，好好地；充分地",
+    "ph": "老後の生活に備えて、今からしっかり貯金をしておこう。",
+    "phz": "为晚年生活做打算，从现在起好好存钱吧。",
+    "id": 62,
+    "aid": 62,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  },
+  {
+    "s": "4. 例文中的副词",
+    "w": "めっきり",
+    "k": "めっきり",
+    "p": "adv",
+    "m": "明显地，显著地，急剧地",
+    "ph": "母は最近めっきり老け込んでしまった。",
+    "phz": "母亲最近明显衰老了许多。",
+    "id": 63,
+    "aid": 63,
+    "asfx": "",
+    "en": "",
+    "role": "",
+    "side": "",
+    "g": 0
+  }
+];
+let DATA = [];
+const STORAGE_KEY = 'n173edit';
+(function(){
+  try {
+    const s = localStorage.getItem(STORAGE_KEY);
+    if (s) {
+      const o = JSON.parse(s);
+      if (o && Array.isArray(o.data) && o.data.length) DATA = o.data;
+    }
+  } catch(e) {}
+  if (!DATA || !DATA.length) DATA = JSON.parse(JSON.stringify(INITIAL_DATA));
+})();
+
+let nextId = Math.max(0, ...DATA.map(d => d.id || 0)) + 1;
+let editing = false, dragD = null, saveTimer = null;
+
+function save(){
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify({page: 'N1_7-3', data: DATA})); } catch(e) {}
+}
+function saveSoon(){
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(save, 400);
+}
+function resetAll(){
+  if (confirm('确定清空所有修改，恢复初始版式与数据吗？')) {
+    try { localStorage.removeItem(STORAGE_KEY); } catch(e) {}
+    DATA = JSON.parse(JSON.stringify(INITIAL_DATA));
+    save();
+    render();
+  }
+}
+const byId = id => DATA.find(d => d.id === id);
+
+/* 音频与 Web Speech 朗读兜底 */
+let curAudio = null;
+function chooseVoice(){
+  if (!('speechSynthesis' in window)) return null;
+  const vs = speechSynthesis.getVoices().filter(v => /^ja/i.test(v.lang));
+  const cleanVs = vs.filter(v => !/eddy|flo|grandma|grandpa|rocko|reed|sandy|shelley/i.test(v.name));
+  return cleanVs.find(v => /nanami|kyoko|haruka|ayumi|female|女/i.test(v.name))
+      || cleanVs.find(v => /siri|microsoft|edge/i.test(v.name))
+      || cleanVs[0]
+      || vs.find(v => /kyoko/i.test(v.name))
+      || vs[0];
+}
+if ('speechSynthesis' in window) {
+  speechSynthesis.onvoiceschanged = chooseVoice;
+}
+function speakTTS(text){
+  if (!('speechSynthesis' in window) || !text) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'ja-JP';
+  u.rate = 0.9;
+  const v = chooseVoice();
+  if (v) u.voice = v;
+  speechSynthesis.speak(u);
+}
+function play(aid, asfx, text){
+  if (curAudio) { curAudio.pause(); }
+  if (aid) {
+    const p = `../audio/N1/N1_7-3_audio/${aid}${asfx || ''}.mp3?v=1`;
+    curAudio = new Audio(p);
+    curAudio.onended = () => { if (typeof dictHook === 'function') dictHook(asfx); };
+    curAudio.play().catch(() => {
+      if (text) speakTTS(text);
+    });
+  } else if (text) {
+    speakTTS(text);
+  }
+}
+
+function applyTheme(day){
+  document.body.classList.toggle('day', day);
+  document.getElementById('themeBtn').textContent = day ? '🌙 夜间' : '☀️ 日间';
+}
+function toggleTheme(){
+  const day = !document.body.classList.contains('day');
+  applyTheme(day);
+  try { localStorage.setItem('n173edit_theme', day ? 'day' : 'night'); } catch(e) {}
+}
+applyTheme((() => { try { return localStorage.getItem('n173edit_theme') === 'day'; } catch(e) { return false; } })());
+
+function toggleEdit(){
+  editing = !editing;
+  document.body.classList.toggle('editing', editing);
+  document.getElementById('editBtn').textContent = editing ? '✅ 完成' : '✏️ 编辑';
+  document.getElementById('expBtn').classList.toggle('hide', !editing);
+  document.getElementById('rstBtn').classList.toggle('hide', !editing);
+  if (!editing) save();
+  render();
+}
+
+const posCls = p => !p ? 'N' : (p.includes('惯') ? 'IDM' : (p.includes('V') ? 'V' : (p.includes('イ') ? 'I' : (p.includes('ナ') ? 'NA' : (p.includes('adv') ? 'adv' : 'N')))));
+const esc = s => String(s == null ? '' : s);
+
+function rubyHtml(d){
+  const w = d.w || '', k = d.k || '', en = d.en || '';
+  const safeW = w.replace(/'/g, "\\'");
+  const click = `onclick="play(${d.aid || 0},'${d.asfx || ''}','${safeW}')"`;
+  const one = (wv, kv) => {
+    const same = !kv || kv === wv;
+    const kata = wv.match(/^([ァ-ヶー]+)/);
+    const rtx = same ? '' : (en ? `<rt class="en">${en}</rt>` : `<rt>${kv}</rt>`);
+    return same ? `<span class="word" ${click}>${wv}</span>`
+      : (kata ? `<ruby class="word" ${click}>${kata[1]}${rtx}</ruby>${wv.slice(kata[1].length)}`
+              : `<ruby class="word" ${click}>${wv}${rtx}</ruby>`);
+  };
+  if (w.includes('・')) {          // ・ 多词 → 左右相对（同义对照），各带注音
+    const ws = w.split('・'), ks = k.split('・');
+    return `<span class="wpair">` + ws.map((wv, i) => `<span class="wside">${one(wv, ks[i] || '')}</span>`).join('<span class="wmid"></span>') + `</span>`;
+  }
+  return one(w, k);
+}
+
+const phRead = d => {
+  if (!d.ph) return '';
+  const jp = d.ph.split('｜').map(s => s.trim()).filter(Boolean);
+  const zh = (d.phz || '').split('｜').map(s => s.trim());
+  const multi = jp.length > 1;
+  return jp.map((s, i) => {
+    const sfx = d._tts_ph ? '' : (multi ? 'p' + (i + 1) : 'p');
+    const aid = d._tts_ph ? 0 : (d.aid || 0);
+    const txt = s.replace(/'/g, "\'");
+    return `
+  <div class="phrase">
+    <span class="jp" onclick="play(${aid},'${sfx}','${txt}')">${esc(s)}</span>
+    <span class="zh">${esc(zh[i] || '')}</span>
+  </div>`;
+  }).join('');
+};
+
+const entryRead = d => `
+  <div class="entry">
+    <div class="row1">
+      <span class="num">${d.aid || d.id}</span>
+      ${rubyHtml(d)}
+      <span class="pos ${posCls(d.p)}">${esc(d.p)}</span>
+    </div>
+    <div class="mean">${esc(d.m)}</div>
+    ${phRead(d)}
+  </div>`;
+
+const edSpan = (d, f, cls, ph) => `<span class="edf ${cls}${d[f] ? '' : ' empty'}" contenteditable="true" data-ph="${ph}" data-f="${f}">${esc(d[f])}</span>`;
+
+const entryEdit = d => `
+  <div class="entry" data-did="${d.id}">
+    <div class="row1">
+      <span class="drag-handle" draggable="true" title="拖动排序/入组">⠿</span>
+      <span class="num">${d.aid || d.id}</span>
+      ${edSpan(d,'w','word','词')}
+      ${edSpan(d,'k','edk','注音')}
+      ${edSpan(d,'en','ede','en')}
+      ${edSpan(d,'p','pos ' + posCls(d.p),'词性')}
+      <span class="sp" data-sp="1" title="拆出为独立卡">⇱</span><span class="x" data-x="1" title="删除该词">✕</span>
+    </div>
+    <div class="mean">${edSpan(d,'m','edmean','释义')}</div>
+    <div class="phrase">
+      ${edSpan(d,'ph','edph','例句')}
+      ${edSpan(d,'phz','edphz','中译')}
+    </div>
+  </div>`;
+
+const noteRead = d => `<div class="notecard note">${esc(d.text)}</div>`;
+const noteEdit = d => `<div class="notecard note" data-did="${d.id}"><span class="drag-handle" draggable="true" title="拖动排序">⠿</span>${edSpan(d,'text','','文本')}<span class="x" data-x="1" title="删除备注">✕</span></div>`;
+
+function getBarHtml(role, g){
+  const title = editing ? 'title="点击切换符号：⇄ (相对) / | (竖线反义) / — (横杠同类)"' : '';
+  if (role === 'ant') {
+    return `<div class="bar-wrap" data-bar="${g}" ${title}><span class="vs-ant"></span></div>`;
+  } else if (role === 'syn') {
+    return `<div class="bar-wrap" data-bar="${g}" ${title}><span class="vs-syn"></span></div>`;
+  } else {
+    return `<div class="bar-wrap" data-bar="${g}" ${title}><span class="vs-arr">⇄</span></div>`;
+  }
+}
+
+const list = document.getElementById('list');
+
+function removeD(d){
+  const i = DATA.indexOf(d);
+  if (i >= 0) { DATA.splice(i, 1); return true; }
+  return false;
+}
+function secLastIdx(s){
+  let last = -1;
+  DATA.forEach((d, i) => { if (d.s === s) last = i; });
+  return last;
+}
+function addToSecEnd(d, s){
+  d.s = s;
+  const at = secLastIdx(s);
+  DATA.splice(at + 1, 0, d);
+}
+function newG(){
+  return Math.max(0, ...DATA.map(d => d.g || 0)) + 1;
+}
+
+function render(){
+  list.innerHTML = '';
+  let curS = null, row = null, colA = null, colB = null, wrap = null, alt = 0;
+  let lastG = null, lastRole = null, gHead = null, halves = null, gRole = null, gG = null;
+
+  for (let i = 0; i < DATA.length; i++){
+    const d = DATA[i];
+    if (d.s !== curS){
+      curS = d.s;
+      const h = document.createElement('div'); h.className = 'sec-h';
+      const t = document.createElement('span'); t.className = 'sec-title'; t.textContent = curS;
+      if (editing){
+        const oldS = curS;
+        t.contentEditable = 'true';
+        t.addEventListener('input', () => {
+          const ns = t.textContent;
+          DATA.forEach(x => { if (x.s === oldS) x.s = ns; });
+          curS = ns;
+          saveSoon();
+        });
+        const bb = document.createElement('span'); bb.className = 'addbtns';
+        const mk = (label, fn) => {
+          const b = document.createElement('button');
+          b.textContent = label;
+          b.addEventListener('click', fn);
+          bb.appendChild(b);
+        };
+        mk('+词框', () => {
+          // 插到本节最前面（第一个该节条目之前）= 组的上面
+          const at = DATA.findIndex(x => x.s === curS);
+          DATA.splice(at < 0 ? DATA.length : at, 0, {id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0});
+          save(); render();
+        });
+        mk('+相对组 (⇄)', () => {
+          const g = newG();
+          addToSecEnd({id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'arr', side: 'L', g}, curS);
+          addToSecEnd({id: nextId++, aid: 0, asfx: '-r', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'arr', side: 'R', g}, curS);
+          save(); render();
+        });
+        mk('+反义组 (|)', () => {
+          const g = newG();
+          addToSecEnd({id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'ant', side: 'L', g}, curS);
+          addToSecEnd({id: nextId++, aid: 0, asfx: '-r', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'ant', side: 'R', g}, curS);
+          save(); render();
+        });
+        mk('+同类组 (—)', () => {
+          const g = newG();
+          addToSecEnd({id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'syn', side: 'L', g}, curS);
+          addToSecEnd({id: nextId++, aid: 0, asfx: '-r', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'syn', side: 'R', g}, curS);
+          save(); render();
+        });
+        mk('+文本', () => {
+          addToSecEnd({id: nextId++, s: curS, kind: 'note', text: ''}, curS);
+          save(); render();
+        });
+        h.appendChild(bb);
+      }
+      h.appendChild(t);
+      list.appendChild(h);
+
+      if (editing){
+        wrap = document.createElement('div'); wrap.className = 'sec-items'; list.appendChild(wrap);
+        wrap.addEventListener('dragover', e => e.preventDefault());
+        wrap.addEventListener('drop', e => {
+          e.preventDefault();
+          if (dragD && dragD.s === curS) {
+            removeD(dragD); addToSecEnd(dragD, curS); save(); render();
+          }
+        });
+      } else {
+        row = document.createElement('div'); row.className = 'row2';
+        colA = document.createElement('div'); colA.className = 'col2';
+        colB = document.createElement('div'); colB.className = 'col2';
+        row.appendChild(colA); row.appendChild(colB);
+        list.appendChild(row);
+      }
+      lastG = null; lastRole = null; alt = 0;
+    }
+
+    const isNote = d.kind === 'note';
+    const hasRole = !isNote && (d.role === 'arr' || d.role === 'ant' || d.role === 'syn');
+    const entryHtml = isNote ? (editing ? noteEdit(d) : noteRead(d)) : (editing ? entryEdit(d) : entryRead(d));
+
+    if (hasRole){
+      if (d.role !== lastRole || d.g !== lastG){
+        lastRole = d.role; lastG = d.g; gRole = d.role; gG = d.g;
+        gHead = document.createElement('div');
+        gHead.className = 'item';
+        gHead.innerHTML = `
+          <div class="card c${posCls(d.p)}">
+            <div class="bra">
+              <div class="half"></div>
+              ${getBarHtml(d.role, d.g)}
+              <div class="half"></div>
+            </div>
+            ${editing ? `<span class="gx" data-gx="${d.g}" data-gs="${esc(d.s)}" title="删除整个成对组">✕</span>` : ''}
+          </div>`;
+        if (editing){
+          const itemEl = gHead;
+          itemEl.addEventListener('dragover', e => e.preventDefault());
+          attachTopDrop(itemEl, d, curS);
+        }
+        (editing ? wrap : (alt++ % 2 === 0 ? colA : colB)).appendChild(gHead);
+        halves = gHead.querySelectorAll('.half');
+        if (editing){
+          halves.forEach((h, hi) => {
+            h.addEventListener('dragover', e => { e.preventDefault(); e.stopPropagation(); h.classList.add('over'); });
+            h.addEventListener('dragleave', () => h.classList.remove('over'));
+            h.addEventListener('drop', e => {
+              e.preventDefault(); e.stopPropagation(); h.classList.remove('over');
+              if (!dragD) return;
+              removeD(dragD);
+              dragD.role = gRole; dragD.g = gG; dragD.side = hi === 1 ? 'R' : 'L'; dragD.s = curS;
+              let at = -1;
+              DATA.forEach((x, xi) => { if (x.s === curS && x.role === gRole && x.g === gG && x.side === dragD.side) at = xi; });
+              if (at < 0) DATA.forEach((x, xi) => { if (x.s === curS && x.role === gRole && x.g === gG && at < 0) at = xi; });
+              DATA.splice(at + 1, 0, dragD);
+              save(); render();
+            });
+          });
+        }
+      }
+      (d.side === 'R' ? halves[1] : halves[0]).innerHTML += entryHtml;
+    } else {
+      // 编辑模式：上一项也是独立词 → 显示合并按钮（⇄ | —）
+      if (editing && !isNote){
+        const prev = DATA[i-1];
+        if (prev && prev.s === d.s && prev.kind !== 'note' && !(prev.role === 'arr' || prev.role === 'ant' || prev.role === 'syn')){
+          const mb = document.createElement('div'); mb.className = 'merge-bar';
+          mb.innerHTML = ['arr', 'ant', 'syn'].map(r =>
+            `<button class="mb-btn" data-mr="${r}" title="${r === 'arr' ? '相对⇄' : r === 'ant' ? '竖线反义|' : '横杠同类—'}">${r === 'arr' ? '⇄' : r === 'ant' ? '|' : '—'}</button>`).join('');
+          mb.addEventListener('click', e => {
+            const btn = e.target.closest('.mb-btn'); if (!btn) return;
+            const role = btn.dataset.mr, g = newG();
+            prev.role = role; prev.side = 'L'; prev.g = g;
+            d.role = role; d.side = 'R'; d.g = g;
+            save(); render();
+          });
+          wrap.appendChild(mb);
+        }
+      }
+      const item = document.createElement('div'); item.className = 'item';
+      const card = document.createElement('div');
+      card.className = 'card c' + posCls(d.p) + (isNote ? ' notecard' : '');
+      card.innerHTML = entryHtml;
+      if (editing){ attachTopDrop(item, d, curS); }
+      item.appendChild(card);
+      (editing ? wrap : (alt++ % 2 === 0 ? colA : colB)).appendChild(item);
+    }
+  }
+
+  if (editing){
+    list.querySelectorAll('.drag-handle').forEach(el => { el.draggable = true; });
+  }
+  const words = DATA.filter(d => d.kind !== 'note').length;
+  document.getElementById('count').textContent = words;
+}
+
+function attachTopDrop(item, d, sec){
+  item.addEventListener('dragover', e => {
+    if (!dragD) return;
+    e.preventDefault();
+    const before = e.offsetY < item.offsetHeight / 2;
+    item.classList.toggle('ins-top', before); item.classList.toggle('ins-bot', !before);
+    item._ins = before ? 'top' : 'bot';
+  });
+  item.addEventListener('dragleave', () => item.classList.remove('ins-top', 'ins-bot'));
+  item.addEventListener('drop', e => {
+    e.preventDefault(); e.stopPropagation();   // 防冒泡到 sec-items wrap 的 drop（会再次移动到节尾）
+    const where = item._ins; item.classList.remove('ins-top', 'ins-bot');
+    if (!dragD || !where) return;
+    removeD(dragD);
+    dragD.role = ''; dragD.side = ''; dragD.g = 0; dragD.s = sec;
+    let ti = DATA.indexOf(d);
+    DATA.splice(where === 'top' ? ti : ti + 1, 0, dragD);
+    save(); render();
+  });
+}
+
+/* 拖拽委托 */
+list.addEventListener('dragstart', e => {
+  const h = e.target.closest('[data-did]'); if (!h || !editing) return;
+  dragD = byId(+h.dataset.did);
+  e.dataTransfer.setData('text/plain', 'x');
+  e.dataTransfer.effectAllowed = 'move';
+  h.classList.add('dragging');
+});
+list.addEventListener('dragend', e => {
+  const h = e.target.closest && e.target.closest('[data-did]');
+  if (h) h.classList.remove('dragging');
+  document.querySelectorAll('.dragging').forEach(el => el.classList.remove('dragging'));
+});
+
+/* 事件委托: 文字编辑 / 删除 / 相对符号切换 */
+list.addEventListener('input', e => {
+  const t = e.target.closest('.edf'); if (!t) return;
+  const holder = t.closest('[data-did]'); if (!holder) return;
+  const d = byId(+holder.dataset.did); if (!d) return;
+  d[t.dataset.f] = t.textContent;
+  saveSoon();
+});
+
+list.addEventListener('click', e => {
+  // 拆出为独立卡
+  const sp = e.target.closest('.sp');
+  if (sp){
+    const holder = sp.closest('[data-did]'); if (!holder) return;
+    const d = byId(+holder.dataset.did); if (!d) return;
+    const gi = DATA.indexOf(d);
+    removeD(d);
+    d.role = ''; d.side = ''; d.g = 0;
+    DATA.splice(gi, 0, d);   // 原位放回 = 组后第一个位置
+    save(); render(); return;
+  }
+  // 删除单卡
+  const x = e.target.closest('.x');
+  if (x){
+    const holder = x.closest('[data-did]'); if (!holder) return;
+    const d = byId(+holder.dataset.did); if (!d) return;
+    removeD(d); save(); render(); return;
+  }
+  // 删除整组
+  const gx = e.target.closest('.gx');
+  if (gx){
+    const g = +gx.dataset.gx, s = gx.dataset.gs;
+    for (let i = DATA.length - 1; i >= 0; i--) {
+      if (DATA[i].s === s && DATA[i].g === g && DATA[i].role) DATA.splice(i, 1);
+    }
+    save(); render(); return;
+  }
+  // 点击符号循环切换: arr (⇄) -> ant (|) -> syn (—) -> arr (⇄)
+  const bar = e.target.closest('[data-bar]');
+  if (bar && editing){
+    const g = +bar.dataset.bar;
+    let s = null, currentRole = 'arr';
+    DATA.forEach(d => {
+      if (d.g === g && d.role && s === null) { s = d.s; currentRole = d.role; }
+    });
+    const nextRole = currentRole === 'arr' ? 'ant' : (currentRole === 'ant' ? 'syn' : 'arr');
+    DATA.forEach(d => {
+      if (d.s === s && d.g === g && d.role) d.role = nextRole;
+    });
+    save(); render();
+  }
+});
+
+/* 导出 JSON 功能 */
+function exportData(){
+  const dataStr = JSON.stringify({page: 'N1_7-3', data: DATA}, null, 2);
+  const blob = new Blob([dataStr], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'N1_7-3_layout.json';
+  a.click();
+
+  document.getElementById('exportText').value = dataStr;
+  document.getElementById('exportModal').classList.add('open');
+}
+
+function copyExportText(){
+  const t = document.getElementById('exportText');
+  t.select();
+  navigator.clipboard.writeText(t.value).then(() => {
+    alert('已成功复制最新 JSON 数据到剪贴板！');
+  });
+}
+
+render();
+</script>
+
+<div id="ftool">
+  <div class="ft-tip">添加到最近操作的卡片旁</div>
+  <button onclick="ftAdd('word')">＋ 词框</button>
+  <button onclick="ftAdd('arr')">⇄ 相对组</button>
+  <button onclick="ftAdd('ant')">| 反义组</button>
+  <button onclick="ftAdd('syn')">— 同类组</button>
+  <button onclick="ftAdd('note')">✎ 文本</button>
+</div>
+<script>
+/* ---- 悬浮工具条 + 选字拖动 ---- */
+let lastSpot = null;   // {sec, idx} 最近操作的卡片位置
+list.addEventListener('click', e => {
+  const h = e.target.closest('[data-did]'); if (!h) return;
+  const d = byId(+h.dataset.did); if (!d) return;
+  lastSpot = { sec: d.s, idx: DATA.indexOf(d) };
+}, true);
+list.addEventListener('drop', e => {
+  // drop 后记录目标卡片位置
+  if (lastSpot && dragD) lastSpot = { sec: dragD.s, idx: DATA.indexOf(dragD) };
+}, true);
+
+function ftAdd(kind){
+  if (!editing) { toggleEdit(); }
+  const sec = lastSpot ? lastSpot.sec : (DATA[0] && DATA[0].s);
+  if (!sec) return;
+  const mkWord = () => ({id: nextId++, aid: 0, asfx: '', s: sec, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0});
+  if (kind === 'word'){
+    const w = mkWord();
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, w);
+    lastSpot = { sec, idx: at };
+  } else if (kind === 'note'){
+    const n = {id: nextId++, s: sec, kind: 'note', text: ''};
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, n);
+    lastSpot = { sec, idx: at };
+  } else {
+    const g = newG();
+    const l = mkWord(); l.role = kind; l.side = 'L'; l.g = g;
+    const r = mkWord(); r.role = kind; r.side = 'R'; r.g = g;
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, l, r);
+    lastSpot = { sec, idx: at + 1 };
+  }
+  save(); render();
+}
+
+/* 选中文字拖动 → 词框 */
+document.addEventListener('dragstart', e => {
+  const sel = String(window.getSelection ? window.getSelection() : '').trim();
+  if (sel && !e.target.closest('[data-did]')) {
+    dragD = { __text: sel };
+    e.dataTransfer.setData('text/plain', sel);
+    e.dataTransfer.effectAllowed = 'copy';
+  }
+}, true);
+// attachTopDrop / half drop 里识别 __text：改 drop 处理 —— 在最前注入
+const _origAttach = attachTopDrop;
+attachTopDrop = function(item, d, sec){
+  _origAttach(item, d, sec);
+  item.addEventListener('drop', e => {
+    const txt = (e.dataTransfer.getData('text/plain') || '').trim();
+    if (!txt || !e.target.closest('.edf') && !byId(+((e.target.closest('[data-did]')||{}).dataset?.did || -1))) return;
+    // 若 drop 的是纯文本（非卡片拖动）→ 新词框
+    if (dragD && dragD.__text && dragD.__text === txt){
+      e.preventDefault(); e.stopPropagation();
+      const w = {id: nextId++, aid: 0, asfx: '', s: sec, w: txt, k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0};
+      const ti = DATA.indexOf(d);
+      DATA.splice(ti + 1, 0, w);
+      save(); render();
+    }
+  }, true);
+};
+// 半区 drop 同样支持文本 → 新词入半区
+list.addEventListener('drop', e => {
+  const txt = (e.dataTransfer && e.dataTransfer.getData('text/plain') || '').trim();
+  const half = e.target.closest('.half');
+  if (!txt || !half || !dragD || !dragD.__text) return;
+  e.preventDefault(); e.stopPropagation();
+  const sec = curSFromHalf(half);
+  const w = {id: nextId++, aid: 0, asfx: '', s: sec, w: txt, k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: dragD.role || '', side: dragD.side || '', g: dragD.g || 0};
+  // 插到该半区最后
+  let at = -1;
+  DATA.forEach((x, xi) => { if (x.s === sec && x.g === w.g && x.side === w.side) at = xi; });
+  DATA.splice(at + 1, 0, w);
+  dragD = null;
+  save(); render();
+}, true);
+function curSFromHalf(half){
+  // 从 half 往上找 gx 的 data-gs
+  let el = half;
+  while (el && !el.dataset?.gs) el = el.parentElement;
+  return el ? el.dataset.gs : (DATA[0] && DATA[0].s);
+}
+// toggleEdit 时同步悬浮条
+const _origToggle = toggleEdit;
+toggleEdit = function(){ _origToggle(); document.getElementById('ftool').classList.toggle('open', editing); };
+</script>
+
+
+<div id="dict">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
+  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
+  <div id="dictAns" class="hidden"></div>
+  <div class="dbtns">
+    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
+    <button class="hbtn" id="dictAutoBtn" onclick="dictAutoToggle()">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+  </div>
+  <div style="opacity:.4;font-size:11px;">空格=重播 · →/D=下一个 · ←/A=上一个 · S=显示答案 · Esc=退出</div>
+</div>
+<script>
+/* ---- 听写（N1_7-3: aid+asfx 音频, 词→例句链） ---- */
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [], dictChain = false;
+const DICT_DELAY = 3000;
+const escH = s => String(s == null ? '' : s);
+const dictWords = () => DATA.filter(d => d.aid && !d.kind);
+const dictSents = d => (d.ph || '').split('｜').map(s => s.trim()).filter(Boolean);
+const dictSfx = d => { const n = dictSents(d).length; return n > 1 ? dictSents(d).map((_, i) => 'p' + (i + 1)) : (n === 1 ? ['p'] : []); };
+let dictSentI = 0;
+
+function dictToggle(){
+  dictOpen = !dictOpen;
+  document.getElementById('dict').classList.toggle('open', dictOpen);
+  if (dictOpen){ if (curAudio) curAudio.pause(); buildOrder(); dictCur = 0; showDict(); }
+  else { if (curAudio) curAudio.pause(); clearTimeout(dictT); }
+}
+function buildOrder(){
+  dictOrder = dictWords().map(d => d.id);
+  if (dictShuffleOn) for (let i = dictOrder.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [dictOrder[i], dictOrder[j]] = [dictOrder[j], dictOrder[i]]; }
+}
+const dictD = () => dictWords().find(d => d.id === dictOrder[dictCur]);
+const playCur = () => {
+  const d = dictD();
+  dictSentI = 0;
+  if (d.ph && !d._tts_ph) { dictChain = true; play(d.aid, d.asfx || ''); }
+  else { dictChain = false; play(d.aid, d.asfx || '', d._tts_ph ? d.ph : d.w); }
+};
+// 播放钩子：词条播完接例句；例句播完且自动 → 下一条
+function dictHook(asfx){
+  const d = dictD();
+  if (asfx && asfx.includes('p')) {          // 一句例句播完
+    const sfx = dictSfx(d);
+    if (dictChain && dictSentI + 1 < sfx.length) {
+      dictSentI++; play(d.aid, sfx[dictSentI], dictSents(d)[dictSentI]); return;
+    }
+    dictChain = false;
+    if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY);
+    return;
+  }
+  if (dictChain) {                            // 词条播完 → 接第一句
+    const sfx = dictSfx(d);
+    if (sfx.length) { dictSentI = 0; play(d.aid, sfx[0], dictSents(d)[0]); return; }
+  }
+  dictChain = false;
+  if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY);
+}
+function dictStep(dir){
+  clearTimeout(dictT); dictChain = false;
+  dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
+  showDict(); playCur();
+}
+const dictNext = () => dictStep(1);
+const dictPrev = () => dictStep(-1);
+function dictShuffle(){ dictShuffleOn = !dictShuffleOn; buildOrder(); dictCur = 0; showDict(); playCur(); }
+function dictAutoToggle(){
+  dictAuto = !dictAuto;
+  document.getElementById('dictAutoBtn').textContent = '自动: ' + (dictAuto ? '开' : '关');
+  dictChain = false;
+  if (dictAuto) playCur();
+}
+function dictReveal(){
+  const ans = document.getElementById('dictAns');
+  if (ans.classList.contains('hidden')) { renderDictAns(); ans.classList.remove('hidden'); }
+  else ans.classList.add('hidden');
+}
+function renderDictAns(){
+  const d = dictD(), ans = document.getElementById('dictAns');
+  const side = w => `<div class="dword">${escH(w)}</div>`;
+  let body = `<div class="dpos">${escH(d.p)}</div><div class="dword">${escH(d.w)} <span style="font-size:14px;opacity:.6">${escH(d.k)}</span></div><div class="dmean">${escH(d.m)}</div>`;
+  if (d.ph) {
+    const sfx = dictSfx(d), sents = dictSents(d), zhs = (d.phz || '').split('｜').map(s => s.trim());
+    body += sents.map((s, i) => `<div class="dph" onclick="play(${d.aid},'${sfx[i] || 'p'}','${escH(s).replace(/'/g, "\'")}')">${escH(s)}</div><div class="dphz">${escH(zhs[i] || '')}</div>`).join('');
+  }
+  ans.innerHTML = body;
+}
+function showDict(){
+  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  const ans = document.getElementById('dictAns');
+  ans.classList.add('hidden');
+  ans.innerHTML = '';
+}
+document.addEventListener('keydown', e => {
+  if (!dictOpen) return;
+  if (e.code === 'Space'){ e.preventDefault(); playCur(); }
+  else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') dictNext();
+  else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') dictPrev();
+  else if (e.key === 's' || e.key === 'S') dictReveal();
+  else if (e.key === 'Escape') dictToggle();
+});
+</script>
+
+</body>
+</html>
