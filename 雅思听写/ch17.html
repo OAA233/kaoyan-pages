@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雅思词汇真经 Ch.17 法律法规</title>
+<style>
+  body {
+    --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
+    --num: #8b8577; --num-border: #5a564d; --muted: .55;
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif;
+    background: var(--bg); color: var(--fg);
+    margin: 0; padding: 14px 16px; max-width: 1080px;
+    transition: background .2s, color .2s;
+  }
+  body.day {
+    --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8;
+    --num: #8a8373; --num-border: #c4bda9; --muted: .6;
+  }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
+  .hbtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px;
+  }
+  .hbtn:hover { opacity: .8; }
+  .stats { display: inline; gap: 8px; font-size: 12px; opacity: .7; }
+  .row2 { display: flex; gap: 10px; align-items: flex-start; }
+  .col2 { flex: 1; min-width: 0; }
+  .card {
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 9px 12px; background: var(--card);
+    border-left: 5px solid #555; margin-bottom: 10px;
+  }
+  .card.cV { border-left-color: #e5484d; }
+  .card.cI { border-left-color: #d63384; }
+  .card.cN { border-left-color: #1971c2; }
+  .card.cadv { border-left-color: #2b8a3e; }
+  .row1 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .num {
+    font-size: 11px; font-weight: 700; color: var(--num);
+    border: 1.5px solid var(--num-border); border-radius: 50%;
+    width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: center;
+  }
+  .word { font-size: 19px; font-weight: 700; cursor: pointer; }
+  .word:hover { text-decoration: underline; }
+  .pos { font-size: 11px; font-weight: 700; padding: 2px 6px; white-space: nowrap; border-radius: 7px; color: #fff; }
+  .pos.V { background: #e5484d; }
+  .pos.I { background: #d63384; }
+  .pos.N { background: #1971c2; }
+  .pos.adv { background: #2b8a3e; }
+  .mean { margin-top: 1px; font-size: 13px; margin-left: 32px; }
+  .phrase { margin-top: 6px; font-size: 13px; margin-left: 32px; }
+  .phrase .jp { font-weight: 600; cursor: pointer; }
+  .phrase .jp:hover { text-decoration: underline; }
+  .phrase .zh { display: block; opacity: var(--muted); margin: 1px 0 0; }
+  .note-line { margin-top: 4px; font-size: 12px; margin-left: 32px; opacity: var(--muted); }
+  @media (max-width: 760px) { .row2 { flex-direction: column; } .col2 { width: 100%; } }
+
+  /* ---- 听写 ---- */
+  #dict { position: fixed; inset: 0; background: var(--bg); z-index: 500; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  #dict.open { display: flex; }
+  #dictBig { font-size: 20px; padding: 16px 30px; border-radius: 16px; border: 1px solid var(--num-border); background: var(--card); color: var(--fg); cursor: pointer; }
+  #dictAns { min-height: 150px; transition: opacity .2s; }
+  #dictAns.hidden { opacity: 0; pointer-events: none; user-select: none; }
+  .dword { font-size: 30px; font-weight: 800; }
+  .dpos { opacity: .5; font-size: 12px; }
+  .dmean { font-size: 16px; margin-top: 4px; }
+  .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
+  .dphz { opacity: .6; font-size: 13px; }
+  .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>雅思词汇真经 Ch.17 法律法规</h1>
+    <p><span class="stats">共 <b id="count"></b> 词 · 点击单词/例句发音（edge 女声）</span></p>
+  </div>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
+  <button id="themeBtn" class="hbtn" onclick="toggleTheme()">🌙 夜间</button>
+</header>
+<div id="list"></div>
+
+<script>
+let DATA = [{"word": "law", "meaning": "n.法律；规律；定理", "ex_en": "Those who break the law are subjected to justice", "ex_zh": "违法者要受到法律制裁。", "notes": "lawyer n.律师 enact a law通过法律", "n": 1}, {"word": "legal", "meaning": "adj.法律的；合法的", "ex_en": "When you are 18, you are a legal voter", "ex_zh": "当你满\n18岁的时候，你就是一个合法的投票人。", "notes": "illegal adj.不合法的，非法的", "n": 2}, {"word": "rule", "meaning": "n・规则v.统治", "ex_en": "It's against the rules to pick up the ball", "ex_zh": "捡球是犯规的。", "notes": "", "n": 3}, {"word": "regulation", "meaning": "规则，规定；管理", "ex_en": "The rules and regulations should be made clear to all employees", "ex_zh": "规章制度应该让全体雇员都明白。", "notes": "regulate v.管理；调整adj.有规律的； 规则的", "n": 4}, {"word": "item", "meaning": "n.—项项目，条目", "ex_en": "This is the next item on the agenda", "ex_zh": "这是议程上的下一项。", "notes": "", "n": 5}, {"word": "treaty", "meaning": "", "ex_en": "In the treaty, both sides pledge to respect human rights.", "ex_zh": "双方在条约中都承诺尊重人权。", "notes": "", "n": 6}, {"word": "agreement", "meaning": "n.协定；同意", "ex_en": "The agreement has raised hopes that the war may end soon", "ex_zh": "那项协定使人们感到战争有望很快结束。", "notes": "agree v.同意", "n": 7}, {"word": "charter", "meaning": "n.宪章v.租，包（船、车、飞机等）", "ex_en": "The rights of our citizens are granted by the charter", "ex_zh": "我们公民的权利是宪章授予的。", "notes": "draft a charter起草宪章", "n": 8}, {"word": "protocol", "meaning": "n.议定书，协议；礼仪", "ex_en": "Do we need to sign a con tract or follow any protocol?", "ex_zh": "我们需要签合同或遵循什么协议吗？", "notes": "", "n": 9}, {"word": "norm", "meaning": "仇标准；卜S］行为准则，规范", "ex_en": "You must adapt to the norms of the society you live in", "ex_zh": "你必须适应你所处的社会中的行为准则。", "notes": "normal adj.正常的，通常的abnormal adj.不正常的；变态的 cial norms社会准则", "n": 10}, {"word": "benchmark", "meaning": "n.基准，水准点", "ex_en": "Her performances set a new benchmark for dancers throughout the world", "ex_zh": "她的表演为全世界的舞者确立了新基准。联想：bench是“长凳”，mark是“标记”，在长凳子上画一条标记，就像课桌上的“三八线”一样，这是基准线，别超过！", "notes": "", "n": 11}, {"word": "criteria", "meaning": "n.［criterion的复数形式］标准，准则", "ex_en": "We each have our own criteria for success.", "ex_zh": "我们每个人关于成功都有自己的标准。", "notes": "", "n": 12}, {"word": "standard", "meaning": "n.标准", "ex_en": "This piece of work does not come up to your usual standard", "ex_zh": "这件作品达不到你平常的标准。", "notes": "standardised（=standardized）adj.标准化的 standardisation（=standardization）n.标准化", "n": 13}, {"word": "permit", "meaning": "V.允许，准许", "ex_en": "Those doubt", "ex_zh": "这些话简直\n不容置疑。", "notes": "permission n.允许；许可证 adj.容许的", "n": 14}, {"word": "allow", "meaning": "V.允许，准许", "ex_en": "They did not allow the slaves any freedom", "ex_zh": "他们不给奴隶任何自由。", "notes": "low ances津贴；限额 allow for考虑到sth.允许某人做某事", "n": 15}, {"word": "admission", "meaning": "n.承认；入场费；准许进入", "ex_en": "He gained admission into the association", "ex_zh": "他获准加入这个协会。\nV.履行，执行 They always perform their duties faithfully.\n他们总是忠实地履行自己的职责。", "notes": "rform a nee n.履行；演出；表现", "n": 16}, {"word": "perform", "meaning": "v.履行，执行", "ex_en": "They always perform their duties faithfully.", "ex_zh": "他们总是忠实地履行自己的职责。", "notes": "performance n.履行；演出；表现", "n": 17}, {"word": "enforce", "meaning": "V.强制执行，强行实施；迫使", "ex_en": "The police are there to enforce the law", "ex_zh": "警察在那里执法。", "notes": "enforcement n.执行，实施 enforce sth. on sb.强迫某人做某事，把某事强加于某人 en（使）+force（力量）t强制执行。", "n": 18}, {"word": "reject", "meaning": "v.拒绝接受；摒弃", "ex_en": "The board of directors rejected the proposal as a non-starter.", "ex_zh": "董事会拒绝了这项提案，认为这不可能成功。", "notes": "rejection n.拒绝", "n": 19}, {"word": "reject", "meaning": "v.拒绝接受；摒弃", "ex_en": "The board of directors rejected the proposal as a non-starter.", "ex_zh": "董事会拒绝了这项提案，认为这不可能成功。", "notes": "rejection n.拒绝", "n": 20}, {"word": "constraint", "meaning": "n.约束，限制；克制", "ex_en": "He presence", "ex_zh": "在她面\n前，他觉得有些拘束。", "notes": "", "n": 21}, {"word": "official", "meaning": "adj.正式的，官方的", "ex_en": "The mass media demanded that all the official documents concerning the product in question be made public", "ex_zh": "大众媒体要求公布有关那个产品的全部官方文件。", "notes": "", "n": 22}, {"word": "mandatory", "meaning": "adj.法定的，强制的", "ex_en": "A reply to this letter is mandatory", "ex_zh": "这封信非答复不可。", "notes": "mandate v.强制执行字根指“命令（，如：mandate（强 mand to ord eij”制执行），command（命令），demand（要求；需要）。", "n": 23}, {"word": "bound", "meaning": "adj.［be~to］一定会，很可能会，有义务", "ex_en": "You are not legally bound to answer these questions.", "ex_zh": "你没有法律义务非回答这些问题不可。", "notes": "", "n": 24}, {"word": "bound", "meaning": "adj.［be~to］一定会，很可能会，有义务", "ex_en": "You are not legally bound to answer these questions.", "ex_zh": "你没有法律义务非回答这些问题不可。", "notes": "", "n": 25}, {"word": "obligation", "meaning": "n.义务，责任", "ex_en": "We are under an obligation to help", "ex_zh": "我们有义务帮忙。", "notes": "oblige v.迫使，强迫；帮忙", "n": 26}, {"word": "court", "meaning": "n.法院；庭院", "ex_en": "The company is anxious to keep the whole case out of court", "ex_zh": "该公司迫切希望整件事能够在庭外解决。", "notes": "take sb. to court起诉某人，把某人告上法庭", "n": 27}, {"word": "enact", "meaning": "v.通过（法律）；表演", "ex_en": "This country has just enacted a law allowing same-sex marriage.", "ex_zh": "该国刚刚通过了一项法律，准许了同性婚姻。", "notes": "", "n": 28}, {"word": "legislate", "meaning": "v.立法，制定（或通过）法律", "ex_en": "The government will legislate against discrimination in the workplace.", "ex_zh": "政府将制定法律，禁止在工作场所出现歧视行为。", "notes": "legislation n.立法；法律", "n": 29}, {"word": "equity", "meaning": "n.公平", "ex_en": "They call for laws to promote gender equity.", "ex_zh": "他们呼吁立法来促进男女平等。", "notes": "equal adj.平等的", "n": 30}, {"word": "equity", "meaning": "n.公平", "ex_en": "They call for laws to promote gender equity.", "ex_zh": "他们呼吁立法来促进男女平等。", "notes": "equal adj.平等的", "n": 31}, {"word": "fair", "meaning": "adj.公平的，公正的", "ex_en": "He won the game fair and square", "ex_zh": "他堂堂正正地赢了这场比赛。", "notes": "fair adj.不公平的，不公正的", "n": 32}, {"word": "just", "meaning": "adj.公正的；正义的adv.刚刚；仅仅", "ex_en": "Our aim is a just and lasting peace", "ex_zh": "我们的目标是获得公正而持久的和平。", "notes": "unjust adj.非正义的；不公正的justice n.公平；法官justify V.为……辩护，证明……正当", "n": 33}, {"word": "prejudice", "meaning": "n.偏见，成见", "ex_en": "A judge must be free from prejudice", "ex_zh": "法官必须不抱成见。", "notes": "prejudice against对...的偏见", "n": 34}, {"word": "discrimination", "meaning": "n.歧视", "ex_en": "He is opposed to racial discrimination", "ex_zh": "他反对种族歧视。", "notes": "", "n": 35}, {"word": "accuse", "meaning": "V.控告，指责", "ex_en": "The police accused him of murder", "ex_zh": "警方指控他犯了谋杀罪。", "notes": "accuse sb. of sth.指控某人犯某罪", "n": 36}, {"word": "prosecute", "meaning": "v.检举，起诉", "ex_en": "He was prosecuted for robbery.", "ex_zh": "他因抢劫而被起诉。", "notes": "prosecution n.起诉 prosecutor n.检察官；公诉人 persecute v.迫害 persecution n.迫害", "n": 37}, {"word": "prosecute", "meaning": "v.检举，起诉", "ex_en": "He was prosecuted for robbery.", "ex_zh": "他因抢劫而被起诉。", "notes": "prosecution n.起诉 prosecutor n.检察官；公诉人 persecute v.迫害 persecution n.迫害", "n": 38}, {"word": "condemn", "meaning": "V.谴责，指责", "ex_en": "Most people would condemn violenee of any sort as evil", "ex_zh": "大多数人会把任何形式的暴力行为都视为恶行加以谴责。", "notes": "", "n": 39}, {"word": "complain", "meaning": "认抱怨；投诉", "ex_en": "She complained that the room is too cold", "ex_zh": "她抱怨屋子太冷。", "notes": "complaint n.抱怨；投诉 complain about抱怨；投诉complain to向... 投诉", "n": 40}, {"word": "boycott", "meaning": "n./v.抵制，拒绝购买", "ex_en": "They boycott all products tested on animals", "ex_zh": "他们抵制所有进行了动物实验的产品。从前，在爱尔兰有一个地产管理人，姓Boycott有一\no\n年农作物歉收，农民伯伯们生活艰难。但Boycott先生没有一点同情心，拒绝佃户们的减租请求，激起了大家的愤怒。后来，大家采取了一次联合行动，与Boycott\n先生断绝一切往来：工人们不给他干活，商店不卖给他东西，邮递员也不给他递送邮件。于是Boycott臭名远扬，boycott这个词就此诞生。", "notes": "", "n": 41}, {"word": "mediate", "meaning": "v.斡旋，调解", "ex_en": "He mediated a settlement between labour and management.", "ex_zh": "他在劳资双方间通过调解促成了一个解决方案。", "notes": "mediate between在...之间进行调解", "n": 42}, {"word": "mediate", "meaning": "v.斡旋，调解", "ex_en": "He mediated a settlement between labour and management.", "ex_zh": "他在劳资双方间通过调解促成了一个解决方案。", "notes": "mediate between在...之间进行调解", "n": 43}, {"word": "plea", "meaning": "n.辩解理由，借口；请求", "ex_en": "His plea was that he did not see the stop signal", "ex_zh": "他的借口是他没看见停车信号。", "notes": "make a plea for恳求，请求", "n": 44}, {"word": "appeal", "meaning": "v./n.呼吁；申诉", "ex_en": "The response to our appeal was encouraging", "ex_zh": "对我们呼吁的反应是令人鼓舞的。", "notes": "lodge an appeal提出申诉", "n": 45}, {"word": "contradict", "meaning": "v.反驳；与……矛盾", "ex_en": "Your actions contradict your belief", "ex_zh": "你的行为与你的信念矛盾。", "notes": "contradiction n.反驳；矛盾", "n": 46}, {"word": "persuade", "meaning": "V.说服；使相信", "ex_en": "The woman persuaded the robber to turn himself in", "ex_zh": "这个女人说服了这个强盗去自首。", "notes": "persuade sb. to do sth.说服某人做某事", "n": 47}, {"word": "controversy", "meaning": "!!•争议；辩论", "ex_en": "The new traffic regulations caused much controversy among drivers", "ex_zh": "新的交通规则在司机中引起了很大争议。", "notes": "controversial adj.有争议的", "n": 48}, {"word": "whisper", "meaning": "V.低声说；私下谈论", "ex_en": "The children were whispering in the corner", "ex_zh": "孩子们正在角落里低声耳语。", "notes": "", "n": 49}, {"word": "mutter", "meaning": "v.轻声低语；小声抱怨", "ex_en": "That man muttered his dissatisfaction.", "ex_zh": "那个人小声抱怨着他的不满。", "notes": "", "n": 50}, {"word": "murmur", "meaning": "v.低声说 n.咕哝，低语", "ex_en": "There was a low murmur of conversation in the hall.", "ex_zh": "大厅里有人在低声交谈。", "notes": "", "n": 51}, {"word": "silent", "meaning": "adj.沉默的；寂静无声的", "ex_en": "He could n't speak English and was completely silent during the visit", "ex_zh": "他不会说英语，在参观过程中一言未发。", "notes": "silence n.沉默；寂静v.使安静", "n": 52}, {"word": "reasonable", "meaning": "adj.合理的；理智的", "ex_en": "At first sight, their reaction was reasonable.", "ex_zh": "乍看之下，他们的反应很合理。", "notes": "reasonably adv.适度地；合乎逻辑地 reasoning n.推理", "n": 53}, {"word": "investigate", "meaning": "V.调查", "ex_en": "lb investigate a problem is, indeed, to solve it", "ex_zh": "调查问题其实就是解决问题。", "notes": "investigation n.调查；科学研究 vestigate into对...进行调查", "n": 54}, {"word": "witness", "meaning": "n.目击者，见证人v.目击", "ex_en": "Children in regions of chaos and bloodshed are witnessing a disturbing amount of violenee", "ex_zh": "在充满混乱与血腥的地区，孩子们正在目睹大量的暴力事件。", "notes": "bear witness to证明", "n": 55}, {"word": "justify", "meaning": "v.为……辩护，证明……正当", "ex_en": "Don't try to justify your mistakes.", "ex_zh": "不要试图为自己的错误辩护。", "notes": "justice n.公平；法官 justify sth. by以……证明某事物正当", "n": 56}, {"word": "jury", "meaning": "n.陪审团；（比赛的）评判委员会", "ex_en": "The jury will retire to consider its verdict today.", "ex_zh": "陪审团今天将退庭商议其裁决。", "notes": "", "n": 57}, {"word": "trial", "meaning": "n.试验；审判", "ex_en": "I noticed that his report was highly critical of the trial judge of this case.", "ex_zh": "我注意到，他的报道对审判该案件的法官持高度批判态度。", "notes": "a trial period试用期", "n": 58}, {"word": "suitable", "meaning": "adj.合适的，适宜的", "ex_en": "The authorities must provide suitable accommodation for the family", "ex_zh": "当局必须给这个家庭提供适当的住处。", "notes": "suitable for适合……的，适于", "n": 59}, {"word": "judge", "meaning": "n.法官；裁判员", "ex_en": "The defe nee coun sei said his die nt was too tired, so the judge called a recess", "ex_zh": "辩方律师称自己的委托人太累了，于是法官宣布休庭。", "notes": "judgement（=judgment）n.意见；裁决；判断力", "n": 60}, {"word": "jury", "meaning": "n.陪审团；（比赛的）评判委员会", "ex_en": "The jury will retire to consider its verdict today.", "ex_zh": "陪审团今天将退庭商议其裁决。", "notes": "", "n": 61}, {"word": "confine", "meaning": "n.［~s］边界，范围 v.限制；监禁", "ex_en": "This is outside the confines of human knowledge.", "ex_zh": "这超出了人类的知识范围。", "notes": "be confined to局限于 within the confines of在（某范围）之内 字根fin指“结束（end）”，如：confine（共同结束的地方→边界）；final（决赛）；finish（结束）；define（定下界限→下定义）；refine（使达到极限，使变得更好→精炼）", "n": 62}, {"word": "suspect", "meaning": "ss'spekt. v.怀疑", "ex_en": "The police couldn't prove that the suspect is guilty", "ex_zh": "警察不能证实该嫌疑犯有罪。", "notes": "suspect sb. of sth.怀疑某人干某事", "n": 63}, {"word": "sentence", "meaning": "n.判决v.宣判", "ex_en": "He stood emoti on less as he heard the judge sentence him to years in prison", "ex_zh": "他面无表情地站在那里，听法官宣布他被判20年的有期徒刑。麵justify", "notes": "", "n": 64}, {"word": "arrest", "meaning": "V.逮捕；吸引（注意）口•逮捕", "ex_en": "You shouldn't arrest him without an arrest warrant", "ex_zh": "你不能在没有逮捕证的情况下逮捕他。 A bunch of prisoners broke loose from jail.\n—伙犯人从监狱脱逃。\n监狱；监禁 Many people believe that prison isn't a cure for\ncrime.许多人都相信监禁解决不了犯罪问题。", "notes": "arrest sb/s attention引起某人的注意 n监狱v.监禁 prisoner n.囚犯imprison v.监禁，关押", "n": 65}, {"word": "jail", "meaning": "n.监狱 v.监禁", "ex_en": "A bunch of prisoners broke loose from jail.", "ex_zh": "一伙犯人从监狱脱逃。", "notes": "", "n": 66}, {"word": "prison", "meaning": "n.监狱；监禁", "ex_en": "Many people believe that prison isn't a cure for crime.", "ex_zh": "许多人都相信监禁解决不了犯罪问题。", "notes": "prisoner n.囚犯 imprison v.监禁，关押", "n": 67}, {"word": "confine", "meaning": "n.［~s］边界，范围 v.限制；监禁", "ex_en": "This is outside the confines of human knowledge.", "ex_zh": "这超出了人类的知识范围。", "notes": "be confined to局限于 within the confines of在（某范围）之内 字根fin指“结束（end）”，如：confine（共同结束的地方→边界）；final（决赛）；finish（结束）；define（定下界限→下定义）；refine（使达到极限，使变得更好→精炼）", "n": 68}, {"word": "oversee", "meaning": "v.监督，监管", "ex_en": "You must employ someone to oversee the project.", "ex_zh": "你得雇个人监督这一工程。", "notes": "", "n": 69}, {"word": "supervise", "meaning": "v.监督，管理，指导", "ex_en": "This kind of project ought to be supervised by management.", "ex_zh": "这种工程应该由资方来监管。", "notes": "supervisor n.管理者，监督者", "n": 70}, {"word": "pirate", "meaning": "n.海盗；盗版者 v.盗印，窃用", "ex_en": "The terrible pirates attacked a merchant ship.", "ex_zh": "可怕的海盗袭击了一艘商船。", "notes": "", "n": 71}, {"word": "restrict", "meaning": "V.限制，限定；约束", "ex_en": "Don't restrict their proper activities", "ex_zh": "不要约束他们的正当活动。", "notes": "restriction n.限制；约束 be restricted to限于，局限于", "n": 72}, {"word": "restrain", "meaning": "认抑制；制止", "ex_en": "I can't restrain my an ger whe n I hear of some one animals", "ex_zh": "当我听到有人残酷地对待动物\n时，我抑制不住自己的怒火。 ］He who commits a fault thinks every one speaks\nof it.做贼心虚。", "notes": "restrain克制自己 ，如I: 字根strain和strict指“拉紧（to draw tight）” strain（拉紧；拉伤；紧张）；constrain（强迫，约束）； strict（拉紧，紧张-严格的；严厉的）；constrict（- 起拉紧-收缩）；restrict（往回拉紧t限制，限定）； district（被拉幵的部分t区域，地区；行政区）。 V.犯（罪），做（坏事） commitment n.承诺，保证；投入 commit an error做错事commit a crime犯罪 commit suicide自杀", "n": 73}, {"word": "sin", "meaning": "n.罪孽v.犯戒律", "ex_en": "She was baptised and she was pure and clean of sin", "ex_zh": "接受了洗礼的她纯洁清白。", "notes": "", "n": 74}, {"word": "crime", "meaning": "n.罪行；犯罪活动", "ex_en": "There is no proof that he was on the crime scene", "ex_zh": "没有证据证明他当时在犯罪现场。", "notes": "criminals罪犯adj.刑事的；犯罪的；不道德的 commit a crime犯罪", "n": 75}, {"word": "vice", "meaning": "n.恶行；缺点", "ex_en": "Virtue and vice are two different things:the former leads to peace, the latter to misery", "ex_zh": "美德与恶行是不同的：前者带来和平，后者导致痛苦。", "notes": "vice versa反之亦然", "n": 76}, {"word": "bribe", "meaning": "n.贿赂v.向……行贿", "ex_en": "The counterfeiter bribed the police officer to let restrict sin bribe restrain crime rob commit vice pirate", "ex_zh": "", "notes": "", "n": 77}, {"word": "rob", "meaning": "V.抢劫；夺走", "ex_en": "They were scheming to rob the bank", "ex_zh": "他们在密谋抢劫银行。", "notes": "robber n.强盗，盗贼robbery n.抢劫，劫掠 rob sb. of sth.抢劫某人的某物", "n": 78}, {"word": "pirate", "meaning": "n.海盗；盗版者 v.盗印，窃用", "ex_en": "The terrible pirates attacked a merchant ship.", "ex_zh": "可怕的海盗袭击了一艘商船。", "notes": "", "n": 79}, {"word": "steal", "meaning": "n.偷，窃取；剽窃", "ex_en": "The young man was sent to prison for stealing", "ex_zh": "这个年轻人由于偷窃被送入监狱。\n法律法规", "notes": "", "n": 80}, {"word": "trick", "meaning": "n.诡计 v.哄骗", "ex_en": "The children played a trick on their teacher.", "ex_zh": "孩子们捉弄了他们的老师。", "notes": "tricky adj.狡猾的；棘手的 tricker n.施诡计的人，骗子 play a trick on sb.耍花招捉弄某人", "n": 81}, {"word": "murder", "meaning": "n./v.谋杀", "ex_en": "There have been several murder cases this year", "ex_zh": "今年发生了好几起谋杀案。", "notes": "murderer n.杀人犯，凶手", "n": 82}, {"word": "suicide", "meaning": "n-自杀", "ex_en": "He attempted to commit suicide after his firm had gone bankrupt", "ex_zh": "他在公司破产后试图自杀。", "notes": "", "n": 83}, {"word": "deceive", "meaning": "v.欺骗；蒙蔽，误导", "ex_en": "Nobody can deceive me", "ex_zh": "谁也蒙不了我。", "notes": "deceit n.欺骗，欺诈 deceive sb. into doing sth.骗某人做某事", "n": 84}, {"word": "cheat", "meaning": "v.欺骗；作弊n.作弊者", "ex_en": "She always cheats at cards", "ex_zh": "她打牌时总是作弊。", "notes": "cheater n.骗子；背叛者 cheat sb.对某人不忠 on", "n": 85}, {"word": "fraud", "meaning": "n.骗子；應品；欺诈", "ex_en": "People who try to sell you something that can treat all diseases are frauds", "ex_zh": "试图卖给你包治百病的东西的人都是骗子。", "notes": "", "n": 86}, {"word": "reconcile", "meaning": "v.使和解；调和", "ex_en": "The estranged couple were reconciled after a year.", "ex_zh": "翻脸的那对夫妻一年以后又和好了。", "notes": "be reconciled with sb.与某人和解", "n": 87}, {"word": "trap", "meaning": "n.陷阱；诡计v.诱骗", "ex_en": "The police set a trap for the thieves", "ex_zh": "警察给窃贼们设下了圈套。", "notes": "", "n": 88}, {"word": "trick", "meaning": "n.诡计 v.哄骗", "ex_en": "The children played a trick on their teacher.", "ex_zh": "孩子们捉弄了他们的老师。", "notes": "tricky adj.狡猾的；棘手的 tricker n.施诡计的人，骗子 play a trick on sb.耍花招捉弄某人", "n": 89}, {"word": "pretend", "meaning": "V.假装；假扮", "ex_en": "The children pretended to be different animals and danced to the music", "ex_zh": "孩子们扮成不同的动物并随着音乐起舞。", "notes": "pretend to do sth.假装做某事 pretend sickness装病", "n": 90}, {"word": "fool", "meaning": "n.蠢人，傻子v.欺骗", "ex_en": "A fool's haste is no speed", "ex_zh": "欲速则不达。", "notes": "foolish adj.愚蠢的 make a fool of sb.愚弄某人", "n": 91}, {"word": "stigma", "meaning": "n.耻辱，污名", "ex_en": "It's a stigma to ask for money", "ex_zh": "要钱是一种耻辱。", "notes": "", "n": 92}, {"word": "confess", "meaning": "V.供认；忏悔", "ex_en": "The suspect confessed to the armed robbery", "ex_zh": "嫌疑犯供认自己进行了持械抢劫。", "notes": "confession n.招供，供词；承认", "n": 93}, {"word": "conform", "meaning": "V.遵守；顺从；相符合", "ex_en": "A coat must conform to the figure of the wearer", "ex_zh": "外套必须与穿衣者的身材相符合。", "notes": "", "n": 94}, {"word": "reconcile", "meaning": "v.使和解；调和", "ex_en": "The estranged couple were reconciled after a year.", "ex_zh": "翻脸的那对夫妻一年以后又和好了。", "notes": "be reconciled with sb.与某人和解", "n": 95}, {"word": "obey", "meaning": "V.服从，顺从", "ex_en": "The students obeyed the new teacher without hesitation", "ex_zh": "学生们毫不犹豫就服从了这位新老师。", "notes": "obedient adj.服从的，顺从的", "n": 96}, {"word": "succumb", "meaning": "V.屈服，屈从", "ex_en": "The president said his country would never succumb to pressure from other countries", "ex_zh": "总统说他的国家永远不会屈从于来自其他国家的压力。", "notes": "succumb to屈服于", "n": 97}, {"word": "access", "meaning": "n.通路，入径；查阅（或使用、接近）的机会（或权利）", "ex_en": "Citizens have free access to the library.", "ex_zh": "市民可以自由使用该图书馆。", "notes": "accessible adj.易到达的；易接近的 have/gain/get access to得以接近（或进入、查阅、使用）", "n": 98}, {"word": "mortgage", "meaning": "（ V.抵押（房屋、土地）借款1•房屋抵押贷款", "ex_en": "It is easy to get a mortgage on a house", "ex_zh": "办理房屋抵押贷款很容易。", "notes": "", "n": 99}, {"word": "ownership", "meaning": "n.所有权，物主身份", "ex_en": "", "ex_zh": "", "notes": "", "n": 100}, {"word": "copyright", "meaning": "n.版权", "ex_en": "He retained the copyright of his book", "ex_zh": "他保留了他这本书的版权。", "notes": "", "n": 101}, {"word": "privilege", "meaning": "n.特权", "ex_en": "The privilege was abused", "ex_zh": "这一特权被滥用了。", "notes": "", "n": 102}, {"word": "routine", "meaning": "n.例行公事；常规 adj.惯例的", "ex_en": "Our department holds a routine meeting every month.", "ex_zh": "我们部门每个月开一次例会。", "notes": "", "n": 103}, {"word": "clue", "meaning": "n-线索；提示", "ex_en": "The police found a clue which helped them robber", "ex_zh": "警察发现了一条线索，该线索帮助他\n们抓住了强盗。源自clew（线团）。传说中，古希腊英雄忒修斯（Theseus）\n自告奋勇去克里特岛除妖，牛头怪位于一座迷宫深处。为避免迷路，忒修斯在美女的帮助下带了一个线团闯入迷宫，标记走过的道路。最后，他杀死了牛头怪，并沿着线原路返回。因此，clew（线团）有了“线索”的含义。", "notes": "", "n": 104}, {"word": "access", "meaning": "n.通路，入径；查阅（或使用、接近）的机会（或权利）", "ex_en": "Citizens have free access to the library.", "ex_zh": "市民可以自由使用该图书馆。", "notes": "accessible adj.易到达的；易接近的 have/gain/get access to得以接近（或进入、查阅、使用）", "n": 105}, {"word": "anonymous", "meaning": "adj.匿名的", "ex_en": "He received an anonymous letter", "ex_zh": "他收到了一封匿名信。\n（name）”，如1:\n字根onym指“名字an（没有）+onym\n（名字）tanonym（匿名者）；ant（反）4-onym（名字）\nt antonym（反义词）；syn（相同的）+onym（名字）\nt synonym（同义词）。", "notes": "", "n": 106}, {"word": "false", "meaning": "adj.不正确的；虚假的；伪造的", "ex_en": "Cutting down on libraries seems a false economy to me", "ex_zh": "在我看来，减少图书馆的数量并不是真正的节约。", "notes": "falsehood n.谎言，假话；虚假，说谎", "n": 107}, {"word": "command", "meaning": "n.命令；指挥，控制；运用能力", "ex_en": "The army is under the king's command.", "ex_zh": "军队由国王指挥。", "notes": "commander n.长官，指挥官 have a good command of能自如地运用", "n": 108}, {"word": "instruct", "meaning": "v.指导，讲授；通知；命令", "ex_en": "The tour guide instructed the tourists in customs regulations.", "ex_zh": "导游向游客们说明了海关规则。", "notes": "instruction n.指示，命令；［~s］用法说明", "n": 109}, {"word": "routine", "meaning": "n.例行公事；常规 adj.惯例的", "ex_en": "Our department holds a routine meeting every month.", "ex_zh": "我们部门每个月开一次例会。", "notes": "", "n": 110}, {"word": "consequence", "meaning": "n-后果", "ex_en": "Your behaviour is of no great consequence", "ex_zh": "你的行为没有造成严重的后果。", "notes": "", "n": 111}, {"word": "demand", "meaning": "V.要求；需要n.要求；需求；需求量", "ex_en": "This work demands your patience", "ex_zh": "这项工作需要你很耐心。", "notes": "demanding adj.要求极严的，苛求的 demand for对...的需求", "n": 112}, {"word": "request", "meaning": "n./v.要求，请求", "ex_en": "We shall give your request our careful consideration", "ex_zh": "我们将仔细考虑你的请求。\nV.需要；命令，规定 You are required by law to wear a seat belt.\n根据法律规定，你应系上安全带。", "notes": "requirement n.需求，要求", "n": 113}, {"word": "require", "meaning": "v.需要；命令，规定", "ex_en": "You are required by law to wear a seat belt.", "ex_zh": "根据法律规定，你应系上安全带。", "notes": "requirement n.需求，要求", "n": 114}, {"word": "petition", "meaning": "V.请求n.请愿书；上诉", "ex_en": "The villagers all signed a petition for a hospital to be built", "ex_zh": "村民们都在请愿书上签名，要求建一所医院。字根pet指“寻求（to seek）\",如：appetite（寻求的情绪t食欲；强烈欲望），compete/competition（―\n竞争）, repetition（再次寻求t重复）, impetus（内部寻求t动量；促进），petitioner\n（寻求的人-请愿人）。", "notes": "", "n": 115}, {"word": "command", "meaning": "n.命令；指挥，控制；运用能力", "ex_en": "The army is under the king's command.", "ex_zh": "军队由国王指挥。", "notes": "commander n.长官，指挥官 have a good command of能自如地运用", "n": 116}, {"word": "instruct", "meaning": "v.指导，讲授；通知；命令", "ex_en": "The tour guide instructed the tourists in customs regulations.", "ex_zh": "导游向游客们说明了海关规则。", "notes": "instruction n.指示，命令；［~s］用法说明", "n": 117}];
+let curAudio = null;
+const AUDIO_DIR = 'audio/ch17';
+function play(id, suffix){
+  if (curAudio) curAudio.pause();
+  curAudio = new Audio(`${AUDIO_DIR}/${id}${suffix || ''}.mp3`);
+  if (typeof _dictHook === 'function') _dictHook();
+  curAudio.play();
+}
+function applyTheme(day){
+  document.body.classList.toggle('day', day);
+  document.getElementById('themeBtn').textContent = day ? '🌙 夜间' : '☀️ 日间';
+}
+function toggleTheme(){
+  const day = !document.body.classList.contains('day');
+  applyTheme(day);
+  try { localStorage.setItem('ielts_theme', day ? 'day' : 'night'); } catch(e) {}
+}
+applyTheme((() => { try { return localStorage.getItem('ielts_theme') === 'day'; } catch(e) { return false; } })());
+
+const esc = s => String(s == null ? '' : s);
+// 词性色: v→V红 adj→I粉 adv→绿 其余→N蓝; chip 显示词性, 释义里去掉词性缩写
+const POS_RE = /^(n\.|adj\.|adv\.|v\.|vi\.|vt\.)\s*/;
+function posOf(d){
+  const toks = [];
+  let m = d.meaning, t;
+  while ((t = m.match(POS_RE)) && toks.length < 2) { toks.push(t[1]); m = m.slice(t[0].length); }
+  return { toks, rest: m.trim() || d.meaning };
+}
+const posCls = p => p.startsWith('v') ? 'V' : p.startsWith('adj') ? 'I' : p.startsWith('adv') ? 'adv' : 'N';
+const chipOf = d => {
+  const { toks } = posOf(d);
+  if (!toks.length) return '';
+  const cls = posCls(toks[0]);
+  return `<span class="pos ${cls}">${toks.join(' ')}</span>`;
+};
+const meanOf = d => posOf(d).rest;
+
+const entryHtml = d => `
+  <div class="row1"><span class="num">${d.n}</span><span class="word" onclick="play(${d.n},'w')">${esc(d.word)}</span>${chipOf(d)}</div>
+  <div class="mean">${esc(meanOf(d))}</div>
+  ${d.ex_en ? `<div class="phrase"><span class="jp" onclick="play(${d.n},'e')">${esc(d.ex_en)}</span><span class="zh">${esc(d.ex_zh)}</span></div>` : ''}
+  ${d.notes ? `<div class="note-line">${esc(d.notes)}</div>` : ''}`;
+
+const list = document.getElementById('list');
+function render(){
+  list.innerHTML = '';
+  let colA = null, colB = null, alt = 0;
+  let row = document.createElement('div'); row.className = 'row2';
+  colA = document.createElement('div'); colA.className = 'col2';
+  colB = document.createElement('div'); colB.className = 'col2';
+  row.appendChild(colA); row.appendChild(colB); list.appendChild(row);
+  for (const d of DATA){
+    const card = document.createElement('div');
+    card.className = 'card c' + posCls((posOf(d).toks[0] || 'n'));
+    card.innerHTML = entryHtml(d);
+    (alt++ % 2 === 0 ? colA : colB).appendChild(card);
+  }
+  document.getElementById('count').textContent = DATA.length;
+}
+render();
+</script>
+
+<div id="dict">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
+  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
+  <div id="dictAns" class="hidden"></div>
+  <div class="dbtns">
+    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
+    <button class="hbtn" id="dictAuto" onclick="dictAutoToggle()">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+  </div>
+  <div style="opacity:.4;font-size:11px;">空格=重播 · →=下一个 · ←=上一个 · S=显示答案 · Esc=退出</div>
+</div>
+<script>
+/* ---- 听写 ---- */
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [];
+const DICT_DELAY = 3000;
+const dictWords = () => DATA;
+function dictToggle(){
+  dictOpen = !dictOpen;
+  document.getElementById('dict').classList.toggle('open', dictOpen);
+  if (dictOpen){ if (curAudio) curAudio.pause(); buildOrder(); dictCur = 0; showDict(); }
+  else { if (curAudio) curAudio.pause(); clearTimeout(dictT); }
+}
+function buildOrder(){
+  dictOrder = dictWords().map(d => d.n);
+  if (dictShuffleOn) for (let i = dictOrder.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [dictOrder[i], dictOrder[j]] = [dictOrder[j], dictOrder[i]]; }
+}
+const dictD = () => dictWords().find(d => d.n === dictOrder[dictCur]);
+let dictChain = false;
+const playCur = () => {
+  const d = dictD();
+  if (!d.ex_en) { play(d.n, 'w'); return; }
+  dictChain = true;
+  play(d.n, 'w');
+};
+const _dictHook = () => {
+  curAudio.onended = () => {
+    if (dictChain && dictD().ex_en) {
+      dictChain = false;
+      play(dictD().n, 'e');
+      curAudio.onended = () => { if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY); };
+    } else if (dictOpen && dictAuto) {
+      dictT = setTimeout(dictNext, DICT_DELAY);
+    }
+  };
+};
+function dictStep(dir){
+  clearTimeout(dictT); dictChain = false;
+  dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
+  showDict(); playCur();
+}
+const dictNext = () => dictStep(1);
+const dictPrev = () => dictStep(-1);
+function dictShuffle(){ dictShuffleOn = !dictShuffleOn; buildOrder(); dictCur = 0; showDict(); playCur(); }
+function dictAutoToggle(){
+  dictAuto = !dictAuto;
+  document.getElementById('dictAuto').textContent = '自动: ' + (dictAuto ? '开' : '关');
+  dictChain = false;
+  if (dictAuto) playCur();
+}
+function dictReveal(){
+  const ans = document.getElementById('dictAns');
+  if (ans.classList.contains('hidden')) { renderDictAns(); ans.classList.remove('hidden'); }
+  else ans.classList.add('hidden');
+}
+function renderDictAns(){
+  const ans = document.getElementById('dictAns');
+  const d = dictD();
+  ans.innerHTML = `<div class="dword">${esc(d.word)}</div><div class="dpos">${esc(d.m)}</div>` +
+    (d.ex_en ? `<div class="dph" onclick="play(${d.n},'e')">${esc(d.ex_en)}</div><div class="dphz">${esc(d.ex_zh)}</div>` : '');
+}
+function showDict(){
+  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  const ans = document.getElementById('dictAns');
+  ans.classList.add('hidden');
+  ans.innerHTML = '';
+}
+document.addEventListener('keydown', e => {
+  if (!dictOpen) return;
+  if (e.code === 'Space'){ e.preventDefault(); playCur(); }
+  else if (e.key === 'ArrowRight') dictNext();
+  else if (e.key === 'ArrowLeft') dictPrev();
+  else if (e.key === 's' || e.key === 'S') dictReveal();
+  else if (e.key === 'Escape') dictToggle();
+});
+</script>
+</body>
+</html>
