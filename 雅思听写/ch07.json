@@ -82,7 +82,7 @@
  {
   "word": "ethical",
   "meaning": "adj.伦理的，道德的",
-  "ex_en": "You can't divorce scienee from ethical questions",
+  "ex_en": "You can't divorce science from ethical questions.",
   "ex_zh": "不能把科学与伦理问题割裂开。",
   "notes": "",
   "n": 11
@@ -194,7 +194,7 @@
  {
   "word": "antique",
   "meaning": "n.古董adj.古董的",
-  "ex_en": "He wears designer clothes and drives an heritage inherit antique ―",
+  "ex_en": "He wears designer clothes and drives an antique car.",
   "ex_zh": "各化历史",
   "notes": "",
   "n": 25
@@ -274,7 +274,7 @@
  {
   "word": "belief",
   "meaning": "n.信念；信仰",
-  "ex_en": "His firmness in his beliefs supported him difficulties",
+  "ex_en": "His firmness in his beliefs supported him through difficulties.",
   "ex_zh": "他坚定的信仰支撑着他渡过困境。",
   "notes": "believe v.相信；认为",
   "n": 35
@@ -290,8 +290,8 @@
  {
   "word": "spirit",
   "meaning": "n.精神，心灵",
-  "ex_en": "We need a spirit of enterprise if we are to overcome difficulties",
-  "ex_zh": "如果要克服困难，我们就要有进取精神。\nour",
+  "ex_en": "We need a spirit of enterprise if we are to overcome our difficulties.",
+  "ex_zh": "如果要克服困难，我们就要有进取精神。",
   "notes": "spiritual adj.精神上的",
   "n": 37
  },
@@ -346,7 +346,7 @@
  {
   "word": "priest",
   "meaning": "n.牧师；神父；教士",
-  "ex_en": "The priest persuaded habit",
+  "ex_en": "The priest persuaded him to give up his bad habit.",
   "ex_zh": "牧师劝他放弃坏习惯。",
   "notes": "",
   "n": 44
@@ -442,9 +442,9 @@
  {
   "word": "chronology",
   "meaning": "n.年表，事件发生顺序表；年代学",
-  "ex_en": "It seems that the paper has conf used the chronology of these events",
-  "ex_zh": "这篇论文好像把这些事件发生的顺序搞混了。字根chron意为“时间（time）\",如：chronology（年代学；年表），chronic（长期的，慢性的）。希腊神话中宙斯\n（Zeus）的父亲叫克洛诺斯（Cronos）,因和希腊语中表示\n“时间”的词chronos在拼写和读音上很相似，后来被描述为时间之神。克洛诺斯害怕自己的子女推翻自己，曾吞食了自己的后代，就像时间的无情。正如谚语所说的：时间吞噬一切。",
-  "notes": "",
+  "ex_en": "It seems that the paper has confused the chronology of these events.",
+  "ex_zh": "这篇论文好像把这些事件发生的顺序搞混了。",
+  "notes": "字根chron意为\"时间（time）\"，如：chronology（年代学；年表），chronic（长期的，慢性的）。希腊神话中宙斯（Zeus）的父亲叫克洛诺斯（Cronos），因和希腊语中表示\"时间\"的词chronos在拼写和读音上很相似，后来被描述为时间之神。克洛诺斯害怕自己的子女推翻自己，曾吞食了自己的后代，就像时间的无情。正如谚语所说的：时间吞噬一切。",
   "n": 56
  },
  {

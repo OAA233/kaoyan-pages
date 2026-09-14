@@ -10,7 +10,7 @@
  {
   "word": "item",
   "meaning": "n.一件物品，一件商品",
-  "ex_en": "She could n't wedge ano ther item into the suitcase",
+  "ex_en": "She couldn't wedge another item into the suitcase.",
   "ex_zh": "她无法再往箱子里多塞东西了。",
   "notes": "",
   "n": 2
@@ -42,7 +42,7 @@
  {
   "word": "material",
   "meaning": "n.材料，原料；人才adj.物质的",
-  "ex_en": "There is sin ger material among these young girls",
+  "ex_en": "There is singer material among these young girls.",
   "ex_zh": "在这些年轻姑娘中有当歌手的料。",
   "notes": "",
   "n": 6
@@ -50,8 +50,8 @@
  {
   "word": "raw",
   "meaning": "adj.天然的，未经加工的；(感情)原始的",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "Today, the main sources of raw cotton are China and India.",
+  "ex_zh": "如今，主要的原棉产国是中国和印度。",
   "notes": "",
   "n": 7
  },
@@ -130,7 +130,7 @@
  {
   "word": "reuse",
   "meaning": "v.再次使用",
-  "ex_en": "These bottles are designed to be reused up to times",
+  "ex_en": "These bottles are designed to be reused up to 20 times.",
   "ex_zh": "这些瓶子被设计成可以重复使用多达20次。",
   "notes": "",
   "n": 17
@@ -162,7 +162,7 @@
  {
   "word": "landfill",
   "meaning": "n.垃圾填埋地；垃圾填埋",
-  "ex_en": "Americans send more than million tons of food to the landfill every year",
+  "ex_en": "Americans send more than 30 million tons of food to the landfill every year.",
   "ex_zh": "美国人每年将3000余万吨食物丢进垃圾填埋场。",
   "notes": "",
   "n": 21
@@ -194,7 +194,7 @@
  {
   "word": "shampoo",
   "meaning": "v.用洗发剂洗（头发）n.洗发剂",
-  "ex_en": "She hair and then put shampoo on wetted her it",
+  "ex_en": "She wetted her hair and then put shampoo on it.",
   "ex_zh": "她把头发弄湿，然后抹上洗发剂。",
   "notes": "",
   "n": 25
@@ -202,7 +202,7 @@
  {
   "word": "soap",
   "meaning": "n.肥皂v.用肥皂擦洗",
-  "ex_en": "Don't touch anything before you soap hands",
+  "ex_en": "Don't touch anything before you soap your hands.",
   "ex_zh": "没用肥皂洗手之前，什么都不要碰。",
   "notes": "a soap opera肥皂剧",
   "n": 26
@@ -210,7 +210,7 @@
  {
   "word": "tub",
   "meaning": "n.桶，盆；［美］浴缸，浴盆",
-  "ex_en": "She comforted her husband by putting his feet water",
+  "ex_en": "She comforted her husband by putting his feet in a tub of hot water.",
   "ex_zh": "她把丈夫的两只脚放在一桶热水\n中，使他舒服一些。",
   "notes": "",
   "n": 27
@@ -218,7 +218,7 @@
  {
   "word": "plug",
   "meaning": "n.塞子；插头v.把……塞住",
-  "ex_en": "You don't need to plug your ears since the music loud",
+  "ex_en": "You don't need to plug your ears since the music is not so loud.",
   "ex_zh": "你不用塞住耳朵，音乐又不是很吵。",
   "notes": "",
   "n": 28
@@ -226,16 +226,16 @@
  {
   "word": "tap",
   "meaning": "n.旋塞，龙头",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "He rigged a rubber hose to the tap in the kitchen.",
+  "ex_zh": "他将一条橡皮软管安装在厨房的水龙头上。",
   "notes": "",
   "n": 29
  },
  {
   "word": "pipe",
   "meaning": "n.管子，管道；烟斗",
-  "ex_en": "All through the after noon and the eve ning, he went on thinking silently, and smoking pipe after pipe",
-  "ex_zh": "整个下午乃至傍晚，他都一声不吭地思考着，抽了\n—烟斗又一烟斗的烟。",
+  "ex_en": "All through the afternoon and the evening, he went on thinking silently, and smoking pipe after pipe.",
+  "ex_zh": "整个下午乃至傍晚，他都一声不吭地思考着，抽了一烟斗又一烟斗的烟。",
   "notes": "peline n.管道，管线",
   "n": 30
  },
@@ -386,23 +386,23 @@
  {
   "word": "shave",
   "meaning": "v.剃须，刮脸",
-  "ex_en": "I started to shave",
-  "ex_zh": "我在脸\n上打了肥皂，然后开始刮胡子。",
+  "ex_en": "I lathered my face and started to shave.",
+  "ex_zh": "我在脸上打了肥皂，然后开始刮胡子。",
   "notes": "shaver n.理发师；电动剃须刀",
   "n": 49
  },
  {
   "word": "fuse",
   "meaning": "n.保险丝；导火线v.（使）熔化；（使）融合",
-  "ex_en": "We and tin to make bronze",
-  "ex_zh": "我们把\n铜和锡熔制成青铜。",
+  "ex_en": "We fuse copper and tin to make bronze.",
+  "ex_zh": "我们把铜和锡熔制成青铜。",
   "notes": "",
   "n": 50
  },
  {
   "word": "cable",
   "meaning": "n.电缆；缆绳，钢索；电报；有线电视",
-  "ex_en": "This country has almost million subscribers to satellite and cable television",
+  "ex_en": "This country has almost 15 million subscribers to satellite and cable television.",
   "ex_zh": "该国有将近1500万卫星电视和有线电视用户。",
   "notes": "a cable car缆车",
   "n": 51
@@ -594,7 +594,7 @@
  {
   "word": "tag",
   "meaning": "n.标签；称号",
-  "ex_en": "Don't forget to put tags suitcases",
+  "ex_en": "Don't forget to put tags with your name and address on your suitcases.",
   "ex_zh": "别忘了在你的箱子上贴上\n写有你的姓名和住址的标签。",
   "notes": "",
   "n": 75
@@ -650,7 +650,7 @@
  {
   "word": "curtain",
   "meaning": "n.窗帘；帘；幕布 v.给……装上帘子",
-  "ex_en": "I have eno ugh material to curtain all the windows",
+  "ex_en": "I have enough material to curtain all the windows.",
   "ex_zh": "我有足够的料子，可以给所有窗户都挂上窗帘。",
   "notes": "",
   "n": 82
@@ -658,7 +658,7 @@
  {
   "word": "pane",
   "meaning": "n.（—块）窗玻璃",
-  "ex_en": "He suffered a lot of pain after he accidentally broke glass",
+  "ex_en": "He suffered a lot of pain after he accidentally broke a pane of glass.",
   "ex_zh": "他意外将一块窗玻璃打碎后，疼痛万分。",
   "notes": "",
   "n": 83
@@ -666,8 +666,8 @@
  {
   "word": "opacity",
   "meaning": "n.不透明性",
-  "ex_en": "They have chosen the frosted opacity",
-  "ex_zh": "他们选择了这种磨砂玻璃，因为它不透明。\nits I can't get the lid off this jar.我打不开这个广口瓶的盖子。",
+  "ex_en": "They have chosen the frosted glass owing to its opacity.",
+  "ex_zh": "他们选择了这种磨砂玻璃，因为它不透明。",
   "notes": "opaque n.不透明物adj.不透明的 jar 心。:/ ii.罐，广口瓶；猛烈震动",
   "n": 84
  },
@@ -682,7 +682,7 @@
  {
   "word": "bucket",
   "meaning": "n.（有提手的）桶",
-  "ex_en": "One bucket of paint will be eno ugh for the ceiling",
+  "ex_en": "One bucket of paint will be enough for the ceiling.",
   "ex_zh": "刷天花板，一桶油漆足够用了。",
   "notes": "a drop in the bucket沧海一粟 jar",
   "n": 86
@@ -714,32 +714,32 @@
  {
   "word": "camera",
   "meaning": "n.照相机",
-  "ex_en": "You'd better declare the camera to the official. n",
-  "ex_zh": "扇子；风扇；狂你最好向海关官员申报这台照相机。 He",
+  "ex_en": "You'd better declare the camera to the official.",
+  "ex_zh": "你最好向海关官员申报这台照相机。",
   "notes": "a built-in camera（手机）内置照相机of 的支持者行列。",
   "n": 90
  },
  {
   "word": "portable",
   "meaning": "adj.手提式的，便携式的switch",
-  "ex_en": "The new portable computers are selling like n",
-  "ex_zh": "开关；转\nhot cakes.这款新的便携式电脑十分畅销。开关，看看灯会不会亮。",
+  "ex_en": "The new portable computers are selling like hot cakes.",
+  "ex_zh": "这款新的便携式电脑十分畅销。",
   "notes": "",
   "n": 91
  },
  {
   "word": "spotlight",
   "meaning": "n.聚光灯；聚光灯照出的光圈hurdle",
-  "ex_en": "The spotlight followed the dancer round the n",
-  "ex_zh": "栏架；跨栏赛跑\nstage.聚光灯的光圈追随着舞者在舞台上转。",
+  "ex_en": "The spotlight followed the dancer round the stage.",
+  "ex_zh": "聚光灯的光圈追随着舞者在舞台上转。",
   "notes": "",
   "n": 92
  },
  {
   "word": "lantern",
   "meaning": "她能在跨栏赛跑中击败所有对手。 n.提灯，灯笼",
-  "ex_en": "The Ice Lantern Festival held in Harbin every fence winter is fantastic",
-  "ex_zh": "哈尔滨每年冬天举办的冰灯节非常棒。n.栅栏；围栏",
+  "ex_en": "The Ice Lantern Festival held in Harbin every winter is fantastic.",
+  "ex_zh": "哈尔滨每年冬天举办的冰灯节非常棒。",
   "notes": "",
   "n": 93
  },
@@ -762,8 +762,8 @@
  {
   "word": "refrigerator",
   "meaning": "n.冰箱bell lantern",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "My refrigerator suddenly broke down yesterday evening.",
+  "ex_zh": "我的冰箱昨晚突然出了故障。",
   "notes": "",
   "n": 96
  },
@@ -802,8 +802,8 @@
  {
   "word": "ladder",
   "meaning": "n.梯子；（进步、晋升等的）阶梯",
-  "ex_en": "Diligence success",
-  "ex_zh": "勤奋常常\n是通往成功的阶梯。",
+  "ex_en": "Diligence is often a ladder to success.",
+  "ex_zh": "勤奋常常 是通往成功的阶梯。",
   "notes": "climb爬梯子",
   "n": 101
  },
@@ -858,7 +858,7 @@
  {
   "word": "can",
   "meaning": "v.把（食品）装罐保存n.罐头，听",
-  "ex_en": "She was carrying an armful of cat-food cans and herself",
+  "ex_en": "She was carrying an armful of cat-food cans and talking to herself.",
   "ex_zh": "她正抱着一堆猫食罐头自言自语。",
   "notes": "",
   "n": 108
@@ -978,16 +978,16 @@
  {
   "word": "plastic",
   "meaning": "n.棉；棉线；棉布 n.塑料adj.有塑性的；塑料的",
-  "ex_en": "The Many items in daily use are made out of plastic",
-  "ex_zh": "棉花已摘下来，并已称重。很多日常生活用品是塑料制的。",
+  "ex_en": "Many items in daily use are made out of plastic.",
+  "ex_zh": "很多日常生活用品是塑料制的。",
   "notes": "",
   "n": 123
  },
  {
   "word": "fibre",
   "meaning": "（=fiber）n.纤维；纤维素",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "Scientists are recommending that people eat more fibre.",
+  "ex_zh": "科学家建议人们多吃些纤维素。",
   "notes": "",
   "n": 124
  },
@@ -1034,7 +1034,7 @@
  {
   "word": "nylon",
   "meaning": "n.尼龙",
-  "ex_en": "This dress is 80%nylon.",
+  "ex_en": "This dress is 80% nylon.",
   "ex_zh": "这件连衣裙的料子含有80%的尼龙。",
   "notes": "",
   "n": 130
@@ -1050,7 +1050,7 @@
  {
   "word": "wooden",
   "meaning": "adj.木制的；呆板的",
-  "ex_en": "re is a wooden porch over the sidewalk",
+  "ex_en": "There is a wooden porch over the sidewalk.",
   "ex_zh": "人行道上有一个木制的门廊。",
   "notes": "",
   "n": 132
@@ -1074,7 +1074,7 @@
  {
   "word": "fuel",
   "meaning": "n.燃料v.给……加燃料",
-  "ex_en": "We aim for a 10%saving in fuel",
+  "ex_en": "We aim for a 10% saving in fuel.",
   "ex_zh": "我们的目标是节省10%的燃料。",
   "notes": "add fuel to给...加燃料burn up fuel烧完燃料lack fuel缺少燃料",
   "n": 135
@@ -1090,7 +1090,7 @@
  {
   "word": "diamond",
   "meaning": "n.金刚石，钻石；菱形",
-  "ex_en": "The diamond ring on her fin ger glittered in the light",
+  "ex_en": "The diamond ring on her finger glittered in the light.",
   "ex_zh": "她手指上的钻石戒指在光下闪闪发光。",
   "notes": "",
   "n": 137
@@ -1122,8 +1122,8 @@
  {
   "word": "fake",
   "meaning": "adj.假冒的n.冒充者；假货",
-  "ex_en": "On closer exami nation, the painti ng was proved to be a fake",
-  "ex_zh": "经过更仔细的检查，那幅画被证实是贋品。",
+  "ex_en": "On closer examination, the painting was proved to be a fake.",
+  "ex_zh": "经过更仔细的检查，那幅画被证实是赝品。",
   "notes": "",
   "n": 141
  },

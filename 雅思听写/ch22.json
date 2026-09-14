@@ -10,7 +10,7 @@
  {
   "word": "monthly",
   "meaning": "adj.每月的adv.每月一次n.月刊",
-  "ex_en": "The comm on monthly publicati ons can be found in the library",
+  "ex_en": "The common monthly publications can be found in the library.",
   "ex_zh": "这家图书馆里有那些常见的月刊。",
   "notes": "",
   "n": 2
@@ -26,7 +26,7 @@
  {
   "word": "annual",
   "meaning": "adj.每年的；一年的n.年报",
-  "ex_en": "The firm has an annual turnover of million pounds",
+  "ex_en": "The firm has an annual turnover of 800 million pounds.",
   "ex_zh": "这家公司的年营业额为8亿英镑。",
   "notes": "annual bonus年终分红annual earnings年收益",
   "n": 4
@@ -34,8 +34,8 @@
  {
   "word": "yearly",
   "meaning": "adj.每年的；一年的adv.每年地",
-  "ex_en": "The yearly conference will be held next month",
-  "ex_zh": "度的父母是不受年轻人欢迎的。年会将于下个月举行。",
+  "ex_en": "The yearly conference will be held next month.",
+  "ex_zh": "年会将于下个月举行。",
   "notes": "yearly capacity年产量century n.世纪；百年",
   "n": 5
  },
@@ -74,8 +74,8 @@
  {
   "word": "era",
   "meaning": "n.时代，年代，纪元n.—打，十二个；十来个",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "We are living in the information era.",
+  "ex_zh": "我们正生活在信息时代。",
   "notes": "",
   "n": 10
  },
@@ -106,7 +106,7 @@
  {
   "word": "medieval",
   "meaning": "adj.中世纪的；守旧的",
-  "ex_en": "Parents with a medieval attitude toward dating are not popular young",
+  "ex_en": "Parents with a medieval attitude toward dating are not popular with the young.",
   "ex_zh": "对于约会抱有守旧态",
   "notes": "",
   "n": 14
@@ -202,7 +202,7 @@
  {
   "word": "finally",
   "meaning": "adv.最后；终于；决定性地",
-  "ex_en": "Today, I finally get to look at the man that I love say,\"Will you please marry me?\"",
+  "ex_en": "Today, I finally get to look at the man that I love and finally say, \"Will you please marry me? \"",
   "ex_zh": "今天，\n我终于可以看着我心爱的男人，终于可以说：“你愿意和我结婚吗？”\nV.完成；结束n.结尾，最后部分\n你什么时候完成大学课程？",
   "notes": "",
   "n": 26
@@ -218,16 +218,16 @@
  {
   "word": "immediately",
   "meaning": "adv.立即；直接地",
-  "ex_en": "I will then immediately send the application process begins",
-  "ex_zh": "然后，我会立即发送确认书，申请流程就启动了。",
+  "ex_en": "I will then immediately send confirmation and the application process begins.",
+  "ex_zh": "随后我会立刻发出确认函，申请流程就开始了。",
   "notes": "",
   "n": 28
  },
  {
   "word": "instant",
   "meaning": "n.瞬间adj.立即的",
-  "ex_en": "Just for an instant I refuse",
-  "ex_zh": "有那么一瞬间，我以为她要拒绝了。\n，",
+  "ex_en": "Just for an instant I thought she was going to refuse.",
+  "ex_zh": "有那么一瞬间我以为她要拒绝了。",
   "notes": "instantly adv.立即即刻 immediately蜜",
   "n": 29
  },
@@ -402,7 +402,7 @@
  {
   "word": "periodically",
   "meaning": "adv.周期性地，定期地",
-  "ex_en": "Sea mammals must breathe",
+  "ex_en": "Sea mammals must emerge periodically to breathe.",
   "ex_zh": "海生哺乳动物必须定时浮出海面呼吸。",
   "notes": "period n.时期",
   "n": 51
@@ -410,7 +410,7 @@
  {
   "word": "imminent",
   "meaning": "adj.（尤指不愉快的事）即将发生的，逼近的",
-  "ex_en": "They are unaware of the imminent dan ger",
+  "ex_en": "They are unaware of the imminent danger.",
   "ex_zh": "他们没察觉到正在逼近的危险。",
   "notes": "",
   "n": 52

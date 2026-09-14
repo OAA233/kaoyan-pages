@@ -34,8 +34,8 @@
  {
   "word": "attitude",
   "meaning": "n.态度，看法",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "We must maintain a firm attitude.",
+  "ex_zh": "我们必须保持坚定的态度。",
   "notes": "",
   "n": 5
  },
@@ -106,23 +106,23 @@
  {
   "word": "human",
   "meaning": "adj.人类的；有人性的n.人类",
-  "ex_en": "The caused by human error",
-  "ex_zh": "这起\n事故是人为过失造成的。",
+  "ex_en": "The accident was caused by human error.",
+  "ex_zh": "这起事故是人为过失造成的。",
   "notes": "",
   "n": 14
  },
  {
   "word": "bone",
   "meaning": "n.骨；骨骼",
-  "ex_en": "Once difficult cancer has spread to the bone, it's treat",
-  "ex_zh": "癌症一旦蔓延到骨头里，就很难治愈。\nto",
+  "ex_en": "Once cancer has spread to the bone, it's difficult to treat.",
+  "ex_zh": "癌症一旦蔓延到骨头里，就很难治愈。",
   "notes": "",
   "n": 15
  },
  {
   "word": "backbone",
   "meaning": "n.脊柱；骨干，中坚；骨气",
-  "ex_en": "The bachelors are the backbone of this comm unity",
+  "ex_en": "The bachelors are the backbone of this community.",
   "ex_zh": "这些单身汉是这个团体的中坚力量。",
   "notes": "",
   "n": 16
@@ -170,8 +170,8 @@
  {
   "word": "mental",
   "meaning": "adj.精神的，思想上的；智力的",
-  "ex_en": "He arithmetic",
-  "ex_zh": "他用心\\\n算得出了答案。",
+  "ex_en": "He got the answer by mental arithmetic.",
+  "ex_zh": "他用心\\ 算得出了答案。",
   "notes": "",
   "n": 22
  },
@@ -338,7 +338,7 @@
  {
   "word": "fist",
   "meaning": "n.拳头，拳",
-  "ex_en": "We will extend the hand, if you're willing to fist",
+  "ex_en": "We will extend the hand, if you're willing to unclench your fist.",
   "ex_zh": "我们愿意伸出友谊之手，前提是你\n愿意松开你的拳头。",
   "notes": "",
   "n": 43
@@ -442,8 +442,8 @@
  {
   "word": "intestine",
   "meaning": "n.肠",
-  "ex_en": "Each day, to litres of water enter the small intestine",
-  "ex_zh": "每天有7至10升水进入小肠。",
+  "ex_en": "Each day, 7 to 10 litres of water enter the small intestine.",
+  "ex_zh": "每天有7 至10升水进入小肠。",
   "notes": "",
   "n": 56
  },
@@ -474,8 +474,8 @@
  {
   "word": "lap",
   "meaning": "n.（人坐着时的）大腿部；下摆；环节；一圈",
-  "ex_en": "They are on the world",
-  "ex_zh": "他们的环球旅行已到最后一个环节。\nthe",
+  "ex_en": "They are on the last lap of their journey round the world.",
+  "ex_zh": "他们的环球旅行已到最后一个环节。",
   "notes": "",
   "n": 60
  },
@@ -498,8 +498,8 @@
  {
   "word": "toe",
   "meaning": "n.脚趾，足尖 stone.他被一块尖",
-  "ex_en": "He cut his big toe on a sharp gland joint chamber knee",
-  "ex_zh": "",
+  "ex_en": "He cut his big toe on a sharp stone.",
+  "ex_zh": "他被一块尖 利的石头割破了大脚趾。",
   "notes": "",
   "n": 63
  },
@@ -514,7 +514,7 @@
  {
   "word": "pore",
   "meaning": "n.毛孔；小孔，气孔v.凝视；沉思",
-  "ex_en": "beamed and laughed, and in the exuberanee of his delight sweated at every pore",
+  "ex_en": "He beamed and laughed, and in the exuberance of his delight sweated at every pore.",
   "ex_zh": "他笑着，兴高采烈，每一个汗毛孔都在冒汗。",
   "notes": "",
   "n": 65
@@ -530,7 +530,7 @@
  {
   "word": "artery",
   "meaning": "n.动脉；干线",
-  "ex_en": "Any beat of the heart might open the artery spray the brain with blood",
+  "ex_en": "Any beat of the heart might open the artery and spray the brain with blood.",
   "ex_zh": "每一次心脏跳动会使\nand\n动脉舒张，向大脑供血。",
   "notes": "vein n.静脉",
   "n": 67
@@ -698,8 +698,8 @@
  {
   "word": "nap",
   "meaning": "n.小睡；绒毛",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "It's my habit to take a nap at noon.",
+  "ex_zh": "中午小睡一会儿是我的习惯。",
   "notes": "",
   "n": 88
  },
@@ -850,8 +850,8 @@
  {
   "word": "invalid",
   "meaning": "n.病弱者，伤残者 adj.病弱的，伤残的",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The old lady resented being treated as an invalid.",
+  "ex_zh": "这位老妇人讨厌被当作病弱者对待。",
   "notes": "",
   "n": 107
  },
@@ -914,7 +914,7 @@
  {
   "word": "dizzy",
   "meaning": "adj.头晕目眩的，眩晕的v.使眩晕",
-  "ex_en": "The old woman was wind",
+  "ex_en": "The old woman was dizzied by the strong wind.",
   "ex_zh": "那位老太太被强风吹得头昏眼花。",
   "notes": "",
   "n": 115
@@ -938,7 +938,7 @@
  {
   "word": "allergy",
   "meaning": "n.敏感症；过敏性",
-  "ex_en": "People with allergies and other respiratory and paralyse insomnia dizzy allergy insane",
+  "ex_en": "People with allergies and other respiratory and heart ailments may be more seriously affected.",
   "ex_zh": "",
   "notes": "",
   "n": 118
@@ -946,7 +946,7 @@
  {
   "word": "heart attack",
   "meaning": "n.心脏病发作",
-  "ex_en": "Heart attack is a sudden severe in stance of abnormal heart function",
+  "ex_en": "Heart attack is a sudden severe instance of abnormal heart function.",
   "ex_zh": "心脏病发作是一种突发性的、严重的心脏功能异常情况。",
   "notes": "",
   "n": 119
@@ -1066,7 +1066,7 @@
  {
   "word": "lethal",
   "meaning": "adj.致命的",
-  "ex_en": "This pesticide is not only lethal to pests, but dangerous for your pets.",
+  "ex_en": "This pesticide is not only lethal to pests, but also dangerous for your pets.",
   "ex_zh": "该杀虫剂不仅对害虫致命，也对你的宠物有害。",
   "notes": "",
   "n": 134
@@ -1090,7 +1090,7 @@
  {
   "word": "tire",
   "meaning": "v.（使）感到疲劳；厌烦",
-  "ex_en": "My legs began to tire after half an hour's workout.",
+  "ex_en": "My legs began to tire after half an hour's aerobic workout.",
   "ex_zh": "在半个小时的有氧锻炼后，我的双腿开始感到疲劳了。",
   "notes": "tired adj.疲倦的",
   "n": 137
@@ -1106,7 +1106,7 @@
  {
   "word": "pain",
   "meaning": "n.痛苦；疼痛 v.使痛苦",
-  "ex_en": "His leg was broken and he suffered great pain. knowledge",
+  "ex_en": "His leg was broken and he suffered great pain.",
   "ex_zh": "他的腿断了，他感到非常疼痛。",
   "notes": "painful adj.痛苦的；疼痛的；费力的",
   "n": 139
@@ -1122,8 +1122,8 @@
  {
   "word": "mortal",
   "meaning": "adj.必死的；致命的fi.凡人，人类aerobic",
-  "ex_en": "］ It is an in disputable fact that man is mortal",
-  "ex_zh": "开始感到疲劳了。人都会死，这是无可争辩的事实。",
+  "ex_en": "It is an indisputable fact that man is mortal.",
+  "ex_zh": "人都会死，这是无可争辩的事实。",
   "notes": "",
   "n": 141
  },
@@ -1146,15 +1146,15 @@
  {
   "word": "fatal",
   "meaning": "adj.致命的；毁灭性的；决定性的",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The fatal hour has come.",
+  "ex_zh": "关键时刻终于来了。",
   "notes": "",
   "n": 144
  },
  {
   "word": "lethal",
   "meaning": "adj.致命的",
-  "ex_en": "This pesticide is not only lethal to pests, but dangerous for your pets.",
+  "ex_en": "This pesticide is not only lethal to pests, but also dangerous for your pets.",
   "ex_zh": "该杀虫剂不仅对害虫致命，也对你的宠物有害。",
   "notes": "",
   "n": 145
@@ -1178,7 +1178,7 @@
  {
   "word": "tire",
   "meaning": "v.（使）感到疲劳；厌烦",
-  "ex_en": "My legs began to tire after half an hour's workout.",
+  "ex_en": "My legs began to tire after half an hour's aerobic workout.",
   "ex_zh": "在半个小时的有氧锻炼后，我的双腿开始感到疲劳了。",
   "notes": "tired adj.疲倦的",
   "n": 148
@@ -1354,24 +1354,24 @@
  {
   "word": "curative",
   "meaning": "adj.治疗的 n.药品",
-  "ex_en": "What This herb was once thought to be curative",
-  "ex_zh": "决的事就得去忍耐。这种药草曾被认为有治疗作用。",
+  "ex_en": "This herb was once thought to be curative.",
+  "ex_zh": "这种药草曾被认为有治疗作用。",
   "notes": "",
   "n": 170
  },
  {
   "word": "hygiene",
   "meaning": "v.治愈；愈合 n.卫生（学）；保健（学）",
-  "ex_en": "The Wash yourself regularly to ensure personal",
-  "ex_zh": "这可怕的伤口费了很长时间才愈合。\nhygiene.经常洗澡以确保个入卫生。 A\n学、治愈或恢复活力。如今，蛇与手杖已成为欧洲医药卫\nhis\n生的标志，看看任意一所医药大学的校徽。都大有裨益。",
+  "ex_en": "Wash yourself regularly to ensure personal hygiene.",
+  "ex_zh": "经常洗澡以确保个入卫生。",
   "notes": "源自健康女神许癸厄亚（Hygieia）, 她的形象是个年轻女子，身着白色长衣（白大褂），头戴祭司冠，用饭碗喂 着一条蛇。她的老爸医神阿斯克勒庇俄斯（Asclepius） n.治疗，疗法；待遇则经常拿着有巨蛇缠绕的手杖。手杖和蛇或许象征着医 treat",
   "n": 171
  },
  {
   "word": "fitness",
   "meaning": "n.健康；适合",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The long climb tested our fitness and stamina.",
+  "ex_zh": "那次长距离爬山是对我们的健康状况和耐力的考验。",
   "notes": "",
   "n": 172
  },
@@ -1522,8 +1522,8 @@
  {
   "word": "medicine",
   "meaning": "n.药；医学",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "I have a stomachache. May I have some medicine?",
+  "ex_zh": "我胃痛，能给我开点药吗？",
   "notes": "",
   "n": 191
  },
@@ -1562,24 +1562,24 @@
  {
   "word": "acupuncture",
   "meaning": "n.针灸，中医针灸疗法",
-  "ex_en": "The Do you believe in Chinese acupuncture?",
-  "ex_zh": "你相信the\n中国的针灸疗法吗？",
+  "ex_en": "Do you believe in Chinese acupuncture?",
+  "ex_zh": "你相信中国的针灸疗法吗？",
   "notes": "v.刺破，刺穿",
   "n": 196
  },
  {
   "word": "penicillin",
   "meaning": "v.重新开始，（中断后）继续 n.青霉素",
-  "ex_en": "We He gave me a second shot of penicillin",
-  "ex_zh": "他给我们继续工作。打了第二针青霉素。",
+  "ex_en": "He gave me a second shot of penicillin.",
+  "ex_zh": "他给我打了第二针青霉素。",
   "notes": "",
   "n": 197
  },
  {
   "word": "morphine",
   "meaning": "v.减轻，放松，缓 n.吗啡",
-  "ex_en": "He remedy acupuncture drug penicillin",
-  "ex_zh": "",
+  "ex_en": "Morphine, like cocaine, is addictive.",
+  "ex_zh": "吗啡和可卡 因一样，容易让人上瘾。",
   "notes": "",
   "n": 198
  },
@@ -1594,8 +1594,8 @@
  {
   "word": "recovery",
   "meaning": "v.重新得到；恢复（健康、知觉、情绪",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "We are surprised by the speed of her recovery.",
+  "ex_zh": "她恢复得那么快，我们都有些惊讶。",
   "notes": "",
   "n": 200
  },
@@ -1618,7 +1618,7 @@
  {
   "word": "relieve",
   "meaning": "v.救济；减轻，解除（痛苦、不快等）",
-  "ex_en": "The government acted quickly to relieve the distress caused by the earthquake.",
+  "ex_en": "The government acted quickly to relieve the widespread distress caused by the earthquake.",
   "ex_zh": "地震造成大范围的危难，政府迅速采取了救济行动。",
   "notes": "",
   "n": 203
@@ -1722,7 +1722,7 @@
  {
   "word": "negative",
   "meaning": "adj.怀疑的；消极的",
-  "ex_en": "Petroleum extraction can have a negative environment",
+  "ex_en": "Petroleum extraction can have a negative impact on the environment.",
   "ex_zh": "开采石油可对环境造成负",
   "notes": "",
   "n": 216
@@ -1914,7 +1914,7 @@
  {
   "word": "keen",
   "meaning": "adj.强烈的；敏锐的；渴望的；［尤英］有强烈兴趣的",
-  "ex_en": "They are rather keen woollens",
+  "ex_en": "They are rather keen on your new-type woollens.",
   "ex_zh": "他们对你的新型毛衣颇感兴趣。",
   "notes": "",
   "n": 240
@@ -1962,8 +1962,8 @@
  {
   "word": "surprising",
   "meaning": "adj.令人惊讶的，岀人意料的",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "It is surprising that a man like that was elected.",
+  "ex_zh": "那样的人竟然当选了，真是令人惊讶。",
   "notes": "",
   "n": 246
  },
@@ -2050,16 +2050,16 @@
  {
   "word": "polite",
   "meaning": "n.诚实，正直 adj.有礼貌的；客气的",
-  "ex_en": "I It is not polite of you to cut the speaker off",
-  "ex_zh": "我很尊重你。你打断了发言者的讲话，这是不礼貌的。",
+  "ex_en": "It is not polite of you to cut the speaker off.",
+  "ex_zh": "你打断了发言者的讲话，这是不礼貌的。",
   "notes": "in impolite adj.没有礼貌的，粗鲁的",
   "n": 257
  },
  {
   "word": "frank",
   "meaning": "adj.骄傲的，自豪的；令人自豪的 adj.坦白的，直率的",
-  "ex_en": "It A frank discussion can help clear the air",
-  "ex_zh": "坦率trophy.我们夺得奖杯那一天是令我们自豪的日子。的讨论有助于化解紧张状态。",
+  "ex_en": "A frank discussion can help clear the air.",
+  "ex_zh": "坦率的讨论有助于化解紧张状态。",
   "notes": "雅思词汇奠经humorous",
   "n": 258
  },
@@ -2178,7 +2178,7 @@
  {
   "word": "freedom",
   "meaning": "n.自由，独立自主",
-  "ex_en": "By persistenee, many countries won freedom",
+  "ex_en": "By persistence, many countries won freedom.",
   "ex_zh": "通过坚持不懈的努力，许多国家赢得了自由。",
   "notes": "free adj.自由的；免费的；空闲的freely adv.自由地；直率地",
   "n": 273
@@ -2362,9 +2362,9 @@
  {
   "word": "robust",
   "meaning": "adj.强壮的，强健的",
-  "ex_en": "His robust st re ngth was a counterpoise to the disease",
-  "ex_zh": "他身体强壮，缓解了该疾病的影响。著名饮料品牌“乐百氏\"的英文名就是Robust.中文名是该词的音译。",
-  "notes": "",
+  "ex_en": "His robust strength was a counterpoise to the disease.",
+  "ex_zh": "他身体强壮，缓解了该疾病的影响。",
+  "notes": "著名饮料品牌\"乐百氏\"的英文名就是Robust，中文名是该词的音译。",
   "n": 296
  },
  {
@@ -2386,7 +2386,7 @@
  {
   "word": "tender",
   "meaning": "adj.脆弱的；温柔的；软弱的；疼痛的v.（正式）提出；投标",
-  "ex_en": "My fin ger is tender because I cut it on a piece of glass yesterday",
+  "ex_en": "My finger is tender because I cut it on a piece of glass yesterday.",
   "ex_zh": "我的手指昨天被玻璃割破了，现在一碰就疼。",
   "notes": "tender for投标",
   "n": 299
@@ -2522,8 +2522,8 @@
  {
   "word": "similar",
   "meaning": "adj.相似的，类似的",
-  "ex_en": "I know how you feel, because had a similar experience myself",
-  "ex_zh": "我了解你的感受，因为我自己也有过类似的经历。",
+  "ex_en": "I know how you feel, because I've had a similar experience myself.",
+  "ex_zh": "我理解你的感受，因为我自己也有过类似的经历。",
   "notes": "similarity n.相似点similarly adv.相似地，类似地 be similar to与...相似 （like）”，如：similar 字根simi/sim u指“相似（类似的），simile（类似的东西t明喻），assimilate（使成为类似t吸收；使同化），dissimilate（使变得不同t 异化），simulate（模仿；假装），simultaneous（同时发生的）。",
   "n": 316
  },
@@ -2594,7 +2594,7 @@
  {
   "word": "adverse",
   "meaning": "adj.敌对的，不友好的；不利的",
-  "ex_en": "This new policy will have an adverse effect on our project.",
+  "ex_en": "This policy will have an adverse effect on our new project.",
   "ex_zh": "该政策会对我们的新工程有不利影响。",
   "notes": "adversary n.敌手，对手",
   "n": 325
@@ -2778,8 +2778,8 @@
  {
   "word": "hatred",
   "meaning": "n.憎恶，憎恨，仇恨",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "His words stirred up my hatred.",
+  "ex_zh": "他的话激起了我的仇恨。",
   "notes": "",
   "n": 348
  },
@@ -2842,7 +2842,7 @@
  {
   "word": "adverse",
   "meaning": "adj.敌对的，不友好的；不利的",
-  "ex_en": "This new policy will have an adverse effect on our project.",
+  "ex_en": "This policy will have an adverse effect on our new project.",
   "ex_zh": "该政策会对我们的新工程有不利影响。",
   "notes": "adversary n.敌手，对手",
   "n": 356
@@ -2850,7 +2850,7 @@
  {
   "word": "hostile",
   "meaning": "adj.怀有敌意的，不友善的；敌对的",
-  "ex_en": "Ever since I got better marks e",
+  "ex_en": "Ever since I got better marks than Parker, he has been hostile tome.",
   "ex_zh": "自从我比帕克得分高以后，他\n就对我不友好了。",
   "notes": "",
   "n": 357
@@ -2890,8 +2890,8 @@
  {
   "word": "wicked",
   "meaning": "adj.邪恶的，缺德的日dj.易变的，反复无常的；易挥发的",
-  "ex_en": "It is wicked of you to torment the poor dog. People",
-  "ex_zh": "你折磨那只可怜的狗，真是缺德。volatile",
+  "ex_en": "It is wicked of you to torment the poor dog.",
+  "ex_zh": "你折磨那只可怜的狗，真是缺德。",
   "notes": "wick n.灯芯，蜡烛芯不愿换工作。 wicked—词和witch（巫婆）同源。",
   "n": 362
  },
@@ -2946,7 +2946,7 @@
  {
   "word": "rash",
   "meaning": "adj.草率的，鲁莽的地不耐烦了。",
-  "ex_en": "The May I remind you it was your own rash actions",
+  "ex_en": "May I remind you it was your own rash actions that got us into this predicament?",
   "ex_zh": "",
   "notes": "got us into this predicament?需要我提醒你，就后缀less表是你的鲁莽行为使我们陷入当下的困境吗？法安静的\"，即 rashly adv.轻率地rashness n.急躁，鲁莽",
   "n": 369
@@ -3082,7 +3082,7 @@
  {
   "word": "unsatisfactory",
   "meaning": "adj.不能令人满意的，不符合要求的，不足的",
-  "ex_en": "They dema nd a refund on unsatisfactory goods",
+  "ex_en": "They demand a refund on unsatisfactory goods.",
   "ex_zh": "他们对不满意的货品要求退款。",
   "notes": "an unsatisfactory result令人不满意的结果",
   "n": 386
@@ -3154,7 +3154,7 @@
  {
   "word": "ignorant",
   "meaning": "adj.无知的，没有学识的，愚昧的",
-  "ex_en": "Wise men become wiser as they grow older, men more ignorant.",
+  "ex_en": "Wise men become wiser as they grow older, ignorant men more ignorant.",
   "ex_zh": "智者越老越聪明；蠢人老去更昏庸。",
   "notes": "ignore v.忽视，不理睬；be ignorant of不知道",
   "n": 395
@@ -3266,8 +3266,8 @@
  {
   "word": "clumsy",
   "meaning": "adj.笨拙的",
-  "ex_en": "You clumsy! You've knoeked over my cup are so coffee!",
-  "ex_zh": "你真是笨手笨脚的！你把我的这杯咖啡撞翻\nof\nT!",
+  "ex_en": "You are so clumsy! You've knocked over my cup of coffee!",
+  "ex_zh": "你真是笨手笨脚的！",
   "notes": "a clumsy excuse拙劣的借口",
   "n": 409
  },

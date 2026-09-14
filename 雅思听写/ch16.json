@@ -26,8 +26,8 @@
  {
   "word": "industry",
   "meaning": "n.工业；产业；勤劳",
-  "ex_en": "The conf ere nee un derscored the importa nee of modern industry",
-  "ex_zh": "会议强调了现代工业的重要性。 The merchant decided to use camels to carry\nhis goods across the desert.商人决定用骆驼载运货物穿过沙漠。",
+  "ex_en": "The conference underscored the importance of modern industry.",
+  "ex_zh": "会议强调了现代工业的重要性。",
   "notes": "industrialise(=industrialize)v.使工业化 industrial adj. I业的；产业的 heavy industry重工业 /'m3：tj' n.商人adj.商业的 a retail merchant零售商",
   "n": 4
  },
@@ -50,8 +50,8 @@
  {
   "word": "donate",
   "meaning": "v.捐赠，捐献",
-  "ex_en": "The government calls on the youth to donate economy merchant financial trade",
-  "ex_zh": "",
+  "ex_en": "The government calls on the youth to donate their blood voluntarily.",
+  "ex_zh": "政府号召青年自愿献血。",
   "notes": "",
   "n": 7
  },
@@ -106,15 +106,15 @@
  {
   "word": "afford",
   "meaning": "v.负担得起；提供，给予",
-  "ex_en": "",
-  "ex_zh": "丨could n't afford the rent on my own.我自己负担不起房租。",
+  "ex_en": "I couldn't afford the rent on my own.",
+  "ex_zh": "我自己负担不起房租。",
   "notes": "affordable adj.买得起的",
   "n": 14
  },
  {
   "word": "retail",
   "meaning": "n.零售v.零售；以……价格零售",
-  "ex_en": "These slippers retail at dollars per pair",
+  "ex_en": "These slippers retail at 10 dollars per pair.",
   "ex_zh": "这些拖鞋的零售价是每双10美元。",
   "notes": "retailing n.零售业retailer n.零售商 a retail outlet零售店",
   "n": 15
@@ -140,7 +140,7 @@
   "meaning": "n.折扣/dis'kaunt/v.打折出售",
   "ex_en": "I'll sell at a discount in return for a speedy sale",
   "ex_zh": "为了尽快售出，我会打折销售。",
-  "notes": "discounter n.折扣商店，廉价商店 20%discount A折a discount from the price list 在价目表的基础上享受折扣 dis（不，非，相反）+count（数）t没有计算在内的 T折扣。 retail discount coupon忌 chain promotion…currency”鲁一»二",
+  "notes": "discounter n.折扣商店，廉价商店　［搭］a 20% discount 八折 a discount from the price list 在价目表的基础上享受折扣　dis（不，非，相反）+count（数）→没有计算在内的→折扣。",
   "n": 18
  },
  {
@@ -162,7 +162,7 @@
  {
   "word": "coupon",
   "meaning": "n.优惠券",
-  "ex_en": "I have a coupon for 30%off any dairy product in this supermarket",
+  "ex_en": "I have a coupon for 30% off any dairy product in this supermarket.",
   "ex_zh": "我有一张优惠券，买这家超市里的乳制品可以享受七折优惠。",
   "notes": "",
   "n": 21
@@ -226,7 +226,7 @@
  {
   "word": "tariff",
   "meaning": "n.关税；（公共服务的）收费",
-  "ex_en": "There alcohol",
+  "ex_en": "There is a very high tariff on alcohol.",
   "ex_zh": "酒类商品\nGATT（General Agreement on Tariffs and Trade）即关税及贸易总协定，后被WTO（WorldTradeOrganization,世界贸易组织）取代。WTO、IMF（International Monetary\nFund,国际货币基金组织）和世界银行（World Bank）是当代国际经济体系的三大支柱。",
   "notes": "",
   "n": 29
@@ -466,7 +466,7 @@
  {
   "word": "saving",
   "meaning": "n.节约，节省",
-  "ex_en": "A saving of 20%is obtainable under this scheme",
+  "ex_en": "A saving of 20% is obtainable under this scheme.",
   "ex_zh": "按这一计划做，可以节约20%。",
   "notes": "save v.拯救；节约；保存",
   "n": 59
@@ -498,7 +498,7 @@
  {
   "word": "firm",
   "meaning": "n.公司adj.坚定的；坚固的",
-  "ex_en": "Because of their comm on values, they soon formed a firm friendship",
+  "ex_en": "Because of their common values, they soon formed a firm friendship.",
   "ex_zh": "因为有着共同的价值观，他们很快就建立起牢固的友谊。",
   "notes": "firm faith坚定的信念",
   "n": 63
@@ -522,7 +522,7 @@
  {
   "word": "entity",
   "meaning": "n.实体，独立存在物",
-  "ex_en": "The country is no Ion ger a sovereig n entity",
+  "ex_en": "The country is no longer a sovereign entity.",
   "ex_zh": "这个国家不再是一个拥有主权的实体了。",
   "notes": "a business entity企业实体an economic entity 经济实体",
   "n": 66
@@ -538,7 +538,7 @@
  {
   "word": "input",
   "meaning": "n.输入信息；投入物",
-  "ex_en": "We must in crease the output with less labour input",
+  "ex_en": "We must increase the output with less labour input.",
   "ex_zh": "我们必须在投入更少劳动力的情况下提高产量。",
   "notes": "output n.输出量，产量",
   "n": 68
@@ -650,7 +650,7 @@
  {
   "word": "bid",
   "meaning": "v. n.出价；投标",
-  "ex_en": "They lost the con tract because their bid was too high",
+  "ex_en": "They lost the contract because their bid was too high.",
   "ex_zh": "他们因投标索价太高而失去了那份合同。",
   "notes": "bidder n.投标者；出价者",
   "n": 82
@@ -674,8 +674,8 @@
  {
   "word": "turnover",
   "meaning": "n.（人员）流动率；营业额",
-  "ex_en": "Annual turnover is about million pounds",
-  "ex_zh": "年营业额约为8亿英镑。",
+  "ex_en": "Annual turnover is about 800 million pounds.",
+  "ex_zh": "年营业额约为8 亿英镑。",
   "notes": "",
   "n": 85
  },
@@ -730,7 +730,7 @@
  {
   "word": "dividend",
   "meaning": "n.股息，红利",
-  "ex_en": "The company declared a large dividend at the year",
+  "ex_en": "The company declared a large dividend at the end of the year.",
   "ex_zh": "公司在年底宣布分发高额股息。",
   "notes": "pay dividends产生效益",
   "n": 92
@@ -818,7 +818,7 @@
  {
   "word": "estate",
   "meaning": "n.地产；遗产",
-  "ex_en": "The when she died",
+  "ex_en": "The old lady left an estate of three million pounds when she died.",
   "ex_zh": "这位老妇人去世时留下300万\n英镑的遗产。 She was possessed by\n她被致富的欲望所控制。",
   "notes": "real estate n.房地产 V.占用，拥有；影响，控制 the desire to be rich. possessive adj.占有欲强的；自私的 n.持有人 possession n.个人财产；拥有possessor （to，字根sed/sess指\"坐sit）”如1:possess（能够坐下来的地方t拥有），sediment（坐下的东西t沉淀物；沉积物），assess（使坐下t评估；估算）， obsess（无法［ob=against］坐下t［使］着迷；［使］ 心神不宁）O",
   "n": 103
@@ -898,7 +898,7 @@
  {
   "word": "income",
   "meaning": "n.收入",
-  "ex_en": "Many staff members made an distributed upon the the earned incomes were not principle of equality",
+  "ex_en": "Many staff members made an accusation that the earned incomes were not distributed upon the principle of equality.",
   "ex_zh": "许多员工控诉工资的分配没有遵循公平原则。",
   "notes": "earn income挣钱",
   "n": 113
@@ -914,8 +914,8 @@
  {
   "word": "payment",
   "meaning": "n.支付；支付的款项；付款额",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "You may defer payment until next week.",
+  "ex_zh": "你可延期至下周支付。",
   "notes": "",
   "n": 115
  },
@@ -946,7 +946,7 @@
  {
   "word": "subsidy",
   "meaning": "n.津贴，补贴",
-  "ex_en": "The gover nment has decided to in crease subsidies on farm produce",
+  "ex_en": "The government has decided to increase subsidies on farm produce.",
   "ex_zh": "政府决定增加对农产品的补贴。",
   "notes": "subsidise(=subsidize)v.资助，给...发津贴",
   "n": 119
@@ -1010,8 +1010,8 @@
  {
   "word": "vocation",
   "meaning": "n.（认为特别适合自己的）职业；使命感",
-  "ex_en": "She struggled for vocation",
-  "ex_zh": "她挣扎了多年才找到真正适合自己的职业。\ncareer, occupation, job,的区别：从词源上看，career原指“车走的道路”，含有沿着特定轨道一直走下去的意思，即不会改变。所以career指长期或终身的，需特殊技能的工作。occupation来源于occupy（占据），占据某个岗位，指为了谋生而规律地工作°job是普通工作，学生打工的那种工作叫part-\ntime job（兼职），全职是full-time job中的\no\n（to\n字根voc指“召唤call）\",表示这份工作是上天的召唤，是“天职”，你特别适合做这份工作，有天分。",
+  "ex_en": "She struggled for years to find her true vocation.",
+  "ex_zh": "她挣扎了多年才找到真正适合自己的职业。",
   "notes": "",
   "n": 127
  },
@@ -1026,7 +1026,7 @@
  {
   "word": "workforce",
   "meaning": "n.劳动力；全体员工",
-  "ex_en": "This year, 5%of the workforce will be made redundant",
+  "ex_en": "This year, 5% of the workforce will be made redundant.",
   "ex_zh": "今年将有5%的员工下岗。",
   "notes": "",
   "n": 129
@@ -1050,7 +1050,7 @@
  {
   "word": "clerk",
   "meaning": "n.店员；办事员；接待员",
-  "ex_en": "The clerk was elevated to a man agerial positi on",
+  "ex_en": "The clerk was elevated to a managerial position.",
   "ex_zh": "那个办事员被提拔到了经理职位。",
   "notes": "an accounting clerk记账员 an auditing clerk审计员",
   "n": 132
@@ -1058,15 +1058,15 @@
  {
   "word": "interview",
   "meaning": "v.对……进行面试；采访 n.面试；采访",
-  "ex_en": "The interview has drawn considerable attention the profession",
-  "ex_zh": "这个访谈使很多人关注这一行业。\nto",
+  "ex_en": "The interview has drawn considerable attention to the profession.",
+  "ex_zh": "这个访谈使很多人关注这一行业。",
   "notes": "terviewer n.面试官；采访者 interviewee n.被面试者；被采访者",
   "n": 133
  },
  {
   "word": "resume",
   "meaning": "n.（求职用的）履历，简历；摘要",
-  "ex_en": "Please e-mail your sitting a written test",
+  "ex_en": "Please e-mail your personal resume to us before sitting a written test.",
   "ex_zh": "参加笔试之前，请将个人简历用电子邮件发给我们。",
   "notes": "",
   "n": 134
@@ -1074,7 +1074,7 @@
  {
   "word": "recommend",
   "meaning": "v.推荐，介绍；劝告，建议",
-  "ex_en": "I recommend you to reserve a table in advanee",
+  "ex_en": "I recommend you to reserve a table in advance.",
   "ex_zh": "我建议你提前预约用餐的桌位。",
   "notes": "recommendation n.推荐；推荐信",
   "n": 135
@@ -1130,7 +1130,7 @@
  {
   "word": "retire",
   "meaning": "v.（使）退休",
-  "ex_en": "If they prove in competent, they should be demoted or asked to retire",
+  "ex_en": "If they prove incompetent, they should be demoted or asked to retire.",
   "ex_zh": "如果事实证明他们已不能胜任，应该将他们降级或让他们退休。",
   "notes": "retired adj.退休的retirement n.退休；引退",
   "n": 142
@@ -1186,7 +1186,7 @@
  {
   "word": "choose",
   "meaning": "v.选择",
-  "ex_en": "We have many patter ns in stock for you to from",
+  "ex_en": "We have many patter ns in stock for you to choose from.",
   "ex_zh": "我们有多种式样有现货，可供你选择。",
   "notes": "choice n.选择，抉择 as you choose随你选择",
   "n": 149
@@ -1218,7 +1218,7 @@
  {
   "word": "sustainable",
   "meaning": "adj.可持续的",
-  "ex_en": "Sustainable developme nt is the comm on target of human beings",
+  "ex_en": "Sustainable development is the common target of human beings.",
   "ex_zh": "可持续发展是人类追求的共同目标。",
   "notes": "sustainable development可持续发展",
   "n": 153
@@ -1242,7 +1242,7 @@
  {
   "word": "sanction",
   "meaning": "裁v.批准；对……实施制裁 n.批准；制",
-  "ex_en": "The minister can parliament",
+  "ex_en": "The minister can only act in this matter with the sanction of parliament.",
   "ex_zh": "部长只有得到议会批准才\n能就此事采取行动。",
   "notes": "",
   "n": 156

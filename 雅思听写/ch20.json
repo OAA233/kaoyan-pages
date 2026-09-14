@@ -66,8 +66,8 @@
  {
   "word": "bear",
   "meaning": "v.生（孩子）；容忍；承担（责任）",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "They must bear most of the blame.",
+  "ex_zh": "他们应承担大部分责任。",
   "notes": "",
   "n": 9
  },
@@ -138,7 +138,7 @@
  {
   "word": "glare",
   "meaning": "v.怒目而视；发岀强光n.刺眼的光；怒视",
-  "ex_en": "The glare of the on com ing headlights temporarily blinded me",
+  "ex_en": "The glare of the oncoming headlights temporarily blinded me.",
   "ex_zh": "对向车灯发出的刺眼光照使我暂时什么也看不见。",
   "notes": "",
   "n": 18
@@ -170,15 +170,15 @@
  {
   "word": "gaze",
   "meaning": "v.凝视，注视",
-  "ex_en": "",
-  "ex_zh": "的眼睛盯着商店橱窗里的玩具。",
+  "ex_en": "The child gazed at the toys in the shop window.",
+  "ex_zh": "这孩子的眼睛盯着商店橱窗里的玩具。",
   "notes": "",
   "n": 22
  },
  {
   "word": "peer",
   "meaning": "v.凝视，盯着看n.同等地位的人，同辈",
-  "ex_en": "The new postman trying to find the right house",
+  "ex_en": "The new postman peered through the mist, trying to find the right house.",
   "ex_zh": "新来的邮递员隹雾中仔细张望，设法找到他要找的那一家。\nV.凝视，盯着看 He stared at the word, trying to remember\nwhat it meant.他盯着这个单词，努力想记起它的意思。",
   "notes": "stare at凝视，盯着看 （to stand）”，拉丁语中的sr〃e指“站立故英语单词中的sta常有\"站立；持续；固定；静止\"等含义，如： station（—直站立的地方t车站），statue（站立的，持续固定的东西T雕像）。",
   "n": 23
@@ -330,7 +330,7 @@
  {
   "word": "haste",
   "meaning": "n. v.赶紧；促进",
-  "ex_en": "It was now obvious that she was owner",
+  "ex_en": "It was now obvious that she was hastening to restore the car to its owner.",
   "ex_zh": "现在，她显然正急着把车\n归还原主。\n.急速，匆 They urged Washi ngton to rec on sider its\ndecision.他们敦促美国政府重新考虑其决定。",
   "notes": "hasty adj.匆忙的，仓促的haste n 忙，草率 urge怡:辱 V.催促，敦促n.冲动 urgent adj.紧迫的，紧急的 urge sb. to do sth.敦促某人做某事",
   "n": 42
@@ -546,8 +546,8 @@
  {
   "word": "mess",
   "meaning": "n.混乱，脏乱v.弄乱",
-  "ex_en": "Although snatch follow grab grip",
-  "ex_zh": "",
+  "ex_en": "Your books and magazines are all in a mess; go and put them in order.",
+  "ex_zh": "你的书和杂志简直是乱七八糟的，去把它们整理一下。",
   "notes": "",
   "n": 69
  },
@@ -666,7 +666,7 @@
  {
   "word": "vibrate",
   "meaning": "v.（使）振动，（使）摇摆",
-  "ex_en": "Some in sects'wings vibrate so fast that the eye",
+  "ex_en": "Some insects' wings vibrate so fast that the movement is invisible to the human eye.",
   "ex_zh": "有些昆虫的\n翅膀振动得很快，以至于人类用肉眼看不见。",
   "notes": "vibration n.振动，摆动",
   "n": 84
@@ -730,7 +730,7 @@
  {
   "word": "bond",
   "meaning": "v.与……黏合（或连接） n.黏合；（感情的）纽带",
-  "ex_en": "These two different materials won't bond together.",
+  "ex_en": "A company issues a bond to collect money and will pay back with interest.",
   "ex_zh": "这两种不同的材料无法黏合在一起。",
   "notes": "",
   "n": 92
@@ -978,8 +978,8 @@
  {
   "word": "upset",
   "meaning": "v.使心烦意乱，使生气；搅乱；打翻",
-  "ex_en": "I hope I have n't said any thi ng to upset you. disregard",
-  "ex_zh": "但愿我没有说什么让你不高兴的话。 V.不顾，漠",
+  "ex_en": "I hope I haven't said anything to upset you.",
+  "ex_zh": "但愿我没有说什么让你不高兴的话。",
   "notes": "",
   "n": 123
  },
@@ -1002,8 +1002,8 @@
  {
   "word": "ignorance",
   "meaning": "n.无知，愚昧",
-  "ex_en": "Where The irony is that some of the poorest countries wise",
-  "ex_zh": "难得糊涂。\nhave the richest natural resources.讽刺的是，一些最",
+  "ex_en": "Where ignorance is bliss, 'tis (= it is) folly to be wise.",
+  "ex_zh": "难得糊涂。",
   "notes": "be in ignorance of 对……全然不知",
   "n": 126
  },
@@ -1058,8 +1058,8 @@
  {
   "word": "flee",
   "meaning": "v.逃避，逃离",
-  "ex_en": "Follow love and it will flee, flee love and it will （thee follow thee",
-  "ex_zh": "追求爱情它高飞，逃避爱情它跟随。意为“你”，旧用词thou的宾格）\n来练一段绕口令（tongue-twister）:A flea and a fly",
+  "ex_en": "Follow love and it will flee, flee love and it will follow thee.",
+  "ex_zh": "追求爱情它高飞，逃避爱情它跟随。",
   "notes": "",
   "n": 133
  },
@@ -1106,8 +1106,8 @@
  {
   "word": "hijack",
   "meaning": "v.劫持（飞机或其他交通工具）",
-  "ex_en": "The terrorists hijacked the plane and held all the passengers hostage",
-  "ex_zh": "恐怖分子劫持了飞机，把所有乘客劫为人质。也拼作highjack词源不明，也许是：歹徒在抢劫时害\no\n怕反抗，每每高呼“High, Jack!”（Jack可用来泛称人、哥们儿、家伙），意思是“哥们儿，把手举高点儿！”。\nhijacker指“劫匪”，skyjack专指“劫机”。",
+  "ex_en": "The terrorists hijacked the plane and held all the passengers hostage.",
+  "ex_zh": "恐怖分子劫持了飞机，把所有的乘客扣作人质。",
   "notes": "",
   "n": 139
  },
@@ -1130,7 +1130,7 @@
  {
   "word": "strangle",
   "meaning": "v.扼杀，压制；勒死，扼死",
-  "ex_en": "The econo mist argues that high taxati on strangles the economy",
+  "ex_en": "The economist argues that high taxation strangles the economy.",
   "ex_zh": "该经济学家反驳说，高额征税会扼杀经济。",
   "notes": "",
   "n": 142
@@ -1170,7 +1170,7 @@
  {
   "word": "intervene",
   "meaning": "v.插话；干扰；干涉",
-  "ex_en": "I shall leave on Sun day if noth ing intervenes",
+  "ex_en": "I shall leave on Sunday if nothing intervenes.",
   "ex_zh": "如果没有事情干扰，我将于星期天动身。",
   "notes": "",
   "n": 147
@@ -1218,8 +1218,8 @@
  {
   "word": "tempt",
   "meaning": "v.引诱，诱惑；怂恿",
-  "ex_en": "Apply gen erous amounts of sun scree n minutes before you go out",
-  "ex_zh": "一don't allow impatienee\nto tempt you into sunburn.外出15分钟前要涂抹足量的防晒霜——别因没耐心而被晒伤。",
+  "ex_en": "Apply generous amounts of sunscreen 15 minutes before you go out—don't allow impatience to tempt you into sunburn.",
+  "ex_zh": "外出15分钟前要涂抹足量的防晒霜——别因没耐心而被晒伤。",
   "notes": "temptation n.弓|诱，诱惑 resist temptation抵制诱惑",
   "n": 153
  },
@@ -1282,7 +1282,7 @@
  {
   "word": "refuse",
   "meaning": "v.拒绝；回绝",
-  "ex_en": "Jon ah's mother refused to let him go abroad",
+  "ex_en": "Jonah's mother refused to let him go abroad.",
   "ex_zh": "乔纳的母亲不答应让他出国。",
   "notes": "refusal n.拒绝；推却 （to 字根fuse指“倾倒（to pour）;融化，熔化， melt）”女D:re（回来）+fuse（倾倒）t不让倾倒出去t refuse（拒绝）; fuse（熔丝，保险丝）；di（二；分别）+fuse（倾倒）t向两边分别倾倒t diffuse（散播；扩散）。",
   "n": 161
@@ -1290,8 +1290,8 @@
  {
   "word": "exclude",
   "meaning": "v.把……排除在外；拒绝",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "They excluded people under 18 from joining the club.",
+  "ex_zh": "他们拒绝接纳18岁以下的人加入俱乐部。",
   "notes": "",
   "n": 162
  },
@@ -1330,8 +1330,8 @@
  {
   "word": "convince",
   "meaning": "v.使确信，使信服；说服",
-  "ex_en": "He fin ally convinced us of his innocen ce",
-  "ex_zh": "他终于使我们相信他是清白的。 When the child was afraid in the storm, his\nparents reassured him.孩子在暴雨中感到害怕时，他的父母就安慰他。\n-亍reassure Chapter\n行为动作",
+  "ex_en": "He finally convinced us of his innocence.",
+  "ex_zh": "他终于使我们相信他是清白的。",
   "notes": "convincing adj.令人信服的 convince sb. of sth.使某人相信某事 reassure刃。/ 使安心，使放心 V.",
   "n": 167
  },
@@ -1434,8 +1434,8 @@
  {
   "word": "range",
   "meaning": "v.（在一定幅度内）变动",
-  "ex_en": "The prices ranged from pounds to pounds",
-  "ex_zh": "价格自W英镑至20英镑不等。",
+  "ex_en": "The prices ranged from 10 pounds to 20 pounds.",
+  "ex_zh": "价格自W 英镑至20英镑不等。",
   "notes": "nger n.护林员，公园看管入（助记：在一定范围内走来走去的人）",
   "n": 180
  },
@@ -1450,7 +1450,7 @@
  {
   "word": "trench",
   "meaning": "v.掘沟于；砍除 n.沟，渠，壕沟",
-  "ex_en": "The firemen successfully trenched the roof, preventing the fire from spreading further down the flatter block.",
+  "ex_en": "The firemen successfully trenched the roof, preventing the fire from spreading further down the block.",
   "ex_zh": "消防员成功地在屋顶上开出了隔离带，防止火势沿着街区进一步蔓延。",
   "notes": "",
   "n": 182
@@ -1458,7 +1458,7 @@
  {
   "word": "launch",
   "meaning": "v.发射；发布，推出；发起（运动等）",
-  "ex_en": "Full market research is needed before a new launched",
+  "ex_en": "Full market research is needed before a new product is launched.",
   "ex_zh": "推出新产品之前需要进行充分的\n市场调查。",
   "notes": "",
   "n": 183
@@ -1562,7 +1562,7 @@
  {
   "word": "clear",
   "meaning": "adj.清晰的；明显的v.清除",
-  "ex_en": "It seems clear that he has no reas on able alternative",
+  "ex_en": "It seems clear that he has no reasonable alternative.",
   "ex_zh": "他没有其他合适的选择，这一点似乎很明确。",
   "notes": "clearly adv.明白地，清晰地 clear up使整洁，清理；（疾病等）痊愈",
   "n": 196
@@ -1610,8 +1610,8 @@
  {
   "word": "rectify",
   "meaning": "v.纠正，矫正，改正",
-  "ex_en": "I hope I can find a way to rectify your opinion offer of my behaviour",
-  "ex_zh": "我希望能设法纠正你对我行为的看法。n.给予（物）；提 They\n我们提出的一切援助。相传北京的雅思、托福考生常去香山卧佛寺上香，因为",
+  "ex_en": "I hope I can find a way to rectify your opinion of my behaviour.",
+  "ex_zh": "我希望能设法纠正你对我行为的看法。",
   "notes": "correct v.改正",
   "n": 202
  },
@@ -1626,7 +1626,7 @@
  {
   "word": "offset",
   "meaning": "v. n.补偿；抵消enlarge",
-  "ex_en": "He offset his small salary by living economically. v",
+  "ex_en": "He offset his small salary by living economically.",
   "ex_zh": "扩大，扩展；放大（照片或文件）",
   "notes": "",
   "n": 204
@@ -1698,15 +1698,15 @@
  {
   "word": "obtain",
   "meaning": "v.获得，得到",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "It is wise to obtain an independent valuation.",
+  "ex_zh": "获得独立估价是明智的。",
   "notes": "",
   "n": 213
  },
  {
   "word": "augment",
   "meaning": "v.扩大，增加，加强，提高",
-  "ex_en": "With the birth of his third son, he found it n ecessary to do somethi ng to augment his in come",
+  "ex_en": "With the birth of his third son, he found it necessary to do something to augment his income.",
   "ex_zh": "随着第三个儿子的出生，他感到有必要想办法增加收入。",
   "notes": "augmentation n.扩大，增加，加强，提高",
   "n": 214
@@ -1722,8 +1722,8 @@
  {
   "word": "exaggerate",
   "meaning": "v.夸张，夸大",
-  "ex_en": "pain ter may exaggerate or distort shapes forms",
-  "ex_zh": "画家可能会对形状进行夸大或扭曲。\nand",
+  "ex_en": "A painter may exaggerate or distort shapes and forms.",
+  "ex_zh": "画家可能会对形状进行夸大或扭曲。",
   "notes": "",
   "n": 216
  },
@@ -1826,7 +1826,7 @@
  {
   "word": "trench",
   "meaning": "v.掘沟于；砍除 n.沟，渠，壕沟",
-  "ex_en": "The firemen successfully trenched the roof, preventing the fire from spreading further down the flatter block.",
+  "ex_en": "The firemen successfully trenched the roof, preventing the fire from spreading further down the block.",
   "ex_zh": "消防员成功地在屋顶上开出了隔离带，防止火势沿着街区进一步蔓延。",
   "notes": "",
   "n": 229
@@ -1834,8 +1834,8 @@
  {
   "word": "saturate",
   "meaning": "v.使饱和，使充满；浸透worship",
-  "ex_en": "The air was saturated with the perfume of the n.（",
-  "ex_zh": "对上帝或神的）崇拜，礼拜；爱\nflowers.空气中充满了花的芬芳。 She",
+  "ex_en": "The air was saturated with the perfume of the flowers.",
+  "ex_zh": "空气中充满了花的芬芳。",
   "notes": "saturate oneself（in）埋头在...中",
   "n": 230
  },
@@ -1858,8 +1858,8 @@
  {
   "word": "forgive",
   "meaning": "v.原谅，宽恕，饶恕",
-  "ex_en": "I'll never forgive you for what you have done wrong You to my friend",
-  "ex_zh": "你伤害了我的朋友，我永远也不会原谅你。your\n前缀for表示否定含义，如：forgive（不再给予，就此 Their\n和一个强大的经济体。 My\n我今年夏天的目标是学习游泳。",
+  "ex_en": "I'll never forgive you for what you have done wrong to my friend.",
+  "ex_zh": "你伤害了我的朋友，我永远也不会原谅你。",
   "notes": "forthesakeof为了……起见，因为……的缘故作罢-原谅）, forget（忘记）, forgo（走开了t放弃）, forbid（禁止）o purpose n.目的 purposely on 的目的 n.宗旨；目 subjective",
   "n": 233
  },
@@ -1930,7 +1930,7 @@
  {
   "word": "arouse",
   "meaning": "v.唤起，激起，引起",
-  "ex_en": "The young man's police",
+  "ex_en": "The young man's behaviour aroused the suspicions of the police.",
   "ex_zh": "那个年轻人的行为引起了警方\n的怀疑。",
   "notes": "",
   "n": 242
@@ -1954,7 +1954,7 @@
  {
   "word": "seek",
   "meaning": "v.寻找；寻求",
-  "ex_en": "They are seeking the most reas on able diet which will do good to their health",
+  "ex_en": "They are seeking the most reasonable diet which will do good to their health.",
   "ex_zh": "他们在寻找有益于他们健康的最合理的饮食。",
   "notes": "seek after寻求，追求",
   "n": 245
@@ -2018,7 +2018,7 @@
  {
   "word": "drop",
   "meaning": "v.（使）落下；（使）降低；和……断绝联系n.滴",
-  "ex_en": "In the win ter, the temperature below freezing",
+  "ex_en": "In the winter, the temperature often drops below freezing.",
   "ex_zh": "冬天的时候，温度常会降到冰点以下。",
   "notes": "a drop in the bucket沧海一粟，九牛一毛 drop sb.和某人断绝来往",
   "n": 253
@@ -2074,8 +2074,8 @@
  {
   "word": "greet",
   "meaning": "v.向……问好，迎接；对……作出反应",
-  "ex_en": "The audienee greeted his speech with a great cheer",
-  "ex_zh": "听众对他的演讲报以一阵热烈的欢呼声。 They saluted each other by raising their hats.［彳列］His\n他们举起帽子互相行礼。他的行动和他的诺言不一致。",
+  "ex_en": "The audience greeted his speech with a great cheer.",
+  "ex_zh": "听众对他的演讲报以一阵热烈的欢呼声。",
   "notes": "greeting n.问候，致意 V.（向……）行礼；致敬n.行礼；致敬V.把……分类；相配，协调",
   "n": 260
  },
@@ -2098,8 +2098,8 @@
  {
   "word": "correspond",
   "meaning": "v.符合，相一致；通信",
-  "ex_en": "These They all passed the exam and celebrated with",
-  "ex_zh": "这些货物与我的订货单不符。\na party.他们都通过了考试，举行了一个聚会来庆祝。 The\non",
+  "ex_en": "These goods don't correspond with my order.",
+  "ex_zh": "这些货物与我的订货单不符。",
   "notes": "correspond celebration n.庆祝；庆典celebrated adj.著名的 celebrity n.名人accord V.（与……）一致；给 accordance",
   "n": 263
  },
@@ -2218,7 +2218,7 @@
  {
   "word": "mortify",
   "meaning": "v.使难堪，使羞愧",
-  "ex_en": "He was mortified by his in ability to an swer the question",
+  "ex_en": "He was mortified by his inability to answer the question.",
   "ex_zh": "他因为自己答不出这个问题而感到羞愧。",
   "notes": "",
   "n": 278

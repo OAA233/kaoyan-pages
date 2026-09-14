@@ -2,7 +2,7 @@
  {
   "word": "dioxide",
   "meaning": "n.二氧化物",
-  "ex_en": "Plants can absorb carb on dioxide and release oxygen",
+  "ex_en": "Plants can absorb carbon dioxide and release oxygen.",
   "ex_zh": "植物可以吸收二氧化碳并释放氧气。",
   "notes": "carbon dioxide二氧化碳 di（二）+oxide（氧化物）t二氧化物。",
   "n": 1
@@ -11,8 +11,8 @@
   "word": "vegetation",
   "meaning": "n.植物，草木",
   "ex_en": "There is not much vegetation in deserts",
-  "ex_zh": "沙漠中的植物不多。 There is a herb garden behind the house.屋后有一个芳草园。",
-  "notes": "etable n.蔬菜vegetarian n.素食者 /h3：b/ m药草；香草 herbal adj.药草的；香草的herbivore n.食草动物carnivore n.食肉动物",
+  "ex_zh": "沙漠中的植物不多。",
+  "notes": "vegetable n.蔬菜 vegetarian n.素食者 /h3：b/ m药草；香草 herbal adj.药草的；香草的herbivore n.食草动物carnivore n.食肉动物",
   "n": 2
  },
  {
@@ -58,7 +58,7 @@
  {
   "word": "horticulture",
   "meaning": "n.园艺学；园艺",
-  "ex_en": "Horticulture is the industry and scienee of plant cultivation",
+  "ex_en": "Horticulture is the industry and science of plant cultivation.",
   "ex_zh": "园艺是关于植物栽培的产业和科学。",
   "notes": "",
   "n": 8
@@ -66,8 +66,8 @@
  {
   "word": "organism",
   "meaning": "n.有机体，生物",
-  "ex_en": "This in sect behaves like a parasite—an organism that lives on or in another organism called a host",
-  "ex_zh": "这种昆虫的行为像寄生虫，即一种生活在被称为\n“宿主”的另一个生物身上或体内的生物。",
+  "ex_en": "This insect behaves like a parasite—an organism that lives on or in another organism called a host.",
+  "ex_zh": "这种昆虫的行为像寄生虫，即一种生活在被称为\"宿主\"的另一个生物身上或体内的生物。",
   "notes": "organ n.器官 m遗传学 In genetics, genes were formerly called factors. 在遗传学上，基因以前被称为因子。 gene n.基因genetic adj.基因的",
   "n": 9
  },
@@ -130,7 +130,7 @@
  {
   "word": "fluctuate",
   "meaning": "v.波动，起伏",
-  "ex_en": "The price of vegetables fluctuates seas on ally",
+  "ex_en": "The price of vegetables fluctuates seasonally.",
   "ex_zh": "蔬菜的价格随季节波动。",
   "notes": "n.波动fluctuant adj.波动的，起伏的",
   "n": 17
@@ -210,7 +210,7 @@
  {
   "word": "rake",
   "meaning": "n.耙子v.耙；搜索",
-  "ex_en": "With an an cient rusty rake I went to work",
+  "ex_en": "With an ancient rusty rake I went to work.",
   "ex_zh": "我拿了把古老生锈的耙子去工作。",
   "notes": "",
   "n": 27
@@ -274,7 +274,7 @@
  {
   "word": "shade-tolerant",
   "meaning": "adj.耐阴的",
-  "ex_en": "He highlighted the importanee of shade- tolerant plants in gardens",
+  "ex_en": "He highlighted the importance of shade-tolerant plants in gardens.",
   "ex_zh": "他强调了耐阴植物在庭园中的重要性。",
   "notes": "",
   "n": 35
@@ -402,7 +402,7 @@
  {
   "word": "rot",
   "meaning": "v.（使）腐烂，（使）腐坏m腐烂",
-  "ex_en": "Rot the tree trunk caused the tree to fall. in",
+  "ex_en": "Rot in the tree trunk caused the tree to fall.",
   "ex_zh": "树干的腐烂导致树倒了。",
   "notes": "rotten adj.腐烂的",
   "n": 51
@@ -498,7 +498,7 @@
  {
   "word": "forestry",
   "meaning": "n.林学；林业",
-  "ex_en": "Mountainous areas, covered by forests, are the place for forestry development",
+  "ex_en": "Mountainous areas, covered by forests, are the very place for forestry development.",
   "ex_zh": "森林覆盖的山区\n正是适合发展林业的地方。",
   "notes": "forest n.森林",
   "n": 63
@@ -666,7 +666,7 @@
  {
   "word": "emission",
   "meaning": "n.排放，散发；排放物，散发物",
-  "ex_en": "This conference aims to reduce carbon or greenhouse gas emissions around the world.",
+  "ex_en": "This conference aims to reduce carbon emissions or greenhouse gas emissions around the world.",
   "ex_zh": "这次会议旨在减少全球的碳排放或温室气体排放。",
   "notes": "",
   "n": 84
@@ -730,7 +730,7 @@
  {
   "word": "counterbalance",
   "meaning": "n.起平衡作用的事物；抗衡力 v.抵消；对……起平衡作用",
-  "ex_en": "Their strength in defenee counterbalances our strength in attack.",
+  "ex_en": "Their strength in defence counterbalances our strength in attack.",
   "ex_zh": "他们防卫的力量与我们攻击的力量不相上下。",
   "notes": "",
   "n": 92
@@ -890,7 +890,7 @@
  {
   "word": "maximal",
   "meaning": "adj.最大的",
-  "ex_en": "She obtai ned maximal ben efit from the course",
+  "ex_en": "She obtained maximal benefit from the course.",
   "ex_zh": "她从该课程中获益极大。",
   "notes": "",
   "n": 112
@@ -906,7 +906,7 @@
  {
   "word": "optimal",
   "meaning": "adj.最佳的，最理想的",
-  "ex_en": "This is the optimal seas on for the growth of plants",
+  "ex_en": "This is the optimal season for the growth of plants.",
   "ex_zh": "这是植物生长的最佳季节。",
   "notes": "",
   "n": 114

@@ -34,8 +34,8 @@
  {
   "word": "pictograph",
   "meaning": "n.象形文字",
-  "ex_en": "Gen erally speaki ng, the pictograph is the first text.—",
-  "ex_zh": "般而言，象形文字是最早的文字。",
+  "ex_en": "Generally speaking, the pictograph is the first text.",
+  "ex_zh": "一般而言，象形文字是最早的文字。",
   "notes": "",
   "n": 5
  },
@@ -58,8 +58,8 @@
  {
   "word": "linguistics",
   "meaning": "n.语言学",
-  "ex_en": "He linguistics",
-  "ex_zh": "他从",
+  "ex_en": "He is engaged in the studies of linguistics.",
+  "ex_zh": "他从 事于语言学的研究。",
   "notes": "",
   "n": 8
  },
@@ -178,8 +178,8 @@
  {
   "word": "vowel",
   "meaning": "n.元音",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "Each language has a different vowel system.",
+  "ex_zh": "每种语言都有不同的元音系统。",
   "notes": "",
   "n": 23
  },
@@ -242,7 +242,7 @@
  {
   "word": "clause",
   "meaning": "n.分句，从句；条款",
-  "ex_en": "A con fide ntiality clause was added to the contract",
+  "ex_en": "A confidentiality clause was added to the contract.",
   "ex_zh": "合同附加了一条保密条款。",
   "notes": "",
   "n": 31
@@ -258,7 +258,7 @@
  {
   "word": "tense",
   "meaning": "n.时态adj.紧张的",
-  "ex_en": "Dart who had at first been very tense, at last z relaxed",
+  "ex_en": "Dartz who had at first been very tense, at last relaxed.",
   "ex_zh": "达特起初非常紧张，最后放松下来。",
   "notes": "tensions张力，拉力；紧张，不安v.拉紧",
   "n": 33
@@ -362,8 +362,8 @@
  {
   "word": "preposition",
   "meaning": "n.介词",
-  "ex_en": "You should cross out this preposition in the noun adjective singular adverb plural preposition pronoun verb",
-  "ex_zh": "",
+  "ex_en": "You should cross out this preposition in the sentence.",
+  "ex_zh": "你应该删去句子中的这个介词。",
   "notes": "",
   "n": 46
  },
@@ -410,7 +410,7 @@
  {
   "word": "interpret",
   "meaning": "v.口译；解释，说明；领会，理解",
-  "ex_en": "He interpreted the silence as con tempt",
+  "ex_en": "He interpreted the silence as contempt.",
   "ex_zh": "他把这沉默看作轻蔑的表示。",
   "notes": "interpretationn.口译；解释interpreter n.口译员",
   "n": 52
@@ -418,7 +418,7 @@
  {
   "word": "narrate",
   "meaning": "v.讲（故事），叙述 I讦e story to me in the",
-  "ex_en": "The sailor narrated his tavern",
+  "ex_en": "The sailor narrated his life story to me in the tavern.",
   "ex_zh": "那个水手在酒馆里向我讲述了他的人生经历。",
   "notes": "narration n.叙述，讲述",
   "n": 53
@@ -434,7 +434,7 @@
  {
   "word": "eloquence",
   "meaning": "n.雄辩；流利的口才",
-  "ex_en": "The audienee are struck by her simple, spellbinding eloquence",
+  "ex_en": "The audience are struck by her simple, spellbinding eloquence.",
   "ex_zh": "观众们被她那简洁、迷人的雄辩打动了。",
   "notes": "eloquent adj.雄辩的，有口才的",
   "n": 55

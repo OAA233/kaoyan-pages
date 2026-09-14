@@ -50,7 +50,7 @@
  {
   "word": "breakthrough",
   "meaning": "n.突破",
-  "ex_en": "Surgeons have made a great breakthrough in technology mechanic technique advance",
+  "ex_en": "Surgeons have made a great breakthrough in kidney transplantation.",
   "ex_zh": "",
   "notes": "",
   "n": 7
@@ -58,7 +58,7 @@
  {
   "word": "gizmo",
   "meaning": "n.小装置",
-  "ex_en": "The modern world is increasingly populated by intelligent gizmos whose universal existenee has removed much human labour",
+  "ex_en": "The modern world is increasingly populated by intelligent gizmos whose universal existence has removed much human labour.",
   "ex_zh": "现代社会里的智能装置越来越多，其广泛存在节约了大量人力。",
   "notes": "",
   "n": 8
@@ -90,7 +90,7 @@
  {
   "word": "discover",
   "meaning": "v.发现",
-  "ex_en": "He discovered his tale nt for fashi on design when he was very young",
+  "ex_en": "He discovered his talent for fashion design when he was very young.",
   "ex_zh": "他很年轻的时候就发现了自己在时尚设计方面的天赋。",
   "notes": "discovery n.发现；被发现的事物",
   "n": 12
@@ -98,8 +98,8 @@
  {
   "word": "disclose",
   "meaning": "v.揭露，透露",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The authorities finally disclosed the truth to the press.",
+  "ex_zh": "当局终于向新闻界公开了真相。",
   "notes": "",
   "n": 13
  },
@@ -137,9 +137,9 @@
  },
  {
   "word": "field",
-  "meaning": "n.领域 ［攸9竹eld.他在自己的领域里已经出名了。",
-  "ex_en": "",
-  "ex_zh": "",
+  "meaning": "n.领域",
+  "ex_en": "The students of the geological class will be out on field exploration for the duration of the school year.",
+  "ex_zh": "地质班的学生将把本学年的全部时间用于野外勘探。",
   "notes": "",
   "n": 18
  },
@@ -162,7 +162,7 @@
  {
   "word": "specialise",
   "meaning": "v.专攻",
-  "ex_en": "Many engineering",
+  "ex_en": "Many students specialise in engineering.",
   "ex_zh": "许多",
   "notes": "",
   "n": 21
@@ -178,7 +178,7 @@
  {
   "word": "concentrate",
   "meaning": "v.集中（心思）；（使）浓缩",
-  "ex_en": "They will concentrate on teachi ng the basics of reading, writing and arithmetic",
+  "ex_en": "They will concentrate on teaching the basics of reading, writing and arithmetic.",
   "ex_zh": "他们将专注于教授阅读、写作和算术的基础知识。",
   "notes": "concentration n.专心；浓度 concentrate on专心于",
   "n": 23
@@ -186,7 +186,7 @@
  {
   "word": "focus",
   "meaning": "v.（把……）集中（于）n.焦点",
-  "ex_en": "Today he was able to focus his message economy",
+  "ex_en": "Today he was able to focus his message exclusively on the economy.",
   "ex_zh": "今天，他得以将主题全部\n集中在经济方面。",
   "notes": "focus on集中于源自拉丁语focus（壁炉），引申词义为“焦点”。 (=utilize)v.利用 H列In order to utilise land more fully, they adopted close planting.为了更充分地利用土地，他们采取了密植的办法。 utility n.效用，有用utilities n.(水、电、燃气等) 公用事业utilisation(=utilization)n.利用，使用",
   "n": 24
@@ -194,8 +194,8 @@
  {
   "word": "usage",
   "meaning": "n.使用；(词语的)用法 、",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The College Board says words on the new test will relate to usage.",
+  "ex_zh": "大学理事会称，新考试中的词汇将和用法关联起来。",
   "notes": "",
   "n": 25
  },
@@ -226,7 +226,7 @@
  {
   "word": "appliance",
   "meaning": "n.应用；（家用）器具",
-  "ex_en": "The household appliances were just him for his family",
+  "ex_en": "The household appliances were just bought by him for his family.",
   "ex_zh": "他刚为家里买回来几件家用器具。",
   "notes": "a kitchen appliance厨房用具",
   "n": 29
@@ -274,7 +274,7 @@
  {
   "word": "measure",
   "meaning": "v.测量n.衡量；措施",
-  "ex_en": "Measure this impedanee and you can measure how much it has rained",
+  "ex_en": "Measure this impedance and you can measure how much it has rained.",
   "ex_zh": "测量该阻抗，你就可以测岀雨量的多少。",
   "notes": "measurable adj.可测量的measurement n.衡量，测量；尺寸 take measures采取措施莎士比亚(Shakespeare)名剧《一报还一报》(Measure for Measure｝的剧名一般被认为出自《圣经•马太福音》：For with what judgment ye judge, ye shall be",
   "n": 35
@@ -290,8 +290,8 @@
  {
   "word": "count",
   "meaning": "v.计算",
-  "ex_en": "It is gauge count measure calculate compute",
-  "ex_zh": "",
+  "ex_en": "It is impossible to count the stars in the sky.",
+  "ex_zh": "天空中的星星是数不清的。",
   "notes": "",
   "n": 37
  },
@@ -354,7 +354,7 @@
  {
   "word": "optics",
   "meaning": "n.光学",
-  "ex_en": "Newt on published his first work on optics",
+  "ex_en": "Newton published his first work on optics.",
   "ex_zh": "牛顿发表了他的第一部光学著作。",
   "notes": "",
   "n": 45
@@ -410,7 +410,7 @@
  {
   "word": "network",
   "meaning": "n.网络；广播网，电视网",
-  "ex_en": "Preside nt Bush's speech was broadcast on nati onal television networks",
+  "ex_en": "President Bush's speech was broadcast on national television networks.",
   "ex_zh": "布什总统的演说由国家电视网播送。",
   "notes": "net n.网；网状物v.（用网）捕",
   "n": 52
@@ -514,7 +514,7 @@
  {
   "word": "digital",
   "meaning": "adj.数字的",
-  "ex_en": "The BBC has just successfully dem on strated a new digital radio transmission system",
+  "ex_en": "The BBC has just successfully demonstrated a new digital radio transmission system.",
   "ex_zh": "英国广播公司刚刚成功演示了一套新的数字无线电传输系统。",
   "notes": "",
   "n": 65
@@ -714,7 +714,7 @@
  {
   "word": "operate",
   "meaning": "v.操作；运营；做手术",
-  "ex_en": "It's too difficult for machine",
+  "ex_en": "It's too difficult for him to operate this new sophisticated machine.",
   "ex_zh": "对他来说，操作这台复杂的新机\n器太难了。",
   "notes": "operation n.操作；企业；手术",
   "n": 90
@@ -842,7 +842,7 @@
  {
   "word": "wrong",
   "meaning": "adj.错误的adv.错误地",
-  "ex_en": "In stead of complai ning about whafs wrong, be grateful for what's right",
+  "ex_en": "Instead of complaining about what's wrong, be grateful for what's right.",
   "ex_zh": "要对对的事心存感恩，而不是抱怨哪里出错了。",
   "notes": "go wrong出现问题；出差错",
   "n": 106
@@ -874,9 +874,9 @@
  {
   "word": "circumstance",
   "meaning": "n.情况；环境；条件；卜s］境遇",
-  "ex_en": "Circumstances are the rulers of the weak, the wise",
+  "ex_en": "Circumstances are the rulers of the weak, the instruments of the wise.",
   "ex_zh": "弱者困于环境，智者利用环境。",
-  "notes": "er/in no circumstances决不 circum/circ/cycl（o）都和“圆，环”有关，如1:circumstanee （站在周围t环境），circle（圆圈；周期），circulate （循环），cyclist（骑自行车的人），bicycle（有两个轮子t自行车），cyclone（旋风），recycle（回收利用）。",
+  "notes": "under/in no circumstances 决不　circum/circ/cycl（o）都和“圆，环”有关，如：circumstance（站在周围→环境），circle（圆圈；周期），circulate（循环），cyclist（骑自行车的人），bicycle（有两个轮子→自行车），cyclone（旋风），recycle（回收利用）。",
   "n": 110
  }
 ]

@@ -50,8 +50,8 @@
  {
   "word": "cater",
   "meaning": "v.为……提供饮食；满足……的需要n.自助餐",
-  "ex_en": "Our hotel also caters for weddings and parties. We",
-  "ex_zh": "本饭店也承办婚礼和聚会的酒宴。在午餐时间供应自助餐。",
+  "ex_en": "Our hotel also caters for weddings and parties.",
+  "ex_zh": "本饭店也承办婚礼和聚会的酒宴。",
   "notes": "",
   "n": 7
  },
@@ -130,7 +130,7 @@
  {
   "word": "refreshment",
   "meaning": "n.卜s］茶点，点心",
-  "ex_en": "We only serve drinks and light refreshments on flight",
+  "ex_en": "We only serve drinks and light refreshments on this short flight.",
   "ex_zh": "在这班短途航班上，我们只供应饮料和\n小点心。",
   "notes": "",
   "n": 17
@@ -146,7 +146,7 @@
  {
   "word": "appetiser",
   "meaning": "(=appetizer)n.开胃饮料，开胃小吃 an",
-  "ex_en": "We served some crackers and cheese as appetiser",
+  "ex_en": "We served some crackers and cheese as an appetiser.",
   "ex_zh": "我们提供一些饼干和奶酪作为开胃小吃。",
   "notes": "",
   "n": 19
@@ -154,7 +154,7 @@
  {
   "word": "cuisine",
   "meaning": "n.菜肴；烹饪",
-  "ex_en": "Chinese cuisine is the flavour",
+  "ex_en": "Chinese cuisine is the perfect fusion of colour, shape, appearance and flavour.",
   "ex_zh": "中式菜肴将颜色、形\n状、外观和味道完美融合。",
   "notes": "",
   "n": 20
@@ -322,8 +322,8 @@
  {
   "word": "tray",
   "meaning": "n.盘，托盘牛奶放在炉子上热一热。",
-  "ex_en": "Please cutlery dish silver saucer",
-  "ex_zh": "",
+  "ex_en": "He put the toast on the breakfast tray.",
+  "ex_zh": "他把烤面包片放到早餐托盘里。",
   "notes": "",
   "n": 41
  },
@@ -514,8 +514,8 @@
  {
   "word": "pea",
   "meaning": "n.豌豆",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "This kind of pea has a long pod.",
+  "ex_zh": "这种豌豆长着长豆荚。",
   "notes": "",
   "n": 65
  },
@@ -1010,8 +1010,8 @@
  {
   "word": "jam",
   "meaning": "n.果酱 、壬soup-'：、、＜jam",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "He spread some apple jam on the bread.",
+  "ex_zh": "他在面包上涂了一些苹果酱。",
   "notes": "",
   "n": 127
  },
@@ -1314,7 +1314,7 @@
  {
   "word": "roast",
   "meaning": "v.烤 n.烤肉",
-  "ex_en": "Let's have a nice roast for Sun day dinner",
+  "ex_en": "Let's have a nice roast for Sunday dinner.",
   "ex_zh": "我们星期天晚上好好吃一顿烤肉吧。",
   "notes": "",
   "n": 165
@@ -1330,8 +1330,8 @@
  {
   "word": "suck",
   "meaning": "v.吮吸",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "Don't suck your thumb; it's so dirty.",
+  "ex_zh": "别吮吸大拇指，太脏了。",
   "notes": "",
   "n": 167
  },
@@ -1426,8 +1426,8 @@
  {
   "word": "block",
   "meaning": "n.街区",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "Walk two blocks down the street and go past the city hall.",
+  "ex_zh": "顺这条街走两个街区，经过市政厅。",
   "notes": "",
   "n": 179
  }

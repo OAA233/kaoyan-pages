@@ -10,8 +10,8 @@
  {
   "word": "Marxism",
   "meaning": "n.马克思主义",
-  "ex_en": "The esse nee of Marxism is seeki ng truth from facts",
-  "ex_zh": "实事求是是马克思主义的精髓。\nMarx（马克思，马克思主义的创始人，19世纪德国的政治理论家）+ism（主义，思想）。",
+  "ex_en": "The essence of Marxism is seeking truth from facts.",
+  "ex_zh": "实事求是是马克思主义的精髓。",
   "notes": "",
   "n": 2
  },
@@ -114,8 +114,8 @@
  {
   "word": "reform",
   "meaning": "n.改革，改v.改革，改良；(使)改过自新良",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "He promised to reform if given another chance.",
+  "ex_zh": "他保证，只要再给他一个机会，他就改过自新。",
   "notes": "reform and opening up改革开放",
   "n": 15
  },
@@ -154,7 +154,7 @@
  {
   "word": "neutral",
   "meaning": "adj.中立的；中立国的",
-  "ex_en": "She is neutral in this argume nt and does n't care who wins",
+  "ex_en": "She is neutral in this argument and doesn't care who wins.",
   "ex_zh": "在这场争论中，她保持中立，不在乎谁赢谁输。",
   "notes": "neutrally adv.中立地 remain neutral保持中立",
   "n": 20
@@ -210,7 +210,7 @@
  {
   "word": "minister",
   "meaning": "n.部长，大臣；公使",
-  "ex_en": "The minister can only act in this matter with parliament",
+  "ex_en": "The minister can only act in this matter with the sanction of parliament.",
   "ex_zh": "部长只有得到议会批准才\n能就此事采取行动。",
   "notes": "foreign minister外交部部长",
   "n": 27
@@ -242,7 +242,7 @@
  {
   "word": "conference",
   "meaning": "n.（常持续数日的大型正式）会议；正式商谈",
-  "ex_en": "The World Conference on Human Rights discussed the comm on problems of mankind and advanced human rights work around the world",
+  "ex_en": "The World Conference on Human Rights discussed the common problems of mankind and advanced human rights work around the world.",
   "ex_zh": "世界人权大会讨论了人类共同面临的问题，推动了全世界的人权工作发展。",
   "notes": "attend a conference出席大会",
   "n": 31
@@ -250,8 +250,8 @@
  {
   "word": "meeting",
   "meaning": "n.会议；会面",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "I have written down the date of the next meeting in my diary.",
+  "ex_zh": "我在日记本上记下了下次会议的日期。",
   "notes": "",
   "n": 32
  },
@@ -306,7 +306,7 @@
  {
   "word": "service",
   "meaning": "n.服务；公共服务事业；公共事业机构",
-  "ex_en": "The volun teers for comm unity service are doing a good job",
+  "ex_en": "The volunteers for community service are doing a good job.",
   "ex_zh": "提供社区服务的志愿者们做得很出色。",
   "notes": "",
   "n": 39
@@ -346,23 +346,23 @@
  {
   "word": "administration",
   "meaning": "n.管理，行政",
-  "ex_en": "You will need some experienee in administration before you can run the department",
-  "ex_zh": "你需要有一些行政管理经验才能掌管这个部门。\nminister（部长，大臣）原指“小人物，仆人”，字根\nmin指“较少的”。古代大臣们对君主自称“小“，老百姓却称他们为“大人\"“大臣”。administer可理解为：ad\n（加强意义）+minister（仆人t服务）t为相对大的事业服务t管理，治理（要高于manage的意义）。\nMBA（学位）就是Master of Business Administration\n的缩写，意为“工商管理学硕士”。",
-  "notes": "",
+  "ex_en": "You will need some experience in administration before you can run the department.",
+  "ex_zh": "你需要有一些行政管理经验才能掌管这个部门。",
+  "notes": "minister（部长，大臣）原指“小人物，仆人”，字根min指“较少的”。古代大臣们对君主自称“小”，老百姓却称他们为“大人”“大臣”。administer可理解为：ad（加强意义）+minister（仆人→服务）→为相对大的事业服务→管理，治理（意义高于manage）。MBA（学位）就是Master of Business Administration的缩写，意为“工商管理学硕士”。",
   "n": 44
  },
  {
   "word": "dominate",
   "meaning": "v.支配，控制；占优势",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "A great man can dominate others by force of character.",
+  "ex_zh": "伟人能以人格的力量支配他人。",
   "notes": "",
   "n": 45
  },
  {
   "word": "power",
   "meaning": "n.能力；权力；政权；能源",
-  "ex_en": "A person should rely power",
+  "ex_en": "A person should rely upon his or her own power.",
   "ex_zh": "人应该依靠自身的力量。",
   "notes": "powerful adj.强有力的；强大的；有权势的 come into power上台，开始执政",
   "n": 46
@@ -418,8 +418,8 @@
  {
   "word": "association",
   "meaning": "n.协会，团体；关联",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "Have you joined the parent-teacher association?",
+  "ex_zh": "你加入家长教师协会了吗？",
   "notes": "",
   "n": 53
  },
@@ -434,7 +434,7 @@
  {
   "word": "community",
   "meaning": "adj.全球的，全世界的 n.社区；群体；（生物的）群落",
-  "ex_en": "In To host the Olympic Games, Beijing expanded its English-speaking community",
+  "ex_en": "To host the Olympic Games, Beijing expanded its English-speaking community.",
   "ex_zh": "为主办奥运会，北京扩大了说英语的群体。",
   "notes": "global a community centre社区活动中心",
   "n": 55
@@ -458,7 +458,7 @@
  {
   "word": "unite",
   "meaning": "v.（使）联合，（使）团结",
-  "ex_en": "All parties should unite their efforts to bring overseas peace.",
+  "ex_en": "All parties should unite their efforts to bring peace.",
   "ex_zh": "各方都应团结起来，为实现和平而努力。",
   "notes": "united adj.联合的，一致的 unity n.统一；一致，团结 unite closely紧密团结",
   "n": 58
@@ -474,7 +474,7 @@
  {
   "word": "unite",
   "meaning": "v.（使）联合，（使）团结",
-  "ex_en": "All parties should unite their efforts to bring overseas peace.",
+  "ex_en": "All parties should unite their efforts to bring peace.",
   "ex_zh": "各方都应团结起来，为实现和平而努力。",
   "notes": "united adj.联合的，一致的 unity n.统一；一致，团结 unite closely紧密团结",
   "n": 60
@@ -626,8 +626,8 @@
  {
   "word": "independence",
   "meaning": "n.独立；自立",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The country attained its independence in 1972.",
+  "ex_zh": "这个国家在1972年获得了独立。",
   "notes": "",
   "n": 79
  },
@@ -690,8 +690,8 @@
  {
   "word": "racial",
   "meaning": "adj.种族的，人种的",
-  "ex_en": "A new law has bee n brought in to elim in ate racial discrimination",
-  "ex_zh": "为消除种族歧视，一项新法律已被提出。 The whole clan will be here over Christmas.\n整个家族将在这里过圣诞节。",
+  "ex_en": "A new law has been brought in to eliminate racial discrimination.",
+  "ex_zh": "为消除种族歧视，一项新法律已被提出。",
   "notes": "race n.人种，种族 cial equality种族平等 n.宗族，家族；帮派 rival clans敌对的家族",
   "n": 87
  },
@@ -722,15 +722,15 @@
  {
   "word": "vote",
   "meaning": "n.选举权；投票v.表决，投票",
-  "ex_en": "The vote will be held next month",
-  "ex_zh": "下个月将举行\n+ru匠仅恭。",
+  "ex_en": "The vote will be held next month.",
+  "ex_zh": "下个月将举行投票。",
   "notes": "te against投票反对",
   "n": 91
  },
  {
   "word": "elect",
   "meaning": "v.选举；选择",
-  "ex_en": "They orga nised a poll to elect a preside nt",
+  "ex_en": "They organised a poll to elect a president.",
   "ex_zh": "他们组织了一次投票来选举总统。",
   "notes": "elective adj.选任的，由选举产生的n.选修课 electionn.选举；当选",
   "n": 92
@@ -962,7 +962,7 @@
  {
   "word": "aid",
   "meaning": "n.救援物资；辅助物；救助",
-  "ex_en": "An English-Chinese dicti on ary is an importa nt aid in learning English",
+  "ex_en": "An English-Chinese dictionary is an important aid in learning English.",
   "ex_zh": "英汉词典是学习英语的重要辅助工具。",
   "notes": "first aid急救live on government aid靠政府救济生活",
   "n": 121

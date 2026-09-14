@@ -58,8 +58,8 @@
  {
   "word": "explosion",
   "meaning": "n. v.闪烁，闪耀 n.爆发；迸发；爆炸；激增",
-  "ex_en": "We The explosion was caused by a burst gas pipe",
-  "ex_zh": "这次爆炸是由一个爆裂的煤气管引起的。你的记忆深处还有这首儿歌吗：“一闪一闪亮晶晶，满天",
+  "ex_en": "The explosion was caused by a burst gas pipe.",
+  "ex_zh": "这次爆炸是由一个爆裂的煤气管引起的。",
   "notes": "explode v.爆炸；爆发explosive adj.爆炸性都是小星星。挂在天上放光明，好像许多小眼睛。”其英的；可能引起爆炸的文原歌词是：Twinkle, a population explosion人口激增what",
   "n": 8
  },
@@ -82,7 +82,7 @@
  {
   "word": "blast",
   "meaning": "n.爆炸 v.爆炸，炸毁",
-  "ex_en": "It's thought that the blast occurred when volatile chemicals exploded.",
+  "ex_en": "Ifs thought that the blast occurred when volatile chemicals exploded.",
   "ex_zh": "人们认为，易挥发的化学物质炸起来时产生了这起爆炸。",
   "notes": "",
   "n": 11
@@ -170,7 +170,7 @@
  {
   "word": "pistol",
   "meaning": "n.手枪 and",
-  "ex_en": "The robber took a pistol out of his pocket shopkeeper",
+  "ex_en": "The robber took a pistol out of his pocket and pointed it at the shopkeeper.",
   "ex_zh": "强盗从口袋里掏出一支手\n枪，对准了店主。",
   "notes": "",
   "n": 22
@@ -234,8 +234,8 @@
  {
   "word": "glitter",
   "meaning": "v.闪烁；闪现n.发光小物",
-  "ex_en": "The diam ond ring on her fin ger glittered in the flare glitter Chapter",
-  "ex_zh": "沙场争锋",
+  "ex_en": "The diamond ring on her finger glittered in the moonlight.",
+  "ex_zh": "她手指上的钻石戒指在月光下闪闪发光。",
   "notes": "",
   "n": 30
  },
@@ -290,7 +290,7 @@
  {
   "word": "provide",
   "meaning": "v.供给，提供",
-  "ex_en": "The hotel provides a reservation of tickets for residents.",
+  "ex_en": "The hotel provides a reservation of tickets for its residents.",
   "ex_zh": "这家旅馆为房客提供订票服务。",
   "notes": "provision n.供应；预备；［~s］食品供应；provide sb. with sth.为某人提供某物",
   "n": 37
@@ -338,7 +338,7 @@
  {
   "word": "provide",
   "meaning": "v.供给，提供",
-  "ex_en": "The hotel provides a reservation of tickets for residents.",
+  "ex_en": "The hotel provides a reservation of tickets for its residents.",
   "ex_zh": "这家旅馆为房客提供订票服务。",
   "notes": "provision n.供应；预备；［~s］食品供应；provide sb. with sth.为某人提供某物",
   "n": 43
@@ -466,7 +466,7 @@
  {
   "word": "seize",
   "meaning": "v.抓住；夺取",
-  "ex_en": "Uncon trollable laughter seized us up",
+  "ex_en": "Uncontrollable laughter seized us up.",
   "ex_zh": "我们不由自主地大笑起来。",
   "notes": "seize on抓住；利用seize a moment抓住时机",
   "n": 59
@@ -562,7 +562,7 @@
  {
   "word": "siege",
   "meaning": "n.包围，围攻",
-  "ex_en": "TheTV station has been under siege from irate viewers phoning in to complain",
+  "ex_en": "The TV station has been under siege from irate viewers phoning in to complain.",
   "ex_zh": "电视台被愤怒的观众们围攻，他们一直打电话来投诉。",
   "notes": "",
   "n": 71
@@ -634,8 +634,8 @@
  {
   "word": "counter",
   "meaning": "v.抵消；反击，反驳adv.相反地n.柜台；工作台",
-  "ex_en": "My colleague countered of his own",
-  "ex_zh": "我同事以自己的一个建议来反驳我的建议。很多人喜欢玩名为CS的游戏，即Counter-Strike!中文里，这个游戏的名字被翻译为“反恐精英\"，这样就容易理解counter作为前缀时的含义：“相反，相对”。CS的基本含义是“有人打了我，我就回手反击”。再记一个词\ncounterfeit:counter（反）+feit（做）t反着做t\n/di't3：/\nV.阻止，威慑住 The security camera was installed to deter\npeople from stealing.安装安保摄像头是为了防止人们偷盗。 Lack of time forbids any further discussion on\nthis issue.由于时间不够，不能深入讨论这个问题。",
+  "ex_en": "My colleague countered my proposal with one of his own.",
+  "ex_zh": "我的同事用他自己的一个提议反驳了我的提议。",
   "notes": "deter sb. from doing sth.阻止某人做某事 V.禁止；阻止 forbid sb. doing sth. /to do sth.禁止某人做某事 V.禁止，不允许",
   "n": 80
  },
@@ -698,8 +698,8 @@
  {
   "word": "rebel",
   "meaning": "n.反叛者；叛逆者/libel/v.造反；反抗，反对",
-  "ex_en": "The rebels made regular attacks on the railways. prevent treason revolt rebel",
-  "ex_zh": "",
+  "ex_en": "The rebels made regular attacks on the railways.",
+  "ex_zh": "反叛分子时常袭击铁路。",
   "notes": "",
   "n": 88
  },
@@ -826,7 +826,7 @@
  {
   "word": "turmoil",
   "meaning": "n.混乱，骚乱",
-  "ex_en": "The demonstrati on tur ned into turmoil",
+  "ex_en": "The demonstration turned into turmoil.",
   "ex_zh": "示威演变成骚乱。",
   "notes": "",
   "n": 104
@@ -834,9 +834,9 @@
  {
   "word": "scenario",
   "meaning": "n.可能发生的情况；剧情梗概，脚本",
-  "ex_en": "Imagine a scenario where only 20%of people have a job",
-  "ex_zh": "想象一下只有20%的人有工作是什么样的情况。本是一个意大利语戏剧类名词，指剧情概要或歌剧、戏剧的脚本。英语中的文艺类词汇很多来自意大利语，常以。或a结尾。如：aria（咏叹调）；diva（歌剧女主角）；sonata（奏鸣曲）一一“北京现代”汽车公司旗下的品牌“索纳塔”的英文也是Sonata\no",
-  "notes": "",
+  "ex_en": "Imagine a scenario where only 20% of people have a job.",
+  "ex_zh": "想象一下只有20%的人有工作是什么样的情况。",
+  "notes": "scenario 本是意大利语戏剧类名词，指剧情概要或歌剧、戏剧的脚本。英语中的文艺类词汇很多来自意大利语，常以 o 或 a 结尾，如：aria（咏叹调）；diva（歌剧女主角）；sonata（奏鸣曲）——“北京现代”汽车公司旗下的品牌“索纳塔”的英文也是Sonata。",
   "n": 105
  },
  {
@@ -906,8 +906,8 @@
  {
   "word": "competitor",
   "meaning": "n.竞争者，对手",
-  "ex_en": "",
-  "ex_zh": "司是我们强有力的竞争对手。 Disease is an enemy of mankind.疾病是人类的敌人。",
+  "ex_en": "That company is a strong competitor of ours.",
+  "ex_zh": "那个公司是我们强有力的竞争对手。",
   "notes": "compete v.竞争competition n.竞争 com（—起）+petit（寻求）+or（表示人的后缀） —起寻求一样东西的人T竞争者。 m敌人，仇敌；敌兵，敌军",
   "n": 114
  },
@@ -946,9 +946,9 @@
  {
   "word": "blueprint",
   "meaning": "n.蓝图；行动计划",
-  "ex_en": "The construction of a con cert hall is still in the blueprint stage",
-  "ex_zh": "音乐厅的建造还在筹划的阶段。用老式晒图机晒出来的工程设计图等图样是蓝色的，因而称之为blueprint（蓝图），词义延伸后包括任何设计图样以及详细的计划或方案。除了“蓝色\"，blue还可以表达其他含义，如：blue-collar worker（蓝领工人）；心情很blue（忧郁）或blue Monday（忧郁的星期一）；\nblue-blooded（贵族血统的）；a blue movie（黄色电影人在中国，用“青”表示“高贵\"和“色情\"自古就有，如\"青楼\"青楼原指显贵之家。而\"青\"就是\n—种blue（蓝色），君不闻：青出于蓝而胜于蓝。",
-  "notes": "",
+  "ex_en": "The construction of a concert hall is still in the blueprint stage.",
+  "ex_zh": "音乐厅的建造还在筹划的阶段。",
+  "notes": "用老式晒图机晒出来的工程设计图等图样是蓝色的，因而称之为blueprint（蓝图），词义延伸后包括任何设计图样以及详细的计划或方案。除了\"蓝色\"，blue还可以表达其他含义，如：blue-collar worker（蓝领工人）；心情很blue（忧郁）或blue Monday（忧郁的星期一）；blue-blooded（贵族血统的）；a blue movie（黄色电影）。在中国，用\"青\"表示\"高贵\"和\"色情\"自古就有，如\"青楼\"，青楼原指显贵之家。而\"青\"就是一种blue（蓝色），君不闻：青出于蓝而胜于蓝。",
   "n": 119
  },
  {
@@ -1066,7 +1066,7 @@
  {
   "word": "matter",
   "meaning": "n.事情；物质V.要紧",
-  "ex_en": "He reconsidered his decision on happened",
+  "ex_en": "He reconsidered his decision on this matter because something unexpected happened.",
   "ex_zh": "因为发生了\n意料之外的事，他重新考虑了自己在这件事情上的决定。",
   "notes": "as a matter of fact事实上",
   "n": 134
@@ -1274,7 +1274,7 @@
  {
   "word": "proceed",
   "meaning": "v.接下来做；继续进行；行进",
-  "ex_en": "The conf ere nee proceeded in a very frie ndly atmosphere",
+  "ex_en": "The conference proceeded in a very friendly atmosphere.",
   "ex_zh": "大会在极友好的气氛中进行。",
   "notes": "proceed with继续进行前缀pro常表示“向前”或“在……之前”，如： proceed（向前走［ceed二to go］t行进），prolong （向前长t延长），produce（向前引出f生产）， prohibit（结合词形进行联想：在habit［习惯］形成之前T禁止）。",
   "n": 160
@@ -1282,8 +1282,8 @@
  {
   "word": "progress",
   "meaning": "n.前进；进步；进程/pra'gres/v.前进；进步",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The building of the largest bridge across a river in that country is in progress.",
+  "ex_zh": "该国最大的跨江大桥正在建设中。",
   "notes": "",
   "n": 161
  },
@@ -1330,8 +1330,8 @@
  {
   "word": "adventure",
   "meaning": "n.冒险，冒险经历v.去（某地）探险",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "All the children were listening to her adventures with eager attention.",
+  "ex_zh": "孩子们都在十分热切地听她讲述冒险经历。",
   "notes": "",
   "n": 167
  },
@@ -1490,8 +1490,8 @@
  {
   "word": "avoid punishment",
   "meaning": "v.放弃，停止；辞去；离开",
-  "ex_en": "She has not quit smoking, but is holding down cigarettes a day",
-  "ex_zh": "她还没有戒烟，但是已减到\n沙场争锋",
+  "ex_en": "She has not quit smoking, but is holding down to three cigarettes a day.",
+  "ex_zh": "她还没有戒烟，但是已减到每天三支了。",
   "notes": "",
   "n": 187
  },
@@ -1530,7 +1530,7 @@
  {
   "word": "defend",
   "meaning": "v.防御，保护；为……辩护",
-  "ex_en": "She dem on strated the best way to defend oneself",
+  "ex_en": "She demonstrated the best way to defend oneself.",
   "ex_zh": "她示范了最有效的自卫方法。",
   "notes": "defence defense）n.防御，防卫；辩护 （= defendant n.被告 defend against 防御",
   "n": 192
@@ -1586,16 +1586,16 @@
  {
   "word": "conquer",
   "meaning": "v.征服；克服，战胜 die.不成功，便成仁。",
-  "ex_en": "To conquer or to n",
-  "ex_zh": "占领，征服；克服",
+  "ex_en": "To conquer or to die.",
+  "ex_zh": "不成功，便成仁。",
   "notes": "shyness克服羞怯心理 conquer 公元前47年左右，凯撒大帝(Caesar)率军进入小亚细亚，只用了五天的时间，就平定了庞培军的叛乱。胜利后的凯撒将所有的喜悦和骄傲都浓缩在三个拉丁词里： saw, I conquered。这 Veni, Vidi, Vici意为：I came, I o 就是历史上著名的“三V文书\"。",
   "n": 199
  },
  {
   "word": "monument",
   "meaning": "n.纪念碑；历史遗迹；典范",
-  "ex_en": "This work is one of the great literature",
-  "ex_zh": "此作品是法国文学中的不朽名作之一。\n人民英雄",
+  "ex_en": "This work is one of the great monuments of French literature.",
+  "ex_zh": "此作品是法国文学中的不朽名作之一。",
   "notes": "纪念碑",
   "n": 200
  },
@@ -1722,8 +1722,8 @@
  {
   "word": "general",
   "meaning": "n.将军adj.总的；一般性的",
-  "ex_en": "As a general rule, prices follow dema nds.—",
-  "ex_zh": "般而言，物价随需求而变化。",
+  "ex_en": "As a general rule, prices follow demands.",
+  "ex_zh": "一般而言，物价随需求而变化。",
   "notes": "generally ad.—般地，通常地 in general大体上，总的来说",
   "n": 216
  },
@@ -1746,16 +1746,16 @@
  {
   "word": "infant",
   "meaning": "n.婴儿",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The infant mortality rate is a highly sensitive barometer of socio-economic conditions.",
+  "ex_zh": "婴儿死亡率能够充分反映社会经济状况。",
   "notes": "",
   "n": 219
  },
  {
   "word": "juvenile",
   "meaning": "n.少年",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The problem of juvenile delinquency calls for the attention of the whole society.",
+  "ex_zh": "少年犯罪这个问题需要引起全社会注意。",
   "notes": "",
   "n": 220
  }

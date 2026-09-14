@@ -42,16 +42,16 @@
  {
   "word": "establish",
   "meaning": "v.建立，设立n.地标；里程碑",
-  "ex_en": "The Minister established a commissi on to suggest improvements in the educational system. landmark",
-  "ex_zh": "他找到了熟悉的地标，从而确定了方向。部长组织了一个委员会为改进教育制度提供建议。",
+  "ex_en": "The Minister established a commission to suggest improvements in the educational system.",
+  "ex_zh": "部长组织了一个委员会为改进教育制度提供建议。",
   "notes": "a established adj.已确立的，已被确认的 establishment n.建立，成立；机构",
   "n": 6
  },
  {
   "word": "build",
   "meaning": "adj.位于……的 V.建造；开发",
-  "ex_en": "The We should study hard to build a better future for",
-  "ex_zh": "位于郊外。\nourselves.我们应该努力学习，为自己创造更美好的未来。",
+  "ex_en": "We should study hard to build a better future for ourselves.",
+  "ex_zh": "我们应该努力学习，为自己创造更美好的未来。",
   "notes": "n.建筑物",
   "n": 7
  },
@@ -114,7 +114,7 @@
  {
   "word": "locate",
   "meaning": "v.放置，建立；找到",
-  "ex_en": "The new hospital will be college",
+  "ex_en": "The new hospital will be located near your college.",
   "ex_zh": "这家新医院将建在你们学院附近。",
   "notes": "location n.地点",
   "n": 15
@@ -258,16 +258,16 @@
  {
   "word": "shelter",
   "meaning": "n.层 n.庇护处；掩蔽v.庇护；遮蔽",
-  "ex_en": "There These plants must be sheltered from direct sunlight",
-  "ex_zh": "这些植物不能受到阳光直射。们到达之前把它擦干净。",
+  "ex_en": "These plants must be sheltered from direct sunlight.",
+  "ex_zh": "这些植物不能受到阳光直射。",
   "notes": "shelter from the rain避雨",
   "n": 33
  },
  {
   "word": "block",
   "meaning": "n.街区；障碍；一块n.［美］电梯",
-  "ex_en": "Her cellar cradle shed shelter",
-  "ex_zh": "雅思词汇袁经cottage block",
+  "ex_en": "Walk two blocks down the street and go past the city hall.",
+  "ex_zh": "顺这条街走两个街区，经过市政厅。",
   "notes": "",
   "n": 34
  },
@@ -330,7 +330,7 @@
  {
   "word": "handrail",
   "meaning": "n.扶手，栏杆",
-  "ex_en": "Where necessary for safety, in alleyways and example, handrails shall be fitted",
+  "ex_en": "Where necessary for safety, in alleyways and stairs for example, handrails shall be fitted.",
   "ex_zh": "鉴于安\n全，在通道和楼梯这类地方应安装扶手。",
   "notes": "",
   "n": 42
@@ -338,15 +338,15 @@
  {
   "word": "pillar",
   "meaning": "n.柱子；中坚，栋梁 pillar.强盗把他捆在柱子上。",
-  "ex_en": "The robber tied him to a society",
-  "ex_zh": "社会栋梁",
+  "ex_en": "The robber tied him to a pillar.",
+  "ex_zh": "强盗把他捆在柱子上。",
   "notes": "",
   "n": 43
  },
  {
   "word": "column",
   "meaning": "n.柱；（书、报纸等印刷页的）栏；（报刊的）专栏",
-  "ex_en": "The dome was supported by white columns",
+  "ex_en": "The dome was supported by white marble columns.",
   "ex_zh": "这座圆顶由白色大理石柱支撑着。",
   "notes": "olumnist n.专栏作家",
   "n": 44
@@ -354,7 +354,7 @@
  {
   "word": "beam",
   "meaning": "n.（能量、放射线或粒子的）束，柱",
-  "ex_en": "The beams of the airport",
+  "ex_en": "The beams of the searchlights flooded the sky over the airport.",
   "ex_zh": "机场上空满是探照灯的道道光柱。",
   "notes": "a laser beam激光束",
   "n": 45
@@ -362,8 +362,8 @@
  {
   "word": "vault",
   "meaning": "n.拱顶；金库，保险库",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The walls and vaults are decorated by marble.",
+  "ex_zh": "墙壁和拱顶是用大理石装饰的。",
   "notes": "",
   "n": 46
  },
@@ -506,7 +506,7 @@
  {
   "word": "reserve",
   "meaning": "n.储备（量）；自然保护区v.预订",
-  "ex_en": "I have reserved a room for you at the hotel. terrace bath . kitchen'basin lavatory reserve. toilet",
+  "ex_en": "I have reserved a room for you at the hotel.",
   "ex_zh": "訂”:M【樓薫Hi豔當迷曲迷轍症",
   "notes": "",
   "n": 64
@@ -522,8 +522,8 @@
  {
   "word": "mall",
   "meaning": "n.［尤美］购物中心",
-  "ex_en": "The mall is crowded on weekends",
-  "ex_zh": "周末购物中心很挤。",
+  "ex_en": "The local kids often hang out at the mall.",
+  "ex_zh": "当地 的孩子常在这家购物中心闲逛。",
   "notes": "",
   "n": 66
  },
@@ -610,7 +610,7 @@
  {
   "word": "void",
   "meaning": "n.空间；空白；空虚adj.空的",
-  "ex_en": "The amusement park will fill a void children. town, which has little entertainment for",
+  "ex_en": "The amusement park will fill a void in this town, which has little entertainment for children.",
   "ex_zh": "这座游乐场将填补小镇上没有儿童娱乐设施的空白。",
   "notes": "",
   "n": 77
@@ -618,7 +618,7 @@
  {
   "word": "spacious",
   "meaning": "adj.宽敞的",
-  "ex_en": "The hotel room is comfortable",
+  "ex_en": "The hotel room is neither spacious nor comfortable.",
   "ex_zh": "这间旅馆客房既不宽敞也不舒服。",
   "notes": "space n.空间",
   "n": 78
@@ -626,8 +626,8 @@
  {
   "word": "airtight",
   "meaning": "adj.密封的，不透气的",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The whole room is airtight.",
+  "ex_zh": "整个房间是密封的。",
   "notes": "",
   "n": 79
  },
@@ -658,8 +658,8 @@
  {
   "word": "carpenter",
   "meaning": "n.木匠",
-  "ex_en": "The carpenter charged dollars for the job",
-  "ex_zh": "木匠对这件工作的要价是90美元。过去的马车是木制的，该词的词源词指“制作马车的人“。",
+  "ex_en": "The carpenter charged 90 dollars for the job.",
+  "ex_zh": "木匠对这件工作的要价是90美元。",
   "notes": "",
   "n": 83
  },
@@ -754,8 +754,8 @@
  {
   "word": "span",
   "meaning": "n.跨距，跨度；持续时间",
-  "ex_en": "The bridge has a clear span of metres",
-  "ex_zh": "这座桥的净跨径为40米。 A new dam is under construction at the valley.\n河谷里正在建一座新水坝。",
+  "ex_en": "The bridge has a clear span of 40 metres.",
+  "ex_zh": "这座桥的净跨径为40米。",
   "notes": "span of life寿命 m水坝v.控制，抑制",
   "n": 95
  },
@@ -858,7 +858,7 @@
  {
   "word": "external",
   "meaning": "adj.外来的；外面的；对外的",
-  "ex_en": "The external sector has improved performance significantly period",
+  "ex_en": "The external sector has improved performance significantly during the period.",
   "ex_zh": "在此期间，涉外行业的\n业绩大大提局。",
   "notes": "",
   "n": 108
@@ -874,7 +874,7 @@
  {
   "word": "interior",
   "meaning": "n.内部adj.内部的",
-  "ex_en": "Interior design is a promising industry nowadays",
+  "ex_en": "Interior design is a very promising industry nowadays.",
   "ex_zh": "室内设计是当今前景极好的行业。",
   "notes": "interior design 室内设计",
   "n": 110

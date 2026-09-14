@@ -34,7 +34,7 @@
  {
   "word": "terrestrial",
   "meaning": "adj.地球的；（）陆地的",
-  "ex_en": "Forests are home to over 80%of terrestrial biodiversity",
+  "ex_en": "Forests are home to over 80% of terrestrial biodiversity.",
   "ex_zh": "陆地生物多样性有八成以上靠森林维持。",
   "notes": "extraterrestrial adj.地球外的n.外星人（=E.T）",
   "n": 5
@@ -226,9 +226,9 @@
  {
   "word": "expedition",
   "meaning": "n.远征，探险",
-  "ex_en": "This is an expedition to find the beg inning of theYangtze River",
-  "ex_zh": "这是一次寻找长江源头的探险。示\"足（foot）\",如：expedition（使脚向字根ped表外t远征，探险），pedal（用脚操作的东西t踏板），\n（步行者）‘impede（双脚被缠住了妨碍），\npedicab（用脚蹬的计程车［载客的人力］三轮车）。",
-  "notes": "",
+  "ex_en": "This is an expedition to find the beginning of the Yangtze River.",
+  "ex_zh": "这是一次寻找长江源头的探险。",
+  "notes": "字根ped表示\"足（foot）\"，如：expedition（使脚向外→远征，探险），pedal（用脚操作的东西→踏板），pedestrian（步行者），impede（双脚被缠住了→妨碍），pedicab（用脚蹬的计程车［载客的人力］三轮车）。",
   "n": 29
  },
  {
@@ -258,8 +258,8 @@
  {
   "word": "spectacle",
   "meaning": "n.壮观的景象；奇观；卜s］眼镜/'",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The sunrise was a splendid spectacle.",
+  "ex_zh": "日出是个壮观的景象。",
   "notes": "",
   "n": 33
  },
@@ -290,8 +290,8 @@
  {
   "word": "radius",
   "meaning": "n.半径",
-  "ex_en": "The showed They—",
-  "ex_zh": "件一件地把标本拿出来。\nschool.他们在学校周围半径一英里的范围内搜索。",
+  "ex_en": "They searched within one mile radius of the school.",
+  "ex_zh": "他们在学校周围半径一英里的范围内搜索。",
   "notes": "",
   "n": 37
  },
@@ -362,8 +362,8 @@
  {
   "word": "atom",
   "meaning": "n.原子",
-  "ex_en": "A molecule of water is made up of two of hydrogen and one atom of oxygen.—",
-  "ex_zh": "个水分子是由两个氢原子和一个氧原子构成的。源自希腊语atomos,表示不能再分割的物质（日【否定］\n+tomos［切割］）。有古代哲学家认为万物由小得不能再分割的微粒构成。后来，物理学家根据这个词将原子命名为atom（但实际上原子并非不可分割）。再回忆一个包含tom的单词：anatomy（解剖学）。",
+  "ex_en": "A molecule of water is made up of two atoms of hydrogen and one atom of oxygen.",
+  "ex_zh": "一个水分子是由两个氢原子和一个氧原子构成的。",
   "notes": "",
   "n": 46
  },
@@ -410,8 +410,8 @@
  {
   "word": "solid",
   "meaning": "n.固体adj.固体的；牢固的",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The new office building has a very solid construction.",
+  "ex_zh": "新建的办公楼结构非常坚固。",
   "notes": "",
   "n": 52
  },
@@ -458,7 +458,7 @@
  {
   "word": "frequency",
   "meaning": "n.频率；发生次数",
-  "ex_en": "This radio signal has a frequency of kilohertz",
+  "ex_en": "This radio signal has a frequency of 800 kilohertz.",
   "ex_zh": "这个无线电信号的频率是800千赫。",
   "notes": "frequent adj.时常发生的，频繁的",
   "n": 58
@@ -506,7 +506,7 @@
  {
   "word": "radioactive",
   "meaning": "adj.放射性的",
-  "ex_en": "Nuclear energy gives millions heat light, and z power, just as it creates unwanted radioactive side effects",
+  "ex_en": "Nuclear energy gives millions heat light, and power, just as it creates unwanted radioactive side effects.",
   "ex_zh": "核能源带给无数人热、光和电力，却也带来了人们并不想得到的放射性副作用。\nradio（发光，发热）+active（活性的）t放射性的。",
   "notes": "",
   "n": 64
@@ -554,7 +554,7 @@
  {
   "word": "fragment",
   "meaning": "n.碎片，片断/fraeg'ment/v.（使）碎裂",
-  "ex_en": "He was still in bad condition and could give discernible squash invisible fragment collision",
+  "ex_en": "He was still in bad condition and could give only a fragmented account of the accident.",
   "ex_zh": "",
   "notes": "",
   "n": 70
@@ -562,7 +562,7 @@
  {
   "word": "cataclysmic",
   "meaning": "adj.剧变的；灾难性的",
-  "ex_en": "One can readily trace the disappearanee of dinosaurs to a cataclysmic event",
+  "ex_en": "One can readily trace the disappearance of dinosaurs to a cataclysmic event.",
   "ex_zh": "人们可以很容易地把恐龙消失的原因追究到一场灾难性事件上。",
   "notes": "",
   "n": 71
@@ -578,24 +578,24 @@
  {
   "word": "despair",
   "meaning": "v.n.绝望",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "This boy is his mother's last despair.",
+  "ex_zh": "这个男孩使他的妈妈十分绝望。",
   "notes": "",
   "n": 73
  },
  {
   "word": "desperate",
   "meaning": "adj.绝望的；极需要的",
-  "ex_en": "The man lost in the water",
-  "ex_zh": "这个在沙漠中迷失方向的人极想喝水。字根sper表示“希望（to hope）\",而前缀de表示“没有（without）”，故desperate表示\"没有希望的\"，即绝望的”。其他同根词如：prosper（前面有希望t繁荣，成功），prosperity（繁荣），desperation（绝望），\n（绝望的人t亡命之徒）。",
+  "ex_en": "The man lost in the desert was desperate for water.",
+  "ex_zh": "这个在沙漠中迷失方向的人极想喝水。",
   "notes": "",
   "n": 74
  },
  {
   "word": "hopeless",
   "meaning": "adj.无望的；极差的",
-  "ex_en": "He feels that his ch a nces of winning the con test are hopeless",
-  "ex_zh": "他感觉自己没有希望在竞赛中获胜。形容词后缀less表示“没有……的”。\nU\n太空探索",
+  "ex_en": "He feels that his chances of winning the contest are hopeless.",
+  "ex_zh": "他感觉自己没有希望在竞赛中获胜。",
   "notes": "",
   "n": 75
  }

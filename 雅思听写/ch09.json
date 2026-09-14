@@ -18,7 +18,7 @@
  {
   "word": "journalist",
   "meaning": "n.记者，新闻工作者",
-  "ex_en": "No journalist was bold eno ugh to challe nge the Prime Minister.",
+  "ex_en": "No journalist was bold enough to challenge the Prime Minister.",
   "ex_zh": "没有一个记者大胆到敢挑战首相。",
   "notes": "",
   "n": 3
@@ -34,8 +34,8 @@
  {
   "word": "commentator",
   "meaning": "n.评论员；实况解说员",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "I enjoy this sports commentator's commentaries very much.",
+  "ex_zh": "我非常喜欢这位体育运动实况解说员的解说。",
   "notes": "",
   "n": 5
  },
@@ -106,7 +106,7 @@
  {
   "word": "await",
   "meaning": "v.等候，期待；将降临到……身上",
-  "ex_en": "If you are lucky eno ugh to vacation in the Alps, what delights will await you?",
+  "ex_en": "If you are lucky enough to vacation in the Alps, what delights will await you?",
   "ex_zh": "如果你有幸到阿尔卑斯山度假的话，有什么乐事会等着你呢？",
   "notes": "",
   "n": 14
@@ -154,8 +154,8 @@
  {
   "word": "rumour",
   "meaning": "（=rumor）n.谣言，传闻",
-  "ex_en": "The rumour soon swept the entire company. mmour :",
-  "ex_zh": "娱乐运动",
+  "ex_en": "The rumour soon swept the entire company.",
+  "ex_zh": "谣言很快传遍了整个公司。",
   "notes": "",
   "n": 20
  },
@@ -242,7 +242,7 @@
  {
   "word": "magic",
   "meaning": "n.魔术；魔法",
-  "ex_en": "The magician thrilled his audienee with his magic.",
+  "ex_en": "The magician thrilled his audience with his magic.",
   "ex_zh": "魔术师用他的魔术使观众们激动万分。",
   "notes": "",
   "n": 31
@@ -274,7 +274,7 @@
  {
   "word": "orchestra",
   "meaning": "n.管弦乐队",
-  "ex_en": "This orchestra has been established under the patr on age of the government",
+  "ex_en": "This orchestra has been established under the patronage of the government.",
   "ex_zh": "这个管弦乐队是在政府的赞助下成立的。",
   "notes": "",
   "n": 35
@@ -314,7 +314,7 @@
  {
   "word": "animation",
   "meaning": "n.动画片；动画制作",
-  "ex_en": "It is this cartoon that brought the animation dead",
+  "ex_en": "It is this cartoon that brought the animation industry back from the dead.",
   "ex_zh": "正是这部卡通片使动画产\n业起死回生。",
   "notes": "",
   "n": 40
@@ -354,7 +354,7 @@
  {
   "word": "craftsman",
   "meaning": "n.工匠，工艺师",
-  "ex_en": "The origi nal desig ns were made by highly skilled craftsmen",
+  "ex_en": "The original designs were made by highly skilled craftsmen.",
   "ex_zh": "原始的图案是由技艺高超的工匠绘制的。",
   "notes": "craft n. I艺v.精心制作",
   "n": 45
@@ -482,7 +482,7 @@
  {
   "word": "describe",
   "meaning": "v.描述，形容",
-  "ex_en": "Words cannot describe the beauty of the seene. portrait sketch painting depict sculpture describe draw",
+  "ex_en": "Words cannot describe the beauty of the scene.",
   "ex_zh": "",
   "notes": "",
   "n": 61
@@ -530,7 +530,7 @@
  {
   "word": "hip-hop",
   "meaning": "n.嘻哈文化",
-  "ex_en": "Hip-hop sin gers like to wear blin g-bli ng in their fancy",
+  "ex_en": "Hip-hop singers like to wear bling-bling in their music videos to look fancy.",
   "ex_zh": "在音乐录影带里，嘻哈歌\n手喜欢穿得珠光宝气，让自己看起来很炫。",
   "notes": "",
   "n": 67
@@ -562,7 +562,7 @@
  {
   "word": "solo",
   "meaning": "n.独奏，独唱edj.独奏的，独唱的；单独的",
-  "ex_en": "She as this country's has acquired a reputation violinist",
+  "ex_en": "She has acquired a reputation as this country's premier solo violinist.",
   "ex_zh": "她赢得了该国首席小提琴独奏家\n的名誉。",
   "notes": "",
   "n": 71
@@ -570,7 +570,7 @@
  {
   "word": "melody",
   "meaning": "n.乐曲；旋律",
-  "ex_en": "I really like that song, because its melody is pleasant",
+  "ex_en": "I like that song, because its melody is really pleasant.",
   "ex_zh": "我喜欢那首歌，因为它的旋律十分悦耳。",
   "notes": "",
   "n": 72
@@ -578,7 +578,7 @@
  {
   "word": "rhythm",
   "meaning": "n.节奏，韵律",
-  "ex_en": "I without a good rhythm. can't dance to music",
+  "ex_en": "I can't dance to music without a good rhythm.",
   "ex_zh": "没有好的节奏我就不能跟着音乐跳舞。",
   "notes": "rhythmical adj.有节奏的，有韵律的",
   "n": 73
@@ -650,8 +650,8 @@
  {
   "word": "sponsorship",
   "meaning": "n.喇叭，小号n.赞助人；顾客，老主顾",
-  "ex_en": "His performanee as a trumpet player was quite A revolutionary",
-  "ex_zh": "他作为小号手的演奏独具一格。study",
+  "ex_en": "His performance as a trumpet player was quite revolutionary.",
+  "ex_zh": "他作为小号手的演奏独具一格。",
   "notes": "",
   "n": 82
  },
@@ -666,7 +666,7 @@
  {
   "word": "flute",
   "meaning": "n.长笛",
-  "ex_en": "The long-draw n-out sound of a flute is comi ng from far to near",
+  "ex_en": "The long-drawn-out sound of a flute is coming from far to near.",
   "ex_zh": "悠长的笛声由远而近。",
   "notes": "",
   "n": 84
@@ -722,7 +722,7 @@
  {
   "word": "famous",
   "meaning": "adj.著名的，出名的",
-  "ex_en": "Wuthering Heights is one of the most famous athlete volunteer energetic champion, famous vigorous- spectator well-known stadium",
+  "ex_en": "Wuthering Heights is one of the most famous novels in the world.",
   "ex_zh": "",
   "notes": "",
   "n": 91
@@ -866,8 +866,8 @@
  {
   "word": "billiards",
   "meaning": "n.台球",
-  "ex_en": "He spent a whole after noon playi ng billiards",
-  "ex_zh": "他打了整整一个下午的台球。\npool是大家比较常玩的一种台球，pool还有一个常见词",
+  "ex_en": "He spent a whole afternoon playing billiards.",
+  "ex_zh": "他打了整整一个下午的台球。",
   "notes": "",
   "n": 109
  },
@@ -978,8 +978,8 @@
  {
   "word": "toss",
   "meaning": "v.扔，抛，掷；（使）颠簸",
-  "ex_en": "The among the eddies. canoe was tossed about",
-  "ex_zh": "独木舟在涡流之中摇晃打转。\nturn辗转反侧",
+  "ex_en": "The canoe was tossed about among the eddies.",
+  "ex_zh": "独木舟在涡流之中摇晃打转。",
   "notes": "",
   "n": 123
  },
@@ -994,16 +994,16 @@
  {
   "word": "slip",
   "meaning": "v.滑跤；滑落；溜n.滑倒",
-  "ex_en": "She the stairs",
-  "ex_zh": "她滑倒了，\n从楼梯上摔了下来。",
+  "ex_en": "She slipped and fell down the stairs.",
+  "ex_zh": "她滑倒了， 从楼梯上摔了下来。",
   "notes": "a口误，失言 slip",
   "n": 125
  },
  {
   "word": "glide",
   "meaning": "v.滑动，掠过 n.滑行",
-  "ex_en": "The beautiful swan glides gracefully on the He pond",
-  "ex_zh": "美丽的天鹅在池中优雅地游动。他跳入水中救小孩。",
+  "ex_en": "The beautiful swan glides gracefully on the pond.",
+  "ex_zh": "美丽的天鹅在池中优雅地游动。",
   "notes": "",
   "n": 126
  },
@@ -1042,8 +1042,8 @@
  {
   "word": "drift",
   "meaning": "v.飘移，漂流；流浪，漂泊picnic",
-  "ex_en": "The dead body drifted ashore on the beach. n・",
-  "ex_zh": "野餐；野餐食物尸体被冲到了沙滩上。 Let's",
+  "ex_en": "The dead body drifted ashore on the beach.",
+  "ex_zh": "尸体被冲到了沙滩上。",
   "notes": "drift from one country to another从一国流浪到旁吃野餐吧。另一国",
   "n": 131
  },
@@ -1066,8 +1066,8 @@
  {
   "word": "plunge",
   "meaning": "v.纵身投入；猛跌；（使）投身 n.跳水；猛跌",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "He plunged into the water to save the child.",
+  "ex_zh": "他跳入水中救小孩。",
   "notes": "",
   "n": 134
  },
@@ -1146,7 +1146,7 @@
  {
   "word": "cruise",
   "meaning": "v.乘船游览；以平稳的速度行驶",
-  "ex_en": "The car was cruising along at kilometres an hour",
+  "ex_en": "The car was cruising along at 60 kilometres an hour.",
   "ex_zh": "这辆汽车以每小时60公里的速度平稳行驶。",
   "notes": "uiser n.巡洋舰；舱式游艇；巡逻警车",
   "n": 144
@@ -1250,7 +1250,7 @@
  {
   "word": "bow",
   "meaning": "v. n.鞠躬",
-  "ex_en": "He can't agree with her, but bowed to her greater knowledge",
+  "ex_en": "He can't agree with her, but bowed to her greater experience and knowledge.",
   "ex_zh": "虽然他不同意她的意见，但\n不得不承认她的经验和知识更丰富。",
   "notes": "take a bow谢幕",
   "n": 157

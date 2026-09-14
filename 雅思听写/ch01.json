@@ -2,7 +2,7 @@
  {
   "word": "atmosphere",
   "meaning": "n.大气层，大气圈；气氛",
-  "ex_en": "The approaching exami nation created a tense atmosphere on the campus",
+  "ex_en": "The approaching examination created a tense atmosphere on the campus.",
   "ex_zh": "即将到来的考试在校园里制造了一种紧张气氛。",
   "notes": "osphere pressure大气压working atmosphere 工作环境，工作氛围 atmo（水汽）+sphere（球体，球形）t大气圈。",
   "n": 1
@@ -66,7 +66,7 @@
  {
   "word": "crust",
   "meaning": "n.地壳；外壳",
-  "ex_en": "The crust on the snow was thick eno ugh for us to walk on it",
+  "ex_en": "The crust on the snow was thick enough for us to walk on it.",
   "ex_zh": "雪上冻结的那层冰很厚，足以让我们在上面行走。",
   "notes": "",
   "n": 9
@@ -90,7 +90,7 @@
  {
   "word": "latitude",
   "meaning": "n.纬度",
-  "ex_en": "Our position is degrees north latitude",
+  "ex_en": "Our position is 40 degrees north latitude.",
   "ex_zh": "我们的位置是北纬40度。",
   "notes": "high latitudes高纬度地区",
   "n": 12
@@ -122,7 +122,7 @@
  {
   "word": "mishap",
   "meaning": "n.小灾难",
-  "ex_en": "A mishap prevented him from meeting",
+  "ex_en": "A mishap prevented him from attending the routine company meeting.",
   "ex_zh": "他遇到点儿麻烦，没能来参\n加公司的例会。不幸。\nmis（坏的，错的，不好的）+hap（运气）t",
   "notes": "",
   "n": 16
@@ -378,7 +378,7 @@
  {
   "word": "flooding",
   "meaning": "n.洪水泛滥",
-  "ex_en": "Since the flooding began last month, people have died statewide",
+  "ex_en": "Since the flooding began last month, 16 people have died statewide.",
   "ex_zh": "自上个月洪水暴发以来，全州已有16人死亡。",
   "notes": "flood V.淹没；充满n.洪水",
   "n": 48
@@ -418,7 +418,7 @@
  {
   "word": "terrain",
   "meaning": "n.地形",
-  "ex_en": "He climbed a tree to view the surrounding In terrain",
+  "ex_en": "He climbed a tree to view the surrounding terrain.",
   "ex_zh": "他爬上一棵树去查看周围的地形。",
   "notes": "a terrain feature地形特征",
   "n": 53
@@ -426,15 +426,15 @@
  {
   "word": "landscape",
   "meaning": "n.风景，地貌v.对……进行景观美化n.三角洲",
-  "ex_en": "The The trees and the m ountains made the beautiful",
-  "ex_zh": "树木和山脉使风景变得很美。\n（陆地）+（表示性质、状况等）t地貌。\nland scape源于希腊字母表的第四个字母厶，因为状似三角，被用来表示“三角洲”。",
-  "notes": "",
+  "ex_en": "The trees and the mountains made the landscape very beautiful.",
+  "ex_zh": "树木和山脉使风景变得很美。",
+  "notes": "land（陆地）+scape（表示性质、状况等）→地貌。landscape源于希腊字母表的第四个字母Δ，因为状似三角，被用来表示\"三角洲\"。",
   "n": 54
  },
  {
   "word": "continent",
   "meaning": "n.大陆；洲plain",
-  "ex_en": "It is generally thought that Columbus discovered n",
+  "ex_en": "It is generally thought that Columbus discovered the American continents.",
   "ex_zh": "平\ncontinents.人们通常认为是哥伦布发现了\n美洲大陆。\nthe",
   "notes": "continental adj.大陆的，大陆性的原上漫步。",
   "n": 55
@@ -442,7 +442,7 @@
  {
   "word": "cave",
   "meaning": "n.洞穴，山洞",
-  "ex_en": "The This cave was used by smugglers in the eighteenth century",
+  "ex_en": "This cave was used by smugglers in the eighteenth century.",
   "ex_zh": "该洞穴曾在18世纪被走私者使用。",
   "notes": "plateau explore a cave勘探山洞某些法语词在被借入英语中时仍然保留了其拼写习惯，如法语字母组合eau:",
   "n": 56
@@ -498,8 +498,8 @@
  {
   "word": "oasis",
   "meaning": "n.绿洲；宜入之地",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "Oasis symbolises a hope in desert areas.",
+  "ex_zh": "绿洲在沙漠地区象征着一种希望。",
   "notes": "",
   "n": 63
  },
@@ -554,7 +554,7 @@
  {
   "word": "polar",
   "meaning": "adj.极地的，近极地的；对立的",
-  "ex_en": "In these polar regions, the balanee of nature has already been disrupted",
+  "ex_en": "In these polar regions, the balance of nature has already been disrupted.",
   "ex_zh": "在南极地区和北极地区，大自然的平衡已被破坏。",
   "notes": "a polar bear北极熊",
   "n": 70
@@ -706,7 +706,7 @@
  {
   "word": "brook",
   "meaning": "n.小河，溪",
-  "ex_en": "Before we drink at a brook, it is good to its source",
+  "ex_en": "Before we drink at a brook, it is good to know its source.",
   "ex_zh": "溪畔畅饮前，最好知其源。",
   "notes": "",
   "n": 89
@@ -930,8 +930,8 @@
  {
   "word": "frost",
   "meaning": "n.霜；霜冻；严寒",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "Sweet potatoes decayed after the frost.",
+  "ex_zh": "发生霜冻之后，甘薯烂掉了。",
   "notes": "",
   "n": 117
  },
@@ -978,8 +978,8 @@
  {
   "word": "tremble",
   "meaning": "v. n.战栗，颤抖",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "There was a tremble in her voice.",
+  "ex_zh": "她的声音颤抖着。",
   "notes": "",
   "n": 123
  },
@@ -1042,7 +1042,7 @@
  {
   "word": "rainbow",
   "meaning": "n.虹，彩虹",
-  "ex_en": "A after a heavy rain. A rainbow is usually seen",
+  "ex_en": "A rainbow is usually seen after a heavy rain.",
   "ex_zh": "彩虹通常在大雨之后出现。",
   "notes": "in",
   "n": 131
@@ -1050,7 +1050,7 @@
  {
   "word": "shower",
   "meaning": "n.阵雨；(-)阵；淋浴n.山脊，山",
-  "ex_en": "The The weatherman predicts showers this afternoon",
+  "ex_en": "The weatherman predicts showers this afternoon.",
   "ex_zh": "气象预报员预报今天下午有阵雨。",
   "notes": "",
   "n": 132
@@ -1074,8 +1074,8 @@
  {
   "word": "forecast",
   "meaning": "n.预测，预报v.预测，预言",
-  "ex_en": "The rece nt statement of the preside nt forecasts a change in the situation",
-  "ex_zh": "总统最近的一次讲话预示着形势将有所变化。\nfore（前，先）+cast（扔）t预先扔下t预报。",
+  "ex_en": "The recent statement of the president forecasts a change in the situation.",
+  "ex_zh": "总统最近的一次讲话预示着形势将有所变化。",
   "notes": "",
   "n": 135
  },
@@ -1154,8 +1154,8 @@
  {
   "word": "southern",
   "meaning": "adj.南部的；南方的 slope江southern",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "Only in the southern part of Taiwan have I seen such scenery.",
+  "ex_zh": "唯有在中国台湾南部我才见过这样的风景。",
   "notes": "",
   "n": 145
  },
@@ -1378,15 +1378,15 @@
  {
   "word": "border",
   "meaning": "n.边界；边界地区；镶边V.和……毗邻；形成……的边界",
-  "ex_en": "The border incident lead to the war between pollution border pollutant contaminate geology",
-  "ex_zh": "",
+  "ex_en": "The border incident lead to the war between the two countries.",
+  "ex_zh": "这一边境事件导致了两国交战。",
   "notes": "",
   "n": 173
  },
  {
   "word": "plate",
   "meaning": "n.（地质学中的大陆）板块；盘",
-  "ex_en": "It is gen erally accepted that earthquakes are caused by two tectonic plates bumping into each other",
+  "ex_en": "It is generally accepted that earthquakes are caused by two tectonic plates bumping into each other.",
   "ex_zh": "人们普遍认为，地震是由两块构造板块互相碰撞造成的。",
   "notes": "",
   "n": 174
@@ -1394,7 +1394,7 @@
  {
   "word": "debris",
   "meaning": "n.碎片，残骸",
-  "ex_en": "We are searchi ng for his corpse among the debris after the explosion",
+  "ex_en": "We are searching for his corpse among the debris after the explosion.",
   "ex_zh": "爆炸后，我在瓦砾堆中寻找着他的尸体。",
   "notes": "",
   "n": 175
@@ -1410,7 +1410,7 @@
  {
   "word": "grand",
   "meaning": "adj.宏大的；豪华的，宏伟的；极好的",
-  "ex_en": "He was born in the purple and palace",
+  "ex_en": "He was born in the purple and was brought up in the grand palace.",
   "ex_zh": "他出身于皇族，在宏伟的宫\n殿中长大。",
   "notes": "",
   "n": 177
@@ -1420,13 +1420,13 @@
   "meaning": "adj.壮丽的，宏伟的；令人印象深刻的",
   "ex_en": "The king lived in this magnificent palace",
   "ex_zh": "国王住在这座宏伟的宫殿里。",
-  "notes": "magnificenee n.宏伟，耳土丽",
+  "notes": "magnificence n.宏伟，壮丽",
   "n": 178
  },
  {
   "word": "super",
   "meaning": "adj.超级的，极好的",
-  "ex_en": "I've discovered a super restaura nt near here!",
+  "ex_en": "I've discovered a super restaurant near here!",
   "ex_zh": "我在附近发现一家超级棒的餐馆！",
   "notes": "",
   "n": 179
@@ -1498,8 +1498,8 @@
  {
   "word": "calendar",
   "meaning": "n.日历；历法n.天堂；乐园，福地",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The Islamic calendar has fewer days than the Gregorian calendar.",
+  "ex_zh": "伊斯兰历比公历的天数少。",
   "notes": "",
   "n": 188
  },
@@ -1554,8 +1554,8 @@
  {
   "word": "vapour",
   "meaning": "（=vapor）n.蒸气；水汽",
-  "ex_en": "When water ch a nges to water vapour, we say evaporates",
-  "ex_zh": "当水变成水蒸气时，我们就称水蒸发了。\nit",
+  "ex_en": "When water changes to water vapour, we say it evaporates.",
+  "ex_zh": "当水变成水蒸气时，我们就称水蒸发了。",
   "notes": "",
   "n": 195
  },
@@ -1586,8 +1586,8 @@
  {
   "word": "reservoir",
   "meaning": "n.水库，蓄水池",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "This reservoir gives water to the whole city.",
+  "ex_zh": "这座水库为全城提供用水。",
   "notes": "",
   "n": 199
  },
@@ -1770,15 +1770,15 @@
  {
   "word": "artificial",
   "meaning": "adj.人造的",
-  "ex_en": "is fruit juice contains absolutely no artificial colourings",
-  "ex_zh": "这种果扌惟不含AiB周味品或色素。\n字根art意为“技巧（skill）;技艺（art）”；字根fic等同于字根fa ct,意为“制作（to make）\"。同字根的单词例如：artefact（用技艺制作出来的物品，非天然的t\n人造物品；手工艺品）, factory（制作的地方t工厂）。",
+  "ex_en": "This fruit juice contains absolutely no artificial flavourings or colourings.",
+  "ex_zh": "这种果扌惟不含A iB 周味品或色素。",
   "notes": "",
   "n": 222
  },
  {
   "word": "synthetic",
   "meaning": "adj.人造的，合成的n.卜s］合成物",
-  "ex_en": "Nylon is not from is a synthetic material; it nature",
+  "ex_en": "Nylon is a synthetic material; it is not from nature.",
   "ex_zh": "尼龙是一种合成材料，不是天然物质。",
   "notes": "",
   "n": 223

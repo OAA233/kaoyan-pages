@@ -10,15 +10,15 @@
  {
   "word": "education",
   "meaning": "n.教育学；教育",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "A good education gives your child a good start in life.",
+  "ex_zh": "良好的教育会让你的孩子在人生中有个良好的开端。",
   "notes": "educe 推断出引出 educated 受教育的人 educational 教育的有教育意义的",
   "n": 2
  },
  {
   "word": "secondary",
   "meaning": "adj.中等教育的；次要的",
-  "ex_en": "The most important factor is pricelocation is a secondary issue",
+  "ex_en": "The most important factor is price, location is a secondary issue.",
   "ex_zh": "最重要的因素是价格，位置是次要问题。",
   "notes": "a sec on dary school中学",
   "n": 3
@@ -186,15 +186,15 @@
  {
   "word": "enhance",
   "meaning": "v.提高，增强",
-  "ex_en": "A good score of will enhance my ch a nee offer.—",
-  "ex_zh": "个好的雅思考试成绩将会使我有\n更大的希望被录取。",
+  "ex_en": "A good score of IELTS will enhance my chance of getting the offer.",
+  "ex_zh": "一个好的雅思考试成绩将会使我有更大的希望被录取。",
   "notes": "",
   "n": 24
  },
  {
   "word": "enable",
   "meaning": "v.使能够",
-  "ex_en": "This diction ary will enable you to un English words",
+  "ex_en": "This dictionary will enable you to understand English words.",
   "ex_zh": "这本词典会使你能理解英语单词。",
   "notes": "le adj.能够...的ability n.能力 enable sb. to do sth.使某人能够做某事",
   "n": 25
@@ -218,8 +218,8 @@
  {
   "word": "motivate",
   "meaning": "v.激发，驱使",
-  "ex_en": "Good teachers are those who can motivate their emphasise motive enhance motivate",
-  "ex_zh": "",
+  "ex_en": "Good teachers are those who can motivate their students.",
+  "ex_zh": "好老师是能激励学生的老师。",
   "notes": "",
   "n": 28
  },
@@ -258,7 +258,7 @@
  {
   "word": "spoil",
   "meaning": "v.宠坏，溺爱；破坏，糟蹋",
-  "ex_en": "You be careful, because you may make should life",
+  "ex_en": "You should be careful, because you may make a mistake which will spoil your life.",
   "ex_zh": "你应该小心一点，\n因为你可能会犯下一个将毁了你的生活的错误。\nview大煞风景",
   "notes": "",
   "n": 33
@@ -370,7 +370,7 @@
  {
   "word": "brilliant",
   "meaning": "adj.光辉的；聪颖的；（光线等）明亮的；非常好的",
-  "ex_en": "She drew the curtai ns and brilliant sun light flooded room",
+  "ex_en": "She drew the curtains and brilliant sunlight flooded into the room.",
   "ex_zh": "她拉开窗帘，耀眼的阳光泻入房间。",
   "notes": "",
   "n": 47
@@ -402,7 +402,7 @@
  {
   "word": "notorious",
   "meaning": "adj.声名狼藉的",
-  "ex_en": "The notorious thief was fin ally caught and put to prison",
+  "ex_en": "The notorious thief was finally caught and put to prison.",
   "ex_zh": "这个声名狼藉的小偷终于被捉到并关进监狱了。",
   "notes": "notoriety n.坏名声磁brilliant eminent 雅思词汇戛经reputation esteem",
   "n": 51
@@ -634,7 +634,7 @@
  {
   "word": "bachelor",
   "meaning": "n.学士；单身汉",
-  "ex_en": "Io do the job, you must have at least a bachelor's degree in engineering",
+  "ex_en": "To do the job, you must have at least a bachelor's degree in engineering.",
   "ex_zh": "要做这项工作，你至少要先取得工程学的学士学位。",
   "notes": "a bachelor's degree学士学位",
   "n": 80
@@ -722,7 +722,7 @@
  {
   "word": "coed",
   "meaning": "adj.男女同校的n.（男女同校的大学中的）女生",
-  "ex_en": "A nationwide research is coeds",
+  "ex_en": "A nationwide research is under way for typical coeds.",
   "ex_zh": "一项针对男女同校大学中的典型女生的全国性调查正在展开。",
   "notes": "",
   "n": 91
@@ -754,8 +754,8 @@
  {
   "word": "matriculation",
   "meaning": "n.注册入大学",
-  "ex_en": "Matriculation was in creasing in many universities in the 1990s. 20",
-  "ex_zh": "世纪90年代，许多大学的注册入学人数都在增加。\n学校教育",
+  "ex_en": "Matriculation was increasing in many universities in the 1990s.",
+  "ex_zh": "20世纪90年代，许多大学的注册入学人数都在增加。",
   "notes": "",
   "n": 95
  },
@@ -842,7 +842,7 @@
  {
   "word": "literature",
   "meaning": "n.文学；文学作品；文献",
-  "ex_en": "Literature stands related to man as scienee stands to nature.",
+  "ex_en": "Literature stands related to man as science stands to nature.",
   "ex_zh": "文学与人的关系正如科学与自然的关系一样。",
   "notes": "literary adj.文学（上）的",
   "n": 106
@@ -914,7 +914,7 @@
  {
   "word": "coverage",
   "meaning": "n.新闻报道；覆盖范围",
-  "ex_en": "The wedding of the two coverage",
+  "ex_en": "The wedding of the two movie stars got massive media coverage.",
   "ex_zh": "这两位电影明星的婚礼得到媒体的广泛\n报道。",
   "notes": "",
   "n": 115
@@ -1122,7 +1122,7 @@
  {
   "word": "major",
   "meaning": "n.［美］主修科目，专业v.［美］主修edj.主要的",
-  "ex_en": "She majored in In ter national university",
+  "ex_en": "She majored in International Economy at university.",
   "ex_zh": "她在大学期间主修国际经济。",
   "notes": "majority n.大多数专业 major in主修...",
   "n": 141
@@ -1130,7 +1130,7 @@
  {
   "word": "minor",
   "meaning": "n.［美］辅修科目adj.不严重的",
-  "ex_en": "My major is English, but I also have history",
+  "ex_en": "My major is English, but I also have a minor in history.",
   "ex_zh": "我主修英语，但是还辅修了历史学。",
   "notes": "minority n.少数派；少数民族",
   "n": 142
@@ -1146,7 +1146,7 @@
  {
   "word": "politics",
   "meaning": "n.政治学；政治；政治事务",
-  "ex_en": "He closed dow n the bus in ess and went into politics",
+  "ex_en": "He closed down the business and went into politics.",
   "ex_zh": "他关闭公司，投身政治。",
   "notes": "political adj.政治的politic adj.得当的，明智的",
   "n": 144
@@ -1290,8 +1290,8 @@
  {
   "word": "maths",
   "meaning": "mathematics）n.数学 （=",
-  "ex_en": "The will test us in maths",
-  "ex_zh": "老师将测试我\n们的数学。",
+  "ex_en": "The teacher will test us in maths.",
+  "ex_zh": "老师将测试我们的数学。",
   "notes": "mathematical adj.数学的，数学上的",
   "n": 162
  },
@@ -1338,7 +1338,7 @@
  {
   "word": "sum",
   "meaning": "n.总数，总和；金额",
-  "ex_en": "The man has decided to give his son a huge of money for his independenee from the family. sum",
+  "ex_en": "The man has decided to give his son a huge sum of money for his independence from the family.",
   "ex_zh": "这个男人决定给儿子一大笔钱，让他离家自立。",
   "notes": "",
   "n": 168
@@ -1346,7 +1346,7 @@
  {
   "word": "total",
   "meaning": "adj.总的，全部的fl.总数",
-  "ex_en": "In total, over 100,000 people were killed in the and a great many people were homeless. tsunami,",
+  "ex_en": "In total, over 100,000 people were killed in the tsunami, and a great many people were homeless.",
   "ex_zh": "在这次海啸中丧生的人总计超过了W万人，还有很多人无家可归。",
   "notes": "",
   "n": 169
@@ -1378,7 +1378,7 @@
  {
   "word": "minus",
   "meaning": "adj.负的，零以下的prep.减（去）",
-  "ex_en": "The temperature is minus degrees now",
+  "ex_en": "The temperature is minus 10 degrees now.",
   "ex_zh": "现在的温度是零下10度。",
   "notes": "",
   "n": 173
@@ -1442,7 +1442,7 @@
  {
   "word": "variable",
   "meaning": "n.变量；可变因素adj.易变的",
-  "ex_en": "There are some variables that can ch a nge our plan",
+  "ex_en": "There are some variables that can change our plan.",
   "ex_zh": "存在一些能够改变我们的计划的不定因素。",
   "notes": "",
   "n": 181
@@ -1466,7 +1466,7 @@
  {
   "word": "mean",
   "meaning": "n.平均数，平均值 adj.平均的",
-  "ex_en": "The professor asked the students to take values and calculate the mean",
+  "ex_en": "The professor asked the students to take 200 values and calculate the mean.",
   "ex_zh": "教授要求学生们取个值，然后计算其平均值。",
   "notes": "mean distance平均距离",
   "n": 184
@@ -1514,7 +1514,7 @@
  {
   "word": "minimum",
   "meaning": "n.最小值，最低限度",
-  "ex_en": "You must get a minimum of questions right to pass the test",
+  "ex_en": "You must get a minimum of 60 questions right to pass the test.",
   "ex_zh": "你必须答对至少60道题才能通过测试。",
   "notes": "minimise(=minimize)v.使最小化 minimal adj.最小的",
   "n": 190
@@ -1546,8 +1546,8 @@
  {
   "word": "diagram",
   "meaning": "n.图表；示意图，图解",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The teacher draws a diagram showing how the plant seedling bends towards the sunlight.",
+  "ex_zh": "老师画了幅示意图，说明该植物幼苗是如何弯向阳光生长的。",
   "notes": "",
   "n": 194
  },
@@ -1578,7 +1578,7 @@
  {
   "word": "cube",
   "meaning": "n.立方体；立方，三次需；立方形的东西",
-  "ex_en": "She dropped a cube of sugar into her coffee stirred it with a spoon",
+  "ex_en": "She dropped a cube of sugar into her coffee and stirred it with a spoon.",
   "ex_zh": "她将一块方糖放入咖啡中，\nand\n然后用勺子搅了搅。",
   "notes": "cubic adj.立方形的；立方的 an ice cube冰块",
   "n": 198
@@ -1618,7 +1618,7 @@
  {
   "word": "circle",
   "meaning": "n.圆",
-  "ex_en": "The circle is centimetres in diameter",
+  "ex_en": "The circle is 10 centimetres in diameter.",
   "ex_zh": "这个圆形的直径是10厘米。",
   "notes": "rcular adj.圆的；环行的circulate v.循环；传阅；传播circumferenee n.圆周；周长recycle v.回收利用",
   "n": 203
@@ -1690,7 +1690,7 @@
  {
   "word": "per cent",
   "meaning": "n.［单复数同形］百分之……（=percent）",
-  "ex_en": "I am per cent in agreement.",
+  "ex_en": "I am 100 per cent in agreement.",
   "ex_zh": "我百分之百同意。",
   "notes": "",
   "n": 212
@@ -1706,8 +1706,8 @@
  {
   "word": "rate",
   "meaning": "n.比率，率；速度",
-  "ex_en": "The rate of in flation decreased to 5%last year",
-  "ex_zh": "去年的通货膨胀率降低到5%\no",
+  "ex_en": "The rate of inflation decreased to 5% last year.",
+  "ex_zh": "去年的通货膨胀率降低到5%。",
   "notes": "",
   "n": 214
  },
@@ -1730,7 +1730,7 @@
  {
   "word": "scale",
   "meaning": "n.刻度；规模；卜s］天平；鳞认攀登",
-  "ex_en": "A machine for weighing people has a scale from pound to pounds on it",
+  "ex_en": "A machine for weighing people has a scale from 1 pound to 300 pounds on it.",
   "ex_zh": "称体重的机器上有从1磅到300磅的刻度。",
   "notes": "a big/large scale大规模的（地） 一词多义，记住“刻度”的含义即可，可由此记住其他意思：有人把鱼捞起来一看，“哇，这种动物刻痕累累，身体上自带刻度！”；要想攀一座高山，没有工具，只能用手扣住LLI壁上的一道道刻痕往上“攀登”。",
   "n": 217
@@ -1746,8 +1746,8 @@
  {
   "word": "density",
   "meaning": "n.密度；浓度",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The population density of big cities is increasing year by year.",
+  "ex_zh": "大城市的人口密度正在逐年变大。",
   "notes": "",
   "n": 219
  },
@@ -1978,8 +1978,8 @@
  {
   "word": "theory",
   "meaning": "n.理论；学说",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "There are many theories about the origin of the universe.",
+  "ex_zh": "关于宇宙起源的学说有很多。",
   "notes": "",
   "n": 248
  },
@@ -2066,7 +2066,7 @@
  {
   "word": "course",
   "meaning": "n.课程",
-  "ex_en": "e is curre ntly doing a bus in ess studies course at Leeds",
+  "ex_en": "She is currently doing a business studies course at Leeds.",
   "ex_zh": "她目前在利兹大学修读一门商科课程。",
   "notes": "",
   "n": 259
@@ -2082,8 +2082,8 @@
  {
   "word": "curriculum",
   "meaning": "n.课程；（学校等的）全部课程",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "The staff should work together to revise the school curriculum.",
+  "ex_zh": "全体教职工应当齐心协力修订学校的全部课程。",
   "notes": "",
   "n": 261
  },
@@ -2122,8 +2122,8 @@
  {
   "word": "basic",
   "meaning": "adj.基本的，基础的",
-  "ex_en": "The governme nt in creased prices on several basic commodities like meat and da",
-  "ex_zh": "汁y products.\n政府提高了肉类、乳制品等几种基本商品的价格。",
+  "ex_en": "The government increased prices on several basic commodities like meat and dairy products.",
+  "ex_zh": "政府提高了肉类、乳制品等几种基本商品的价格。",
   "notes": "base v.以……为基础n.底部；基础 basement n.地下室 ； w 一",
   "n": 266
  },
@@ -2274,9 +2274,9 @@
  {
   "word": "quiz",
   "meaning": "n.智力竞赛；小测验",
-  "ex_en": "The quiz was a good opport unity for him to exhibit his knowledge",
-  "ex_zh": "这场智力竞赛是他炫耀知识的好机会。词源不详，据说由一家剧院经理所创。他同别人打赌说他可以在一夜之间造岀一个新的、毫无意义的、人们却又不能不接受的词。他花钱雇了一些顽童，连夜在城中每一面墙壁上用粉笔写上“quiz”字样。第二天一早，人们发现了这个词，但谁也不知道它的意思，争相打听。于是这个毫无词义的“quiz”不久就有了“智力竞赛”“恶作剧”等词义。",
-  "notes": "",
+  "ex_en": "The quiz was a good opportunity for him to exhibit his knowledge.",
+  "ex_zh": "这场智力竞赛是他炫耀知识的好机会。",
+  "notes": "词源不详，据说由一家剧院经理所创。他同别人打赌说他可以在一夜之间造出一个新的、毫无意义的、人们却又不能不接受的词。他花钱雇了一些顽童，连夜在城中每一面墙壁上用粉笔写上\"quiz\"字样。第二天一早，人们发现了这个词，但谁也不知道它的意思，争相打听。于是这个毫无词义的\"quiz\"不久就有了\"智力竞赛\"\"恶作剧\"等词义。",
   "n": 285
  },
  {
@@ -2306,8 +2306,8 @@
  {
   "word": "print",
   "meaning": "v.打印n.印刷品；(冲印出来的)照片",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "Print these words in Italics across the top of the page.",
+  "ex_zh": "把这些词用斜体字印在这页的顶端。",
   "notes": "",
   "n": 289
  },
@@ -2466,7 +2466,7 @@
  {
   "word": "assume",
   "meaning": "v.假定，设想；承担（责任）；取得（权力）",
-  "ex_en": "We assume his innocenee before hearing the evidence against it",
+  "ex_en": "We assume his innocence before hearing the evidence against it.",
   "ex_zh": "在未听到对他不利的证词以前，我们假定他是无罪的。",
   "notes": "assumption n.假设，设想",
   "n": 309
@@ -2474,7 +2474,7 @@
  {
   "word": "presume",
   "meaning": "v.假定，假设；料想",
-  "ex_en": "From his words, I presumed that he had been years",
+  "ex_en": "From his words, I presumed that he had been in France for several years.",
   "ex_zh": "根据他的话，我想他曾在\n法国待过几年。",
   "notes": "",
   "n": 310
@@ -2562,7 +2562,7 @@
  {
   "word": "deem",
   "meaning": "v.认为，相信",
-  "ex_en": "The board deemed it urge nt away",
+  "ex_en": "The board deemed it urgent that these files be printed right away.",
   "ex_zh": "董事会认为必须马上印出这些文件。",
   "notes": "",
   "n": 321
@@ -2594,7 +2594,7 @@
  {
   "word": "insist",
   "meaning": "v.坚持，坚决认为（或主张、要求）",
-  "ex_en": "We self-reliance",
+  "ex_en": "We insist on self-reliance.",
   "ex_zh": "我们坚决主张自力更生。",
   "notes": "insist that坚持，坚决认为（或主张、",
   "n": 325
@@ -2626,16 +2626,16 @@
  {
   "word": "analyse",
   "meaning": "（=analyze）v.分析analogy",
-  "ex_en": "We should analyse the cause and effect of this n",
-  "ex_zh": "类比；类推\nevent.我们应该分析这个事件的因果关系。 The",
+  "ex_en": "We should analyse the cause and effect of this event.",
+  "ex_zh": "我们应该分析这个事件的因果关系。",
   "notes": "analysis n.分析and analogous by",
   "n": 329
  },
  {
   "word": "diagnose",
   "meaning": "v.判断；诊断compare",
-  "ex_en": "We can use a test to diagnose a variety of V diseases",
-  "ex_zh": "我们可以用一项化验来诊断多种疾病。 Your",
+  "ex_en": "We can use a test to diagnose a variety of diseases.",
+  "ex_zh": "我们可以用一项化验来诊断多种疾病。",
   "notes": "diagnosis n.诊断你的知识水平还比不上他的。字根gno和cogni都有\"认识，知道的含 comparative 义，如：dia（分开，彻底）+gnose（认识）->在医comparison 学上通过各种手段彻底了解病情t（诊断）； compare （承认）；ignore（忽视）。compare 二",
   "n": 330
  },
@@ -2658,7 +2658,7 @@
  {
   "word": "contradiction",
   "meaning": "n.矛盾，不一致；反驳",
-  "ex_en": "Your contradiction to your character. attitude is in",
+  "ex_en": "Your attitude is in contradiction to your character.",
   "ex_zh": "你的态度和你的性格矛盾。",
   "notes": "",
   "n": 333
@@ -2666,7 +2666,7 @@
  {
   "word": "disagree",
   "meaning": "v.有分歧；不同意",
-  "ex_en": "I strongly disagree with this amoral approach science",
+  "ex_en": "I strongly disagree with this amoral approach to science.",
   "ex_zh": "我强烈反对这种对待科学无视道德观的\nto\n态度。 The two theories differ from each other in\nmany ways.这两种理论在许多方面彼此相异。",
   "notes": "agree v.同意agreeable adj.愉快的 disagree with对...不同意 V.不同，相异 difference n.差别；分歧different adj.有差异的；各种的 differ from与……不同",
   "n": 334
@@ -2674,7 +2674,7 @@
  {
   "word": "diverse",
   "meaning": "adj.不一样的，多种多样的",
-  "ex_en": "The original meaning of this word has become more diverse over tim e",
+  "ex_en": "The original meaning of this word has become more diverse over time.",
   "ex_zh": "随着时间的推移，该词由原本的含义演变出更加多样的意思。",
   "notes": "diversity n.多样性",
   "n": 335
@@ -2842,7 +2842,7 @@
  {
   "word": "achieve",
   "meaning": "v.实现，达到",
-  "ex_en": "observe achieve inquire query questionnaire",
+  "ex_en": "In many fields, women have yet to achieve the equal participation in policy-making processes.",
   "ex_zh": "",
   "notes": "",
   "n": 356
@@ -2906,15 +2906,15 @@
  {
   "word": "queue",
   "meaning": "n.行列认排队等候",
-  "ex_en": "You should join the queue in side the bank",
-  "ex_zh": "在银行里，你应该排队。源自法语，原指“尾巴”，后指“辫子\"o queue up at\nthe box office(在售票处排队)，就是在售票窗口外组成一条长长的尾巴。美国英语中，表示“请排队”时通常用Please stand in line\no",
-  "notes": "",
+  "ex_en": "You should join the queue inside the bank.",
+  "ex_zh": "在银行里，你应该排队。",
+  "notes": "源自法语，原指\"尾巴\"，后指\"辫子\"。queue up at the box office（在售票处排队），就是在售票窗口外组成一条长长的尾巴。美国英语中，表示\"请排队\"时通常用Please stand in line。",
   "n": 364
  },
  {
   "word": "grant",
   "meaning": "v.授予；准予；承认",
-  "ex_en": "I grant that the book gives us some insights into huma n n ature, but gen erally speaking, it is boring",
+  "ex_en": "I grant that the book gives us some insights into human nature, but generally speaking, it is boring.",
   "ex_zh": "我承认这本书提供了一些关于人性的见解，但总体而言，这本书很无趣。",
   "notes": "take sth. for granted认为某事是理所应当的",
   "n": 365
@@ -2922,8 +2922,8 @@
  {
   "word": "praise",
   "meaning": "n.赞美v.赞扬 '",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "American reviewers are lavish in their praise of this movie.",
+  "ex_zh": "美国评论家们对该电影不吝赞美之词。",
   "notes": "",
   "n": 366
  },
@@ -2994,7 +2994,7 @@
  {
   "word": "award",
   "meaning": "n.奖；奖品",
-  "ex_en": "e no vice writer is especially thrilled with this award",
+  "ex_en": "The novice writer is especially thrilled with this award.",
   "ex_zh": "这位新人作家对于获得该奖感到尤其兴奋。",
   "notes": "",
   "n": 375

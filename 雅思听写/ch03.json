@@ -50,7 +50,7 @@
  {
   "word": "vertebrate",
   "meaning": "n.脊椎动物",
-  "ex_en": "Fish, birds and huma n beings a re a vertebrates",
+  "ex_en": "Fish, birds and human beings are all vertebrates.",
   "ex_zh": "鱼、鸟和人类都是脊椎动物。",
   "notes": "",
   "n": 7
@@ -66,7 +66,7 @@
  {
   "word": "herbivore",
   "meaning": "n.食草动物",
-  "ex_en": "Pandas are classified as carnivores but they have a diet mainly of an herbivore.",
+  "ex_en": "Pandas are classified as carnivores but they mainly have a diet of an herbivore.",
   "ex_zh": "大熊猫被归为食肉动物，但它们的日常主要饮食像食草动物。",
   "notes": "",
   "n": 9
@@ -146,8 +146,8 @@
  {
   "word": "swarm",
   "meaning": "n.（蜜蜂等昆虫的）一大群；（迅速移动的）人群",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "I saw a swarm of bees attacking the poor monkey.",
+  "ex_zh": "我看到一群蜜蜂正在攻击可怜的猴子。",
   "notes": "",
   "n": 19
  },
@@ -218,7 +218,7 @@
  {
   "word": "ancestor",
   "meaning": "n.祖宗，祖先",
-  "ex_en": "Lions and house cats evolved from a comm on ancestor",
+  "ex_en": "Lions and house cats evolved from a common ancestor.",
   "ex_zh": "狮子和家猫是由同一个祖先进化而来的。",
   "notes": "ancient adj.古代的；古老的 an（在前）+cess（走）+or（后缀，表示人）t走在历史前方的人T祖先。",
   "n": 28
@@ -242,7 +242,7 @@
  {
   "word": "subgroup",
   "meaning": "n.子群",
-  "ex_en": "According to a subgroup analysis, violenee produces more violence.—",
+  "ex_en": "According to a subgroup analysis, violence produces more violence.",
   "ex_zh": "份子群分析显示，暴力会导致更多的暴力。",
   "notes": "",
   "n": 31
@@ -402,7 +402,7 @@
  {
   "word": "plume",
   "meaning": "n.羽毛",
-  "ex_en": "This is the long plume of a season",
+  "ex_en": "This is the long plume of a heron in the breeding season.",
   "ex_zh": "这是处在繁殖季节的一只鹭的长羽毛。",
   "notes": "",
   "n": 51
@@ -562,15 +562,15 @@
  {
   "word": "elephant",
   "meaning": "n.象",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "A specific attribute of the elephant is its long trunk.",
+  "ex_zh": "大象的一个特有特征是它的长鼻子。",
   "notes": "",
   "n": 71
  },
  {
   "word": "trunk",
   "meaning": "n.象鼻",
-  "ex_en": "The elepha nt's trunk is powerful eno ugh to trees",
+  "ex_en": "The elephant's trunk is powerful enough to uproot trees.",
   "ex_zh": "大象的鼻子有足够力量把树连根拔起。",
   "notes": "",
   "n": 72
@@ -586,7 +586,7 @@
  {
   "word": "horn",
   "meaning": "n.（牛、羊等动物的）角；（乐器）号",
-  "ex_en": "The young goat was just beg inning to grow horns",
+  "ex_en": "The young goat was just beginning to grow horns.",
   "ex_zh": "这只小山羊刚开始长角。",
   "notes": "blow a horn吹号角",
   "n": 74
@@ -682,7 +682,7 @@
  {
   "word": "buffalo",
   "meaning": "n.水牛；野牛",
-  "ex_en": "There were lots of buffaloes in the North America years ago. 100",
+  "ex_en": "There were lots of buffaloes in the North America 100 years ago.",
   "ex_zh": "年前，北美有大量野牛。",
   "notes": "",
   "n": 86
@@ -794,8 +794,8 @@
  {
   "word": "swan",
   "meaning": "n.天鹅",
-  "ex_en": "The witch turned the princess swan",
-  "ex_zh": "巫婆\n把公主变成了一只天鹅。",
+  "ex_en": "The witch turned the princess into a swan.",
+  "ex_zh": "巫婆把公主变成了一只天鹅。",
   "notes": "",
   "n": 100
  },
@@ -978,7 +978,7 @@
  {
   "word": "barrier",
   "meaning": "n.障碍；屏障，障碍物",
-  "ex_en": "Lack of con fide nee is the biggest barrier to the improvement of your English",
+  "ex_en": "Lack of confidence is the biggest barrier to the improvement of your English.",
   "ex_zh": "缺乏信心是你提高英语水平的最大障碍。",
   "notes": "",
   "n": 123
@@ -1002,8 +1002,8 @@
  {
   "word": "epidemic",
   "meaning": "n.流行病；（坏事的）盛行adj.流行性的；极为盛行的",
-  "ex_en": "Violenee is reaching epidemic levels in some of the films andTV shows",
-  "ex_zh": "在一些电影和电视剧中，暴力已经快到泛滥程度了。 You have\nlong time.你从父母那儿获得了优良\n的基因，所以应当能够活得很长。",
+  "ex_en": "Violence is reaching epidemic levels in some of the films and TV shows.",
+  "ex_zh": "在一些电影和电视剧中，暴力已经快到泛滥程度了。",
   "notes": "ntrol an epidemic控制流行病 n.基因 good genes from your parents, so genetic adj.遗传（性）的，基因的；起源的 pool基因库 gene",
   "n": 126
  },
@@ -1042,8 +1042,8 @@
  {
   "word": "protein",
   "meaning": "n.蛋白质",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "You need more protein to build you up.",
+  "ex_zh": "你需要增加蛋白质以增强体质。",
   "notes": "",
   "n": 131
  },
@@ -1106,8 +1106,8 @@
  {
   "word": "intelligence",
   "meaning": "n.智慧，智力；情报，谍报",
-  "ex_en": "",
-  "ex_zh": "",
+  "ex_en": "Use your intelligence, and you're sure to succeed some day.",
+  "ex_zh": "发挥你的聪明才智，总有一天你一定会成功。",
   "notes": "",
   "n": 139
  },
@@ -1130,7 +1130,7 @@
  {
   "word": "flexible",
   "meaning": "adj.可弯曲的；灵活的，易变通的",
-  "ex_en": "We can visit your company on Mon day or Tuesday. Our plans are fairly flexible",
+  "ex_en": "We can visit your company on Monday or Tuesday. Our plans are fairly flexible.",
   "ex_zh": "我们可以在星期一或星期二去拜访贵公司。我们的计划是相当灵活的。",
   "notes": "flexibility n.灵活度 inflexible adj.执着的，不屈的",
   "n": 142
@@ -1202,7 +1202,7 @@
  {
   "word": "predator",
   "meaning": "n.掠夺者；捕食性动物",
-  "ex_en": "These predators of the African grasslands on mice and rabbits",
+  "ex_en": "These predators of the African grasslands live on mice and rabbits.",
   "ex_zh": "非洲草原上的这些捕食性动物以捕食老鼠和兔子为生。",
   "notes": "predation n.捕食",
   "n": 151
