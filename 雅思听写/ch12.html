@@ -71,6 +71,16 @@
   .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
   .dphz { opacity: .6; font-size: 13px; }
   .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+
+  /* ---- ✏️ 编辑模式 ---- */
+  .hide { display: none !important; }
+  .edf { outline: none; border-bottom: 1px dashed var(--num-border); min-width: 24px; display: inline-block; }
+  .edf:empty::before { content: attr(data-ph); opacity: .35; }
+  .edf:focus { border-bottom-color: #4cc2ff; }
+  body.editing .card { border-style: dashed; }
+  .x { position: absolute; top: 3px; right: 8px; opacity: .3; cursor: pointer; font-size: 12px; }
+  .x:hover { opacity: 1; color: #e5484d; }
+  .card { position: relative; }
 </style>
 </head>
 <body>
@@ -80,6 +90,10 @@
     <p><span class="stats">共 <b id="count"></b> 词 · 点击单词/例句发音（edge 女声）</span></p>
   </div>
   <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
+  <button id="editBtn" class="hbtn" onclick="toggleEdit()">✏️ 编辑</button>
+  <button id="addBtn" class="hbtn hide" onclick="addCard()">＋ 加词</button>
+  <button id="expBtn" class="hbtn hide" onclick="exportData()">⬇ 导出</button>
+  <button id="rstBtn" class="hbtn hide" onclick="resetAll()">↺ 重置</button>
   <button id="themeBtn" class="hbtn" onclick="toggleTheme()">🌙 夜间</button>
 </header>
 <div id="list"></div>
@@ -129,6 +143,41 @@ const entryHtml = d => `
   ${d.ex_en ? `<div class="phrase"><span class="jp" onclick="play(${d.n},'e')">${esc(d.ex_en)}</span><span class="zh">${esc(d.ex_zh)}</span></div>` : ''}
   ${d.notes ? `<div class="note-line">${esc(d.notes)}</div>` : ''}`;
 
+/* ---- ✏️ 编辑模式 ---- */
+const LSK = 'ielts_edit_' + 'ch12';
+(function(){ try { const s = localStorage.getItem(LSK); if (s) { const o = JSON.parse(s); if (o && Array.isArray(o.data) && o.data.length) DATA = o.data; } } catch(e) {} })();
+let editing = false, saveT = null;
+function save(){ try { localStorage.setItem(LSK, JSON.stringify({data: DATA})); } catch(e) {} }
+function saveSoon(){ clearTimeout(saveT); saveT = setTimeout(save, 400); }
+function resetAll(){ if (confirm('清空本页所有修改，恢复初始版式？')) { try { localStorage.removeItem(LSK); } catch(e) {} location.reload(); } }
+function exportData(){
+  const blob = new Blob([JSON.stringify({page: 'ch12', data: DATA}, null, 1)], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'ch12_layout.json';
+  a.click();
+}
+function addCard(){
+  DATA.push({n: Math.max(0, ...DATA.map(d => d.n || 0)) + 1, word: '', meaning: '', ex_en: '', ex_zh: '', notes: ''});
+  save(); render();
+}
+function toggleEdit(){
+  editing = !editing;
+  document.body.classList.toggle('editing', editing);
+  document.getElementById('editBtn').textContent = editing ? '✅ 完成' : '✏️ 编辑';
+  document.getElementById('addBtn').classList.toggle('hide', !editing);
+  document.getElementById('expBtn').classList.toggle('hide', !editing);
+  document.getElementById('rstBtn').classList.toggle('hide', !editing);
+  if (!editing) save();
+  render();
+}
+
+const entryEdit = d => `
+  <div class="row1"><span class="num">${d.n}</span><span class="edf word" contenteditable="true" data-f="word" data-ph="单词">${esc(d.word)}</span><span class="x" data-x="1">✕</span></div>
+  <div class="mean"><span class="edf" contenteditable="true" data-f="meaning" data-ph="词性+释义">${esc(d.meaning)}</span></div>
+  <div class="phrase"><span class="edf" contenteditable="true" data-f="ex_en" data-ph="例句">${esc(d.ex_en)}</span><div><span class="edf" contenteditable="true" data-f="ex_zh" data-ph="翻译">${esc(d.ex_zh)}</span></div></div>
+  <div class="note-line"><span class="edf" contenteditable="true" data-f="notes" data-ph="搭配/词源注">${esc(d.notes)}</span></div>`;
+
 const list = document.getElementById('list');
 function render(){
   list.innerHTML = '';
@@ -140,11 +189,29 @@ function render(){
   for (const d of DATA){
     const card = document.createElement('div');
     card.className = 'card c' + posCls((posOf(d).toks[0] || 'n'));
-    card.innerHTML = entryHtml(d);
+    if (editing) card.dataset.n = d.n;
+    card.innerHTML = editing ? entryEdit(d) : entryHtml(d);
     (alt++ % 2 === 0 ? colA : colB).appendChild(card);
   }
   document.getElementById('count').textContent = DATA.length;
 }
+
+// 事件委托: 编辑字段 / 删除词条
+list.addEventListener('input', e => {
+  const t = e.target.closest('.edf'); if (!t || !t.dataset.f) return;
+  const holder = t.closest('[data-n]'); if (!holder) return;
+  const d = DATA.find(x => x.n === +holder.dataset.n); if (!d) return;
+  d[t.dataset.f] = t.innerText;
+  saveSoon();
+});
+list.addEventListener('click', e => {
+  const x = e.target.closest('.x'); if (!x) return;
+  const holder = x.closest('[data-n]'); if (!holder) return;
+  const n = +holder.dataset.n;
+  DATA = DATA.filter(d => d.n !== n);
+  save(); render();
+});
+
 render();
 </script>
 
