@@ -96,7 +96,7 @@
   "n": 12
  },
  {
-  "word": "urant",
+  "word": "restaurant",
   "meaning": "n.餐馆",
   "ex_en": "I had my breakfast in a small restaurant",
   "ex_zh": "我在一",
@@ -113,7 +113,7 @@
  },
  {
   "word": "supper",
-  "meaning": "n-晚餐",
+  "meaning": "n.晚餐",
   "ex_en": "His wife made some pumpkin pies for supper",
   "ex_zh": "他妻子为晚餐做了一些南瓜馅饼。",
   "notes": "breakfast n.早餐lunch n.午餐brunch n.早午餐 dinner n.（中午或晚上吃的）正餐",
@@ -121,7 +121,7 @@
  },
  {
   "word": "banquet",
-  "meaning": "宴会",
+  "meaning": "n.宴会",
   "ex_en": "He met his foreign friends and gave a banquet in their honour",
   "ex_zh": "他会见了外国朋友，并设宴欢迎他们。",
   "notes": "",
@@ -145,7 +145,7 @@
  },
  {
   "word": "appetiser",
-  "meaning": "(=appetizer)m开胃饮料，开胃小吃 an",
+  "meaning": "(=appetizer)n.开胃饮料，开胃小吃 an",
   "ex_en": "We served some crackers and cheese as appetiser",
   "ex_zh": "我们提供一些饼干和奶酪作为开胃小吃。",
   "notes": "",
@@ -169,15 +169,15 @@
  },
  {
   "word": "order",
-  "meaning": "仇订单；点的餐V.点（酒菜等） waiter.他把他点的东西",
+  "meaning": "n.订单；点的餐V.点（酒菜等） waiter.他把他点的东西",
   "ex_en": "He gave his order to the",
   "ex_zh": "告诉侍者了。",
   "notes": "",
   "n": 22
  },
  {
-  "word": "takeaw",
-  "meaning": "ay ［英］外卖餐馆，外卖食物",
+  "word": "takeaway",
+  "meaning": "n.［英］外卖餐馆，外卖食物",
   "ex_en": "Eat-in or takeaway?",
   "ex_zh": "店内吃或带走？（快餐店服务员常问）",
   "notes": "",
@@ -185,7 +185,7 @@
  },
  {
   "word": "chef",
-  "meaning": "厨师 n",
+  "meaning": "n.厨师",
   "ex_en": "There is only one chef in that grand hotel",
   "ex_zh": "那家大酒店里只有一个厨师。",
   "notes": "chief n.首领，头目adj.主要的",
@@ -385,7 +385,7 @@
  },
  {
   "word": "drink",
-  "meaning": "V.饮，喝；喝酒n.饮料",
+  "meaning": "v.饮，喝；喝酒n.饮料",
   "ex_en": "It is harmful to your health to drink too much",
   "ex_zh": "过量喝酒对你的健康有害。",
   "notes": "",
@@ -465,7 +465,7 @@
  },
  {
   "word": "tobacco",
-  "meaning": "□•烟草",
+  "meaning": "n.烟草",
   "ex_en": "A high amount of money is spent on tobacco every year",
   "ex_zh": "每年都要花费大量金钱在烟草上。",
   "notes": "",
@@ -496,8 +496,8 @@
   "n": 62
  },
  {
-  "word": "mato",
-  "meaning": "n-番茄",
+  "word": "tomato",
+  "meaning": "n.番茄",
   "ex_en": "His shirt was stained with tomato juice",
   "ex_zh": "他的衬衣被番茄汁弄脏了。",
   "notes": "",
@@ -505,7 +505,7 @@
  },
  {
   "word": "potato",
-  "meaning": "n-马铃薯",
+  "meaning": "n.马铃薯",
   "ex_en": "This salad is made of apple, pear, potato and celery",
   "ex_zh": "这份色拉是由苹果、梨、马铃薯和芹菜做成的。",
   "notes": "",
@@ -761,7 +761,7 @@
  },
  {
   "word": "sandwich",
-  "meaning": "",
+  "meaning": "n.三明治",
   "ex_en": "He was sandwiched between two fat men.",
   "ex_zh": "他被夹在两个胖人中间。",
   "notes": "Sandwich是英格兰地名。此地曾有一个伯爵，他生活荒淫无度，且极为好赌。据说，赌瘾一来，他便整日整夜坐在赌桌旁，吩咐仆人在用膳时间只需给他送夹有烤牛肉的面包片。他的赌友们将这种食品戏称为当地土特产：sandwich。",
@@ -929,7 +929,7 @@
  },
  {
   "word": "sandwich",
-  "meaning": "",
+  "meaning": "n.三明治",
   "ex_en": "He was sandwiched between two fat men.",
   "ex_zh": "他被夹在两个胖人中间。",
   "notes": "Sandwich是英格兰地名。此地曾有一个伯爵，他生活荒淫无度，且极为好赌。据说，赌瘾一来，他便整日整夜坐在赌桌旁，吩咐仆人在用膳时间只需给他送夹有烤牛肉的面包片。他的赌友们将这种食品戏称为当地土特产：sandwich。",
@@ -937,7 +937,7 @@
  },
  {
   "word": "spicy",
-  "meaning": "",
+  "meaning": "adj.辛辣的",
   "ex_en": "Which province is famous for its hot and spicy cuisine?",
   "ex_zh": "哪个省以辛辣菜肴出名？",
   "notes": "",
@@ -945,7 +945,7 @@
  },
  {
   "word": "loaf",
-  "meaning": "n.—条（面包）v.游荡，闲逛",
+  "meaning": "n.一条（面包）v.游荡，闲逛",
   "ex_en": "Half a loaf is better than no bread",
   "ex_zh": "有比没有好。",
   "notes": "",
@@ -961,7 +961,7 @@
  },
  {
   "word": "pizza",
-  "meaning": "n-比萨饼",
+  "meaning": "n.比萨饼",
   "ex_en": "dinner",
   "ex_zh": "我们决定去买一个外卖的比萨饼作为晚餐。",
   "notes": "",
@@ -969,7 +969,7 @@
  },
  {
   "word": "pasta",
-  "meaning": "意大利面食",
+  "meaning": "n.意大利面食",
   "ex_en": "Do you want chicken or pasta for dinner?",
   "ex_zh": "晚餐你想吃鸡肉还是意大利面食？",
   "notes": "",
@@ -977,7 +977,7 @@
  },
  {
   "word": "spaghetti",
-  "meaning": "意大利细面条",
+  "meaning": "n.意大利细面条",
   "ex_en": "Spaghetti is one of my favourite foods",
   "ex_zh": "意大禾U\n细面条是我最喜欢的食品之一。",
   "notes": "",
@@ -1057,7 +1057,7 @@
  },
  {
   "word": "sundae",
-  "meaning": "香草冰激凌/蛋筒冰激凌/冰棒/奶昔/ 圣代",
+  "meaning": "n.圣代",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -1153,7 +1153,7 @@
  },
  {
   "word": "flavour",
-  "meaning": "（=flavor）n・味道；口味；特色，风格",
+  "meaning": "（=flavor）n.味道；口味；特色，风格",
   "ex_en": "You may choose any one from the six popular flavours!",
   "ex_zh": "你可以在这六种流行口味中任意挑选一种！",
   "notes": "",
@@ -1185,7 +1185,7 @@
  },
  {
   "word": "spicy",
-  "meaning": "",
+  "meaning": "adj.辛辣的",
   "ex_en": "Which province is famous for its hot and spicy cuisine?",
   "ex_zh": "哪个省以辛辣菜肴出名？",
   "notes": "",
@@ -1201,7 +1201,7 @@
  },
  {
   "word": "yummy",
-  "meaning": "adj-美味的",
+  "meaning": "adj.美味的",
   "ex_en": "This cake is really yummy",
   "ex_zh": "这蛋糕真好吃。",
   "notes": "",
@@ -1209,7 +1209,7 @@
  },
  {
   "word": "tasty",
-  "meaning": "日dj.美味的，可口的",
+  "meaning": "adj.美味的，可口的",
   "ex_en": "I always get a double espresso, but their normal coffee is tasty too",
   "ex_zh": "我总是要双份浓咖啡，但他们的普通咖啡也很好喝。",
   "notes": "",
@@ -1233,7 +1233,7 @@
  },
  {
   "word": "spice",
-  "meaning": "n・（调味）香料；给生活增添情趣的事",
+  "meaning": "n.（调味）香料；给生活增添情趣的事",
   "ex_en": "riety is the spice of life",
   "ex_zh": "多彩的经历使生活更有乐趣。",
   "notes": "a dry spice干香料",
@@ -1281,7 +1281,7 @@
  },
  {
   "word": "digest",
-  "meaning": "V.消化；理解，领悟",
+  "meaning": "v.消化；理解，领悟",
   "ex_en": "Mary can't digest fat",
   "ex_zh": "玛丽吃肥肉不消化。",
   "notes": "digestion n.消化；消化能力",
@@ -1289,7 +1289,7 @@
  },
  {
   "word": "cook",
-  "meaning": "烹调，烧，煮厨师 V. n.",
+  "meaning": "v. n.烹调，烧，煮厨师",
   "ex_en": "Will she cook dinner this evening?",
   "ex_zh": "她今晚做晚饭吗？",
   "notes": "cooker n.炊具",
@@ -1297,7 +1297,7 @@
  },
  {
   "word": "bake",
-  "meaning": "烘烤；烤熟 V.",
+  "meaning": "v.烘烤；烤熟",
   "ex_en": "The bread is baking in the oven",
   "ex_zh": "烤箱里正在烤面包。",
   "notes": "baker n.面包师bakery n.面包店",
@@ -1305,7 +1305,7 @@
  },
  {
   "word": "fry",
-  "meaning": "油煎 V.",
+  "meaning": "v.油煎",
   "ex_en": "The eggs are frying in the pan",
   "ex_zh": "平底锅里正在煎着鸡蛋。",
   "notes": "",
@@ -1313,7 +1313,7 @@
  },
  {
   "word": "roast",
-  "meaning": "烤•烤肉 V. n",
+  "meaning": "v.烤 n.烤肉",
   "ex_en": "Let's have a nice roast for Sun day dinner",
   "ex_zh": "我们星期天晚上好好吃一顿烤肉吧。",
   "notes": "",
@@ -1321,7 +1321,7 @@
  },
  {
   "word": "toast",
-  "meaning": "向……祝酒，为……干杯；烤烤面包片 V. n.",
+  "meaning": "v. n.向……祝酒，为……干杯；烤烤面包片",
   "ex_en": "We toasted the bride and bridegroom",
   "ex_zh": "我们为新娘和新郎干杯。",
   "notes": "toaster n.烤面包片机 17世纪的英国有一种习俗：人们饮酒时，喜爱把加有香料 （toast）放入酒中，据说能使酒的味道更美。的烤面包片后来在祝酒时，有人开始用toast指代被祝酒的女士，象征被祝酒者像加有香料的烤面包片一样会为酒增添风味。所以有了现在的说法：Lets drink a toast to...（让我们为... toast也有了干一杯!）“为……干杯，向……祝酒”的词义。",
@@ -1329,7 +1329,7 @@
  },
  {
   "word": "suck",
-  "meaning": "吮吸 V.",
+  "meaning": "v.吮吸",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -1337,7 +1337,7 @@
  },
  {
   "word": "swallow",
-  "meaning": "咽下，吞下 V.",
+  "meaning": "v.咽下，吞下",
   "ex_en": "A boa swallowed its prey whole.—",
   "ex_zh": "条巨勉固囹吞下了它的猎物。",
   "notes": "",
@@ -1345,7 +1345,7 @@
  },
  {
   "word": "lick",
-  "meaning": "舔 V.",
+  "meaning": "v.舔",
   "ex_en": "He licked his fingers",
   "ex_zh": "他舔着自己的手指。",
   "notes": "",
@@ -1353,7 +1353,7 @@
  },
  {
   "word": "chew",
-  "meaning": "咀嚼 V.",
+  "meaning": "v.咀嚼",
   "ex_en": "You must chew your food well before you swallow it",
   "ex_zh": "把食物咽下去之前要细细咀嚼。",
   "notes": "",
@@ -1369,7 +1369,7 @@
  },
  {
   "word": "soak",
-  "meaning": "浸泡；使湿透 V.",
+  "meaning": "v.浸泡；使湿透",
   "ex_en": "I have soaked the beans for hours",
   "ex_zh": "我已经把豆子浸泡了8个小时。",
   "notes": "",
@@ -1377,7 +1377,7 @@
  },
  {
   "word": "dip",
-  "meaning": "V.蘸，浸",
+  "meaning": "v.蘸，浸",
   "ex_en": "She dipped her hand in the sea to find out how cold it was",
   "ex_zh": "她把手伸入海水中，看看水有多凉。",
   "notes": "",
@@ -1385,7 +1385,7 @@
  },
  {
   "word": "squeeze",
-  "meaning": "V.挤压",
+  "meaning": "v.挤压",
   "ex_en": "He squeezed an orange to get the juice out",
   "ex_zh": "他挤压橙子以榨出橙汁。",
   "notes": "",
@@ -1400,28 +1400,20 @@
   "n": 175
  },
  {
-  "word": "outof",
-  "meaning": "st3：/ v.搅动；（使）行动",
-  "ex_en": "The oatmeal will become lumpy if you don't stir it well",
-  "ex_zh": "如果你不好好搅拌，麦片粥就会结块。",
-  "notes": "",
-  "n": 176
- },
- {
   "word": "grind",
   "meaning": "v.碾碎n.枯燥乏味的事",
   "ex_en": "The mill of God grinds slowly, but it grinds exceedingly well",
   "ex_zh": "天网恢恢，疏而不漏。",
   "notes": "grind down欺压，折磨 「",
-  "n": 177
+  "n": 176
  },
  {
   "word": "slice",
-  "meaning": "V.将••…•切成薄片；切，划n.（切下的食物）薄片",
+  "meaning": "v.将……切成薄片；切，划 n.（切下的食物）薄片",
   "ex_en": "I sliced the bread",
   "ex_zh": "我把面包切成片。厨房动词集合：slice（将……切成薄片），dice（将••…\n切丁），shred（切碎，撕碎），chop（剁碎），boil（煮）,",
   "notes": "",
-  "n": 178
+  "n": 177
  },
  {
   "word": "architecture",
@@ -1429,7 +1421,7 @@
   "ex_en": "Architecture has recorded the great ideas of the human race.",
   "ex_zh": "建筑记录了人类的伟大思想。",
   "notes": "",
-  "n": 179
+  "n": 178
  },
  {
   "word": "block",
@@ -1437,6 +1429,6 @@
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
-  "n": 180
+  "n": 179
  }
 ]

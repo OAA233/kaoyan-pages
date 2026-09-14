@@ -9,7 +9,7 @@
  },
  {
   "word": "Marxism",
-  "meaning": "n-马克思主义",
+  "meaning": "n.马克思主义",
   "ex_en": "The esse nee of Marxism is seeki ng truth from facts",
   "ex_zh": "实事求是是马克思主义的精髓。\nMarx（马克思，马克思主义的创始人，19世纪德国的政治理论家）+ism（主义，思想）。",
   "notes": "",
@@ -17,7 +17,7 @@
  },
  {
   "word": "socialism",
-  "meaning": "n-社会主义",
+  "meaning": "n.社会主义",
   "ex_en": "Let us do our best to build socialism",
   "ex_zh": "让我们尽最大努力建设社会主义。",
   "notes": "socialist adj.社会主义的social adj.社会的；社交的society n.社会；团体 serve socialism为社会主义服务",
@@ -137,7 +137,7 @@
  },
  {
   "word": "meltdown",
-  "meaning": "核反应堆的)堆芯熔毁；崩溃",
+  "meaning": "n.（核反应堆的）堆芯熔毁；崩溃",
   "ex_en": "The commentator sees a bright side to the financial meltdown",
   "ex_zh": "该评论员看见了金融危机的乐观\n—面。",
   "notes": "",
@@ -329,7 +329,7 @@
  },
  {
   "word": "department",
-  "meaning": "«•（政府、企业等机构的）部门；（大学的）系，所",
+  "meaning": "n.（政府、企业等机构的）部门；（大学的）系，所",
   "ex_en": "He worked in Community Welfare Department",
   "ex_zh": "他在社区福利部工作。",
   "notes": "",
@@ -553,7 +553,7 @@
  },
  {
   "word": "emigrate",
-  "meaning": "V.移居国外",
+  "meaning": "v.移居国外",
   "ex_en": "They did not receive the permission to emigrate to the United States",
   "ex_zh": "他们没有获准移民美国。",
   "notes": "emigration n.移居国外",
@@ -561,7 +561,7 @@
  },
  {
   "word": "immigrate",
-  "meaning": "V.（从外地）移居，移入",
+  "meaning": "v.（从外地）移居，移入",
   "ex_en": "Many British colonists immigrated to the New World",
   "ex_zh": "许多英国殖民者移居到了新大陆。",
   "notes": "immigration n.移居（入境）immigrant n.移民",
@@ -569,7 +569,7 @@
  },
  {
   "word": "reign",
-  "meaning": "il.君主统治时期V.统治",
+  "meaning": "n.君主统治时期V.统治",
   "ex_en": "The reign of Queen Victoria lasted more than sixty years",
   "ex_zh": "维多利亚女王的统治持续了60多年。",
   "notes": "",
@@ -601,7 +601,7 @@
  },
  {
   "word": "wreath",
-  "meaning": "IL花环，花冠；（祭奠用的）花圈",
+  "meaning": "n.花环，花冠；（祭奠用的）花圈",
   "ex_en": "A group of students placed a wreath at the tomb of the national hero.—",
   "ex_zh": "群学生在那位民族英雄的墓前献上花圈。",
   "notes": "a laurel wreath桂冠（旧时作为胜利的象征）",
@@ -633,7 +633,7 @@
  },
  {
   "word": "slum",
-  "meaning": "\"■贫民窟",
+  "meaning": "n.贫民窟",
   "ex_en": "I grew up in the East London slums",
   "ex_zh": "我是在东伦敦的贫民窟长大的。",
   "notes": "a slum area贫民区",
@@ -657,7 +657,7 @@
  },
  {
   "word": "population",
-  "meaning": "n人口，人口数量",
+  "meaning": "n.人口，人口数量",
   "ex_en": "There is a steady increase in population of this city",
   "ex_zh": "这个城市的人口在稳步上升。 I have no knowledge of demographic theory.\n我对入口统计学理论一无所知。",
   "notes": "populate V.居住于 control population控制人口 adj.人口（学）的，人口统计（学）的 demography n.人口统计学 demo（人民）+graph（写）+ic（形容词后缀）t写关于人民的情况T人口统计（学）的。",
@@ -665,7 +665,7 @@
  },
  {
   "word": "citizen",
-  "meaning": "n-公民；市民",
+  "meaning": "n.公民；市民",
   "ex_en": "She is a lawful citizen",
   "ex_zh": "她是个守法的公民。",
   "notes": "an ordinary citizen普通公民",
@@ -673,7 +673,7 @@
  },
  {
   "word": "resident",
-  "meaning": "•i.居民adj.居住的",
+  "meaning": "n.居民adj.居住的",
   "ex_en": "The residents of the town are proud of its new library",
   "ex_zh": "该镇的居民为镇上新建的图书馆感到自豪。",
   "notes": "residential adj.住宅的，适合居住的",
@@ -697,7 +697,7 @@
  },
  {
   "word": "franchise",
-  "meaning": "V.出售……的特许经营权n.特许权；［the~］选举权",
+  "meaning": "v.出售……的特许经营权n.特许权；［the~］选举权",
   "ex_en": "In Britain, women were given the franchise in 1918",
   "ex_zh": "英国妇女于1918年获得了选举权。",
   "notes": "franchiser n.授予（他人）特许权者 franchise one's business出售某人公司业务的特许经营权",
@@ -705,7 +705,7 @@
  },
  {
   "word": "entitle",
-  "meaning": "V.给••••・•权利（或资格）；给……题名",
+  "meaning": "v.给……权利（或资格）；给……题名",
   "ex_en": "This ticket entitles you to one-day admission to all three parks",
   "ex_zh": "凭这张票你可以在一天内无限次进出全部三个公园。",
   "notes": "entitled to sth. /do sth.有获得某物/做某事的权利",
@@ -729,7 +729,7 @@
  },
  {
   "word": "elect",
-  "meaning": "V.选举；选择",
+  "meaning": "v.选举；选择",
   "ex_en": "They orga nised a poll to elect a preside nt",
   "ex_zh": "他们组织了一次投票来选举总统。",
   "notes": "elective adj.选任的，由选举产生的n.选修课 electionn.选举；当选",
@@ -737,7 +737,7 @@
  },
  {
   "word": "respondent",
-  "meaning": "n-（民意测验等的）调查对象",
+  "meaning": "n.（民意测验等的）调查对象",
   "ex_en": "Only percent of respondents said they were satisfied",
   "ex_zh": "只有34%的调查对象表示他们很满意。",
   "notes": "",
@@ -745,7 +745,7 @@
  },
  {
   "word": "poll",
-  "meaning": "民意调查；选举投票；投票数",
+  "meaning": "n.民意调查；选举投票；投票数",
   "ex_en": "see the protectionist policies negatively.——",
   "ex_zh": "项民意调查显示，大多数人对贸易保护政策持负面看法。",
   "notes": "rry out /conduct a poll进行民意调查英语中的“人头税\"叫poll tax,在美国也叫head tax o poll来源于德语，原指“人头”。过去，人们聚集在一起表决，一眼望去只能看见人头攒动，只有数人头来计数。渐渐地，该词的意思演变为“投票数“以及“民意调查”等。",
@@ -761,7 +761,7 @@
  },
  {
   "word": "nominate",
-  "meaning": "V.提名；任命",
+  "meaning": "v.提名；任命",
   "ex_en": "He has been nominated as Minister of Education",
   "ex_zh": "他被任命为教育部长。",
   "notes": "nomination n.提名；任命 nominate sb. for提名某人为...的候选人",
@@ -897,7 +897,7 @@
  },
  {
   "word": "hint",
-  "meaning": "v./n.暗示，提不",
+  "meaning": "v. n.暗示，提不",
   "ex_en": "When she said she was tired, it was a hint that she wanted us to leave",
   "ex_zh": "当她说她累了时，是暗示她想让我们离开。",
   "notes": "giveahint暗示，示意take a hint领会，明白",
@@ -929,7 +929,7 @@
  },
  {
   "word": "state",
-  "meaning": "V.陈述，说明n.国家；州；状况",
+  "meaning": "v.陈述，说明n.国家；州；状况",
   "ex_en": "Railways in Britain belong to the state",
   "ex_zh": "英国的铁路归国家所有。",
   "notes": "statement n.声明，陈述 state one's view陈述某人的观点",
@@ -993,7 +993,7 @@
  },
  {
   "word": "admit",
-  "meaning": "V.供认，承认",
+  "meaning": "v.供认，承认",
   "ex_en": "He admitted to his father that he had failed his driving test",
   "ex_zh": "他向父亲承认了自己没有通过驾驶考试。",
   "notes": "admission n.承认；入场费；准许进入",
@@ -1105,7 +1105,7 @@
  },
  {
   "word": "Indian",
-  "meaning": "日口印度的n.印度人",
+  "meaning": "adj.口印度的n.印度人",
   "ex_en": "To an Indian, the owl is a symbol of bad luck",
   "ex_zh": "对印度人来说，猫头鹰是噩运的象征。",
   "notes": "India n.印度",
@@ -1129,7 +1129,7 @@
  },
  {
   "word": "Canada",
-  "meaning": "n-加拿大",
+  "meaning": "n.加拿大",
   "ex_en": "The maple leaf is the emblem of Canada",
   "ex_zh": "枫叶",
   "notes": "",

@@ -1,7 +1,7 @@
 [
  {
   "word": "navigate",
-  "meaning": "V.航行；横渡",
+  "meaning": "v.航行；横渡",
   "ex_en": "He was the first man who navigated the Atlantic alone",
   "ex_zh": "他是第一个独自横渡大西洋的人。",
   "notes": "navigation n.航行navigator n.领航员字根nav/nau指“船（ship）\",如：navigate（航行）， navy（海军），naval（海军的），nausea（乘船航海t 晕船t恶心）, astronaut（星际航行者t宇航员）。",
@@ -33,7 +33,7 @@
  },
  {
   "word": "travel",
-  "meaning": "n./v.旅行",
+  "meaning": "n. v.旅行",
   "ex_en": "During his travels, he met many interesting people",
   "ex_zh": "旅行中，他遇到了许多有趣的人。",
   "notes": "travel abroad出国旅行",
@@ -585,7 +585,7 @@
  },
  {
   "word": "vanish",
-  "meaning": "V.突然消失；绝迹",
+  "meaning": "v.突然消失；绝迹",
   "ex_en": "He seemed to vanish into thin air",
   "ex_zh": "他似乎突然就消失无踪了。",
   "notes": "",
@@ -1001,7 +1001,7 @@
  },
  {
   "word": "burden",
-  "meaning": "V.（使）担负n・重担，负担",
+  "meaning": "v.（使）担负n・重担，负担",
   "ex_en": "It's a burden I have been carrying for a long time",
   "ex_zh": "这是一个我背负了很长时间的重担。",
   "notes": "bear the burden of背负着...的重担",
@@ -1009,7 +1009,7 @@
  },
  {
   "word": "transfer",
-  "meaning": "V.（使）迁移，（使）转移；（使）调动",
+  "meaning": "v.（使）迁移，（使）转移；（使）调动",
   "ex_en": "The cat has transferred her affection to her new master",
   "ex_zh": "那只猫已把感情转移到新主人身上了。",
   "notes": "transfer to转移到；转学到前缀trans表示“横着穿过，跨越（across）\"。",
@@ -1041,7 +1041,7 @@
  },
  {
   "word": "convey",
-  "meaning": "V.运送，输送；表达，传递",
+  "meaning": "v.运送，输送；表达，传递",
   "ex_en": "It's hard to convey my feelings in words",
   "ex_zh": "我的情感难以言表。",
   "notes": "",

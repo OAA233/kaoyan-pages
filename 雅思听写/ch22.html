@@ -44,14 +44,15 @@
     width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
     flex-shrink: 0; align-self: center;
   }
-  .word { font-size: 19px; font-weight: 700; cursor: pointer; }
+  .word { font-size: 19px; font-weight: 700; cursor: pointer; white-space: nowrap; }
   .word:hover { text-decoration: underline; }
   .pos { font-size: 11px; font-weight: 700; padding: 2px 6px; white-space: nowrap; border-radius: 7px; color: #fff; }
   .pos.V { background: #e5484d; }
   .pos.I { background: #d63384; }
   .pos.N { background: #1971c2; }
   .pos.adv { background: #2b8a3e; }
-  .mean { margin-top: 1px; font-size: 13px; margin-left: 32px; }
+  .mean { margin-top: 2px; font-size: 13px; margin-left: 32px; }
+  .mean .pos { margin-right: 2px; vertical-align: 1px; }
   .phrase { margin-top: 6px; font-size: 13px; margin-left: 32px; }
   .phrase .jp { font-weight: 600; cursor: pointer; }
   .phrase .jp:hover { text-decoration: underline; }
@@ -99,7 +100,7 @@
 <div id="list"></div>
 
 <script>
-let DATA = [{"word": "daily", "meaning": "adj.每日的n.日报", "ex_en": "The best treatment for the pain is daily exercises", "ex_zh": "治疗这种疼痛的最好办法就是每天锻炼。", "notes": "China Dailyl中国日报》daily life B常生活", "n": 1}, {"word": "monthly", "meaning": "adj.每月的adv.每月一次n.月刊", "ex_en": "The comm on monthly publicati ons can be found in the library", "ex_zh": "这家图书馆里有那些常见的月刊。", "notes": "", "n": 2}, {"word": "quarterly", "meaning": "adj.季度的adv.按季度地n.季刊", "ex_en": "This journal is bimonthly, and that one quarterly", "ex_zh": "这本杂志是双月刊，那本是季刊。", "notes": "", "n": 3}, {"word": "annual", "meaning": "adj.每年的；一年的n.年报", "ex_en": "The firm has an annual turnover of million pounds", "ex_zh": "这家公司的年营业额为8亿英镑。", "notes": "annual bonus年终分红annual earnings年收益", "n": 4}, {"word": "yearly", "meaning": "adj.每年的；一年的adv.每年地", "ex_en": "The yearly conference will be held next month", "ex_zh": "度的父母是不受年轻人欢迎的。年会将于下个月举行。", "notes": "yearly capacity年产量century n.世纪；百年", "n": 5}, {"word": "century", "meaning": "n.世纪；百年", "ex_en": "It was considered one of the best films of the 20th century.", "ex_zh": "它被视为20世纪最优秀的电影。", "notes": "", "n": 6}, {"word": "anniversary", "meaning": "n.周年纪念日", "ex_en": "Jack and Kim celebrated their 20th wedding anniversary in January.", "ex_zh": "杰克和金在1月庆祝了他们的结婚20周年纪念日。", "notes": "", "n": 7}, {"word": "millennium", "meaning": "n.一千年，千年期；千禧年", "ex_en": "What did you do to celebrate the new millennium?", "ex_zh": "你是如何庆祝千禧年的？", "notes": "", "n": 8}, {"word": "million", "meaning": "num.百万；大量", "ex_en": "It was estimated that the damage was over one million dollars.", "ex_zh": "据估计，损失超过了100万美元。", "notes": "［搭］millions of 许许多多的", "n": 9}, {"word": "era", "meaning": "n.时代，年代，纪元n.—打，十二个；十来个", "ex_en": "", "ex_zh": "", "notes": "", "n": 10}, {"word": "dozen", "meaning": "n.一打，十二个；十来个", "ex_en": "The turkey is large enough to feed a dozen.", "ex_zh": "那只火鸡足够十来个人吃。", "notes": "", "n": 11}, {"word": "present", "meaning": "adj.现在的n.目前；礼物，赠送物", "ex_en": "There's no certain cure for this illness at present", "ex_zh": "现在，这种病尚无确定的疗法。", "notes": "at present目前，现在", "n": 12}, {"word": "contemporary", "meaning": "adj.当代的；同时代的", "ex_en": "These clothes are more contemporary and wearable", "ex_zh": "这些服装更具当代感，而且穿起来更舒适。字根tempor指“时间（time）,如：con（—起）+\ntempor（时间）+ary（形容词后缀）t contemporary\n（同时代的）；tempo指“（音乐的）速度，拍子”，也就是音符延长的时间长短；temporise表示“（为争取时间）拖延“，又可指“见风使舵，顺应时势”。", "notes": "", "n": 13}, {"word": "medieval", "meaning": "adj.中世纪的；守旧的", "ex_en": "Parents with a medieval attitude toward dating are not popular young", "ex_zh": "对于约会抱有守旧态", "notes": "", "n": 14}, {"word": "withthe", "meaning": "century.它被视为20世纪最优秀的电影 20", "ex_en": "", "ex_zh": "", "notes": "", "n": 15}, {"word": "th", "meaning": "dollars.据估计，损失超过了W0万美元。 of许许多多的", "ex_en": "", "ex_zh": "", "notes": "", "n": 16}, {"word": "billion", "meaning": "num.十亿；大量", "ex_en": "The human brain contains billions of nerve cells.", "ex_zh": "人类的大脑里有大量神经细胞。", "notes": "", "n": 17}, {"word": "contemporary millio", "meaning": "n", "ex_en": "", "ex_zh": "", "notes": "", "n": 18}, {"word": "dawn", "meaning": "n.黎明；开端v.破晓", "ex_en": "We", "ex_zh": "我们在黎明起程，朝着纽约驶去。", "notes": "at dawn拂晓时", "n": 19}, {"word": "midday", "meaning": "n.正午，中午", "ex_en": "We finished work at midday", "ex_zh": "我们于正午完成了工作。", "notes": "", "n": 20}, {"word": "midnight", "meaning": "n.午夜，子夜，半夜", "ex_en": "According to astronomers, the best time for viewing is between midnight and dawn.", "ex_zh": "据天文学家表示，最佳观赏期在午夜至黎明期间。", "notes": "", "n": 21}, {"word": "overnight", "meaning": "adv.在晚上；突然，一夜之间", "ex_en": "I stayed overnight at a friend's home", "ex_zh": "我在朋友家过了一夜。", "notes": "", "n": 22}, {"word": "night", "meaning": "n.夜，夜间；晚上；夜场", "ex_en": "The city's night clubs are open all night for eating, drinking and dancing", "ex_zh": "该市的夜总会彻夜提供饮食和舞蹈娱乐。", "notes": "day and night夜以继日地", "n": 23}, {"word": "modern", "meaning": "adj.现代的；近代的", "ex_en": "The girl can't adjust herself to the whirl of modern life in this big city.", "ex_zh": "这个女孩无法适应这个大城市纷繁的现代生活。", "notes": "", "n": 24}, {"word": "recent", "meaning": "adj.新近的，最近的", "ex_en": "The vase looked old but was a recent fake", "ex_zh": "这个花瓶看似古老，却是一件新近制作的贋品。", "notes": "recently adv.最近", "n": 25}, {"word": "up-to-date", "meaning": "adj.直到目前的；现代的", "ex_en": "Up-to-date information about the research on climate change can be found on this website.", "ex_zh": "可在该网站上找到关于气候变化研究的最新信息。", "notes": "", "n": 26}, {"word": "first", "meaning": "ord.第一adv.最初，第一", "ex_en": "What is your first impression of Beijing?", "ex_zh": "你对北京的第一印象如何？", "notes": "", "n": 27}, {"word": "secondly", "meaning": "adv.第二，其次", "ex_en": "To start with, we don't have enough money. Secondly, werre too busy", "ex_zh": "首先，我们的钱不够。其次，我们没时间。", "notes": "", "n": 28}, {"word": "finally", "meaning": "adv.最后；终于；决定性地", "ex_en": "Today, I finally get to look at the man that I love say,\"Will you please marry me?\"", "ex_zh": "今天，\n我终于可以看着我心爱的男人，终于可以说：“你愿意和我结婚吗？”\nV.完成；结束n.结尾，最后部分\n你什么时候完成大学课程？", "notes": "", "n": 29}, {"word": "finish", "meaning": "v.完成；结束 n.结尾，最后部分", "ex_en": "When would you finish your college course?", "ex_zh": "你什么时候完成大学课程？", "notes": "", "n": 30}, {"word": "immediately", "meaning": "adv.立即；直接地", "ex_en": "I will then immediately send the application process begins", "ex_zh": "然后，我会立即发送确认书，申请流程就启动了。", "notes": "", "n": 31}, {"word": "instant", "meaning": "n.瞬间adj.立即的", "ex_en": "Just for an instant I refuse", "ex_zh": "有那么一瞬间，我以为她要拒绝了。\n，", "notes": "instantly adv.立即即刻 immediately蜜", "n": 32}, {"word": "moment", "meaning": "n.片刻；时刻", "ex_en": "Love is a moment that lasts forever", "ex_zh": "爱的瞬间就是永恒。 It's only several minutes from here to the\nsupermarket.从这儿到超市只有几分钟的路程。", "notes": "at the moment此刻，眼下in a moment—会儿 分，分钟；一会儿/mai'nju:t/adj.细微的 in a minute马上，立刻wait a minute等一下 moment:较minute所表示的时间短，指一刹那或一段很短的时间.有时也含持续的意味。 minute:指极短的时间，但可觉察到时间的持续。 instant:常与moment换用，指一瞬间，但更侧重指时间短促，多用于表示紧迫、瞬变等情况。", "n": 33}, {"word": "minute", "meaning": "n.分，分钟；一会儿 adj.细微的", "ex_en": "It's only several minutes from here to the supermarket.", "ex_zh": "从这儿到超市只有几分钟的路程。", "notes": "［搭］in a minute 马上，立刻；wait a minute 等一下", "n": 34}, {"word": "prior", "meaning": "adj.在先的，在前的", "ex_en": "I have a prior appointment, so I can't go with you", "ex_zh": "我预先有约会，所以不能跟你去。", "notes": "prior to在...前的", "n": 35}, {"word": "former", "meaning": "日dj.以前的；前者的pron.前者", "ex_en": "Many of his former supporters voted against him", "ex_zh": "他以前的许多支持者投票反对他。", "notes": "latter adj.后者的pron.后者", "n": 36}, {"word": "preceding", "meaning": "adj.在前的，在先的", "ex_en": "She had been in Mexico the preceding summer.±—", "ex_zh": "年夏天，她去过墨西哥。", "notes": "precedes走在...前面；在...之前发生，先于", "n": 37}, {"word": "precedent", "meaning": "n.先例；常规", "ex_en": "They were determined to break with precedent.", "ex_zh": "他们决心打破常规。", "notes": "", "n": 38}, {"word": "foremost", "meaning": "adj.最前的；最重要的", "ex_en": "He is one of the foremost scientists in China", "ex_zh": "他是中国最重要的科学家之一\nO", "notes": "", "n": 39}, {"word": "opening", "meaning": "adj.开始的n.开始，开端", "ex_en": "The book's opening is dull, but the last chapters are interesting", "ex_zh": "那本书的开头枯燥乏味，但最后几章很有意思。", "notes": "", "n": 40}, {"word": "initially", "meaning": "adv.最初", "ex_en": "Initially, I disagreed with their proposal, but later I changed my mind", "ex_zh": "起初，我不同意他们的提议，不过后来我改了主意。", "notes": "", "n": 41}, {"word": "intermediate", "meaning": "adj.中间的", "ex_en": "This country is still at an intermediate stage of development", "ex_zh": "这个国家仍正处于发展的中间阶段。", "notes": "", "n": 42}, {"word": "midst", "meaning": "n.中部，中间", "ex_en": "We're lucky to have such a man in our midst", "ex_zh": "在我们中间有这样一个人是我们的幸运。", "notes": "in the midst of在...中间；当...的时候", "n": 43}, {"word": "meantime", "meaning": "n.［in the ~］其间，同时；［for the ~］眼下，暂时", "ex_en": "I like skiing. In the meantime, I know it is very dangerous.", "ex_zh": "我喜欢滑雪，同时也知道这非常危险。", "notes": "", "n": 44}, {"word": "meanwhile", "meaning": "adv.同时，其间", "ex_en": "media, meanwhile, has blown hot and cold on the affair", "ex_zh": "同时，媒体对这件事的态度忽冷忽热。", "notes": "", "n": 45}, {"word": "simultaneous", "meaning": "adj.同时发生（或进行）的", "ex_en": "This event was almost simultaneous with that one.", "ex_zh": "这个事件几乎是与那个事件同时发生的。", "notes": "", "n": 46}, {"word": "ongoing", "meaning": "adj.进行中的；继续存在的", "ex_en": "The discussions are still ongoing", "ex_zh": "讨论仍在进行。", "notes": "", "n": 47}, {"word": "everlasting", "meaning": "adj.永恒的", "ex_en": "The man told the woman that he loved her with an everlasting love", "ex_zh": "男人告诉女人，他对她的爱永恒不变。", "notes": "everlasting to everlasting永远地", "n": 48}, {"word": "permanent", "meaning": "adj.永久的", "ex_en": "We have no permanent friends or enemies, only interests", "ex_zh": "我们没有永久的朋友或敌人，只有永久的利益。", "notes": "", "n": 49}, {"word": "punctual", "meaning": "adj.准时的，守时的", "ex_en": "He is always reliable and punctual", "ex_zh": "他总是可靠又守时。", "notes": "", "n": 50}, {"word": "duration", "meaning": "n.持续时间；期间", "ex_en": "Difficulties will be experienced throughout the duration of the war.", "ex_zh": "在战争期间，人们将经历种种困难。", "notes": "［记］during prep.在...的时候，在...期间", "n": 51}, {"word": "duratio", "meaning": "n m持续时间；期间", "ex_en": "Difficulties will be experienced throughout the duration of the war", "ex_zh": "在战争期间，人们将经历种种困难。", "notes": "during prep.在...的时候，在....期间", "n": 52}, {"word": "consecutive", "meaning": "adj.连续不断的", "ex_en": "He has been absent from school for four consecutive days", "ex_zh": "他已经连续四天没来上学了。", "notes": "two consecutive weeks连续两周", "n": 53}, {"word": "periodically", "meaning": "adv.周期性地，定期地", "ex_en": "Sea mammals must breathe", "ex_zh": "海生哺乳动物必须定时浮出海面呼吸。", "notes": "period n.时期", "n": 54}, {"word": "imminent", "meaning": "adj.（尤指不愉快的事）即将发生的，逼近的", "ex_en": "They are unaware of the imminent dan ger", "ex_zh": "他们没察觉到正在逼近的危险。", "notes": "", "n": 55}, {"word": "incidentally", "meaning": "adv.偶然地；顺便提一句", "ex_en": "Incidentally, here's good news for you", "ex_zh": "顺便一提，我给你带了好消息。\n时间日期", "notes": "", "n": 56}];
+let DATA = [{"word": "daily", "meaning": "adj.每日的n.日报", "ex_en": "The best treatment for the pain is daily exercises", "ex_zh": "治疗这种疼痛的最好办法就是每天锻炼。", "notes": "China Dailyl中国日报》daily life B常生活", "n": 1}, {"word": "monthly", "meaning": "adj.每月的adv.每月一次n.月刊", "ex_en": "The comm on monthly publicati ons can be found in the library", "ex_zh": "这家图书馆里有那些常见的月刊。", "notes": "", "n": 2}, {"word": "quarterly", "meaning": "adj.季度的adv.按季度地n.季刊", "ex_en": "This journal is bimonthly, and that one quarterly", "ex_zh": "这本杂志是双月刊，那本是季刊。", "notes": "", "n": 3}, {"word": "annual", "meaning": "adj.每年的；一年的n.年报", "ex_en": "The firm has an annual turnover of million pounds", "ex_zh": "这家公司的年营业额为8亿英镑。", "notes": "annual bonus年终分红annual earnings年收益", "n": 4}, {"word": "yearly", "meaning": "adj.每年的；一年的adv.每年地", "ex_en": "The yearly conference will be held next month", "ex_zh": "度的父母是不受年轻人欢迎的。年会将于下个月举行。", "notes": "yearly capacity年产量century n.世纪；百年", "n": 5}, {"word": "century", "meaning": "n.世纪；百年", "ex_en": "It was considered one of the best films of the 20th century.", "ex_zh": "它被视为20世纪最优秀的电影。", "notes": "", "n": 6}, {"word": "anniversary", "meaning": "n.周年纪念日", "ex_en": "Jack and Kim celebrated their 20th wedding anniversary in January.", "ex_zh": "杰克和金在1月庆祝了他们的结婚20周年纪念日。", "notes": "", "n": 7}, {"word": "millennium", "meaning": "n.一千年，千年期；千禧年", "ex_en": "What did you do to celebrate the new millennium?", "ex_zh": "你是如何庆祝千禧年的？", "notes": "", "n": 8}, {"word": "million", "meaning": "num.百万；大量", "ex_en": "It was estimated that the damage was over one million dollars.", "ex_zh": "据估计，损失超过了100万美元。", "notes": "［搭］millions of 许许多多的", "n": 9}, {"word": "era", "meaning": "n.时代，年代，纪元n.—打，十二个；十来个", "ex_en": "", "ex_zh": "", "notes": "", "n": 10}, {"word": "dozen", "meaning": "n.一打，十二个；十来个", "ex_en": "The turkey is large enough to feed a dozen.", "ex_zh": "那只火鸡足够十来个人吃。", "notes": "", "n": 11}, {"word": "present", "meaning": "adj.现在的n.目前；礼物，赠送物", "ex_en": "There's no certain cure for this illness at present", "ex_zh": "现在，这种病尚无确定的疗法。", "notes": "at present目前，现在", "n": 12}, {"word": "contemporary", "meaning": "adj.当代的；同时代的", "ex_en": "These clothes are more contemporary and wearable", "ex_zh": "这些服装更具当代感，而且穿起来更舒适。字根tempor指“时间（time）,如：con（—起）+\ntempor（时间）+ary（形容词后缀）t contemporary\n（同时代的）；tempo指“（音乐的）速度，拍子”，也就是音符延长的时间长短；temporise表示“（为争取时间）拖延“，又可指“见风使舵，顺应时势”。", "notes": "", "n": 13}, {"word": "medieval", "meaning": "adj.中世纪的；守旧的", "ex_en": "Parents with a medieval attitude toward dating are not popular young", "ex_zh": "对于约会抱有守旧态", "notes": "", "n": 14}, {"word": "billion", "meaning": "num.十亿；大量", "ex_en": "The human brain contains billions of nerve cells.", "ex_zh": "人类的大脑里有大量神经细胞。", "notes": "", "n": 15}, {"word": "dawn", "meaning": "n.黎明；开端v.破晓", "ex_en": "We", "ex_zh": "我们在黎明起程，朝着纽约驶去。", "notes": "at dawn拂晓时", "n": 16}, {"word": "midday", "meaning": "n.正午，中午", "ex_en": "We finished work at midday", "ex_zh": "我们于正午完成了工作。", "notes": "", "n": 17}, {"word": "midnight", "meaning": "n.午夜，子夜，半夜", "ex_en": "According to astronomers, the best time for viewing is between midnight and dawn.", "ex_zh": "据天文学家表示，最佳观赏期在午夜至黎明期间。", "notes": "", "n": 18}, {"word": "overnight", "meaning": "adv.在晚上；突然，一夜之间", "ex_en": "I stayed overnight at a friend's home", "ex_zh": "我在朋友家过了一夜。", "notes": "", "n": 19}, {"word": "night", "meaning": "n.夜，夜间；晚上；夜场", "ex_en": "The city's night clubs are open all night for eating, drinking and dancing", "ex_zh": "该市的夜总会彻夜提供饮食和舞蹈娱乐。", "notes": "day and night夜以继日地", "n": 20}, {"word": "modern", "meaning": "adj.现代的；近代的", "ex_en": "The girl can't adjust herself to the whirl of modern life in this big city.", "ex_zh": "这个女孩无法适应这个大城市纷繁的现代生活。", "notes": "", "n": 21}, {"word": "recent", "meaning": "adj.新近的，最近的", "ex_en": "The vase looked old but was a recent fake", "ex_zh": "这个花瓶看似古老，却是一件新近制作的贋品。", "notes": "recently adv.最近", "n": 22}, {"word": "up-to-date", "meaning": "adj.直到目前的；现代的", "ex_en": "Up-to-date information about the research on climate change can be found on this website.", "ex_zh": "可在该网站上找到关于气候变化研究的最新信息。", "notes": "", "n": 23}, {"word": "first", "meaning": "adj.第一adv.最初，第一", "ex_en": "What is your first impression of Beijing?", "ex_zh": "你对北京的第一印象如何？", "notes": "", "n": 24}, {"word": "secondly", "meaning": "adv.第二，其次", "ex_en": "To start with, we don't have enough money. Secondly, werre too busy", "ex_zh": "首先，我们的钱不够。其次，我们没时间。", "notes": "", "n": 25}, {"word": "finally", "meaning": "adv.最后；终于；决定性地", "ex_en": "Today, I finally get to look at the man that I love say,\"Will you please marry me?\"", "ex_zh": "今天，\n我终于可以看着我心爱的男人，终于可以说：“你愿意和我结婚吗？”\nV.完成；结束n.结尾，最后部分\n你什么时候完成大学课程？", "notes": "", "n": 26}, {"word": "finish", "meaning": "v.完成；结束 n.结尾，最后部分", "ex_en": "When would you finish your college course?", "ex_zh": "你什么时候完成大学课程？", "notes": "", "n": 27}, {"word": "immediately", "meaning": "adv.立即；直接地", "ex_en": "I will then immediately send the application process begins", "ex_zh": "然后，我会立即发送确认书，申请流程就启动了。", "notes": "", "n": 28}, {"word": "instant", "meaning": "n.瞬间adj.立即的", "ex_en": "Just for an instant I refuse", "ex_zh": "有那么一瞬间，我以为她要拒绝了。\n，", "notes": "instantly adv.立即即刻 immediately蜜", "n": 29}, {"word": "moment", "meaning": "n.片刻；时刻", "ex_en": "Love is a moment that lasts forever", "ex_zh": "爱的瞬间就是永恒。 It's only several minutes from here to the\nsupermarket.从这儿到超市只有几分钟的路程。", "notes": "at the moment此刻，眼下in a moment—会儿 分，分钟；一会儿/mai'nju:t/adj.细微的 in a minute马上，立刻wait a minute等一下 moment:较minute所表示的时间短，指一刹那或一段很短的时间.有时也含持续的意味。 minute:指极短的时间，但可觉察到时间的持续。 instant:常与moment换用，指一瞬间，但更侧重指时间短促，多用于表示紧迫、瞬变等情况。", "n": 30}, {"word": "minute", "meaning": "n.分，分钟；一会儿 adj.细微的", "ex_en": "It's only several minutes from here to the supermarket.", "ex_zh": "从这儿到超市只有几分钟的路程。", "notes": "［搭］in a minute 马上，立刻；wait a minute 等一下", "n": 31}, {"word": "prior", "meaning": "adj.在先的，在前的", "ex_en": "I have a prior appointment, so I can't go with you", "ex_zh": "我预先有约会，所以不能跟你去。", "notes": "prior to在...前的", "n": 32}, {"word": "former", "meaning": "adj.以前的；前者的pron.前者", "ex_en": "Many of his former supporters voted against him", "ex_zh": "他以前的许多支持者投票反对他。", "notes": "latter adj.后者的pron.后者", "n": 33}, {"word": "preceding", "meaning": "adj.在前的，在先的", "ex_en": "She had been in Mexico the preceding summer.±—", "ex_zh": "年夏天，她去过墨西哥。", "notes": "precedes走在...前面；在...之前发生，先于", "n": 34}, {"word": "precedent", "meaning": "n.先例；常规", "ex_en": "They were determined to break with precedent.", "ex_zh": "他们决心打破常规。", "notes": "", "n": 35}, {"word": "foremost", "meaning": "adj.最前的；最重要的", "ex_en": "He is one of the foremost scientists in China", "ex_zh": "他是中国最重要的科学家之一\nO", "notes": "", "n": 36}, {"word": "opening", "meaning": "adj.开始的n.开始，开端", "ex_en": "The book's opening is dull, but the last chapters are interesting", "ex_zh": "那本书的开头枯燥乏味，但最后几章很有意思。", "notes": "", "n": 37}, {"word": "initially", "meaning": "adv.最初", "ex_en": "Initially, I disagreed with their proposal, but later I changed my mind", "ex_zh": "起初，我不同意他们的提议，不过后来我改了主意。", "notes": "", "n": 38}, {"word": "intermediate", "meaning": "adj.中间的", "ex_en": "This country is still at an intermediate stage of development", "ex_zh": "这个国家仍正处于发展的中间阶段。", "notes": "", "n": 39}, {"word": "midst", "meaning": "n.中部，中间", "ex_en": "We're lucky to have such a man in our midst", "ex_zh": "在我们中间有这样一个人是我们的幸运。", "notes": "in the midst of在...中间；当...的时候", "n": 40}, {"word": "meantime", "meaning": "n.［in the ~］其间，同时；［for the ~］眼下，暂时", "ex_en": "I like skiing. In the meantime, I know it is very dangerous.", "ex_zh": "我喜欢滑雪，同时也知道这非常危险。", "notes": "", "n": 41}, {"word": "meanwhile", "meaning": "adv.同时，其间", "ex_en": "media, meanwhile, has blown hot and cold on the affair", "ex_zh": "同时，媒体对这件事的态度忽冷忽热。", "notes": "", "n": 42}, {"word": "simultaneous", "meaning": "adj.同时发生（或进行）的", "ex_en": "This event was almost simultaneous with that one.", "ex_zh": "这个事件几乎是与那个事件同时发生的。", "notes": "", "n": 43}, {"word": "ongoing", "meaning": "adj.进行中的；继续存在的", "ex_en": "The discussions are still ongoing", "ex_zh": "讨论仍在进行。", "notes": "", "n": 44}, {"word": "everlasting", "meaning": "adj.永恒的", "ex_en": "The man told the woman that he loved her with an everlasting love", "ex_zh": "男人告诉女人，他对她的爱永恒不变。", "notes": "everlasting to everlasting永远地", "n": 45}, {"word": "permanent", "meaning": "adj.永久的", "ex_en": "We have no permanent friends or enemies, only interests", "ex_zh": "我们没有永久的朋友或敌人，只有永久的利益。", "notes": "", "n": 46}, {"word": "punctual", "meaning": "adj.准时的，守时的", "ex_en": "He is always reliable and punctual", "ex_zh": "他总是可靠又守时。", "notes": "", "n": 47}, {"word": "duration", "meaning": "n.持续时间；期间", "ex_en": "Difficulties will be experienced throughout the duration of the war.", "ex_zh": "在战争期间，人们将经历种种困难。", "notes": "［记］during prep.在...的时候，在...期间", "n": 48}, {"word": "duration", "meaning": "n.持续时间；期间", "ex_en": "Difficulties will be experienced throughout the duration of the war", "ex_zh": "在战争期间，人们将经历种种困难。", "notes": "during prep.在...的时候，在....期间", "n": 49}, {"word": "consecutive", "meaning": "adj.连续不断的", "ex_en": "He has been absent from school for four consecutive days", "ex_zh": "他已经连续四天没来上学了。", "notes": "two consecutive weeks连续两周", "n": 50}, {"word": "periodically", "meaning": "adv.周期性地，定期地", "ex_en": "Sea mammals must breathe", "ex_zh": "海生哺乳动物必须定时浮出海面呼吸。", "notes": "period n.时期", "n": 51}, {"word": "imminent", "meaning": "adj.（尤指不愉快的事）即将发生的，逼近的", "ex_en": "They are unaware of the imminent dan ger", "ex_zh": "他们没察觉到正在逼近的危险。", "notes": "", "n": 52}, {"word": "incidentally", "meaning": "adv.偶然地；顺便提一句", "ex_en": "Incidentally, here's good news for you", "ex_zh": "顺便一提，我给你带了好消息。\n时间日期", "notes": "", "n": 53}];
 let curAudio = null;
 const AUDIO_DIR = 'audio/ch22';
 function play(id, suffix){
@@ -120,32 +121,59 @@ function toggleTheme(){
 applyTheme((() => { try { return localStorage.getItem('ielts_theme') === 'day'; } catch(e) { return false; } })());
 
 const esc = s => String(s == null ? '' : s);
-// 词性色: v→V红 adj→I粉 adv→绿 其余→N蓝; chip 显示词性, 释义里去掉词性缩写
-const POS_RE = /^(n\.|adj\.|adv\.|v\.|vi\.|vt\.)\s*/;
-function posOf(d){
-  const toks = [];
-  let m = d.meaning, t;
-  while ((t = m.match(POS_RE)) && toks.length < 2) { toks.push(t[1]); m = m.slice(t[0].length); }
-  return { toks, rest: m.trim() || d.meaning };
-}
-const posCls = p => p.startsWith('v') ? 'V' : p.startsWith('adj') ? 'I' : p.startsWith('adv') ? 'adv' : 'N';
-const chipOf = d => {
-  const { toks } = posOf(d);
-  if (!toks.length) return '';
-  const cls = posCls(toks[0]);
-  return `<span class="pos ${cls}">${toks.join(' ')}</span>`;
+/* ---- 词性：大小写不敏感 + OCR 乱码模糊匹配（adj↔bdj/dj/aaj/adi/edj…, n↔m/ii/fi…）---- */
+const POS_MAP = {
+  n:'n.', ni:'n.', m:'n.', ii:'n.', fi:'n.', fl:'n.', il:'n.', li:'n.', l:'n.', i:'n.',
+  i1:'n.', l1:'n.', n1:'n.', '11':'n.',
+  adj:'adj.', bdj:'adj.', dj:'adj.', aaj:'adj.', adi:'adj.', edj:'adj.', amj:'adj.', ord:'adj.', di:'adj.',
+  adv:'adv.', ad:'adv.',
+  v:'v.', vi:'vi.', vt:'vt.',
+  prep:'prep.', conj:'conj.', num:'num.', pron:'pron.', art:'art.', int:'int.',
+  phr:'phr.',
+  '\u25a1':'n.', '"':'n.', '!':'n.', '\u00ab':'n.', '\u2022':'n.', '\u2460':'n.',
+  '<1':'n.', '<>':'n.', '<!':'n.'
 };
-const meanOf = d => posOf(d).rest;
+const POS_TOKEN = /([A-Za-z]{1,4}|<[1!>]|[\u25a1"\u00ab\u2022\u2460])([.\u00b7\u2022\u30fb\u2014\-]?)/g;
+
+/* 摘出 meaning 里全部词性标记（不只在行首），返回 {pos:[...], rest:'中文释义'} */
+function splitPos(meaning){
+  const s = String(meaning == null ? '' : meaning);
+  const pos = [], spans = [];
+  let m;
+  POS_TOKEN.lastIndex = 0;
+  while ((m = POS_TOKEN.exec(s)) !== null){
+    const a = m.index, b = a + m[0].length;
+    if (a > 0 && /[A-Za-z]/.test(s[a - 1])) continue;      // 前面还是字母 -> 单词内部
+    if (/[A-Za-z]/.test(s[b] || '')) continue;             // 后面还是字母 -> 单词内部
+    const c = POS_MAP[m[1].toLowerCase()];
+    if (!c) continue;
+    if (pos.indexOf(c) < 0) pos.push(c);
+    spans.push([a, b]);
+  }
+  let rest = s;
+  for (let i = spans.length - 1; i >= 0; i--) rest = rest.slice(0, spans[i][0]) + rest.slice(spans[i][1]);
+  rest = rest.replace(/^[\u2014\u2013]{1,2}(?=[\u4e00-\u9fff])/, '\u4e00');   // n.—阵狂风 -> n.一阵狂风
+  rest = rest.replace(/^[\s\/，,；;、。.\u00b7\u2022\u30fb:：]+/, '');
+  if (!/^[\u4e00-\u9fff（(［\[]/.test(rest)) rest = rest.replace(/^[a-z0-9'"\/\\.,;:\-\u2013\u2014\s]+/, '');
+  return { pos: pos, rest: rest.trim() };
+}
+const posCls = p => p.indexOf('v') === 0 ? 'V' : p.indexOf('adj') === 0 ? 'I' : p.indexOf('adv') === 0 ? 'adv' : 'N';
+const chipOf = d => {
+  const p = splitPos(d.meaning).pos;
+  return p.length ? `<span class="posbox">${p.map(x => `<span class="pos ${posCls(x)}">${x}</span>`).join(' ')}</span>` : '<span class="posbox"></span>';
+};
+const meanOf = d => { const sp = splitPos(d.meaning); return sp.rest || d.meaning; };
 
 const entryHtml = d => `
-  <div class="row1"><span class="num">${d.n}</span><span class="word" onclick="play(${d.n},'w')">${esc(d.word)}</span>${chipOf(d)}</div>
-  <div class="mean">${esc(meanOf(d))}</div>
+  <div class="row1"><span class="num">${d.n}</span><span class="word" onclick="play(${d.n},'w')">${esc(d.word)}</span></div>
+  <div class="mean">${chipOf(d)}${esc(meanOf(d))}</div>
   ${d.ex_en ? `<div class="phrase"><span class="jp" onclick="play(${d.n},'e')">${esc(d.ex_en)}</span><span class="zh">${esc(d.ex_zh)}</span></div>` : ''}
   ${d.notes ? `<div class="note-line">${esc(d.notes)}</div>` : ''}`;
 
 /* ---- ✏️ 编辑模式 ---- */
 const LSK = 'ielts_edit_' + 'ch22';
-(function(){ try { const s = localStorage.getItem(LSK); if (s) { const o = JSON.parse(s); if (o && Array.isArray(o.data) && o.data.length) DATA = o.data; } } catch(e) {} })();
+// 采纳任何合法的存档（含被用户删空后的空数组 data:[]）；只有键不存在/JSON 损坏时才回落到初始数据
+(function(){ try { const s = localStorage.getItem(LSK); if (s) { const o = JSON.parse(s); if (o && Array.isArray(o.data)) DATA = o.data; } } catch(e) {} })();
 let editing = false, saveT = null;
 function save(){ try { localStorage.setItem(LSK, JSON.stringify({data: DATA})); } catch(e) {} }
 function saveSoon(){ clearTimeout(saveT); saveT = setTimeout(save, 400); }
@@ -174,7 +202,7 @@ function toggleEdit(){
 
 const entryEdit = d => `
   <div class="row1"><span class="num">${d.n}</span><span class="edf word" contenteditable="true" data-f="word" data-ph="单词">${esc(d.word)}</span><span class="x" data-x="1">✕</span></div>
-  <div class="mean"><span class="edf" contenteditable="true" data-f="meaning" data-ph="词性+释义">${esc(d.meaning)}</span></div>
+  <div class="mean">${chipOf(d)}<span class="edf" contenteditable="true" data-f="meaning" data-ph="词性+释义">${esc(d.meaning)}</span></div>
   <div class="phrase"><span class="edf" contenteditable="true" data-f="ex_en" data-ph="例句">${esc(d.ex_en)}</span><div><span class="edf" contenteditable="true" data-f="ex_zh" data-ph="翻译">${esc(d.ex_zh)}</span></div></div>
   <div class="note-line"><span class="edf" contenteditable="true" data-f="notes" data-ph="搭配/词源注">${esc(d.notes)}</span></div>`;
 
@@ -188,7 +216,7 @@ function render(){
   row.appendChild(colA); row.appendChild(colB); list.appendChild(row);
   for (const d of DATA){
     const card = document.createElement('div');
-    card.className = 'card c' + posCls((posOf(d).toks[0] || 'n'));
+    card.className = 'card c' + posCls(splitPos(d.meaning).pos[0] || 'n');
     if (editing) card.dataset.n = d.n;
     card.innerHTML = editing ? entryEdit(d) : entryHtml(d);
     (alt++ % 2 === 0 ? colA : colB).appendChild(card);
@@ -202,6 +230,10 @@ list.addEventListener('input', e => {
   const holder = t.closest('[data-n]'); if (!holder) return;
   const d = DATA.find(x => x.n === +holder.dataset.n); if (!d) return;
   d[t.dataset.f] = t.innerText;
+  if (t.dataset.f === 'meaning'){                       // 词性色块随释义实时重算
+    const box = t.parentNode.querySelector('.posbox');
+    if (box) box.outerHTML = chipOf(d);
+  }
   saveSoon();
 });
 list.addEventListener('click', e => {
@@ -248,13 +280,14 @@ const dictD = () => dictWords().find(d => d.n === dictOrder[dictCur]);
 let dictChain = false;
 const playCur = () => {
   const d = dictD();
+  if (!d) return;
   if (!d.ex_en) { play(d.n, 'w'); return; }
   dictChain = true;
   play(d.n, 'w');
 };
 const _dictHook = () => {
   curAudio.onended = () => {
-    if (dictChain && dictD().ex_en) {
+    if (dictChain && dictD() && dictD().ex_en) {
       dictChain = false;
       play(dictD().n, 'e');
       curAudio.onended = () => { if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY); };
@@ -265,6 +298,7 @@ const _dictHook = () => {
 };
 function dictStep(dir){
   clearTimeout(dictT); dictChain = false;
+  if (!dictOrder.length) return;
   dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
   showDict(); playCur();
 }
@@ -285,11 +319,12 @@ function dictReveal(){
 function renderDictAns(){
   const ans = document.getElementById('dictAns');
   const d = dictD();
-  ans.innerHTML = `<div class="dword">${esc(d.word)}</div><div class="dpos">${esc(d.m)}</div>` +
+  if (!d) return;
+  ans.innerHTML = `<div class="dword">${esc(d.word)}</div><div class="dpos">${splitPos(d.meaning).pos.join(' ')}</div><div class="dmean">${esc(meanOf(d))}</div>` +
     (d.ex_en ? `<div class="dph" onclick="play(${d.n},'e')">${esc(d.ex_en)}</div><div class="dphz">${esc(d.ex_zh)}</div>` : '');
 }
 function showDict(){
-  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  document.getElementById('dictProg').textContent = dictOrder.length ? `${dictCur + 1} / ${dictOrder.length}` : '0 / 0';
   const ans = document.getElementById('dictAns');
   ans.classList.add('hidden');
   ans.innerHTML = '';

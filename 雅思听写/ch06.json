@@ -33,7 +33,7 @@
  },
  {
   "word": "advance",
-  "meaning": "m/v.发展；前进",
+  "meaning": "n. v.发展；前进",
   "ex_en": "We have advanced greatly in our knowledge of the universe",
   "ex_zh": "我们对宇宙的认识已经深入了很多。",
   "notes": "advanced adj.先进的；高级的 in advance预先，提前",
@@ -41,7 +41,7 @@
  },
  {
   "word": "innovate",
-  "meaning": "V.创新，改革",
+  "meaning": "v.创新，改革",
   "ex_en": "We must innovate in order to make progress",
   "ex_zh": "我们必须改革以取得进步。",
   "notes": "innovation n.创新，改革innovator n.改革者，创新者",
@@ -73,7 +73,7 @@
  },
  {
   "word": "devise",
-  "meaning": "V.设计，发明",
+  "meaning": "v.设计，发明",
   "ex_en": "The team is trying to devise a new system for handling mail orders",
   "ex_zh": "这个小组正设法设计一个新的邮购品处理系统。",
   "notes": "device n.装置，设备",
@@ -81,7 +81,7 @@
  },
  {
   "word": "invent",
-  "meaning": "V.发明，创造",
+  "meaning": "v.发明，创造",
   "ex_en": "Do you know who invented the magnetic needle?",
   "ex_zh": "你知道指磁针是谁发明的吗？",
   "notes": "inventionn.发明，创造inventorn.发明者，创造者",
@@ -89,7 +89,7 @@
  },
  {
   "word": "discover",
-  "meaning": "V.发现",
+  "meaning": "v.发现",
   "ex_en": "He discovered his tale nt for fashi on design when he was very young",
   "ex_zh": "他很年轻的时候就发现了自己在时尚设计方面的天赋。",
   "notes": "discovery n.发现；被发现的事物",
@@ -105,7 +105,7 @@
  },
  {
   "word": "reveal",
-  "meaning": "V.展现；显示，透露",
+  "meaning": "v.展现；显示，透露",
   "ex_en": "His deed revealed him to be a kind man",
   "ex_zh": "他的行为显示他是个好心的人。",
   "notes": "",
@@ -113,7 +113,7 @@
  },
  {
   "word": "uncover",
-  "meaning": "V.揭露，发现",
+  "meaning": "v.揭露，发现",
   "ex_en": "The detective must uncover the murderer by deduction of facts",
   "ex_zh": "侦探必须根据事实进行推理，从而找出凶手。",
   "notes": "",
@@ -121,7 +121,7 @@
  },
  {
   "word": "expose",
-  "meaning": "V.使暴露；揭发，使曝光",
+  "meaning": "v.使暴露；揭发，使曝光",
   "ex_en": "The crime of the corrupt officials must be exposed without any reserve",
   "ex_zh": "对于贪官污吏的罪行，一定要毫无保留地进行揭发。",
   "notes": "exposure n.暴露；揭露",
@@ -169,7 +169,7 @@
  },
  {
   "word": "absorb",
-  "meaning": "V.理解；掌握",
+  "meaning": "v.理解；掌握",
   "ex_en": "His ability to absorb bits of disconnected information was astonishing",
   "ex_zh": "他理解互不相关的零碎信息的能力惊人。前缀ab表示“离开”，字根是sorb（吸收，吮吸）。",
   "notes": "",
@@ -177,7 +177,7 @@
  },
  {
   "word": "concentrate",
-  "meaning": "V.集中（心思）；（使）浓缩",
+  "meaning": "v.集中（心思）；（使）浓缩",
   "ex_en": "They will concentrate on teachi ng the basics of reading, writing and arithmetic",
   "ex_zh": "他们将专注于教授阅读、写作和算术的基础知识。",
   "notes": "concentration n.专心；浓度 concentrate on专心于",
@@ -281,7 +281,7 @@
  },
  {
   "word": "calculate",
-  "meaning": "V.计算；考虑，打算",
+  "meaning": "v.计算；考虑，打算",
   "ex_en": "Our price has already been closely calculated; there is no room for reduction",
   "ex_zh": "我们的价格是经过精密计算的，无让步余地。 I compute my loss at dollars.我估计我的损失有500美元。",
   "notes": "calculation n.计算calculator n.计算器 V.计算；估计 computer n.计算机",
@@ -289,7 +289,7 @@
  },
  {
   "word": "count",
-  "meaning": "V.计算",
+  "meaning": "v.计算",
   "ex_en": "It is gauge count measure calculate compute",
   "ex_zh": "",
   "notes": "",
@@ -297,7 +297,7 @@
  },
  {
   "word": "assess",
-  "meaning": "V.评估；估算",
+  "meaning": "v.评估；估算",
   "ex_en": "We will assess the damage caused by the flood",
   "ex_zh": "我们将估算洪灾造成的损失。 The research project has only been under way for\n这个研究项目才进行了三个月，所以要评价它的成绩为时尚早。 Car accessories in elude the roof rack and radio.\n汽车配件包括车顶架和收音机。",
   "notes": "assessment n.评估；估价 V.评价，评估 evaluate sb. as把某人作为……进行评价 evaluate sb. by sth.以某事物来评价某人字根val指\"值...钱（be worth）”，如I：evaluate（评估岀［前缀e表示“向外'’］价值-评价），value（价值）. invaluable（无法估量其价值的非常宝贵的）， devaluation（贬值）° n附件，配件",
@@ -329,7 +329,7 @@
  },
  {
   "word": "accumulate",
-  "meaning": "V.积累；（数额）逐渐增加",
+  "meaning": "v.积累；（数额）逐渐增加",
   "ex_en": "Dust and dirt soon accumulate if you don't clean your house regularly",
   "ex_zh": "如果不经常打扫房屋，尘土很快就越积越多。\nV.集合，聚集 A large crowd had assembled outside the\nAmerican embassy.—大群人聚集在美国使馆外。",
   "notes": "",
@@ -345,7 +345,7 @@
  },
  {
   "word": "belong",
-  "meaning": "V.应在（某处）；适合（某种情形）",
+  "meaning": "v.应在（某处）；适合（某种情形）",
   "ex_en": "Russia is a major oil exporter, but does not belong to OPEC",
   "ex_zh": "俄罗斯是石油出口大国，但不属于石油输出国组织。",
   "notes": "belong to属于",
@@ -353,7 +353,7 @@
  },
  {
   "word": "optics",
-  "meaning": "n-光学",
+  "meaning": "n.光学",
   "ex_en": "Newt on published his first work on optics",
   "ex_zh": "牛顿发表了他的第一部光学著作。",
   "notes": "",
@@ -401,7 +401,7 @@
  },
  {
   "word": "multimedia",
-  "meaning": "n-多媒体",
+  "meaning": "n.多媒体",
   "ex_en": "As part of the celebrations, they staged a big, open-air multimedia event",
   "ex_zh": "作为庆典的一部分，他们举行了大型露天多媒体活动。",
   "notes": "",
@@ -425,7 +425,7 @@
  },
  {
   "word": "dial",
-  "meaning": "V.拨（电话号码）",
+  "meaning": "v.拨（电话号码）",
   "ex_en": "She picked up the phone, and began to dial his number",
   "ex_zh": "她拿起电话，开始拨他的号码。",
   "notes": "",
@@ -497,7 +497,7 @@
  },
  {
   "word": "tape",
-  "meaning": "n・磁带，录音带；胶带",
+  "meaning": "n.磁带，录音带；胶带",
   "ex_en": "A technician loads a video tape into one of the machines",
   "ex_zh": "一名技师把一盒录影带装进其中一台机器。",
   "notes": "",
@@ -624,8 +624,8 @@
   "n": 78
  },
  {
-  "word": "conde",
-  "meaning": "nse V.简缩，精简；（使气体）凝结",
+  "word": "condense",
+  "meaning": "v.简缩，精简；（使气体）凝结",
   "ex_en": "A long story may be condensed into a few sentences.—",
   "ex_zh": "个长篇故事可被缩写成几句话。",
   "notes": "",
@@ -633,7 +633,7 @@
  },
  {
   "word": "refine",
-  "meaning": "V.精炼，提纯",
+  "meaning": "v.精炼，提纯",
   "ex_en": "The purpose of oil refinery is to refine crude petroleum",
   "ex_zh": "炼油厂的工作目的是提炼原油。",
   "notes": "refine on对……进行精微改进",
@@ -641,7 +641,7 @@
  },
  {
   "word": "simplify",
-  "meaning": "V.简化，精简",
+  "meaning": "v.简化，精简",
   "ex_en": "Try to simplify your explanation for the children",
   "ex_zh": "设法解释得简单些，好让孩子们听得懂。",
   "notes": "simplicity n.简单；质朴simple adj.简单的 simply adv.简单地；仅仅",
@@ -688,7 +688,7 @@
   "n": 86
  },
  {
-  "word": "mework",
+  "word": "framework",
   "meaning": "n.框架，结构；体系",
   "ex_en": "This bridge over the river has a steel framework",
   "ex_zh": "这座跨河大桥是钢骨结构的。",
@@ -713,7 +713,7 @@
  },
  {
   "word": "operate",
-  "meaning": "V.操作；运营；做手术",
+  "meaning": "v.操作；运营；做手术",
   "ex_en": "It's too difficult for machine",
   "ex_zh": "对他来说，操作这台复杂的新机\n器太难了。",
   "notes": "operation n.操作；企业；手术",
@@ -721,7 +721,7 @@
  },
  {
   "word": "facilitate",
-  "meaning": "V.使便利，促进",
+  "meaning": "v.使便利，促进",
   "ex_en": "Many modern inventions facilitate housework",
   "ex_zh": "许多现代发明有利于做家务。",
   "notes": "",
@@ -729,7 +729,7 @@
  },
  {
   "word": "transform",
-  "meaning": "V.使改变形态；使改观",
+  "meaning": "v.使改变形态；使改观",
   "ex_en": "She transformed the room by painting it.",
   "ex_zh": "她漆了房间，使它焕然一新。",
   "notes": "transformation n.变化，转变 trans（转移）+form（形状）t使改变形态。\"变形金刚”的英文是Transformer o",
@@ -753,7 +753,7 @@
  },
  {
   "word": "shift",
-  "meaning": "V.转移，变换II.转移，变换；轮班",
+  "meaning": "v.转移，变换II.转移，变换；轮班",
   "ex_en": "The wind shifted to the north",
   "ex_zh": "风转向北吹。",
   "notes": "the day shift H班then ight shift夜班",
@@ -761,7 +761,7 @@
  },
  {
   "word": "turn",
-  "meaning": "V.转；翻n.（依次轮到的）机会",
+  "meaning": "v.转；翻n.（依次轮到的）机会",
   "ex_en": "It was your turn last time; it's always your turn to be the boss",
   "ex_zh": "上次就是你，每次都是你在发号施令。",
   "notes": "turning n.旋转；转弯处",
@@ -769,7 +769,7 @@
  },
  {
   "word": "adapt",
-  "meaning": "V.适应；改编",
+  "meaning": "v.适应；改编",
   "ex_en": "There will be more than one person who can adapt to your personality",
   "ex_zh": "能与你性格相合的人不会只有一个。",
   "notes": "adaptation n.适应 apt to sth.适应某事物",
@@ -777,7 +777,7 @@
  },
  {
   "word": "adjust",
-  "meaning": "V.调节；改变（行为或观点）以适应",
+  "meaning": "v.调节；改变（行为或观点）以适应",
   "ex_en": "He soon adjusted to army life",
   "ex_zh": "他很快就适应了军中生活。\n科技发明",
   "notes": "",
@@ -785,7 +785,7 @@
  },
  {
   "word": "pinpoint",
-  "meaning": "V•精确指明……的位置n.针尖；极小的事物",
+  "meaning": "v.精确指明……的位置n.针尖；极小的事物",
   "ex_en": "With this device, we can pinpoint your exact location",
   "ex_zh": "有了这台仪器，我们可以准确找出你的确切彳立置。",
   "notes": "",
@@ -833,7 +833,7 @@
  },
  {
   "word": "flaw",
-  "meaning": "： m缺陷；错误",
+  "meaning": "n.缺陷；错误",
   "ex_en": "This flaw makes the vase less valuable",
   "ex_zh": "因为这处缺陷，这个花瓶不那么值钱了。",
   "notes": "awless adj.完美的，没有瑕疵的",
@@ -857,7 +857,7 @@
  },
  {
   "word": "stumble",
-  "meaning": "V.犯错误；绊脚；跌跌撞撞地走",
+  "meaning": "v.犯错误；绊脚；跌跌撞撞地走",
   "ex_en": "The sudden weakness in her legs made her stumble.",
   "ex_zh": "她突然两腿发软，踉跄了一下。",
   "notes": "stumble over在……绊了一下",

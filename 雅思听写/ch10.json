@@ -1,7 +1,7 @@
 [
  {
   "word": "Stuff",
-  "meaning": "n-东西；原料",
+  "meaning": "n.东西；原料",
   "ex_en": "I've got quite a lot of stuff to read",
   "ex_zh": "我有许多东西要读。",
   "notes": "",
@@ -9,7 +9,7 @@
  },
  {
   "word": "item",
-  "meaning": "n.—件物品，一件商品",
+  "meaning": "n.一件物品，一件商品",
   "ex_en": "She could n't wedge ano ther item into the suitcase",
   "ex_zh": "她无法再往箱子里多塞东西了。",
   "notes": "",
@@ -17,7 +17,7 @@
  },
  {
   "word": "merchandise",
-  "meaning": "n-商品",
+  "meaning": "n.商品",
   "ex_en": "We often call these goods merchandise",
   "ex_zh": "我们常把这些货称为商品。",
   "notes": "",
@@ -25,7 +25,7 @@
  },
  {
   "word": "souvenir",
-  "meaning": "n-纪念品",
+  "meaning": "n.纪念品",
   "ex_en": "These souvenirs were gathered from all parts of the world",
   "ex_zh": "这些纪念品是从世界各地收集来的。",
   "notes": "",
@@ -81,7 +81,7 @@
  },
  {
   "word": "kit",
-  "meaning": "成套工具",
+  "meaning": "n.成套工具",
   "ex_en": "There is a repair kit provided in the boot of each car",
   "ex_zh": "每辆车的行李箱内都备有一套修理工具。",
   "notes": "",
@@ -97,7 +97,7 @@
  },
  {
   "word": "garbage",
-  "meaning": "Fl.［尤美］垃圾，废物",
+  "meaning": "n.［尤美］垃圾，废物",
   "ex_en": "They fouled the water by throwing in garbage",
   "ex_zh": "他们向水中扔垃圾，弄脏了水。",
   "notes": "a garbage can垃圾箱，垃圾筒 kit",
@@ -121,7 +121,7 @@
  },
  {
   "word": "recycle",
-  "meaning": "V.使再循环，回收利用；反复应用",
+  "meaning": "v.使再循环，回收利用；反复应用",
   "ex_en": "I plan on recycling old warehouses as condominiums",
   "ex_zh": "我打算把旧仓库改建成公寓。\ncycle意为“循环；一圈”，源自表示“圆圈，轮\"的希腊语，相关单词如：mono（—个）+cycle（轮）t\n（独轮车）；bi（两个）+cycle（轮）t bicycle\n（三个）+（轮）t（三轮车）；\n（自行车）；tri cycle tricycle\n（来自（摩托\nmotor（引擎）+cycle bicycle）t motorcycle\n（骑自行车的人）；re（重复）+（循环）t\n车）；cyclist cycle\nrecycle（回收利用）。",
   "notes": "",
@@ -129,7 +129,7 @@
  },
  {
   "word": "reuse",
-  "meaning": "V.再次使用",
+  "meaning": "v.再次使用",
   "ex_en": "These bottles are designed to be reused up to times",
   "ex_zh": "这些瓶子被设计成可以重复使用多达20次。",
   "notes": "",
@@ -224,8 +224,8 @@
   "n": 28
  },
  {
-  "word": "isnotsotap",
-  "meaning": "n.旋塞，龙头 '茎 、»",
+  "word": "tap",
+  "meaning": "n.旋塞，龙头",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -249,7 +249,7 @@
  },
  {
   "word": "mop",
-  "meaning": "n・拖把v.用拖把擦",
+  "meaning": "n.拖把v.用拖把擦",
   "ex_en": "She mopped up the water",
   "ex_zh": "她用拖把把水擦干净了。",
   "notes": "",
@@ -281,7 +281,7 @@
  },
  {
   "word": "carpet",
-  "meaning": "ii.地毯，毡毯，毛毯",
+  "meaning": "n.地毯，毡毯，毛毯",
   "ex_en": "The armchair blends well with the colour of the carpet",
   "ex_zh": "扶手椅与地毯的颜色很好地融为一体。",
   "notes": "red carpet（迎接贵宾用的）红地毯",
@@ -385,7 +385,7 @@
  },
  {
   "word": "shave",
-  "meaning": "V.剃须，刮脸",
+  "meaning": "v.剃须，刮脸",
   "ex_en": "I started to shave",
   "ex_zh": "我在脸\n上打了肥皂，然后开始刮胡子。",
   "notes": "shaver n.理发师；电动剃须刀",
@@ -412,24 +412,16 @@
   "meaning": "n.细绳，粗线",
   "ex_en": "Our voices depend on our vocal cords",
   "ex_zh": "我们的声音取决于声带。\n（catgut）”源自表示“肠线的希腊语。与cord相关的同源词是chord（［乐器的］弦；和音；心弦），",
-  "notes": "",
+  "notes": "strike/touch a chord in/with sb.就是“拨动某人心弦”“引起某人共鸣”的意思。",
   "n": 52
  },
  {
-  "word": "strike",
-  "meaning": "with sb.就是“拨动某人心弦”“引起某人共鸣\"的意思。",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 53
- },
- {
   "word": "strand",
-  "meaning": "缕，股；滨，岸",
+  "meaning": "n.缕，股；滨，岸",
   "ex_en": "One strand of silk does n't make a thread; one tree doesn't make a forest",
   "ex_zh": "单丝不成线，独木不成林。",
   "notes": "",
-  "n": 54
+  "n": 53
  },
  {
   "word": "match",
@@ -437,23 +429,15 @@
   "ex_en": "A high standard of play marked the match between the two teams",
   "ex_zh": "这两队之间的比赛表现了很高的技术水平。",
   "notes": "meet one's match遇到某人的对手",
-  "n": 55
+  "n": 54
  },
  {
   "word": "candle",
   "meaning": "n.蜡烛",
   "ex_en": "The candle was blown out by the wind",
   "ex_zh": "蜡烛被风吹灭了。",
-  "notes": "",
-  "n": 56
- },
- {
-  "word": "light",
-  "meaning": "吹灭蜡烛",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 57
+  "notes": "light / blow out a candle 点亮/吹灭蜡烛",
+  "n": 55
  },
  {
   "word": "wax",
@@ -461,7 +445,7 @@
   "ex_en": "The candle gutters when the melted wax runs down its sides",
   "ex_zh": "熔化的蜡从蜡烛的边上淌下时，烛光摇曳不定。",
   "notes": "",
-  "n": 58
+  "n": 56
  },
  {
   "word": "portfolio",
@@ -469,7 +453,7 @@
   "ex_en": "She has left her portfolio in a chair",
   "ex_zh": "她把文件夹落在椅子上了。\nw\nwax\n物品材料",
   "notes": "",
-  "n": 59
+  "n": 57
  },
  {
   "word": "paperback",
@@ -477,7 +461,7 @@
   "ex_en": "This bookshop only sells paperbacks",
   "ex_zh": "这家书店只出售平装书。",
   "notes": "",
-  "n": 60
+  "n": 58
  },
  {
   "word": "pamphlet",
@@ -485,7 +469,7 @@
   "ex_en": "I took a few pamphlets from the travel agency.",
   "ex_zh": "我从旅行社拿了几本小册子。",
   "notes": "booklet n.小册子，资料手册leaflet n.传单 brochure n.（广告或资料）手册",
-  "n": 61
+  "n": 59
  },
  {
   "word": "tissue",
@@ -493,7 +477,7 @@
   "ex_en": "She wiped off the sweat from her face with a tissue",
   "ex_zh": "她用一张面巾纸擦掉脸上的汗水。",
   "notes": "",
-  "n": 62
+  "n": 60
  },
  {
   "word": "cover",
@@ -501,7 +485,7 @@
   "ex_en": "The front cover of the novel has been torn off.",
   "ex_zh": "这本小说的封面已被撕掉。",
   "notes": "",
-  "n": 63
+  "n": 61
  },
  {
   "word": "duplicate",
@@ -509,7 +493,7 @@
   "ex_en": "Don't duplicate what you have already done",
   "ex_zh": "不要重复你已经做过的事。",
   "notes": "",
-  "n": 64
+  "n": 62
  },
  {
   "word": "memorandum",
@@ -517,7 +501,7 @@
   "ex_en": "They agreed on the memorandum",
   "ex_zh": "他们就这份备忘录达成了一致意见。字根memor指“记着的（mindful, remembering）”，如I:\nmemorandum（备忘录）；com（加强意义）+memor（记着的）+ate（动词后缀）t提醒你记住t commemorate\n薩思词汇奠经",
   "notes": "",
-  "n": 65
+  "n": 63
  },
  {
   "word": "stationery",
@@ -525,7 +509,7 @@
   "ex_en": "Stationery can be imprinted with your message or logo",
   "ex_zh": "可以把你的信息或标志印在信纸上。",
   "notes": "ationer n文具店；文具商",
-  "n": 66
+  "n": 64
  },
  {
   "word": "glue",
@@ -533,7 +517,7 @@
   "ex_en": "Stick them on the card using a small amount of glue",
   "ex_zh": "用少量胶水把它们贴到卡片上。",
   "notes": "",
-  "n": 67
+  "n": 65
  },
  {
   "word": "ink",
@@ -541,7 +525,7 @@
   "ex_en": "If the ink sinks in, it'll be hard to remove it",
   "ex_zh": "如果墨水渗入，就很难去除。",
   "notes": "",
-  "n": 68
+  "n": 66
  },
  {
   "word": "rubber",
@@ -549,7 +533,7 @@
   "ex_en": "Rubber is the country's principal export",
   "ex_zh": "橡胶是该国主要的出口产品。",
   "notes": "",
-  "n": 69
+  "n": 67
  },
  {
   "word": "scissors",
@@ -557,7 +541,7 @@
   "ex_en": "It is rumoured that Leonardo Da Vinci invented the scissors",
   "ex_zh": "有传言称是达•芬奇发明了剪刀。",
   "notes": "",
-  "n": 70
+  "n": 68
  },
  {
   "word": "shear",
@@ -565,7 +549,7 @@
   "ex_en": "With a few quick snips of the shears, he pruned the bush",
   "ex_zh": "他用大剪刀几下子就把灌木给修剪好了。",
   "notes": "",
-  "n": 71
+  "n": 69
  },
  {
   "word": "edge",
@@ -573,7 +557,7 @@
   "ex_en": "Look out! You could fall off the edge here!",
   "ex_zh": "小心！你会从这边缘掉下去的！",
   "notes": "",
-  "n": 72
+  "n": 70
  },
  {
   "word": "rim",
@@ -581,7 +565,7 @@
   "ex_en": "Mike liked very much the golden rims of his glasses",
   "ex_zh": "麦克很喜欢他的眼镜的金色边框。",
   "notes": "",
-  "n": 73
+  "n": 71
  },
  {
   "word": "element",
@@ -589,7 +573,7 @@
   "ex_en": "Both hydrogen and oxygen are elements",
   "ex_zh": "氢和氧都是化学元素。\n$新\n”element垃*心；",
   "notes": "",
-  "n": 74
+  "n": 72
  },
  {
   "word": "factor",
@@ -597,7 +581,7 @@
   "ex_en": "Her friendly manner is an important factor in her rapid success",
   "ex_zh": "待人友好是她迅速获得成功的一重要因素。",
   "notes": "",
-  "n": 75
+  "n": 73
  },
  {
   "word": "section",
@@ -605,7 +589,7 @@
   "ex_en": "One section of the class was reading and the other section was writing",
   "ex_zh": "这堂课一部分讲阅读，另一部分讲写作。字根sect指“切割（to cut）\",如：insect（躯体分割成一节一节的t昆虫），sect（派别；教派；党派），bisect\n（将……一分为二），intersection（相互切割，纵横切割-\n交叉；十字路口），vivisect（切割活的东西t活体解剖）\no",
   "notes": "",
-  "n": 76
+  "n": 74
  },
  {
   "word": "tag",
@@ -613,15 +597,15 @@
   "ex_en": "Don't forget to put tags suitcases",
   "ex_zh": "别忘了在你的箱子上贴上\n写有你的姓名和住址的标签。",
   "notes": "",
-  "n": 77
+  "n": 75
  },
  {
   "word": "label",
-  "meaning": "n-标签，标贴",
+  "meaning": "n.标签，标贴",
   "ex_en": "I read the information on the labels before deciding which jam to buy",
   "ex_zh": "在决定买哪种果酱之前，我先看了看标签上的说明。",
   "notes": "",
-  "n": 78
+  "n": 76
  },
  {
   "word": "badge",
@@ -629,7 +613,7 @@
   "ex_en": "Wisdom is the badge of maturity",
   "ex_zh": "智慧是成熟的标志。",
   "notes": "",
-  "n": 79
+  "n": 77
  },
  {
   "word": "bolt",
@@ -637,7 +621,7 @@
   "ex_en": "We need an eye bolt to fit this valve",
   "ex_zh": "我们需要\n—个有眼螺栓来固定这个阀门。",
   "notes": "",
-  "n": 80
+  "n": 78
  },
  {
   "word": "knob",
@@ -645,15 +629,15 @@
   "ex_en": "He twisted the knob of the door and went inside",
   "ex_zh": "他转动门把手，然后走了进去。",
   "notes": "",
-  "n": 81
+  "n": 79
  },
  {
   "word": "handle",
-  "meaning": "fl.柄；把手V.拿；处理",
+  "meaning": "n.柄；把手V.拿；处理",
   "ex_en": "You have to press on the handle to turn it; ifs very stiff",
   "ex_zh": "你必须用力压这个把手才能转动它，它很不灵活。",
   "notes": "handle with care小心轻放",
-  "n": 82
+  "n": 80
  },
  {
   "word": "shutter",
@@ -661,15 +645,15 @@
   "ex_en": "The company shuttered its Hong Kong investment banking business a year ago",
   "ex_zh": "该公司一年前停止了其香港投资银行的业务。",
   "notes": "",
-  "n": 83
+  "n": 81
  },
  {
-  "word": "curtai",
-  "meaning": "n 11.窗帘；帘；幕布V.给……装上帘子",
+  "word": "curtain",
+  "meaning": "n.窗帘；帘；幕布 v.给……装上帘子",
   "ex_en": "I have eno ugh material to curtain all the windows",
   "ex_zh": "我有足够的料子，可以给所有窗户都挂上窗帘。",
   "notes": "",
-  "n": 84
+  "n": 82
  },
  {
   "word": "pane",
@@ -677,7 +661,7 @@
   "ex_en": "He suffered a lot of pain after he accidentally broke glass",
   "ex_zh": "他意外将一块窗玻璃打碎后，疼痛万分。",
   "notes": "",
-  "n": 85
+  "n": 83
  },
  {
   "word": "opacity",
@@ -685,7 +669,7 @@
   "ex_en": "They have chosen the frosted opacity",
   "ex_zh": "他们选择了这种磨砂玻璃，因为它不透明。\nits I can't get the lid off this jar.我打不开这个广口瓶的盖子。",
   "notes": "opaque n.不透明物adj.不透明的 jar 心。:/ ii.罐，广口瓶；猛烈震动",
-  "n": 86
+  "n": 84
  },
  {
   "word": "barrel",
@@ -693,7 +677,7 @@
   "ex_en": "The wine is aged in oak barrels",
   "ex_zh": "酒在橡木桶里陈化。",
   "notes": "",
-  "n": 87
+  "n": 85
  },
  {
   "word": "bucket",
@@ -701,7 +685,7 @@
   "ex_en": "One bucket of paint will be eno ugh for the ceiling",
   "ex_zh": "刷天花板，一桶油漆足够用了。",
   "notes": "a drop in the bucket沧海一粟 jar",
-  "n": 88
+  "n": 86
  },
  {
   "word": "pail",
@@ -709,7 +693,7 @@
   "ex_en": "My evening",
   "ex_zh": "我的冰箱昨晚突然出了故障。 He tipped the slops out of the pail.他倒出桶里的脏水。",
   "notes": "",
-  "n": 89
+  "n": 87
  },
  {
   "word": "phone",
@@ -717,7 +701,7 @@
   "ex_en": "We swapped phone numbers",
   "ex_zh": "我们交换了电话号码。取出冰箱后会变软。",
   "notes": "a cell phone /mobile phone手机make a phone call打电话vacuum on the phone在打（或接）电话 n.真空；真",
-  "n": 90
+  "n": 88
  },
  {
   "word": "bell",
@@ -725,15 +709,15 @@
   "ex_en": "I was roused by the sound of the bell this",
   "ex_zh": "字根\nmorning.今天早晨，我被铃声唤醒。空）；e",
   "notes": "ring a bell听起来有印象去岀来t",
-  "n": 91
+  "n": 89
  },
  {
   "word": "camera",
-  "meaning": "fan",
+  "meaning": "n.照相机",
   "ex_en": "You'd better declare the camera to the official. n",
   "ex_zh": "扇子；风扇；狂你最好向海关官员申报这台照相机。 He",
   "notes": "a built-in camera（手机）内置照相机of 的支持者行列。",
-  "n": 92
+  "n": 90
  },
  {
   "word": "portable",
@@ -741,7 +725,7 @@
   "ex_en": "The new portable computers are selling like n",
   "ex_zh": "开关；转\nhot cakes.这款新的便携式电脑十分畅销。开关，看看灯会不会亮。",
   "notes": "",
-  "n": 93
+  "n": 91
  },
  {
   "word": "spotlight",
@@ -749,7 +733,7 @@
   "ex_en": "The spotlight followed the dancer round the n",
   "ex_zh": "栏架；跨栏赛跑\nstage.聚光灯的光圈追随着舞者在舞台上转。",
   "notes": "",
-  "n": 94
+  "n": 92
  },
  {
   "word": "lantern",
@@ -757,7 +741,7 @@
   "ex_en": "The Ice Lantern Festival held in Harbin every fence winter is fantastic",
   "ex_zh": "哈尔滨每年冬天举办的冰灯节非常棒。n.栅栏；围栏",
   "notes": "",
-  "n": 95
+  "n": 93
  },
  {
   "word": "bulb",
@@ -765,7 +749,7 @@
   "ex_en": "An efficient bulb may lighten the load of power stations.—",
   "ex_zh": "个节能灯泡也许就能减轻发电站的负荷。",
   "notes": "",
-  "n": 96
+  "n": 94
  },
  {
   "word": "flashlight",
@@ -773,7 +757,7 @@
   "ex_en": "You can use the flashlight when you take a photo indoors",
   "ex_zh": "你在室内拍照时可用闪光灯。",
   "notes": "",
-  "n": 97
+  "n": 95
  },
  {
   "word": "refrigerator",
@@ -781,7 +765,7 @@
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
-  "n": 98
+  "n": 96
  },
  {
   "word": "hurdle",
@@ -789,7 +773,7 @@
   "ex_en": "With her speed and agility, she can beat all her competitors in the hurdle race.",
   "ex_zh": "以她的速度和敏捷性，她能在跨栏赛跑中击败所有对手。",
   "notes": "",
-  "n": 99
+  "n": 97
  },
  {
   "word": "fence",
@@ -797,7 +781,7 @@
   "ex_en": "That fence is the limit of the schoolyard.",
   "ex_zh": "那道围栏是校园的边界。",
   "notes": "set up fences设立栅栏",
-  "n": 100
+  "n": 98
  },
  {
   "word": "pedal",
@@ -805,7 +789,7 @@
   "ex_en": "One of the pedals has come off my bicycle",
   "ex_zh": "我那辆自行车有一个踏板脱落了。",
   "notes": "",
-  "n": 101
+  "n": 99
  },
  {
   "word": "shelf",
@@ -813,47 +797,47 @@
   "ex_en": "The shelf is too weak to hold all those books",
   "ex_zh": "这架子不结实，承受不了所有那些书。",
   "notes": "",
-  "n": 102
+  "n": 100
  },
  {
   "word": "ladder",
-  "meaning": "九梯子；（进步、晋升等的）阶梯",
+  "meaning": "n.梯子；（进步、晋升等的）阶梯",
   "ex_en": "Diligence success",
   "ex_zh": "勤奋常常\n是通往成功的阶梯。",
   "notes": "climb爬梯子",
-  "n": 103
+  "n": 101
  },
  {
   "word": "lift",
-  "meaning": "V.提，抬；提高m［英］电梯（美式英语用elevator）",
+  "meaning": "v.提，抬；提高m［英］电梯（美式英语用elevator）",
   "ex_en": "This box is too heavy for me to lift",
   "ex_zh": "这箱子太重，我抬不起来。",
+  "notes": "",
+  "n": 102
+ },
+ {
+  "word": "stool",
+  "meaning": "n.凳子",
+  "ex_en": "Because of that stool and a pair of computers, I gained a best friend",
+  "ex_zh": "因为那个凳子和两台电脑，我得到了一个最好的朋友。",
+  "notes": "",
+  "n": 103
+ },
+ {
+  "word": "drawer",
+  "meaning": "n.抽屉",
+  "ex_en": "The keys are in the back left-hand corner of the drawer",
+  "ex_zh": "钥匙在抽屉最里面的左边一角。",
   "notes": "",
   "n": 104
  },
  {
-  "word": "stool",
-  "meaning": "n-凳子",
-  "ex_en": "Because of that stool and a pair of computers, I gained a best friend",
-  "ex_zh": "因为那个凳子和两台电脑，我得到了一个最好的朋友。",
-  "notes": "",
-  "n": 105
- },
- {
-  "word": "drawer",
-  "meaning": "n-抽屉",
-  "ex_en": "The keys are in the back left-hand corner of the drawer",
-  "ex_zh": "钥匙在抽屉最里面的左边一角。",
-  "notes": "",
-  "n": 106
- },
- {
   "word": "umbrella",
-  "meaning": "n伞，雨伞",
+  "meaning": "n.伞，雨伞",
   "ex_en": "e wind blew my umbrella inside out",
   "ex_zh": "风把我的伞吹得翻过去了。",
   "notes": "",
-  "n": 107
+  "n": 105
  },
  {
   "word": "raincoat",
@@ -861,7 +845,7 @@
   "ex_en": "He had no raincoat on when the rain started",
   "ex_zh": "开始下雨时，他没穿雨衣。",
   "notes": "",
-  "n": 108
+  "n": 106
  },
  {
   "word": "dredge",
@@ -869,23 +853,23 @@
   "ex_en": "She dredged a little sugar over the cake",
   "ex_zh": "她在蛋糕上撒了点糖。",
   "notes": "",
-  "n": 109
+  "n": 107
  },
  {
   "word": "can",
-  "meaning": "V.把（食品）装罐保存n.罐头，听",
+  "meaning": "v.把（食品）装罐保存n.罐头，听",
   "ex_en": "She was carrying an armful of cat-food cans and herself",
   "ex_zh": "她正抱着一堆猫食罐头自言自语。",
   "notes": "",
-  "n": 110
+  "n": 108
  },
  {
   "word": "mill",
-  "meaning": "n・磨粉机；磨坊v.碾碎；无目的地乱转",
+  "meaning": "n.磨粉机；磨坊v.碾碎；无目的地乱转",
   "ex_en": "Corn mill",
   "ex_zh": "谷物在磨坊里\n被磨成粉。",
   "notes": "",
-  "n": 111
+  "n": 109
  },
  {
   "word": "forge",
@@ -893,7 +877,7 @@
   "ex_en": "These machine parts have been forged with the finest steel",
   "ex_zh": "这些机器零件是用优质钢材锻造的。",
   "notes": "",
-  "n": 112
+  "n": 110
  },
  {
   "word": "alloy",
@@ -901,23 +885,23 @@
   "ex_en": "Brass is an alloy of copper and zinc",
   "ex_zh": "黄铜是铜和锌的合金。",
   "notes": "",
-  "n": 113
+  "n": 111
  },
  {
   "word": "metal",
-  "meaning": "n金属",
+  "meaning": "n.金属",
   "ex_en": "A gust of wind pried loose a section of sheet-metal roofing.—",
   "ex_zh": "阵狂风把一块用来铺屋顶的板料刮松动了。",
   "notes": "",
-  "n": 114
+  "n": 112
  },
  {
-  "word": "iro",
-  "meaning": "n m铁；熨斗v.熨，烫",
+  "word": "iron",
+  "meaning": "n.铁；熨斗 v.熨，烫",
   "ex_en": "They an a lysed the ore and found iron in it",
   "ex_zh": "他们分析了该矿砂，从中发现了铁。",
   "notes": "",
-  "n": 115
+  "n": 113
  },
  {
   "word": "lead",
@@ -925,7 +909,7 @@
   "ex_en": "Lead is one of the softer metals",
   "ex_zh": "铅是硬度较低的金属之一。",
   "notes": "",
-  "n": 116
+  "n": 114
  },
  {
   "word": "brass",
@@ -933,7 +917,7 @@
   "ex_en": "Brass is formed by the fusion of copper and zinc",
   "ex_zh": "黄铜是由铜和锌熔合制成的。\nw\n物品材料",
   "notes": "",
-  "n": 117
+  "n": 115
  },
  {
   "word": "bronze",
@@ -941,7 +925,7 @@
   "ex_en": "We fuse copper and tin to make bronze.",
   "ex_zh": "我们把铜和锡熔制成青铜。",
   "notes": "",
-  "n": 118
+  "n": 116
  },
  {
   "word": "cement",
@@ -949,7 +933,7 @@
   "ex_en": "The mixed cement has been hoisted up the building.",
   "ex_zh": "拌好的水泥已被吊上建筑物。",
   "notes": "cementer n.水泥工人",
-  "n": 119
+  "n": 117
  },
  {
   "word": "knit",
@@ -957,7 +941,7 @@
   "ex_en": "My grandmother knitted me some socks.",
   "ex_zh": "祖母给我织了一些袜子。",
   "notes": "",
-  "n": 120
+  "n": 118
  },
  {
   "word": "pitch",
@@ -965,7 +949,7 @@
   "ex_en": "They used pitch to cover roofs.",
   "ex_zh": "他们用沥青涂盖屋顶。",
   "notes": "",
-  "n": 121
+  "n": 119
  },
  {
   "word": "lime",
@@ -973,7 +957,7 @@
   "ex_en": "Lime in the soil is detrimental to some plants.",
   "ex_zh": "土壤里的石灰对某些植物有害。",
   "notes": "",
-  "n": 122
+  "n": 120
  },
  {
   "word": "plaster",
@@ -981,7 +965,7 @@
   "ex_en": "The plaster had started to come away from the wall.",
   "ex_zh": "灰泥已经开始从墙上脱落。",
   "notes": "",
-  "n": 123
+  "n": 121
  },
  {
   "word": "leather",
@@ -989,7 +973,7 @@
   "ex_en": "Wax polish preserves wood and leather.",
   "ex_zh": "上光蜡可以保护木材和皮革。",
   "notes": "",
-  "n": 124
+  "n": 122
  },
  {
   "word": "plastic",
@@ -997,15 +981,15 @@
   "ex_en": "The Many items in daily use are made out of plastic",
   "ex_zh": "棉花已摘下来，并已称重。很多日常生活用品是塑料制的。",
   "notes": "",
-  "n": 125
+  "n": 123
  },
  {
   "word": "fibre",
-  "meaning": "（二竹ber）n.纤维；纤维素n.尼龙",
+  "meaning": "（=fiber）n.纤维；纤维素",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
-  "n": 126
+  "n": 124
  },
  {
   "word": "fabric",
@@ -1013,15 +997,7 @@
   "ex_en": "The jacket is comfortable because the fabric breathes.",
   "ex_zh": "这件短上衣穿着很舒适，因为这种布料透气。",
   "notes": "",
-  "n": 127
- },
- {
-  "word": "grandmother knitted",
-  "meaning": "me some socks.祖母",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 128
+  "n": 125
  },
  {
   "word": "weave",
@@ -1029,7 +1005,7 @@
   "ex_en": "We are weaving garlands of flowers for heroes.",
   "ex_zh": "我们在为英雄编织花环。",
   "notes": "",
-  "n": 129
+  "n": 126
  },
  {
   "word": "canvas",
@@ -1037,7 +1013,7 @@
   "ex_en": "They carried canvas sacks over their shoulders.",
   "ex_zh": "他们肩上扛着帆布袋。",
   "notes": "",
-  "n": 130
+  "n": 127
  },
  {
   "word": "linen",
@@ -1045,7 +1021,7 @@
   "ex_en": "Low elasticity, imparting a hard and smooth texture, makes linen subject to wrinkling.",
   "ex_zh": "较差的弹性使亚麻布质地硬而光滑，但也容易起皱纹。",
   "notes": "fine linen细亚麻布fresh linen干净的床单和枕套",
-  "n": 131
+  "n": 128
  },
  {
   "word": "cotton",
@@ -1053,7 +1029,7 @@
   "ex_en": "The cotton has been picked and weighed up.",
   "ex_zh": "棉花已摘下来，并已称重。",
   "notes": "",
-  "n": 132
+  "n": 129
  },
  {
   "word": "nylon",
@@ -1061,7 +1037,7 @@
   "ex_en": "This dress is 80%nylon.",
   "ex_zh": "这件连衣裙的料子含有80%的尼龙。",
   "notes": "",
-  "n": 133
+  "n": 130
  },
  {
   "word": "lumber",
@@ -1069,7 +1045,7 @@
   "ex_en": "Forested areas have been expanding every year, with the amount of the increase in standing timber greater than that of felled lumber.",
   "ex_zh": "森林面积每年都在增加，常备林木的增长量大于被砍伐的木材量。",
   "notes": "",
-  "n": 134
+  "n": 131
  },
  {
   "word": "wooden",
@@ -1077,7 +1053,7 @@
   "ex_en": "re is a wooden porch over the sidewalk",
   "ex_zh": "人行道上有一个木制的门廊。",
   "notes": "",
-  "n": 135
+  "n": 132
  },
  {
   "word": "mine",
@@ -1085,7 +1061,7 @@
   "ex_en": "The mine was closed owing to exhaustion",
   "ex_zh": "这个矿井因矿源枯竭而被关闭。",
   "notes": "miner n.矿工mineral n.矿物adj.矿物的",
-  "n": 136
+  "n": 133
  },
  {
   "word": "pit",
@@ -1093,7 +1069,7 @@
   "ex_en": "When you fall into a pit, you either die or get out",
   "ex_zh": "若你落入险境，要么等死，要么设法逃脱。",
   "notes": "",
-  "n": 137
+  "n": 134
  },
  {
   "word": "fuel",
@@ -1101,7 +1077,7 @@
   "ex_en": "We aim for a 10%saving in fuel",
   "ex_zh": "我们的目标是节省10%的燃料。",
   "notes": "add fuel to给...加燃料burn up fuel烧完燃料lack fuel缺少燃料",
-  "n": 138
+  "n": 135
  },
  {
   "word": "lubricate",
@@ -1109,7 +1085,7 @@
   "ex_en": "We find it necessary to lubricate machines",
   "ex_zh": "我们发现给机器加润滑油是必要的。",
   "notes": "lubricating oil润滑油",
-  "n": 139
+  "n": 136
  },
  {
   "word": "diamond",
@@ -1117,7 +1093,7 @@
   "ex_en": "The diamond ring on her fin ger glittered in the light",
   "ex_zh": "她手指上的钻石戒指在光下闪闪发光。",
   "notes": "",
-  "n": 140
+  "n": 137
  },
  {
   "word": "crystal",
@@ -1125,7 +1101,7 @@
   "ex_en": "People imitate diamonds with crystal",
   "ex_zh": "人们用水晶仿造钻石。",
   "notes": "",
-  "n": 141
+  "n": 138
  },
  {
   "word": "inferior",
@@ -1133,7 +1109,7 @@
   "ex_en": "I grudge paying so much for such inferior goods",
   "ex_zh": "花这么多钱买这种次品，我很不情愿。",
   "notes": "inferiority n.低等，劣等",
-  "n": 142
+  "n": 139
  },
  {
   "word": "counterfeit",
@@ -1141,7 +1117,7 @@
   "ex_en": "It is against the law to counterfeit money",
   "ex_zh": "伪造货币是违法的。\ncounter（反）+feit（做）t反着做t伪造。",
   "notes": "",
-  "n": 143
+  "n": 140
  },
  {
   "word": "fake",
@@ -1149,7 +1125,7 @@
   "ex_en": "On closer exami nation, the painti ng was proved to be a fake",
   "ex_zh": "经过更仔细的检查，那幅画被证实是贋品。",
   "notes": "",
-  "n": 144
+  "n": 141
  },
  {
   "word": "fragile",
@@ -1157,7 +1133,7 @@
   "ex_en": "Glass is fragile and must be han died with great care",
   "ex_zh": "玻璃制品易碎，必须轻拿轻放。",
   "notes": "",
-  "n": 145
+  "n": 142
  },
  {
   "word": "miniature",
@@ -1165,15 +1141,15 @@
   "ex_en": "The locket contained a miniature portrait of her late husband",
   "ex_zh": "这个盒式项链坠里有她已故丈夫的微型肖像。",
   "notes": "",
-  "n": 146
+  "n": 143
  },
  {
   "word": "available",
-  "meaning": "adj可获得的",
+  "meaning": "adj.可获得的",
   "ex_en": "Water and electric hook-ups are available and facilities are good",
   "ex_zh": "水和电都可以接通，设施也很不错。",
   "notes": "be sth.可用于做某事",
-  "n": 147
+  "n": 144
  },
  {
   "word": "durable",
@@ -1181,6 +1157,6 @@
   "ex_en": "Some parts of the machine have to be made from durable materials",
   "ex_zh": "机器里的一些部分必须由耐用材料制成。\nas®\n物品材料",
   "notes": "",
-  "n": 148
+  "n": 145
  }
 ]

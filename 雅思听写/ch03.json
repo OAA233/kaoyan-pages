@@ -9,7 +9,7 @@
  },
  {
   "word": "zoologist",
-  "meaning": "舌 n.动物学家",
+  "meaning": "n.动物学家",
   "ex_en": "The zoologist had spent a long time living with monkeys",
   "ex_zh": "这位动物学家与猴子一起生活了很长时间。",
   "notes": "zoology n.动物学",
@@ -72,8 +72,8 @@
   "n": 9
  },
  {
-  "word": "m fibion",
-  "meaning": "氏 n.两栖动物；水陆两用车adj.两栖动物的；水陆两用的",
+  "word": "amphibian",
+  "meaning": "n.两栖动物；水陆两用车adj.两栖动物的；水陆两用的",
   "ex_en": "Nobody knows why amphibians are disappearing, dolphins are dying and coral is turning white",
   "ex_zh": "没有人知道为什么两栖动物正在消失，海豚正在死亡，珊瑚正在变成白色。",
   "notes": "",
@@ -113,7 +113,7 @@
  },
  {
   "word": "flora",
-  "meaning": "n・（尤指某一地区的）植物群",
+  "meaning": "n.（尤指某一地区的）植物群",
   "ex_en": "There they compiled precious documents on the manners, government, religion, fauna and flora of the country",
   "ex_zh": "他们在那里汇编了关于这个国家的风俗、政府、宗教、动植物等方面的宝贵资料。源自罗马神话中的花神佛罗拉（Flora）。她嫁给了西风之神，丈夫送给她一座满是奇花异草的园子。春天时，佛罗拉和丈夫会手挽手在园子里漫步，他们一路上走过的地方百花齐放。英文单词flower, flour, flourish,\nfloral, florist和美国的Florida州都和她有关系。类似地，表示“（尤指某一地区的）动物群”的单词fauna\n源自罗马神话中保佑森林、农田和畜牧业的女神浮娜",
   "notes": "",
@@ -153,7 +153,7 @@
  },
  {
   "word": "throng",
-  "meaning": "!!•人群，一大群人V.群集",
+  "meaning": "n.人群，一大群人 v.群集",
   "ex_en": "He was met by a throng of journalists and photographers",
   "ex_zh": "他受到一大群记者和摄影师的迎接。",
   "notes": "be thronged with被（人、汽车等）挤满",
@@ -185,7 +185,7 @@
  },
  {
   "word": "cruel",
-  "meaning": "日dj.残酷的，残忍的，残暴的",
+  "meaning": "adj.残酷的，残忍的，残暴的",
   "ex_en": "The death of their daughter was a cruel blow",
   "ex_zh": "女儿的死对他们是一个残酷的打击。",
   "notes": "",
@@ -193,7 +193,7 @@
  },
  {
   "word": "originate",
-  "meaning": "V.发源，来自；创始",
+  "meaning": "v.发源，来自；创始",
   "ex_en": "The use of the computer has originated many other societal reforms",
   "ex_zh": "电脑的使用引发了其他许多社会革新。",
   "notes": "originn.起源，发源 originate from来源于",
@@ -209,7 +209,7 @@
  },
  {
   "word": "derive from",
-  "meaning": "V.起源于，来自n.茎，梗",
+  "meaning": "v.起源于，来自n.茎，梗",
   "ex_en": "Correct decisions stem from correct judgments",
   "ex_zh": "正确的决定来源于正确的判断。",
   "notes": "stem from源自，起源于 \\动物保护",
@@ -257,7 +257,7 @@
  },
  {
   "word": "breed",
-  "meaning": "V.饲养；繁殖n.品种",
+  "meaning": "v.饲养；繁殖n.品种",
   "ex_en": "She breeds orchids in her greenhouse",
   "ex_zh": "她在她的温室里培育兰花。",
   "notes": "breeding n.饲养；繁殖",
@@ -281,7 +281,7 @@
  },
  {
   "word": "proliferate",
-  "meaning": "V.迅速增殖；剧增",
+  "meaning": "v.迅速增殖；剧增",
   "ex_en": "Microbes proliferate rapidly",
   "ex_zh": "微生物迅速增殖。",
   "notes": "",
@@ -297,7 +297,7 @@
  },
  {
   "word": "mate",
-  "meaning": "V.交配n.配偶",
+  "meaning": "v.交配n.配偶",
   "ex_en": "Many animals mate in the spring",
   "ex_zh": "许多动物在春天交配。",
   "notes": "mating n.交配",
@@ -313,7 +313,7 @@
  },
  {
   "word": "lay",
-  "meaning": "V.产（卵）；放置；铺设",
+  "meaning": "v.产（卵）；放置；铺设",
   "ex_en": "They lay eggs from the beginning of July to the middle of August",
   "ex_zh": "它们在7月初到8月中这段时间产卵。",
   "notes": "",
@@ -321,7 +321,7 @@
  },
  {
   "word": "hatch",
-  "meaning": "v./n.孵化",
+  "meaning": "v. n.孵化",
   "ex_en": "Don't count the chickens before they are hatched",
   "ex_zh": "鸡蛋还未孵，别忙数鸡雏。",
   "notes": "",
@@ -329,7 +329,7 @@
  },
  {
   "word": "brood",
-  "meaning": "n.—窝幼鸟v.孵（蛋）",
+  "meaning": "n.一窝幼鸟v.孵（蛋）",
   "ex_en": "The bird was trying to find food for its brood",
   "ex_zh": "鸟儿在为它的一窝小鸟觅食。",
   "notes": "",
@@ -577,15 +577,15 @@
  },
  {
   "word": "ivory",
-  "meaning": "n-象牙",
+  "meaning": "n.象牙",
   "ex_en": "The professor lived in an ivory tower",
   "ex_zh": "这个教授生活在象牙塔中。",
   "notes": "",
   "n": 73
  },
  {
-  "word": "hor",
-  "meaning": "n <1.（牛、羊等动物的）角；（乐器）号",
+  "word": "horn",
+  "meaning": "n.（牛、羊等动物的）角；（乐器）号",
   "ex_en": "The young goat was just beg inning to grow horns",
   "ex_zh": "这只小山羊刚开始长角。",
   "notes": "blow a horn吹号角",
@@ -729,7 +729,7 @@
  },
  {
   "word": "falcon",
-  "meaning": "fi.隼，猎鹰",
+  "meaning": "n.隼，猎鹰",
   "ex_en": "His falcon flew into a window of the empty castle and did not return",
   "ex_zh": "他的猎鹰飞进了那座空城堡的一扇窗内就未返回。",
   "notes": "",
@@ -800,8 +800,8 @@
   "n": 100
  },
  {
-  "word": "sb",
-  "meaning": "gu：s/ n.鹅；鹅肉",
+  "word": "goose",
+  "meaning": "n.鹅；鹅肉",
   "ex_en": "They often have goose at Christmastime",
   "ex_zh": "他彳门常常在圣诞节吃鹅肉。",
   "notes": "",
@@ -865,7 +865,7 @@
  },
  {
   "word": "bite",
-  "meaning": "v./n・咬；（昆虫）叮；吞饵",
+  "meaning": "v. n.咬；（昆虫）叮；吞饵",
   "ex_en": "The mosquitoes are biting me",
   "ex_zh": "蚊子在叮我。",
   "notes": "bite off more than one can chew贪多嚼不烂 bite the bullet咬紧牙关应付",
@@ -873,7 +873,7 @@
  },
  {
   "word": "sting",
-  "meaning": "V•刺，叮；（使）感觉刺痛n.刺，螫针；垂痛",
+  "meaning": "v.刺，叮；（使）感觉刺痛n.刺，螫针；垂痛",
   "ex_en": "It is the nature of the scorpion to sting",
   "ex_zh": "垂人是蝎子的天性。",
   "notes": "sting sb. into doing sth.刺激某人做某事",
@@ -889,7 +889,7 @@
  },
  {
   "word": "roar",
-  "meaning": "n./v.吼叫，咆哮",
+  "meaning": "n. v.吼叫，咆哮",
   "ex_en": "The whole room rang with a roar",
   "ex_zh": "咆哮声回荡在整个房间里。",
   "notes": "",
@@ -897,7 +897,7 @@
  },
  {
   "word": "rub",
-  "meaning": "V.擦；摩擦n.困难，障碍",
+  "meaning": "v.擦；摩擦n.困难，障碍",
   "ex_en": "It is an Eskimo custom to rub noses as a greeting",
   "ex_zh": "相互摩擦鼻子以示问候是爱斯基摩人的习俗。",
   "notes": "",
@@ -913,7 +913,7 @@
  },
  {
   "word": "crawl",
-  "meaning": "V•爬，爬行；卑躬屈膝，巴结",
+  "meaning": "v.爬，爬行；卑躬屈膝，巴结",
   "ex_en": "You must not crawl into the favour of your superiors",
   "ex_zh": "你不应卑躬屈膝地讨好你的上司。",
   "notes": "",
@@ -1001,7 +1001,7 @@
  },
  {
   "word": "epidemic",
-  "meaning": "（ n.流行病；（坏事的）盛行adj.流行性的；极为盛行的",
+  "meaning": "n.流行病；（坏事的）盛行adj.流行性的；极为盛行的",
   "ex_en": "Violenee is reaching epidemic levels in some of the films andTV shows",
   "ex_zh": "在一些电影和电视剧中，暴力已经快到泛滥程度了。 You have\nlong time.你从父母那儿获得了优良\n的基因，所以应当能够活得很长。",
   "notes": "ntrol an epidemic控制流行病 n.基因 good genes from your parents, so genetic adj.遗传（性）的，基因的；起源的 pool基因库 gene",
@@ -1057,7 +1057,7 @@
  },
  {
   "word": "secrete",
-  "meaning": "V.分泌",
+  "meaning": "v.分泌",
   "ex_en": "The kidneys secrete urine",
   "ex_zh": "肾脏会分泌尿液。",
   "notes": "secret n.秘密",
@@ -1065,7 +1065,7 @@
  },
  {
   "word": "excrete",
-  "meaning": "V.排泄；分泌",
+  "meaning": "v.排泄；分泌",
   "ex_en": "The function of the kidneys is to excrete waste products",
   "ex_zh": "肾脏的功能是排泄代谢废物。",
   "notes": "excretion n.排泄；排泄物",
@@ -1073,7 +1073,7 @@
  },
  {
   "word": "devour",
-  "meaning": "V.吞食，狼吞虎咽地吃",
+  "meaning": "v.吞食，狼吞虎咽地吃",
   "ex_en": "The lion devoured the deer",
   "ex_zh": "狮子狼吞虎咽地把鹿吃了下去。\nde（加强意义）+vour（吃）t整个吃下去t吞食。",
   "notes": "",
@@ -1169,7 +1169,7 @@
  },
  {
   "word": "hibernation",
-  "meaning": "n-冬眠",
+  "meaning": "n.冬眠",
   "ex_en": "Some animals can overwinter without the hibernation",
   "ex_zh": "有些动物不需要冬眠也能过冬。",
   "notes": "hibernate v.冬眠，蛰伏 m被捕食的动物，猎",
@@ -1177,7 +1177,7 @@
  },
  {
   "word": "track",
-  "meaning": "V•追踪m足迹，踪迹；轨道",
+  "meaning": "v.追踪m足迹，踪迹；轨道",
   "ex_en": "The hunter followed the animaKs tracks",
   "ex_zh": "猎人追踪动物的足迹。",
   "notes": "",
@@ -1185,7 +1185,7 @@
  },
  {
   "word": "trace",
-  "meaning": "V.追踪；查出；追溯n.痕迹；少许",
+  "meaning": "v.追踪；查出；追溯n.痕迹；少许",
   "ex_en": "They traced the criminal to a house in the city",
   "ex_zh": "他们追踪罪犯追到了城里的一座房子里。",
   "notes": "a trace of—丝，少许trace back to追溯到",
@@ -1193,7 +1193,7 @@
  },
  {
   "word": "alternate",
-  "meaning": "比（使）交替，（使）轮流",
+  "meaning": "v.（使）交替，（使）轮流",
   "ex_en": "Sunny weather alternated with rain",
   "ex_zh": "天气晴雨交替。",
   "notes": "alternative adj.可供选择的n.可供选择的事物字根alter意为“其他的（other）\\英语中有一个拉丁借词alter ego,在拉丁语中的字面意思就是“第二个我 （second 1）\\即“个性的另一面”，引申义为“知己，至交\"。此外，看看电脑键盘上紧挨着空格键的替换键 \"A lt\",那就是alternate的简写。",
@@ -1209,7 +1209,7 @@
  },
  {
   "word": "victim",
-  "meaning": "九受害者；牺牲者",
+  "meaning": "n.受害者；牺牲者",
   "ex_en": "One of the bombing victims was dead on arrival in hospital",
   "ex_zh": "炸弹爆炸案的受害者之一刚被送到医院就死亡了。",
   "notes": "fall a victim to成为...的受害者；成为....的牺牲品",
@@ -1233,7 +1233,7 @@
  },
  {
   "word": "undergo",
-  "meaning": "V.经历，经受",
+  "meaning": "v.经历，经受",
   "ex_en": "I underwent so much suffering in early years that I am afraid of nothing today",
   "ex_zh": "早年我经历了如此多的苦难，如今已无所畏惧。",
   "notes": "",
@@ -1265,7 +1265,7 @@
  },
  {
   "word": "exterminate",
-  "meaning": "V.消灭，根除",
+  "meaning": "v.消灭，根除",
   "ex_en": "We've made great efforts to exterminate mosquitoes and flies",
   "ex_zh": "我们付出了很大努力来消灭蚊蝇。字根term/termin表示\"界限（boundary）\",如：ex\n（ttl）+termin（界限）+ate（动词后缀）t逐出界限t\nexterminate（根除）；de（加强）+termine（界限）t\n确定界限t determine（决定）；termin（界限）+ate\n（动词后缀）t使限定t terminate（［使］结束）。",
   "notes": "",
@@ -1273,7 +1273,7 @@
  },
  {
   "word": "tame",
-  "meaning": "V.驯养；制服adj.驯服的；乏味的",
+  "meaning": "v.驯养；制服adj.驯服的；乏味的",
   "ex_en": "The tame lions can communicate and dance together with the actors",
   "ex_zh": "这些驯服的狮子可以与演员交流并同台共舞。",
   "notes": "tame nature征服大自然",
@@ -1289,7 +1289,7 @@
  },
  {
   "word": "shepherd",
-  "meaning": "n.牧羊人，羊僖",
+  "meaning": "n.牧羊人，羊倌",
   "ex_en": "The shepherd set out to look for the sheep that had wandered away",
   "ex_zh": "牧羊人出发去找走失的羊。",
   "notes": "sheepdog n.牧羊犬 shep（来自sheep［羊］）+herd（牧人）t牧羊人。 动物保护",

@@ -112,36 +112,12 @@
   "n": 14
  },
  {
-  "word": "withthe",
-  "meaning": "century.它被视为20世纪最优秀的电影 20",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 15
- },
- {
-  "word": "th",
-  "meaning": "dollars.据估计，损失超过了W0万美元。 of许许多多的",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 16
- },
- {
   "word": "billion",
   "meaning": "num.十亿；大量",
   "ex_en": "The human brain contains billions of nerve cells.",
   "ex_zh": "人类的大脑里有大量神经细胞。",
   "notes": "",
-  "n": 17
- },
- {
-  "word": "contemporary millio",
-  "meaning": "n",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 18
+  "n": 15
  },
  {
   "word": "dawn",
@@ -149,7 +125,7 @@
   "ex_en": "We",
   "ex_zh": "我们在黎明起程，朝着纽约驶去。",
   "notes": "at dawn拂晓时",
-  "n": 19
+  "n": 16
  },
  {
   "word": "midday",
@@ -157,7 +133,7 @@
   "ex_en": "We finished work at midday",
   "ex_zh": "我们于正午完成了工作。",
   "notes": "",
-  "n": 20
+  "n": 17
  },
  {
   "word": "midnight",
@@ -165,7 +141,7 @@
   "ex_en": "According to astronomers, the best time for viewing is between midnight and dawn.",
   "ex_zh": "据天文学家表示，最佳观赏期在午夜至黎明期间。",
   "notes": "",
-  "n": 21
+  "n": 18
  },
  {
   "word": "overnight",
@@ -173,7 +149,7 @@
   "ex_en": "I stayed overnight at a friend's home",
   "ex_zh": "我在朋友家过了一夜。",
   "notes": "",
-  "n": 22
+  "n": 19
  },
  {
   "word": "night",
@@ -181,7 +157,7 @@
   "ex_en": "The city's night clubs are open all night for eating, drinking and dancing",
   "ex_zh": "该市的夜总会彻夜提供饮食和舞蹈娱乐。",
   "notes": "day and night夜以继日地",
-  "n": 23
+  "n": 20
  },
  {
   "word": "modern",
@@ -189,7 +165,7 @@
   "ex_en": "The girl can't adjust herself to the whirl of modern life in this big city.",
   "ex_zh": "这个女孩无法适应这个大城市纷繁的现代生活。",
   "notes": "",
-  "n": 24
+  "n": 21
  },
  {
   "word": "recent",
@@ -197,7 +173,7 @@
   "ex_en": "The vase looked old but was a recent fake",
   "ex_zh": "这个花瓶看似古老，却是一件新近制作的贋品。",
   "notes": "recently adv.最近",
-  "n": 25
+  "n": 22
  },
  {
   "word": "up-to-date",
@@ -205,15 +181,15 @@
   "ex_en": "Up-to-date information about the research on climate change can be found on this website.",
   "ex_zh": "可在该网站上找到关于气候变化研究的最新信息。",
   "notes": "",
-  "n": 26
+  "n": 23
  },
  {
   "word": "first",
-  "meaning": "ord.第一adv.最初，第一",
+  "meaning": "adj.第一adv.最初，第一",
   "ex_en": "What is your first impression of Beijing?",
   "ex_zh": "你对北京的第一印象如何？",
   "notes": "",
-  "n": 27
+  "n": 24
  },
  {
   "word": "secondly",
@@ -221,7 +197,7 @@
   "ex_en": "To start with, we don't have enough money. Secondly, werre too busy",
   "ex_zh": "首先，我们的钱不够。其次，我们没时间。",
   "notes": "",
-  "n": 28
+  "n": 25
  },
  {
   "word": "finally",
@@ -229,7 +205,7 @@
   "ex_en": "Today, I finally get to look at the man that I love say,\"Will you please marry me?\"",
   "ex_zh": "今天，\n我终于可以看着我心爱的男人，终于可以说：“你愿意和我结婚吗？”\nV.完成；结束n.结尾，最后部分\n你什么时候完成大学课程？",
   "notes": "",
-  "n": 29
+  "n": 26
  },
  {
   "word": "finish",
@@ -237,7 +213,7 @@
   "ex_en": "When would you finish your college course?",
   "ex_zh": "你什么时候完成大学课程？",
   "notes": "",
-  "n": 30
+  "n": 27
  },
  {
   "word": "immediately",
@@ -245,7 +221,7 @@
   "ex_en": "I will then immediately send the application process begins",
   "ex_zh": "然后，我会立即发送确认书，申请流程就启动了。",
   "notes": "",
-  "n": 31
+  "n": 28
  },
  {
   "word": "instant",
@@ -253,7 +229,7 @@
   "ex_en": "Just for an instant I refuse",
   "ex_zh": "有那么一瞬间，我以为她要拒绝了。\n，",
   "notes": "instantly adv.立即即刻 immediately蜜",
-  "n": 32
+  "n": 29
  },
  {
   "word": "moment",
@@ -261,7 +237,7 @@
   "ex_en": "Love is a moment that lasts forever",
   "ex_zh": "爱的瞬间就是永恒。 It's only several minutes from here to the\nsupermarket.从这儿到超市只有几分钟的路程。",
   "notes": "at the moment此刻，眼下in a moment—会儿 分，分钟；一会儿/mai'nju:t/adj.细微的 in a minute马上，立刻wait a minute等一下 moment:较minute所表示的时间短，指一刹那或一段很短的时间.有时也含持续的意味。 minute:指极短的时间，但可觉察到时间的持续。 instant:常与moment换用，指一瞬间，但更侧重指时间短促，多用于表示紧迫、瞬变等情况。",
-  "n": 33
+  "n": 30
  },
  {
   "word": "minute",
@@ -269,7 +245,7 @@
   "ex_en": "It's only several minutes from here to the supermarket.",
   "ex_zh": "从这儿到超市只有几分钟的路程。",
   "notes": "［搭］in a minute 马上，立刻；wait a minute 等一下",
-  "n": 34
+  "n": 31
  },
  {
   "word": "prior",
@@ -277,15 +253,15 @@
   "ex_en": "I have a prior appointment, so I can't go with you",
   "ex_zh": "我预先有约会，所以不能跟你去。",
   "notes": "prior to在...前的",
-  "n": 35
+  "n": 32
  },
  {
   "word": "former",
-  "meaning": "日dj.以前的；前者的pron.前者",
+  "meaning": "adj.以前的；前者的pron.前者",
   "ex_en": "Many of his former supporters voted against him",
   "ex_zh": "他以前的许多支持者投票反对他。",
   "notes": "latter adj.后者的pron.后者",
-  "n": 36
+  "n": 33
  },
  {
   "word": "preceding",
@@ -293,7 +269,7 @@
   "ex_en": "She had been in Mexico the preceding summer.±—",
   "ex_zh": "年夏天，她去过墨西哥。",
   "notes": "precedes走在...前面；在...之前发生，先于",
-  "n": 37
+  "n": 34
  },
  {
   "word": "precedent",
@@ -301,7 +277,7 @@
   "ex_en": "They were determined to break with precedent.",
   "ex_zh": "他们决心打破常规。",
   "notes": "",
-  "n": 38
+  "n": 35
  },
  {
   "word": "foremost",
@@ -309,7 +285,7 @@
   "ex_en": "He is one of the foremost scientists in China",
   "ex_zh": "他是中国最重要的科学家之一\nO",
   "notes": "",
-  "n": 39
+  "n": 36
  },
  {
   "word": "opening",
@@ -317,7 +293,7 @@
   "ex_en": "The book's opening is dull, but the last chapters are interesting",
   "ex_zh": "那本书的开头枯燥乏味，但最后几章很有意思。",
   "notes": "",
-  "n": 40
+  "n": 37
  },
  {
   "word": "initially",
@@ -325,7 +301,7 @@
   "ex_en": "Initially, I disagreed with their proposal, but later I changed my mind",
   "ex_zh": "起初，我不同意他们的提议，不过后来我改了主意。",
   "notes": "",
-  "n": 41
+  "n": 38
  },
  {
   "word": "intermediate",
@@ -333,7 +309,7 @@
   "ex_en": "This country is still at an intermediate stage of development",
   "ex_zh": "这个国家仍正处于发展的中间阶段。",
   "notes": "",
-  "n": 42
+  "n": 39
  },
  {
   "word": "midst",
@@ -341,7 +317,7 @@
   "ex_en": "We're lucky to have such a man in our midst",
   "ex_zh": "在我们中间有这样一个人是我们的幸运。",
   "notes": "in the midst of在...中间；当...的时候",
-  "n": 43
+  "n": 40
  },
  {
   "word": "meantime",
@@ -349,7 +325,7 @@
   "ex_en": "I like skiing. In the meantime, I know it is very dangerous.",
   "ex_zh": "我喜欢滑雪，同时也知道这非常危险。",
   "notes": "",
-  "n": 44
+  "n": 41
  },
  {
   "word": "meanwhile",
@@ -357,7 +333,7 @@
   "ex_en": "media, meanwhile, has blown hot and cold on the affair",
   "ex_zh": "同时，媒体对这件事的态度忽冷忽热。",
   "notes": "",
-  "n": 45
+  "n": 42
  },
  {
   "word": "simultaneous",
@@ -365,7 +341,7 @@
   "ex_en": "This event was almost simultaneous with that one.",
   "ex_zh": "这个事件几乎是与那个事件同时发生的。",
   "notes": "",
-  "n": 46
+  "n": 43
  },
  {
   "word": "ongoing",
@@ -373,7 +349,7 @@
   "ex_en": "The discussions are still ongoing",
   "ex_zh": "讨论仍在进行。",
   "notes": "",
-  "n": 47
+  "n": 44
  },
  {
   "word": "everlasting",
@@ -381,7 +357,7 @@
   "ex_en": "The man told the woman that he loved her with an everlasting love",
   "ex_zh": "男人告诉女人，他对她的爱永恒不变。",
   "notes": "everlasting to everlasting永远地",
-  "n": 48
+  "n": 45
  },
  {
   "word": "permanent",
@@ -389,7 +365,7 @@
   "ex_en": "We have no permanent friends or enemies, only interests",
   "ex_zh": "我们没有永久的朋友或敌人，只有永久的利益。",
   "notes": "",
-  "n": 49
+  "n": 46
  },
  {
   "word": "punctual",
@@ -397,7 +373,7 @@
   "ex_en": "He is always reliable and punctual",
   "ex_zh": "他总是可靠又守时。",
   "notes": "",
-  "n": 50
+  "n": 47
  },
  {
   "word": "duration",
@@ -405,15 +381,15 @@
   "ex_en": "Difficulties will be experienced throughout the duration of the war.",
   "ex_zh": "在战争期间，人们将经历种种困难。",
   "notes": "［记］during prep.在...的时候，在...期间",
-  "n": 51
+  "n": 48
  },
  {
-  "word": "duratio",
-  "meaning": "n m持续时间；期间",
+  "word": "duration",
+  "meaning": "n.持续时间；期间",
   "ex_en": "Difficulties will be experienced throughout the duration of the war",
   "ex_zh": "在战争期间，人们将经历种种困难。",
   "notes": "during prep.在...的时候，在....期间",
-  "n": 52
+  "n": 49
  },
  {
   "word": "consecutive",
@@ -421,7 +397,7 @@
   "ex_en": "He has been absent from school for four consecutive days",
   "ex_zh": "他已经连续四天没来上学了。",
   "notes": "two consecutive weeks连续两周",
-  "n": 53
+  "n": 50
  },
  {
   "word": "periodically",
@@ -429,7 +405,7 @@
   "ex_en": "Sea mammals must breathe",
   "ex_zh": "海生哺乳动物必须定时浮出海面呼吸。",
   "notes": "period n.时期",
-  "n": 54
+  "n": 51
  },
  {
   "word": "imminent",
@@ -437,7 +413,7 @@
   "ex_en": "They are unaware of the imminent dan ger",
   "ex_zh": "他们没察觉到正在逼近的危险。",
   "notes": "",
-  "n": 55
+  "n": 52
  },
  {
   "word": "incidentally",
@@ -445,6 +421,6 @@
   "ex_en": "Incidentally, here's good news for you",
   "ex_zh": "顺便一提，我给你带了好消息。\n时间日期",
   "notes": "",
-  "n": 56
+  "n": 53
  }
 ]

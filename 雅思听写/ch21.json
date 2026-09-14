@@ -17,7 +17,7 @@
  },
  {
   "word": "temper",
-  "meaning": "①坏脾气；情绪，心情v.使缓和",
+  "meaning": "n.坏脾气；情绪，心情v.使缓和",
   "ex_en": "He is in a very bad temper today",
   "ex_zh": "他今天的心情非常差。\ntemper古义为“节制，中庸之道”°人们的脾气都应该是有节制的，中庸的。如果失去了节制，就是lose\none's temper（发脾气），保持节制状态就是keep one's\ntemper（忍住，不发火）。",
   "notes": "",
@@ -49,7 +49,7 @@
  },
  {
   "word": "personality",
-  "meaning": "n・个性，人格",
+  "meaning": "n.个性，人格",
   "ex_en": "The boy is developing a fine personality",
   "ex_zh": "这孩子正在形成良好的个性。",
   "notes": "",
@@ -97,7 +97,7 @@
  },
  {
   "word": "mankind",
-  "meaning": "n・人类；男人",
+  "meaning": "n.人类；男人",
   "ex_en": "Mankind learns its first Ianguage in early childhood",
   "ex_zh": "人类是在幼年幵始学习第一种语言的。",
   "notes": "",
@@ -129,7 +129,7 @@
  },
  {
   "word": "skeleton",
-  "meaning": "n・骨骼，骨架；框架，梗概",
+  "meaning": "n.骨骼，骨架；框架，梗概",
   "ex_en": "A long illness made a skeleton out of him",
   "ex_zh": "长期患病使他骨瘦如柴。源自希腊语skeletos（干枯的）。当肉体干枯之后，就只剩下骨架了。中文“骷髅\"一词对应的也是skeleton\no\n“历史之父”希罗多德的著作中曾描述古埃及有一习俗：凡重大的宴会（feast）,\n都要在席间展示一具骷髅\n（skeleton），借此提醒众宾客居安思危，不忘记自己有\n—天也会化为白骨。所以英文中有skeleton at the feast\n这一表达，但意思已变为“扫兴的人或事物”。",
   "notes": "",
@@ -321,16 +321,16 @@
  },
  {
   "word": "palm",
-  "meaning": "n・棕稠树；手掌v.把……藏在手中",
+  "meaning": "n.棕稠树；手掌v.把……藏在手中",
   "ex_en": "He put the insect on the palm of his hand",
   "ex_zh": "他把虫子放在他的手掌上。\nWhat tree do fortune tellers like to look at?算命先生喜欢看什么树？当然是palm To“看某人的手相”是",
   "notes": "",
   "n": 41
  },
  {
-  "word": "readsb",
-  "meaning": "尤指大拇指之外的）手指",
-  "ex_en": "My fingers prick",
+  "word": "finger",
+  "meaning": "n.（尤指大拇指之外的）手指",
+  "ex_en": "My fingers prick.",
   "ex_zh": "我的手指感到刺痛。",
   "notes": "fingerprint n.指纹",
   "n": 42
@@ -360,8 +360,8 @@
   "n": 45
  },
  {
-  "word": "great abs",
-  "meaning": "rib/ n.肋骨；排骨",
+  "word": "rib",
+  "meaning": "n.肋骨；排骨",
   "ex_en": "He suffered three cracked ribs in an accident",
   "ex_zh": "他在一次事故中折断了三根肋骨。",
   "notes": "",
@@ -473,7 +473,7 @@
  },
  {
   "word": "lap",
-  "meaning": "n・（人坐着时的）大腿部；下摆；环节；一圈",
+  "meaning": "n.（人坐着时的）大腿部；下摆；环节；一圈",
   "ex_en": "They are on the world",
   "ex_zh": "他们的环球旅行已到最后一个环节。\nthe",
   "notes": "",
@@ -513,7 +513,7 @@
  },
  {
   "word": "pore",
-  "meaning": "n・毛孔；小孔，气孔v.凝视；沉思",
+  "meaning": "n.毛孔；小孔，气孔v.凝视；沉思",
   "ex_en": "beamed and laughed, and in the exuberanee of his delight sweated at every pore",
   "ex_zh": "他笑着，兴高采烈，每一个汗毛孔都在冒汗。",
   "notes": "",
@@ -617,7 +617,7 @@
  },
  {
   "word": "view",
-  "meaning": "仏视野；见解；风景；察看",
+  "meaning": "n.视野；见解；风景；察看",
   "ex_en": "His view of life is different from yours",
   "ex_zh": "他的人生观与你的不同。",
   "notes": "",
@@ -705,7 +705,7 @@
  },
  {
   "word": "doze",
-  "meaning": "V.小睡，打盹儿",
+  "meaning": "v.小睡，打盹儿",
   "ex_en": "He dozed away the whole afternoon",
   "ex_zh": "他瞌睡了一下午。",
   "notes": "dose n.（药物的）一剂",
@@ -777,7 +777,7 @@
  },
  {
   "word": "clone",
-  "meaning": "V.以无性繁殖技术复制，克隆n.克隆动物（或植物）",
+  "meaning": "v.以无性繁殖技术复制，克隆n.克隆动物（或植物）",
   "ex_en": "He was opposed to using this unusual animal husbandry technique to clone humans",
   "ex_zh": "他反对禾U用这种非同一般的畜牧业技术来克隆人类。",
   "notes": "",
@@ -809,7 +809,7 @@
  },
  {
   "word": "moan",
-  "meaning": "IL/V.呻吟；哀悼",
+  "meaning": "n. v.呻吟；哀悼",
   "ex_en": "Each time she moved her head she let out a moan",
   "ex_zh": "她每动一下头，就发出一声呻吟。",
   "notes": "",
@@ -841,7 +841,7 @@
  },
  {
   "word": "disable",
-  "meaning": "V.使丧失能力，使伤残",
+  "meaning": "v.使丧失能力，使伤残",
   "ex_en": "He was disabled in an accident and couldn't play football any more.—",
   "ex_zh": "场意外事故使他变得残疾，再也不能踢球了。",
   "notes": "disabled adj.残疾的",
@@ -849,7 +849,7 @@
  },
  {
   "word": "invalid",
-  "meaning": "n.病弱者，伤残者adj.病弱的，伤残的 \"",
+  "meaning": "n.病弱者，伤残者 adj.病弱的，伤残的",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -881,7 +881,7 @@
  },
  {
   "word": "obesity",
-  "meaning": "m(过度)肥胖；肥胖症",
+  "meaning": "n.(过度)肥胖；肥胖症",
   "ex_en": "Obesity is a problem for many people in contemporary society",
   "ex_zh": "在当代社会，很多人都有过度肥胖的问题。",
   "notes": "obese adj.肥胖的 obesity index肥胖指数",
@@ -1001,7 +1001,7 @@
  },
  {
   "word": "fever",
-  "meaning": "n.狂热；发烧，发热\"（使）发烧；（使）狂热",
+  "meaning": "n.狂热；发烧，发热 v.（使）发烧；（使）狂热",
   "ex_en": "Football fever gripped the town when the local team reached the final",
   "ex_zh": "在当地的足球队打进了决赛后，全城掀起一阵足球热。",
   "notes": "catch a fever发烧",
@@ -1017,7 +1017,7 @@
  },
  {
   "word": "swell",
-  "meaning": "V.肿胀，膨胀;（使）增加",
+  "meaning": "v.肿胀，膨胀;（使）增加",
   "ex_en": "These small items help to swell the total greatly",
   "ex_zh": "这些小项目使总额增加不少。",
   "notes": "",
@@ -1025,7 +1025,7 @@
  },
  {
   "word": "choke",
-  "meaning": "V.（使）窒息；阻塞；说不出话",
+  "meaning": "v.（使）窒息；阻塞；说不出话",
   "ex_en": "She found it hard to choke down her anger",
   "ex_zh": "她感到难以压下心中的怒火。",
   "notes": "",
@@ -1033,7 +1033,7 @@
  },
  {
   "word": "injure",
-  "meaning": "V.伤害，使遭受损伤；损害",
+  "meaning": "v.伤害，使遭受损伤；损害",
   "ex_en": "Don't injure yourself with that tool",
   "ex_zh": "不要让那工具伤到你。",
   "notes": "jure self-esteem伤害某人的自尊心",
@@ -1049,7 +1049,7 @@
  },
  {
   "word": "hurt",
-  "meaning": "V.损害；伤害；（使）疼痛",
+  "meaning": "v.损害；伤害；（使）疼痛",
   "ex_en": "The rumours hurt his reputation badly",
   "ex_zh": "流言严重损害了他的名誉。",
   "notes": "hurt sb/s reputation损害某人的名誉",
@@ -1105,7 +1105,7 @@
  },
  {
   "word": "pain",
-  "meaning": "t n.痛苦；疼痛v.使痛苦词的\"文集；本金\"之义就是a",
+  "meaning": "n.痛苦；疼痛 v.使痛苦",
   "ex_en": "His leg was broken and he suffered great pain. knowledge",
   "ex_zh": "他的腿断了，他感到非常疼痛。",
   "notes": "painful adj.痛苦的；疼痛的；费力的",
@@ -1144,8 +1144,8 @@
   "n": 143
  },
  {
-  "word": "fat",
-  "meaning": "al hour has come.关键时刻终于来了。",
+  "word": "fatal",
+  "meaning": "adj.致命的；毁灭性的；决定性的",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -1225,7 +1225,7 @@
  },
  {
   "word": "weaken",
-  "meaning": "V.减弱，削弱；变软弱",
+  "meaning": "v.减弱，削弱；变软弱",
   "ex_en": "Because transplants weaken the immune system, they cannot be performed on sick patients",
   "ex_zh": "由于移植会使免疫系统变弱，所以不能对正在生病的人施行这样的手术。",
   "notes": "weak adj.弱的；虚弱的weakly adv.软弱地；疲软地weakness n.软弱；弱点",
@@ -1352,8 +1352,8 @@
   "n": 169
  },
  {
-  "word": "cu rative",
-  "meaning": "V.治好，治 adj.治疗的n.药品",
+  "word": "curative",
+  "meaning": "adj.治疗的 n.药品",
   "ex_en": "What This herb was once thought to be curative",
   "ex_zh": "决的事就得去忍耐。这种药草曾被认为有治疗作用。",
   "notes": "",
@@ -1361,7 +1361,7 @@
  },
  {
   "word": "hygiene",
-  "meaning": "V.治愈；愈合 n.卫生（学）；保健（学）",
+  "meaning": "v.治愈；愈合 n.卫生（学）；保健（学）",
   "ex_en": "The Wash yourself regularly to ensure personal",
   "ex_zh": "这可怕的伤口费了很长时间才愈合。\nhygiene.经常洗澡以确保个入卫生。 A\n学、治愈或恢复活力。如今，蛇与手杖已成为欧洲医药卫\nhis\n生的标志，看看任意一所医药大学的校徽。都大有裨益。",
   "notes": "源自健康女神许癸厄亚（Hygieia）, 她的形象是个年轻女子，身着白色长衣（白大褂），头戴祭司冠，用饭碗喂 着一条蛇。她的老爸医神阿斯克勒庇俄斯（Asclepius） n.治疗，疗法；待遇则经常拿着有巨蛇缠绕的手杖。手杖和蛇或许象征着医 treat",
@@ -1449,7 +1449,7 @@
  },
  {
   "word": "transplant",
-  "meaning": "V.移植",
+  "meaning": "v.移植",
   "ex_en": "The patient rejected the transplanted heart",
   "ex_zh": "病人的躯体排斥移植的心脏。",
   "notes": "",
@@ -1457,7 +1457,7 @@
  },
  {
   "word": "X-ray",
-  "meaning": "m X射线；用X射线进行的临床检查认用X射线检查",
+  "meaning": "n.X射线；用X射线进行的临床检查认用X射线检查",
   "ex_en": "She went to the hospital for an X-ray yesterday",
   "ex_zh": "昨天，她去医院做了X光检查。",
   "notes": "",
@@ -1553,15 +1553,15 @@
  },
  {
   "word": "antibiotic",
-  "meaning": "V.救济；减轻，解除（痛苦、不快等） n.抗生素",
+  "meaning": "v.救济；减轻，解除（痛苦、不快等） n.抗生素",
   "ex_en": "The ［",
   "ex_zh": "傅叮The factory\nantibiotics.该厂专门生产抗生素。造成大范围的危难，政府迅速采取了救济行动。",
   "notes": "",
   "n": 195
  },
  {
-  "word": "acup uncture",
-  "meaning": "V.减轻（痛苦等），缓解 n.针灸，中医针灸疗法",
+  "word": "acupuncture",
+  "meaning": "n.针灸，中医针灸疗法",
   "ex_en": "The Do you believe in Chinese acupuncture?",
   "ex_zh": "你相信the\n中国的针灸疗法吗？",
   "notes": "v.刺破，刺穿",
@@ -1569,7 +1569,7 @@
  },
  {
   "word": "penicillin",
-  "meaning": "V.重新开始，（中断后）继续 n.青霉素",
+  "meaning": "v.重新开始，（中断后）继续 n.青霉素",
   "ex_en": "We He gave me a second shot of penicillin",
   "ex_zh": "他给我们继续工作。打了第二针青霉素。",
   "notes": "",
@@ -1577,7 +1577,7 @@
  },
  {
   "word": "morphine",
-  "meaning": "V.减轻，放松，缓 n.吗啡",
+  "meaning": "v.减轻，放松，缓 n.吗啡",
   "ex_en": "He remedy acupuncture drug penicillin",
   "ex_zh": "",
   "notes": "",
@@ -1713,7 +1713,7 @@
  },
  {
   "word": "a positive impact",
-  "meaning": "对……有积极影响",
+  "meaning": "phr.对……有积极影响",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -1729,7 +1729,7 @@
  },
  {
   "word": "a negative impact",
-  "meaning": "对……有消极影响",
+  "meaning": "phr.对……有消极影响",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -1833,7 +1833,7 @@
  },
  {
   "word": "joy",
-  "meaning": "九欢乐，喜悦；乐趣 adj.使人愉快的；（欣然）同意的",
+  "meaning": "n.欢乐，喜悦；乐趣 adj.使人愉快的；（欣然）同意的",
   "ex_en": "He is in immeasurable joy",
   "ex_zh": "他沉浸在巨大的喜悦 My\n之中。\nto",
   "notes": "joyful adj.愉快的，高兴的 \"•使高兴，使兴奋",
@@ -1873,7 +1873,7 @@
  },
  {
   "word": "cheer",
-  "meaning": "V•使振作；（向……）欢呼",
+  "meaning": "v.使振作；（向……）欢呼",
   "ex_en": "They beat drums to cheer up the players",
   "ex_zh": "他们擂鼓给运动员加油。",
   "notes": "cheerful adj.快乐的，愉快的 cheerfully adv.高高兴兴地 cheer up（使）振奋起来 /'pl® took no pleasure in her work.她觉得自己的 adj.令人愉快的；和善的 study abroad.我父母欣然同意我出国学习。",
@@ -1985,7 +1985,7 @@
  },
  {
   "word": "astound",
-  "meaning": "V.使大吃一惊，使惊骇",
+  "meaning": "v.使大吃一惊，使惊骇",
   "ex_en": "He was astounded when he heard that his son had taken drugs",
   "ex_zh": "当他听说儿子吸毒时，大吃一惊。",
   "notes": "",
@@ -2081,7 +2081,7 @@
  },
  {
   "word": "daring",
-  "meaning": "日dj.勇敢的，大胆的",
+  "meaning": "adj.勇敢的，大胆的",
   "ex_en": "He had proved himself a most daring adventurer",
   "ex_zh": "他已证明自己是个极其勇敢的探险家。",
   "notes": "ringly adv.大胆地，毅然地",
@@ -2089,7 +2089,7 @@
  },
  {
   "word": "manly",
-  "meaning": "日dj.有男子气概的；果断的",
+  "meaning": "adj.有男子气概的；果断的",
   "ex_en": "He looks very manly in his un",
   "ex_zh": "讦orm.他穿着制服，看上去男子气概十足。",
   "notes": "adj.无男子气概的womanly adj.女性特有的",
@@ -2097,7 +2097,7 @@
  },
  {
   "word": "direct",
-  "meaning": "日dj.直接的；直率的",
+  "meaning": "adj.直接的；直率的",
   "ex_en": "I'm in direct contact with the hijackers",
   "ex_zh": "我与劫机者保持着直接的联系。",
   "notes": "n.方向；指导directly adv.直接地；立即",
@@ -2193,7 +2193,7 @@
  },
  {
   "word": "concern",
-  "meaning": "关心；忧虑V.涉及；使担忧；关心",
+  "meaning": "n.关心；忧虑 v.涉及；使担忧；关心",
   "ex_en": "As far as I am concerned, lfm not against your plan",
   "ex_zh": "就我而言，我并不反对你的计划。",
   "notes": "be concerned about关心everyday concerns 日常事务",
@@ -2265,7 +2265,7 @@
  },
  {
   "word": "admire",
-  "meaning": "V.赞美，钦佩，仰慕",
+  "meaning": "v.赞美，钦佩，仰慕",
   "ex_en": "Everybody admires him for his fine sense of humour",
   "ex_zh": "他因绝妙的幽默感而受大家钦佩。字根mir指“惊讶，惊奇（to wonder）\",如：ad（加强意义）+mire（惊讶），总是让你惊讶的人，你只有佩服（admire）了；mir（惊奇）+age（名词后缀）t令人惊奇的景色t mirage（海市蜃楼）；mirror（镜子）,\n古人看到镜子里的自己很惊讶；miracle（奇迹）。",
   "notes": "",
@@ -2521,7 +2521,7 @@
  },
  {
   "word": "similar",
-  "meaning": "日dj.相似的，类似的",
+  "meaning": "adj.相似的，类似的",
   "ex_en": "I know how you feel, because had a similar experience myself",
   "ex_zh": "我了解你的感受，因为我自己也有过类似的经历。",
   "notes": "similarity n.相似点similarly adv.相似地，类似地 be similar to与...相似 （like）”，如：similar 字根simi/sim u指“相似（类似的），simile（类似的东西t明喻），assimilate（使成为类似t吸收；使同化），dissimilate（使变得不同t 异化），simulate（模仿；假装），simultaneous（同时发生的）。",
@@ -2624,8 +2624,8 @@
   "n": 328
  },
  {
-  "word": "ago",
-  "meaning": "ny m极度的痛苦；挣扎",
+  "word": "agony",
+  "meaning": "n.极度的痛苦；挣扎",
   "ex_en": "It was great agony to watch him passing away",
   "ex_zh": "看着他死去是极大的痛苦。",
   "notes": "",
@@ -2641,7 +2641,7 @@
  },
  {
   "word": "grieve",
-  "meaning": "V.（使）悲痛",
+  "meaning": "v.（使）悲痛",
   "ex_en": "It grieves me to see him in such bad health",
   "ex_zh": "看见他的健康状况如此不佳，我很伤心。",
   "notes": "sorrow n./v.悲痛,悲伤",
@@ -2689,15 +2689,15 @@
  },
  {
   "word": "disappoint",
-  "meaning": "V•使失望；使受挫折",
+  "meaning": "v.使失望；使受挫折",
   "ex_en": "The result disappointed him",
   "ex_zh": "这个结果使他失望。",
   "notes": "disappointment n.失望；令入失望的人或事",
   "n": 337
  },
  {
-  "word": "discour",
-  "meaning": "age V.使灰心，使气馁；劝阻",
+  "word": "discourage",
+  "meaning": "v.使灰心，使气馁；劝阻",
   "ex_en": "The woman tried to discourage her husband from driving too fast",
   "ex_zh": "这个女人设法劝她丈夫不要把车开得太快。",
   "notes": "",
@@ -2753,7 +2753,7 @@
  },
  {
   "word": "fear",
-  "meaning": "v./n.害怕；担心",
+  "meaning": "v. n.害怕；担心",
   "ex_en": "The thought of returning filled him with fear.",
   "ex_zh": "一想到要回去，他心里就很害怕。",
   "notes": "fearful adj.害怕的；可怕的；for fear of (doing) sth.以免发生某种危险",
@@ -2768,10 +2768,10 @@
   "n": 346
  },
  {
-  "word": "be irritated byhate",
-  "meaning": "each other.他们彼此憎恨。",
-  "ex_en": "",
-  "ex_zh": "",
+  "word": "hate",
+  "meaning": "v.恨，憎恨；不喜欢",
+  "ex_en": "They hate each other.",
+  "ex_zh": "他们彼此憎恨。",
   "notes": "hateful adj.可恨的",
   "n": 347
  },
@@ -2793,15 +2793,15 @@
  },
  {
   "word": "envy",
-  "meaning": "v./n.羡慕；嫉妒",
+  "meaning": "v. n.羡慕；嫉妒",
   "ex_en": "The boy's new electronic toy train was the envy of his friends.",
   "ex_zh": "这男孩的新电动玩具火车使他的朋友们很羡慕。",
   "notes": "envy sb. (for) sth.因某事羡慕某人",
   "n": 350
  },
  {
-  "word": "har",
-  "meaning": "ass V.烦扰",
+  "word": "harass",
+  "meaning": "v.烦扰",
   "ex_en": "A gang of delinquents harassed the storekeeper from time to time.—",
   "ex_zh": "群小流氓时不时会来骚扰店主。\n/bo：/\nV.烦扰；钻孔n.讨厌的人；令人生厌的事 Don't bore me with these boring jokes!别再说这些无聊的笑话来烦我！原本指用钻孔机钻孔。联想：钻孔时发岀的声音单调，没有韵律，使人厌烦t\n令人厌烦的人或事。",
   "notes": "",
@@ -2809,7 +2809,7 @@
  },
  {
   "word": "bother",
-  "meaning": "V.花费时间精力（做某事）；（使）苦恼n.麻烦，困难",
+  "meaning": "v.花费时间精力（做某事）；（使）苦恼n.麻烦，困难",
   "ex_en": "We had a lot of bother finding our way to his house",
   "ex_zh": "我们费了很大劲才找到他的家。",
   "notes": "",
@@ -3009,7 +3009,7 @@
  },
  {
   "word": "fear",
-  "meaning": "v./n.害怕；担心",
+  "meaning": "v. n.害怕；担心",
   "ex_en": "The thought of returning filled him with fear.",
   "ex_zh": "一想到要回去，他心里就很害怕。",
   "notes": "fearful adj.害怕的；可怕的；for fear of (doing) sth.以免发生某种危险",
@@ -3017,7 +3017,7 @@
  },
  {
   "word": "timid",
-  "meaning": "日dj.胆小的，羞怯的",
+  "meaning": "adj.胆小的，羞怯的",
   "ex_en": "You are every inch as timid as a mouse. Just speak up!",
   "ex_zh": "你真是胆小如鼠。大声说出来吧！",
   "notes": "",
@@ -3041,7 +3041,7 @@
  },
  {
   "word": "unkind",
-  "meaning": "日dj.不仁慈的，不和善的，刻薄的",
+  "meaning": "adj.不仁慈的，不和善的，刻薄的",
   "ex_en": "Don't be so unkind to your brother",
   "ex_zh": "别对你的兄弟这么刻薄。",
   "notes": "",
@@ -3049,7 +3049,7 @@
  },
  {
   "word": "envy",
-  "meaning": "v./n.羡慕；嫉妒",
+  "meaning": "v. n.羡慕；嫉妒",
   "ex_en": "The boy's new electronic toy train was the envy of his friends.",
   "ex_zh": "这男孩的新电动玩具火车使他的朋友们很羡慕。",
   "notes": "envy sb. (for) sth.因某事羡慕某人",
@@ -3064,10 +3064,10 @@
   "n": 383
  },
  {
-  "word": "suspicio",
-  "meaning": "n m怀疑，嫌疑 murder.他涉嫌谋杀。",
-  "ex_en": "",
-  "ex_zh": "",
+  "word": "suspicion",
+  "meaning": "n.怀疑，嫌疑",
+  "ex_en": "He is under suspicion of murder",
+  "ex_zh": "他涉嫌谋杀。",
   "notes": "",
   "n": 384
  },
@@ -3112,8 +3112,8 @@
   "n": 389
  },
  {
-  "word": "reluetant",
-  "meaning": "日dj.不情愿的；勉强的",
+  "word": "reluctant",
+  "meaning": "adj.不情愿的；勉强的",
   "ex_en": "She was reluctant to leave the neighbourhood of Paris",
   "ex_zh": "她不愿意离开巴黎附近这一带。",
   "notes": "reluctance n.不情愿；勉强 be reluctant to do sth.不情愿做某事",
@@ -3121,7 +3121,7 @@
  },
  {
   "word": "hesitate",
-  "meaning": "V.犹豫不决，踌躇；顾虑",
+  "meaning": "v.犹豫不决，踌躇；顾虑",
   "ex_en": "Please don't hesitate to do it",
   "ex_zh": "请尽管去做这件事。",
   "notes": "be hesitate to do sth.（因有顾虑而）不愿意做某事",
@@ -3129,7 +3129,7 @@
  },
  {
   "word": "confuse",
-  "meaning": "V.使困惑，把（某人）弄糊涂；混淆",
+  "meaning": "v.使困惑，把（某人）弄糊涂；混淆",
   "ex_en": "Don't confuse Austria with Australia",
   "ex_zh": "不要把奥地利与澳大利亚弄混了。",
   "notes": "confusion n.困惑，糊涂confused adj.感到困惑的confusing adj.令人困惑的 confuse",
@@ -3177,7 +3177,7 @@
  },
  {
   "word": "repent",
-  "meaning": "V.忏悔；后悔 ］He",
+  "meaning": "v.忏悔；后悔 ］He",
   "ex_en": "ented of his action",
   "ex_zh": "他为自己的行为感到懊悔。",
   "notes": "",
@@ -3193,7 +3193,7 @@
  },
  {
   "word": "sigh",
-  "meaning": "n/v.叹息，叹气",
+  "meaning": "n. v.叹息，叹气",
   "ex_en": "She let out a long sigh of despair",
   "ex_zh": "她绝望地长叹一口气。",
   "notes": "",
@@ -3201,7 +3201,7 @@
  },
  {
   "word": "weep",
-  "meaning": "V.哭泣，流泪；哀悼il.哭泣",
+  "meaning": "v.哭泣，流泪；哀悼il.哭泣",
   "ex_en": "Laugh and the world laughs with you; weep and you weep alone",
   "ex_zh": "欢笑时，整个世界同你一起欢笑；哭泣时，却只有你一人独自悲哀。",
   "notes": "",
@@ -3224,8 +3224,8 @@
   "n": 403
  },
  {
-  "word": "cunni",
-  "meaning": "ng m狡猾的；巧妙的",
+  "word": "cunning",
+  "meaning": "adj.狡猾的；巧妙的",
   "ex_en": "You're cunning, and I can't work you out",
   "ex_zh": "你这个人太狡猾，我看不透你。",
   "notes": "",
@@ -3241,7 +3241,7 @@
  },
  {
   "word": "ridiculous",
-  "meaning": "edj.荒谬的，可笑的",
+  "meaning": "adj.荒谬的，可笑的",
   "ex_en": "Who made this ridiculous rule?",
   "ex_zh": "这条荒唐的规则是谁定的？",
   "notes": "a ridiculous thought胡思乱想，荒谬的想法",
@@ -3345,7 +3345,7 @@
  },
  {
   "word": "stubborn",
-  "meaning": "日dj.顽固的，固执的",
+  "meaning": "adj.顽固的，固执的",
   "ex_en": "She won't do what I ask. She is very stubborn",
   "ex_zh": "她不会按我的要求去做的，她很固执。",
   "notes": "",

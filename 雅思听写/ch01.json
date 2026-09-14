@@ -89,7 +89,7 @@
  },
  {
   "word": "latitude",
-  "meaning": "纬度",
+  "meaning": "n.纬度",
   "ex_en": "Our position is degrees north latitude",
   "ex_zh": "我们的位置是北纬40度。",
   "notes": "high latitudes高纬度地区",
@@ -104,11 +104,11 @@
   "n": 13
  },
  {
-  "word": "broaden sb",
+  "word": "altitude",
   "meaning": "n.高度，海拔",
-  "ex_en": "We are currently flying at an altitude of 8,000 metres",
-  "ex_zh": "我们目前正在海拔8000米的高空飞行。\nalt（高）+itude（表示性质、状态等）-高度。",
-  "notes": "",
+  "ex_en": "We are currently flying at an altitude of 8,000 metres.",
+  "ex_zh": "我们目前正在海拔8000米的高空飞行。",
+  "notes": "alt（高）+itude（表示性质、状态等）→高度。",
   "n": 14
  },
  {
@@ -145,7 +145,7 @@
  },
  {
   "word": "endanger",
-  "meaning": "V.使遭受危险，危及",
+  "meaning": "v.使遭受危险，危及",
   "ex_en": "If you work hard without rest, you will endanger your health",
   "ex_zh": "你若辛勤工作而不休息，会把身体弄坏的。",
   "notes": "endangered adj.濒临灭绝的 en（使）4-danger（危险）t使遭受危险。",
@@ -201,7 +201,7 @@
  },
  {
   "word": "magnet",
-  "meaning": "磁铁,吸铁石 n.",
+  "meaning": "n.磁铁,吸铁石",
   "ex_en": "He picked all the pins up with a magnet",
   "ex_zh": "他用磁铁捡起了所有的大头针。",
   "notes": "magnetic adj.磁的，有磁性的；有吸引力的希腊人在马格内西亚（Magnesia）地区发现了一种神奇的矿石，这种矿石可以吸引金属。希腊人将这种矿石称为“马格内西亚的石头“。",
@@ -209,7 +209,7 @@
  },
  {
   "word": "ore",
-  "meaning": "矿石；矿",
+  "meaning": "n.矿石；矿",
   "ex_en": "This mountain area is rich in iron ore",
   "ex_zh": "这片山区富含铁矿。",
   "notes": "",
@@ -249,7 +249,7 @@
  },
  {
   "word": "gust",
-  "meaning": "n.—阵狂风；（感情的）迸发",
+  "meaning": "n.一阵狂风；（感情的）迸发",
   "ex_en": "A gust of wind blew the leaves off the trees. —",
   "ex_zh": "阵狂风把树叶从树上吹落。",
   "notes": "",
@@ -297,7 +297,7 @@
  },
  {
   "word": "typhoon",
-  "meaning": "台风",
+  "meaning": "n.台风",
   "ex_en": "The typhoon is gathering strength",
   "ex_zh": "台风的风力正逐渐增强。\ntyphoon通常指发生在太平洋西部海洋和南海海域的热带气旋。该词的形成与汉语广东方言“大风”的发音有关。",
   "notes": "",
@@ -313,7 +313,7 @@
  },
  {
   "word": "erupt",
-  "meaning": "V.爆发，喷发；（斑疹等）突然出现",
+  "meaning": "v.爆发，喷发；（斑疹等）突然出现",
   "ex_en": "Hot lava erupted from the crust",
   "ex_zh": "从地壳中喷发出了滚烫的熔岩。",
   "notes": "eruption n.喷发，爆发 tornado-*八IS\"i藝鑿真 typhoon赚。 il!",
@@ -369,7 +369,7 @@
  },
  {
   "word": "drought",
-  "meaning": "ii.干旱，旱灾",
+  "meaning": "n.干旱，旱灾",
   "ex_en": "Many areas in Africa have suffered severe drought this year",
   "ex_zh": "今年，非洲的很多地区遭受了严重的干旱。\n（adj.干的，干燥的）。词源同dry",
   "notes": "",
@@ -417,7 +417,7 @@
  },
  {
   "word": "terrain",
-  "meaning": "n.地形m沼泽，湿地",
+  "meaning": "n.地形",
   "ex_en": "He climbed a tree to view the surrounding In terrain",
   "ex_zh": "他爬上一棵树去查看周围的地形。",
   "notes": "a terrain feature地形特征",
@@ -440,8 +440,8 @@
   "n": 55
  },
  {
-  "word": "plateau",
-  "meaning": "cave n.高原 n.洞穴，山洞",
+  "word": "cave",
+  "meaning": "n.洞穴，山洞",
   "ex_en": "The This cave was used by smugglers in the eighteenth century",
   "ex_zh": "该洞穴曾在18世纪被走私者使用。",
   "notes": "plateau explore a cave勘探山洞某些法语词在被借入英语中时仍然保留了其拼写习惯，如法语字母组合eau:",
@@ -464,10 +464,10 @@
   "n": 58
  },
  {
-  "word": "thesw",
-  "meaning": "在沼泽地里，我们受到蚊子围攻。",
-  "ex_en": "",
-  "ex_zh": "",
+  "word": "swamp",
+  "meaning": "n.沼泽，湿地",
+  "ex_en": "In the swamp, we were beset by mosquitoes.",
+  "ex_zh": "在沼泽地里，我们受到蚊子围攻。",
   "notes": "",
   "n": 59
  },
@@ -496,8 +496,8 @@
   "n": 62
  },
  {
-  "word": "symbolises",
-  "meaning": "a hope in desert areas.绿洲",
+  "word": "oasis",
+  "meaning": "n.绿洲；宜入之地",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -568,8 +568,8 @@
   "n": 71
  },
  {
-  "word": "deterior",
-  "meaning": "ate V.恶化，变坏",
+  "word": "deteriorate",
+  "meaning": "v.恶化，变坏",
   "ex_en": "Relations between the two countries have deteriorated sharply in recent weeks",
   "ex_zh": "最近几周，另B两个国家间的关系严重恶化了。",
   "notes": "deterioration n.恶化，变坏",
@@ -577,7 +577,7 @@
  },
  {
   "word": "aggravate",
-  "meaning": "V.加重，加剧，使恶化",
+  "meaning": "v.加重，加剧，使恶化",
   "ex_en": "Grief aggravated her illness",
   "ex_zh": "痛苦加重了她的病。",
   "notes": "gravity n.重力aggregate v./n.合计，总计 aggravate the differences加深分歧 ag（加强意义）+grav（重的）+ate（使）t使变重，加重。",
@@ -585,7 +585,7 @@
  },
  {
   "word": "degrade",
-  "meaning": "V.降解；降低……的身份；使恶化，使退化",
+  "meaning": "v.降解；降低……的身份；使恶化，使退化",
   "ex_en": "A dishonest action like that will degrade you",
   "ex_zh": "这样不诚实的行为有辱你的身份。",
   "notes": "gradation n.恶化 de（向下）4-grade（层级）降级。",
@@ -601,7 +601,7 @@
  },
  {
   "word": "erode",
-  "meaning": "V.侵蚀，腐蚀",
+  "meaning": "v.侵蚀，腐蚀",
   "ex_en": "The waves erode the rocks on the shore",
   "ex_zh": "海浪侵蚀着岸边的岩石。",
   "notes": "erosion n.侵蚀，腐蚀 :LU!£i ■",
@@ -672,8 +672,8 @@
   "n": 84
  },
  {
-  "word": "co",
-  "meaning": "ast m海岸，海滨",
+  "word": "coast",
+  "meaning": "n.海岸，海滨",
   "ex_en": "He is going to live by the coast for the sake of his health",
   "ex_zh": "他为了自己的健康，打算到海滨地区居住。",
   "notes": "",
@@ -681,7 +681,7 @@
  },
  {
   "word": "shore",
-  "meaning": "海、湖等大水域的)岸，滨",
+  "meaning": "n.（海、湖等大水域的）岸，滨",
   "ex_en": "His ship pulled in to the shore at midnight",
   "ex_zh": "他的船半夜时靠岸。",
   "notes": "",
@@ -689,7 +689,7 @@
  },
  {
   "word": "tide",
-  "meaning": "n・趋势，潮流；潮汐",
+  "meaning": "n.趋势，潮流；潮汐",
   "ex_en": "The gravitational attraction between the moon and the earth causes tides",
   "ex_zh": "月亮与地球间的引力引起潮汐。",
   "notes": "tidal adj.潮汐的 at low tide退潮时，低潮时 Time and tide wait for no man.岁月不等人。",
@@ -777,7 +777,7 @@
  },
  {
   "word": "vertical",
-  "meaning": "aMj.垂直的，直立的",
+  "meaning": "adj.垂直的，直立的",
   "ex_en": "In some places the cliff was almost vertical, and too dangerous to climb",
   "ex_zh": "在一些地方，悬崖几乎是垂直的，非常危险，不能攀登。",
   "notes": "horizontal adj.水平的",
@@ -889,7 +889,7 @@
  },
  {
   "word": "arid",
-  "meaning": "日dj.干燥的，干旱的；枯燥的",
+  "meaning": "adj.干燥的，干旱的；枯燥的",
   "ex_en": "It is difficult to grow fruit in arid desert areas",
   "ex_zh": "在干燥的沙漠地带栽培水果很困难。",
   "notes": "an desert干旱的荒漠",
@@ -913,7 +913,7 @@
  },
  {
   "word": "humid",
-  "meaning": "日dj.潮湿的，湿热的.",
+  "meaning": "adj.潮湿的，湿热的.",
   "ex_en": "The milk powder has lumped together because my home is so humid",
   "ex_zh": "我家太潮湿了，所以奶粉结块了。",
   "notes": "humidity n.高温潮湿；湿度 humid conditions湿热的天气状况",
@@ -945,7 +945,7 @@
  },
  {
   "word": "thaw",
-  "meaning": "V.解冻，融解，融化11.解冻时期",
+  "meaning": "v.解冻，融解，融化11.解冻时期",
   "ex_en": "The sun thawed the ice and melted the snow",
   "ex_zh": "阳光之下，冰消雪融。",
   "notes": "thaw（sth.）out（使冷冻食品）解冻；（使某物） 变暖",
@@ -953,7 +953,7 @@
  },
  {
   "word": "chill",
-  "meaning": "V.（使）变冷；使恐惧n.寒冷；害怕",
+  "meaning": "v.（使）变冷；使恐惧n.寒冷；害怕",
   "ex_en": "The bad news cast a chill over the whole family",
   "ex_zh": "这坏消息使全家人感到不寒而栗。",
   "notes": "chilly adj.寒冷的 chill enthusiasm使热情冷却",
@@ -961,7 +961,7 @@
  },
  {
   "word": "freeze",
-  "meaning": "V.结冰Fl.霜冻；严寒期",
+  "meaning": "v.结冰Fl.霜冻；严寒期",
   "ex_en": "The weatherman predicted a freeze for tonight",
   "ex_zh": "天气预报员预报今晚有霜冻。",
   "notes": "freezer n.冰柜freezing adj.极冷的",
@@ -977,7 +977,7 @@
  },
  {
   "word": "tremble",
-  "meaning": "v./n.战栗，颤抖",
+  "meaning": "v. n.战栗，颤抖",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -985,7 +985,7 @@
  },
  {
   "word": "shiver",
-  "meaning": "V.颤抖，哆嗦，发抖",
+  "meaning": "v.颤抖，哆嗦，发抖",
   "ex_en": "She shivered because she was worried and afraid",
   "ex_zh": "她因担忧和害怕而发抖。",
   "notes": "shiver with cold冷得发抖以er结尾的词，常常表示一种反复状态，如：batter （连续用bat［球棒］击打t连续猛击）, chatter（反复 chat［聊天］t喋喋不休）, flicker（摇曳，闪烁不定）， teeter（蹒跚行走；摇摇欲坠），teeter-totter（反复出现摇摇欲坠的状态T跷跷板）。",
@@ -1033,7 +1033,7 @@
  },
  {
   "word": "sprinkle",
-  "meaning": "V.撒，洒；下小雨n.少量；小雨",
+  "meaning": "v.撒，洒；下小雨n.少量；小雨",
   "ex_en": "We've only had a few sprinkles of rain recently",
   "ex_zh": "近来，我们这里只下过几场小雨。\n*\n自然地理",
   "notes": "",
@@ -1145,7 +1145,7 @@
  },
  {
   "word": "overlook",
-  "meaning": "V.俯瞰，远眺；未注意到",
+  "meaning": "v.俯瞰，远眺；未注意到",
   "ex_en": "The house on the hill overlooks the village",
   "ex_zh": "从小山上的房子可以俯瞰村庄。",
   "notes": "be easily overlooked容易被忽略的 over（在上）+look（看）t在上面往下看t俯瞰。",
@@ -1401,7 +1401,7 @@
  },
  {
   "word": "crack",
-  "meaning": "V.破裂；发出爆裂声II.裂缝；缝隙",
+  "meaning": "v.破裂；发出爆裂声II.裂缝；缝隙",
   "ex_en": "The door opened just a crack",
   "ex_zh": "这扇门只打开一条缝。 There are wide gaps in my knowledge of",
   "notes": "cause a crack弄出裂缝 gap /g比p n.缺口，裂缝；差距；空白",
@@ -1457,7 +1457,7 @@
  },
  {
   "word": "deforest",
-  "meaning": "V.毁掉...森林",
+  "meaning": "v.毁掉...森林",
   "ex_en": "The land is severely eroded as a result of widespread deforesting and intensive farming",
   "ex_zh": "土地因乱砍滥伐和密集耕种而受到严重侵蚀。",
   "notes": "n.毁林，滥伐森林",
@@ -1569,7 +1569,7 @@
  },
  {
   "word": "evaporation",
-  "meaning": "V.（使）循环，（使）流通；（信息等）传播",
+  "meaning": "v.（使）循环，（使）流通；（信息等）传播",
   "ex_en": "Circulating blood helps transfer air",
   "ex_zh": "循环的血液会促进体内的热量散到\n体外。",
   "notes": "circulation n.流通，循环；传播",
@@ -1625,7 +1625,7 @@
  },
  {
   "word": "pour",
-  "meaning": "V.倾泻；倒；（雨）倾盆而下",
+  "meaning": "v.倾泻；倒；（雨）倾盆而下",
   "ex_en": "Tears poured from her eyes",
   "ex_zh": "泪水从她眼中涌出。",
   "notes": "downpour n.倾盆大雨",
@@ -1641,7 +1641,7 @@
  },
  {
   "word": "drip",
-  "meaning": "V.滴岀（液体）；滴下",
+  "meaning": "v.滴岀（液体）；滴下",
   "ex_en": "Be careful! Your paintbrush is dripping",
   "ex_zh": "小心！你的漆刷正在往下滴漆。",
   "notes": "drip down滴下 drip和drop都是象声词一一仔细听一听雨滴落在地上的声音。",
@@ -1649,7 +1649,7 @@
  },
  {
   "word": "drown",
-  "meaning": "V.（使）淹死；浸泡",
+  "meaning": "v.（使）淹死；浸泡",
   "ex_en": "She attempted to drown herself in the river",
   "ex_zh": "她企图投河自尽。",
   "notes": "",
@@ -1673,7 +1673,7 @@
  },
  {
   "word": "gush",
-  "meaning": "v./n.涌出",
+  "meaning": "v. n.涌出",
   "ex_en": "In a moment more, the crowd began to gush forth from the doors of the church.",
   "ex_zh": "过了一会儿，人群便开始从教堂的几扇门里蜂拥而出。",
   "notes": "gush out涌出，喷出gush from从...喷出",
@@ -1713,7 +1713,7 @@
  },
  {
   "word": "flash through sb",
-  "meaning": "V.漂浮；飘浮",
+  "meaning": "v.漂浮；飘浮",
   "ex_en": "The smell of roses floated around",
   "ex_zh": "玫瑰花的芳香在四周飘荡。",
   "notes": "",
@@ -1744,8 +1744,8 @@
   "n": 218
  },
  {
-  "word": "situatio",
-  "meaning": "n m情况，处境，形势",
+  "word": "situation",
+  "meaning": "n.情况，处境，形势",
   "ex_en": "e to poor management, they finally got into a difficult financial situation",
   "ex_zh": "由于管理不善，他们最终陷入财政困境。",
   "notes": "situate v.使坐落于，使位于 in this situation在这种场合/形势/情况下",

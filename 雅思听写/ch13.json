@@ -25,7 +25,7 @@
  },
  {
   "word": "construct",
-  "meaning": "V.建造",
+  "meaning": "v.建造",
   "ex_en": "They are planning to construct a new highway",
   "ex_zh": "他们正在计划建造一条新公路。",
   "notes": "construction n.建造；建造物；结构 constructive adj.建设性的",
@@ -33,7 +33,7 @@
  },
  {
   "word": "obstruct",
-  "meaning": "V.阻塞；妨碍",
+  "meaning": "v.阻塞；妨碍",
   "ex_en": "The road was obstructed by a fallen tree",
   "ex_zh": "路被\n—棵倒下的树堵住了。 They",
   "notes": "obstacle n.障碍；障碍物n.妨碍; 障碍物 was 字根struct指“建造（to build）\" ,如）：obstruct（阻止［ab=against］建造t阻塞），structure （建筑物；结构），construct（—起来建造t建造）, （使建筑物倒下-破坏）, instruct（建起来t指导）， instructor（导师）。",
@@ -41,7 +41,7 @@
  },
  {
   "word": "establish",
-  "meaning": "V.建立，设立n.地标；里程碑",
+  "meaning": "v.建立，设立n.地标；里程碑",
   "ex_en": "The Minister established a commissi on to suggest improvements in the educational system. landmark",
   "ex_zh": "他找到了熟悉的地标，从而确定了方向。部长组织了一个委员会为改进教育制度提供建议。",
   "notes": "a established adj.已确立的，已被确认的 establishment n.建立，成立；机构",
@@ -57,7 +57,7 @@
  },
  {
   "word": "found",
-  "meaning": "V.创建，创办",
+  "meaning": "v.创建，创办",
   "ex_en": "The rich businessman founded a hospital and a school in the town where he was born",
   "ex_zh": "那个有钱的商人在他出生的城镇创办了一家医院和一所学校。",
   "notes": "foundationn.基础；基金会founder n.创建者",
@@ -113,7 +113,7 @@
  },
  {
   "word": "locate",
-  "meaning": "V.放置，建立；找到",
+  "meaning": "v.放置，建立；找到",
   "ex_en": "The new hospital will be college",
   "ex_zh": "这家新医院将建在你们学院附近。",
   "notes": "location n.地点",
@@ -128,8 +128,8 @@
   "n": 16
  },
  {
-  "word": "inh",
-  "meaning": "V.居住于",
+  "word": "inhabit",
+  "meaning": "v.居住于",
   "ex_en": "Thoughts inhabit my mind",
   "ex_zh": "各种思想占据了我的脑海。",
   "notes": "habitable adj.适合居住的",
@@ -137,7 +137,7 @@
  },
  {
   "word": "migrate",
-  "meaning": "V.迁徙；移居",
+  "meaning": "v.迁徙；移居",
   "ex_en": "More and more people migrate from one city to another to seek fortune",
   "ex_zh": "为了挣钱，越来越多的人从\n—座城市迁移到另一座城市。",
   "notes": "gratio nn.迁徙；移居immigratev.（从外地） 移居，移入emigrate v.移居国外",
@@ -145,7 +145,7 @@
  },
  {
   "word": "settle",
-  "meaning": "V.解决；在……定居，使定居",
+  "meaning": "v.解决；在……定居，使定居",
   "ex_en": "They moved the local people and settled them in another place",
   "ex_zh": "他们让当地人搬走并在另一个地方定居。",
   "notes": "ttlement n.解决；定居点 ttle down定居下来；平静下来",
@@ -177,7 +177,7 @@
  },
  {
   "word": "mansion",
-  "meaning": "n宅第，公馆",
+  "meaning": "n.宅第，公馆",
   "ex_en": "This old mansion became a hospital",
   "ex_zh": "这座老宅子变成了一家医院。",
   "notes": "",
@@ -209,7 +209,7 @@
  },
  {
   "word": "lodge",
-  "meaning": "V.租住m小屋；度假屋",
+  "meaning": "v.租住m小屋；度假屋",
   "ex_en": "Where we lodge is the problem",
   "ex_zh": "我们要在哪儿住宿，这是个问题。\n/hAt/\nhut\nm小屋，棚屋 The hut was made out of pieces of wood.这小屋是用木板建造的。",
   "notes": "",
@@ -337,7 +337,7 @@
  },
  {
   "word": "pillar",
-  "meaning": "n・柱子；中坚，栋梁 pillar.强盗把他捆在柱子上。",
+  "meaning": "n.柱子；中坚，栋梁 pillar.强盗把他捆在柱子上。",
   "ex_en": "The robber tied him to a society",
   "ex_zh": "社会栋梁",
   "notes": "",
@@ -353,7 +353,7 @@
  },
  {
   "word": "beam",
-  "meaning": "m（能量、放射线或粒子的）束，柱",
+  "meaning": "n.（能量、放射线或粒子的）束，柱",
   "ex_en": "The beams of the airport",
   "ex_zh": "机场上空满是探照灯的道道光柱。",
   "notes": "a laser beam激光束",
@@ -377,7 +377,7 @@
  },
  {
   "word": "eaves",
-  "meaning": "n-屋檐",
+  "meaning": "n.屋檐",
   "ex_en": "Under the eaves, I have to lower my head",
   "ex_zh": "在屋檐下，我不得不低下头。",
   "notes": "",
@@ -393,7 +393,7 @@
  },
  {
   "word": "reception",
-  "meaning": "n-接待处",
+  "meaning": "n.接待处",
   "ex_en": "You can leave your key at reception",
   "ex_zh": "你可以把钥匙留在接待处。",
   "notes": "receptionist n.接待员 W-;'■'",
@@ -401,7 +401,7 @@
  },
  {
   "word": "lobby",
-  "meaning": "n・大厅，前厅；游说v.游说",
+  "meaning": "n.大厅，前厅；游说v.游说",
   "ex_en": "me in the lobby of the hotel",
   "ex_zh": "请在酒店的大堂等我。",
   "notes": "lobbyist n.说客每逢美国国会开会讨论立法事宜，不同地区和不同行业都纷纷派代表到华盛顿特区，为自己的利益集团去游说。这些人不能去议员开会的地方，只能在参议院和众 （lobby）里聚集，见缝插针地去游说进出议院外的大厅的议员。于是，lobby有了“游说”之义，而lobbyist （大厅人）就是“说客\"的意思。",
@@ -704,8 +704,8 @@
   "n": 88
  },
  {
-  "word": "le",
-  "meaning": "ver m杠杆；操纵杆",
+  "word": "lever",
+  "meaning": "n.杠杆；操纵杆",
   "ex_en": "Push the lever and the machine will start",
   "ex_zh": "推动操纵杆，机器就会启动。",
   "notes": "",
@@ -713,7 +713,7 @@
  },
  {
   "word": "pole",
-  "meaning": "九竿，杆",
+  "meaning": "n.竿，杆",
   "ex_en": "The hut is made of poles covered with grass mats",
   "ex_zh": "这个棚屋用木杆搭成，上面盖着草席。",
   "notes": "",
@@ -761,7 +761,7 @@
  },
  {
   "word": "install",
-  "meaning": "V.安装",
+  "meaning": "v.安装",
   "ex_en": "We're installing a new heating system",
   "ex_zh": "我们正在安装新的取暖装置。",
   "notes": "installation n.安装的设备；安装",
@@ -769,7 +769,7 @@
  },
  {
   "word": "furnish",
-  "meaning": "V.为……配备家具陈设",
+  "meaning": "v.为……配备家具陈设",
   "ex_en": "e house is well furnished",
   "ex_zh": "这栋房屋被布置得很好。",
   "notes": "furniture n.家具",
@@ -793,7 +793,7 @@
  },
  {
   "word": "design",
-  "meaning": "V.设计；计划n.设计",
+  "meaning": "v.设计；计划n.设计",
   "ex_en": "He has already designed a good excuse for not attending the conference",
   "ex_zh": "他已经为不参加这次会议编造了一个好借口。",
   "notes": "",
@@ -817,7 +817,7 @@
  },
  {
   "word": "enter",
-  "meaning": "V.进入",
+  "meaning": "v.进入",
   "ex_en": "Please knock on the door",
   "ex_zh": "进来前请先敲门。",
   "notes": "",
@@ -857,7 +857,7 @@
  },
  {
   "word": "external",
-  "meaning": "日di.外来的；外面的；对外的",
+  "meaning": "adj.外来的；外面的；对外的",
   "ex_en": "The external sector has improved performance significantly period",
   "ex_zh": "在此期间，涉外行业的\n业绩大大提局。",
   "notes": "",

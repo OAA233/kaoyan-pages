@@ -145,7 +145,7 @@
  },
  {
   "word": "ornament",
-  "meaning": "n.装饰品/'□insment/v.装饰",
+  "meaning": "n.装饰品 v.装饰",
   "ex_en": "Clearness ornaments profound thought",
   "ex_zh": "清晰性能为深刻的思想增辉。\nV.修饰 The door of the old church was embellished with\nintricate carvings.老教堂的门是用复杂的雕饰美化的。",
   "notes": "",
@@ -153,7 +153,7 @@
  },
  {
   "word": "embroider",
-  "meaning": "V.对（故事等）加以渲染；在……上刺绣",
+  "meaning": "v.对（故事等）加以渲染；在……上刺绣",
   "ex_en": "Her shirt is embroidered with roses",
   "ex_zh": "她的衬衣上绣着玫瑰花。",
   "notes": "",
@@ -209,7 +209,7 @@
  },
  {
   "word": "fascinate",
-  "meaning": "V.迷住",
+  "meaning": "v.迷住",
   "ex_en": "This city fascinates him",
   "ex_zh": "这座城市令他着迷。",
   "notes": "fascinating adj.迷人的 be fascinated with迷上",
@@ -289,7 +289,7 @@
  },
  {
   "word": "clothe",
-  "meaning": "v.给……穿衣；为・・・・・•提供衣服",
+  "meaning": "v.给……穿衣；为……提供衣服",
   "ex_en": "He had to work hard to feed and clothe the large family",
   "ex_zh": "他必须努力工作才能使一大家子人有饭吃，有衣穿。",
   "notes": "clothes n.衣服clothing n.衣服",
@@ -297,15 +297,15 @@
  },
  {
   "word": "uniform",
-  "meaning": "n-制服adj.—致的",
+  "meaning": "n.制服adj.—致的",
   "ex_en": "Do you have to wear a uniform if you work at McDonald's?",
   "ex_zh": "在麦当劳供职时必须穿制服吗？单一的形式t\nuni（单一的）+form（形状，形式）t\n制服。",
   "notes": "",
   "n": 38
  },
  {
-  "word": "do",
-  "meaning": "iron the laundry洗/晾/熨衣物",
+  "word": "laundry",
+  "meaning": "n.洗衣店；要（或正在）洗的衣物，刚洗好的衣物",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -377,7 +377,7 @@
  },
  {
   "word": "hat",
-  "meaning": "n（常指带檐的）帽子",
+  "meaning": "n.（常指带檐的）帽子",
   "ex_en": "She bought a hat yesterday",
   "ex_zh": "她昨天买了一顶帽子。",
   "notes": "",
@@ -385,7 +385,7 @@
  },
  {
   "word": "cap",
-  "meaning": "m（有帽舌的）帽子；（经费等的）最高限额",
+  "meaning": "n.（有帽舌的）帽子；（经费等的）最高限额",
   "ex_en": "The cap goes well with your suit",
   "ex_zh": "这顶帽子跟你的套装很配。",
   "notes": "",
@@ -432,8 +432,8 @@
   "n": 54
  },
  {
-  "word": "wr",
-  "meaning": "ap m披肩",
+  "word": "wrap",
+  "meaning": "n.披肩",
   "ex_en": "r her shoulders was a much-mended wrap",
   "ex_zh": "她的肩上搭着一条被多次缝补的披肩。",
   "notes": "",
@@ -441,7 +441,7 @@
  },
  {
   "word": "cloak",
-  "meaning": "n・斗篷；覆盖物",
+  "meaning": "n.斗篷；覆盖物",
   "ex_en": "She picked up the old brown cloak and handed it to him",
   "ex_zh": "她捡起棕色的旧斗篷递给他。",
   "notes": "",
@@ -457,7 +457,7 @@
  },
  {
   "word": "sleeve",
-  "meaning": "n-袖子",
+  "meaning": "n.袖子",
   "ex_en": "A stranger pulled at my sleeve as I was leaving",
   "ex_zh": "我刚要离去，一个陌生人拽了拽我的袖子。",
   "notes": "",
@@ -473,7 +473,7 @@
  },
  {
   "word": "stocking",
-  "meaning": "n（女式）长筒袜",
+  "meaning": "n.（女式）长筒袜",
   "ex_en": "The thief masked his face with a stocking",
   "ex_zh": "那个贼套上长筒袜遮住脸。",
   "notes": "",
@@ -513,7 +513,7 @@
  },
  {
   "word": "sew",
-  "meaning": "V.缝制，缝补",
+  "meaning": "v.缝制，缝补",
   "ex_en": "The skirt is finished and rm now going to sew a pocket",
   "ex_zh": "裙子做好了，我现在要再缝上个口袋。",
   "notes": "",
@@ -521,7 +521,7 @@
  },
  {
   "word": "spin",
-  "meaning": "V.纺；（使）旋转n.高速旋转；（乘车）兜风",
+  "meaning": "v.纺；（使）旋转n.高速旋转；（乘车）兜风",
   "ex_en": "We took a spin around the town",
   "ex_zh": "我们乘车在城里兜了一圈。",
   "notes": "",
@@ -593,7 +593,7 @@
  },
  {
   "word": "fasten",
-  "meaning": "松开皮带 ii.链子，链条",
+  "meaning": "v.扣牢，系牢，缚紧",
   "ex_en": "She wore a silver chain around her neck",
   "ex_zh": "她的脖子上戴着一条银链子。",
   "notes": "",
@@ -617,7 +617,7 @@
  },
  {
   "word": "bead",
-  "meaning": "仇珠子；（液体的）小滴v.形成珠状",
+  "meaning": "n.珠子；（液体的）小滴v.形成珠状",
   "ex_en": "She wore a string of beads round her neck",
   "ex_zh": "她的脖子上挂了一串珠子。源自表示“祈祷”的古英语。后来西方开始盛行在祈祷。时手拨念珠，就演化岀表示“念珠”的中古英语b ede\n最后发展为现在的bead,表意的范畴也扩大了，可表示\n“珠子”“（液体的）小滴”等。复数形式beads仍常被用来指“念珠”，比如在英语短语count one's beads（数念珠祷告）中。",
   "notes": "",
@@ -641,7 +641,7 @@
  },
  {
   "word": "wool",
-  "meaning": "m（羊等的）毛；毛线",
+  "meaning": "n.（羊等的）毛；毛线",
   "ex_en": "He found a job of shearing wool from sheep",
   "ex_zh": "他找到一份剪羊毛的工作。 She sewed a patch onto the knee of the\ntrousers.她在裤子的膝部缝了个补丁。",
   "notes": "woollen（=woolen）adj.羊毛的 n.补丁；（与周围不同的）小片v.补缀 patchwork n.拼布工艺；混杂物",
@@ -737,7 +737,7 @@
  },
  {
   "word": "fade",
-  "meaning": "V.逐渐消失；（使）褪色",
+  "meaning": "v.逐渐消失；（使）褪色",
   "ex_en": "Beauty fades like a flower",
   "ex_zh": "红颜易逝如花败。",
   "notes": "fade away 衰弱；病重死亡",

@@ -1,7 +1,7 @@
 [
  {
   "word": "culture",
-  "meaning": "n・文化，文明；教养",
+  "meaning": "n.文化，文明；教养",
   "ex_en": "China plays an important role in promoting Asian culture",
   "ex_zh": "中国在推动亚洲文化发展方面发挥着重要作用。",
   "notes": "cultural adj.文化的multicultural adj.文化多样的 （to 字根cult指“耕种till）”。人类最早的文化之一就是农耕文化——怎样播种，如何灌溉，何时收获，等等。",
@@ -81,7 +81,7 @@
  },
  {
   "word": "ethical",
-  "meaning": "日dj.伦理的，道德的",
+  "meaning": "adj.伦理的，道德的",
   "ex_en": "You can't divorce scienee from ethical questions",
   "ex_zh": "不能把科学与伦理问题割裂开。",
   "notes": "",
@@ -177,7 +177,7 @@
  },
  {
   "word": "heritage",
-  "meaning": "仇（国家的）遗产",
+  "meaning": "n.（国家的）遗产",
   "ex_en": "They take great pride in their cultural heritage",
   "ex_zh": "他们为自己的文化遗产深感自豪。",
   "notes": "",
@@ -193,7 +193,7 @@
  },
  {
   "word": "antique",
-  "meaning": "（ n.古董adj.古董的",
+  "meaning": "n.古董adj.古董的",
   "ex_en": "He wears designer clothes and drives an heritage inherit antique ―",
   "ex_zh": "各化历史",
   "notes": "",
@@ -208,8 +208,8 @@
   "n": 26
  },
  {
-  "word": "excav",
-  "meaning": "ate",
+  "word": "excavate",
+  "meaning": "v.挖掘，发掘",
   "ex_en": "It took a long time to excavate the ancient city of Troy",
   "ex_zh": "挖掘古老的特洛伊城花了很长时间。",
   "notes": "excavation n.挖掘，发掘",
@@ -233,7 +233,7 @@
  },
  {
   "word": "engrave",
-  "meaning": "V.在……上雕刻",
+  "meaning": "v.在……上雕刻",
   "ex_en": "The jeweller will engrave the inside of the ring with her name",
   "ex_zh": "珠宝匠将在戒指的内表面上刻上她的名字。",
   "notes": "",
@@ -241,7 +241,7 @@
  },
  {
   "word": "decorate",
-  "meaning": "认装饰",
+  "meaning": "v.装饰",
   "ex_en": "Using extremely different decorating schemes in adjoining rooms may result in lack of unity in style",
   "ex_zh": "相邻的房间用悬殊太大的装饰方案会导致风格不够统一。",
   "notes": "decoration n.装饰；装饰品decorative adj.装饰性的 decorate A with B用B装饰A",
@@ -249,7 +249,7 @@
  },
  {
   "word": "religion",
-  "meaning": "n・宗教，宗教信仰",
+  "meaning": "n.宗教，宗教信仰",
   "ex_en": "There are many religions in the world",
   "ex_zh": "在世界上有许多种宗教。",
   "notes": "religious adj.宗教的",
@@ -305,7 +305,7 @@
  },
  {
   "word": "hallowed",
-  "meaning": "日dj.神圣的；受尊崇的",
+  "meaning": "adj.神圣的；受尊崇的",
   "ex_en": "The Ganges is hallowed as a sacred, cleansing river",
   "ex_zh": "恒河被奉为有净化作用的圣河。",
   "notes": "",
@@ -313,7 +313,7 @@
  },
  {
   "word": "holy",
-  "meaning": "日dj.神圣的；圣洁的，虔诚的",
+  "meaning": "adj.神圣的；圣洁的，虔诚的",
   "ex_en": "A holy person is spiritually pure",
   "ex_zh": "圣洁的人在精神上十分纯洁。",
   "notes": "",
@@ -593,7 +593,7 @@
  },
  {
   "word": "incident",
-  "meaning": "ii.（尤指不寻常的、重要的或暴力的）事件；（两国间的） 冲突",
+  "meaning": "n.（尤指不寻常的、重要的或暴力的）事件；（两国间的） 冲突",
   "ex_en": "A serious incident along the border increased our fears of war",
   "ex_zh": "边境上的一起严重冲突使我们更加担心战争的爆发。",
   "notes": "incidental adj.附带的，次要的",
@@ -609,7 +609,7 @@
  },
  {
   "word": "prosperity",
-  "meaning": "ii.繁荣，兴旺",
+  "meaning": "n.繁荣，兴旺",
   "ex_en": "The empire was on the wane after its period of prosperity",
   "ex_zh": "帝国在历经繁盛以后逐渐衰落。",
   "notes": "prosper v.成功，繁荣prosperous adj.繁荣的 a business prosperity商业繁荣",

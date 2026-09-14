@@ -33,7 +33,7 @@
  },
  {
   "word": "commentator",
-  "meaning": "Fl.评论员；实况解说员",
+  "meaning": "n.评论员；实况解说员",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -65,7 +65,7 @@
  },
  {
   "word": "publish",
-  "meaning": "公布；岀版，发行 V.",
+  "meaning": "v.公布；岀版，发行",
   "ex_en": "News of the pop star's sudden death was not published for several days",
   "ex_zh": "那位明星突然死亡的消息有好几天没有公布。",
   "notes": "public n.公众adj.公众的publicity n.关注，宣传publication n.出版物；出版，发行",
@@ -73,7 +73,7 @@
  },
  {
   "word": "disseminate",
-  "meaning": "散布，传播 V.",
+  "meaning": "v.散布，传播",
   "ex_en": "The agency would collect and disseminate information",
   "ex_zh": "通讯社会收集和传播信息。",
   "notes": "",
@@ -81,7 +81,7 @@
  },
  {
   "word": "foresee",
-  "meaning": "预见，预知 V.",
+  "meaning": "v.预见，预知",
   "ex_en": "ey cannot foresee how things will turn out",
   "ex_zh": "他们不可能预知事情的结果。前缀fore表示“前面的”，如：foresee（预见）, forearm（前臂）,forebear（以前生［bear］的人t祖先）, forefather（爸爸之前的爸爸-祖先）。",
   "notes": "",
@@ -89,7 +89,7 @@
  },
  {
   "word": "anticipate",
-  "meaning": "预期，预料 V.",
+  "meaning": "v.预期，预料",
   "ex_en": "Sales are better than they have anticipated",
   "ex_zh": "销售情况比他们预想的好。",
   "notes": "participate v.参与",
@@ -97,7 +97,7 @@
  },
  {
   "word": "expect",
-  "meaning": "预料，预期 V.",
+  "meaning": "v.预料，预期",
   "ex_en": "The managers expect exceptional sales growth in the last quarter",
   "ex_zh": "经理们预期在最后一个季度会出现极好的销售增长。",
   "notes": "expectation n.期待，期望",
@@ -105,7 +105,7 @@
  },
  {
   "word": "await",
-  "meaning": "等候，期待；将降临到……身上 V.",
+  "meaning": "v.等候，期待；将降临到……身上",
   "ex_en": "If you are lucky eno ugh to vacation in the Alps, what delights will await you?",
   "ex_zh": "如果你有幸到阿尔卑斯山度假的话，有什么乐事会等着你呢？",
   "notes": "",
@@ -121,7 +121,7 @@
  },
  {
   "word": "entertain",
-  "meaning": "V.娱乐；招待；心存，怀有",
+  "meaning": "v.娱乐；招待；心存，怀有",
   "ex_en": "This television programme is designed to educate and to entertain as well",
   "ex_zh": "这台电视节目旨在又有教育作用，又能让大家快乐。",
   "notes": "entertainment n.娱乐，消遣；款待",
@@ -129,7 +129,7 @@
  },
  {
   "word": "recreation",
-  "meaning": "/ 休闲，娱乐 Fl.",
+  "meaning": "n.休闲，娱乐",
   "ex_en": "She is in charge of recreation",
   "ex_zh": "她负责娱乐活动。",
   "notes": "a recreation ground公共娱乐场",
@@ -161,7 +161,7 @@
  },
  {
   "word": "consensus",
-  "meaning": "ii.共识，一致的意见",
+  "meaning": "n.共识，一致的意见",
   "ex_en": "Could we reach a consensus on this issue? Let's take a vote",
   "ex_zh": "我们能在该问题上达成一致吗？让我们来投票表决吧。",
   "notes": "",
@@ -201,7 +201,7 @@
  },
  {
   "word": "perform",
-  "meaning": "V.表演，演出",
+  "meaning": "v.表演，演出",
   "ex_en": "A jazz band will perform live at tomorrow's party.—",
   "ex_zh": "个爵士乐队将在明天的聚会上进行现场表演。",
   "notes": "",
@@ -209,7 +209,7 @@
  },
  {
   "word": "imitate",
-  "meaning": "V.模仿，效仿",
+  "meaning": "v.模仿，效仿",
   "ex_en": "He imitates other people to perfection",
   "ex_zh": "他模仿别人模仿得惟妙惟肖。",
   "notes": "",
@@ -217,7 +217,7 @@
  },
  {
   "word": "mimic",
-  "meaning": "V.模仿；戏仿",
+  "meaning": "v.模仿；戏仿",
   "ex_en": "He mimicked the teacher's accent",
   "ex_zh": "他模仿老师的口音。",
   "notes": "",
@@ -337,7 +337,7 @@
  },
  {
   "word": "X-rated",
-  "meaning": "( adj. X级的，青少年不宜的",
+  "meaning": "adj.X级的，青少年不宜的",
   "ex_en": "When Logan was showed in cinema, it was X-rated.«",
   "ex_zh": "金刚狼3》在电影院上映时被定为了X级。",
   "notes": "",
@@ -369,7 +369,7 @@
  },
  {
   "word": "role",
-  "meaning": "仇角色；作用；职能",
+  "meaning": "n.角色；作用；职能",
   "ex_en": "I played the role of the mean aunt in the play",
   "ex_zh": "我在剧中扮演了刻薄的姨母这一角色。",
   "notes": "play a role in在...中起作用",
@@ -409,7 +409,7 @@
  },
  {
   "word": "collect",
-  "meaning": "V.收集；收藏",
+  "meaning": "v.收集；收藏",
   "ex_en": "He used to collect stamps, but now he likes to collect coins",
   "ex_zh": "他以前收集邮票，现在却喜欢收集硬币。",
   "notes": "collection n.收集；收藏品",
@@ -417,7 +417,7 @@
  },
  {
   "word": "select",
-  "meaning": "V.选择，挑选adj.精选的",
+  "meaning": "v.选择，挑选adj.精选的",
   "ex_en": "They were selected from many applicants",
   "ex_zh": "他们是从许多申请人中选出来的。",
   "notes": "selection n.选择",
@@ -457,7 +457,7 @@
  },
  {
   "word": "draw",
-  "meaning": "V.画；拉；拔出",
+  "meaning": "v.画；拉；拔出",
   "ex_en": "Draw a line with a ruler",
   "ex_zh": "用尺子画一条线。",
   "notes": "drawing n.图画，素描画；绘图（技巧）",
@@ -473,7 +473,7 @@
  },
  {
   "word": "depict",
-  "meaning": "V.描述，描写；描绘",
+  "meaning": "v.描述，描写；描绘",
   "ex_en": "In this new biography, she is depicted as a lonely and unhappy woman",
   "ex_zh": "在这本新的传记中,她被描写为孤独且不快乐的女人。字根pict指“画（to paint）\",如：depict（画下来t描绘；描写），pictograph（用画画来写字t象形文字），\npicture（画；照片）。",
   "notes": "",
@@ -481,7 +481,7 @@
  },
  {
   "word": "describe",
-  "meaning": "V.描述，形容",
+  "meaning": "v.描述，形容",
   "ex_en": "Words cannot describe the beauty of the seene. portrait sketch painting depict sculpture describe draw",
   "ex_zh": "",
   "notes": "",
@@ -489,7 +489,7 @@
  },
  {
   "word": "carve",
-  "meaning": "V.雕刻；切下",
+  "meaning": "v.雕刻；切下",
   "ex_en": "The statue was carved out of marble",
   "ex_zh": "这尊雕塑是用大理石雕成的。",
   "notes": "carve up瓜分，划分",
@@ -497,7 +497,7 @@
  },
  {
   "word": "improvise",
-  "meaning": "V.临时做；即兴创作",
+  "meaning": "v.临时做；即兴创作",
   "ex_en": "If an actor forgets his lines on stage, he has to improvise",
   "ex_zh": "如果一个演员在舞台上忘了台词，他就不得不即兴发挥。",
   "notes": "improvisation n.即兴创作 im（否定）+pro（预先）+vise（看见）t预先没有看见t 即兴创作；临时做。字根vis指“看见（to see）”，女口： provision（事先看到t供应；预备），previse（预见）， supervise（从上往下看t监督；管理）。",
@@ -529,7 +529,7 @@
  },
  {
   "word": "hip-hop",
-  "meaning": "n-嘻哈文化",
+  "meaning": "n.嘻哈文化",
   "ex_en": "Hip-hop sin gers like to wear blin g-bli ng in their fancy",
   "ex_zh": "在音乐录影带里，嘻哈歌\n手喜欢穿得珠光宝气，让自己看起来很炫。",
   "notes": "",
@@ -537,7 +537,7 @@
  },
  {
   "word": "pop",
-  "meaning": "流行音乐，流行乐曲",
+  "meaning": "n.流行音乐，流行乐曲",
   "ex_en": "The radio had fed him a stream of pop songs",
   "ex_zh": "他从广播里听到了一连串流行歌曲。\npop表示“流行音乐\"时源自popular（流行的）。pop\n还可表示“发砰砰声；爆裂；突然岀现“，这些词义源自拟声。",
   "notes": "",
@@ -545,7 +545,7 @@
  },
  {
   "word": "lyric",
-  "meaning": "九抒情诗；卜s］歌词日dj.抒情的",
+  "meaning": "n.抒情诗；卜s］歌词日dj.抒情的",
   "ex_en": "I don't understand the lyrics, which are in French, but the song sounds peaceful",
   "ex_zh": "我听不懂法语歌词，但是这首歌听起来让人感觉很宁静。",
   "notes": "",
@@ -577,7 +577,7 @@
  },
  {
   "word": "rhythm",
-  "meaning": "九节奏，韵律",
+  "meaning": "n.节奏，韵律",
   "ex_en": "I without a good rhythm. can't dance to music",
   "ex_zh": "没有好的节奏我就不能跟着音乐跳舞。",
   "notes": "rhythmical adj.有节奏的，有韵律的",
@@ -601,7 +601,7 @@
  },
  {
   "word": "disc",
-  "meaning": "(=disk)m光碟；唱片；［英］(计算机)磁碟，磁盘",
+  "meaning": "(=disk)n.光碟；唱片；［英］(计算机)磁碟，磁盘",
   "ex_en": "There is no disc that interest m e",
   "ex_zh": "这里没有一张碟片让我感兴趣。",
   "notes": "",
@@ -625,7 +625,7 @@
  },
  {
   "word": "tournament",
-  "meaning": "cello n.锦标赛，联赛 n-大提琴",
+  "meaning": "n.锦标赛，联赛",
   "ex_en": "She plays the cello in an orchestra",
   "ex_zh": "她在管弦乐队中演奏大提琴。",
   "notes": "",
@@ -633,7 +633,7 @@
  },
  {
   "word": "Olympic",
-  "meaning": "guitar adj奥林匹克运动会的n. n.吉他",
+  "meaning": "adj.奥林匹克运动会的 n.［the ~s］奥林匹克运动会",
   "ex_en": "She strummed her guitar, singing her own song",
   "ex_zh": "她弹着吉他，唱着自己写的歌。",
   "notes": "",
@@ -641,7 +641,7 @@
  },
  {
   "word": "harmonica",
-  "meaning": "n. n-口琴",
+  "meaning": "n.口琴",
   "ex_en": "He played a tune on his harmonica",
   "ex_zh": "他用口琴吹奏了一支曲子。",
   "notes": "",
@@ -665,7 +665,7 @@
  },
  {
   "word": "flute",
-  "meaning": "n-长笛",
+  "meaning": "n.长笛",
   "ex_en": "The long-draw n-out sound of a flute is comi ng from far to near",
   "ex_zh": "悠长的笛声由远而近。",
   "notes": "",
@@ -696,8 +696,8 @@
   "n": 87
  },
  {
-  "word": "champio",
-  "meaning": "n m冠军，第一名v.拥护，支持",
+  "word": "champion",
+  "meaning": "n.冠军，第一名 v.拥护，支持",
   "ex_en": "As the defending champion, she is expected to reach the final",
   "ex_zh": "作为卫冕冠军，人们预计她会进入决赛。",
   "notes": "championship n.冠军地位；锦标赛字根champ/camp指“场地（field）\",所以camp作名词时指\"营地”，作动词时指“宿营”，summer camp是\"夏令营”。campus指“校园”，可记忆为：camp（营地）+ us（我们）t我们的营地t校园。campaign（战役；运动）原表示“在开阔区域的军事行动”。而champion源自 “在战场上战斗的人；（古罗马）角斗士”。",
@@ -705,7 +705,7 @@
  },
  {
   "word": "spectator",
-  "meaning": "n-观众",
+  "meaning": "n.观众",
   "ex_en": "The match attracted over 40,000 spectators",
   "ex_zh": "这场比赛吸引了4万多名观众。\naudience表示“观众”时主要指戏剧、音乐会等室内活动的观众或听众，强调“听”，而spectator主要指体育比赛（常指室外体育活动）的观看者，强调“看\"。",
   "notes": "",
@@ -713,7 +713,7 @@
  },
  {
   "word": "volunteer",
-  "meaning": "n-志愿者v.自愿做",
+  "meaning": "n.志愿者v.自愿做",
   "ex_en": "Many people volunteer to work on the farms",
   "ex_zh": "许多人自愿到农场劳动。字根volunt指“意志，意愿（will）\",源自拉丁语\nvoluntas,表示“自由意志（free will）\"按自己意愿\no\n做事的人就是“志愿者”。",
   "notes": "",
@@ -760,16 +760,16 @@
   "n": 95
  },
  {
-  "word": "traini",
-  "meaning": "ng m训练，锻炼；培训",
-  "ex_en": "Training is a prerequisite for compete nee",
+  "word": "training",
+  "meaning": "n.训练，锻炼；培训",
+  "ex_en": "Training is a prerequisite for competence.",
   "ex_zh": "接受训练是掌握技能的前提。",
   "notes": "",
   "n": 96
  },
  {
   "word": "exercise",
-  "meaning": "九锻炼，运动；习题，练习v.锻炼",
+  "meaning": "n.锻炼，运动；习题，练习v.锻炼",
   "ex_en": "Swimming is probably the best form of exercise you can get",
   "ex_zh": "游泳或许是你能进行的最佳锻炼方式。",
   "notes": "",
@@ -793,7 +793,7 @@
  },
  {
   "word": "motion",
-  "meaning": "V•做动作，示意",
+  "meaning": "v.做动作，示意",
   "ex_en": "She motioned for us to hide ourselves",
   "ex_zh": "她示意我们躲藏起来。",
   "notes": "",
@@ -809,7 +809,7 @@
  },
  {
   "word": "movement",
-  "meaning": "n-（身体部位的）活动；运动；移动",
+  "meaning": "n.（身体部位的）活动；运动；移动",
   "ex_en": "Her every movement is very graceful",
   "ex_zh": "她的一举\n—动都很优美。",
   "notes": "move v.移动",
@@ -817,7 +817,7 @@
  },
  {
   "word": "yoga",
-  "meaning": "瑜伽",
+  "meaning": "n.瑜伽",
   "ex_en": "Some people practise yoga to aid relaxation",
   "ex_zh": "有些人通过练瑜伽来帮助放松。",
   "notes": "",
@@ -833,7 +833,7 @@
  },
  {
   "word": "stretch",
-  "meaning": "V.伸展；伸长（胳膊、腿）",
+  "meaning": "v.伸展；伸长（胳膊、腿）",
   "ex_en": "He stretched out his hand, reaching for a book",
   "ex_zh": "他伸出手，去拿一本书。",
   "notes": "",
@@ -841,7 +841,7 @@
  },
  {
   "word": "strain",
-  "meaning": "V.拉紧；拉伤，扭伤n.张力，拉力；（精神上的）紧张",
+  "meaning": "v.拉紧；拉伤，扭伤n.张力，拉力；（精神上的）紧张",
   "ex_en": "I strained my back when I lifted the box",
   "ex_zh": "我抬箱子的时候拉伤了背。",
   "notes": "",
@@ -937,7 +937,7 @@
  },
  {
   "word": "kick",
-  "meaning": "v./n.踢",
+  "meaning": "v. n.踢",
   "ex_en": "Don't kick the ball into the road",
   "ex_zh": "不要把球踢到马路上。",
   "notes": "kick the bucket—命呜呼，翘辫子，死",
@@ -945,7 +945,7 @@
  },
  {
   "word": "knock",
-  "meaning": "V.敲，击；撞",
+  "meaning": "v.敲，击；撞",
   "ex_en": "I was so hurried that I knocked into my teacher",
   "ex_zh": "我非常匆忙，撞到了老师身上。",
   "notes": "knock at the door敲门",
@@ -953,7 +953,7 @@
  },
  {
   "word": "flip",
-  "meaning": "V.掷；（使）快速翻动adj.随便的，轻率的",
+  "meaning": "v.掷；（使）快速翻动adj.随便的，轻率的",
   "ex_en": "Let's flip a coin to see who goes first",
   "ex_zh": "咱们来掷硬币，看看谁先去。",
   "notes": "",
@@ -961,7 +961,7 @@
  },
  {
   "word": "pitch",
-  "meaning": "V.投，掷！!•球场；（棒球中的）投球",
+  "meaning": "v.投，掷 n.球场；（棒球中的）投球",
   "ex_en": "She pitched the ball as far as she could",
   "ex_zh": "她尽力把球投得远一些。",
   "notes": "invade the pitch涌逬球场throw a pitch投球",
@@ -969,7 +969,7 @@
  },
  {
   "word": "throw",
-  "meaning": "V.投，掷，抛，扔",
+  "meaning": "v.投，掷，抛，扔",
   "ex_en": "Throw the stone in the air",
   "ex_zh": "把石头抛向空中。",
   "notes": "",
@@ -985,7 +985,7 @@
  },
  {
   "word": "slide",
-  "meaning": "V.滑动；逐渐降低n.滑行；下跌",
+  "meaning": "v.滑动；逐渐降低n.滑行；下跌",
   "ex_en": "House slide",
   "ex_zh": "房子的价值可\n能要开始逐渐降低了。",
   "notes": "",
@@ -1001,7 +1001,7 @@
  },
  {
   "word": "glide",
-  "meaning": "v.滑动，掠过m滑行V•纵身投入；猛跌；（使）投",
+  "meaning": "v.滑动，掠过 n.滑行",
   "ex_en": "The beautiful swan glides gracefully on the He pond",
   "ex_zh": "美丽的天鹅在池中优雅地游动。他跳入水中救小孩。",
   "notes": "",
@@ -1025,7 +1025,7 @@
  },
  {
   "word": "cycling",
-  "meaning": "墙上又反弹开。 m骑自行车运动",
+  "meaning": "n.骑自行车运动",
   "ex_en": "He likes cycling very much and wants to buy a bicycle",
   "ex_zh": "他非常喜欢骑自行车，并且想买一辆。tent He",
   "notes": "cyclist n.骑自行车的人bicycle n.自行车n.帐篷",
@@ -1041,7 +1041,7 @@
  },
  {
   "word": "drift",
-  "meaning": "V•飘移，漂流；流浪，漂泊picnic",
+  "meaning": "v.飘移，漂流；流浪，漂泊picnic",
   "ex_en": "The dead body drifted ashore on the beach. n・",
   "ex_zh": "野餐；野餐食物尸体被冲到了沙滩上。 Let's",
   "notes": "drift from one country to another从一国流浪到旁吃野餐吧。另一国",
@@ -1057,7 +1057,7 @@
  },
  {
   "word": "leap",
-  "meaning": "V.跳，跃n.跳跃",
+  "meaning": "v.跳，跃n.跳跃",
   "ex_en": "The thief leaped over the wall and ran away",
   "ex_zh": "小偷越墙逃跑了。\n、回\"L cycling\n壬glide.\n雅魚词'汇真径砒ski drift\n才",
   "notes": "",
@@ -1065,7 +1065,7 @@
  },
  {
   "word": "plunge",
-  "meaning": "身II.跳水；猛跌 whole-heartedly全心全意地投入",
+  "meaning": "v.纵身投入；猛跌；（使）投身 n.跳水；猛跌",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -1073,7 +1073,7 @@
  },
  {
   "word": "spring",
-  "meaning": "v./n.跳，跃",
+  "meaning": "v. n.跳，跃",
   "ex_en": "The cat crouched ready to spring.",
   "ex_zh": "那只猫俯身准备起跳。",
   "notes": "",
@@ -1088,10 +1088,10 @@
   "n": 136
  },
  {
-  "word": "drewbackthetentflapandstro",
-  "meaning": "blizzard.他拉开帐篷的门帘，大步走进暴风雪中。 /k&",
-  "ex_en": "",
-  "ex_zh": "",
+  "word": "tent",
+  "meaning": "n.帐篷",
+  "ex_en": "He drew back the tent flap and strode out into the blizzard.",
+  "ex_zh": "他拉开帐篷的门帘，大步走进暴风雪中。",
   "notes": "",
   "n": 137
  },
@@ -1145,7 +1145,7 @@
  },
  {
   "word": "cruise",
-  "meaning": "V.乘船游览；以平稳的速度行驶",
+  "meaning": "v.乘船游览；以平稳的速度行驶",
   "ex_en": "The car was cruising along at kilometres an hour",
   "ex_zh": "这辆汽车以每小时60公里的速度平稳行驶。",
   "notes": "uiser n.巡洋舰；舱式游艇；巡逻警车",
@@ -1161,7 +1161,7 @@
  },
  {
   "word": "vacation",
-  "meaning": "V.休假n.休假；假期",
+  "meaning": "v.休假n.休假；假期",
   "ex_en": "I was too busy to spare time for a vacation",
   "ex_zh": "我太忙，抽不出休假的时间。",
   "notes": "vocation n.职业",
@@ -1169,7 +1169,7 @@
  },
  {
   "word": "hike",
-  "meaning": "v./n.徒步旅行，远足",
+  "meaning": "v. n.徒步旅行，远足",
   "ex_en": "It may rain, in which case the hike will be canceled",
   "ex_zh": "或许会下雨，如果是那样，徒步旅行将会被取消。",
   "notes": "hiking n.徒步旅行",
@@ -1177,7 +1177,7 @@
  },
  {
   "word": "jog",
-  "meaning": "V.慢跑",
+  "meaning": "v.慢跑",
   "ex_en": "The old bus jogged steadily down the road",
   "ex_zh": "那辆旧公共汽车顺着马路平缓地行驶。",
   "notes": "jogger n.慢跑锻炼的人jogging n.慢跑",
@@ -1185,7 +1185,7 @@
  },
  {
   "word": "stride",
-  "meaning": "V.大步走，阔步行走",
+  "meaning": "v.大步走，阔步行走",
   "ex_en": "They are striding forward both in English and in mathematics",
   "ex_zh": "他们的英语和数学都在大步取得进步。",
   "notes": "",
@@ -1193,7 +1193,7 @@
  },
  {
   "word": "wander",
-  "meaning": "V.闲逛，漫步；走神，开小差",
+  "meaning": "v.闲逛，漫步；走神，开小差",
   "ex_en": "It is fun to wander the world",
   "ex_zh": "漫游世界是非常有意思的。",
   "notes": "",
@@ -1201,7 +1201,7 @@
  },
  {
   "word": "linger",
-  "meaning": "V.逗留，流连；继续存留",
+  "meaning": "v.逗留，流连；继续存留",
   "ex_en": "We lingered at the beach the whole summer",
   "ex_zh": "我们整个夏天都在海滩上待着。",
   "notes": "",
@@ -1209,7 +1209,7 @@
  },
  {
   "word": "lag",
-  "meaning": "V•落后II.间隔，时间差",
+  "meaning": "v.落后II.间隔，时间差",
   "ex_en": "Let not a single classmate lag behind",
   "ex_zh": "不要让一个同学掉队。",
   "notes": "lag behind sb./sth.落后于某人/某物",
@@ -1217,7 +1217,7 @@
  },
  {
   "word": "climb",
-  "meaning": "V.攀登，爬",
+  "meaning": "v.攀登，爬",
   "ex_en": "It is not easy to climb a steep mountain",
   "ex_zh": "登上陡悄的山可不容易。",
   "notes": "limbn.肢；树枝 lag UE9U",
@@ -1225,7 +1225,7 @@
  },
  {
   "word": "pull",
-  "meaning": "v・拉，拖，扯；划（小船）",
+  "meaning": "v.拉，拖，扯；划（小船）",
   "ex_en": "They pulled the boat toward the lighthouse",
   "ex_zh": "他们把小船划向灯塔。",
   "notes": "",
@@ -1233,7 +1233,7 @@
  },
  {
   "word": "drag",
-  "meaning": "V.拖，拉，拽",
+  "meaning": "v.拖，拉，拽",
   "ex_en": "Use your mouse to drag the pictures into that folder",
   "ex_zh": "用鼠标把图片拖到那个文件夹里。",
   "notes": "",
@@ -1249,7 +1249,7 @@
  },
  {
   "word": "bow",
-  "meaning": "v-/n.鞠躬",
+  "meaning": "v. n.鞠躬",
   "ex_en": "He can't agree with her, but bowed to her greater knowledge",
   "ex_zh": "虽然他不同意她的意见，但\n不得不承认她的经验和知识更丰富。",
   "notes": "take a bow谢幕",

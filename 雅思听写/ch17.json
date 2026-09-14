@@ -17,7 +17,7 @@
  },
  {
   "word": "rule",
-  "meaning": "n・规则v.统治",
+  "meaning": "n.规则v.统治",
   "ex_en": "It's against the rules to pick up the ball",
   "ex_zh": "捡球是犯规的。",
   "notes": "",
@@ -25,7 +25,7 @@
  },
  {
   "word": "regulation",
-  "meaning": "规则，规定；管理",
+  "meaning": "n.规则，规定；管理",
   "ex_en": "The rules and regulations should be made clear to all employees",
   "ex_zh": "规章制度应该让全体雇员都明白。",
   "notes": "regulate v.管理；调整adj.有规律的； 规则的",
@@ -33,7 +33,7 @@
  },
  {
   "word": "item",
-  "meaning": "n.—项项目，条目",
+  "meaning": "n.一项项目，条目",
   "ex_en": "This is the next item on the agenda",
   "ex_zh": "这是议程上的下一项。",
   "notes": "",
@@ -41,7 +41,7 @@
  },
  {
   "word": "treaty",
-  "meaning": "",
+  "meaning": "n.条约，协定",
   "ex_en": "In the treaty, both sides pledge to respect human rights.",
   "ex_zh": "双方在条约中都承诺尊重人权。",
   "notes": "",
@@ -73,7 +73,7 @@
  },
  {
   "word": "norm",
-  "meaning": "仇标准；卜S］行为准则，规范",
+  "meaning": "n.标准；卜S］行为准则，规范",
   "ex_en": "You must adapt to the norms of the society you live in",
   "ex_zh": "你必须适应你所处的社会中的行为准则。",
   "notes": "normal adj.正常的，通常的abnormal adj.不正常的；变态的 cial norms社会准则",
@@ -105,7 +105,7 @@
  },
  {
   "word": "permit",
-  "meaning": "V.允许，准许",
+  "meaning": "v.允许，准许",
   "ex_en": "Those doubt",
   "ex_zh": "这些话简直\n不容置疑。",
   "notes": "permission n.允许；许可证 adj.容许的",
@@ -113,7 +113,7 @@
  },
  {
   "word": "allow",
-  "meaning": "V.允许，准许",
+  "meaning": "v.允许，准许",
   "ex_en": "They did not allow the slaves any freedom",
   "ex_zh": "他们不给奴隶任何自由。",
   "notes": "low ances津贴；限额 allow for考虑到sth.允许某人做某事",
@@ -137,7 +137,7 @@
  },
  {
   "word": "enforce",
-  "meaning": "V.强制执行，强行实施；迫使",
+  "meaning": "v.强制执行，强行实施；迫使",
   "ex_en": "The police are there to enforce the law",
   "ex_zh": "警察在那里执法。",
   "notes": "enforcement n.执行，实施 enforce sth. on sb.强迫某人做某事，把某事强加于某人 en（使）+force（力量）t强制执行。",
@@ -281,7 +281,7 @@
  },
  {
   "word": "accuse",
-  "meaning": "V.控告，指责",
+  "meaning": "v.控告，指责",
   "ex_en": "The police accused him of murder",
   "ex_zh": "警方指控他犯了谋杀罪。",
   "notes": "accuse sb. of sth.指控某人犯某罪",
@@ -305,7 +305,7 @@
  },
  {
   "word": "condemn",
-  "meaning": "V.谴责，指责",
+  "meaning": "v.谴责，指责",
   "ex_en": "Most people would condemn violenee of any sort as evil",
   "ex_zh": "大多数人会把任何形式的暴力行为都视为恶行加以谴责。",
   "notes": "",
@@ -313,7 +313,7 @@
  },
  {
   "word": "complain",
-  "meaning": "认抱怨；投诉",
+  "meaning": "v.抱怨；投诉",
   "ex_en": "She complained that the room is too cold",
   "ex_zh": "她抱怨屋子太冷。",
   "notes": "complaint n.抱怨；投诉 complain about抱怨；投诉complain to向... 投诉",
@@ -321,7 +321,7 @@
  },
  {
   "word": "boycott",
-  "meaning": "n./v.抵制，拒绝购买",
+  "meaning": "n. v.抵制，拒绝购买",
   "ex_en": "They boycott all products tested on animals",
   "ex_zh": "他们抵制所有进行了动物实验的产品。从前，在爱尔兰有一个地产管理人，姓Boycott有一\no\n年农作物歉收，农民伯伯们生活艰难。但Boycott先生没有一点同情心，拒绝佃户们的减租请求，激起了大家的愤怒。后来，大家采取了一次联合行动，与Boycott\n先生断绝一切往来：工人们不给他干活，商店不卖给他东西，邮递员也不给他递送邮件。于是Boycott臭名远扬，boycott这个词就此诞生。",
   "notes": "",
@@ -353,7 +353,7 @@
  },
  {
   "word": "appeal",
-  "meaning": "v./n.呼吁；申诉",
+  "meaning": "v. n.呼吁；申诉",
   "ex_en": "The response to our appeal was encouraging",
   "ex_zh": "对我们呼吁的反应是令人鼓舞的。",
   "notes": "lodge an appeal提出申诉",
@@ -369,7 +369,7 @@
  },
  {
   "word": "persuade",
-  "meaning": "V.说服；使相信",
+  "meaning": "v.说服；使相信",
   "ex_en": "The woman persuaded the robber to turn himself in",
   "ex_zh": "这个女人说服了这个强盗去自首。",
   "notes": "persuade sb. to do sth.说服某人做某事",
@@ -377,7 +377,7 @@
  },
  {
   "word": "controversy",
-  "meaning": "!!•争议；辩论",
+  "meaning": "n.争议；辩论",
   "ex_en": "The new traffic regulations caused much controversy among drivers",
   "ex_zh": "新的交通规则在司机中引起了很大争议。",
   "notes": "controversial adj.有争议的",
@@ -385,7 +385,7 @@
  },
  {
   "word": "whisper",
-  "meaning": "V.低声说；私下谈论",
+  "meaning": "v.低声说；私下谈论",
   "ex_en": "The children were whispering in the corner",
   "ex_zh": "孩子们正在角落里低声耳语。",
   "notes": "",
@@ -425,7 +425,7 @@
  },
  {
   "word": "investigate",
-  "meaning": "V.调查",
+  "meaning": "v.调查",
   "ex_en": "lb investigate a problem is, indeed, to solve it",
   "ex_zh": "调查问题其实就是解决问题。",
   "notes": "investigation n.调查；科学研究 vestigate into对...进行调查",
@@ -513,7 +513,7 @@
  },
  {
   "word": "arrest",
-  "meaning": "V.逮捕；吸引（注意）口•逮捕",
+  "meaning": "v.逮捕；吸引（注意） n.逮捕",
   "ex_en": "You shouldn't arrest him without an arrest warrant",
   "ex_zh": "你不能在没有逮捕证的情况下逮捕他。 A bunch of prisoners broke loose from jail.\n—伙犯人从监狱脱逃。\n监狱；监禁 Many people believe that prison isn't a cure for\ncrime.许多人都相信监禁解决不了犯罪问题。",
   "notes": "arrest sb/s attention引起某人的注意 n监狱v.监禁 prisoner n.囚犯imprison v.监禁，关押",
@@ -569,7 +569,7 @@
  },
  {
   "word": "restrict",
-  "meaning": "V.限制，限定；约束",
+  "meaning": "v.限制，限定；约束",
   "ex_en": "Don't restrict their proper activities",
   "ex_zh": "不要约束他们的正当活动。",
   "notes": "restriction n.限制；约束 be restricted to限于，局限于",
@@ -577,7 +577,7 @@
  },
  {
   "word": "restrain",
-  "meaning": "认抑制；制止",
+  "meaning": "v.抑制；制止",
   "ex_en": "I can't restrain my an ger whe n I hear of some one animals",
   "ex_zh": "当我听到有人残酷地对待动物\n时，我抑制不住自己的怒火。 ］He who commits a fault thinks every one speaks\nof it.做贼心虚。",
   "notes": "restrain克制自己 ，如I: 字根strain和strict指“拉紧（to draw tight）” strain（拉紧；拉伤；紧张）；constrain（强迫，约束）； strict（拉紧，紧张-严格的；严厉的）；constrict（- 起拉紧-收缩）；restrict（往回拉紧t限制，限定）； district（被拉幵的部分t区域，地区；行政区）。 V.犯（罪），做（坏事） commitment n.承诺，保证；投入 commit an error做错事commit a crime犯罪 commit suicide自杀",
@@ -617,7 +617,7 @@
  },
  {
   "word": "rob",
-  "meaning": "V.抢劫；夺走",
+  "meaning": "v.抢劫；夺走",
   "ex_en": "They were scheming to rob the bank",
   "ex_zh": "他们在密谋抢劫银行。",
   "notes": "robber n.强盗，盗贼robbery n.抢劫，劫掠 rob sb. of sth.抢劫某人的某物",
@@ -649,7 +649,7 @@
  },
  {
   "word": "murder",
-  "meaning": "n./v.谋杀",
+  "meaning": "n. v.谋杀",
   "ex_en": "There have been several murder cases this year",
   "ex_zh": "今年发生了好几起谋杀案。",
   "notes": "murderer n.杀人犯，凶手",
@@ -657,7 +657,7 @@
  },
  {
   "word": "suicide",
-  "meaning": "n-自杀",
+  "meaning": "n.自杀",
   "ex_en": "He attempted to commit suicide after his firm had gone bankrupt",
   "ex_zh": "他在公司破产后试图自杀。",
   "notes": "",
@@ -713,7 +713,7 @@
  },
  {
   "word": "pretend",
-  "meaning": "V.假装；假扮",
+  "meaning": "v.假装；假扮",
   "ex_en": "The children pretended to be different animals and danced to the music",
   "ex_zh": "孩子们扮成不同的动物并随着音乐起舞。",
   "notes": "pretend to do sth.假装做某事 pretend sickness装病",
@@ -737,7 +737,7 @@
  },
  {
   "word": "confess",
-  "meaning": "V.供认；忏悔",
+  "meaning": "v.供认；忏悔",
   "ex_en": "The suspect confessed to the armed robbery",
   "ex_zh": "嫌疑犯供认自己进行了持械抢劫。",
   "notes": "confession n.招供，供词；承认",
@@ -745,7 +745,7 @@
  },
  {
   "word": "conform",
-  "meaning": "V.遵守；顺从；相符合",
+  "meaning": "v.遵守；顺从；相符合",
   "ex_en": "A coat must conform to the figure of the wearer",
   "ex_zh": "外套必须与穿衣者的身材相符合。",
   "notes": "",
@@ -761,7 +761,7 @@
  },
  {
   "word": "obey",
-  "meaning": "V.服从，顺从",
+  "meaning": "v.服从，顺从",
   "ex_en": "The students obeyed the new teacher without hesitation",
   "ex_zh": "学生们毫不犹豫就服从了这位新老师。",
   "notes": "obedient adj.服从的，顺从的",
@@ -769,7 +769,7 @@
  },
  {
   "word": "succumb",
-  "meaning": "V.屈服，屈从",
+  "meaning": "v.屈服，屈从",
   "ex_en": "The president said his country would never succumb to pressure from other countries",
   "ex_zh": "总统说他的国家永远不会屈从于来自其他国家的压力。",
   "notes": "succumb to屈服于",
@@ -785,7 +785,7 @@
  },
  {
   "word": "mortgage",
-  "meaning": "（ V.抵押（房屋、土地）借款1•房屋抵押贷款",
+  "meaning": "v.抵押（房屋、土地）借款 n.房屋抵押贷款",
   "ex_en": "It is easy to get a mortgage on a house",
   "ex_zh": "办理房屋抵押贷款很容易。",
   "notes": "",
@@ -825,7 +825,7 @@
  },
  {
   "word": "clue",
-  "meaning": "n-线索；提示",
+  "meaning": "n.线索；提示",
   "ex_en": "The police found a clue which helped them robber",
   "ex_zh": "警察发现了一条线索，该线索帮助他\n们抓住了强盗。源自clew（线团）。传说中，古希腊英雄忒修斯（Theseus）\n自告奋勇去克里特岛除妖，牛头怪位于一座迷宫深处。为避免迷路，忒修斯在美女的帮助下带了一个线团闯入迷宫，标记走过的道路。最后，他杀死了牛头怪，并沿着线原路返回。因此，clew（线团）有了“线索”的含义。",
   "notes": "",
@@ -881,7 +881,7 @@
  },
  {
   "word": "consequence",
-  "meaning": "n-后果",
+  "meaning": "n.后果",
   "ex_en": "Your behaviour is of no great consequence",
   "ex_zh": "你的行为没有造成严重的后果。",
   "notes": "",
@@ -889,7 +889,7 @@
  },
  {
   "word": "demand",
-  "meaning": "V.要求；需要n.要求；需求；需求量",
+  "meaning": "v.要求；需要n.要求；需求；需求量",
   "ex_en": "This work demands your patience",
   "ex_zh": "这项工作需要你很耐心。",
   "notes": "demanding adj.要求极严的，苛求的 demand for对...的需求",
@@ -897,7 +897,7 @@
  },
  {
   "word": "request",
-  "meaning": "n./v.要求，请求",
+  "meaning": "n. v.要求，请求",
   "ex_en": "We shall give your request our careful consideration",
   "ex_zh": "我们将仔细考虑你的请求。\nV.需要；命令，规定 You are required by law to wear a seat belt.\n根据法律规定，你应系上安全带。",
   "notes": "requirement n.需求，要求",
@@ -913,7 +913,7 @@
  },
  {
   "word": "petition",
-  "meaning": "V.请求n.请愿书；上诉",
+  "meaning": "v.请求n.请愿书；上诉",
   "ex_en": "The villagers all signed a petition for a hospital to be built",
   "ex_zh": "村民们都在请愿书上签名，要求建一所医院。字根pet指“寻求（to seek）\",如：appetite（寻求的情绪t食欲；强烈欲望），compete/competition（―\n竞争）, repetition（再次寻求t重复）, impetus（内部寻求t动量；促进），petitioner\n（寻求的人-请愿人）。",
   "notes": "",

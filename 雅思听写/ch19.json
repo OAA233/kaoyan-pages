@@ -57,7 +57,7 @@
  },
  {
   "word": "generation",
-  "meaning": "n.—代（约20至30年）；一代人",
+  "meaning": "n.一代（约20至30年）；一代人",
   "ex_en": "A mother and her daughters represent two generations",
   "ex_zh": "母亲和女儿们代表了两代人。字根gen意为\"生（to beget）\",女口：genius（生来如此t天才），gene（生物传给后代的东西，遗传的基本单位t基因）, regenerate（再生）。",
   "notes": "",
@@ -104,20 +104,12 @@
   "n": 13
  },
  {
-  "word": "sex husband",
-  "meaning": "'* 芒二汨‘注毬達墾潼技和p i严迸:至冬蜒瑩",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 14
- },
- {
   "word": "gay",
   "meaning": "n.同性恋者（尤指男性）adj.同性恋的；快乐的；艳丽的",
   "ex_en": "The children were all gay at the thought of the coming holidays",
   "ex_zh": "孩子们一想到即将来临的假日，都很冋\no\ngay源自古法语g引，原指“欢快的；艳丽的”。现多特指“男同性恋者”。女同性恋者一般用lesbian表示，或用其简写les。",
   "notes": "",
-  "n": 15
+  "n": 14
  },
  {
   "word": "grandfather",
@@ -125,7 +117,7 @@
   "ex_en": "The kid was named after his grandfather",
   "ex_zh": "这孩子是以他祖父的名字命名的。",
   "notes": "grandmother n.（外）祖母 grandparent n.（外）祖父；（外）祖母 grandchild（复数：grandchildren）n.（夕卜）孙子； （外）孙女 grandson n.（夕卜）孙子 granddaughter n.（夕卜）孙女",
-  "n": 16
+  "n": 15
  },
  {
   "word": "father-in-law",
@@ -133,7 +125,7 @@
   "ex_en": "He has paid a formal visit to his father-in-law.",
   "ex_zh": "他已经正式拜见了岳父。",
   "notes": "mother-in-law n.岳母；婆婆；sister-in-law n.大（或小）姨子（或姑子）；嫂子；弟媳；brother-in-law n.姐夫；妹夫；大伯子；小叔子",
-  "n": 17
+  "n": 16
  },
  {
   "word": "sibling",
@@ -141,7 +133,7 @@
   "ex_en": "Some young smokers are influe need by their siblings7 smoking habits",
   "ex_zh": "有些低龄吸烟者是受到了其兄弟姐妹的吸烟习惯影响。",
   "notes": "",
-  "n": 18
+  "n": 17
  },
  {
   "word": "cousin",
@@ -149,7 +141,7 @@
   "ex_en": "For our first armiversary, he's taking me to his cousin's cabin",
   "ex_zh": "为了我们的一周年庆祝，他要带我去他表哥的小木屋。",
   "notes": "",
-  "n": 19
+  "n": 18
  },
  {
   "word": "nephew",
@@ -157,7 +149,7 @@
   "ex_en": "lzm going to have a nephew soon",
   "ex_zh": "我就快有个侄子了。",
   "notes": "",
-  "n": 20
+  "n": 19
  },
  {
   "word": "niece",
@@ -165,7 +157,7 @@
   "ex_en": "My niece four",
   "ex_zh": "我侄女4岁时画了张我们家的全家福。",
   "notes": "",
-  "n": 21
+  "n": 20
  },
  {
   "word": "twin",
@@ -173,7 +165,7 @@
   "ex_en": "You should know purpose",
   "ex_zh": "你要知道，这个计划有双重目的。\n（two）\"的意思，女口：twice（两倍），twist\ntwi是“二\n（两个编在一起t缠绕；使扭曲），twig（大树枝一分为二t细枝）。",
   "notes": "",
-  "n": 22
+  "n": 21
  },
  {
   "word": "embryo",
@@ -181,7 +173,7 @@
   "ex_en": "Our plans are still in embryo",
   "ex_zh": "我们的计划仍不成熟。",
   "notes": "",
-  "n": 23
+  "n": 22
  },
  {
   "word": "infant",
@@ -189,7 +181,7 @@
   "ex_en": "The infant mortality rate is a highly sensitive barometer of socio-economic conditions.",
   "ex_zh": "婴儿死亡率能够充分反映社会经济状况。",
   "notes": "",
-  "n": 24
+  "n": 23
  },
  {
   "word": "orphan",
@@ -197,7 +189,7 @@
   "ex_en": "The three children were orphaned when their parents died in a plane crash",
   "ex_zh": "这三个孩子的父母在一次飞机失事中丧生，于是他们成了孤儿。",
   "notes": "",
-  "n": 25
+  "n": 24
  },
  {
   "word": "juvenile",
@@ -205,7 +197,7 @@
   "ex_en": "The problem of juvenile delinquency calls for the attention of the whole society",
   "ex_zh": "少年犯罪这个问题需要引起全社会注意。",
   "notes": "juvenile delinquency少年犯罪",
-  "n": 26
+  "n": 25
  },
  {
   "word": "youngster",
@@ -213,7 +205,7 @@
   "ex_en": "These youngsters yearn for an adventure in the wild",
   "ex_zh": "这些年轻人渴望去野外冒险。",
   "notes": "",
-  "n": 27
+  "n": 26
  },
  {
   "word": "youth",
@@ -221,23 +213,23 @@
   "ex_en": "We should n't blame youth crime simply on unemployment",
   "ex_zh": "我们不应把青年犯罪仅仅归咎于失业。",
   "notes": "youthful adj.年轻的；青年的",
-  "n": 28
+  "n": 27
  },
  {
   "word": "gang",
-  "meaning": "n.—帮，一伙（常聚在一起闹事、打斗的年轻人）",
+  "meaning": "n.一帮，一伙（常聚在一起闹事、打斗的年轻人）",
   "ex_en": "Have you seen any of the gang lately?",
   "ex_zh": "你最近见过这帮人中的哪一位吗？\n“黑帮”就是gang,如电影《纽约黑帮》（Gangs\nof\nNewYork）。“黑帮成员”“歹徒\"可以用gangster表示。",
   "notes": "",
-  "n": 29
+  "n": 28
  },
  {
   "word": "teenager",
-  "meaning": "n（13至19岁之间的）青少年",
+  "meaning": "n.（13至19岁之间的）青少年",
   "ex_en": "The survey shows that four out of five teenagers to in this area have experimented with illegal drugs",
   "ex_zh": "调查友过去曾是不共戴天的死敌吗？显示，该地区的青少年中有五分之四尝试过毒品。联想：inti指",
   "notes": "adj.面向青少年的；由青少年完成的在英文中，数字13至19的词尾都是teen,青少年指的便是13至19岁年龄段的人。",
-  "n": 30
+  "n": 29
  },
  {
   "word": "adolescence",
@@ -245,7 +237,7 @@
   "ex_en": "Dear His adolescence was not a happy time for him. with",
   "ex_zh": "他的青春期对他来说并不是一段快乐的时光。行中帮忙。",
   "notes": "reach one's adolescence进入青春期 m亲爱的；宠儿",
-  "n": 31
+  "n": 30
  },
  {
   "word": "kin",
@@ -253,7 +245,7 @@
   "ex_en": "All his kin were at the wedding.",
   "ex_zh": "他的所有亲戚都参加了婚礼。",
   "notes": "",
-  "n": 32
+  "n": 31
  },
  {
   "word": "folk",
@@ -261,7 +253,7 @@
   "ex_en": "You're on the list of folks I'm indebted to.",
   "ex_zh": "你是我要感激的人之一。",
   "notes": "",
-  "n": 33
+  "n": 32
  },
  {
   "word": "relative",
@@ -269,15 +261,15 @@
   "ex_en": "We do not abandon our relatives when times get tough.",
   "ex_zh": "世道艰难时，我们不会抛弃自己的亲人。",
   "notes": "relate v.联系；related adj.有联系的；relation n.关系；亲属；relationship n.关系，联系；relevant adj.相关的；irrelevant adj.不相关的；a close relative近亲",
-  "n": 34
+  "n": 33
  },
  {
   "word": "beloved",
-  "meaning": "relative n.爱 n.亲戚adj.相对的；有关的",
+  "meaning": "n.爱人 adj.深受喜爱的",
   "ex_en": "This We do not abandon our relatives when times parts get tough",
   "ex_zh": "世道艰难时，我们不会抛弃自己的亲人。的游客喜爱。",
   "notes": "relate v.联系related adj.有联系的 relation n.关系；亲属relationship n.关系，联系",
-  "n": 35
+  "n": 34
  },
  {
   "word": "dear",
@@ -285,7 +277,7 @@
   "ex_en": "Dear John, thanks for asking me to help you with the class trip.",
   "ex_zh": "亲爱的约翰，谢谢你让我在班级旅行中帮忙。",
   "notes": "",
-  "n": 36
+  "n": 35
  },
  {
   "word": "intimate",
@@ -293,7 +285,7 @@
   "ex_en": "Do you believe these two intimate friends used to be mutual sworn enemies?",
   "ex_zh": "你能相信这两位亲密朋友过去曾是不共戴天的死敌吗？",
   "notes": "in表示“在内部”，mate是“伙伴”，在心里最重要的伙伴就是“至交”。含有mate的词还有classmate（同学）、roommate（室友）、soulmate（知心朋友）等",
-  "n": 37
+  "n": 36
  },
  {
   "word": "darling",
@@ -301,7 +293,7 @@
   "ex_en": "Oh darling, I couldn't be more pleased for you.",
   "ex_zh": "哦，亲爱的，我太为你高兴了。",
   "notes": "",
-  "n": 38
+  "n": 37
  },
  {
   "word": "lover",
@@ -309,31 +301,31 @@
   "ex_en": "He and his wife are both great lovers of drama.",
   "ex_zh": "他和妻子都非常喜欢戏剧。",
   "notes": "dream lover梦中情人",
-  "n": 39
+  "n": 38
  },
  {
   "word": "madam",
-  "meaning": "仏夫人，女士；［英］自以为是的小姑娘",
+  "meaning": "n.夫人，女士；［英］自以为是的小姑娘",
   "ex_en": "That poor madam has lost all contact reality",
   "ex_zh": "那位可怜的大小姐完全脱离了现实生活。",
+  "notes": "",
+  "n": 39
+ },
+ {
+  "word": "hostess",
+  "meaning": "n.女主人",
+  "ex_en": "It's polite to bring flowers, chocolates or a bottle of wine to the hostess",
+  "ex_zh": "给女主人带束鲜花、一些巧克力或一瓶酒是礼貌的做法。\n（客机上的）女乘务员",
   "notes": "",
   "n": 40
  },
  {
-  "word": "hostess",
-  "meaning": "n-女主人",
-  "ex_en": "It's polite to bring flowers, chocolates or a bottle of wine to the hostess",
-  "ex_zh": "给女主人带束鲜花、一些巧克力或一瓶酒是礼貌的做法。\n（客机上的）女乘务员",
-  "notes": "",
-  "n": 41
- },
- {
   "word": "landlady",
-  "meaning": "n・女房东；女地主",
+  "meaning": "n.女房东；女地主",
   "ex_en": "The landlady had prepared some coffee for us",
   "ex_zh": "女房东为我们煮了一些咖啡。",
   "notes": "",
-  "n": 42
+  "n": 41
  },
  {
   "word": "mistress",
@@ -341,15 +333,15 @@
   "ex_en": "r wife is duty. Our mistress is honour",
   "ex_zh": "我们以责任为妻，以荣誉为妾。后缀ess常为表示女性的名词的后缀，如actress（女演员）、waitress（女服务员）、hostess（女主人）等。",
   "notes": "",
-  "n": 43
+  "n": 42
  },
  {
   "word": "housewife",
-  "meaning": "n-家庭主妇",
+  "meaning": "n.家庭主妇",
   "ex_en": "The cleverest housewife can't cook a meal without rice",
   "ex_zh": "巧妇难为无米之炊。",
   "notes": "",
-  "n": 44
+  "n": 43
  },
  {
   "word": "widow",
@@ -357,7 +349,7 @@
   "ex_en": "He left a widow and children totally unprovided for",
   "ex_zh": "他留下孤儿寡母，生活全无着落。",
   "notes": "window n.窗户",
-  "n": 45
+  "n": 44
  },
  {
   "word": "maid",
@@ -365,7 +357,7 @@
   "ex_en": "Those people looked at me like I was just a maid",
   "ex_zh": "那些人看着我，仿佛在他们眼里我只是一个女佣。",
   "notes": "",
-  "n": 46
+  "n": 45
  },
  {
   "word": "maiden",
@@ -373,7 +365,7 @@
   "ex_en": "She was a tender, watchful maiden",
   "ex_zh": "她是一个温柔而警觉的少女。",
   "notes": "",
-  "n": 47
+  "n": 46
  },
  {
   "word": "household",
@@ -381,7 +373,7 @@
   "ex_en": "The applianee of electricity to easier",
   "ex_zh": "电力被应用于家务，\n这使做家务容易多了。",
   "notes": "a low-income household—户低收入家庭",
-  "n": 48
+  "n": 47
  },
  {
   "word": "chore",
@@ -389,15 +381,15 @@
   "ex_en": "It's such a chore to do the shopping every day!",
   "ex_zh": "每天上街买东西真烦人！",
   "notes": "do the domestic chores干家务杂活",
-  "n": 49
+  "n": 48
  },
  {
   "word": "host",
-  "meaning": "仏主人，东道主",
+  "meaning": "n.主人，东道主",
   "ex_en": "Do not bring alcoholic beverages in case your host or hostess doesn't drink alcohol",
   "ex_zh": "不要带酒类饮料，以防主人或女主人不喝酒。",
   "notes": "",
-  "n": 50
+  "n": 49
  },
  {
   "word": "landlord",
@@ -405,7 +397,7 @@
   "ex_en": "He is the landlord of this house",
   "ex_zh": "他是这座房子的房东。",
   "notes": "an absentee landlord在外业主，在外房东",
-  "n": 51
+  "n": 50
  },
  {
   "word": "tenant",
@@ -413,7 +405,7 @@
   "ex_en": "He th reate ned to take the tenant to court or to have the tenant evicted",
   "ex_zh": "他威胁将租户送上法庭，或者把租户赶出去。",
   "notes": "",
-  "n": 52
+  "n": 51
  },
  {
   "word": "guest",
@@ -421,7 +413,7 @@
   "ex_en": "The guest who arrives half an hour earlier is the greatest nuisance",
   "ex_zh": "提前半小时到达的客人是最烦人的。",
   "notes": "",
-  "n": 53
+  "n": 52
  },
  {
   "word": "customer",
@@ -429,15 +421,7 @@
   "ex_en": "If that doesn't work, ask them if they really think “Customer is King”.",
   "ex_zh": "如果这不奏效，问问他们是否真的认为“顾客为大”。",
   "notes": "an awkward customer难对付的顾客；call on a customer拜访客户",
-  "n": 54
- },
- {
-  "word": "stomo",
-  "meaning": "\"kA n.顾客，主顾，客户",
-  "ex_en": "If that doesn't work, ask them if they really tenant guest customer Chapter",
-  "ex_zh": "社会角色",
-  "notes": "",
-  "n": 55
+  "n": 53
  },
  {
   "word": "client",
@@ -445,31 +429,31 @@
   "ex_en": "He proves to be a successful lawyer with lots clients",
   "ex_zh": "结果，他是一个拥有很多客户的成功律师。\nof",
   "notes": "",
-  "n": 56
+  "n": 54
  },
  {
   "word": "encounter",
-  "meaning": "v./n.遭遇；偶遇，邂逅",
+  "meaning": "v. n.遭遇；偶遇，邂逅",
   "ex_en": "The more dan gers we encounter, the harder forward",
   "ex_zh": "越是遇到危险，越要努力向前。",
   "notes": "a—次偶遇",
-  "n": 57
+  "n": 55
  },
  {
   "word": "chase",
-  "meaning": "v./m追逐；追求",
+  "meaning": "v. n.追逐；追求",
   "ex_en": "Police chased the speeding car",
   "ex_zh": "警察追赶那辆超速行驶的轿车。",
   "notes": "chase after追赶，追逐",
-  "n": 58
+  "n": 56
  },
  {
   "word": "miss",
-  "meaning": "V.想念；未注意到",
+  "meaning": "v.想念；未注意到",
   "ex_en": "The woman missed her baby dreadfully",
   "ex_zh": "这个女人非常想念她的宝宝。",
   "notes": "",
-  "n": 59
+  "n": 57
  },
  {
   "word": "appointment",
@@ -477,7 +461,7 @@
   "ex_en": "I made an appointment to see the doctor",
   "ex_zh": "我约好了时间去看医生。",
   "notes": "appoints安排，确定；指派，委派 make an appointment预约",
-  "n": 60
+  "n": 58
  },
  {
   "word": "accompany",
@@ -485,7 +469,7 @@
   "ex_en": "She accompanied me to the doctor's.",
   "ex_zh": "她陪我去看了医生。",
   "notes": "companion n.同伴；同行者；accompany sb. on the trip陪某人旅行",
-  "n": 61
+  "n": 59
  },
  {
   "word": "dependent",
@@ -493,7 +477,7 @@
   "ex_en": "She was unemployed for several years and almost totally dependent on welfare to survive",
   "ex_zh": "她失业好几年了，几乎完全依赖社会福利金生存。 They proposed that a new school should be set\nup in the suburbs.他们建议在郊区成立一所新学校。",
   "notes": "depend v.依靠，依赖independent adj.独立的；自主的interdependent adj.相互依赖的 be dependent on(=depend on)取决于；依靠 V.提议；向……求婚 proposal n.提议；求婚 propose a toast敬酒，举杯propose marriage求婚",
-  "n": 62
+  "n": 60
  },
  {
   "word": "engagement",
@@ -501,15 +485,15 @@
   "ex_en": "My younger brother has just told me about his engagement to Anne",
   "ex_zh": "我弟弟刚告诉我，他和安妮订婚了。",
   "notes": "engage v.订婚；聘用；（使）参与",
-  "n": 63
+  "n": 61
  },
  {
   "word": "marry",
-  "meaning": "V.娶，嫁，结婚",
+  "meaning": "v.娶，嫁，结婚",
   "ex_en": "It is easier to marry than to divorce",
   "ex_zh": "结婚比离婚要容易。",
   "notes": "marriage n.结婚；婚姻married adj.结婚的，已婚的 marry sb.和某人结婚marry into通过婚姻而成为...的一员",
-  "n": 64
+  "n": 62
  },
  {
   "word": "wedding",
@@ -517,7 +501,7 @@
   "ex_en": "They went out to a fancy restaura nt to celebrate their wedding anniversary",
   "ex_zh": "他们去了一家豪华的餐厅庆祝结婚纪念日。",
   "notes": "a wedding anniversary结婚纪念日 a golden wedding金婚纪念",
-  "n": 65
+  "n": 63
  },
  {
   "word": "honeymoon",
@@ -525,15 +509,15 @@
   "ex_en": "While on honeymoon in Bali, she learned to surf",
   "ex_zh": "她在巴厘岛度蜜月时学习了冲浪。",
   "notes": "a honeymoon suite蜜月套房",
-  "n": 66
+  "n": 64
  },
  {
   "word": "kiss",
-  "meaning": "V.吻，接吻n.吻",
+  "meaning": "v.吻，接吻n.吻",
   "ex_en": "The singer blew a kiss to the audience",
   "ex_zh": "这位歌手向观众们送去一个飞吻。",
   "notes": "kiss goodbye to sth.与某事物吻别，放弃某事物",
-  "n": 67
+  "n": 65
  },
  {
   "word": "divorce",
@@ -541,7 +525,7 @@
   "ex_en": "Never be divorced from real life",
   "ex_zh": "千万不要脱离现实生活。",
   "notes": "be divorced from与...离婚；与...脱离",
-  "n": 68
+  "n": 66
  },
  {
   "word": "separate",
@@ -549,7 +533,7 @@
   "ex_en": "The beds",
   "ex_zh": "孩子们分别\n睡在各自的床上。",
   "notes": "separately adv.分别地，单独地 separation n.分离，分开；分居 separate into分成be separated by被...隔开 be separated from与...分离,和...分散",
-  "n": 69
+  "n": 67
  },
  {
   "word": "single",
@@ -557,7 +541,7 @@
   "ex_en": "Not a single detail can escape his notice",
   "ex_zh": "他不会漏看任何细节。",
   "notes": "oy being single享受单身",
-  "n": 70
+  "n": 68
  },
  {
   "word": "sole",
@@ -565,7 +549,7 @@
   "ex_en": "My sole aim was to discover what had happened during that period",
   "ex_zh": "我唯一的目的就是查明在那个时期发生了什么。",
   "notes": "solely adv.单独地；仅仅",
-  "n": 71
+  "n": 69
  },
  {
   "word": "respective",
@@ -573,7 +557,7 @@
   "ex_en": "We went back to school and visited our respective teachers",
   "ex_zh": "我们回到学校并分别拜访了各自的老师。 They each have their own dream.他们每个人都拥有自己的梦想。",
   "notes": "respectively adv.各自地，分别地 /i：tJ7 pnm.各个，各自det.各，每 each time每次，每当each week每周",
-  "n": 72
+  "n": 70
  },
  {
   "word": "each",
@@ -581,23 +565,23 @@
   "ex_en": "They each have their own dream.",
   "ex_zh": "他们每个人都拥有自己的梦想。",
   "notes": "each time每次，每当；each week每周",
-  "n": 73
+  "n": 71
  },
  {
   "word": "individual",
-  "meaning": "九个人；个体adj.个别的，单独的",
+  "meaning": "n.个人；个体adj.个别的，单独的",
   "ex_en": "The rights of the individual are considered to be very important",
   "ex_zh": "个人的权利被认为是非常重要的。",
   "notes": "",
-  "n": 74
+  "n": 72
  },
  {
   "word": "commuter",
-  "meaning": "上下班往返者，通勤者",
+  "meaning": "n.上下班往返者，通勤者",
   "ex_en": "The train was packed with sweaty complaining commuters",
   "ex_zh": "列车里挤满浑身大汗并不停抱怨着的上班族。",
   "notes": "a commuter train通勤列车",
-  "n": 75
+  "n": 73
  },
  {
   "word": "neighbourhood",
@@ -605,7 +589,7 @@
   "ex_en": "She was re I u eta nt to leave the neighbourhood of Paris",
   "ex_zh": "她不愿意离开巴黎附近这一带。",
   "notes": "neighbour(=neighbor)n.令B居 n eighbourhood comm unity centre令B里社区中心",
-  "n": 76
+  "n": 74
  },
  {
   "word": "member",
@@ -613,7 +597,7 @@
   "ex_en": "Yesterday, there was a meeting between OPEC member Saudi Arabia and non・member Russia",
   "ex_zh": "石油输出国组织成员国沙特阿拉伯和非成员国俄罗斯在昨天进行了会面。",
   "notes": "membership n.会员身份；会员资格 h」 證；Chapter ： I「社会蕙色",
-  "n": 77
+  "n": 75
  },
  {
   "word": "boss",
@@ -621,7 +605,7 @@
   "ex_en": "e boss always makes them work overtime without pay",
   "ex_zh": "老板总让他们无偿加班。",
   "notes": "a gang boss帮派头目I am the boss!我说了算！",
-  "n": 78
+  "n": 76
  },
  {
   "word": "manager",
@@ -629,15 +613,15 @@
   "ex_en": "She has been promoted to a middle manager",
   "ex_zh": "她被提拔为中层管理人员。",
   "notes": "nage v.管理management n.管理",
-  "n": 79
+  "n": 77
  },
  {
   "word": "supervisor",
-  "meaning": "n管理者，监督者",
+  "meaning": "n.管理者，监督者",
   "ex_en": "The special supervisor inspected this examination",
   "ex_zh": "特别督导对这场考试进行了视察。\nsuper表示“从上面”，vis表示“看\"，“从上面往下看的人”就是“监督者“。",
   "notes": "",
-  "n": 80
+  "n": 78
  },
  {
   "word": "subordinate",
@@ -645,7 +629,7 @@
   "ex_en": "The minority is subordinate to the majority",
   "ex_zh": "少数服从多数。\nsub表示“在下面”，字根ordin表示“顺序”。",
   "notes": "",
-  "n": 81
+  "n": 79
  },
  {
   "word": "partner",
@@ -653,7 +637,7 @@
   "ex_en": "He was considered as a partner in the crime.",
   "ex_zh": "他被认为是这起犯罪案件中的同伙。",
   "notes": "",
-  "n": 82
+  "n": 80
  },
  {
   "word": "mate",
@@ -661,15 +645,15 @@
   "ex_en": "The people we work with are called workmates, and our friends at school are called classmates.",
   "ex_zh": "和我们一起工作的人叫同事，在学校里的朋友叫同学。",
   "notes": "",
-  "n": 83
+  "n": 81
  },
  {
   "word": "colleague",
-  "meaning": "n-同事，同僚",
+  "meaning": "n.同事，同僚",
   "ex_en": "is getting along well with his colleagues",
   "ex_zh": "他与同事的关系处得很好。•",
   "notes": "",
-  "n": 84
+  "n": 82
  },
  {
   "word": "comrade",
@@ -677,7 +661,7 @@
   "ex_en": "The medic saved a comrade's life and helped evacuate many other wounded soldiers.",
   "ex_zh": "这名卫生员救了一名战友的命，还帮忙撤走了其他许多受伤的士兵。",
   "notes": "a comrade in arms战友",
-  "n": 85
+  "n": 83
  },
  {
   "word": "acquaintance",
@@ -685,7 +669,7 @@
   "ex_en": "I have some acquaintance with French, but don't speak it well",
   "ex_zh": "我稍懂些法语，但说得并不好。苏格兰歌曲《友谊地久天长》（Auld Lang Syne｝（英文版）中的第一句：Should old acquaintance be forgot,\nand never brought to mind?（怎能忘记旧日朋友，心中能不怀想？）",
   "notes": "",
-  "n": 86
+  "n": 84
  },
  {
   "word": "friendship",
@@ -693,7 +677,7 @@
   "ex_en": "No one can wreck the friendship between them",
   "ex_zh": "没有人能够破坏他们之间的友谊。",
   "notes": "",
-  "n": 87
+  "n": 85
  },
  {
   "word": "affection",
@@ -701,7 +685,7 @@
   "ex_en": "I cannot believe that you were unaware of my growing affections for you",
   "ex_zh": "我不相信你没察觉到我渐渐地爱上了你。",
   "notes": "",
-  "n": 88
+  "n": 86
  },
  {
   "word": "stranger",
@@ -709,7 +693,7 @@
   "ex_en": "The region is no stranger to armed conflicts",
   "ex_zh": "这个地区经常发生武装冲突。",
   "notes": "a stranger in a strange land异乡异客",
-  "n": 89
+  "n": 87
  },
  {
   "word": "apprentice",
@@ -717,7 +701,7 @@
   "ex_en": "s father apprenticed him to a barber",
   "ex_zh": "他父亲让他学理发。",
   "notes": "ke an apprentice收徒弟",
-  "n": 90
+  "n": 88
  },
  {
   "word": "deputy",
@@ -725,7 +709,7 @@
   "ex_en": "John will be my deputy while I am away",
   "ex_zh": "我不在时，约翰是我的代理人。",
   "notes": "",
-  "n": 91
+  "n": 89
  },
  {
   "word": "hero",
@@ -733,23 +717,23 @@
   "ex_en": "The hero of the novel is Bilbo.",
   "ex_zh": "这部小说的男主人公是比尔博。",
   "notes": "",
-  "n": 92
+  "n": 90
  },
  {
   "word": "heroine",
-  "meaning": "□•女主角，女主人公；女英雄",
+  "meaning": "n.女主角，女主人公；女英雄",
   "ex_en": "The fairy godmother waves her magic wand and grants the heroine's wishes",
   "ex_zh": "仙女教母挥动她的魔杖，实现了女主人公的愿望。海洛因（heroin）源自德国商标Heroin该毒品是由德国\no\n化学家Heinrich Dreser发现的。其命名可能源自hero:\n因为该毒品有亢奋作用，服用后会使人有飘飘然之感，认为自己就是无所不能的英雄，feel like a hero,故取名\nheroin（in是德语中化学物质名称的常用后缀）。",
   "notes": "",
-  "n": 93
+  "n": 91
  },
  {
   "word": "actress",
-  "meaning": "n女演员",
+  "meaning": "n.女演员",
   "ex_en": "This actress was perfect for the part",
   "ex_zh": "这个女演员非常适合演这个角色。",
   "notes": "actor n.男演员 best actress最佳女演员best supporting actress 最佳女配角",
-  "n": 94
+  "n": 92
  },
  {
   "word": "chancellor",
@@ -757,7 +741,7 @@
   "ex_en": "In Britain, the Chancellor of the Exchequer deals with taxes and government spending",
   "ex_zh": "英国的财政大臣负责管理税务和政府的开支。\ncancel（取消），chancel（高坛）和chancellor（总理；财政大臣）都来自同一拉丁词源cancelli,指“一组斜线“或“斜格图案二人们抄写文字出现笔误时在错误处画上几笔斜线表示注销，即cancel;教堂内供牧师和唱诗班用的高坛—chancel.通常围有斜格状的木栅栏，与听众席隔开；chancellor原指古时法庭上在斜格栅栏后面维持秩序，把法官等人与旁听群众分开的人。",
   "notes": "",
-  "n": 95
+  "n": 93
  },
  {
   "word": "commander",
@@ -765,23 +749,23 @@
   "ex_en": "You must follow the commander's order",
   "ex_zh": "你必须听从指挥官的命令。",
   "notes": "a commander in chief统帅，总司令",
-  "n": 96
+  "n": 94
  },
  {
   "word": "director",
-  "meaning": "n-主管；理事；导演",
+  "meaning": "n.主管；理事；导演",
   "ex_en": "The director cast him as a deaf and dumb man",
   "ex_zh": "导演选中他扮演一个聋哑人。",
   "notes": "",
-  "n": 97
+  "n": 95
  },
  {
   "word": "proponent",
-  "meaning": "n-拥护者，支持者",
+  "meaning": "n.拥护者，支持者",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
-  "n": 98
+  "n": 96
  },
  {
   "word": "committee",
@@ -789,7 +773,7 @@
   "ex_en": "They have set up a committee to inspect the park facilities",
   "ex_zh": "他们成立了一个委员会来检查公园设施。",
   "notes": "",
-  "n": 99
+  "n": 97
  },
  {
   "word": "council",
@@ -797,7 +781,7 @@
   "ex_en": "The city council will decide the fate of the building",
   "ex_zh": "市政委员会将决定这栋楼的命运。",
   "notes": "British Council英国文化教育协会（B C,雅思考试主办方之一）city council市政委员会",
-  "n": 100
+  "n": 98
  },
  {
   "word": "delegate",
@@ -805,7 +789,7 @@
   "ex_en": "I was delegated to approach the local press",
   "ex_zh": "我被委派去和当地新闻界打交道。字根leg表示“送（to send）;授权，委派为代表（to\ndepute）,如：de（离幵）+leg（委派为代表）+ate\n（动词后缀）t带着委托被送走t代表；legacy（委派给人的东西t遗产）。",
   "notes": "",
-  "n": 101
+  "n": 99
  },
  {
   "word": "specialist",
@@ -813,7 +797,7 @@
   "ex_en": "She is a specialist in e-business",
   "ex_zh": "她是电子商务方面的专家。",
   "notes": "speciality(=specialty)n.专业；专长 specialise(=specialize)v.专门从事",
-  "n": 102
+  "n": 100
  },
  {
   "word": "consultant",
@@ -821,7 +805,7 @@
   "ex_en": "The consultant committee met at the call of the chairman.",
   "ex_zh": "顾问委员会应主席的召集而开会。",
   "notes": "",
-  "n": 103
+  "n": 101
  },
  {
   "word": "veterinary",
@@ -829,7 +813,7 @@
   "ex_en": "Sectioning the nerves in the hoof of a limping horse is a comm on practice in a veterinary procedure",
   "ex_zh": "把跛马的马蹄神经切开是兽医手术中的一种常见做法。",
   "notes": "veterinary medicine兽医学",
-  "n": 104
+  "n": 102
  },
  {
   "word": "counsellor",
@@ -837,15 +821,15 @@
   "ex_en": "I'd like to talk to my counsellor before I answer any of your questions",
   "ex_zh": "在回答你提出的任何问题前，我想先和我的律师说话。",
   "notes": "",
-  "n": 105
+  "n": 103
  },
  {
   "word": "solicitor",
-  "meaning": "（英国的）诉状律师，事务律师；（美国的）法务官",
+  "meaning": "n.（英国的）诉状律师，事务律师；（美国的）法务官",
   "ex_en": "We asked a solicitor for advice",
   "ex_zh": "我们向一位事务律师进行咨询。",
   "notes": "",
-  "n": 106
+  "n": 104
  },
  {
   "word": "attorney",
@@ -853,23 +837,23 @@
   "ex_en": "The defense attorney's objection was overruled by the judge.",
   "ex_zh": "辩护律师的反对意见被法官驳回了。",
   "notes": "",
-  "n": 107
+  "n": 105
  },
  {
-  "word": "attor",
-  "meaning": "ney m（美国的）律师",
+  "word": "attorney",
+  "meaning": "n.（美国的）律师",
   "ex_en": "defense attorney's objection was overruled by the judge",
   "ex_zh": "辩护律师的反对意见被法官驳回了。英联邦国家多用lawyer, barrister, solicitor lawyer\n是律师的统称，使用范围广泛。barrister指大律师，能在高等法院出庭办案。bar作名词时有“栏杆，栅栏”之义，也指法庭上法官席附近的围栏（犯人接受传讯，大律师上来进行辩护的位置）。那么solicitor就是和bar\n没有关系的律师啦——小律师，不能岀庭说话，一般是\nbarrister的助手。",
   "notes": "",
-  "n": 108
+  "n": 106
  },
  {
   "word": "umpire",
-  "meaning": "裁判员",
+  "meaning": "n.裁判员",
   "ex_en": "Mack was thrown out of the game for hitting umpire",
   "ex_zh": "麦克因为殴打裁判被逐出比赛。\nan\n英语中有一种构词现象比较特殊，即由于发音的原因而导致词形拼写发生变化。在中世纪，“一名裁判员\"原来是a noumpere,后来不定冠词a和名词的首字母n\n被错误地合在一起，就成了an oumpere同样情况的\no\n还有：apron（围裙），是从a napron变成an apron\n的；orange（橙），原来在阿拉伯语里是naranj,进入欧洲后，传着传着，词首的n就被合到冠词里去了；\nnickname（绰号），在中世纪英语中原本是ekename,\n但an eke门日me后来被错分成a nekename\no",
   "notes": "",
-  "n": 109
+  "n": 107
  },
  {
   "word": "cashier",
@@ -877,7 +861,7 @@
   "ex_en": "A cashier takes and gives out money in a bank or shop",
   "ex_zh": "出纳员在银行或者商店里收付钱款。",
   "notes": "cash n.现金",
-  "n": 110
+  "n": 108
  },
  {
   "word": "fireman",
@@ -885,7 +869,7 @@
   "ex_en": "I saw a fireman racing into the burning house",
   "ex_zh": "我看见一个消防队员冲入了着火的房子中。",
   "notes": "",
-  "n": 111
+  "n": 109
  },
  {
   "word": "nurse",
@@ -893,7 +877,7 @@
   "ex_en": "She is waiting for the nurse to give her an injection",
   "ex_zh": "她正在等待护士过来给她打针。",
   "notes": "nursing n.护理工作",
-  "n": 112
+  "n": 110
  },
  {
   "word": "gardener",
@@ -901,15 +885,7 @@
   "ex_en": "The old gardener had rough hands.",
   "ex_zh": "老园丁有一双粗硬的手。",
   "notes": "a landscape gardener园林设计师",
-  "n": 113
- },
- {
-  "word": "garde",
-  "meaning": "ner m园丁，花匠",
-  "ex_en": "The old gardener had rough han ds",
-  "ex_zh": "老园丁有一双粗硬的手。",
-  "notes": "a landscape gardener园林设计师",
-  "n": 114
+  "n": 111
  },
  {
   "word": "barber",
@@ -917,23 +893,23 @@
   "ex_en": "He asked the barber to crop his hair short.",
   "ex_zh": "他让理发师把他的头发剪短。",
   "notes": "",
-  "n": 115
+  "n": 112
  },
  {
   "word": "haircut",
-  "meaning": "\"■理发",
+  "meaning": "n.理发",
   "ex_en": "He was unshaven and badly needed a haircut",
   "ex_zh": "他没刮脸，头发也着实需要理一理了。",
   "notes": "",
-  "n": 116
+  "n": 113
  },
  {
   "word": "fisherman",
-  "meaning": "渔民，渔夫，垂钓者",
+  "meaning": "n.渔民，渔夫，垂钓者",
   "ex_en": "What is it like to be a tuna",
   "ex_zh": "竹sherman?当一名捕金枪鱼的渔夫是什么感觉？",
   "notes": "",
-  "n": 117
+  "n": 114
  },
  {
   "word": "butcher",
@@ -941,15 +917,15 @@
   "ex_en": "Tom is a friendly butcher in our neighbourhood. butcher gardener barber haircut fisherman",
   "ex_zh": "",
   "notes": "",
-  "n": 118
+  "n": 115
  },
  {
   "word": "groom",
-  "meaning": "II.马夫；新郎V.（给动物）刷洗；理毛，梳毛",
+  "meaning": "n.马夫；新郎V.（给动物）刷洗；理毛，梳毛",
   "ex_en": "The head groom is responsible for seeing that his stablemates have safe journeys",
   "ex_zh": "马夫长负责确保他的赛马都安全到达。",
   "notes": "bridegroom n.新郎bride n.新娘",
-  "n": 119
+  "n": 116
  },
  {
   "word": "hostage",
@@ -957,7 +933,7 @@
   "ex_en": "British journalist was held hostage for over two years",
   "ex_zh": "一位英国记者被作为人质扣押了两年多。",
   "notes": "ransom n.赎金",
-  "n": 120
+  "n": 117
  },
  {
   "word": "toil",
@@ -965,7 +941,7 @@
   "ex_en": "They of toil on the water conservation spent months project",
   "ex_zh": "他们为这项节水工程辛辛苦苦干了数月。\nmoil辛辛苦苦地工作",
   "notes": "",
-  "n": 121
+  "n": 118
  },
  {
   "word": "beggar",
@@ -973,7 +949,7 @@
   "ex_en": "He tossed the beggar a handful of groom toil slave hostage beggar coward",
   "ex_zh": "",
   "notes": "",
-  "n": 122
+  "n": 119
  },
  {
   "word": "slave",
@@ -981,7 +957,7 @@
   "ex_en": "Slaves were mercilessly ground down by slave owners",
   "ex_zh": "奴隶们受到奴隶主的残酷压迫。",
   "notes": "",
-  "n": 123
+  "n": 120
  },
  {
   "word": "coward",
@@ -989,6 +965,6 @@
   "ex_en": "He is a liar and a coward to boot",
   "ex_zh": "他喜欢说谎，而且还是个懦夫。\n社会角色",
   "notes": "",
-  "n": 124
+  "n": 121
  }
 ]

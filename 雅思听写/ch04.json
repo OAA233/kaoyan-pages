@@ -33,7 +33,7 @@
  },
  {
   "word": "terrestrial",
-  "meaning": "edj.地球的；（）陆地的",
+  "meaning": "adj.地球的；（）陆地的",
   "ex_en": "Forests are home to over 80%of terrestrial biodiversity",
   "ex_zh": "陆地生物多样性有八成以上靠森林维持。",
   "notes": "extraterrestrial adj.地球外的n.外星人（=E.T）",
@@ -233,7 +233,7 @@
  },
  {
   "word": "flyby",
-  "meaning": "（航天器对行星或卫星的）飞掠",
+  "meaning": "n.（航天器对行星或卫星的）飞掠",
   "ex_en": "Because of the flyby height, the plane resembles an increasingly big bird",
   "ex_zh": "由于飞掠高度，飞机就像越来越大的鸟。\nflyby太空探索",
   "notes": "",
@@ -296,8 +296,8 @@
   "n": 37
  },
  {
-  "word": "substa",
-  "meaning": "nce m物质；实质，要旨",
+  "word": "substance",
+  "meaning": "n.物质；实质，要旨",
   "ex_en": "Is there a basic substance that everything else is made of?",
   "ex_zh": "是否存在一种组成了万物的基本物质？",
   "notes": "substantial adj.大量的；牢固的",
@@ -344,28 +344,12 @@
   "n": 43
  },
  {
-  "word": "need nothing buta",
-  "meaning": "sample.我需要的不过是一",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 44
- },
- {
-  "word": "biologist brought outthe",
-  "meaning": "items one by one.生物学家拿岀标本箱， n.物种",
-  "ex_en": "",
-  "ex_zh": "",
-  "notes": "",
-  "n": 45
- },
- {
   "word": "particle",
   "meaning": "n.颗粒，微粒；极小量",
   "ex_en": "There are particles of dust everywhere",
   "ex_zh": "到处都是尘埃微粒。",
   "notes": "",
-  "n": 46
+  "n": 44
  },
  {
   "word": "molecule",
@@ -373,7 +357,7 @@
   "ex_en": "There is a molecule",
   "ex_zh": "里有一台分子分离器。",
   "notes": "",
-  "n": 47
+  "n": 45
  },
  {
   "word": "atom",
@@ -381,7 +365,7 @@
   "ex_en": "A molecule of water is made up of two of hydrogen and one atom of oxygen.—",
   "ex_zh": "个水分子是由两个氢原子和一个氧原子构成的。源自希腊语atomos,表示不能再分割的物质（日【否定］\n+tomos［切割］）。有古代哲学家认为万物由小得不能再分割的微粒构成。后来，物理学家根据这个词将原子命名为atom（但实际上原子并非不可分割）。再回忆一个包含tom的单词：anatomy（解剖学）。",
   "notes": "",
-  "n": 48
+  "n": 46
  },
  {
   "word": "ion",
@@ -389,7 +373,7 @@
   "ex_en": "Both of these particles can produce ion pairs",
   "ex_zh": "这两种粒子都能产生离子对。",
   "notes": "",
-  "n": 49
+  "n": 47
  },
  {
   "word": "electron",
@@ -397,7 +381,7 @@
   "ex_en": "Electrons are negatively charged with electricity",
   "ex_zh": "电子带负电荷。",
   "notes": "",
-  "n": 50
+  "n": 48
  },
  {
   "word": "quantum",
@@ -405,7 +389,7 @@
   "ex_en": "In this example, we employed the quantum mechanics principle",
   "ex_zh": "在本例中，我们运用了量子力学原理。",
   "notes": "",
-  "n": 51
+  "n": 49
  },
  {
   "word": "liquid",
@@ -413,7 +397,7 @@
   "ex_en": "If you add too much liquid, the mixture will not be thick enough",
   "ex_zh": "如果你加入了太多液体，该混合液的浓度就不够了。",
   "notes": "liquid assets流动资产",
-  "n": 52
+  "n": 50
  },
  {
   "word": "fluid",
@@ -421,7 +405,7 @@
   "ex_en": "When you are sick, you should drink plenty of fluids",
   "ex_zh": "生病时应该多喝流质。",
   "notes": "",
-  "n": 53
+  "n": 51
  },
  {
   "word": "solid",
@@ -429,7 +413,7 @@
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
-  "n": 54
+  "n": 52
  },
  {
   "word": "synthesise",
@@ -437,7 +421,7 @@
   "ex_en": "Darwinian theory has been synthesised with modern genetics",
   "ex_zh": "达尔文的理论已经和现代遗传学融合在一起了。",
   "notes": "synthetic adj.合成的",
-  "n": 55
+  "n": 53
  },
  {
   "word": "formation",
@@ -445,7 +429,7 @@
   "ex_en": "In planet formation, as in adolesce nee, you've got your late bloomers",
   "ex_zh": "在青春期时，有些人的发育晚于同龄人，而行星的形成也存在这种情况。",
   "notes": "",
-  "n": 56
+  "n": 54
  },
  {
   "word": "method",
@@ -453,7 +437,7 @@
   "ex_en": "New methods of teaching foreign languages are adopted in this institute.",
   "ex_zh": "该学院采用了新的外语教学法。",
   "notes": "methodology n.方法学，方法论",
-  "n": 57
+  "n": 55
  },
  {
   "word": "methodology",
@@ -461,7 +445,7 @@
   "ex_en": "A spectrum is formed by a ray of light passing through a prism.—",
   "ex_zh": "束光通过棱镜就会形成光谱。",
   "notes": "",
-  "n": 58
+  "n": 56
  },
  {
   "word": "dimension",
@@ -469,7 +453,7 @@
   "ex_en": "A line has one dimension and a square has two. —",
   "ex_zh": "条线只包含一个维度，而一个正方形包含两个维度。\n3D打印机和3D电影中的D代表dimension 1D是线性，\no\n2D是平面，3D即三维立体。爱因斯坦（Einstein）在相对论中提出宇宙是4D的，即空间上的三个维度加时间维度，4D空间又称为四维空间、四次元。",
   "notes": "",
-  "n": 59
+  "n": 57
  },
  {
   "word": "frequency",
@@ -477,7 +461,7 @@
   "ex_en": "This radio signal has a frequency of kilohertz",
   "ex_zh": "这个无线电信号的频率是800千赫。",
   "notes": "frequent adj.时常发生的，频繁的",
-  "n": 60
+  "n": 58
  },
  {
   "word": "signal",
@@ -485,7 +469,7 @@
   "ex_en": "Her speech yesterday was a signal that her view has changed",
   "ex_zh": "她昨天的讲话是一个信号，反映出她的观点已经转变。",
   "notes": "signn.符号；指示牌 signal",
-  "n": 61
+  "n": 59
  },
  {
   "word": "antenna",
@@ -493,7 +477,7 @@
   "ex_en": "You should fix the television antenna before receiving programmes",
   "ex_zh": "接收节目前，你应该先修好电视的天线。",
   "notes": "",
-  "n": 62
+  "n": 60
  },
  {
   "word": "circuit",
@@ -501,7 +485,7 @@
   "ex_en": "For many years, he was top banana on the circuit",
   "ex_zh": "许多年来，他都是巡回剧团里的主角。",
   "notes": "",
-  "n": 63
+  "n": 61
  },
  {
   "word": "refraction",
@@ -509,7 +493,7 @@
   "ex_en": "Over water the diurnal change in refraction is likely to be small",
   "ex_zh": "在水上，折射的周日变化可能是很小的。",
   "notes": "",
-  "n": 64
+  "n": 62
  },
  {
   "word": "ultraviolet",
@@ -517,7 +501,7 @@
   "ex_en": "The ozone layer absorbs most of the sun's ultraviolet radiation",
   "ex_zh": "臭氧层吸收了太阳的大部分紫外辐射。",
   "notes": "infrared n.红外辐射adj.红外线的",
-  "n": 65
+  "n": 63
  },
  {
   "word": "radioactive",
@@ -525,7 +509,7 @@
   "ex_en": "Nuclear energy gives millions heat light, and z power, just as it creates unwanted radioactive side effects",
   "ex_zh": "核能源带给无数人热、光和电力，却也带来了人们并不想得到的放射性副作用。\nradio（发光，发热）+active（活性的）t放射性的。",
   "notes": "",
-  "n": 66
+  "n": 64
  },
  {
   "word": "distinct",
@@ -533,7 +517,7 @@
   "ex_en": "Those two ideas are quite distinct from each other",
   "ex_zh": "这两种观点截然不同。",
   "notes": "",
-  "n": 67
+  "n": 65
  },
  {
   "word": "discernible",
@@ -541,7 +525,7 @@
   "ex_en": "Night fell, but the outline of the factory buildings was still discernible",
   "ex_zh": "夜幕降临了，但厂房的轮廓还是能看清的。",
   "notes": "indiscernible adj.看不清的，隐约的",
-  "n": 68
+  "n": 66
  },
  {
   "word": "invisible",
@@ -549,15 +533,15 @@
   "ex_en": "Some stars are invisible to the naked eye",
   "ex_zh": "有些恒星是肉眼看不见的。",
   "notes": "",
-  "n": 69
+  "n": 67
  },
  {
   "word": "collision",
-  "meaning": "□.碰撞事故；冲突",
+  "meaning": "n.碰撞事故；冲突",
   "ex_en": "He is responsible for the rear-end collision",
   "ex_zh": "他要为这起追尾撞车事故负责。",
   "notes": "a collision with与……的碰撞事故来自collide（v.碰撞）。",
-  "n": 70
+  "n": 68
  },
  {
   "word": "squash",
@@ -565,7 +549,7 @@
   "ex_en": "I sat on my hat and squashed it",
   "ex_zh": "我坐在自己的帽子上，把它给压扁了。关于壁球的起源，说法不一『其中一个是：1820年，英国的哈罗公学因运动场地小，就发明了让学生用球拍对墙击球的运动，因球猛烈触墙时发出的声音类似squash\n的发音而得名。",
   "notes": "",
-  "n": 71
+  "n": 69
  },
  {
   "word": "fragment",
@@ -573,7 +557,7 @@
   "ex_en": "He was still in bad condition and could give discernible squash invisible fragment collision",
   "ex_zh": "",
   "notes": "",
-  "n": 72
+  "n": 70
  },
  {
   "word": "cataclysmic",
@@ -581,7 +565,7 @@
   "ex_en": "One can readily trace the disappearanee of dinosaurs to a cataclysmic event",
   "ex_zh": "人们可以很容易地把恐龙消失的原因追究到一场灾难性事件上。",
   "notes": "",
-  "n": 73
+  "n": 71
  },
  {
   "word": "overwhelming",
@@ -589,15 +573,15 @@
   "ex_en": "The flood was overwhelming and the city was soon flooded.",
   "ex_zh": "洪水来势凶猛，这座城市很快就被淹没了。",
   "notes": "该词源于动词overwhelm,其中whelm一词本身含义为“淹没；覆盖；压倒”，而over表示“在……上”，故overwhelm表示“压倒；淹没”。",
-  "n": 74
+  "n": 72
  },
  {
   "word": "despair",
-  "meaning": "v./n.绝望",
+  "meaning": "v.n.绝望",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
-  "n": 75
+  "n": 73
  },
  {
   "word": "desperate",
@@ -605,14 +589,14 @@
   "ex_en": "The man lost in the water",
   "ex_zh": "这个在沙漠中迷失方向的人极想喝水。字根sper表示“希望（to hope）\",而前缀de表示“没有（without）”，故desperate表示\"没有希望的\"，即绝望的”。其他同根词如：prosper（前面有希望t繁荣，成功），prosperity（繁荣），desperation（绝望），\n（绝望的人t亡命之徒）。",
   "notes": "",
-  "n": 76
+  "n": 74
  },
  {
   "word": "hopeless",
-  "meaning": "日贞•无望的；极差的",
+  "meaning": "adj.无望的；极差的",
   "ex_en": "He feels that his ch a nces of winning the con test are hopeless",
   "ex_zh": "他感觉自己没有希望在竞赛中获胜。形容词后缀less表示“没有……的”。\nU\n太空探索",
   "notes": "",
-  "n": 77
+  "n": 75
  }
 ]

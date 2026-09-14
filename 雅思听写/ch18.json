@@ -8,16 +8,16 @@
   "n": 1
  },
  {
-  "word": "konflikt",
-  "meaning": "v.冲突",
-  "ex_en": "Many people feel that religion conflicts with science",
+  "word": "conflict",
+  "meaning": "n.斗争，冲突v.冲突",
+  "ex_en": "Many people feel that religion conflicts with science.",
   "ex_zh": "很多人认为宗教与科学互相冲突。",
-  "notes": "of interest利益冲突",
+  "notes": "a conflict of interest利益冲突",
   "n": 2
  },
  {
   "word": "raid",
-  "meaning": "n./v.突袭；突然搜查",
+  "meaning": "n. v.突袭；突然搜查",
   "ex_en": "We launched a bombing raid on enemy bases",
   "ex_zh": "我们对敌方基地实施了轰炸突袭。",
   "notes": "carry out a raid实施突然袭击",
@@ -25,7 +25,7 @@
  },
  {
   "word": "enormity",
-  "meaning": "n-巨大；滔天大罪",
+  "meaning": "n.巨大；滔天大罪",
   "ex_en": "The enormity of the crime has shocked even experienced policemen",
   "ex_zh": "这件罪行极端凶残，连阅历丰富的警察都感到震惊。",
   "notes": "the enormity of the task任务的艰巨性",
@@ -49,7 +49,7 @@
  },
  {
   "word": "struggle",
-  "meaning": "v./n.挣扎；奋力；奋斗",
+  "meaning": "v. n.挣扎；奋力；奋斗",
   "ex_en": "His father struggled to control his temper",
   "ex_zh": "他的父亲努力控制住自己的脾气。",
   "notes": "struggle against与...抗争 arkle",
@@ -57,7 +57,7 @@
  },
  {
   "word": "explosion",
-  "meaning": "n./v.闪烁，闪耀 n.爆发；迸发；爆炸；激增",
+  "meaning": "n. v.闪烁，闪耀 n.爆发；迸发；爆炸；激增",
   "ex_en": "We The explosion was caused by a burst gas pipe",
   "ex_zh": "这次爆炸是由一个爆裂的煤气管引起的。你的记忆深处还有这首儿歌吗：“一闪一闪亮晶晶，满天",
   "notes": "explode v.爆炸；爆发explosive adj.爆炸性都是小星星。挂在天上放光明，好像许多小眼睛。”其英的；可能引起爆炸的文原歌词是：Twinkle, a population explosion人口激增what",
@@ -89,7 +89,7 @@
  },
  {
   "word": "twinkle",
-  "meaning": "n./v.闪烁，闪耀",
+  "meaning": "n. v.闪烁，闪耀",
   "ex_en": "could see the distant twinkle of the harbour lights.",
   "ex_zh": "我们可以看见，港湾的灯光在远处闪烁。",
   "notes": "",
@@ -121,7 +121,7 @@
  },
  {
   "word": "twinkle",
-  "meaning": "n./v.闪烁，闪耀",
+  "meaning": "n. v.闪烁，闪耀",
   "ex_en": "could see the distant twinkle of the harbour lights.",
   "ex_zh": "我们可以看见，港湾的灯光在远处闪烁。",
   "notes": "",
@@ -153,7 +153,7 @@
  },
  {
   "word": "missile",
-  "meaning": "导弹；投掷物 is a missile weapon.手榴弹是",
+  "meaning": "n.导弹；投掷物",
   "ex_en": "A hand-grenade —",
   "ex_zh": "种投掷武器。\nmissile发射导弹",
   "notes": "",
@@ -201,7 +201,7 @@
  },
  {
   "word": "deflect",
-  "meaning": "V.（使）偏斜，（使）偏转；转移",
+  "meaning": "v.（使）偏斜，（使）偏转；转移",
   "ex_en": "The bullet struck a wall and was deflected from its course",
   "ex_zh": "那枚子弹击中了墙壁，偏离原本的路径。",
   "notes": "deflection n.偏转，偏斜",
@@ -217,7 +217,7 @@
  },
  {
   "word": "flame",
-  "meaning": "ii.火焰；强烈的感情",
+  "meaning": "n.火焰；强烈的感情",
   "ex_en": "It's been dry for so long that the forest could burst into flames at any moment",
   "ex_zh": "天气干燥了这么久，森林随时都会燃烧起来。字根flam指“火焰\"，女□:flammable（可燃的）；in\n（内部的）+flame（火焰）t inflame（变红肿；激怒）；\nflamboyant（结合联想：男孩［boy］烧［flam］蚂蚁［ant］\nt引人注目的，炫耀的）。那么flamingo就是“走动\n（go）”的一团“火焰（flam）”，猜猜是什么？",
   "notes": "",
@@ -225,7 +225,7 @@
  },
  {
   "word": "flare",
-  "meaning": "<1（闪耀的）火光；闪光信号灯V.（火光）闪耀",
+  "meaning": "n.（闪耀的）火光；闪光信号灯V.（火光）闪耀",
   "ex_en": "The flare of the match lit up the little girl's face",
   "ex_zh": "火柴发出的光照亮了小女孩的脸。",
   "notes": "a flare of anger怒气的爆发",
@@ -233,7 +233,7 @@
  },
  {
   "word": "glitter",
-  "meaning": "V.闪烁；闪现n.发光小物",
+  "meaning": "v.闪烁；闪现n.发光小物",
   "ex_en": "The diam ond ring on her fin ger glittered in the flare glitter Chapter",
   "ex_zh": "沙场争锋",
   "notes": "",
@@ -241,7 +241,7 @@
  },
  {
   "word": "glow",
-  "meaning": "V.发出微弱稳定的光fl.微弱稳定的光",
+  "meaning": "v.发出微弱稳定的光fl.微弱稳定的光",
   "ex_en": "Maple leaves glowed red in the sunlight",
   "ex_zh": "枫叶在阳光里闪耀着红光。",
   "notes": "",
@@ -329,7 +329,7 @@
  },
  {
   "word": "stab",
-  "meaning": "v./n.（用刀等）刺，戳",
+  "meaning": "v. n.（用刀等）刺，戳",
   "ex_en": "She stabbed him in the leg with a knife.",
   "ex_zh": "她用刀子刺伤了他的腿。",
   "notes": "stab at（用刀等）刺",
@@ -369,7 +369,7 @@
  },
  {
   "word": "strike",
-  "meaning": "V.打，击；突击；罢工n.罢工；打击",
+  "meaning": "v.打，击；突击；罢工n.罢工；打击",
   "ex_en": "The strike has delivered a heavy blow to the management",
   "ex_zh": "这场罢工给了资方一个沉重的打击。 pectators cheered at his KO punch.观众为他击倒对手的一拳而喝彩。",
   "notes": "rike against为反对...而罢工 n.打孔机；重拳击打忆给……打孔；拳打",
@@ -393,7 +393,7 @@
  },
  {
   "word": "stab",
-  "meaning": "v./n.（用刀等）刺，戳",
+  "meaning": "v. n.（用刀等）刺，戳",
   "ex_en": "She stabbed him in the leg with a knife.",
   "ex_zh": "她用刀子刺伤了他的腿。",
   "notes": "stab at（用刀等）刺",
@@ -424,8 +424,8 @@
   "n": 53
  },
  {
-  "word": "conspir",
-  "meaning": "acy m阴谋，密谋，合谋",
+  "word": "conspiracy",
+  "meaning": "n.阴谋，密谋，合谋",
   "ex_en": "The conspiracy of the assassination of the president was brought to light in time",
   "ex_zh": "那个刺杀总统的阴谋被及时揭发了。",
   "notes": "conspire v.密谋",
@@ -441,7 +441,7 @@
  },
  {
   "word": "famine",
-  "meaning": "n饥荒",
+  "meaning": "n.饥荒",
   "ex_en": "Many people died of famine that year",
   "ex_zh": "那一年，有很多人死于饥荒。",
   "notes": "",
@@ -449,7 +449,7 @@
  },
  {
   "word": "starve",
-  "meaning": "（使）挨饿，饿死",
+  "meaning": "v.（使）挨饿，饿死",
   "ex_en": "They besieged the town and tried to starve the army into surrender",
   "ex_zh": "他们包围了这座城镇，并试图让守军挨饿从而投降。",
   "notes": "starvation n.饿死，极度饥饿",
@@ -457,7 +457,7 @@
  },
  {
   "word": "deprive",
-  "meaning": "V.剥夺",
+  "meaning": "v.剥夺",
   "ex_en": "Sickness deprived me of the pleasure of travelling overseas",
   "ex_zh": "疾病剥夺了我出国旅行的乐趣。\n沙场争锋",
   "notes": "",
@@ -465,7 +465,7 @@
  },
  {
   "word": "seize",
-  "meaning": "V.抓住；夺取",
+  "meaning": "v.抓住；夺取",
   "ex_en": "Uncon trollable laughter seized us up",
   "ex_zh": "我们不由自主地大笑起来。",
   "notes": "seize on抓住；利用seize a moment抓住时机",
@@ -473,7 +473,7 @@
  },
  {
   "word": "pursue",
-  "meaning": "V.追赶；追查；追求",
+  "meaning": "v.追赶；追查；追求",
   "ex_en": "Why should we even have to decide whether to pursue truth?",
   "ex_zh": "为什么我们甚至还需要考虑是否去追求真相呢？",
   "notes": "pursuit n.追赶；追求；爱好 pursue pleasure寻欢作乐",
@@ -488,8 +488,8 @@
   "n": 61
  },
  {
-  "word": "offen",
-  "meaning": "d V.冒犯；犯罪；违反",
+  "word": "offend",
+  "meaning": "v.冒犯；犯罪；违反",
   "ex_en": "We mustn't offend the local customs",
   "ex_zh": "我们不能违反当地的风俗。",
   "notes": "offenders罪犯；冒犯者 offend against违反（法律、原则等），有悖于",
@@ -505,7 +505,7 @@
  },
  {
   "word": "invade",
-  "meaning": "V.入侵，侵略；侵扰",
+  "meaning": "v.入侵，侵略；侵扰",
   "ex_en": "They are determined to resist the invading armies",
   "ex_zh": "他们决定抵抗入侵的军队。",
   "notes": "invasion n.侵犯 invader n.侵略者 invasive adj.（尤指体内疾病）侵袭的，扩散的 invade privacy侵犯隐私",
@@ -513,7 +513,7 @@
  },
  {
   "word": "trespass",
-  "meaning": "V.非法侵入II.罪过；非法侵入",
+  "meaning": "v.非法侵入II.罪过；非法侵入",
   "ex_en": "The farmer said we were trespassing on private land",
   "ex_zh": "这个农民说我们非法侵入了私人土地。在西方国家经常可见的警示牌：No Trespassing!（禁止擅入！）",
   "notes": "",
@@ -537,7 +537,7 @@
  },
  {
   "word": "attack",
-  "meaning": "v./n.攻击，进攻",
+  "meaning": "v. n.攻击，进攻",
   "ex_en": "The police are launching a major attack on drug dealers.",
   "ex_zh": "警方对毒品贩子发动了大规模的攻击。",
   "notes": "attack sb. by words用语言抨击某人",
@@ -553,7 +553,7 @@
  },
  {
   "word": "an assault on",
-  "meaning": "tj氏鸡吨 n挑战V.向……挑战",
+  "meaning": "n.氏鸡吨 n挑战V.向……挑战",
   "ex_en": "He challenged me to play another",
   "ex_zh": "他向我挑战，要我跟他再打一场网球。",
   "notes": "challenging adj.有挑战性的；挑衅的 face a challenge遇到挑战 accept a challenge接受挑战",
@@ -568,8 +568,8 @@
   "n": 71
  },
  {
-  "word": "surroun",
-  "meaning": "d V.包围；环绕",
+  "word": "surround",
+  "meaning": "v.包围；环绕",
   "ex_en": "They have surrounded the town with troops",
   "ex_zh": "他们出动军队包围了该城镇。",
   "notes": "surroundings n.环境 be surrounded by被...包围",
@@ -577,7 +577,7 @@
  },
  {
   "word": "enclose",
-  "meaning": "V.围住，包围；把……封入信封，随信附上",
+  "meaning": "v.围住，包围；把……封入信封，随信附上",
   "ex_en": "The writer's house is enclosed by a wall",
   "ex_zh": "这名作家的房子被一道墙围了起来。",
   "notes": "enclose sth. with a letter随信附上某物 en（进入，使）+close（关住）-围住。",
@@ -585,7 +585,7 @@
  },
  {
   "word": "pause",
-  "meaning": "n./v.暂停，停顿",
+  "meaning": "n. v.暂停，停顿",
   "ex_en": "After she ran up the hill, she paused for a minute to rest",
   "ex_zh": "她跑上小山后，停下来休息了一会儿。",
   "notes": "come to a pause暂停",
@@ -593,7 +593,7 @@
  },
  {
   "word": "halt",
-  "meaning": "V.（使）停止，（使）停住II.停止，停住",
+  "meaning": "v.（使）停止，（使）停住II.停止，停住",
   "ex_en": "The cab rolled to a halt before the hotel",
   "ex_zh": "计程车缓缓地停在了酒店前。",
   "notes": "halter n.（马的）缰绳 halt the advance of history阻挡历史的前进",
@@ -633,7 +633,7 @@
  },
  {
   "word": "counter",
-  "meaning": "认抵消；反击，反驳adv.相反地n.柜台；工作台",
+  "meaning": "v.抵消；反击，反驳adv.相反地n.柜台；工作台",
   "ex_en": "My colleague countered of his own",
   "ex_zh": "我同事以自己的一个建议来反驳我的建议。很多人喜欢玩名为CS的游戏，即Counter-Strike!中文里，这个游戏的名字被翻译为“反恐精英\"，这样就容易理解counter作为前缀时的含义：“相反，相对”。CS的基本含义是“有人打了我，我就回手反击”。再记一个词\ncounterfeit:counter（反）+feit（做）t反着做t\n/di't3：/\nV.阻止，威慑住 The security camera was installed to deter\npeople from stealing.安装安保摄像头是为了防止人们偷盗。 Lack of time forbids any further discussion on\nthis issue.由于时间不够，不能深入讨论这个问题。",
   "notes": "deter sb. from doing sth.阻止某人做某事 V.禁止；阻止 forbid sb. doing sth. /to do sth.禁止某人做某事 V.禁止，不允许",
@@ -665,7 +665,7 @@
  },
  {
   "word": "prevent",
-  "meaning": "V.预防，防止；阻止，阻碍",
+  "meaning": "v.预防，防止；阻止，阻碍",
   "ex_en": "Scientists are trying to find ways to prevent the disease from spreading",
   "ex_zh": "科学家们正试图找到阻止该疾病传播的方法。",
   "notes": "prevention n.预防，防范",
@@ -673,7 +673,7 @@
  },
  {
   "word": "revolt",
-  "meaning": "m/v.叛乱；反抗",
+  "meaning": "n. v.叛乱；反抗",
   "ex_en": "Autocracy often causes the people to revolt",
   "ex_zh": "独裁统治常常引起人民的反抗。",
   "notes": "revoltive adj.厌恶的，反感的 rise in revolt发生叛乱",
@@ -681,7 +681,7 @@
  },
  {
   "word": "betray",
-  "meaning": "V.背叛，岀卖；（无意中）泄露，流露出",
+  "meaning": "v.背叛，岀卖；（无意中）泄露，流露出",
   "ex_en": "They have promised never to betray the organisation",
   "ex_zh": "他们已发誓永不背叛组织。",
   "notes": "betrayal n.背叛，出卖 betray one's country背叛某人的国家betray a secret泄露秘密",
@@ -721,7 +721,7 @@
  },
  {
   "word": "blame",
-  "meaning": "V.责备，指责n.（对坏事应负的）责任",
+  "meaning": "v.责备，指责n.（对坏事应负的）责任",
   "ex_en": "Bad workmen often blame their tools",
   "ex_zh": "拙匠常怪工具差。 His mariners are beyond reproach.他的举止无可指摘。",
   "notes": "blame sth. on sb./sth.把某事归咎于某人/某事物 n./v.责备，指责 bring reproach on on eself让自己丢脸",
@@ -729,7 +729,7 @@
  },
  {
   "word": "reproach",
-  "meaning": "n./v.责备，指责",
+  "meaning": "n. v.责备，指责",
   "ex_en": "His mariners are beyond reproach.",
   "ex_zh": "他的举止无可指摘。",
   "notes": "bring reproach on oneself让自己丢脸",
@@ -761,7 +761,7 @@
  },
  {
   "word": "terrible",
-  "meaning": "edj.可怕的，糟糕的；极严重的",
+  "meaning": "adj.可怕的，糟糕的；极严重的",
   "ex_en": "The earthquake was a terrible catastrophe",
   "ex_zh": "这次地震是个可怕的灾难。\nterr（使恐惧，使惊恐）+ible（形容词后缀）。",
   "notes": "",
@@ -793,7 +793,7 @@
  },
  {
   "word": "dread",
-  "meaning": "V.极为害怕，非常担心m恐惧，忧虑",
+  "meaning": "v.极为害怕，非常担心m恐惧，忧虑",
   "ex_en": "I dread to think what will happen",
   "ex_zh": "讦she finds\nout the truth.我不敢去想她知道真相后会怎么样。",
   "notes": "dreadful adj.可怕的，糟透的",
@@ -873,7 +873,7 @@
  },
  {
   "word": "compete",
-  "meaning": "V.竞争；参加（比赛）",
+  "meaning": "v.竞争；参加（比赛）",
   "ex_en": "Our products must be able to compete in the marketplace",
   "ex_zh": "我们的产品一定要在市场中有竞争力。",
   "notes": "competition n.竞争；比赛compete nt adj.能胜任的，有能力的 compete against与...进行竞争",
@@ -888,8 +888,8 @@
   "n": 111
  },
  {
-  "word": "conten",
-  "meaning": "d V.竞争；争辩，主张",
+  "word": "contend",
+  "meaning": "v.竞争；争辩，主张",
   "ex_en": "He contended that it was not his fault",
   "ex_zh": "他争辩说这不是他的过错。",
   "notes": "",
@@ -921,7 +921,7 @@
  },
  {
   "word": "strategy",
-  "meaning": "策略;战略",
+  "meaning": "n.策略；战略",
   "ex_en": "Mao Zedong was a great strategist and skilled in developing military strategies",
   "ex_zh": "毛泽东是一位善于制定军事策略的伟大战略家。",
   "notes": "strategic adj.战略上的strategist n.战略家 strategy and tactics战略与战术",
@@ -1033,7 +1033,7 @@
  },
  {
   "word": "mitigate",
-  "meaning": "V.减轻，缓和",
+  "meaning": "v.减轻，缓和",
   "ex_en": "Nothing could mitigate the cruelty with which she had treated him",
   "ex_zh": "她对他太残暴了，没有什么能为她开脱。 A father is a treasure; a brother is a comfort;\nbut a friend is both.父亲是财富，兄弟是安慰，朋友兼而有之。 There will be a fund-raising event in the library\ntomorrow.明天在图书馆会举办一个筹款活动。",
   "notes": "mitigation n.缓和，减轻 m安慰；舒适v.安慰，抚慰 mfortable adj.舒适的，舒服的 seek comfort寻求安慰 n.事件，大事；公开活动 celebrate an event庆祝某一个事件 抄场争锋",
@@ -1049,7 +1049,7 @@
  },
  {
   "word": "devastate",
-  "meaning": "",
+  "meaning": "v.摧毁，毁坏",
   "ex_en": "They intended to devastate the town at a stroke.",
   "ex_zh": "他们企图一举摧毁全城。",
   "notes": "devastation n.（尤指大面积）破坏；devastating adj.毁灭性的",
@@ -1065,15 +1065,15 @@
  },
  {
   "word": "matter",
-  "meaning": "II.事情；物质V.要紧",
+  "meaning": "n.事情；物质V.要紧",
   "ex_en": "He reconsidered his decision on happened",
   "ex_zh": "因为发生了\n意料之外的事，他重新考虑了自己在这件事情上的决定。",
   "notes": "as a matter of fact事实上",
   "n": 134
  },
  {
-  "word": "happe",
-  "meaning": "n V.发生，出现；碰巧",
+  "word": "happen",
+  "meaning": "v.发生，出现；碰巧",
   "ex_en": "It is impossible to anticipate when it will happen",
   "ex_zh": "不可能预料到这事会在何时发生。 The accident occurred at six o'clock in the\nmorning.事故发生在早上六点钟。",
   "notes": "happe infrequently经常发生 /s'k3：/ V.发生，出现 occurrence n.发生，出现；发生的事情",
@@ -1105,7 +1105,7 @@
  },
  {
   "word": "escape",
-  "meaning": "n./v.逃跑；逃脱；逃避",
+  "meaning": "n. v.逃跑；逃脱；逃避",
   "ex_en": "To my surprise, he managed to escape from that big fire.",
   "ex_zh": "令我惊讶的是，他从那场大火里设法逃了出来。",
   "notes": "escape danger避免危险",
@@ -1129,7 +1129,7 @@
  },
  {
   "word": "evil",
-  "meaning": "ii.邪恶；祸害adj.邪恶的",
+  "meaning": "n.邪恶；祸害adj.邪恶的",
   "ex_en": "Money is thought to be the root cause of all evils",
   "ex_zh": "金钱被认为是万恶之源。",
   "notes": "an evil thought邪念",
@@ -1209,7 +1209,7 @@
  },
  {
   "word": "tomb",
-  "meaning": "<>•坟墓，塚",
+  "meaning": "n.坟墓，塚",
   "ex_en": "Many things left by the ancient people in tombs haven't been brought to light",
   "ex_zh": "古人留在坟墓中的许多东西尚未被发掘。",
   "notes": "",
@@ -1217,7 +1217,7 @@
  },
  {
   "word": "hell",
-  "meaning": "<!•地狱；苦境",
+  "meaning": "n.地狱；苦境",
   "ex_en": "The priest said they would go to hell for their sins",
   "ex_zh": "牧师说，他们将因罪过而下地狱。",
   "notes": "go to hell下地狱；见鬼去吧",
@@ -1249,7 +1249,7 @@
  },
  {
   "word": "troop",
-  "meaning": "n.—群，一队；卜s］军队v.结队前行",
+  "meaning": "n.一群，一队；卜s］军队v.结队前行",
   "ex_en": "The troops made good their retreat from the occupied city",
   "ex_zh": "部队从沦陷的城市安全撤岀。",
   "notes": "troop into成群结队地走进",
@@ -1265,7 +1265,7 @@
  },
  {
   "word": "hover",
-  "meaning": "V.盘旋，悬浮；徘徊；处于不确定状态",
+  "meaning": "v.盘旋，悬浮；徘徊；处于不确定状态",
   "ex_en": "The helicopter is hovering over the crowd",
   "ex_zh": "直升机悬停在人群上空。",
   "notes": "",
@@ -1273,7 +1273,7 @@
  },
  {
   "word": "proceed",
-  "meaning": "V.接下来做；继续进行；行进",
+  "meaning": "v.接下来做；继续进行；行进",
   "ex_en": "The conf ere nee proceeded in a very frie ndly atmosphere",
   "ex_zh": "大会在极友好的气氛中进行。",
   "notes": "proceed with继续进行前缀pro常表示“向前”或“在……之前”，如： proceed（向前走［ceed二to go］t行进），prolong （向前长t延长），produce（向前引出f生产）， prohibit（结合词形进行联想：在habit［习惯］形成之前T禁止）。",
@@ -1353,7 +1353,7 @@
  },
  {
   "word": "collapse",
-  "meaning": "n./v.倒塌；崩溃",
+  "meaning": "n. v.倒塌；崩溃",
   "ex_en": "The man lost all his money in the collapse of the stock market.",
   "ex_zh": "股票市场崩溃了，这个男人失去了所有的钱。",
   "notes": "",
@@ -1425,7 +1425,7 @@
  },
  {
   "word": "retreat",
-  "meaning": "n./v.撤退；退避",
+  "meaning": "n. v.撤退；退避",
   "ex_en": "He immediately sounded a retreat.",
   "ex_zh": "他立刻下令撤退。",
   "notes": "",
@@ -1441,7 +1441,7 @@
  },
  {
   "word": "withdraw",
-  "meaning": "V.收回；（使）撤退；提（款）",
+  "meaning": "v.收回；（使）撤退；提（款）",
   "ex_en": "She withdrew all her savings from the bank",
   "ex_zh": "她从银行里取出了自己的全部存款。\nV.承受，顶住，经受住",
   "notes": "",
@@ -1465,7 +1465,7 @@
  },
  {
   "word": "surrender",
-  "meaning": "n./v.投降；（被迫）放弃",
+  "meaning": "n. v.投降；（被迫）放弃",
   "ex_en": "Thousands of illegal immigrants have surrendered to police.",
   "ex_zh": "数以千计的非法移民已经向警方投降。",
   "notes": "surrender oneself to向...投降；沉迷于，听任……摆布",
@@ -1473,7 +1473,7 @@
  },
  {
   "word": "escape",
-  "meaning": "n./v.逃跑；逃脱；逃避",
+  "meaning": "n. v.逃跑；逃脱；逃避",
   "ex_en": "To my surprise, he managed to escape from that big fire.",
   "ex_zh": "令我惊讶的是，他从那场大火里设法逃了出来。",
   "notes": "escape danger避免危险",
@@ -1489,7 +1489,7 @@
  },
  {
   "word": "avoid punishment",
-  "meaning": "V.放弃，停止；辞去；离开",
+  "meaning": "v.放弃，停止；辞去；离开",
   "ex_en": "She has not quit smoking, but is holding down cigarettes a day",
   "ex_zh": "她还没有戒烟，但是已减到\n沙场争锋",
   "notes": "",
@@ -1497,7 +1497,7 @@
  },
  {
   "word": "abandon",
-  "meaning": "V.放弃；抛弃，丢弃",
+  "meaning": "v.放弃；抛弃，丢弃",
   "ex_en": "Do not abandon yourself to despair",
   "ex_zh": "不要让自己放弃希望。",
   "notes": "aba ndon on eself to沉湎于",
@@ -1513,7 +1513,7 @@
  },
  {
   "word": "discard",
-  "meaning": "V.丢弃，抛弃",
+  "meaning": "v.丢弃，抛弃",
   "ex_en": "Outdated theory should be discarded",
   "ex_zh": "应该抛弃过时的理论。\ndis（离幵）+card（纸牌）t打牌时将这张牌扔出去、不要T本义是“垫（牌）”，引申义是“丢弃”。",
   "notes": "",
@@ -1529,7 +1529,7 @@
  },
  {
   "word": "defend",
-  "meaning": "V.防御，保护；为……辩护",
+  "meaning": "v.防御，保护；为……辩护",
   "ex_en": "She dem on strated the best way to defend oneself",
   "ex_zh": "她示范了最有效的自卫方法。",
   "notes": "defence defense）n.防御，防卫；辩护 （= defendant n.被告 defend against 防御",
@@ -1537,7 +1537,7 @@
  },
  {
   "word": "safeguard",
-  "meaning": "V.保护，保卫n.保护措施",
+  "meaning": "v.保护，保卫n.保护措施",
   "ex_en": "To safeguard the peace is one of the important tasks of the army",
   "ex_zh": "军队的重要任务之一是保卫和平。",
   "notes": "",
@@ -1545,7 +1545,7 @@
  },
  {
   "word": "safeguard sb",
-  "meaning": "V.战胜，击败n.失败",
+  "meaning": "v.战胜，击败n.失败",
   "ex_en": "They were defeated in the football match",
   "ex_zh": "他们在足球赛中输了。海明威的作品《老人与海》（The Old Man and the\nSea）中的经典句子：A man can be destroyed but\nnot defeated.（你可以毁灭我，但不能打败我。）这是全书主题，也是海明威一生的写照。",
   "notes": "",
@@ -1585,7 +1585,7 @@
  },
  {
   "word": "conquer",
-  "meaning": "V.征服；克服，战胜 die.不成功，便成仁。",
+  "meaning": "v.征服；克服，战胜 die.不成功，便成仁。",
   "ex_en": "To conquer or to n",
   "ex_zh": "占领，征服；克服",
   "notes": "shyness克服羞怯心理 conquer 公元前47年左右，凯撒大帝(Caesar)率军进入小亚细亚，只用了五天的时间，就平定了庞培军的叛乱。胜利后的凯撒将所有的喜悦和骄傲都浓缩在三个拉丁词里： saw, I conquered。这 Veni, Vidi, Vici意为：I came, I o 就是历史上著名的“三V文书\"。",
@@ -1625,7 +1625,7 @@
  },
  {
   "word": "honour",
-  "meaning": "(=honor)m尊敬，敬意；荣誉v.尊敬；给予表扬",
+  "meaning": "(=honor)n.尊敬，敬意；荣誉v.尊敬；给予表扬",
   "ex_en": "He's won an Academy Award and a host of other honours",
   "ex_zh": "他获得了奥斯卡金像奖以及其他很多荣誉。",
   "notes": "honourable(=honorable)adj.可敬的；光荣的",
@@ -1641,7 +1641,7 @@
  },
  {
   "word": "contribute",
-  "meaning": "V.捐献；(为……)作贡献；(为书、报刊等)撰稿",
+  "meaning": "v.捐献；(为……)作贡献；(为书、报刊等)撰稿",
   "ex_en": "She seldom contributes to the discussion",
   "ex_zh": "她在讨论中很少发言。",
   "notes": "contribution n.贡献；捐款 contribute to为...作贡献",
@@ -1649,7 +1649,7 @@
  },
  {
   "word": "devote",
-  "meaning": "V.献身；投入",
+  "meaning": "v.献身；投入",
   "ex_en": "After she graduated, she continued to devote herself to research",
   "ex_zh": "毕业后，她继续致力于研究工作。",
   "notes": "devotion n.献身，奉献 devote sth. to把时间、精力等用于",
@@ -1657,7 +1657,7 @@
  },
  {
   "word": "owe",
-  "meaning": "V.欠；应把……归功于；欠(情)，感激",
+  "meaning": "v.欠；应把……归功于；欠(情)，感激",
   "ex_en": "I owe a lot to my wife and children",
   "ex_zh": "我很感激我的妻子和孩子。",
   "notes": "",
@@ -1665,7 +1665,7 @@
  },
  {
   "word": "patrol",
-  "meaning": "n/v.巡逻，巡查",
+  "meaning": "n. v.巡逻，巡查",
   "ex_en": "Every hour a policeman patrolled our street",
   "ex_zh": "每隔一小时就有一名警察在我们这条街上巡逻。",
   "notes": "on patrol在巡逻的",
@@ -1681,7 +1681,7 @@
  },
  {
   "word": "guardian",
-  "meaning": "v./n.伪装",
+  "meaning": "v. n.伪装",
   "ex_en": "Many animals predators",
   "ex_zh": "很多动物都有能帮助\n它们躲避捕食者的天然伪装。防护伪装",
   "notes": "",

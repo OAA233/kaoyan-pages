@@ -9,7 +9,7 @@
  },
  {
   "word": "symbol",
-  "meaning": "象征；符号，记号",
+  "meaning": "n.象征；符号，记号",
   "ex_en": "To them, the monarchy is the special symbol of nationhood.",
   "ex_zh": "在他们看来，君主制是独立国地位的特殊象征。",
   "notes": "symbolise(二symbolize)v.象征",
@@ -17,7 +17,7 @@
  },
  {
   "word": "gesture",
-  "meaning": "n手势，姿势",
+  "meaning": "n.手势，姿势",
   "ex_en": "He put his arm round her in a protective gesture",
   "ex_zh": "他用一只手臂围住她，做出保护的姿势。",
   "notes": "",
@@ -33,7 +33,7 @@
  },
  {
   "word": "pictograph",
-  "meaning": "n-象形文字",
+  "meaning": "n.象形文字",
   "ex_en": "Gen erally speaki ng, the pictograph is the first text.—",
   "ex_zh": "般而言，象形文字是最早的文字。",
   "notes": "",
@@ -49,7 +49,7 @@
  },
  {
   "word": "knot",
-  "meaning": "m（绳、线等的）结；（树枝上的）节子",
+  "meaning": "n.（绳、线等的）结；（树枝上的）节子",
   "ex_en": "He made a knot in the rope",
   "ex_zh": "他在绳子上打了个结。",
   "notes": "cut the knot快刀斩乱麻",
@@ -57,7 +57,7 @@
  },
  {
   "word": "linguistics",
-  "meaning": "n-语言学",
+  "meaning": "n.语言学",
   "ex_en": "He linguistics",
   "ex_zh": "他从",
   "notes": "",
@@ -65,7 +65,7 @@
  },
  {
   "word": "semantic",
-  "meaning": "n-语义的",
+  "meaning": "n.语义的",
   "ex_en": "There are two kinds of puns, phonetic pun and semantic pun",
   "ex_zh": "双关语分为谐音双关和语义双关两类。",
   "notes": "",
@@ -113,7 +113,7 @@
  },
  {
   "word": "inflection",
-  "meaning": "n语调的抑扬变化",
+  "meaning": "n.语调的抑扬变化",
   "ex_en": "She spoke in a low voice, always without inflection",
   "ex_zh": "她的嗓音低，说话总是毫无抑扬变化。",
   "notes": "",
@@ -121,7 +121,7 @@
  },
  {
   "word": "dialect",
-  "meaning": "n・方言，地方话",
+  "meaning": "n.方言，地方话",
   "ex_en": "e dialect is spoken principally in the southern areas",
   "ex_zh": "这种方言主要在南部地区使用。\ndia（在……之间）+lect（说）t人与人之间的对话交流\nT区域性的语言T方言°",
   "notes": "",
@@ -153,7 +153,7 @@
  },
  {
   "word": "verbal",
-  "meaning": "口头的；言语的 adj.",
+  "meaning": "adj.口头的；言语的",
   "ex_en": "Don't be afraid of verbal abuse or criticism",
   "ex_zh": "不要害怕口头上的辱骂或批评。",
   "notes": "nonverbal adj.不用语言的",
@@ -161,7 +161,7 @@
  },
  {
   "word": "syllable",
-  "meaning": "n-音节",
+  "meaning": "n.音节",
   "ex_en": "The stress is on the last syllable",
   "ex_zh": "重音在最后一个音节上。",
   "notes": "",
@@ -177,7 +177,7 @@
  },
  {
   "word": "vowel",
-  "meaning": "n-元音",
+  "meaning": "n.元音",
   "ex_en": "",
   "ex_zh": "",
   "notes": "",
@@ -240,7 +240,7 @@
   "n": 30
  },
  {
-  "word": "cl",
+  "word": "clause",
   "meaning": "n.分句，从句；条款",
   "ex_en": "A con fide ntiality clause was added to the contract",
   "ex_zh": "合同附加了一条保密条款。",
@@ -273,7 +273,7 @@
  },
  {
   "word": "prefix",
-  "meaning": "\"•词首，前缀；前置代号",
+  "meaning": "n.词首，前缀；前置代号",
   "ex_en": "To make calls from Canada, use the prefix 01133 before the numbers given here",
   "ex_zh": "如果从加拿大打电话过来，要在我们给的号码前加拨01133。",
   "notes": "",
@@ -297,7 +297,7 @@
  },
  {
   "word": "synonym",
-  "meaning": "n-同义词",
+  "meaning": "n.同义词",
   "ex_en": "Don't mix up this pair of synonyms",
   "ex_zh": "不要混淆这对同义词。",
   "notes": "",
@@ -305,7 +305,7 @@
  },
  {
   "word": "antonym",
-  "meaning": "n-反义词",
+  "meaning": "n.反义词",
   "ex_en": "\"Happy\"is an antonym of\"sad\".“",
   "ex_zh": "快乐”是“悲伤”的反义词。",
   "notes": "",
@@ -313,7 +313,7 @@
  },
  {
   "word": "noun",
-  "meaning": "n名词",
+  "meaning": "n.名词",
   "ex_en": "The word\"person\"is a countable noun, person",
   "ex_zh": "这个词是个可数名词。",
   "notes": "",
@@ -328,11 +328,11 @@
   "n": 41
  },
  {
-  "word": "plur",
-  "meaning": "al m复数adj.复数的；多元的",
-  "ex_en": "A plural marriage is forbidden by many countries",
-  "ex_zh": "一夫多妻或一妻多夫形式的婚姻被许多国家禁止。 He always put the stress on the pronoun.他总是重读代词。",
-  "notes": "pluralism n.多元主义；多元化；兼职 a plural society多元社会 fi.代词",
+  "word": "plural",
+  "meaning": "n.复数adj.复数的；多元的",
+  "ex_en": "A plural marriage is forbidden by many countries.",
+  "ex_zh": "一夫多妻或一妻多夫形式的婚姻被许多国家禁止。",
+  "notes": "pluralism n.多元主义；多元化；兼职；a plural society多元社会",
   "n": 42
  },
  {
@@ -368,8 +368,8 @@
   "n": 46
  },
  {
-  "word": "con sistent",
-  "meaning": "adj.—致的；（观点或看法）连贯的",
+  "word": "consistent",
+  "meaning": "adj.一致的；（观点或看法）连贯的",
   "ex_en": "The policies which will be put into place are clear and consistent",
   "ex_zh": "将要实施的这些政策内容清楚连贯。",
   "notes": "inconsistent adj.不一致的consist v.由...组成与...一致* be consistent with",
@@ -401,7 +401,7 @@
  },
  {
   "word": "paraphrase",
-  "meaning": "v./n.意译，改述",
+  "meaning": "v. n.意译，改述",
   "ex_en": "The teacher asked his students to paraphrase the long sentence",
   "ex_zh": "老师让学生改述这个长句。",
   "notes": "",
@@ -409,7 +409,7 @@
  },
  {
   "word": "interpret",
-  "meaning": "口译；解释，说明；领会，理解 V.",
+  "meaning": "v.口译；解释，说明；领会，理解",
   "ex_en": "He interpreted the silence as con tempt",
   "ex_zh": "他把这沉默看作轻蔑的表示。",
   "notes": "interpretationn.口译；解释interpreter n.口译员",
@@ -417,15 +417,15 @@
  },
  {
   "word": "narrate",
-  "meaning": "V.讲（故事），叙述 I讦e story to me in the",
+  "meaning": "v.讲（故事），叙述 I讦e story to me in the",
   "ex_en": "The sailor narrated his tavern",
   "ex_zh": "那个水手在酒馆里向我讲述了他的人生经历。",
   "notes": "narration n.叙述，讲述",
   "n": 53
  },
  {
-  "word": "illumin",
-  "meaning": "ate V.阐释，说明；照亮",
+  "word": "illuminate",
+  "meaning": "v.阐释，说明；照亮",
   "ex_en": "We use pictures and drawings to illuminate our subject",
   "ex_zh": "我们用照片和图画来阐明主题。前缀il表示“进入”，字根lumin表示“光\"。本义是“照亮”，引申义是“阐释，说明\"。\nV.译解；辨认 We can decipher the code intercepted by the\nbroadcasting station.我们能破译电台截获的密码。",
   "notes": "",
@@ -441,7 +441,7 @@
  },
  {
   "word": "communicate",
-  "meaning": "V.沟通，交流；传达",
+  "meaning": "v.沟通，交流；传达",
   "ex_en": "We communicated mostly by e-mail",
   "ex_zh": "我们主要通过电子邮件来交流。",
   "notes": "communication n.通信；交流 communicate with与...沟通",
@@ -465,14 +465,14 @@
  },
  {
   "word": "debate",
-  "meaning": "v./n.辩论；争论，讨论",
+  "meaning": "v. n.辩论；争论，讨论",
   "ex_en": "The government is debating about the education laws",
   "ex_zh": "政府正在就教育法进行讨论。",
   "notes": "debatable adj.有争议的",
   "n": 59
  },
  {
-  "word": "commenta ry",
+  "word": "commentary",
   "meaning": "n.评论，评注；批评；实况报道",
   "ex_en": "The con elusion of the commentary really hit the bulKs-eye",
   "ex_zh": "评论最后的结论真是一语破的。",

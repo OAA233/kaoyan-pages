@@ -8,8 +8,8 @@
   "n": 1
  },
  {
-  "word": "vegetatio",
-  "meaning": "n l n・植物，草木",
+  "word": "vegetation",
+  "meaning": "n.植物，草木",
   "ex_en": "There is not much vegetation in deserts",
   "ex_zh": "沙漠中的植物不多。 There is a herb garden behind the house.屋后有一个芳草园。",
   "notes": "etable n.蔬菜vegetarian n.素食者 /h3：b/ m药草；香草 herbal adj.药草的；香草的herbivore n.食草动物carnivore n.食肉动物",
@@ -24,8 +24,8 @@
   "n": 3
  },
  {
-  "word": "bota",
-  "meaning": "ny m植物学",
+  "word": "botany",
+  "meaning": "n.植物学",
   "ex_en": "He was involved in the structural botany",
   "ex_zh": "他潜心于研究结构植物学。",
   "notes": "botanical adj.植物的；植物学的 botanist n.植物学家",
@@ -105,7 +105,7 @@
  },
  {
   "word": "classify",
-  "meaning": "V.分类",
+  "meaning": "v.分类",
   "ex_en": "Librarians spend a lot of time classifying books",
   "ex_zh": "图书馆管理员花许多时间将书分类。",
   "notes": "n.分类classified adj.机密的，保密的 classify...as...把...分类为...",
@@ -113,7 +113,7 @@
  },
  {
   "word": "reproduce",
-  "meaning": "V.繁殖",
+  "meaning": "v.繁殖",
   "ex_en": "When they can't reproduce, cancerous cells die off instead of becoming dangerous",
   "ex_zh": "若癌细胞无法繁殖，它们就会消亡而不会造成威胁。",
   "notes": "",
@@ -121,7 +121,7 @@
  },
  {
   "word": "evolve",
-  "meaning": "V.进化；（使）发展，（使）逐步形成",
+  "meaning": "v.进化；（使）发展，（使）逐步形成",
   "ex_en": "The developmental history of society tells us that man has evolved from some ancient primates",
   "ex_zh": "社会发展史告诉我们，人是由某些古灵长目动物进化来的。",
   "notes": "evolve from从...进化而来字根volu和volv都源自拉丁文volvere,表示“滚，",
@@ -129,23 +129,23 @@
  },
  {
   "word": "fluctuate",
-  "meaning": "V.波动，起伏",
+  "meaning": "v.波动，起伏",
   "ex_en": "The price of vegetables fluctuates seas on ally",
   "ex_zh": "蔬菜的价格随季节波动。",
   "notes": "n.波动fluctuant adj.波动的，起伏的",
   "n": 17
  },
  {
-  "word": "recl",
-  "meaning": "aim V.开垦，开拓，利用",
+  "word": "reclaim",
+  "meaning": "v.开垦，开拓，利用",
   "ex_en": "This land was reclaimed from the sea",
   "ex_zh": "这块地是填海填出来的。",
   "notes": "",
   "n": 18
  },
  {
-  "word": "cultiv",
-  "meaning": "ate V.耕作；培养",
+  "word": "cultivate",
+  "meaning": "v.耕作；培养",
   "ex_en": "The farmer is cultivating his land",
   "ex_zh": "农民正在耕耘他的土地。 These seeds should be sown in April.这些种子应在4月播种。\nsow\n植物研究",
   "notes": "cultivation n.耕种；培养 cultivate the habit of养成...的习惯 cultivate a creative mind培养富有创造力的头脑该词的字根cult表示“耕种；培养”。同根词culture意为“文化\"，而古时最早的文化之一即农耕文化——怎样播种，如何灌溉，何时收获，等等。 /sou/ sow V.播种",
@@ -153,7 +153,7 @@
  },
  {
   "word": "harvest",
-  "meaning": "V.收割n.收获；收成",
+  "meaning": "v.收割n.收获；收成",
   "ex_en": "A good summer harvest is not easy to come by",
   "ex_zh": "夏季的好收成不容易实现。\nharvest在收获的季节",
   "notes": "",
@@ -161,7 +161,7 @@
  },
  {
   "word": "pluck",
-  "meaning": "V.采，摘 lover.他为情人摘了一",
+  "meaning": "v.采，摘 lover.他为情人摘了一",
   "ex_en": "He plucked a rose for his",
   "ex_zh": "朵玫瑰花。",
   "notes": "",
@@ -169,7 +169,7 @@
  },
  {
   "word": "pick",
-  "meaning": "V.拾;摘",
+  "meaning": "v.拾;摘",
   "ex_en": "He picked the watch up from the carpet",
   "ex_zh": "他把表从地毯上捡起来。",
   "notes": "",
@@ -177,15 +177,15 @@
  },
  {
   "word": "yield",
-  "meaning": "V.出产；屈服，服从n.产量；投资收益",
+  "meaning": "v.出产；屈服，服从n.产量；投资收益",
   "ex_en": "This land yields well",
   "ex_zh": "这块土地产量高。",
   "notes": "yielding adj.易弯曲的；顺从的 unyielding adj.坚硬的；不屈不挠的",
   "n": 23
  },
  {
-  "word": "re",
-  "meaning": "ar V.培养，抚养；饲养n.后部",
+  "word": "rear",
+  "meaning": "v.培养，抚养；饲养 n.后部",
   "ex_en": "Most farmers in this area rear sheep",
   "ex_zh": "这个地区的大多数农民都养羊。",
   "notes": "",
@@ -193,7 +193,7 @@
  },
  {
   "word": "arable",
-  "meaning": "adj-适于耕种的",
+  "meaning": "adj.适于耕种的",
   "ex_en": "This area changed quickly from arable land to desert",
   "ex_zh": "这个地区很快就从可耕地变成了沙漠。\n(=plow)n.犁v.耕(地)",
   "notes": "",
@@ -369,7 +369,7 @@
  },
  {
   "word": "ripen",
-  "meaning": "V.（使）成熟",
+  "meaning": "v.（使）成熟",
   "ex_en": "The sun ripens the corn",
   "ex_zh": "阳光使谷物成熟。",
   "notes": "ripe adj.熟的；时机成熟的ripener n.催熟剂 植物研究",
@@ -385,7 +385,7 @@
  },
  {
   "word": "wither",
-  "meaning": "V.（使）枯萎terrace",
+  "meaning": "v.（使）枯萎terrace",
   "ex_en": "The grapes withered on the vine",
   "ex_zh": "葡萄藤上的葡n.梯田萄干瘪了。 The",
   "notes": "withered adj.凋谢了的，枯萎的irrigation.梯田的沟渠便于灌溉。",
@@ -393,7 +393,7 @@
  },
  {
   "word": "decompose",
-  "meaning": "V.（ffi）分解；（使）腐烂timber",
+  "meaning": "v.（ffi）分解；（使）腐烂timber",
   "ex_en": "You can apply heat to decompose organic compounds",
   "ex_zh": "你可以加热来分解有机化合物。",
   "notes": "compose v.构成；写，创作timber.这个农夫花了一天时间在森林里砍木材。 de（非，使相反）+compose（组成）t分解，腐烂。",
@@ -409,7 +409,7 @@
  },
  {
   "word": "decay",
-  "meaning": "V.腐烂 decay.那些蔬菜",
+  "meaning": "v.腐烂 decay.那些蔬菜",
   "ex_en": "The vegetables have begun to",
   "ex_zh": "已开始腐烂。",
   "notes": "",
@@ -433,7 +433,7 @@
  },
  {
   "word": "jungle",
-  "meaning": "热带）丛林，密林",
+  "meaning": "n.（热带）丛林，密林",
   "ex_en": "Tigers are found in the jungle of Asia",
   "ex_zh": "在亚洲的丛林中有老虎。",
   "notes": "in the jungle在丛林里",
@@ -649,7 +649,7 @@
  },
  {
   "word": "reef",
-  "meaning": "m(暗)礁，礁脉",
+  "meaning": "n.(暗)礁，礁脉",
   "ex_en": "The ship was wrecked on a reef",
   "ex_zh": "这船触礁失事了。n-摄取；领会",
   "notes": "",
@@ -720,7 +720,7 @@
   "n": 90
  },
  {
-  "word": "m echanism",
+  "word": "mechanism",
   "meaning": "n.机制；构造",
   "ex_en": "Bones and muscles are parts of the mechanism of the body",
   "ex_zh": "骨骼和肌肉是身体的部分构造。",
@@ -745,7 +745,7 @@
  },
  {
   "word": "from",
-  "meaning": "V.保护；维持（原状）；保存",
+  "meaning": "v.保护；维持（原状）；保存",
   "ex_en": "It is the duty of the police to preserve public order",
   "ex_zh": "维持公共秩序是警察的职责。 Some accommodation between conservation\nand tourism is essential.对自然环境的保护与旅游业之间的相互协调是至关重要的。",
   "notes": "preservation n.保护 n.（对自然环境的）保护；保存 conversation n.交谈",
@@ -761,7 +761,7 @@
  },
  {
   "word": "destruct",
-  "meaning": "V.（使）自毁",
+  "meaning": "v.（使）自毁",
   "ex_en": "The tape would self-destruct in twenty minutes",
   "ex_zh": "这盘磁带会在20分钟后自毁。",
   "notes": "destruction n.破坏",
@@ -769,7 +769,7 @@
  },
  {
   "word": "ruin",
-  "meaning": "V.毁坏，摧毁n.毁灭；废墟",
+  "meaning": "v.毁坏，摧毁n.毁灭；废墟",
   "ex_en": "The storm ruined the crops",
   "ex_zh": "暴风雨毁坏了庄稼。\nV.毁灭，消亡；腐烂 Flowers perish when frost comes.霜冻一来，花即凋零。西方学术界有一句很有名的话:\"Publish or Perish!n\n指的是从事研究的人，如果不能高效地在规定的期刊杂志上持续发表足够数量的论文或学术文章，就无法维持或推进其学术生涯。\nV.拆除；毁坏，破坏；推翻 The fire demolished the town.大火烧毁了这座城镇。",
   "notes": "",
@@ -777,7 +777,7 @@
  },
  {
   "word": "infringe",
-  "meaning": "V.侵犯；违反",
+  "meaning": "v.侵犯；违反",
   "ex_en": "The press infringed a copyright agreement",
   "ex_zh": "这家出版社违反了一项版权协议。\n\"-植物研究",
   "notes": "",
@@ -793,7 +793,7 @@
  },
  {
   "word": "pattern",
-  "meaning": "\"•模式；式样；底样",
+  "meaning": "n.模式；式样；底样",
   "ex_en": "Training and education follow different patterns in different regions",
   "ex_zh": "培训和教育在不同的地区遵循不同的模式。",
   "notes": "a dress pattern衣服的底样",
@@ -801,7 +801,7 @@
  },
  {
   "word": "outcome",
-  "meaning": "n-结果",
+  "meaning": "n.结果",
   "ex_en": "We are anxiously awaiting the outcome of their discussion",
   "ex_zh": "我们急切地等待着他们讨论的结果。",
   "notes": "",
@@ -809,7 +809,7 @@
  },
  {
   "word": "impact",
-  "meaning": "n-影响",
+  "meaning": "n.影响",
   "ex_en": "We are a flash in time, but our impact is forever",
   "ex_zh": "我们只是时间长河中的一瞬闪光，但我们的影响是永恒的。",
   "notes": "have an impact on对...有影响",
@@ -824,8 +824,8 @@
   "n": 103
  },
  {
-  "word": "ad",
-  "meaning": "j.实验的；试验性的",
+  "word": "experimental",
+  "meaning": "adj.实验的；试验性的",
   "ex_en": "There is no cure or vaccine, but some patients have been given experimental treatments",
   "ex_zh": "没有任何治疗方法或疫苗，但是一些病人接受了试验性治疗。",
   "notes": "",
