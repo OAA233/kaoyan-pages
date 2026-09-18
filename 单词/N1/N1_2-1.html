@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="zh-CN" data-page-node-id="d5gPKUk6B3vTswiWan08BG">
+<head data-page-node-id="WOJkWCaXXdZ6OhWrboaaOA">
+<meta charset="UTF-8" data-page-node-id="1tYc3OKkAimDBNNMAlR9nw">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="qDIPdAJwrUWCWdaByn1iaq">
 <title>新完全掌握 2-1 味覚・料理</title>
 <style>
   body {
@@ -183,29 +183,29 @@
   .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
 </style>
 </head>
-<body>
-<header>
-  <div>
-    <h1>2-1 味覚・料理</h1>
-    <p>第1课 生活① 味覚・料理（书内 p.10–11）<span class="stats">共 <b id="count"></b> 词 · 点击日文发音（edge 女声）</span></p>
+<body data-page-node-id="D3TxhBT65ZhCDKyMfDSyYa">
+<header data-page-node-id="De9fygAoWEkDCmFA8WYelb">
+  <div data-page-node-id="i84PCXq5yYR3o6J0AX3gUy">
+    <h1 data-page-node-id="yzl3Y9utkO7NkVJosuLYmV">2-1 味覚・料理</h1>
+    <p data-page-node-id="xlfuTu3Z6eBj57oeMNiJRW">第1课 生活① 味覚・料理（书内 p.10–11）<span class="stats" data-page-node-id="242Uu1MUWghOkJWXn7BkXB">共 <b id="count" data-page-node-id="oZXoV8wK5LRCMhzh7Ye4kv"></b> 词 · 点击日文发音（edge 女声）</span></p>
   </div>
-  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
-  <button id="editBtn" class="hbtn" onclick="toggleEdit()">✏️ 编辑</button>
-  <button id="expBtn" class="hbtn pri hide" onclick="exportData()">⬇ 导出 JSON</button>
-  <button id="rstBtn" class="hbtn hide" onclick="resetAll()">↺ 重置</button>
-  <button id="themeBtn" onclick="toggleTheme()">🌙 夜间</button>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()" data-page-node-id="uIHnZSYhBm0VxgX6CFxXKY">🎧 听写</button>
+  <button id="editBtn" class="hbtn" onclick="toggleEdit()" data-page-node-id="fJqwWfi27DaUh99lVYBq8p">✏️ 编辑</button>
+  <button id="expBtn" class="hbtn pri hide" onclick="exportData()" data-page-node-id="pgTuozrcft6bZkjEFuN6Kt">⬇ 导出 JSON</button>
+  <button id="rstBtn" class="hbtn hide" onclick="resetAll()" data-page-node-id="J3cQ4YWqa45EGJTKCjJPjU">↺ 重置</button>
+  <button id="themeBtn" onclick="toggleTheme()" data-page-node-id="XPghbIjLtKVPn6UsHh7C6h">🌙 夜间</button>
 </header>
-<div id="list"></div>
+<div id="list" data-page-node-id="pIRSM4SGJXSuSiXYsfgj2t"></div>
 
 <!-- 导出 Modal -->
-<div class="modal-mask" id="exportModal">
-  <div class="modal-box">
-    <h3 style="margin:0;">导出当前数据 (JSON)</h3>
-    <p style="font-size:12px;opacity:.6;margin:0;">已自动触发文件下载。您也可以直接复制下方 JSON 数据备份：</p>
+<div class="modal-mask" id="exportModal" data-page-node-id="PxUJCMwPPDpP0CXeMhdWWG">
+  <div class="modal-box" data-page-node-id="17fPxWelmeytCQjcEzk3PO">
+    <h3 style="margin:0;" data-page-node-id="2aU21s3D8TC3dZAUc8kc7E">导出当前数据 (JSON)</h3>
+    <p style="font-size:12px;opacity:.6;margin:0;" data-page-node-id="vYjb0C7oWnAQodOK2MQGgs">已自动触发文件下载。您也可以直接复制下方 JSON 数据备份：</p>
     <textarea id="exportText" rows="14" style="width:100%;box-sizing:border-box;font-family:monospace;font-size:11px;background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:6px;padding:8px;"></textarea>
-    <div class="modal-btns">
-      <button class="hbtn" onclick="document.getElementById('exportModal').classList.remove('open')">关闭</button>
-      <button class="hbtn pri" onclick="copyExportText()">复制到剪贴板</button>
+    <div class="modal-btns" data-page-node-id="x7ODwEG3eS1SzTygdCFJQi">
+      <button class="hbtn" onclick="document.getElementById('exportModal').classList.remove('open')" data-page-node-id="B1X10rOGrnbleX57ntzsnt">关闭</button>
+      <button class="hbtn pri" onclick="copyExportText()" data-page-node-id="n7MLLbzAAzg7JRfxdutehG">复制到剪贴板</button>
     </div>
   </div>
 </div>
@@ -411,6 +411,22 @@ const INITIAL_DATA = [
   "g": 0
  },
  {
+  "id": 105,
+  "aid": 105,
+  "asfx": "",
+  "s": "2. 料理と栄養",
+  "w": "凝る",
+  "k": "こる",
+  "en": "",
+  "m": "讲究，考究；酸痛",
+  "p": "V1",
+  "ph": "内装に凝った店",
+  "phz": "装修讲究的店",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
   "id": 13,
   "aid": 13,
   "asfx": "",
@@ -523,20 +539,36 @@ const INITIAL_DATA = [
   "g": 0
  },
  {
-  "id": 20,
-  "aid": 20,
+  "id": 109,
+  "aid": 109,
   "asfx": "",
   "s": "3. 食べ物と健康",
   "w": "名産",
   "k": "めいさん",
   "en": "",
-  "m": "名产",
+  "m": "名产，有名物产",
   "p": "N",
   "ph": "この地方の名産",
-  "phz": "当地的名产",
-  "role": "",
-  "side": "",
-  "g": 0
+  "phz": "这个地方的名产",
+  "role": "syn",
+  "side": "L",
+  "g": 5
+ },
+ {
+  "id": 110,
+  "aid": 110,
+  "asfx": "",
+  "s": "3. 食べ物と健康",
+  "w": "特産",
+  "k": "とくさん",
+  "en": "",
+  "m": "特产",
+  "p": "N",
+  "ph": "",
+  "phz": "",
+  "role": "syn",
+  "side": "R",
+  "g": 5
  },
  {
   "id": 21,
@@ -651,15 +683,15 @@ const INITIAL_DATA = [
   "g": 0
  },
  {
-  "id": 27,
-  "aid": 27,
+  "id": 112,
+  "aid": 112,
   "asfx": "",
   "s": "5. 例文中的副词",
-  "w": "暮らす",
-  "k": "くらす",
+  "w": "首都圏",
+  "k": "しゅとけん",
   "en": "",
-  "m": "生活，过日子",
-  "p": "V1",
+  "m": "首都圈",
+  "p": "N",
   "ph": "首都圏で暮らす",
   "phz": "在首都圈生活",
   "role": "",
@@ -747,6 +779,22 @@ const INITIAL_DATA = [
   "g": 0
  },
  {
+  "id": 113,
+  "aid": 113,
+  "asfx": "",
+  "s": "5. 例文中的副词",
+  "w": "居住者",
+  "k": "きょじゅうしゃ",
+  "en": "",
+  "m": "居住者，住户",
+  "p": "N",
+  "ph": "マンションの居住者で組合を結成する",
+  "phz": "由公寓的住户组成互助会",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
   "id": 33,
   "aid": 33,
   "asfx": "",
@@ -758,22 +806,6 @@ const INITIAL_DATA = [
   "p": "N",
   "ph": "組合を結成する",
   "phz": "成立组织",
-  "role": "",
-  "side": "",
-  "g": 0
- },
- {
-  "id": 34,
-  "aid": 34,
-  "asfx": "",
-  "s": "六",
-  "w": "本格的な",
-  "k": "ほんかくてきな",
-  "en": "",
-  "m": "地道的，正宗的",
-  "p": "ナ",
-  "ph": "本格的な味",
-  "phz": "正宗的味道",
   "role": "",
   "side": "",
   "g": 0
@@ -793,6 +825,22 @@ const INITIAL_DATA = [
   "role": "ant",
   "side": "L",
   "g": 1
+ },
+ {
+  "id": 114,
+  "aid": 114,
+  "asfx": "",
+  "s": "六",
+  "w": "本場",
+  "k": "ほんば",
+  "en": "",
+  "m": "发源地，正宗产地；正宗",
+  "p": "N",
+  "ph": "本場の味",
+  "phz": "正宗的味道",
+  "role": "",
+  "side": "",
+  "g": 0
  },
  {
   "id": 101,
@@ -955,6 +1003,22 @@ const INITIAL_DATA = [
   "g": 0
  },
  {
+  "id": 115,
+  "aid": 115,
+  "asfx": "",
+  "s": "七",
+  "w": "おむつ",
+  "k": "おむつ",
+  "en": "",
+  "m": "尿布",
+  "p": "N",
+  "ph": "赤ちゃんのおむつを替える",
+  "phz": "给宝宝换尿布",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
   "id": 44,
   "aid": 44,
   "asfx": "",
@@ -1003,6 +1067,22 @@ const INITIAL_DATA = [
   "g": 0
  },
  {
+  "id": 116,
+  "aid": 116,
+  "asfx": "",
+  "s": "七",
+  "w": "悩ます",
+  "k": "なやます",
+  "en": "",
+  "m": "使烦恼，使苦恼",
+  "p": "V1",
+  "ph": "騒音が住民を悩ませる",
+  "phz": "噪音让居民苦恼",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
   "id": 47,
   "aid": 47,
   "asfx": "",
@@ -1030,6 +1110,38 @@ const INITIAL_DATA = [
   "p": "N",
   "ph": "家事を分担する",
   "phz": "分担家务",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 117,
+  "aid": 117,
+  "asfx": "",
+  "s": "八",
+  "w": "ふき取る",
+  "k": "ふきとる",
+  "en": "",
+  "m": "擦去，揩去",
+  "p": "V1",
+  "ph": "こぼれた水をふき取る",
+  "phz": "把洒出来的水擦掉",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 118,
+  "aid": 118,
+  "asfx": "",
+  "s": "八",
+  "w": "吸い取る",
+  "k": "すいとる",
+  "en": "",
+  "m": "吸走，吸干",
+  "p": "V1",
+  "ph": "掃除機でごみを吸い取る",
+  "phz": "用吸尘器吸走垃圾",
   "role": "",
   "side": "",
   "g": 0
@@ -1099,6 +1211,54 @@ const INITIAL_DATA = [
   "g": 0
  },
  {
+  "id": 119,
+  "aid": 119,
+  "asfx": "",
+  "s": "八",
+  "w": "染み込む",
+  "k": "しみこむ",
+  "en": "",
+  "m": "渗入，渗透",
+  "p": "V1",
+  "ph": "水が土に染み込む",
+  "phz": "水渗进土里",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 120,
+  "aid": 120,
+  "asfx": "",
+  "s": "八",
+  "w": "放り込む",
+  "k": "ほうりこむ",
+  "en": "",
+  "m": "扔进，投入",
+  "p": "V1",
+  "ph": "服をたんすに放り込む",
+  "phz": "把衣服扔进衣柜",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 121,
+  "aid": 121,
+  "asfx": "",
+  "s": "八",
+  "w": "飲みこむ",
+  "k": "のみこむ",
+  "en": "",
+  "m": "咽下，吞下",
+  "p": "V1",
+  "ph": "よくかんでから飲みこむ",
+  "phz": "嚼碎后再咽下去",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
   "id": 53,
   "aid": 53,
   "asfx": "",
@@ -1126,6 +1286,22 @@ const INITIAL_DATA = [
   "p": "adv",
   "ph": "じっくり煮込む",
   "phz": "慢慢炖煮",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 122,
+  "aid": 122,
+  "asfx": "",
+  "s": "九",
+  "w": "てきぱき",
+  "k": "てきぱき",
+  "en": "",
+  "m": "麻利，利落",
+  "p": "adv",
+  "ph": "母はてきぱき手際よく料理する",
+  "phz": "妈妈麻利地做菜",
   "role": "",
   "side": "",
   "g": 0
@@ -1620,13 +1796,13 @@ function copyExportText(){
 render();
 </script>
 
-<div id="ftool">
-  <div class="ft-tip">添加到最近操作的卡片旁</div>
-  <button onclick="ftAdd('word')">＋ 词框</button>
-  <button onclick="ftAdd('arr')">⇄ 相对组</button>
-  <button onclick="ftAdd('ant')">| 反义组</button>
-  <button onclick="ftAdd('syn')">— 同类组</button>
-  <button onclick="ftAdd('note')">✎ 文本</button>
+<div id="ftool" data-page-node-id="RthCHHyyrxCavrBLVZ86PK">
+  <div class="ft-tip" data-page-node-id="xww11SASEVfVZp4xHSNPRQ">添加到最近操作的卡片旁</div>
+  <button onclick="ftAdd('word')" data-page-node-id="vsmm0W28RJgeWqbXAB4JNv">＋ 词框</button>
+  <button onclick="ftAdd('arr')" data-page-node-id="u6wESgESDXqsQ4LOHOfhSZ">⇄ 相对组</button>
+  <button onclick="ftAdd('ant')" data-page-node-id="4QEnHw7AXyq76XvgrWeyNt">| 反义组</button>
+  <button onclick="ftAdd('syn')" data-page-node-id="o2XGZOhm1XdDYraZepGdA4">— 同类组</button>
+  <button onclick="ftAdd('note')" data-page-node-id="Gt6TBCrEHQVesGhCD9BzpI">✎ 文本</button>
 </div>
 <script>
 /* ---- 悬浮工具条 + 选字拖动 ---- */
@@ -1720,19 +1896,19 @@ toggleEdit = function(){ _origToggle(); document.getElementById('ftool').classLi
 </script>
 
 
-<div id="dict">
-  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
-  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
-  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
-  <div id="dictAns" class="hidden"></div>
-  <div class="dbtns">
-    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
-    <button class="hbtn" id="dictAutoBtn" onclick="dictAutoToggle()">自动: 关</button>
-    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
-    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
-    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+<div id="dict" data-page-node-id="EiDFHFoCOWTCoc49GuQmRJ">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()" data-page-node-id="0lDYHjE1tFisc6UbfXfpHD">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;" data-page-node-id="GmVbGHkHFW255DeXYx9gQD"></div>
+  <button id="dictBig" onclick="playCur()" data-page-node-id="ds7wDsIRXpElen91I9fVzG">▶ 点击播放</button>
+  <div id="dictAns" class="hidden" data-page-node-id="mTbLL32RPNjA2OU28LECGc"></div>
+  <div class="dbtns" data-page-node-id="ibMhDcrVaWcLNluT8C0R3Q">
+    <button class="hbtn" onclick="dictPrev()" data-page-node-id="0LgMdGXAKDvUujODs7xkaO">◀ 上一个</button>
+    <button class="hbtn" id="dictAutoBtn" onclick="dictAutoToggle()" data-page-node-id="By55tBUYpVB5UCq8qHQo30">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()" data-page-node-id="FxNUPtKI7wBHhPfDw1SfsA">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()" data-page-node-id="5aSBk8ofhB8zHUistSZmtK">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()" data-page-node-id="Cs4psfTuSguar2HONETBQf">显示答案</button>
   </div>
-  <div style="opacity:.4;font-size:11px;">空格=重播 · →/D=下一个 · ←/A=上一个 · S=显示答案 · Esc=退出</div>
+  <div style="opacity:.4;font-size:11px;" data-page-node-id="TrVQuFBugylf2PWjGSv3hD">空格=重播 · →/D=下一个 · ←/A=上一个 · S=显示答案 · Esc=退出</div>
 </div>
 <script>
 /* ---- 听写（N2_1-2: aid+asfx 音频, 词→例句链） ---- */

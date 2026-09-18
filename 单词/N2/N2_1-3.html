@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="zh-CN" data-page-node-id="6iRLpQK5DNqHizmJno2qr0">
+<head data-page-node-id="soDTsOesgNZRyeesOSnFxF">
+<meta charset="UTF-8" data-page-node-id="pekWmEBzFk5vOtcuIT3fwm">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="MtA2EnkYLkvDuoZCzk99sS">
 <title>新完全掌握 1-3 感情・行動</title>
 <style>
   body {
@@ -183,29 +183,29 @@
   .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
 </style>
 </head>
-<body>
-<header>
-  <div>
-    <h1>1-3 感情・行動</h1>
-    <p>第1部 1章 3課 感情・行動<span class="stats">共 <b id="count"></b> 词 · 点击日文发音（edge 女声）</span></p>
+<body data-page-node-id="UHtM0BYyWVHfWP1pL7N4Hb">
+<header data-page-node-id="rDghoJhEZ1LhyFBtQE5Njd">
+  <div data-page-node-id="3FR2kQsyR3THHqYXH89mca">
+    <h1 data-page-node-id="TdkdFCTD8G19vOwlT5pt6s">1-3 感情・行動</h1>
+    <p data-page-node-id="4tlv9tJ4Ex0BEqtQYCDnlG">第1部 1章 3課 感情・行動<span class="stats" data-page-node-id="KJDHJiTlib8em047pmEWm2">共 <b id="count" data-page-node-id="WjyqM3WFC2mFtrXVtgoSnq"></b> 词 · 点击日文发音（edge 女声）</span></p>
   </div>
-  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
-  <button id="editBtn" class="hbtn" onclick="toggleEdit()">✏️ 编辑</button>
-  <button id="expBtn" class="hbtn pri hide" onclick="exportData()">⬇ 导出 JSON</button>
-  <button id="rstBtn" class="hbtn hide" onclick="resetAll()">↺ 重置</button>
-  <button id="themeBtn" onclick="toggleTheme()">🌙 夜间</button>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()" data-page-node-id="GC6pB8AhrqXZre9he354kt">🎧 听写</button>
+  <button id="editBtn" class="hbtn" onclick="toggleEdit()" data-page-node-id="DkMlL4RD5uIe42KF7Adbb2">✏️ 编辑</button>
+  <button id="expBtn" class="hbtn pri hide" onclick="exportData()" data-page-node-id="ZmdB8cJ0XIa0MGOUbBmIpT">⬇ 导出 JSON</button>
+  <button id="rstBtn" class="hbtn hide" onclick="resetAll()" data-page-node-id="Z2oVBpxbHIFDNMV47kIqSI">↺ 重置</button>
+  <button id="themeBtn" onclick="toggleTheme()" data-page-node-id="yFwAN6FNywJnGItOdyZgZC">🌙 夜间</button>
 </header>
-<div id="list"></div>
+<div id="list" data-page-node-id="MrvVryWK41OQ2ELO7iuFhM"></div>
 
 <!-- 导出 Modal -->
-<div class="modal-mask" id="exportModal">
-  <div class="modal-box">
-    <h3 style="margin:0;">导出当前数据 (JSON)</h3>
-    <p style="font-size:12px;opacity:.6;margin:0;">已自动触发文件下载。您也可以直接复制下方 JSON 数据备份：</p>
+<div class="modal-mask" id="exportModal" data-page-node-id="yzbr3sLo2RPgKjDlfZeeSs">
+  <div class="modal-box" data-page-node-id="XFSmNYkfYOFW1dMRV6mSJX">
+    <h3 style="margin:0;" data-page-node-id="qlC33XSwZ8KwCC8SFWWf8O">导出当前数据 (JSON)</h3>
+    <p style="font-size:12px;opacity:.6;margin:0;" data-page-node-id="FpMQYYsONSlOIRTyH8FhCE">已自动触发文件下载。您也可以直接复制下方 JSON 数据备份：</p>
     <textarea id="exportText" rows="14" style="width:100%;box-sizing:border-box;font-family:monospace;font-size:11px;background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:6px;padding:8px;"></textarea>
-    <div class="modal-btns">
-      <button class="hbtn" onclick="document.getElementById('exportModal').classList.remove('open')">关闭</button>
-      <button class="hbtn pri" onclick="copyExportText()">复制到剪贴板</button>
+    <div class="modal-btns" data-page-node-id="xcMA9oRqu3Mu5ZDpP2aRhp">
+      <button class="hbtn" onclick="document.getElementById('exportModal').classList.remove('open')" data-page-node-id="vwVD9pPhy6UGSItDoeBPSj">关闭</button>
+      <button class="hbtn pri" onclick="copyExportText()" data-page-node-id="Z2UyjJQsjkSKTOcFTgA2KR">复制到剪贴板</button>
     </div>
   </div>
 </div>
@@ -383,7 +383,7 @@ const INITIAL_DATA = [
   "aid": 8,
   "asfx": "",
   "s": "一",
-  "w": "あこがれる",
+  "w": "憧れる",
   "k": "あこがれる",
   "en": "",
   "m": "憧憬，向往",
@@ -399,8 +399,8 @@ const INITIAL_DATA = [
   "aid": 9,
   "asfx": "",
   "s": "一",
-  "w": "恩を感じる",
-  "k": "おんをかんじる",
+  "w": "恩",
+  "k": "おん",
   "en": "",
   "m": "感恩，感激",
   "p": "V2",
@@ -687,8 +687,8 @@ const INITIAL_DATA = [
   "aid": 22,
   "asfx": "",
   "s": "二",
-  "w": "皮肉を言う",
-  "k": "ひにくをいう",
+  "w": "皮肉",
+  "k": "ひにく",
   "en": "",
   "m": "说风凉话，讽刺",
   "p": "V1",
@@ -703,8 +703,8 @@ const INITIAL_DATA = [
   "aid": 23,
   "asfx": "",
   "s": "二",
-  "w": "ぶつぶつ不平を言う",
-  "k": "ぶつぶつふへいをいう",
+  "w": "ぶつぶつ不平",
+  "k": "ぶつぶつふへい",
   "en": "",
   "m": "嘟囔着抱怨",
   "p": "V1",
@@ -735,8 +735,8 @@ const INITIAL_DATA = [
   "aid": 25,
   "asfx": "",
   "s": "二",
-  "w": "子供に怒鳴る",
-  "k": "こどもにどなる",
+  "w": "怒鳴る",
+  "k": "どなる",
   "en": "",
   "m": "斥责孩子，对孩子吼",
   "p": "V1",
@@ -751,8 +751,8 @@ const INITIAL_DATA = [
   "aid": 26,
   "asfx": "",
   "s": "二",
-  "w": "秘密を隠す",
-  "k": "ひみつをかくす",
+  "w": "隠す",
+  "k": "かくす",
   "en": "",
   "m": "隐瞒秘密",
   "p": "V1",
@@ -767,8 +767,8 @@ const INITIAL_DATA = [
   "aid": 27,
   "asfx": "",
   "s": "二",
-  "w": "うわさを広める",
-  "k": "うわさをひろめる",
+  "w": "広める",
+  "k": "ひろめる",
   "en": "",
   "m": "散布谣言",
   "p": "V2",
@@ -788,7 +788,7 @@ const INITIAL_DATA = [
   "en": "",
   "m": "消除误会",
   "p": "V1",
-  "ph": "誤解が解ける",
+  "ph": "",
   "phz": "误会解开",
   "role": "syn",
   "side": "L",
@@ -799,8 +799,8 @@ const INITIAL_DATA = [
   "aid": 108,
   "asfx": "",
   "s": "二",
-  "w": "解ける",
-  "k": "とける",
+  "w": "誤解が解ける",
+  "k": "ごかいがとける",
   "en": "",
   "m": "误会解开",
   "p": "V1",
@@ -832,11 +832,11 @@ const INITIAL_DATA = [
   "asfx": "",
   "s": "三",
   "w": "エチケット",
-  "k": "etiquette",
+  "k": "エチケット",
   "en": "",
   "m": "礼节",
   "p": "N",
-  "ph": "作法を守る",
+  "ph": "エチケットを守る",
   "phz": "遵守礼节",
   "role": "syn",
   "side": "L",
@@ -852,8 +852,8 @@ const INITIAL_DATA = [
   "en": "",
   "m": "礼法",
   "p": "N",
-  "ph": "",
-  "phz": "",
+  "ph": "作法を守る",
+  "phz": "遵守礼仪",
   "role": "syn",
   "side": "R",
   "g": 10
@@ -863,10 +863,10 @@ const INITIAL_DATA = [
   "aid": 31,
   "asfx": "",
   "s": "三",
-  "w": "正しい敬語を使う",
-  "k": "ただしいけいごをつかう",
+  "w": "敬語",
+  "k": "けいご",
   "en": "",
-  "m": "使用正确的敬语",
+  "m": "敬语",
   "p": "V1",
   "ph": "正しい敬語を使う",
   "phz": "使用正确的敬语",
@@ -879,13 +879,29 @@ const INITIAL_DATA = [
   "aid": 32,
   "asfx": "",
   "s": "三",
-  "w": "反抗的な態度を取る",
-  "k": "はんこうてきなたいどをとる",
+  "w": "反抗的",
+  "k": "はんこうてき",
   "en": "",
-  "m": "采取反抗态度",
-  "p": "V1",
+  "m": "反抗的",
+  "p": "ナ",
   "ph": "反抗的な態度を取る",
   "phz": "采取反抗的态度",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 110,
+  "aid": 110,
+  "asfx": "",
+  "s": "三",
+  "w": "態度",
+  "k": "たいど",
+  "en": "",
+  "m": "态度",
+  "p": "N",
+  "ph": "",
+  "phz": "",
   "role": "",
   "side": "",
   "g": 0
@@ -911,10 +927,10 @@ const INITIAL_DATA = [
   "aid": 34,
   "asfx": "",
   "s": "三",
-  "w": "きちんとした姿勢で座る",
-  "k": "きちんとしたしせいですわる",
+  "w": "姿勢",
+  "k": "しせい",
   "en": "",
-  "m": "端正坐姿",
+  "m": "姿势",
   "p": "V1",
   "ph": "きちんとした姿勢で座る",
   "phz": "坐姿端正",
@@ -943,10 +959,10 @@ const INITIAL_DATA = [
   "aid": 36,
   "asfx": "",
   "s": "四",
-  "w": "女性にもてる",
-  "k": "じょせいにもてる",
+  "w": "もてる",
+  "k": "もてる",
   "en": "",
-  "m": "受女性欢迎",
+  "m": "受欢迎",
   "p": "V2",
   "ph": "異性にもてる",
   "phz": "受异性欢迎",
@@ -959,10 +975,10 @@ const INITIAL_DATA = [
   "aid": 37,
   "asfx": "",
   "s": "四",
-  "w": "私の理想のタイプだ",
-  "k": "わたしのりそうのtypeだ",
+  "w": "理想",
+  "k": "りそう",
   "en": "",
-  "m": "是我的理想型",
+  "m": "理想",
   "p": "N",
   "ph": "理想のタイプだ",
   "phz": "是理想型",
@@ -975,8 +991,8 @@ const INITIAL_DATA = [
   "aid": 38,
   "asfx": "",
   "s": "四",
-  "w": "町で偶然見かける",
-  "k": "まちでぐうぜんみかける",
+  "w": "偶然見かける",
+  "k": "ぐうぜんみかける",
   "en": "",
   "m": "在街上偶然看见",
   "p": "V2",
@@ -991,10 +1007,10 @@ const INITIAL_DATA = [
   "aid": 39,
   "asfx": "",
   "s": "四",
-  "w": "愛が冷める",
-  "k": "あいがさめる",
+  "w": "冷める",
+  "k": "さめる",
   "en": "",
-  "m": "感情冷却",
+  "m": "冷却",
   "p": "V2",
   "ph": "愛が冷める",
   "phz": "感情冷却",
@@ -1007,10 +1023,10 @@ const INITIAL_DATA = [
   "aid": 40,
   "asfx": "",
   "s": "四",
-  "w": "恋人を振る",
-  "k": "こいびとをふる",
+  "w": "振る",
+  "k": "ふる",
   "en": "",
-  "m": "甩掉恋人",
+  "m": "甩掉挥，摇，摆；撒；丢扔，掷；放弃，牺牲，白扔，白丢；拒绝，甩；分派，分配；标注（假名",
   "p": "V1",
   "ph": "恋人を振る",
   "phz": "甩掉恋人",
@@ -1652,13 +1668,13 @@ function copyExportText(){
 render();
 </script>
 
-<div id="ftool">
-  <div class="ft-tip">添加到最近操作的卡片旁</div>
-  <button onclick="ftAdd('word')">＋ 词框</button>
-  <button onclick="ftAdd('arr')">⇄ 相对组</button>
-  <button onclick="ftAdd('ant')">| 反义组</button>
-  <button onclick="ftAdd('syn')">— 同类组</button>
-  <button onclick="ftAdd('note')">✎ 文本</button>
+<div id="ftool" data-page-node-id="hiNrCJJi0QdD5v7KTuBgN2">
+  <div class="ft-tip" data-page-node-id="hjWozxvgAXC8s1QnqTO5VR">添加到最近操作的卡片旁</div>
+  <button onclick="ftAdd('word')" data-page-node-id="FaMi9GGzjNL4G3GGYZR50X">＋ 词框</button>
+  <button onclick="ftAdd('arr')" data-page-node-id="7JnMbn1oOgG4SJTiBEGQGY">⇄ 相对组</button>
+  <button onclick="ftAdd('ant')" data-page-node-id="n9eF40RCFzBCYy4PcI5Etp">| 反义组</button>
+  <button onclick="ftAdd('syn')" data-page-node-id="UtcmRhdZdwhP5GfGb7v2mN">— 同类组</button>
+  <button onclick="ftAdd('note')" data-page-node-id="IMy7sEDkJ2uTveWCsym987">✎ 文本</button>
 </div>
 <script>
 /* ---- 悬浮工具条 + 选字拖动 ---- */
@@ -1752,19 +1768,19 @@ toggleEdit = function(){ _origToggle(); document.getElementById('ftool').classLi
 </script>
 
 
-<div id="dict">
-  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
-  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
-  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
-  <div id="dictAns" class="hidden"></div>
-  <div class="dbtns">
-    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
-    <button class="hbtn" id="dictAutoBtn" onclick="dictAutoToggle()">自动: 关</button>
-    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
-    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
-    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+<div id="dict" data-page-node-id="8fUNos8GfbFFLhBsK2bxN1">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()" data-page-node-id="Nyq93x52xozxXgiKupoBof">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;" data-page-node-id="AUHF7OsoFGIm5ghUU174eI"></div>
+  <button id="dictBig" onclick="playCur()" data-page-node-id="YJY8tpHx36DzggY06ZsDnI">▶ 点击播放</button>
+  <div id="dictAns" class="hidden" data-page-node-id="KllRYcrf36ECXIjR6L0D9l"></div>
+  <div class="dbtns" data-page-node-id="b5ifkA2BJ5QaTXLCQ9kvWP">
+    <button class="hbtn" onclick="dictPrev()" data-page-node-id="EzbpCLOV73DGVW1TFPhAvD">◀ 上一个</button>
+    <button class="hbtn" id="dictAutoBtn" onclick="dictAutoToggle()" data-page-node-id="wXd2HqeckJObOX0xrHa7EW">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()" data-page-node-id="3dCBoKGsvk7mny16cMx968">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()" data-page-node-id="zAtWnOHrk02LUZjYJ5QG2j">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()" data-page-node-id="AJqgplGB0uIWBVyXjcQxsW">显示答案</button>
   </div>
-  <div style="opacity:.4;font-size:11px;">空格=重播 · →/D=下一个 · ←/A=上一个 · S=显示答案 · Esc=退出</div>
+  <div style="opacity:.4;font-size:11px;" data-page-node-id="YSVXpCrdeiB1gICdEuxgKF">空格=重播 · →/D=下一个 · ←/A=上一个 · S=显示答案 · Esc=退出</div>
 </div>
 <script>
 /* ---- 听写（N2_1-2: aid+asfx 音频, 词→例句链） ---- */
