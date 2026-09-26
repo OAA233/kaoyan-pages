@@ -5,7 +5,8 @@
   "ex_en": "The biologist brought out a specimen box and showed the items one by one",
   "ex_zh": "生物学家拿出标本箱，\n—件一件地展示着标本。",
   "notes": "n.生物学",
-  "n": 1
+  "n": 1,
+  "phon": "baɪˈɒlədʒɪst"
  },
  {
   "word": "zoologist",
@@ -13,7 +14,8 @@
   "ex_en": "The zoologist had spent a long time living with monkeys",
   "ex_zh": "这位动物学家与猴子一起生活了很长时间。",
   "notes": "zoology n.动物学",
-  "n": 2
+  "n": 2,
+  "phon": "zuːˈɒlədʒɪst"
  },
  {
   "word": "ecologist",
@@ -21,7 +23,8 @@
   "ex_en": "A contemporary ecologist once said:man lives on the earth as a guest of green plants.—",
   "ex_zh": "位当代生态学家曾说：人类是作为绿色植物的客人生活在地球上的。",
   "notes": "ecology n.生态学",
-  "n": 3
+  "n": 3,
+  "phon": "iˈkɒlədʒɪst"
  },
  {
   "word": "botanist",
@@ -29,7 +32,8 @@
   "ex_en": "The botanist discovered many rare plants",
   "ex_zh": "这个植物学家发现了许多稀有植物。",
   "notes": "botany n.植物学",
-  "n": 4
+  "n": 4,
+  "phon": "ˈbɒtənɪst"
  },
  {
   "word": "mammal",
@@ -37,7 +41,8 @@
   "ex_en": "Human beings also belong to the mammal species.",
   "ex_zh": "人类也属于哺乳动物。",
   "notes": "",
-  "n": 5
+  "n": 5,
+  "phon": "ˈmæməl"
  },
  {
   "word": "primate",
@@ -45,7 +50,8 @@
   "ex_en": "Compared to body size, the primate brain is larger than that of other animals",
   "ex_zh": "相对身躯大小而言，灵长目动物的大脑比其他动物的大脑都要大些。",
   "notes": "",
-  "n": 6
+  "n": 6,
+  "phon": "ˈpraɪmeɪt"
  },
  {
   "word": "vertebrate",
@@ -53,7 +59,8 @@
   "ex_en": "Fish, birds and human beings are all vertebrates.",
   "ex_zh": "鱼、鸟和人类都是脊椎动物。",
   "notes": "",
-  "n": 7
+  "n": 7,
+  "phon": "ˈvɜːtɪbrət"
  },
  {
   "word": "reptile",
@@ -61,7 +68,8 @@
   "ex_en": "It is said that he hates reptiles.",
   "ex_zh": "据说他讨厌爬行动物。",
   "notes": "",
-  "n": 8
+  "n": 8,
+  "phon": "ˈreptaɪl"
  },
  {
   "word": "herbivore",
@@ -69,7 +77,8 @@
   "ex_en": "Pandas are classified as carnivores but they mainly have a diet of an herbivore.",
   "ex_zh": "大熊猫被归为食肉动物，但它们的日常主要饮食像食草动物。",
   "notes": "",
-  "n": 9
+  "n": 9,
+  "phon": "ˈhɜːbɪvɔː(r)"
  },
  {
   "word": "amphibian",
@@ -77,7 +86,8 @@
   "ex_en": "Nobody knows why amphibians are disappearing, dolphins are dying and coral is turning white",
   "ex_zh": "没有人知道为什么两栖动物正在消失，海豚正在死亡，珊瑚正在变成白色。",
   "notes": "",
-  "n": 10
+  "n": 10,
+  "phon": "æmˈfɪbiən"
  },
  {
   "word": "carnivore",
@@ -85,7 +95,8 @@
   "ex_en": "Lions and tigers are carnivores",
   "ex_zh": "狮子和老虎是食肉动物。字根earn表示“肉（flesh）”, vore表示“吞食（to\ndevour）\\类似地‘herbivore（食草动物）中的字根\nherb表示\"草（grass）\", folivore（食叶动物）中的字根表示“叶（foliage）”。含有earn的词又如：carnation（康\n（狂欢节），也被译为“嘉年华”（根据单词的粤语读音直\nhave a diet of an herbivore.大熊猫被归为食肉\nl\"：汽彩",
   "notes": "",
-  "n": 11
+  "n": 11,
+  "phon": "ˈkɑːnɪvɔː(r)"
  },
  {
   "word": "creature",
@@ -93,7 +104,8 @@
   "ex_en": "The crocodile is a strange-looking creature",
   "ex_zh": "鳄鱼是一种模样古怪的动物。",
   "notes": "",
-  "n": 12
+  "n": 12,
+  "phon": "ˈkriːtʃə(r)"
  },
  {
   "word": "wildlife",
@@ -101,7 +113,8 @@
   "ex_en": "Environmentai pollution endangers wildlife",
   "ex_zh": "环境污染威胁着野生生物的生存。",
   "notes": "wild adj.野生的",
-  "n": 13
+  "n": 13,
+  "phon": "ˈwaɪldlaɪf"
  },
  {
   "word": "fauna",
@@ -109,7 +122,8 @@
   "ex_en": "The park is also home to grizzly bears, and other Rocky Mountain faunas",
   "ex_zh": "这个国家公园也是灰熊和落基山脉其他动物群的家园。",
   "notes": "",
-  "n": 14
+  "n": 14,
+  "phon": "ˈfɔːnə"
  },
  {
   "word": "flora",
@@ -117,7 +131,8 @@
   "ex_en": "There they compiled precious documents on the manners, government, religion, fauna and flora of the country",
   "ex_zh": "他们在那里汇编了关于这个国家的风俗、政府、宗教、动植物等方面的宝贵资料。源自罗马神话中的花神佛罗拉（Flora）。她嫁给了西风之神，丈夫送给她一座满是奇花异草的园子。春天时，佛罗拉和丈夫会手挽手在园子里漫步，他们一路上走过的地方百花齐放。英文单词flower, flour, flourish,\nfloral, florist和美国的Florida州都和她有关系。类似地，表示“（尤指某一地区的）动物群”的单词fauna\n源自罗马神话中保佑森林、农田和畜牧业的女神浮娜",
   "notes": "",
-  "n": 15
+  "n": 15,
+  "phon": "ˈflɔːrə"
  },
  {
   "word": "species",
@@ -125,7 +140,8 @@
   "ex_en": "Some species of animals have become extinct because they could not adapt to a changing environment.",
   "ex_zh": "有些动物物种已经灭绝，因为它们不能适应环境的变化。",
   "notes": "",
-  "n": 16
+  "n": 16,
+  "phon": "ˈspiːʃiːz"
  },
  {
   "word": "flock",
@@ -133,7 +149,8 @@
   "ex_en": "Sheep usually flock",
   "ex_zh": "",
   "notes": "",
-  "n": 17
+  "n": 17,
+  "phon": "flɒk"
  },
  {
   "word": "herd",
@@ -141,7 +158,8 @@
   "ex_en": "The herdsman looks after a herd of animals",
   "ex_zh": "牧人照管着一群牲畜。",
   "notes": "herdsman n.牧人",
-  "n": 18
+  "n": 18,
+  "phon": "hɜːd"
  },
  {
   "word": "swarm",
@@ -149,7 +167,8 @@
   "ex_en": "I saw a swarm of bees attacking the poor monkey.",
   "ex_zh": "我看到一群蜜蜂正在攻击可怜的猴子。",
   "notes": "",
-  "n": 19
+  "n": 19,
+  "phon": "swɔːm"
  },
  {
   "word": "throng",
@@ -157,7 +176,8 @@
   "ex_en": "He was met by a throng of journalists and photographers",
   "ex_zh": "他受到一大群记者和摄影师的迎接。",
   "notes": "be thronged with被（人、汽车等）挤满",
-  "n": 20
+  "n": 20,
+  "phon": "θrɒŋ"
  },
  {
   "word": "crowd",
@@ -165,7 +185,8 @@
   "ex_en": "The crowd was very well behaved",
   "ex_zh": "那群人的举止非常得体。",
   "notes": "",
-  "n": 21
+  "n": 21,
+  "phon": "kraʊd"
  },
  {
   "word": "beast",
@@ -173,7 +194,8 @@
   "ex_en": "The hunters blocked up the den of the beast",
   "ex_zh": "猎人们堵住了兽穴。迪士尼动画片《美女与野兽》的英文原名是Beauty and\n。",
   "notes": "",
-  "n": 22
+  "n": 22,
+  "phon": "biːst"
  },
  {
   "word": "brute",
@@ -181,7 +203,8 @@
   "ex_en": "We all want to punish the brute",
   "ex_zh": "我们都想惩罚那个残忍的人。",
   "notes": "",
-  "n": 23
+  "n": 23,
+  "phon": "bruːt"
  },
  {
   "word": "cruel",
@@ -189,7 +212,8 @@
   "ex_en": "The death of their daughter was a cruel blow",
   "ex_zh": "女儿的死对他们是一个残酷的打击。",
   "notes": "",
-  "n": 24
+  "n": 24,
+  "phon": "ˈkruːəl"
  },
  {
   "word": "originate",
@@ -197,7 +221,8 @@
   "ex_en": "The use of the computer has originated many other societal reforms",
   "ex_zh": "电脑的使用引发了其他许多社会革新。",
   "notes": "originn.起源，发源 originate from来源于",
-  "n": 25
+  "n": 25,
+  "phon": "əˈrɪdʒəneɪt"
  },
  {
   "word": "derive",
@@ -205,7 +230,8 @@
   "ex_en": "I derived a lot of pleasure from meeting new people at college",
   "ex_zh": "在大学里，我从结识新朋友中得到许多乐趣。",
   "notes": "",
-  "n": 26
+  "n": 26,
+  "phon": "dɪˈraɪv"
  },
  {
   "word": "derive from",
@@ -213,7 +239,8 @@
   "ex_en": "Correct decisions stem from correct judgments",
   "ex_zh": "正确的决定来源于正确的判断。",
   "notes": "stem from源自，起源于 \\动物保护",
-  "n": 27
+  "n": 27,
+  "phon": "dɪˈraɪv frəm"
  },
  {
   "word": "ancestor",
@@ -221,7 +248,8 @@
   "ex_en": "Lions and house cats evolved from a common ancestor.",
   "ex_zh": "狮子和家猫是由同一个祖先进化而来的。",
   "notes": "ancient adj.古代的；古老的 an（在前）+cess（走）+or（后缀，表示人）t走在历史前方的人T祖先。",
-  "n": 28
+  "n": 28,
+  "phon": "ˈænsestə(r)"
  },
  {
   "word": "descendant",
@@ -229,7 +257,8 @@
   "ex_en": "He is a descendant of Queen Victoria",
   "ex_zh": "他是维多利亚女王的后代。",
   "notes": "descend v.下降",
-  "n": 29
+  "n": 29,
+  "phon": "dɪˈsendənt"
  },
  {
   "word": "offspring",
@@ -237,7 +266,8 @@
   "ex_en": "They have two offspring.",
   "ex_zh": "他们有两个子女。",
   "notes": "",
-  "n": 30
+  "n": 30,
+  "phon": "ˈɒfsprɪŋ"
  },
  {
   "word": "subgroup",
@@ -245,7 +275,8 @@
   "ex_en": "According to a subgroup analysis, violence produces more violence.",
   "ex_zh": "份子群分析显示，暴力会导致更多的暴力。",
   "notes": "",
-  "n": 31
+  "n": 31,
+  "phon": "ˈsʌbˌɡruːp"
  },
  {
   "word": "feed",
@@ -253,7 +284,8 @@
   "ex_en": "He has to work hard to feed and clothe his family.",
   "ex_zh": "他必须努力工作以供给全家吃穿。",
   "notes": "feed on以……为食物，以……为生",
-  "n": 32
+  "n": 32,
+  "phon": "fiːd"
  },
  {
   "word": "breed",
@@ -261,7 +293,8 @@
   "ex_en": "She breeds orchids in her greenhouse",
   "ex_zh": "她在她的温室里培育兰花。",
   "notes": "breeding n.饲养；繁殖",
-  "n": 33
+  "n": 33,
+  "phon": "briːd"
  },
  {
   "word": "interbreed",
@@ -269,7 +302,8 @@
   "ex_en": "Fish of different shapes are difficult to interbreed.",
   "ex_zh": "不同形态的鱼很难杂交。",
   "notes": "",
-  "n": 34
+  "n": 34,
+  "phon": "ˌɪntəˈbriːd"
  },
  {
   "word": "hybridise",
@@ -277,7 +311,8 @@
   "ex_en": "Immediately, rose breeders began to hybridise it with other red roses",
   "ex_zh": "玫瑰培育者们马上开始让该品种与其他红玫瑰杂交。",
   "notes": "hybrid n.杂种，杂交生成的生物体",
-  "n": 35
+  "n": 35,
+  "phon": "ˈhaɪbrɪdaɪz"
  },
  {
   "word": "proliferate",
@@ -285,7 +320,8 @@
   "ex_en": "Microbes proliferate rapidly",
   "ex_zh": "微生物迅速增殖。",
   "notes": "",
-  "n": 36
+  "n": 36,
+  "phon": "prəˈlɪfəreɪt"
  },
  {
   "word": "sterility",
@@ -293,7 +329,8 @@
   "ex_en": "This disease causes sterility in both males and females",
   "ex_zh": "该病会导致男女不孕不育。",
   "notes": "",
-  "n": 37
+  "n": 37,
+  "phon": "stəˈrɪləti"
  },
  {
   "word": "mate",
@@ -301,7 +338,8 @@
   "ex_en": "Many animals mate in the spring",
   "ex_zh": "许多动物在春天交配。",
   "notes": "mating n.交配",
-  "n": 38
+  "n": 38,
+  "phon": "meɪt"
  },
  {
   "word": "courtship",
@@ -309,7 +347,8 @@
   "ex_en": "They attract females with elaborate courtship rituals",
   "ex_zh": "它们用复杂的求偶仪式来吸引雌性。",
   "notes": "",
-  "n": 39
+  "n": 39,
+  "phon": "ˈkɔːtʃɪp"
  },
  {
   "word": "lay",
@@ -317,7 +356,8 @@
   "ex_en": "They lay eggs from the beginning of July to the middle of August",
   "ex_zh": "它们在7月初到8月中这段时间产卵。",
   "notes": "",
-  "n": 40
+  "n": 40,
+  "phon": "leɪ"
  },
  {
   "word": "hatch",
@@ -325,7 +365,8 @@
   "ex_en": "Don't count the chickens before they are hatched",
   "ex_zh": "鸡蛋还未孵，别忙数鸡雏。",
   "notes": "",
-  "n": 41
+  "n": 41,
+  "phon": "hætʃ"
  },
  {
   "word": "brood",
@@ -333,7 +374,8 @@
   "ex_en": "The bird was trying to find food for its brood",
   "ex_zh": "鸟儿在为它的一窝小鸟觅食。",
   "notes": "",
-  "n": 42
+  "n": 42,
+  "phon": "bruːd"
  },
  {
   "word": "spawn",
@@ -341,7 +383,8 @@
   "ex_en": "Many sea fishes spawn in rivers",
   "ex_zh": "许多海洋鱼类是在河里产卵的。\n“再生侠”（Spawn）在欧美国家是一个家喻户晓的名蝙蝠侠（Batman）、字。他与蜘蛛侠（Spiderman）.\n超人（Supennan）等漫画人物齐名。",
   "notes": "",
-  "n": 43
+  "n": 43,
+  "phon": "spɔːn"
  },
  {
   "word": "mature",
@@ -349,7 +392,8 @@
   "ex_en": "You are a mature man now; you are no Ion ger a boy",
   "ex_zh": "你现在是成熟的男人了，不再是小男孩了。",
   "notes": "immature adj.不成熟的，未完全发展的",
-  "n": 44
+  "n": 44,
+  "phon": "məˈtʃʊə(r)"
  },
  {
   "word": "skin",
@@ -357,7 +401,8 @@
   "ex_en": "When he fell, he just broke the skin",
   "ex_zh": "当他跌倒时，他只擦破了皮肤。",
   "notes": "",
-  "n": 45
+  "n": 45,
+  "phon": "skɪn"
  },
  {
   "word": "claw",
@@ -365,7 +410,8 @@
   "ex_en": "A hen's claw has four toes",
   "ex_zh": "母鸡的脚爪有四个脚趾。",
   "notes": "",
-  "n": 46
+  "n": 46,
+  "phon": "klɔː"
  },
  {
   "word": "paw",
@@ -373,7 +419,8 @@
   "ex_en": "This is a black cat with white paws",
   "ex_zh": "这是一只长有白色脚爪的黑猫。",
   "notes": "",
-  "n": 47
+  "n": 47,
+  "phon": "pɔː"
  },
  {
   "word": "beak",
@@ -381,7 +428,8 @@
   "ex_en": "The bird picked a hole in the ice with its beak",
   "ex_zh": "那只鸟用喙在冰上啄出了一个洞。",
   "notes": "",
-  "n": 48
+  "n": 48,
+  "phon": "biːk"
  },
  {
   "word": "fin",
@@ -389,7 +437,8 @@
   "ex_en": "In the future, shark fin soup will be off the menu at a major resort in Singapore",
   "ex_zh": "未来，鱼翅羹将不再出现在新加坡一主要度假地的菜单上。",
   "notes": "",
-  "n": 49
+  "n": 49,
+  "phon": "fɪn"
  },
  {
   "word": "wing",
@@ -397,7 +446,8 @@
   "ex_en": "A seagull fluttered down with an injured wing. —",
   "ex_zh": "只海鸥带着一只受伤的翅膀飞落下来。",
   "notes": "",
-  "n": 50
+  "n": 50,
+  "phon": "wɪŋ"
  },
  {
   "word": "plume",
@@ -405,7 +455,8 @@
   "ex_en": "This is the long plume of a heron in the breeding season.",
   "ex_zh": "这是处在繁殖季节的一只鹭的长羽毛。",
   "notes": "",
-  "n": 51
+  "n": 51,
+  "phon": "pluːm"
  },
  {
   "word": "feather",
@@ -413,7 +464,8 @@
   "ex_en": "A feather is very light, so that we say \"(as) light as a feather\".",
   "ex_zh": "羽毛很轻，因此我们说“轻如羽毛”(形容重量、脚步等极轻)。",
   "notes": "",
-  "n": 52
+  "n": 52,
+  "phon": "ˈfeðə(r)"
  },
  {
   "word": "fur",
@@ -421,7 +473,8 @@
   "ex_en": "Alice is allergic to the fur of cats.",
   "ex_zh": "艾丽斯对猫毛过敏。",
   "notes": "",
-  "n": 53
+  "n": 53,
+  "phon": "fɜː(r)"
  },
  {
   "word": "bristle",
@@ -429,7 +482,8 @@
   "ex_en": "The brush is made of animal bristles",
   "ex_zh": "这把刷子是用动物的鬃毛制造的。\n/k3：l/\nm鬆发；卷曲；螺旋状物v.（使）卷曲 As he got older, his hair lost its curl.随着他渐渐长大，他的头发不再卷曲了。",
   "notes": "",
-  "n": 54
+  "n": 54,
+  "phon": "ˈbrɪsəl"
  },
  {
   "word": "insect",
@@ -437,7 +491,8 @@
   "ex_en": "The insect bit him and drew blood from his arm",
   "ex_zh": "那只昆虫叮咬了他并在他的手臂上吸血。字根sect指“切割（to cut）\",女0:insect（躯体分割成一节一节的t昆虫），sect（派别；教派；党派），bisect\n（将……一分为二），intersection（相互切割，纵横切割\nt交叉；十字路口），vivisect（切割活的东西t活体解剖）O\nbristle，'卿\n:.动物保技",
   "notes": "",
-  "n": 55
+  "n": 55,
+  "phon": "ˈɪnsekt"
  },
  {
   "word": "worm",
@@ -445,7 +500,8 @@
   "ex_en": "The worm was crushed under the feet",
   "ex_zh": "这条虫子被脚踩扁了。",
   "notes": "",
-  "n": 56
+  "n": 56,
+  "phon": "wɜːm"
  },
  {
   "word": "pest",
@@ -453,7 +509,8 @@
   "ex_en": "Insects which eat crops are pests",
   "ex_zh": "吃庄稼的昆虫是害虫。",
   "notes": "pesticide n.杀虫剂 the pest of society社会败类",
-  "n": 57
+  "n": 57,
+  "phon": "pest"
  },
  {
   "word": "parasite",
@@ -461,7 +518,8 @@
   "ex_en": "The life of the parasite is maintained by new blood-sucking mosquitoes",
   "ex_zh": "新出现的吸血蚊子让寄生虫的生命得以维持。",
   "notes": "parasitic adj.寄生的",
-  "n": 58
+  "n": 58,
+  "phon": "ˈpærəsaɪt"
  },
  {
   "word": "spider",
@@ -469,7 +527,8 @@
   "ex_en": "The little girl thinks spiders are terrible creatures",
   "ex_zh": "小女孩认为蜘蛛是可怕的生物。",
   "notes": "a spider's web蜘蛛网",
-  "n": 59
+  "n": 59,
+  "phon": "ˈspaɪdə(r)"
  },
  {
   "word": "butterfly",
@@ -477,7 +536,8 @@
   "ex_en": "A butterfly is flying up and down among the flowers",
   "ex_zh": "一只蝴蝶正在花丛里忽上忽下地飞着。",
   "notes": "a social butterfly交际花",
-  "n": 60
+  "n": 60,
+  "phon": "ˈbʌtəflaɪ"
  },
  {
   "word": "mosquito",
@@ -485,7 +545,8 @@
   "ex_en": "The mosquito is an annoying creature",
   "ex_zh": "蚊子是一种讨厌的生物。",
   "notes": "",
-  "n": 61
+  "n": 61,
+  "phon": "mɒsˈkiːtəʊ"
  },
  {
   "word": "cricket",
@@ -493,7 +554,8 @@
   "ex_en": "A cricket in the house is good luck",
   "ex_zh": "屋里有蟋蟀会带来好运。",
   "notes": "",
-  "n": 62
+  "n": 62,
+  "phon": "ˈkrɪkɪt"
  },
  {
   "word": "penguin",
@@ -501,7 +563,8 @@
   "ex_en": "The penguin is popular with people",
   "ex_zh": "企鹅广为人爱。",
   "notes": "",
-  "n": 63
+  "n": 63,
+  "phon": "ˈpeŋɡwɪn"
  },
  {
   "word": "seal",
@@ -509,7 +572,8 @@
   "ex_en": "Polar bears set off in search of their favourite meal-seals",
   "ex_zh": "北极熊出发去寻找它们最喜欢的食物一海豹。\n.一當butterfly",
   "notes": "",
-  "n": 64
+  "n": 64,
+  "phon": "siːl"
  },
  {
   "word": "tortoise",
@@ -517,7 +581,8 @@
   "ex_en": "Do you remember the story about a race between the tortoise and the hare?",
   "ex_zh": "你们还记得那个关于龟兔赛跑的故事么？",
   "notes": "",
-  "n": 65
+  "n": 65,
+  "phon": "ˈtɔːtəs"
  },
  {
   "word": "turtle",
@@ -525,7 +590,8 @@
   "ex_en": "If you turn over a turtle on its back, it will become helpless",
   "ex_zh": "假如你把海龟翻过来，它就无能为力了。",
   "notes": "",
-  "n": 66
+  "n": 66,
+  "phon": "ˈtɜːtəl"
  },
  {
   "word": "whale",
@@ -533,7 +599,8 @@
   "ex_en": "We may live to see the extinction of the whale.",
   "ex_zh": "我们或许能亲眼见到鲸的灭绝。",
   "notes": "",
-  "n": 67
+  "n": 67,
+  "phon": "weɪl"
  },
  {
   "word": "kangaroo",
@@ -541,7 +608,8 @@
   "ex_en": "The kangaroo is native to Australia.",
   "ex_zh": "袋鼠原产于澳大利亚。",
   "notes": "",
-  "n": 68
+  "n": 68,
+  "phon": "ˌkæŋɡərˈuː"
  },
  {
   "word": "camel",
@@ -549,7 +617,8 @@
   "ex_en": "The merchant decided to use camels to carry his goods across the desert",
   "ex_zh": "商人决定用骆驼载运其货物穿过沙漠。",
   "notes": "",
-  "n": 69
+  "n": 69,
+  "phon": "ˈkæməl"
  },
  {
   "word": "panda",
@@ -557,7 +626,8 @@
   "ex_en": "Pandas are loved by people all over the world",
   "ex_zh": "熊猫被全世界的人喜爱。",
   "notes": "",
-  "n": 70
+  "n": 70,
+  "phon": "ˈpændə"
  },
  {
   "word": "elephant",
@@ -565,7 +635,8 @@
   "ex_en": "A specific attribute of the elephant is its long trunk.",
   "ex_zh": "大象的一个特有特征是它的长鼻子。",
   "notes": "",
-  "n": 71
+  "n": 71,
+  "phon": "ˈelɪfənt"
  },
  {
   "word": "trunk",
@@ -573,7 +644,8 @@
   "ex_en": "The elephant's trunk is powerful enough to uproot trees.",
   "ex_zh": "大象的鼻子有足够力量把树连根拔起。",
   "notes": "",
-  "n": 72
+  "n": 72,
+  "phon": "trʌŋk"
  },
  {
   "word": "ivory",
@@ -581,7 +653,8 @@
   "ex_en": "The professor lived in an ivory tower",
   "ex_zh": "这个教授生活在象牙塔中。",
   "notes": "",
-  "n": 73
+  "n": 73,
+  "phon": "ˈaɪvəri"
  },
  {
   "word": "horn",
@@ -589,7 +662,8 @@
   "ex_en": "The young goat was just beginning to grow horns.",
   "ex_zh": "这只小山羊刚开始长角。",
   "notes": "blow a horn吹号角",
-  "n": 74
+  "n": 74,
+  "phon": "hɔːn"
  },
  {
   "word": "bear",
@@ -597,7 +671,8 @@
   "ex_en": "The bear is a large, heavy animal with thick fur.",
   "ex_zh": "熊是体大而笨重、皮毛很厚的动物。",
   "notes": "a polar bear北极熊",
-  "n": 75
+  "n": 75,
+  "phon": "beə(r)"
  },
  {
   "word": "wolf",
@@ -605,7 +680,8 @@
   "ex_en": "The wolf snapped at the hunter's hand",
   "ex_zh": "这匹狼咬住猎入的手。",
   "notes": "a wolf in sheep's clothing披着羊皮的狼",
-  "n": 76
+  "n": 76,
+  "phon": "wʊlf"
  },
  {
   "word": "dragon",
@@ -613,7 +689,8 @@
   "ex_en": "Dragons are described as monsters in most western countries",
   "ex_zh": "在大多数西方国家，龙被描述为怪物。",
   "notes": "",
-  "n": 77
+  "n": 77,
+  "phon": "ˈdræɡən"
  },
  {
   "word": "fox",
@@ -621,7 +698,8 @@
   "ex_en": "Don't trust him; he is a sly old fox",
   "ex_zh": "别相信他，他是个狡猾的老狐狸。",
   "notes": "",
-  "n": 78
+  "n": 78,
+  "phon": "fɒks"
  },
  {
   "word": "cub",
@@ -629,7 +707,8 @@
   "ex_en": "The cub licked the milk from its mother's breast",
   "ex_zh": "这头幼兽吸吮着妈妈的奶水。",
   "notes": "",
-  "n": 79
+  "n": 79,
+  "phon": "kʌb"
  },
  {
   "word": "calf",
@@ -637,7 +716,8 @@
   "ex_en": "Did you see the cow with her calf?",
   "ex_zh": "你看没看见那头母牛和它的小牛？\npup",
   "notes": "",
-  "n": 80
+  "n": 80,
+  "phon": "kɑːf"
  },
  {
   "word": "pup",
@@ -645,7 +725,8 @@
   "ex_en": "I'll get you an Alsatian pup for Christmas",
   "ex_zh": "我会送你一只小德国牧羊犬作为圣诞节礼物。",
   "notes": "puppy n.幼犬",
-  "n": 81
+  "n": 81,
+  "phon": "pʌp"
  },
  {
   "word": "lamb",
@@ -653,7 +734,8 @@
   "ex_en": "The little lamb",
   "ex_zh": "狼抓住了。\nlamb迷途羔羊",
   "notes": "",
-  "n": 82
+  "n": 82,
+  "phon": "læm"
  },
  {
   "word": "cattle",
@@ -661,7 +743,8 @@
   "ex_en": "There are many herds of cattle in the meadow",
   "ex_zh": "牧场上有许多牛群。",
   "notes": "",
-  "n": 83
+  "n": 83,
+  "phon": "ˈkætəl"
  },
  {
   "word": "ox",
@@ -669,7 +752,8 @@
   "ex_en": "The frequent, unreasonable whips angered the ox",
   "ex_zh": "这种频繁而无理的鞭打激怒了公牛。",
   "notes": "复数形式：oxen",
-  "n": 84
+  "n": 84,
+  "phon": "ɒks"
  },
  {
   "word": "bull",
@@ -677,7 +761,8 @@
   "ex_en": "He was a great bull of a man",
   "ex_zh": "他是一个体壮如牛的人。",
   "notes": "",
-  "n": 85
+  "n": 85,
+  "phon": "bʊl"
  },
  {
   "word": "buffalo",
@@ -685,7 +770,8 @@
   "ex_en": "There were lots of buffaloes in the North America 100 years ago.",
   "ex_zh": "年前，北美有大量野牛。",
   "notes": "",
-  "n": 86
+  "n": 86,
+  "phon": "ˈbʌfələʊ"
  },
  {
   "word": "horse",
@@ -693,7 +779,8 @@
   "ex_en": "The horse became frightened and ran away",
   "ex_zh": "那匹马受到惊吓并跑开了。",
   "notes": "put the cart before the horse本末倒置",
-  "n": 87
+  "n": 87,
+  "phon": "hɔːs"
  },
  {
   "word": "zebra",
@@ -701,7 +788,8 @@
   "ex_en": "There are several species of zebra",
   "ex_zh": "有好几种斑马。",
   "notes": "",
-  "n": 88
+  "n": 88,
+  "phon": "ˈzebrə"
  },
  {
   "word": "donkey",
@@ -709,7 +797,8 @@
   "ex_en": "The donkey is eating grass on the field",
   "ex_zh": "这头驴子正在田野上吃草。\nhorse磁\n动物保护",
   "notes": "",
-  "n": 89
+  "n": 89,
+  "phon": "ˈdɒŋki"
  },
  {
   "word": "saddle",
@@ -717,7 +806,8 @@
   "ex_en": "He was putting a saddle on the horse",
   "ex_zh": "他正在给马备鞍。",
   "notes": "get into the saddle上马",
-  "n": 90
+  "n": 90,
+  "phon": "ˈsædəl"
  },
  {
   "word": "harness",
@@ -725,7 +815,8 @@
   "ex_en": "You cannot judge a horse by its harness",
   "ex_zh": "凭马具难断马优劣。",
   "notes": "in harness通力合作，相互配合",
-  "n": 91
+  "n": 91,
+  "phon": "ˈhɑːnəs"
  },
  {
   "word": "falcon",
@@ -733,7 +824,8 @@
   "ex_en": "His falcon flew into a window of the empty castle and did not return",
   "ex_zh": "他的猎鹰飞进了那座空城堡的一扇窗内就未返回。",
   "notes": "",
-  "n": 92
+  "n": 92,
+  "phon": "ˈfɒlkən"
  },
  {
   "word": "hawk",
@@ -741,7 +833,8 @@
   "ex_en": "A hawk hovered in the blue sky.—",
   "ex_zh": "只鹰在蓝色的天空中盘旋。",
   "notes": "",
-  "n": 93
+  "n": 93,
+  "phon": "hɔːk"
  },
  {
   "word": "eagle",
@@ -749,7 +842,8 @@
   "ex_en": "The eagle dived down on the rabbit",
   "ex_zh": "那只雕向兔子猛扑下来。",
   "notes": "eagle-eyed adj.目光锐利的，观察敏锐的",
-  "n": 94
+  "n": 94,
+  "phon": "ˈiːɡəl"
  },
  {
   "word": "owl",
@@ -757,7 +851,8 @@
   "ex_en": "The owl is sacred for many Californian Indian people",
   "ex_zh": "对于加利福尼亚的很多印第安人而言，猫头鹰是神圣的。",
   "notes": "",
-  "n": 95
+  "n": 95,
+  "phon": "aʊl"
  },
  {
   "word": "swallow",
@@ -765,7 +860,8 @@
   "ex_en": "There are many swallows flying in the sky",
   "ex_zh": "天空中有许多燕子在飞。",
   "notes": "",
-  "n": 96
+  "n": 96,
+  "phon": "ˈswɒləʊ"
  },
  {
   "word": "sparrow",
@@ -773,7 +869,8 @@
   "ex_en": "A sparrow is very alert in its movement.",
   "ex_zh": "麻雀的动作很敏捷。",
   "notes": "",
-  "n": 97
+  "n": 97,
+  "phon": "ˈspærəʊ"
  },
  {
   "word": "pigeon",
@@ -781,7 +878,8 @@
   "ex_en": "An old man sat on the park bench and fed the pigeons.",
   "ex_zh": "一位老人坐在公园的长凳上喂鸽子。",
   "notes": "",
-  "n": 98
+  "n": 98,
+  "phon": "ˈpɪdʒən"
  },
  {
   "word": "crow",
@@ -789,7 +887,8 @@
   "ex_en": "The farmers tried to fear the crows out of the corn field by planting several men of straw",
   "ex_zh": "农民们竖起了几个稻草人，试图把乌鸦从玉米地里吓跑。",
   "notes": "",
-  "n": 99
+  "n": 99,
+  "phon": "krəʊ"
  },
  {
   "word": "swan",
@@ -797,7 +896,8 @@
   "ex_en": "The witch turned the princess into a swan.",
   "ex_zh": "巫婆把公主变成了一只天鹅。",
   "notes": "",
-  "n": 100
+  "n": 100,
+  "phon": "swɒn"
  },
  {
   "word": "goose",
@@ -805,7 +905,8 @@
   "ex_en": "They often have goose at Christmastime",
   "ex_zh": "他彳门常常在圣诞节吃鹅肉。",
   "notes": "",
-  "n": 101
+  "n": 101,
+  "phon": "ɡuːs"
  },
  {
   "word": "cock",
@@ -813,7 +914,8 @@
   "ex_en": "The cock has brighter coloured feathers than the hen",
   "ex_zh": "雄鸟的羽毛比雌鸟的艳丽。",
   "notes": "",
-  "n": 102
+  "n": 102,
+  "phon": "kɒk"
  },
  {
   "word": "mouse",
@@ -821,7 +923,8 @@
   "ex_en": "The cat was playing with a live mouse",
   "ex_zh": "这只猫在逗一只活老鼠。",
   "notes": "",
-  "n": 103
+  "n": 103,
+  "phon": "maʊs"
  },
  {
   "word": "rat",
@@ -829,7 +932,8 @@
   "ex_en": "Now I can see why people say he is such a rat",
   "ex_zh": "现在我知道为什么人们说他是卑鄙小人了。",
   "notes": "",
-  "n": 104
+  "n": 104,
+  "phon": "ræt"
  },
  {
   "word": "squirrel",
@@ -837,7 +941,8 @@
   "ex_en": "The squirrel ran up a tree and got out of my reach",
   "ex_zh": "松鼠跑到树上去了，我逮不着。",
   "notes": "",
-  "n": 105
+  "n": 105,
+  "phon": "ˈskwɪrəl"
  },
  {
   "word": "hare",
@@ -845,7 +950,8 @@
   "ex_en": "The hunter watched for the hare to come out of the burrow",
   "ex_zh": "猎人守候着野兔，等它从洞里出来。",
   "notes": "",
-  "n": 106
+  "n": 106,
+  "phon": "heə(r)"
  },
  {
   "word": "frog",
@@ -853,7 +959,8 @@
   "ex_en": "A frog can live both on land and in water",
   "ex_zh": "青蛙既能生活在陆地上，也能生活在水中。",
   "notes": "",
-  "n": 107
+  "n": 107,
+  "phon": "frɒɡ"
  },
  {
   "word": "behaviour",
@@ -861,7 +968,8 @@
   "ex_en": "They observed the behaviour of their new pet",
   "ex_zh": "他们观察新宠物的行为习惯。",
   "notes": "behavioural（=behavioral）adj.行为的",
-  "n": 108
+  "n": 108,
+  "phon": "bɪˈheɪvjə(r)"
  },
  {
   "word": "bite",
@@ -869,7 +977,8 @@
   "ex_en": "The mosquitoes are biting me",
   "ex_zh": "蚊子在叮我。",
   "notes": "bite off more than one can chew贪多嚼不烂 bite the bullet咬紧牙关应付",
-  "n": 109
+  "n": 109,
+  "phon": "baɪt"
  },
  {
   "word": "sting",
@@ -877,7 +986,8 @@
   "ex_en": "It is the nature of the scorpion to sting",
   "ex_zh": "垂人是蝎子的天性。",
   "notes": "sting sb. into doing sth.刺激某人做某事",
-  "n": 110
+  "n": 110,
+  "phon": "stɪŋ"
  },
  {
   "word": "bark",
@@ -885,7 +995,8 @@
   "ex_en": "Barking dogs seldom bite",
   "ex_zh": "善吠的狗很少咬人。",
   "notes": "",
-  "n": 111
+  "n": 111,
+  "phon": "bɑːk"
  },
  {
   "word": "roar",
@@ -893,7 +1004,8 @@
   "ex_en": "The whole room rang with a roar",
   "ex_zh": "咆哮声回荡在整个房间里。",
   "notes": "",
-  "n": 112
+  "n": 112,
+  "phon": "rɔː(r)"
  },
  {
   "word": "rub",
@@ -901,7 +1013,8 @@
   "ex_en": "It is an Eskimo custom to rub noses as a greeting",
   "ex_zh": "相互摩擦鼻子以示问候是爱斯基摩人的习俗。",
   "notes": "",
-  "n": 113
+  "n": 113,
+  "phon": "rʌb"
  },
  {
   "word": "creep",
@@ -909,7 +1022,8 @@
   "ex_en": "We take off our shoes and creep cautiously along the passage.",
   "ex_zh": "我们脱掉了鞋，小心地在走廊中蹑手蹑脚地往前走。",
   "notes": "creep along沿着...爬行",
-  "n": 114
+  "n": 114,
+  "phon": "kriːp"
  },
  {
   "word": "crawl",
@@ -917,7 +1031,8 @@
   "ex_en": "You must not crawl into the favour of your superiors",
   "ex_zh": "你不应卑躬屈膝地讨好你的上司。",
   "notes": "",
-  "n": 115
+  "n": 115,
+  "phon": "krɔːl"
  },
  {
   "word": "habitat",
@@ -925,7 +1040,8 @@
   "ex_en": "The Arctic region is the habitat of the polar bear",
   "ex_zh": "北极地区为北极熊的栖息地。",
   "notes": "inhabitant n.居民；栖息动物",
-  "n": 116
+  "n": 116,
+  "phon": "ˈhæbɪtæt"
  },
  {
   "word": "nest",
@@ -933,7 +1049,8 @@
   "ex_en": "The male hunts for food while his mate guards the nest.",
   "ex_zh": "雌性动物守巢时，雄性动物去猎食。",
   "notes": "",
-  "n": 117
+  "n": 117,
+  "phon": "nest"
  },
  {
   "word": "hive",
@@ -941,7 +1058,8 @@
   "ex_en": "This marketplace was once a hive of activity.",
   "ex_zh": "这个市场一度是一个繁忙的闹市。",
   "notes": "",
-  "n": 118
+  "n": 118,
+  "phon": "haɪv"
  },
  {
   "word": "cell",
@@ -949,7 +1067,8 @@
   "ex_en": "The prisoner was locked in a cell",
   "ex_zh": "那个囚犯被关在单人牢房内。",
   "notes": "cellular adj.细胞的",
-  "n": 119
+  "n": 119,
+  "phon": "sel"
  },
  {
   "word": "cage",
@@ -957,7 +1076,8 @@
   "ex_en": "The lion paced the floor of his cage restlessly",
   "ex_zh": "狮子烦躁地在兽笼里走来走去。",
   "notes": "",
-  "n": 120
+  "n": 120,
+  "phon": "keɪdʒ"
  },
  {
   "word": "stable",
@@ -965,7 +1085,8 @@
   "ex_en": "The horse in the stable has broken out",
   "ex_zh": "马厩里\nstable,动物保护",
   "notes": "",
-  "n": 121
+  "n": 121,
+  "phon": "ˈsteɪbəl"
  },
  {
   "word": "barn",
@@ -973,7 +1094,8 @@
   "ex_en": "The cows were feeding on hay in the barn",
   "ex_zh": "母牛正在牲口棚里吃草。\nm树篱；障碍物 There is an opening in the hedge.这树篱上有个洞。",
   "notes": "on the hedge抱骑墙态度的",
-  "n": 122
+  "n": 122,
+  "phon": "bɑːn"
  },
  {
   "word": "barrier",
@@ -981,7 +1103,8 @@
   "ex_en": "Lack of confidence is the biggest barrier to the improvement of your English.",
   "ex_zh": "缺乏信心是你提高英语水平的最大障碍。",
   "notes": "",
-  "n": 123
+  "n": 123,
+  "phon": "ˈbæriə(r)"
  },
  {
   "word": "bar",
@@ -989,7 +1112,8 @@
   "ex_en": "A bar of chocolate is enough to stop his crying. —",
   "ex_zh": "条巧克力就可以让他不哭了。",
   "notes": "",
-  "n": 124
+  "n": 124,
+  "phon": "bɑː(r)"
  },
  {
   "word": "anatomy",
@@ -997,7 +1121,8 @@
   "ex_en": "We have to do anatomy next term",
   "ex_zh": "我们下学期得学解剖学了。",
   "notes": "anatomical adj.解剖的；解剖学的 anatomist n.解剖学家",
-  "n": 125
+  "n": 125,
+  "phon": "əˈnætəmi"
  },
  {
   "word": "epidemic",
@@ -1005,7 +1130,8 @@
   "ex_en": "Violence is reaching epidemic levels in some of the films and TV shows.",
   "ex_zh": "在一些电影和电视剧中，暴力已经快到泛滥程度了。",
   "notes": "ntrol an epidemic控制流行病 n.基因 good genes from your parents, so genetic adj.遗传（性）的，基因的；起源的 pool基因库 gene",
-  "n": 126
+  "n": 126,
+  "phon": "ˌepɪˈdemɪk"
  },
  {
   "word": "bacteria",
@@ -1013,7 +1139,8 @@
   "ex_en": "Bacteria in drinking water have spread the illness.",
   "ex_zh": "饮水中的细菌传播了该疾病。",
   "notes": "",
-  "n": 127
+  "n": 127,
+  "phon": "bækˈtɪəriə"
  },
  {
   "word": "virus",
@@ -1021,7 +1148,8 @@
   "ex_en": "My computer was accidentally infected with a virus called Trojan Horse.",
   "ex_zh": "我的电脑不小心感染了一种被称作“木马”的病毒。",
   "notes": "",
-  "n": 128
+  "n": 128,
+  "phon": "ˈvaɪərəs"
  },
  {
   "word": "microbe",
@@ -1029,7 +1157,8 @@
   "ex_en": "Would the good microbes do battle with the bad microbes and help to restore their health?",
   "ex_zh": "这些好的微生物会不会与坏的微生物斗争，从而帮助患者恢复健康呢？",
   "notes": "microbiology n.微生物学microbial adj.微生物（或细菌）的；由微生物（或细菌）引起的 micro（微小）+be（=bi生命）t微小的生命t微生物。",
-  "n": 129
+  "n": 129,
+  "phon": "ˈmaɪkrəʊb"
  },
  {
   "word": "metabolism",
@@ -1037,7 +1166,8 @@
   "ex_en": "Some people's metabolism is more efficient than others",
   "ex_zh": "某些人的代谢效率要比另一些人更高。",
   "notes": "metabolise(=metabolize)v.新陈代谢 metabolic adj.新陈代谢的",
-  "n": 130
+  "n": 130,
+  "phon": "məˈtæbəlɪzəm"
  },
  {
   "word": "protein",
@@ -1045,7 +1175,8 @@
   "ex_en": "You need more protein to build you up.",
   "ex_zh": "你需要增加蛋白质以增强体质。",
   "notes": "",
-  "n": 131
+  "n": 131,
+  "phon": "ˈprəʊtiːn"
  },
  {
   "word": "vitamin",
@@ -1053,7 +1184,8 @@
   "ex_en": "Fresh green foodstuffs contain rich vitamin",
   "ex_zh": "新鲜的绿色蔬菜含有丰富的维生素。由意为“生命”的字根vita和单词amine（胺）结合形成，因为最初造这个词的生化学家认为维生素是胺类。同根词如vital（生命的；必不可少的）。相关字根viv表示“活”，如：vivid（鲜活的，生动的）, revive（复活），survive（幸存，活下来）。",
   "notes": "",
-  "n": 132
+  "n": 132,
+  "phon": "ˈvɪtəmɪn"
  },
  {
   "word": "secrete",
@@ -1061,7 +1193,8 @@
   "ex_en": "The kidneys secrete urine",
   "ex_zh": "肾脏会分泌尿液。",
   "notes": "secret n.秘密",
-  "n": 133
+  "n": 133,
+  "phon": "sɪˈkriːt"
  },
  {
   "word": "excrete",
@@ -1069,7 +1202,8 @@
   "ex_en": "The function of the kidneys is to excrete waste products",
   "ex_zh": "肾脏的功能是排泄代谢废物。",
   "notes": "excretion n.排泄；排泄物",
-  "n": 134
+  "n": 134,
+  "phon": "ɪkˈskriːt"
  },
  {
   "word": "devour",
@@ -1077,7 +1211,8 @@
   "ex_en": "The lion devoured the deer",
   "ex_zh": "狮子狼吞虎咽地把鹿吃了下去。\nde（加强意义）+vour（吃）t整个吃下去t吞食。",
   "notes": "",
-  "n": 135
+  "n": 135,
+  "phon": "dɪˈvaʊə(r)"
  },
  {
   "word": "instinct",
@@ -1085,7 +1220,8 @@
   "ex_en": "Don't trust anything except your instinct",
   "ex_zh": "你只能相信你的直觉。",
   "notes": "adj.本能的，天生的；直觉的 follow one's instincts凭某人的直觉",
-  "n": 136
+  "n": 136,
+  "phon": "ˈɪnstɪŋkt"
  },
  {
   "word": "intuitive",
@@ -1093,7 +1229,8 @@
   "ex_en": "He seemed to have an intuitive knowledge of how I was feeling",
   "ex_zh": "他好像能凭直觉知道我的感受。",
   "notes": "intuition n.直觉",
-  "n": 137
+  "n": 137,
+  "phon": "ɪnˈtʃuːɪtɪv"
  },
  {
   "word": "potential",
@@ -1101,7 +1238,8 @@
   "ex_en": "She showed great potential as an actress",
   "ex_zh": "她表现出了成为演员的极大潜力。",
   "notes": "",
-  "n": 138
+  "n": 138,
+  "phon": "pəˈtenʃəl"
  },
  {
   "word": "intelligence",
@@ -1109,7 +1247,8 @@
   "ex_en": "Use your intelligence, and you're sure to succeed some day.",
   "ex_zh": "发挥你的聪明才智，总有一天你一定会成功。",
   "notes": "",
-  "n": 139
+  "n": 139,
+  "phon": "ɪnˈtelɪdʒəns"
  },
  {
   "word": "functional",
@@ -1117,7 +1256,8 @@
   "ex_en": "What are the functional benefits of the brand?",
   "ex_zh": "这个品牌在功能方面有什么好处？",
   "notes": "function n.功能v.起作用",
-  "n": 140
+  "n": 140,
+  "phon": "ˈfʌŋkʃənəl"
  },
  {
   "word": "sensitive",
@@ -1125,7 +1265,8 @@
   "ex_en": "She is sensitive to what people think of her",
   "ex_zh": "她对人们对她的看法是很敏感的。",
   "notes": "sense n.感觉，知觉 be sensitive to对...敏感；对...过敏",
-  "n": 141
+  "n": 141,
+  "phon": "ˈsensɪtɪv"
  },
  {
   "word": "flexible",
@@ -1133,7 +1274,8 @@
   "ex_en": "We can visit your company on Monday or Tuesday. Our plans are fairly flexible.",
   "ex_zh": "我们可以在星期一或星期二去拜访贵公司。我们的计划是相当灵活的。",
   "notes": "flexibility n.灵活度 inflexible adj.执着的，不屈的",
-  "n": 142
+  "n": 142,
+  "phon": "ˈfleksəbəl"
  },
  {
   "word": "acoustic",
@@ -1141,7 +1283,8 @@
   "ex_en": "Acoustic beauty is also very important to the modern gardens",
   "ex_zh": "听觉美对现代庭园的设计也非常重要。",
   "notes": "",
-  "n": 143
+  "n": 143,
+  "phon": "əˈkuːstɪk"
  },
  {
   "word": "optical",
@@ -1149,7 +1292,8 @@
   "ex_en": "Microscopes and telescopes are optical instruments",
   "ex_zh": "显微镜和望远镜是光学仪器。",
   "notes": "",
-  "n": 144
+  "n": 144,
+  "phon": "ˈɒptɪkəl"
  },
  {
   "word": "nocturnal",
@@ -1157,7 +1301,8 @@
   "ex_en": "Hamsters are nocturnal creatures",
   "ex_zh": "仓鼠是夜间活动的动物。\n字根noct指\"夜。noctambulist意为“梦游者”：noct（夜）+ambul（走）+ist（人）t夜里游荡的人。中文里把特别能熬夜的人称为“夜猫子”，对应的英语是nightowl（猫头鹰）。而早晨起来精神饱满的入则被形容为fresh daisy,来自短语（as）fresh as a daisy\n（in the morning）,即“像（早上的）雏菊一样精神”。\n千\n••动物保护",
   "notes": "",
-  "n": 145
+  "n": 145,
+  "phon": "nɒkˈtɜːnəl"
  },
  {
   "word": "dormant",
@@ -1165,7 +1310,8 @@
   "ex_en": "Many living things are dormant in winter",
   "ex_zh": "很多生物在冬季休眠。\ndormitory（睡字根dorm表示“睡眠（to sleep）\",女口：一词常被简写为dorm。觉的地方t宿舍）。dormitory\n如果你把dormitory的字母打乱顺序再重新组合，可拼写出dirty room!这种词语互为anagram!变位词，即变换某个词或短语的字母顺序构成的新词或短语）。",
   "notes": "",
-  "n": 146
+  "n": 146,
+  "phon": "ˈdɔːmənt"
  },
  {
   "word": "hibernation",
@@ -1173,7 +1319,8 @@
   "ex_en": "Some animals can overwinter without the hibernation",
   "ex_zh": "有些动物不需要冬眠也能过冬。",
   "notes": "hibernate v.冬眠，蛰伏 m被捕食的动物，猎",
-  "n": 147
+  "n": 147,
+  "phon": "ˌhaɪbəˈneɪʃən"
  },
  {
   "word": "track",
@@ -1181,7 +1328,8 @@
   "ex_en": "The hunter followed the animaKs tracks",
   "ex_zh": "猎人追踪动物的足迹。",
   "notes": "",
-  "n": 148
+  "n": 148,
+  "phon": "træk"
  },
  {
   "word": "trace",
@@ -1189,7 +1337,8 @@
   "ex_en": "They traced the criminal to a house in the city",
   "ex_zh": "他们追踪罪犯追到了城里的一座房子里。",
   "notes": "a trace of—丝，少许trace back to追溯到",
-  "n": 149
+  "n": 149,
+  "phon": "treɪs"
  },
  {
   "word": "alternate",
@@ -1197,7 +1346,8 @@
   "ex_en": "Sunny weather alternated with rain",
   "ex_zh": "天气晴雨交替。",
   "notes": "alternative adj.可供选择的n.可供选择的事物字根alter意为“其他的（other）\\英语中有一个拉丁借词alter ego,在拉丁语中的字面意思就是“第二个我 （second 1）\\即“个性的另一面”，引申义为“知己，至交\"。此外，看看电脑键盘上紧挨着空格键的替换键 \"A lt\",那就是alternate的简写。",
-  "n": 150
+  "n": 150,
+  "phon": "ˈɒltəneɪt"
  },
  {
   "word": "predator",
@@ -1205,7 +1355,8 @@
   "ex_en": "These predators of the African grasslands live on mice and rabbits.",
   "ex_zh": "非洲草原上的这些捕食性动物以捕食老鼠和兔子为生。",
   "notes": "predation n.捕食",
-  "n": 151
+  "n": 151,
+  "phon": "ˈpredətə(r)"
  },
  {
   "word": "victim",
@@ -1213,7 +1364,8 @@
   "ex_en": "One of the bombing victims was dead on arrival in hospital",
   "ex_zh": "炸弹爆炸案的受害者之一刚被送到医院就死亡了。",
   "notes": "fall a victim to成为...的受害者；成为....的牺牲品",
-  "n": 152
+  "n": 152,
+  "phon": "ˈvɪktɪm"
  },
  {
   "word": "captive",
@@ -1221,7 +1373,8 @@
   "ex_en": "Armed gunmen broke into the church and took the priest captive",
   "ex_zh": "持枪歹徒闯入了教堂，扣押了神父。",
   "notes": "captivate v.迷住，迷惑",
-  "n": 153
+  "n": 153,
+  "phon": "ˈkæptɪv"
  },
  {
   "word": "defensive",
@@ -1229,7 +1382,8 @@
   "ex_en": "We took a defensive attitude in the negotiation",
   "ex_zh": "我们在谈判时采取了守势。",
   "notes": "defend v.防卫self-defensive adj.自卫的",
-  "n": 154
+  "n": 154,
+  "phon": "dɪˈfensɪv"
  },
  {
   "word": "undergo",
@@ -1237,7 +1391,8 @@
   "ex_en": "I underwent so much suffering in early years that I am afraid of nothing today",
   "ex_zh": "早年我经历了如此多的苦难，如今已无所畏惧。",
   "notes": "",
-  "n": 155
+  "n": 155,
+  "phon": "ˌʌndəˈɡəʊ"
  },
  {
   "word": "vulnerable",
@@ -1245,7 +1400,8 @@
   "ex_en": "The young girl looked very vulnerable",
   "ex_zh": "那个年轻姑娘看上去十分柔弱。",
   "notes": "be vulnerable to易受...影响的",
-  "n": 156
+  "n": 156,
+  "phon": "ˈvʌlnərəbəl"
  },
  {
   "word": "subsistence",
@@ -1253,7 +1409,8 @@
   "ex_en": "The standard of living at that time was on the edge of subsistence.",
   "ex_zh": "当时的生活水平处于勉强维生的边缘。",
   "notes": "",
-  "n": 157
+  "n": 157,
+  "phon": "səbˈsɪstəns"
  },
  {
   "word": "exist",
@@ -1261,7 +1418,8 @@
   "ex_en": "Most scientists believe that water doesn't exist on the surface of the moon.",
   "ex_zh": "多数科学家认为，月球表面不存在水。",
   "notes": "existence n.存在；生活方式",
-  "n": 158
+  "n": 158,
+  "phon": "ɪɡˈzɪst"
  },
  {
   "word": "exterminate",
@@ -1269,7 +1427,8 @@
   "ex_en": "We've made great efforts to exterminate mosquitoes and flies",
   "ex_zh": "我们付出了很大努力来消灭蚊蝇。字根term/termin表示\"界限（boundary）\",如：ex\n（ttl）+termin（界限）+ate（动词后缀）t逐出界限t\nexterminate（根除）；de（加强）+termine（界限）t\n确定界限t determine（决定）；termin（界限）+ate\n（动词后缀）t使限定t terminate（［使］结束）。",
   "notes": "",
-  "n": 159
+  "n": 159,
+  "phon": "ɪkˈstɜːmɪneɪt"
  },
  {
   "word": "tame",
@@ -1277,7 +1436,8 @@
   "ex_en": "The tame lions can communicate and dance together with the actors",
   "ex_zh": "这些驯服的狮子可以与演员交流并同台共舞。",
   "notes": "tame nature征服大自然",
-  "n": 160
+  "n": 160,
+  "phon": "teɪm"
  },
  {
   "word": "keeper",
@@ -1285,7 +1445,8 @@
   "ex_en": "He turned his eyes towards the food which the keeper had brought",
   "ex_zh": "他把视线转向看守人带来的食物。",
   "notes": "",
-  "n": 161
+  "n": 161,
+  "phon": "ˈkiːpə(r)"
  },
  {
   "word": "shepherd",
@@ -1293,6 +1454,7 @@
   "ex_en": "The shepherd set out to look for the sheep that had wandered away",
   "ex_zh": "牧羊人出发去找走失的羊。",
   "notes": "sheepdog n.牧羊犬 shep（来自sheep［羊］）+herd（牧人）t牧羊人。 动物保护",
-  "n": 162
+  "n": 162,
+  "phon": "ˈʃepəd"
  }
 ]

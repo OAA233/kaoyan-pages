@@ -5,7 +5,8 @@
   "ex_en": "Loose trousers are the latest fashion",
   "ex_zh": "穿宽大的裤子是最新的时尚。",
   "notes": "fashionable adj.流行的 me into fashion流行起来，开始风行 out of fashion过时的",
-  "n": 1
+  "n": 1,
+  "phon": "ˈfæʃən"
  },
  {
   "word": "style",
@@ -13,7 +14,8 @@
   "ex_en": "The style of this skirt is just in season",
   "ex_zh": "这条裙子的样式正在流行。",
   "notes": "stylish adj.时髦的，有格调的",
-  "n": 2
+  "n": 2,
+  "phon": "staɪl"
  },
  {
   "word": "trend",
@@ -21,7 +23,8 @@
   "ex_en": "The youth like to follow the latest trends in fashion",
   "ex_zh": "年轻人喜好追随最新的时尚潮流。",
   "notes": "",
-  "n": 3
+  "n": 3,
+  "phon": "trend"
  },
  {
   "word": "tendency",
@@ -29,7 +32,8 @@
   "ex_en": "There is a growing tendency for people to work at home instead of in offices",
   "ex_zh": "入们在家里而不是在办公室里工作的趋势日益显著。",
   "notes": "tend v.趋向；易于",
-  "n": 4
+  "n": 4,
+  "phon": "ˈtendənsi"
  },
  {
   "word": "current",
@@ -37,7 +41,8 @@
   "ex_en": "Newspapers influence the current of thought",
   "ex_zh": "报纸影响着思想潮流。",
   "notes": "against the current 逆流而行的；与潮流相反的",
-  "n": 5
+  "n": 5,
+  "phon": "ˈkʌrənt"
  },
  {
   "word": "vogue",
@@ -45,7 +50,8 @@
   "ex_en": "Long hair for men and high boots for ladies are no longer in vogue",
   "ex_zh": "男士留长发和女士穿高筒靴不再流行了。",
   "notes": "in vogue流行的",
-  "n": 6
+  "n": 6,
+  "phon": "vəʊɡ"
  },
  {
   "word": "prevail",
@@ -53,7 +59,8 @@
   "ex_en": "Truth will ultimately prevail",
   "ex_zh": "真理终究会获胜。",
   "notes": "prevalence n.流行，普遍存在 prevailing adj.盛行的",
-  "n": 7
+  "n": 7,
+  "phon": "prɪˈveɪl"
  },
  {
   "word": "prevail",
@@ -61,7 +68,8 @@
   "ex_en": "Truth will ultimately prevail",
   "ex_zh": "真理终究会获胜。",
   "notes": "prevalence n.流行，普遍存在\nprevailing adj.盛行的\nprevail over/against 压倒，战胜",
-  "n": 8
+  "n": 8,
+  "phon": "prɪˈveɪl"
  },
  {
   "word": "model",
@@ -69,7 +77,8 @@
   "ex_en": "After a brief spell as a model, she got into singing",
   "ex_zh": "在短暂地当过一阵子模特儿后，她进入歌唱界。",
   "notes": "",
-  "n": 9
+  "n": 9,
+  "phon": "ˈmɒdəl"
  },
  {
   "word": "icon",
@@ -77,7 +86,8 @@
   "ex_en": "That singer is one of the pop culture icons of 1980s.",
   "ex_zh": "那位歌手是20世纪80年代的流行文化偶像之一。",
   "notes": "",
-  "n": 10
+  "n": 10,
+  "phon": "ˈaɪkɒn"
  },
  {
   "word": "idol",
@@ -85,7 +95,8 @@
   "ex_en": "That football player is the idol of many young people",
   "ex_zh": "这位足球运动员是许多年轻入的偶像。",
   "notes": "",
-  "n": 11
+  "n": 11,
+  "phon": "ˈaɪdəl"
  },
  {
   "word": "luxury",
@@ -93,7 +104,8 @@
   "ex_en": "The increasing sales of luxuries are an indication of the country's prosperity.",
   "ex_zh": "奢侈品的销售量日益升高，这是该国繁荣的表现。",
   "notes": "luxurious adj.奢侈的，豪华的",
-  "n": 12
+  "n": 12,
+  "phon": "ˈlʌkʃəri"
  },
  {
   "word": "extravagant",
@@ -101,7 +113,8 @@
   "ex_en": "clothes",
   "ex_zh": "她很铺张浪费---她把所有的钱都\n用来买衣服。",
   "notes": "",
-  "n": 13
+  "n": 13,
+  "phon": "ɪkˈstrævəɡənt"
  },
  {
   "word": "jewellery",
@@ -109,7 +122,8 @@
   "ex_en": "This piece of jewellery is priceless",
   "ex_zh": "这件首饰是无价之宝。",
   "notes": "",
-  "n": 14
+  "n": 14,
+  "phon": "ˈdʒuːəlri"
  },
  {
   "word": "jewel",
@@ -117,7 +131,8 @@
   "ex_en": "That jewel has a beautiful shimmer",
   "ex_zh": "那颗宝石闪着美丽的光。",
   "notes": "",
-  "n": 15
+  "n": 15,
+  "phon": "ˈdʒuːəl"
  },
  {
   "word": "gem",
@@ -125,7 +140,8 @@
   "ex_en": "This picture is the gem of the collection.",
   "ex_zh": "这幅画\n是这些藏品中的珍品。",
   "notes": "gene n.基因n.细菌",
-  "n": 16
+  "n": 16,
+  "phon": "dʒem"
  },
  {
   "word": "jade",
@@ -133,7 +149,8 @@
   "ex_en": "I have a pair of jade bracelets",
   "ex_zh": "我有一对翡翠手镯。",
   "notes": "",
-  "n": 17
+  "n": 17,
+  "phon": "dʒeɪd"
  },
  {
   "word": "adorn",
@@ -141,7 +158,8 @@
   "ex_en": "She likes to adorn herself with jewels",
   "ex_zh": "她喜欢用珠宝来装扮自己。",
   "notes": "",
-  "n": 18
+  "n": 18,
+  "phon": "əˈdɔːn"
  },
  {
   "word": "ornament",
@@ -149,7 +167,8 @@
   "ex_en": "Clearness ornaments profound thought",
   "ex_zh": "清晰性能为深刻的思想增辉。\nV.修饰 The door of the old church was embellished with\nintricate carvings.老教堂的门是用复杂的雕饰美化的。",
   "notes": "",
-  "n": 19
+  "n": 19,
+  "phon": "ˈɔːnəmənt"
  },
  {
   "word": "embroider",
@@ -157,7 +176,8 @@
   "ex_en": "Her shirt is embroidered with roses",
   "ex_zh": "她的衬衣上绣着玫瑰花。",
   "notes": "",
-  "n": 20
+  "n": 20,
+  "phon": "ɪmˈbrɔɪdə(r)"
  },
  {
   "word": "hairdressing",
@@ -165,7 +185,8 @@
   "ex_en": "She has spent much money and time on hairdressing",
   "ex_zh": "她在美发上花了不少钱和时间。",
   "notes": "",
-  "n": 21
+  "n": 21,
+  "phon": "ˈheəˌdresɪŋ"
  },
  {
   "word": "pigment",
@@ -173,7 +194,8 @@
   "ex_en": "This pigment is a good and common food additive.",
   "ex_zh": "该色素是一种优质且常见的食品添加剂。",
   "notes": "",
-  "n": 22
+  "n": 22,
+  "phon": "ˈpɪɡmənt"
  },
  {
   "word": "dye",
@@ -181,7 +203,8 @@
   "ex_en": "My roommate has dyed her hair red—it looks so unnatural",
   "ex_zh": "我的室友把头发染成了红色，看起来很不自然。",
   "notes": "",
-  "n": 23
+  "n": 23,
+  "phon": "daɪ"
  },
  {
   "word": "masquerade",
@@ -189,7 +212,8 @@
   "ex_en": "She masqueraded as a shepherdess.",
   "ex_zh": "她假扮成一名牧羊女。",
   "notes": "",
-  "n": 24
+  "n": 24,
+  "phon": "ˌmæskərˈeɪd"
  },
  {
   "word": "veil",
@@ -197,7 +221,8 @@
   "ex_en": "The bride's face was covered with a white veil",
   "ex_zh": "新娘的脸上蒙着白色的面纱。",
   "notes": "",
-  "n": 25
+  "n": 25,
+  "phon": "veɪl"
  },
  {
   "word": "costume",
@@ -205,7 +230,8 @@
   "ex_en": "Her national costume showed which country she came from",
   "ex_zh": "她的民族服装显示了她来自哪个国家。",
   "notes": "academic costume学位服a costume ball化装舞会 cosplay简化自costume play,意思是“角色扮演”或 “服饰装扮”，主要指动漫、游戏爱好者将自己装扮成所喜爱的动漫或游戏角色的表演活动。如果你小时候曾经拿条毛巾当披风、用鸡毛择子作宝剑扮过大侠的话，就能完全理解这个单词的含义。",
-  "n": 26
+  "n": 26,
+  "phon": "ˈkɒstʃuːm"
  },
  {
   "word": "fascinate",
@@ -213,7 +239,8 @@
   "ex_en": "This city fascinates him",
   "ex_zh": "这座城市令他着迷。",
   "notes": "fascinating adj.迷人的 be fascinated with迷上",
-  "n": 27
+  "n": 27,
+  "phon": "ˈfæsəneɪt"
  },
  {
   "word": "decent",
@@ -221,7 +248,8 @@
   "ex_en": "He made a decent record",
   "ex_zh": "他成绩尚佳。",
   "notes": "indecent adj.下流的",
-  "n": 28
+  "n": 28,
+  "phon": "ˈdiːsənt"
  },
  {
   "word": "exquisite",
@@ -229,7 +257,8 @@
   "ex_en": "He has exquisite taste and decent marrners",
   "ex_zh": "他有高雅的情趣和得体的举止。字根quisit指“追求（to seek）\",如：exquisite（追求到的，选拔出来的t精致的），acquisition（获得），\n时尚潮流.",
   "notes": "",
-  "n": 29
+  "n": 29,
+  "phon": "ɪkˈskwɪzɪt"
  },
  {
   "word": "grace",
@@ -237,7 +266,8 @@
   "ex_en": "She was a beautiful girl with the grace and poise of a natural model",
   "ex_zh": "她是一个美丽的姑娘，天生有着模特儿的那种优雅仪态。",
   "notes": "graceful adj.优雅的",
-  "n": 30
+  "n": 30,
+  "phon": "ɡreɪs"
  },
  {
   "word": "elegance",
@@ -245,7 +275,8 @@
   "ex_en": "He is adm",
   "ex_zh": "汁ed for the elegance of his writing.\n他文风典雅，受人钦佩。 No one expects you to be perfect, but we do\nexpect you to do your best always.没人指望你完美无缺，但是我们盼望你永远尽最大的努力。",
   "notes": "elegant adj.优雅的 adj.完美的 perfect!on n.完美",
-  "n": 31
+  "n": 31,
+  "phon": "ˈeləɡəns"
  },
  {
   "word": "appearance",
@@ -253,7 +284,8 @@
   "ex_en": "Don't judge by appearances",
   "ex_zh": "不能以貌取人。",
   "notes": "appear v.出现",
-  "n": 32
+  "n": 32,
+  "phon": "əˈpɪərəns"
  },
  {
   "word": "cosmetics",
@@ -261,7 +293,8 @@
   "ex_en": "We have many types of cosmetics for sale",
   "ex_zh": "我们有许多类型的化妆品在售。字根cosm（o）来源于希腊语kosmos,有两个意思：一是指\"装饰（ornament）\",如cosmetics（脸部的装饰世界（world）\"。\n-化妆品）；二是指“秩序（order）;\n古希腊人认为宇宙是一个有序的地方，所以cosmic就是\"宇宙的\"。而cosmopolitan（世界性的）来源于\nkosmos（世界）和polites（市民）的结合。",
   "notes": "",
-  "n": 33
+  "n": 33,
+  "phon": "kɒzˈmetɪks"
  },
  {
   "word": "make-up",
@@ -269,7 +302,8 @@
   "ex_en": "I cannot tell who's who when the women take off their make-up.",
   "ex_zh": "女士们卸了妆，我就分辨不出谁是谁。",
   "notes": "make up化妆",
-  "n": 34
+  "n": 34,
+  "phon": "ˈmeɪk ʌp"
  },
  {
   "word": "handsome",
@@ -277,7 +311,8 @@
   "ex_en": "The waitress received a handsome tip",
   "ex_zh": "女侍者收到了数量可观的小费。",
   "notes": "",
-  "n": 35
+  "n": 35,
+  "phon": "ˈhænsəm"
  },
  {
   "word": "beautiful",
@@ -285,7 +320,8 @@
   "ex_en": "Looking at a beautiful painting always gives one satisfaction.",
   "ex_zh": "观赏一幅美丽的图画总能给人一种满足感。",
   "notes": "",
-  "n": 36
+  "n": 36,
+  "phon": "ˈbjuːtɪfəl"
  },
  {
   "word": "clothe",
@@ -293,7 +329,8 @@
   "ex_en": "He had to work hard to feed and clothe the large family",
   "ex_zh": "他必须努力工作才能使一大家子人有饭吃，有衣穿。",
   "notes": "clothes n.衣服clothing n.衣服",
-  "n": 37
+  "n": 37,
+  "phon": "kləʊð"
  },
  {
   "word": "uniform",
@@ -301,7 +338,8 @@
   "ex_en": "Do you have to wear a uniform if you work at McDonald's?",
   "ex_zh": "在麦当劳供职时必须穿制服吗？单一的形式t\nuni（单一的）+form（形状，形式）t\n制服。",
   "notes": "",
-  "n": 38
+  "n": 38,
+  "phon": "ˈjuːnɪfɔːm"
  },
  {
   "word": "laundry",
@@ -309,7 +347,8 @@
   "ex_en": "There's a lot of laundry in the basket.",
   "ex_zh": "筐里有许多要洗的衣物。",
   "notes": "",
-  "n": 39
+  "n": 39,
+  "phon": "ˈlɔːndri"
  },
  {
   "word": "wardrobe",
@@ -317,7 +356,8 @@
   "ex_en": "Can you hang these in the wardrobe, please?",
   "ex_zh": "你能把这些挂在衣柜里吗？",
   "notes": "",
-  "n": 40
+  "n": 40,
+  "phon": "ˈwɔːdrəʊb"
  },
  {
   "word": "robe",
@@ -325,7 +365,8 @@
   "ex_en": "She was simply dressed in a plain white robe",
   "ex_zh": "她只穿了一件朴素的白色长袍。",
   "notes": "",
-  "n": 41
+  "n": 41,
+  "phon": "rəʊb"
  },
  {
   "word": "gown",
@@ -333,7 +374,8 @@
   "ex_en": "She put on her silk gown and went to the ball",
   "ex_zh": "她穿上丝质的礼服，前去参加舞会。",
   "notes": "",
-  "n": 42
+  "n": 42,
+  "phon": "ɡaʊn"
  },
  {
   "word": "sweater",
@@ -341,7 +383,8 @@
   "ex_en": "This woollen sweater may keep you warm in winter",
   "ex_zh": "这件羊毛衫可以让你在冬天保暖。",
   "notes": "",
-  "n": 43
+  "n": 43,
+  "phon": "ˈswetə(r)"
  },
  {
   "word": "skirt",
@@ -349,7 +392,8 @@
   "ex_en": "How have?",
   "ex_zh": "你有多少条裙子？",
   "notes": "",
-  "n": 44
+  "n": 44,
+  "phon": "skɜːt"
  },
  {
   "word": "trousers",
@@ -357,7 +401,8 @@
   "ex_en": "This pair of trousers is too tight for me",
   "ex_zh": "这条裤子对我来说太紧了。",
   "notes": "",
-  "n": 45
+  "n": 45,
+  "phon": "ˈtraʊzəz"
  },
  {
   "word": "clasp",
@@ -365,7 +410,8 @@
   "ex_en": "The button won't clasp",
   "ex_zh": "这颗扣子扣不上。",
   "notes": "unbutton v.解开的纽扣；如解开纽扣一样解开",
-  "n": 46
+  "n": 46,
+  "phon": "klɑːsp"
  },
  {
   "word": "glove",
@@ -373,7 +419,8 @@
   "ex_en": "It's getting cold and I have to take out my woollen gloves",
   "ex_zh": "天气变冷了，我不得不把毛线手套拿出来了。",
   "notes": "",
-  "n": 47
+  "n": 47,
+  "phon": "ɡlʌv"
  },
  {
   "word": "hat",
@@ -381,7 +428,8 @@
   "ex_en": "She bought a hat yesterday",
   "ex_zh": "她昨天买了一顶帽子。",
   "notes": "",
-  "n": 48
+  "n": 48,
+  "phon": "hæt"
  },
  {
   "word": "cap",
@@ -389,7 +437,8 @@
   "ex_en": "The cap goes well with your suit",
   "ex_zh": "这顶帽子跟你的套装很配。",
   "notes": "",
-  "n": 49
+  "n": 49,
+  "phon": "kæp"
  },
  {
   "word": "brim",
@@ -397,7 +446,8 @@
   "ex_en": "He drank at the fountain's brim",
   "ex_zh": "他在喷泉边喝酒。",
   "notes": "",
-  "n": 50
+  "n": 50,
+  "phon": "brɪm"
  },
  {
   "word": "scarf",
@@ -405,7 +455,8 @@
   "ex_en": "The price of this scarf is below ten dollars",
   "ex_zh": "这条围巾的价格不到10美元。",
   "notes": "",
-  "n": 51
+  "n": 51,
+  "phon": "skɑːf"
  },
  {
   "word": "handkerchief",
@@ -413,7 +464,8 @@
   "ex_en": "He was playing with his handkerchief all the while during the speech.",
   "ex_zh": "演讲期间，他一直在摆弄手帕。",
   "notes": "",
-  "n": 52
+  "n": 52,
+  "phon": "ˈhæŋkətʃiːf"
  },
  {
   "word": "purse",
@@ -421,7 +473,8 @@
   "ex_en": "The loss of her purse caused her much irwnvenience",
   "ex_zh": "丢失鏈给她带来了诸多不便。",
   "notes": "",
-  "n": 53
+  "n": 53,
+  "phon": "pɜːs"
  },
  {
   "word": "wallet",
@@ -429,7 +482,8 @@
   "ex_en": "She placed the receipt in her wallet",
   "ex_zh": "她把收条放到皮夹子里了。\nm［英］汗衫；［美］西装背心\n【例One button on the vest is loose.西装背心上的一粒纽扣松了。",
   "notes": "",
-  "n": 54
+  "n": 54,
+  "phon": "ˈwɒlɪt"
  },
  {
   "word": "wrap",
@@ -437,7 +491,8 @@
   "ex_en": "r her shoulders was a much-mended wrap",
   "ex_zh": "她的肩上搭着一条被多次缝补的披肩。",
   "notes": "",
-  "n": 55
+  "n": 55,
+  "phon": "ræp"
  },
  {
   "word": "cloak",
@@ -445,7 +500,8 @@
   "ex_en": "She picked up the old brown cloak and handed it to him",
   "ex_zh": "她捡起棕色的旧斗篷递给他。",
   "notes": "",
-  "n": 56
+  "n": 56,
+  "phon": "kləʊk"
  },
  {
   "word": "collar",
@@ -453,7 +509,8 @@
   "ex_en": "He turned up his coat collar against the chilly wind",
   "ex_zh": "他竖起大衣领来抵御寒风。",
   "notes": "",
-  "n": 57
+  "n": 57,
+  "phon": "ˈkɒlə(r)"
  },
  {
   "word": "sleeve",
@@ -461,7 +518,8 @@
   "ex_en": "A stranger pulled at my sleeve as I was leaving",
   "ex_zh": "我刚要离去，一个陌生人拽了拽我的袖子。",
   "notes": "",
-  "n": 58
+  "n": 58,
+  "phon": "sliːv"
  },
  {
   "word": "sock",
@@ -469,7 +527,8 @@
   "ex_en": "There is a hole in my sock",
   "ex_zh": "我的短袜上有个洞。",
   "notes": "",
-  "n": 59
+  "n": 59,
+  "phon": "sɒk"
  },
  {
   "word": "stocking",
@@ -477,7 +536,8 @@
   "ex_en": "The thief masked his face with a stocking",
   "ex_zh": "那个贼套上长筒袜遮住脸。",
   "notes": "",
-  "n": 60
+  "n": 60,
+  "phon": "ˈstɒkɪŋ"
  },
  {
   "word": "slipper",
@@ -485,7 +545,8 @@
   "ex_en": "No slipper is allowed in the laboratory",
   "ex_zh": "实验室里不允许穿拖鞋。",
   "notes": "",
-  "n": 61
+  "n": 61,
+  "phon": "ˈslɪpə(r)"
  },
  {
   "word": "boot",
@@ -493,7 +554,8 @@
   "ex_en": "My foot won't go into this boot",
   "ex_zh": "我的脚穿不上这只靴子。",
   "notes": "",
-  "n": 62
+  "n": 62,
+  "phon": "buːt"
  },
  {
   "word": "lace",
@@ -501,7 +563,8 @@
   "ex_en": "He stopped to tie the laces of his sneakers",
   "ex_zh": "他停下来把运动鞋的鞋带系上。",
   "notes": "",
-  "n": 63
+  "n": 63,
+  "phon": "leɪs"
  },
  {
   "word": "tailor",
@@ -509,7 +572,8 @@
   "ex_en": "The tailor can alter your new coat to fit you",
   "ex_zh": "裁缝会将你的新外套改合体。",
   "notes": "",
-  "n": 64
+  "n": 64,
+  "phon": "ˈteɪlə(r)"
  },
  {
   "word": "sew",
@@ -517,7 +581,8 @@
   "ex_en": "The skirt is finished and rm now going to sew a pocket",
   "ex_zh": "裙子做好了，我现在要再缝上个口袋。",
   "notes": "",
-  "n": 65
+  "n": 65,
+  "phon": "səʊ"
  },
  {
   "word": "spin",
@@ -525,7 +590,8 @@
   "ex_en": "We took a spin around the town",
   "ex_zh": "我们乘车在城里兜了一圈。",
   "notes": "",
-  "n": 66
+  "n": 66,
+  "phon": "spɪn"
  },
  {
   "word": "needle",
@@ -533,7 +599,8 @@
   "ex_en": "The needle pierced her finger",
   "ex_zh": "针刺进了她的手指。",
   "notes": "thread a needle穿针，纫针 sew",
-  "n": 67
+  "n": 67,
+  "phon": "ˈniːdəl"
  },
  {
   "word": "pin",
@@ -541,7 +608,8 @@
   "ex_en": "Pin the bills together so you won't lose them",
   "ex_zh": "把账单钉在一起以防遗失。",
   "notes": "",
-  "n": 68
+  "n": 68,
+  "phon": "pɪn"
  },
  {
   "word": "string",
@@ -549,7 +617,8 @@
   "ex_en": "We have had a string of complaints about the programme",
   "ex_zh": "我们已经收到了对该节目的一连串投诉。",
   "notes": "",
-  "n": 69
+  "n": 69,
+  "phon": "strɪŋ"
  },
  {
   "word": "thread",
@@ -557,7 +626,8 @@
   "ex_en": "She is looking for threads which match the cloth",
   "ex_zh": "她在找和这块布相配的线。",
   "notes": "",
-  "n": 70
+  "n": 70,
+  "phon": "θred"
  },
  {
   "word": "strap",
@@ -565,7 +635,8 @@
   "ex_en": "A falling",
   "ex_zh": "安全带\n被用来防止滑落。",
   "notes": "",
-  "n": 71
+  "n": 71,
+  "phon": "stræp"
  },
  {
   "word": "stripe",
@@ -573,7 +644,8 @@
   "ex_en": "The body of a zebra is marked by black and white stripes",
   "ex_zh": "斑马的身体特征是有黑白条纹。",
   "notes": "",
-  "n": 72
+  "n": 72,
+  "phon": "straɪp"
  },
  {
   "word": "ribbon",
@@ -581,7 +653,8 @@
   "ex_en": "Her hair was tied up with a ribbon",
   "ex_zh": "她的头发用\n—条丝带扎着。",
   "notes": "",
-  "n": 73
+  "n": 73,
+  "phon": "ˈrɪbən"
  },
  {
   "word": "belt",
@@ -589,7 +662,8 @@
   "ex_en": "A belt of trees grew between the two fields",
   "ex_zh": "两块田之间有一条树木带。",
   "notes": "",
-  "n": 74
+  "n": 74,
+  "phon": "belt"
  },
  {
   "word": "fasten",
@@ -597,7 +671,8 @@
   "ex_en": "She wore a silver chain around her neck",
   "ex_zh": "她的脖子上戴着一条银链子。",
   "notes": "",
-  "n": 75
+  "n": 75,
+  "phon": "ˈfɑːsən"
  },
  {
   "word": "bracelet",
@@ -605,7 +680,8 @@
   "ex_en": "rd like you to take this bracelet as a gift",
   "ex_zh": "我希望你把这只手镯作为礼物收下。",
   "notes": "",
-  "n": 76
+  "n": 76,
+  "phon": "ˈbreɪslət"
  },
  {
   "word": "necklace",
@@ -613,7 +689,8 @@
   "ex_en": "I value this necklace at 5,000 dollars",
   "ex_zh": "我估计这条项链值5000美元。",
   "notes": "",
-  "n": 77
+  "n": 77,
+  "phon": "ˈnekləs"
  },
  {
   "word": "bead",
@@ -621,7 +698,8 @@
   "ex_en": "She wore a string of beads round her neck",
   "ex_zh": "她的脖子上挂了一串珠子。源自表示“祈祷”的古英语。后来西方开始盛行在祈祷。时手拨念珠，就演化岀表示“念珠”的中古英语b ede\n最后发展为现在的bead,表意的范畴也扩大了，可表示\n“珠子”“（液体的）小滴”等。复数形式beads仍常被用来指“念珠”，比如在英语短语count one's beads（数念珠祷告）中。",
   "notes": "",
-  "n": 78
+  "n": 78,
+  "phon": "biːd"
  },
  {
   "word": "textile",
@@ -629,7 +707,8 @@
   "ex_en": "He intends to retail textile goods",
   "ex_zh": "他打算零售纺织类的商品。",
   "notes": "",
-  "n": 79
+  "n": 79,
+  "phon": "ˈtekstaɪl"
  },
  {
   "word": "velvet",
@@ -637,7 +716,8 @@
   "ex_en": "The lawn looks like green velvet",
   "ex_zh": "草坪看上去就像绿色的天鹅绒。",
   "notes": "",
-  "n": 80
+  "n": 80,
+  "phon": "ˈvelvɪt"
  },
  {
   "word": "wool",
@@ -645,7 +725,8 @@
   "ex_en": "He found a job of shearing wool from sheep",
   "ex_zh": "他找到一份剪羊毛的工作。 She sewed a patch onto the knee of the\ntrousers.她在裤子的膝部缝了个补丁。",
   "notes": "woollen（=woolen）adj.羊毛的 n.补丁；（与周围不同的）小片v.补缀 patchwork n.拼布工艺；混杂物",
-  "n": 81
+  "n": 81,
+  "phon": "wʊl"
  },
  {
   "word": "rag",
@@ -653,7 +734,8 @@
   "ex_en": "She wrapped the box with an old rag",
   "ex_zh": "她用一块破旧的布包住这个盒子。",
   "notes": "ragged adj.破旧的",
-  "n": 82
+  "n": 82,
+  "phon": "ræɡ"
  },
  {
   "word": "shabby",
@@ -661,7 +743,8 @@
   "ex_en": "His shabby appearance creates a bad impression.",
   "ex_zh": "他衣衫褴褛的样子给人留下不好的印象。",
   "notes": "",
-  "n": 83
+  "n": 83,
+  "phon": "ˈʃæbi"
  },
  {
   "word": "tight",
@@ -669,7 +752,8 @@
   "ex_en": "This drawer is too tight for me to open it",
   "ex_zh": "这抽屉太紧了，我打不开。",
   "notes": "tighten v.(使)变紧；使更加严格",
-  "n": 84
+  "n": 84,
+  "phon": "taɪt"
  },
  {
   "word": "colour",
@@ -677,7 +761,8 @@
   "ex_en": "Due to the use of natural pigments, these folk paintings retain their colour well.",
   "ex_zh": "因为使用了天然颜料，这些民俗画的颜色很好地保留了下来。",
   "notes": "colourful(=colorful)adj.富于色彩的",
-  "n": 85
+  "n": 85,
+  "phon": "ˈkʌlə(r)"
  },
  {
   "word": "white",
@@ -685,7 +770,8 @@
   "ex_en": "He was white with fury",
   "ex_zh": "他气得脸色发白。",
   "notes": "whitewash v.粉刷，刷石灰水",
-  "n": 86
+  "n": 86,
+  "phon": "waɪt"
  },
  {
   "word": "yellow",
@@ -693,7 +779,8 @@
   "ex_en": "The leaves turn yellow in autumn",
   "ex_zh": "秋天时，叶子变黄。",
   "notes": "",
-  "n": 87
+  "n": 87,
+  "phon": "ˈjeləʊ"
  },
  {
   "word": "brown",
@@ -701,7 +788,8 @@
   "ex_en": "He had brown skin",
   "ex_zh": "他的皮肤是褐色的。",
   "notes": "",
-  "n": 88
+  "n": 88,
+  "phon": "braʊn"
  },
  {
   "word": "grey",
@@ -709,7 +797,8 @@
   "ex_en": "He dressed in grey",
   "ex_zh": "他穿着灰色衣服。",
   "notes": "",
-  "n": 89
+  "n": 89,
+  "phon": "ɡreɪ"
  },
  {
   "word": "pink",
@@ -717,7 +806,8 @@
   "ex_en": "She carried a spray of pink roses",
   "ex_zh": "她拿着一簇粉红色的玫瑰花。",
   "notes": "in the pink容光焕发",
-  "n": 90
+  "n": 90,
+  "phon": "pɪŋk"
  },
  {
   "word": "purple",
@@ -725,7 +815,8 @@
   "ex_en": "That girl like to wear purple dresses",
   "ex_zh": "那个女孩喜欢穿紫色的连衣裙。",
   "notes": "",
-  "n": 91
+  "n": 91,
+  "phon": "ˈpɜːpəl"
  },
  {
   "word": "tan",
@@ -733,7 +824,8 @@
   "ex_en": "It took me all summer to get this tan",
   "ex_zh": "我花了整个夏天才晒出这样的棕褐色。",
   "notes": "",
-  "n": 92
+  "n": 92,
+  "phon": "tæn"
  },
  {
   "word": "fade",
@@ -741,7 +833,8 @@
   "ex_en": "Beauty fades like a flower",
   "ex_zh": "红颜易逝如花败。",
   "notes": "fade away 衰弱；病重死亡",
-  "n": 93
+  "n": 93,
+  "phon": "feɪd"
  },
  {
   "word": "stain",
@@ -749,7 +842,8 @@
   "ex_en": "The coffee stained his shirt brown",
   "ex_zh": "咖啡把他的衬衫染上了棕色。",
   "notes": "stainless adj.无瑕疵的；不锈钢制的",
-  "n": 94
+  "n": 94,
+  "phon": "steɪn"
  },
  {
   "word": "blot",
@@ -757,7 +851,8 @@
   "ex_en": "The new power station is a blot on the landscape",
   "ex_zh": "那座新建的发电厂大煞风景。",
   "notes": "",
-  "n": 95
+  "n": 95,
+  "phon": "blɒt"
  },
  {
   "word": "figure",
@@ -765,7 +860,8 @@
   "ex_en": "I could see a tall figure near the door",
   "ex_zh": "我可以看见门附近有一个高大的身影。",
   "notes": "figure out 理解，弄明白\na slender/slim figure 苗条的身材\na curvy figure 有曲线美的身段\nan hourglass figure 沙漏型身材",
-  "n": 96
+  "n": 96,
+  "phon": "ˈfɪɡə(r)"
  },
  {
   "word": "slender",
@@ -773,7 +869,8 @@
   "ex_en": "All of us admired her slender figure",
   "ex_zh": "我们都羡慕她的苗条身材。",
   "notes": "",
-  "n": 97
+  "n": 97,
+  "phon": "ˈslendə(r)"
  },
  {
   "word": "slight",
@@ -781,6 +878,7 @@
   "ex_en": "Our army suffered a slight reverse",
   "ex_zh": "我们的部队遭受了轻微的损失。",
   "notes": "slightly adv.稍微",
-  "n": 98
+  "n": 98,
+  "phon": "slaɪt"
  }
 ]

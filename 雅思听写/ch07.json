@@ -5,7 +5,8 @@
   "ex_en": "China plays an important role in promoting Asian culture",
   "ex_zh": "中国在推动亚洲文化发展方面发挥着重要作用。",
   "notes": "cultural adj.文化的multicultural adj.文化多样的 （to 字根cult指“耕种till）”。人类最早的文化之一就是农耕文化——怎样播种，如何灌溉，何时收获，等等。",
-  "n": 1
+  "n": 1,
+  "phon": "ˈkʌltʃə(r)"
  },
  {
   "word": "civilisation",
@@ -13,7 +14,8 @@
   "ex_en": "Western civilisation was cradled in Ancient Greece",
   "ex_zh": "古希腊滋养了西方文明。\n［IS］civilise（=civilize）v.使文明；开化",
   "notes": "",
-  "n": 2
+  "n": 2,
+  "phon": "ˌsɪvəlaɪˈzeɪʃən"
  },
  {
   "word": "renaissance",
@@ -21,7 +23,8 @@
   "ex_en": "The Renaissance was an epoch of unparalleled cultural achievement.",
   "ex_zh": "文艺复兴时期是一个在文化上取得空前成就的时代。",
   "notes": "",
-  "n": 3
+  "n": 3,
+  "phon": "rəˈneɪsəns"
  },
  {
   "word": "epic",
@@ -29,7 +32,8 @@
   "ex_en": "Their epic fight is the subject of a new film",
   "ex_zh": "他们的伟大战斗是一部新电影的主题。",
   "notes": "",
-  "n": 4
+  "n": 4,
+  "phon": "ˈepɪk"
  },
  {
   "word": "ideology",
@@ -37,7 +41,8 @@
   "ex_en": "An obsolete ideology can hamper an economy",
   "ex_zh": "过时的意识形态会束缚经济。",
   "notes": "",
-  "n": 5
+  "n": 5,
+  "phon": "ˌaɪdiˈɒlədʒi"
  },
  {
   "word": "tradition",
@@ -45,7 +50,8 @@
   "ex_en": "Asia has a long tradition of tea-drinking. China is no exception",
   "ex_zh": "亚洲有着饮茶的悠久传统，中国也不例外。",
   "notes": "traditional adj.传统的；惯例的 by tradition根据传说；依照传统 磁・culture ideology",
-  "n": 6
+  "n": 6,
+  "phon": "trəˈdɪʃən"
  },
  {
   "word": "convention",
@@ -53,7 +59,8 @@
   "ex_en": "The handshake is a social convention.",
   "ex_zh": "握手是社交惯例。",
   "notes": "conventional adj.传统的；通常的",
-  "n": 7
+  "n": 7,
+  "phon": "kənˈvenʃən"
  },
  {
   "word": "custom",
@@ -61,7 +68,8 @@
   "ex_en": "The custom prevails over the whole area.",
   "ex_zh": "该风俗盛行于这整个地区。",
   "notes": "customs n.海关；关税",
-  "n": 8
+  "n": 8,
+  "phon": "ˈkʌstəm"
  },
  {
   "word": "feudalism",
@@ -69,7 +77,8 @@
   "ex_en": "Feudalism was not abolished in England until 1660",
   "ex_zh": "英国直到1660年才废除封建制度。",
   "notes": "feudal adj.封建的",
-  "n": 9
+  "n": 9,
+  "phon": "ˈfjuːdəlɪzəm"
  },
  {
   "word": "slavery",
@@ -77,7 +86,8 @@
   "ex_en": "They thought slavery was morally wrong",
   "ex_zh": "他们认为奴隶制在道德上是错误的。",
   "notes": "slave n.奴隶",
-  "n": 10
+  "n": 10,
+  "phon": "ˈsleɪvəri"
  },
  {
   "word": "ethical",
@@ -85,7 +95,8 @@
   "ex_en": "You can't divorce science from ethical questions.",
   "ex_zh": "不能把科学与伦理问题割裂开。",
   "notes": "",
-  "n": 11
+  "n": 11,
+  "phon": "ˈeθɪkəl"
  },
  {
   "word": "moral",
@@ -93,7 +104,8 @@
   "ex_en": "The old gentleman claimed himself to be a very moral man, who had never told a lie in his life",
   "ex_zh": "这位老先生称自己是个很有道德的人，一生中从未说过谎。",
   "notes": "immoral adj.不道德的 moral principles道德准贝！J moral standards 道德水准 n.部落 The tribe's development was more primitive than that of their neighbours.该部落所处的发展阶段比邻近部落更原始。源自拉丁语tribus,卢梭在《社会契约论》中曾提到了其词源：古罗马成立时，人民由阿尔班人（Albain）、沙宾人（Sabin）和异邦人三种人构成，故把这三种入称为三个tribus（旳［三］+bus［存在］t三个存在）。字根tribut也源自tribus,指“付（to pay）,分配（to assign）”，在古罗马三个“部落”间分配、支付的财物就是tribute（礼物；贡品）。其他同源词还有contribute（捐",
-  "n": 12
+  "n": 12,
+  "phon": "ˈmɒrəl"
  },
  {
   "word": "tribe",
@@ -101,7 +113,8 @@
   "ex_en": "The tribe's development was more primitive than that of their neighbours.",
   "ex_zh": "该部落所处的发展阶段比邻近部落更原始。",
   "notes": "",
-  "n": 13
+  "n": 13,
+  "phon": "traɪb"
  },
  {
   "word": "aboriginal",
@@ -109,7 +122,8 @@
   "ex_en": "Many Aboriginals do not like the idea of a day to celebrate the British landing.",
   "ex_zh": "许多澳大利亚土著并不喜欢庆祝英国人登陆的日子。",
   "notes": "original adj.原本的，最初的origin n.起源",
-  "n": 14
+  "n": 14,
+  "phon": "ˌæbəˈrɪdʒənəl"
  },
  {
   "word": "inhabitant",
@@ -117,7 +131,8 @@
   "ex_en": "The local inhabitants do not like noisy tourists in summer",
   "ex_zh": "当地居民不喜欢夏季喧闹的游客。",
   "notes": "inhabit v.居住于，栖息于 in（进入）+habit（持有，握住t居住）+ant（后缀）t 居民。",
-  "n": 15
+  "n": 15,
+  "phon": "ɪnˈhæbɪtənt"
  },
  {
   "word": "native",
@@ -125,7 +140,8 @@
   "ex_en": "He is a native of Beijing",
   "ex_zh": "他是北京本地人。",
   "notes": "native to原产自...的native tongue母语",
-  "n": 16
+  "n": 16,
+  "phon": "ˈneɪtɪv"
  },
  {
   "word": "local",
@@ -133,7 +149,8 @@
   "ex_en": "He provided local delicacies for his guests",
   "ex_zh": "他用当地的美味佳肴来招待客人。",
   "notes": "localise（=localize）v.使局部化",
-  "n": 17
+  "n": 17,
+  "phon": "ˈləʊkəl"
  },
  {
   "word": "exotic",
@@ -141,7 +158,8 @@
   "ex_en": "The exotic atmosphere will fascinate you",
   "ex_zh": "这里具有异国情调的氛围将会把你迷住。注意和erotic（色情的）区分开。exotic来源于希腊语\nex。（外面的），而erotic则源自希腊语eros（爱），也指希腊神话中的爱神厄洛斯（Eros）厄洛斯是一位长有\no\n（Cupid）。双翼的美少年，相当于罗马神话中的丘比特",
   "notes": "",
-  "n": 18
+  "n": 18,
+  "phon": "ɪɡˈzɒtɪk"
  },
  {
   "word": "foreigner",
@@ -149,7 +167,8 @@
   "ex_en": "Some foreigners assimilate easily into our way of life",
   "ex_zh": "有些外国人很容易被我们的生活方式同化。",
   "notes": "",
-  "n": 19
+  "n": 19,
+  "phon": "ˈfɒrənə(r)"
  },
  {
   "word": "alien",
@@ -157,7 +176,8 @@
   "ex_en": "I ran into an old friend in the alien land",
   "ex_zh": "我在异国他乡遇到故知。",
   "notes": "alienatev.使疏远，使不友好；离间 an alien culture异域文化",
-  "n": 20
+  "n": 20,
+  "phon": "ˈeɪliən"
  },
  {
   "word": "anthropologist",
@@ -165,7 +185,8 @@
   "ex_en": "The anthropologist contrasted two cultures in his lecture",
   "ex_zh": "这位人类学家在讲座中将两种文化进行对比。",
   "notes": "anthropology n.人类学",
-  "n": 21
+  "n": 21,
+  "phon": "ˌænθrəˈpɒlədʒɪst"
  },
  {
   "word": "humanitarian",
@@ -173,7 +194,8 @@
   "ex_en": "Hepburn is known as a great humanitarian",
   "ex_zh": "大家都知道赫本是一位了不起的人道主义者。",
   "notes": "",
-  "n": 22
+  "n": 22,
+  "phon": "hjuːˌmænɪˈteəriən"
  },
  {
   "word": "heritage",
@@ -181,7 +203,8 @@
   "ex_en": "They take great pride in their cultural heritage",
   "ex_zh": "他们为自己的文化遗产深感自豪。",
   "notes": "",
-  "n": 23
+  "n": 23,
+  "phon": "ˈherɪtɪdʒ"
  },
  {
   "word": "inherit",
@@ -189,7 +212,8 @@
   "ex_en": "He inherited a house from his father.",
   "ex_zh": "他从父亲那里继承了一所房子。",
   "notes": "inheritance n.继承；遗产",
-  "n": 24
+  "n": 24,
+  "phon": "ɪnˈherɪt"
  },
  {
   "word": "antique",
@@ -197,7 +221,8 @@
   "ex_en": "He wears designer clothes and drives an antique car.",
   "ex_zh": "各化历史",
   "notes": "",
-  "n": 25
+  "n": 25,
+  "phon": "ænˈtiːk"
  },
  {
   "word": "arch",
@@ -205,7 +230,8 @@
   "ex_en": "Archaeology is the study of ancient civilisations",
   "ex_zh": "考古学研究古代文明。",
   "notes": "archaeological adj.考古学的 archaeologist n.考古学家",
-  "n": 26
+  "n": 26,
+  "phon": "ɑːtʃ"
  },
  {
   "word": "excavate",
@@ -213,7 +239,8 @@
   "ex_en": "It took a long time to excavate the ancient city of Troy",
   "ex_zh": "挖掘古老的特洛伊城花了很长时间。",
   "notes": "excavation n.挖掘，发掘",
-  "n": 27
+  "n": 27,
+  "phon": "ˈekskəveɪt"
  },
  {
   "word": "museum",
@@ -221,7 +248,8 @@
   "ex_en": "A visit to the museum is an unforgettable experience",
   "ex_zh": "参观这家博物馆是一段令人难忘的经历。来自Muse（缪斯女神），um表示地点，故字面意思即缪斯女神的圣殿，也就是向缪斯女神学习的地方。该词在古希腊时期指学校、图书馆、艺术学校，现在仅指博物馆。",
   "notes": "",
-  "n": 28
+  "n": 28,
+  "phon": "mjuːˈziːəm"
  },
  {
   "word": "pottery",
@@ -229,7 +257,8 @@
   "ex_en": "Modern pottery is usually ornamental",
   "ex_zh": "现代陶器通常被用作装饰品。",
   "notes": "pot n.壶，罐子",
-  "n": 29
+  "n": 29,
+  "phon": "ˈpɒtəri"
  },
  {
   "word": "engrave",
@@ -237,7 +266,8 @@
   "ex_en": "The jeweller will engrave the inside of the ring with her name",
   "ex_zh": "珠宝匠将在戒指的内表面上刻上她的名字。",
   "notes": "",
-  "n": 30
+  "n": 30,
+  "phon": "ɪnˈɡreɪv"
  },
  {
   "word": "decorate",
@@ -245,7 +275,8 @@
   "ex_en": "Using extremely different decorating schemes in adjoining rooms may result in lack of unity in style",
   "ex_zh": "相邻的房间用悬殊太大的装饰方案会导致风格不够统一。",
   "notes": "decoration n.装饰；装饰品decorative adj.装饰性的 decorate A with B用B装饰A",
-  "n": 31
+  "n": 31,
+  "phon": "ˈdekəreɪt"
  },
  {
   "word": "religion",
@@ -253,7 +284,8 @@
   "ex_en": "There are many religions in the world",
   "ex_zh": "在世界上有许多种宗教。",
   "notes": "religious adj.宗教的",
-  "n": 32
+  "n": 32,
+  "phon": "rɪˈlɪdʒən"
  },
  {
   "word": "ritual",
@@ -261,7 +293,8 @@
   "ex_en": "The scientists found that personal involvement in a ritual is necessary",
   "ex_zh": "科学家发现，亲自参与仪式是必要的。",
   "notes": "",
-  "n": 33
+  "n": 33,
+  "phon": "ˈrɪtʃuəl"
  },
  {
   "word": "etiquette",
@@ -269,7 +302,8 @@
   "ex_en": "He felt very sorry for his breach of etiquette",
   "ex_zh": "他为他的失礼行为深感抱歉。法语借词，原指“标签，签条\"。法国宫廷礼节曾极为繁琐，故宫廷在举办活动前要发给参加的宾客一张纸片签条，上面写着需要遵守的宫廷礼节和穿着要求等。英语中的ticket（票，入场券）一词与该词同源，读音近似。",
   "notes": "",
-  "n": 34
+  "n": 34,
+  "phon": "ˈetɪket"
  },
  {
   "word": "belief",
@@ -277,7 +311,8 @@
   "ex_en": "His firmness in his beliefs supported him through difficulties.",
   "ex_zh": "他坚定的信仰支撑着他渡过困境。",
   "notes": "believe v.相信；认为",
-  "n": 35
+  "n": 35,
+  "phon": "bɪˈliːf"
  },
  {
   "word": "soul",
@@ -285,7 +320,8 @@
   "ex_en": "No words can express the secret agony of my soul",
   "ex_zh": "没有任何语言能够表达我心灵的隐痛。",
   "notes": "put one's heart and soul into sth.全心全意地投入到某事中",
-  "n": 36
+  "n": 36,
+  "phon": "səʊl"
  },
  {
   "word": "spirit",
@@ -293,7 +329,8 @@
   "ex_en": "We need a spirit of enterprise if we are to overcome our difficulties.",
   "ex_zh": "如果要克服困难，我们就要有进取精神。",
   "notes": "spiritual adj.精神上的",
-  "n": 37
+  "n": 37,
+  "phon": "ˈspɪrɪt"
  },
  {
   "word": "sacred",
@@ -301,7 +338,8 @@
   "ex_en": "This area was hallowed by sacred memories",
   "ex_zh": "这个地区因一些神圣的回忆而受尊崇。",
   "notes": "",
-  "n": 38
+  "n": 38,
+  "phon": "ˈseɪkrɪd"
  },
  {
   "word": "hallowed",
@@ -309,7 +347,8 @@
   "ex_en": "The Ganges is hallowed as a sacred, cleansing river",
   "ex_zh": "恒河被奉为有净化作用的圣河。",
   "notes": "",
-  "n": 39
+  "n": 39,
+  "phon": "ˈhæləʊd"
  },
  {
   "word": "holy",
@@ -317,7 +356,8 @@
   "ex_en": "A holy person is spiritually pure",
   "ex_zh": "圣洁的人在精神上十分纯洁。",
   "notes": "",
-  "n": 40
+  "n": 40,
+  "phon": "ˈhəʊli"
  },
  {
   "word": "Pope",
@@ -325,7 +365,8 @@
   "ex_en": "The election of a new Pope is coming",
   "ex_zh": "新教皇的选举即将到来。",
   "notes": "",
-  "n": 41
+  "n": 41,
+  "phon": "pəʊp"
  },
  {
   "word": "bishop",
@@ -333,7 +374,8 @@
   "ex_en": "/ve heard a whisper that the Bishop intends to leave",
   "ex_zh": "我听到有谣传说主教打算离开。",
   "notes": "",
-  "n": 42
+  "n": 42,
+  "phon": "ˈbɪʃəp"
  },
  {
   "word": "missionary",
@@ -341,7 +383,8 @@
   "ex_en": "The missionary was sent to India last year.",
   "ex_zh": "这名传教士去年被派到印度。",
   "notes": "mission n.使命",
-  "n": 43
+  "n": 43,
+  "phon": "ˈmɪʃənri"
  },
  {
   "word": "priest",
@@ -349,7 +392,8 @@
   "ex_en": "The priest persuaded him to give up his bad habit.",
   "ex_zh": "牧师劝他放弃坏习惯。",
   "notes": "",
-  "n": 44
+  "n": 44,
+  "phon": "priːst"
  },
  {
   "word": "Bible",
@@ -357,7 +401,8 @@
   "ex_en": "The Bible begins with the",
   "ex_zh": "篇是《创世记》。",
   "notes": "",
-  "n": 45
+  "n": 45,
+  "phon": "ˈbaɪbəl"
  },
  {
   "word": "church",
@@ -365,7 +410,8 @@
   "ex_en": "I'm just going",
   "ex_zh": "我正要去教堂见牧师。",
   "notes": "",
-  "n": 46
+  "n": 46,
+  "phon": "tʃɜːtʃ"
  },
  {
   "word": "cathedral",
@@ -373,7 +419,8 @@
   "ex_en": "This cathedral was regarded as a miracle in architectural history",
   "ex_zh": "这座大教堂被认为是建筑史上的奇迹。",
   "notes": "",
-  "n": 47
+  "n": 47,
+  "phon": "kəˈθiːdrəl"
  },
  {
   "word": "choir",
@@ -381,7 +428,8 @@
   "ex_en": "The choir sang the Amens beautifully",
   "ex_zh": "唱诗班吟唱的“阿门”非常优美。",
   "notes": "",
-  "n": 48
+  "n": 48,
+  "phon": "ˈkwaɪə(r)"
  },
  {
   "word": "monk",
@@ -389,7 +437,8 @@
   "ex_en": "The man was a monk from Mount Emei",
   "ex_zh": "那人是来自峨眉山的僧人。",
   "notes": "",
-  "n": 49
+  "n": 49,
+  "phon": "mʌŋk"
  },
  {
   "word": "temple",
@@ -397,7 +446,8 @@
   "ex_en": "The temple has been considered an example of classic design",
   "ex_zh": "这座庙被视为古典设计的范例。",
   "notes": "",
-  "n": 50
+  "n": 50,
+  "phon": "ˈtempəl"
  },
  {
   "word": "pagoda",
@@ -405,7 +455,8 @@
   "ex_en": "The pagoda perches on top of the hill",
   "ex_zh": "佛塔立在山顶之上。",
   "notes": "",
-  "n": 51
+  "n": 51,
+  "phon": "pəˈɡəʊdə"
  },
  {
   "word": "empire",
@@ -413,7 +464,8 @@
   "ex_en": "The empire had for years been falling into decadence",
   "ex_zh": "这个帝国多年来一直在走向腐朽堕落。",
   "notes": "",
-  "n": 52
+  "n": 52,
+  "phon": "ˈempaɪə(r)"
  },
  {
   "word": "imperial",
@@ -421,7 +473,8 @@
   "ex_en": "They made an objection to the imperial system with resolution",
   "ex_zh": "他们坚决反对这种帝国制度。\n文化历史",
   "notes": "",
-  "n": 53
+  "n": 53,
+  "phon": "ɪmˈpɪəriəl"
  },
  {
   "word": "royal",
@@ -429,7 +482,8 @@
   "ex_en": "ays had a large navy, called the Royal Navy",
   "ex_zh": "英国一直有支强大的海军，被称为“皇家海军”。",
   "notes": "royalty n.王室成员，皇族",
-  "n": 54
+  "n": 54,
+  "phon": "ˈrɔɪəl"
  },
  {
   "word": "dynasty",
@@ -437,7 +491,8 @@
   "ex_en": "TheTang Dynasty is a period remarkable for its liberality",
   "ex_zh": "唐朝是一段以开明著称的时期。",
   "notes": "",
-  "n": 55
+  "n": 55,
+  "phon": "ˈdɪnəsti"
  },
  {
   "word": "chronology",
@@ -445,7 +500,8 @@
   "ex_en": "It seems that the paper has confused the chronology of these events.",
   "ex_zh": "这篇论文好像把这些事件发生的顺序搞混了。",
   "notes": "字根chron意为\"时间（time）\"，如：chronology（年代学；年表），chronic（长期的，慢性的）。希腊神话中宙斯（Zeus）的父亲叫克洛诺斯（Cronos），因和希腊语中表示\"时间\"的词chronos在拼写和读音上很相似，后来被描述为时间之神。克洛诺斯害怕自己的子女推翻自己，曾吞食了自己的后代，就像时间的无情。正如谚语所说的：时间吞噬一切。",
-  "n": 56
+  "n": 56,
+  "phon": "krəˈnɒlədʒi"
  },
  {
   "word": "emperor",
@@ -453,7 +509,8 @@
   "ex_en": "The emperor unified the country by the sword",
   "ex_zh": "那位皇帝用武力统一了全国。",
   "notes": "",
-  "n": 57
+  "n": 57,
+  "phon": "ˈempərə(r)"
  },
  {
   "word": "king",
@@ -461,7 +518,8 @@
   "ex_en": "The king is the most important person in a kingdom",
   "ex_zh": "国王是一个王国中最重要的人物。",
   "notes": "kingdom n.王国",
-  "n": 58
+  "n": 58,
+  "phon": "kɪŋ"
  },
  {
   "word": "queen",
@@ -469,7 +527,8 @@
   "ex_en": "They were bowing as the king and queen walked in",
   "ex_zh": "当国王和王后进来时，他们屈膝致敬。",
   "notes": "",
-  "n": 59
+  "n": 59,
+  "phon": "kwiːn"
  },
  {
   "word": "prince",
@@ -477,7 +536,8 @@
   "ex_en": "The prince fell in love with a fair young maiden",
   "ex_zh": "王子爱上了一位年轻美丽的少女。",
   "notes": "",
-  "n": 60
+  "n": 60,
+  "phon": "prɪns"
  },
  {
   "word": "princess",
@@ -485,7 +545,8 @@
   "ex_en": "The princess was ostracised for marrying a rich bourgeois man",
   "ex_zh": "公主因与一位富有的资本家结婚而遭到排挤。硕、•‘royal king\n雅思词汇糞经",
   "notes": "",
-  "n": 61
+  "n": 61,
+  "phon": "prɪnˈses"
  },
  {
   "word": "ma",
@@ -493,7 +554,8 @@
   "ex_en": "I enjoyed all the majesty of royal ceremonies",
   "ex_zh": "我很欣赏皇家仪典的富丽堂皇。",
   "notes": "majestic adj.宏伟的，庄严的",
-  "n": 62
+  "n": 62,
+  "phon": "mɑː"
  },
  {
   "word": "nobility",
@@ -501,7 +563,8 @@
   "ex_en": "Virtue is the only true nobility",
   "ex_zh": "万事不如美德高。",
   "notes": "noble adj.贵族的；高贵的n.贵族成员 （□",
-  "n": 63
+  "n": 63,
+  "phon": "nəʊˈbɪləti"
  },
  {
   "word": "lord",
@@ -509,7 +572,8 @@
   "ex_en": "The young lord with the red-gold hair bowed, \"As you command, Lord Edward.\"",
   "ex_zh": "金红头发的年轻贵族鞠躬道：“悉听尊命，艾德大人。”",
   "notes": "",
-  "n": 64
+  "n": 64,
+  "phon": "lɔːd"
  },
  {
   "word": "knight",
@@ -517,7 +581,8 @@
   "ex_en": "He was knighted for his war services.",
   "ex_zh": "他因战功而被封为爵士。",
   "notes": "",
-  "n": 65
+  "n": 65,
+  "phon": "naɪt"
  },
  {
   "word": "guardian",
@@ -525,7 +590,8 @@
   "ex_en": "He became the legal guardian of his brother's daughter.",
   "ex_zh": "他成为他侄女的合法监护人。",
   "notes": "guard v.保护n.守卫",
-  "n": 66
+  "n": 66,
+  "phon": "ˈɡɑːdiən"
  },
  {
   "word": "nostalgia",
@@ -533,7 +599,8 @@
   "ex_en": "The soldiers were filled with nostalgia",
   "ex_zh": "士兵0］\n心中充满了乡愁。",
   "notes": "",
-  "n": 67
+  "n": 67,
+  "phon": "nɒsˈtældʒə"
  },
  {
   "word": "homesick",
@@ -541,7 +608,8 @@
   "ex_en": "My American friend tells me, she is never as homesick as during this time of year, around Thanksgiving.",
   "ex_zh": "我的美国朋友跟我说，每年的这段时间，即感恩节前后，是她最想家的时候。",
   "notes": "homesickness n.思乡情绪",
-  "n": 68
+  "n": 68,
+  "phon": "ˈhəʊmsɪk"
  },
  {
   "word": "celebrity",
@@ -549,7 +617,8 @@
   "ex_en": "Celebrity, money and possessions are too often the touchstones for teenagers",
   "ex_zh": "名誉、金钱和财产常常成为青少年们衡量事物的标准。",
   "notes": "",
-  "n": 69
+  "n": 69,
+  "phon": "səˈlebrəti"
  },
  {
   "word": "status",
@@ -557,7 +626,8 @@
   "ex_en": "Being an engineer gives him a high social status",
   "ex_zh": "做工程师给了他很高的社会地位。",
   "notes": "social status社会地位",
-  "n": 70
+  "n": 70,
+  "phon": "ˈsteɪtəs"
  },
  {
   "word": "background",
@@ -565,7 +635,8 @@
   "ex_en": "He is a man with a special cultural background",
   "ex_zh": "他是拥有特殊文化背景的人。",
   "notes": "",
-  "n": 71
+  "n": 71,
+  "phon": "ˈbækɡraʊnd"
  },
  {
   "word": "experience",
@@ -573,7 +644,8 @@
   "ex_en": "It was a truly memorable experience.",
   "ex_zh": "这真是一次难忘的经历。",
   "notes": "experienced adj.经验丰富的",
-  "n": 72
+  "n": 72,
+  "phon": "ɪkˈspɪəriəns"
  },
  {
   "word": "anecdote",
@@ -581,7 +653,8 @@
   "ex_en": "He preceded his lecture with a humorous anecdote",
   "ex_zh": "他以一则幽默的轶事开始他的演说。\n（to，字根don/dot表示\"给give）”如］：an（否定）+\nec（向外）+dote（给）t没有给外面的，没有传到外面的事情t anecdote（轶事，奇闻）；blood donor（给血的人t献血者）；par（完全的）+don（给）t完全给予，诚恳地给予t pardon（原谅,宽恕）。",
   "notes": "",
-  "n": 73
+  "n": 73,
+  "phon": "ˈænɪkdəʊt"
  },
  {
   "word": "accident",
@@ -589,7 +662,8 @@
   "ex_en": "s left knee was hurt in a traffic accident",
   "ex_zh": "他的左膝在一次交通事故中受伤了。",
   "notes": "accidental adj.意外的，偶然的；附属的 by accident偶然an aviation accident航空器失事，空难",
-  "n": 74
+  "n": 74,
+  "phon": "ˈæksɪdənt"
  },
  {
   "word": "incident",
@@ -597,7 +671,8 @@
   "ex_en": "A serious incident along the border increased our fears of war",
   "ex_zh": "边境上的一起严重冲突使我们更加担心战争的爆发。",
   "notes": "incidental adj.附带的，次要的",
-  "n": 75
+  "n": 75,
+  "phon": "ˈɪnsɪdənt"
  },
  {
   "word": "thrive",
@@ -605,7 +680,8 @@
   "ex_en": "First thrive and then wive.",
   "ex_zh": "先立业，后成家。",
   "notes": "",
-  "n": 76
+  "n": 76,
+  "phon": "θraɪv"
  },
  {
   "word": "prosperity",
@@ -613,7 +689,8 @@
   "ex_en": "The empire was on the wane after its period of prosperity",
   "ex_zh": "帝国在历经繁盛以后逐渐衰落。",
   "notes": "prosper v.成功，繁荣prosperous adj.繁荣的 a business prosperity商业繁荣",
-  "n": 77
+  "n": 77,
+  "phon": "prɒsˈperəti"
  },
  {
   "word": "setback",
@@ -621,7 +698,8 @@
   "ex_en": "This setback has drained away my",
   "ex_zh": "这次挫折使我的热情荡然无存。",
   "notes": "a business setback生意上的挫折",
-  "n": 78
+  "n": 78,
+  "phon": "ˈsetbæk"
  },
  {
   "word": "adversity",
@@ -629,6 +707,7 @@
   "ex_en": "Hardship disposes",
   "ex_zh": "困苦使人愿意去克服逆境。\n文化历史",
   "notes": "",
-  "n": 79
+  "n": 79,
+  "phon": "ədˈvɜːsəti"
  }
 ]
