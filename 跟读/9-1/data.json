@@ -1,0 +1,132 @@
+{
+  "title": "9-1 成功是失败之母",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "1990年代の終盤、英国のレコード販売会社HMVは我が世の春を謳歌していた。",
+      "jp_html": "1990<ruby>年代<rt>ねんだい</rt></ruby>の<ruby>終盤<rt>しゅうばん</rt></ruby>、<ruby>英国<rt>えいこく</rt></ruby>のレコード<ruby>販売会社<rt>はんばいがいしゃ</rt></ruby>HMVは<ruby>我<rt>わ</rt></ruby>が<ruby>世<rt>よ</rt></ruby>の<ruby>春<rt>はる</rt></ruby>を<ruby>謳歌<rt>おうか</rt></ruby>していた。",
+      "zh": "20世纪90年代后期，英国唱片销售公司 HMV 正处于春风得意的鼎盛时期。其坐落于繁华主街的大型门店里，顾客可以浏览琳琅满目的各种 CD，用店内的耳机试听之后再做出购买判断。HMV 以这一商业模式为武器，获得了很高的市场份额，成为了众人艳羡的对象。",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "目抜き通りに構えた大型店舗では、来店者が膨大な種類のCDを見て回り、店内のヘッドセットで試聴した上で購入判断を下すことができた。",
+      "jp_html": "<ruby>目抜<rt>めぬ</rt></ruby>き<ruby>通<rt>とお</rt></ruby>りに<ruby>構<rt>かま</rt></ruby>えた<ruby>大型店舗<rt>おおがたてんぽ</rt></ruby>では、<ruby>来店者<rt>らいてんしゃ</rt></ruby>が<ruby>膨大<rt>ぼうだい</rt></ruby>な<ruby>種類<rt>しゅるい</rt></ruby>のCDを<ruby>見<rt>み</rt></ruby>て<ruby>回<rt>まわ</rt></ruby>り、<ruby>店内<rt>てんない</rt></ruby>のヘッドセットで<ruby>試聴<rt>しちょう</rt></ruby>した<ruby>上<rt>うえ</rt></ruby>で<ruby>購入判断<rt>こうにゅうはんだん</rt></ruby>を<ruby>下<rt>くだ</rt></ruby>すことができた。",
+      "zh": "20世纪90年代后期，英国唱片销售公司 HMV 正处于春风得意的鼎盛时期。其坐落于繁华主街的大型门店里，顾客可以浏览琳琅满目的各种 CD，用店内的耳机试听之后再做出购买判断。HMV 以这一商业模式为武器，获得了很高的市场份额，成为了众人艳羡的对象。",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 3,
+      "sentence_id": "p1_s3",
+      "jp_plain": "HMVはこのビジネスモデルを武器に高い市場シェアを獲得し、羨望の的だった。",
+      "jp_html": "HMVはこのビジネスモデルを<ruby>武器<rt>ぶき</rt></ruby>に<ruby>高<rt>たか</rt></ruby>い<ruby>市場<rt>しじょう</rt></ruby>シェアを<ruby>獲得<rt>かくとく</rt></ruby>し、<ruby>羨望<rt>せんぼう</rt></ruby>の<ruby>的<rt>まと</rt></ruby>だった。",
+      "zh": "20世纪90年代后期，英国唱片销售公司 HMV 正处于春风得意的鼎盛时期。其坐落于繁华主街的大型门店里，顾客可以浏览琳琅满目的各种 CD，用店内的耳机试听之后再做出购买判断。HMV 以这一商业模式为武器，获得了很高的市场份额，成为了众人艳羡的对象。",
+      "audio_file": "audio/p1_s3.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "しかし、その成功の陰で、既存のビジネスモデルの限界も指摘されていた。",
+      "jp_html": "しかし、その<ruby>成功<rt>せいこう</rt></ruby>の<ruby>陰<rt>かげ</rt></ruby>で、<ruby>既存<rt>きぞん</rt></ruby>のビジネスモデルの<ruby>限界<rt>げんかい</rt></ruby>も<ruby>指摘<rt>してき</rt></ruby>されていた。",
+      "zh": "然而，在其成功的背后，现有商业模式的局限性也一直遭到指摘。随着超市低价销售 CD、亚马逊进军网络购物、苹果开设 iTunes 商店等，音乐的购买方式发生了巨大变化。尽管如此，HMV 仍未能摆脱曾经为其带来成功的门店型商业模式，在应对市场环境变化上慢了一拍，最终失去了引领行业的地位。",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "スーパーによるCDの低価格販売、アマゾンのネット通販参入、アップルのiTunesストア開設などにより、音楽の購入方法は大きく変化した。",
+      "jp_html": "スーパーによるCDの<ruby>低価格販売<rt>ていかかくはんばい</rt></ruby>、<ruby>アマゾン<rt class=\"en\">Amazon</rt></ruby>のネット<ruby>通販<rt>つうはん</rt></ruby><ruby>参入<rt>さんにゅう</rt></ruby>、アップルのiTunesストア<ruby>開設<rt>かいせつ</rt></ruby>などにより、<ruby>音楽<rt>おんがく</rt></ruby>の<ruby>購入方法<rt>こうにゅうほうほう</rt></ruby>は<ruby>大<rt>おお</rt></ruby>きく<ruby>変化<rt>へんか</rt></ruby>した。",
+      "zh": "然而，在其成功的背后，现有商业模式的局限性也一直遭到指摘。随着超市低价销售 CD、亚马逊进军网络购物、苹果开设 iTunes 商店等，音乐的购买方式发生了巨大变化。尽管如此，HMV 仍未能摆脱曾经为其带来成功的门店型商业模式，在应对市场环境变化上慢了一拍，最终失去了引领行业的地位。",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 3,
+      "sentence_id": "p2_s3",
+      "jp_plain": "それにもかかわらず、HMVはかつて成功をもたらした店舗型ビジネスモデルから脱却できず、市場環境の変化への対応に遅れ、最終的には業界を牽引する地位を失った。",
+      "jp_html": "それにもかかわらず、HMVはかつて<ruby>成功<rt>せいこう</rt></ruby>をもたらした<ruby>店舗型<rt>てんぽがた</rt></ruby>ビジネスモデルから<ruby>脱却<rt>だっきゃく</rt></ruby>できず、<ruby>市場環境<rt>しじょうかんきょう</rt></ruby>の<ruby>変化<rt>へんか</rt></ruby>への<ruby>対応<rt>たいおう</rt></ruby>に<ruby>遅<rt>おく</rt></ruby>れ、<ruby>最終的<rt>さいしゅうてき</rt></ruby>には<ruby>業界<rt>ぎょうかい</rt></ruby>を<ruby>牽引<rt>けんいん</rt></ruby>する<ruby>地位<rt>ちい</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>った。",
+      "zh": "然而，在其成功的背后，现有商业模式的局限性也一直遭到指摘。随着超市低价销售 CD、亚马逊进军网络购物、苹果开设 iTunes 商店等，音乐的购买方式发生了巨大变化。尽管如此，HMV 仍未能摆脱曾经为其带来成功的门店型商业模式，在应对市场环境变化上慢了一拍，最终失去了引领行业的地位。",
+      "audio_file": "audio/p2_s3.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "かつて有効だった戦略に固執してしまう現象を「エスカレーション・オブ・コミットメント」と呼ぶ。",
+      "jp_html": "かつて<ruby>有効<rt>ゆうこう</rt></ruby>だった<ruby>戦略<rt>せんりゃく</rt></ruby>に<ruby>固執<rt>こしつ</rt></ruby>してしまう<ruby>現象<rt>げんしょう</rt></ruby>を「<ruby>エスカレーション・オブ・コミットメント<rt class=\"en\">escalation of commitment</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>ぶ。",
+      "zh": "执着于曾经有效的战略、无法自拔的现象，被称为“承诺升级”（escalation of commitment）。企业失败的原因多种多样，但在关于行业领导者衰落的学术案例研究中，多数情况下这一现象都被指出为主要原因之一。一旦做出了大规模投资或重大决策，要承认该判断有误并改变方向，绝非易事。",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "企業の失敗要因は多岐にわたるが、業界リーダーの衰退に関する学術的な事例研究では、多くの場合、この現象が主要な原因の一つとして指摘されている。",
+      "jp_html": "<ruby>企業<rt>きぎょう</rt></ruby>の<ruby>失敗要因<rt>しっぱいよういん</rt></ruby>は<ruby>多岐<rt>たき</rt></ruby>にわたるが、<ruby>業界<rt>ぎょうかい</rt></ruby>リーダーの<ruby>衰退<rt>すいたい</rt></ruby>に関する<ruby>学術的<rt>がくじゅつてき</rt></ruby>な<ruby>事例研究<rt>じれいけんきゅう</rt></ruby>では、<ruby>多<rt>おお</rt></ruby>くの<ruby>場合<rt>ばあい</rt></ruby>、この<ruby>現象<rt>げんしょう</rt></ruby>が<ruby>主要<rt>しゅよう</rt></ruby>な<ruby>原因<rt>げんいん</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つとして<ruby>指摘<rt>してき</rt></ruby>されている。",
+      "zh": "执着于曾经有效的战略、无法自拔的现象，被称为“承诺升级”（escalation of commitment）。企业失败的原因多种多样，但在关于行业领导者衰落的学术案例研究中，多数情况下这一现象都被指出为主要原因之一。一旦做出了大规模投资或重大决策，要承认该判断有误并改变方向，绝非易事。",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "一度大きな投資や意思決定を行うと、その判断の誤りを認めて方向転換することは容易ではない。",
+      "jp_html": "<ruby>一度<rt>いちど</rt></ruby><ruby>大<rt>おお</rt></ruby>きな<ruby>投資<rt>とうし</rt></ruby>や<ruby>意思決定<rt>いしけってい</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>うと、その<ruby>判断<rt>はんだん</rt></ruby>の<ruby>誤<rt>あやま</rt></ruby>りを<ruby>認<rt>みと</rt></ruby>めて<ruby>方向転換<rt>ほうこうてんかん</rt></ruby>することは<ruby>容易<rt>ようい</rt></ruby>ではない。",
+      "zh": "执着于曾经有效的战略、无法自拔的现象，被称为“承诺升级”（escalation of commitment）。企业失败的原因多种多样，但在关于行业领导者衰落的学术案例研究中，多数情况下这一现象都被指出为主要原因之一。一旦做出了大规模投资或重大决策，要承认该判断有误并改变方向，绝非易事。",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "また、経営学では、成功した企業が陥りやすい問題を説明する概念として、「サクセス・トラップ（成功の罠）」がある。",
+      "jp_html": "また、<ruby>経営学<rt>けいえいがく</rt></ruby>では、<ruby>成功<rt>せいこう</rt></ruby>した<ruby>企業<rt>きぎょう</rt></ruby>が<ruby>陥<rt>おちい</rt></ruby>りやすい<ruby>問題<rt>もんだい</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>する<ruby>概念<rt>がいねん</rt></ruby>として、「<ruby>サクセス・トラップ<rt class=\"en\">success trap</rt></ruby>（<ruby>成功<rt>せいこう</rt></ruby>の<ruby>罠<rt>わな</rt></ruby>）」がある。",
+      "zh": "此外，在经营学中，还有一个用来解释成功企业容易陷入之问题的概念，叫做“成功陷阱”（success trap）。企业现有业务越是成功，就越会增加对该业务的资源投入，试图重现曾经成功的方法。然而在这一过程中，有时会忽略市场环境的变化，在应对秉持新价值标准的竞争对手时慢人一步。",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "企業は既存事業が成功すればするほど、その事業への資源投入を増やし、成功した方法を再現しようとする。",
+      "jp_html": "<ruby>企業<rt>きぎょう</rt></ruby>は<ruby>既存事業<rt>きぞんじぎょう</rt></ruby>が<ruby>成功<rt>せいこう</rt></ruby>すればするほど、その<ruby>事業<rt>じぎょう</rt></ruby>への<ruby>資源投入<rt>しげんとうにゅう</rt></ruby>を<ruby>増<rt>ふ</rt></ruby>やし、<ruby>成功<rt>せいこう</rt></ruby>した<ruby>方法<rt>ほうほう</rt></ruby>を<ruby>再現<rt>さいげん</rt></ruby>しようとする。",
+      "zh": "此外，在经营学中，还有一个用来解释成功企业容易陷入之问题的概念，叫做“成功陷阱”（success trap）。企业现有业务越是成功，就越会增加对该业务的资源投入，试图重现曾经成功的方法。然而在这一过程中，有时会忽略市场环境的变化，在应对秉持新价值标准的竞争对手时慢人一步。",
+      "audio_file": "audio/p4_s2.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 3,
+      "sentence_id": "p4_s3",
+      "jp_plain": "しかし、その過程で市場環境の変化を見落し、新しい価値基準を持つ競争相手への対応に遅れることがある。",
+      "jp_html": "しかし、その<ruby>過程<rt>かてい</rt></ruby>で<ruby>市場環境<rt>しじょうかんきょう</rt></ruby>の<ruby>変化<rt>へんか</rt></ruby>を<ruby>見落<rt>みおと</rt></ruby>し、<ruby>新<rt>あたら</rt></ruby>しい<ruby>価値基準<rt>かちきじゅん</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ<ruby>競争相手<rt>きょうそうあいて</rt></ruby>への<ruby>対応<rt>たいおう</rt></ruby>に<ruby>遅<rt>おく</rt></ruby>れることがある。",
+      "zh": "此外，在经营学中，还有一个用来解释成功企业容易陷入之问题的概念，叫做“成功陷阱”（success trap）。企业现有业务越是成功，就越会增加对该业务的资源投入，试图重现曾经成功的方法。然而在这一过程中，有时会忽略市场环境的变化，在应对秉持新价值标准的竞争对手时慢人一步。",
+      "audio_file": "audio/p4_s3.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 1,
+      "sentence_id": "p5_s1",
+      "jp_plain": "成功体験は、企業成長の原動力となる一方で、変革を阻む足枷にもなり得る。",
+      "jp_html": "<ruby>成功体験<rt>せいこうたいけん</rt></ruby>は、<ruby>企業成長<rt>きぎょうせいちょう</rt></ruby>の<ruby>原動力<rt>げんどうりょく</rt></ruby>となる<ruby>一方<rt>いっぽう</rt></ruby>で、<ruby>変革<rt>へんかく</rt></ruby>を<ruby>阻<rt>はば</rt></ruby>む<ruby>足枷<rt>あしかせ</rt></ruby>にもなり<ruby>得<rt>え</rt></ruby>る。",
+      "zh": "成功体验一方面是企业成长的原动力，另一方面也可能成为阻碍变革的枷锁。企业所需要的，不仅是认识到变革的必要性，更要在与现有业务保持平衡的同时，看清何时、在多大程度上应当下定决心进行战略转型。",
+      "audio_file": "audio/p5_s1.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 2,
+      "sentence_id": "p5_s2",
+      "jp_plain": "企業に求められるのは、変化の必要性を認識することだけではなく、既存事業とのバランスを取りながら、いつ、どの程度まで戦略転換に踏切るべきかを見極めることである。",
+      "jp_html": "<ruby>企業<rt>きぎょう</rt></ruby>に<ruby>求<rt>もと</rt></ruby>められるのは、<ruby>変化<rt>へんか</rt></ruby>の<ruby>必要性<rt>ひつようせい</rt></ruby>を<ruby>認識<rt>にんしき</rt></ruby>することだけではなく、<ruby>既存事業<rt>きぞんじぎょう</rt></ruby>との<ruby>バランス<rt class=\"en\">balance</rt></ruby>を<ruby>取<rt>と</rt></ruby>りながら、いつ、どの<ruby>程度<rt>ていど</rt></ruby>まで<ruby>戦略転換<rt>せんりゃくてんかん</rt></ruby>に<ruby>踏切<rt>ふみき</rt></ruby>るべきかを<ruby>見極<rt>みきわ</rt></ruby>めることである。",
+      "zh": "成功体验一方面是企业成长的原动力，另一方面也可能成为阻碍变革的枷锁。企业所需要的，不仅是认识到变革的必要性，更要在与现有业务保持平衡的同时，看清何时、在多大程度上应当下定决心进行战略转型。",
+      "audio_file": "audio/p5_s2.mp3"
+    }
+  ]
+}

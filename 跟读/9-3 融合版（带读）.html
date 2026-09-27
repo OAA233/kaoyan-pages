@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>9-3 段落双向翻译练习｜選択と集中・サクセス・トラップ・AI知能爆発（强化笔记融合版）</title>
+  <style>
+    :root{
+      --ink:#1d2a34;
+      --muted:#64727d;
+      --paper:#fffdf8;
+      --bg:#eef3f2;
+      --line:#dbe5e1;
+      --green:#0f766e;
+      --green-soft:#e6f5f1;
+      --orange:#c15b24;
+      --orange-soft:#fff0e7;
+      --blue-soft:#eaf2ff;
+      --yellow:#c08a12;
+      --yellow-soft:#fbf3dd;
+      --shadow:0 12px 35px rgba(31,56,52,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #dff4ec 0, transparent 27rem),
+        radial-gradient(circle at 100% 14%, #fff0d9 0, transparent 25rem),
+        var(--bg);
+      font-family:"Noto Serif SC","Songti SC","STSong",serif;
+      line-height:1.9;
+    }
+    .top-nav{
+      position:sticky;top:0;z-index:100;
+      display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+      padding:10px 18px;
+      background:rgba(20,91,85,.96);
+      backdrop-filter:blur(6px);
+      box-shadow:0 4px 14px rgba(20,60,55,.25);
+    }
+    .top-nav .nav-title{
+      color:#baf6e8;font:700 .8rem/1 system-ui,sans-serif;
+      letter-spacing:.14em;margin-right:6px;white-space:nowrap;
+    }
+    .top-nav a{
+      padding:5px 13px;border-radius:999px;
+      color:#fff;background:rgba(255,255,255,.14);
+      text-decoration:none;font:600 .84rem/1.2 system-ui,sans-serif;
+      white-space:nowrap;transition:background .15s;
+    }
+    .top-nav a:hover{background:#198f7c}
+    .top-nav a.to-top{background:rgba(255,255,255,.28)}
+    .wrap{max-width:1080px;margin:auto;padding:32px 24px 72px}
+    section{scroll-margin-top:64px}
+    header{
+      padding:44px 42px 36px;
+      border-radius:24px;
+      color:#fff;
+      background:linear-gradient(135deg,#145b55,#0d766b 58%,#198f7c);
+      box-shadow:var(--shadow);
+    }
+    .eyebrow{
+      margin:0 0 12px;
+      color:#baf6e8;
+      font-size:.82rem;
+      letter-spacing:.16em;
+      font-family:system-ui,sans-serif;
+      font-weight:700;
+    }
+    h1{margin:0;font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.35}
+    header p{margin:14px 0 0;color:#e2fffa;font-size:1rem}
+    nav{
+      display:flex;flex-wrap:wrap;gap:10px;
+      margin:22px 0 30px;
+    }
+    nav a{
+      padding:7px 14px;border:1px solid #cbded9;border-radius:999px;
+      color:#25514b;background:rgba(255,255,255,.74);
+      text-decoration:none;font-family:system-ui,sans-serif;font-size:.88rem;
+    }
+    nav a:hover{background:#fff}
+    section{margin-top:30px}
+    .section-title{
+      display:flex;align-items:center;gap:12px;
+      margin:0 0 15px;font-size:1.42rem;
+    }
+    .section-title span{
+      display:inline-grid;place-items:center;width:32px;height:32px;
+      border-radius:50%;color:#fff;background:var(--green);
+      font-family:system-ui,sans-serif;font-size:.9rem;
+    }
+    .translation{
+      overflow:hidden;border:1px solid var(--line);border-radius:20px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    .language{padding:26px 30px}
+    .language + .language{border-top:1px dashed #cbd8d3}
+    .label{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-bottom:12px;padding:4px 10px;border-radius:999px;
+      color:var(--green);background:var(--green-soft);
+      font:700 .78rem/1.4 system-ui,sans-serif;letter-spacing:.08em;
+    }
+    .label.zh{color:var(--orange);background:var(--orange-soft)}
+    .jp{
+      margin:0;font-size:1.13rem;letter-spacing:.025em;
+      font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+    }
+    .zh{margin:0;font-size:1.02rem}
+    ruby{ruby-position:over;ruby-align:center}
+    rt{font-size:.54em;color:var(--yellow);font-weight:700;letter-spacing:0;user-select:none}
+    rt.en{color:var(--yellow)}
+    .lvl{
+      display:inline-block;padding:1px 7px;border-radius:5px;
+      color:#8a5a10;background:var(--yellow-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+    }
+    .note{
+      margin:14px 0 0;padding:11px 14px;border-left:4px solid #8fc9b6;
+      color:#2b3330;background:var(--green-soft);border-radius:0 10px 10px 0;
+      font-size:.91rem;
+    }
+    .note rt{color:#2f7cc4}
+    .grammar-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+    .card{
+      padding:21px 22px;border:1px solid var(--line);border-radius:16px;
+      background:rgba(255,253,248,.92);box-shadow:0 7px 20px rgba(31,56,52,.06);
+    }
+    .card h3{margin:0 0 9px;font-size:1.03rem;color:#12675e}
+    .card p{margin:7px 0;font-size:.94rem}
+    .pattern{
+      display:inline-block;padding:2px 8px;border-radius:6px;
+      color:#1e4c67;background:var(--blue-soft);
+      font-family:"SFMono-Regular",Consolas,monospace;font-size:.86rem;
+    }
+    .g-num{
+      display:inline-grid;place-items:center;width:22px;height:22px;
+      border-radius:50%;background:var(--orange);color:#fff;
+      font:700 .78rem/1 system-ui,sans-serif;margin-right:7px;
+      vertical-align:1px;
+    }
+    .table-wrap{
+      overflow:auto;border:1px solid var(--line);border-radius:16px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    table{width:100%;border-collapse:collapse;min-width:820px}
+    th,td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{color:#fff;background:#27665e;font:700 .82rem/1.4 system-ui,sans-serif;letter-spacing:.04em}
+    tr:last-child td{border-bottom:0}
+    tr:nth-child(even) td{background:#fbfdfc}
+    td{font-size:.91rem}
+    .word{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:1rem}
+    .pos{
+      display:inline-block;padding:2px 7px;border-radius:5px;
+      color:#075b54;background:var(--green-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+      margin-right:4px;
+    }
+    .notes-grid{display:grid;gap:18px}
+    .note-card{
+      padding:24px 26px;border:1px solid #c9e2d8;border-radius:18px;
+      background:var(--green-soft);box-shadow:0 7px 20px rgba(20,90,70,.07);
+    }
+    .note-card h3{
+      margin:0 0 12px;font-size:1.14rem;color:#1d2a34;
+      border-bottom:2px solid #b8d8cd;padding-bottom:8px;
+    }
+    .note-card h3 .sec{color:#0f766e;font-size:.8rem;margin-right:6px}
+    .note-card h4{
+      margin:16px 0 6px;font-size:.98rem;color:#2b3a36;
+    }
+    .note-card p{margin:8px 0;font-size:.95rem;color:#2b3330}
+    .note-card ul{margin:8px 0;padding-left:22px}
+    .note-card li{margin:7px 0;font-size:.94rem;color:#2b3330}
+    .note-card li .ex{
+      font-family:"Hiragino Mincho ProN","Yu Mincho",serif;color:#14181a;
+    }
+    .note-card li .tr{display:block;color:#64727d;font-size:.9rem;margin-top:2px}
+    .note-card .key{
+      display:inline-block;padding:1px 8px;border-radius:6px;
+      background:#dff2ec;border:1px solid #8fc9b6;color:#0e5a46;
+      font:700 .86rem system-ui,sans-serif;
+    }
+    .note-card rt{color:#2f7cc4}
+    .forms-inline{
+      margin:14px 2px 0;padding:16px 20px;border-radius:16px;
+      background:#203f42;color:#effffb;
+    }
+    .forms-inline h3{margin:0 0 8px;font-size:1.02rem;color:#baf6e8}
+    .forms-inline p{margin:5px 0;color:#d5eee8;font-size:.92rem;line-height:1.7}
+    .forms-inline code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    .back-top{margin:12px 2px 0;text-align:right;font-size:.85rem}
+    .back-top a{color:var(--muted);text-decoration:none}
+    .back-top a:hover{color:var(--green)}
+    footer{margin-top:27px;color:var(--muted);font-size:.82rem;text-align:center}
+    @media(max-width:640px){
+      .wrap{padding:16px 13px 48px}
+      header{padding:30px 24px}
+      .language{padding:22px 20px}
+      .jp{font-size:1.04rem}
+      .top-nav{padding:8px 12px}
+      .top-nav .nav-title{display:none}
+    }
+
+  /* ===== 打印适配：A3 尺寸、左右留出空隙、瀑布不跨页、隐藏页眉页脚 =====
+     索引条只在第一页顶部出现（打印时取消 sticky、保留 .top-nav），
+     正文区第二个导航隐藏；每段/区块末尾的「返回顶部」链接保留。 */
+  @media print {
+    @page { size: A3; margin: 10mm 14mm; }
+    html, body { background: #ffffff !important; }
+    nav { display: none !important; }
+    .top-nav { display: flex !important; position: static !important; box-shadow: none !important; backdrop-filter: none; }
+    section { margin-bottom: 5mm; }
+    .card, .translation, .forms-inline, .note-card, .para-pair,
+    .vocab-card, .grammar-item, .language, .phrase-item,
+    .vocab-group, .analysis-block { break-inside: avoid; page-break-inside: avoid; }
+    h1, h2, h3, h4, .section-title { break-after: avoid; page-break-after: avoid; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    table { font-size: 0.9em; }
+    a { color: inherit; text-decoration: none; }
+    .forms-inline, .note-card, .card, .translation { box-shadow: none !important; }
+    .wrap { max-width: 100%; padding: 0; }
+    .jp { font-size: 0.98em; letter-spacing: 0.02em; }
+    .zh, .note { font-size: 0.95em; }
+    .language { padding: 12px 16px; }
+    .grammar-grid { gap: 8px; }
+    .table-wrap { box-shadow: none; }
+  }
+
+  /* ===== 跟读控制条（注入） ===== */
+  .player-bar{
+    position:sticky;top:56px;z-index:95;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    margin:18px 0 8px;padding:12px 16px;
+    border:1px solid var(--line);border-radius:18px;
+    background:rgba(255,253,248,.95);
+    box-shadow:0 8px 22px rgba(31,56,52,.08);
+  }
+  .pb-btn{
+    width:42px;height:42px;border:0;border-radius:50%;cursor:pointer;
+    display:inline-grid;place-items:center;
+    background:var(--green);color:#fff;font-size:1rem;
+    transition:transform .12s, background .15s;
+  }
+  .pb-btn:hover{background:#198f7c;transform:scale(1.06)}
+  .pb-btn.small{width:34px;height:34px;background:#e8f1ee;color:var(--green);font-size:.9rem}
+  .pb-btn.small:hover{background:#d6e8e3}
+  .pb-btn:disabled{opacity:.35;cursor:default;transform:none}
+  .rate-group{display:flex;gap:5px;margin-left:auto}
+  .rate-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .rate-btn.active{background:var(--green);border-color:var(--green);color:#fff}
+  .mode-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .mode-btn.active{background:var(--orange);border-color:var(--orange);color:#fff}
+  .progress{
+    flex-basis:100%;height:6px;border-radius:3px;
+    background:#e3ece8;position:relative;cursor:pointer;
+  }
+  .progress .fill{
+    position:absolute;left:0;top:0;bottom:0;border-radius:3px;
+    background:linear-gradient(90deg,#0f766e,#2ba98c);width:0%;
+  }
+  .progress .knob{
+    position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:#fff;border:2px solid var(--green);transform:translate(-50%,-50%);
+    left:0%;box-shadow:0 1px 4px rgba(0,0,0,.2);
+  }
+  .sentence-status{
+    flex-basis:100%;color:var(--muted);font:600 .78rem system-ui,sans-serif;
+  }
+  .sentence{
+    cursor:pointer;border-radius:8px;padding:3px 10px;margin:0 -10px;
+    transition:background .18s;
+    border-left:4px solid transparent;
+  }
+  .sentence:hover{background:#eaf4fc}
+  .sentence.playing{
+    background:linear-gradient(90deg, rgba(137,207,240,.60), rgba(137,207,240,.28));
+    border-left-color:#2f7cc4;
+    box-shadow:0 2px 10px rgba(47,124,196,.22);
+  }
+  .sentence .play-ic{
+    display:inline-block;margin-right:4px;color:#2f7cc4;
+    font-size:.72em;opacity:.5;font-family:system-ui,sans-serif;vertical-align:2px;
+  }
+  .sentence.playing .play-ic{opacity:1;color:#1c5f9e;transform:scale(1.1)}
+  @media(max-width:640px){
+    .player-bar{top:50px;padding:10px 12px}
+    .player-bar .rate-group{order:3;margin-left:0}
+  }
+  @media print{
+    .player-bar{display:none !important}
+    .sentence{cursor:default;padding:0;margin:0;border:0}
+    .sentence.playing{background:transparent;box-shadow:none;border:0}
+    .sentence .play-ic{display:none}
+  }
+
+</style>
+</head>
+<body>
+  <nav class="top-nav">
+    <span class="nav-title">索 引</span>
+    <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#p5">第五段</a><a href="#p6">第六段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    <a class="to-top" href="#top">▲ 顶部</a>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header>
+      <p class="eyebrow">JAPANESE × CHINESE · READING &amp; GRAMMAR NOTES</p>
+      <h1>9-3 段落双向翻译练习<br>双向对译｜日译中 ×3 ＋ 中译日 ×3（强化笔记融合版）</h1>
+      <p>日语汉字标注平假名读音（黄色）、片假名标注外来语（蓝色注音）；本课为段落双向翻译练习：题目①「選択と集中」与“成功陷阱”（日译中）、题目②AI智能爆炸（中译日），含瑞译强化笔记精讲。</p>
+    </header>
+
+  <div class="player-bar" id="player-bar">
+    <button class="pb-btn small" id="btn-prev" title="上一句（←）">⏮</button>
+    <button class="pb-btn" id="btn-play" title="播放/暂停（空格）">▶</button>
+    <button class="pb-btn small" id="btn-next" title="下一句（→）">⏭</button>
+    <div class="rate-group" id="rate-group">
+      <button class="rate-btn" data-rate="0.5">0.5x</button>
+      <button class="rate-btn" data-rate="0.75">0.75x</button>
+      <button class="rate-btn active" data-rate="1">1x</button>
+      <button class="rate-btn" data-rate="1.25">1.25x</button>
+      <button class="rate-btn" data-rate="1.5">1.5x</button>
+    </div>
+    <button class="mode-btn" id="btn-mode" title="循环模式">循环: 关</button>
+    <div class="progress" id="progress"><div class="fill" id="progress-fill"></div><div class="knob" id="progress-knob"></div></div>
+    <div class="sentence-status" id="sentence-status">点击下方任意日文句子开始跟读</div>
+  </div>
+
+
+    <nav>
+      <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#p5">第五段</a><a href="#p6">第六段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    </nav>
+
+    <section id="p1"><h2 class="section-title">第一段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="0" data-audio="p1_s1.mp3"><span class="play-ic">▶</span>「<ruby>選択<rt>せんたく</rt></ruby>と<ruby>集中<rt>しゅうちゅう</rt></ruby>」は、ドラッカーの<ruby>経営思想<rt>けいえいしそう</rt></ruby>を<ruby>背景<rt>はいけい</rt></ruby>に、<ruby>日本<rt>にほん</rt></ruby><ruby>企業<rt>きぎょう</rt></ruby>の<ruby>経営改革<rt>けいえいかいかく</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>広<rt>ひろ</rt></ruby>く<ruby>用<rt>もち</rt></ruby>いられるようになった<ruby>経営戦略<rt>けいえいせんりゃく</rt></ruby>である。</span><span class="sentence" data-idx="1" data-audio="p1_s2.mp3"><span class="play-ic">▶</span>ドラッカーは、<ruby>経営資源<rt>けいえいしげん</rt></ruby>を<ruby>有効<rt>ゆうこう</rt></ruby>に<ruby>活用<rt>かつよう</rt></ruby>するには<ruby>コア<rt class="en">core</rt></ruby><ruby>事業<rt>じぎょう</rt></ruby>への<ruby>集中投下<rt>しゅうちゅうとうか</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>であることを<ruby>主張<rt>しゅちょう</rt></ruby>した。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">“选择与集中”（或“选择性集中”）是在德鲁克经营思想影响下，于日本企业经营改革实践中逐渐得到广泛应用的一种经营战略。德鲁克主张，为了有效利用经营资源，企业必须将资源集中投入到核心业务。</p><p class="note">题目①（日译中，遅いインターネット）——「選択と集中」并非德鲁克直接提出的术语，日文维基百科将其英文对应词写作 Focus（聚焦），详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>用いられる ＝<ruby>用<rt>もち</rt></ruby>いる（v2 他）被动＋られる：被采用、被广泛使用。</p><p>ようになった ＝<ruby>用<rt>もち</rt></ruby>いられる＋ようになる（过去形）：变得、逐渐形成。</p><p>活用する ＝<ruby>活用<rt>かつよう</rt></ruby>する（n / v3 他）基本形（连体）：有效利用。</p><p>主張した ＝<ruby>主張<rt>しゅちょう</rt></ruby>する（n / v3 他）过去形：主张、提出。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p2"><h2 class="section-title">第二段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="2" data-audio="p2_s1.mp3"><span class="play-ic">▶</span><ruby>多<rt>おお</rt></ruby>くの<ruby>事業<rt>じぎょう</rt></ruby>を<ruby>抱<rt>かか</rt></ruby>え<ruby>込<rt>こ</rt></ruby>まずに、<ruby>得意<rt>とくい</rt></ruby>とする<ruby>事業<rt>じぎょう</rt></ruby>に<ruby>資源<rt>しげん</rt></ruby>を<ruby>集中<rt>しゅうちゅう</rt></ruby>させる<ruby>戦略<rt>せんりゃく</rt></ruby>は、<ruby>比較的<rt>ひかくてき</rt></ruby>「<ruby>安定<rt>あんてい</rt></ruby>した<ruby>世界<rt>せかい</rt></ruby>」においては、<ruby>成果<rt>せいか</rt></ruby>を<ruby>出<rt>だ</rt></ruby>しやすい<ruby>効果的<rt>こうかてき</rt></ruby>な<ruby>戦略<rt>せんりゃく</rt></ruby>だった。</span><span class="sentence" data-idx="3" data-audio="p2_s2.mp3"><span class="play-ic">▶</span>しかし<ruby>外部環境<rt>がいぶかんきょう</rt></ruby>が<ruby>不確実<rt>ふかくじつ</rt></ruby>で<ruby>変化<rt>へんか</rt></ruby>が<ruby>激<rt>はげ</rt></ruby>しい<ruby>時代<rt>じだい</rt></ruby>においては、それなりにリスクも<ruby>大<rt>おお</rt></ruby>きい。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">将资源集中投入到优势领域，避免贪多，这种战略在相对“稳定的环境”下容易产出成果。然而，在外部环境充满不确定性、变化剧烈的时代，这种战略也伴随着较大的风险。</p><p class="note">题目①（日译中）——「抱え込む」“一手包、全负责”的语感与「～込む」类复合动词（巻き込む・追い込む）的引申用法，详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>抱え込まずに ＝<ruby>抱<rt>かか</rt></ruby>え<ruby>込<rt>こ</rt></ruby>む（v1 他）否定连用形＋ずに：不把……揽在手里。</p><p>集中させる ＝<ruby>集中<rt>しゅうちゅう</rt></ruby>する（n / v3 自他）使役形：使（资源）集中。</p><p>安定した ＝<ruby>安定<rt>あんてい</rt></ruby>する（n / v3 自）过去形（连体）：稳定的。</p><p>出しやすい ＝<ruby>出<rt>だ</rt></ruby>す（v1 他）连用形＋やすい：容易产出。</p><p>激しい ＝<ruby>激<rt>はげ</rt></ruby>しい（イ形）基本形（连体）：剧烈的、激烈的。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p3"><h2 class="section-title">第三段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="4" data-audio="p3_s1.mp3"><span class="play-ic">▶</span>ほとんどの<ruby>企業<rt>きぎょう</rt></ruby>は、<ruby>既存事業<rt>きぞんじぎょう</rt></ruby>がうまくいけばいくほど、その<ruby>事業<rt>じぎょう</rt></ruby>に<ruby>資源<rt>しげん</rt></ruby>を<ruby>投下<rt>とうか</rt></ruby>させ、<ruby>成功<rt>せいこう</rt></ruby>の<ruby>再現性<rt>さいげんせい</rt></ruby>を<ruby>高<rt>たか</rt></ruby>めようとする。</span><span class="sentence" data-idx="5" data-audio="p3_s2.mp3"><span class="play-ic">▶</span>これを<ruby>経営学<rt>けいえいがく</rt></ruby>では「<ruby>サクセス・トラップ<rt class="en">success trap</rt></ruby>」と<ruby>言<rt>い</rt></ruby>う。</span><span class="sentence" data-idx="6" data-audio="p3_s3.mp3"><span class="play-ic">▶</span><ruby>個人<rt>こじん</rt></ruby>の<ruby>キャリア形成<rt>キャリアけいせい</rt></ruby>においても、<ruby>企業<rt>きぎょう</rt></ruby>と<ruby>同様<rt>どうよう</rt></ruby>に「<ruby>サクセス・トラップ<rt class="en">success trap</rt></ruby>」の<ruby>問題<rt>もんだい</rt></ruby>は<ruby>免<rt>まぬが</rt></ruby>れない。</span><span class="sentence" data-idx="7" data-audio="p3_s4.mp3"><span class="play-ic">▶</span>「<ruby>選択<rt>せんたく</rt></ruby>と<ruby>集中<rt>しゅうちゅう</rt></ruby>」によって<ruby>獲得<rt>かくとく</rt></ruby>しつつある<ruby>専門技能<rt>せんもんぎのう</rt></ruby>は、<ruby>明日<rt>あした</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>支<rt>ささ</rt></ruby>えてくれるそう<ruby>簡単<rt>かんたん</rt></ruby>には<ruby>捨<rt>す</rt></ruby>てられない<ruby>武器<rt>ぶき</rt></ruby>だ。</span><span class="sentence" data-idx="8" data-audio="p3_s5.mp3"><span class="play-ic">▶</span><ruby>長期的<rt>ちょうきてき</rt></ruby>には<ruby>キャリア・ピボット<rt class="en">career pivot</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>だとわかりながらも、<ruby>短期的<rt>たんきてき</rt></ruby>には<ruby>目<rt>め</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>や<ruby>一<rt>ひと</rt></ruby>つの<ruby>専門性<rt>せんもんせい</rt></ruby>にしがみついてしまう。</span><span class="sentence" data-idx="9" data-audio="p3_s6.mp3"><span class="play-ic">▶</span><ruby>合理主義的<rt>ごうりしゅぎてき</rt></ruby>な<ruby>アプローチ<rt class="en">approach</rt></ruby>は、この<ruby>悪循環<rt>あくじゅんかん</rt></ruby>に<ruby>陥<rt>おちい</rt></ruby>ることが、<ruby>大<rt>おお</rt></ruby>きな<ruby>課題<rt>かだい</rt></ruby>になる。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">既有业务越成功，大多数企业就越倾向于继续向该业务投入资源，以提高成功模式的可复制性。在管理学中，这被称为“成功陷阱”（Success Trap）。在职业发展过程中，个人与企业一样，也无法避免“成功陷阱”。通过“选择与集中”逐渐获得的专业技能，是支撑未来生活的一技之长，无法轻易舍弃。即使明白从长期来看需要进行职业转型，人们在短期内仍容易依赖眼前的工作或自身已形成的专业优势。这种选择虽有其合理性，但如何避免陷入这样的恶性循环，也是个人职业发展中的重要课题。</p><p class="note">题目①（日译中）——「サクセス・トラップ」（成功陷阱）与「両利きの経営」「ダイナミック・ケイパビリティ」「経路依存性」等管理学词汇、「キャリア・ピボット」（职业转型）的来历，以及片假名专有名词的应试猜测技巧，详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>いけばいくほど ＝うまく<ruby>行<rt>い</rt></ruby>く（v1 自）条件形＋<ruby>行<rt>い</rt></ruby>く＋ほど：越顺利越……。</p><p>投下させ ＝<ruby>投下<rt>とうか</rt></ruby>する（n / v3 他）使役连用形（中止法）：使（资源）投入。</p><p>高めようとする ＝<ruby>高<rt>たか</rt></ruby>める（v2 他）意志形＋とする：试图提高。</p><p>免れない ＝<ruby>免<rt>まぬが</rt></ruby>れる（v2 自他）否定形：无法避免。</p><p>獲得しつつある ＝<ruby>獲得<rt>かくとく</rt></ruby>する（n / v3 他）连用形＋つつある：正在获得。</p><p>支えてくれる ＝<ruby>支<rt>ささ</rt></ruby>える（v2 他）て形＋くれる：为（我们）支撑。</p><p>捨てられない ＝<ruby>捨<rt>す</rt></ruby>てる（v2 他）可能形否定：无法舍弃。</p><p>しがみついてしまう ＝しがみつく（v1 自）て形＋てしまう：（不由得）死死抓住、固守。</p><p>陥る ＝<ruby>陥<rt>おちい</rt></ruby>る（v1 自）基本形（连体）：陷入。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p4"><h2 class="section-title">第四段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">太阳底下没有新鲜事，除了技术的进步。想象一个比爱因斯坦聪明10亿倍的AI，这并非发生在一个世纪后，也不是50年后，而是在21世纪30年代。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="10" data-audio="p4_s1.mp3"><span class="play-ic">▶</span>「<ruby>日<rt>ひ</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>新<rt>あたら</rt></ruby>しきものなし」という<ruby>言葉<rt>ことば</rt></ruby>があるが、<ruby>技術<rt>ぎじゅつ</rt></ruby>の<ruby>進歩<rt>しんぽ</rt></ruby>は<ruby>例外<rt>れいがい</rt></ruby>である。</span><span class="sentence" data-idx="11" data-audio="p4_s2.mp3"><span class="play-ic">▶</span>アインシュタインの10<ruby>億倍<rt>おくばい</rt></ruby>もの<ruby>知能<rt>ちのう</rt></ruby>を<ruby>持<rt>も</rt></ruby>つAIを<ruby>想像<rt>そうぞう</rt></ruby>してみよう。</span><span class="sentence" data-idx="12" data-audio="p4_s3.mp3"><span class="play-ic">▶</span>それは100<ruby>年後<rt>ねんご</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>でも、50<ruby>年後<rt>ねんご</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>でもない。</span><span class="sentence" data-idx="13" data-audio="p4_s4.mp3"><span class="play-ic">▶</span>2030<ruby>年代<rt>ねんだい</rt></ruby>には<ruby>起<rt>お</rt></ruby>こり<ruby>得<rt>う</rt></ruby>る<ruby>未来<rt>みらい</rt></ruby>なのだ。</span>
+</p></p><p class="note">题目②（中译日，《吾辈如神》）——“太阳底下没有新鲜事”出自《圣经·旧约·传道书》，日语已有定译「日の下に新しきものなし」，翻译时先查目标语定译而非字面直译，详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>新しきものなし ＝<ruby>新<rt>あたら</rt></ruby>しい（イ形）文语连体形「新しき」＋<ruby>無<rt>な</rt></ruby>し：没有新事物（文语）。</p><p>例外である ＝<ruby>例外<rt>れいがい</rt></ruby>（n）＋である：是例外。</p><p>持つ ＝<ruby>持<rt>も</rt></ruby>つ（v1 他）基本形（连体）：拥有。</p><p>想像してみよう ＝<ruby>想像<rt>そうぞう</rt></ruby>する（n / v3 他）连用形＋てみよう：来试着想象一下。</p><p>起こり得る ＝<ruby>起<rt>お</rt></ruby>こる（v1 自）连用形＋<ruby>得<rt>え</rt></ruby>る（v2 自）连体形「うる」：可能发生。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p5"><h2 class="section-title">第五段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">与生物智能不同，AI似乎不会有瓶颈期。一旦AI达到人类水平的智能，它就可以继续改进自己的代码，而且没有上限。每一次改进都能让它在自我提升方面做得更好。这就是一场智能爆炸，这也解释了霍金那句著名论断的由来：“强大AI的崛起，可能是人类历史上最好的事情，也可能是最坏的事情，我们还不知道答案。”</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="14" data-audio="p5_s1.mp3"><span class="play-ic">▶</span><ruby>生物<rt>せいぶつ</rt></ruby>の<ruby>知能<rt>ちのう</rt></ruby>とは<ruby>異<rt>こと</rt></ruby>なり、AIには<ruby>明確<rt>めいかく</rt></ruby>な<ruby>限界点<rt>げんかいてん</rt></ruby>が<ruby>存在<rt>そんざい</rt></ruby>しないように<ruby>見<rt>み</rt></ruby>える。</span><span class="sentence" data-idx="15" data-audio="p5_s2.mp3"><span class="play-ic">▶</span>AIが<ruby>一度<rt>いちど</rt></ruby>、<ruby>人間<rt>にんげん</rt></ruby><ruby>レベル<rt class="en">level</rt></ruby>の<ruby>知能<rt>ちのう</rt></ruby>に<ruby>到達<rt>とうたつ</rt></ruby>すれば、<ruby>自<rt>みずか</rt></ruby>らの<ruby>プログラム<rt class="en">program</rt></ruby>をさらに<ruby>改良<rt>かいりょう</rt></ruby>することができ、その<ruby>能力<rt>のうりょく</rt></ruby>には<ruby>理論上<rt>りろんじょう</rt></ruby>の<ruby>上限<rt>じょうげん</rt></ruby>がない。</span><span class="sentence" data-idx="16" data-audio="p5_s3.mp3"><span class="play-ic">▶</span><ruby>改善<rt>かいぜん</rt></ruby>を<ruby>重<rt>かさ</rt></ruby>ねるたびに、<ruby>自己向上<rt>じここうじょう</rt></ruby>の<ruby>能力<rt>のうりょく</rt></ruby>そのものが<ruby>高<rt>たか</rt></ruby>まっていく。</span><span class="sentence" data-idx="17" data-audio="p5_s4.mp3"><span class="play-ic">▶</span>これは「<ruby>知能爆発<rt>ちのうばくはつ</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>ばれる<ruby>現象<rt>げんしょう</rt></ruby>であり、ホーキングの<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>言葉<rt>ことば</rt></ruby>が<ruby>生<rt>う</rt></ruby>まれた<ruby>背景<rt>はいけい</rt></ruby>にもなっている。</span><span class="sentence" data-idx="18" data-audio="p5_s5.mp3"><span class="play-ic">▶</span>——「<ruby>強力<rt>きょうりょく</rt></ruby>なAIの<ruby>台頭<rt>たいとう</rt></ruby>は、<ruby>人類史上<rt>じんるいしじょう</rt></ruby><ruby>最高<rt>さいこう</rt></ruby>の<ruby>出来事<rt>できごと</rt></ruby>になる<ruby>可能性<rt>かのうせい</rt></ruby>もあれば、<ruby>最悪<rt>さいあく</rt></ruby>の<ruby>出来事<rt>できごと</rt></ruby>になる<ruby>可能性<rt>かのうせい</rt></ruby>もある。</span><span class="sentence" data-idx="19" data-audio="p5_s6.mp3"><span class="play-ic">▶</span><ruby>私<rt>わたし</rt></ruby>たちはまだその<ruby>答<rt>こた</rt></ruby>えを<ruby>知<rt>し</rt></ruby>らない」。</span>
+</p></p><p class="note">题目②（中译日）——末句“智能爆炸＋霍金论断”除正文采用的译①（井上老师修改版本）外，还有译②（尽量直译版本）与译③（稍微加译的版本）两种处理，详见文末强化笔记；“瓶颈”可译「ボトルネック」「頭打ちになる」「行き詰まる」。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>異なり ＝<ruby>異<rt>こと</rt></ruby>なる（v1 自）连用形（中止法）：不同于。</p><p>見える ＝<ruby>見<rt>み</rt></ruby>える（v2 自）ように＋<ruby>見<rt>み</rt></ruby>える：看起来、显得。</p><p>到達すれば ＝<ruby>到達<rt>とうたつ</rt></ruby>する（n / v3 自）条件形：一旦达到。</p><p>改良することができ ＝<ruby>改良<rt>かいりょう</rt></ruby>する（n / v3 他）基本形＋ことができる：能够改良。</p><p>重ねるたびに ＝<ruby>重<rt>かさ</rt></ruby>ねる（v2 他）基本形（连体）＋たびに：每（改进）一次。</p><p>高まっていく ＝<ruby>高<rt>たか</rt></ruby>まる（v1 自）て形＋いく：不断升高。</p><p>呼ばれる ＝<ruby>呼<rt>よ</rt></ruby>ぶ（v1 他）被动态：被称为。</p><p>生まれた ＝<ruby>生<rt>う</rt></ruby>まれる（v2 自）过去形：产生、出现。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p6"><h2 class="section-title">第六段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">如果让超级智能AI去解决全球变暖问题，它可能会给出一个合乎逻辑的解决方案:消灭造成这一问题的物种。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="20" data-audio="p6_s1.mp3"><span class="play-ic">▶</span>もし<ruby>超知能<rt>ちょうちのう</rt></ruby>AIに<ruby>地球温暖化<rt>ちきゅうおんだんか</rt></ruby><ruby>問題<rt>もんだい</rt></ruby>の<ruby>解決<rt>かいけつ</rt></ruby>を<ruby>依頼<rt>いらい</rt></ruby>すれば、AIは<ruby>極<rt>きわ</rt></ruby>めて<ruby>論理的<rt>ろんりてき</rt></ruby>な<ruby>一<rt>ひと</rt></ruby>つの<ruby>解決策<rt>かいけつさく</rt></ruby>を<ruby>提示<rt>ていじ</rt></ruby>するだろう。</span><span class="sentence" data-idx="21" data-audio="p6_s2.mp3"><span class="play-ic">▶</span>それは、<ruby>問題<rt>もんだい</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>となった<ruby>生物<rt>せいぶつ</rt></ruby>そのものを<ruby>排除<rt>はいじょ</rt></ruby>するというものだ。</span>
+</p></p><p class="note">题目②（中译日）——“合乎逻辑”可译「筋が通る」「理に適う」：前者强调条理一致、无自相矛盾，后者强调符合客观道理，详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>依頼すれば ＝<ruby>依頼<rt>いらい</rt></ruby>する（n / v3 他）条件形：如果（把问题）交给……处理。</p><p>提示するだろう ＝<ruby>提示<rt>ていじ</rt></ruby>する（n / v3 他）基本形＋だろう：大概会提出。</p><p>となった ＝<ruby>成<rt>な</rt></ruby>る（v1 自）过去形（连体）：成为。</p><p>排除する ＝<ruby>排除<rt>はいじょ</rt></ruby>する（n / v3 他）基本形（连体）：排除、清除。</p><p>というものだ ＝<ruby>言<rt>い</rt></ruby>う（v1 他）という＋ものだ：就是……（断定性说明）。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="grammar"><h2 class="section-title"><span>文</span>本文语法</h2><div class="grammar-grid"><article class="card"><h3><span class="g-num">1</span>〜を背景に <span class="lvl">N2</span></h3><p><span class="pattern">「<ruby>選択<rt>せんたく</rt></ruby>と<ruby>集中<rt>しゅうちゅう</rt></ruby>」は、ドラッカーの<ruby>経営思想<rt>けいえいしそう</rt></ruby>を<ruby>背景<rt>はいけい</rt></ruby>に、<ruby>日本<rt>にほん</rt></ruby><ruby>企業<rt>きぎょう</rt></ruby>の<ruby>経営改革<rt>けいえいかいかく</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>広<rt>ひろ</rt></ruby>く<ruby>用<rt>もち</rt></ruby>いられるようになった<ruby>経営戦略<rt>けいえいせんりゃく</rt></ruby>である。</span></p><p>以……为背景。表示动作、现象产生所处的宏观背景或由来，书面语。</p></article><article class="card"><h3><span class="g-num">2</span>〜において（は） <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>比較的<rt>ひかくてき</rt></ruby>「<ruby>安定<rt>あんてい</rt></ruby>した<ruby>世界<rt>せかい</rt></ruby>」においては、<ruby>成果<rt>せいか</rt></ruby>を<ruby>出<rt>だ</rt></ruby>しやすい<ruby>効果的<rt>こうかてき</rt></ruby>な<ruby>戦略<rt>せんりゃく</rt></ruby>だった。</span></p><p>在……（场合、领域、状况）。书面语，后可接「は」「も」等助词。</p></article><article class="card"><h3><span class="g-num">3</span>〜ば〜ほど <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>既存事業<rt>きぞんじぎょう</rt></ruby>がうまくいけばいくほど、その<ruby>事業<rt>じぎょう</rt></ruby>に<ruby>資源<rt>しげん</rt></ruby>を<ruby>投下<rt>とうか</rt></ruby>させ、<ruby>成功<rt>せいこう</rt></ruby>の<ruby>再現性<rt>さいげんせい</rt></ruby>を<ruby>高<rt>たか</rt></ruby>めようとする。</span></p><p>越……越……。前项程度越高，后项程度随之加深。</p></article><article class="card"><h3><span class="g-num">4</span>〜（よ）うとする <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>成功<rt>せいこう</rt></ruby>の<ruby>再現性<rt>さいげんせい</rt></ruby>を<ruby>高<rt>たか</rt></ruby>めようとする。</span></p><p>试图……、想要……。表示有意志地朝某个方向付诸行动。</p></article><article class="card"><h3><span class="g-num">5</span>〜つつある <span class="lvl">N1</span></h3><p><span class="pattern">「<ruby>選択<rt>せんたく</rt></ruby>と<ruby>集中<rt>しゅうちゅう</rt></ruby>」によって<ruby>獲得<rt>かくとく</rt></ruby>しつつある<ruby>専門技能<rt>せんもんぎのう</rt></ruby>は、<ruby>明日<rt>あした</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>支<rt>ささ</rt></ruby>えてくれるそう<ruby>簡単<rt>かんたん</rt></ruby>には<ruby>捨<rt>す</rt></ruby>てられない<ruby>武器<rt>ぶき</rt></ruby>だ。</span></p><p>正在……。表示变化持续进行、方向明确，书面语色彩强。</p></article><article class="card"><h3><span class="g-num">6</span>〜に陥る <span class="lvl">N1</span></h3><p><span class="pattern"><ruby>合理主義的<rt>ごうりしゅぎてき</rt></ruby>な<ruby>アプローチ<rt class="en">approach</rt></ruby>は、この<ruby>悪循環<rt>あくじゅんかん</rt></ruby>に<ruby>陥<rt>おちい</rt></ruby>ることが、<ruby>大<rt>おお</rt></ruby>きな<ruby>課題<rt>かだい</rt></ruby>になる。</span></p><p>陷入……。多接负面状态名词（悪循環・苦境・混乱），固定搭配。</p></article><article class="card"><h3><span class="g-num">7</span>〜ように見える <span class="lvl">N2</span></h3><p><span class="pattern">AIには<ruby>明確<rt>めいかく</rt></ruby>な<ruby>限界点<rt>げんかいてん</rt></ruby>が<ruby>存在<rt>そんざい</rt></ruby>しないように<ruby>見<rt>み</rt></ruby>える。</span></p><p>看起来……。表示基于表象的判断，暗含实际情况未必如此。</p></article><article class="card"><h3><span class="g-num">8</span>〜得る／〜得ない <span class="lvl">N1</span></h3><p><span class="pattern">それは100<ruby>年後<rt>ねんご</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>でも、50<ruby>年後<rt>ねんご</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>でもない。2030<ruby>年代<rt>ねんだい</rt></ruby>には<ruby>起<rt>お</rt></ruby>こり<ruby>得<rt>う</rt></ruby>る<ruby>未来<rt>みらい</rt></ruby>なのだ。</span></p><p>有可能……、会发生……。连体形读「うる」，否定形为「得（え）ない」。</p></article><article class="card"><h3><span class="g-num">9</span>〜というものだ <span class="lvl">N2</span></h3><p><span class="pattern">それは、<ruby>問題<rt>もんだい</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>となった<ruby>生物<rt>せいぶつ</rt></ruby>そのものを<ruby>排除<rt>はいじょ</rt></ruby>するというものだ。</span></p><p>（用「それは…というものだ」的形式）就是……。对前文内容作断定性概括，强调本质。</p></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="vocab"><h2 class="section-title"><span>词</span>词汇、短语与读音</h2><div class="table-wrap"><table><thead><tr><th>单词／短语</th><th>读音</th><th>词性</th><th>级别</th><th>中文释义</th><th>短语（原型）</th></tr></thead><tbody><tr><td class="word"><ruby>経営戦略<rt>けいえいせんりゃく</rt></ruby></td><td>けいえいせんりゃく</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>经营战略</td><td><ruby>経営改革<rt>けいえいかいかく</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>広<rt>ひろ</rt></ruby>く<ruby>用<rt>もち</rt></ruby>いられる</td></tr><tr><td class="word"><ruby>経営資源<rt>けいえいしげん</rt></ruby></td><td>けいえいしげん</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>经营资源</td><td><ruby>経営資源<rt>けいえいしげん</rt></ruby>を<ruby>有効<rt>ゆうこう</rt></ruby>に<ruby>活用<rt>かつよう</rt></ruby>する</td></tr><tr><td class="word"><ruby>戦略<rt>せんりゃく</rt></ruby></td><td>せんりゃく</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>战略</td><td><ruby>資源<rt>しげん</rt></ruby>を<ruby>集中<rt>しゅうちゅう</rt></ruby>させる<ruby>戦略<rt>せんりゃく</rt></ruby></td></tr><tr><td class="word"><ruby>資源<rt>しげん</rt></ruby></td><td>しげん</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>资源</td><td><ruby>得意<rt>とくい</rt></ruby>とする<ruby>事業<rt>じぎょう</rt></ruby>に<ruby>資源<rt>しげん</rt></ruby>を<ruby>集中<rt>しゅうちゅう</rt></ruby>させる</td></tr><tr><td class="word"><ruby>有効<rt>ゆうこう</rt></ruby></td><td>ゆうこう</td><td><span class="pos">ナ形</span></td><td><span class="lvl">N2</span></td><td>有效的</td><td><ruby>経営資源<rt>けいえいしげん</rt></ruby>を<ruby>有効<rt>ゆうこう</rt></ruby>に<ruby>活用<rt>かつよう</rt></ruby>する</td></tr><tr><td class="word"><ruby>活用<rt>かつよう</rt></ruby></td><td>かつよう</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>有效利用、灵活运用</td><td><ruby>経営資源<rt>けいえいしげん</rt></ruby>を<ruby>有効<rt>ゆうこう</rt></ruby>に<ruby>活用<rt>かつよう</rt></ruby>する</td></tr><tr><td class="word"><ruby>用<rt>もち</rt></ruby>いる</td><td>もちいる</td><td><span class="pos">v2 他</span></td><td><span class="lvl">N1</span></td><td>使用、采用</td><td><ruby>経営改革<rt>けいえいかいかく</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>広<rt>ひろ</rt></ruby>く<ruby>用<rt>もち</rt></ruby>いられる</td></tr><tr><td class="word"><ruby>主張<rt>しゅちょう</rt></ruby></td><td>しゅちょう</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>主张、断言</td><td>…が<ruby>必要<rt>ひつよう</rt></ruby>であることを<ruby>主張<rt>しゅちょう</rt></ruby>した</td></tr><tr><td class="word"><ruby>投下<rt>とうか</rt></ruby></td><td>とうか</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>投下、投入（资金、资源）</td><td>その<ruby>事業<rt>じぎょう</rt></ruby>に<ruby>資源<rt>しげん</rt></ruby>を<ruby>投下<rt>とうか</rt></ruby>させ</td></tr><tr><td class="word"><ruby>集中投下<rt>しゅうちゅうとうか</rt></ruby></td><td>しゅうちゅうとうか</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>集中投入</td><td><ruby>コア<rt class="en">core</rt></ruby><ruby>事業<rt>じぎょう</rt></ruby>への<ruby>集中投下<rt>しゅうちゅうとうか</rt></ruby></td></tr><tr><td class="word"><ruby>コア<rt class="en">core</rt></ruby></td><td>core</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>核心（core）</td><td><ruby>コア<rt class="en">core</rt></ruby><ruby>事業<rt>じぎょう</rt></ruby>への<ruby>集中投下<rt>しゅうちゅうとうか</rt></ruby></td></tr><tr><td class="word"><ruby>抱え込む<rt>かかえこむ</rt></ruby></td><td>かかえこむ</td><td><span class="pos">v1 他</span></td><td><span class="lvl">N1</span></td><td>（把问题等）揽到自己身上；承担过多</td><td><ruby>多<rt>おお</rt></ruby>くの<ruby>事業<rt>じぎょう</rt></ruby>を<ruby>抱<rt>かか</rt></ruby>え<ruby>込<rt>こ</rt></ruby>まずに</td></tr><tr><td class="word"><ruby>安定<rt>あんてい</rt></ruby></td><td>あんてい</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N2</span></td><td>安定、稳定</td><td><ruby>比較的<rt>ひかくてき</rt></ruby>「<ruby>安定<rt>あんてい</rt></ruby>した<ruby>世界<rt>せかい</rt></ruby>」においては</td></tr><tr><td class="word"><ruby>効果的<rt>こうかてき</rt></ruby></td><td>こうかてき</td><td><span class="pos">ナ形</span></td><td><span class="lvl">N2</span></td><td>有效的、见效的</td><td><ruby>成果<rt>せいか</rt></ruby>を<ruby>出<rt>だ</rt></ruby>しやすい<ruby>効果的<rt>こうかてき</rt></ruby>な<ruby>戦略<rt>せんりゃく</rt></ruby></td></tr><tr><td class="word"><ruby>不確実<rt>ふかくじつ</rt></ruby></td><td>ふかくじつ</td><td><span class="pos">ナ形</span></td><td><span class="lvl">N1</span></td><td>不确定的</td><td><ruby>外部環境<rt>がいぶかんきょう</rt></ruby>が<ruby>不確実<rt>ふかくじつ</rt></ruby>で<ruby>変化<rt>へんか</rt></ruby>が<ruby>激<rt>はげ</rt></ruby>しい</td></tr><tr><td class="word">それなりに</td><td>それなりに</td><td><span class="pos">adv</span></td><td><span class="lvl">N1</span></td><td>相应地、与之相称地</td><td>それなりにリスクも<ruby>大<rt>おお</rt></ruby>きい</td></tr><tr><td class="word">リスク</td><td>risk</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>风险</td><td>それなりにリスクも<ruby>大<rt>おお</rt></ruby>きい</td></tr><tr><td class="word"><ruby>既存<rt>きぞん</rt></ruby></td><td>きぞん</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N1</span></td><td>既存、现有</td><td><ruby>既存事業<rt>きぞんじぎょう</rt></ruby>がうまくいけばいくほど</td></tr><tr><td class="word"><ruby>再現性<rt>さいげんせい</rt></ruby></td><td>さいげんせい</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>可复制性、再现性</td><td><ruby>成功<rt>せいこう</rt></ruby>の<ruby>再現性<rt>さいげんせい</rt></ruby>を<ruby>高<rt>たか</rt></ruby>める</td></tr><tr><td class="word"><ruby>サクセス・トラップ<rt class="en">success trap</rt></ruby></td><td>success trap</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>成功陷阱</td><td>これを<ruby>経営学<rt>けいえいがく</rt></ruby>では「<ruby>サクセス・トラップ<rt class="en">success trap</rt></ruby>」と<ruby>言<rt>い</rt></ruby>う</td></tr><tr><td class="word"><ruby>キャリア形成<rt>キャリアけいせい</rt></ruby></td><td>キャリアけいせい</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>职业（生涯）形成</td><td><ruby>個人<rt>こじん</rt></ruby>の<ruby>キャリア形成<rt>キャリアけいせい</rt></ruby>においても</td></tr><tr><td class="word"><ruby>キャリア・ピボット<rt class="en">career pivot</rt></ruby></td><td>career pivot</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>职业转型（pivot：轴、支点）</td><td><ruby>長期的<rt>ちょうきてき</rt></ruby>には<ruby>キャリア・ピボット<rt class="en">career pivot</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>だ</td></tr><tr><td class="word"><ruby>免<rt>まぬが</rt></ruby>れる</td><td>まぬがれる</td><td><span class="pos">v2 自他</span></td><td><span class="lvl">N1</span></td><td>避免、逃脱</td><td>「<ruby>サクセス・トラップ<rt class="en">success trap</rt></ruby>」の<ruby>問題<rt>もんだい</rt></ruby>は<ruby>免<rt>まぬが</rt></ruby>れない</td></tr><tr><td class="word"><ruby>獲得<rt>かくとく</rt></ruby></td><td>かくとく</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>获得、取得</td><td><ruby>専門技能<rt>せんもんぎのう</rt></ruby>を<ruby>獲得<rt>かくとく</rt></ruby>しつつある</td></tr><tr><td class="word"><ruby>専門技能<rt>せんもんぎのう</rt></ruby></td><td>せんもんぎのう</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>专业技能</td><td><ruby>獲得<rt>かくとく</rt></ruby>しつつある<ruby>専門技能<rt>せんもんぎのう</rt></ruby></td></tr><tr><td class="word">しがみつく</td><td>しがみつく</td><td><span class="pos">v1 自</span></td><td><span class="lvl">N1</span></td><td>死死抓住、紧抱不放；（对既有事物）固守</td><td><ruby>一<rt>ひと</rt></ruby>つの<ruby>専門性<rt>せんもんせい</rt></ruby>にしがみついてしまう</td></tr><tr><td class="word"><ruby>悪循環<rt>あくじゅんかん</rt></ruby></td><td>あくじゅんかん</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>恶性循环</td><td>この<ruby>悪循環<rt>あくじゅんかん</rt></ruby>に<ruby>陥<rt>おちい</rt></ruby>る</td></tr><tr><td class="word"><ruby>陥<rt>おちい</rt></ruby>る</td><td>おちいる</td><td><span class="pos">v1 自</span></td><td><span class="lvl">N1</span></td><td>陷入（某种状态）</td><td>この<ruby>悪循環<rt>あくじゅんかん</rt></ruby>に<ruby>陥<rt>おちい</rt></ruby>る</td></tr><tr><td class="word"><ruby>アプローチ<rt class="en">approach</rt></ruby></td><td>approach</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N1</span></td><td>方法、路径；（向……）接近</td><td><ruby>合理主義的<rt>ごうりしゅぎてき</rt></ruby>な<ruby>アプローチ<rt class="en">approach</rt></ruby></td></tr><tr><td class="word"><ruby>日<rt>ひ</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>新<rt>あたら</rt></ruby>しきものなし</td><td>ひのしたにあたらしきものなし</td><td><span class="pos">惯用</span></td><td><span class="lvl">N1</span></td><td>太阳底下没有新鲜事（源出《圣经·传道书》）</td><td>「<ruby>日<rt>ひ</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>新<rt>あたら</rt></ruby>しきものなし」という<ruby>言葉<rt>ことば</rt></ruby>がある</td></tr><tr><td class="word"><ruby>例外<rt>れいがい</rt></ruby></td><td>れいがい</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>例外</td><td><ruby>技術<rt>ぎじゅつ</rt></ruby>の<ruby>進歩<rt>しんぽ</rt></ruby>は<ruby>例外<rt>れいがい</rt></ruby>である</td></tr><tr><td class="word"><ruby>進歩<rt>しんぽ</rt></ruby></td><td>しんぽ</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N2</span></td><td>进步</td><td><ruby>技術<rt>ぎじゅつ</rt></ruby>の<ruby>進歩<rt>しんぽ</rt></ruby></td></tr><tr><td class="word"><ruby>知能<rt>ちのう</rt></ruby></td><td>ちのう</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>智能、智力</td><td>アインシュタインの10<ruby>億倍<rt>おくばい</rt></ruby>もの<ruby>知能<rt>ちのう</rt></ruby></td></tr><tr><td class="word"><ruby>超知能<rt>ちょうちのう</rt></ruby></td><td>ちょうちのう</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>超级智能</td><td>もし<ruby>超知能<rt>ちょうちのう</rt></ruby>AIに<ruby>地球温暖化<rt>ちきゅうおんだんか</rt></ruby><ruby>問題<rt>もんだい</rt></ruby>の<ruby>解決<rt>かいけつ</rt></ruby>を<ruby>依頼<rt>いらい</rt></ruby>すれば</td></tr><tr><td class="word"><ruby>台頭<rt>たいとう</rt></ruby></td><td>たいとう</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N1</span></td><td>抬头、崛起</td><td><ruby>強力<rt>きょうりょく</rt></ruby>なAIの<ruby>台頭<rt>たいとう</rt></ruby></td></tr><tr><td class="word"><ruby>強力<rt>きょうりょく</rt></ruby></td><td>きょうりょく</td><td><span class="pos">ナ形</span></td><td><span class="lvl">N2</span></td><td>强有力的</td><td><ruby>強力<rt>きょうりょく</rt></ruby>なAIの<ruby>台頭<rt>たいとう</rt></ruby></td></tr><tr><td class="word"><ruby>知能爆発<rt>ちのうばくはつ</rt></ruby></td><td>ちのうばくはつ</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>智能爆炸</td><td>「<ruby>知能爆発<rt>ちのうばくはつ</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>ばれる<ruby>現象<rt>げんしょう</rt></ruby></td></tr><tr><td class="word"><ruby>現象<rt>げんしょう</rt></ruby></td><td>げんしょう</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>现象</td><td>「<ruby>知能爆発<rt>ちのうばくはつ</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>ばれる<ruby>現象<rt>げんしょう</rt></ruby></td></tr><tr><td class="word"><ruby>自己向上<rt>じここうじょう</rt></ruby></td><td>じここうじょう</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>自我提升</td><td><ruby>自己向上<rt>じここうじょう</rt></ruby>の<ruby>能力<rt>のうりょく</rt></ruby>そのものが<ruby>高<rt>たか</rt></ruby>まっていく</td></tr><tr><td class="word"><ruby>到達<rt>とうたつ</rt></ruby></td><td>とうたつ</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N2</span></td><td>到达、达到</td><td><ruby>人間<rt>にんげん</rt></ruby><ruby>レベル<rt class="en">level</rt></ruby>の<ruby>知能<rt>ちのう</rt></ruby>に<ruby>到達<rt>とうたつ</rt></ruby>すれば</td></tr><tr><td class="word"><ruby>レベル<rt class="en">level</rt></ruby></td><td>level</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>水平、级别</td><td><ruby>人間<rt>にんげん</rt></ruby><ruby>レベル<rt class="en">level</rt></ruby>の<ruby>知能<rt>ちのう</rt></ruby></td></tr><tr><td class="word"><ruby>プログラム<rt class="en">program</rt></ruby></td><td>program</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>程序；计划</td><td><ruby>自<rt>みずか</rt></ruby>らの<ruby>プログラム<rt class="en">program</rt></ruby>をさらに<ruby>改良<rt>かいりょう</rt></ruby>する</td></tr><tr><td class="word"><ruby>改良<rt>かいりょう</rt></ruby></td><td>かいりょう</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>改良、改进</td><td><ruby>プログラム<rt class="en">program</rt></ruby>をさらに<ruby>改良<rt>かいりょう</rt></ruby>する</td></tr><tr><td class="word"><ruby>理論<rt>りろん</rt></ruby></td><td>りろん</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>理论</td><td><ruby>理論上<rt>りろんじょう</rt></ruby>の<ruby>上限<rt>じょうげん</rt></ruby>がない</td></tr><tr><td class="word"><ruby>上限<rt>じょうげん</rt></ruby></td><td>じょうげん</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>上限</td><td><ruby>理論上<rt>りろんじょう</rt></ruby>の<ruby>上限<rt>じょうげん</rt></ruby>がない</td></tr><tr><td class="word"><ruby>地球温暖化<rt>ちきゅうおんだんか</rt></ruby></td><td>ちきゅうおんだんか</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>全球变暖</td><td><ruby>地球温暖化<rt>ちきゅうおんだんか</rt></ruby><ruby>問題<rt>もんだい</rt></ruby>の<ruby>解決<rt>かいけつ</rt></ruby></td></tr><tr><td class="word"><ruby>依頼<rt>いらい</rt></ruby></td><td>いらい</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>委托、请求</td><td><ruby>超知能<rt>ちょうちのう</rt></ruby>AIに<ruby>解決<rt>かいけつ</rt></ruby>を<ruby>依頼<rt>いらい</rt></ruby>すれば</td></tr><tr><td class="word"><ruby>論理的<rt>ろんりてき</rt></ruby></td><td>ろんりてき</td><td><span class="pos">ナ形</span></td><td><span class="lvl">N1</span></td><td>合乎逻辑的、有逻辑的</td><td><ruby>極<rt>きわ</rt></ruby>めて<ruby>論理的<rt>ろんりてき</rt></ruby>な<ruby>解決策<rt>かいけつさく</rt></ruby></td></tr><tr><td class="word"><ruby>極<rt>きわ</rt></ruby>めて</td><td>きわめて</td><td><span class="pos">adv</span></td><td><span class="lvl">N1</span></td><td>极其、极为</td><td><ruby>極<rt>きわ</rt></ruby>めて<ruby>論理的<rt>ろんりてき</rt></ruby>な<ruby>解決策<rt>かいけつさく</rt></ruby></td></tr><tr><td class="word"><ruby>解決策<rt>かいけつさく</rt></ruby></td><td>かいけつさく</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>解决方案</td><td><ruby>一<rt>ひと</rt></ruby>つの<ruby>解決策<rt>かいけつさく</rt></ruby>を<ruby>提示<rt>ていじ</rt></ruby>する</td></tr><tr><td class="word"><ruby>提示<rt>ていじ</rt></ruby></td><td>ていじ</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>出示、提出</td><td><ruby>解決策<rt>かいけつさく</rt></ruby>を<ruby>提示<rt>ていじ</rt></ruby>するだろう</td></tr><tr><td class="word"><ruby>排除<rt>はいじょ</rt></ruby></td><td>はいじょ</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>排除、清除</td><td><ruby>原因<rt>げんいん</rt></ruby>となった<ruby>生物<rt>せいぶつ</rt></ruby>そのものを<ruby>排除<rt>はいじょ</rt></ruby>する</td></tr></tbody></table></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="notes"><h2 class="section-title"><span>笔</span>强化笔记精讲（瑞译）</h2><div class="notes-grid"><article class="note-card"><h3><span class="sec">段落一</span>「選択と集中」的由来与「投下」的用法</h3><p><b>「<ruby>選択<rt>せんたく</rt></ruby>と<ruby>集中<rt>しゅうちゅう</rt></ruby>」并非德鲁克的原始表述</b>：虽然不少日文经营类文章直接将这一概念归于德鲁克所提出，但目前尚未找到「<ruby>選択<rt>せんたく</rt></ruby>と<ruby>集中<rt>しゅうちゅう</rt></ruby>」这一术语所直接对应的原文。</p><p>更准确地说，这一术语可能是日本经营界在吸收德鲁克关于资源集中、核心业务强化等思想的基础上形成的日式概括，所以作业原文改为了“受德鲁克的影响”，而不是“德鲁克提出”。</p><p>日文维基百科定义：<span class="tr">選択と集中（せんたくとしゅうちゅう、英：Focus）とは経営学用語の一つで、限られた資源・予算を最も競争優位性の高い事業領域へ重点的に配分し、それ以外の領域を切り捨てることで、組織全体の収益性と競争力を最大化することを目指す戦略である。</span></p><p>需要注意的是，日文维基百科将其英文对应词写为 Focus（聚焦），而非 Selection and Concentration。日语通过「<ruby>選択<rt>せんたく</rt></ruby>」与「<ruby>集中<rt>しゅうちゅう</rt></ruby>」两个词的组合，强调“选择重点领域并集中资源投入”的过程，而英语中的 Focus 更侧重于“聚焦”的结果或战略方向。</p><p><b>「<ruby>投下<rt>とうか</rt></ruby>する」的基本义与引申义</b>：基本含义是“从上方向下投掷、投放某物”，在此基础上又引申出“为了某项事业而投入资本、资金等资源”的含义（小学館デジタル大辞泉）。</p><p><b>（1）具体的“投放”</b>：<span class="tr">ヘリコプターから救援物資を投下する。</span>（从直升飞机投下救济物资。例句选自小学馆日中第二版）</p><p><b>（2）投入“资金、资本”等</b>：<span class="tr">コア事業でキャッシュを生み出し、成長事業に資源を投下していく。</span>（通过核心业务创造现金流，并将资源进一步投入成长型业务。例句选自日本经济产业省，笔者试译）</p><p><span class="tr">各産業バリューチェーンの強みを持つ領域にのみに進出、経営資源を集中投下。</span>（仅进入产业价值链中具有优势的领域，并集中投入经营资源。例句选自伊藤忠年报，笔者试译）</p><p>※这里的「<ruby>集中投下<rt>しゅうちゅうとうか</rt></ruby>」不只是一般的“使用资源”，而有一种把有限资源重点配置到某个优先领域的感觉。</p><p><b>【拓展】<ruby>投入<rt>とうにゅう</rt></ruby></b>：資本・労力などをつぎ込むこと（投入资本、劳动力等）。</p><p><span class="tr">外国の企業に資本を投入する。</span>（向外国企业投资。）</p><p><span class="tr">５万の兵力を投入した。</span>（投入了五万兵力。以上例句选自小学馆日中第二版）</p><p>※「<ruby>投入<rt>とうにゅう</rt></ruby>」不仅可以指“投入资金”，还可以指“投入人手、资金、时间、力量”等等；而「<ruby>投下<rt>とうか</rt></ruby>」则主要搭配“资金、资源”等内容。</p><p><b>【拓展】<ruby>注<rt>そそ</rt></ruby>ぐ</b>：もっぱら、その方へ向ける。一つことに集中する（デジタル大辞泉）。「<ruby>注<rt>そそ</rt></ruby>ぐ」的抽象意思十分常见，可根据语境翻译为“致力于…”“在…方面投入大量精力”。</p><p><span class="tr">鉢植えに水を注ぐ。</span>（往花盆里浇水。例句选自小学馆日中第二版）</p><p><span class="tr">科学技術・学術活動の国際化推進に当たっては、長期的観点からアジア諸国との研究パートナーシップの構築に力を注ぐことが必要である。</span>（在推进科技及学术活动国际化的过程中，有必要立足长远，致力于构建与亚洲各国的科研合作伙伴关系。例句选自日本文部科学省，笔者试译）</p></article><article class="note-card"><h3><span class="sec">段落二</span>「抱え込む」与「～込む」类复合动词</h3><p><b>「<ruby>抱<rt>かか</rt></ruby>え<ruby>込<rt>こ</rt></ruby>む」的基本义与引申义</b>：基本含义是“将某物紧紧抱在怀里”，并由此引申出“把某物揽在自己手里／据为己有”“独自承担大量事务或棘手问题”等含义。</p><p><span class="tr">多くの事業を抱え込むほど、１つの事業に投入できる経営資源は限られ、どれも中途半端になることが少なくありません。</span>（企业经营的业务越多，能够投入单个业务的经营资源就越有限，最终很容易导致各项业务都做得不够充分。例句选自野村综合研究所，笔者试译）</p><p><span class="tr">現場や担当者がトラブルを抱え込み、「発生したトラブルへの初動対応が遅れること」になると、その対応に追われ長時間労働を生むことになります。</span>（如果现场工作人员或负责人把问题都自己扛下来，导致对已经发生的问题迟迟不能采取初步措施，就会因为忙于善后而超长待机。例句选自日本厚生劳动省，笔者试译，“超长待机”为意译）</p><p>※此处非常能体现「<ruby>込<rt>こ</rt></ruby>む」的作用。「<ruby>問題<rt>もんだい</rt></ruby>を<ruby>抱<rt>かか</rt></ruby>える」意为“面临问题、有…问题”，而「<ruby>問題<rt>もんだい</rt></ruby>を<ruby>抱<rt>かか</rt></ruby>え<ruby>込<rt>こ</rt></ruby>む」则是“把问题扛下来”，意思完全不同。</p><p><span class="tr">悩みごとは抱え込まず相談をしましょう。</span>（有烦恼时不要一个人闷在心里，要主动找人商量。例句选自日本厚生劳动省，笔者试译）</p><p>※这里如果直译成“不要承担烦恼”就非常生硬。可根据语境译为“把烦恼憋／闷在心里”“一个人扛着”等等。</p><p><b>【拓展】<ruby>巻<rt>ま</rt></ruby>き<ruby>込<rt>こ</rt></ruby>む</b>（まきこむ）：卷入、牵连。「<ruby>巻<rt>ま</rt></ruby>く」本意是“卷”，「<ruby>巻<rt>ま</rt></ruby>き<ruby>込<rt>こ</rt></ruby>む」最初就是“卷进去”，进一步引申为“把别人卷入某种关系或事态”。常见两个句型：「Aを～に<ruby>巻<rt>ま</rt></ruby>き<ruby>込<rt>こ</rt></ruby>む」（把A卷入……）、「Aが～に<ruby>巻<rt>ま</rt></ruby>き<ruby>込<rt>こ</rt></ruby>まれる」（A被卷入……）。</p><p><span class="tr">私たちは暮らしのいろいろな場面で、トラブルや困りごとに巻き込まれる可能性があります。</span>（在日常生活的各种场景中，我们都有可能卷入纠纷或遇到麻烦。例句选自日本政府广报网站，笔者试译）</p><p><b>【拓展】<ruby>追<rt>お</rt></ruby>い<ruby>込<rt>こ</rt></ruby>む</b>（おいこむ）：逼入、迫使陷入某种状态。「<ruby>追<rt>お</rt></ruby>い<ruby>込<rt>こ</rt></ruby>む」的意象就是“在后面追赶，把对方逼进某个地方／某种状态”，因此既可以是物理意义上的“赶进去”，也可以表示“逼入困境”。</p><p><span class="tr">業績目標の設定や業績評価において実行不可能なことを求めて社員を不正行為に追い込むようなことがないよう、十分留意すべきである。</span>（在制定业绩目标和进行业绩评价时，一定要注意，不要提出不可能实现的目标，从而迫使员工违规。例句选自日本经济产业省，笔者试译）</p></article><article class="note-card"><h3><span class="sec">段落三</span>サクセス・トラップ等经营学专有名词与キャリア・ピボット</h3><p><b>「サクセス・トラップ」（success trap）</b>：通常译为“成功陷阱”，指成功的最大障碍源于持续成功导致的惯性思维，多次成功会使人形成固定行为模式，将经验转化为阻碍变革的规则。</p><p>该定律强调外界条件变化时，企业固守成功经验易丧失适应能力，需通过放弃固有流程保持竞争力（百度百科）。</p><p><b>①<ruby>両利<rt>りょうき</rt></ruby>きの<ruby>経営<rt>けいえい</rt></ruby></b>（りょうききのけいえい）：organizational ambidexterity 组织双元性。该词属于管理学概念，强调“企业同时平衡现有资源利用与未来变革适应能力”（百度百科）。</p><p><b>②ダイナミック・ケイパビリティ</b>：dynamic capabilities 动态能力。该词属于战略管理概念，强调“企业在外部环境不断变化的情况下，及时感知机会与威胁，并通过整合、重构内外部资源实现自我变革的能力”。</p><p>日本经济产业省还将其解释为「<ruby>企業変革力<rt>きぎょうへんかくりょく</rt></ruby>」（注意“革”没有浊音）。</p><p><b>③<ruby>経路依存性<rt>けいろいぞんせい</rt></ruby></b>（けいろいぞんせい）：path dependence 路径依赖。指人们一旦选择了某种体制，由于规模经济、学习效应、协同效应以及适应性预期、既得利益约束等因素的存在，会导致该体制沿着既定的方向不断自我强化。</p><p>一旦人们做了某种选择，就好比走上了一条不归之路，惯性的力量会使这一选择不断自我强化，并让你轻易走不出去（百度百科）。</p><p><b>※翻译技巧（走投无路版）</b>：考试中实在不知道专有名词是什么意思时——日译中，可以结合“猜测片假名对应的英语”＋“理解前后文”来猜测专有名词具体译法，大意对了即可。</p><p>中译日时，在不确定这个专有名词及其对应英语的片假名时，可以倾向于猜测其汉字译法。日本官方大部分情况下会给一个概念两种译法，因此都不能算错。</p><p><b>「キャリア・ピボット」（career pivot）</b>：「ピボット（pivot）」本义是“轴、支点”，在篮球运动中指“以一只脚为轴，移动另一只脚来改变身体方向”，后来也引申至商业领域，即「<ruby>事業<rt>じぎょう</rt></ruby>などの方針を<ruby>変更<rt>へんこう</rt></ruby>すること」（职业转型）。（参考コトバンク）</p><p><span class="tr">業界や職種などの要素を一気に変化させず段階的に変化させる、片方に軸足を置きもう片方を動かす“ピボット”のようにキャリアを進める方法。</span>（不是一次性同时改变行业、职种等所有要素，而是分阶段进行调整，像“篮球比赛里的重心脚”一样，一只脚作为轴足保留原位，再移动另一只脚，以此推进自己的职业发展。例句选自东北大学医院网站，笔者试译）</p></article><article class="note-card"><h3><span class="sec">段落四</span>“太阳底下没有新鲜事”的出处与定译</h3><p><b>有文化背景的表达不能简单按照字面意义进行翻译</b>：“太阳底下没有新鲜事”源自《圣经》，经过长期传播，在英语、日语等语言中已有几种固定表达／译法。</p><p>翻译此类具有文化背景的表达时，应首先查询目标语言中的定译，而不是仅凭字面意义和个人理解进行直译。</p><p><b>本句出处</b>：《圣经·旧约·传道书》（Ecclesiastes）——What has been will be again, what has been done will be done again; there is nothing new under the sun.（已有的事，后必再有；已行的事，后必再行。日光之下并无新事。）</p><p>“There is nothing new under the sun”虽然常被理解为“历史总会重复”，但其原始语境并非单纯的历史研究，而是一种关于人类经验循环性的哲学表达。</p><p>与中国传统中的“殷鉴不远”“以古为镜，可以知兴替”等表达相比，它们都关注过去经验对现实的意义，《传道书》更强调人类无法摆脱重复性的存在状态，中国传统史学则更强调从历史中总结规律、服务现实治理。</p></article><article class="note-card"><h3><span class="sec">段落五</span>“瓶颈”的译法与霍金论断的三个译本</h3><p><b>“瓶颈”的引申义</b>：本意是瓶子的颈部，目前多用其引申义，即“发展到一定阶段面临的困难或障碍”（汉语字典）。</p><p><b>①ボトルネック（bottleneck）</b>：瓶颈、制约因素。与中文“瓶颈”最直接对应，主要强调“某个具体因素成为整体发展的限制环节”，常见于产业、技术、生产等领域遇到困难的情景。</p><p><span class="tr">思考も作業もこなすAIエージェントが、従来の科学研究における効率のボトルネックを打破し、「AIが実験を支援する」時代を現実のものとしつつある。</span>（能够同时完成思考与作业任务的AI智能体，正在打破传统科学研究中的效率瓶颈，并逐步让“AI辅助实验”从设想变为现实。例句选自人民网日语版，笔者试译）</p><p><b>②<ruby>頭<rt>あたま</rt></ruby><ruby>打<rt>う</rt></ruby>ちになる</b>（あたまうち）：触顶、增长停滞、达到平台期。「<ruby>頭<rt>あたま</rt></ruby><ruby>打<rt>う</rt></ruby>ち」原本有“碰到顶部”的形象意义，进一步表示数值、增长率、能力等提高到某一水平后便难以进一步上升。</p><p>「ボトルネック」是卡在中间，而「<ruby>頭<rt>あたま</rt></ruby><ruby>打<rt>う</rt></ruby>ち」则强调“已经到顶”。</p><p><span class="tr">引張強度が約１．４ＧＰａを超えると疲労限度がそれ以上向上しない、もしくは低下する“頭打ち”状態となります。</span>（当抗拉强度超过约1.4GPa后，疲劳极限便不再继续提高，甚至有所下降，进入一种“触顶／停滞”状态。例句选自日本国立材料研究所，笔者试译）</p><p><b>③<ruby>行<rt>い</rt></ruby>き<ruby>詰<rt>づ</rt></ruby>まる</b>（いきづまる）：陷入僵局、难以继续推进。语感在于“一直在往前推进，但前面没有路，无法继续前行”，因此常见于“研究、工作、谈判”等场景。</p><p><span class="tr">ゲームエンジンの普及で、3D空間上にゲームステージらしき空間を配置して、キャラクターを動き回らせる程度のことは、簡単にできるようになった。しかし多くの初心者（特に学生）ゲームデザイナーは、ここで行き詰まる。</span>（随着游戏引擎的普及，如今很容易就能在三维空间搭建一个形似游戏关卡的场景，并让角色在其中自由移动。然而，很多初学游戏设计的人，尤其是学生，往往会在这里遇到瓶颈／陷入僵局。例句选自日本文化厅网站，笔者试译）</p><p><b>末句“智能爆炸＋霍金论断”的三个译本</b>。译文正文采用的是：</p><p><b>【译①】井上老师修改版本</b>：<span class="tr">これは「知能爆発」と呼ばれる現象であり、ホーキングの有名な言葉が生まれた背景にもなっている。——「強力なAIの台頭は、人類史上最高の出来事になる可能性もあれば、最悪の出来事になる可能性もある。私たちはまだその答えを知らない」。</span></p><p>但是这个版本的“——”可能很多同学没办法掌控。所以如果采用尽量直译的话，可以处理为：</p><p><b>【译②】尽量直译版本</b>：<span class="tr">これは「知能爆発」と呼ばれる現象であり、ホーキングの有名な発言の背景の一つにもなっている。ホーキング（或「彼」，下同）は、「強力なAIの台頭は、人類史上最高の出来事になる可能性もあれば、最悪の出来事になる可能性もある。私たちはまだその答えを知らない」と述べた。</span></p><p>但读起来前后两句直接衔接其实有点跳，所以也可以再加译一点点内容：</p><p><b>【译③】稍微加译的版本</b>：<span class="tr">これは「知能爆発」と呼ばれる現象であり、ホーキングの有名な発言の背景の一つにもなっている。こうした可能性を踏まえ、ホーキングは、「強力なAIの台頭は、人類史上最高の出来事になる可能性もあれば、最悪の出来事になる可能性もある。私たちはまだその答えを知らない」と述べた。</span></p><p>这样前后两句的衔接更紧密，但就是加了东西，考场上可能想不到。总体而言，能做到译②这种已经很好了。</p></article><article class="note-card"><h3><span class="sec">段落六</span>“合乎逻辑”的日语表达</h3><p><b>①<ruby>筋<rt>すじ</rt></ruby>が<ruby>通<rt>とお</rt></ruby>る</b>：强调事情“有条理、脉络清晰、前后一致、没有自相矛盾”。</p><p><span class="tr">少ないのがいいのではない、「筋が通る」「理屈が通っている」のがいいのである。</span>（并不是越少越好，重要的是前后说得通、道理上能够成立。例句选自日本文化厅，笔者试译）</p><p><span class="tr">この契約書は全く筋の通らないです。</span>（这个合同完全没有条理。例句选自小学馆日中第二版）</p><p><b>②<ruby>理<rt>り</rt></ruby>に<ruby>適<rt>かな</rt></ruby>う</b>：强调“符合某种客观道理、规律”，和“符合逻辑”不能完全等同。</p><p><span class="tr">睡眠改善のために、枕元にリンゴを置いておくというのは、理にかなっている。</span>（为了改善睡眠，把苹果放在枕边这种做法是有一定科学道理的。例句选自人民网日语版，笔者试译）</p></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <footer>
+      9-3 段落双向翻译练习（强化笔记融合版）｜日语读音（黄色平假名）、外来语（蓝色）、语法、词汇、文中变形与强化笔记精讲整理<br>
+      正文依据用户提供的资料整理，仅供个人学习使用。
+    </footer>
+  </main>
+
+<script>
+(function(){
+  const AUDIO_DIR = "9-3/audio/";
+  const TOTAL = 22;
+  let current = 0;
+  let playing = false;
+  let rate = 1.0;
+  let loopMode = false;
+  const audio = new Audio();
+  const $ = id => document.getElementById(id);
+
+  function playSentence(idx){
+    if (idx < 0 || idx >= TOTAL) return;
+    current = idx;
+    playing = true;
+    updateUI();
+    const s = document.querySelector('.sentence[data-idx="' + idx + '"]');
+    audio.src = AUDIO_DIR + (s ? s.dataset.audio : 'p1_s1.mp3');
+    audio.playbackRate = rate;
+    audio.currentTime = 0;
+    audio.play().then(() => { playing = true; updateUI(); })
+      .catch(e => { console.error('播放失败:', e); });
+  }
+
+  function togglePlay(){
+    if (playing){ audio.pause(); playing=false; updateUI(); }
+    else if (!audio.src) playSentence(current);
+    else { audio.play().then(()=>{playing=true;updateUI();}); }
+  }
+  function nextSentence(){
+    if (current+1 < TOTAL) playSentence(current+1);
+    else if (loopMode) playSentence(0);
+    else { audio.pause(); playing=false; updateUI(); }
+  }
+  function prevSentence(){ if (current>0) playSentence(current-1); }
+
+  function sentenceInSec(el){
+    const sec = el.closest('section');
+    const all = sec.querySelectorAll('.sentence');
+    for (let i=0;i<all.length;i++) if (all[i]===el) return i+1;
+    return 1;
+  }
+
+  function updateUI(){
+    $('btn-play').textContent = playing ? '⏸' : '▶';
+    document.querySelectorAll('.sentence').forEach(el=>{
+      el.classList.toggle('playing', parseInt(el.dataset.idx)===current);
+    });
+    const s = document.querySelector('.sentence[data-idx="'+current+'"]');
+    if (s){
+      const sec = s.closest('section');
+      const st = sec ? sec.querySelector('.section-title').textContent : '';
+      const n = sentenceInSec(s);
+      $('sentence-status').textContent = (playing?'播放中':'暂停')+' ｜ '+st+' 第'+n+'句';
+      const rect = s.getBoundingClientRect();
+      const bar = $('player-bar').getBoundingClientRect();
+      if (rect.top < bar.bottom || rect.bottom > window.innerHeight){
+        s.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    }
+  }
+
+  audio.addEventListener('ended', nextSentence);
+  audio.addEventListener('timeupdate', ()=>{
+    if (audio.duration){
+      const pct = audio.currentTime/audio.duration*100;
+      $('progress-fill').style.width = pct+'%';
+      $('progress-knob').style.left = pct+'%';
+    }
+  });
+  $('progress').addEventListener('click', e=>{
+    if (!audio.duration) return;
+    const r = $('progress').getBoundingClientRect();
+    audio.currentTime = (e.clientX-r.left)/r.width*audio.duration;
+  });
+  $('rate-group').addEventListener('click', e=>{
+    const b = e.target.closest('.rate-btn'); if(!b) return;
+    rate = parseFloat(b.dataset.rate);
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(x=>x.classList.toggle('active', x===b));
+  });
+  $('btn-mode').addEventListener('click', ()=>{
+    loopMode = !loopMode;
+    $('btn-mode').textContent = '循环: '+(loopMode?'开':'关');
+    $('btn-mode').classList.toggle('active', loopMode);
+  });
+  $('btn-play').addEventListener('click', togglePlay);
+  $('btn-next').addEventListener('click', nextSentence);
+  $('btn-prev').addEventListener('click', prevSentence);
+
+  document.querySelectorAll('.sentence').forEach(el=>{
+    el.addEventListener('click', ()=>playSentence(parseInt(el.dataset.idx)));
+  });
+
+  document.addEventListener('keydown', e=>{
+    if (e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+    switch(e.code){
+      case 'Space': e.preventDefault(); togglePlay(); break;
+      case 'ArrowRight': nextSentence(); break;
+      case 'ArrowLeft': prevSentence(); break;
+      case 'ArrowUp': e.preventDefault(); setRate(Math.min(1.5, rate+0.25)); break;
+      case 'ArrowDown': e.preventDefault(); setRate(Math.max(0.5, rate-0.25)); break;
+    }
+  });
+  function setRate(r){
+    rate = Math.round(r*100)/100;
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(b=>{
+      b.classList.toggle('active', parseFloat(b.dataset.rate)===rate);
+    });
+  }
+  audio.preload = 'auto';
+  window.__reader = { getAudio: () => audio, getState: () => ({current, playing, rate, loopMode}) };
+})();
+</script>
+
+</body>
+</html>

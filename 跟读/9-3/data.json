@@ -1,0 +1,204 @@
+{
+  "title": "9-3 段落双向翻译练习",
+  "voice": "ja-JP-NanamiNeural",
+  "sentences": [
+    {
+      "section": 1,
+      "sentence_index": 1,
+      "sentence_id": "p1_s1",
+      "jp_plain": "「選択と集中」は、ドラッカーの経営思想を背景に、日本企業の経営改革の中で広く用いられるようになった経営戦略である。",
+      "jp_html": "「<ruby>選択<rt>せんたく</rt></ruby>と<ruby>集中<rt>しゅうちゅう</rt></ruby>」は、ドラッカーの<ruby>経営思想<rt>けいえいしそう</rt></ruby>を<ruby>背景<rt>はいけい</rt></ruby>に、<ruby>日本<rt>にほん</rt></ruby><ruby>企業<rt>きぎょう</rt></ruby>の<ruby>経営改革<rt>けいえいかいかく</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>広<rt>ひろ</rt></ruby>く<ruby>用<rt>もち</rt></ruby>いられるようになった<ruby>経営戦略<rt>けいえいせんりゃく</rt></ruby>である。",
+      "zh": "“选择与集中”（或“选择性集中”）是在德鲁克经营思想影响下，于日本企业经营改革实践中逐渐得到广泛应用的一种经营战略。德鲁克主张，为了有效利用经营资源，企业必须将资源集中投入到核心业务。",
+      "audio_file": "audio/p1_s1.mp3"
+    },
+    {
+      "section": 1,
+      "sentence_index": 2,
+      "sentence_id": "p1_s2",
+      "jp_plain": "ドラッカーは、経営資源を有効に活用するにはコア事業への集中投下が必要であることを主張した。",
+      "jp_html": "ドラッカーは、<ruby>経営資源<rt>けいえいしげん</rt></ruby>を<ruby>有効<rt>ゆうこう</rt></ruby>に<ruby>活用<rt>かつよう</rt></ruby>するには<ruby>コア<rt class=\"en\">core</rt></ruby><ruby>事業<rt>じぎょう</rt></ruby>への<ruby>集中投下<rt>しゅうちゅうとうか</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>であることを<ruby>主張<rt>しゅちょう</rt></ruby>した。",
+      "zh": "“选择与集中”（或“选择性集中”）是在德鲁克经营思想影响下，于日本企业经营改革实践中逐渐得到广泛应用的一种经营战略。德鲁克主张，为了有效利用经营资源，企业必须将资源集中投入到核心业务。",
+      "audio_file": "audio/p1_s2.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 1,
+      "sentence_id": "p2_s1",
+      "jp_plain": "多くの事業を抱え込まずに、得意とする事業に資源を集中させる戦略は、比較的「安定した世界」においては、成果を出しやすい効果的な戦略だった。",
+      "jp_html": "<ruby>多<rt>おお</rt></ruby>くの<ruby>事業<rt>じぎょう</rt></ruby>を<ruby>抱<rt>かか</rt></ruby>え<ruby>込<rt>こ</rt></ruby>まずに、<ruby>得意<rt>とくい</rt></ruby>とする<ruby>事業<rt>じぎょう</rt></ruby>に<ruby>資源<rt>しげん</rt></ruby>を<ruby>集中<rt>しゅうちゅう</rt></ruby>させる<ruby>戦略<rt>せんりゃく</rt></ruby>は、<ruby>比較的<rt>ひかくてき</rt></ruby>「<ruby>安定<rt>あんてい</rt></ruby>した<ruby>世界<rt>せかい</rt></ruby>」においては、<ruby>成果<rt>せいか</rt></ruby>を<ruby>出<rt>だ</rt></ruby>しやすい<ruby>効果的<rt>こうかてき</rt></ruby>な<ruby>戦略<rt>せんりゃく</rt></ruby>だった。",
+      "zh": "将资源集中投入到优势领域，避免贪多，这种战略在相对“稳定的环境”下容易产出成果。然而，在外部环境充满不确定性、变化剧烈的时代，这种战略也伴随着较大的风险。",
+      "audio_file": "audio/p2_s1.mp3"
+    },
+    {
+      "section": 2,
+      "sentence_index": 2,
+      "sentence_id": "p2_s2",
+      "jp_plain": "しかし外部環境が不確実で変化が激しい時代においては、それなりにリスクも大きい。",
+      "jp_html": "しかし<ruby>外部環境<rt>がいぶかんきょう</rt></ruby>が<ruby>不確実<rt>ふかくじつ</rt></ruby>で<ruby>変化<rt>へんか</rt></ruby>が<ruby>激<rt>はげ</rt></ruby>しい<ruby>時代<rt>じだい</rt></ruby>においては、それなりにリスクも<ruby>大<rt>おお</rt></ruby>きい。",
+      "zh": "将资源集中投入到优势领域，避免贪多，这种战略在相对“稳定的环境”下容易产出成果。然而，在外部环境充满不确定性、变化剧烈的时代，这种战略也伴随着较大的风险。",
+      "audio_file": "audio/p2_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 1,
+      "sentence_id": "p3_s1",
+      "jp_plain": "ほとんどの企業は、既存事業がうまくいけばいくほど、その事業に資源を投下させ、成功の再現性を高めようとする。",
+      "jp_html": "ほとんどの<ruby>企業<rt>きぎょう</rt></ruby>は、<ruby>既存事業<rt>きぞんじぎょう</rt></ruby>がうまくいけばいくほど、その<ruby>事業<rt>じぎょう</rt></ruby>に<ruby>資源<rt>しげん</rt></ruby>を<ruby>投下<rt>とうか</rt></ruby>させ、<ruby>成功<rt>せいこう</rt></ruby>の<ruby>再現性<rt>さいげんせい</rt></ruby>を<ruby>高<rt>たか</rt></ruby>めようとする。",
+      "zh": "既有业务越成功，大多数企业就越倾向于继续向该业务投入资源，以提高成功模式的可复制性。在管理学中，这被称为“成功陷阱”（Success Trap）。在职业发展过程中，个人与企业一样，也无法避免“成功陷阱”。通过“选择与集中”逐渐获得的专业技能，是支撑未来生活的一技之长，无法轻易舍弃。即使明白从长期来看需要进行职业转型，人们在短期内仍容易依赖眼前的工作或自身已形成的专业优势。这种选择虽有其合理性，但如何避免陷入这样的恶性循环，也是个人职业发展中的重要课题。",
+      "audio_file": "audio/p3_s1.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 2,
+      "sentence_id": "p3_s2",
+      "jp_plain": "これを経営学では「サクセス・トラップ」と言う。",
+      "jp_html": "これを<ruby>経営学<rt>けいえいがく</rt></ruby>では「<ruby>サクセス・トラップ<rt class=\"en\">success trap</rt></ruby>」と<ruby>言<rt>い</rt></ruby>う。",
+      "zh": "既有业务越成功，大多数企业就越倾向于继续向该业务投入资源，以提高成功模式的可复制性。在管理学中，这被称为“成功陷阱”（Success Trap）。在职业发展过程中，个人与企业一样，也无法避免“成功陷阱”。通过“选择与集中”逐渐获得的专业技能，是支撑未来生活的一技之长，无法轻易舍弃。即使明白从长期来看需要进行职业转型，人们在短期内仍容易依赖眼前的工作或自身已形成的专业优势。这种选择虽有其合理性，但如何避免陷入这样的恶性循环，也是个人职业发展中的重要课题。",
+      "audio_file": "audio/p3_s2.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 3,
+      "sentence_id": "p3_s3",
+      "jp_plain": "個人のキャリア形成においても、企業と同様に「サクセス・トラップ」の問題は免れない。",
+      "jp_html": "<ruby>個人<rt>こじん</rt></ruby>の<ruby>キャリア形成<rt>キャリアけいせい</rt></ruby>においても、<ruby>企業<rt>きぎょう</rt></ruby>と<ruby>同様<rt>どうよう</rt></ruby>に「<ruby>サクセス・トラップ<rt class=\"en\">success trap</rt></ruby>」の<ruby>問題<rt>もんだい</rt></ruby>は<ruby>免<rt>まぬが</rt></ruby>れない。",
+      "zh": "既有业务越成功，大多数企业就越倾向于继续向该业务投入资源，以提高成功模式的可复制性。在管理学中，这被称为“成功陷阱”（Success Trap）。在职业发展过程中，个人与企业一样，也无法避免“成功陷阱”。通过“选择与集中”逐渐获得的专业技能，是支撑未来生活的一技之长，无法轻易舍弃。即使明白从长期来看需要进行职业转型，人们在短期内仍容易依赖眼前的工作或自身已形成的专业优势。这种选择虽有其合理性，但如何避免陷入这样的恶性循环，也是个人职业发展中的重要课题。",
+      "audio_file": "audio/p3_s3.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 4,
+      "sentence_id": "p3_s4",
+      "jp_plain": "「選択と集中」によって獲得しつつある専門技能は、明日の生活を支えてくれるそう簡単には捨てられない武器だ。",
+      "jp_html": "「<ruby>選択<rt>せんたく</rt></ruby>と<ruby>集中<rt>しゅうちゅう</rt></ruby>」によって<ruby>獲得<rt>かくとく</rt></ruby>しつつある<ruby>専門技能<rt>せんもんぎのう</rt></ruby>は、<ruby>明日<rt>あした</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>支<rt>ささ</rt></ruby>えてくれるそう<ruby>簡単<rt>かんたん</rt></ruby>には<ruby>捨<rt>す</rt></ruby>てられない<ruby>武器<rt>ぶき</rt></ruby>だ。",
+      "zh": "既有业务越成功，大多数企业就越倾向于继续向该业务投入资源，以提高成功模式的可复制性。在管理学中，这被称为“成功陷阱”（Success Trap）。在职业发展过程中，个人与企业一样，也无法避免“成功陷阱”。通过“选择与集中”逐渐获得的专业技能，是支撑未来生活的一技之长，无法轻易舍弃。即使明白从长期来看需要进行职业转型，人们在短期内仍容易依赖眼前的工作或自身已形成的专业优势。这种选择虽有其合理性，但如何避免陷入这样的恶性循环，也是个人职业发展中的重要课题。",
+      "audio_file": "audio/p3_s4.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 5,
+      "sentence_id": "p3_s5",
+      "jp_plain": "長期的にはキャリア・ピボットが必要だとわかりながらも、短期的には目の前の仕事や一つの専門性にしがみついてしまう。",
+      "jp_html": "<ruby>長期的<rt>ちょうきてき</rt></ruby>には<ruby>キャリア・ピボット<rt class=\"en\">career pivot</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>だとわかりながらも、<ruby>短期的<rt>たんきてき</rt></ruby>には<ruby>目<rt>め</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>や<ruby>一<rt>ひと</rt></ruby>つの<ruby>専門性<rt>せんもんせい</rt></ruby>にしがみついてしまう。",
+      "zh": "既有业务越成功，大多数企业就越倾向于继续向该业务投入资源，以提高成功模式的可复制性。在管理学中，这被称为“成功陷阱”（Success Trap）。在职业发展过程中，个人与企业一样，也无法避免“成功陷阱”。通过“选择与集中”逐渐获得的专业技能，是支撑未来生活的一技之长，无法轻易舍弃。即使明白从长期来看需要进行职业转型，人们在短期内仍容易依赖眼前的工作或自身已形成的专业优势。这种选择虽有其合理性，但如何避免陷入这样的恶性循环，也是个人职业发展中的重要课题。",
+      "audio_file": "audio/p3_s5.mp3"
+    },
+    {
+      "section": 3,
+      "sentence_index": 6,
+      "sentence_id": "p3_s6",
+      "jp_plain": "合理主義的なアプローチは、この悪循環に陥ることが、大きな課題になる。",
+      "jp_html": "<ruby>合理主義的<rt>ごうりしゅぎてき</rt></ruby>な<ruby>アプローチ<rt class=\"en\">approach</rt></ruby>は、この<ruby>悪循環<rt>あくじゅんかん</rt></ruby>に<ruby>陥<rt>おちい</rt></ruby>ることが、<ruby>大<rt>おお</rt></ruby>きな<ruby>課題<rt>かだい</rt></ruby>になる。",
+      "zh": "既有业务越成功，大多数企业就越倾向于继续向该业务投入资源，以提高成功模式的可复制性。在管理学中，这被称为“成功陷阱”（Success Trap）。在职业发展过程中，个人与企业一样，也无法避免“成功陷阱”。通过“选择与集中”逐渐获得的专业技能，是支撑未来生活的一技之长，无法轻易舍弃。即使明白从长期来看需要进行职业转型，人们在短期内仍容易依赖眼前的工作或自身已形成的专业优势。这种选择虽有其合理性，但如何避免陷入这样的恶性循环，也是个人职业发展中的重要课题。",
+      "audio_file": "audio/p3_s6.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 1,
+      "sentence_id": "p4_s1",
+      "jp_plain": "「日の下に新しきものなし」という言葉があるが、技術の進歩は例外である。",
+      "jp_html": "「<ruby>日<rt>ひ</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>新<rt>あたら</rt></ruby>しきものなし」という<ruby>言葉<rt>ことば</rt></ruby>があるが、<ruby>技術<rt>ぎじゅつ</rt></ruby>の<ruby>進歩<rt>しんぽ</rt></ruby>は<ruby>例外<rt>れいがい</rt></ruby>である。",
+      "zh": "太阳底下没有新鲜事，除了技术的进步。想象一个比爱因斯坦聪明10亿倍的AI，这并非发生在一个世纪后，也不是50年后，而是在21世纪30年代。",
+      "audio_file": "audio/p4_s1.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 2,
+      "sentence_id": "p4_s2",
+      "jp_plain": "アインシュタインの10億倍もの知能を持つAIを想像してみよう。",
+      "jp_html": "アインシュタインの10<ruby>億倍<rt>おくばい</rt></ruby>もの<ruby>知能<rt>ちのう</rt></ruby>を<ruby>持<rt>も</rt></ruby>つAIを<ruby>想像<rt>そうぞう</rt></ruby>してみよう。",
+      "zh": "太阳底下没有新鲜事，除了技术的进步。想象一个比爱因斯坦聪明10亿倍的AI，这并非发生在一个世纪后，也不是50年后，而是在21世纪30年代。",
+      "audio_file": "audio/p4_s2.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 3,
+      "sentence_id": "p4_s3",
+      "jp_plain": "それは100年後の話でも、50年後の話でもない。",
+      "jp_html": "それは100<ruby>年後<rt>ねんご</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>でも、50<ruby>年後<rt>ねんご</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>でもない。",
+      "zh": "太阳底下没有新鲜事，除了技术的进步。想象一个比爱因斯坦聪明10亿倍的AI，这并非发生在一个世纪后，也不是50年后，而是在21世纪30年代。",
+      "audio_file": "audio/p4_s3.mp3"
+    },
+    {
+      "section": 4,
+      "sentence_index": 4,
+      "sentence_id": "p4_s4",
+      "jp_plain": "2030年代には起こり得る未来なのだ。",
+      "jp_html": "2030<ruby>年代<rt>ねんだい</rt></ruby>には<ruby>起<rt>お</rt></ruby>こり<ruby>得<rt>う</rt></ruby>る<ruby>未来<rt>みらい</rt></ruby>なのだ。",
+      "zh": "太阳底下没有新鲜事，除了技术的进步。想象一个比爱因斯坦聪明10亿倍的AI，这并非发生在一个世纪后，也不是50年后，而是在21世纪30年代。",
+      "audio_file": "audio/p4_s4.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 1,
+      "sentence_id": "p5_s1",
+      "jp_plain": "生物の知能とは異なり、AIには明確な限界点が存在しないように見える。",
+      "jp_html": "<ruby>生物<rt>せいぶつ</rt></ruby>の<ruby>知能<rt>ちのう</rt></ruby>とは<ruby>異<rt>こと</rt></ruby>なり、AIには<ruby>明確<rt>めいかく</rt></ruby>な<ruby>限界点<rt>げんかいてん</rt></ruby>が<ruby>存在<rt>そんざい</rt></ruby>しないように<ruby>見<rt>み</rt></ruby>える。",
+      "zh": "与生物智能不同，AI似乎不会有瓶颈期。一旦AI达到人类水平的智能，它就可以继续改进自己的代码，而且没有上限。每一次改进都能让它在自我提升方面做得更好。这就是一场智能爆炸，这也解释了霍金那句著名论断的由来：“强大AI的崛起，可能是人类历史上最好的事情，也可能是最坏的事情，我们还不知道答案。”",
+      "audio_file": "audio/p5_s1.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 2,
+      "sentence_id": "p5_s2",
+      "jp_plain": "AIが一度、人間レベルの知能に到達すれば、自らのプログラムをさらに改良することができ、その能力には理論上の上限がない。",
+      "jp_html": "AIが<ruby>一度<rt>いちど</rt></ruby>、<ruby>人間<rt>にんげん</rt></ruby><ruby>レベル<rt class=\"en\">level</rt></ruby>の<ruby>知能<rt>ちのう</rt></ruby>に<ruby>到達<rt>とうたつ</rt></ruby>すれば、<ruby>自<rt>みずか</rt></ruby>らの<ruby>プログラム<rt class=\"en\">program</rt></ruby>をさらに<ruby>改良<rt>かいりょう</rt></ruby>することができ、その<ruby>能力<rt>のうりょく</rt></ruby>には<ruby>理論上<rt>りろんじょう</rt></ruby>の<ruby>上限<rt>じょうげん</rt></ruby>がない。",
+      "zh": "与生物智能不同，AI似乎不会有瓶颈期。一旦AI达到人类水平的智能，它就可以继续改进自己的代码，而且没有上限。每一次改进都能让它在自我提升方面做得更好。这就是一场智能爆炸，这也解释了霍金那句著名论断的由来：“强大AI的崛起，可能是人类历史上最好的事情，也可能是最坏的事情，我们还不知道答案。”",
+      "audio_file": "audio/p5_s2.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 3,
+      "sentence_id": "p5_s3",
+      "jp_plain": "改善を重ねるたびに、自己向上の能力そのものが高まっていく。",
+      "jp_html": "<ruby>改善<rt>かいぜん</rt></ruby>を<ruby>重<rt>かさ</rt></ruby>ねるたびに、<ruby>自己向上<rt>じここうじょう</rt></ruby>の<ruby>能力<rt>のうりょく</rt></ruby>そのものが<ruby>高<rt>たか</rt></ruby>まっていく。",
+      "zh": "与生物智能不同，AI似乎不会有瓶颈期。一旦AI达到人类水平的智能，它就可以继续改进自己的代码，而且没有上限。每一次改进都能让它在自我提升方面做得更好。这就是一场智能爆炸，这也解释了霍金那句著名论断的由来：“强大AI的崛起，可能是人类历史上最好的事情，也可能是最坏的事情，我们还不知道答案。”",
+      "audio_file": "audio/p5_s3.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 4,
+      "sentence_id": "p5_s4",
+      "jp_plain": "これは「知能爆発」と呼ばれる現象であり、ホーキングの有名な言葉が生まれた背景にもなっている。",
+      "jp_html": "これは「<ruby>知能爆発<rt>ちのうばくはつ</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>ばれる<ruby>現象<rt>げんしょう</rt></ruby>であり、ホーキングの<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>言葉<rt>ことば</rt></ruby>が<ruby>生<rt>う</rt></ruby>まれた<ruby>背景<rt>はいけい</rt></ruby>にもなっている。",
+      "zh": "与生物智能不同，AI似乎不会有瓶颈期。一旦AI达到人类水平的智能，它就可以继续改进自己的代码，而且没有上限。每一次改进都能让它在自我提升方面做得更好。这就是一场智能爆炸，这也解释了霍金那句著名论断的由来：“强大AI的崛起，可能是人类历史上最好的事情，也可能是最坏的事情，我们还不知道答案。”",
+      "audio_file": "audio/p5_s4.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 5,
+      "sentence_id": "p5_s5",
+      "jp_plain": "——「強力なAIの台頭は、人類史上最高の出来事になる可能性もあれば、最悪の出来事になる可能性もある。",
+      "jp_html": "——「<ruby>強力<rt>きょうりょく</rt></ruby>なAIの<ruby>台頭<rt>たいとう</rt></ruby>は、<ruby>人類史上<rt>じんるいしじょう</rt></ruby><ruby>最高<rt>さいこう</rt></ruby>の<ruby>出来事<rt>できごと</rt></ruby>になる<ruby>可能性<rt>かのうせい</rt></ruby>もあれば、<ruby>最悪<rt>さいあく</rt></ruby>の<ruby>出来事<rt>できごと</rt></ruby>になる<ruby>可能性<rt>かのうせい</rt></ruby>もある。",
+      "zh": "与生物智能不同，AI似乎不会有瓶颈期。一旦AI达到人类水平的智能，它就可以继续改进自己的代码，而且没有上限。每一次改进都能让它在自我提升方面做得更好。这就是一场智能爆炸，这也解释了霍金那句著名论断的由来：“强大AI的崛起，可能是人类历史上最好的事情，也可能是最坏的事情，我们还不知道答案。”",
+      "audio_file": "audio/p5_s5.mp3"
+    },
+    {
+      "section": 5,
+      "sentence_index": 6,
+      "sentence_id": "p5_s6",
+      "jp_plain": "私たちはまだその答えを知らない」。",
+      "jp_html": "<ruby>私<rt>わたし</rt></ruby>たちはまだその<ruby>答<rt>こた</rt></ruby>えを<ruby>知<rt>し</rt></ruby>らない」。",
+      "zh": "与生物智能不同，AI似乎不会有瓶颈期。一旦AI达到人类水平的智能，它就可以继续改进自己的代码，而且没有上限。每一次改进都能让它在自我提升方面做得更好。这就是一场智能爆炸，这也解释了霍金那句著名论断的由来：“强大AI的崛起，可能是人类历史上最好的事情，也可能是最坏的事情，我们还不知道答案。”",
+      "audio_file": "audio/p5_s6.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 1,
+      "sentence_id": "p6_s1",
+      "jp_plain": "もし超知能AIに地球温暖化問題の解決を依頼すれば、AIは極めて論理的な一つの解決策を提示するだろう。",
+      "jp_html": "もし<ruby>超知能<rt>ちょうちのう</rt></ruby>AIに<ruby>地球温暖化<rt>ちきゅうおんだんか</rt></ruby><ruby>問題<rt>もんだい</rt></ruby>の<ruby>解決<rt>かいけつ</rt></ruby>を<ruby>依頼<rt>いらい</rt></ruby>すれば、AIは<ruby>極<rt>きわ</rt></ruby>めて<ruby>論理的<rt>ろんりてき</rt></ruby>な<ruby>一<rt>ひと</rt></ruby>つの<ruby>解決策<rt>かいけつさく</rt></ruby>を<ruby>提示<rt>ていじ</rt></ruby>するだろう。",
+      "zh": "如果让超级智能AI去解决全球变暖问题，它可能会给出一个合乎逻辑的解决方案:消灭造成这一问题的物种。",
+      "audio_file": "audio/p6_s1.mp3"
+    },
+    {
+      "section": 6,
+      "sentence_index": 2,
+      "sentence_id": "p6_s2",
+      "jp_plain": "それは、問題の原因となった生物そのものを排除するというものだ。",
+      "jp_html": "それは、<ruby>問題<rt>もんだい</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>となった<ruby>生物<rt>せいぶつ</rt></ruby>そのものを<ruby>排除<rt>はいじょ</rt></ruby>するというものだ。",
+      "zh": "如果让超级智能AI去解决全球变暖问题，它可能会给出一个合乎逻辑的解决方案:消灭造成这一问题的物种。",
+      "audio_file": "audio/p6_s2.mp3"
+    }
+  ]
+}

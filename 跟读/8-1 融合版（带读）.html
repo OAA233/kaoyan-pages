@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>8-1 阿伊努族｜アイヌ民族と差別 知ることで備えよう（强化笔记融合版）</title>
+  <style>
+    :root{
+      --ink:#1d2a34;
+      --muted:#64727d;
+      --paper:#fffdf8;
+      --bg:#eef3f2;
+      --line:#dbe5e1;
+      --green:#0f766e;
+      --green-soft:#e6f5f1;
+      --orange:#c15b24;
+      --orange-soft:#fff0e7;
+      --blue-soft:#eaf2ff;
+      --yellow:#c08a12;
+      --yellow-soft:#fbf3dd;
+      --shadow:0 12px 35px rgba(31,56,52,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #dff4ec 0, transparent 27rem),
+        radial-gradient(circle at 100% 14%, #fff0d9 0, transparent 25rem),
+        var(--bg);
+      font-family:"Noto Serif SC","Songti SC","STSong",serif;
+      line-height:1.9;
+    }
+    .top-nav{
+      position:sticky;top:0;z-index:100;
+      display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+      padding:10px 18px;
+      background:rgba(20,91,85,.96);
+      backdrop-filter:blur(6px);
+      box-shadow:0 4px 14px rgba(20,60,55,.25);
+    }
+    .top-nav .nav-title{
+      color:#baf6e8;font:700 .8rem/1 system-ui,sans-serif;
+      letter-spacing:.14em;margin-right:6px;white-space:nowrap;
+    }
+    .top-nav a{
+      padding:5px 13px;border-radius:999px;
+      color:#fff;background:rgba(255,255,255,.14);
+      text-decoration:none;font:600 .84rem/1.2 system-ui,sans-serif;
+      white-space:nowrap;transition:background .15s;
+    }
+    .top-nav a:hover{background:#198f7c}
+    .top-nav a.to-top{background:rgba(255,255,255,.28)}
+    .wrap{max-width:1080px;margin:auto;padding:32px 24px 72px}
+    section{scroll-margin-top:64px}
+    header{
+      padding:44px 42px 36px;
+      border-radius:24px;
+      color:#fff;
+      background:linear-gradient(135deg,#145b55,#0d766b 58%,#198f7c);
+      box-shadow:var(--shadow);
+    }
+    .eyebrow{
+      margin:0 0 12px;
+      color:#baf6e8;
+      font-size:.82rem;
+      letter-spacing:.16em;
+      font-family:system-ui,sans-serif;
+      font-weight:700;
+    }
+    h1{margin:0;font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.35}
+    header p{margin:14px 0 0;color:#e2fffa;font-size:1rem}
+    nav{
+      display:flex;flex-wrap:wrap;gap:10px;
+      margin:22px 0 30px;
+    }
+    nav a{
+      padding:7px 14px;border:1px solid #cbded9;border-radius:999px;
+      color:#25514b;background:rgba(255,255,255,.74);
+      text-decoration:none;font-family:system-ui,sans-serif;font-size:.88rem;
+    }
+    nav a:hover{background:#fff}
+    section{margin-top:30px}
+    .section-title{
+      display:flex;align-items:center;gap:12px;
+      margin:0 0 15px;font-size:1.42rem;
+    }
+    .section-title span{
+      display:inline-grid;place-items:center;width:32px;height:32px;
+      border-radius:50%;color:#fff;background:var(--green);
+      font-family:system-ui,sans-serif;font-size:.9rem;
+    }
+    .translation{
+      overflow:hidden;border:1px solid var(--line);border-radius:20px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    .language{padding:26px 30px}
+    .language + .language{border-top:1px dashed #cbd8d3}
+    .label{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-bottom:12px;padding:4px 10px;border-radius:999px;
+      color:var(--green);background:var(--green-soft);
+      font:700 .78rem/1.4 system-ui,sans-serif;letter-spacing:.08em;
+    }
+    .label.zh{color:var(--orange);background:var(--orange-soft)}
+    .jp{
+      margin:0;font-size:1.13rem;letter-spacing:.025em;
+      font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+    }
+    .zh{margin:0;font-size:1.02rem}
+    ruby{ruby-position:over;ruby-align:center}
+    rt{font-size:.54em;color:var(--yellow);font-weight:700;letter-spacing:0;user-select:none}
+    rt.en{color:var(--yellow)}
+    .lvl{
+      display:inline-block;padding:1px 7px;border-radius:5px;
+      color:#8a5a10;background:var(--yellow-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+    }
+    .note{
+      margin:14px 0 0;padding:11px 14px;border-left:4px solid #8fc9b6;
+      color:#2b3330;background:var(--green-soft);border-radius:0 10px 10px 0;
+      font-size:.91rem;
+    }
+    .note rt{color:#2f7cc4}
+    .grammar-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+    .card{
+      padding:21px 22px;border:1px solid var(--line);border-radius:16px;
+      background:rgba(255,253,248,.92);box-shadow:0 7px 20px rgba(31,56,52,.06);
+    }
+    .card h3{margin:0 0 9px;font-size:1.03rem;color:#12675e}
+    .card p{margin:7px 0;font-size:.94rem}
+    .pattern{
+      display:inline-block;padding:2px 8px;border-radius:6px;
+      color:#1e4c67;background:var(--blue-soft);
+      font-family:"SFMono-Regular",Consolas,monospace;font-size:.86rem;
+    }
+    .g-num{
+      display:inline-grid;place-items:center;width:22px;height:22px;
+      border-radius:50%;background:var(--orange);color:#fff;
+      font:700 .78rem/1 system-ui,sans-serif;margin-right:7px;
+      vertical-align:1px;
+    }
+    .table-wrap{
+      overflow:auto;border:1px solid var(--line);border-radius:16px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    table{width:100%;border-collapse:collapse;min-width:820px}
+    th,td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{color:#fff;background:#27665e;font:700 .82rem/1.4 system-ui,sans-serif;letter-spacing:.04em}
+    tr:last-child td{border-bottom:0}
+    tr:nth-child(even) td{background:#fbfdfc}
+    td{font-size:.91rem}
+    .word{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:1rem}
+    .pos{
+      display:inline-block;padding:2px 7px;border-radius:5px;
+      color:#075b54;background:var(--green-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+      margin-right:4px;
+    }
+    .notes-grid{display:grid;gap:18px}
+    .note-card{
+      padding:24px 26px;border:1px solid #c9e2d8;border-radius:18px;
+      background:var(--green-soft);box-shadow:0 7px 20px rgba(20,90,70,.07);
+    }
+    .note-card h3{
+      margin:0 0 12px;font-size:1.14rem;color:#1d2a34;
+      border-bottom:2px solid #b8d8cd;padding-bottom:8px;
+    }
+    .note-card h3 .sec{color:#0f766e;font-size:.8rem;margin-right:6px}
+    .note-card h4{
+      margin:16px 0 6px;font-size:.98rem;color:#2b3a36;
+    }
+    .note-card p{margin:8px 0;font-size:.95rem;color:#2b3330}
+    .note-card ul{margin:8px 0;padding-left:22px}
+    .note-card li{margin:7px 0;font-size:.94rem;color:#2b3330}
+    .note-card li .ex{
+      font-family:"Hiragino Mincho ProN","Yu Mincho",serif;color:#14181a;
+    }
+    .note-card li .tr{display:block;color:#64727d;font-size:.9rem;margin-top:2px}
+    .note-card .key{
+      display:inline-block;padding:1px 8px;border-radius:6px;
+      background:#dff2ec;border:1px solid #8fc9b6;color:#0e5a46;
+      font:700 .86rem system-ui,sans-serif;
+    }
+    .note-card rt{color:#2f7cc4}
+    .forms-inline{
+      margin:14px 2px 0;padding:16px 20px;border-radius:16px;
+      background:#203f42;color:#effffb;
+    }
+    .forms-inline h3{margin:0 0 8px;font-size:1.02rem;color:#baf6e8}
+    .forms-inline p{margin:5px 0;color:#d5eee8;font-size:.92rem;line-height:1.7}
+    .forms-inline code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    .back-top{margin:12px 2px 0;text-align:right;font-size:.85rem}
+    .back-top a{color:var(--muted);text-decoration:none}
+    .back-top a:hover{color:var(--green)}
+    footer{margin-top:27px;color:var(--muted);font-size:.82rem;text-align:center}
+    @media(max-width:640px){
+      .wrap{padding:16px 13px 48px}
+      header{padding:30px 24px}
+      .language{padding:22px 20px}
+      .jp{font-size:1.04rem}
+      .top-nav{padding:8px 12px}
+      .top-nav .nav-title{display:none}
+    }
+
+  /* ===== 打印适配：A3 尺寸、左右留出空隙、瀑布不跨页、隐藏页眉页脚 =====
+     索引条只在第一页顶部出现（打印时取消 sticky、保留 .top-nav），
+     正文区第二个导航隐藏；每段/区块末尾的「返回顶部」链接保留。 */
+  @media print {
+    @page { size: A3; margin: 10mm 14mm; }
+    html, body { background: #ffffff !important; }
+    nav { display: none !important; }
+    .top-nav { display: flex !important; position: static !important; box-shadow: none !important; backdrop-filter: none; }
+    section { margin-bottom: 5mm; }
+    .card, .translation, .forms-inline, .note-card, .para-pair,
+    .vocab-card, .grammar-item, .language, .phrase-item,
+    .vocab-group, .analysis-block { break-inside: avoid; page-break-inside: avoid; }
+    h1, h2, h3, h4, .section-title { break-after: avoid; page-break-after: avoid; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    table { font-size: 0.9em; }
+    a { color: inherit; text-decoration: none; }
+    .forms-inline, .note-card, .card, .translation { box-shadow: none !important; }
+    .wrap { max-width: 100%; padding: 0; }
+    .jp { font-size: 0.98em; letter-spacing: 0.02em; }
+    .zh, .note { font-size: 0.95em; }
+    .language { padding: 12px 16px; }
+    .grammar-grid { gap: 8px; }
+    .table-wrap { box-shadow: none; }
+  }
+
+  /* ===== 跟读控制条（注入） ===== */
+  .player-bar{
+    position:sticky;top:56px;z-index:95;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    margin:18px 0 8px;padding:12px 16px;
+    border:1px solid var(--line);border-radius:18px;
+    background:rgba(255,253,248,.95);
+    box-shadow:0 8px 22px rgba(31,56,52,.08);
+  }
+  .pb-btn{
+    width:42px;height:42px;border:0;border-radius:50%;cursor:pointer;
+    display:inline-grid;place-items:center;
+    background:var(--green);color:#fff;font-size:1rem;
+    transition:transform .12s, background .15s;
+  }
+  .pb-btn:hover{background:#198f7c;transform:scale(1.06)}
+  .pb-btn.small{width:34px;height:34px;background:#e8f1ee;color:var(--green);font-size:.9rem}
+  .pb-btn.small:hover{background:#d6e8e3}
+  .pb-btn:disabled{opacity:.35;cursor:default;transform:none}
+  .rate-group{display:flex;gap:5px;margin-left:auto}
+  .rate-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .rate-btn.active{background:var(--green);border-color:var(--green);color:#fff}
+  .mode-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .mode-btn.active{background:var(--orange);border-color:var(--orange);color:#fff}
+  .progress{
+    flex-basis:100%;height:6px;border-radius:3px;
+    background:#e3ece8;position:relative;cursor:pointer;
+  }
+  .progress .fill{
+    position:absolute;left:0;top:0;bottom:0;border-radius:3px;
+    background:linear-gradient(90deg,#0f766e,#2ba98c);width:0%;
+  }
+  .progress .knob{
+    position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:#fff;border:2px solid var(--green);transform:translate(-50%,-50%);
+    left:0%;box-shadow:0 1px 4px rgba(0,0,0,.2);
+  }
+  .sentence-status{
+    flex-basis:100%;color:var(--muted);font:600 .78rem system-ui,sans-serif;
+  }
+  .sentence{
+    cursor:pointer;border-radius:8px;padding:3px 10px;margin:0 -10px;
+    transition:background .18s;
+    border-left:4px solid transparent;
+  }
+  .sentence:hover{background:#eaf4fc}
+  .sentence.playing{
+    background:linear-gradient(90deg, rgba(137,207,240,.60), rgba(137,207,240,.28));
+    border-left-color:#2f7cc4;
+    box-shadow:0 2px 10px rgba(47,124,196,.22);
+  }
+  .sentence .play-ic{
+    display:inline-block;margin-right:4px;color:#2f7cc4;
+    font-size:.72em;opacity:.5;font-family:system-ui,sans-serif;vertical-align:2px;
+  }
+  .sentence.playing .play-ic{opacity:1;color:#1c5f9e;transform:scale(1.1)}
+  @media(max-width:640px){
+    .player-bar{top:50px;padding:10px 12px}
+    .player-bar .rate-group{order:3;margin-left:0}
+  }
+  @media print{
+    .player-bar{display:none !important}
+    .sentence{cursor:default;padding:0;margin:0;border:0}
+    .sentence.playing{background:transparent;box-shadow:none;border:0}
+    .sentence .play-ic{display:none}
+  }
+
+</style>
+</head>
+<body>
+  <nav class="top-nav">
+    <span class="nav-title">索 引</span>
+    <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#p5">第五段</a><a href="#p6">第六段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    <a class="to-top" href="#top">▲ 顶部</a>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header>
+      <p class="eyebrow">JAPANESE × CHINESE · READING &amp; GRAMMAR NOTES</p>
+      <h1>8-1 阿伊努族<br>『アイヌ民族と差別 知ることで備えよう』</h1>
+      <p>日语汉字标注平假名读音（黄色）、片假名标注外来语（蓝色注音）；本文为朝日新聞社説，谈阿伊努民族与歧视，含瑞译强化笔记精讲。</p>
+    </header>
+
+  <div class="player-bar" id="player-bar">
+    <button class="pb-btn small" id="btn-prev" title="上一句（←）">⏮</button>
+    <button class="pb-btn" id="btn-play" title="播放/暂停（空格）">▶</button>
+    <button class="pb-btn small" id="btn-next" title="下一句（→）">⏭</button>
+    <div class="rate-group" id="rate-group">
+      <button class="rate-btn" data-rate="0.5">0.5x</button>
+      <button class="rate-btn" data-rate="0.75">0.75x</button>
+      <button class="rate-btn active" data-rate="1">1x</button>
+      <button class="rate-btn" data-rate="1.25">1.25x</button>
+      <button class="rate-btn" data-rate="1.5">1.5x</button>
+    </div>
+    <button class="mode-btn" id="btn-mode" title="循环模式">循环: 关</button>
+    <div class="progress" id="progress"><div class="fill" id="progress-fill"></div><div class="knob" id="progress-knob"></div></div>
+    <div class="sentence-status" id="sentence-status">点击下方任意日文句子开始跟读</div>
+  </div>
+
+
+    <nav>
+      <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#p5">第五段</a><a href="#p6">第六段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    </nav>
+
+    <section id="p1"><h2 class="section-title">第一段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="0" data-audio="p1_s1.mp3"><span class="play-ic">▶</span><ruby>負<rt>ふ</rt></ruby>の<ruby>部分<rt>ぶぶん</rt></ruby>に<ruby>目<rt>め</rt></ruby>をそむけた<ruby>歴史観<rt>れきしかん</rt></ruby>は、<ruby>過去<rt>かこ</rt></ruby>に「<ruby>奪<rt>うば</rt></ruby>われた」<ruby>人々<rt>ひとびと</rt></ruby>への<ruby>新<rt>あら</rt></ruby>たな<ruby>差別<rt>さべつ</rt></ruby>や<ruby>ヘイト<rt class="en">hate</rt></ruby>の<ruby>土壌<rt>どじょう</rt></ruby>となる。</span><span class="sentence" data-idx="1" data-audio="p1_s2.mp3"><span class="play-ic">▶</span><ruby>拡散<rt>かくさん</rt></ruby>に<ruby>加担<rt>かたん</rt></ruby>せぬよう、<ruby>知<rt>し</rt></ruby>ることで<ruby>備<rt>そな</rt></ruby>えたい。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">对历史的灰暗部分视而不见，这样的历史观会成为滋生新的歧视和仇恨的土壤，让过去曾遭受掠夺的人们再次受到伤害。为了不让谣言肆意扩散，我们需要通过了解相关历史来有所防范。</p><p class="note">①「<ruby>目<rt>め</rt></ruby>をそむける」＝别过脸去、回避正视；「<ruby>目<rt>め</rt></ruby>を<ruby>向<rt>む</rt></ruby>ける／<ruby>目<rt>め</rt></ruby>を<ruby>光<rt>ひ</rt></ruby>らせる／<ruby>目<rt>め</rt></ruby>を{つぶ}る」等惯用句详见文末强化笔记；②「<ruby>加担<rt>かたん</rt></ruby>」多带贬义，指参与、协助坏事。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>そむけた ＝<ruby>目<rt>め</rt></ruby>をそむく（v1 他）た形（连体）：回避、不看。</p><p>奪われた ＝<ruby>奪<rt>うば</rt></ruby>う（v1 他）被动态连体形：被掠夺。</p><p>加担せぬ ＝<ruby>加担<rt>かたん</rt></ruby>する（n / v3 他）文语否定连体（せぬ＝しない）：不协助。</p><p>備えたい ＝<ruby>備<rt>そな</rt></ruby>える（v2 自他）たい形：想要防备。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p2"><h2 class="section-title">第二段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="2" data-audio="p2_s1.mp3"><span class="play-ic">▶</span><ruby>アイヌ<rt class="en">Ainu</rt></ruby><ruby>民族<rt>みんぞく</rt></ruby>は<ruby>主<rt>おも</rt></ruby>に<ruby>北海道<rt>ほっかいどう</rt></ruby>の<ruby>先住民族<rt>せんぞうみんぞく</rt></ruby>で<ruby>独自<rt>どくじ</rt></ruby>の<ruby>言語<rt>げんご</rt></ruby>や<ruby>文化<rt>ぶんか</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ。</span><span class="sentence" data-idx="3" data-audio="p2_s2.mp3"><span class="play-ic">▶</span><ruby>狩猟<rt>しゅりょう</rt></ruby>・<ruby>漁労<rt>ぎょろう</rt></ruby>や<ruby>交易<rt>こうえき</rt></ruby>で<ruby>栄<rt>さか</rt></ruby>えたが、<ruby>江戸期<rt>えどき</rt></ruby>に<ruby>和人<rt>わじん</rt></ruby>（<ruby>本州<rt>ほんしゅう</rt></ruby><ruby>系<rt>けい</rt></ruby>の<ruby>日本人<rt>にほんじん</rt></ruby>）の<ruby>経済社会<rt>けいざいしゃかい</rt></ruby>に<ruby>取<rt>と</rt></ruby>り<ruby>込<rt>こ</rt></ruby>まれ、<ruby>明治政府<rt>めいじせいふ</rt></ruby>が<ruby>進<rt>すす</rt></ruby>めた<ruby>開拓<rt>かいたく</rt></ruby>で<ruby>土地<rt>とち</rt></ruby>を<ruby>追<rt>お</rt></ruby>われ、<ruby>生業<rt>なりわい</rt></ruby>や<ruby>文化<rt>ぶんか</rt></ruby>の<ruby>禁止<rt>きんし</rt></ruby>で<ruby>困窮<rt>こんきゅう</rt></ruby>した。</span><span class="sentence" data-idx="4" data-audio="p2_s3.mp3"><span class="play-ic">▶</span><ruby>和人<rt>わじん</rt></ruby>への<ruby>同化<rt>どうか</rt></ruby>を<ruby>促<rt>うなが</rt></ruby>した<ruby>一八九九年<rt>1899ねん</rt></ruby><ruby>制定<rt>せいてい</rt></ruby>の<ruby>北海道旧土人保護法<rt>ほっかいどうきゅうどじんほごほう</rt></ruby>の<ruby>廃止<rt>はいし</rt></ruby>は1997年。</span><span class="sentence" data-idx="5" data-audio="p2_s4.mp3"><span class="play-ic">▶</span>2007年に<ruby>国連<rt>こくれん</rt></ruby>で「<ruby>先住民族<rt>せんぞうみんぞく</rt></ruby>の<ruby>権利<rt>けんり</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>宣言<rt>せんげん</rt></ruby>」が<ruby>日本<rt>にほん</rt></ruby>も<ruby>賛成<rt>さんせい</rt></ruby>し<ruby>採択<rt>さいたく</rt></ruby>されると、<ruby>翌年<rt>よくねん</rt></ruby><ruby>国会<rt>こっかい</rt></ruby>は「<ruby>アイヌ<rt class="en">Ainu</rt></ruby><ruby>民族<rt>みんぞく</rt></ruby>を<ruby>先住民族<rt>せんぞうみんぞく</rt></ruby>とすることを<ruby>求<rt>もと</rt></ruby>める<ruby>決議<rt>けつぎ</rt></ruby>」を<ruby>採択<rt>さいたく</rt></ruby>。</span><span class="sentence" data-idx="6" data-audio="p2_s5.mp3"><span class="play-ic">▶</span>2019年の<ruby>アイヌ施策推進法<rt>アイヌしさくすいしんほう</rt></ruby>に<ruby>先住民族<rt>せんぞうみんぞく</rt></ruby>と<ruby>明記<rt>めいき</rt></ruby>された。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">阿伊努族是主要生活在北海道的原住民族，拥有独特的语言和文化。他们曾以狩猎、捕鱼和贸易为生，并一度繁荣。然而到了江户时期，阿伊努人逐渐被纳入和人（即来自本州等地的日本人）的经济社会体系。此后，在明治政府推进北海道开拓的过程中，他们又失去土地，谋生手段和文化活动受到限制，生活日益困窘。1899年，日本制定《北海道旧土人保护法》，推动阿伊努人同化于和人社会。1997年，该法律被废止。2007年，联合国通过《原住民权利宣言》，日本投了赞成票。次年，日本国会通过《要求将阿伊努民族认定为原住民族的决议》。2019年的《阿伊努民族支援法》明确规定阿伊努族属于原住民族。</p><p class="note">「<ruby>漁労<rt>ぎょろう</rt></ruby>」＝捕鱼、渔业采集；传统生计词汇（<ruby>狩猟<rt>しゅりょう</rt></ruby>・<ruby>採集<rt>さいしゅう</rt></ruby>／<ruby>潮干狩<rt>しおひが</rt></ruby>り／<ruby>農耕<rt>のうこう</rt></ruby>／<ruby>焼畑<rt>やきはた</rt></ruby>）详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>持つ ＝<ruby>持<rt>も</rt></ruby>つ（v1 他）基本形（连体）：拥有。</p><p>栄えた ＝<ruby>栄<rt>さか</rt></ruby>える（v1 自）过去形：繁荣。</p><p>取り込まれ ＝<ruby>取<rt>と</rt></ruby>り<ruby>込<rt>こ</rt></ruby>む（v1 他）被动态连用形：被纳入。</p><p>追われ ＝<ruby>追<rt>お</rt></ruby>う（v1 他）被动态连用形：被夺走（土地）。</p><p>困窮した ＝<ruby>困窮<rt>こんきゅう</rt></ruby>する（n / v3 自）过去形：陷入贫困。</p><p>促した ＝<ruby>促<rt>うなが</rt></ruby>す（v1 他）た形（连体）：促使。</p><p>明記された ＝<ruby>明記<rt>めいき</rt></ruby>する（n / v3 他）被动态过去形：被明确记载。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p3"><h2 class="section-title">第三段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="7" data-audio="p3_s1.mp3"><span class="play-ic">▶</span>しかし、<ruby>先住民族<rt>せんぞうみんぞく</rt></ruby>である{こと}の<ruby>否定<rt>ふいてい</rt></ruby>や、<ruby>同化<rt>どうか</rt></ruby>により<ruby>現在<rt>げんざい</rt></ruby>は<ruby>アイヌ<rt class="en">Ainu</rt></ruby><ruby>民族<rt>みんぞく</rt></ruby>は<ruby>存在<rt>そんざい</rt></ruby>しないとする<ruby>言説<rt>げんせつ</rt></ruby>は、<ruby>今<rt>いま</rt></ruby>もある。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">然而，时至今日仍有人否认阿伊努族的原住民族身份，甚至有人声称由于同化，阿伊努族如今早已"不存在"……</p><p class="note">「<ruby>言説<rt>げんせつ</rt></ruby>」＝言论、话语，常见搭配「<ruby>言説<rt>げんせつ</rt></ruby><ruby>空間<rt>くうかん</rt></ruby>」（话语空间），详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>ある ＝<ruby>存<rt>そん</rt></ruby><ruby>在<rt>ざい</rt></ruby>する 否定连体（存在しない）：不存在。</p><p>とする ＝「…」とする：引用某种说法并加以展开。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p4"><h2 class="section-title">第四段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="8" data-audio="p4_s1.mp3"><span class="play-ic">▶</span><ruby>三<rt>みっ</rt></ruby>つの<ruby>学会<rt>がっかい</rt></ruby>などの<ruby>会長<rt>かいちょう</rt></ruby>が2025年末、<ruby>研究<rt>けんきゅう</rt></ruby><ruby>成果<rt>せいか</rt></ruby>を<ruby>誤解<rt>ごかい</rt></ruby>・<ruby>曲解<rt>きゃっかい</rt></ruby>し<ruby>先住民族<rt>せんぞうみんぞく</rt></ruby>で{ない}と<ruby>学術<rt>がくじゅつ</rt></ruby>的<ruby>根拠<rt>こんきょ</rt></ruby>があるかのように<ruby>主張<rt>しゅちょう</rt></ruby>する「<ruby>アイヌ<rt class="en">Ainu</rt></ruby><ruby>ヘイト<rt class="en">hate</rt></ruby>」は<ruby>看過<rt>かんか</rt></ruby>できないと<ruby>声明<rt>せいめい</rt></ruby>を<ruby>発表<rt>はっぴょう</rt></ruby>。</span><span class="sentence" data-idx="9" data-audio="p4_s2.mp3"><span class="play-ic">▶</span>だが<ruby>今春<rt>こんしゅん</rt></ruby>も<ruby>日本保守党<rt>にほんほしゅとう</rt></ruby>の<ruby>定例会見<rt>ていれいかいけん</rt></ruby>で<ruby>同種<rt>どうしゅ</rt></ruby>の<ruby>主張<rt>しゅちょう</rt></ruby>がなされた。</span><span class="sentence" data-idx="10" data-audio="p4_s3.mp3"><span class="play-ic">▶</span><ruby>中略<rt>ちゅうりゃく</rt></ruby><ruby>根本<rt>こんぽん</rt></ruby>には、<ruby>政府<rt>せいふ</rt></ruby>じ<ruby>身<rt>しん</rt></ruby>が<ruby>アイヌ<rt class="en">Ainu</rt></ruby><ruby>民族<rt>みんぞく</rt></ruby>への<ruby>謝罪<rt>しゃざい</rt></ruby>をしておらず<ruby>負<rt>ふ</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>に<ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>っていない<ruby>問題<rt>もんだい</rt></ruby>がある。</span><span class="sentence" data-idx="11" data-audio="p4_s4.mp3"><span class="play-ic">▶</span><ruby>先住民族<rt>せんぞうみんぞく</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して、<ruby>例<rt>たと</rt></ruby>えば<ruby>ニュージーランド<rt class="en">New Zealand</rt></ruby>は<ruby>土地<rt>とち</rt></ruby>の<ruby>没収<rt>ぼっしゅう</rt></ruby>を<ruby>謝罪<rt>しゃざい</rt></ruby>。</span><span class="sentence" data-idx="12" data-audio="p4_s5.mp3"><span class="play-ic">▶</span><ruby>カナダ<rt class="en">Canada</rt></ruby>では<ruby>元来<rt>がんらい</rt></ruby><ruby>持<rt>も</rt></ruby>つとされた<ruby>漁業権<rt>ぎょぎょうけん</rt></ruby>の<ruby>一<rt>いち</rt></ruby>部<ruby>分<rt>ぶん</rt></ruby>が<ruby>認<rt>みと</rt></ruby>められた。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">2025年底，三个学会团体的会长表态指出，有人误解、曲解研究成果，煞有其事地声称有研究表明阿伊努族并非原住民族。对于这种"针对阿伊努族的仇恨言论"，不能置之不理。然而今年春天，日本保守党的例行记者会上出现了同类主张。（中略）根本问题在于，日本政府至今尚未就该问题作出道歉，也没有真正直面这段黑暗历史。放眼国际，在对待原住民族问题上，新西兰就没收土地一事道歉；加拿大则承认了原住民族原本的部分捕鱼权。</p><p class="note">①「<ruby>看過<rt>かんか</rt></ruby>できない」＝不能置之不理、无法容忍；②「<ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>う」＝正视、面对面（两个义项详见文末强化笔记）。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>できない ＝<ruby>出<rt>で</rt></ruby>きる（v2 他）否定形：不能、无法。</p><p>発表 ＝<ruby>発表<rt>はっぴょう</rt></ruby>する（n / v3 他）连用形（中止法）：发表。</p><p>なされた ＝<ruby>行<rt>おこな</rt></ruby>う（v1 他）被动态过去形：被做出（主张）。</p><p>していない ＝<ruby>負<rt>ふ</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>に向き合う（v1 他）て＋いる 否定：没有直面。</p><p>認められた ＝<ruby>認<rt>みと</rt></ruby>める（v2 他）被动态过去形：被承认。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p5"><h2 class="section-title">第五段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="13" data-audio="p5_s1.mp3"><span class="play-ic">▶</span><ruby>アイヌ<rt class="en">Ainu</rt></ruby><ruby>民族<rt>みんぞく</rt></ruby>の<ruby>遺骨<rt>いこつ</rt></ruby><ruby>収集<rt>しゅうしゅう</rt></ruby>での<ruby>非倫理性<rt>ひりんせいのう</rt></ruby>や<ruby>偏見<rt>へんけん</rt></ruby>に<ruby>基<rt>もと</rt></ruby>づく<ruby>研究姿勢<rt>けんきゅうしせい</rt></ruby>が<ruby>批判<rt>ひはん</rt></ruby>されて<ruby>来<rt>き</rt></ruby>た<ruby>学術界<rt>がくじゅつかい</rt></ruby>からは<ruby>近年<rt>きんねん</rt></ruby>、<ruby>謝罪<rt>しゃざい</rt></ruby>が<ruby>相次<rt>あいつ</rt></ruby>ぎ、<ruby>北海道大<rt>ほっかいどうだい</rt></ruby>も7<ruby>月<rt>がつ</rt></ruby>に<ruby>謝罪<rt>しゃざい</rt></ruby>した。</span><span class="sentence" data-idx="14" data-audio="p5_s2.mp3"><span class="play-ic">▶</span><ruby>遺骨<rt>いこつ</rt></ruby><ruby>収集<rt>しゅうしゅう</rt></ruby>の<ruby>真相<rt>しんそう</rt></ruby>を<ruby>究明<rt>きゅうめい</rt></ruby>する<ruby>委員会<rt>いいんかい</rt></ruby>を<ruby>設<rt>もう</rt></ruby>ける<ruby>構想<rt>こうそう</rt></ruby>もある。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">因收集阿伊努人遗骨时存在伦理问题，以及部分研究带有偏见，学界曾遭到大量批评。近年来，学术界陆续就此问题作出道歉，北海道大学也在 7 月发表了道歉声明。目前，还有设立委员会查明遗骨收集真相的构想。</p><p class="note">「<ruby>究明<rt>きゅうめい</rt></ruby>」＝查明、查清（真相・责任等），与「<ruby>追及<rt>ついきゅう</rt></ruby>」的区别详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>基づく ＝<ruby>基<rt>もと</rt></ruby>づく（v1 自）连体修饰：基于、带有。</p><p>批判されてきた ＝<ruby>批判<rt>ひはん</rt></ruby>する（n / v3 他）被动态＋てくる：一直以来遭到批评。</p><p>相次ぎ ＝<ruby>相<rt>あ</rt></ruby>い<ruby>次<rt>つ</rt></ruby>ぐ（v1 自）连用形（中止法）：接连发生。</p><p>究明する ＝<ruby>究明<rt>きゅうめい</rt></ruby>する（n / v3 他）连体修饰：查明。</p><p>設ける ＝<ruby>設<rt>もう</rt></ruby>ける（v2 他）连体修饰：设立。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p6"><h2 class="section-title">第六段</h2><article class="translation"><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="15" data-audio="p6_s1.mp3"><span class="play-ic">▶</span><ruby>アイヌ<rt class="en">Ainu</rt></ruby><ruby>民族<rt>みんぞく</rt></ruby>が<ruby>培<rt>つちか</rt></ruby>った<ruby>歴史<rt>れきし</rt></ruby>と<ruby>独自<rt>どくじ</rt></ruby>の<ruby>文化<rt>ぶんか</rt></ruby>がある{こと}は<ruby>日本<rt>にほん</rt></ruby>の<ruby>豊<rt>ゆた</rt></ruby>かさだ。</span><span class="sentence" data-idx="16" data-audio="p6_s2.mp3"><span class="play-ic">▶</span>それを<ruby>心<rt>こころ</rt></ruby>から<ruby>喜<rt>よろこ</rt></ruby>べるためにも、<ruby>負<rt>ふ</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>に<ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>わなければならない。</span>
+</p></p></div><div class="language"><div class="label zh">中文</div><p class="zh">阿伊努民族所拥有的历史底蕴与独特文化，本就是日本社会的一笔宝贵财富。为了能由衷地为此感到欣喜，我们必须正视那段负面的历史。</p><p class="note">「<ruby>培<rt>つちか</rt></ruby>う／<ruby>育<rt>はぐ</rt></ruby>む／<ruby>養<rt>やな</rt></ruby>う」三个"培育"类动词辨析见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>培った ＝<ruby>培<rt>つちか</rt></ruby>う（v1 他）た形（连体）：培育、积淀。</p><p>喜べる ＝<ruby>喜<rt>よろこ</rt></ruby>ぶ（v1 自）可能形：能够欣喜。</p><p>向き合わなければならない ＝<ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>う（v1 他）未然形＋なければならない：必须正视。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="grammar"><h2 class="section-title"><span>文</span>本文语法</h2><div class="grammar-grid"><article class="card"><h3><span class="g-num">1</span>〜ぬよう <span class="lvl">N1</span></h3><p><span class="pattern"><ruby>拡散<rt>かくさん</rt></ruby>に<ruby>加担<rt>かたん</rt></ruby>せぬよう、<ruby>知<rt>し</rt></ruby>ることで<ruby>備<rt>そな</rt></ruby>えたい。</span></p><p>为了不……。文语否定连体「〜ぬ」＋「ように」，表目的、警戒。</p></article><article class="card"><h3><span class="g-num">2</span>〜ことで <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>知<rt>し</rt></ruby>ることで<ruby>備<rt>そな</rt></ruby>えたい。</span></p><p>通过……（手段、方式）。「で」表手段。</p></article><article class="card"><h3><span class="g-num">3</span>〜に取り込む <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>江戸期<rt>えどき</rt></ruby>に<ruby>和人<rt>わじん</rt></ruby>の<ruby>経済社会<rt>けいざいしゃかい</rt></ruby>に<ruby>取<rt>と</rt></ruby>り<ruby>込<rt>こ</rt></ruby>まれ。</span></p><p>被纳入、吸收进……。被动态多用于历史上被吞并、融入的语境。</p></article><article class="card"><h3><span class="g-num">4</span>〜とする（说法） <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>同化<rt>どうか</rt></ruby>により<ruby>現在<rt>げんざい</rt></ruby>は<ruby>アイヌ<rt class="en">Ainu</rt></ruby><ruby>民族<rt>みんぞく</rt></ruby>は<ruby>存在<rt>そんざい</rt></ruby>しないとする<ruby>言説<rt>げんせつ</rt></ruby>。</span></p><p>持……的说法、声称……。「〜という主張をする」的书面表达。</p></article><article class="card"><h3><span class="g-num">5</span>〜かのように <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>学術<rt>がくじゅつ</rt></ruby>的<ruby>根拠<rt>こんきょ</rt></ruby>があるかのように<ruby>主張<rt>しゅちょう</rt></ruby>する。</span></p><p>仿佛……一样（暗示其实并非如此），含批判语气。</p></article><article class="card"><h3><span class="g-num">6</span>〜に対して <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>先住民族<rt>せんぞうみんぞく</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して、<ruby>例<rt>たと</rt></ruby>えば<ruby>ニュージーランド<rt class="en">New Zealand</rt></ruby>は<ruby>土地<rt>とち</rt></ruby>の<ruby>没収<rt>ぼっしゅう</rt></ruby>を<ruby>謝罪<rt>しゃざい</rt></ruby>。</span></p><p>对于……、面对……。提示动作、态度的对象。</p></article><article class="card"><h3><span class="g-num">7</span>〜に基づいて <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>偏見<rt>へんけん</rt></ruby>に<ruby>基<rt>もと</rt></ruby>づく<ruby>研究姿勢<rt>けんきゅうしせい</rt></ruby>が<ruby>批判<rt>ひはん</rt></ruby>されて<ruby>来<rt>き</rt></ruby>た。</span></p><p>基于、带有……。多接偏见、依据等，可褒可贬。</p></article><article class="card"><h3><span class="g-num">8</span>〜てくる <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>批判<rt>ひはん</rt></ruby>されて<ruby>来<rt>き</rt></ruby>た<ruby>学術界<rt>がくじゅつかい</rt></ruby>。</span></p><p>（从过去）一直……至今。表示时间、状态的延续。</p></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="vocab"><h2 class="section-title"><span>词</span>词汇、短语与读音</h2><div class="table-wrap"><table><thead><tr><th>单词／短语</th><th>读音</th><th>词性</th><th>级别</th><th>中文释义</th><th>短语（原型）</th></tr></thead><tbody><tr><td class="word"><ruby>アイヌ<rt class="en">Ainu</rt></ruby></td><td>Ainu</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>阿伊努（族）</td><td><ruby>アイヌ<rt class="en">Ainu</rt></ruby><ruby>民族<rt>みんぞく</rt></ruby></td></tr><tr><td class="word"><ruby>ヘイト<rt class="en">hate</rt></ruby></td><td>hate</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>仇恨、仇恨言论</td><td><ruby>アイヌ<rt class="en">Ainu</rt></ruby><ruby>ヘイト<rt class="en">hate</rt></ruby></td></tr><tr><td class="word"><ruby>歴史観<rt>れきしかん</rt></ruby></td><td>れきしかん</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>历史观</td><td><ruby>負<rt>ふ</rt></ruby>の<ruby>部分<rt>ぶぶん</rt></ruby>に<ruby>目<rt>め</rt></ruby>をそむけた<ruby>歴史観<rt>れきしかん</rt></ruby></td></tr><tr><td class="word"><ruby>土壌<rt>どじょう</rt></ruby></td><td>どじょう</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>土壤；（比喻）滋生的温床</td><td><ruby>差別<rt>さべつ</rt></ruby>の<ruby>土壌<rt>どじょう</rt></ruby>となる</td></tr><tr><td class="word"><ruby>加担<rt>かたん</rt></ruby></td><td>かたん</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>协助、帮凶（贬义）</td><td><ruby>拡散<rt>かくさん</rt></ruby>に<ruby>加担<rt>かたん</rt></ruby>せぬ</td></tr><tr><td class="word"><ruby>備<rt>そな</rt></ruby>える</td><td>そなえる</td><td><span class="pos">v2 自他</span></td><td><span class="lvl">N2</span></td><td>防备、预备</td><td><ruby>知<rt>し</rt></ruby>ることで<ruby>備<rt>そな</rt></ruby>える</td></tr><tr><td class="word"><ruby>先住民族<rt>せんぞうみんぞく</rt></ruby></td><td>せんぞうみんぞく</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>原住民族</td><td><ruby>北海道<rt>ほっかいどう</rt></ruby>の<ruby>先住民族<rt>せんぞうみんぞく</rt></ruby></td></tr><tr><td class="word"><ruby>和人<rt>わじん</rt></ruby></td><td>わじん</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>和人（北海道人对本州人的称呼）</td><td><ruby>和人<rt>わじん</rt></ruby>への<ruby>同化<rt>どうか</rt></ruby></td></tr><tr><td class="word"><ruby>漁労<rt>ぎょろう</rt></ruby></td><td>ぎょろう</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>捕鱼、渔业</td><td><ruby>狩猟<rt>しゅりょう</rt></ruby>・<ruby>漁労<rt>ぎょろう</rt></ruby>や<ruby>交易<rt>こうえき</rt></ruby></td></tr><tr><td class="word"><ruby>交易<rt>こうえき</rt></ruby></td><td>こうえき</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N2</span></td><td>贸易、交易</td><td><ruby>交易<rt>こうえき</rt></ruby>で<ruby>栄<rt>さか</rt></ruby>える</td></tr><tr><td class="word"><ruby>栄<rt>さか</rt></ruby>える</td><td>さかえる</td><td><span class="pos">v1 自</span></td><td><span class="lvl">N2</span></td><td>繁荣、兴盛</td><td><ruby>交易<rt>こうえき</rt></ruby>で<ruby>栄<rt>さか</rt></ruby>える</td></tr><tr><td class="word"><ruby>開拓<rt>かいたく</rt></ruby></td><td>かいたく</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>开拓</td><td><ruby>明治政府<rt>めいじせいふ</rt></ruby>の<ruby>開拓<rt>かいたく</rt></ruby></td></tr><tr><td class="word"><ruby>生業<rt>なりわい</rt></ruby></td><td>なりわい</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>生计、营生</td><td><ruby>生業<rt>なりわい</rt></ruby>や<ruby>文化<rt>ぶんか</rt></ruby>の<ruby>禁止<rt>きんし</rt></ruby></td></tr><tr><td class="word"><ruby>禁止<rt>きんし</rt></ruby></td><td>きんし</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>禁止</td><td><ruby>文化<rt>ぶんか</rt></ruby>の<ruby>禁止<rt>きんし</rt></ruby></td></tr><tr><td class="word"><ruby>困窮<rt>こんきゅう</rt></ruby></td><td>こんきゅう</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N1</span></td><td>贫困、穷困</td><td><ruby>困窮<rt>こんきゅう</rt></ruby>した</td></tr><tr><td class="word"><ruby>同化<rt>どうか</rt></ruby></td><td>どうか</td><td><span class="pos">n</span><span class="pos">v3 自他</span></td><td><span class="lvl">N2</span></td><td>同化</td><td><ruby>和人<rt>わじん</rt></ruby>への<ruby>同化<rt>どうか</rt></ruby></td></tr><tr><td class="word"><ruby>促<rt>うなが</rt></ruby>す</td><td>うながす</td><td><span class="pos">v1 他</span></td><td><span class="lvl">N1</span></td><td>促使、敦促</td><td><ruby>同化<rt>どうか</rt></ruby>を<ruby>促<rt>うなが</rt></ruby>す</td></tr><tr><td class="word"><ruby>廃止<rt>はいし</rt></ruby></td><td>はいし</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>废止</td><td><ruby>保護法<rt>ほごほう</rt></ruby>の<ruby>廃止<rt>はいし</rt></ruby></td></tr><tr><td class="word"><ruby>権利<rt>けんり</rt></ruby></td><td>けんり</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>权利</td><td><ruby>先住民族<rt>せんぞうみんぞく</rt></ruby>の<ruby>権利<rt>けんり</rt></ruby></td></tr><tr><td class="word"><ruby>採択<rt>さいたく</rt></ruby></td><td>さいたく</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>采纳、通过（决议）</td><td><ruby>宣言<rt>せんげん</rt></ruby>を<ruby>採択<rt>さいたく</rt></ruby>する</td></tr><tr><td class="word"><ruby>決議<rt>けつぎ</rt></ruby></td><td>けつぎ</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>决议</td><td><ruby>先住民族<rt>せんぞうみんぞく</rt></ruby>とする<ruby>決議<rt>けつぎ</rt></ruby></td></tr><tr><td class="word"><ruby>明記<rt>めいき</rt></ruby></td><td>めいき</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>明确记载</td><td><ruby>先住民族<rt>せんぞうみんぞく</rt></ruby>と<ruby>明記<rt>めいき</rt></ruby>する</td></tr><tr><td class="word"><ruby>否定<rt>ふいてい</rt></ruby></td><td>ふいてい</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>否定</td><td><ruby>先住民族<rt>せんぞうみんぞく</rt></ruby>である{こと}の<ruby>否定<rt>ふいてい</rt></ruby></td></tr><tr><td class="word"><ruby>言説<rt>げんせつ</rt></ruby></td><td>げんせつ</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>言论、话语</td><td><ruby>極端<rt>きょくたん</rt></ruby>な<ruby>言説<rt>げんせつ</rt></ruby></td></tr><tr><td class="word"><ruby>学会<rt>がっかい</rt></ruby></td><td>がっかい</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>学术团体、学会</td><td><ruby>三<rt>みっ</rt></ruby>つの<ruby>学会<rt>がっかい</rt></ruby></td></tr><tr><td class="word"><ruby>誤解<rt>ごかい</rt></ruby></td><td>ごかい</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>误解</td><td><ruby>研究<rt>けんきゅう</rt></ruby><ruby>成果<rt>せいか</rt></ruby>を<ruby>誤解<rt>ごかい</rt></ruby>する</td></tr><tr><td class="word"><ruby>曲解<rt>きゃっかい</rt></ruby></td><td>きゃっかい</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>曲解</td><td><ruby>成果<rt>せいか</rt></ruby>を<ruby>曲解<rt>きゃっかい</rt></ruby>する</td></tr><tr><td class="word"><ruby>根拠<rt>こんきょ</rt></ruby></td><td>こんきょ</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>依据、根据</td><td><ruby>学術<rt>がくじゅつ</rt></ruby>的<ruby>根拠<rt>こんきょ</rt></ruby></td></tr><tr><td class="word"><ruby>看過<rt>かんか</rt></ruby></td><td>かんか</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>忽视、视而不见</td><td><ruby>看過<rt>かんか</rt></ruby>できない</td></tr><tr><td class="word"><ruby>声明<rt>せいめい</rt></ruby></td><td>せいめい</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>声明</td><td><ruby>声明<rt>せいめい</rt></ruby>を<ruby>発表<rt>はっぴょう</rt></ruby>する</td></tr><tr><td class="word"><ruby>定例会見<rt>ていれいかいけん</rt></ruby></td><td>ていれいかいけん</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>例行记者会</td><td><ruby>日本保守党<rt>にほんほしゅとう</rt></ruby>の<ruby>定例会見<rt>ていれいかいけん</rt></ruby></td></tr><tr><td class="word"><ruby>謝罪<rt>しゃざい</rt></ruby></td><td>しゃざい</td><td><span class="pos">n</span><span class="pos">v3 自他</span></td><td><span class="lvl">N2</span></td><td>道歉</td><td><ruby>政府<rt>せいふ</rt></ruby>の<ruby>謝罪<rt>しゃざい</rt></ruby></td></tr><tr><td class="word"><ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>う</td><td>むきあう</td><td><span class="pos">v1 他</span></td><td><span class="lvl">N2</span></td><td>面对面；正视、直面</td><td><ruby>負<rt>ふ</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>に<ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>う</td></tr><tr><td class="word"><ruby>没収<rt>ぼっしゅう</rt></ruby></td><td>ぼっしゅう</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>没收</td><td><ruby>土地<rt>とち</rt></ruby>の<ruby>没収<rt>ぼっしゅう</rt></ruby></td></tr><tr><td class="word"><ruby>元来<rt>がんらい</rt></ruby></td><td>がんらい</td><td><span class="pos">adv</span></td><td><span class="lvl">N1</span></td><td>原来、本来</td><td><ruby>元来<rt>がんらい</rt></ruby><ruby>持<rt>も</rt></ruby>つとされた</td></tr><tr><td class="word"><ruby>漁業権<rt>ぎょぎょうけん</rt></ruby></td><td>ぎょぎょうけん</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>渔业权、捕鱼权</td><td><ruby>漁業権<rt>ぎょぎょうけん</rt></ruby>が<ruby>認<rt>みと</rt></ruby>められる</td></tr><tr><td class="word"><ruby>遺骨<rt>いこつ</rt></ruby></td><td>いこつ</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>遗骨</td><td><ruby>遺骨<rt>いこつ</rt></ruby><ruby>収集<rt>しゅうしゅう</rt></ruby></td></tr><tr><td class="word"><ruby>非倫理性<rt>ひりんせいのう</rt></ruby></td><td>ひりんせいのう</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>非伦理性</td><td><ruby>非倫理性<rt>ひりんせいのう</rt></ruby>や<ruby>偏見<rt>へんけん</rt></ruby></td></tr><tr><td class="word"><ruby>偏見<rt>へんけん</rt></ruby></td><td>へんけん</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>偏见</td><td><ruby>偏見<rt>へんけん</rt></ruby>に<ruby>基<rt>もと</rt></ruby>づく</td></tr><tr><td class="word"><ruby>研究姿勢<rt>けんきゅうしせい</rt></ruby></td><td>けんきゅうしせい</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>研究态度</td><td><ruby>偏見<rt>へんけん</rt></ruby>に<ruby>基<rt>もと</rt></ruby>づく<ruby>研究姿勢<rt>けんきゅうしせい</rt></ruby></td></tr><tr><td class="word"><ruby>相次<rt>あいつ</rt></ruby>ぐ</td><td>あいつぐ</td><td><span class="pos">v1 自</span></td><td><span class="lvl">N2</span></td><td>接连发生</td><td><ruby>謝罪<rt>しゃざい</rt></ruby>が<ruby>相次<rt>あいつ</rt></ruby>ぐ</td></tr><tr><td class="word"><ruby>真相<rt>しんそう</rt></ruby></td><td>しんそう</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>真相</td><td><ruby>真相<rt>しんそう</rt></ruby>を<ruby>究明<rt>きゅうめい</rt></ruby>する</td></tr><tr><td class="word"><ruby>究明<rt>きゅうめい</rt></ruby></td><td>きゅうめい</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>查明、追究</td><td><ruby>真相<rt>しんそう</rt></ruby>を<ruby>究明<rt>きゅうめい</rt></ruby>する</td></tr><tr><td class="word"><ruby>構想<rt>こうそう</rt></ruby></td><td>こうそう</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>构想、设想</td><td><ruby>委員会<rt>いいんかい</rt></ruby>を<ruby>設<rt>もう</rt></ruby>ける<ruby>構想<rt>こうそう</rt></ruby></td></tr><tr><td class="word"><ruby>培<rt>つちか</rt></ruby>う</td><td>つちかう</td><td><span class="pos">v1 他</span></td><td><span class="lvl">N1</span></td><td>培育、积淀</td><td><ruby>歴史<rt>れきし</rt></ruby>を<ruby>培<rt>つちか</rt></ruby>う</td></tr><tr><td class="word"><ruby>心<rt>こころ</rt></ruby>から</td><td>こころから</td><td><span class="pos">adv</span></td><td><span class="lvl">N2</span></td><td>由衷地</td><td><ruby>心<rt>こころ</rt></ruby>から<ruby>喜<rt>よろこ</rt></ruby>ぶ</td></tr></tbody></table></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="notes"><h2 class="section-title"><span>笔</span>强化笔记精讲（瑞译）</h2><div class="notes-grid"><article class="note-card"><h3><span class="sec">第一段</span>「目をそむける」与「目」惯用句</h3><p><b>「<ruby>目<rt>め</rt></ruby>をそむける」</b>：别过脸去，移开视线。指为了不看痛苦、残酷的事物而转移视线。</p><p><span class="tr">僕は失敗すること自体は問題ではないと思っています。問題は、失敗したという事実から目をそむけて、自分の仮説を検証しないことです。</span>（我认为，失败本身并不是问题。真正的问题在于，不愿正视失败这一事实，也不去验证自己的假设。）</p><p><b>「<ruby>目<rt>め</rt></ruby>」相关惯用句拓展</b>：</p><p><b>目を向ける</b>＝关注、注意。<span class="tr">きょうだいのこうした負担に目を向け、和らげようとイベントが企画された。（为了关注并减轻兄弟姐妹所承受的心理负担，相关活动由此策划开展）</span></p><p><b>目を光らせる</b>＝严密监视、密切关注。<span class="tr">そうさせないために目を光らせる必要がある。（为了防止这种情况发生，就必须始终保持警惕、加强监督）</span></p><p><b>目をつぶる</b>＝睁一只眼闭一只眼、假装没看见。<span class="tr">クラブとして過去の事案に目をつぶることはできない。（作为俱乐部，我们不能对过去发生的问题视而不见）</span></p><p><b>「<ruby>加担<rt>かたん</rt></ruby>」</b>：参与、协助（多带贬义，指参与坏事、不当言论或阴谋）。<span class="tr">最近は同様の動機から闇バイトに加担して逮捕される例が相次いでいる。（近来，因类似动机参与非法兼职并被捕的案件接连出现）</span></p></article><article class="note-card"><h3><span class="sec">第二段</span>「漁労」与传统生计词汇</h3><p><b>「<ruby>漁労<rt>ぎょろう</rt></ruby>」</b>：捕鱼、渔业采集活动。指捕捞鱼贝海藻等，以及其作业本身。</p><p><span class="tr">伝統的漁労文化は自然災害、地球温暖化並びに黒潮大蛇行に代表される自然環境の変化、担い手減少等の要因で危機的な状態にある。（传统渔业文化正因自然灾害、全球变暖、黑潮大弯曲等自然环境变化及从业人员减少等因素，处于危机状态）</span></p><p><b>「<ruby>栄<rt>さか</rt></ruby>える」</b>：繁荣、兴盛。<span class="tr">良い交通条件でも栄えていない場所はいくらでもある。（即便交通条件优越，并不繁荣的地方也不少见）</span></p><p><b>「<ruby>取<rt>と</rt></ruby>り<ruby>込<rt>こ</rt></ruby>む」三个义项</b>：①收进来、吸入（如收晾干的衣物）；②采纳、拉拢、吸纳人才（異能人材を取り込む）；③家中因冠婚葬祭等突发事务而忙乱（葬家も取り込んでいますから＝家属正忙于料理后事）。</p><p><b>传统生计词汇拓展</b>：<ruby>狩猟<rt>しゅりょう</rt></ruby>・<ruby>採集<rt>さいしゅう</rt></ruby>（狩猎、采集）、<ruby>潮干狩<rt>しおひが</rt></ruby>り（赶海、拾贝）、<ruby>農耕<rt>のうこう</rt></ruby>（农耕）、<ruby>焼畑<rt>やきはた</rt></ruby>（烧荒）。</p></article><article class="note-card"><h3><span class="sec">第三段</span>「言説」的用法</h3><p><b>「<ruby>言説<rt>げんせつ</rt></ruby>」</b>：言论、话语。指说话、表达，及其说出的话本身。</p><p>常见搭配「<ruby>言説<rt>げんせつ</rt></ruby><ruby>空間<rt>くうかん</rt></ruby>」（话语空间）。</p><p><span class="tr">政治や社会に関してSNSなどで見られる極端な言説が、どの程度浸透しているかを探るため、意見を例示して賛否を尋ねた。（为了解政治和社会领域中社交媒体上出现的极端言论究竟有多大影响，调查列举了若干观点并询问受访者的赞成或反对态度）</span></p></article><article class="note-card"><h3><span class="sec">第四段</span>「向き合う」的两个义项</h3><p><b>「<ruby>向<rt>む</rt></ruby>き<ruby>合<rt>あ</rt></ruby>う」义项①</b>：面对面、相对而坐。</p><p><span class="tr">向き合って座ると緊張感がぐんと高まります。（面对面坐着，会让人明显更紧张）</span></p><p><b>义项②</b>：正视、认真面对（事态）。</p><p><span class="tr">問題から逃げてはいけない、向き合わなければならないと深刻に悩む方は多いが、真正面から解決に向けて立ち向かおうとすることで、かえって事態を悪化させてしまうことがあります。（很多人因认为不能逃避问题、必须认真面对而深感苦恼，但有时越是试图正面迎击，反而越会使情况恶化）</span></p></article><article class="note-card"><h3><span class="sec">第五段</span>「究明」的用法</h3><p><b>「<ruby>究明<rt>きゅうめい</rt></ruby>」</b>：查明、查清。指对真理、真相等进行彻底追究，使其水落石出。</p><p><span class="tr">森友学園への国有地売却を巡る公文書改ざん問題は、1人の職員の命を奪った。前代未聞の不祥事であるにもかかわらず、真実は依然として闇の中だ。究明する責任は問題を起こした政府にある。（森友学园国有土地出售案引发的公文书篡改问题已夺去一名职员的生命。如此前所未有的丑闻，真相却至今仍未水落石出。查明真相的责任，在于引发这一问题的政府）</span></p><p><b>「<ruby>相次<rt>あいつ</rt></ruby>ぐ」</b>：接连发生。「<ruby>謝罪<rt>しゃざい</rt></ruby>が<ruby>相次<rt>あいつ</rt></ruby>ぐ」（道歉接连而来）。</p></article><article class="note-card"><h3><span class="sec">第六段</span>「培う」与育む・養う辨析</h3><p><b>「<ruby>培<rt>つちか</rt></ruby>う」</b>：培养、培育。指经过漫长时间，像给植物施肥一样逐渐养成。<ruby>歴史<rt>れきし</rt></ruby>を<ruby>培<rt>つちか</rt></ruby>う、<ruby>体力<rt>たいりょく</rt></ruby>を<ruby>培<rt>つちか</rt></ruby>う。</p><p><b>「<ruby>育<rt>はぐ</rt></ruby>む」</b>：孕育、爱护。充满爱意地孕育生命、爱、文化、梦想。<ruby>豊<rt>ゆた</rt></ruby>かな<ruby>心<rt>こころ</rt></ruby>を<ruby>育<rt>はぐ</rt></ruby>む、<ruby>愛<rt>あい</rt></ruby>を<ruby>育<rt>はぐ</rt></ruby>む。</p><p><b>「<ruby>養<rt>やな</rt></ruby>う」</b>：养育、锻炼。侧重供给抚养，或锻炼眼光、实力。<ruby>家族<rt>かぞく</rt></ruby>を<ruby>養<rt>やな</rt></ruby>う、<ruby>批判<rt>ひはん</rt></ruby>的<ruby>思考<rt>しこう</rt></ruby>を<ruby>養<rt>やな</rt></ruby>う。</p><p><span class="tr">こうした学びを通じて培われてゆくリーガルマインドが、未だ見ぬ問題に立ち向かう際の羅針盤になると信じています。（我相信，通过这样的学习所培养出的法律思维，将成为面对未知问题时的重要指引）</span></p></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <footer>
+      8-1 阿伊努族（强化笔记融合版）｜日语读音（黄色平假名）、外来语（蓝色）、语法、词汇、文中变形与强化笔记精讲整理<br>
+      正文依据用户提供的资料整理，仅供个人学习使用。
+    </footer>
+  </main>
+
+<script>
+(function(){
+  const AUDIO_DIR = "8-1/audio/";
+  const TOTAL = 17;
+  let current = 0;
+  let playing = false;
+  let rate = 1.0;
+  let loopMode = false;
+  const audio = new Audio();
+  const $ = id => document.getElementById(id);
+
+  function playSentence(idx){
+    if (idx < 0 || idx >= TOTAL) return;
+    current = idx;
+    playing = true;
+    updateUI();
+    const s = document.querySelector('.sentence[data-idx="' + idx + '"]');
+    audio.src = AUDIO_DIR + (s ? s.dataset.audio : 'p1_s1.mp3');
+    audio.playbackRate = rate;
+    audio.currentTime = 0;
+    audio.play().then(() => { playing = true; updateUI(); })
+      .catch(e => { console.error('播放失败:', e); });
+  }
+
+  function togglePlay(){
+    if (playing){ audio.pause(); playing=false; updateUI(); }
+    else if (!audio.src) playSentence(current);
+    else { audio.play().then(()=>{playing=true;updateUI();}); }
+  }
+  function nextSentence(){
+    if (current+1 < TOTAL) playSentence(current+1);
+    else if (loopMode) playSentence(0);
+    else { audio.pause(); playing=false; updateUI(); }
+  }
+  function prevSentence(){ if (current>0) playSentence(current-1); }
+
+  function sentenceInSec(el){
+    const sec = el.closest('section');
+    const all = sec.querySelectorAll('.sentence');
+    for (let i=0;i<all.length;i++) if (all[i]===el) return i+1;
+    return 1;
+  }
+
+  function updateUI(){
+    $('btn-play').textContent = playing ? '⏸' : '▶';
+    document.querySelectorAll('.sentence').forEach(el=>{
+      el.classList.toggle('playing', parseInt(el.dataset.idx)===current);
+    });
+    const s = document.querySelector('.sentence[data-idx="'+current+'"]');
+    if (s){
+      const sec = s.closest('section');
+      const st = sec ? sec.querySelector('.section-title').textContent : '';
+      const n = sentenceInSec(s);
+      $('sentence-status').textContent = (playing?'播放中':'暂停')+' ｜ '+st+' 第'+n+'句';
+      const rect = s.getBoundingClientRect();
+      const bar = $('player-bar').getBoundingClientRect();
+      if (rect.top < bar.bottom || rect.bottom > window.innerHeight){
+        s.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    }
+  }
+
+  audio.addEventListener('ended', nextSentence);
+  audio.addEventListener('timeupdate', ()=>{
+    if (audio.duration){
+      const pct = audio.currentTime/audio.duration*100;
+      $('progress-fill').style.width = pct+'%';
+      $('progress-knob').style.left = pct+'%';
+    }
+  });
+  $('progress').addEventListener('click', e=>{
+    if (!audio.duration) return;
+    const r = $('progress').getBoundingClientRect();
+    audio.currentTime = (e.clientX-r.left)/r.width*audio.duration;
+  });
+  $('rate-group').addEventListener('click', e=>{
+    const b = e.target.closest('.rate-btn'); if(!b) return;
+    rate = parseFloat(b.dataset.rate);
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(x=>x.classList.toggle('active', x===b));
+  });
+  $('btn-mode').addEventListener('click', ()=>{
+    loopMode = !loopMode;
+    $('btn-mode').textContent = '循环: '+(loopMode?'开':'关');
+    $('btn-mode').classList.toggle('active', loopMode);
+  });
+  $('btn-play').addEventListener('click', togglePlay);
+  $('btn-next').addEventListener('click', nextSentence);
+  $('btn-prev').addEventListener('click', prevSentence);
+
+  document.querySelectorAll('.sentence').forEach(el=>{
+    el.addEventListener('click', ()=>playSentence(parseInt(el.dataset.idx)));
+  });
+
+  document.addEventListener('keydown', e=>{
+    if (e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+    switch(e.code){
+      case 'Space': e.preventDefault(); togglePlay(); break;
+      case 'ArrowRight': nextSentence(); break;
+      case 'ArrowLeft': prevSentence(); break;
+      case 'ArrowUp': e.preventDefault(); setRate(Math.min(1.5, rate+0.25)); break;
+      case 'ArrowDown': e.preventDefault(); setRate(Math.max(0.5, rate-0.25)); break;
+    }
+  });
+  function setRate(r){
+    rate = Math.round(r*100)/100;
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(b=>{
+      b.classList.toggle('active', parseFloat(b.dataset.rate)===rate);
+    });
+  }
+  audio.preload = 'auto';
+  window.__reader = { getAudio: () => audio, getState: () => ({current, playing, rate, loopMode}) };
+})();
+</script>
+
+</body>
+</html>

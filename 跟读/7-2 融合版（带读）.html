@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>7-2 专业名词的围城｜《专业名词的「围城」》（强化笔记融合版）</title>
+  <style>
+    :root{
+      --ink:#1d2a34;
+      --muted:#64727d;
+      --paper:#fffdf8;
+      --bg:#eef3f2;
+      --line:#dbe5e1;
+      --green:#0f766e;
+      --green-soft:#e6f5f1;
+      --orange:#c15b24;
+      --orange-soft:#fff0e7;
+      --blue-soft:#eaf2ff;
+      --yellow:#c08a12;
+      --yellow-soft:#fbf3dd;
+      --shadow:0 12px 35px rgba(31,56,52,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #dff4ec 0, transparent 27rem),
+        radial-gradient(circle at 100% 14%, #fff0d9 0, transparent 25rem),
+        var(--bg);
+      font-family:"Noto Serif SC","Songti SC","STSong",serif;
+      line-height:1.9;
+    }
+    .top-nav{
+      position:sticky;top:0;z-index:100;
+      display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+      padding:10px 18px;
+      background:rgba(20,91,85,.96);
+      backdrop-filter:blur(6px);
+      box-shadow:0 4px 14px rgba(20,60,55,.25);
+    }
+    .top-nav .nav-title{
+      color:#baf6e8;font:700 .8rem/1 system-ui,sans-serif;
+      letter-spacing:.14em;margin-right:6px;white-space:nowrap;
+    }
+    .top-nav a{
+      padding:5px 13px;border-radius:999px;
+      color:#fff;background:rgba(255,255,255,.14);
+      text-decoration:none;font:600 .84rem/1.2 system-ui,sans-serif;
+      white-space:nowrap;transition:background .15s;
+    }
+    .top-nav a:hover{background:#198f7c}
+    .top-nav a.to-top{background:rgba(255,255,255,.28)}
+    .wrap{max-width:1080px;margin:auto;padding:32px 24px 72px}
+    section{scroll-margin-top:64px}
+    header{
+      padding:44px 42px 36px;
+      border-radius:24px;
+      color:#fff;
+      background:linear-gradient(135deg,#145b55,#0d766b 58%,#198f7c);
+      box-shadow:var(--shadow);
+    }
+    .eyebrow{
+      margin:0 0 12px;
+      color:#baf6e8;
+      font-size:.82rem;
+      letter-spacing:.16em;
+      font-family:system-ui,sans-serif;
+      font-weight:700;
+    }
+    h1{margin:0;font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.35}
+    header p{margin:14px 0 0;color:#e2fffa;font-size:1rem}
+    nav{
+      display:flex;flex-wrap:wrap;gap:10px;
+      margin:22px 0 30px;
+    }
+    nav a{
+      padding:7px 14px;border:1px solid #cbded9;border-radius:999px;
+      color:#25514b;background:rgba(255,255,255,.74);
+      text-decoration:none;font-family:system-ui,sans-serif;font-size:.88rem;
+    }
+    nav a:hover{background:#fff}
+    section{margin-top:30px}
+    .section-title{
+      display:flex;align-items:center;gap:12px;
+      margin:0 0 15px;font-size:1.42rem;
+    }
+    .section-title span{
+      display:inline-grid;place-items:center;width:32px;height:32px;
+      border-radius:50%;color:#fff;background:var(--green);
+      font-family:system-ui,sans-serif;font-size:.9rem;
+    }
+    .translation{
+      overflow:hidden;border:1px solid var(--line);border-radius:20px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    .language{padding:26px 30px}
+    .language + .language{border-top:1px dashed #cbd8d3}
+    .label{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-bottom:12px;padding:4px 10px;border-radius:999px;
+      color:var(--green);background:var(--green-soft);
+      font:700 .78rem/1.4 system-ui,sans-serif;letter-spacing:.08em;
+    }
+    .label.zh{color:var(--orange);background:var(--orange-soft)}
+    .jp{
+      margin:0;font-size:1.13rem;letter-spacing:.025em;
+      font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+    }
+    .zh{margin:0;font-size:1.02rem}
+    ruby{ruby-position:over;ruby-align:center}
+    rt{font-size:.54em;color:var(--yellow);font-weight:700;letter-spacing:0;user-select:none}
+    rt.en{color:var(--yellow)}
+    .lvl{
+      display:inline-block;padding:1px 7px;border-radius:5px;
+      color:#8a5a10;background:var(--yellow-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+    }
+    .note{
+      margin:14px 0 0;padding:11px 14px;border-left:4px solid #8fc9b6;
+      color:#2b3330;background:var(--green-soft);border-radius:0 10px 10px 0;
+      font-size:.91rem;
+    }
+    .note rt{color:#2f7cc4}
+    .grammar-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+    .card{
+      padding:21px 22px;border:1px solid var(--line);border-radius:16px;
+      background:rgba(255,253,248,.92);box-shadow:0 7px 20px rgba(31,56,52,.06);
+    }
+    .card h3{margin:0 0 9px;font-size:1.03rem;color:#12675e}
+    .card p{margin:7px 0;font-size:.94rem}
+    .pattern{
+      display:inline-block;padding:2px 8px;border-radius:6px;
+      color:#1e4c67;background:var(--blue-soft);
+      font-family:"SFMono-Regular",Consolas,monospace;font-size:.86rem;
+    }
+    .g-num{
+      display:inline-grid;place-items:center;width:22px;height:22px;
+      border-radius:50%;background:var(--orange);color:#fff;
+      font:700 .78rem/1 system-ui,sans-serif;margin-right:7px;
+      vertical-align:1px;
+    }
+    .table-wrap{
+      overflow:auto;border:1px solid var(--line);border-radius:16px;
+      background:var(--paper);box-shadow:var(--shadow);
+    }
+    table{width:100%;border-collapse:collapse;min-width:820px}
+    th,td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{color:#fff;background:#27665e;font:700 .82rem/1.4 system-ui,sans-serif;letter-spacing:.04em}
+    tr:last-child td{border-bottom:0}
+    tr:nth-child(even) td{background:#fbfdfc}
+    td{font-size:.91rem}
+    .word{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:1rem}
+    .pos{
+      display:inline-block;padding:2px 7px;border-radius:5px;
+      color:#075b54;background:var(--green-soft);
+      font:700 .75rem system-ui,sans-serif;white-space:nowrap;
+      margin-right:4px;
+    }
+    .notes-grid{display:grid;gap:18px}
+    .note-card{
+      padding:24px 26px;border:1px solid #c9e2d8;border-radius:18px;
+      background:var(--green-soft);box-shadow:0 7px 20px rgba(20,90,70,.07);
+    }
+    .note-card h3{
+      margin:0 0 12px;font-size:1.14rem;color:#1d2a34;
+      border-bottom:2px solid #b8d8cd;padding-bottom:8px;
+    }
+    .note-card h3 .sec{color:#0f766e;font-size:.8rem;margin-right:6px}
+    .note-card h4{
+      margin:16px 0 6px;font-size:.98rem;color:#2b3a36;
+    }
+    .note-card p{margin:8px 0;font-size:.95rem;color:#2b3330}
+    .note-card ul{margin:8px 0;padding-left:22px}
+    .note-card li{margin:7px 0;font-size:.94rem;color:#2b3330}
+    .note-card li .ex{
+      font-family:"Hiragino Mincho ProN","Yu Mincho",serif;color:#14181a;
+    }
+    .note-card li .tr{display:block;color:#64727d;font-size:.9rem;margin-top:2px}
+    .note-card .key{
+      display:inline-block;padding:1px 8px;border-radius:6px;
+      background:#dff2ec;border:1px solid #8fc9b6;color:#0e5a46;
+      font:700 .86rem system-ui,sans-serif;
+    }
+    .note-card rt{color:#2f7cc4}
+    .forms-inline{
+      margin:14px 2px 0;padding:16px 20px;border-radius:16px;
+      background:#203f42;color:#effffb;
+    }
+    .forms-inline h3{margin:0 0 8px;font-size:1.02rem;color:#baf6e8}
+    .forms-inline p{margin:5px 0;color:#d5eee8;font-size:.92rem;line-height:1.7}
+    .forms-inline code{
+      color:#fff0af;background:rgba(255,255,255,.1);
+      padding:2px 6px;border-radius:4px;font-family:monospace;
+    }
+    .back-top{margin:12px 2px 0;text-align:right;font-size:.85rem}
+    .back-top a{color:var(--muted);text-decoration:none}
+    .back-top a:hover{color:var(--green)}
+    footer{margin-top:27px;color:var(--muted);font-size:.82rem;text-align:center}
+    @media(max-width:640px){
+      .wrap{padding:16px 13px 48px}
+      header{padding:30px 24px}
+      .language{padding:22px 20px}
+      .jp{font-size:1.04rem}
+      .top-nav{padding:8px 12px}
+      .top-nav .nav-title{display:none}
+    }
+
+  /* ===== 打印适配：A3 尺寸、左右留出空隙、瀑布不跨页、隐藏页眉页脚 =====
+     索引条只在第一页顶部出现（打印时取消 sticky、保留 .top-nav），
+     正文区第二个导航隐藏；每段/区块末尾的「返回顶部」链接保留。 */
+  @media print {
+    @page { size: A3; margin: 10mm 14mm; }
+    html, body { background: #ffffff !important; }
+    nav { display: none !important; }
+    .top-nav { display: flex !important; position: static !important; box-shadow: none !important; backdrop-filter: none; }
+    section { margin-bottom: 5mm; }
+    .card, .translation, .forms-inline, .note-card, .para-pair,
+    .vocab-card, .grammar-item, .language, .phrase-item,
+    .vocab-group, .analysis-block { break-inside: avoid; page-break-inside: avoid; }
+    h1, h2, h3, h4, .section-title { break-after: avoid; page-break-after: avoid; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    table { font-size: 0.9em; }
+    a { color: inherit; text-decoration: none; }
+    .forms-inline, .note-card, .card, .translation { box-shadow: none !important; }
+    .wrap { max-width: 100%; padding: 0; }
+    .jp { font-size: 0.98em; letter-spacing: 0.02em; }
+    .zh, .note { font-size: 0.95em; }
+    .language { padding: 12px 16px; }
+    .grammar-grid { gap: 8px; }
+    .table-wrap { box-shadow: none; }
+  }
+
+  /* ===== 跟读控制条（注入） ===== */
+  .player-bar{
+    position:sticky;top:56px;z-index:95;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    margin:18px 0 8px;padding:12px 16px;
+    border:1px solid var(--line);border-radius:18px;
+    background:rgba(255,253,248,.95);
+    box-shadow:0 8px 22px rgba(31,56,52,.08);
+  }
+  .pb-btn{
+    width:42px;height:42px;border:0;border-radius:50%;cursor:pointer;
+    display:inline-grid;place-items:center;
+    background:var(--green);color:#fff;font-size:1rem;
+    transition:transform .12s, background .15s;
+  }
+  .pb-btn:hover{background:#198f7c;transform:scale(1.06)}
+  .pb-btn.small{width:34px;height:34px;background:#e8f1ee;color:var(--green);font-size:.9rem}
+  .pb-btn.small:hover{background:#d6e8e3}
+  .pb-btn:disabled{opacity:.35;cursor:default;transform:none}
+  .rate-group{display:flex;gap:5px;margin-left:auto}
+  .rate-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .rate-btn.active{background:var(--green);border-color:var(--green);color:#fff}
+  .mode-btn{
+    padding:4px 11px;border:1px solid var(--line);border-radius:999px;
+    background:#fff;color:var(--muted);cursor:pointer;
+    font:600 .82rem system-ui,sans-serif;
+  }
+  .mode-btn.active{background:var(--orange);border-color:var(--orange);color:#fff}
+  .progress{
+    flex-basis:100%;height:6px;border-radius:3px;
+    background:#e3ece8;position:relative;cursor:pointer;
+  }
+  .progress .fill{
+    position:absolute;left:0;top:0;bottom:0;border-radius:3px;
+    background:linear-gradient(90deg,#0f766e,#2ba98c);width:0%;
+  }
+  .progress .knob{
+    position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:#fff;border:2px solid var(--green);transform:translate(-50%,-50%);
+    left:0%;box-shadow:0 1px 4px rgba(0,0,0,.2);
+  }
+  .sentence-status{
+    flex-basis:100%;color:var(--muted);font:600 .78rem system-ui,sans-serif;
+  }
+  .sentence{
+    cursor:pointer;border-radius:8px;padding:3px 10px;margin:0 -10px;
+    transition:background .18s;
+    border-left:4px solid transparent;
+  }
+  .sentence:hover{background:#eaf4fc}
+  .sentence.playing{
+    background:linear-gradient(90deg, rgba(137,207,240,.60), rgba(137,207,240,.28));
+    border-left-color:#2f7cc4;
+    box-shadow:0 2px 10px rgba(47,124,196,.22);
+  }
+  .sentence .play-ic{
+    display:inline-block;margin-right:4px;color:#2f7cc4;
+    font-size:.72em;opacity:.5;font-family:system-ui,sans-serif;vertical-align:2px;
+  }
+  .sentence.playing .play-ic{opacity:1;color:#1c5f9e;transform:scale(1.1)}
+  @media(max-width:640px){
+    .player-bar{top:50px;padding:10px 12px}
+    .player-bar .rate-group{order:3;margin-left:0}
+  }
+  @media print{
+    .player-bar{display:none !important}
+    .sentence{cursor:default;padding:0;margin:0;border:0}
+    .sentence.playing{background:transparent;box-shadow:none;border:0}
+    .sentence .play-ic{display:none}
+  }
+
+</style>
+</head>
+<body>
+  <nav class="top-nav">
+    <span class="nav-title">索 引</span>
+    <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#p5">第五段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    <a class="to-top" href="#top">▲ 顶部</a>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header>
+      <p class="eyebrow">JAPANESE × CHINESE · READING &amp; GRAMMAR NOTES</p>
+      <h1>7-2 专业名词的围城<br>《专业名词的「围城」》</h1>
+      <p>日语汉字标注平假名读音（黄色）、片假名标注外来语（蓝色注音）；本文为中译日练习（三联生活周刊，5 段），含瑞译强化笔记精讲。</p>
+    </header>
+
+  <div class="player-bar" id="player-bar">
+    <button class="pb-btn small" id="btn-prev" title="上一句（←）">⏮</button>
+    <button class="pb-btn" id="btn-play" title="播放/暂停（空格）">▶</button>
+    <button class="pb-btn small" id="btn-next" title="下一句（→）">⏭</button>
+    <div class="rate-group" id="rate-group">
+      <button class="rate-btn" data-rate="0.5">0.5x</button>
+      <button class="rate-btn" data-rate="0.75">0.75x</button>
+      <button class="rate-btn active" data-rate="1">1x</button>
+      <button class="rate-btn" data-rate="1.25">1.25x</button>
+      <button class="rate-btn" data-rate="1.5">1.5x</button>
+    </div>
+    <button class="mode-btn" id="btn-mode" title="循环模式">循环: 关</button>
+    <div class="progress" id="progress"><div class="fill" id="progress-fill"></div><div class="knob" id="progress-knob"></div></div>
+    <div class="sentence-status" id="sentence-status">点击下方任意日文句子开始跟读</div>
+  </div>
+
+
+    <nav>
+      <a href="#p1">第一段</a><a href="#p2">第二段</a><a href="#p3">第三段</a><a href="#p4">第四段</a><a href="#p5">第五段</a><a href="#grammar">语法</a><a href="#vocab">词汇与变形</a><a href="#notes">强化笔记</a>
+    </nav>
+
+    <section id="p1"><h2 class="section-title">第一段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">多年前，我偶然买到一本费孝通的《乡土中国》。我本是一个完全的理工生，整日周旋于冰冷的试剂与玻璃器皿之间，而这本书像是我进入人文世界的一把“钥匙”。它让我惊讶于人文社科的思维体系，人从此流动了起来。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="0" data-audio="p1_s1.mp3"><span class="play-ic">▶</span><ruby>何年<rt>なんねん</rt></ruby>も<ruby>前<rt>まえ</rt></ruby>に、わたしは<ruby>偶然<rt>ぐうぜん</rt></ruby>にも<ruby>費孝通<rt>ひこうつう</rt></ruby>の『<ruby>郷土中国<rt>きょうどちゅうごく</rt></ruby>』という<ruby>本<rt>ほん</rt></ruby>を<ruby>手<rt>て</rt></ruby>に<ruby>取<rt>と</rt></ruby>った。</span><span class="sentence" data-idx="1" data-audio="p1_s2.mp3"><span class="play-ic">▶</span><ruby>毎日<rt>まいにち</rt></ruby><ruby>温<rt>ぬく</rt></ruby>もりのない<ruby>試薬<rt>しやく</rt></ruby>と<ruby>ガラス<rt class="en">glass</rt></ruby><ruby>器具<rt>きぐ</rt></ruby>に<ruby>囲<rt>かこ</rt></ruby>まれ、<ruby>根<rt>ね</rt></ruby>っからの<ruby>理系人間<rt>りけいにんげん</rt></ruby>だった<ruby>私<rt>わたし</rt></ruby>にとって、この<ruby>一冊<rt>いっさつ</rt></ruby>は<ruby>人文<rt>じんぶん</rt></ruby>の<ruby>世界<rt>せかい</rt></ruby>へ<ruby>足<rt>あし</rt></ruby>を<ruby>踏<rt>ふ</rt></ruby>み<ruby>入<rt>い</rt></ruby>れるための「<ruby>鍵<rt>かぎ</rt></ruby>」のようなものだった。</span><span class="sentence" data-idx="2" data-audio="p1_s3.mp3"><span class="play-ic">▶</span>その<ruby>人文<rt>じんぶん</rt></ruby>・<ruby>社会科学的<rt>しゃかいかがくてき</rt></ruby><ruby>思考<rt>しこう</rt></ruby>に<ruby>驚<rt>おどろ</rt></ruby>かされ、それ<ruby>以来<rt>いらい</rt></ruby>、<ruby>私<rt>わたし</rt></ruby>の<ruby>目<rt>め</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る<ruby>人間<rt>にんげん</rt></ruby>がいきいきと<ruby>動<rt>うご</rt></ruby>く<ruby>存在<rt>そんざい</rt></ruby>として<ruby>映<rt>うつ</rt></ruby>るようになった……</span>
+</p></p><p class="note">①“周旋于……之间”可译「〜に<ruby>追<rt>お</rt></ruby>われる」「〜の<ruby>間<rt>あいだ</rt></ruby>を<ruby>立<rt>た</rt></ruby>ち<ruby>回<rt>まわ</rt></ruby>る」；②“完全的（理工生）”宜用「<ruby>根<rt>ね</rt></ruby>っからの」，详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>手に取った ＝<ruby>手<rt>て</rt></ruby>に<ruby>取<rt>と</rt></ruby>る（惯用）过去形：拿到手、买到。</p><p>囲まれ ＝<ruby>囲<rt>かこ</rt></ruby>む（v1 他）被动连用：被包围。</p><p>踏み入れる ＝<ruby>踏<rt>ふ</rt></ruby>み<ruby>入<rt>い</rt></ruby>れる（v2 他）连体修饰：踏入、进入。</p><p>驚かされ ＝<ruby>驚<rt>おどろ</rt></ruby>かす（v1 他）被动连用：被震撼。</p><p>映るようになった ＝<ruby>映<rt>うつ</rt></ruby>る（v1 自）＋ようになった：变得（看起来）……。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p2"><h2 class="section-title">第二段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">自此之后，我会不自觉地关注生活的细节，恰逢互联网上各类人文社科专业名词大肆蔓延，人们特别喜欢用社会学或者心理学词汇去解读和概括庞杂的现象：原生家庭、认知偏差、社交滤镜……这些层出不穷的概念，对深陷理科思维的我有着一种致命的吸引力。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="3" data-audio="p2_s1.mp3"><span class="play-ic">▶</span>それからというもの、<ruby>私<rt>わたし</rt></ruby>はいつしか、<ruby>日々<rt>ひび</rt></ruby>の<ruby>暮<rt>く</rt></ruby>らしの<ruby>細部<rt>さいぶ</rt></ruby>にも<ruby>目<rt>め</rt></ruby>を<ruby>向<rt>む</rt></ruby>けるようになった。</span><span class="sentence" data-idx="4" data-audio="p2_s2.mp3"><span class="play-ic">▶</span>ちょうどその<ruby>頃<rt>ころ</rt></ruby>、<ruby>インターネット<rt class="en">Internet</rt></ruby><ruby>上<rt>じょう</rt></ruby>では<ruby>人文<rt>じんぶん</rt></ruby>・<ruby>社会科学<rt>しゃかいかがく</rt></ruby>の<ruby>専門用語<rt>せんもんようご</rt></ruby>が<ruby>盛<rt>さか</rt></ruby>んに<ruby>飛<rt>と</rt></ruby>び<ruby>交<rt>か</rt></ruby>い、<ruby>人々<rt>ひとびと</rt></ruby>は<ruby>社会学<rt>しゃかいがく</rt></ruby>や<ruby>心理学<rt>しんりがく</rt></ruby>の<ruby>用語<rt>ようご</rt></ruby>を使って、<ruby>複雑<rt>ふくざつ</rt></ruby>な<ruby>現象<rt>げんしょう</rt></ruby>を<ruby>読<rt>よ</rt></ruby>み<ruby>解<rt>と</rt></ruby>き、ひとくくりにすることを<ruby>好<rt>この</rt></ruby>んでいた。</span><span class="sentence" data-idx="5" data-audio="p2_s3.mp3"><span class="play-ic">▶</span>「原生家庭」「<ruby>認知バイアス<rt class="en">cognitive bias</rt></ruby>」「<ruby>ソーシャルフィルター<rt class="en">social filter</rt></ruby>」……<ruby>次<rt>つぎ</rt></ruby>から<ruby>次<rt>つぎ</rt></ruby>へと<ruby>現<rt>あらわ</rt></ruby>れるそうした<ruby>概念<rt>がいねん</rt></ruby>は、<ruby>理系的<rt>りけいてき</rt></ruby>な<ruby>思考<rt>しこう</rt></ruby>にどっぷり<ruby>浸<rt>つ</rt></ruby>かっていた<ruby>私<rt>わたし</rt></ruby>にとって、<ruby>抗<rt>あらが</rt></ruby>いがたい<ruby>魅力<rt>みりょく</rt></ruby>を<ruby>放<rt>はな</rt></ruby>っていた……</span>
+</p></p><p class="note">①“大肆蔓延”可译「<ruby>猛威<rt>もうい</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>るう」「<ruby>横行<rt>おうこう</rt></ruby>する」；②“概括”可译「<ruby>集約<rt>しゅうやく</rt></ruby>する」「ひとくくりにする」；③“原生家庭”相关拓展「<ruby>毒親<rt>どくおや</rt></ruby>」「<ruby>過保護<rt>かほご</rt></ruby>」，均详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>目を向けるようになった ＝<ruby>目<rt>め</rt></ruby>を<ruby>向<rt>む</rt></ruby>ける（惯用）＋ようになった：开始关注。</p><p>飛び交い ＝<ruby>飛<rt>と</rt></ruby>び<ruby>交<rt>か</rt></ruby>う（v1 自）连用形：纷飞、此起彼伏。</p><p>読み解き ＝<ruby>読<rt>よ</rt></ruby>み<ruby>解<rt>と</rt></ruby>く（v1 他）连用形：解读。</p><p>好んでいた ＝<ruby>好<rt>この</rt></ruby>む（v1 他）て形＋いた：喜欢（这样做）。</p><p>浸かっていた ＝<ruby>浸<rt>つ</rt></ruby>かる（v1 自）て形＋いた：沉浸于。</p><p>放っていた ＝<ruby>放<rt>はな</rt></ruby>つ（v1 他）て形＋いた：散发着。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p3"><h2 class="section-title">第三段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">它们铺天盖地地砸过来，好用又万能，和朋友相处时，可以剖析自己是不是讨好型人格；和父母争执时，则习惯性地归因于原生家庭留下的缺憾。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="6" data-audio="p3_s1.mp3"><span class="play-ic">▶</span>それらは<ruby>四方八方<rt>しほうはっぽう</rt></ruby>から<ruby>押<rt>お</rt></ruby>し<ruby>寄<rt>よ</rt></ruby>せてきて、<ruby>便利<rt>べんり</rt></ruby>かつ<ruby>万能<rt>ばんのう</rt></ruby>だった。</span><span class="sentence" data-idx="7" data-audio="p3_s2.mp3"><span class="play-ic">▶</span><ruby>友人<rt>ゆうじん</rt></ruby>と<ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>うときには、<ruby>自分<rt>じぶん</rt></ruby>が「いい<ruby>人<rt>ひと</rt></ruby>」を<ruby>演<rt>えん</rt></ruby>じて<ruby>他人<rt>たにん</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせすぎる<ruby>タイプ<rt class="en">type</rt></ruby>ではないかと<ruby>分析<rt>ぶんせき</rt></ruby>できたし、<ruby>親<rt>おや</rt></ruby>と<ruby>口論<rt>こうろん</rt></ruby>したときには、<ruby>無意識<rt>むいしき</rt></ruby>のうちにその<ruby>原因<rt>げんいん</rt></ruby>を<ruby>生<rt>う</rt></ruby>まれ<ruby>育<rt>そだ</rt></ruby>った<ruby>家庭<rt>かてい</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>した<ruby>欠落<rt>けつらく</rt></ruby>に<ruby>求<rt>もと</rt></ruby>めた……</span>
+</p></p><p class="note">①“铺天盖地”可译「<ruby>四方八方<rt>しほうはっぽう</rt></ruby>から<ruby>押<rt>お</rt></ruby>し<ruby>寄<rt>よ</rt></ruby>せる」「<ruby>溢<rt>あふ</rt></ruby>れかえる」；②“讨好型人格”可译「「いい<ruby>人<rt>ひと</rt></ruby>」を<ruby>演<rt>えん</rt></ruby>じて<ruby>他人<rt>たにん</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせすぎる<ruby>タイプ<rt class="en">type</rt></ruby>」「<ruby>迎合型人格<rt>げいごうがたじんかく</rt></ruby>」，均详见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>押し寄せてきて ＝<ruby>押<rt>お</rt></ruby>し<ruby>寄<rt>よ</rt></ruby>せる（v2 自）て形＋くる：涌来。</p><p>演じて ＝<ruby>演<rt>えん</rt></ruby>じる（v2 他）て形：扮演。</p><p>合わせすぎる ＝<ruby>合<rt>あ</rt></ruby>わせる（v2 他）＋すぎる：过度迎合。</p><p>分析できた ＝<ruby>分析<rt>ぶんせき</rt></ruby>する（n / v3 他）可能形过去：能够分析。</p><p>求めた ＝<ruby>求<rt>もと</rt></ruby>める（v2 他）过去形：归因于、求之于。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p4"><h2 class="section-title">第四段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">这些词语就像流水线上的标签，被批量生产、批量配发。每一件事情上面都精准地写着生产日期和生产材料，让它显得那么明确、那么精准、不容置疑。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="8" data-audio="p4_s1.mp3"><span class="play-ic">▶</span>こうした<ruby>言葉<rt>ことば</rt></ruby>は、まるで<ruby>ベルトコンベア<rt class="en">belt conveyor</rt></ruby>から<ruby>流<rt>なが</rt></ruby>れてくる<ruby>ラベル<rt class="en">label</rt></ruby>のように、<ruby>大量生産<rt>たいりょうせいさん</rt></ruby>、<ruby>大量配布<rt>たいりょうはいふ</rt></ruby>されていった。</span><span class="sentence" data-idx="9" data-audio="p4_s2.mp3"><span class="play-ic">▶</span>あらゆる<ruby>出来事<rt>できごと</rt></ruby>に、その<ruby>製造年月日<rt>せいぞうねんがっぴ</rt></ruby>と<ruby>原材料<rt>げんざいりょう</rt></ruby>が<ruby>正確<rt>せいかく</rt></ruby>に<ruby>記<rt>しる</rt></ruby>されているようで、<ruby>何<rt>なに</rt></ruby>もかもが<ruby>明確<rt>めいかく</rt></ruby>で、<ruby>精密<rt>せいみつ</rt></ruby>で、<ruby>疑<rt>うたが</rt></ruby>いようのないものに<ruby>見<rt>み</rt></ruby>えた……</span>
+</p></p><p class="note">“流水线”可译「<ruby>ベルトコンベア<rt class="en">belt conveyor</rt></ruby>」「<ruby>流<rt>なが</rt></ruby>れ<ruby>作業<rt>さぎょう</rt></ruby>」，详解见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>流れてくる ＝<ruby>流<rt>なが</rt></ruby>れる（v2 自）て形＋くる：流过来的。</p><p>されていった ＝する（v3 自他）被动て形＋いく：被（批量）……下去。</p><p>記されている ＝<ruby>記<rt>しる</rt></ruby>す（v1 他）被动て形＋いる：被记录着。</p><p>見えた ＝<ruby>見<rt>み</rt></ruby>える（v2 自）过去形：看起来。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="p5"><h2 class="section-title">第五段</h2><article class="translation"><div class="language"><div class="label zh">中文</div><p class="zh">更奇妙的是，它们还给人提供了一套逻辑系统。手握词语，就等于拥有了各种事情的标准答案。但是最近，我好像有点儿恍惚。长久以来，我都是先拥有词语，再去感受。本该由生活催生感悟、凝练词语，现在却本末倒置。</p></div><div class="language"><div class="label">日本語</div><p class="jp"><p class="jp">
+  <span class="sentence" data-idx="10" data-audio="p5_s1.mp3"><span class="play-ic">▶</span>さらに<ruby>不思議<rt>ふしぎ</rt></ruby>なことに、それらの<ruby>言葉<rt>ことば</rt></ruby>は、<ruby>人々<rt>ひとびと</rt></ruby>に<ruby>一<rt>ひと</rt></ruby>つの<ruby>論理体系<rt>ろんりたいけい</rt></ruby>まで<ruby>与<rt>あた</rt></ruby>えてくれる。</span><span class="sentence" data-idx="11" data-audio="p5_s2.mp3"><span class="play-ic">▶</span><ruby>言葉<rt>ことば</rt></ruby>を<ruby>手<rt>て</rt></ruby>にすれば、あらゆる<ruby>出来事<rt>できごと</rt></ruby>に<ruby>対<rt>たい</rt></ruby>する<ruby>模範解答<rt>もはんかいとう</rt></ruby>を<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れたような<ruby>気<rt>き</rt></ruby>になる。</span><span class="sentence" data-idx="12" data-audio="p5_s3.mp3"><span class="play-ic">▶</span>しかし、<ruby>最近<rt>さいきん</rt></ruby>、<ruby>私<rt>わたし</rt></ruby>は<ruby>少<rt>すこ</rt></ruby>しの<ruby>戸惑<rt>とまど</rt></ruby>いを<ruby>感<rt>かん</rt></ruby>じている。</span><span class="sentence" data-idx="13" data-audio="p5_s4.mp3"><span class="play-ic">▶</span><ruby>長<rt>なが</rt></ruby>いあいだ、<ruby>私<rt>わたし</rt></ruby>はまず<ruby>言葉<rt>ことば</rt></ruby>を<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れ、それから<ruby>物事<rt>ものごと</rt></ruby>を<ruby>感<rt>かん</rt></ruby>じ<ruby>取<rt>と</rt></ruby>ろうとしてきた。</span><span class="sentence" data-idx="14" data-audio="p5_s5.mp3"><span class="play-ic">▶</span><ruby>本来<rt>ほんらい</rt></ruby>ならば、<ruby>暮<rt>く</rt></ruby>らしのなかから<ruby>気<rt>き</rt></ruby>づきが<ruby>生<rt>う</rt></ruby>まれ、その<ruby>気<rt>き</rt></ruby>づきが<ruby>言葉<rt>ことば</rt></ruby>へと<ruby>凝縮<rt>ぎょうしゅく</rt></ruby>されていくはずだったが、<ruby>今<rt>いま</rt></ruby>では、その<ruby>順序<rt>じゅんじょ</rt></ruby>がすっかり<ruby>逆<rt>ぎゃく</rt></ruby>になってしまっている……</span>
+</p></p><p class="note">“本末倒置”可译「<ruby>本末転倒<rt>ほんまつてんとう</rt></ruby>」「<ruby>手段<rt>しゅだん</rt></ruby>が<ruby>目的化<rt>もくてきか</rt></ruby>する」，详解见文末强化笔记。</p></div></article><div class="forms-inline"><h3>文中变形</h3><p>与えてくれる ＝<ruby>与<rt>あた</rt></ruby>える（v2 他）て形＋くれる：给（我）提供。</p><p>手にすれば ＝<ruby>手<rt>て</rt></ruby>にする（惯用）假定形：一旦到手。</p><p>感じ取ろうとしてきた ＝<ruby>感<rt>かん</rt></ruby>じ<ruby>取<rt>と</rt></ruby>る（v1 他）意志形＋としてきた：一直想要去感受。</p><p>凝縮されていく ＝<ruby>凝縮<rt>ぎょうしゅく</rt></ruby>する（n / v3 自他）被动て形＋いく：被凝练下去。</p><p>逆になってしまっている ＝<ruby>逆<rt>ぎゃく</rt></ruby>になる（惯用）て形＋しまう＋ている：已经完全颠倒。</p></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="grammar"><h2 class="section-title"><span>文</span>本文语法</h2><div class="grammar-grid"><article class="card"><h3><span class="g-num">1</span>〜というもの <span class="lvl">N2</span></h3><p><span class="pattern">それからというもの、<ruby>私<rt>わたし</rt></ruby>はいつしか、<ruby>日々<rt>ひび</rt></ruby>の<ruby>暮<rt>く</rt></ruby>らしの<ruby>細部<rt>さいぶ</rt></ruby>にも<ruby>目<rt>め</rt></ruby>を<ruby>向<rt>む</rt></ruby>けるようになった。</span></p><p>「〜てからというもの」＝自……以来（一直）。强调自某时点起状态持续至今。</p></article><article class="card"><h3><span class="g-num">2</span>〜を手にする／手に取る <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>言葉<rt>ことば</rt></ruby>を<ruby>手<rt>て</rt></ruby>にすれば、あらゆる<ruby>出来事<rt>できごと</rt></ruby>に<ruby>対<rt>たい</rt></ruby>する<ruby>模範解答<rt>もはんかいとう</rt></ruby>を<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れたような<ruby>気<rt>き</rt></ruby>になる。</span></p><p>拿到手、获得；入手。「手にする」比「手に入れる」更书面、更具仪式感。</p></article><article class="card"><h3><span class="g-num">3</span>〜に求める <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>親<rt>おや</rt></ruby>と<ruby>口論<rt>こうろん</rt></ruby>したときには、<ruby>無意識<rt>むいしき</rt></ruby>のうちにその<ruby>原因<rt>げんいん</rt></ruby>を<ruby>生<rt>う</rt></ruby>まれ<ruby>育<rt>そだ</rt></ruby>った<ruby>家庭<rt>かてい</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>した<ruby>欠落<rt>けつらく</rt></ruby>に<ruby>求<rt>もと</rt></ruby>めた。</span></p><p>把（原因、根据）归结于……、求之于……。常用于“归因”语境。</p></article><article class="card"><h3><span class="g-num">4</span>〜はずだったが <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>本来<rt>ほんらい</rt></ruby>ならば、<ruby>暮<rt>く</rt></ruby>らしのなかから<ruby>気<rt>き</rt></ruby>づきが<ruby>生<rt>う</rt></ruby>まれ、その<ruby>気<rt>き</rt></ruby>づきが<ruby>言葉<rt>ことば</rt></ruby>へと<ruby>凝縮<rt>ぎょうしゅく</rt></ruby>されていくはずだったが、<ruby>今<rt>いま</rt></ruby>では、その<ruby>順序<rt>じゅんじょ</rt></ruby>がすっかり<ruby>逆<rt>ぎゃく</rt></ruby>になってしまっている。</span></p><p>本该……（却没有）。「〜はずだ」表理应如此，接「が」引出与预期相反的现实。</p></article><article class="card"><h3><span class="g-num">5</span>〜に浸かる <span class="lvl">N2</span></h3><p><span class="pattern"><ruby>理系的<rt>りけいてき</rt></ruby>な<ruby>思考<rt>しこう</rt></ruby>にどっぷり<ruby>浸<rt>つ</rt></ruby>かっていた<ruby>私<rt>わたし</rt></ruby>にとって、<ruby>抗<rt>あらが</rt></ruby>いがたい<ruby>魅力<rt>みりょく</rt></ruby>を<ruby>放<rt>はな</rt></ruby>っていた。</span></p><p>沉浸于、泡在（某种状态/氛围）中。「どっぷり」加强程度，表示深深沉浸。</p></article><article class="card"><h3><span class="g-num">6</span>〜を放つ <span class="lvl">N2</span></h3><p><span class="pattern">それらの<ruby>概念<rt>がいねん</rt></ruby>は、<ruby>抗<rt>あらが</rt></ruby>いがたい<ruby>魅力<rt>みりょく</rt></ruby>を<ruby>放<rt>はな</rt></ruby>っていた。</span></p><p>散发、释放（光芒、魅力、气味等）。「魅力を放つ」「光を放つ」为高频搭配。</p></article><article class="card"><h3><span class="g-num">7</span>〜ようで <span class="lvl">N2</span></h3><p><span class="pattern">あらゆる<ruby>出来事<rt>できごと</rt></ruby>に、その<ruby>製造年月日<rt>せいぞうねんがっぴ</rt></ruby>と<ruby>原材料<rt>げんざいりょう</rt></ruby>が<ruby>正確<rt>せいかく</rt></ruby>に<ruby>記<rt>しる</rt></ruby>されているようで、<ruby>何<rt>なに</rt></ruby>もかもが<ruby>明確<rt>めいかく</rt></ruby>で、<ruby>精密<rt>せいみつ</rt></ruby>で、<ruby>疑<rt>うたが</rt></ruby>いようのないものに<ruby>見<rt>み</rt></ruby>えた。</span></p><p>仿佛……似的、看起来……。以比喻或推测的语气引出后文的判断。</p></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="vocab"><h2 class="section-title"><span>词</span>词汇、短语与读音</h2><div class="table-wrap"><table><thead><tr><th>单词／短语</th><th>读音</th><th>词性</th><th>级别</th><th>中文释义</th><th>短语（原型）</th></tr></thead><tbody><tr><td class="word"><ruby>ガラス<rt class="en">glass</rt></ruby></td><td>glass</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>玻璃</td><td><ruby>ガラス<rt class="en">glass</rt></ruby><ruby>器具<rt>きぐ</rt></ruby>に<ruby>囲<rt>かこ</rt></ruby>まれる</td></tr><tr><td class="word"><ruby>インターネット<rt class="en">Internet</rt></ruby></td><td>Internet</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>互联网</td><td><ruby>インターネット<rt class="en">Internet</rt></ruby><ruby>上<rt>じょう</rt></ruby>で<ruby>飛<rt>と</rt></ruby>び<ruby>交<rt>か</rt></ruby>う</td></tr><tr><td class="word"><ruby>認知バイアス<rt class="en">cognitive bias</rt></ruby></td><td>cognitive bias</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>认知偏差</td><td>「<ruby>認知バイアス<rt class="en">cognitive bias</rt></ruby>」</td></tr><tr><td class="word"><ruby>ソーシャルフィルター<rt class="en">social filter</rt></ruby></td><td>social filter</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>社交滤镜</td><td>「<ruby>ソーシャルフィルター<rt class="en">social filter</rt></ruby>」</td></tr><tr><td class="word"><ruby>タイプ<rt class="en">type</rt></ruby></td><td>type</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>类型、型</td><td>「いい<ruby>人<rt>ひと</rt></ruby>」を<ruby>演<rt>えん</rt></ruby>じる<ruby>タイプ<rt class="en">type</rt></ruby></td></tr><tr><td class="word"><ruby>ベルトコンベア<rt class="en">belt conveyor</rt></ruby></td><td>belt conveyor</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>传送带、流水线</td><td><ruby>ベルトコンベア<rt class="en">belt conveyor</rt></ruby>から<ruby>流<rt>なが</rt></ruby>れてくる</td></tr><tr><td class="word"><ruby>ラベル<rt class="en">label</rt></ruby></td><td>label</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>标签</td><td><ruby>ラベル<rt class="en">label</rt></ruby>のように<ruby>大量配布<rt>たいりょうはいふ</rt></ruby>される</td></tr><tr><td class="word"><ruby>手<rt>て</rt></ruby>に<ruby>取<rt>と</rt></ruby>る</td><td>てにとる</td><td><span class="pos">惯用</span></td><td><span class="lvl">N2</span></td><td>拿在手里、买到</td><td><ruby>本<rt>ほん</rt></ruby>を<ruby>手<rt>て</rt></ruby>に<ruby>取<rt>と</rt></ruby>る</td></tr><tr><td class="word"><ruby>温<rt>ぬく</rt></ruby>もり</td><td>ぬくもり</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>温度、温暖</td><td><ruby>温<rt>ぬく</rt></ruby>もりのない<ruby>試薬<rt>しやく</rt></ruby></td></tr><tr><td class="word"><ruby>試薬<rt>しやく</rt></ruby></td><td>しやく</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>试剂</td><td><ruby>試薬<rt>しやく</rt></ruby>と<ruby>ガラス<rt class="en">glass</rt></ruby><ruby>器具<rt>きぐ</rt></ruby></td></tr><tr><td class="word"><ruby>根<rt>ね</rt></ruby>っからの</td><td>ねっからの</td><td><span class="pos">惯用</span></td><td><span class="lvl">N2</span></td><td>打从骨子里的、地道的</td><td><ruby>根<rt>ね</rt></ruby>っからの<ruby>理系人間<rt>りけいにんげん</rt></ruby></td></tr><tr><td class="word"><ruby>理系<rt>りけい</rt></ruby></td><td>りけい</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>理科、理工科</td><td><ruby>理系人間<rt>りけいにんげん</rt></ruby></td></tr><tr><td class="word"><ruby>足<rt>あし</rt></ruby>を<ruby>踏<rt>ふ</rt></ruby>み<ruby>入<rt>い</rt></ruby>れる</td><td>あしをふみいれる</td><td><span class="pos">惯用</span></td><td><span class="lvl">N2</span></td><td>踏入、涉足</td><td><ruby>人文<rt>じんぶん</rt></ruby>の<ruby>世界<rt>せかい</rt></ruby>へ<ruby>足<rt>あし</rt></ruby>を<ruby>踏<rt>ふ</rt></ruby>み<ruby>入<rt>い</rt></ruby>れる</td></tr><tr><td class="word"><ruby>細部<rt>さいぶ</rt></ruby></td><td>さいぶ</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>细节、细部</td><td><ruby>暮<rt>く</rt></ruby>らしの<ruby>細部<rt>さいぶ</rt></ruby>に<ruby>目<rt>め</rt></ruby>を<ruby>向<rt>む</rt></ruby>ける</td></tr><tr><td class="word"><ruby>飛<rt>と</rt></ruby>び<ruby>交<rt>か</rt></ruby>う</td><td>とびかう</td><td><span class="pos">v1 自</span></td><td><span class="lvl">N1</span></td><td>纷飞、此起彼伏</td><td><ruby>専門用語<rt>せんもんようご</rt></ruby>が<ruby>盛<rt>さか</rt></ruby>んに<ruby>飛<rt>と</rt></ruby>び<ruby>交<rt>か</rt></ruby>う</td></tr><tr><td class="word"><ruby>読<rt>よ</rt></ruby>み<ruby>解<rt>と</rt></ruby>く</td><td>よみとく</td><td><span class="pos">v1 他</span></td><td><span class="lvl">N1</span></td><td>解读、读懂</td><td><ruby>複雑<rt>ふくざつ</rt></ruby>な<ruby>現象<rt>げんしょう</rt></ruby>を<ruby>読<rt>よ</rt></ruby>み<ruby>解<rt>と</rt></ruby>く</td></tr><tr><td class="word"><ruby>次<rt>つぎ</rt></ruby>から<ruby>次<rt>つぎ</rt></ruby>へ</td><td>つぎからつぎへ</td><td><span class="pos">惯用</span></td><td><span class="lvl">N2</span></td><td>接连不断</td><td><ruby>次<rt>つぎ</rt></ruby>から<ruby>次<rt>つぎ</rt></ruby>へと<ruby>現<rt>あらわ</rt></ruby>れる</td></tr><tr><td class="word"><ruby>抗<rt>あらが</rt></ruby>いがたい</td><td>あらがいがたい</td><td><span class="pos">惯用</span></td><td><span class="lvl">N1</span></td><td>难以抗拒的</td><td><ruby>抗<rt>あらが</rt></ruby>いがたい<ruby>魅力<rt>みりょく</rt></ruby></td></tr><tr><td class="word"><ruby>魅力<rt>みりょく</rt></ruby></td><td>みりょく</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>魅力</td><td><ruby>魅力<rt>みりょく</rt></ruby>を<ruby>放<rt>はな</rt></ruby>つ</td></tr><tr><td class="word"><ruby>四方八方<rt>しほうはっぽう</rt></ruby></td><td>しほうはっぽう</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>四面八方</td><td><ruby>四方八方<rt>しほうはっぽう</rt></ruby>から<ruby>押<rt>お</rt></ruby>し<ruby>寄<rt>よ</rt></ruby>せる</td></tr><tr><td class="word"><ruby>押<rt>お</rt></ruby>し<ruby>寄<rt>よ</rt></ruby>せる</td><td>おしよせる</td><td><span class="pos">v2 自</span></td><td><span class="lvl">N1</span></td><td>涌来、蜂拥而至</td><td><ruby>四方八方<rt>しほうはっぽう</rt></ruby>から<ruby>押<rt>お</rt></ruby>し<ruby>寄<rt>よ</rt></ruby>せる</td></tr><tr><td class="word"><ruby>万能<rt>ばんのう</rt></ruby></td><td>ばんのう</td><td><span class="pos">n</span><span class="pos">ナ形</span></td><td><span class="lvl">N2</span></td><td>万能、全能</td><td><ruby>便利<rt>べんり</rt></ruby>かつ<ruby>万能<rt>ばんのう</rt></ruby></td></tr><tr><td class="word"><ruby>口論<rt>こうろん</rt></ruby></td><td>こうろん</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N1</span></td><td>争吵、口角</td><td><ruby>親<rt>おや</rt></ruby>と<ruby>口論<rt>こうろん</rt></ruby>する</td></tr><tr><td class="word"><ruby>無意識<rt>むいしき</rt></ruby></td><td>むいしき</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>无意识</td><td><ruby>無意識<rt>むいしき</rt></ruby>のうちに</td></tr><tr><td class="word"><ruby>欠落<rt>けつらく</rt></ruby></td><td>けつらく</td><td><span class="pos">n</span><span class="pos">v3 自</span></td><td><span class="lvl">N1</span></td><td>缺失、缺憾</td><td><ruby>家庭<rt>かてい</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>した<ruby>欠落<rt>けつらく</rt></ruby></td></tr><tr><td class="word"><ruby>大量生産<rt>たいりょうせいさん</rt></ruby></td><td>たいりょうせいさん</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N2</span></td><td>批量生产</td><td><ruby>大量生産<rt>たいりょうせいさん</rt></ruby>、<ruby>大量配布<rt>たいりょうはいふ</rt></ruby>される</td></tr><tr><td class="word"><ruby>大量配布<rt>たいりょうはいふ</rt></ruby></td><td>たいりょうはいふ</td><td><span class="pos">n</span><span class="pos">v3 他</span></td><td><span class="lvl">N1</span></td><td>批量配发</td><td><ruby>ラベル<rt class="en">label</rt></ruby>のように<ruby>大量配布<rt>たいりょうはいふ</rt></ruby>される</td></tr><tr><td class="word"><ruby>製造年月日<rt>せいぞうねんがっぴ</rt></ruby></td><td>せいぞうねんがっぴ</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>生产日期</td><td><ruby>製造年月日<rt>せいぞうねんがっぴ</rt></ruby>が<ruby>記<rt>しる</rt></ruby>されている</td></tr><tr><td class="word"><ruby>原材料<rt>げんざいりょう</rt></ruby></td><td>げんざいりょう</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>原材料</td><td><ruby>原材料<rt>げんざいりょう</rt></ruby>が<ruby>正確<rt>せいかく</rt></ruby>に<ruby>記<rt>しる</rt></ruby>されている</td></tr><tr><td class="word"><ruby>精密<rt>せいみつ</rt></ruby></td><td>せいみつ</td><td><span class="pos">n</span><span class="pos">ナ形</span></td><td><span class="lvl">N2</span></td><td>精密</td><td><ruby>明確<rt>めいかく</rt></ruby>で、<ruby>精密<rt>せいみつ</rt></ruby>で、<ruby>疑<rt>うたが</rt></ruby>いようのない</td></tr><tr><td class="word"><ruby>疑<rt>うたが</rt></ruby>いようのない</td><td>うたがいようのない</td><td><span class="pos">惯用</span></td><td><span class="lvl">N1</span></td><td>不容置疑的</td><td><ruby>疑<rt>うたが</rt></ruby>いようのないものに<ruby>見<rt>み</rt></ruby>える</td></tr><tr><td class="word"><ruby>論理体系<rt>ろんりたいけい</rt></ruby></td><td>ろんりたいけい</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>逻辑体系</td><td><ruby>一<rt>ひと</rt></ruby>つの<ruby>論理体系<rt>ろんりたいけい</rt></ruby>を<ruby>与<rt>あた</rt></ruby>える</td></tr><tr><td class="word"><ruby>模範解答<rt>もはんかいとう</rt></ruby></td><td>もはんかいとう</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>标准答案、模范解答</td><td><ruby>模範解答<rt>もはんかいとう</rt></ruby>を<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れる</td></tr><tr><td class="word"><ruby>戸惑<rt>とまど</rt></ruby>い</td><td>とまどい</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>困惑、迷茫</td><td><ruby>少<rt>すこ</rt></ruby>しの<ruby>戸惑<rt>とまど</rt></ruby>いを<ruby>感<rt>かん</rt></ruby>じる</td></tr><tr><td class="word"><ruby>感<rt>かん</rt></ruby>じ<ruby>取<rt>と</rt></ruby>る</td><td>かんじとる</td><td><span class="pos">v1 他</span></td><td><span class="lvl">N1</span></td><td>感受到、领会</td><td><ruby>物事<rt>ものごと</rt></ruby>を<ruby>感<rt>かん</rt></ruby>じ<ruby>取<rt>と</rt></ruby>る</td></tr><tr><td class="word"><ruby>気<rt>き</rt></ruby>づき</td><td>きづき</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>觉察、感悟</td><td><ruby>暮<rt>く</rt></ruby>らしのなかから<ruby>気<rt>き</rt></ruby>づきが<ruby>生<rt>う</rt></ruby>まれる</td></tr><tr><td class="word"><ruby>凝縮<rt>ぎょうしゅく</rt></ruby></td><td>ぎょうしゅく</td><td><span class="pos">n</span><span class="pos">v3 自他</span></td><td><span class="lvl">N1</span></td><td>凝练、浓缩</td><td><ruby>言葉<rt>ことば</rt></ruby>へと<ruby>凝縮<rt>ぎょうしゅく</rt></ruby>されていく</td></tr><tr><td class="word"><ruby>順序<rt>じゅんじょ</rt></ruby></td><td>じゅんじょ</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>顺序、次序</td><td>その<ruby>順序<rt>じゅんじょ</rt></ruby>が<ruby>逆<rt>ぎゃく</rt></ruby>になる</td></tr><tr><td class="word"><ruby>本末転倒<rt>ほんまつてんとう</rt></ruby></td><td>ほんまつてんとう</td><td><span class="pos">n</span></td><td><span class="lvl">N1</span></td><td>本末倒置</td><td><ruby>本末転倒<rt>ほんまつてんとう</rt></ruby>になる</td></tr><tr><td class="word"><ruby>手段<rt>しゅだん</rt></ruby></td><td>しゅだん</td><td><span class="pos">n</span></td><td><span class="lvl">N2</span></td><td>手段</td><td><ruby>手段<rt>しゅだん</rt></ruby>が<ruby>目的化<rt>もくてきか</rt></ruby>する</td></tr></tbody></table></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section><section id="notes"><h2 class="section-title"><span>笔</span>强化笔记精讲（瑞译）</h2><div class="notes-grid"><article class="note-card"><h3><span class="sec">第一段</span>“周旋于……之间”与“完全的（理工生）”</h3><p><b>“周旋于……之间”</b>指置身于某种环境或与某些事物频繁打交道，根据语境可灵活翻译。</p><p><b>①〜に<ruby>追<rt>お</rt></ruby>われる</b></p><p><span class="ex">例：平日里，我们困在繁杂工作与现实重压之中，脚步仓促，精神时刻紧绷，不停周旋于生活各类琐事。</span></p><p><span class="tr">＝<ruby>日々<rt>ひび</rt></ruby>、<ruby>私<rt>わたし</rt></ruby>たちは<ruby>煩雑<rt>はんざつ</rt></ruby>な<ruby>仕事<rt>しごと</rt></ruby>や<ruby>現実<rt>げんじつ</rt></ruby>の<ruby>重圧<rt>じゅうあつ</rt></ruby>に<ruby>追<rt>お</rt></ruby>われ、<ruby>慌<rt>あわ</rt></ruby>ただしく<ruby>歩<rt>あゆ</rt></ruby>み<ruby>続<rt>つづ</rt></ruby>けている。<ruby>心<rt>こころ</rt></ruby>は<ruby>常<rt>つね</rt></ruby>に<ruby>張<rt>は</rt></ruby>り<ruby>詰<rt>つ</rt></ruby>め、<ruby>暮<rt>く</rt></ruby>らしの<ruby>中<rt>なか</rt></ruby>のさまざまな<ruby>些事<rt>さじ</rt></ruby>に<ruby>絶<rt>た</rt></ruby>えず<ruby>追<rt>お</rt></ruby>われている。</span></p><p><b>②〜の<ruby>間<rt>あいだ</rt></ruby>を<ruby>立<rt>た</rt></ruby>ち<ruby>回<rt>まわ</rt></ruby>る</b></p><p><span class="ex">例：189年，灵帝驾崩，何进掌握大权。王允顺势出仕，任河南尹，随后在戚宦火并中，巧妙地周旋于各方势力之间。</span></p><p><span class="tr">＝189<ruby>年<rt>ねん</rt></ruby>、<ruby>霊帝<rt>れいてい</rt></ruby>が<ruby>崩御<rt>ほうぎょ</rt></ruby>すると、<ruby>何進<rt>かしん</rt></ruby>が<ruby>実権<rt>じつけん</rt></ruby>を<ruby>掌握<rt>しょうあく</rt></ruby>した。<ruby>王允<rt>おういん</rt></ruby>もその<ruby>流<rt>なが</rt></ruby>れに<ruby>乗<rt>の</rt></ruby>って<ruby>官界<rt>かんかい</rt></ruby>に<ruby>復帰<rt>ふっき</rt></ruby>し、<ruby>河南尹<rt>かなんいん</rt></ruby>に<ruby>任<rt>にん</rt></ruby>じられた。その後、<ruby>外戚<rt>がいせき</rt></ruby>と<ruby>宦官<rt>かんがん</rt></ruby>の<ruby>対立<rt>たいりつ</rt></ruby>が<ruby>激化<rt>げきか</rt></ruby>する<ruby>中<rt>なか</rt></ruby>、<ruby>王允<rt>おういん</rt></ruby>は<ruby>各勢力<rt>かくせいりょく</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>を<ruby>巧<rt>たく</rt></ruby>みに<ruby>立<rt>た</rt></ruby>ち<ruby>回<rt>まわ</rt></ruby>った。</span></p><p><b>“完全的（理工生）”</b>：翻译人的特征时不宜直译为「<ruby>完全<rt>かんぜん</rt></ruby>な」，日文习惯用「<ruby>根<rt>ね</rt></ruby>っからの」（地道纯粹的、打从骨子里的）。</p><p><b>①「<ruby>生粋<rt>きっすい</rt></ruby>」</b>：<ruby>生粋<rt>きっすい</rt></ruby>の<ruby>江戸<rt>えど</rt></ruby>っ<ruby>子<rt>こ</rt></ruby>（地道的老东京人）。</p><p><b>②「<ruby>筋金入<rt>すじがねい</rt></ruby>り」</b>：<ruby>筋金入<rt>すじがねい</rt></ruby>りの<ruby>自己中心的<rt>じこちゅうしんてき</rt></ruby>な<ruby>男<rt>おとこ</rt></ruby>（骨子里极度以自我为中心的男人）。</p></article><article class="note-card"><h3><span class="sec">第二段</span>“大肆蔓延”“概括”与“原生家庭”</h3><p><b>“大肆蔓延”</b>形容言论、流行语、病毒或不良风气快速扩散、铺天盖地。</p><p><b>①<ruby>猛威<rt>もうい</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>るう</b></p><p><span class="ex">例：江户时期麻疹病大肆蔓延之际，戏画成了为不识字的百姓传播预防措施、治疗方法的工具。</span></p><p><span class="tr">＝<ruby>江戸時代<rt>えどじだい</rt></ruby>、<ruby>麻疹<rt>ましん</rt></ruby>が<ruby>猛威<rt>もうい</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>るった<ruby>際<rt>さい</rt></ruby>、<ruby>戯画<rt>ぎが</rt></ruby>は<ruby>文字<rt>もじ</rt></ruby>を<ruby>読<rt>よ</rt></ruby>めない<ruby>人々<rt>ひとびと</rt></ruby>に<ruby>予防法<rt>よぼうほう</rt></ruby>や<ruby>治療法<rt>ちりょうほう</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>えるための<ruby>手段<rt>しゅだん</rt></ruby>として<ruby>用<rt>もち</rt></ruby>いられた。</span></p><p><b>②<ruby>横行<rt>おうこう</rt></ruby>する</b>：新たな<ruby>詐欺手口<rt>さぎてぐち</rt></ruby>が<ruby>横行<rt>おうこう</rt></ruby>している（新型诈骗方式大肆蔓延）。</p><p><b>“概括”</b>指把纷繁复杂的事物归为一类或用一个标签包含进去。</p><p><b>①<ruby>集約<rt>しゅうやく</rt></ruby>する</b>：<ruby>新<rt>あら</rt></ruby>たな<ruby>５<rt>ご</rt></ruby>カ<ruby>年<rt>ねん</rt></ruby><ruby>発展戦略<rt>はってんせんりゃく</rt></ruby>は「３３６６」に<ruby>集約<rt>しゅうやく</rt></ruby>することができる。</p><p><b>②ひとくくりにする</b>：<ruby>物事<rt>ものごと</rt></ruby>を<ruby>単純<rt>たんじゅん</rt></ruby>にひとくくりにしようとする<ruby>行為<rt>こうい</rt></ruby>には、<ruby>常<rt>つね</rt></ruby>に<ruby>危<rt>あや</rt></ruby>うさが<ruby>伴<rt>ともな</rt></ruby>う。</p><p><b>“原生家庭”</b>指个体出生与成长的家庭环境，通常由父母、兄弟姐妹等主要抚养者构成，是个人早期社会化的重要场所。</p><p>相关拓展：<b>「<ruby>毒親<rt>どくおや</rt></ruby>」</b>（给孩子带来负面影响的父母）、<b>「<ruby>過保護<rt>かほご</rt></ruby>」</b>（过度保护）。</p></article><article class="note-card"><h3><span class="sec">第三段</span>“铺天盖地”与“讨好型人格”</h3><p><b>“铺天盖地”</b>指声势浩大，从各个方向涌来。</p><p><b>①<ruby>四方八方<rt>しほうはっぽう</rt></ruby>から<ruby>押<rt>お</rt></ruby>し<ruby>寄<rt>よ</rt></ruby>せる</b></p><p><span class="ex">例：面对铺天盖地的议论，韩红主动道歉，承认自己说话欠考虑。</span></p><p><span class="tr">＝<ruby>四方八方<rt>しほうはっぽう</rt></ruby>から<ruby>押<rt>お</rt></ruby>し<ruby>寄<rt>よ</rt></ruby>せる<ruby>批判<rt>ひはん</rt></ruby>や<ruby>議論<rt>ぎろん</rt></ruby>を<ruby>受<rt>う</rt></ruby>け、<ruby>韓紅<rt>かんこう</rt></ruby>は<ruby>自<rt>みずか</rt></ruby>ら<ruby>謝罪<rt>しゃざい</rt></ruby>し、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>発言<rt>はつげん</rt></ruby>が<ruby>配慮<rt>はいりょ</rt></ruby>を<ruby>欠<rt>か</rt></ruby>いていたことを<ruby>認<rt>みと</rt></ruby>めた。</span></p><p><b>②<ruby>溢<rt>あふ</rt></ruby>れかえる</b>：ニュースがネット<ruby>上<rt>じょう</rt></ruby>に<ruby>溢<rt>あふ</rt></ruby>れかえる（新闻铺天盖地）。</p><p><b>“讨好型人格”</b>指喜欢讨好别人、处处站在别人角度考虑，即使委屈自己也要迎合别人的一种人格特征。</p><p><b>①「いい<ruby>人<rt>ひと</rt></ruby>」を<ruby>演<rt>えん</rt></ruby>じて<ruby>他人<rt>たにん</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせすぎる<ruby>タイプ<rt class="en">type</rt></ruby></b>：一見、<ruby>人当<rt>ひとあ</rt></ruby>たりがよく<ruby>性格<rt>せいかく</rt></ruby>も<ruby>良<rt>よ</rt></ruby>さそうに<ruby>見<rt>み</rt></ruby>えるこうした<ruby>人<rt>ひと</rt></ruby>たちの<ruby>多<rt>おお</rt></ruby>くは、<ruby>実<rt>じつ</rt></ruby>は「いい<ruby>人<rt>ひと</rt></ruby>」を<ruby>演<rt>えん</rt></ruby>じて、<ruby>他人<rt>たにん</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせすぎてしまう<ruby>タイプ<rt class="en">type</rt></ruby>です。</p><p><b>②「<ruby>迎合型人格<rt>げいごうがたじんかく</rt></ruby>」</b>：こうした<ruby>慢性的<rt>まんせいてき</rt></ruby>な<ruby>感情<rt>かんじょう</rt></ruby>の<ruby>消耗<rt>しょうもう</rt></ruby>は、<ruby>心理学的<rt>しんりがくてき</rt></ruby>に<ruby>見<rt>み</rt></ruby>ると、まさに<ruby>典型的<rt>てんけいてき</rt></ruby>な「<ruby>迎合型人格<rt>げいごうがたじんかく</rt></ruby>」のパターンだといえます。</p></article><article class="note-card"><h3><span class="sec">第四段</span>“流水线”的译法</h3><p><b>“流水线”</b>意为传送带，也比喻标准化、机械化、批量产出的机械过程。</p><p><b>①<ruby>ベルトコンベア<rt class="en">belt conveyor</rt></ruby></b></p><p><span class="ex">例：他们将电动传送带对接上，一组人员站在车箱内将物资逐个放置在传送带上……形成了一道简易且高效的卸货流水线。</span></p><p><span class="tr">＝<ruby>彼<rt>かれ</rt></ruby>らは<ruby>電動<rt>でんどう</rt></ruby><ruby>ベルトコンベア<rt class="en">belt conveyor</rt></ruby>をつなぎ<ruby>合<rt>あ</rt></ruby>わせ、<ruby>一方<rt>いっぽう</rt></ruby>のグループが<ruby>車両内<rt>しゃりょうない</rt></ruby>から<ruby>物資<rt>ぶっし</rt></ruby>をひとつずつ<ruby>ベルトコンベア<rt class="en">belt conveyor</rt></ruby>に<ruby>載<rt>の</rt></ruby>せ、もう<ruby>一方<rt>いっぽう</rt></ruby>のグループがその<ruby>終端<rt>しゅうたん</rt></ruby>で<ruby>物資<rt>ぶっし</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>ることで、<ruby>簡易<rt>かんい</rt></ruby>ながら<ruby>効率的<rt>こうりつてき</rt></ruby>な<ruby>荷下<rt>にお</rt></ruby>ろし<ruby>用<rt>よう</rt></ruby><ruby>ベルトコンベア<rt class="en">belt conveyor</rt></ruby>を<ruby>構築<rt>こうちく</rt></ruby>した。</span></p><p><b>②<ruby>流<rt>なが</rt></ruby>れ<ruby>作業<rt>さぎょう</rt></ruby></b>：<ruby>自動化<rt>じどうか</rt></ruby>された<ruby>流<rt>なが</rt></ruby>れ<ruby>作業<rt>さぎょう</rt></ruby>を<ruby>導入<rt>どうにゅう</rt></ruby>する（实现自动化流水线作业）。</p></article><article class="note-card"><h3><span class="sec">第五段</span>“本末倒置”的译法</h3><p><b>“本末倒置”</b>比喻把主要的和次要的、重要的和不重要的位置弄颠倒了。</p><p><b>①<ruby>本末転倒<rt>ほんまつてんとう</rt></ruby></b></p><p><span class="ex">例：说到底，大学食堂的核心仍是提供实惠健康的日常餐饮……关键在于把握尺度，不本末倒置。</span></p><p><span class="tr">＝<ruby>結局<rt>けっきょく</rt></ruby>のところ、<ruby>大学食堂<rt>だいがくしょくどう</rt></ruby>の<ruby>本来<rt>ほんらい</rt></ruby>の<ruby>役割<rt>やくわり</rt></ruby>は、<ruby>手頃<rt>てごろ</rt></ruby>で<ruby>健康的<rt>けんこうてき</rt></ruby>な<ruby>日常<rt>にちじょう</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>を<ruby>提供<rt>ていきょう</rt></ruby>することにある。……<ruby>重要<rt>じゅうよう</rt></ruby>なのは、<ruby>度<rt>ど</rt></ruby>をわきまえ、<ruby>本末転倒<rt>ほんまつてんとう</rt></ruby>にならないことである。</span></p><p><b>②<ruby>手段<rt>しゅだん</rt></ruby>が<ruby>目的化<rt>もくてきか</rt></ruby>する</b>：<ruby>企業<rt>きぎょう</rt></ruby>が<ruby>異業種<rt>いぎょうしゅ</rt></ruby>コラボに<ruby>取<rt>と</rt></ruby>り<ruby>組<rt>く</rt></ruby>む<ruby>際<rt>さい</rt></ruby>には、<ruby>手段<rt>しゅだん</rt></ruby>が<ruby>目的化<rt>もくてきか</rt></ruby>しないよう<ruby>十分<rt>じゅうぶん</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>がある。</p></article></div><p class="back-top"><a href="#top">▲ 返回顶部</a></p></section>
+
+    <footer>
+      7-2 专业名词的围城（强化笔记融合版）｜日语读音（黄色平假名）、外来语（蓝色）、语法、词汇、文中变形与强化笔记精讲整理<br>
+      正文依据用户提供的资料整理，仅供个人学习使用。
+    </footer>
+  </main>
+
+<script>
+(function(){
+  const AUDIO_DIR = "7-2/audio/";
+  const TOTAL = 15;
+  let current = 0;
+  let playing = false;
+  let rate = 1.0;
+  let loopMode = false;
+  const audio = new Audio();
+  const $ = id => document.getElementById(id);
+
+  function playSentence(idx){
+    if (idx < 0 || idx >= TOTAL) return;
+    current = idx;
+    playing = true;
+    updateUI();
+    const s = document.querySelector('.sentence[data-idx="' + idx + '"]');
+    audio.src = AUDIO_DIR + (s ? s.dataset.audio : 'p1_s1.mp3');
+    audio.playbackRate = rate;
+    audio.currentTime = 0;
+    audio.play().then(() => { playing = true; updateUI(); })
+      .catch(e => { console.error('播放失败:', e); });
+  }
+
+  function togglePlay(){
+    if (playing){ audio.pause(); playing=false; updateUI(); }
+    else if (!audio.src) playSentence(current);
+    else { audio.play().then(()=>{playing=true;updateUI();}); }
+  }
+  function nextSentence(){
+    if (current+1 < TOTAL) playSentence(current+1);
+    else if (loopMode) playSentence(0);
+    else { audio.pause(); playing=false; updateUI(); }
+  }
+  function prevSentence(){ if (current>0) playSentence(current-1); }
+
+  function sentenceInSec(el){
+    const sec = el.closest('section');
+    const all = sec.querySelectorAll('.sentence');
+    for (let i=0;i<all.length;i++) if (all[i]===el) return i+1;
+    return 1;
+  }
+
+  function updateUI(){
+    $('btn-play').textContent = playing ? '⏸' : '▶';
+    document.querySelectorAll('.sentence').forEach(el=>{
+      el.classList.toggle('playing', parseInt(el.dataset.idx)===current);
+    });
+    const s = document.querySelector('.sentence[data-idx="'+current+'"]');
+    if (s){
+      const sec = s.closest('section');
+      const st = sec ? sec.querySelector('.section-title').textContent : '';
+      const n = sentenceInSec(s);
+      $('sentence-status').textContent = (playing?'播放中':'暂停')+' ｜ '+st+' 第'+n+'句';
+      const rect = s.getBoundingClientRect();
+      const bar = $('player-bar').getBoundingClientRect();
+      if (rect.top < bar.bottom || rect.bottom > window.innerHeight){
+        s.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+    }
+  }
+
+  audio.addEventListener('ended', nextSentence);
+  audio.addEventListener('timeupdate', ()=>{
+    if (audio.duration){
+      const pct = audio.currentTime/audio.duration*100;
+      $('progress-fill').style.width = pct+'%';
+      $('progress-knob').style.left = pct+'%';
+    }
+  });
+  $('progress').addEventListener('click', e=>{
+    if (!audio.duration) return;
+    const r = $('progress').getBoundingClientRect();
+    audio.currentTime = (e.clientX-r.left)/r.width*audio.duration;
+  });
+  $('rate-group').addEventListener('click', e=>{
+    const b = e.target.closest('.rate-btn'); if(!b) return;
+    rate = parseFloat(b.dataset.rate);
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(x=>x.classList.toggle('active', x===b));
+  });
+  $('btn-mode').addEventListener('click', ()=>{
+    loopMode = !loopMode;
+    $('btn-mode').textContent = '循环: '+(loopMode?'开':'关');
+    $('btn-mode').classList.toggle('active', loopMode);
+  });
+  $('btn-play').addEventListener('click', togglePlay);
+  $('btn-next').addEventListener('click', nextSentence);
+  $('btn-prev').addEventListener('click', prevSentence);
+
+  document.querySelectorAll('.sentence').forEach(el=>{
+    el.addEventListener('click', ()=>playSentence(parseInt(el.dataset.idx)));
+  });
+
+  document.addEventListener('keydown', e=>{
+    if (e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+    switch(e.code){
+      case 'Space': e.preventDefault(); togglePlay(); break;
+      case 'ArrowRight': nextSentence(); break;
+      case 'ArrowLeft': prevSentence(); break;
+      case 'ArrowUp': e.preventDefault(); setRate(Math.min(1.5, rate+0.25)); break;
+      case 'ArrowDown': e.preventDefault(); setRate(Math.max(0.5, rate-0.25)); break;
+    }
+  });
+  function setRate(r){
+    rate = Math.round(r*100)/100;
+    audio.playbackRate = rate;
+    document.querySelectorAll('.rate-btn').forEach(b=>{
+      b.classList.toggle('active', parseFloat(b.dataset.rate)===rate);
+    });
+  }
+  audio.preload = 'auto';
+  window.__reader = { getAudio: () => audio, getState: () => ({current, playing, rate, loopMode}) };
+})();
+</script>
+
+</body>
+</html>
