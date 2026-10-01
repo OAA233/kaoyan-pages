@@ -2277,22 +2277,26 @@ document.addEventListener('keydown', e => {
     d.querySelector('#gp-x').onclick = function(){ dbgOpen=false; d.style.display='none'; };
     document.body.appendChild(d);
   }
-  function dbgRender(){
+    function dbgRender(){
     var body = document.getElementById('gp-body'); if (!body) return;
     var pads = navigator.getGamepads();
     var html = '';
     for (var i=0;i<pads.length;i++){
       var p = pads[i]; if (!p) continue;
-      html += '<div>游戏柄 '+i+': '+p.id.replace(/</g,'&lt;')+' | mapping="'+p.mapping+'" | 按钮数='+p.buttons.length+' | 轴数='+p.axes.length+'</div>';
+      html += '<div>手柄 '+i+': '+p.id.replace(/</g,'&lt;')+' | mapping="'+p.mapping+'" | buttons='+p.buttons.length+' | axes='+p.axes.length+'</div>';
       html += '<div style="margin:4px 0 8px;">';
       for (var j=0;j<p.buttons.length;j++){
-        var on = p.buttons[j].pressed;
-        html += '<span style="display:inline-block;min-width:26px;margin:2px;padding:3px 0;border-radius:4px;text-align:center;background:'+(on?'#f33':'#333')+';color:'+(on?'#fff':'#998')+';">'+j+'</span>';
+        var b = p.buttons[j];
+        var v = (b && typeof b.value==='number') ? b.value : 0;
+        var on = (b && (b.pressed || v > 0.5));
+        html += '<span title="'+j+'" style="display:inline-block;min-width:52px;margin:2px;padding:3px 0;border-radius:4px;text-align:center;background:'+(on?'#f33':'#333')+';color:'+(on?'#fff':'#998')+';">'+j+':'+v.toFixed(2)+'</span>';
       }
-      if (p.axes && p.axes.length) html += '<div style="opacity:.8;margin-top:4px;">axes: '+p.axes.map(v=>v.toFixed(2)).join(', ')+'</div>';
+      if (p.axes && p.axes.length){
+        html += '<div style="opacity:.9;margin-top:4px;">axes: '+p.axes.map(function(v){return v.toFixed(2);}).join(', ')+'</div>';
+      }
       html += '</div>';
     }
-    if (!html) html = '<div style="opacity:.7">没有枚举到手柄。请在蓝牙里连上 Joy-Con，然后随便按一个键。</div>';
+    if (!html) html = '<div style="opacity:.7">没有枚举到手柄。蓝牙连上 Joy-Con 后随便按一个键。</div>';
     body.innerHTML = html;
   }
   setInterval(function(){
