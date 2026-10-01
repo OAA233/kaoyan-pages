@@ -1637,13 +1637,18 @@ function speakTTS(text){
   speechSynthesis.speak(u);
 }
 function play(aid, asfx, text){
-  if (curAudio) { curAudio.pause(); }
+  // 复用单个 Audio 元素：首次由用户手势播放后即"解锁"，后续 dict 链式播放(非手势)
+  // 的 play() 不会再被 iOS/Chrome 自动播放策略拦截。preload=auto 预取，降低首播失败。
+  if (!curAudio) { curAudio = new Audio(); curAudio.preload = 'auto'; }
+  const a = curAudio;
+  a.pause();
   if (aid) {
     const p = `../audio/N1/N1_3_audio/${aid}${asfx || ''}.mp3?v=1`;
-    curAudio = new Audio(p);
-    curAudio.onended = () => { if (typeof dictHook === 'function') dictHook(asfx); };
-    curAudio.play().catch(() => {
-      if (text) speakTTS(text);
+    a.src = p; a.load();
+    a.onended = () => { if (typeof dictHook === 'function') dictHook(asfx); };
+    a.play().catch(() => {
+      // 失败(多为源未就绪)：重试一次；仍有 text 则走 TTS 兜底，避免纯静音
+      a.play().then(() => {}).catch(() => { if (text) speakTTS(text); });
     });
   } else if (text) {
     speakTTS(text);
