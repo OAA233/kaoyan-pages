@@ -3,74 +3,1290 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>新完全掌握 7-2 政治・法律・歴史</title>
+<title>7-2 政治・法律・歴史</title>
 <style>
   body {
     --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
-    --num: #8b8577; --num-border: #5a564d; --muted: .55;
+    --num: #8b8577; --num-border: #5a564d; --muted: .55; --accent: #4cc2ff;
     font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans CJK JP", "PingFang SC", sans-serif;
     background: var(--bg); color: var(--fg);
-    margin: 0; padding: 20px; max-width: 1080px;
+    margin: 0; padding: 14px 16px; max-width: 1080px;
     transition: background .2s, color .2s;
   }
-  body.day { --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8; --num: #8a8373; --num-border: #c4bda9; --muted: .6; }
+  body.day {
+    --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8;
+    --num: #8a8373; --num-border: #c4bda9; --muted: .6;
+  }
   header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
   header h1 { font-size: 20px; margin: 0 0 4px; }
   header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
-  #themeBtn { border: 1px solid var(--num-border); background: var(--card); color: var(--fg); border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px; }
+  #themeBtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; margin-bottom: 12px;
+  }
   #themeBtn:hover { opacity: .8; }
   .stats { display: inline-flex; gap: 8px; font-size: 12px; opacity: .7; }
-  .sec { font-size: 13px; font-weight: 700; opacity: .5; margin: 22px 0 8px; letter-spacing: .05em; grid-column: 1 / -1; }
-  #list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: start; }
-  .card { border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; background: var(--card); border-left: 5px solid #555; }
+  .sec-h { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin: 16px 0 6px; grid-column: 1 / -1; }
+  .sec-title { font-size: 13px; font-weight: 700; opacity: .55; letter-spacing: .05em; }
+  
+  /* 浏览排版 */
+  #list { }
+  .row2 { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; }
+  .col2 { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+  .card {
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 10px 14px; background: var(--card);
+    border-left: 5px solid #555; position: relative;
+  }
   .card.cV { border-left-color: #e5484d; }
   .card.cI { border-left-color: #d63384; }
   .card.cNA { border-left-color: #7048e8; }
   .card.cN { border-left-color: #1971c2; }
   .card.cadv { border-left-color: #2b8a3e; }
-  .row1 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-  .num { font-size: 11px; font-weight: 700; color: var(--num); border: 1.5px solid var(--num-border); border-radius: 50%; width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; align-self: center; }
-  .word { font-size: 20px; font-weight: 700; cursor: pointer; }
+  .card.cIDM { border-left-color: #b08a3e; }
+
+  .row1 { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .num {
+    font-size: 11px; font-weight: 700; color: var(--num);
+    border: 1.5px solid var(--num-border); border-radius: 50%;
+    width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: center;
+  }
+  .word { font-size: 19px; font-weight: 700; cursor: pointer; }
   ruby.word { ruby-align: center; }
   ruby.word rt { font-size: 10px; font-weight: 500; opacity: .55; letter-spacing: .02em; }
   ruby.word rt.en { font-style: italic; opacity: .5; }
   .word:hover { text-decoration: underline; }
-  .pos { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 7px; color: #fff; }
+  .pos { font-size: 11px; font-weight: 700; padding: 2px 7px; white-space: nowrap; border-radius: 7px; color: #fff; }
   .pos.V { background: #e5484d; }
   .pos.I { background: #d63384; }
   .pos.NA { background: #7048e8; }
   .pos.N { background: #1971c2; }
   .pos.adv { background: #2b8a3e; }
-  .mean { margin-top: 2px; font-size: 13px; }
-  .phrase { margin-top: 10px; font-size: 13px; }
+  .pos.IDM { background: #b08a3e; }
+  .mean { margin-top: 3px; font-size: 13px; margin-left: 30px; }
+  .phrase { margin-top: 6px; font-size: 13px; margin-left: 30px; }
   .phrase .jp { font-weight: 600; cursor: pointer; }
   .phrase .jp:hover { text-decoration: underline; }
-  .phrase .zh { opacity: var(--muted); margin-left: 8px; }
-  .spk { cursor: pointer; font-size: 14px; opacity: .4; margin-left: 4px; user-select: none; }
-  .spk:hover { opacity: 1; }
-  .pair { display: flex; align-items: flex-start; gap: 12px; }
-  .side { flex: 1; min-width: 0; }
-  .side .entry { margin-bottom: 6px; }
-  .side .entry:last-child { margin-bottom: 0; }
-  .vs { font-size: 18px; opacity: .5; flex-shrink: 0; user-select: none; padding-top: 2px; }
-  @media (max-width: 760px) { #list { grid-template-columns: 1fr; } }
+  .phrase .zh { display: block; opacity: var(--muted); margin-top: 1px; font-weight: 400; }
+
+  /* 对立组/同类组 */
+  .entry { margin-bottom: 6px; }
+  .entry:last-child { margin-bottom: 0; }
+  .bra { display: flex; gap: 10px; align-items: stretch; position: relative; }
+  .bra .half { flex: 1; min-width: 0; }
+  
+  /* 中间相对/关系符号 */
+  .bar-wrap {
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; user-select: none; padding: 0 4px;
+  }
+  .vs-arr { font-size: 16px; opacity: .65; color: var(--num); font-weight: 700; }
+  .vs-ant { width: 0; border-left: 2px solid var(--num-border); height: 100%; min-height: 26px; }
+  .vs-syn { width: 14px; border-top: 2px solid var(--num-border); }
+
+  @media (max-width: 760px) {
+    .row2 { flex-direction: column; }
+    .bra { flex-direction: column; }
+    .bar-wrap { padding: 6px 0; }
+    .vs-ant { width: 100%; height: 0; border-left: none; border-top: 2px solid var(--num-border); }
+  }
+
+  /* ---- 编辑模式样式 ---- */
+  .hbtn {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer;
+  }
+  .hbtn:hover { border-color: var(--accent); }
+  .hbtn.pri { border-color: var(--accent); color: var(--accent); }
+  .hide { display: none !important; }
+
+  .addbtns { display: inline-flex; gap: 6px; }
+  .addbtns button {
+    border: 1px solid var(--num-border); background: var(--card); color: var(--fg);
+    border-radius: 7px; padding: 2px 8px; font-size: 11px; cursor: pointer; opacity: .8;
+  }
+  .addbtns button:hover { border-color: var(--accent); opacity: 1; }
+
+  body.editing .card { cursor: grab; }
+  body.editing .entry { cursor: grab; position: relative; }
+  .dragging { opacity: .35 !important; }
+  .item { margin-bottom: 10px; }
+  .item.ins-top { box-shadow: 0 -3px 0 var(--accent); }
+  .item.ins-bot { box-shadow: 0 3px 0 var(--accent); }
+  .half.over { outline: 2px dashed var(--accent); outline-offset: 3px; border-radius: 8px; }
+
+  body.editing .bar-wrap {
+    cursor: pointer; border-radius: 6px; padding: 2px 6px;
+    border: 1px dashed transparent;
+  }
+  body.editing .bar-wrap:hover {
+    border-color: var(--accent); background: rgba(76,194,255,.12);
+  }
+
+  .wpair { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .wside { display: inline-flex; align-items: baseline; }
+  .wmid { width: 2px; align-self: stretch; background: var(--num-border); opacity: .6; margin: 0 2px; }
+  .mid-dot { opacity: .45; margin: 0 2px; font-weight: 400; }
+  .merge-bar { display: flex; gap: 6px; justify-content: center; margin: 2px 0 6px; opacity: .75; }
+  .mb-btn { border: 1px dashed var(--num-border); background: var(--card); color: var(--fg); border-radius: 6px; padding: 1px 10px; font-size: 13px; cursor: pointer; }
+  .mb-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---- 悬浮编辑工具条 ---- */
+  #ftool { position: fixed; right: 18px; bottom: 18px; z-index: 600; display: none; flex-direction: column; gap: 6px; background: var(--card); border: 1px solid var(--accent); border-radius: 14px; padding: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.35); }
+  #ftool.open { display: flex; }
+  #ftool .ft-tip { font-size: 10px; opacity: .5; text-align: center; margin-bottom: 2px; }
+  #ftool button { border: 1px solid var(--num-border); background: var(--bg); color: var(--fg); border-radius: 8px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
+  #ftool button:hover { border-color: var(--accent); color: var(--accent); }
+  .drag-handle { cursor: grab; opacity: .4; font-size: 14px; user-select: none; }
+  .drag-handle:hover { opacity: 1; color: var(--accent); }
+  .edf:focus { outline: 1px dashed var(--accent); background: rgba(76,194,255,.08); border-radius: 4px; }
+  .edf.empty:empty::before { content: attr(data-ph); opacity: .35; }
+  .edk { font-size: 12px; opacity: .65; min-width: 20px; }
+  .ede { font-size: 11px; font-style: italic; opacity: .5; min-width: 20px; }
+  .edmean { font-size: 13px; }
+  .edph { font-size: 13px; font-weight: 600; }
+  .edphz { display: block; font-size: 12px; opacity: .6; font-weight: 400; }
+  .sp { position: absolute; top: 2px; right: 24px; opacity: .3; cursor: pointer; font-size: 12px; user-select: none; z-index: 5; }
+  .sp:hover { opacity: 1; color: #4cc2ff; }
+  .x { position: absolute; top: 2px; right: 6px; opacity: .3; cursor: pointer; font-size: 12px; user-select: none; z-index: 5; }
+  .x:hover { opacity: 1; color: #e5484d; }
+  .gx { position: absolute; top: 4px; right: 8px; opacity: .35; cursor: pointer; font-size: 13px; z-index: 5; }
+  .gx:hover { opacity: 1; color: #e5484d; }
+  .note { border-left: 3px solid var(--num-border); background: rgba(128,128,128,.08); border-radius: 6px; padding: 6px 10px; font-size: 13px; position: relative; }
+  .sec-items { display: block; }
+
+  /* Modal */
+  .modal-mask {
+    position: fixed; inset: 0; background: rgba(0,0,0,.6); backdrop-filter: blur(2px);
+    display: none; align-items: center; justify-content: center; z-index: 100;
+  }
+  .modal-mask.open { display: flex; }
+  .modal-box {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    width: 90%; max-width: 620px; max-height: 85vh; padding: 20px; box-sizing: border-box;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .modal-btns { display: flex; justify-content: flex-end; gap: 8px; }
+
+  /* ---- 听写模式 ---- */
+  #dict { position: fixed; inset: 0; background: var(--bg); z-index: 700; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  #dict.open { display: flex; }
+  #dictBig { font-size: 20px; padding: 16px 30px; border-radius: 16px; border: 1px solid var(--num-border); background: var(--card); color: var(--fg); cursor: pointer; }
+  #dictAns { min-height: 130px; transition: opacity .2s; }
+  #dictAns.hidden { opacity: 0; pointer-events: none; user-select: none; }
+  .dword { font-size: 30px; font-weight: 800; }
+  .dpos { opacity: .5; font-size: 12px; }
+  .dmean { font-size: 16px; margin-top: 4px; }
+  .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
+  .dphz { display: block; opacity: .6; font-size: 13px; }
+  .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
 </style>
 </head>
 <body>
 <header>
   <div>
     <h1>7-2 政治・法律・歴史</h1>
-    <p>新完全掌握 · N1 · 第7章 社会 第2课（书内 p.38–39）<span class="stats">共 <b id="count"></b> 词 · 点击日文发音（edge 女声）</span></p>
+    <p>第7章 社会 2課 政治・法律・歴史（书内 p.38–39）<span class="stats">共 <b id="count"></b> 词 · 点击日文发音（edge 女声）</span></p>
   </div>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
+  <button id="editBtn" class="hbtn" onclick="toggleEdit()">✏️ 编辑</button>
+  <button id="expBtn" class="hbtn pri hide" onclick="exportData()">⬇ 导出 JSON</button>
+  <button id="rstBtn" class="hbtn hide" onclick="resetAll()">↺ 重置</button>
   <button id="themeBtn" onclick="toggleTheme()">🌙 夜间</button>
 </header>
 <div id="list"></div>
 
+<!-- 导出 Modal -->
+<div class="modal-mask" id="exportModal">
+  <div class="modal-box">
+    <h3 style="margin:0;">导出当前数据 (JSON)</h3>
+    <p style="font-size:12px;opacity:.6;margin:0;">已自动触发文件下载。您也可以直接复制下方 JSON 数据备份：</p>
+    <textarea id="exportText" rows="14" style="width:100%;box-sizing:border-box;font-family:monospace;font-size:11px;background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:6px;padding:8px;"></textarea>
+    <div class="modal-btns">
+      <button class="hbtn" onclick="document.getElementById('exportModal').classList.remove('open')">关闭</button>
+      <button class="hbtn pri" onclick="copyExportText()">复制到剪贴板</button>
+    </div>
+  </div>
+</div>
+
 <script>
-const DATA = [{"s": "一", "pair": ["促す", "うながす", "促进，促使"], "p": "V1", "ph": "政策の転換を促す", "phz": "促使政策转向"}, {"s": "一", "pair": ["質疑", "しつぎ", "质询"], "p": "N", "ph": "質疑を行う", "phz": "进行质询"}, {"s": "一", "pair": ["異論", "いろん", "异议"], "p": "N", "ph": "異論を唱える", "phz": "提出异议"}, {"s": "一", "pair": ["踏まえる", "ふまえる", "基于，依据"], "p": "V2", "ph": "議論を踏まえる", "phz": "基于讨论"}, {"s": "一", "pair": ["承認", "しょうにん", "批准"], "p": "N", "ph": "国会の承認を得る", "phz": "获得国会批准"}, {"s": "一", "pair": ["採決", "さいけつ", "表决"], "p": "N", "ph": "議長が採決を取る", "phz": "议长组织表决"}, {"s": "一", "pair": ["審議", "しんぎ", "审议"], "p": "N", "ph": "法案が審議される", "phz": "法案被审议"}, {"s": "一", "pair": ["採択", "さいたく", "通过，采纳"], "p": "N", "ph": "法案が採択される", "phz": "法案被通过"}, {"s": "一", "pair": ["成立", "せいりつ", "成立"], "p": "N", "ph": "法案が成立する", "phz": "法案成立"}, {"s": "一", "pair": ["改革", "かいかく", "改革"], "p": "N", "ph": "制度を改革する", "phz": "改革制度"}, {"s": "一", "pair": ["制定", "せいてい", "制定"], "p": "N", "ph": "法律を制定する", "phz": "制定法律"}, {"s": "一", "pair": ["整備", "せいび", "完备，整备"], "p": "N", "ph": "法整備を進める", "phz": "推进法律完善"}, {"s": "一", "pair": ["改定", "かいてい", "修订"], "p": "N", "ph": "法律を改定する", "phz": "修订法律"}, {"s": "一", "pair": ["施行", "しこう", "施行"], "p": "N", "ph": "法律を施行する", "phz": "施行法律"}, {"s": "一", "pair": ["緩和", "かんわ", "缓和，放宽"], "p": "N", "ph": "規制が緩和される", "phz": "管制被放宽"}, {"s": "一", "pair": ["声明", "せいめい", "声明"], "p": "N", "ph": "政府が声明を発表する", "phz": "政府发表声明"}, {"s": "一", "pair": ["措置", "そち", "措施"], "p": "N", "ph": "万全の措置を取る", "phz": "采取万全措施"}, {"s": "一", "pair": ["万全の｜異例の｜寛大な", "ばんぜんの｜いれいの｜かんだいな", "万全的｜破例的｜宽大的"], "p": "N", "ph": "万全の措置", "phz": "万全的措施"}, {"s": "一", "pair": ["調印", "ちょういん", "签署"], "p": "N", "ph": "条約に調印する", "phz": "签署条约"}, {"s": "一", "pair": ["協議", "きょうぎ", "协议，磋商"], "p": "N", "ph": "関係閣僚が協議する", "phz": "相关阁僚磋商"}, {"s": "一", "pair": ["腐敗", "ふはい", "腐败"], "p": "N", "ph": "政治が腐敗する", "phz": "政治腐败"}, {"s": "一", "pair": ["申請", "しんせい", "申请"], "right": ["発給", "はっきゅう", "签发"], "p": "N", "ph": "ビザを申請する", "phz": "申请签证"}, {"s": "一", "pair": ["訴訟", "そしょう", "诉讼"], "p": "N", "ph": "訴訟を起こす", "phz": "提起诉讼"}, {"s": "一", "pair": ["損害", "そんがい", "损害"], "p": "N", "ph": "損害の賠償を求める", "phz": "要求损害赔偿"}, {"s": "一", "pair": ["賠償", "ばいしょう", "赔偿"], "p": "N", "ph": "損害の賠償を求める", "phz": "要求赔偿"}, {"s": "一", "pair": ["検察", "けんさつ", "检察"], "p": "N", "ph": "検察が告訴する", "phz": "检察方起诉"}, {"s": "一", "pair": ["告訴", "こくそ", "起诉，控告"], "p": "N", "ph": "検察が告訴する", "phz": "提起控告"}, {"s": "一", "pair": ["権利", "けんり", "权利"], "p": "N", "ph": "権利を保障する", "phz": "保障权利"}, {"s": "一", "pair": ["保障", "ほしょう", "保障"], "p": "N", "ph": "権利を保障する", "phz": "保障权利"}, {"s": "一", "pair": ["判決", "はんけつ", "判决"], "p": "N", "ph": "判決が下る", "phz": "下达判决"}, {"s": "一", "pair": ["死刑｜懲役", "しけい｜ちょうえき", "死刑｜徒刑"], "p": "N", "ph": "死刑｜懲役", "phz": "死刑／徒刑"}, {"s": "二", "pair": ["形成", "けいせい", "形成"], "p": "N", "ph": "国家を形成する", "phz": "形成国家"}, {"s": "二", "pair": ["侵略", "しんりゃく", "侵略"], "p": "N", "ph": "異民族に侵略される", "phz": "被异民族侵略"}, {"s": "二", "pair": ["復興", "ふっこう", "复兴"], "p": "N", "ph": "戦争から復興する", "phz": "从战争中复兴"}, {"s": "二", "pair": ["繁栄", "はんえい", "繁荣"], "right": ["衰退", "すいたい", "衰退"], "p": "N", "ph": "帝国が繁栄する", "phz": "帝国繁荣"}, {"s": "二", "pair": ["内戦", "ないせん", "内战"], "p": "N", "ph": "内戦が起きる", "phz": "爆发内战"}, {"s": "二", "pair": ["紛争", "ふんそう", "纠纷，争端"], "p": "N", "ph": "紛争が起きる", "phz": "发生争端"}, {"s": "二", "pair": ["分断", "ぶんだん", "分割，分裂"], "p": "N", "ph": "国が東西に分断される", "phz": "国家被分割"}, {"s": "二", "pair": ["遺跡", "いせき", "遗迹"], "p": "N", "ph": "遺跡を発掘する", "phz": "发掘遗迹"}, {"s": "二", "pair": ["発掘", "はっくつ", "发掘"], "p": "N", "ph": "遺跡を発掘する", "phz": "发掘遗迹"}, {"s": "二", "pair": ["増強", "ぞうきょう", "增强"], "p": "N", "ph": "軍事力を増強する", "phz": "增强军力"}, {"s": "三", "pair": ["貧困層", "ひんこんそう", "贫困层"], "p": "N", "ph": "貧困層", "phz": "贫困阶层"}, {"s": "三", "pair": ["異民族", "いみんぞく", "异民族"], "p": "N", "ph": "異民族", "phz": "异民族"}, {"s": "三", "pair": ["異文化", "いぶんか", "异文化"], "p": "N", "ph": "異文化を理解する", "phz": "理解异文化"}, {"s": "三", "pair": ["住居跡", "じゅうきょあと", "居住遗址"], "p": "N", "ph": "住居跡", "phz": "居住遗址"}, {"s": "三", "pair": ["緩和", "かんわ", "缓和"], "p": "N", "ph": "規制を緩和する", "phz": "放宽管制"}, {"s": "四", "pair": ["一見", "いっけん", "乍看"], "p": "adv", "ph": "一見おとなしそうだが", "phz": "乍看很老实，但"}, {"s": "四", "pair": ["直ちに", "ただちに", "立刻"], "p": "adv", "ph": "直ちに撤退する", "phz": "立刻撤退"}, {"s": "四", "pair": ["根本的", "こんぽんてき", "根本性的"], "p": "ナ", "ph": "根本的に改革される", "phz": "被根本性改革"}];
-const SEC = {"一": "1. 政治・法律（立法・行政・司法）", "二": "2. 歴史", "三": "語形成（p.39）", "四": "例文中的副词（p.39）"};
-const LP = ['', '-b', '-c', '-d'];
-const RP = ['-r', '-rb', '-rc', '-rd'];
+// DATA 结构说明:
+// id: 独立编号 | aid: 音频编号 (对应 N1_7-2_audio/*.mp3) | asfx: 音频后缀 (如 '-r', 'p')
+// s: 章节名 | w: 单词 | k: 假名注音 | en: 外来语英语原型
+// m: 中文释义 | p: 词性 | ph: 例句 | phz: 例句中译
+// role: 'arr' (相对 ⇄) / 'ant' (竖线反义 |) / 'syn' (横杠同类 —) / '' (独立单卡)
+// side: 'L' / 'R' 组内左右 | g: 组号 (同一章节内同组连续渲染) | kind: 'note'=文本卡片
+const INITIAL_DATA = [
+ {
+  "id": 1,
+  "aid": 1,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "促す",
+  "k": "うながす",
+  "en": "",
+  "p": "V1他",
+  "m": "促进，催促，促使",
+  "ph": "政策の転換を促す",
+  "phz": "促使政策转向",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 2,
+  "aid": 2,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "質疑",
+  "k": "しつぎ",
+  "en": "",
+  "p": "N",
+  "m": "质询，质疑",
+  "ph": "質疑を行う",
+  "phz": "进行质询",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 3,
+  "aid": 3,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "異論",
+  "k": "いろん",
+  "en": "",
+  "p": "N",
+  "m": "异议",
+  "ph": "異論を唱える",
+  "phz": "提出异议",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 4,
+  "aid": 4,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "踏まえる",
+  "k": "ふまえる",
+  "en": "",
+  "p": "V2他",
+  "m": "基于，依据",
+  "ph": "議論を踏まえる",
+  "phz": "基于讨论",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 5,
+  "aid": 5,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "承認",
+  "k": "しょうにん",
+  "en": "",
+  "p": "N",
+  "m": "批准，认可",
+  "ph": "国会の承認を得る",
+  "phz": "获得国会批准",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 6,
+  "aid": 6,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "採決",
+  "k": "さいけつ",
+  "en": "",
+  "p": "N",
+  "m": "表决",
+  "ph": "議長が採決を取る",
+  "phz": "议长组织表决",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 7,
+  "aid": 7,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "採択",
+  "k": "さいたく",
+  "en": "",
+  "p": "N",
+  "m": "通过，采纳",
+  "ph": "法案が採択される",
+  "phz": "法案获得通过",
+  "role": "syn",
+  "side": "L",
+  "g": 1
+ },
+ {
+  "id": 8,
+  "aid": 8,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "成立",
+  "k": "せいりつ",
+  "en": "",
+  "p": "N",
+  "m": "成立，（法案）通过",
+  "ph": "法案が成立する",
+  "phz": "法案成立",
+  "role": "syn",
+  "side": "R",
+  "g": 1
+ },
+ {
+  "id": 9,
+  "aid": 9,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "改革",
+  "k": "かいかく",
+  "en": "",
+  "p": "N",
+  "m": "改革",
+  "ph": "制度を改革する",
+  "phz": "改革制度",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 10,
+  "aid": 10,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "制定",
+  "k": "せいてい",
+  "en": "",
+  "p": "N",
+  "m": "制定",
+  "ph": "法律を制定する",
+  "phz": "制定法律",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 11,
+  "aid": 11,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "整備",
+  "k": "せいび",
+  "en": "",
+  "p": "N",
+  "m": "完善，整备",
+  "ph": "法整備を進める",
+  "phz": "推进法制完善",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 12,
+  "aid": 12,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "改定",
+  "k": "かいてい",
+  "en": "",
+  "p": "N",
+  "m": "修订",
+  "ph": "法律を改定する",
+  "phz": "修订法律",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 13,
+  "aid": 13,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "施行",
+  "k": "しこう",
+  "en": "",
+  "p": "N",
+  "m": "施行，实施",
+  "ph": "法律を施行する",
+  "phz": "施行法律",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 14,
+  "aid": 14,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "緩和",
+  "k": "かんわ",
+  "en": "",
+  "p": "N",
+  "m": "缓和，放宽",
+  "ph": "規制が緩和される",
+  "phz": "管制被放宽",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 15,
+  "aid": 15,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "声明",
+  "k": "せいめい",
+  "en": "",
+  "p": "N",
+  "m": "声明",
+  "ph": "政府が声明を発表する",
+  "phz": "政府发表声明",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 16,
+  "aid": 16,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "措置",
+  "k": "そち",
+  "en": "",
+  "p": "N",
+  "m": "措施",
+  "ph": "万全の措置を取る",
+  "phz": "采取万全措施",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 17,
+  "aid": 17,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "万全の",
+  "k": "ばんぜんの",
+  "en": "",
+  "p": "N",
+  "m": "万无一失的，万全的",
+  "ph": "万全の措置",
+  "phz": "万全的措施",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 18,
+  "aid": 18,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "異例の",
+  "k": "いれいの",
+  "en": "",
+  "p": "N",
+  "m": "破例的，史无前例的",
+  "ph": "異例の措置",
+  "phz": "破例的措施",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 19,
+  "aid": 19,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "寛大な",
+  "k": "かんだいな",
+  "en": "",
+  "p": "ナ",
+  "m": "宽大的，宽容的",
+  "ph": "寛大な措置",
+  "phz": "宽大的处理",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 20,
+  "aid": 20,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "調印",
+  "k": "ちょういん",
+  "en": "",
+  "p": "N",
+  "m": "签署",
+  "ph": "条約に調印する",
+  "phz": "签署条约",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 21,
+  "aid": 21,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "協議",
+  "k": "きょうぎ",
+  "en": "",
+  "p": "N",
+  "m": "协议，磋商",
+  "ph": "関係閣僚が協議する",
+  "phz": "相关阁僚进行磋商",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 22,
+  "aid": 22,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "腐敗",
+  "k": "ふはい",
+  "en": "",
+  "p": "N",
+  "m": "腐败",
+  "ph": "政治が腐敗する",
+  "phz": "政治腐败",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 23,
+  "aid": 23,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "申請",
+  "k": "しんせい",
+  "en": "",
+  "p": "N",
+  "m": "申请",
+  "ph": "ビザを申請する",
+  "phz": "申请签证",
+  "role": "ant",
+  "side": "L",
+  "g": 2
+ },
+ {
+  "id": 24,
+  "aid": 24,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "発給",
+  "k": "はっきゅう",
+  "en": "",
+  "p": "N",
+  "m": "签发，发放",
+  "ph": "ビザを発給する",
+  "phz": "发放签证",
+  "role": "ant",
+  "side": "R",
+  "g": 2
+ },
+ {
+  "id": 25,
+  "aid": 25,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "訴訟",
+  "k": "そしょう",
+  "en": "",
+  "p": "N",
+  "m": "诉讼",
+  "ph": "訴訟を起こす",
+  "phz": "提起诉讼",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 26,
+  "aid": 26,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "損害",
+  "k": "そんがい",
+  "en": "",
+  "p": "N",
+  "m": "损害",
+  "ph": "損害の賠償を求める",
+  "phz": "要求损害赔偿",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 27,
+  "aid": 27,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "賠償",
+  "k": "ばいしょう",
+  "en": "",
+  "p": "N",
+  "m": "赔偿",
+  "ph": "損害の賠償を求める",
+  "phz": "要求赔偿",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 28,
+  "aid": 28,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "検察",
+  "k": "けんさつ",
+  "en": "",
+  "p": "N",
+  "m": "检察（方）",
+  "ph": "検察が告訴する",
+  "phz": "检察方起诉",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 29,
+  "aid": 29,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "告訴",
+  "k": "こくそ",
+  "en": "",
+  "p": "N",
+  "m": "起诉，控告",
+  "ph": "検察が告訴する",
+  "phz": "提起控告",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 30,
+  "aid": 30,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "権利",
+  "k": "けんり",
+  "en": "",
+  "p": "N",
+  "m": "权利",
+  "ph": "権利を保障する",
+  "phz": "保障权利",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 31,
+  "aid": 31,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "基本的人権",
+  "k": "きほんてきじんけん",
+  "en": "",
+  "p": "N",
+  "m": "基本人权",
+  "ph": "基本的人権を保障する",
+  "phz": "保障基本人权",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 32,
+  "aid": 32,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "保障",
+  "k": "ほしょう",
+  "en": "",
+  "p": "N",
+  "m": "保障",
+  "ph": "権利を保障する",
+  "phz": "保障权利",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 33,
+  "aid": 33,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "判決",
+  "k": "はんけつ",
+  "en": "",
+  "p": "N",
+  "m": "判决",
+  "ph": "判決が下る",
+  "phz": "下达判决",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 34,
+  "aid": 34,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "死刑",
+  "k": "しけい",
+  "en": "",
+  "p": "N",
+  "m": "死刑",
+  "ph": "",
+  "phz": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 35,
+  "aid": 35,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "懲役",
+  "k": "ちょうえき",
+  "en": "",
+  "p": "N",
+  "m": "有期徒刑，懲役",
+  "ph": "",
+  "phz": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 36,
+  "aid": 36,
+  "asfx": "",
+  "s": "1. 政治・法律（立法・行政・司法）",
+  "w": "貧困層",
+  "k": "ひんこんそう",
+  "en": "",
+  "p": "N",
+  "m": "贫困阶层",
+  "ph": "貧困層を支援する",
+  "phz": "援助贫困阶层",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 37,
+  "aid": 37,
+  "asfx": "",
+  "s": "2. 歴史",
+  "w": "形成",
+  "k": "けいせい",
+  "en": "",
+  "p": "N",
+  "m": "形成",
+  "ph": "国家を形成する",
+  "phz": "形成国家",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 38,
+  "aid": 38,
+  "asfx": "",
+  "s": "2. 歴史",
+  "w": "侵略",
+  "k": "しんりゃく",
+  "en": "",
+  "p": "N",
+  "m": "侵略",
+  "ph": "異民族に侵略される",
+  "phz": "被异民族侵略",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 39,
+  "aid": 39,
+  "asfx": "",
+  "s": "2. 歴史",
+  "w": "復興",
+  "k": "ふっこう",
+  "en": "",
+  "p": "N",
+  "m": "复兴，重建",
+  "ph": "戦争から復興する",
+  "phz": "从战争中复兴",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 40,
+  "aid": 40,
+  "asfx": "",
+  "s": "2. 歴史",
+  "w": "繁栄",
+  "k": "はんえい",
+  "en": "",
+  "p": "N",
+  "m": "繁荣",
+  "ph": "帝国が繁栄する",
+  "phz": "帝国繁荣",
+  "role": "ant",
+  "side": "L",
+  "g": 3
+ },
+ {
+  "id": 41,
+  "aid": 41,
+  "asfx": "",
+  "s": "2. 歴史",
+  "w": "衰退",
+  "k": "すいたい",
+  "en": "",
+  "p": "N",
+  "m": "衰退，衰落",
+  "ph": "",
+  "phz": "",
+  "role": "ant",
+  "side": "R",
+  "g": 3
+ },
+ {
+  "id": 42,
+  "aid": 42,
+  "asfx": "",
+  "s": "2. 歴史",
+  "w": "内戦",
+  "k": "ないせん",
+  "en": "",
+  "p": "N",
+  "m": "内战",
+  "ph": "内戦が起きる",
+  "phz": "爆发内战",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 43,
+  "aid": 43,
+  "asfx": "",
+  "s": "2. 歴史",
+  "w": "紛争",
+  "k": "ふんそう",
+  "en": "",
+  "p": "N",
+  "m": "纠纷，争端",
+  "ph": "紛争が起きる",
+  "phz": "发生争端",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 44,
+  "aid": 44,
+  "asfx": "",
+  "s": "2. 歴史",
+  "w": "分断",
+  "k": "ぶんだん",
+  "en": "",
+  "p": "N",
+  "m": "分裂，分割",
+  "ph": "国が東西に分断される",
+  "phz": "国家被东西分割",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 45,
+  "aid": 45,
+  "asfx": "",
+  "s": "2. 歴史",
+  "w": "遺跡",
+  "k": "いせき",
+  "en": "",
+  "p": "N",
+  "m": "遗迹，遗址",
+  "ph": "遺跡を発掘する",
+  "phz": "发掘遗迹",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 46,
+  "aid": 46,
+  "asfx": "",
+  "s": "2. 歴史",
+  "w": "発掘",
+  "k": "はっくつ",
+  "en": "",
+  "p": "N",
+  "m": "发掘，挖掘",
+  "ph": "遺跡を発掘する",
+  "phz": "发掘遗迹",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 47,
+  "aid": 47,
+  "asfx": "",
+  "s": "2. 歴史",
+  "w": "増強",
+  "k": "ぞうきょう",
+  "en": "",
+  "p": "N",
+  "m": "增强，加强",
+  "ph": "軍事力を増強する",
+  "phz": "增强军力",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 48,
+  "aid": 48,
+  "asfx": "",
+  "s": "3. 語形成",
+  "w": "異民族",
+  "k": "いみんぞく",
+  "en": "",
+  "p": "N",
+  "m": "异民族，异族",
+  "ph": "",
+  "phz": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 49,
+  "aid": 49,
+  "asfx": "",
+  "s": "3. 語形成",
+  "w": "異文化",
+  "k": "いぶんか",
+  "en": "",
+  "p": "N",
+  "m": "异文化，异国文化",
+  "ph": "異文化を理解する",
+  "phz": "理解异文化",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 50,
+  "aid": 50,
+  "asfx": "",
+  "s": "3. 語形成",
+  "w": "漢民族",
+  "k": "かんみんぞく",
+  "en": "",
+  "p": "N",
+  "m": "汉民族，汉族",
+  "ph": "",
+  "phz": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 51,
+  "aid": 51,
+  "asfx": "",
+  "s": "3. 語形成",
+  "w": "遊牧民族",
+  "k": "ゆうぼくみんぞく",
+  "en": "",
+  "p": "N",
+  "m": "游牧民族",
+  "ph": "",
+  "phz": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 52,
+  "aid": 52,
+  "asfx": "",
+  "s": "3. 語形成",
+  "w": "住居跡",
+  "k": "じゅうきょあと",
+  "en": "",
+  "p": "N",
+  "m": "居住遗址",
+  "ph": "",
+  "phz": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 53,
+  "aid": 53,
+  "asfx": "",
+  "s": "3. 語形成",
+  "w": "傷跡",
+  "k": "きずあと",
+  "en": "",
+  "p": "N",
+  "m": "伤疤，伤痕",
+  "ph": "",
+  "phz": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 54,
+  "aid": 54,
+  "asfx": "",
+  "s": "3. 語形成",
+  "w": "足跡",
+  "k": "そくせき",
+  "en": "",
+  "p": "N",
+  "m": "足迹，脚印",
+  "ph": "",
+  "phz": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 55,
+  "aid": 55,
+  "asfx": "",
+  "s": "3. 語形成",
+  "w": "古代文明",
+  "k": "こだいぶんめい",
+  "en": "",
+  "p": "N",
+  "m": "古代文明",
+  "ph": "",
+  "phz": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 56,
+  "aid": 56,
+  "asfx": "",
+  "s": "3. 語形成",
+  "w": "四大文明",
+  "k": "よだいぶんめい",
+  "en": "",
+  "p": "N",
+  "m": "四大文明",
+  "ph": "",
+  "phz": "",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 57,
+  "aid": 57,
+  "asfx": "",
+  "s": "4. 例文中的副词",
+  "w": "再三",
+  "k": "さいさん",
+  "en": "",
+  "p": "adv",
+  "m": "再三，屡次",
+  "ph": "再三注意を促している",
+  "phz": "再三提醒注意",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 58,
+  "aid": 58,
+  "asfx": "",
+  "s": "4. 例文中的副词",
+  "w": "一向に",
+  "k": "いっこうに",
+  "en": "",
+  "p": "adv",
+  "m": "一向，全然（后接否定）",
+  "ph": "一向に変わる気配がない",
+  "phz": "丝毫没有改变的迹象",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 59,
+  "aid": 59,
+  "asfx": "",
+  "s": "4. 例文中的副词",
+  "w": "大幅に",
+  "k": "おおはばに",
+  "en": "",
+  "p": "adv",
+  "m": "大幅度地",
+  "ph": "輸入規制を大幅に緩和する",
+  "phz": "大幅放宽进口管制",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 60,
+  "aid": 60,
+  "asfx": "",
+  "s": "4. 例文中的副词",
+  "w": "根本的",
+  "k": "こんぽんてき",
+  "en": "",
+  "p": "ナ",
+  "m": "根本性的",
+  "ph": "根本的に改革される",
+  "phz": "被根本性改革",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 61,
+  "aid": 61,
+  "asfx": "",
+  "s": "4. 例文中的副词",
+  "w": "一見",
+  "k": "いっけん",
+  "en": "",
+  "p": "adv",
+  "m": "乍一看",
+  "ph": "一見おとなしそうだが",
+  "phz": "乍看很老实，但",
+  "role": "",
+  "side": "",
+  "g": 0
+ },
+ {
+  "id": 62,
+  "aid": 62,
+  "asfx": "",
+  "s": "4. 例文中的副词",
+  "w": "直ちに",
+  "k": "ただちに",
+  "en": "",
+  "p": "adv",
+  "m": "立刻，立即",
+  "ph": "直ちに撤退する",
+  "phz": "立刻撤退",
+  "role": "",
+  "side": "",
+  "g": 0
+ }
+];
+let DATA = [];
+const STORAGE_KEY = 'wb_n1_7_2_edit';
+(function(){
+  try {
+    const s = localStorage.getItem(STORAGE_KEY);
+    if (s) {
+      const o = JSON.parse(s);
+      if (o && Array.isArray(o.data) && o.data.length) DATA = o.data;
+    }
+  } catch(e) {}
+  if (!DATA || !DATA.length) DATA = JSON.parse(JSON.stringify(INITIAL_DATA));
+})();
+
+let nextId = Math.max(0, ...DATA.map(d => d.id || 0)) + 1;
+let editing = false, dragD = null, saveTimer = null;
+
+function save(){
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify({page: 'N1_7-2', data: DATA})); } catch(e) {}
+}
+function saveSoon(){
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(save, 400);
+}
+function resetAll(){
+  if (confirm('确定清空所有修改，恢复初始版式与数据吗？')) {
+    try { localStorage.removeItem(STORAGE_KEY); } catch(e) {}
+    DATA = JSON.parse(JSON.stringify(INITIAL_DATA));
+    save();
+    render();
+  }
+}
+const byId = id => DATA.find(d => d.id === id);
+
+/* 音频与 Web Speech 朗读兜底 */
+let curAudio = null;
+function chooseVoice(){
+  if (!('speechSynthesis' in window)) return null;
+  const vs = speechSynthesis.getVoices().filter(v => /^ja/i.test(v.lang));
+  const cleanVs = vs.filter(v => !/eddy|flo|grandma|grandpa|rocko|reed|sandy|shelley/i.test(v.name));
+  return cleanVs.find(v => /nanami|kyoko|haruka|ayumi|female|女/i.test(v.name))
+      || cleanVs.find(v => /siri|microsoft|edge/i.test(v.name))
+      || cleanVs[0]
+      || vs.find(v => /kyoko/i.test(v.name))
+      || vs[0];
+}
+if ('speechSynthesis' in window) {
+  speechSynthesis.onvoiceschanged = chooseVoice;
+}
+function speakTTS(text){
+  if (!('speechSynthesis' in window) || !text) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'ja-JP';
+  u.rate = 0.9;
+  const v = chooseVoice();
+  if (v) u.voice = v;
+  speechSynthesis.speak(u);
+}
+function play(aid, asfx, text){
+  // 复用单个 Audio 元素：首次由用户手势播放后即"解锁"，后续 dict 链式播放(非手势)
+  // 的 play() 不会再被 iOS/Chrome 自动播放策略拦截。preload=auto 预取，降低首播失败。
+  if (!curAudio) { curAudio = new Audio(); curAudio.preload = 'auto'; }
+  const a = curAudio;
+  a.pause();
+  if (aid) {
+    const p = `../audio/N1/N1_7-2_audio/${aid}${asfx || ''}.mp3?v=1`;
+    a.src = p; a.load();
+    a.onended = () => { if (typeof dictHook === 'function') dictHook(asfx); };
+    a.play().catch(() => {
+      // 失败(多为源未就绪)：重试一次；仍有 text 则走 TTS 兜底，避免纯静音
+      a.play().then(() => {}).catch(() => { if (text) speakTTS(text); });
+    });
+  } else if (text) {
+    speakTTS(text);
+  }
+}
 
 function applyTheme(day){
   document.body.classList.toggle('day', day);
@@ -79,66 +1295,672 @@ function applyTheme(day){
 function toggleTheme(){
   const day = !document.body.classList.contains('day');
   applyTheme(day);
-  try { localStorage.setItem('n172theme', day ? 'day' : 'night'); } catch(e) {}
+  try { localStorage.setItem('wb_n1_7_2_edit_theme', day ? 'day' : 'night'); } catch(e) {}
 }
-applyTheme((() => { try { return localStorage.getItem('n172theme') === 'day'; } catch(e) { return false; } })());
+applyTheme((() => { try { return localStorage.getItem('wb_n1_7_2_edit_theme') === 'day'; } catch(e) { return false; } })());
 
-let curAudio = null;
-function play(num, suffix){
-  if (curAudio) { curAudio.pause(); }
-  curAudio = new Audio(`../audio/N1/N1_7-2_audio/${num}${suffix || ''}.mp3`);
-  curAudio.play();
+function toggleEdit(){
+  editing = !editing;
+  document.body.classList.toggle('editing', editing);
+  document.getElementById('editBtn').textContent = editing ? '✅ 完成' : '✏️ 编辑';
+  document.getElementById('expBtn').classList.toggle('hide', !editing);
+  document.getElementById('rstBtn').classList.toggle('hide', !editing);
+  if (!editing) save();
+  render();
 }
 
-function rubyHtml(w, k, num, sfx){
-  const kata = w.match(/^([ァ-ヶー]+)/);
-  if (kata) {
-    const en = /^[a-zA-Z]/.test(k);
-    return `<ruby class="word" onclick="play(${num},'${sfx}')">${kata[1]}<rt${en ? ' class="en"' : ''}>${k}</rt></ruby>${w.slice(kata[1].length)}`;
+const posCls = p => !p ? 'N' : (p.includes('惯') ? 'IDM' : (p.includes('V') ? 'V' : (p.includes('イ') ? 'I' : (p.includes('ナ') ? 'NA' : (p.includes('adv') ? 'adv' : 'N')))));
+const esc = s => String(s == null ? '' : s);
+
+function rubyHtml(d){
+  const w = d.w || '', k = d.k || '', en = d.en || '';
+  const safeW = w.replace(/'/g, "\\'");
+  const click = `onclick="play(${d.aid || 0},'${d.asfx || ''}','${safeW}')"`;
+  const one = (wv, kv) => {
+    const enx = en || (/^[a-zA-Z]/.test(kv || '') ? kv : '');
+    const kvx = enx && enx === kv ? '' : kv;
+    const kata = wv.match(/^([ァ-ヶー]+)/);
+    if (!kata) {
+      const tk = enx ? wv.match(/^(.*?[一-鿿])([ァ-ヶー]+)$/) : null;
+      if (tk && kvx && kvx !== wv && kvx.endsWith(tk[2])) {
+        return `<ruby class="word" ${click}>${tk[1]}<rt>${kvx.slice(0, kvx.length - tk[2].length)}</rt></ruby><ruby class="word" ${click}>${tk[2]}<rt class="en">${enx}</rt></ruby>`;
+      }
+      const rtx = kvx && kvx !== wv ? `<rt>${kvx}</rt>` : (enx ? `<rt class="en">${enx}</rt>` : '');
+      return rtx ? `<ruby class="word" ${click}>${wv}${rtx}</ruby>`
+                 : `<span class="word" ${click}>${wv}</span>`;
+    }
+    const kp = kata[1], rest = wv.slice(kp.length);
+    const head = enx ? `<ruby class="word" ${click}>${kp}<rt class="en">${enx}</rt></ruby>`
+      : (!rest && kvx && kvx !== wv) ? `<ruby class="word" ${click}>${kp}<rt>${kvx}</rt></ruby>`
+      : `<span class="word" ${click}>${kp}</span>`;
+    if (!rest) return head;
+    const restK = kvx && kvx !== wv ? (kvx.startsWith(kp) ? kvx.slice(kp.length) : (enx ? '' : kvx)) : '';
+    const tail = /[一-鿿]/.test(rest)
+      ? (restK ? `<ruby class="word" ${click}>${rest}<rt>${restK}</rt></ruby>` : rest)
+      : rest;
+    return head + tail;
+  };
+  if (w.includes('・')) {          // ・ 多词 → 左右相对（同义对照），各带注音
+    const ws = w.split('・'), ks = k.split('・');
+    return `<span class="wpair">` + ws.map((wv, i) => `<span class="wside">${one(wv, ks[i] || '')}</span>`).join('<span class="wmid"></span>') + `</span>`;
   }
-  if (/[\u4e00-\u9fff]/.test(w)) {
-    return `<ruby class="word" onclick="play(${num},'${sfx}')">${w}<rt>${k}</rt></ruby>`;
+  return one(w, k);
+}
+
+const phRead = d => {
+  if (!d.ph) return '';
+  const jp = d.ph.split('｜').map(s => s.trim()).filter(Boolean);
+  const zh = (d.phz || '').split('｜').map(s => s.trim());
+  const multi = jp.length > 1;
+  return jp.map((s, i) => {
+    const sfx = d._tts_ph ? '' : (multi ? 'p' + (i + 1) : 'p');
+    const aid = d._tts_ph ? 0 : (d.aid || 0);
+    const txt = s.replace(/'/g, "\'");
+    return `
+  <div class="phrase">
+    <span class="jp" onclick="play(${aid},'${sfx}','${txt}')">${esc(s)}</span>
+    <span class="zh">${esc(zh[i] || '')}</span>
+  </div>`;
+  }).join('');
+};
+
+const entryRead = d => `
+  <div class="entry">
+    <div class="row1">
+      <span class="num">${d.aid || d.id}</span>
+      ${rubyHtml(d)}
+      <span class="pos ${posCls(d.p)}">${esc(d.p)}</span>
+    </div>
+    <div class="mean">${esc(d.m)}</div>
+    ${phRead(d)}
+  </div>`;
+
+const edSpan = (d, f, cls, ph) => `<span class="edf ${cls}${d[f] ? '' : ' empty'}" contenteditable="true" data-ph="${ph}" data-f="${f}">${esc(d[f])}</span>`;
+
+const entryEdit = d => `
+  <div class="entry" data-did="${d.id}">
+    <div class="row1">
+      <span class="drag-handle" draggable="true" title="拖动排序/入组">⠿</span>
+      <span class="num">${d.aid || d.id}</span>
+      ${edSpan(d,'w','word','词')}
+      ${edSpan(d,'k','edk','注音')}
+      ${edSpan(d,'en','ede','en')}
+      ${edSpan(d,'p','pos ' + posCls(d.p),'词性')}
+      <span class="sp" data-sp="1" title="拆出为独立卡">⇱</span><span class="x" data-x="1" title="删除该词">✕</span>
+    </div>
+    <div class="mean">${edSpan(d,'m','edmean','释义')}</div>
+    <div class="phrase">
+      ${edSpan(d,'ph','edph','例句')}
+      ${edSpan(d,'phz','edphz','中译')}
+    </div>
+  </div>`;
+
+const noteRead = d => `<div class="notecard note">${esc(d.text)}</div>`;
+const noteEdit = d => `<div class="notecard note" data-did="${d.id}"><span class="drag-handle" draggable="true" title="拖动排序">⠿</span>${edSpan(d,'text','','文本')}<span class="x" data-x="1" title="删除备注">✕</span></div>`;
+
+function getBarHtml(role, g){
+  const title = editing ? 'title="点击切换符号：⇄ (相对) / | (竖线反义) / — (横杠同类)"' : '';
+  if (role === 'ant') {
+    return `<div class="bar-wrap" data-bar="${g}" ${title}><span class="vs-ant"></span></div>`;
+  } else if (role === 'syn') {
+    return `<div class="bar-wrap" data-bar="${g}" ${title}><span class="vs-syn"></span></div>`;
+  } else {
+    return `<div class="bar-wrap" data-bar="${g}" ${title}><span class="vs-arr">⇄</span></div>`;
   }
-  return `<span class="word" onclick="play(${num},'${sfx}')">${w}</span>`;
 }
 
 const list = document.getElementById('list');
-let cur = '';
-let n = 0;
-for (const d of DATA) {
-  if (d.s !== cur) {
-    cur = d.s;
-    const h = document.createElement('div');
-    h.className = 'sec';
-    h.textContent = SEC[cur] || cur;
-    list.appendChild(h);
-  }
-  n++;
-  const posCls = d.p.startsWith('V') ? 'V' : d.p === 'イ' ? 'I' : d.p === 'ナ' ? 'NA' : d.p === 'adv' ? 'adv' : 'N';
-  const card = document.createElement('div');
-  card.className = 'card c' + posCls;
-  const side = (t, prefixes) => {
-    const ws = t[0].split('｜'), ks = t[1].split('｜'), ms = t[2].split('｜');
-    return `<div class="side">` + ws.map((wv, i) => `
-      <div class="entry">
-        <div class="row1">
-          ${rubyHtml(wv, ks[i], n, prefixes[i])}
-          <span class="spk" onclick="play(${n},'${prefixes[i]}')">🔊</span>
-          ${i === 0 ? `<span class="pos ${posCls}">${d.p}</span>` : ''}
-        </div>
-        <div class="mean">${ms[i]}</div>
-      </div>`).join('') + `</div>`;
-  };
-  const inner = d.right
-    ? `<div class="pair">${side(d.pair, LP)}<span class="vs">⇄</span>${side(d.right, RP)}</div>`
-    : side(d.pair, LP);
-  card.innerHTML = `
-    <div class="row1"><span class="num">${n}</span></div>
-    ${inner}
-    <div class="phrase"><span class="jp" onclick="play(${n},'p')">${d.ph}<span class="spk">🔊</span></span><span class="zh">${d.phz}</span></div>`;
-  list.appendChild(card);
+
+function removeD(d){
+  const i = DATA.indexOf(d);
+  if (i >= 0) { DATA.splice(i, 1); return true; }
+  return false;
 }
-document.getElementById('count').textContent = n;
+function secLastIdx(s){
+  let last = -1;
+  DATA.forEach((d, i) => { if (d.s === s) last = i; });
+  return last;
+}
+function addToSecEnd(d, s){
+  d.s = s;
+  const at = secLastIdx(s);
+  DATA.splice(at + 1, 0, d);
+}
+function newG(){
+  return Math.max(0, ...DATA.map(d => d.g || 0)) + 1;
+}
+
+function render(){
+  list.innerHTML = '';
+  let curS = null, row = null, colA = null, colB = null, wrap = null, alt = 0;
+  let lastG = null, lastRole = null, gHead = null, halves = null, gRole = null, gG = null;
+
+  for (let i = 0; i < DATA.length; i++){
+    const d = DATA[i];
+    if (d.s !== curS){
+      curS = d.s;
+      const h = document.createElement('div'); h.className = 'sec-h';
+      const t = document.createElement('span'); t.className = 'sec-title'; t.textContent = curS;
+      if (editing){
+        const oldS = curS;
+        t.contentEditable = 'true';
+        t.addEventListener('input', () => {
+          const ns = t.textContent;
+          DATA.forEach(x => { if (x.s === oldS) x.s = ns; });
+          curS = ns;
+          saveSoon();
+        });
+        const bb = document.createElement('span'); bb.className = 'addbtns';
+        const mk = (label, fn) => {
+          const b = document.createElement('button');
+          b.textContent = label;
+          b.addEventListener('click', fn);
+          bb.appendChild(b);
+        };
+        mk('+词框', () => {
+          // 插到本节最前面（第一个该节条目之前）= 组的上面
+          const at = DATA.findIndex(x => x.s === curS);
+          DATA.splice(at < 0 ? DATA.length : at, 0, {id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0});
+          save(); render();
+        });
+        mk('+相对组 (⇄)', () => {
+          const g = newG();
+          addToSecEnd({id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'arr', side: 'L', g}, curS);
+          addToSecEnd({id: nextId++, aid: 0, asfx: '-r', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'arr', side: 'R', g}, curS);
+          save(); render();
+        });
+        mk('+反义组 (|)', () => {
+          const g = newG();
+          addToSecEnd({id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'ant', side: 'L', g}, curS);
+          addToSecEnd({id: nextId++, aid: 0, asfx: '-r', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'ant', side: 'R', g}, curS);
+          save(); render();
+        });
+        mk('+同类组 (—)', () => {
+          const g = newG();
+          addToSecEnd({id: nextId++, aid: 0, asfx: '', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'syn', side: 'L', g}, curS);
+          addToSecEnd({id: nextId++, aid: 0, asfx: '-r', s: curS, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: 'syn', side: 'R', g}, curS);
+          save(); render();
+        });
+        mk('+文本', () => {
+          addToSecEnd({id: nextId++, s: curS, kind: 'note', text: ''}, curS);
+          save(); render();
+        });
+        h.appendChild(bb);
+      }
+      h.appendChild(t);
+      list.appendChild(h);
+
+      if (editing){
+        wrap = document.createElement('div'); wrap.className = 'sec-items'; list.appendChild(wrap);
+        wrap.addEventListener('dragover', e => e.preventDefault());
+        wrap.addEventListener('drop', e => {
+          e.preventDefault();
+          if (dragD && dragD.s === curS) {
+            removeD(dragD); addToSecEnd(dragD, curS); save(); render();
+          }
+        });
+      } else {
+        row = document.createElement('div'); row.className = 'row2';
+        colA = document.createElement('div'); colA.className = 'col2';
+        colB = document.createElement('div'); colB.className = 'col2';
+        row.appendChild(colA); row.appendChild(colB);
+        list.appendChild(row);
+      }
+      lastG = null; lastRole = null; alt = 0;
+    }
+
+    const isNote = d.kind === 'note';
+    const hasRole = !isNote && (d.role === 'arr' || d.role === 'ant' || d.role === 'syn');
+    const entryHtml = isNote ? (editing ? noteEdit(d) : noteRead(d)) : (editing ? entryEdit(d) : entryRead(d));
+
+    if (hasRole){
+      if (d.role !== lastRole || d.g !== lastG){
+        lastRole = d.role; lastG = d.g; gRole = d.role; gG = d.g;
+        gHead = document.createElement('div');
+        gHead.className = 'item';
+        gHead.innerHTML = `
+          <div class="card c${posCls(d.p)}">
+            <div class="bra">
+              <div class="half"></div>
+              ${getBarHtml(d.role, d.g)}
+              <div class="half"></div>
+            </div>
+            ${editing ? `<span class="gx" data-gx="${d.g}" data-gs="${esc(d.s)}" title="删除整个成对组">✕</span>` : ''}
+          </div>`;
+        if (editing){
+          const itemEl = gHead;
+          itemEl.addEventListener('dragover', e => e.preventDefault());
+          attachTopDrop(itemEl, d, curS);
+        }
+        (editing ? wrap : (alt++ % 2 === 0 ? colA : colB)).appendChild(gHead);
+        halves = gHead.querySelectorAll('.half');
+        if (editing){
+          halves.forEach((h, hi) => {
+            h.addEventListener('dragover', e => { e.preventDefault(); e.stopPropagation(); h.classList.add('over'); });
+            h.addEventListener('dragleave', () => h.classList.remove('over'));
+            h.addEventListener('drop', e => {
+              e.preventDefault(); e.stopPropagation(); h.classList.remove('over');
+              if (!dragD) return;
+              removeD(dragD);
+              dragD.role = gRole; dragD.g = gG; dragD.side = hi === 1 ? 'R' : 'L'; dragD.s = curS;
+              let at = -1;
+              DATA.forEach((x, xi) => { if (x.s === curS && x.role === gRole && x.g === gG && x.side === dragD.side) at = xi; });
+              if (at < 0) DATA.forEach((x, xi) => { if (x.s === curS && x.role === gRole && x.g === gG && at < 0) at = xi; });
+              DATA.splice(at + 1, 0, dragD);
+              save(); render();
+            });
+          });
+        }
+      }
+      (d.side === 'R' ? halves[1] : halves[0]).innerHTML += entryHtml;
+    } else {
+      // 编辑模式：上一项也是独立词 → 显示合并按钮（⇄ | —）
+      if (editing && !isNote){
+        const prev = DATA[i-1];
+        if (prev && prev.s === d.s && prev.kind !== 'note' && !(prev.role === 'arr' || prev.role === 'ant' || prev.role === 'syn')){
+          const mb = document.createElement('div'); mb.className = 'merge-bar';
+          mb.innerHTML = ['arr', 'ant', 'syn'].map(r =>
+            `<button class="mb-btn" data-mr="${r}" title="${r === 'arr' ? '相对⇄' : r === 'ant' ? '竖线反义|' : '横杠同类—'}">${r === 'arr' ? '⇄' : r === 'ant' ? '|' : '—'}</button>`).join('');
+          mb.addEventListener('click', e => {
+            const btn = e.target.closest('.mb-btn'); if (!btn) return;
+            const role = btn.dataset.mr, g = newG();
+            prev.role = role; prev.side = 'L'; prev.g = g;
+            d.role = role; d.side = 'R'; d.g = g;
+            save(); render();
+          });
+          wrap.appendChild(mb);
+        }
+      }
+      const item = document.createElement('div'); item.className = 'item';
+      const card = document.createElement('div');
+      card.className = 'card c' + posCls(d.p) + (isNote ? ' notecard' : '');
+      card.innerHTML = entryHtml;
+      if (editing){ attachTopDrop(item, d, curS); }
+      item.appendChild(card);
+      (editing ? wrap : (alt++ % 2 === 0 ? colA : colB)).appendChild(item);
+    }
+  }
+
+  if (editing){
+    list.querySelectorAll('.drag-handle').forEach(el => { el.draggable = true; });
+  }
+  const words = DATA.filter(d => d.kind !== 'note').length;
+  document.getElementById('count').textContent = words;
+}
+
+function attachTopDrop(item, d, sec){
+  item.addEventListener('dragover', e => {
+    if (!dragD) return;
+    e.preventDefault();
+    const before = e.offsetY < item.offsetHeight / 2;
+    item.classList.toggle('ins-top', before); item.classList.toggle('ins-bot', !before);
+    item._ins = before ? 'top' : 'bot';
+  });
+  item.addEventListener('dragleave', () => item.classList.remove('ins-top', 'ins-bot'));
+  item.addEventListener('drop', e => {
+    e.preventDefault(); e.stopPropagation();   // 防冒泡到 sec-items wrap 的 drop（会再次移动到节尾）
+    const where = item._ins; item.classList.remove('ins-top', 'ins-bot');
+    if (!dragD || !where) return;
+    removeD(dragD);
+    dragD.role = ''; dragD.side = ''; dragD.g = 0; dragD.s = sec;
+    let ti = DATA.indexOf(d);
+    DATA.splice(where === 'top' ? ti : ti + 1, 0, dragD);
+    save(); render();
+  });
+}
+
+/* 拖拽委托 */
+list.addEventListener('dragstart', e => {
+  const h = e.target.closest('[data-did]'); if (!h || !editing) return;
+  dragD = byId(+h.dataset.did);
+  e.dataTransfer.setData('text/plain', 'x');
+  e.dataTransfer.effectAllowed = 'move';
+  h.classList.add('dragging');
+});
+list.addEventListener('dragend', e => {
+  const h = e.target.closest && e.target.closest('[data-did]');
+  if (h) h.classList.remove('dragging');
+  document.querySelectorAll('.dragging').forEach(el => el.classList.remove('dragging'));
+});
+
+/* 事件委托: 文字编辑 / 删除 / 相对符号切换 */
+list.addEventListener('input', e => {
+  const t = e.target.closest('.edf'); if (!t) return;
+  const holder = t.closest('[data-did]'); if (!holder) return;
+  const d = byId(+holder.dataset.did); if (!d) return;
+  d[t.dataset.f] = t.textContent;
+  saveSoon();
+});
+
+list.addEventListener('click', e => {
+  // 拆出为独立卡
+  const sp = e.target.closest('.sp');
+  if (sp){
+    const holder = sp.closest('[data-did]'); if (!holder) return;
+    const d = byId(+holder.dataset.did); if (!d) return;
+    const gi = DATA.indexOf(d);
+    removeD(d);
+    d.role = ''; d.side = ''; d.g = 0;
+    DATA.splice(gi, 0, d);   // 原位放回 = 组后第一个位置
+    save(); render(); return;
+  }
+  // 删除单卡
+  const x = e.target.closest('.x');
+  if (x){
+    const holder = x.closest('[data-did]'); if (!holder) return;
+    const d = byId(+holder.dataset.did); if (!d) return;
+    removeD(d); save(); render(); return;
+  }
+  // 删除整组
+  const gx = e.target.closest('.gx');
+  if (gx){
+    const g = +gx.dataset.gx, s = gx.dataset.gs;
+    for (let i = DATA.length - 1; i >= 0; i--) {
+      if (DATA[i].s === s && DATA[i].g === g && DATA[i].role) DATA.splice(i, 1);
+    }
+    save(); render(); return;
+  }
+  // 点击符号循环切换: arr (⇄) -> ant (|) -> syn (—) -> arr (⇄)
+  const bar = e.target.closest('[data-bar]');
+  if (bar && editing){
+    const g = +bar.dataset.bar;
+    let s = null, currentRole = 'arr';
+    DATA.forEach(d => {
+      if (d.g === g && d.role && s === null) { s = d.s; currentRole = d.role; }
+    });
+    const nextRole = currentRole === 'arr' ? 'ant' : (currentRole === 'ant' ? 'syn' : 'arr');
+    DATA.forEach(d => {
+      if (d.s === s && d.g === g && d.role) d.role = nextRole;
+    });
+    save(); render();
+  }
+});
+
+/* 导出 JSON 功能 */
+function exportData(){
+  const dataStr = JSON.stringify({page: 'N1_7-2', data: DATA}, null, 2);
+  const blob = new Blob([dataStr], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'N1_7-2_layout.json';
+  a.click();
+
+  document.getElementById('exportText').value = dataStr;
+  document.getElementById('exportModal').classList.add('open');
+}
+
+function copyExportText(){
+  const t = document.getElementById('exportText');
+  t.select();
+  navigator.clipboard.writeText(t.value).then(() => {
+    alert('已成功复制最新 JSON 数据到剪贴板！');
+  });
+}
+
+render();
 </script>
+
+<div id="ftool">
+  <div class="ft-tip">添加到最近操作的卡片旁</div>
+  <button onclick="ftAdd('word')">＋ 词框</button>
+  <button onclick="ftAdd('arr')">⇄ 相对组</button>
+  <button onclick="ftAdd('ant')">| 反义组</button>
+  <button onclick="ftAdd('syn')">— 同类组</button>
+  <button onclick="ftAdd('note')">✎ 文本</button>
+</div>
+<script>
+/* ---- 悬浮工具条 + 选字拖动 ---- */
+let lastSpot = null;   // {sec, idx} 最近操作的卡片位置
+list.addEventListener('click', e => {
+  const h = e.target.closest('[data-did]'); if (!h) return;
+  const d = byId(+h.dataset.did); if (!d) return;
+  lastSpot = { sec: d.s, idx: DATA.indexOf(d) };
+}, true);
+list.addEventListener('drop', e => {
+  // drop 后记录目标卡片位置
+  if (lastSpot && dragD) lastSpot = { sec: dragD.s, idx: DATA.indexOf(dragD) };
+}, true);
+
+function ftAdd(kind){
+  if (!editing) { toggleEdit(); }
+  const sec = lastSpot ? lastSpot.sec : (DATA[0] && DATA[0].s);
+  if (!sec) return;
+  const mkWord = () => ({id: nextId++, aid: 0, asfx: '', s: sec, w: '', k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0});
+  if (kind === 'word'){
+    const w = mkWord();
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, w);
+    lastSpot = { sec, idx: at };
+  } else if (kind === 'note'){
+    const n = {id: nextId++, s: sec, kind: 'note', text: ''};
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, n);
+    lastSpot = { sec, idx: at };
+  } else {
+    const g = newG();
+    const l = mkWord(); l.role = kind; l.side = 'L'; l.g = g;
+    const r = mkWord(); r.role = kind; r.side = 'R'; r.g = g;
+    const at = lastSpot ? lastSpot.idx + 1 : secLastIdx(sec) + 1;
+    DATA.splice(at, 0, l, r);
+    lastSpot = { sec, idx: at + 1 };
+  }
+  save(); render();
+}
+
+/* 选中文字拖动 → 词框 */
+document.addEventListener('dragstart', e => {
+  const sel = String(window.getSelection ? window.getSelection() : '').trim();
+  if (sel && !e.target.closest('[data-did]')) {
+    dragD = { __text: sel };
+    e.dataTransfer.setData('text/plain', sel);
+    e.dataTransfer.effectAllowed = 'copy';
+  }
+}, true);
+// attachTopDrop / half drop 里识别 __text：改 drop 处理 —— 在最前注入
+const _origAttach = attachTopDrop;
+attachTopDrop = function(item, d, sec){
+  _origAttach(item, d, sec);
+  item.addEventListener('drop', e => {
+    const txt = (e.dataTransfer.getData('text/plain') || '').trim();
+    if (!txt || !e.target.closest('.edf') && !byId(+((e.target.closest('[data-did]')||{}).dataset?.did || -1))) return;
+    // 若 drop 的是纯文本（非卡片拖动）→ 新词框
+    if (dragD && dragD.__text && dragD.__text === txt){
+      e.preventDefault(); e.stopPropagation();
+      const w = {id: nextId++, aid: 0, asfx: '', s: sec, w: txt, k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: '', side: '', g: 0};
+      const ti = DATA.indexOf(d);
+      DATA.splice(ti + 1, 0, w);
+      save(); render();
+    }
+  }, true);
+};
+// 半区 drop 同样支持文本 → 新词入半区
+list.addEventListener('drop', e => {
+  const txt = (e.dataTransfer && e.dataTransfer.getData('text/plain') || '').trim();
+  const half = e.target.closest('.half');
+  if (!txt || !half || !dragD || !dragD.__text) return;
+  e.preventDefault(); e.stopPropagation();
+  const sec = curSFromHalf(half);
+  const w = {id: nextId++, aid: 0, asfx: '', s: sec, w: txt, k: '', en: '', m: '', p: 'N', ph: '', phz: '', role: dragD.role || '', side: dragD.side || '', g: dragD.g || 0};
+  // 插到该半区最后
+  let at = -1;
+  DATA.forEach((x, xi) => { if (x.s === sec && x.g === w.g && x.side === w.side) at = xi; });
+  DATA.splice(at + 1, 0, w);
+  dragD = null;
+  save(); render();
+}, true);
+function curSFromHalf(half){
+  // 从 half 往上找 gx 的 data-gs
+  let el = half;
+  while (el && !el.dataset?.gs) el = el.parentElement;
+  return el ? el.dataset.gs : (DATA[0] && DATA[0].s);
+}
+// toggleEdit 时同步悬浮条
+const _origToggle = toggleEdit;
+toggleEdit = function(){ _origToggle(); document.getElementById('ftool').classList.toggle('open', editing); };
+</script>
+
+
+<div id="dict">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
+  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
+  <div id="dictAns" class="hidden"></div>
+  <div class="dbtns">
+    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
+    <button class="hbtn" id="dictAutoBtn" onclick="dictAutoToggle()">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+  </div>
+  <div style="opacity:.4;font-size:11px;">空格=重播 · →/D=下一个 · ←/A=上一个 · S=显示答案 · Esc=退出</div>
+</div>
+<script>
+/* ---- 听写（N1_7-1: aid+asfx 音频, 词→例句链） ---- */
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [], dictChain = false;
+const DICT_DELAY = 3000;
+const escH = s => String(s == null ? '' : s);
+const dictWords = () => DATA.filter(d => d.aid && !d.kind);
+const dictSents = d => (d.ph || '').split('｜').map(s => s.trim()).filter(Boolean);
+const dictSfx = d => { const n = dictSents(d).length; return n > 1 ? dictSents(d).map((_, i) => 'p' + (i + 1)) : (n === 1 ? ['p'] : []); };
+let dictSentI = 0;
+
+function dictToggle(){
+  dictOpen = !dictOpen;
+  document.getElementById('dict').classList.toggle('open', dictOpen);
+  if (dictOpen){ if (curAudio) curAudio.pause(); buildOrder(); dictCur = 0; showDict(); }
+  else { if (curAudio) curAudio.pause(); clearTimeout(dictT); }
+}
+function buildOrder(){
+  dictOrder = dictWords().map(d => d.id);
+  if (dictShuffleOn) for (let i = dictOrder.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [dictOrder[i], dictOrder[j]] = [dictOrder[j], dictOrder[i]]; }
+}
+const dictD = () => dictWords().find(d => d.id === dictOrder[dictCur]);
+const playCur = () => {
+  const d = dictD();
+  dictSentI = 0;
+  if (d.ph && !d._tts_ph) { dictChain = true; play(d.aid, d.asfx || ''); }
+  else { dictChain = false; play(d.aid, d.asfx || '', d._tts_ph ? d.ph : d.w); }
+};
+// 播放钩子：词条播完接例句；例句播完且自动 → 下一条
+function dictHook(asfx){
+  const d = dictD();
+  if (asfx && asfx.includes('p')) {          // 一句例句播完
+    const sfx = dictSfx(d);
+    if (dictChain && dictSentI + 1 < sfx.length) {
+      dictSentI++; play(d.aid, sfx[dictSentI], dictSents(d)[dictSentI]); return;
+    }
+    dictChain = false;
+    if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY);
+    return;
+  }
+  if (dictChain) {                            // 词条播完 → 接第一句
+    const sfx = dictSfx(d);
+    if (sfx.length) { dictSentI = 0; play(d.aid, sfx[0], dictSents(d)[0]); return; }
+  }
+  dictChain = false;
+  if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY);
+}
+function dictStep(dir){
+  clearTimeout(dictT); dictChain = false;
+  dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
+  showDict(); playCur();
+}
+const dictNext = () => dictStep(1);
+const dictPrev = () => dictStep(-1);
+function dictShuffle(){ dictShuffleOn = !dictShuffleOn; buildOrder(); dictCur = 0; showDict(); playCur(); }
+function dictAutoToggle(){
+  dictAuto = !dictAuto;
+  document.getElementById('dictAutoBtn').textContent = '自动: ' + (dictAuto ? '开' : '关');
+  dictChain = false;
+  if (dictAuto) playCur();
+}
+function dictReveal(){
+  const ans = document.getElementById('dictAns');
+  if (ans.classList.contains('hidden')) { renderDictAns(); ans.classList.remove('hidden'); }
+  else ans.classList.add('hidden');
+}
+function renderDictAns(){
+  const d = dictD(), ans = document.getElementById('dictAns');
+  const side = w => `<div class="dword">${escH(w)}</div>`;
+  let body = `<div class="dpos">${escH(d.p)}</div><div class="dword">${escH(d.w)} <span style="font-size:14px;opacity:.6">${escH(d.k)}</span></div><div class="dmean">${escH(d.m)}</div>`;
+  if (d.ph) {
+    const sfx = dictSfx(d), sents = dictSents(d), zhs = (d.phz || '').split('｜').map(s => s.trim());
+    body += sents.map((s, i) => `<div class="dph" onclick="play(${d.aid},'${sfx[i] || 'p'}','${escH(s).replace(/'/g, "\'")}')">${escH(s)}</div><div class="dphz">${escH(zhs[i] || '')}</div>`).join('');
+  }
+  ans.innerHTML = body;
+}
+function showDict(){
+  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  const ans = document.getElementById('dictAns');
+  ans.classList.add('hidden');
+  ans.innerHTML = '';
+}
+document.addEventListener('keydown', e => {
+  if (!dictOpen) return;
+  if (e.code === 'Space'){ e.preventDefault(); playCur(); }
+  else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') dictNext();
+  else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') dictPrev();
+  else if (e.key === 's' || e.key === 'S') dictReveal();
+  else if (e.key === 'Escape') dictToggle();
+});
+</script>
+
+
+<script>
+/* ==joycon== 听写模式 手柄(Gamepad/Joy-Con)映射 v3
+   实测 ABXY=1023: B(0)=重播  A(1)=下一个  X(2)=显示/隐藏答案  Y(3)=上一个
+   检测按 value>0.5 边沿; 自动播放进入听写默认开  */
+(function(){
+  if (typeof navigator==='undefined' || !navigator.getGamepads) return;
+  var prev = {}, connected = false, toastShown = false, hintDone = false, autoApplied = false;
+  function open(){ try{ return document.getElementById('dict') && document.getElementById('dict').classList.contains('open'); }catch(e){ return false; } }
+  function call(fn){ if (typeof fn==='function') return fn(); }
+  function down(b){ return !!b && (typeof b.value==='number' && b.value > 0.5); }
+  function fire(n){
+    if (n==='play'){ if (typeof playCur==='function') playCur(); else call(dictPlayWord); }
+    else if (n==='next')   call(dictNext);
+    else if (n==='prev')   call(dictPrev);
+    else if (n==='reveal') call(dictReveal);
+  }
+  // 实测: 0=B 1=A 2=X 3=Y
+  var MAP = {0:'play', 1:'next', 2:'reveal', 3:'prev'};
+  function hint(){
+    if (hintDone) return; hintDone = true;
+    var d = document.getElementById('dict'); if (!d) return;
+    var el = document.createElement('div');
+    el.style.cssText = 'opacity:.45;font-size:11px;';
+    el.textContent = '🎮 B=重播 · A=下一个 · X=答案 · Y=上一个 · 自动播放默认开';
+    d.appendChild(el);
+  }
+  function toast(t){
+    var el = document.createElement('div');
+    el.textContent = t;
+    el.style.cssText = 'position:fixed;top:14px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.8);color:#fff;padding:8px 18px;border-radius:18px;z-index:9999;font-size:14px;opacity:0;transition:opacity .3s;';
+    document.body.appendChild(el);
+    requestAnimationFrame(function(){ el.style.opacity = 1; });
+    setTimeout(function(){ el.style.opacity = 0; setTimeout(function(){ el.remove(); },300); }, 2200);
+  }
+  setInterval(function(){
+    try{
+      var pads = navigator.getGamepads();
+      for (var i=0;i<pads.length;i++){
+        var p = pads[i]; if (!p) continue;
+        if (!connected){ connected = true; toastShown = false; }
+        if (!open()){ prev = {}; autoApplied = false; continue; }
+        if (!autoApplied){ autoApplied = true; if (typeof dictAuto==='boolean' && !dictAuto) call(dictAutoToggle); }
+        for (var k in MAP){
+          var bi = +k, key = i+':'+bi;
+          var d = down(p.buttons[bi]);
+          if (d && !prev[key]) fire(MAP[bi]);
+          prev[key] = d;
+        }
+        if (connected && !toastShown){ toastShown = true; toast('🎮 手柄已连接'); }
+        hint();
+      }
+    }catch(e){}
+  }, 120);
+})();
+</script>
+
 </body>
 </html>
