@@ -125,7 +125,11 @@
     .dict-card { padding: 16px 14px; min-height: auto; }
     .dict-bottom .hbtn { padding: 6px 10px; font-size: 13px; }
     .dict-audio-btn { padding: 8px 18px; font-size: 15px; }
-  }
+  
+    .dict-bottom .hbtn { font-size: 12px; padding: 6px 10px; border-radius: 14px; }
+    #dict .dict-hint { font-size: 10px; }
+    #dictAns { width: min(92vw, 420px); }
+}
 </style>
 </head>
 <body>
@@ -163,7 +167,7 @@
     <div class="dict-bottom">
       <button class="hbtn" onclick="dictPrev()" title="上一个 (← / A)">◀ 上一个</button>
       <button id="dictAnsBtn" class="hbtn pri" onclick="dictReveal()" title="显示答案 (S)">显示答案</button>
-      <button id="dictAutoBtn" class="hbtn active" onclick="dictAutoToggle()">自动: 开</button>
+      <button id="dictAutoBtn" class="hbtn" onclick="dictAutoToggle()">自动: 关</button>
       <button class="hbtn" onclick="dictNext()" title="下一个 (→ / D)">下一个 ▶</button>
     </div>
     <div class="dict-hint">快捷键：空格=重播 · S=显示答案 · ←/A=上一个 · →/D=下一个 · Esc=退出</div>
@@ -241,7 +245,7 @@ function toggleTheme(){
 applyTheme((() => { try { return localStorage.getItem('n1theme') === 'day'; } catch(e) { return false; } })());
 
 /* ---- 听写自测模式 ---- */
-let dictOpen = false, dictAuto = true, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [], dictRevealed = false;
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [], dictRevealed = false;
 const dictD = () => (dictOrder.length ? DATA[dictOrder[dictCur]] : null);
 
 function buildOrder(){
@@ -407,10 +411,10 @@ document.addEventListener('keydown', e => {
 <script>
 /* ==joycon== 听写模式 手柄(Gamepad/Joy-Con)映射 v3
    实测 ABXY=1023: B(0)=重播  A(1)=下一个  X(2)=显示/隐藏答案  Y(3)=上一个
-   检测按 value>0.5 边沿; 自动播放进入听写默认开  */
+   检测按 value>0.5 边沿; 自动播放默认关(可手动开)  */
 (function(){
   if (typeof navigator==='undefined' || !navigator.getGamepads) return;
-  var prev = {}, connected = false, toastShown = false, hintDone = false, autoApplied = false;
+  var prev = {}, connected = false, toastShown = false, hintDone = false;
   function open(){ try{ return document.getElementById('dict') && document.getElementById('dict').classList.contains('open'); }catch(e){ return false; } }
   function call(fn){ if (typeof fn==='function') return fn(); }
   function down(b){ return !!b && (typeof b.value==='number' && b.value > 0.5); }
@@ -427,7 +431,7 @@ document.addEventListener('keydown', e => {
     var d = document.getElementById('dict'); if (!d) return;
     var el = document.createElement('div');
     el.style.cssText = 'opacity:.45;font-size:11px;';
-    el.textContent = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认开';
+    el.textContent = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认关';
     d.appendChild(el);
   }
   function toast(t){
@@ -444,8 +448,8 @@ document.addEventListener('keydown', e => {
       for (var i=0;i<pads.length;i++){
         var p = pads[i]; if (!p) continue;
         if (!connected){ connected = true; toastShown = false; }
-        if (!open()){ prev = {}; autoApplied = false; continue; }
-        if (!autoApplied){ autoApplied = true; if (typeof dictAuto==='boolean' && !dictAuto) call(dictAutoToggle); }
+        if (!open()){ prev = {}; continue; }
+        
         for (var k in MAP){
           var bi = +k, key = i+':'+bi;
           var d = down(p.buttons[bi]);

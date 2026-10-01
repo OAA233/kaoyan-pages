@@ -181,6 +181,20 @@
   .dph { font-size: 14px; margin-top: 10px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
   .dphz { display: block; opacity: .6; font-size: 13px; }
   .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+
+  /* ---- 听写 手机适配 ---- */
+  @media (max-width: 600px) {
+    #dict { gap: 10px; }
+    #dictBig { font-size: 16px; padding: 12px 22px; }
+    .dword { font-size: 24px; }
+    .dmean { font-size: 14px; }
+    .dph { font-size: 12px; margin-top: 6px; }
+    .dphz { font-size: 12px; }
+    .dbtns { gap: 6px; }
+    .dbtns .hbtn { font-size: 12px; padding: 6px 10px; border-radius: 14px; }
+    #dict > .hbtn[style*="absolute"] { font-size: 12px; padding: 4px 10px; }
+    #dictAns { min-height: 110px; width: min(92vw, 420px); }
+  }
 </style>
 </head>
 <body>
@@ -1877,10 +1891,10 @@ document.addEventListener('keydown', e => {
 <script>
 /* ==joycon== 听写模式 手柄(Gamepad/Joy-Con)映射 v3
    实测 ABXY=1023: B(0)=重播  A(1)=下一个  X(2)=显示/隐藏答案  Y(3)=上一个
-   检测按 value>0.5 边沿; 自动播放进入听写默认开  */
+   检测按 value>0.5 边沿; 自动播放默认关(可手动开)  */
 (function(){
   if (typeof navigator==='undefined' || !navigator.getGamepads) return;
-  var prev = {}, connected = false, toastShown = false, hintDone = false, autoApplied = false;
+  var prev = {}, connected = false, toastShown = false, hintDone = false;
   function open(){ try{ return document.getElementById('dict') && document.getElementById('dict').classList.contains('open'); }catch(e){ return false; } }
   function call(fn){ if (typeof fn==='function') return fn(); }
   function down(b){ return !!b && (typeof b.value==='number' && b.value > 0.5); }
@@ -1897,7 +1911,7 @@ document.addEventListener('keydown', e => {
     var d = document.getElementById('dict'); if (!d) return;
     var el = document.createElement('div');
     el.style.cssText = 'opacity:.45;font-size:11px;';
-    el.textContent = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认开';
+    el.textContent = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认关';
     d.appendChild(el);
   }
   function toast(t){
@@ -1914,8 +1928,8 @@ document.addEventListener('keydown', e => {
       for (var i=0;i<pads.length;i++){
         var p = pads[i]; if (!p) continue;
         if (!connected){ connected = true; toastShown = false; }
-        if (!open()){ prev = {}; autoApplied = false; continue; }
-        if (!autoApplied){ autoApplied = true; if (typeof dictAuto==='boolean' && !dictAuto) call(dictAutoToggle); }
+        if (!open()){ prev = {}; continue; }
+        
         for (var k in MAP){
           var bi = +k, key = i+':'+bi;
           var d = down(p.buttons[bi]);
