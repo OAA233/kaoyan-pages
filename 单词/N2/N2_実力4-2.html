@@ -493,13 +493,18 @@ function speakTTS(text){
   speechSynthesis.speak(u);
 }
 function play(aid, asfx, text){
-  if (curAudio) { curAudio.pause(); }
+  // 复用单个 Audio 元素：首次由用户手势播放后即"解锁"，后续 dict 链式播放(非手势)
+  // 的 play() 不会再被 iOS/Chrome 自动播放策略拦截。preload=auto 预取，降低首播失败。
+  if (!curAudio) { curAudio = new Audio(); curAudio.preload = 'auto'; }
+  const a = curAudio;
+  a.pause();
   if (aid) {
     const p = `../audio/N2/N2_実力4-2_audio/${aid}${asfx || ''}.mp3?v=1`;
-    curAudio = new Audio(p);
-    curAudio.onended = () => { if (typeof dictHook === 'function') dictHook(asfx); };
-    curAudio.play().catch(() => {
-      if (text) speakTTS(text);
+    a.src = p; a.load();
+    a.onended = () => { if (typeof dictHook === 'function') dictHook(asfx); };
+    a.play().catch(() => {
+      // 失败(多为源未就绪)：重试一次；仍有 text 则走 TTS 兜底，避免纯静音
+      a.play().then(() => {}).catch(() => { if (text) speakTTS(text); });
     });
   } else if (text) {
     speakTTS(text);
@@ -1109,30 +1114,29 @@ document.addEventListener('keydown', e => {
 
 
 <script>
-/* ==joycon== 听写模式 手柄(Gamepad/Joy-Con)映射
-   A(下)=重播  B(右)=下一个  X(左)=上一个  Y(上)=答案  L肩=随机  R肩=自动  -/=退出  十字键=导航  */
+/* ==joycon== 听写模式 手柄(Gamepad/Joy-Con)映射 v3
+   实测 ABXY=1023: B(0)=重播  A(1)=下一个  X(2)=显示/隐藏答案  Y(3)=上一个
+   检测按 value>0.5 边沿; 自动播放进入听写默认开  */
 (function(){
   if (typeof navigator==='undefined' || !navigator.getGamepads) return;
-  var prev = {}, toastShown = false, hintDone = false;
+  var prev = {}, connected = false, toastShown = false, hintDone = false, autoApplied = false;
   function open(){ try{ return document.getElementById('dict') && document.getElementById('dict').classList.contains('open'); }catch(e){ return false; } }
   function call(fn){ if (typeof fn==='function') return fn(); }
+  function down(b){ return !!b && (typeof b.value==='number' && b.value > 0.5); }
   function fire(n){
     if (n==='play'){ if (typeof playCur==='function') playCur(); else call(dictPlayWord); }
     else if (n==='next')   call(dictNext);
     else if (n==='prev')   call(dictPrev);
     else if (n==='reveal') call(dictReveal);
-    else if (n==='shuffle') call(dictShuffle);
-    else if (n==='auto')   call(dictAutoToggle);
-    else if (n==='exit')   call(dictToggle);
   }
-  // 标准 Gamepad 按键索引: 0=下 1=右 2=左 3=上 4=L肩 5=R肩 -/=plus/mnus 十字键12-15
-  var MAP = {0:'play',1:'next',2:'prev',3:'reveal',4:'shuffle',5:'auto',8:'exit',9:'exit',12:'play',13:'reveal',14:'prev',15:'next'};
+  // 实测: 0=B 1=A 2=X 3=Y
+  var MAP = {0:'play', 1:'next', 2:'reveal', 3:'prev'};
   function hint(){
     if (hintDone) return; hintDone = true;
     var d = document.getElementById('dict'); if (!d) return;
     var el = document.createElement('div');
     el.style.cssText = 'opacity:.45;font-size:11px;';
-    el.textContent = '🎮 A=重播 · B=下一个 · X=上一个 · Y=答案 · L肩=随机 · R肩=自动 · -/=退出 · 十字键=导航';
+    el.textContent = '🎮 B=重播 · A=下一个 · X=答案 · Y=上一个 · 自动播放默认开';
     d.appendChild(el);
   }
   function toast(t){
@@ -1145,24 +1149,23 @@ document.addEventListener('keydown', e => {
   }
   setInterval(function(){
     try{
-      var pads = navigator.getGamepads(), any = false;
+      var pads = navigator.getGamepads();
       for (var i=0;i<pads.length;i++){
-        var p = pads[i]; if (!p) continue; any = true;
+        var p = pads[i]; if (!p) continue;
         if (!connected){ connected = true; toastShown = false; }
-        if (open()){
-          for (var k in MAP){
-            var bi = +k, b = p.buttons[bi];
-            if (b && b.pressed !== prev[i+':'+bi]){ if (b.pressed) fire(MAP[bi]); prev[i+':'+bi] = b.pressed; }
-          }
-          if (connected && !toastShown){ toastShown = true; toast('🎮 手柄已连接'); }
-          hint();
+        if (!open()){ prev = {}; autoApplied = false; continue; }
+        if (!autoApplied){ autoApplied = true; if (typeof dictAuto==='boolean' && !dictAuto) call(dictAutoToggle); }
+        for (var k in MAP){
+          var bi = +k, key = i+':'+bi;
+          var d = down(p.buttons[bi]);
+          if (d && !prev[key]) fire(MAP[bi]);
+          prev[key] = d;
         }
+        if (connected && !toastShown){ toastShown = true; toast('🎮 手柄已连接'); }
+        hint();
       }
-      if (!open()) prev = {};
-      var _ = any;
     }catch(e){}
   }, 120);
-  var connected = false;
 })();
 </script>
 
