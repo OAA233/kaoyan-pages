@@ -3020,5 +3020,64 @@ document.addEventListener('keydown', e => {
 });
 </script>
 
+
+<script>
+/* ==joycon== 听写模式 手柄(Gamepad/Joy-Con)映射
+   A(下)=重播  B(右)=下一个  X(左)=上一个  Y(上)=答案  L肩=随机  R肩=自动  -/=退出  十字键=导航  */
+(function(){
+  if (typeof navigator==='undefined' || !navigator.getGamepads) return;
+  var prev = {}, toastShown = false, hintDone = false;
+  function open(){ try{ return document.getElementById('dict') && document.getElementById('dict').classList.contains('open'); }catch(e){ return false; } }
+  function call(fn){ if (typeof fn==='function') return fn(); }
+  function fire(n){
+    if (n==='play'){ if (typeof playCur==='function') playCur(); else call(dictPlayWord); }
+    else if (n==='next')   call(dictNext);
+    else if (n==='prev')   call(dictPrev);
+    else if (n==='reveal') call(dictReveal);
+    else if (n==='shuffle') call(dictShuffle);
+    else if (n==='auto')   call(dictAutoToggle);
+    else if (n==='exit')   call(dictToggle);
+  }
+  // 标准 Gamepad 按键索引: 0=下 1=右 2=左 3=上 4=L肩 5=R肩 -/=plus/mnus 十字键12-15
+  var MAP = {0:'play',1:'next',2:'prev',3:'reveal',4:'shuffle',5:'auto',8:'exit',9:'exit',12:'play',13:'reveal',14:'prev',15:'next'};
+  function hint(){
+    if (hintDone) return; hintDone = true;
+    var d = document.getElementById('dict'); if (!d) return;
+    var el = document.createElement('div');
+    el.style.cssText = 'opacity:.45;font-size:11px;';
+    el.textContent = '🎮 A=重播 · B=下一个 · X=上一个 · Y=答案 · L肩=随机 · R肩=自动 · -/=退出 · 十字键=导航';
+    d.appendChild(el);
+  }
+  function toast(t){
+    var el = document.createElement('div');
+    el.textContent = t;
+    el.style.cssText = 'position:fixed;top:14px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.8);color:#fff;padding:8px 18px;border-radius:18px;z-index:9999;font-size:14px;opacity:0;transition:opacity .3s;';
+    document.body.appendChild(el);
+    requestAnimationFrame(function(){ el.style.opacity = 1; });
+    setTimeout(function(){ el.style.opacity = 0; setTimeout(function(){ el.remove(); },300); }, 2200);
+  }
+  setInterval(function(){
+    try{
+      var pads = navigator.getGamepads(), any = false;
+      for (var i=0;i<pads.length;i++){
+        var p = pads[i]; if (!p) continue; any = true;
+        if (!connected){ connected = true; toastShown = false; }
+        if (open()){
+          for (var k in MAP){
+            var bi = +k, b = p.buttons[bi];
+            if (b && b.pressed !== prev[i+':'+bi]){ if (b.pressed) fire(MAP[bi]); prev[i+':'+bi] = b.pressed; }
+          }
+          if (connected && !toastShown){ toastShown = true; toast('🎮 手柄已连接'); }
+          hint();
+        }
+      }
+      if (!open()) prev = {};
+      var _ = any;
+    }catch(e){}
+  }, 120);
+  var connected = false;
+})();
+</script>
+
 </body>
 </html>
