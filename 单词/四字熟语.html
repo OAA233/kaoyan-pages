@@ -182,7 +182,7 @@ function play(f, onended) {
   if (!curAudio) { curAudio = new Audio(); curAudio.preload = 'auto'; }
   else { curAudio.pause(); curAudio.onended = null; }
   const a = curAudio;
-  a.src = AUD + f + '?v=2'; a.load();
+  a.src = window.__audSrc(AUD + f + '?v=2'); a.load();
   if (onended) a.onended = onended;
   a.play().catch(() => { a.play().then(() => {}).catch(() => {}); });
 }
@@ -429,10 +429,21 @@ document.addEventListener('keydown', e => {
   function hint(){
     if (hintDone) return; hintDone = true;
     var d = document.getElementById('dict'); if (!d) return;
-    var el = document.createElement('div');
-    el.style.cssText = 'opacity:.45;font-size:11px;';
-    el.textContent = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认关';
-    d.appendChild(el);
+    // 把底部原有的键盘/快捷键提示行改写为手柄按键（连上手柄后小字显示手柄操作）
+    var msg = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认关';
+    var found = false;
+    var hints = d.querySelectorAll('.dict-hint, [style*="opacity"]');
+    for (var i=0;i<hints.length;i++){
+      if ((hints[i].textContent||'').indexOf('空格') >= 0){
+        hints[i].textContent = msg; found = true;
+      }
+    }
+    if (!found){
+      var el = document.createElement('div');
+      el.style.cssText = 'opacity:.45;font-size:11px;';
+      el.textContent = msg;
+      d.appendChild(el);
+    }
   }
   function toast(t){
     var el = document.createElement('div');
@@ -464,5 +475,29 @@ document.addEventListener('keydown', e => {
 })();
 </script>
 
+<script>
+/* ==audcache== 音频预取缓存: 进页面后台把本课音频拉进内存, 点击即出声(等同本地), 随意打断都能响 */
+(function(){
+  var CACHE = {}, Q = [], ACTIVE = 0, CONC = 8;
+  window.__audSrc = function(url){ return CACHE[url] || url; };
+  window.__audKick = function(url){ if (CACHE[url] || Q.indexOf(url) >= 0) return; Q.push(url); pump(); };
+  function pump(){
+    while (ACTIVE < CONC && Q.length){
+      var url = Q.shift(); ACTIVE++;
+      fetch(url).then(function(r){ if(!r.ok) throw new Error(r.status); return r.blob(); })
+        .then(function(b){ try{ CACHE[url] = URL.createObjectURL(b); }catch(e){} })
+        .catch(function(){})
+        .then(function(){ ACTIVE--; pump(); });
+    }
+  }
+  function start(){
+    var urls = ["audio/四字熟语_audio/N1.mp3?v=2", "audio/四字熟语_audio/N10.mp3?v=2", "audio/四字熟语_audio/N100.mp3?v=2", "audio/四字熟语_audio/N100p.mp3?v=2", "audio/四字熟语_audio/N101.mp3?v=2", "audio/四字熟语_audio/N101p.mp3?v=2", "audio/四字熟语_audio/N102.mp3?v=2", "audio/四字熟语_audio/N102p.mp3?v=2", "audio/四字熟语_audio/N103.mp3?v=2", "audio/四字熟语_audio/N103p.mp3?v=2", "audio/四字熟语_audio/N104.mp3?v=2", "audio/四字熟语_audio/N104p.mp3?v=2", "audio/四字熟语_audio/N105.mp3?v=2", "audio/四字熟语_audio/N105p.mp3?v=2", "audio/四字熟语_audio/N106.mp3?v=2", "audio/四字熟语_audio/N106p.mp3?v=2", "audio/四字熟语_audio/N107.mp3?v=2", "audio/四字熟语_audio/N107p.mp3?v=2", "audio/四字熟语_audio/N108.mp3?v=2", "audio/四字熟语_audio/N108p.mp3?v=2", "audio/四字熟语_audio/N109.mp3?v=2", "audio/四字熟语_audio/N109p.mp3?v=2", "audio/四字熟语_audio/N10p.mp3?v=2", "audio/四字熟语_audio/N11.mp3?v=2", "audio/四字熟语_audio/N110.mp3?v=2", "audio/四字熟语_audio/N110p.mp3?v=2", "audio/四字熟语_audio/N111.mp3?v=2", "audio/四字熟语_audio/N111p.mp3?v=2", "audio/四字熟语_audio/N112.mp3?v=2", "audio/四字熟语_audio/N112p.mp3?v=2", "audio/四字熟语_audio/N113.mp3?v=2", "audio/四字熟语_audio/N113p.mp3?v=2", "audio/四字熟语_audio/N114.mp3?v=2", "audio/四字熟语_audio/N114p.mp3?v=2", "audio/四字熟语_audio/N115.mp3?v=2", "audio/四字熟语_audio/N115p.mp3?v=2", "audio/四字熟语_audio/N116.mp3?v=2", "audio/四字熟语_audio/N116p.mp3?v=2", "audio/四字熟语_audio/N117.mp3?v=2", "audio/四字熟语_audio/N117p.mp3?v=2", "audio/四字熟语_audio/N118.mp3?v=2", "audio/四字熟语_audio/N118p.mp3?v=2", "audio/四字熟语_audio/N119.mp3?v=2", "audio/四字熟语_audio/N119p.mp3?v=2", "audio/四字熟语_audio/N11p.mp3?v=2", "audio/四字熟语_audio/N12.mp3?v=2", "audio/四字熟语_audio/N120.mp3?v=2", "audio/四字熟语_audio/N120p.mp3?v=2", "audio/四字熟语_audio/N121.mp3?v=2", "audio/四字熟语_audio/N121p.mp3?v=2", "audio/四字熟语_audio/N122.mp3?v=2", "audio/四字熟语_audio/N122p.mp3?v=2", "audio/四字熟语_audio/N123.mp3?v=2", "audio/四字熟语_audio/N123p.mp3?v=2", "audio/四字熟语_audio/N124.mp3?v=2", "audio/四字熟语_audio/N124p.mp3?v=2", "audio/四字熟语_audio/N125.mp3?v=2", "audio/四字熟语_audio/N125p.mp3?v=2", "audio/四字熟语_audio/N126.mp3?v=2", "audio/四字熟语_audio/N126p.mp3?v=2", "audio/四字熟语_audio/N127.mp3?v=2", "audio/四字熟语_audio/N127p.mp3?v=2", "audio/四字熟语_audio/N128.mp3?v=2", "audio/四字熟语_audio/N128p.mp3?v=2", "audio/四字熟语_audio/N129.mp3?v=2", "audio/四字熟语_audio/N129p.mp3?v=2", "audio/四字熟语_audio/N12p.mp3?v=2", "audio/四字熟语_audio/N13.mp3?v=2", "audio/四字熟语_audio/N130.mp3?v=2", "audio/四字熟语_audio/N130p.mp3?v=2", "audio/四字熟语_audio/N131.mp3?v=2", "audio/四字熟语_audio/N131p.mp3?v=2", "audio/四字熟语_audio/N132.mp3?v=2", "audio/四字熟语_audio/N132p.mp3?v=2", "audio/四字熟语_audio/N133.mp3?v=2", "audio/四字熟语_audio/N133p.mp3?v=2", "audio/四字熟语_audio/N13p.mp3?v=2", "audio/四字熟语_audio/N14.mp3?v=2", "audio/四字熟语_audio/N14p.mp3?v=2", "audio/四字熟语_audio/N15.mp3?v=2", "audio/四字熟语_audio/N15p.mp3?v=2", "audio/四字熟语_audio/N16.mp3?v=2", "audio/四字熟语_audio/N16p.mp3?v=2", "audio/四字熟语_audio/N17.mp3?v=2", "audio/四字熟语_audio/N17p.mp3?v=2", "audio/四字熟语_audio/N18.mp3?v=2", "audio/四字熟语_audio/N18p.mp3?v=2", "audio/四字熟语_audio/N19.mp3?v=2", "audio/四字熟语_audio/N19p.mp3?v=2", "audio/四字熟语_audio/N1p.mp3?v=2", "audio/四字熟语_audio/N2.mp3?v=2", "audio/四字熟语_audio/N20.mp3?v=2", "audio/四字熟语_audio/N20p.mp3?v=2", "audio/四字熟语_audio/N21.mp3?v=2", "audio/四字熟语_audio/N21p.mp3?v=2", "audio/四字熟语_audio/N22.mp3?v=2", "audio/四字熟语_audio/N22p.mp3?v=2", "audio/四字熟语_audio/N23.mp3?v=2", "audio/四字熟语_audio/N23p.mp3?v=2", "audio/四字熟语_audio/N24.mp3?v=2", "audio/四字熟语_audio/N24p.mp3?v=2", "audio/四字熟语_audio/N25.mp3?v=2", "audio/四字熟语_audio/N25p.mp3?v=2", "audio/四字熟语_audio/N26.mp3?v=2", "audio/四字熟语_audio/N26p.mp3?v=2", "audio/四字熟语_audio/N27.mp3?v=2", "audio/四字熟语_audio/N27p.mp3?v=2", "audio/四字熟语_audio/N28.mp3?v=2", "audio/四字熟语_audio/N28p.mp3?v=2", "audio/四字熟语_audio/N29.mp3?v=2", "audio/四字熟语_audio/N29p.mp3?v=2", "audio/四字熟语_audio/N2p.mp3?v=2", "audio/四字熟语_audio/N3.mp3?v=2", "audio/四字熟语_audio/N30.mp3?v=2", "audio/四字熟语_audio/N30p.mp3?v=2", "audio/四字熟语_audio/N31.mp3?v=2", "audio/四字熟语_audio/N31p.mp3?v=2", "audio/四字熟语_audio/N32.mp3?v=2", "audio/四字熟语_audio/N32p.mp3?v=2", "audio/四字熟语_audio/N33.mp3?v=2", "audio/四字熟语_audio/N33p.mp3?v=2", "audio/四字熟语_audio/N34.mp3?v=2", "audio/四字熟语_audio/N34p.mp3?v=2", "audio/四字熟语_audio/N35.mp3?v=2", "audio/四字熟语_audio/N35p.mp3?v=2", "audio/四字熟语_audio/N36.mp3?v=2", "audio/四字熟语_audio/N36p.mp3?v=2", "audio/四字熟语_audio/N37.mp3?v=2", "audio/四字熟语_audio/N37p.mp3?v=2", "audio/四字熟语_audio/N38.mp3?v=2", "audio/四字熟语_audio/N38p.mp3?v=2", "audio/四字熟语_audio/N39.mp3?v=2", "audio/四字熟语_audio/N39p.mp3?v=2", "audio/四字熟语_audio/N3p.mp3?v=2", "audio/四字熟语_audio/N4.mp3?v=2", "audio/四字熟语_audio/N40.mp3?v=2", "audio/四字熟语_audio/N40p.mp3?v=2", "audio/四字熟语_audio/N41.mp3?v=2", "audio/四字熟语_audio/N41p.mp3?v=2", "audio/四字熟语_audio/N42.mp3?v=2", "audio/四字熟语_audio/N42p.mp3?v=2", "audio/四字熟语_audio/N43.mp3?v=2", "audio/四字熟语_audio/N43p.mp3?v=2", "audio/四字熟语_audio/N44.mp3?v=2", "audio/四字熟语_audio/N44p.mp3?v=2", "audio/四字熟语_audio/N45.mp3?v=2", "audio/四字熟语_audio/N45p.mp3?v=2", "audio/四字熟语_audio/N46.mp3?v=2", "audio/四字熟语_audio/N46p.mp3?v=2", "audio/四字熟语_audio/N47.mp3?v=2", "audio/四字熟语_audio/N47p.mp3?v=2", "audio/四字熟语_audio/N48.mp3?v=2", "audio/四字熟语_audio/N48p.mp3?v=2", "audio/四字熟语_audio/N49.mp3?v=2", "audio/四字熟语_audio/N49p.mp3?v=2", "audio/四字熟语_audio/N4p.mp3?v=2", "audio/四字熟语_audio/N5.mp3?v=2", "audio/四字熟语_audio/N50.mp3?v=2", "audio/四字熟语_audio/N50p.mp3?v=2", "audio/四字熟语_audio/N51.mp3?v=2", "audio/四字熟语_audio/N51p.mp3?v=2", "audio/四字熟语_audio/N52.mp3?v=2", "audio/四字熟语_audio/N52p.mp3?v=2", "audio/四字熟语_audio/N53.mp3?v=2", "audio/四字熟语_audio/N53p.mp3?v=2", "audio/四字熟语_audio/N54.mp3?v=2", "audio/四字熟语_audio/N54p.mp3?v=2", "audio/四字熟语_audio/N55.mp3?v=2", "audio/四字熟语_audio/N55p.mp3?v=2", "audio/四字熟语_audio/N56.mp3?v=2", "audio/四字熟语_audio/N56p.mp3?v=2", "audio/四字熟语_audio/N57.mp3?v=2", "audio/四字熟语_audio/N57p.mp3?v=2", "audio/四字熟语_audio/N58.mp3?v=2", "audio/四字熟语_audio/N58p.mp3?v=2", "audio/四字熟语_audio/N59.mp3?v=2", "audio/四字熟语_audio/N59p.mp3?v=2", "audio/四字熟语_audio/N5p.mp3?v=2", "audio/四字熟语_audio/N6.mp3?v=2", "audio/四字熟语_audio/N60.mp3?v=2", "audio/四字熟语_audio/N60p.mp3?v=2", "audio/四字熟语_audio/N61.mp3?v=2", "audio/四字熟语_audio/N61p.mp3?v=2", "audio/四字熟语_audio/N62.mp3?v=2", "audio/四字熟语_audio/N62p.mp3?v=2", "audio/四字熟语_audio/N63.mp3?v=2", "audio/四字熟语_audio/N63p.mp3?v=2", "audio/四字熟语_audio/N64.mp3?v=2", "audio/四字熟语_audio/N64p.mp3?v=2", "audio/四字熟语_audio/N65.mp3?v=2", "audio/四字熟语_audio/N65p.mp3?v=2", "audio/四字熟语_audio/N66.mp3?v=2", "audio/四字熟语_audio/N66p.mp3?v=2", "audio/四字熟语_audio/N67.mp3?v=2", "audio/四字熟语_audio/N67p.mp3?v=2", "audio/四字熟语_audio/N68.mp3?v=2", "audio/四字熟语_audio/N68p.mp3?v=2", "audio/四字熟语_audio/N69.mp3?v=2", "audio/四字熟语_audio/N69p.mp3?v=2", "audio/四字熟语_audio/N6p.mp3?v=2", "audio/四字熟语_audio/N7.mp3?v=2", "audio/四字熟语_audio/N70.mp3?v=2", "audio/四字熟语_audio/N70p.mp3?v=2", "audio/四字熟语_audio/N71.mp3?v=2", "audio/四字熟语_audio/N71p.mp3?v=2", "audio/四字熟语_audio/N72.mp3?v=2", "audio/四字熟语_audio/N72p.mp3?v=2", "audio/四字熟语_audio/N73.mp3?v=2", "audio/四字熟语_audio/N73p.mp3?v=2", "audio/四字熟语_audio/N74.mp3?v=2", "audio/四字熟语_audio/N74p.mp3?v=2", "audio/四字熟语_audio/N75.mp3?v=2", "audio/四字熟语_audio/N75p.mp3?v=2", "audio/四字熟语_audio/N76.mp3?v=2", "audio/四字熟语_audio/N76p.mp3?v=2", "audio/四字熟语_audio/N77.mp3?v=2", "audio/四字熟语_audio/N77p.mp3?v=2", "audio/四字熟语_audio/N78.mp3?v=2", "audio/四字熟语_audio/N78p.mp3?v=2", "audio/四字熟语_audio/N79.mp3?v=2", "audio/四字熟语_audio/N79p.mp3?v=2", "audio/四字熟语_audio/N7p.mp3?v=2", "audio/四字熟语_audio/N8.mp3?v=2", "audio/四字熟语_audio/N80.mp3?v=2", "audio/四字熟语_audio/N80p.mp3?v=2", "audio/四字熟语_audio/N81.mp3?v=2", "audio/四字熟语_audio/N81p.mp3?v=2", "audio/四字熟语_audio/N82.mp3?v=2", "audio/四字熟语_audio/N82p.mp3?v=2", "audio/四字熟语_audio/N83.mp3?v=2", "audio/四字熟语_audio/N83p.mp3?v=2", "audio/四字熟语_audio/N84.mp3?v=2", "audio/四字熟语_audio/N84p.mp3?v=2", "audio/四字熟语_audio/N85.mp3?v=2", "audio/四字熟语_audio/N85p.mp3?v=2", "audio/四字熟语_audio/N86.mp3?v=2", "audio/四字熟语_audio/N86p.mp3?v=2", "audio/四字熟语_audio/N87.mp3?v=2", "audio/四字熟语_audio/N87p.mp3?v=2", "audio/四字熟语_audio/N88.mp3?v=2", "audio/四字熟语_audio/N88p.mp3?v=2", "audio/四字熟语_audio/N89.mp3?v=2", "audio/四字熟语_audio/N89p.mp3?v=2", "audio/四字熟语_audio/N8p.mp3?v=2", "audio/四字熟语_audio/N9.mp3?v=2", "audio/四字熟语_audio/N90.mp3?v=2", "audio/四字熟语_audio/N90p.mp3?v=2", "audio/四字熟语_audio/N91.mp3?v=2", "audio/四字熟语_audio/N91p.mp3?v=2", "audio/四字熟语_audio/N92.mp3?v=2", "audio/四字熟语_audio/N92p.mp3?v=2", "audio/四字熟语_audio/N93.mp3?v=2", "audio/四字熟语_audio/N93p.mp3?v=2", "audio/四字熟语_audio/N94.mp3?v=2", "audio/四字熟语_audio/N94p.mp3?v=2", "audio/四字熟语_audio/N95.mp3?v=2", "audio/四字熟语_audio/N95p.mp3?v=2", "audio/四字熟语_audio/N96.mp3?v=2", "audio/四字熟语_audio/N96p.mp3?v=2", "audio/四字熟语_audio/N97.mp3?v=2", "audio/四字熟语_audio/N97p.mp3?v=2", "audio/四字熟语_audio/N98.mp3?v=2", "audio/四字熟语_audio/N98p.mp3?v=2", "audio/四字熟语_audio/N99.mp3?v=2", "audio/四字熟语_audio/N99p.mp3?v=2", "audio/四字熟语_audio/N9p.mp3?v=2"];
+    for (var i=0;i<urls.length;i++){ CACHE[urls[i]]=CACHE[urls[i]]; }
+    for (var j=0;j<urls.length;j++) window.__audKick(urls[j]);
+  }
+  if (document.readyState === 'complete' || document.readyState === 'interactive') setTimeout(start, 60);
+  else document.addEventListener('DOMContentLoaded', function(){ setTimeout(start, 60); });
+})();
+</script>
 </body>
 </html>

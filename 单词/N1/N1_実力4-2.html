@@ -683,7 +683,7 @@ function play(aid, asfx, text){
   a.pause();
   if (aid) {
     const p = `../audio/N1/N1_実力4-2_audio/${aid}${asfx || ''}.mp3?v=1`;
-    a.src = p; a.load();
+    a.src = window.__audSrc(p); a.load();
     a.onended = () => { if (typeof dictHook === 'function') dictHook(asfx); };
     a.play().catch(() => {
       // 失败(多为源未就绪)：重试一次；仍有 text 则走 TTS 兜底，避免纯静音
@@ -1317,10 +1317,21 @@ document.addEventListener('keydown', e => {
   function hint(){
     if (hintDone) return; hintDone = true;
     var d = document.getElementById('dict'); if (!d) return;
-    var el = document.createElement('div');
-    el.style.cssText = 'opacity:.45;font-size:11px;';
-    el.textContent = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认关';
-    d.appendChild(el);
+    // 把底部原有的键盘/快捷键提示行改写为手柄按键（连上手柄后小字显示手柄操作）
+    var msg = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认关';
+    var found = false;
+    var hints = d.querySelectorAll('.dict-hint, [style*="opacity"]');
+    for (var i=0;i<hints.length;i++){
+      if ((hints[i].textContent||'').indexOf('空格') >= 0){
+        hints[i].textContent = msg; found = true;
+      }
+    }
+    if (!found){
+      var el = document.createElement('div');
+      el.style.cssText = 'opacity:.45;font-size:11px;';
+      el.textContent = msg;
+      d.appendChild(el);
+    }
   }
   function toast(t){
     var el = document.createElement('div');
@@ -1352,5 +1363,29 @@ document.addEventListener('keydown', e => {
 })();
 </script>
 
+<script>
+/* ==audcache== 音频预取缓存: 进页面后台把本课音频拉进内存, 点击即出声(等同本地), 随意打断都能响 */
+(function(){
+  var CACHE = {}, Q = [], ACTIVE = 0, CONC = 8;
+  window.__audSrc = function(url){ return CACHE[url] || url; };
+  window.__audKick = function(url){ if (CACHE[url] || Q.indexOf(url) >= 0) return; Q.push(url); pump(); };
+  function pump(){
+    while (ACTIVE < CONC && Q.length){
+      var url = Q.shift(); ACTIVE++;
+      fetch(url).then(function(r){ if(!r.ok) throw new Error(r.status); return r.blob(); })
+        .then(function(b){ try{ CACHE[url] = URL.createObjectURL(b); }catch(e){} })
+        .catch(function(){})
+        .then(function(){ ACTIVE--; pump(); });
+    }
+  }
+  function start(){
+    var urls = ["../audio/N1/N1_実力4-2_audio/1.mp3?v=1", "../audio/N1/N1_実力4-2_audio/10.mp3?v=1", "../audio/N1/N1_実力4-2_audio/10p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/11.mp3?v=1", "../audio/N1/N1_実力4-2_audio/11p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/12.mp3?v=1", "../audio/N1/N1_実力4-2_audio/13.mp3?v=1", "../audio/N1/N1_実力4-2_audio/13p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/14.mp3?v=1", "../audio/N1/N1_実力4-2_audio/14p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/15.mp3?v=1", "../audio/N1/N1_実力4-2_audio/15p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/16.mp3?v=1", "../audio/N1/N1_実力4-2_audio/16p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/17.mp3?v=1", "../audio/N1/N1_実力4-2_audio/17p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/18.mp3?v=1", "../audio/N1/N1_実力4-2_audio/18p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/19.mp3?v=1", "../audio/N1/N1_実力4-2_audio/19p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/1p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/2.mp3?v=1", "../audio/N1/N1_実力4-2_audio/20.mp3?v=1", "../audio/N1/N1_実力4-2_audio/20p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/21.mp3?v=1", "../audio/N1/N1_実力4-2_audio/21p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/22.mp3?v=1", "../audio/N1/N1_実力4-2_audio/22p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/23.mp3?v=1", "../audio/N1/N1_実力4-2_audio/23p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/24.mp3?v=1", "../audio/N1/N1_実力4-2_audio/24p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/2p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/3.mp3?v=1", "../audio/N1/N1_実力4-2_audio/4.mp3?v=1", "../audio/N1/N1_実力4-2_audio/4p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/5.mp3?v=1", "../audio/N1/N1_実力4-2_audio/5p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/6.mp3?v=1", "../audio/N1/N1_実力4-2_audio/6p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/7.mp3?v=1", "../audio/N1/N1_実力4-2_audio/7p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/8.mp3?v=1", "../audio/N1/N1_実力4-2_audio/8p.mp3?v=1", "../audio/N1/N1_実力4-2_audio/9.mp3?v=1", "../audio/N1/N1_実力4-2_audio/9p.mp3?v=1"];
+    for (var i=0;i<urls.length;i++){ CACHE[urls[i]]=CACHE[urls[i]]; }
+    for (var j=0;j<urls.length;j++) window.__audKick(urls[j]);
+  }
+  if (document.readyState === 'complete' || document.readyState === 'interactive') setTimeout(start, 60);
+  else document.addEventListener('DOMContentLoaded', function(){ setTimeout(start, 60); });
+})();
+</script>
 </body>
 </html>

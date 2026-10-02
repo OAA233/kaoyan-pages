@@ -619,7 +619,7 @@ function play(aid, asfx, text){
   a.pause();
   if (aid) {
     const p = `../audio/N2/N2_実力1-3_audio/${aid}${asfx || ''}.mp3?v=1`;
-    a.src = p; a.load();
+    a.src = window.__audSrc(p); a.load();
     a.onended = () => { if (typeof dictHook === 'function') dictHook(asfx); };
     a.play().catch(() => {
       // 失败(多为源未就绪)：重试一次；仍有 text 则走 TTS 兜底，避免纯静音
@@ -1253,10 +1253,21 @@ document.addEventListener('keydown', e => {
   function hint(){
     if (hintDone) return; hintDone = true;
     var d = document.getElementById('dict'); if (!d) return;
-    var el = document.createElement('div');
-    el.style.cssText = 'opacity:.45;font-size:11px;';
-    el.textContent = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认关';
-    d.appendChild(el);
+    // 把底部原有的键盘/快捷键提示行改写为手柄按键（连上手柄后小字显示手柄操作）
+    var msg = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认关';
+    var found = false;
+    var hints = d.querySelectorAll('.dict-hint, [style*="opacity"]');
+    for (var i=0;i<hints.length;i++){
+      if ((hints[i].textContent||'').indexOf('空格') >= 0){
+        hints[i].textContent = msg; found = true;
+      }
+    }
+    if (!found){
+      var el = document.createElement('div');
+      el.style.cssText = 'opacity:.45;font-size:11px;';
+      el.textContent = msg;
+      d.appendChild(el);
+    }
   }
   function toast(t){
     var el = document.createElement('div');
@@ -1288,5 +1299,29 @@ document.addEventListener('keydown', e => {
 })();
 </script>
 
+<script>
+/* ==audcache== 音频预取缓存: 进页面后台把本课音频拉进内存, 点击即出声(等同本地), 随意打断都能响 */
+(function(){
+  var CACHE = {}, Q = [], ACTIVE = 0, CONC = 8;
+  window.__audSrc = function(url){ return CACHE[url] || url; };
+  window.__audKick = function(url){ if (CACHE[url] || Q.indexOf(url) >= 0) return; Q.push(url); pump(); };
+  function pump(){
+    while (ACTIVE < CONC && Q.length){
+      var url = Q.shift(); ACTIVE++;
+      fetch(url).then(function(r){ if(!r.ok) throw new Error(r.status); return r.blob(); })
+        .then(function(b){ try{ CACHE[url] = URL.createObjectURL(b); }catch(e){} })
+        .catch(function(){})
+        .then(function(){ ACTIVE--; pump(); });
+    }
+  }
+  function start(){
+    var urls = ["../audio/N2/N2_実力1-3_audio/1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/10.mp3?v=1", "../audio/N2/N2_実力1-3_audio/10p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/10p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/10p3.mp3?v=1", "../audio/N2/N2_実力1-3_audio/11.mp3?v=1", "../audio/N2/N2_実力1-3_audio/11p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/11p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/11p3.mp3?v=1", "../audio/N2/N2_実力1-3_audio/11p4.mp3?v=1", "../audio/N2/N2_実力1-3_audio/12.mp3?v=1", "../audio/N2/N2_実力1-3_audio/12p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/12p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/12p3.mp3?v=1", "../audio/N2/N2_実力1-3_audio/12p4.mp3?v=1", "../audio/N2/N2_実力1-3_audio/13.mp3?v=1", "../audio/N2/N2_実力1-3_audio/13p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/13p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/13p3.mp3?v=1", "../audio/N2/N2_実力1-3_audio/14.mp3?v=1", "../audio/N2/N2_実力1-3_audio/14p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/14p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/15.mp3?v=1", "../audio/N2/N2_実力1-3_audio/15p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/15p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/15p3.mp3?v=1", "../audio/N2/N2_実力1-3_audio/16.mp3?v=1", "../audio/N2/N2_実力1-3_audio/16p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/16p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/16p3.mp3?v=1", "../audio/N2/N2_実力1-3_audio/17.mp3?v=1", "../audio/N2/N2_実力1-3_audio/17p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/17p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/18.mp3?v=1", "../audio/N2/N2_実力1-3_audio/18p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/18p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/18p3.mp3?v=1", "../audio/N2/N2_実力1-3_audio/19.mp3?v=1", "../audio/N2/N2_実力1-3_audio/19p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/19p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/19p3.mp3?v=1", "../audio/N2/N2_実力1-3_audio/1p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/1p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/20.mp3?v=1", "../audio/N2/N2_実力1-3_audio/20p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/20p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/2p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/2p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/3.mp3?v=1", "../audio/N2/N2_実力1-3_audio/3p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/3p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/4.mp3?v=1", "../audio/N2/N2_実力1-3_audio/4p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/4p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/5.mp3?v=1", "../audio/N2/N2_実力1-3_audio/5p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/5p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/5p3.mp3?v=1", "../audio/N2/N2_実力1-3_audio/6.mp3?v=1", "../audio/N2/N2_実力1-3_audio/6p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/6p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/7.mp3?v=1", "../audio/N2/N2_実力1-3_audio/7p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/7p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/8.mp3?v=1", "../audio/N2/N2_実力1-3_audio/8p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/8p2.mp3?v=1", "../audio/N2/N2_実力1-3_audio/9.mp3?v=1", "../audio/N2/N2_実力1-3_audio/9p1.mp3?v=1", "../audio/N2/N2_実力1-3_audio/9p2.mp3?v=1"];
+    for (var i=0;i<urls.length;i++){ CACHE[urls[i]]=CACHE[urls[i]]; }
+    for (var j=0;j<urls.length;j++) window.__audKick(urls[j]);
+  }
+  if (document.readyState === 'complete' || document.readyState === 'interactive') setTimeout(start, 60);
+  else document.addEventListener('DOMContentLoaded', function(){ setTimeout(start, 60); });
+})();
+</script>
 </body>
 </html>

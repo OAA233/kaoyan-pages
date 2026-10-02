@@ -168,7 +168,7 @@ function play(id, suffix){
   const a = curAudio;
   a.pause();
   const p = `../audio/N1/N1_1-1_audio/${id}${suffix || ''}.mp3`;
-  a.src = p; a.load();
+  a.src = window.__audSrc(p); a.load();
   if (typeof _dictHook === 'function') _dictHook();
   a.play().catch(() => { a.play().then(() => {}).catch(() => {}); });
 }
@@ -515,10 +515,21 @@ document.addEventListener('keydown', e => {
   function hint(){
     if (hintDone) return; hintDone = true;
     var d = document.getElementById('dict'); if (!d) return;
-    var el = document.createElement('div');
-    el.style.cssText = 'opacity:.45;font-size:11px;';
-    el.textContent = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认关';
-    d.appendChild(el);
+    // 把底部原有的键盘/快捷键提示行改写为手柄按键（连上手柄后小字显示手柄操作）
+    var msg = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认关';
+    var found = false;
+    var hints = d.querySelectorAll('.dict-hint, [style*="opacity"]');
+    for (var i=0;i<hints.length;i++){
+      if ((hints[i].textContent||'').indexOf('空格') >= 0){
+        hints[i].textContent = msg; found = true;
+      }
+    }
+    if (!found){
+      var el = document.createElement('div');
+      el.style.cssText = 'opacity:.45;font-size:11px;';
+      el.textContent = msg;
+      d.appendChild(el);
+    }
   }
   function toast(t){
     var el = document.createElement('div');
@@ -550,5 +561,29 @@ document.addEventListener('keydown', e => {
 })();
 </script>
 
+<script>
+/* ==audcache== 音频预取缓存: 进页面后台把本课音频拉进内存, 点击即出声(等同本地), 随意打断都能响 */
+(function(){
+  var CACHE = {}, Q = [], ACTIVE = 0, CONC = 8;
+  window.__audSrc = function(url){ return CACHE[url] || url; };
+  window.__audKick = function(url){ if (CACHE[url] || Q.indexOf(url) >= 0) return; Q.push(url); pump(); };
+  function pump(){
+    while (ACTIVE < CONC && Q.length){
+      var url = Q.shift(); ACTIVE++;
+      fetch(url).then(function(r){ if(!r.ok) throw new Error(r.status); return r.blob(); })
+        .then(function(b){ try{ CACHE[url] = URL.createObjectURL(b); }catch(e){} })
+        .catch(function(){})
+        .then(function(){ ACTIVE--; pump(); });
+    }
+  }
+  function start(){
+    var urls = ["../audio/N1/N1_1-1_audio/1.mp3?v=1", "../audio/N1/N1_1-1_audio/10.mp3?v=1", "../audio/N1/N1_1-1_audio/10p.mp3?v=1", "../audio/N1/N1_1-1_audio/11.mp3?v=1", "../audio/N1/N1_1-1_audio/11p.mp3?v=1", "../audio/N1/N1_1-1_audio/12.mp3?v=1", "../audio/N1/N1_1-1_audio/12p.mp3?v=1", "../audio/N1/N1_1-1_audio/13.mp3?v=1", "../audio/N1/N1_1-1_audio/13p.mp3?v=1", "../audio/N1/N1_1-1_audio/14.mp3?v=1", "../audio/N1/N1_1-1_audio/14p.mp3?v=1", "../audio/N1/N1_1-1_audio/15.mp3?v=1", "../audio/N1/N1_1-1_audio/15p.mp3?v=1", "../audio/N1/N1_1-1_audio/16.mp3?v=1", "../audio/N1/N1_1-1_audio/16p.mp3?v=1", "../audio/N1/N1_1-1_audio/17.mp3?v=1", "../audio/N1/N1_1-1_audio/17p.mp3?v=1", "../audio/N1/N1_1-1_audio/18.mp3?v=1", "../audio/N1/N1_1-1_audio/18p.mp3?v=1", "../audio/N1/N1_1-1_audio/19.mp3?v=1", "../audio/N1/N1_1-1_audio/19p.mp3?v=1", "../audio/N1/N1_1-1_audio/1p.mp3?v=1", "../audio/N1/N1_1-1_audio/2.mp3?v=1", "../audio/N1/N1_1-1_audio/20.mp3?v=1", "../audio/N1/N1_1-1_audio/20p.mp3?v=1", "../audio/N1/N1_1-1_audio/21.mp3?v=1", "../audio/N1/N1_1-1_audio/21p.mp3?v=1", "../audio/N1/N1_1-1_audio/22.mp3?v=1", "../audio/N1/N1_1-1_audio/22p.mp3?v=1", "../audio/N1/N1_1-1_audio/23.mp3?v=1", "../audio/N1/N1_1-1_audio/23p.mp3?v=1", "../audio/N1/N1_1-1_audio/24.mp3?v=1", "../audio/N1/N1_1-1_audio/24p.mp3?v=1", "../audio/N1/N1_1-1_audio/25.mp3?v=1", "../audio/N1/N1_1-1_audio/25p.mp3?v=1", "../audio/N1/N1_1-1_audio/26.mp3?v=1", "../audio/N1/N1_1-1_audio/26p.mp3?v=1", "../audio/N1/N1_1-1_audio/27.mp3?v=1", "../audio/N1/N1_1-1_audio/27p.mp3?v=1", "../audio/N1/N1_1-1_audio/28.mp3?v=1", "../audio/N1/N1_1-1_audio/28p.mp3?v=1", "../audio/N1/N1_1-1_audio/29.mp3?v=1", "../audio/N1/N1_1-1_audio/29p.mp3?v=1", "../audio/N1/N1_1-1_audio/2p.mp3?v=1", "../audio/N1/N1_1-1_audio/3.mp3?v=1", "../audio/N1/N1_1-1_audio/30.mp3?v=1", "../audio/N1/N1_1-1_audio/30p.mp3?v=1", "../audio/N1/N1_1-1_audio/31.mp3?v=1", "../audio/N1/N1_1-1_audio/31p.mp3?v=1", "../audio/N1/N1_1-1_audio/32.mp3?v=1", "../audio/N1/N1_1-1_audio/32p.mp3?v=1", "../audio/N1/N1_1-1_audio/33.mp3?v=1", "../audio/N1/N1_1-1_audio/33p.mp3?v=1", "../audio/N1/N1_1-1_audio/34.mp3?v=1", "../audio/N1/N1_1-1_audio/34p.mp3?v=1", "../audio/N1/N1_1-1_audio/35.mp3?v=1", "../audio/N1/N1_1-1_audio/35p.mp3?v=1", "../audio/N1/N1_1-1_audio/36.mp3?v=1", "../audio/N1/N1_1-1_audio/36p.mp3?v=1", "../audio/N1/N1_1-1_audio/37.mp3?v=1", "../audio/N1/N1_1-1_audio/37p.mp3?v=1", "../audio/N1/N1_1-1_audio/38.mp3?v=1", "../audio/N1/N1_1-1_audio/38p.mp3?v=1", "../audio/N1/N1_1-1_audio/39.mp3?v=1", "../audio/N1/N1_1-1_audio/39p.mp3?v=1", "../audio/N1/N1_1-1_audio/3p.mp3?v=1", "../audio/N1/N1_1-1_audio/4.mp3?v=1", "../audio/N1/N1_1-1_audio/40.mp3?v=1", "../audio/N1/N1_1-1_audio/40p.mp3?v=1", "../audio/N1/N1_1-1_audio/41.mp3?v=1", "../audio/N1/N1_1-1_audio/41p.mp3?v=1", "../audio/N1/N1_1-1_audio/42.mp3?v=1", "../audio/N1/N1_1-1_audio/42p.mp3?v=1", "../audio/N1/N1_1-1_audio/43.mp3?v=1", "../audio/N1/N1_1-1_audio/43p.mp3?v=1", "../audio/N1/N1_1-1_audio/44.mp3?v=1", "../audio/N1/N1_1-1_audio/44p.mp3?v=1", "../audio/N1/N1_1-1_audio/45.mp3?v=1", "../audio/N1/N1_1-1_audio/45p.mp3?v=1", "../audio/N1/N1_1-1_audio/46.mp3?v=1", "../audio/N1/N1_1-1_audio/46p.mp3?v=1", "../audio/N1/N1_1-1_audio/47.mp3?v=1", "../audio/N1/N1_1-1_audio/47p.mp3?v=1", "../audio/N1/N1_1-1_audio/48.mp3?v=1", "../audio/N1/N1_1-1_audio/48p.mp3?v=1", "../audio/N1/N1_1-1_audio/49.mp3?v=1", "../audio/N1/N1_1-1_audio/49p.mp3?v=1", "../audio/N1/N1_1-1_audio/4p.mp3?v=1", "../audio/N1/N1_1-1_audio/5.mp3?v=1", "../audio/N1/N1_1-1_audio/50.mp3?v=1", "../audio/N1/N1_1-1_audio/50p.mp3?v=1", "../audio/N1/N1_1-1_audio/51.mp3?v=1", "../audio/N1/N1_1-1_audio/51p.mp3?v=1", "../audio/N1/N1_1-1_audio/52.mp3?v=1", "../audio/N1/N1_1-1_audio/52p.mp3?v=1", "../audio/N1/N1_1-1_audio/53.mp3?v=1", "../audio/N1/N1_1-1_audio/53p.mp3?v=1", "../audio/N1/N1_1-1_audio/54.mp3?v=1", "../audio/N1/N1_1-1_audio/54p.mp3?v=1", "../audio/N1/N1_1-1_audio/55.mp3?v=1", "../audio/N1/N1_1-1_audio/55p.mp3?v=1", "../audio/N1/N1_1-1_audio/56.mp3?v=1", "../audio/N1/N1_1-1_audio/56p.mp3?v=1", "../audio/N1/N1_1-1_audio/57.mp3?v=1", "../audio/N1/N1_1-1_audio/57p.mp3?v=1", "../audio/N1/N1_1-1_audio/58.mp3?v=1", "../audio/N1/N1_1-1_audio/58p.mp3?v=1", "../audio/N1/N1_1-1_audio/59.mp3?v=1", "../audio/N1/N1_1-1_audio/59p.mp3?v=1", "../audio/N1/N1_1-1_audio/5p.mp3?v=1", "../audio/N1/N1_1-1_audio/6.mp3?v=1", "../audio/N1/N1_1-1_audio/60.mp3?v=1", "../audio/N1/N1_1-1_audio/60p.mp3?v=1", "../audio/N1/N1_1-1_audio/61.mp3?v=1", "../audio/N1/N1_1-1_audio/61p.mp3?v=1", "../audio/N1/N1_1-1_audio/62.mp3?v=1", "../audio/N1/N1_1-1_audio/62p.mp3?v=1", "../audio/N1/N1_1-1_audio/63.mp3?v=1", "../audio/N1/N1_1-1_audio/63p.mp3?v=1", "../audio/N1/N1_1-1_audio/64.mp3?v=1", "../audio/N1/N1_1-1_audio/64p.mp3?v=1", "../audio/N1/N1_1-1_audio/65.mp3?v=1", "../audio/N1/N1_1-1_audio/65p.mp3?v=1", "../audio/N1/N1_1-1_audio/66.mp3?v=1", "../audio/N1/N1_1-1_audio/66p.mp3?v=1", "../audio/N1/N1_1-1_audio/67.mp3?v=1", "../audio/N1/N1_1-1_audio/67p.mp3?v=1", "../audio/N1/N1_1-1_audio/68.mp3?v=1", "../audio/N1/N1_1-1_audio/68p.mp3?v=1", "../audio/N1/N1_1-1_audio/69.mp3?v=1", "../audio/N1/N1_1-1_audio/69p.mp3?v=1", "../audio/N1/N1_1-1_audio/6p.mp3?v=1", "../audio/N1/N1_1-1_audio/7.mp3?v=1", "../audio/N1/N1_1-1_audio/70.mp3?v=1", "../audio/N1/N1_1-1_audio/70p.mp3?v=1", "../audio/N1/N1_1-1_audio/71.mp3?v=1", "../audio/N1/N1_1-1_audio/71p.mp3?v=1", "../audio/N1/N1_1-1_audio/72.mp3?v=1", "../audio/N1/N1_1-1_audio/72p.mp3?v=1", "../audio/N1/N1_1-1_audio/73.mp3?v=1", "../audio/N1/N1_1-1_audio/73p.mp3?v=1", "../audio/N1/N1_1-1_audio/74.mp3?v=1", "../audio/N1/N1_1-1_audio/74p.mp3?v=1", "../audio/N1/N1_1-1_audio/75.mp3?v=1", "../audio/N1/N1_1-1_audio/75p.mp3?v=1", "../audio/N1/N1_1-1_audio/76.mp3?v=1", "../audio/N1/N1_1-1_audio/76p.mp3?v=1", "../audio/N1/N1_1-1_audio/77.mp3?v=1", "../audio/N1/N1_1-1_audio/77p.mp3?v=1", "../audio/N1/N1_1-1_audio/78.mp3?v=1", "../audio/N1/N1_1-1_audio/78p.mp3?v=1", "../audio/N1/N1_1-1_audio/79.mp3?v=1", "../audio/N1/N1_1-1_audio/79p.mp3?v=1", "../audio/N1/N1_1-1_audio/7p.mp3?v=1", "../audio/N1/N1_1-1_audio/8.mp3?v=1", "../audio/N1/N1_1-1_audio/80.mp3?v=1", "../audio/N1/N1_1-1_audio/80p.mp3?v=1", "../audio/N1/N1_1-1_audio/81.mp3?v=1", "../audio/N1/N1_1-1_audio/81p.mp3?v=1", "../audio/N1/N1_1-1_audio/82.mp3?v=1", "../audio/N1/N1_1-1_audio/82p.mp3?v=1", "../audio/N1/N1_1-1_audio/83.mp3?v=1", "../audio/N1/N1_1-1_audio/83p.mp3?v=1", "../audio/N1/N1_1-1_audio/84.mp3?v=1", "../audio/N1/N1_1-1_audio/84p.mp3?v=1", "../audio/N1/N1_1-1_audio/85.mp3?v=1", "../audio/N1/N1_1-1_audio/85p.mp3?v=1", "../audio/N1/N1_1-1_audio/86.mp3?v=1", "../audio/N1/N1_1-1_audio/86p.mp3?v=1", "../audio/N1/N1_1-1_audio/87.mp3?v=1", "../audio/N1/N1_1-1_audio/87p.mp3?v=1", "../audio/N1/N1_1-1_audio/8p.mp3?v=1", "../audio/N1/N1_1-1_audio/9.mp3?v=1", "../audio/N1/N1_1-1_audio/9p.mp3?v=1"];
+    for (var i=0;i<urls.length;i++){ CACHE[urls[i]]=CACHE[urls[i]]; }
+    for (var j=0;j<urls.length;j++) window.__audKick(urls[j]);
+  }
+  if (document.readyState === 'complete' || document.readyState === 'interactive') setTimeout(start, 60);
+  else document.addEventListener('DOMContentLoaded', function(){ setTimeout(start, 60); });
+})();
+</script>
 </body>
 </html>

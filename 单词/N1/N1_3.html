@@ -1658,7 +1658,7 @@ function play(aid, asfx, text){
   a.pause();
   if (aid) {
     const p = `../audio/N1/N1_3_audio/${aid}${asfx || ''}.mp3?v=1`;
-    a.src = p; a.load();
+    a.src = window.__audSrc(p); a.load();
     a.onended = () => { if (typeof dictHook === 'function') dictHook(asfx); };
     a.play().catch(() => {
       // 失败(多为源未就绪)：重试一次；仍有 text 则走 TTS 兜底，避免纯静音
@@ -2266,20 +2266,24 @@ document.addEventListener('keydown', e => {
   }
   // 实测: 0=B 1=A 2=X 3=Y
   var MAP = {0:'next', 1:'play', 2:'reveal', 3:'prev'};
-  function showRead(bi, act){
-    var r = document.getElementById('gpRead');
-    if (!r){ r = document.createElement('div'); r.id='gpRead';
-      r.style.cssText='opacity:.9;font-size:13px;margin-top:4px;color:var(--accent,#4a9eff);';
-      var d=document.getElementById('dict'); if(d) d.appendChild(r); }
-    r.textContent = '按键 索引'+bi+' → '+act;
-  }
   function hint(){
     if (hintDone) return; hintDone = true;
     var d = document.getElementById('dict'); if (!d) return;
-    var el = document.createElement('div');
-    el.style.cssText = 'opacity:.45;font-size:11px;';
-    el.textContent = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认关 (按任意键看下方反馈)';
-    d.appendChild(el);
+    // 把底部原有的键盘提示行改写为手柄按键（连上手柄后小字显示手柄操作）
+    var msg = '🎮 B=下一个 · A=重播 · X=答案 · Y=上一个 · 自动播放默认关';
+    var found = false;
+    var hints = d.querySelectorAll('[style*="opacity"], .dict-hint');
+    for (var i=0;i<hints.length;i++){
+      if ((hints[i].textContent||'').indexOf('空格') >= 0){
+        hints[i].textContent = msg; found = true;
+      }
+    }
+    if (!found){
+      var el = document.createElement('div');
+      el.style.cssText = 'opacity:.45;font-size:11px;';
+      el.textContent = msg;
+      d.appendChild(el);
+    }
   }
   function toast(t){
     var el = document.createElement('div');
@@ -2300,7 +2304,7 @@ document.addEventListener('keydown', e => {
         for (var k in MAP){
           var bi = +k, key = i+':'+bi;
           var d = down(p.buttons[bi]);
-          if (d && !prev[key]){ fire(MAP[bi]); showRead(bi, MAP[bi]); }
+          if (d && !prev[key]){ fire(MAP[bi]); }
           prev[key] = d;
         }
         if (connected && !toastShown){ toastShown = true; toast('🎮 手柄已连接'); }
@@ -2311,5 +2315,29 @@ document.addEventListener('keydown', e => {
 })();
 </script>
 
+<script>
+/* ==audcache== 音频预取缓存: 进页面后台把本课音频拉进内存, 点击即出声(等同本地), 随意打断都能响 */
+(function(){
+  var CACHE = {}, Q = [], ACTIVE = 0, CONC = 8;
+  window.__audSrc = function(url){ return CACHE[url] || url; };
+  window.__audKick = function(url){ if (CACHE[url] || Q.indexOf(url) >= 0) return; Q.push(url); pump(); };
+  function pump(){
+    while (ACTIVE < CONC && Q.length){
+      var url = Q.shift(); ACTIVE++;
+      fetch(url).then(function(r){ if(!r.ok) throw new Error(r.status); return r.blob(); })
+        .then(function(b){ try{ CACHE[url] = URL.createObjectURL(b); }catch(e){} })
+        .catch(function(){})
+        .then(function(){ ACTIVE--; pump(); });
+    }
+  }
+  function start(){
+    var urls = ["../audio/N1/N1_3_audio/1.mp3?v=1", "../audio/N1/N1_3_audio/10.mp3?v=1", "../audio/N1/N1_3_audio/11.mp3?v=1", "../audio/N1/N1_3_audio/11p.mp3?v=1", "../audio/N1/N1_3_audio/12.mp3?v=1", "../audio/N1/N1_3_audio/12p.mp3?v=1", "../audio/N1/N1_3_audio/13.mp3?v=1", "../audio/N1/N1_3_audio/14.mp3?v=1", "../audio/N1/N1_3_audio/14p.mp3?v=1", "../audio/N1/N1_3_audio/15.mp3?v=1", "../audio/N1/N1_3_audio/16.mp3?v=1", "../audio/N1/N1_3_audio/16p.mp3?v=1", "../audio/N1/N1_3_audio/17.mp3?v=1", "../audio/N1/N1_3_audio/18.mp3?v=1", "../audio/N1/N1_3_audio/18p.mp3?v=1", "../audio/N1/N1_3_audio/19.mp3?v=1", "../audio/N1/N1_3_audio/1p.mp3?v=1", "../audio/N1/N1_3_audio/2.mp3?v=1", "../audio/N1/N1_3_audio/20.mp3?v=1", "../audio/N1/N1_3_audio/20p.mp3?v=1", "../audio/N1/N1_3_audio/21.mp3?v=1", "../audio/N1/N1_3_audio/22.mp3?v=1", "../audio/N1/N1_3_audio/22p.mp3?v=1", "../audio/N1/N1_3_audio/23.mp3?v=1", "../audio/N1/N1_3_audio/24.mp3?v=1", "../audio/N1/N1_3_audio/24p.mp3?v=1", "../audio/N1/N1_3_audio/25.mp3?v=1", "../audio/N1/N1_3_audio/25p.mp3?v=1", "../audio/N1/N1_3_audio/26.mp3?v=1", "../audio/N1/N1_3_audio/26p.mp3?v=1", "../audio/N1/N1_3_audio/27.mp3?v=1", "../audio/N1/N1_3_audio/27p.mp3?v=1", "../audio/N1/N1_3_audio/28.mp3?v=1", "../audio/N1/N1_3_audio/29.mp3?v=1", "../audio/N1/N1_3_audio/29p.mp3?v=1", "../audio/N1/N1_3_audio/2p.mp3?v=1", "../audio/N1/N1_3_audio/3.mp3?v=1", "../audio/N1/N1_3_audio/30.mp3?v=1", "../audio/N1/N1_3_audio/31.mp3?v=1", "../audio/N1/N1_3_audio/32.mp3?v=1", "../audio/N1/N1_3_audio/32p.mp3?v=1", "../audio/N1/N1_3_audio/33.mp3?v=1", "../audio/N1/N1_3_audio/34.mp3?v=1", "../audio/N1/N1_3_audio/34p.mp3?v=1", "../audio/N1/N1_3_audio/35.mp3?v=1", "../audio/N1/N1_3_audio/35p.mp3?v=1", "../audio/N1/N1_3_audio/36.mp3?v=1", "../audio/N1/N1_3_audio/37.mp3?v=1", "../audio/N1/N1_3_audio/37p.mp3?v=1", "../audio/N1/N1_3_audio/38.mp3?v=1", "../audio/N1/N1_3_audio/38p.mp3?v=1", "../audio/N1/N1_3_audio/39.mp3?v=1", "../audio/N1/N1_3_audio/39p.mp3?v=1", "../audio/N1/N1_3_audio/4.mp3?v=1", "../audio/N1/N1_3_audio/40.mp3?v=1", "../audio/N1/N1_3_audio/41.mp3?v=1", "../audio/N1/N1_3_audio/42.mp3?v=1", "../audio/N1/N1_3_audio/43.mp3?v=1", "../audio/N1/N1_3_audio/43p.mp3?v=1", "../audio/N1/N1_3_audio/44.mp3?v=1", "../audio/N1/N1_3_audio/45.mp3?v=1", "../audio/N1/N1_3_audio/45p.mp3?v=1", "../audio/N1/N1_3_audio/46.mp3?v=1", "../audio/N1/N1_3_audio/47.mp3?v=1", "../audio/N1/N1_3_audio/47p.mp3?v=1", "../audio/N1/N1_3_audio/48.mp3?v=1", "../audio/N1/N1_3_audio/48p.mp3?v=1", "../audio/N1/N1_3_audio/49.mp3?v=1", "../audio/N1/N1_3_audio/49p.mp3?v=1", "../audio/N1/N1_3_audio/4p.mp3?v=1", "../audio/N1/N1_3_audio/5.mp3?v=1", "../audio/N1/N1_3_audio/50.mp3?v=1", "../audio/N1/N1_3_audio/50p.mp3?v=1", "../audio/N1/N1_3_audio/51.mp3?v=1", "../audio/N1/N1_3_audio/51p.mp3?v=1", "../audio/N1/N1_3_audio/52.mp3?v=1", "../audio/N1/N1_3_audio/53.mp3?v=1", "../audio/N1/N1_3_audio/53p.mp3?v=1", "../audio/N1/N1_3_audio/54.mp3?v=1", "../audio/N1/N1_3_audio/54p.mp3?v=1", "../audio/N1/N1_3_audio/55.mp3?v=1", "../audio/N1/N1_3_audio/55p.mp3?v=1", "../audio/N1/N1_3_audio/56.mp3?v=1", "../audio/N1/N1_3_audio/56p.mp3?v=1", "../audio/N1/N1_3_audio/57.mp3?v=1", "../audio/N1/N1_3_audio/58.mp3?v=1", "../audio/N1/N1_3_audio/59.mp3?v=1", "../audio/N1/N1_3_audio/59p.mp3?v=1", "../audio/N1/N1_3_audio/5p.mp3?v=1", "../audio/N1/N1_3_audio/6.mp3?v=1", "../audio/N1/N1_3_audio/60.mp3?v=1", "../audio/N1/N1_3_audio/61.mp3?v=1", "../audio/N1/N1_3_audio/61p.mp3?v=1", "../audio/N1/N1_3_audio/62.mp3?v=1", "../audio/N1/N1_3_audio/62p.mp3?v=1", "../audio/N1/N1_3_audio/63.mp3?v=1", "../audio/N1/N1_3_audio/63p.mp3?v=1", "../audio/N1/N1_3_audio/64.mp3?v=1", "../audio/N1/N1_3_audio/65.mp3?v=1", "../audio/N1/N1_3_audio/65p.mp3?v=1", "../audio/N1/N1_3_audio/66.mp3?v=1", "../audio/N1/N1_3_audio/66p.mp3?v=1", "../audio/N1/N1_3_audio/67.mp3?v=1", "../audio/N1/N1_3_audio/67p.mp3?v=1", "../audio/N1/N1_3_audio/68.mp3?v=1", "../audio/N1/N1_3_audio/69.mp3?v=1", "../audio/N1/N1_3_audio/69p.mp3?v=1", "../audio/N1/N1_3_audio/6p.mp3?v=1", "../audio/N1/N1_3_audio/7.mp3?v=1", "../audio/N1/N1_3_audio/70.mp3?v=1", "../audio/N1/N1_3_audio/71.mp3?v=1", "../audio/N1/N1_3_audio/71p.mp3?v=1", "../audio/N1/N1_3_audio/72.mp3?v=1", "../audio/N1/N1_3_audio/73.mp3?v=1", "../audio/N1/N1_3_audio/73p.mp3?v=1", "../audio/N1/N1_3_audio/74.mp3?v=1", "../audio/N1/N1_3_audio/75.mp3?v=1", "../audio/N1/N1_3_audio/75p.mp3?v=1", "../audio/N1/N1_3_audio/76.mp3?v=1", "../audio/N1/N1_3_audio/77.mp3?v=1", "../audio/N1/N1_3_audio/77p.mp3?v=1", "../audio/N1/N1_3_audio/78.mp3?v=1", "../audio/N1/N1_3_audio/78p.mp3?v=1", "../audio/N1/N1_3_audio/79.mp3?v=1", "../audio/N1/N1_3_audio/79p.mp3?v=1", "../audio/N1/N1_3_audio/7p.mp3?v=1", "../audio/N1/N1_3_audio/8.mp3?v=1", "../audio/N1/N1_3_audio/80.mp3?v=1", "../audio/N1/N1_3_audio/80p.mp3?v=1", "../audio/N1/N1_3_audio/81.mp3?v=1", "../audio/N1/N1_3_audio/81p.mp3?v=1", "../audio/N1/N1_3_audio/82.mp3?v=1", "../audio/N1/N1_3_audio/82p.mp3?v=1", "../audio/N1/N1_3_audio/83.mp3?v=1", "../audio/N1/N1_3_audio/83p.mp3?v=1", "../audio/N1/N1_3_audio/84.mp3?v=1", "../audio/N1/N1_3_audio/84p.mp3?v=1", "../audio/N1/N1_3_audio/85.mp3?v=1", "../audio/N1/N1_3_audio/85p.mp3?v=1", "../audio/N1/N1_3_audio/8p.mp3?v=1", "../audio/N1/N1_3_audio/9.mp3?v=1"];
+    for (var i=0;i<urls.length;i++){ CACHE[urls[i]]=CACHE[urls[i]]; }
+    for (var j=0;j<urls.length;j++) window.__audKick(urls[j]);
+  }
+  if (document.readyState === 'complete' || document.readyState === 'interactive') setTimeout(start, 60);
+  else document.addEventListener('DOMContentLoaded', function(){ setTimeout(start, 60); });
+})();
+</script>
 </body>
 </html>
