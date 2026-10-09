@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N3 语法 76 句型</title>
+<style>
+  body {
+    --bg: #1e2228; --fg: #d8d3c8; --card: #262b33; --border: #33383f;
+    --num: #8b8577; --num-border: #5a564d; --accent: #e8963f; --muted: .55;
+    font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans CJK JP", "PingFang SC", sans-serif;
+    background: var(--bg); color: var(--fg);
+    margin: 0; padding: 14px 16px; max-width: 1080px;
+    transition: background .2s, color .2s;
+  }
+  body.day {
+    --bg: #f3efe6; --fg: #3d3a34; --card: #faf7f0; --border: #ddd6c8;
+    --num: #8a8373; --num-border: #c4bda9; --muted: .6;
+  }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 16px; opacity: var(--muted); font-size: 13px; }
+  .hbtn { border: 1px solid var(--num-border); background: var(--card); color: var(--fg); border-radius: 20px; padding: 5px 14px; font-size: 13px; cursor: pointer; }
+  .hbtn:hover { border-color: #4cc2ff; }
+  .hide { display: none !important; }
+  .stats { display: inline-flex; gap: 8px; font-size: 12px; opacity: .7; }
+  #list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  @media (max-width: 760px) { #list { grid-template-columns: 1fr; } }
+  .sec-h { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin: 16px 0 6px; grid-column: 1 / -1; }
+  .sec-title { font-size: 13px; font-weight: 700; opacity: .55; letter-spacing: .05em; }
+  .addbtns { display: inline-flex; gap: 6px; }
+  .addbtns button { border: 1px solid var(--num-border); background: var(--card); color: var(--fg); border-radius: 7px; padding: 2px 8px; font-size: 11px; cursor: pointer; opacity: .75; }
+  .addbtns button:hover { border-color: #4cc2ff; opacity: 1; }
+  .sec-items { display: contents; }
+  .item { min-width: 0; }
+  .card {
+    border: 1px solid var(--border); border-left: 5px solid var(--num-border);
+    border-radius: 12px; padding: 9px 12px; background: var(--card);
+    height: 100%; box-sizing: border-box;
+  }
+  .row1 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .num {
+    font-size: 11px; font-weight: 700; color: var(--num);
+    border: 1.5px solid var(--num-border); border-radius: 50%;
+    width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; align-self: center;
+  }
+  .pat { font-size: 17px; font-weight: 700; color: var(--accent); cursor: pointer; white-space: pre-line; }
+  .pat:hover { text-decoration: underline; }
+  .k { display:none; } ruby rt { font-size: 9px; opacity:.75; letter-spacing:.5px; } .lv { display:inline-block; font-size:10px; line-height:16px; padding:0 6px; border-radius:8px; border:1px solid var(--num-border); color:var(--num); margin-right:6px; vertical-align:2px; }
+  .k:hover { text-decoration: underline; }
+  .mean { margin-top: 2px; font-size: 13px; margin-left: 32px; white-space: pre-line; }
+  .phrase { margin-top: 6px; font-size: 13px; margin-left: 32px; }
+  .phrase .jp { font-weight: 600; cursor: pointer; }
+  .phrase .jp:hover { text-decoration: underline; }
+  .phrase .zh { display: block; opacity: var(--muted); margin: 1px 0 0; }
+  /* edit mode */
+  body.editing .item { cursor: grab; position: relative; }
+  .dragging { opacity: .35 !important; }
+  .item.ins-top { box-shadow: 0 -3px 0 #4cc2ff; }
+  .item.ins-bot { box-shadow: 0 3px 0 #4cc2ff; }
+  .edf:focus { outline: 1px dashed #4cc2ff; background: rgba(76,194,255,.08); border-radius: 4px; }
+  .edf.empty:empty::before { content: attr(data-ph); opacity: .35; }
+  .edk { font-size: 12px; opacity: .65; }
+  .edmean { font-size: 13px; }
+  .edjp { font-size: 13px; font-weight: 600; }
+  .edjz { display: block; font-size: 12px; opacity: .6; font-weight: 400; }
+  .x { position: absolute; top: 2px; right: 6px; opacity: .3; cursor: pointer; font-size: 12px; user-select: none; z-index: 5; }
+  .x:hover { opacity: 1; color: #e5484d; }
+  /* 听写 */
+  #dict { position: fixed; inset: 0; background: var(--bg); z-index: 500; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  #dict.open { display: flex; }
+  #dictBig { font-size: 20px; padding: 16px 30px; border-radius: 16px; border: 1px solid var(--num-border); background: var(--card); color: var(--fg); cursor: pointer; }
+  #dictAns { min-height: 160px; max-width: 90vw; transition: opacity .2s; }
+  #dictAns.hidden { opacity: 0; pointer-events: none; user-select: none; }
+  .dpat { font-size: 28px; font-weight: 800; color: var(--accent); white-space: pre-line; }
+  .dk { opacity: .55; font-size: 14px; margin-top: 4px; }
+  .dmean { font-size: 15px; margin-top: 6px; }
+  .djp { font-size: 16px; margin-top: 12px; font-weight: 600; cursor: pointer; text-decoration: underline dotted; }
+  .djz { opacity: .6; font-size: 13px; margin-top: 2px; }
+  .dbtns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>N3 语法 76 句型</h1>
+    <p>JLPT N3 重点语法(截图转录版)<span class="stats">共 <b id="count"></b> 条 · 点语法点发音,点例句读整句</span></p>
+  </div>
+  <button id="editBtn" class="hbtn" onclick="toggleEdit()">✏️ 编辑</button>
+  <button id="expBtn" class="hbtn hide" onclick="exportData()">⬇ 导出</button>
+  <button id="rstBtn" class="hbtn hide" onclick="resetAll()">↺ 重置</button>
+  <button id="dictBtn" class="hbtn" onclick="dictToggle()">🎧 听写</button>
+  <button id="themeBtn" class="hbtn" onclick="toggleTheme()">🌙 夜间</button>
+</header>
+<div id="list"></div>
+
+<script>
+// ph=语法点显示(含注音) ex=例句数组{jp,jz,lv} m=意思 ADIR=音频目录
+let DATA = [{"id": 10, "s": "あ行", "pat": "～間…\n～間に…", "ph": "～<ruby>間<rt>あいだ</rt></ruby>…\n～<ruby>間<rt>あいだ</rt></ruby>に…", "m": "「間」:在状态持续期间一直…;「間に」:在期间内做了…/发生了…。", "ex": [{"jp": "お母さんが昼寝をしている間、子どもたちはテレビを見ていた。", "jz": "在妈妈午睡期间,孩子们一直在看电视。", "lv": null}]}, {"id": 11, "s": "あ行", "pat": "～一方(で)…", "ph": "～<ruby>一方<rt>いっぽう</rt></ruby>(で)…", "m": "一方面～,另一方面…。", "ex": [{"jp": "教授は新しい研究に取り組む一方で、しっかり学生の世話もしなければならない。", "jz": "教授一方面要致力于新的研究,另一方面也必须好好指导学生。", "lv": null}]}, {"id": 12, "s": "あ行", "pat": "～うちに…", "ph": "～うちに…", "m": "①趁着…(在状态变化以前做);②在…持续期间,状态发生变化。", "ex": [{"jp": "日本にいるうちに一度富士山に登ってみたい。", "jz": "想趁着在日本时,去爬一次富士山。", "lv": null}]}, {"id": 13, "s": "あ行", "pat": "～おかげだ\n～おかげで…", "ph": "～おかげだ\n～おかげで…", "m": "在～的影响下,产生某种好的结果;多亏…。", "ex": [{"jp": "いい会社に就職が決まったのは先生のおかげです。", "jz": "能在很好的公司里就职,多亏了老师。", "lv": null}]}, {"id": 1, "s": "か行", "pat": "～から…\n～ことから…", "ph": "～から…\n～ことから…", "m": "因为事实～,导致产生结果…;基于事实～,做出…的判断。", "ex": [{"jp": "わずかな誤解から友だちとの関係が悪くなってしまった。", "jz": "因为一点小误会,和朋友的关系恶化了。", "lv": null}]}, {"id": 2, "s": "か行", "pat": "～かわりに…", "ph": "～かわりに…", "m": "一方面～,但另一方面…;～和…的程度相当。", "ex": [{"jp": "フリーの仕事は自由な時間が多いかわりに、お金のことがいつも心配だ。", "jz": "自由职业虽然可供自由支配的时间多,但也总要担心收入的问题。", "lv": null}]}, {"id": 3, "s": "か行", "pat": "～がち", "ph": "～がち", "m": "具有变成～状态的倾向。", "ex": [{"jp": "雨のため工事は遅れがちだ。", "jz": "由于下雨,工程会延迟。", "lv": null}]}, {"id": 4, "s": "か行", "pat": "～くらい…\n～ぐらい…", "ph": "～くらい…\n～ぐらい…", "m": "…得像…一样;通过比喻表示程度之强烈。", "ex": [{"jp": "この店のパンはおいしい。毎日食べたいくらいだ。", "jz": "这家店的面包很好吃。每天都想吃。", "lv": null}]}, {"id": 5, "s": "か行", "pat": "～くらいなら…\n～ぐらいなら…", "ph": "～くらいなら…\n～ぐらいなら…", "m": "与其…,还不如…。", "ex": [{"jp": "毎朝自分で弁当を作るくらいなら、コンビニ弁当でいい。", "jz": "与其每天早上自己做饭带到单位,还不如在便利店买好。", "lv": null}]}, {"id": 6, "s": "か行", "pat": "～くらい…はない\n～ぐらい…はない\n～ほど…はない", "ph": "～くらい…はない\n～ぐらい…はない\n～ほど…はない", "m": "…是最…的;不表示客观事实,只表示说话人的主观看法。", "ex": [{"jp": "リーさんぐらい動物好きな人はいない。", "jz": "小李是最喜欢动物的人了。", "lv": null}]}, {"id": 7, "s": "か行", "pat": "～こと", "ph": "～こと", "m": "表示命令或禁止;书面语,如警示海报、告示等。", "ex": [{"jp": "先生「レポートは来週月曜日に必ず出すこと。遅れないこと。」", "jz": "(告示)下周必须交研究报告,不准迟交。", "lv": null}]}, {"id": 8, "s": "か行", "pat": "～ことにする\n～ことにしている", "ph": "～ことにする\n～ことにしている", "m": "我决定～;「ことにしている」表示决定后一直保持至今。", "ex": [{"jp": "部長の言葉はいつもとてもきびしいが、わたしは気にしないことにしている。", "jz": "虽然部长的言语总是非常严厉,但我从未放在心上。", "lv": null}]}, {"id": 9, "s": "か行", "pat": "～ことは～が、…", "ph": "～ことは～が、…", "m": "虽然～是事实,但更重要的是…。", "ex": [{"jp": "彼からの手紙は読んだことは読んだんですが、意味がよくわかりませんでした。", "jz": "虽然看了他的来信,但不太明白他的意思。", "lv": null}]}, {"id": 14, "s": "さ行", "pat": "～さえ～ば…\n～さえ～なら…", "ph": "～さえ～ば…\n～さえ～なら…", "m": "只要～能够实现,…就能够实现。", "ex": [{"jp": "太郎は漫画さえ読んでいれば退屈しないようだ。", "jz": "太郎只要看漫画似乎就不会觉得无聊。", "lv": null}]}, {"id": 15, "s": "さ行", "pat": "～(さ)せてもらいたい\n～(さ)せていただきたい\n～(さ)せてほしい", "ph": "～(さ)せてもらいたい\n～(さ)せていただきたい\n～(さ)せてほしい", "m": "我想做～;希望征得许可/谅解,或直接提出请求。", "ex": [{"jp": "昼休みが短いよね。昼ご飯をもっとゆっくり食べさせてもらいたいね。", "jz": "午休时间很短啊。希望能让我悠闲地吃顿午饭。", "lv": null}]}, {"id": 16, "s": "さ行", "pat": "～すぎる\n～すぎだ", "ph": "～すぎる\n～すぎだ", "m": "表示过度,\"太～\"、\"～过了\"。", "ex": [{"jp": "おいしかったので、食べすぎてしまった。", "jz": "因为太好吃了,所以吃得多了。", "lv": null}]}, {"id": 17, "s": "さ行", "pat": "～せいだ\n～せいで…", "ph": "～せいだ\n～せいで…", "m": "在～的影响下,产生某种坏的结果…。", "ex": [{"jp": "最近忙しかったせいで、かなり疲れている。", "jz": "由于最近很忙,所以特别累。", "lv": null}]}, {"id": 18, "s": "た行", "pat": "たとえ～ても…\nたとえ～でも…", "ph": "たとえ～ても…\nたとえ～でも…", "m": "就算～,也…。", "ex": [{"jp": "たとえ周りの人たちにどんな反対されても、ぼくはプロの歌手になりたい。", "jz": "无论周围人怎么反对,我都想成为职业歌手。", "lv": null}]}, {"id": 19, "s": "た行", "pat": "～ためだ\n～ために…", "ph": "～ためだ\n～ために…", "m": "因为～,产生了…的结果;偏书面语。", "ex": [{"jp": "出張のため、明日の会議は欠席させていただきます。", "jz": "由于出差,请允许我缺席明天的会议。", "lv": null}]}, {"id": 20, "s": "た行", "pat": "～たばかりだ", "ph": "～たばかりだ", "m": "刚～。", "ex": [{"jp": "先月結婚したばかりなので、まだ新しい生活に慣れていない。", "jz": "上个月刚刚结婚,所以还不太适应新生活。", "lv": null}]}, {"id": 21, "s": "た行", "pat": "～たびに…", "ph": "～たびに…", "m": "每次～的时候都…;强调每次都一样。", "ex": [{"jp": "母はわたしに電話をかけるたびに、ちゃんとご飯を食べているかと聞く。", "jz": "我每次打电话,妈妈都会问我有没有好好吃饭。", "lv": null}]}, {"id": 22, "s": "た行", "pat": "～たらどうか", "ph": "～たらどうか", "m": "你～吧;委婉地提出建议或忠告。", "ex": [{"jp": "体のことが心配なら一度健康診断を受けたらどうでしょうか。", "jz": "如果担心身体健康的话,不如去做一次体检吧。", "lv": null}]}, {"id": 23, "s": "た行", "pat": "～だらけ", "ph": "～だらけ", "m": "光是～(让人不喜欢的东西)。", "ex": [{"jp": "返ってきたテストは間違いだらけだった。", "jz": "发下来的卷子错误百出。", "lv": null}]}, {"id": 24, "s": "た行", "pat": "～ついでに…", "ph": "～ついでに…", "m": "趁着～,顺道做…;～为主要行为,…为附带行为。", "ex": [{"jp": "散歩のついでにこのはがきをポストに出してきて。", "jz": "散步时请顺便把这张明信片投到邮箱里。", "lv": null}]}, {"id": 25, "s": "た行", "pat": "～つもりだ", "ph": "～つもりだ", "m": "自己觉得～;可用于对听话人进行指责。", "ex": [{"jp": "わたしは今年77歳ですが、まだまだ若いつもりです。", "jz": "我今年77岁了,可还觉得自己很年轻。", "lv": null}]}, {"id": 26, "s": "た行", "pat": "～づらい", "ph": "～づらい", "m": "～很难办、很困难。", "ex": [{"jp": "個人的なことなので職場の人に頼みづらい。", "jz": "因为是私事,所以不好拜托同事。", "lv": null}]}, {"id": 27, "s": "た行", "pat": "～って", "ph": "～って", "m": "某人说～;我听说～。", "ex": [{"jp": "小川さん、今日は休むって言ってたよ。", "jz": "小川说他今天请假哦。", "lv": null}]}, {"id": 28, "s": "た行", "pat": "～っぽい", "ph": "～っぽい", "m": "略带有～的性质或特征。", "ex": [{"jp": "彼女は子どもっぽい人だ。", "jz": "她是个孩子气十足的人。", "lv": null}]}, {"id": 29, "s": "た行", "pat": "～てからでないと…\n～てからでなければ…", "ph": "～てからでないと…\n～てからでなければ…", "m": "在～之前,一直保持状态…。", "ex": [{"jp": "病気が治ってからでなければ激しい運動は無理だ。", "jz": "病没有痊愈的话不能做剧烈运动。", "lv": null}]}, {"id": 30, "s": "た行", "pat": "～ては…\n～(の)では…", "ph": "～ては…\n～(の)では…", "m": "如果～,就会产生某种不好的结果…。", "ex": [{"jp": "山中さんは手術したばかりだから、お見舞いに行ってはかえって迷惑だろう。", "jz": "山中刚刚做过手术,如果去探望的话反而给他添麻烦吧。", "lv": null}]}, {"id": 31, "s": "た行", "pat": "～てばかりいる", "ph": "～てばかりいる", "m": "不干别的,光干～;有责备的语感。", "ex": [{"jp": "祖父は最近怒ってばかりいる。", "jz": "爷爷最近总是发脾气。", "lv": null}]}, {"id": 32, "s": "た行", "pat": "～てもらいたい\n～ていただきたい\n～てほしい", "ph": "～てもらいたい\n～ていただきたい\n～てほしい", "m": "希望有人做～。", "ex": [{"jp": "だれかに自分の悩みを聞いてもらいたいと思うことがあります。", "jz": "有时我会希望有人听听自己的烦恼。", "lv": null}]}, {"id": 33, "s": "た行", "pat": "～と…た\n～たら…た", "ph": "～と…た\n～たら…た", "m": "A ～之后,突然发现…;B 做～的时候,忽然…;C 做了动作～,结果…。", "ex": [{"jp": "プレゼントを開けると、人形が入っていた。", "jz": "一打开礼物,发现里面有一个玩偶。", "lv": null}]}, {"id": 34, "s": "た行", "pat": "～と…た", "ph": "～と…た", "m": "做了动作～后,马上就…(了);主句和小句同一主语。", "ex": [{"jp": "その男はわたしの顔を見ると、すぐに逃げてってしまった。", "jz": "那个男的一看到我,马上就跑了。", "lv": null}]}, {"id": 35, "s": "た行", "pat": "～といい\n～ばいい\n～たらいい", "ph": "～といい\n～ばいい\n～たらいい", "m": "A 希望能够～(不可用于有意志的行为);B 我建议你～。", "ex": [{"jp": "あしたは入学試験だ。がんばろう。合格できたらいいなあ。", "jz": "明天是升学考试。加油吧。希望能够考上。", "lv": null}]}, {"id": 36, "s": "た行", "pat": "～という", "ph": "～という", "m": "据说～;比较正式的书面语用法。", "ex": [{"jp": "この辺りは昔、広い野原だったという。", "jz": "据说这一带曾经是一片辽阔的原野。", "lv": null}]}, {"id": 37, "s": "た行", "pat": "～ということだ\n～とのことだ", "ph": "～ということだ\n～とのことだ", "m": "据说～;向别人传达自己所知的信息。", "ex": [{"jp": "市のお知らせによれば、この道路は来週から工事が始まるということです。", "jz": "市里通知说这条路下周开始施工。", "lv": null}]}, {"id": 38, "s": "た行", "pat": "～というより…", "ph": "～というより…", "m": "与其说是～,不如说是…;…的说法更妥当。", "ex": [{"jp": "ぼくたちは友だちというよりいい競争相手なんだよ。", "jz": "我们与其说是朋友,倒不如说是很好的竞争对手呢。", "lv": null}]}, {"id": 39, "s": "た行", "pat": "～と言われている", "ph": "～と<ruby>言<rt>い</rt></ruby>われている", "m": "人们都说～。", "ex": [{"jp": "今年は黒い服が流行すると言われている。", "jz": "据说今年流行黑色服装。", "lv": null}]}, {"id": 40, "s": "た行", "pat": "～とおりだ\n～とおり(に)…\n～どおりだ\n～どおり(に)…", "ph": "～とおりだ\n～とおり(に)…\n～どおりだ\n～どおり(に)…", "m": "和～一样,完全按照～做…。", "ex": [{"jp": "初めて作る料理だから、この本に書いてあるとおりのやり方で作ってみよう。", "jz": "因为是第一次做饭,还是按照这本书上所写的做法来做吧。", "lv": null}]}, {"id": 41, "s": "た行", "pat": "～とか", "ph": "～とか", "m": "我听说～;常用于道听途说、并不十分确信的场合。", "ex": [{"jp": "あの店のパンはとてもおいしいとか。今日、帰りに買って帰ります。", "jz": "我听说那家店的面包特别好吃。今天回家时买回来。", "lv": null}]}, {"id": 42, "s": "た行", "pat": "～ところだ\n～ところ(+助詞)…", "ph": "～ところだ\n～ところ(+<ruby>助詞<rt>じょし</rt></ruby>)…", "m": "～即将发生/正在进行中/刚刚发生或完成。", "ex": [{"jp": "試験中、となりの人の答えを見ているところを先生に注意された。", "jz": "考试过程中,正看同桌卷子的时候被老师警告了。", "lv": null}]}, {"id": 43, "s": "た行", "pat": "～として…", "ph": "～として…", "m": "以～的身份、名义;作为～。", "ex": [{"jp": "大山君はこの学校の代表として「平和を考える会議」に参加する。", "jz": "大山同学将作为我校代表参加“和平思考会”。", "lv": null}]}, {"id": 44, "s": "た行", "pat": "～とは限らない", "ph": "～とは<ruby>限<rt>かぎ</rt></ruby>らない", "m": "不一定就是～;也有可能不是～。", "ex": [{"jp": "この歌は古くから歌われているが、日本人がみんな知っているとは限らない。", "jz": "虽然这首歌从很早就开始传唱,但也并不是所有日本人都知道。", "lv": null}]}, {"id": 45, "s": "な行", "pat": "～ないことはない", "ph": "～ないことはない", "m": "也不是说绝对不～;双重否定表示委婉的肯定。", "ex": [{"jp": "この店のカレーもおいしくないことはないが、わたしはもっと辛いのが好きだ。", "jz": "这家店的咖喱饭也不是不好吃,只是我喜欢更辣点儿的。", "lv": null}]}, {"id": 46, "s": "な行", "pat": "～ないわけにはいかない", "ph": "～ないわけにはいかない", "m": "由于某种心理上的原因,必须～;主语通常为第一人称。", "ex": [{"jp": "この町で自転車がないとやはり困る。買わないわけにはいかない。", "jz": "在这个镇没有自行车还是很不方便,所以必须得买。", "lv": null}]}, {"id": 47, "s": "な行", "pat": "～に限る", "ph": "～に<ruby>限<rt>かぎ</rt></ruby>る", "m": "…最好;…是最好的方法。", "ex": [{"jp": "やっぱり映画は映画館で映画を見るに限る。", "jz": "电影还是在电影院观看效果最好。", "lv": null}]}, {"id": 48, "s": "な行", "pat": "～にくい", "ph": "～にくい", "m": "不容易～;难以～。", "ex": [{"jp": "この肉は硬くて食べにくい。", "jz": "这肉太硬,不容易食用。", "lv": null}]}, {"id": 49, "s": "な行", "pat": "～に対して…\n～に対する", "ph": "～に<ruby>対<rt>たい</rt></ruby>して…\n～に<ruby>対<rt>たい</rt></ruby>する", "m": "对～,采取…的行为;对～,持…的态度。", "ex": [{"jp": "ホテルの人は客に対して非常にていねいな言葉を使う。", "jz": "宾馆工作人员对客人使用非常礼貌的语言。", "lv": null}]}, {"id": 50, "s": "な行", "pat": "～に対して…", "ph": "～に<ruby>対<rt>たい</rt></ruby>して…", "m": "和～恰恰相反,…;明确表示两个事项的差异。", "ex": [{"jp": "きのうは大阪では大雨だったのに対して、東京はいい天気だった。", "jz": "昨天大阪下了大雨,而东京却是好天气。", "lv": null}]}, {"id": 51, "s": "な行", "pat": "～について…", "ph": "～について…", "m": "～的内容;和～有关的;后面多用动词结句。", "ex": [{"jp": "今、わたしの国の教育についてレポートを書いています。", "jz": "现在我正在写有关我们国家教育情况的报告。", "lv": null}]}, {"id": 52, "s": "な行", "pat": "～にとって…", "ph": "～にとって…", "m": "对～来说,…。", "ex": [{"jp": "日本に住む留学生にとって円高は重大な問題だ。", "jz": "日元升值对于生活在日本的留学生而言是很重大的问题。", "lv": null}]}, {"id": 53, "s": "な行", "pat": "～によって…", "ph": "～によって…", "m": "因～而…。", "ex": [{"jp": "国によって習慣が違う。", "jz": "国家不同,习惯也不一样。", "lv": null}]}, {"id": 54, "s": "な行", "pat": "～によって…", "ph": "～によって…", "m": "多用被动句形式,提示～为动作主体。", "ex": [{"jp": "この小説は夏目漱石によって書かれた。", "jz": "这部小说是由夏目漱石写的。", "lv": null}]}, {"id": 55, "s": "な行", "pat": "～によって…\n～による", "ph": "～によって…\n～による", "m": "A 因～产生…结果(偏书面);B 以～的方式…。", "ex": [{"jp": "うちの工場では、材料不足によってたたみの生産はもうできなくなった。", "jz": "我们工厂由于原材料不足,已经无法生产榻榻米草席了。", "lv": null}]}, {"id": 56, "s": "な行", "pat": "～のだから…", "ph": "～のだから…", "m": "因存在～的事实,所以当然…。", "ex": [{"jp": "世界は広いのだから、いろいろな習慣があるのは当然だ。", "jz": "世界很大,所以当然存在着各种各样的习惯。", "lv": null}]}, {"id": 57, "s": "な行", "pat": "～(の)なら…", "ph": "～(の)なら…", "m": "既然～,那么…。", "ex": [{"jp": "その本、読んでしまったのならわたしに貸してくれませんか。", "jz": "如果你看完了那本书的话,能借给我吗?", "lv": null}]}, {"id": 58, "s": "な行", "pat": "～のようだ\n～みたいだ", "ph": "～のようだ\n～みたいだ", "m": "和～很相似。", "ex": [{"jp": "ここから見える景色は絵のようだ。", "jz": "从这里看到的景色宛如画一样。", "lv": null}]}, {"id": 59, "s": "は行", "pat": "～はずがない\n～わけがない", "ph": "～はずがない\n～わけがない", "m": "绝对不可能～。", "ex": [{"jp": "ちゃんと約束したんだから、彼が来ないはずがない。", "jz": "因为已经约好了的,所以他不可能不来。", "lv": null}]}, {"id": 60, "s": "は行", "pat": "～反面…", "ph": "～<ruby>反面<rt>はんめん</rt></ruby>…", "m": "～,但另一方面…;表述同一件事情的正反面。", "ex": [{"jp": "都会の生活は面白いことが多い反面、ストレスも多い。", "jz": "都市生活乐趣多,但另一方面压力也大。", "lv": null}]}, {"id": 61, "s": "は行", "pat": "～ば…\n～たら…\n～なら…", "ph": "～ば…\n～たら…\n～なら…", "m": "要是～的话,应该就…了;～和…都与事实相反。", "ex": [{"jp": "もし寝坊したらこの飛行機に乗れなかった。間に合ってよかった。", "jz": "如果睡懒觉的话就赶不上这趟飞机了。能赶得上真是太好了。", "lv": null}]}, {"id": 62, "s": "は行", "pat": "～ば～ほど…\n～なら～ほど…\n～ほど…", "ph": "～ば～ほど…\n～なら～ほど…\n～ほど…", "m": "越～越…。", "ex": [{"jp": "物が増えれば増えるほど整理が大変になる。", "jz": "东西越多,整理越麻烦。", "lv": null}]}, {"id": 63, "s": "は行", "pat": "～ばかり…", "ph": "～ばかり…", "m": "光是～,没有其他的东西;光干～,不干其他的。", "ex": [{"jp": "弟は毎日カップラーメンばかり食べている。", "jz": "弟弟每天光吃泡面。", "lv": null}]}, {"id": 64, "s": "は行", "pat": "～ばかりだ", "ph": "～ばかりだ", "m": "A 事态一味朝着～的趋势变化;B 准备工作已做好,只等～。", "ex": [{"jp": "一度けんかしてから彼女と関係が悪くなるばかりだ。", "jz": "吵过一次架之后,和她的关系就越来越不好了。", "lv": null}]}, {"id": 65, "s": "は行", "pat": "～ばかりでなく…", "ph": "～ばかりでなく…", "m": "不光～,还…。", "ex": [{"jp": "この番組は面白いばかりでなく、さまざまなことが学べる。", "jz": "这个节目不光有意思,还能学到很多东西。", "lv": null}]}, {"id": 66, "s": "は行", "pat": "～べきだ\n～べき", "ph": "～べきだ\n～べき", "m": "理所当然～、最好～;主观意见,过去式表示后悔、反省。", "ex": [{"jp": "これは大事なことですから、もう少し話し合ってから決めるべきだと思います。", "jz": "这件事情非常重要,我觉得应该再商量一下再做决定。", "lv": null}]}, {"id": 67, "s": "は行", "pat": "～べきではない", "ph": "～べきではない", "m": "不准～;最好不要～。", "ex": [{"jp": "せっかく入った会社なのだから、簡単に辞めるべきではない。", "jz": "好容易才进了这家公司,所以不应该轻易辞掉。", "lv": null}]}, {"id": 72, "s": "ま行", "pat": "～も…ば～も…\n～も…なら～も…", "ph": "～も…ば～も…\n～も…なら～も…", "m": "既…,也…。", "ex": [{"jp": "人生に楽しい時もあればつらい時もある。", "jz": "人生既有快乐的时候,也有痛苦的时候。", "lv": null}]}, {"id": 68, "s": "や行", "pat": "～やすい", "ph": "～やすい", "m": "容易～;易于～。", "ex": [{"jp": "田中先生の話はわかりやすい。", "jz": "田中老师的话通俗易懂。", "lv": null}]}, {"id": 69, "s": "や行", "pat": "～(よ)うとする", "ph": "～(よ)うとする", "m": "试图～;就在即将～的时候;根本没有～的念头(主语非说话人)。", "ex": [{"jp": "あの子は一生けんめい手を伸ばして、テーブルの上のおもちゃを取ろうとしている。", "jz": "那个孩子使劲伸手去够桌上的玩具。", "lv": null}]}, {"id": 70, "s": "や行", "pat": "～ように…", "ph": "～ように…", "m": "A 比况(大体同～一样);B 例示;C 句首(…的内容为已知信息);D 表示愿望。", "ex": [{"jp": "母親が明るい人だったように、その娘たちも性格が明るい。", "jz": "和开朗的妈妈一样,女儿们性格也很活泼。", "lv": null}]}, {"id": 71, "s": "や行", "pat": "～ようにする\n～ようにしている", "ph": "～ようにする\n～ようにしている", "m": "努力做到～/努力不要～;「している」表示正在为此付出努力。", "ex": [{"jp": "わたしはなるべく自分で料理を作って食べるようにしている。", "jz": "我一直尽量自己做饭吃。", "lv": null}]}, {"id": 73, "s": "ら行", "pat": "～らしい", "ph": "～らしい", "m": "具有～的典型性质。", "ex": [{"jp": "今日は暖かくて春らしい一日だった。", "jz": "今天很暖和,是典型的春天。", "lv": null}]}, {"id": 74, "s": "わ行", "pat": "～わけだ\n～というわけだ", "ph": "～わけだ\n～というわけだ", "m": "根据现有情况进行判断,当然会得出～的结论。", "ex": [{"jp": "ここから東京駅まで1時間半。じゃ、今から出れば9時に着くわけだ。", "jz": "这里到东京站要一个半小时啊。那就是说现在出发的话九点就到了。", "lv": null}]}, {"id": 75, "s": "わ行", "pat": "～わけではない\n～というわけではない\n～のではない", "ph": "～わけではない\n～というわけではない\n～のではない", "m": "人们容易认为是～,但其实并非如此。", "ex": [{"jp": "いつでも電話に出られるわけではありません。", "jz": "我并不是随时都能接听电话。", "lv": null}]}, {"id": 76, "s": "わ行", "pat": "～わけにはいかない", "ph": "～わけにはいかない", "m": "由于某种心理上的原因,不能～;主语通常为第一人称。", "ex": [{"jp": "今日は車で来たんです。お酒を飲むわけにはいきません。", "jz": "今天开车来的,所以不能喝酒。", "lv": null}]}];
+
+const LSK = 'n3gram76edit';
+(function(){ try { const s = localStorage.getItem(LSK); if (s) { const o = JSON.parse(s); if (o && Array.isArray(o.data) && o.data.length) DATA = o.data; } } catch(e) {} })();
+const ADIR = 'audio';
+// 兼容旧 localStorage 数据
+(function(){ const _e = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); DATA.forEach(d => { if (!d.ph) d.ph = _e(d.pat); if (!d.ex) d.ex = d.jp ? [{jp:d.jp, jz:d.jz, lv:null}] : []; }); })();
+let nextId = Math.max(0, ...DATA.map(d => d.id || 0)) + 1;
+let editing = false, dragD = null, saveT = null;
+
+function save(){ try { localStorage.setItem(LSK, JSON.stringify({data: DATA})); } catch(e) {} }
+function saveSoon(){ clearTimeout(saveT); saveT = setTimeout(save, 400); }
+function resetAll(){ if (confirm('清空所有修改,恢复初始版式?')) { try { localStorage.removeItem(LSK); } catch(e) {} location.reload(); } }
+const byId = id => DATA.find(d => d.id === id);
+const esc = s => String(s == null ? '' : s);
+
+let curAudio = null;
+function play(id, suffix){
+  if (curAudio) curAudio.pause();
+  curAudio = new Audio(`${ADIR}/${id}${suffix || ''}.mp3?v=4`);
+  if (typeof _dictHook === 'function') _dictHook();
+  curAudio.play().catch(()=>{});
+}
+function applyTheme(day){
+  document.body.classList.toggle('day', day);
+  document.getElementById('themeBtn').textContent = day ? '🌙 夜间' : '☀️ 日间';
+}
+function toggleTheme(){
+  const day = !document.body.classList.contains('day');
+  applyTheme(day);
+  try { localStorage.setItem('n3gtheme', day ? 'day' : 'night'); } catch(e) {}
+}
+applyTheme((() => { try { return localStorage.getItem('n3gtheme') === 'day'; } catch(e) { return false; } })());
+
+function toggleEdit(){
+  editing = !editing;
+  document.body.classList.toggle('editing', editing);
+  document.getElementById('editBtn').textContent = editing ? '✅ 完成' : '✏️ 编辑';
+  document.getElementById('expBtn').classList.toggle('hide', !editing);
+  document.getElementById('rstBtn').classList.toggle('hide', !editing);
+  if (!editing) save();
+  render();
+}
+
+const entryRead = d => `<div class="row1"><span class="num">${d.id}</span><span class="pat" onclick="play(${d.id},'')">${d.ph}</span></div>` +
+  `<div class="mean">${esc(d.m)}</div>` +
+  (d.ex || []).filter(x => x.jp).map((x, i) => `<div class="phrase"><span class="jp" onclick="play(${d.id},'${String.fromCharCode(98 + i)}')">${esc(x.jp)}</span>${x.lv ? `<span class="lv">${x.lv}</span>` : ''}<span class="zh">${esc(x.jz)}</span></div>`).join('');
+const edSpan = (d, f, cls, ph) => `<span class="edf ${cls}${d[f] ? '' : ' empty'}" contenteditable="true" data-ph="${ph}" data-f="${f}">${esc(d[f])}</span>`;
+const entryEdit = d => `<div class="row1"><span class="num">${d.id}</span>${edSpan(d,'pat','pat','语法点')}<span class="x" data-x="1">✕</span></div>` +
+  `<div class="mean">${edSpan(d,'m','edmean','意思')}</div>` +
+  `<div class="phrase">${d.ex && d.ex[0] ? `<span class="edf edjp" contenteditable="true" data-ph="例句" data-f="ex">${esc(d.ex[0].jp)}</span>` : ''}</div>`;
+
+const list = document.getElementById('list');
+
+function removeD(d){ const i = DATA.indexOf(d); if (i >= 0) { DATA.splice(i, 1); return true; } return false; }
+function secLastIdx(s){ let last = -1; DATA.forEach((d, i) => { if (d.s === s) last = i; }); return last; }
+function addToSecEnd(d, s){ d.s = s; DATA.splice(secLastIdx(s) + 1, 0, d); }
+
+function render(){
+  list.innerHTML = '';
+  let curS = null, items = null;
+  for (const d of DATA){
+    if (d.s !== curS){
+      curS = d.s;
+      const h = document.createElement('div'); h.className = 'sec-h';
+      const t = document.createElement('span'); t.className = 'sec-title'; t.textContent = curS;
+      if (editing){
+        const oldS = curS;
+        t.contentEditable = 'true';
+        t.addEventListener('input', () => { const ns = t.textContent; DATA.forEach(x => { if (x.s === oldS) x.s = ns; }); curS = ns; saveSoon(); });
+        const bb = document.createElement('span'); bb.className = 'addbtns';
+        const b = document.createElement('button'); b.textContent = '+句型';
+        b.addEventListener('click', () => { addToSecEnd({id: nextId++, s: curS, pat: '', k: '', m: '', jp: '', jz: '', lai: ''}, curS); save(); render(); });
+        bb.appendChild(b);
+        h.appendChild(bb);
+      }
+      h.appendChild(t);
+      list.appendChild(h);
+      items = document.createElement('div'); items.className = 'sec-items'; list.appendChild(items);
+    }
+    const item = document.createElement('div'); item.className = 'item';
+    const card = document.createElement('div'); card.className = 'card';
+    card.innerHTML = editing ? entryEdit(d) : entryRead(d);
+    if (editing){
+      card.dataset.did = d.id; card.draggable = true;
+      card.addEventListener('dragstart', e => { dragD = d; e.dataTransfer.setData('text/plain', 'x'); card.classList.add('dragging'); });
+      card.addEventListener('dragend', () => card.classList.remove('dragging'));
+      attachTopDrop(item, d, curS);
+    }
+    item.appendChild(card);
+    items.appendChild(item);
+  }
+  document.getElementById('count').textContent = DATA.length;
+}
+
+function attachTopDrop(item, d, sec){
+  item.addEventListener('dragover', e => {
+    if (!dragD) return;
+    e.preventDefault();
+    const before = e.offsetY < item.offsetHeight / 2;
+    item.classList.toggle('ins-top', before); item.classList.toggle('ins-bot', !before);
+    item._ins = before ? 'top' : 'bot';
+  });
+  item.addEventListener('dragleave', () => item.classList.remove('ins-top', 'ins-bot'));
+  item.addEventListener('drop', e => {
+    e.preventDefault();
+    const where = item._ins; item.classList.remove('ins-top', 'ins-bot');
+    if (!dragD || !where || dragD === d) return;
+    removeD(dragD); dragD.s = sec;
+    let ti = DATA.indexOf(d);
+    DATA.splice(where === 'top' ? ti : ti + 1, 0, dragD);
+    save(); render();
+  });
+}
+
+list.addEventListener('input', e => {
+  const t = e.target.closest('.edf'); if (!t) return;
+  const holder = t.closest('[data-did]'); if (!holder) return;
+  const d = byId(+holder.dataset.did); if (!d) return;
+  if (t.dataset.f === 'ex') { if (!d.ex[0]) d.ex[0] = {jp:'', jz:'', lv:null}; d.ex[0].jp = t.textContent; d.ph = esc(d.pat); }
+  else { d[t.dataset.f] = t.textContent; if (t.dataset.f === 'pat') d.ph = esc(d.pat); }
+  saveSoon();
+});
+list.addEventListener('click', e => {
+  const x = e.target.closest('.x'); if (!x) return;
+  const holder = x.closest('[data-did]'); if (!holder) return;
+  const d = byId(+holder.dataset.did); if (!d) return;
+  removeD(d); save(); render();
+});
+
+function exportData(){
+  const blob = new Blob([JSON.stringify({page: 'N3_grammar', data: DATA}, null, 1)], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'n3_grammar_layout.json';
+  a.click();
+}
+
+render();
+</script>
+
+<div id="dict">
+  <button class="hbtn" style="position:absolute;top:14px;right:18px;" onclick="dictToggle()">✕ 退出听写</button>
+  <div id="dictProg" style="opacity:.55;font-size:14px;"></div>
+  <button id="dictBig" onclick="playCur()">▶ 点击播放</button>
+  <div id="dictAns" class="hidden"></div>
+  <div class="dbtns">
+    <button class="hbtn" onclick="dictPrev()">◀ 上一个</button>
+    <button class="hbtn" id="dictAuto" onclick="dictAutoToggle()">自动: 关</button>
+    <button class="hbtn" onclick="dictShuffle()">🔀 随机</button>
+    <button class="hbtn" onclick="dictNext()">下一个 ▶</button>
+    <button class="hbtn" onclick="dictReveal()">显示答案</button>
+  </div>
+  <div style="opacity:.4;font-size:11px;">空格=重播 · →/D=下一个 · ←/A=上一个 · S=显示答案 · Esc=退出</div>
+</div>
+<script>
+/* ---- 听写: 播语法点+例句,显示答案核对 ---- */
+let dictOpen = false, dictAuto = false, dictShuffleOn = false, dictCur = 0, dictT = null, dictOrder = [], dictChain = false;
+const DICT_DELAY = 4000;
+const escH = s => String(s == null ? '' : s);
+function dictToggle(){
+  dictOpen = !dictOpen;
+  document.getElementById('dict').classList.toggle('open', dictOpen);
+  if (dictOpen){ if (curAudio) curAudio.pause(); buildOrder(); dictCur = 0; showDict(); }
+  else { if (curAudio) curAudio.pause(); clearTimeout(dictT); }
+}
+function buildOrder(){
+  dictOrder = DATA.map(d => d.id);
+  if (dictShuffleOn) for (let i = dictOrder.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [dictOrder[i], dictOrder[j]] = [dictOrder[j], dictOrder[i]]; }
+}
+const dictD = () => DATA.find(d => d.id === dictOrder[dictCur]);
+const playCur = () => { const d = dictD(); dictChain = true; play(d.id, ''); };
+const _dictHook = () => {
+  curAudio.onended = () => {
+    if (dictChain) { dictChain = false; play(dictD().id, 'b'); curAudio.onended = () => { if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY); }; }
+    else if (dictOpen && dictAuto) dictT = setTimeout(dictNext, DICT_DELAY);
+  };
+};
+function dictStep(dir){
+  clearTimeout(dictT); dictChain = false;
+  dictCur = (dictCur + dir + dictOrder.length) % dictOrder.length;
+  showDict(); playCur();
+}
+const dictNext = () => dictStep(1);
+const dictPrev = () => dictStep(-1);
+function dictShuffle(){ dictShuffleOn = !dictShuffleOn; buildOrder(); dictCur = 0; showDict(); playCur(); }
+function dictAutoToggle(){
+  dictAuto = !dictAuto;
+  document.getElementById('dictAuto').textContent = '自动: ' + (dictAuto ? '开' : '关');
+  dictChain = false;
+  if (dictAuto) playCur();
+}
+function dictReveal(){
+  const ans = document.getElementById('dictAns');
+  if (ans.classList.contains('hidden')) { renderDictAns(); ans.classList.remove('hidden'); }
+  else ans.classList.add('hidden');
+}
+function renderDictAns(){
+  const d = dictD();
+  document.getElementById('dictAns').innerHTML =
+    `<div class="dpat">${d.ph}</div><div class="dmean">${escH(d.m)}</div>` +
+    ((d.ex && d.ex[0] && d.ex[0].jp) ? `<div class="djp" onclick="play(${d.id},'b')">${escH(d.ex[0].jp)}</div><div class="djz">${escH(d.ex[0].jz)}</div>` : '');
+}
+function showDict(){
+  document.getElementById('dictProg').textContent = `${dictCur + 1} / ${dictOrder.length}`;
+  const ans = document.getElementById('dictAns');
+  ans.classList.add('hidden');
+  ans.innerHTML = '';
+}
+document.addEventListener('keydown', e => {
+  if (!dictOpen) return;
+  if (e.code === 'Space'){ e.preventDefault(); playCur(); }
+  else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') dictNext();
+  else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') dictPrev();
+  else if (e.key === 's' || e.key === 'S') dictReveal();
+  else if (e.key === 'Escape') dictToggle();
+});
+</script>
+</body>
+</html>
