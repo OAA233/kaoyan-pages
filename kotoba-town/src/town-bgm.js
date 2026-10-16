@@ -8,7 +8,7 @@ export const sceneTracks = {
 };
 export function trackFor(scene='town',season='spring',night=false){
  const n=scene==='town'?(night&&season!=='winter'?6:({spring:8,summer:2,autumn:13,winter:4}[season]||8)):(sceneTracks[scene]||8);
- return new URL('./audio/maple-'+String(n).padStart(2,'0')+'.mp3',import.meta.url).href;
+ return new URL('../audio/maple-'+String(n).padStart(2,'0')+'.mp3',import.meta.url).href;
 }
 export class TownBGM {
  constructor(onChange=()=>{},onError=()=>{}){
