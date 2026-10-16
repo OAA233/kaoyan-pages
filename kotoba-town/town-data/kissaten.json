@@ -1,0 +1,1324 @@
+{
+  "id": "kissaten",
+  "title": "昭和风喫茶店",
+  "jp": "喫茶店",
+  "reading": "きっさてん",
+  "layout": "restaurant",
+  "zones": [
+    {
+      "jp": "喫茶カウンター",
+      "zh": "喫茶カウンター"
+    },
+    {
+      "jp": "窓際の席",
+      "zh": "窓際の席"
+    },
+    {
+      "jp": "読書席",
+      "zh": "読書席"
+    },
+    {
+      "jp": "会計",
+      "zh": "会計"
+    },
+    {
+      "jp": "ケーキ・デザート",
+      "zh": "蛋糕甜品"
+    },
+    {
+      "jp": "ドリンク見本",
+      "zh": "饮品样品"
+    }
+  ],
+  "items": [
+    {
+      "jp": "本棚",
+      "reading": "ほんだな",
+      "zh": "书架",
+      "kind": "bookshelf",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "kissaten-001",
+      "example": "本棚を見てみましょう。",
+      "translation": "看看书架吧。",
+      "zone": 2
+    },
+    {
+      "jp": "小説",
+      "reading": "しょうせつ",
+      "zh": "小说",
+      "kind": "book",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "kissaten-002",
+      "example": "小説を見てみましょう。",
+      "translation": "看看小说吧。",
+      "zone": 2
+    },
+    {
+      "jp": "新聞",
+      "reading": "しんぶん",
+      "zh": "报纸",
+      "kind": "paper",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "kissaten-003",
+      "example": "新聞を見てみましょう。",
+      "translation": "看看报纸吧。",
+      "zone": 2
+    },
+    {
+      "jp": "雑誌",
+      "reading": "ざっし",
+      "zh": "杂志",
+      "kind": "book",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "kissaten-004",
+      "example": "雑誌を見てみましょう。",
+      "translation": "看看杂志吧。",
+      "zone": 2
+    },
+    {
+      "jp": "メニュー",
+      "reading": "メニュー",
+      "zh": "菜单",
+      "kind": "menu",
+      "category": "食器・設備",
+      "id": "kissaten-005",
+      "example": "メニューを見てみましょう。",
+      "translation": "看看菜单吧。",
+      "zone": 0
+    },
+    {
+      "jp": "箸",
+      "reading": "はし",
+      "zh": "筷子",
+      "kind": "chopsticks",
+      "category": "食器・設備",
+      "id": "kissaten-006",
+      "example": "箸を見てみましょう。",
+      "translation": "看看筷子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "箸置き",
+      "reading": "はしおき",
+      "zh": "筷架",
+      "kind": "smallblock",
+      "category": "食器・設備",
+      "id": "kissaten-007",
+      "example": "箸置きを見てみましょう。",
+      "translation": "看看筷架吧。",
+      "zone": 1
+    },
+    {
+      "jp": "スプーン",
+      "reading": "スプーン",
+      "zh": "勺子",
+      "kind": "spoon",
+      "category": "食器・設備",
+      "id": "kissaten-008",
+      "example": "スプーンを見てみましょう。",
+      "translation": "看看勺子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "フォーク",
+      "reading": "フォーク",
+      "zh": "叉子",
+      "kind": "fork",
+      "category": "食器・設備",
+      "id": "kissaten-009",
+      "example": "フォークを見てみましょう。",
+      "translation": "看看叉子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ナイフ",
+      "reading": "ナイフ",
+      "zh": "餐刀",
+      "kind": "knife",
+      "category": "食器・設備",
+      "id": "kissaten-010",
+      "example": "ナイフを見てみましょう。",
+      "translation": "看看餐刀吧。",
+      "zone": 3
+    },
+    {
+      "jp": "皿",
+      "reading": "さら",
+      "zh": "盘子",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "kissaten-011",
+      "example": "皿を見てみましょう。",
+      "translation": "看看盘子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "取り皿",
+      "reading": "とりざら",
+      "zh": "分餐小碟",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "kissaten-012",
+      "example": "取り皿を見てみましょう。",
+      "translation": "看看分餐小碟吧。",
+      "zone": 1
+    },
+    {
+      "jp": "茶碗",
+      "reading": "ちゃわん",
+      "zh": "饭碗",
+      "kind": "bowl",
+      "category": "食器・設備",
+      "id": "kissaten-013",
+      "example": "茶碗を見てみましょう。",
+      "translation": "看看饭碗吧。",
+      "zone": 1
+    },
+    {
+      "jp": "湯のみ",
+      "reading": "ゆのみ",
+      "zh": "日式茶杯",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "kissaten-014",
+      "example": "湯のみを見てみましょう。",
+      "translation": "看看日式茶杯吧。",
+      "zone": 1
+    },
+    {
+      "jp": "コップ",
+      "reading": "コップ",
+      "zh": "杯子",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "kissaten-015",
+      "example": "コップを見てみましょう。",
+      "translation": "看看杯子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "おしぼり",
+      "reading": "おしぼり",
+      "zh": "擦手巾",
+      "kind": "towel",
+      "category": "食器・設備",
+      "id": "kissaten-016",
+      "example": "おしぼりを見てみましょう。",
+      "translation": "看看擦手巾吧。",
+      "zone": 1
+    },
+    {
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银机",
+      "kind": "register",
+      "category": "食器・設備",
+      "id": "kissaten-031",
+      "example": "レジを見てみましょう。",
+      "translation": "看看收银机吧。",
+      "zone": 3
+    },
+    {
+      "jp": "レシート",
+      "reading": "レシート",
+      "zh": "购物小票",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "kissaten-032",
+      "example": "レシートを見てみましょう。",
+      "translation": "看看购物小票吧。",
+      "zone": 3
+    },
+    {
+      "jp": "お釣り",
+      "reading": "おつり",
+      "zh": "找零",
+      "kind": "coins",
+      "category": "食器・設備",
+      "id": "kissaten-033",
+      "example": "お釣りを見てみましょう。",
+      "translation": "看看找零吧。",
+      "zone": 3
+    },
+    {
+      "jp": "伝票",
+      "reading": "でんぴょう",
+      "zh": "账单",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "kissaten-034",
+      "example": "伝票を見てみましょう。",
+      "translation": "看看账单吧。",
+      "zone": 0
+    },
+    {
+      "jp": "緑茶",
+      "reading": "りょくちゃ",
+      "zh": "绿茶",
+      "kind": "tea",
+      "category": "お茶・ココア",
+      "id": "kissaten-035",
+      "example": "緑茶を見てみましょう。",
+      "translation": "看看绿茶吧。",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#92a06a"
+      }
+    },
+    {
+      "jp": "ウーロン茶",
+      "reading": "ウーロンちゃ",
+      "zh": "乌龙茶",
+      "kind": "tea",
+      "category": "お茶・ココア",
+      "id": "kissaten-036",
+      "example": "ウーロン茶を見てみましょう。",
+      "translation": "看看乌龙茶吧。",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "iced",
+        "color": "#a28451"
+      }
+    },
+    {
+      "jp": "コーヒー",
+      "reading": "コーヒー",
+      "zh": "咖啡",
+      "kind": "mug",
+      "category": "コーヒー",
+      "id": "kissaten-037",
+      "example": "コーヒーを見てみましょう。",
+      "translation": "看看咖啡吧。",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#684637"
+      }
+    },
+    {
+      "jp": "紅茶",
+      "reading": "こうちゃ",
+      "zh": "红茶",
+      "kind": "tea",
+      "category": "お茶・ココア",
+      "id": "kissaten-038",
+      "example": "紅茶を見てみましょう。",
+      "translation": "看看红茶吧。",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#a47843"
+      }
+    },
+    {
+      "jp": "オレンジジュース",
+      "reading": "オレンジジュース",
+      "zh": "橙汁",
+      "kind": "cup",
+      "category": "冷たい飲み物",
+      "id": "kissaten-039",
+      "example": "オレンジジュースを見てみましょう。",
+      "translation": "看看橙汁吧。",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "iced",
+        "color": "#e8b151"
+      }
+    },
+    {
+      "jp": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "zh": "牛奶",
+      "kind": "bottle",
+      "category": "冷たい飲み物",
+      "id": "kissaten-040",
+      "example": "牛乳を見てみましょう。",
+      "translation": "看看牛奶吧。",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "iced",
+        "color": "#f3e6c8"
+      }
+    },
+    {
+      "jp": "プリン",
+      "reading": "プリン",
+      "zh": "布丁",
+      "kind": "sweet",
+      "category": "デザート",
+      "id": "kissaten-041",
+      "example": "プリンを見てみましょう。",
+      "translation": "看看布丁吧。",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "pudding",
+        "color": "#efd194"
+      }
+    },
+    {
+      "jp": "ケーキ",
+      "reading": "ケーキ",
+      "zh": "蛋糕",
+      "kind": "sweet",
+      "category": "ケーキ",
+      "id": "kissaten-042",
+      "example": "ケーキを見てみましょう。",
+      "translation": "看看蛋糕吧。",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "cheesecake",
+        "color": "#e5c992"
+      }
+    },
+    {
+      "jp": "アイスクリーム",
+      "reading": "アイスクリーム",
+      "zh": "冰淇淋",
+      "kind": "icecream",
+      "category": "デザート",
+      "id": "kissaten-043",
+      "example": "アイスクリームを見てみましょう。",
+      "translation": "看看冰淇淋吧。",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "icecream",
+        "color": "#efddba"
+      }
+    },
+    {
+      "jp": "かき氷",
+      "reading": "かきごおり",
+      "zh": "刨冰",
+      "kind": "ice",
+      "category": "デザート",
+      "id": "kissaten-044",
+      "example": "かき氷を見てみましょう。",
+      "translation": "看看刨冰吧。",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "ice",
+        "color": "#e9c2c1"
+      }
+    },
+    {
+      "jp": "カレーライス",
+      "reading": "カレーライス",
+      "zh": "咖喱饭",
+      "kind": "rice",
+      "category": "料理",
+      "art": [
+        "foods",
+        11
+      ],
+      "id": "kissaten-045",
+      "example": "カレーライスを見てみましょう。",
+      "translation": "看看咖喱饭吧。",
+      "zone": 1
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "kissaten-046",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "kissaten-049",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "kissaten-051",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 3
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "kissaten-052",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "kissaten-053",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "kissaten-054",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "kissaten-055",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 3
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "kissaten-056",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "kissaten-057",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 3
+    },
+    {
+      "jp": "コロッケ",
+      "reading": "コロッケ",
+      "zh": "可乐饼",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        14
+      ],
+      "category": "料理",
+      "example": "コロッケをください。",
+      "translation": "请给我可乐饼。",
+      "id": "kissaten-menu-14",
+      "zone": 0
+    },
+    {
+      "jp": "ポテトサラダ",
+      "reading": "ポテトサラダ",
+      "zh": "土豆沙拉",
+      "kind": "vegetables",
+      "art": [
+        "meals",
+        6
+      ],
+      "category": "料理",
+      "example": "ポテトサラダをください。",
+      "translation": "请给我土豆沙拉。",
+      "id": "kissaten-menu-22",
+      "zone": 0
+    },
+    {
+      "jp": "フライドポテト",
+      "reading": "フライドポテト",
+      "zh": "炸薯条",
+      "kind": "fried",
+      "art": [
+        "meals",
+        7
+      ],
+      "category": "料理",
+      "example": "フライドポテトをください。",
+      "translation": "请给我炸薯条。",
+      "id": "kissaten-menu-23",
+      "zone": 0
+    },
+    {
+      "jp": "きゅうりのサラダ",
+      "reading": "きゅうりのサラダ",
+      "zh": "黄瓜沙拉",
+      "kind": "vegetables",
+      "art": [
+        "meals",
+        14
+      ],
+      "category": "料理",
+      "example": "きゅうりのサラダをください。",
+      "translation": "请给我黄瓜沙拉。",
+      "id": "kissaten-menu-30",
+      "zone": 0
+    },
+    {
+      "jp": "ホットケーキ",
+      "reading": "ホットケーキ",
+      "zh": "松饼",
+      "kind": "sweet",
+      "category": "デザート",
+      "example": "ホットケーキをください。",
+      "translation": "请给我松饼。",
+      "id": "kissaten-menu-31",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "pancake",
+        "color": "#dbb074"
+      }
+    },
+    {
+      "id": "kissaten-detail-0123",
+      "jp": "コーヒーミル",
+      "reading": "コーヒーミル",
+      "zh": "咖啡磨豆机",
+      "kind": "coffee-grinder",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはコーヒーミルです。",
+      "translation": "这是咖啡磨豆机。"
+    },
+    {
+      "id": "kissaten-detail-0124",
+      "jp": "サイフォン",
+      "reading": "サイフォン",
+      "zh": "虹吸咖啡壶",
+      "kind": "coffee-siphon",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはサイフォンです。",
+      "translation": "这是虹吸咖啡壶。"
+    },
+    {
+      "id": "kissaten-detail-0125",
+      "jp": "ナプキン",
+      "reading": "ナプキン",
+      "zh": "餐巾",
+      "kind": "towel",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはナプキンです。",
+      "translation": "这是餐巾。"
+    },
+    {
+      "id": "kissaten-detail-0126",
+      "jp": "角砂糖",
+      "reading": "かくざとう",
+      "zh": "方糖",
+      "kind": "sugar-cubes",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは角砂糖です。",
+      "translation": "这是方糖。"
+    },
+    {
+      "id": "kissaten-shop-001",
+      "jp": "レジカウンター",
+      "reading": "レジカウンター",
+      "zh": "收银柜台",
+      "kind": "counter",
+      "zone": 3,
+      "category": "店内のことば",
+      "example": "レジカウンターを見てみましょう。",
+      "translation": "一起看看收银柜台吧。"
+    },
+    {
+      "id": "kissaten-cafe-blend",
+      "jp": "ブレンドコーヒー",
+      "reading": "ブレンドコーヒー",
+      "zh": "拼配咖啡",
+      "kind": "cafe-drink",
+      "category": "コーヒー",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#684637",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/hotdrink.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "ブレンドコーヒーを一つください。",
+      "noteJa": "数種類のコーヒー豆を合わせたコーヒー。",
+      "translation": "请给我一份拼配咖啡。"
+    },
+    {
+      "id": "kissaten-cafe-american",
+      "jp": "アメリカンコーヒー",
+      "reading": "アメリカンコーヒー",
+      "zh": "美式咖啡",
+      "kind": "cafe-drink",
+      "category": "コーヒー",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#926647",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/hotdrink.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "アメリカンコーヒーを一つください。",
+      "noteJa": "すっきりとした味わいのコーヒー。",
+      "translation": "请给我一份美式咖啡。"
+    },
+    {
+      "id": "kissaten-cafe-espresso",
+      "jp": "エスプレッソ",
+      "reading": "エスプレッソ",
+      "zh": "浓缩咖啡",
+      "kind": "cafe-drink",
+      "category": "コーヒー",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "espresso",
+        "color": "#443129",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/hotdrink.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "エスプレッソを一つください。",
+      "noteJa": "少量の、濃いコーヒー。",
+      "translation": "请给我一份浓缩咖啡。"
+    },
+    {
+      "id": "kissaten-cafe-latte",
+      "jp": "カフェラテ",
+      "reading": "カフェラテ",
+      "zh": "拿铁",
+      "kind": "cafe-drink",
+      "category": "コーヒー",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#b89570",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/hotdrink.html",
+        "milk": true,
+        "cream": false
+      },
+      "example": "カフェラテを一つください。",
+      "noteJa": "エスプレッソにミルクを加えた飲み物。",
+      "translation": "请给我一份拿铁。"
+    },
+    {
+      "id": "kissaten-cafe-mocha",
+      "jp": "カフェモカ",
+      "reading": "カフェモカ",
+      "zh": "摩卡",
+      "kind": "cafe-drink",
+      "category": "コーヒー",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#997253",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/hotdrink.html",
+        "milk": false,
+        "cream": true
+      },
+      "example": "カフェモカを一つください。",
+      "noteJa": "コーヒーにミルクとチョコレートを加えた飲み物。",
+      "translation": "请给我一份摩卡。"
+    },
+    {
+      "id": "kissaten-cafe-soy",
+      "jp": "豆乳ラテ",
+      "reading": "とうにゅうラテ",
+      "zh": "豆奶拿铁",
+      "kind": "cafe-drink",
+      "category": "コーヒー",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#c4aa7e",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/hotdrink.html",
+        "milk": true,
+        "cream": false
+      },
+      "example": "豆乳ラテを一つください。",
+      "noteJa": "ミルクの代わりに豆乳を使ったラテ。",
+      "translation": "请给我一份豆奶拿铁。"
+    },
+    {
+      "id": "kissaten-cafe-honey",
+      "jp": "ハニーカフェオレ",
+      "reading": "ハニーカフェオレ",
+      "zh": "蜂蜜欧蕾",
+      "kind": "cafe-drink",
+      "category": "コーヒー",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#c1a070",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/hotdrink.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "ハニーカフェオレを一つください。",
+      "noteJa": "はちみつの甘さを加えた、ミルク入りのコーヒー。",
+      "translation": "请给我一份蜂蜜欧蕾。"
+    },
+    {
+      "id": "kissaten-cafe-matcha",
+      "jp": "抹茶ラテ",
+      "reading": "まっちゃラテ",
+      "zh": "抹茶拿铁",
+      "kind": "cafe-drink",
+      "category": "お茶・ココア",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#8fa568",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/hotdrink.html",
+        "milk": true,
+        "cream": false
+      },
+      "example": "抹茶ラテを一つください。",
+      "noteJa": "抹茶にミルクを加えた飲み物。",
+      "translation": "请给我一份抹茶拿铁。"
+    },
+    {
+      "id": "kissaten-cafe-cocoa",
+      "jp": "ココア",
+      "reading": "ココア",
+      "zh": "可可",
+      "kind": "cafe-drink",
+      "category": "お茶・ココア",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#896044",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/hotdrink.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "ココアを一つください。",
+      "noteJa": "ココアにミルクなどを加えた、甘い飲み物。",
+      "translation": "请给我一份可可。"
+    },
+    {
+      "id": "kissaten-cafe-royal",
+      "jp": "ロイヤルミルクティー",
+      "reading": "ロイヤルミルクティー",
+      "zh": "皇家奶茶",
+      "kind": "cafe-drink",
+      "category": "お茶・ココア",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#c1a074",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/hotdrink.html",
+        "milk": true,
+        "cream": false
+      },
+      "example": "ロイヤルミルクティーを一つください。",
+      "noteJa": "ミルクをたっぷり使った紅茶。",
+      "translation": "请给我一份皇家奶茶。"
+    },
+    {
+      "id": "kissaten-cafe-rooibos",
+      "jp": "ルイボスティー",
+      "reading": "ルイボスティー",
+      "zh": "路易波士茶",
+      "kind": "cafe-drink",
+      "category": "お茶・ココア",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "cup",
+        "color": "#a06942",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/hotdrink.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "ルイボスティーを一つください。",
+      "noteJa": "ルイボスという植物から作るお茶。",
+      "translation": "请给我一份路易波士茶。"
+    },
+    {
+      "id": "kissaten-cafe-iced-coffee",
+      "jp": "アイスコーヒー",
+      "reading": "アイスコーヒー",
+      "zh": "冰咖啡",
+      "kind": "cafe-drink",
+      "category": "冷たい飲み物",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "iced",
+        "color": "#6c4c3b",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/icedrink.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "アイスコーヒーを一つください。",
+      "noteJa": "氷を入れた、冷たいコーヒー。",
+      "translation": "请给我一份冰咖啡。"
+    },
+    {
+      "id": "kissaten-cafe-iced-latte",
+      "jp": "アイスカフェラテ",
+      "reading": "アイスカフェラテ",
+      "zh": "冰拿铁",
+      "kind": "cafe-drink",
+      "category": "冷たい飲み物",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "iced",
+        "color": "#c5a883",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/icedrink.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "アイスカフェラテを一つください。",
+      "noteJa": "氷を入れた、冷たいカフェラテ。",
+      "translation": "请给我一份冰拿铁。"
+    },
+    {
+      "id": "kissaten-cafe-iced-tea",
+      "jp": "アイスティー",
+      "reading": "アイスティー",
+      "zh": "冰红茶",
+      "kind": "cafe-drink",
+      "category": "冷たい飲み物",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "iced",
+        "color": "#b67945",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/icedrink.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "アイスティーを一つください。",
+      "noteJa": "氷を入れた、冷たい紅茶。",
+      "translation": "请给我一份冰红茶。"
+    },
+    {
+      "id": "kissaten-cafe-iced-cocoa",
+      "jp": "アイスココア",
+      "reading": "アイスココア",
+      "zh": "冰可可",
+      "kind": "cafe-drink",
+      "category": "冷たい飲み物",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "iced",
+        "color": "#9c7758",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/icedrink.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "アイスココアを一つください。",
+      "noteJa": "氷を入れた、冷たいココア。",
+      "translation": "请给我一份冰可可。"
+    },
+    {
+      "id": "kissaten-cafe-iced-matcha",
+      "jp": "アイス抹茶ラテ",
+      "reading": "アイスまっちゃラテ",
+      "zh": "冰抹茶拿铁",
+      "kind": "cafe-drink",
+      "category": "冷たい飲み物",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "iced",
+        "color": "#96ac71",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/icedrink.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "アイス抹茶ラテを一つください。",
+      "noteJa": "氷を入れた、冷たい抹茶ラテ。",
+      "translation": "请给我一份冰抹茶拿铁。"
+    },
+    {
+      "id": "kissaten-cafe-apple-juice",
+      "jp": "りんごジュース",
+      "reading": "りんごジュース",
+      "zh": "苹果汁",
+      "kind": "cafe-drink",
+      "category": "冷たい飲み物",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "iced",
+        "color": "#d9b45f",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/icedrink.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "りんごジュースを一つください。",
+      "noteJa": "りんごを搾って作る飲み物。",
+      "translation": "请给我一份苹果汁。"
+    },
+    {
+      "id": "kissaten-cafe-cream-soda",
+      "jp": "クリームソーダ",
+      "reading": "クリームソーダ",
+      "zh": "冰淇淋苏打",
+      "kind": "cafe-drink",
+      "category": "冷たい飲み物",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "float",
+        "color": "#7fb777",
+        "source": "https://www.mistore.jp/content/dam/isetan_mitsukoshi/site/common/mi-ts/floor/2f/menu_komeda.pdf",
+        "milk": false,
+        "cream": false
+      },
+      "example": "クリームソーダを一つください。",
+      "noteJa": "ソーダにアイスクリームをのせた飲み物。",
+      "translation": "请给我一份冰淇淋苏打。"
+    },
+    {
+      "id": "kissaten-cafe-coffee-float",
+      "jp": "コーヒーフロート",
+      "reading": "コーヒーフロート",
+      "zh": "咖啡漂浮",
+      "kind": "cafe-drink",
+      "category": "冷たい飲み物",
+      "zone": 5,
+      "cafe": {
+        "type": "drink",
+        "form": "float",
+        "color": "#6c4c3b",
+        "source": "https://www.mistore.jp/content/dam/isetan_mitsukoshi/site/common/mi-ts/floor/2f/menu_komeda.pdf",
+        "milk": false,
+        "cream": false
+      },
+      "example": "コーヒーフロートを一つください。",
+      "noteJa": "アイスコーヒーにアイスクリームをのせた飲み物。",
+      "translation": "请给我一份咖啡漂浮。"
+    },
+    {
+      "id": "kissaten-cafe-crepe",
+      "jp": "ミルクレープ",
+      "reading": "ミルクレープ",
+      "zh": "千层蛋糕",
+      "kind": "cafe-dessert",
+      "category": "ケーキ",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "crepe",
+        "color": "#dec08b",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/sweets.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "ミルクレープを一つください。",
+      "noteJa": "薄いクレープとクリームを何枚も重ねたケーキ。",
+      "translation": "请给我一份千层蛋糕。"
+    },
+    {
+      "id": "kissaten-cafe-cheesecake",
+      "jp": "ベイクドチーズケーキ",
+      "reading": "ベイクドチーズケーキ",
+      "zh": "烤芝士蛋糕",
+      "kind": "cafe-dessert",
+      "category": "ケーキ",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "cheesecake",
+        "color": "#e0c589",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/sweets.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "ベイクドチーズケーキを一つください。",
+      "noteJa": "チーズを使い、オーブンで焼いたケーキ。",
+      "translation": "请给我一份烤芝士蛋糕。"
+    },
+    {
+      "id": "kissaten-cafe-montblanc",
+      "jp": "モンブラン",
+      "reading": "モンブラン",
+      "zh": "蒙布朗",
+      "kind": "cafe-dessert",
+      "category": "ケーキ",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "montblanc",
+        "color": "#c0a078",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/sweets.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "モンブランを一つください。",
+      "noteJa": "栗などのクリームを、細い線のように重ねたケーキ。",
+      "translation": "请给我一份蒙布朗。"
+    },
+    {
+      "id": "kissaten-cafe-pumpkin",
+      "jp": "かぼちゃのタルト",
+      "reading": "かぼちゃのタルト",
+      "zh": "南瓜挞",
+      "kind": "cafe-dessert",
+      "category": "ケーキ",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "tart",
+        "color": "#d9aa4b",
+        "source": "https://www.doutor.co.jp/dcs/menu/list/sweets.html",
+        "milk": false,
+        "cream": false
+      },
+      "example": "かぼちゃのタルトを一つください。",
+      "noteJa": "タルト生地に、かぼちゃのクリームを入れたお菓子。",
+      "translation": "请给我一份南瓜挞。"
+    },
+    {
+      "id": "kissaten-cafe-tiramisu",
+      "jp": "ティラミス",
+      "reading": "ティラミス",
+      "zh": "提拉米苏",
+      "kind": "cafe-dessert",
+      "category": "ケーキ",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "tiramisu",
+        "color": "#926548",
+        "source": "https://www.ginza-renoir.co.jp/news/news_images/CM_Cake-2_201610.pdf",
+        "milk": false,
+        "cream": false
+      },
+      "example": "ティラミスを一つください。",
+      "noteJa": "チーズのクリームと、コーヒーをしみこませた生地を重ねたお菓子。",
+      "translation": "请给我一份提拉米苏。"
+    },
+    {
+      "id": "kissaten-cafe-applepie",
+      "jp": "アップルパイ",
+      "reading": "アップルパイ",
+      "zh": "苹果派",
+      "kind": "cafe-dessert",
+      "category": "ケーキ",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "applepie",
+        "color": "#d4a263",
+        "source": "https://www.ginza-renoir.co.jp/news/news_images/CM_Cake-2_201610.pdf",
+        "milk": false,
+        "cream": false
+      },
+      "example": "アップルパイを一つください。",
+      "noteJa": "りんごをパイ生地で包んで焼いたお菓子。",
+      "translation": "请给我一份苹果派。"
+    },
+    {
+      "id": "kissaten-cafe-jelly",
+      "jp": "コーヒーゼリー",
+      "reading": "コーヒーゼリー",
+      "zh": "咖啡冻",
+      "kind": "cafe-dessert",
+      "category": "デザート",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "jelly",
+        "color": "#765443",
+        "source": "https://www.mistore.jp/content/dam/isetan_mitsukoshi/site/common/mi-ts/floor/2f/menu_komeda.pdf",
+        "milk": false,
+        "cream": false
+      },
+      "example": "コーヒーゼリーを一つください。",
+      "noteJa": "コーヒーを固めて作る、冷たいデザート。",
+      "translation": "请给我一份咖啡冻。"
+    },
+    {
+      "id": "kissaten-cafe-softserve",
+      "jp": "ソフトクリーム",
+      "reading": "ソフトクリーム",
+      "zh": "软冰淇淋",
+      "kind": "cafe-dessert",
+      "category": "デザート",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "softserve",
+        "color": "#fff0d2",
+        "source": "https://www.mistore.jp/content/dam/isetan_mitsukoshi/site/common/mi-ts/floor/2f/menu_komeda.pdf",
+        "milk": false,
+        "cream": false
+      },
+      "example": "ソフトクリームを一つください。",
+      "noteJa": "やわらかいアイスを、渦を巻くように盛りつけたもの。",
+      "translation": "请给我一份软冰淇淋。"
+    },
+    {
+      "id": "kissaten-cafe-danish",
+      "jp": "シロノワール",
+      "reading": "シロノワール",
+      "zh": "冰淇淋丹麦酥",
+      "kind": "cafe-dessert",
+      "category": "デザート",
+      "zone": 4,
+      "cafe": {
+        "type": "dessert",
+        "form": "danish",
+        "color": "#c99d5d",
+        "source": "https://www.mistore.jp/content/dam/isetan_mitsukoshi/site/common/mi-ts/floor/2f/menu_komeda.pdf",
+        "milk": false,
+        "cream": false
+      },
+      "example": "シロノワールを一つください。",
+      "noteJa": "コメダ珈琲店の商品名。温かいデニッシュにソフトクリームをのせたもの。",
+      "translation": "请给我一份冰淇淋丹麦酥。"
+    },
+    {
+      "id": "kissaten-cafe-fixture-4",
+      "jp": "ケーキケース",
+      "reading": "ケーキケース",
+      "zh": "蛋糕陈列柜",
+      "kind": "cafe-case",
+      "zone": 4,
+      "category": "設備",
+      "example": "ケーキケースを見てみましょう。",
+      "translation": "一起看看蛋糕陈列柜吧。"
+    },
+    {
+      "id": "kissaten-cafe-fixture-5",
+      "jp": "ドリンクメニュー",
+      "reading": "ドリンクメニュー",
+      "zh": "饮品菜单",
+      "kind": "menu",
+      "zone": 5,
+      "category": "設備",
+      "example": "ドリンクメニューを見てみましょう。",
+      "translation": "一起看看饮品菜单吧。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "コーヒー",
+      "items": [
+        "kissaten-037",
+        "kissaten-cafe-blend",
+        "kissaten-cafe-american",
+        "kissaten-cafe-espresso",
+        "kissaten-cafe-latte",
+        "kissaten-cafe-mocha",
+        "kissaten-cafe-soy",
+        "kissaten-cafe-honey"
+      ]
+    },
+    {
+      "name": "お茶・ココア",
+      "items": [
+        "kissaten-035",
+        "kissaten-036",
+        "kissaten-038",
+        "kissaten-cafe-matcha",
+        "kissaten-cafe-cocoa",
+        "kissaten-cafe-royal",
+        "kissaten-cafe-rooibos"
+      ]
+    },
+    {
+      "name": "冷たい飲み物",
+      "items": [
+        "kissaten-039",
+        "kissaten-040",
+        "kissaten-cafe-iced-coffee",
+        "kissaten-cafe-iced-latte",
+        "kissaten-cafe-iced-tea",
+        "kissaten-cafe-iced-cocoa",
+        "kissaten-cafe-iced-matcha",
+        "kissaten-cafe-apple-juice",
+        "kissaten-cafe-cream-soda",
+        "kissaten-cafe-coffee-float"
+      ]
+    },
+    {
+      "name": "ケーキ",
+      "items": [
+        "kissaten-042",
+        "kissaten-cafe-crepe",
+        "kissaten-cafe-cheesecake",
+        "kissaten-cafe-montblanc",
+        "kissaten-cafe-pumpkin",
+        "kissaten-cafe-tiramisu",
+        "kissaten-cafe-applepie"
+      ]
+    },
+    {
+      "name": "デザート",
+      "items": [
+        "kissaten-041",
+        "kissaten-043",
+        "kissaten-044",
+        "kissaten-menu-31",
+        "kissaten-cafe-jelly",
+        "kissaten-cafe-softserve",
+        "kissaten-cafe-danish"
+      ]
+    },
+    {
+      "name": "料理・軽食",
+      "items": [
+        "kissaten-045",
+        "kissaten-menu-14",
+        "kissaten-menu-22",
+        "kissaten-menu-23",
+        "kissaten-menu-30"
+      ]
+    }
+  ],
+  "npc": 8,
+  "district": 1
+}

@@ -1,0 +1,1437 @@
+{
+  "id": "izakaya",
+  "title": "居酒屋",
+  "jp": "居酒屋",
+  "reading": "いざかや",
+  "layout": "restaurant",
+  "zones": [
+    {
+      "jp": "カウンター席",
+      "zh": "カウンター席"
+    },
+    {
+      "jp": "テーブル席",
+      "zh": "テーブル席"
+    },
+    {
+      "jp": "座敷",
+      "zh": "座敷"
+    },
+    {
+      "jp": "掘りごたつ席",
+      "zh": "掘りごたつ席"
+    },
+    {
+      "jp": "会計",
+      "zh": "会計"
+    },
+    {
+      "jp": "靴を脱ぐところ",
+      "zh": "靴を脱ぐところ"
+    }
+  ],
+  "items": [
+    {
+      "id": "izakaya-001",
+      "jp": "提灯",
+      "reading": "ちょうちん",
+      "zh": "灯笼",
+      "kind": "lantern",
+      "color": "#ce7e56",
+      "category": "物品与细节",
+      "example": "これは提灯です。",
+      "translation": "这是灯笼。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "izakaya-002",
+      "jp": "暖簾",
+      "reading": "のれん",
+      "zh": "门帘",
+      "kind": "noren",
+      "color": "#8c4f42",
+      "category": "物品与细节",
+      "example": "これは暖簾です。",
+      "translation": "这是门帘。",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "id": "izakaya-003",
+      "jp": "カウンター",
+      "reading": "カウンター",
+      "zh": "吧台",
+      "kind": "counter",
+      "color": "#987247",
+      "size": [
+        7.0,
+        1.0,
+        0.9
+      ],
+      "category": "物品与细节",
+      "example": "これはカウンターです。",
+      "translation": "这是吧台。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "izakaya-004",
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "color": "#a88055",
+      "category": "物品与细节",
+      "example": "これはテーブルです。",
+      "translation": "这是桌子。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "izakaya-005",
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "color": "#937550",
+      "category": "物品与细节",
+      "example": "これは椅子です。",
+      "translation": "这是椅子。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "izakaya-006",
+      "jp": "座敷",
+      "reading": "ざしき",
+      "zh": "日式座席区",
+      "kind": "deck",
+      "color": "#b9a77c",
+      "size": [
+        4.0,
+        0.3,
+        4.0
+      ],
+      "category": "物品与细节",
+      "example": "これは座敷です。",
+      "translation": "这是日式座席区。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "izakaya-007",
+      "jp": "座布団",
+      "reading": "ざぶとん",
+      "zh": "坐垫",
+      "kind": "cushion",
+      "color": "#8e6858",
+      "category": "物品与细节",
+      "example": "これは座布団です。",
+      "translation": "这是坐垫。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "izakaya-008",
+      "jp": "おしぼり",
+      "reading": "おしぼり",
+      "zh": "擦手巾",
+      "kind": "towel",
+      "category": "物品与细节",
+      "example": "これはおしぼりです。",
+      "translation": "这是擦手巾。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "izakaya-009",
+      "jp": "箸",
+      "reading": "はし",
+      "zh": "筷子",
+      "kind": "chopsticks",
+      "category": "物品与细节",
+      "example": "これは箸です。",
+      "translation": "这是筷子。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "izakaya-010",
+      "jp": "取り皿",
+      "reading": "とりざら",
+      "zh": "分餐小碟",
+      "kind": "plate",
+      "color": "#a5b9ad",
+      "category": "物品与细节",
+      "example": "これは取り皿です。",
+      "translation": "这是分餐小碟。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "izakaya-011",
+      "jp": "お通し",
+      "reading": "おとおし",
+      "zh": "小菜",
+      "kind": "small-dish",
+      "color": "#80917b",
+      "category": "物品与细节",
+      "example": "これはお通しです。",
+      "translation": "这是小菜。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "izakaya-012",
+      "jp": "枝豆",
+      "reading": "えだまめ",
+      "zh": "毛豆",
+      "kind": "edamame",
+      "category": "物品与细节",
+      "example": "これは枝豆です。",
+      "translation": "这是毛豆。",
+      "note": "",
+      "art": [
+        "foods",
+        0
+      ],
+      "zone": 2
+    },
+    {
+      "id": "izakaya-013",
+      "jp": "焼き鳥",
+      "reading": "やきとり",
+      "zh": "烤鸡肉串",
+      "kind": "skewer",
+      "category": "物品与细节",
+      "example": "これは焼き鳥です。",
+      "translation": "这是烤鸡肉串。",
+      "note": "",
+      "art": [
+        "foods",
+        2
+      ],
+      "zone": 3,
+      "detail": {
+        "type": "dish",
+        "shape": "skewer",
+        "color": "#c5a177"
+      }
+    },
+    {
+      "id": "izakaya-014",
+      "jp": "唐揚げ",
+      "reading": "からあげ",
+      "zh": "日式炸鸡",
+      "kind": "fried",
+      "category": "物品与细节",
+      "example": "これは唐揚げです。",
+      "translation": "这是日式炸鸡。",
+      "note": "",
+      "art": [
+        "foods",
+        1
+      ],
+      "zone": 1
+    },
+    {
+      "id": "izakaya-015",
+      "jp": "刺身",
+      "reading": "さしみ",
+      "zh": "生鱼片",
+      "kind": "sashimi",
+      "category": "物品与细节",
+      "example": "これは刺身です。",
+      "translation": "这是生鱼片。",
+      "note": "",
+      "art": [
+        "foods",
+        3
+      ],
+      "zone": 2
+    },
+    {
+      "id": "izakaya-016",
+      "jp": "焼き魚",
+      "reading": "やきざかな",
+      "zh": "烤鱼",
+      "kind": "fish",
+      "color": "#b8a57e",
+      "category": "物品与细节",
+      "example": "これは焼き魚です。",
+      "translation": "这是烤鱼。",
+      "note": "",
+      "zone": 3,
+      "art": [
+        "meals",
+        8
+      ],
+      "detail": {
+        "type": "dish",
+        "shape": "fish",
+        "color": "#c5a177"
+      }
+    },
+    {
+      "id": "izakaya-017",
+      "jp": "冷ややっこ",
+      "reading": "ひややっこ",
+      "zh": "凉拌豆腐",
+      "kind": "tofu",
+      "category": "物品与细节",
+      "example": "これは冷ややっこです。",
+      "translation": "这是凉拌豆腐。",
+      "note": "",
+      "zone": 0,
+      "art": [
+        "meals",
+        4
+      ]
+    },
+    {
+      "id": "izakaya-018",
+      "jp": "漬物",
+      "reading": "つけもの",
+      "zh": "腌菜",
+      "kind": "pickles",
+      "category": "物品与细节",
+      "example": "これは漬物です。",
+      "translation": "这是腌菜。",
+      "note": "",
+      "zone": 1,
+      "art": [
+        "meals",
+        5
+      ]
+    },
+    {
+      "id": "izakaya-019",
+      "jp": "だし巻き卵",
+      "reading": "だしまきたまご",
+      "zh": "高汤煎蛋卷",
+      "kind": "eggroll",
+      "category": "物品与细节",
+      "example": "これはだし巻き卵です。",
+      "translation": "这是高汤煎蛋卷。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "izakaya-020",
+      "jp": "おにぎり",
+      "reading": "おにぎり",
+      "zh": "饭团",
+      "kind": "onigiri",
+      "category": "物品与细节",
+      "example": "これはおにぎりです。",
+      "translation": "这是饭团。",
+      "note": "",
+      "art": [
+        "foods",
+        7
+      ],
+      "zone": 3
+    },
+    {
+      "id": "izakaya-021",
+      "jp": "鍋",
+      "reading": "なべ",
+      "zh": "锅",
+      "kind": "pot",
+      "color": "#826e5a",
+      "category": "物品与细节",
+      "example": "これは鍋です。",
+      "translation": "这是锅。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "izakaya-023",
+      "jp": "ビール",
+      "reading": "ビール",
+      "zh": "啤酒",
+      "kind": "beer",
+      "category": "物品与细节",
+      "example": "これはビールです。",
+      "translation": "这是啤酒。",
+      "note": "",
+      "art": [
+        "drinks",
+        6
+      ],
+      "zone": 2
+    },
+    {
+      "id": "izakaya-024",
+      "jp": "ジョッキ",
+      "reading": "ジョッキ",
+      "zh": "大啤酒杯",
+      "kind": "mug",
+      "category": "物品与细节",
+      "example": "これはジョッキです。",
+      "translation": "这是大啤酒杯。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "izakaya-025",
+      "jp": "日本酒",
+      "reading": "にほんしゅ",
+      "zh": "日本清酒",
+      "kind": "bottle",
+      "color": "#b5c7aa",
+      "category": "物品与细节",
+      "example": "これは日本酒です。",
+      "translation": "这是日本清酒。",
+      "note": "",
+      "art": [
+        "drinks",
+        7
+      ],
+      "zone": 0
+    },
+    {
+      "id": "izakaya-026",
+      "jp": "徳利",
+      "reading": "とっくり",
+      "zh": "酒壶",
+      "kind": "sake-flask",
+      "category": "物品与细节",
+      "example": "これは徳利です。",
+      "translation": "这是酒壶。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "izakaya-027",
+      "jp": "おちょこ",
+      "reading": "おちょこ",
+      "zh": "小酒杯",
+      "kind": "cup",
+      "color": "#bcc9b2",
+      "category": "物品与细节",
+      "example": "これはおちょこです。",
+      "translation": "这是小酒杯。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "izakaya-028",
+      "jp": "ウーロン茶",
+      "reading": "ウーロンちゃ",
+      "zh": "乌龙茶",
+      "kind": "tea",
+      "color": "#ad8855",
+      "category": "物品与细节",
+      "example": "これはウーロン茶です。",
+      "translation": "这是乌龙茶。",
+      "note": "",
+      "art": [
+        "drinks",
+        1
+      ],
+      "zone": 3
+    },
+    {
+      "id": "izakaya-029",
+      "jp": "氷",
+      "reading": "こおり",
+      "zh": "冰块",
+      "kind": "ice",
+      "category": "物品与细节",
+      "example": "これは氷です。",
+      "translation": "这是冰块。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "izakaya-030",
+      "jp": "栓抜き",
+      "reading": "せんぬき",
+      "zh": "开瓶器",
+      "kind": "opener",
+      "category": "物品与细节",
+      "example": "これは栓抜きです。",
+      "translation": "这是开瓶器。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "izakaya-031",
+      "jp": "瓶",
+      "reading": "びん",
+      "zh": "瓶子",
+      "kind": "bottle",
+      "color": "#5e816c",
+      "category": "物品与细节",
+      "example": "これは瓶です。",
+      "translation": "这是瓶子。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "izakaya-032",
+      "jp": "お品書き",
+      "reading": "おしながき",
+      "zh": "菜单",
+      "kind": "menu",
+      "color": "#816348",
+      "category": "物品与细节",
+      "example": "これはお品書きです。",
+      "translation": "这是菜单。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "izakaya-033",
+      "jp": "呼び出しボタン",
+      "reading": "よびだしボタン",
+      "zh": "呼叫按钮",
+      "kind": "button",
+      "color": "#b27c52",
+      "category": "物品与细节",
+      "example": "これは呼び出しボタンです。",
+      "translation": "这是呼叫按钮。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "izakaya-034",
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银机",
+      "kind": "register",
+      "category": "物品与细节",
+      "example": "これはレジです。",
+      "translation": "这是收银机。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "izakaya-035",
+      "jp": "レシート",
+      "reading": "レシート",
+      "zh": "收据",
+      "kind": "paper",
+      "category": "物品与细节",
+      "example": "これはレシートです。",
+      "translation": "这是收据。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "izakaya-036",
+      "jp": "お釣り",
+      "reading": "おつり",
+      "zh": "找零",
+      "kind": "coins",
+      "category": "物品与细节",
+      "example": "これはお釣りです。",
+      "translation": "这是找零。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "izakaya-037",
+      "jp": "ハンガー",
+      "reading": "ハンガー",
+      "zh": "衣架",
+      "kind": "hanger",
+      "category": "物品与细节",
+      "example": "これはハンガーです。",
+      "translation": "这是衣架。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "izakaya-038",
+      "jp": "荷物かご",
+      "reading": "にもつかご",
+      "zh": "放随身物品的筐",
+      "kind": "luggage-basket",
+      "category": "物品与细节",
+      "example": "これは荷物かごです。",
+      "translation": "这是放随身物品的筐。",
+      "note": "",
+      "zone": 2,
+      "noteJa": "座敷の座席のそばに置くかごです。荷物を入れます。"
+    },
+    {
+      "id": "izakaya-039",
+      "jp": "靴",
+      "reading": "くつ",
+      "zh": "鞋子",
+      "kind": "shoes",
+      "category": "物品与细节",
+      "example": "座敷に上がる前に靴を脱ぎます。",
+      "translation": "进入日式座席区前脱鞋。",
+      "note": "",
+      "zone": 5,
+      "noteJa": "脱いだ靴は下駄箱に入れます。テーブル席では、靴を履いたまま座れる店もあります。"
+    },
+    {
+      "id": "izakaya-040",
+      "jp": "仕切り",
+      "reading": "しきり",
+      "zh": "隔断",
+      "kind": "partition",
+      "color": "#a28763",
+      "size": [
+        0.15,
+        1.7,
+        4.0
+      ],
+      "category": "物品与细节",
+      "example": "これは仕切りです。",
+      "translation": "这是隔断。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "izakaya-042",
+      "jp": "壁",
+      "reading": "かべ",
+      "zh": "墙壁",
+      "kind": "wall-shell",
+      "category": "空间与设施",
+      "example": "これは壁です。",
+      "translation": "这是墙壁。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "izakaya-043",
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空间与设施",
+      "example": "これは窓です。",
+      "translation": "这是窗户。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "izakaya-044",
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "置物架",
+      "kind": "shelf-support",
+      "category": "空间与设施",
+      "example": "これは棚です。",
+      "translation": "这是置物架。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "izakaya-045",
+      "jp": "電気",
+      "reading": "でんき",
+      "zh": "灯；照明",
+      "kind": "lighting-shell",
+      "category": "空间与设施",
+      "example": "電気をつけます。",
+      "translation": "开灯。",
+      "note": "这里指照明；「電気」也有电、电力的意思。",
+      "zone": 1
+    },
+    {
+      "jp": "座卓",
+      "reading": "ざたく",
+      "zh": "矮餐桌",
+      "kind": "lowtable",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "izakaya-046",
+      "example": "座卓を見てみましょう。",
+      "translation": "看看矮餐桌吧。",
+      "zone": 2
+    },
+    {
+      "jp": "畳",
+      "reading": "たたみ",
+      "zh": "榻榻米",
+      "kind": "tatami",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "izakaya-047",
+      "example": "畳を見てみましょう。",
+      "translation": "看看榻榻米吧。",
+      "zone": 2
+    },
+    {
+      "jp": "襖",
+      "reading": "ふすま",
+      "zh": "纸隔扇",
+      "kind": "fusuma",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "izakaya-048",
+      "example": "襖を見てみましょう。",
+      "translation": "看看纸隔扇吧。",
+      "zone": 2
+    },
+    {
+      "jp": "メニュー",
+      "reading": "メニュー",
+      "zh": "菜单",
+      "kind": "menu",
+      "category": "食器・設備",
+      "id": "izakaya-049",
+      "example": "メニューを見てみましょう。",
+      "translation": "看看菜单吧。",
+      "zone": 0
+    },
+    {
+      "jp": "箸置き",
+      "reading": "はしおき",
+      "zh": "筷架",
+      "kind": "smallblock",
+      "category": "食器・設備",
+      "id": "izakaya-050",
+      "example": "箸置きを見てみましょう。",
+      "translation": "看看筷架吧。",
+      "zone": 3
+    },
+    {
+      "jp": "スプーン",
+      "reading": "スプーン",
+      "zh": "勺子",
+      "kind": "spoon",
+      "category": "食器・設備",
+      "id": "izakaya-051",
+      "example": "スプーンを見てみましょう。",
+      "translation": "看看勺子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "フォーク",
+      "reading": "フォーク",
+      "zh": "叉子",
+      "kind": "fork",
+      "category": "食器・設備",
+      "id": "izakaya-052",
+      "example": "フォークを見てみましょう。",
+      "translation": "看看叉子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ナイフ",
+      "reading": "ナイフ",
+      "zh": "餐刀",
+      "kind": "knife",
+      "category": "食器・設備",
+      "id": "izakaya-053",
+      "example": "ナイフを見てみましょう。",
+      "translation": "看看餐刀吧。",
+      "zone": 2
+    },
+    {
+      "jp": "皿",
+      "reading": "さら",
+      "zh": "盘子",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "izakaya-054",
+      "example": "皿を見てみましょう。",
+      "translation": "看看盘子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "茶碗",
+      "reading": "ちゃわん",
+      "zh": "饭碗",
+      "kind": "bowl",
+      "category": "食器・設備",
+      "id": "izakaya-055",
+      "example": "茶碗を見てみましょう。",
+      "translation": "看看饭碗吧。",
+      "zone": 1
+    },
+    {
+      "jp": "湯のみ",
+      "reading": "ゆのみ",
+      "zh": "日式茶杯",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "izakaya-056",
+      "example": "湯のみを見てみましょう。",
+      "translation": "看看日式茶杯吧。",
+      "zone": 2
+    },
+    {
+      "jp": "コップ",
+      "reading": "コップ",
+      "zh": "杯子",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "izakaya-057",
+      "example": "コップを見てみましょう。",
+      "translation": "看看杯子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "トング",
+      "reading": "トング",
+      "zh": "食品夹",
+      "kind": "chopsticks",
+      "category": "食器・設備",
+      "id": "izakaya-058",
+      "example": "トングを見てみましょう。",
+      "translation": "看看食品夹吧。",
+      "zone": 0
+    },
+    {
+      "jp": "伝票",
+      "reading": "でんぴょう",
+      "zh": "账单",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "izakaya-070",
+      "example": "伝票を見てみましょう。",
+      "translation": "看看账单吧。",
+      "zone": 4
+    },
+    {
+      "jp": "緑茶",
+      "reading": "りょくちゃ",
+      "zh": "绿茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        0
+      ],
+      "id": "izakaya-071",
+      "example": "緑茶を見てみましょう。",
+      "translation": "看看绿茶吧。",
+      "zone": 1
+    },
+    {
+      "jp": "コーヒー",
+      "reading": "コーヒー",
+      "zh": "咖啡",
+      "kind": "mug",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        2
+      ],
+      "id": "izakaya-072",
+      "example": "コーヒーを見てみましょう。",
+      "translation": "看看咖啡吧。",
+      "zone": 2
+    },
+    {
+      "jp": "紅茶",
+      "reading": "こうちゃ",
+      "zh": "红茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        3
+      ],
+      "id": "izakaya-073",
+      "example": "紅茶を見てみましょう。",
+      "translation": "看看红茶吧。",
+      "zone": 3
+    },
+    {
+      "jp": "オレンジジュース",
+      "reading": "オレンジジュース",
+      "zh": "橙汁",
+      "kind": "cup",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        4
+      ],
+      "id": "izakaya-074",
+      "example": "オレンジジュースを見てみましょう。",
+      "translation": "看看橙汁吧。",
+      "zone": 1
+    },
+    {
+      "jp": "プリン",
+      "reading": "プリン",
+      "zh": "布丁",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        12
+      ],
+      "id": "izakaya-076",
+      "example": "プリンを見てみましょう。",
+      "translation": "看看布丁吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ケーキ",
+      "reading": "ケーキ",
+      "zh": "蛋糕",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        13
+      ],
+      "id": "izakaya-077",
+      "example": "ケーキを見てみましょう。",
+      "translation": "看看蛋糕吧。",
+      "zone": 3
+    },
+    {
+      "jp": "アイスクリーム",
+      "reading": "アイスクリーム",
+      "zh": "冰淇淋",
+      "kind": "icecream",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        14
+      ],
+      "id": "izakaya-078",
+      "example": "アイスクリームを見てみましょう。",
+      "translation": "看看冰淇淋吧。",
+      "zone": 1
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "izakaya-079",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 5
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "izakaya-082",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "izakaya-083",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "izakaya-084",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 5
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "izakaya-085",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 4
+    },
+    {
+      "jp": "味噌汁",
+      "reading": "みそしる",
+      "zh": "味噌汤",
+      "kind": "soup",
+      "art": [
+        "dishes",
+        10
+      ],
+      "category": "料理",
+      "example": "味噌汁をください。",
+      "translation": "请给我味噌汤。",
+      "id": "izakaya-menu-10",
+      "zone": 2
+    },
+    {
+      "jp": "茶碗蒸し",
+      "reading": "ちゃわんむし",
+      "zh": "日式蒸蛋",
+      "kind": "bowl",
+      "art": [
+        "dishes",
+        11
+      ],
+      "category": "料理",
+      "example": "茶碗蒸しをください。",
+      "translation": "请给我日式蒸蛋。",
+      "id": "izakaya-menu-11",
+      "zone": 3
+    },
+    {
+      "jp": "天ぷら",
+      "reading": "てんぷら",
+      "zh": "天妇罗",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        12
+      ],
+      "category": "料理",
+      "example": "天ぷらをください。",
+      "translation": "请给我天妇罗。",
+      "id": "izakaya-menu-12",
+      "zone": 0
+    },
+    {
+      "jp": "餃子",
+      "reading": "ぎょうざ",
+      "zh": "饺子",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        13
+      ],
+      "category": "料理",
+      "example": "餃子をください。",
+      "translation": "请给我饺子。",
+      "id": "izakaya-menu-13",
+      "zone": 1
+    },
+    {
+      "jp": "コロッケ",
+      "reading": "コロッケ",
+      "zh": "可乐饼",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        14
+      ],
+      "category": "料理",
+      "example": "コロッケをください。",
+      "translation": "请给我可乐饼。",
+      "id": "izakaya-menu-14",
+      "zone": 2,
+      "detail": {
+        "type": "dish",
+        "shape": "cutlet",
+        "color": "#c5a177"
+      }
+    },
+    {
+      "jp": "とんかつ",
+      "reading": "とんかつ",
+      "zh": "炸猪排",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        15
+      ],
+      "category": "料理",
+      "example": "とんかつをください。",
+      "translation": "请给我炸猪排。",
+      "id": "izakaya-menu-15",
+      "zone": 3,
+      "detail": {
+        "type": "dish",
+        "shape": "cutlet",
+        "color": "#c5a177"
+      }
+    },
+    {
+      "jp": "お好み焼き",
+      "reading": "おこのみやき",
+      "zh": "大阪烧",
+      "kind": "plate",
+      "art": [
+        "meals",
+        0
+      ],
+      "category": "料理",
+      "example": "お好み焼きをください。",
+      "translation": "请给我大阪烧。",
+      "id": "izakaya-menu-16",
+      "zone": 1
+    },
+    {
+      "jp": "たこ焼き",
+      "reading": "たこやき",
+      "zh": "章鱼烧",
+      "kind": "fried",
+      "art": [
+        "meals",
+        1
+      ],
+      "category": "料理",
+      "example": "たこ焼きをください。",
+      "translation": "请给我章鱼烧。",
+      "id": "izakaya-menu-17",
+      "zone": 2
+    },
+    {
+      "jp": "焼きそば",
+      "reading": "やきそば",
+      "zh": "日式炒面",
+      "kind": "bowl",
+      "art": [
+        "meals",
+        2
+      ],
+      "category": "料理",
+      "example": "焼きそばをください。",
+      "translation": "请给我日式炒面。",
+      "id": "izakaya-menu-18",
+      "zone": 3
+    },
+    {
+      "jp": "おでん",
+      "reading": "おでん",
+      "zh": "关东煮",
+      "kind": "oden",
+      "art": [
+        "meals",
+        3
+      ],
+      "category": "料理",
+      "example": "おでんをください。",
+      "translation": "请给我关东煮。",
+      "id": "izakaya-menu-19",
+      "zone": 0
+    },
+    {
+      "jp": "ポテトサラダ",
+      "reading": "ポテトサラダ",
+      "zh": "土豆沙拉",
+      "kind": "vegetables",
+      "art": [
+        "meals",
+        6
+      ],
+      "category": "料理",
+      "example": "ポテトサラダをください。",
+      "translation": "请给我土豆沙拉。",
+      "id": "izakaya-menu-22",
+      "zone": 1
+    },
+    {
+      "jp": "フライドポテト",
+      "reading": "フライドポテト",
+      "zh": "炸薯条",
+      "kind": "fried",
+      "art": [
+        "meals",
+        7
+      ],
+      "category": "料理",
+      "example": "フライドポテトをください。",
+      "translation": "请给我炸薯条。",
+      "id": "izakaya-menu-23",
+      "zone": 2
+    },
+    {
+      "jp": "チャーハン",
+      "reading": "チャーハン",
+      "zh": "炒饭",
+      "kind": "rice",
+      "art": [
+        "meals",
+        9
+      ],
+      "category": "料理",
+      "example": "チャーハンをください。",
+      "translation": "请给我炒饭。",
+      "id": "izakaya-menu-25",
+      "zone": 3
+    },
+    {
+      "jp": "鍋料理",
+      "reading": "なべりょうり",
+      "zh": "日式火锅",
+      "kind": "pot",
+      "art": [
+        "meals",
+        13
+      ],
+      "category": "料理",
+      "example": "鍋料理をください。",
+      "translation": "请给我日式火锅。",
+      "id": "izakaya-menu-29",
+      "zone": 1
+    },
+    {
+      "jp": "きゅうりのサラダ",
+      "reading": "きゅうりのサラダ",
+      "zh": "黄瓜沙拉",
+      "kind": "vegetables",
+      "art": [
+        "meals",
+        14
+      ],
+      "category": "料理",
+      "example": "きゅうりのサラダをください。",
+      "translation": "请给我黄瓜沙拉。",
+      "id": "izakaya-menu-30",
+      "zone": 2
+    },
+    {
+      "id": "izakaya-detail-0100",
+      "jp": "串入れ",
+      "reading": "くしいれ",
+      "zh": "签子收纳筒",
+      "kind": "cup",
+      "zone": 3,
+      "category": "场所细节",
+      "example": "これは串入れです。",
+      "translation": "这是签子收纳筒。"
+    },
+    {
+      "id": "izakaya-detail-0101",
+      "jp": "取り箸",
+      "reading": "とりばし",
+      "zh": "公筷",
+      "kind": "chopsticks",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは取り箸です。",
+      "translation": "这是公筷。"
+    },
+    {
+      "id": "izakaya-shop-001",
+      "jp": "障子",
+      "reading": "しょうじ",
+      "zh": "障子门",
+      "kind": "shoji",
+      "zone": 2,
+      "category": "店内のことば",
+      "example": "障子を見てみましょう。",
+      "translation": "一起看看障子门吧。"
+    },
+    {
+      "id": "izakaya-shop-002",
+      "jp": "下駄箱",
+      "reading": "げたばこ",
+      "zh": "鞋柜",
+      "kind": "shoe-cabinet",
+      "zone": 5,
+      "category": "店内のことば",
+      "example": "靴を脱いで、下駄箱に入れます。",
+      "translation": "脱下鞋子，放进鞋柜里。"
+    },
+    {
+      "id": "izakaya-shop-003",
+      "jp": "上がり框",
+      "reading": "あがりかまち",
+      "zh": "脱鞋台阶",
+      "kind": "entry-step",
+      "zone": 5,
+      "category": "店内のことば",
+      "example": "上がり框を見てみましょう。",
+      "translation": "一起看看脱鞋台阶吧。"
+    },
+    {
+      "id": "izakaya-shop-004",
+      "jp": "掘りごたつ",
+      "reading": "ほりごたつ",
+      "zh": "下沉式暖桌座席",
+      "kind": "horigotatsu",
+      "zone": 3,
+      "category": "店内のことば",
+      "example": "靴を脱いで、掘りごたつの席に座ります。",
+      "translation": "脱下鞋子，坐到下沉式暖桌座席的座位上。",
+      "noteJa": "床に足を下ろせる、くぼみのある座席です。"
+    },
+    {
+      "id": "izakaya-specific-menu-01",
+      "jp": "ねぎま",
+      "reading": "ねぎま",
+      "zh": "葱鸡肉串",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "ねぎまを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "skewer",
+        "color": "#bc915b",
+        "leaf": false
+      },
+      "reference": "https://torikizoku.co.jp/menu/yakitori/",
+      "translation": "请给我一份葱鸡肉串。"
+    },
+    {
+      "id": "izakaya-specific-menu-02",
+      "jp": "つくね",
+      "reading": "つくね",
+      "zh": "鸡肉丸串",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "つくねを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "tsukune",
+        "color": "#bd915f",
+        "leaf": false
+      },
+      "reference": "https://torikizoku.co.jp/menu/yakitori/",
+      "translation": "请给我一份鸡肉丸串。"
+    },
+    {
+      "id": "izakaya-specific-menu-03",
+      "jp": "ささみ",
+      "reading": "ささみ",
+      "zh": "鸡胸里脊",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "ささみを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "skewer",
+        "color": "#d9c09c",
+        "leaf": false
+      },
+      "reference": "https://torikizoku.co.jp/menu/yakitori/",
+      "translation": "请给我一份鸡胸里脊。"
+    },
+    {
+      "id": "izakaya-specific-menu-04",
+      "jp": "鶏皮",
+      "reading": "とりかわ",
+      "zh": "鸡皮",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "鶏皮を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "skewer",
+        "color": "#bd8d57",
+        "leaf": false
+      },
+      "reference": "https://torikizoku.co.jp/menu/yakitori/",
+      "translation": "请给我一份鸡皮。"
+    },
+    {
+      "id": "izakaya-specific-menu-05",
+      "jp": "砂肝",
+      "reading": "すなぎも",
+      "zh": "鸡胗",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "砂肝を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "skewer",
+        "color": "#9d7560",
+        "leaf": false
+      },
+      "reference": "https://torikizoku.co.jp/menu/yakitori/",
+      "translation": "请给我一份鸡胗。"
+    },
+    {
+      "id": "izakaya-specific-menu-06",
+      "jp": "釜飯",
+      "reading": "かまめし",
+      "zh": "釜饭",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "釜飯を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "rice",
+        "color": "#bd9b70",
+        "leaf": false
+      },
+      "reference": "https://torikizoku.co.jp/menu/yakitori/",
+      "translation": "请给我一份釜饭。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "お店の料理を選ぶ",
+      "items": [
+        "izakaya-specific-menu-01",
+        "izakaya-specific-menu-02",
+        "izakaya-specific-menu-03",
+        "izakaya-specific-menu-04",
+        "izakaya-specific-menu-05",
+        "izakaya-specific-menu-06"
+      ]
+    },
+    {
+      "name": "料理・軽食",
+      "items": [
+        "izakaya-012",
+        "izakaya-013",
+        "izakaya-014",
+        "izakaya-015",
+        "izakaya-020",
+        "izakaya-menu-10",
+        "izakaya-menu-11",
+        "izakaya-menu-12",
+        "izakaya-menu-13",
+        "izakaya-menu-14",
+        "izakaya-menu-15",
+        "izakaya-menu-16",
+        "izakaya-menu-17",
+        "izakaya-menu-18",
+        "izakaya-menu-19",
+        "izakaya-017",
+        "izakaya-018",
+        "izakaya-menu-22",
+        "izakaya-menu-23",
+        "izakaya-016",
+        "izakaya-menu-25",
+        "izakaya-menu-29",
+        "izakaya-menu-30"
+      ]
+    },
+    {
+      "name": "飲み物",
+      "items": [
+        "izakaya-023",
+        "izakaya-025",
+        "izakaya-028",
+        "izakaya-071",
+        "izakaya-072",
+        "izakaya-073",
+        "izakaya-074"
+      ]
+    },
+    {
+      "name": "甘味",
+      "items": [
+        "izakaya-076",
+        "izakaya-077",
+        "izakaya-078"
+      ]
+    }
+  ],
+  "npc": 3,
+  "district": 1,
+  "sceneReference": "https://torikizoku.co.jp/menu/yakitori/"
+}

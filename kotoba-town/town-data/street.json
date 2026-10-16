@@ -1,0 +1,765 @@
+{
+  "id": "street",
+  "title": "街道与商店街",
+  "jp": "商店街",
+  "reading": "しょうてんがい",
+  "layout": "street",
+  "zones": [
+    {
+      "jp": "商店街",
+      "zh": "商业街"
+    },
+    {
+      "jp": "住宅街",
+      "zh": "住宅街"
+    },
+    {
+      "jp": "公園",
+      "zh": "公园"
+    },
+    {
+      "jp": "川沿い",
+      "zh": "河岸"
+    },
+    {
+      "jp": "交通",
+      "zh": "交通设施"
+    }
+  ],
+  "items": [
+    {
+      "id": "street-001",
+      "jp": "商店街",
+      "reading": "しょうてんがい",
+      "zh": "商店街",
+      "kind": "arch",
+      "color": "#599a97",
+      "category": "空间与设施",
+      "example": "これは商店街です。",
+      "translation": "这是商店街。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-002",
+      "jp": "道路",
+      "reading": "どうろ",
+      "zh": "道路",
+      "kind": "road",
+      "color": "#87989b",
+      "size": [
+        4.0,
+        0.02,
+        13.0
+      ],
+      "category": "空间与设施",
+      "example": "これは道路です。",
+      "translation": "这是道路。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-003",
+      "jp": "歩道",
+      "reading": "ほどう",
+      "zh": "人行道",
+      "kind": "path",
+      "color": "#c6bfa8",
+      "size": [
+        2.5,
+        0.1,
+        13.0
+      ],
+      "category": "空间与设施",
+      "example": "これは歩道です。",
+      "translation": "这是人行道。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-004",
+      "jp": "横断歩道",
+      "reading": "おうだんほどう",
+      "zh": "人行横道",
+      "kind": "crosswalk",
+      "category": "物品与细节",
+      "example": "これは横断歩道です。",
+      "translation": "这是人行横道。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "street-005",
+      "jp": "信号",
+      "reading": "しんごう",
+      "zh": "红绿灯",
+      "kind": "trafficlight",
+      "category": "物品与细节",
+      "example": "これは信号です。",
+      "translation": "这是红绿灯。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "street-006",
+      "jp": "標識",
+      "reading": "ひょうしき",
+      "zh": "道路标志",
+      "kind": "roadsign",
+      "category": "物品与细节",
+      "example": "これは標識です。",
+      "translation": "这是道路标志。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-007",
+      "jp": "街灯",
+      "reading": "がいとう",
+      "zh": "路灯",
+      "kind": "lamp",
+      "color": "#82999d",
+      "category": "物品与细节",
+      "example": "これは街灯です。",
+      "translation": "这是路灯。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-008",
+      "jp": "電柱",
+      "reading": "でんちゅう",
+      "zh": "电线杆",
+      "kind": "utilitypole",
+      "category": "物品与细节",
+      "example": "これは電柱です。",
+      "translation": "这是电线杆。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-009",
+      "jp": "電線",
+      "reading": "でんせん",
+      "zh": "电线",
+      "kind": "wire",
+      "category": "物品与细节",
+      "example": "これは電線です。",
+      "translation": "这是电线。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-010",
+      "jp": "自転車",
+      "reading": "じてんしゃ",
+      "zh": "自行车",
+      "kind": "bicycle",
+      "category": "物品与细节",
+      "example": "これは自転車です。",
+      "translation": "这是自行车。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "street-011",
+      "jp": "自転車置き場",
+      "reading": "じてんしゃおきば",
+      "zh": "自行车停车处",
+      "kind": "bike-rack",
+      "category": "物品与细节",
+      "example": "これは自転車置き場です。",
+      "translation": "这是自行车停车处。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-012",
+      "jp": "バス停",
+      "reading": "バスてい",
+      "zh": "公交站",
+      "kind": "busstop",
+      "category": "物品与细节",
+      "example": "これはバス停です。",
+      "translation": "这是公交站。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-013",
+      "jp": "バス",
+      "reading": "バス",
+      "zh": "公交车",
+      "kind": "bus",
+      "color": "#c1b272",
+      "category": "空间与设施",
+      "example": "これはバスです。",
+      "translation": "这是公交车。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-014",
+      "jp": "車",
+      "reading": "くるま",
+      "zh": "汽车",
+      "kind": "car",
+      "color": "#789fb3",
+      "category": "空间与设施",
+      "example": "これは車です。",
+      "translation": "这是汽车。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-015",
+      "jp": "タクシー",
+      "reading": "タクシー",
+      "zh": "出租车",
+      "kind": "car",
+      "color": "#8d948b",
+      "category": "空间与设施",
+      "example": "これはタクシーです。",
+      "translation": "这是出租车。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-016",
+      "jp": "駐車場",
+      "reading": "ちゅうしゃじょう",
+      "zh": "停车场",
+      "kind": "parking-sign",
+      "category": "物品与细节",
+      "example": "これは駐車場です。",
+      "translation": "这是停车场。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "street-017",
+      "jp": "自動販売機",
+      "reading": "じどうはんばいき",
+      "zh": "自动售货机",
+      "kind": "vending",
+      "category": "物品与细节",
+      "example": "これは自動販売機です。",
+      "translation": "这是自动售货机。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-018",
+      "jp": "郵便ポスト",
+      "reading": "ゆうびんポスト",
+      "zh": "邮筒",
+      "kind": "postbox",
+      "category": "物品与细节",
+      "example": "これは郵便ポストです。",
+      "translation": "这是邮筒。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-019",
+      "jp": "交番",
+      "reading": "こうばん",
+      "zh": "派出所",
+      "kind": "koban",
+      "color": "#9fbaa8",
+      "category": "物品与细节",
+      "example": "ここは交番です。",
+      "translation": "这里是派出所。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-020",
+      "jp": "パン屋",
+      "reading": "パンや",
+      "zh": "面包店",
+      "kind": "shop",
+      "color": "#caa76c",
+      "category": "物品与细节",
+      "example": "ここはパン屋です。",
+      "translation": "这里是面包店。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-021",
+      "jp": "花屋",
+      "reading": "はなや",
+      "zh": "花店",
+      "kind": "shop",
+      "color": "#92b397",
+      "category": "物品与细节",
+      "example": "ここは花屋です。",
+      "translation": "这里是花店。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-022",
+      "jp": "本屋",
+      "reading": "ほんや",
+      "zh": "书店",
+      "kind": "shop",
+      "color": "#77999a",
+      "category": "物品与细节",
+      "example": "ここは本屋です。",
+      "translation": "这里是书店。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-024",
+      "jp": "日よけ",
+      "reading": "ひよけ",
+      "zh": "遮阳篷",
+      "kind": "awning",
+      "color": "#a8c6a3",
+      "category": "物品与细节",
+      "example": "これは日よけです。",
+      "translation": "这是遮阳篷。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-025",
+      "jp": "店先",
+      "reading": "みせさき",
+      "zh": "店门前",
+      "kind": "deck",
+      "color": "#c8b58d",
+      "size": [
+        2.1,
+        0.12,
+        1.1
+      ],
+      "category": "物品与细节",
+      "example": "これは店先です。",
+      "translation": "这是店门前。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-026",
+      "jp": "植木鉢",
+      "reading": "うえきばち",
+      "zh": "花盆",
+      "kind": "flowerpot",
+      "category": "物品与细节",
+      "example": "これは植木鉢です。",
+      "translation": "这是花盆。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-027",
+      "jp": "花束",
+      "reading": "はなたば",
+      "zh": "花束",
+      "kind": "bouquet",
+      "category": "物品与细节",
+      "example": "これは花束です。",
+      "translation": "这是花束。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-028",
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "color": "#ac9971",
+      "category": "物品与细节",
+      "example": "これはベンチです。",
+      "translation": "这是长椅。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "street-029",
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "物品与细节",
+      "example": "これはごみ箱です。",
+      "translation": "这是垃圾桶。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "street-030",
+      "jp": "マンホール",
+      "reading": "マンホール",
+      "zh": "井盖",
+      "kind": "manhole",
+      "category": "物品与细节",
+      "example": "これはマンホールです。",
+      "translation": "这是井盖。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-031",
+      "jp": "側溝",
+      "reading": "そっこう",
+      "zh": "排水沟",
+      "kind": "gutter",
+      "color": "#82978f",
+      "size": [
+        0.3,
+        0.02,
+        10.0
+      ],
+      "category": "物品与细节",
+      "example": "これは側溝です。",
+      "translation": "这是排水沟。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-032",
+      "jp": "ガードレール",
+      "reading": "ガードレール",
+      "zh": "护栏",
+      "kind": "rail",
+      "color": "#d5dfce",
+      "size": [
+        0.1,
+        1.0,
+        2.3
+      ],
+      "category": "物品与细节",
+      "example": "これはガードレールです。",
+      "translation": "这是护栏。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-033",
+      "jp": "犬",
+      "reading": "いぬ",
+      "zh": "狗",
+      "kind": "dog",
+      "category": "物品与细节",
+      "example": "これは犬です。",
+      "translation": "这是狗。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "street-034",
+      "jp": "猫",
+      "reading": "ねこ",
+      "zh": "猫",
+      "kind": "cat",
+      "category": "物品与细节",
+      "example": "これは猫です。",
+      "translation": "这是猫。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "street-035",
+      "jp": "リード",
+      "reading": "リード",
+      "zh": "牵引绳",
+      "kind": "leash",
+      "category": "物品与细节",
+      "example": "これはリードです。",
+      "translation": "这是牵引绳。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-036",
+      "jp": "傘",
+      "reading": "かさ",
+      "zh": "雨伞",
+      "kind": "umbrella",
+      "color": "#ab91b2",
+      "category": "物品与细节",
+      "example": "これは傘です。",
+      "translation": "这是雨伞。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-037",
+      "jp": "雨どい",
+      "reading": "あまどい",
+      "zh": "雨水管",
+      "kind": "gutter",
+      "category": "物品与细节",
+      "example": "これは雨どいです。",
+      "translation": "这是雨水管。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-039",
+      "jp": "時計",
+      "reading": "とけい",
+      "zh": "时钟",
+      "kind": "clock",
+      "category": "物品与细节",
+      "example": "これは時計です。",
+      "translation": "这是时钟。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "street-040",
+      "jp": "地面",
+      "reading": "じめん",
+      "zh": "地面",
+      "kind": "ground",
+      "category": "空间与设施",
+      "example": "これは地面です。",
+      "translation": "这是地面。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "street-041",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "street-044",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "street-046",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 4
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "street-047",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "street-048",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "street-049",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "street-050",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "id": "street-detail-0203",
+      "jp": "郵便受け",
+      "reading": "ゆうびんうけ",
+      "zh": "信箱",
+      "kind": "mailbox",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは郵便受けです。",
+      "translation": "这是信箱。"
+    },
+    {
+      "id": "street-detail-0204",
+      "jp": "室外機",
+      "reading": "しつがいき",
+      "zh": "空调外机",
+      "kind": "aircon",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは室外機です。",
+      "translation": "这是空调外机。"
+    },
+    {
+      "id": "street-detail-0205",
+      "jp": "消火栓標識",
+      "reading": "しょうかせんひょうしき",
+      "zh": "消防栓标志",
+      "kind": "roadsign",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは消火栓標識です。",
+      "translation": "这是消防栓标志。"
+    },
+    {
+      "id": "street-specific-01",
+      "jp": "鉢植えの菊",
+      "reading": "はちうえのきく",
+      "zh": "盆栽菊花",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "鉢植えの菊はここにあります。",
+      "detail": {
+        "type": "flower",
+        "color": "#e2c789"
+      },
+      "translation": "盆栽菊花在这里。"
+    },
+    {
+      "id": "street-specific-02",
+      "jp": "紫陽花",
+      "reading": "あじさい",
+      "zh": "绣球花",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "紫陽花はここにあります。",
+      "detail": {
+        "type": "flower",
+        "color": "#b9aad2"
+      },
+      "translation": "绣球花在这里。"
+    },
+    {
+      "id": "street-specific-03",
+      "jp": "店頭の花束",
+      "reading": "てんとうのはなたば",
+      "zh": "店门口花束",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "店頭の花束はここにあります。",
+      "detail": {
+        "type": "flower",
+        "color": "#d5a6b7",
+        "place": [
+          -5,
+          0,
+          0.3,
+          1.6
+        ]
+      },
+      "translation": "店门口花束在这里。"
+    },
+    {
+      "id": "street-specific-04",
+      "jp": "回覧板",
+      "reading": "かいらんばん",
+      "zh": "社区传阅板",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "回覧板はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#b7c7b4"
+      },
+      "translation": "社区传阅板在这里。"
+    },
+    {
+      "id": "street-specific-05",
+      "jp": "駐輪場の精算機",
+      "reading": "ちゅうりんじょうのせいさんき",
+      "zh": "自行车停车处缴费机",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "駐輪場の精算機はここにあります。",
+      "detail": {
+        "type": "terminal",
+        "color": "#a3bfc3",
+        "floor": [
+          -4.5,
+          4
+        ]
+      },
+      "translation": "自行车停车处缴费机在这里。"
+    },
+    {
+      "id": "street-specific-06",
+      "jp": "交通安全の反射バンド",
+      "reading": "こうつうあんぜんのはんしゃバンド",
+      "zh": "交通反光腕带",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "交通安全の反射バンドはここにあります。",
+      "detail": {
+        "type": "band",
+        "color": "#d6c37f",
+        "place": [
+          4,
+          0.68,
+          4.3,
+          1
+        ]
+      },
+      "translation": "交通反光腕带在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 32,
+  "district": 5,
+  "sceneReference": null,
+  "venueRole": {
+    "id": "street-venue-worker",
+    "jp": "花屋の店員",
+    "reading": "はなやのてんいん",
+    "zone": 0,
+    "activity": "花束を作っています。",
+    "readingLine": "はなたばを つくっています。",
+    "verb": "作る → 作っている",
+    "grammar": "花束【を】作る。",
+    "reply": "贈り物ですか。お好きな色を教えてください。",
+    "tools": [
+      "店頭の花束",
+      "鉢植えの菊",
+      "紫陽花"
+    ]
+  }
+}

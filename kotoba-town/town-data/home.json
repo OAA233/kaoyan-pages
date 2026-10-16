@@ -1,0 +1,1071 @@
+{
+  "id": "home",
+  "title": "日式住宅",
+  "jp": "家",
+  "reading": "いえ",
+  "layout": "home",
+  "zones": [
+    {
+      "jp": "玄関",
+      "zh": "玄关"
+    },
+    {
+      "jp": "居間",
+      "zh": "客厅"
+    },
+    {
+      "jp": "台所",
+      "zh": "厨房"
+    },
+    {
+      "jp": "寝室",
+      "zh": "卧室"
+    },
+    {
+      "jp": "洗面所",
+      "zh": "洗面区"
+    },
+    {
+      "jp": "浴室",
+      "zh": "浴室"
+    },
+    {
+      "jp": "ベランダ",
+      "zh": "阳台"
+    }
+  ],
+  "items": [
+    {
+      "id": "home-001",
+      "jp": "玄関",
+      "reading": "げんかん",
+      "zh": "玄关",
+      "kind": "entryfloor",
+      "color": "#aeb8a7",
+      "size": [
+        3.0,
+        0.05,
+        3.0
+      ],
+      "category": "空间与设施",
+      "example": "ここは玄関です。",
+      "translation": "这里是玄关。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-002",
+      "jp": "靴箱",
+      "reading": "くつばこ",
+      "zh": "鞋柜",
+      "kind": "cabinet",
+      "color": "#bca27a",
+      "category": "物品与细节",
+      "example": "これは靴箱です。",
+      "translation": "这是鞋柜。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-003",
+      "jp": "スリッパ",
+      "reading": "スリッパ",
+      "zh": "拖鞋",
+      "kind": "slippers",
+      "color": "#bd8b77",
+      "category": "物品与细节",
+      "example": "これはスリッパです。",
+      "translation": "这是拖鞋。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-004",
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "物品与细节",
+      "example": "これは傘立てです。",
+      "translation": "这是伞架。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-005",
+      "jp": "鍵",
+      "reading": "かぎ",
+      "zh": "钥匙",
+      "kind": "key",
+      "category": "物品与细节",
+      "example": "これは鍵です。",
+      "translation": "这是钥匙。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-006",
+      "jp": "ドア",
+      "reading": "ドア",
+      "zh": "门",
+      "kind": "door",
+      "color": "#a88560",
+      "category": "空间与设施",
+      "example": "これはドアです。",
+      "translation": "这是门。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-007",
+      "jp": "ソファ",
+      "reading": "ソファ",
+      "zh": "沙发",
+      "kind": "sofa",
+      "color": "#809e96",
+      "category": "物品与细节",
+      "example": "これはソファです。",
+      "translation": "这是沙发。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "home-008",
+      "jp": "クッション",
+      "reading": "クッション",
+      "zh": "靠垫",
+      "kind": "cushion",
+      "color": "#dda668",
+      "category": "物品与细节",
+      "example": "これはクッションです。",
+      "translation": "这是靠垫。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-009",
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "茶几",
+      "kind": "lowtable",
+      "color": "#bfa06e",
+      "category": "物品与细节",
+      "example": "これはテーブルです。",
+      "translation": "这是茶几。",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "home-010",
+      "jp": "テレビ",
+      "reading": "テレビ",
+      "zh": "电视",
+      "kind": "tv",
+      "category": "物品与细节",
+      "example": "これはテレビです。",
+      "translation": "这是电视。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "home-011",
+      "jp": "リモコン",
+      "reading": "リモコン",
+      "zh": "遥控器",
+      "kind": "remote",
+      "category": "物品与细节",
+      "example": "これはリモコンです。",
+      "translation": "这是遥控器。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "home-012",
+      "jp": "時計",
+      "reading": "とけい",
+      "zh": "时钟",
+      "kind": "clock",
+      "category": "物品与细节",
+      "example": "これは時計です。",
+      "translation": "这是时钟。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "home-013",
+      "jp": "本棚",
+      "reading": "ほんだな",
+      "zh": "书架",
+      "kind": "bookshelf",
+      "category": "物品与细节",
+      "example": "これは本棚です。",
+      "translation": "这是书架。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-014",
+      "jp": "カーテン",
+      "reading": "カーテン",
+      "zh": "窗帘",
+      "kind": "curtain",
+      "color": "#e0c88f",
+      "category": "物品与细节",
+      "example": "これはカーテンです。",
+      "translation": "这是窗帘。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "home-015",
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "灯具",
+      "kind": "lamp",
+      "category": "物品与细节",
+      "example": "これは照明です。",
+      "translation": "这是灯具。",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "home-016",
+      "jp": "冷蔵庫",
+      "reading": "れいぞうこ",
+      "zh": "冰箱",
+      "kind": "fridge",
+      "category": "物品与细节",
+      "example": "これは冷蔵庫です。",
+      "translation": "这是冰箱。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "home-017",
+      "jp": "流し台",
+      "reading": "ながしだい",
+      "zh": "洗涤槽",
+      "kind": "sink",
+      "category": "物品与细节",
+      "example": "これは流し台です。",
+      "translation": "这是洗涤槽。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "home-018",
+      "jp": "蛇口",
+      "reading": "じゃぐち",
+      "zh": "水龙头",
+      "kind": "tap",
+      "category": "物品与细节",
+      "example": "これは蛇口です。",
+      "translation": "这是水龙头。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-019",
+      "jp": "ガスコンロ",
+      "reading": "ガスコンロ",
+      "zh": "燃气灶",
+      "kind": "stove",
+      "category": "物品与细节",
+      "example": "これはガスコンロです。",
+      "translation": "这是燃气灶。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "home-020",
+      "jp": "フライパン",
+      "reading": "フライパン",
+      "zh": "平底锅",
+      "kind": "pan",
+      "category": "物品与细节",
+      "example": "これはフライパンです。",
+      "translation": "这是平底锅。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "home-021",
+      "jp": "鍋",
+      "reading": "なべ",
+      "zh": "锅",
+      "kind": "pot",
+      "category": "物品与细节",
+      "example": "これは鍋です。",
+      "translation": "这是锅。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "home-022",
+      "jp": "炊飯器",
+      "reading": "すいはんき",
+      "zh": "电饭煲",
+      "kind": "ricecooker",
+      "category": "物品与细节",
+      "example": "これは炊飯器です。",
+      "translation": "这是电饭煲。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "home-023",
+      "jp": "電子レンジ",
+      "reading": "でんしレンジ",
+      "zh": "微波炉",
+      "kind": "microwave",
+      "category": "物品与细节",
+      "example": "これは電子レンジです。",
+      "translation": "这是微波炉。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "home-024",
+      "jp": "食器棚",
+      "reading": "しょっきだな",
+      "zh": "餐具柜",
+      "kind": "cabinet",
+      "category": "物品与细节",
+      "example": "これは食器棚です。",
+      "translation": "这是餐具柜。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "home-025",
+      "jp": "皿",
+      "reading": "さら",
+      "zh": "盘子",
+      "kind": "plate",
+      "category": "物品与细节",
+      "example": "これは皿です。",
+      "translation": "这是盘子。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "home-026",
+      "jp": "スポンジ",
+      "reading": "スポンジ",
+      "zh": "海绵",
+      "kind": "smallblock",
+      "color": "#d9bd5e",
+      "size": [
+        0.2,
+        0.09,
+        0.12
+      ],
+      "category": "物品与细节",
+      "example": "これはスポンジです。",
+      "translation": "这是海绵。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-027",
+      "jp": "洗剤",
+      "reading": "せんざい",
+      "zh": "洗涤剂",
+      "kind": "pumpbottle",
+      "color": "#80b5a2",
+      "category": "物品与细节",
+      "example": "これは洗剤です。",
+      "translation": "这是洗涤剂。",
+      "note": "",
+      "art": [
+        "care",
+        15
+      ],
+      "zone": 0
+    },
+    {
+      "id": "home-028",
+      "jp": "ベッド",
+      "reading": "ベッド",
+      "zh": "床",
+      "kind": "bed",
+      "color": "#a4b8a1",
+      "category": "物品与细节",
+      "example": "これはベッドです。",
+      "translation": "这是床。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "home-029",
+      "jp": "枕",
+      "reading": "まくら",
+      "zh": "枕头",
+      "kind": "pillow",
+      "category": "物品与细节",
+      "example": "これは枕です。",
+      "translation": "这是枕头。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "home-030",
+      "jp": "布団",
+      "reading": "ふとん",
+      "zh": "被子；寝具",
+      "kind": "blanket",
+      "color": "#b5c9b9",
+      "size": [
+        1.8,
+        0.15,
+        1.8
+      ],
+      "category": "物品与细节",
+      "example": "これは布団です。",
+      "translation": "这是被子；寝具。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "home-031",
+      "jp": "目覚まし時計",
+      "reading": "めざましどけい",
+      "zh": "闹钟",
+      "kind": "alarmclock",
+      "category": "物品与细节",
+      "example": "これは目覚まし時計です。",
+      "translation": "这是闹钟。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "home-032",
+      "jp": "クローゼット",
+      "reading": "クローゼット",
+      "zh": "衣柜",
+      "kind": "wardrobe",
+      "category": "物品与细节",
+      "example": "これはクローゼットです。",
+      "translation": "这是衣柜。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "home-033",
+      "jp": "ハンガー",
+      "reading": "ハンガー",
+      "zh": "衣架",
+      "kind": "hanger",
+      "category": "物品与细节",
+      "example": "これはハンガーです。",
+      "translation": "这是衣架。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-034",
+      "jp": "鏡",
+      "reading": "かがみ",
+      "zh": "镜子",
+      "kind": "mirror",
+      "category": "物品与细节",
+      "example": "これは鏡です。",
+      "translation": "这是镜子。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-035",
+      "jp": "洗面台",
+      "reading": "せんめんだい",
+      "zh": "洗脸台",
+      "kind": "sink",
+      "category": "物品与细节",
+      "example": "これは洗面台です。",
+      "translation": "这是洗脸台。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "home-036",
+      "jp": "歯ブラシ",
+      "reading": "はブラシ",
+      "zh": "牙刷",
+      "kind": "toothbrush",
+      "category": "物品与细节",
+      "example": "これは歯ブラシです。",
+      "translation": "这是牙刷。",
+      "note": "",
+      "art": [
+        "care",
+        0
+      ],
+      "zone": 4
+    },
+    {
+      "id": "home-037",
+      "jp": "歯磨き粉",
+      "reading": "はみがきこ",
+      "zh": "牙膏",
+      "kind": "tube",
+      "category": "物品与细节",
+      "example": "これは歯磨き粉です。",
+      "translation": "这是牙膏。",
+      "note": "",
+      "art": [
+        "care",
+        1
+      ],
+      "zone": 0
+    },
+    {
+      "id": "home-038",
+      "jp": "浴槽",
+      "reading": "よくそう",
+      "zh": "浴缸",
+      "kind": "bathtub",
+      "category": "物品与细节",
+      "example": "これは浴槽です。",
+      "translation": "这是浴缸。",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "id": "home-039",
+      "jp": "シャワー",
+      "reading": "シャワー",
+      "zh": "淋浴",
+      "kind": "shower",
+      "category": "物品与细节",
+      "example": "これはシャワーです。",
+      "translation": "这是淋浴。",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "id": "home-040",
+      "jp": "シャンプー",
+      "reading": "シャンプー",
+      "zh": "洗发水",
+      "kind": "pumpbottle",
+      "color": "#bca2b2",
+      "category": "物品与细节",
+      "example": "これはシャンプーです。",
+      "translation": "这是洗发水。",
+      "note": "",
+      "art": [
+        "care",
+        2
+      ],
+      "zone": 0
+    },
+    {
+      "id": "home-041",
+      "jp": "タオル",
+      "reading": "タオル",
+      "zh": "毛巾",
+      "kind": "towel",
+      "category": "物品与细节",
+      "example": "これはタオルです。",
+      "translation": "这是毛巾。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "home-042",
+      "jp": "洗濯機",
+      "reading": "せんたくき",
+      "zh": "洗衣机",
+      "kind": "washer",
+      "category": "物品与细节",
+      "example": "これは洗濯機です。",
+      "translation": "这是洗衣机。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "home-043",
+      "jp": "便器",
+      "reading": "べんき",
+      "zh": "马桶",
+      "kind": "toilet",
+      "category": "物品与细节",
+      "example": "これは便器です。",
+      "translation": "这是马桶。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "home-044",
+      "jp": "トイレットペーパー",
+      "reading": "トイレットペーパー",
+      "zh": "卫生纸",
+      "kind": "paperroll",
+      "category": "物品与细节",
+      "example": "これはトイレットペーパーです。",
+      "translation": "这是卫生纸。",
+      "note": "",
+      "art": [
+        "care",
+        7
+      ],
+      "zone": 0
+    },
+    {
+      "id": "home-045",
+      "jp": "掃除機",
+      "reading": "そうじき",
+      "zh": "吸尘器",
+      "kind": "vacuum",
+      "category": "物品与细节",
+      "example": "これは掃除機です。",
+      "translation": "这是吸尘器。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-047",
+      "jp": "壁",
+      "reading": "かべ",
+      "zh": "墙壁",
+      "kind": "wall-shell",
+      "category": "空间与设施",
+      "example": "これは壁です。",
+      "translation": "这是墙壁。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "home-048",
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空间与设施",
+      "example": "これは窓です。",
+      "translation": "这是窗户。",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "home-049",
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "置物架",
+      "kind": "shelf-support",
+      "category": "空间与设施",
+      "example": "これは棚です。",
+      "translation": "这是置物架。",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "home-050",
+      "jp": "電気",
+      "reading": "でんき",
+      "zh": "灯；照明",
+      "kind": "lighting-shell",
+      "category": "空间与设施",
+      "example": "電気をつけます。",
+      "translation": "开灯。",
+      "note": "这里指照明；「電気」也有电、电力的意思。",
+      "zone": 0
+    },
+    {
+      "jp": "コンディショナー",
+      "reading": "コンディショナー",
+      "zh": "护发素",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        3
+      ],
+      "id": "home-051",
+      "example": "コンディショナーを見てみましょう。",
+      "translation": "看看护发素吧。",
+      "zone": 0
+    },
+    {
+      "jp": "石けん",
+      "reading": "せっけん",
+      "zh": "香皂",
+      "kind": "smallblock",
+      "category": "日用品",
+      "art": [
+        "care",
+        4
+      ],
+      "id": "home-052",
+      "example": "石けんを見てみましょう。",
+      "translation": "看看香皂吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ボディーソープ",
+      "reading": "ボディーソープ",
+      "zh": "沐浴液",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        5
+      ],
+      "id": "home-053",
+      "example": "ボディーソープを見てみましょう。",
+      "translation": "看看沐浴液吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ティッシュ",
+      "reading": "ティッシュ",
+      "zh": "纸巾",
+      "kind": "tissue",
+      "category": "日用品",
+      "art": [
+        "care",
+        6
+      ],
+      "id": "home-054",
+      "example": "ティッシュを見てみましょう。",
+      "translation": "看看纸巾吧。",
+      "zone": 0
+    },
+    {
+      "jp": "箸",
+      "reading": "はし",
+      "zh": "筷子",
+      "kind": "chopsticks",
+      "category": "食器・設備",
+      "id": "home-056",
+      "example": "箸を見てみましょう。",
+      "translation": "看看筷子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "箸置き",
+      "reading": "はしおき",
+      "zh": "筷架",
+      "kind": "smallblock",
+      "category": "食器・設備",
+      "id": "home-057",
+      "example": "箸置きを見てみましょう。",
+      "translation": "看看筷架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "スプーン",
+      "reading": "スプーン",
+      "zh": "勺子",
+      "kind": "ladle",
+      "category": "食器・設備",
+      "id": "home-058",
+      "example": "スプーンを見てみましょう。",
+      "translation": "看看勺子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "フォーク",
+      "reading": "フォーク",
+      "zh": "叉子",
+      "kind": "knife",
+      "category": "食器・設備",
+      "id": "home-059",
+      "example": "フォークを見てみましょう。",
+      "translation": "看看叉子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ナイフ",
+      "reading": "ナイフ",
+      "zh": "餐刀",
+      "kind": "knife",
+      "category": "食器・設備",
+      "id": "home-060",
+      "example": "ナイフを見てみましょう。",
+      "translation": "看看餐刀吧。",
+      "zone": 2
+    },
+    {
+      "jp": "取り皿",
+      "reading": "とりざら",
+      "zh": "分餐小碟",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "home-061",
+      "example": "取り皿を見てみましょう。",
+      "translation": "看看分餐小碟吧。",
+      "zone": 2
+    },
+    {
+      "jp": "茶碗",
+      "reading": "ちゃわん",
+      "zh": "饭碗",
+      "kind": "bowl",
+      "category": "食器・設備",
+      "id": "home-062",
+      "example": "茶碗を見てみましょう。",
+      "translation": "看看饭碗吧。",
+      "zone": 2
+    },
+    {
+      "jp": "湯のみ",
+      "reading": "ゆのみ",
+      "zh": "日式茶杯",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "home-063",
+      "example": "湯のみを見てみましょう。",
+      "translation": "看看日式茶杯吧。",
+      "zone": 2
+    },
+    {
+      "jp": "コップ",
+      "reading": "コップ",
+      "zh": "杯子",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "home-064",
+      "example": "コップを見てみましょう。",
+      "translation": "看看杯子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "おしぼり",
+      "reading": "おしぼり",
+      "zh": "擦手巾",
+      "kind": "towel",
+      "category": "食器・設備",
+      "id": "home-065",
+      "example": "おしぼりを見てみましょう。",
+      "translation": "看看擦手巾吧。",
+      "zone": 4
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "home-066",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "home-069",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 6
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "home-070",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 6
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "home-071",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 6
+    },
+    {
+      "id": "home-detail-0182",
+      "jp": "水切りかご",
+      "reading": "みずきりかご",
+      "zh": "沥水篮",
+      "kind": "basket",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは水切りかごです。",
+      "translation": "这是沥水篮。"
+    },
+    {
+      "id": "home-detail-0183",
+      "jp": "換気扇",
+      "reading": "かんきせん",
+      "zh": "换气扇",
+      "kind": "vent",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは換気扇です。",
+      "translation": "这是换气扇。"
+    },
+    {
+      "id": "home-detail-0184",
+      "jp": "やかん",
+      "reading": "やかん",
+      "zh": "烧水壶",
+      "kind": "kettle",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これはやかんです。",
+      "translation": "这是烧水壶。"
+    },
+    {
+      "id": "home-detail-0185",
+      "jp": "ふきん",
+      "reading": "ふきん",
+      "zh": "厨房抹布",
+      "kind": "towel",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これはふきんです。",
+      "translation": "这是厨房抹布。"
+    },
+    {
+      "id": "home-detail-0186",
+      "jp": "米びつ",
+      "reading": "こめびつ",
+      "zh": "储米箱",
+      "kind": "storage-box",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは米びつです。",
+      "translation": "这是储米箱。"
+    },
+    {
+      "id": "home-specific-01",
+      "jp": "温水洗浄便座リモコン",
+      "reading": "おんすいせんじょうべんざリモコン",
+      "zh": "智能马桶遥控面板",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "温水洗浄便座リモコンはここにあります。",
+      "detail": {
+        "type": "tablet",
+        "color": "#d3ddd0",
+        "place": [
+          4,
+          1.2,
+          0.54,
+          0.75,
+          1.57
+        ]
+      },
+      "translation": "智能马桶遥控面板在这里。"
+    },
+    {
+      "id": "home-specific-02",
+      "jp": "電気ケトル",
+      "reading": "でんきケトル",
+      "zh": "电热水壶",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "電気ケトルはここにあります。",
+      "detail": {
+        "type": "kettle",
+        "color": "#bfd1bb"
+      },
+      "translation": "电热水壶在这里。"
+    },
+    {
+      "id": "home-specific-03",
+      "jp": "食品保存容器",
+      "reading": "しょくひんほぞんようき",
+      "zh": "食品保鲜盒",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "食品保存容器はここにあります。",
+      "detail": {
+        "type": "clear-box",
+        "color": "#b7cabb"
+      },
+      "translation": "食品保鲜盒在这里。"
+    },
+    {
+      "id": "home-specific-04",
+      "jp": "食器用スポンジ",
+      "reading": "しょっきようスポンジ",
+      "zh": "洗碗海绵",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "食器用スポンジはここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#d8c481"
+      },
+      "translation": "洗碗海绵在这里。"
+    },
+    {
+      "id": "home-specific-05",
+      "jp": "洗濯用洗剤の詰め替え",
+      "reading": "せんたくようせんざいのつめかえ",
+      "zh": "洗衣液补充装",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "洗濯用洗剤の詰め替えはここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#acd1bd",
+        "place": [
+          -2,
+          0.97,
+          2,
+          0.9
+        ]
+      },
+      "translation": "洗衣液补充装在这里。"
+    },
+    {
+      "id": "home-specific-06",
+      "jp": "宅配ボックス",
+      "reading": "たくはいボックス",
+      "zh": "快递柜",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "宅配ボックスはここにあります。",
+      "detail": {
+        "type": "terminal",
+        "color": "#c6baa6",
+        "floor": [
+          5.5,
+          1.8
+        ]
+      },
+      "translation": "快递柜在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 25,
+  "district": 4,
+  "sceneReference": "https://jp.toto.com/support/use/",
+  "venueRole": {
+    "id": "home-venue-worker",
+    "jp": "家の人",
+    "reading": "いえのひと",
+    "zone": 2,
+    "activity": "お湯を沸かしています。",
+    "readingLine": "おゆを わかしています。",
+    "verb": "沸かす → 沸かしている",
+    "grammar": "電気ケトル【で】お湯【を】沸かす。",
+    "reply": "お茶をいれましょう。カップを取ってください。",
+    "tools": [
+      "電気ケトル",
+      "やかん",
+      "食品保存容器"
+    ]
+  }
+}

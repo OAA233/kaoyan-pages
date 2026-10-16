@@ -1,0 +1,943 @@
+{
+  "id": "arcade",
+  "title": "游戏厅",
+  "jp": "ゲームセンター",
+  "reading": "ゲームセンター",
+  "layout": "arcade",
+  "zones": [
+    {
+      "jp": "クレーンゲーム",
+      "zh": "抓娃娃区"
+    },
+    {
+      "jp": "レースゲーム",
+      "zh": "街机区"
+    },
+    {
+      "jp": "音楽ゲーム",
+      "zh": "音游区"
+    },
+    {
+      "jp": "プリントシール",
+      "zh": "大头贴区"
+    },
+    {
+      "jp": "受付",
+      "zh": "服务台"
+    },
+    {
+      "jp": "メダルゲーム",
+      "zh": "代币游戏"
+    },
+    {
+      "jp": "体感ゲーム",
+      "zh": "体感游戏"
+    }
+  ],
+  "items": [
+    {
+      "jp": "パソコン",
+      "reading": "パソコン",
+      "zh": "电脑",
+      "kind": "tv",
+      "category": "機器",
+      "id": "arcade-001",
+      "example": "パソコンを見てみましょう。",
+      "translation": "看看电脑吧。",
+      "zone": 4
+    },
+    {
+      "jp": "モニター",
+      "reading": "モニター",
+      "zh": "显示器",
+      "kind": "tv",
+      "category": "機器",
+      "id": "arcade-002",
+      "example": "モニターを見てみましょう。",
+      "translation": "看看显示器吧。",
+      "zone": 1
+    },
+    {
+      "jp": "キーボード",
+      "reading": "キーボード",
+      "zh": "键盘",
+      "kind": "tablet",
+      "category": "機器",
+      "id": "arcade-003",
+      "example": "キーボードを見てみましょう。",
+      "translation": "看看键盘吧。",
+      "zone": 4
+    },
+    {
+      "jp": "マウス",
+      "reading": "マウス",
+      "zh": "鼠标",
+      "kind": "smallblock",
+      "category": "機器",
+      "id": "arcade-004",
+      "example": "マウスを見てみましょう。",
+      "translation": "看看鼠标吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ヘッドホン",
+      "reading": "ヘッドホン",
+      "zh": "耳机",
+      "kind": "headphones",
+      "category": "機器",
+      "id": "arcade-005",
+      "example": "ヘッドホンを見てみましょう。",
+      "translation": "看看耳机吧。",
+      "zone": 2
+    },
+    {
+      "jp": "マイク",
+      "reading": "マイク",
+      "zh": "麦克风",
+      "kind": "microphone",
+      "category": "機器",
+      "id": "arcade-006",
+      "example": "マイクを見てみましょう。",
+      "translation": "看看麦克风吧。",
+      "zone": 4
+    },
+    {
+      "jp": "充電器",
+      "reading": "じゅうでんき",
+      "zh": "充电器",
+      "kind": "smallblock",
+      "category": "機器",
+      "id": "arcade-007",
+      "example": "充電器を見てみましょう。",
+      "translation": "看看充电器吧。",
+      "zone": 4
+    },
+    {
+      "jp": "コンセント",
+      "reading": "コンセント",
+      "zh": "插座",
+      "kind": "outlet",
+      "category": "機器",
+      "id": "arcade-008",
+      "example": "コンセントを見てみましょう。",
+      "translation": "看看插座吧。",
+      "zone": 4
+    },
+    {
+      "jp": "電池",
+      "reading": "でんち",
+      "zh": "电池",
+      "kind": "battery",
+      "category": "機器",
+      "id": "arcade-009",
+      "example": "電池を見てみましょう。",
+      "translation": "看看电池吧。",
+      "zone": 4
+    },
+    {
+      "jp": "タブレット",
+      "reading": "タブレット",
+      "zh": "平板电脑",
+      "kind": "tablet",
+      "category": "機器",
+      "id": "arcade-010",
+      "example": "タブレットを見てみましょう。",
+      "translation": "看看平板电脑吧。",
+      "zone": 4
+    },
+    {
+      "jp": "プリンター",
+      "reading": "プリンター",
+      "zh": "打印机",
+      "kind": "copier",
+      "category": "機器",
+      "id": "arcade-011",
+      "example": "プリンターを見てみましょう。",
+      "translation": "看看打印机吧。",
+      "zone": 4
+    },
+    {
+      "jp": "リモコン",
+      "reading": "リモコン",
+      "zh": "遥控器",
+      "kind": "remote",
+      "category": "機器",
+      "id": "arcade-012",
+      "example": "リモコンを見てみましょう。",
+      "translation": "看看遥控器吧。",
+      "zone": 4
+    },
+    {
+      "jp": "スピーカー",
+      "reading": "スピーカー",
+      "zh": "扬声器",
+      "kind": "speaker",
+      "category": "機器",
+      "id": "arcade-013",
+      "example": "スピーカーを見てみましょう。",
+      "translation": "看看扬声器吧。",
+      "zone": 2
+    },
+    {
+      "jp": "防犯カメラ",
+      "reading": "ぼうはんカメラ",
+      "zh": "监控摄像头",
+      "kind": "camera",
+      "category": "機器",
+      "id": "arcade-014",
+      "example": "防犯カメラを見てみましょう。",
+      "translation": "看看监控摄像头吧。",
+      "zone": 1
+    },
+    {
+      "jp": "時計",
+      "reading": "とけい",
+      "zh": "时钟",
+      "kind": "clock",
+      "category": "機器",
+      "id": "arcade-015",
+      "example": "時計を見てみましょう。",
+      "translation": "看看时钟吧。",
+      "zone": 1
+    },
+    {
+      "jp": "携帯電話",
+      "reading": "けいたいでんわ",
+      "zh": "手机",
+      "kind": "tablet",
+      "category": "機器",
+      "id": "arcade-016",
+      "example": "携帯電話を見てみましょう。",
+      "translation": "看看手机吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ゲーム機",
+      "reading": "ゲームき",
+      "zh": "游戏机",
+      "kind": "vending",
+      "category": "ゲーム",
+      "id": "arcade-017",
+      "example": "ゲーム機を見てみましょう。",
+      "translation": "看看游戏机吧。",
+      "zone": 1
+    },
+    {
+      "jp": "クレーンゲーム",
+      "reading": "クレーンゲーム",
+      "zh": "抓娃娃机",
+      "kind": "display",
+      "category": "ゲーム",
+      "id": "arcade-018",
+      "example": "クレーンゲームを見てみましょう。",
+      "translation": "看看抓娃娃机吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ぬいぐるみ",
+      "reading": "ぬいぐるみ",
+      "zh": "毛绒玩具",
+      "kind": "plush",
+      "category": "ゲーム",
+      "id": "arcade-019",
+      "example": "ぬいぐるみを見てみましょう。",
+      "translation": "看看毛绒玩具吧。",
+      "zone": 0
+    },
+    {
+      "jp": "景品",
+      "reading": "けいひん",
+      "zh": "奖品",
+      "kind": "gift",
+      "category": "ゲーム",
+      "id": "arcade-020",
+      "example": "景品を見てみましょう。",
+      "translation": "看看奖品吧。",
+      "zone": 0
+    },
+    {
+      "jp": "コイン",
+      "reading": "コイン",
+      "zh": "硬币",
+      "kind": "coins",
+      "category": "ゲーム",
+      "id": "arcade-021",
+      "example": "コインを見てみましょう。",
+      "translation": "看看硬币吧。",
+      "zone": 4
+    },
+    {
+      "jp": "両替機",
+      "reading": "りょうがえき",
+      "zh": "换币机",
+      "kind": "change-machine",
+      "category": "ゲーム",
+      "id": "arcade-022",
+      "example": "両替機を見てみましょう。",
+      "translation": "看看换币机吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ボタン",
+      "reading": "ボタン",
+      "zh": "按钮",
+      "kind": "button",
+      "category": "ゲーム",
+      "id": "arcade-023",
+      "example": "ボタンを見てみましょう。",
+      "translation": "看看按钮吧。",
+      "zone": 1
+    },
+    {
+      "jp": "レバー",
+      "reading": "レバー",
+      "zh": "操纵杆",
+      "kind": "pole",
+      "category": "ゲーム",
+      "id": "arcade-024",
+      "example": "レバーを見てみましょう。",
+      "translation": "看看操纵杆吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ハンドル",
+      "reading": "ハンドル",
+      "zh": "方向盘",
+      "kind": "ring",
+      "category": "ゲーム",
+      "id": "arcade-025",
+      "example": "ハンドルを見てみましょう。",
+      "translation": "看看方向盘吧。",
+      "zone": 1
+    },
+    {
+      "jp": "太鼓",
+      "reading": "たいこ",
+      "zh": "太鼓",
+      "kind": "drum",
+      "category": "ゲーム",
+      "id": "arcade-026",
+      "example": "太鼓を見てみましょう。",
+      "translation": "看看太鼓吧。",
+      "zone": 2
+    },
+    {
+      "jp": "プリントシール機",
+      "reading": "プリントシールき",
+      "zh": "大头贴机",
+      "kind": "arcade-real",
+      "category": "ゲーム機",
+      "id": "arcade-027",
+      "example": "プリントシール機で遊びます。",
+      "translation": "看看大头贴机吧。",
+      "zone": 3,
+      "arcade": {
+        "type": "photo",
+        "local": [
+          0,
+          0,
+          -1
+        ],
+        "color": "#c7acd3"
+      },
+      "reference": "https://www.taito.co.jp/store/topics/00001910/19311/4",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。"
+    },
+    {
+      "jp": "音楽ゲーム",
+      "reading": "おんがくゲーム",
+      "zh": "音乐游戏",
+      "kind": "arcade-machine",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "arcade-028",
+      "example": "音楽ゲームを見てみましょう。",
+      "translation": "看看音乐游戏吧。",
+      "zone": 2
+    },
+    {
+      "jp": "プリクラ",
+      "reading": "プリクラ",
+      "zh": "大头贴",
+      "kind": "photo-booth",
+      "category": "場面のことば",
+      "area": 3,
+      "id": "arcade-029",
+      "example": "プリクラを見てみましょう。",
+      "translation": "看看大头贴吧。",
+      "zone": 3
+    },
+    {
+      "jp": "カメラ",
+      "reading": "カメラ",
+      "zh": "相机",
+      "kind": "camera",
+      "category": "場面のことば",
+      "area": 3,
+      "id": "arcade-030",
+      "example": "カメラを見てみましょう。",
+      "translation": "看看相机吧。",
+      "zone": 3
+    },
+    {
+      "jp": "写真",
+      "reading": "しゃしん",
+      "zh": "照片",
+      "kind": "card",
+      "category": "場面のことば",
+      "area": 3,
+      "id": "arcade-031",
+      "example": "写真を見てみましょう。",
+      "translation": "看看照片吧。",
+      "zone": 3
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "arcade-032",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "arcade-035",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "arcade-037",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 4
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "arcade-038",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "arcade-039",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "arcade-040",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "arcade-041",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "arcade-042",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "arcade-043",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 4
+    },
+    {
+      "id": "arcade-detail-0174",
+      "jp": "プライズ",
+      "reading": "プライズ",
+      "zh": "奖品",
+      "kind": "gift",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはプライズです。",
+      "translation": "这是奖品。"
+    },
+    {
+      "id": "arcade-detail-0175",
+      "jp": "取り出し口",
+      "reading": "とりだしぐち",
+      "zh": "取物口",
+      "kind": "hatch",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは取り出し口です。",
+      "translation": "这是取物口。"
+    },
+    {
+      "id": "arcade-detail-0176",
+      "jp": "操作レバー",
+      "reading": "そうさレバー",
+      "zh": "操纵杆",
+      "kind": "joystick",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは操作レバーです。",
+      "translation": "这是操纵杆。"
+    },
+    {
+      "id": "arcade-detail-0177",
+      "jp": "コイン投入口",
+      "reading": "コインとうにゅうぐち",
+      "zh": "投币口",
+      "kind": "slot",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはコイン投入口です。",
+      "translation": "这是投币口。"
+    },
+    {
+      "id": "arcade-real-ufo",
+      "jp": "UFO CATCHER 9",
+      "reading": "ユーフォーキャッチャー ナイン",
+      "zh": "抓娃娃机",
+      "kind": "arcade-real",
+      "zone": 0,
+      "category": "ゲーム機",
+      "arcade": {
+        "type": "claw",
+        "local": [
+          -4,
+          0,
+          -1
+        ],
+        "color": "#e5a3b3"
+      },
+      "reference": "https://am.sega.jp/cad/prize_game/2951",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。",
+      "example": "UFO CATCHER 9で遊びます。",
+      "translation": "玩抓娃娃机。"
+    },
+    {
+      "id": "arcade-real-triple",
+      "jp": "UFO CATCHER TRIPLE",
+      "reading": "ユーフォーキャッチャー トリプル",
+      "zh": "三爪抓娃娃机",
+      "kind": "arcade-real",
+      "zone": 0,
+      "category": "ゲーム機",
+      "arcade": {
+        "type": "claw",
+        "local": [
+          0,
+          0,
+          -1
+        ],
+        "color": "#e5a3b3"
+      },
+      "reference": "https://am-show.sega.jp/jaepo17/lineup_ufotriple.html",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。",
+      "example": "UFO CATCHER TRIPLEで遊びます。",
+      "translation": "玩三爪抓娃娃机。"
+    },
+    {
+      "id": "arcade-real-prize",
+      "jp": "クレーンゲーム機",
+      "reading": "クレーンゲームき",
+      "zh": "抓娃娃机",
+      "kind": "arcade-real",
+      "zone": 0,
+      "category": "ゲーム機",
+      "arcade": {
+        "type": "claw",
+        "local": [
+          4,
+          0,
+          -1
+        ],
+        "color": "#e5a3b3"
+      },
+      "reference": "https://www.taito.co.jp/how-to/",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。",
+      "example": "クレーンゲーム機で遊びます。",
+      "translation": "玩抓娃娃机。"
+    },
+    {
+      "id": "arcade-real-mario",
+      "jp": "マリオカート アーケードグランプリDX",
+      "reading": "マリオカート アーケードグランプリ デラックス",
+      "zh": "马里奥赛车街机",
+      "kind": "arcade-real",
+      "zone": 1,
+      "category": "ゲーム機",
+      "arcade": {
+        "type": "racer",
+        "local": [
+          -4,
+          0,
+          -2
+        ],
+        "color": "#cf8c72"
+      },
+      "reference": "https://www.taito.co.jp/store/topics/00001910/19311/4",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。",
+      "example": "マリオカート アーケードグランプリDXで遊びます。",
+      "translation": "玩马里奥赛车街机。"
+    },
+    {
+      "id": "arcade-real-wangan",
+      "jp": "湾岸ミッドナイト",
+      "reading": "わんがんミッドナイト",
+      "zh": "湾岸赛车",
+      "kind": "arcade-real",
+      "zone": 1,
+      "category": "ゲーム機",
+      "arcade": {
+        "type": "racer",
+        "local": [
+          0,
+          0,
+          -2
+        ],
+        "color": "#cf8c72"
+      },
+      "reference": "https://www.taito.co.jp/store/topics/00001910/19311/4",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。",
+      "example": "湾岸ミッドナイトで遊びます。",
+      "translation": "玩湾岸赛车。"
+    },
+    {
+      "id": "arcade-real-initial",
+      "jp": "頭文字D ARCADE",
+      "reading": "イニシャルディー アーケード",
+      "zh": "头文字D街机",
+      "kind": "arcade-real",
+      "zone": 1,
+      "category": "ゲーム機",
+      "arcade": {
+        "type": "racer",
+        "local": [
+          4,
+          0,
+          -2
+        ],
+        "color": "#cf8c72"
+      },
+      "reference": "https://www.taito.co.jp/store/topics/00001910/19311/4",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。",
+      "example": "頭文字D ARCADEで遊びます。",
+      "translation": "玩头文字D街机。"
+    },
+    {
+      "id": "arcade-real-taiko",
+      "jp": "太鼓の達人",
+      "reading": "たいこのたつじん",
+      "zh": "太鼓达人",
+      "kind": "arcade-real",
+      "zone": 2,
+      "category": "ゲーム機",
+      "arcade": {
+        "type": "taiko",
+        "local": [
+          -4,
+          0,
+          -1
+        ],
+        "color": "#d89b68"
+      },
+      "reference": "https://www.taito.co.jp/store/topics/00001910/19311/4",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。",
+      "example": "太鼓の達人で遊びます。",
+      "translation": "玩太鼓达人。"
+    },
+    {
+      "id": "arcade-real-maimai",
+      "jp": "maimai",
+      "reading": "マイマイ",
+      "zh": "舞萌",
+      "kind": "arcade-real",
+      "zone": 2,
+      "category": "ゲーム機",
+      "arcade": {
+        "type": "maimai",
+        "local": [
+          0,
+          0,
+          -1
+        ],
+        "color": "#a9c4de"
+      },
+      "reference": "https://www.sega.jp/arcade/?page=1",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。",
+      "example": "maimaiで遊びます。",
+      "translation": "玩舞萌。"
+    },
+    {
+      "id": "arcade-real-chunithm",
+      "jp": "CHUNITHM",
+      "reading": "チュウニズム",
+      "zh": "中二节奏",
+      "kind": "arcade-real",
+      "zone": 2,
+      "category": "ゲーム機",
+      "arcade": {
+        "type": "keyboard",
+        "local": [
+          4,
+          0,
+          -1
+        ],
+        "color": "#adb89c"
+      },
+      "reference": "https://www.sega.jp/arcade/?page=1",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。",
+      "example": "CHUNITHMで遊びます。",
+      "translation": "玩中二节奏。"
+    },
+    {
+      "id": "arcade-real-medal",
+      "jp": "メダルプッシャーゲーム",
+      "reading": "メダルプッシャーゲーム",
+      "zh": "推币游戏",
+      "kind": "arcade-real",
+      "zone": 5,
+      "category": "ゲーム機",
+      "arcade": {
+        "type": "medal",
+        "local": [
+          -3,
+          0,
+          -1
+        ],
+        "color": "#cab879"
+      },
+      "reference": "https://www.konami.com/arcadegames/products/site/am_grandcross/basic.html",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。",
+      "example": "メダルプッシャーゲームで遊びます。",
+      "translation": "玩推币游戏。"
+    },
+    {
+      "id": "arcade-real-medal2",
+      "jp": "メダルゲーム機",
+      "reading": "メダルゲームき",
+      "zh": "代币游戏机",
+      "kind": "arcade-real",
+      "zone": 5,
+      "category": "ゲーム機",
+      "arcade": {
+        "type": "medal",
+        "local": [
+          3,
+          0,
+          -1
+        ],
+        "color": "#cab879"
+      },
+      "reference": "https://www.konami.com/arcadegames/products/site/am_grandcross/basic.html",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。",
+      "example": "メダルゲーム機で遊びます。",
+      "translation": "玩代币游戏机。"
+    },
+    {
+      "id": "arcade-real-hockey",
+      "jp": "エアホッケー",
+      "reading": "エアホッケー",
+      "zh": "气垫球",
+      "kind": "arcade-real",
+      "zone": 6,
+      "category": "ゲーム機",
+      "arcade": {
+        "type": "hockey",
+        "local": [
+          0,
+          0,
+          -1
+        ],
+        "color": "#84b5be"
+      },
+      "reference": "https://www.taito.co.jp/store/topics/00001910/19311/4",
+      "noteJa": "実際のゲーム機・種類を参考にした学習用の模型です。",
+      "example": "エアホッケーで遊びます。",
+      "translation": "玩气垫球。"
+    },
+    {
+      "id": "arcade-part-medal",
+      "jp": "メダル",
+      "reading": "メダル",
+      "zh": "代币",
+      "kind": "coins",
+      "zone": 5,
+      "category": "ゲームの道具",
+      "example": "メダルを使います。",
+      "translation": "使用代币。"
+    },
+    {
+      "id": "arcade-part-tray",
+      "jp": "メダル受け皿",
+      "reading": "メダルうけざら",
+      "zh": "代币出口托盘",
+      "kind": "tray",
+      "zone": 5,
+      "category": "ゲームの道具",
+      "example": "メダル受け皿を使います。",
+      "translation": "使用代币出口托盘。"
+    },
+    {
+      "id": "arcade-part-pusher",
+      "jp": "プッシャー",
+      "reading": "プッシャー",
+      "zh": "推板",
+      "kind": "tablet",
+      "zone": 5,
+      "category": "ゲームの道具",
+      "example": "プッシャーを使います。",
+      "translation": "使用推板。"
+    },
+    {
+      "id": "arcade-part-claw",
+      "jp": "アーム",
+      "reading": "アーム",
+      "zh": "机械爪",
+      "kind": "tongs",
+      "zone": 0,
+      "category": "ゲームの道具",
+      "example": "アームを使います。",
+      "translation": "使用机械爪。"
+    },
+    {
+      "id": "arcade-part-pedal",
+      "jp": "アクセル",
+      "reading": "アクセル",
+      "zh": "油门踏板",
+      "kind": "pedal",
+      "zone": 1,
+      "category": "ゲームの道具",
+      "example": "アクセルを使います。",
+      "translation": "使用油门踏板。"
+    },
+    {
+      "id": "arcade-part-brake",
+      "jp": "ブレーキ",
+      "reading": "ブレーキ",
+      "zh": "刹车",
+      "kind": "pedal",
+      "zone": 1,
+      "category": "ゲームの道具",
+      "example": "ブレーキを使います。",
+      "translation": "使用刹车。"
+    },
+    {
+      "id": "arcade-part-shift",
+      "jp": "シフトレバー",
+      "reading": "シフトレバー",
+      "zh": "换挡杆",
+      "kind": "joystick",
+      "zone": 1,
+      "category": "ゲームの道具",
+      "example": "シフトレバーを使います。",
+      "translation": "使用换挡杆。"
+    },
+    {
+      "id": "arcade-part-sticks",
+      "jp": "バチ",
+      "reading": "バチ",
+      "zh": "鼓槌",
+      "kind": "sticks",
+      "zone": 2,
+      "category": "ゲームの道具",
+      "example": "バチを使います。",
+      "translation": "使用鼓槌。"
+    },
+    {
+      "id": "arcade-part-touch",
+      "jp": "タッチパネル",
+      "reading": "タッチパネル",
+      "zh": "触摸面板",
+      "kind": "tablet",
+      "zone": 2,
+      "category": "ゲームの道具",
+      "example": "タッチパネルを使います。",
+      "translation": "使用触摸面板。"
+    },
+    {
+      "id": "arcade-part-keys",
+      "jp": "鍵盤",
+      "reading": "けんばん",
+      "zh": "琴键",
+      "kind": "keyboard",
+      "zone": 2,
+      "category": "ゲームの道具",
+      "example": "鍵盤を使います。",
+      "translation": "使用琴键。"
+    },
+    {
+      "id": "arcade-part-puck",
+      "jp": "パック",
+      "reading": "パック",
+      "zh": "球饼",
+      "kind": "puck",
+      "zone": 6,
+      "category": "ゲームの道具",
+      "example": "パックを使います。",
+      "translation": "使用球饼。"
+    }
+  ],
+  "menus": [],
+  "npc": 22,
+  "district": 3,
+  "venueRole": {
+    "id": "arcade-venue-worker",
+    "jp": "ゲームセンターの店員",
+    "reading": "ゲームセンターのてんいん",
+    "zone": 0,
+    "activity": "景品の位置を直しています。",
+    "readingLine": "けいひんの いちを なおしています。",
+    "verb": "直す → 直している",
+    "grammar": "景品の位置【を】直す。",
+    "reply": "遊び方が分からないときは、店員に聞いてください。",
+    "tools": [
+      "UFO CATCHER 9",
+      "景品",
+      "アーム",
+      "取り出し口"
+    ]
+  }
+}

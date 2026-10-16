@@ -1,0 +1,1048 @@
+{
+  "id": "hundred",
+  "title": "百元店",
+  "jp": "百円ショップ",
+  "reading": "ひゃくえんショップ",
+  "layout": "retail",
+  "zones": [
+    {
+      "jp": "文房具",
+      "zh": "文具区"
+    },
+    {
+      "jp": "台所用品",
+      "zh": "厨房用品区"
+    },
+    {
+      "jp": "掃除用品",
+      "zh": "清洁区"
+    },
+    {
+      "jp": "収納",
+      "zh": "收纳区"
+    },
+    {
+      "jp": "レジ",
+      "zh": "收银区"
+    }
+  ],
+  "items": [
+    {
+      "jp": "鉛筆",
+      "reading": "えんぴつ",
+      "zh": "铅笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "hundred-001",
+      "example": "鉛筆を見てみましょう。",
+      "translation": "看看铅笔吧。",
+      "zone": 0
+    },
+    {
+      "jp": "消しゴム",
+      "reading": "けしゴム",
+      "zh": "橡皮",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "hundred-002",
+      "example": "消しゴムを見てみましょう。",
+      "translation": "看看橡皮吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ボールペン",
+      "reading": "ボールペン",
+      "zh": "圆珠笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "hundred-003",
+      "example": "ボールペンを見てみましょう。",
+      "translation": "看看圆珠笔吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ノート",
+      "reading": "ノート",
+      "zh": "笔记本",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "hundred-004",
+      "example": "ノートを見てみましょう。",
+      "translation": "看看笔记本吧。",
+      "zone": 0
+    },
+    {
+      "jp": "定規",
+      "reading": "じょうぎ",
+      "zh": "尺子",
+      "kind": "ruler",
+      "category": "文具・本",
+      "id": "hundred-007",
+      "example": "定規を見てみましょう。",
+      "translation": "看看尺子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "はさみ",
+      "reading": "はさみ",
+      "zh": "剪刀",
+      "kind": "scissors",
+      "category": "文具・本",
+      "id": "hundred-008",
+      "example": "はさみを見てみましょう。",
+      "translation": "看看剪刀吧。",
+      "zone": 0
+    },
+    {
+      "jp": "のり",
+      "reading": "のり",
+      "zh": "胶水",
+      "kind": "tube",
+      "category": "文具・本",
+      "id": "hundred-009",
+      "example": "のりを見てみましょう。",
+      "translation": "看看胶水吧。",
+      "zone": 0
+    },
+    {
+      "jp": "筆箱",
+      "reading": "ふでばこ",
+      "zh": "笔盒",
+      "kind": "packet",
+      "category": "文具・本",
+      "id": "hundred-010",
+      "example": "筆箱を見てみましょう。",
+      "translation": "看看笔盒吧。",
+      "zone": 0
+    },
+    {
+      "jp": "色鉛筆",
+      "reading": "いろえんぴつ",
+      "zh": "彩色铅笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "hundred-011",
+      "example": "色鉛筆を見てみましょう。",
+      "translation": "看看彩色铅笔吧。",
+      "zone": 0
+    },
+    {
+      "jp": "付箋",
+      "reading": "ふせん",
+      "zh": "便签",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "hundred-012",
+      "example": "付箋を見てみましょう。",
+      "translation": "看看便签吧。",
+      "zone": 0
+    },
+    {
+      "jp": "クリップ",
+      "reading": "クリップ",
+      "zh": "回形针",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "hundred-013",
+      "example": "クリップを見てみましょう。",
+      "translation": "看看回形针吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ホチキス",
+      "reading": "ホチキス",
+      "zh": "订书机",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "hundred-014",
+      "example": "ホチキスを見てみましょう。",
+      "translation": "看看订书机吧。",
+      "zone": 0
+    },
+    {
+      "jp": "封筒",
+      "reading": "ふうとう",
+      "zh": "信封",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "hundred-015",
+      "example": "封筒を見てみましょう。",
+      "translation": "看看信封吧。",
+      "zone": 0
+    },
+    {
+      "jp": "便箋",
+      "reading": "びんせん",
+      "zh": "信纸",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "hundred-016",
+      "example": "便箋を見てみましょう。",
+      "translation": "看看信纸吧。",
+      "zone": 0
+    },
+    {
+      "jp": "はがき",
+      "reading": "はがき",
+      "zh": "明信片",
+      "kind": "card",
+      "category": "文具・本",
+      "id": "hundred-018",
+      "example": "はがきを見てみましょう。",
+      "translation": "看看明信片吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ファイル",
+      "reading": "ファイル",
+      "zh": "文件夹",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "hundred-019",
+      "example": "ファイルを見てみましょう。",
+      "translation": "看看文件夹吧。",
+      "zone": 0
+    },
+    {
+      "jp": "地図",
+      "reading": "ちず",
+      "zh": "地图",
+      "kind": "menu",
+      "category": "文具・本",
+      "id": "hundred-020",
+      "example": "地図を見てみましょう。",
+      "translation": "看看地图吧。",
+      "zone": 0
+    },
+    {
+      "jp": "絵本",
+      "reading": "えほん",
+      "zh": "绘本",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "hundred-025",
+      "example": "絵本を見てみましょう。",
+      "translation": "看看绘本吧。",
+      "zone": 0
+    },
+    {
+      "jp": "歯ブラシ",
+      "reading": "はブラシ",
+      "zh": "牙刷",
+      "kind": "toothbrush",
+      "category": "日用品",
+      "art": [
+        "care",
+        0
+      ],
+      "id": "hundred-027",
+      "example": "歯ブラシを見てみましょう。",
+      "translation": "看看牙刷吧。",
+      "zone": 2
+    },
+    {
+      "jp": "歯磨き粉",
+      "reading": "はみがきこ",
+      "zh": "牙膏",
+      "kind": "tube",
+      "category": "日用品",
+      "art": [
+        "care",
+        1
+      ],
+      "id": "hundred-028",
+      "example": "歯磨き粉を見てみましょう。",
+      "translation": "看看牙膏吧。",
+      "zone": 2
+    },
+    {
+      "jp": "シャンプー",
+      "reading": "シャンプー",
+      "zh": "洗发水",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        2
+      ],
+      "id": "hundred-029",
+      "example": "シャンプーを見てみましょう。",
+      "translation": "看看洗发水吧。",
+      "zone": 2
+    },
+    {
+      "jp": "コンディショナー",
+      "reading": "コンディショナー",
+      "zh": "护发素",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        3
+      ],
+      "id": "hundred-030",
+      "example": "コンディショナーを見てみましょう。",
+      "translation": "看看护发素吧。",
+      "zone": 2
+    },
+    {
+      "jp": "石けん",
+      "reading": "せっけん",
+      "zh": "香皂",
+      "kind": "smallblock",
+      "category": "日用品",
+      "art": [
+        "care",
+        4
+      ],
+      "id": "hundred-031",
+      "example": "石けんを見てみましょう。",
+      "translation": "看看香皂吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ボディーソープ",
+      "reading": "ボディーソープ",
+      "zh": "沐浴液",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        5
+      ],
+      "id": "hundred-032",
+      "example": "ボディーソープを見てみましょう。",
+      "translation": "看看沐浴液吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ティッシュ",
+      "reading": "ティッシュ",
+      "zh": "纸巾",
+      "kind": "tissue",
+      "category": "日用品",
+      "art": [
+        "care",
+        6
+      ],
+      "id": "hundred-033",
+      "example": "ティッシュを見てみましょう。",
+      "translation": "看看纸巾吧。",
+      "zone": 2
+    },
+    {
+      "jp": "トイレットペーパー",
+      "reading": "トイレットペーパー",
+      "zh": "卫生纸",
+      "kind": "paperroll",
+      "category": "日用品",
+      "art": [
+        "care",
+        7
+      ],
+      "id": "hundred-034",
+      "example": "トイレットペーパーを見てみましょう。",
+      "translation": "看看卫生纸吧。",
+      "zone": 2
+    },
+    {
+      "jp": "マスク",
+      "reading": "マスク",
+      "zh": "口罩",
+      "kind": "mask",
+      "category": "日用品",
+      "art": [
+        "care",
+        8
+      ],
+      "id": "hundred-035",
+      "example": "マスクを見てみましょう。",
+      "translation": "看看口罩吧。",
+      "zone": 2
+    },
+    {
+      "jp": "絆創膏",
+      "reading": "ばんそうこう",
+      "zh": "创可贴",
+      "kind": "bandage-strip",
+      "category": "日用品",
+      "art": [
+        "care",
+        9
+      ],
+      "id": "hundred-036",
+      "example": "絆創膏を見てみましょう。",
+      "translation": "看看创可贴吧。",
+      "zone": 2
+    },
+    {
+      "jp": "体温計",
+      "reading": "たいおんけい",
+      "zh": "体温计",
+      "kind": "thermometer",
+      "category": "日用品",
+      "art": [
+        "care",
+        10
+      ],
+      "id": "hundred-037",
+      "example": "体温計を見てみましょう。",
+      "translation": "看看体温计吧。",
+      "zone": 2
+    },
+    {
+      "jp": "化粧水",
+      "reading": "けしょうすい",
+      "zh": "化妆水",
+      "kind": "bottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        12
+      ],
+      "id": "hundred-039",
+      "example": "化粧水を見てみましょう。",
+      "translation": "看看化妆水吧。",
+      "zone": 2
+    },
+    {
+      "jp": "乳液",
+      "reading": "にゅうえき",
+      "zh": "乳液",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        13
+      ],
+      "id": "hundred-040",
+      "example": "乳液を見てみましょう。",
+      "translation": "看看乳液吧。",
+      "zone": 2
+    },
+    {
+      "jp": "日焼け止め",
+      "reading": "ひやけどめ",
+      "zh": "防晒用品",
+      "kind": "tube",
+      "category": "日用品",
+      "art": [
+        "care",
+        14
+      ],
+      "id": "hundred-041",
+      "example": "日焼け止めを見てみましょう。",
+      "translation": "看看防晒用品吧。",
+      "zone": 2
+    },
+    {
+      "jp": "洗剤",
+      "reading": "せんざい",
+      "zh": "清洁剂",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        15
+      ],
+      "id": "hundred-042",
+      "example": "洗剤を見てみましょう。",
+      "translation": "看看清洁剂吧。",
+      "zone": 2
+    },
+    {
+      "jp": "箸",
+      "reading": "はし",
+      "zh": "筷子",
+      "kind": "chopsticks",
+      "category": "食器・設備",
+      "id": "hundred-044",
+      "example": "箸を見てみましょう。",
+      "translation": "看看筷子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "箸置き",
+      "reading": "はしおき",
+      "zh": "筷架",
+      "kind": "smallblock",
+      "category": "食器・設備",
+      "id": "hundred-045",
+      "example": "箸置きを見てみましょう。",
+      "translation": "看看筷架吧。",
+      "zone": 1
+    },
+    {
+      "jp": "スプーン",
+      "reading": "スプーン",
+      "zh": "勺子",
+      "kind": "ladle",
+      "category": "食器・設備",
+      "id": "hundred-046",
+      "example": "スプーンを見てみましょう。",
+      "translation": "看看勺子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "フォーク",
+      "reading": "フォーク",
+      "zh": "叉子",
+      "kind": "knife",
+      "category": "食器・設備",
+      "id": "hundred-047",
+      "example": "フォークを見てみましょう。",
+      "translation": "看看叉子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ナイフ",
+      "reading": "ナイフ",
+      "zh": "餐刀",
+      "kind": "knife",
+      "category": "食器・設備",
+      "id": "hundred-048",
+      "example": "ナイフを見てみましょう。",
+      "translation": "看看餐刀吧。",
+      "zone": 1
+    },
+    {
+      "jp": "皿",
+      "reading": "さら",
+      "zh": "盘子",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "hundred-049",
+      "example": "皿を見てみましょう。",
+      "translation": "看看盘子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "取り皿",
+      "reading": "とりざら",
+      "zh": "分餐小碟",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "hundred-050",
+      "example": "取り皿を見てみましょう。",
+      "translation": "看看分餐小碟吧。",
+      "zone": 1
+    },
+    {
+      "jp": "茶碗",
+      "reading": "ちゃわん",
+      "zh": "饭碗",
+      "kind": "bowl",
+      "category": "食器・設備",
+      "id": "hundred-051",
+      "example": "茶碗を見てみましょう。",
+      "translation": "看看饭碗吧。",
+      "zone": 1
+    },
+    {
+      "jp": "湯のみ",
+      "reading": "ゆのみ",
+      "zh": "日式茶杯",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "hundred-052",
+      "example": "湯のみを見てみましょう。",
+      "translation": "看看日式茶杯吧。",
+      "zone": 1
+    },
+    {
+      "jp": "コップ",
+      "reading": "コップ",
+      "zh": "杯子",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "hundred-053",
+      "example": "コップを見てみましょう。",
+      "translation": "看看杯子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "おしぼり",
+      "reading": "おしぼり",
+      "zh": "擦手巾",
+      "kind": "towel",
+      "category": "食器・設備",
+      "id": "hundred-054",
+      "example": "おしぼりを見てみましょう。",
+      "translation": "看看擦手巾吧。",
+      "zone": 1
+    },
+    {
+      "jp": "トング",
+      "reading": "トング",
+      "zh": "食品夹",
+      "kind": "chopsticks",
+      "category": "食器・設備",
+      "id": "hundred-055",
+      "example": "トングを見てみましょう。",
+      "translation": "看看食品夹吧。",
+      "zone": 1
+    },
+    {
+      "jp": "網",
+      "reading": "あみ",
+      "zh": "烤网",
+      "kind": "net",
+      "category": "食器・設備",
+      "id": "hundred-056",
+      "example": "網を見てみましょう。",
+      "translation": "看看烤网吧。",
+      "zone": 1
+    },
+    {
+      "jp": "包丁",
+      "reading": "ほうちょう",
+      "zh": "菜刀",
+      "kind": "knife",
+      "category": "食器・設備",
+      "id": "hundred-057",
+      "example": "包丁を見てみましょう。",
+      "translation": "看看菜刀吧。",
+      "zone": 1
+    },
+    {
+      "jp": "まな板",
+      "reading": "まないた",
+      "zh": "砧板",
+      "kind": "board",
+      "category": "食器・設備",
+      "id": "hundred-058",
+      "example": "まな板を見てみましょう。",
+      "translation": "看看砧板吧。",
+      "zone": 1
+    },
+    {
+      "jp": "鍋",
+      "reading": "なべ",
+      "zh": "锅",
+      "kind": "pot",
+      "category": "食器・設備",
+      "id": "hundred-059",
+      "example": "鍋を見てみましょう。",
+      "translation": "看看锅吧。",
+      "zone": 1
+    },
+    {
+      "jp": "フライパン",
+      "reading": "フライパン",
+      "zh": "平底锅",
+      "kind": "pan",
+      "category": "食器・設備",
+      "id": "hundred-060",
+      "example": "フライパンを見てみましょう。",
+      "translation": "看看平底锅吧。",
+      "zone": 1
+    },
+    {
+      "jp": "お玉",
+      "reading": "おたま",
+      "zh": "汤勺",
+      "kind": "ladle",
+      "category": "食器・設備",
+      "id": "hundred-061",
+      "example": "お玉を見てみましょう。",
+      "translation": "看看汤勺吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ざる",
+      "reading": "ざる",
+      "zh": "滤篮",
+      "kind": "basket",
+      "category": "食器・設備",
+      "id": "hundred-062",
+      "example": "ざるを見てみましょう。",
+      "translation": "看看滤篮吧。",
+      "zone": 1
+    },
+    {
+      "jp": "やかん",
+      "reading": "やかん",
+      "zh": "水壶",
+      "kind": "kettle",
+      "category": "食器・設備",
+      "id": "hundred-063",
+      "example": "やかんを見てみましょう。",
+      "translation": "看看水壶吧。",
+      "zone": 1
+    },
+    {
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银机",
+      "kind": "register",
+      "category": "食器・設備",
+      "id": "hundred-069",
+      "example": "レジを見てみましょう。",
+      "translation": "看看收银机吧。",
+      "zone": 1
+    },
+    {
+      "jp": "レシート",
+      "reading": "レシート",
+      "zh": "购物小票",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "hundred-070",
+      "example": "レシートを見てみましょう。",
+      "translation": "看看购物小票吧。",
+      "zone": 1
+    },
+    {
+      "jp": "お釣り",
+      "reading": "おつり",
+      "zh": "找零",
+      "kind": "coins",
+      "category": "食器・設備",
+      "id": "hundred-071",
+      "example": "お釣りを見てみましょう。",
+      "translation": "看看找零吧。",
+      "zone": 1
+    },
+    {
+      "jp": "伝票",
+      "reading": "でんぴょう",
+      "zh": "账单",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "hundred-072",
+      "example": "伝票を見てみましょう。",
+      "translation": "看看账单吧。",
+      "zone": 1
+    },
+    {
+      "jp": "スピーカー",
+      "reading": "スピーカー",
+      "zh": "扬声器",
+      "kind": "speaker",
+      "category": "機器",
+      "id": "hundred-073",
+      "example": "スピーカーを見てみましょう。",
+      "translation": "看看扬声器吧。",
+      "zone": 3
+    },
+    {
+      "jp": "防犯カメラ",
+      "reading": "ぼうはんカメラ",
+      "zh": "监控摄像头",
+      "kind": "camera",
+      "category": "機器",
+      "id": "hundred-074",
+      "example": "防犯カメラを見てみましょう。",
+      "translation": "看看监控摄像头吧。",
+      "zone": 3
+    },
+    {
+      "jp": "時計",
+      "reading": "とけい",
+      "zh": "时钟",
+      "kind": "clock",
+      "category": "機器",
+      "id": "hundred-075",
+      "example": "時計を見てみましょう。",
+      "translation": "看看时钟吧。",
+      "zone": 3
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "hundred-077",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "hundred-080",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "hundred-082",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 4
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "hundred-083",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "hundred-084",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "hundred-085",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "hundred-086",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "hundred-087",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "hundred-088",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 4
+    },
+    {
+      "id": "hundred-detail-0149",
+      "jp": "収納ボックス",
+      "reading": "しゅうのうボックス",
+      "zh": "收纳盒",
+      "kind": "storage-box",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは収納ボックスです。",
+      "translation": "这是收纳盒。"
+    },
+    {
+      "id": "hundred-detail-0150",
+      "jp": "洗濯ばさみ",
+      "reading": "せんたくばさみ",
+      "zh": "晾衣夹",
+      "kind": "clip",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは洗濯ばさみです。",
+      "translation": "这是晾衣夹。"
+    },
+    {
+      "id": "hundred-detail-0151",
+      "jp": "結束バンド",
+      "reading": "けっそくバンド",
+      "zh": "扎带",
+      "kind": "resistance-band",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは結束バンドです。",
+      "translation": "这是扎带。"
+    },
+    {
+      "id": "hundred-detail-0152",
+      "jp": "計量カップ",
+      "reading": "けいりょうカップ",
+      "zh": "量杯",
+      "kind": "pitcher",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは計量カップです。",
+      "translation": "这是量杯。"
+    },
+    {
+      "id": "hundred-detail-0153",
+      "jp": "粘着クリーナー",
+      "reading": "ねんちゃくクリーナー",
+      "zh": "粘毛滚筒",
+      "kind": "lint-roller",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは粘着クリーナーです。",
+      "translation": "这是粘毛滚筒。"
+    },
+    {
+      "id": "hundred-product-daiso-glue",
+      "jp": "スティックのり（スリムタイプ）",
+      "reading": "すてぃっくのり すりむたいぷ",
+      "zh": "胶水",
+      "kind": "retail-product",
+      "color": "#f1e2a1",
+      "zone": 0,
+      "category": "商品",
+      "example": "のりを探しています。",
+      "noteJa": "紙と紙を貼り合わせるときに使います。",
+      "product": {
+        "key": "daiso-glue",
+        "generic": "のり",
+        "genericReading": "のり",
+        "brand": "ダイソー",
+        "shape": "stick",
+        "source": "https://jp.daisonet.com/products/4549131988338",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "スティックのり"
+      },
+      "translation": "正在找胶水。"
+    },
+    {
+      "id": "hundred-product-daiso-note",
+      "jp": "メモふせん（100枚）",
+      "reading": "めもふせん ひゃくまい",
+      "zh": "便签",
+      "kind": "retail-product",
+      "color": "#eaca70",
+      "zone": 0,
+      "category": "商品",
+      "example": "付箋を探しています。",
+      "noteJa": "メモを書いて貼れる小さな紙です。",
+      "product": {
+        "key": "daiso-note",
+        "generic": "付箋",
+        "genericReading": "ふせん",
+        "brand": "ダイソー",
+        "shape": "box",
+        "source": "https://jp.daisonet.com/products/4549131646528",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "メモふせん"
+      },
+      "translation": "正在找便签。"
+    },
+    {
+      "id": "hundred-specific-01",
+      "jp": "保存容器",
+      "reading": "ほぞんようき",
+      "zh": "保鲜盒",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "保存容器はここにあります。",
+      "detail": {
+        "type": "clear-box",
+        "color": "#b7c9ba"
+      },
+      "translation": "保鲜盒在这里。"
+    },
+    {
+      "id": "hundred-specific-03",
+      "jp": "フック",
+      "reading": "フック",
+      "zh": "挂钩",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "フックはここにあります。",
+      "detail": {
+        "type": "hook",
+        "color": "#aebba9"
+      },
+      "translation": "挂钩在这里。"
+    },
+    {
+      "id": "hundred-specific-04",
+      "jp": "圧縮袋",
+      "reading": "あっしゅくぶくろ",
+      "zh": "压缩袋",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "圧縮袋はここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#a8c3c9"
+      },
+      "translation": "压缩袋在这里。"
+    },
+    {
+      "id": "hundred-specific-05",
+      "jp": "ラッピング袋",
+      "reading": "ラッピングぶくろ",
+      "zh": "礼品包装袋",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "ラッピング袋はここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#d3acb7"
+      },
+      "translation": "礼品包装袋在这里。"
+    },
+    {
+      "id": "hundred-specific-06",
+      "jp": "チャック付き袋",
+      "reading": "チャックつきぶくろ",
+      "zh": "密封袋",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "チャック付き袋はここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#b8d0bf"
+      },
+      "translation": "密封袋在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 14,
+  "district": 2,
+  "sceneReference": null,
+  "venueRole": {
+    "id": "hundred-venue-worker",
+    "jp": "売り場の店員",
+    "reading": "うりばのてんいん",
+    "zone": 0,
+    "activity": "保存容器を並べています。",
+    "readingLine": "ほぞんようきを ならべています。",
+    "verb": "並べる → 並べている",
+    "grammar": "保存容器【を】棚【に】並べる。",
+    "reply": "台所で使うものは、こちらの棚です。",
+    "tools": [
+      "保存容器",
+      "チャック付き袋",
+      "ラッピング袋"
+    ]
+  }
+}

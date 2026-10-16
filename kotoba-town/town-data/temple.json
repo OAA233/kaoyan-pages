@@ -1,0 +1,777 @@
+{
+  "id": "temple",
+  "title": "日式寺庙",
+  "jp": "お寺",
+  "reading": "おてら",
+  "layout": "temple",
+  "zones": [
+    {
+      "jp": "山門",
+      "zh": "山门"
+    },
+    {
+      "jp": "本堂",
+      "zh": "本堂"
+    },
+    {
+      "jp": "庭園",
+      "zh": "庭院"
+    },
+    {
+      "jp": "鐘楼",
+      "zh": "钟楼"
+    },
+    {
+      "jp": "縁側",
+      "zh": "廊下"
+    }
+  ],
+  "items": [
+    {
+      "id": "temple-001",
+      "jp": "山門",
+      "reading": "さんもん",
+      "zh": "山门",
+      "kind": "templegate",
+      "color": "#925f44",
+      "category": "空间与设施",
+      "example": "ここは山門です。",
+      "translation": "这里是山门。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "temple-002",
+      "jp": "本堂",
+      "reading": "ほんどう",
+      "zh": "正殿",
+      "kind": "templehall",
+      "color": "#9b7054",
+      "category": "空间与设施",
+      "example": "ここは本堂です。",
+      "translation": "这里是正殿。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "temple-003",
+      "jp": "屋根",
+      "reading": "やね",
+      "zh": "屋顶",
+      "kind": "roof",
+      "color": "#535d62",
+      "size": [
+        7.0,
+        1.0,
+        3.0
+      ],
+      "category": "物品与细节",
+      "example": "これは屋根です。",
+      "translation": "这是屋顶。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "temple-004",
+      "jp": "瓦",
+      "reading": "かわら",
+      "zh": "屋瓦",
+      "kind": "roof-tile",
+      "color": "#596977",
+      "category": "物品与细节",
+      "example": "これは瓦です。",
+      "translation": "这是屋瓦。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "temple-005",
+      "jp": "柱",
+      "reading": "はしら",
+      "zh": "柱子",
+      "kind": "pillar",
+      "color": "#a7684b",
+      "category": "物品与细节",
+      "example": "これは柱です。",
+      "translation": "这是柱子。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "temple-006",
+      "jp": "階段",
+      "reading": "かいだん",
+      "zh": "台阶",
+      "kind": "steps",
+      "color": "#bca88b",
+      "category": "物品与细节",
+      "example": "これは階段です。",
+      "translation": "这是台阶。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "temple-007",
+      "jp": "石畳",
+      "reading": "いしだたみ",
+      "zh": "石板路",
+      "kind": "path",
+      "color": "#c1c0ab",
+      "size": [
+        2.0,
+        0.03,
+        5.0
+      ],
+      "category": "空间与设施",
+      "example": "これは石畳です。",
+      "translation": "这是石板路。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-008",
+      "jp": "仏像",
+      "reading": "ぶつぞう",
+      "zh": "佛像",
+      "kind": "buddha",
+      "color": "#ba9b50",
+      "category": "物品与细节",
+      "example": "これは仏像です。",
+      "translation": "这是佛像。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "temple-009",
+      "jp": "賽銭箱",
+      "reading": "さいせんばこ",
+      "zh": "香火钱箱",
+      "kind": "offering",
+      "color": "#997248",
+      "category": "物品与细节",
+      "example": "これは賽銭箱です。",
+      "translation": "这是香火钱箱。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "temple-010",
+      "jp": "線香",
+      "reading": "せんこう",
+      "zh": "线香",
+      "kind": "incense",
+      "category": "物品与细节",
+      "example": "これは線香です。",
+      "translation": "这是线香。",
+      "note": "",
+      "zone": 1,
+      "detail": {
+        "type": "packet"
+      }
+    },
+    {
+      "id": "temple-011",
+      "jp": "香炉",
+      "reading": "こうろ",
+      "zh": "香炉",
+      "kind": "incense-burner",
+      "color": "#748b80",
+      "category": "物品与细节",
+      "example": "これは香炉です。",
+      "translation": "这是香炉。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "temple-012",
+      "jp": "ろうそく",
+      "reading": "ろうそく",
+      "zh": "蜡烛",
+      "kind": "candle",
+      "category": "物品与细节",
+      "example": "これはろうそくです。",
+      "translation": "这是蜡烛。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "temple-013",
+      "jp": "燭台",
+      "reading": "しょくだい",
+      "zh": "烛台",
+      "kind": "candlestand",
+      "category": "物品与细节",
+      "example": "これは燭台です。",
+      "translation": "这是烛台。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "temple-014",
+      "jp": "鐘",
+      "reading": "かね",
+      "zh": "钟",
+      "kind": "bell",
+      "color": "#7c8a66",
+      "category": "物品与细节",
+      "example": "これは鐘です。",
+      "translation": "这是钟。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "temple-015",
+      "jp": "鐘楼",
+      "reading": "しょうろう",
+      "zh": "钟楼",
+      "kind": "bellhouse",
+      "color": "#946b4b",
+      "category": "物品与细节",
+      "example": "これは鐘楼です。",
+      "translation": "这是钟楼。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "temple-016",
+      "jp": "撞木",
+      "reading": "しゅもく",
+      "zh": "撞钟木",
+      "kind": "log",
+      "category": "物品与细节",
+      "example": "これは撞木です。",
+      "translation": "这是撞钟木。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "temple-017",
+      "jp": "石灯籠",
+      "reading": "いしどうろう",
+      "zh": "石灯笼",
+      "kind": "stone-lantern",
+      "category": "物品与细节",
+      "example": "これは石灯籠です。",
+      "translation": "这是石灯笼。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-018",
+      "jp": "庭",
+      "reading": "にわ",
+      "zh": "庭院",
+      "kind": "garden",
+      "color": "#9bb681",
+      "size": [
+        3.0,
+        0.1,
+        5.0
+      ],
+      "category": "空间与设施",
+      "example": "ここは庭です。",
+      "translation": "这里是庭院。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-019",
+      "jp": "池",
+      "reading": "いけ",
+      "zh": "池塘",
+      "kind": "pond",
+      "color": "#82b8ba",
+      "size": [
+        3.0,
+        0.1,
+        2.0
+      ],
+      "category": "物品与细节",
+      "example": "これは池です。",
+      "translation": "这是池塘。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-020",
+      "jp": "鯉",
+      "reading": "こい",
+      "zh": "锦鲤",
+      "kind": "fish",
+      "color": "#edb66b",
+      "category": "物品与细节",
+      "example": "これは鯉です。",
+      "translation": "这是锦鲤。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-021",
+      "jp": "橋",
+      "reading": "はし",
+      "zh": "桥",
+      "kind": "bridge",
+      "color": "#a96f4e",
+      "category": "物品与细节",
+      "example": "これは橋です。",
+      "translation": "这是桥。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-022",
+      "jp": "苔",
+      "reading": "こけ",
+      "zh": "苔藓",
+      "kind": "moss",
+      "color": "#88a169",
+      "category": "物品与细节",
+      "example": "これは苔です。",
+      "translation": "这是苔藓。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-023",
+      "jp": "石",
+      "reading": "いし",
+      "zh": "石头",
+      "kind": "rock",
+      "color": "#939b87",
+      "category": "物品与细节",
+      "example": "これは石です。",
+      "translation": "这是石头。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-024",
+      "jp": "砂利",
+      "reading": "じゃり",
+      "zh": "碎石",
+      "kind": "gravel",
+      "color": "#c4bba2",
+      "size": [
+        2.0,
+        0.03,
+        2.0
+      ],
+      "category": "物品与细节",
+      "example": "これは砂利です。",
+      "translation": "这是碎石。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-025",
+      "jp": "竹",
+      "reading": "たけ",
+      "zh": "竹子",
+      "kind": "bamboo",
+      "category": "物品与细节",
+      "example": "これは竹です。",
+      "translation": "这是竹子。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-026",
+      "jp": "松",
+      "reading": "まつ",
+      "zh": "松树",
+      "kind": "pine",
+      "category": "物品与细节",
+      "example": "これは松です。",
+      "translation": "这是松树。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-027",
+      "jp": "紅葉",
+      "reading": "もみじ",
+      "zh": "枫树；红叶",
+      "kind": "tree",
+      "color": "#ca8756",
+      "category": "物品与细节",
+      "example": "これは紅葉です。",
+      "translation": "这是枫树；红叶。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-028",
+      "jp": "落ち葉",
+      "reading": "おちば",
+      "zh": "落叶",
+      "kind": "petals",
+      "color": "#c48e59",
+      "category": "物品与细节",
+      "example": "これは落ち葉です。",
+      "translation": "这是落叶。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "temple-029",
+      "jp": "塀",
+      "reading": "へい",
+      "zh": "围墙",
+      "kind": "wall",
+      "color": "#d6c8a7",
+      "size": [
+        13.0,
+        1.4,
+        0.25
+      ],
+      "category": "物品与细节",
+      "example": "これは塀です。",
+      "translation": "这是围墙。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "temple-030",
+      "jp": "門扉",
+      "reading": "もんぴ",
+      "zh": "门扇",
+      "kind": "gateleaf",
+      "color": "#8d6246",
+      "category": "物品与细节",
+      "example": "これは門扉です。",
+      "translation": "这是门扇。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "temple-031",
+      "jp": "縁側",
+      "reading": "えんがわ",
+      "zh": "廊檐走廊",
+      "kind": "deck",
+      "color": "#b59b72",
+      "size": [
+        5.0,
+        0.25,
+        1.1
+      ],
+      "category": "物品与细节",
+      "example": "これは縁側です。",
+      "translation": "这是廊檐走廊。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "temple-032",
+      "jp": "座布団",
+      "reading": "ざぶとん",
+      "zh": "坐垫",
+      "kind": "cushion",
+      "color": "#899970",
+      "category": "物品与细节",
+      "example": "これは座布団です。",
+      "translation": "这是坐垫。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "temple-033",
+      "jp": "数珠",
+      "reading": "じゅず",
+      "zh": "念珠",
+      "kind": "beads",
+      "category": "物品与细节",
+      "example": "これは数珠です。",
+      "translation": "这是念珠。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "temple-034",
+      "jp": "御朱印帳",
+      "reading": "ごしゅいんちょう",
+      "zh": "御朱印册",
+      "kind": "book",
+      "color": "#a288a1",
+      "category": "物品与细节",
+      "example": "これは御朱印帳です。",
+      "translation": "这是御朱印册。",
+      "note": "",
+      "zone": 4,
+      "detail": {
+        "type": "goshuin-book",
+        "place": [
+          -4.7,
+          0.67,
+          2.2,
+          1
+        ]
+      }
+    },
+    {
+      "id": "temple-035",
+      "jp": "筆",
+      "reading": "ふで",
+      "zh": "毛笔",
+      "kind": "brush",
+      "category": "物品与细节",
+      "example": "これは筆です。",
+      "translation": "这是毛笔。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "temple-036",
+      "jp": "墨",
+      "reading": "すみ",
+      "zh": "墨",
+      "kind": "smallblock",
+      "color": "#48534a",
+      "size": [
+        0.13,
+        0.06,
+        0.3
+      ],
+      "category": "物品与细节",
+      "example": "これは墨です。",
+      "translation": "这是墨。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "temple-038",
+      "jp": "ほうき",
+      "reading": "ほうき",
+      "zh": "扫帚",
+      "kind": "broom",
+      "category": "物品与细节",
+      "example": "これはほうきです。",
+      "translation": "这是扫帚。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "temple-039",
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "color": "#ad8b61",
+      "category": "物品与细节",
+      "example": "これはベンチです。",
+      "translation": "这是长椅。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "temple-040",
+      "jp": "拝観券",
+      "reading": "はいかんけん",
+      "zh": "参观券",
+      "kind": "card",
+      "category": "物品与细节",
+      "example": "これは拝観券です。",
+      "translation": "这是参观券。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "temple-041",
+      "jp": "地面",
+      "reading": "じめん",
+      "zh": "地面",
+      "kind": "ground",
+      "category": "空间与设施",
+      "example": "これは地面です。",
+      "translation": "这是地面。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "temple-042",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "temple-044",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "temple-046",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 4
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "temple-047",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "temple-048",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "temple-049",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "temple-050",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "temple-051",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "id": "temple-detail-0166",
+      "jp": "木魚",
+      "reading": "もくぎょ",
+      "zh": "木鱼",
+      "kind": "wooden-fish",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは木魚です。",
+      "translation": "这是木鱼。"
+    },
+    {
+      "id": "temple-detail-0167",
+      "jp": "仏壇",
+      "reading": "ぶつだん",
+      "zh": "佛龛",
+      "kind": "buddhist-altar",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは仏壇です。",
+      "translation": "这是佛龛。"
+    },
+    {
+      "id": "temple-specific-01",
+      "jp": "常香炉",
+      "reading": "じょうこうろ",
+      "zh": "常香炉",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "参拝の道具",
+      "detail": {
+        "type": "incense",
+        "floor": [
+          4,
+          2.7,
+          1.5
+        ]
+      },
+      "example": "常香炉を見てみましょう。",
+      "translation": "一起看看常香炉吧。"
+    },
+    {
+      "id": "temple-specific-03",
+      "jp": "柄杓",
+      "reading": "ひしゃく",
+      "zh": "长柄水勺",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "参拝の道具",
+      "detail": {
+        "type": "ladle",
+        "place": [
+          4,
+          0.92,
+          1.4,
+          1
+        ]
+      },
+      "example": "柄杓を見てみましょう。",
+      "translation": "一起看看长柄水勺吧。"
+    },
+    {
+      "id": "temple-specific-05",
+      "jp": "おみくじ筒",
+      "reading": "おみくじづつ",
+      "zh": "抽签筒",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "参拝の道具",
+      "detail": {
+        "type": "omikuji"
+      },
+      "example": "おみくじ筒を見てみましょう。",
+      "translation": "一起看看抽签筒吧。"
+    },
+    {
+      "id": "temple-specific-06",
+      "jp": "納札箱",
+      "reading": "のうさつばこ",
+      "zh": "旧护符回收箱",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "参拝の道具",
+      "detail": {
+        "type": "return-box",
+        "floor": [
+          -5.8,
+          3.7,
+          1.2
+        ]
+      },
+      "example": "納札箱を見てみましょう。",
+      "translation": "一起看看旧护符回收箱吧。"
+    }
+  ],
+  "menus": [],
+  "npc": 18,
+  "district": 3,
+  "sceneReference": "https://www.senso-ji.jp/visit/howto.html"
+}

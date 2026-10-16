@@ -1,0 +1,674 @@
+{
+  "id": "bookstore",
+  "title": "书店",
+  "jp": "本屋",
+  "reading": "ほんや",
+  "layout": "retail",
+  "zones": [
+    {
+      "jp": "小説",
+      "zh": "小说区"
+    },
+    {
+      "jp": "漫画",
+      "zh": "漫画区"
+    },
+    {
+      "jp": "学習",
+      "zh": "学习区"
+    },
+    {
+      "jp": "雑誌",
+      "zh": "杂志区"
+    },
+    {
+      "jp": "文房具",
+      "zh": "文具区"
+    },
+    {
+      "jp": "レジ",
+      "zh": "收银区"
+    }
+  ],
+  "items": [
+    {
+      "jp": "鉛筆",
+      "reading": "えんぴつ",
+      "zh": "铅笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "bookstore-001",
+      "example": "鉛筆を見てみましょう。",
+      "translation": "看看铅笔吧。",
+      "zone": 4
+    },
+    {
+      "jp": "消しゴム",
+      "reading": "けしゴム",
+      "zh": "橡皮",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "bookstore-002",
+      "example": "消しゴムを見てみましょう。",
+      "translation": "看看橡皮吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ボールペン",
+      "reading": "ボールペン",
+      "zh": "圆珠笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "bookstore-003",
+      "example": "ボールペンを見てみましょう。",
+      "translation": "看看圆珠笔吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ノート",
+      "reading": "ノート",
+      "zh": "笔记本",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "bookstore-004",
+      "example": "ノートを見てみましょう。",
+      "translation": "看看笔记本吧。",
+      "zone": 4
+    },
+    {
+      "jp": "教科書",
+      "reading": "きょうかしょ",
+      "zh": "教科书",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "bookstore-005",
+      "example": "教科書を見てみましょう。",
+      "translation": "看看教科书吧。",
+      "zone": 2
+    },
+    {
+      "jp": "辞書",
+      "reading": "じしょ",
+      "zh": "词典",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "bookstore-006",
+      "example": "辞書を見てみましょう。",
+      "translation": "看看词典吧。",
+      "zone": 2
+    },
+    {
+      "jp": "定規",
+      "reading": "じょうぎ",
+      "zh": "尺子",
+      "kind": "ruler",
+      "category": "文具・本",
+      "id": "bookstore-007",
+      "example": "定規を見てみましょう。",
+      "translation": "看看尺子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "はさみ",
+      "reading": "はさみ",
+      "zh": "剪刀",
+      "kind": "scissors",
+      "category": "文具・本",
+      "id": "bookstore-008",
+      "example": "はさみを見てみましょう。",
+      "translation": "看看剪刀吧。",
+      "zone": 4
+    },
+    {
+      "jp": "のり",
+      "reading": "のり",
+      "zh": "胶水",
+      "kind": "tube",
+      "category": "文具・本",
+      "id": "bookstore-009",
+      "example": "のりを見てみましょう。",
+      "translation": "看看胶水吧。",
+      "zone": 4
+    },
+    {
+      "jp": "筆箱",
+      "reading": "ふでばこ",
+      "zh": "笔盒",
+      "kind": "packet",
+      "category": "文具・本",
+      "id": "bookstore-010",
+      "example": "筆箱を見てみましょう。",
+      "translation": "看看笔盒吧。",
+      "zone": 4
+    },
+    {
+      "jp": "色鉛筆",
+      "reading": "いろえんぴつ",
+      "zh": "彩色铅笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "bookstore-011",
+      "example": "色鉛筆を見てみましょう。",
+      "translation": "看看彩色铅笔吧。",
+      "zone": 4
+    },
+    {
+      "jp": "付箋",
+      "reading": "ふせん",
+      "zh": "便签",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "bookstore-012",
+      "example": "付箋を見てみましょう。",
+      "translation": "看看便签吧。",
+      "zone": 4
+    },
+    {
+      "jp": "クリップ",
+      "reading": "クリップ",
+      "zh": "回形针",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "bookstore-013",
+      "example": "クリップを見てみましょう。",
+      "translation": "看看回形针吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ホチキス",
+      "reading": "ホチキス",
+      "zh": "订书机",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "bookstore-014",
+      "example": "ホチキスを見てみましょう。",
+      "translation": "看看订书机吧。",
+      "zone": 4
+    },
+    {
+      "jp": "封筒",
+      "reading": "ふうとう",
+      "zh": "信封",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "bookstore-015",
+      "example": "封筒を見てみましょう。",
+      "translation": "看看信封吧。",
+      "zone": 4
+    },
+    {
+      "jp": "便箋",
+      "reading": "びんせん",
+      "zh": "信纸",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "bookstore-016",
+      "example": "便箋を見てみましょう。",
+      "translation": "看看信纸吧。",
+      "zone": 4
+    },
+    {
+      "jp": "切手",
+      "reading": "きって",
+      "zh": "邮票",
+      "kind": "stamp",
+      "category": "文具・本",
+      "id": "bookstore-017",
+      "example": "切手を見てみましょう。",
+      "translation": "看看邮票吧。",
+      "zone": 4
+    },
+    {
+      "jp": "はがき",
+      "reading": "はがき",
+      "zh": "明信片",
+      "kind": "card",
+      "category": "文具・本",
+      "id": "bookstore-018",
+      "example": "はがきを見てみましょう。",
+      "translation": "看看明信片吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ファイル",
+      "reading": "ファイル",
+      "zh": "文件夹",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "bookstore-019",
+      "example": "ファイルを見てみましょう。",
+      "translation": "看看文件夹吧。",
+      "zone": 4
+    },
+    {
+      "jp": "地図",
+      "reading": "ちず",
+      "zh": "地图",
+      "kind": "menu",
+      "category": "文具・本",
+      "id": "bookstore-020",
+      "example": "地図を見てみましょう。",
+      "translation": "看看地图吧。",
+      "zone": 2
+    },
+    {
+      "jp": "新聞",
+      "reading": "しんぶん",
+      "zh": "报纸",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "bookstore-021",
+      "example": "新聞を見てみましょう。",
+      "translation": "看看报纸吧。",
+      "zone": 3
+    },
+    {
+      "jp": "雑誌",
+      "reading": "ざっし",
+      "zh": "杂志",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "bookstore-022",
+      "example": "雑誌を見てみましょう。",
+      "translation": "看看杂志吧。",
+      "zone": 3
+    },
+    {
+      "jp": "小説",
+      "reading": "しょうせつ",
+      "zh": "小说",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "bookstore-023",
+      "example": "小説を見てみましょう。",
+      "translation": "看看小说吧。",
+      "zone": 0
+    },
+    {
+      "jp": "漫画",
+      "reading": "まんが",
+      "zh": "漫画",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "bookstore-024",
+      "example": "漫画を見てみましょう。",
+      "translation": "看看漫画吧。",
+      "zone": 1
+    },
+    {
+      "jp": "絵本",
+      "reading": "えほん",
+      "zh": "绘本",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "bookstore-025",
+      "example": "絵本を見てみましょう。",
+      "translation": "看看绘本吧。",
+      "zone": 0
+    },
+    {
+      "jp": "参考書",
+      "reading": "さんこうしょ",
+      "zh": "参考书",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "bookstore-026",
+      "example": "参考書を見てみましょう。",
+      "translation": "看看参考书吧。",
+      "zone": 2
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "bookstore-027",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "bookstore-030",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 5
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "bookstore-032",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 5
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "bookstore-033",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 5
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "bookstore-034",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 5
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "bookstore-035",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 5
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "bookstore-036",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 5
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "bookstore-037",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "bookstore-038",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 5
+    },
+    {
+      "id": "bookstore-detail-0157",
+      "jp": "ブックカバー",
+      "reading": "ブックカバー",
+      "zh": "书皮",
+      "kind": "paper",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはブックカバーです。",
+      "translation": "这是书皮。"
+    },
+    {
+      "id": "bookstore-detail-0158",
+      "jp": "しおり",
+      "reading": "しおり",
+      "zh": "书签",
+      "kind": "card",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはしおりです。",
+      "translation": "这是书签。"
+    },
+    {
+      "id": "bookstore-detail-0159",
+      "jp": "平積み",
+      "reading": "ひらづみ",
+      "zh": "平放成摞的陈列书",
+      "kind": "book-stack",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは平積みです。",
+      "translation": "这是平放成摞的陈列书。"
+    },
+    {
+      "id": "bookstore-detail-0160",
+      "jp": "新刊棚",
+      "reading": "しんかんだな",
+      "zh": "新书架",
+      "kind": "bookshelf",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは新刊棚です。",
+      "translation": "这是新书架。"
+    },
+    {
+      "id": "bookstore-detail-0161",
+      "jp": "検索端末",
+      "reading": "けんさくたんまつ",
+      "zh": "检索终端",
+      "kind": "terminal",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは検索端末です。",
+      "translation": "这是检索终端。"
+    },
+    {
+      "id": "bookstore-product-campus",
+      "jp": "キャンパスノート（ドット入り罫線）",
+      "reading": "きゃんぱすのーと どっといりけいせん",
+      "zh": "笔记本",
+      "kind": "retail-product",
+      "color": "#dda899",
+      "zone": 4,
+      "category": "商品",
+      "example": "ノートを探しています。",
+      "noteJa": "「罫線」はノートの線。「ドット入り」は、小さな点があるという意味です。",
+      "product": {
+        "key": "campus",
+        "generic": "ノート",
+        "genericReading": "のーと",
+        "brand": "コクヨ",
+        "shape": "book",
+        "source": "https://www.kokuyo.com/stationery/series/campus/campus-notebook/dot-ruled/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "Campus",
+        "image": "./assets/products/campus.jpg",
+        "imageSource": "https://www.kokuyo.com/system/files/SHA14073.jpg"
+      },
+      "translation": "正在找笔记本。"
+    },
+    {
+      "id": "bookstore-product-mono",
+      "jp": "モノ消しゴム",
+      "reading": "ものけしごむ",
+      "zh": "橡皮",
+      "kind": "retail-product",
+      "color": "#e5e7e1",
+      "zone": 4,
+      "category": "商品",
+      "example": "消しゴムを探しています。",
+      "noteJa": "鉛筆で書いた文字を消すものです。",
+      "product": {
+        "key": "mono",
+        "generic": "消しゴム",
+        "genericReading": "けしごむ",
+        "brand": "トンボ鉛筆",
+        "shape": "eraser",
+        "source": "https://www.tombow.com/products/mono/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "MONO",
+        "image": "./assets/products/mono.png",
+        "imageSource": "https://www.tombow.com/files/2012/12/mono_main.png"
+      },
+      "translation": "正在找橡皮。"
+    },
+    {
+      "id": "bookstore-product-botchan",
+      "jp": "坊っちゃん（新潮文庫）",
+      "reading": "ぼっちゃん しんちょうぶんこ",
+      "zh": "小说",
+      "kind": "retail-product",
+      "color": "#bdba98",
+      "zone": 0,
+      "category": "商品",
+      "example": "小説を探しています。",
+      "noteJa": "夏目漱石の小説。「文庫本」は、小さめの判型の本です。",
+      "product": {
+        "key": "botchan",
+        "generic": "小説",
+        "genericReading": "しょうせつ",
+        "brand": "新潮社",
+        "shape": "book",
+        "source": "https://www.shinchosha.co.jp/book/101003/",
+        "checked": "2026-10-01",
+        "action": "read",
+        "label": "坊っちゃん",
+        "image": "./assets/products/botchan.jpg",
+        "imageSource": "https://www.shinchosha.co.jp/images_v2/book/cover/101003/101003_xl.jpg"
+      },
+      "translation": "正在找小说。"
+    },
+    {
+      "id": "bookstore-product-ningen",
+      "jp": "人間失格（新潮文庫）",
+      "reading": "にんげんしっかく しんちょうぶんこ",
+      "zh": "文库本",
+      "kind": "retail-product",
+      "color": "#aec5be",
+      "zone": 0,
+      "category": "商品",
+      "example": "文庫本を探しています。",
+      "noteJa": "太宰治の小説。「著者」は、本を書いた人です。",
+      "product": {
+        "key": "ningen",
+        "generic": "文庫本",
+        "genericReading": "ぶんこぼん",
+        "brand": "新潮社",
+        "shape": "book",
+        "source": "https://www.shinchosha.co.jp/book/100605/",
+        "checked": "2026-10-01",
+        "action": "read",
+        "label": "人間失格",
+        "image": "./assets/products/ningen.jpg",
+        "imageSource": "https://www.shinchosha.co.jp/images_v2/book/cover/100605/100605_xl.jpg"
+      },
+      "translation": "正在找文库本。"
+    },
+    {
+      "id": "bookstore-specific-01",
+      "jp": "文庫本",
+      "reading": "ぶんこぼん",
+      "zh": "文库本",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "文庫本はここにあります。",
+      "detail": {
+        "type": "paperback",
+        "color": "#c8b49b"
+      },
+      "translation": "文库本在这里。"
+    },
+    {
+      "id": "bookstore-specific-02",
+      "jp": "新書",
+      "reading": "しんしょ",
+      "zh": "新书开本",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "新書はここにあります。",
+      "detail": {
+        "type": "paperback",
+        "color": "#a5c2ba"
+      },
+      "translation": "新书开本在这里。"
+    },
+    {
+      "id": "bookstore-specific-03",
+      "jp": "単行本",
+      "reading": "たんこうぼん",
+      "zh": "单行本",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "単行本はここにあります。",
+      "detail": {
+        "type": "paperback",
+        "color": "#d3b498"
+      },
+      "translation": "单行本在这里。"
+    },
+    {
+      "id": "bookstore-specific-04",
+      "jp": "雑誌の付録",
+      "reading": "ざっしのふろく",
+      "zh": "杂志赠品",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "雑誌の付録はここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#c7b4cc"
+      },
+      "translation": "杂志赠品在这里。"
+    },
+    {
+      "id": "bookstore-specific-06",
+      "jp": "取り寄せ申込書",
+      "reading": "とりよせもうしこみしょ",
+      "zh": "订书单",
+      "kind": "specific-object",
+      "zone": 5,
+      "category": "場所ならではのもの",
+      "example": "取り寄せ申込書はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#bed1b8"
+      },
+      "translation": "订书单在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 16,
+  "district": 2,
+  "sceneReference": null,
+  "venueRole": {
+    "id": "bookstore-venue-worker",
+    "jp": "書店員",
+    "reading": "しょてんいん",
+    "zone": 5,
+    "activity": "本にカバーをかけています。",
+    "readingLine": "ほんに カバーを かけています。",
+    "verb": "かける → かけている",
+    "grammar": "本【に】カバー【を】かける。",
+    "reply": "ブックカバーはおかけしますか。",
+    "tools": [
+      "文庫本",
+      "ブックカバー",
+      "取り寄せ申込書"
+    ]
+  }
+}

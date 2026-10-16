@@ -1,0 +1,626 @@
+{
+  "id": "sento",
+  "title": "钱汤",
+  "jp": "銭湯",
+  "reading": "せんとう",
+  "layout": "bath",
+  "zones": [
+    {
+      "jp": "入口",
+      "zh": "入口"
+    },
+    {
+      "jp": "脱衣所",
+      "zh": "更衣区"
+    },
+    {
+      "jp": "洗い場",
+      "zh": "冲洗区"
+    },
+    {
+      "jp": "浴場",
+      "zh": "浴池"
+    },
+    {
+      "jp": "休憩所",
+      "zh": "休息区"
+    }
+  ],
+  "items": [
+    {
+      "jp": "浴槽",
+      "reading": "よくそう",
+      "zh": "浴缸",
+      "kind": "bathtub",
+      "category": "風呂",
+      "id": "sento-001",
+      "example": "浴槽を見てみましょう。",
+      "translation": "看看浴缸吧。",
+      "zone": 3
+    },
+    {
+      "jp": "シャワー",
+      "reading": "シャワー",
+      "zh": "淋浴",
+      "kind": "shower",
+      "category": "風呂",
+      "id": "sento-002",
+      "example": "シャワーを見てみましょう。",
+      "translation": "看看淋浴吧。",
+      "zone": 2
+    },
+    {
+      "jp": "桶",
+      "reading": "おけ",
+      "zh": "木盆",
+      "kind": "tub",
+      "category": "風呂",
+      "id": "sento-003",
+      "example": "桶を見てみましょう。",
+      "translation": "看看木盆吧。",
+      "zone": 2
+    },
+    {
+      "jp": "脱衣かご",
+      "reading": "だついかご",
+      "zh": "衣篮",
+      "kind": "basket",
+      "category": "風呂",
+      "id": "sento-004",
+      "example": "脱衣かごを見てみましょう。",
+      "translation": "看看衣篮吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ロッカー",
+      "reading": "ロッカー",
+      "zh": "储物柜",
+      "kind": "locker",
+      "category": "風呂",
+      "id": "sento-005",
+      "example": "ロッカーを見てみましょう。",
+      "translation": "看看储物柜吧。",
+      "zone": 1
+    },
+    {
+      "jp": "暖簾",
+      "reading": "のれん",
+      "zh": "门帘",
+      "kind": "noren",
+      "category": "風呂",
+      "id": "sento-006",
+      "example": "暖簾を見てみましょう。",
+      "translation": "看看门帘吧。",
+      "zone": 0
+    },
+    {
+      "jp": "体重計",
+      "reading": "たいじゅうけい",
+      "zh": "体重秤",
+      "kind": "scale",
+      "category": "風呂",
+      "id": "sento-007",
+      "example": "体重計を見てみましょう。",
+      "translation": "看看体重秤吧。",
+      "zone": 1
+    },
+    {
+      "jp": "タオル",
+      "reading": "タオル",
+      "zh": "毛巾",
+      "kind": "towel",
+      "category": "風呂",
+      "id": "sento-008",
+      "example": "タオルを見てみましょう。",
+      "translation": "看看毛巾吧。",
+      "zone": 1
+    },
+    {
+      "jp": "歯ブラシ",
+      "reading": "はブラシ",
+      "zh": "牙刷",
+      "kind": "toothbrush",
+      "category": "日用品",
+      "art": [
+        "care",
+        0
+      ],
+      "id": "sento-009",
+      "example": "歯ブラシを見てみましょう。",
+      "translation": "看看牙刷吧。",
+      "zone": 1
+    },
+    {
+      "jp": "歯磨き粉",
+      "reading": "はみがきこ",
+      "zh": "牙膏",
+      "kind": "tube",
+      "category": "日用品",
+      "art": [
+        "care",
+        1
+      ],
+      "id": "sento-010",
+      "example": "歯磨き粉を見てみましょう。",
+      "translation": "看看牙膏吧。",
+      "zone": 1
+    },
+    {
+      "jp": "シャンプー",
+      "reading": "シャンプー",
+      "zh": "洗发水",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        2
+      ],
+      "id": "sento-011",
+      "example": "シャンプーを見てみましょう。",
+      "translation": "看看洗发水吧。",
+      "zone": 2
+    },
+    {
+      "jp": "コンディショナー",
+      "reading": "コンディショナー",
+      "zh": "护发素",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        3
+      ],
+      "id": "sento-012",
+      "example": "コンディショナーを見てみましょう。",
+      "translation": "看看护发素吧。",
+      "zone": 2
+    },
+    {
+      "jp": "石けん",
+      "reading": "せっけん",
+      "zh": "香皂",
+      "kind": "smallblock",
+      "category": "日用品",
+      "art": [
+        "care",
+        4
+      ],
+      "id": "sento-013",
+      "example": "石けんを見てみましょう。",
+      "translation": "看看香皂吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ボディーソープ",
+      "reading": "ボディーソープ",
+      "zh": "沐浴液",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        5
+      ],
+      "id": "sento-014",
+      "example": "ボディーソープを見てみましょう。",
+      "translation": "看看沐浴液吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ティッシュ",
+      "reading": "ティッシュ",
+      "zh": "纸巾",
+      "kind": "tissue",
+      "category": "日用品",
+      "art": [
+        "care",
+        6
+      ],
+      "id": "sento-015",
+      "example": "ティッシュを見てみましょう。",
+      "translation": "看看纸巾吧。",
+      "zone": 1
+    },
+    {
+      "jp": "トイレットペーパー",
+      "reading": "トイレットペーパー",
+      "zh": "卫生纸",
+      "kind": "paperroll",
+      "category": "日用品",
+      "art": [
+        "care",
+        7
+      ],
+      "id": "sento-016",
+      "example": "トイレットペーパーを見てみましょう。",
+      "translation": "看看卫生纸吧。",
+      "zone": 1
+    },
+    {
+      "jp": "マスク",
+      "reading": "マスク",
+      "zh": "口罩",
+      "kind": "mask",
+      "category": "日用品",
+      "art": [
+        "care",
+        8
+      ],
+      "id": "sento-017",
+      "example": "マスクを見てみましょう。",
+      "translation": "看看口罩吧。",
+      "zone": 1
+    },
+    {
+      "jp": "絆創膏",
+      "reading": "ばんそうこう",
+      "zh": "创可贴",
+      "kind": "bandage-strip",
+      "category": "日用品",
+      "art": [
+        "care",
+        9
+      ],
+      "id": "sento-018",
+      "example": "絆創膏を見てみましょう。",
+      "translation": "看看创可贴吧。",
+      "zone": 1
+    },
+    {
+      "jp": "体温計",
+      "reading": "たいおんけい",
+      "zh": "体温计",
+      "kind": "thermometer",
+      "category": "日用品",
+      "art": [
+        "care",
+        10
+      ],
+      "id": "sento-019",
+      "example": "体温計を見てみましょう。",
+      "translation": "看看体温计吧。",
+      "zone": 1
+    },
+    {
+      "jp": "目薬",
+      "reading": "めぐすり",
+      "zh": "眼药水",
+      "kind": "eyedrops",
+      "category": "日用品",
+      "art": [
+        "care",
+        11
+      ],
+      "id": "sento-020",
+      "example": "目薬を見てみましょう。",
+      "translation": "看看眼药水吧。",
+      "zone": 1
+    },
+    {
+      "jp": "化粧水",
+      "reading": "けしょうすい",
+      "zh": "化妆水",
+      "kind": "bottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        12
+      ],
+      "id": "sento-021",
+      "example": "化粧水を見てみましょう。",
+      "translation": "看看化妆水吧。",
+      "zone": 1
+    },
+    {
+      "jp": "乳液",
+      "reading": "にゅうえき",
+      "zh": "乳液",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        13
+      ],
+      "id": "sento-022",
+      "example": "乳液を見てみましょう。",
+      "translation": "看看乳液吧。",
+      "zone": 1
+    },
+    {
+      "jp": "日焼け止め",
+      "reading": "ひやけどめ",
+      "zh": "防晒用品",
+      "kind": "tube",
+      "category": "日用品",
+      "art": [
+        "care",
+        14
+      ],
+      "id": "sento-023",
+      "example": "日焼け止めを見てみましょう。",
+      "translation": "看看防晒用品吧。",
+      "zone": 1
+    },
+    {
+      "jp": "洗剤",
+      "reading": "せんざい",
+      "zh": "清洁剂",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        15
+      ],
+      "id": "sento-024",
+      "example": "洗剤を見てみましょう。",
+      "translation": "看看清洁剂吧。",
+      "zone": 1
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "sento-025",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "sento-028",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "sento-030",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 4
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "sento-031",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "sento-032",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "sento-033",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "sento-034",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "sento-035",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "sento-036",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 4
+    },
+    {
+      "id": "sento-detail-0168",
+      "jp": "カラン",
+      "reading": "カラン",
+      "zh": "浴场水龙头",
+      "kind": "tap",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これはカランです。",
+      "translation": "这是浴场水龙头。"
+    },
+    {
+      "id": "sento-detail-0169",
+      "jp": "風呂椅子",
+      "reading": "ふろいす",
+      "zh": "洗浴凳",
+      "kind": "stool",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは風呂椅子です。",
+      "translation": "这是洗浴凳。"
+    },
+    {
+      "id": "sento-detail-0170",
+      "jp": "湯おけ",
+      "reading": "ゆおけ",
+      "zh": "洗澡盆",
+      "kind": "tub",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは湯おけです。",
+      "translation": "这是洗澡盆。"
+    },
+    {
+      "id": "sento-detail-0171",
+      "jp": "ボディータオル",
+      "reading": "ボディータオル",
+      "zh": "搓澡巾",
+      "kind": "towel",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これはボディータオルです。",
+      "translation": "这是搓澡巾。"
+    },
+    {
+      "id": "sento-detail-0172",
+      "jp": "水風呂",
+      "reading": "みずぶろ",
+      "zh": "冷水浴池",
+      "kind": "pool",
+      "zone": 3,
+      "category": "场所细节",
+      "example": "これは水風呂です。",
+      "translation": "这是冷水浴池。"
+    },
+    {
+      "id": "sento-detail-0173",
+      "jp": "下足箱",
+      "reading": "げそくばこ",
+      "zh": "入浴鞋柜",
+      "kind": "cabinet",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは下足箱です。",
+      "translation": "这是入浴鞋柜。"
+    },
+    {
+      "id": "sento-specific-01",
+      "jp": "サウナマット",
+      "reading": "サウナマット",
+      "zh": "桑拿垫",
+      "kind": "mat",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "サウナマットはここにあります。",
+      "translation": "桑拿垫在这里。"
+    },
+    {
+      "id": "sento-specific-02",
+      "jp": "サウナ用砂時計",
+      "reading": "サウナようすなどけい",
+      "zh": "桑拿沙漏",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "サウナ用砂時計はここにあります。",
+      "detail": {
+        "type": "hourglass",
+        "color": "#c19f71"
+      },
+      "translation": "桑拿沙漏在这里。"
+    },
+    {
+      "id": "sento-specific-03",
+      "jp": "水風呂の温度計",
+      "reading": "みずぶろのおんどけい",
+      "zh": "冷水池温度计",
+      "kind": "thermometer",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "水風呂の温度計はここにあります。",
+      "translation": "冷水池温度计在这里。"
+    },
+    {
+      "id": "sento-specific-04",
+      "jp": "ロッカーキー",
+      "reading": "ロッカーキー",
+      "zh": "储物柜钥匙",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "ロッカーキーはここにあります。",
+      "detail": {
+        "type": "key",
+        "color": "#c3bd85"
+      },
+      "translation": "储物柜钥匙在这里。"
+    },
+    {
+      "id": "sento-specific-05",
+      "jp": "回数券",
+      "reading": "かいすうけん",
+      "zh": "多次入浴券",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "回数券はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#cbb698"
+      },
+      "translation": "多次入浴券在这里。"
+    },
+    {
+      "id": "sento-specific-06",
+      "jp": "入浴券",
+      "reading": "にゅうよくけん",
+      "zh": "入浴券",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "入浴券はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#bac6d3"
+      },
+      "translation": "入浴券在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 21,
+  "district": 3,
+  "sceneReference": "https://1010.kyoto/how_to_use/",
+  "venueRole": {
+    "id": "sento-venue-worker",
+    "jp": "フロントの係",
+    "reading": "フロントのかかり",
+    "zone": 0,
+    "activity": "入浴券を受け取っています。",
+    "readingLine": "にゅうよくけんを うけとっています。",
+    "verb": "受け取る → 受け取っている",
+    "grammar": "お客様【から】入浴券【を】受け取る。",
+    "reply": "下足箱に靴を入れてから、受付へどうぞ。",
+    "tools": [
+      "入浴券",
+      "下足箱",
+      "ロッカーキー"
+    ]
+  }
+}

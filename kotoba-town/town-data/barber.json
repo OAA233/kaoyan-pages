@@ -1,0 +1,553 @@
+{
+  "id": "barber",
+  "title": "理发店",
+  "jp": "理髪店",
+  "reading": "りはつてん",
+  "layout": "service",
+  "zones": [
+    {
+      "jp": "受付",
+      "zh": "前台"
+    },
+    {
+      "jp": "カット",
+      "zh": "理发区"
+    },
+    {
+      "jp": "シャンプー",
+      "zh": "洗头区"
+    },
+    {
+      "jp": "待合",
+      "zh": "等候区"
+    }
+  ],
+  "items": [
+    {
+      "jp": "シャンプー",
+      "reading": "シャンプー",
+      "zh": "洗发水",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        2
+      ],
+      "id": "barber-003",
+      "example": "シャンプーを見てみましょう。",
+      "translation": "看看洗发水吧。",
+      "zone": 2
+    },
+    {
+      "jp": "コンディショナー",
+      "reading": "コンディショナー",
+      "zh": "护发素",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        3
+      ],
+      "id": "barber-004",
+      "example": "コンディショナーを見てみましょう。",
+      "translation": "看看护发素吧。",
+      "zone": 2
+    },
+    {
+      "jp": "石けん",
+      "reading": "せっけん",
+      "zh": "香皂",
+      "kind": "smallblock",
+      "category": "日用品",
+      "art": [
+        "care",
+        4
+      ],
+      "id": "barber-005",
+      "example": "石けんを見てみましょう。",
+      "translation": "看看香皂吧。",
+      "zone": 2
+    },
+    {
+      "jp": "洗顔料",
+      "reading": "せんがんりょう",
+      "zh": "洁面产品",
+      "kind": "tube",
+      "category": "日用品",
+      "id": "barber-007",
+      "example": "洗顔料を見てみましょう。",
+      "translation": "看看洁面产品吧。",
+      "zone": 0
+    },
+    {
+      "jp": "クリーム",
+      "reading": "クリーム",
+      "zh": "面霜",
+      "kind": "yogurt",
+      "category": "日用品",
+      "id": "barber-008",
+      "example": "クリームを見てみましょう。",
+      "translation": "看看面霜吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ハンドクリーム",
+      "reading": "ハンドクリーム",
+      "zh": "护手霜",
+      "kind": "tube",
+      "category": "日用品",
+      "id": "barber-009",
+      "example": "ハンドクリームを見てみましょう。",
+      "translation": "看看护手霜吧。",
+      "zone": 0
+    },
+    {
+      "jp": "鏡",
+      "reading": "かがみ",
+      "zh": "镜子",
+      "kind": "mirror",
+      "category": "日用品",
+      "id": "barber-014",
+      "example": "鏡を見てみましょう。",
+      "translation": "看看镜子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "くし",
+      "reading": "くし",
+      "zh": "梳子",
+      "kind": "comb",
+      "category": "日用品",
+      "id": "barber-015",
+      "example": "くしを見てみましょう。",
+      "translation": "看看梳子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ブラシ",
+      "reading": "ブラシ",
+      "zh": "刷子",
+      "kind": "brush",
+      "category": "日用品",
+      "id": "barber-016",
+      "example": "ブラシを見てみましょう。",
+      "translation": "看看刷子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "綿棒",
+      "reading": "めんぼう",
+      "zh": "棉签",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "barber-017",
+      "example": "綿棒を見てみましょう。",
+      "translation": "看看棉签吧。",
+      "zone": 0
+    },
+    {
+      "jp": "コットン",
+      "reading": "コットン",
+      "zh": "化妆棉",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "barber-018",
+      "example": "コットンを見てみましょう。",
+      "translation": "看看化妆棉吧。",
+      "zone": 0
+    },
+    {
+      "jp": "爪切り",
+      "reading": "つめきり",
+      "zh": "指甲剪",
+      "kind": "smallblock",
+      "category": "日用品",
+      "id": "barber-019",
+      "example": "爪切りを見てみましょう。",
+      "translation": "看看指甲剪吧。",
+      "zone": 0
+    },
+    {
+      "jp": "かみそり",
+      "reading": "かみそり",
+      "zh": "剃须刀",
+      "kind": "smallblock",
+      "category": "日用品",
+      "id": "barber-020",
+      "example": "かみそりを見てみましょう。",
+      "translation": "看看剃须刀吧。",
+      "zone": 0
+    },
+    {
+      "jp": "はさみ",
+      "reading": "はさみ",
+      "zh": "剪刀",
+      "kind": "scissors",
+      "category": "理髪",
+      "id": "barber-021",
+      "example": "はさみを見てみましょう。",
+      "translation": "看看剪刀吧。",
+      "zone": 1
+    },
+    {
+      "jp": "バリカン",
+      "reading": "バリカン",
+      "zh": "理发推子",
+      "kind": "clipper",
+      "category": "理髪",
+      "id": "barber-022",
+      "example": "バリカンを見てみましょう。",
+      "translation": "看看理发推子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ドライヤー",
+      "reading": "ドライヤー",
+      "zh": "吹风机",
+      "kind": "hairdryer",
+      "category": "理髪",
+      "id": "barber-023",
+      "example": "ドライヤーを見てみましょう。",
+      "translation": "看看吹风机吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ケープ",
+      "reading": "ケープ",
+      "zh": "理发围布",
+      "kind": "apron",
+      "category": "理髪",
+      "id": "barber-024",
+      "example": "ケープを見てみましょう。",
+      "translation": "看看理发围布吧。",
+      "zone": 0
+    },
+    {
+      "jp": "シャンプー台",
+      "reading": "シャンプーだい",
+      "zh": "洗发台",
+      "kind": "shampoo-chair",
+      "category": "理髪",
+      "id": "barber-025",
+      "example": "シャンプー台を見てみましょう。",
+      "translation": "看看洗发台吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ヘアカタログ",
+      "reading": "ヘアカタログ",
+      "zh": "发型图册",
+      "kind": "book",
+      "category": "理髪",
+      "id": "barber-027",
+      "example": "ヘアカタログを見てみましょう。",
+      "translation": "看看发型图册吧。",
+      "zone": 3
+    },
+    {
+      "jp": "整髪料",
+      "reading": "せいはつりょう",
+      "zh": "美发定型产品",
+      "kind": "bottle",
+      "category": "理髪",
+      "id": "barber-028",
+      "example": "整髪料を見てみましょう。",
+      "translation": "看看美发定型产品吧。",
+      "zone": 1
+    },
+    {
+      "jp": "受付",
+      "reading": "うけつけ",
+      "zh": "前台",
+      "kind": "counter",
+      "category": "場面のことば",
+      "area": 0,
+      "id": "barber-029",
+      "example": "受付を見てみましょう。",
+      "translation": "看看前台吧。",
+      "zone": 0
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "理发椅",
+      "kind": "chair",
+      "category": "場面のことば",
+      "area": 1,
+      "id": "barber-030",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看理发椅吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ソファ",
+      "reading": "ソファ",
+      "zh": "沙发",
+      "kind": "sofa",
+      "category": "場面のことば",
+      "area": 3,
+      "id": "barber-031",
+      "example": "ソファを見てみましょう。",
+      "translation": "看看沙发吧。",
+      "zone": 3
+    },
+    {
+      "jp": "雑誌",
+      "reading": "ざっし",
+      "zh": "杂志",
+      "kind": "book",
+      "category": "場面のことば",
+      "area": 3,
+      "id": "barber-032",
+      "example": "雑誌を見てみましょう。",
+      "translation": "看看杂志吧。",
+      "zone": 3
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "barber-033",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "barber-036",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "barber-038",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 3
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "barber-039",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "barber-040",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "barber-041",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 3
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "barber-042",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "barber-043",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 3
+    },
+    {
+      "id": "barber-detail-0201",
+      "jp": "理容椅子",
+      "reading": "りよういす",
+      "zh": "理发椅",
+      "kind": "barber-chair",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは理容椅子です。",
+      "translation": "这是理发椅。"
+    },
+    {
+      "id": "barber-detail-0202",
+      "jp": "消毒器",
+      "reading": "しょうどくき",
+      "zh": "消毒柜",
+      "kind": "cabinet",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは消毒器です。",
+      "translation": "这是消毒柜。"
+    },
+    {
+      "id": "barber-product-essential",
+      "jp": "エッセンシャル ふんわりうるツヤ シャンプー",
+      "reading": "えっせんしゃる ふんわりうるつや しゃんぷー",
+      "zh": "洗发水",
+      "kind": "retail-product",
+      "color": "#e6b499",
+      "zone": 3,
+      "category": "商品",
+      "example": "シャンプーを探しています。",
+      "noteJa": "髪を洗うためのもの。「詰め替え用」は、中身を移して使う商品です。",
+      "product": {
+        "key": "essential",
+        "generic": "シャンプー",
+        "genericReading": "しゃんぷー",
+        "brand": "花王",
+        "shape": "pump",
+        "source": "https://www.kao-kirei.com/jp/en/brand/khg/essential/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "Essential",
+        "image": "./assets/products/essential.jpg",
+        "imageSource": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-kirei-com/jp/ja/item/khg/essential/25502827/GG01.jpg"
+      },
+      "translation": "正在找洗发水。"
+    },
+    {
+      "id": "barber-specific-01",
+      "jp": "シザーケース",
+      "reading": "シザーケース",
+      "zh": "剪刀包",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "シザーケースはここにあります。",
+      "detail": {
+        "type": "hairtools",
+        "color": "#bda283"
+      },
+      "translation": "剪刀包在这里。"
+    },
+    {
+      "id": "barber-specific-02",
+      "jp": "ネックペーパー",
+      "reading": "ネックペーパー",
+      "zh": "理发围颈纸",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "ネックペーパーはここにあります。",
+      "detail": {
+        "type": "roll",
+        "color": "#cccbb8"
+      },
+      "translation": "理发围颈纸在这里。"
+    },
+    {
+      "id": "barber-specific-03",
+      "jp": "ヘアワックス",
+      "reading": "ヘアワックス",
+      "zh": "发蜡",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "ヘアワックスはここにあります。",
+      "detail": {
+        "type": "wax",
+        "color": "#c6bba0"
+      },
+      "translation": "发蜡在这里。"
+    },
+    {
+      "id": "barber-specific-04",
+      "jp": "シェービングブラシ",
+      "reading": "シェービングブラシ",
+      "zh": "剃须刷",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "シェービングブラシはここにあります。",
+      "detail": {
+        "type": "brush",
+        "color": "#ad9989"
+      },
+      "translation": "剃须刷在这里。"
+    },
+    {
+      "id": "barber-specific-05",
+      "jp": "予約カード",
+      "reading": "よやくカード",
+      "zh": "预约卡",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "予約カードはここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#c1cbb9"
+      },
+      "translation": "预约卡在这里。"
+    },
+    {
+      "id": "barber-specific-06",
+      "jp": "使い捨てコーム",
+      "reading": "つかいすてコーム",
+      "zh": "一次性梳子",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "使い捨てコームはここにあります。",
+      "detail": {
+        "type": "comb",
+        "color": "#b4c3b4"
+      },
+      "translation": "一次性梳子在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 31,
+  "district": 4,
+  "sceneReference": "https://www.qbhouse.co.jp/guidance/",
+  "venueRole": {
+    "id": "barber-venue-worker",
+    "jp": "理容師",
+    "reading": "りようし",
+    "zone": 1,
+    "activity": "髪を切っています。",
+    "readingLine": "かみを きっています。",
+    "verb": "切る → 切っている",
+    "grammar": "はさみ【で】髪【を】切る。",
+    "reply": "どのくらいお切りしますか。",
+    "tools": [
+      "はさみ",
+      "シザーケース",
+      "ネックペーパー"
+    ]
+  }
+}

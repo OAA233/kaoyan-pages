@@ -1,0 +1,927 @@
+{
+  "id": "school",
+  "title": "学校",
+  "jp": "学校",
+  "reading": "がっこう",
+  "layout": "school",
+  "zones": [
+    {
+      "jp": "教室",
+      "zh": "教室"
+    },
+    {
+      "jp": "図書室",
+      "zh": "图书室"
+    },
+    {
+      "jp": "保健室",
+      "zh": "保健室"
+    },
+    {
+      "jp": "廊下",
+      "zh": "走廊"
+    },
+    {
+      "jp": "校庭",
+      "zh": "操场"
+    },
+    {
+      "jp": "下駄箱",
+      "zh": "鞋柜区"
+    }
+  ],
+  "items": [
+    {
+      "jp": "鉛筆",
+      "reading": "えんぴつ",
+      "zh": "铅笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "school-001",
+      "example": "鉛筆を見てみましょう。",
+      "translation": "看看铅笔吧。",
+      "zone": 0
+    },
+    {
+      "jp": "消しゴム",
+      "reading": "けしゴム",
+      "zh": "橡皮",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "school-002",
+      "example": "消しゴムを見てみましょう。",
+      "translation": "看看橡皮吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ボールペン",
+      "reading": "ボールペン",
+      "zh": "圆珠笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "school-003",
+      "example": "ボールペンを見てみましょう。",
+      "translation": "看看圆珠笔吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ノート",
+      "reading": "ノート",
+      "zh": "笔记本",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "school-004",
+      "example": "ノートを見てみましょう。",
+      "translation": "看看笔记本吧。",
+      "zone": 0
+    },
+    {
+      "jp": "教科書",
+      "reading": "きょうかしょ",
+      "zh": "教科书",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "school-005",
+      "example": "教科書を見てみましょう。",
+      "translation": "看看教科书吧。",
+      "zone": 0
+    },
+    {
+      "jp": "辞書",
+      "reading": "じしょ",
+      "zh": "词典",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "school-006",
+      "example": "辞書を見てみましょう。",
+      "translation": "看看词典吧。",
+      "zone": 1
+    },
+    {
+      "jp": "定規",
+      "reading": "じょうぎ",
+      "zh": "尺子",
+      "kind": "ruler",
+      "category": "文具・本",
+      "id": "school-007",
+      "example": "定規を見てみましょう。",
+      "translation": "看看尺子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "はさみ",
+      "reading": "はさみ",
+      "zh": "剪刀",
+      "kind": "scissors",
+      "category": "文具・本",
+      "id": "school-008",
+      "example": "はさみを見てみましょう。",
+      "translation": "看看剪刀吧。",
+      "zone": 0
+    },
+    {
+      "jp": "のり",
+      "reading": "のり",
+      "zh": "胶水",
+      "kind": "tube",
+      "category": "文具・本",
+      "id": "school-009",
+      "example": "のりを見てみましょう。",
+      "translation": "看看胶水吧。",
+      "zone": 0
+    },
+    {
+      "jp": "筆箱",
+      "reading": "ふでばこ",
+      "zh": "笔盒",
+      "kind": "packet",
+      "category": "文具・本",
+      "id": "school-010",
+      "example": "筆箱を見てみましょう。",
+      "translation": "看看笔盒吧。",
+      "zone": 0
+    },
+    {
+      "jp": "色鉛筆",
+      "reading": "いろえんぴつ",
+      "zh": "彩色铅笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "school-011",
+      "example": "色鉛筆を見てみましょう。",
+      "translation": "看看彩色铅笔吧。",
+      "zone": 0
+    },
+    {
+      "jp": "付箋",
+      "reading": "ふせん",
+      "zh": "便签",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "school-012",
+      "example": "付箋を見てみましょう。",
+      "translation": "看看便签吧。",
+      "zone": 0
+    },
+    {
+      "jp": "クリップ",
+      "reading": "クリップ",
+      "zh": "回形针",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "school-013",
+      "example": "クリップを見てみましょう。",
+      "translation": "看看回形针吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ホチキス",
+      "reading": "ホチキス",
+      "zh": "订书机",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "school-014",
+      "example": "ホチキスを見てみましょう。",
+      "translation": "看看订书机吧。",
+      "zone": 0
+    },
+    {
+      "jp": "封筒",
+      "reading": "ふうとう",
+      "zh": "信封",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "school-015",
+      "example": "封筒を見てみましょう。",
+      "translation": "看看信封吧。",
+      "zone": 0
+    },
+    {
+      "jp": "便箋",
+      "reading": "びんせん",
+      "zh": "信纸",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "school-016",
+      "example": "便箋を見てみましょう。",
+      "translation": "看看信纸吧。",
+      "zone": 0
+    },
+    {
+      "jp": "切手",
+      "reading": "きって",
+      "zh": "邮票",
+      "kind": "stamp",
+      "category": "文具・本",
+      "id": "school-017",
+      "example": "切手を見てみましょう。",
+      "translation": "看看邮票吧。",
+      "zone": 0
+    },
+    {
+      "jp": "はがき",
+      "reading": "はがき",
+      "zh": "明信片",
+      "kind": "card",
+      "category": "文具・本",
+      "id": "school-018",
+      "example": "はがきを見てみましょう。",
+      "translation": "看看明信片吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ファイル",
+      "reading": "ファイル",
+      "zh": "文件夹",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "school-019",
+      "example": "ファイルを見てみましょう。",
+      "translation": "看看文件夹吧。",
+      "zone": 0
+    },
+    {
+      "jp": "地図",
+      "reading": "ちず",
+      "zh": "地图",
+      "kind": "menu",
+      "category": "文具・本",
+      "id": "school-020",
+      "example": "地図を見てみましょう。",
+      "translation": "看看地图吧。",
+      "zone": 0
+    },
+    {
+      "jp": "新聞",
+      "reading": "しんぶん",
+      "zh": "报纸",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "school-021",
+      "example": "新聞を見てみましょう。",
+      "translation": "看看报纸吧。",
+      "zone": 1
+    },
+    {
+      "jp": "雑誌",
+      "reading": "ざっし",
+      "zh": "杂志",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "school-022",
+      "example": "雑誌を見てみましょう。",
+      "translation": "看看杂志吧。",
+      "zone": 1
+    },
+    {
+      "jp": "小説",
+      "reading": "しょうせつ",
+      "zh": "小说",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "school-023",
+      "example": "小説を見てみましょう。",
+      "translation": "看看小说吧。",
+      "zone": 1
+    },
+    {
+      "jp": "漫画",
+      "reading": "まんが",
+      "zh": "漫画",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "school-024",
+      "example": "漫画を見てみましょう。",
+      "translation": "看看漫画吧。",
+      "zone": 1
+    },
+    {
+      "jp": "絵本",
+      "reading": "えほん",
+      "zh": "绘本",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "school-025",
+      "example": "絵本を見てみましょう。",
+      "translation": "看看绘本吧。",
+      "zone": 1
+    },
+    {
+      "jp": "参考書",
+      "reading": "さんこうしょ",
+      "zh": "参考书",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "school-026",
+      "example": "参考書を見てみましょう。",
+      "translation": "看看参考书吧。",
+      "zone": 1
+    },
+    {
+      "jp": "パソコン",
+      "reading": "パソコン",
+      "zh": "电脑",
+      "kind": "tv",
+      "category": "機器",
+      "id": "school-027",
+      "example": "パソコンを見てみましょう。",
+      "translation": "看看电脑吧。",
+      "zone": 0
+    },
+    {
+      "jp": "モニター",
+      "reading": "モニター",
+      "zh": "显示器",
+      "kind": "tv",
+      "category": "機器",
+      "id": "school-028",
+      "example": "モニターを見てみましょう。",
+      "translation": "看看显示器吧。",
+      "zone": 0
+    },
+    {
+      "jp": "キーボード",
+      "reading": "キーボード",
+      "zh": "键盘",
+      "kind": "tablet",
+      "category": "機器",
+      "id": "school-029",
+      "example": "キーボードを見てみましょう。",
+      "translation": "看看键盘吧。",
+      "zone": 0
+    },
+    {
+      "jp": "マウス",
+      "reading": "マウス",
+      "zh": "鼠标",
+      "kind": "smallblock",
+      "category": "機器",
+      "id": "school-030",
+      "example": "マウスを見てみましょう。",
+      "translation": "看看鼠标吧。",
+      "zone": 0
+    },
+    {
+      "jp": "コンセント",
+      "reading": "コンセント",
+      "zh": "插座",
+      "kind": "outlet",
+      "category": "機器",
+      "id": "school-031",
+      "example": "コンセントを見てみましょう。",
+      "translation": "看看插座吧。",
+      "zone": 0
+    },
+    {
+      "jp": "電池",
+      "reading": "でんち",
+      "zh": "电池",
+      "kind": "battery",
+      "category": "機器",
+      "id": "school-032",
+      "example": "電池を見てみましょう。",
+      "translation": "看看电池吧。",
+      "zone": 0
+    },
+    {
+      "jp": "時計",
+      "reading": "とけい",
+      "zh": "时钟",
+      "kind": "clock",
+      "category": "機器",
+      "id": "school-033",
+      "example": "時計を見てみましょう。",
+      "translation": "看看时钟吧。",
+      "zone": 0
+    },
+    {
+      "jp": "黒板",
+      "reading": "こくばん",
+      "zh": "黑板",
+      "kind": "board",
+      "category": "学校",
+      "id": "school-034",
+      "example": "黒板を見てみましょう。",
+      "translation": "看看黑板吧。",
+      "zone": 0
+    },
+    {
+      "jp": "チョーク",
+      "reading": "チョーク",
+      "zh": "粉笔",
+      "kind": "pen",
+      "category": "学校",
+      "id": "school-035",
+      "example": "チョークを見てみましょう。",
+      "translation": "看看粉笔吧。",
+      "zone": 0
+    },
+    {
+      "jp": "黒板消し",
+      "reading": "こくばんけし",
+      "zh": "黑板擦",
+      "kind": "eraser",
+      "category": "学校",
+      "id": "school-036",
+      "example": "黒板消しを見てみましょう。",
+      "translation": "看看黑板擦吧。",
+      "zone": 0
+    },
+    {
+      "jp": "教卓",
+      "reading": "きょうたく",
+      "zh": "教师讲桌",
+      "kind": "table",
+      "category": "学校",
+      "id": "school-037",
+      "example": "教卓を見てみましょう。",
+      "translation": "看看教师讲桌吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ランドセル",
+      "reading": "ランドセル",
+      "zh": "小学生书包",
+      "kind": "backpack",
+      "category": "学校",
+      "id": "school-038",
+      "example": "ランドセルを見てみましょう。",
+      "translation": "看看小学生书包吧。",
+      "zone": 0
+    },
+    {
+      "jp": "上履き",
+      "reading": "うわばき",
+      "zh": "室内鞋",
+      "kind": "shoes",
+      "category": "学校",
+      "id": "school-039",
+      "example": "上履きを見てみましょう。",
+      "translation": "看看室内鞋吧。",
+      "zone": 0
+    },
+    {
+      "jp": "給食",
+      "reading": "きゅうしょく",
+      "zh": "学校供餐",
+      "kind": "bento",
+      "category": "学校",
+      "id": "school-040",
+      "example": "給食を見てみましょう。",
+      "translation": "看看学校供餐吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ほうき",
+      "reading": "ほうき",
+      "zh": "扫帚",
+      "kind": "broom",
+      "category": "学校",
+      "id": "school-041",
+      "example": "ほうきを見てみましょう。",
+      "translation": "看看扫帚吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ちりとり",
+      "reading": "ちりとり",
+      "zh": "簸箕",
+      "kind": "dustpan",
+      "category": "学校",
+      "id": "school-042",
+      "example": "ちりとりを見てみましょう。",
+      "translation": "看看簸箕吧。",
+      "zone": 3
+    },
+    {
+      "jp": "バケツ",
+      "reading": "バケツ",
+      "zh": "水桶",
+      "kind": "bucket",
+      "category": "学校",
+      "id": "school-043",
+      "example": "バケツを見てみましょう。",
+      "translation": "看看水桶吧。",
+      "zone": 3
+    },
+    {
+      "jp": "雑巾",
+      "reading": "ぞうきん",
+      "zh": "抹布",
+      "kind": "towel",
+      "category": "学校",
+      "id": "school-044",
+      "example": "雑巾を見てみましょう。",
+      "translation": "看看抹布吧。",
+      "zone": 0
+    },
+    {
+      "jp": "鉄棒",
+      "reading": "てつぼう",
+      "zh": "单杠",
+      "kind": "rail",
+      "category": "学校",
+      "id": "school-045",
+      "example": "鉄棒を見てみましょう。",
+      "translation": "看看单杠吧。",
+      "zone": 4
+    },
+    {
+      "jp": "机",
+      "reading": "つくえ",
+      "zh": "课桌",
+      "kind": "table",
+      "category": "場面のことば",
+      "area": 0,
+      "id": "school-047",
+      "example": "机を見てみましょう。",
+      "translation": "看看课桌吧。",
+      "zone": 0
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "場面のことば",
+      "area": 0,
+      "id": "school-048",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベッド",
+      "reading": "ベッド",
+      "zh": "病床",
+      "kind": "exam-bed",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "school-049",
+      "example": "ベッドを見てみましょう。",
+      "translation": "看看病床吧。",
+      "zone": 2
+    },
+    {
+      "jp": "体温計",
+      "reading": "たいおんけい",
+      "zh": "体温计",
+      "kind": "thermometer",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "school-050",
+      "example": "体温計を見てみましょう。",
+      "translation": "看看体温计吧。",
+      "art": [
+        "care",
+        10
+      ],
+      "zone": 2
+    },
+    {
+      "jp": "救急箱",
+      "reading": "きゅうきゅうばこ",
+      "zh": "急救箱",
+      "kind": "firstaid",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "school-051",
+      "example": "救急箱を見てみましょう。",
+      "translation": "看看急救箱吧。",
+      "zone": 2
+    },
+    {
+      "jp": "包帯",
+      "reading": "ほうたい",
+      "zh": "绷带",
+      "kind": "bandage",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "school-052",
+      "example": "包帯を見てみましょう。",
+      "translation": "看看绷带吧。",
+      "zone": 2
+    },
+    {
+      "jp": "身長計",
+      "reading": "しんちょうけい",
+      "zh": "身高计",
+      "kind": "ruler",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "school-053",
+      "example": "身長計を見てみましょう。",
+      "translation": "看看身高计吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ロッカー",
+      "reading": "ロッカー",
+      "zh": "储物柜",
+      "kind": "locker",
+      "category": "場面のことば",
+      "area": 3,
+      "id": "school-054",
+      "example": "ロッカーを見てみましょう。",
+      "translation": "看看储物柜吧。",
+      "zone": 3
+    },
+    {
+      "jp": "水道",
+      "reading": "すいどう",
+      "zh": "水龙头",
+      "kind": "tap",
+      "category": "場面のことば",
+      "area": 3,
+      "id": "school-055",
+      "example": "水道を見てみましょう。",
+      "translation": "看看水龙头吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ボール",
+      "reading": "ボール",
+      "zh": "球",
+      "kind": "ball",
+      "category": "場面のことば",
+      "area": 4,
+      "id": "school-056",
+      "example": "ボールを見てみましょう。",
+      "translation": "看看球吧。",
+      "zone": 4
+    },
+    {
+      "jp": "砂場",
+      "reading": "すなば",
+      "zh": "沙坑",
+      "kind": "sand",
+      "category": "場面のことば",
+      "area": 4,
+      "id": "school-057",
+      "example": "砂場を見てみましょう。",
+      "translation": "看看沙坑吧。",
+      "zone": 4
+    },
+    {
+      "jp": "花壇",
+      "reading": "かだん",
+      "zh": "花坛",
+      "kind": "planter",
+      "category": "場面のことば",
+      "area": 4,
+      "id": "school-058",
+      "example": "花壇を見てみましょう。",
+      "translation": "看看花坛吧。",
+      "zone": 4
+    },
+    {
+      "jp": "じょうろ",
+      "reading": "じょうろ",
+      "zh": "洒水壶",
+      "kind": "wateringcan",
+      "category": "場面のことば",
+      "area": 4,
+      "id": "school-059",
+      "example": "じょうろを見てみましょう。",
+      "translation": "看看洒水壶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "靴箱",
+      "reading": "くつばこ",
+      "zh": "鞋柜",
+      "kind": "locker",
+      "category": "場面のことば",
+      "area": 5,
+      "id": "school-060",
+      "example": "靴箱を見てみましょう。",
+      "translation": "看看鞋柜吧。",
+      "zone": 5
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "場面のことば",
+      "area": 5,
+      "id": "school-061",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 5
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "school-062",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "school-065",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 5
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "school-067",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 5
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "school-068",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 5
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "school-069",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 5
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "school-070",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 5
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "school-071",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 5
+    },
+    {
+      "id": "school-detail-0094",
+      "jp": "チョークケース",
+      "reading": "チョークケース",
+      "zh": "粉笔盒",
+      "kind": "packet",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはチョークケースです。",
+      "translation": "这是粉笔盒。"
+    },
+    {
+      "id": "school-detail-0095",
+      "jp": "時間割",
+      "reading": "じかんわり",
+      "zh": "课程表",
+      "kind": "poster",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは時間割です。",
+      "translation": "这是课程表。"
+    },
+    {
+      "id": "school-specific-01",
+      "jp": "顕微鏡",
+      "reading": "けんびきょう",
+      "zh": "显微镜",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "顕微鏡はここにあります。",
+      "detail": {
+        "type": "microscope",
+        "color": "#9bbbc3"
+      },
+      "translation": "显微镜在这里。"
+    },
+    {
+      "id": "school-specific-02",
+      "jp": "地球儀",
+      "reading": "ちきゅうぎ",
+      "zh": "地球仪",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "地球儀はここにあります。",
+      "detail": {
+        "type": "globe",
+        "color": "#95bdcc"
+      },
+      "translation": "地球仪在这里。"
+    },
+    {
+      "id": "school-specific-03",
+      "jp": "給食ワゴン",
+      "reading": "きゅうしょくワゴン",
+      "zh": "配餐车",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "給食ワゴンはここにあります。",
+      "detail": {
+        "type": "cart",
+        "color": "#b9c8ba",
+        "floor": [
+          -5,
+          1
+        ]
+      },
+      "translation": "配餐车在这里。"
+    },
+    {
+      "id": "school-specific-04",
+      "jp": "配膳用トレー",
+      "reading": "はいぜんようトレー",
+      "zh": "配餐托盘",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "配膳用トレーはここにあります。",
+      "detail": {
+        "type": "basket",
+        "color": "#d6be97"
+      },
+      "translation": "配餐托盘在这里。"
+    },
+    {
+      "id": "school-specific-05",
+      "jp": "連絡帳",
+      "reading": "れんらくちょう",
+      "zh": "家校联络本",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "連絡帳はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#b3caaa"
+      },
+      "translation": "家校联络本在这里。"
+    },
+    {
+      "id": "school-specific-06",
+      "jp": "図書貸出カード",
+      "reading": "としょかしだしカード",
+      "zh": "图书借阅卡",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "図書貸出カードはここにあります。",
+      "detail": {
+        "type": "card",
+        "color": "#e0c886"
+      },
+      "translation": "图书借阅卡在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 0,
+  "district": 0,
+  "sceneReference": "https://www.kahaku.go.jp/research/db/botany/microalgae/microalgal_kids/trivia/trivia_3_kansatsu.html",
+  "venueRole": {
+    "id": "school-venue-worker",
+    "jp": "先生",
+    "reading": "せんせい",
+    "zone": 0,
+    "activity": "地球儀を使って説明しています。",
+    "readingLine": "ちきゅうぎを つかって せつめいしています。",
+    "verb": "使う → 使っている",
+    "grammar": "地球儀【を】使う。「を」は使うものを表します。",
+    "reply": "地球儀を回すと、日本の場所を探せます。",
+    "tools": [
+      "地球儀",
+      "教科書",
+      "顕微鏡"
+    ]
+  }
+}

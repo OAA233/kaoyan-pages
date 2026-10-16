@@ -1,0 +1,1298 @@
+{
+  "id": "ryokan",
+  "title": "日式温泉旅馆",
+  "jp": "旅館",
+  "reading": "りょかん",
+  "layout": "home",
+  "zones": [
+    {
+      "jp": "受付",
+      "zh": "前台"
+    },
+    {
+      "jp": "和室",
+      "zh": "和室客房"
+    },
+    {
+      "jp": "食事処",
+      "zh": "餐厅"
+    },
+    {
+      "jp": "大浴場",
+      "zh": "浴场"
+    },
+    {
+      "jp": "庭園",
+      "zh": "庭院"
+    },
+    {
+      "jp": "脱衣所",
+      "zh": "更衣与洗漱"
+    },
+    {
+      "jp": "縁側・廊下",
+      "zh": "缘侧与走廊"
+    }
+  ],
+  "items": [
+    {
+      "id": "ryokan-001",
+      "jp": "玄関",
+      "reading": "げんかん",
+      "zh": "玄关",
+      "kind": "entryfloor",
+      "color": "#aaa894",
+      "size": [
+        3.0,
+        0.05,
+        3.0
+      ],
+      "category": "空间与设施",
+      "example": "ここは玄関です。",
+      "translation": "这里是玄关。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "ryokan-002",
+      "jp": "フロント",
+      "reading": "フロント",
+      "zh": "前台",
+      "kind": "counter",
+      "color": "#ae8d64",
+      "size": [
+        3.0,
+        1.0,
+        0.8
+      ],
+      "category": "物品与细节",
+      "example": "これはフロントです。",
+      "translation": "这是前台。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "ryokan-003",
+      "jp": "宿泊者名簿",
+      "reading": "しゅくはくしゃめいぼ",
+      "zh": "住客登记簿",
+      "kind": "book",
+      "color": "#bcb386",
+      "category": "物品与细节",
+      "example": "これは宿泊者名簿です。",
+      "translation": "这是住客登记簿。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "ryokan-004",
+      "jp": "鍵",
+      "reading": "かぎ",
+      "zh": "钥匙",
+      "kind": "key",
+      "category": "物品与细节",
+      "example": "これは鍵です。",
+      "translation": "这是钥匙。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "ryokan-005",
+      "jp": "スリッパ",
+      "reading": "スリッパ",
+      "zh": "拖鞋",
+      "kind": "slippers",
+      "category": "物品与细节",
+      "example": "これはスリッパです。",
+      "translation": "这是拖鞋。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "ryokan-006",
+      "jp": "荷物",
+      "reading": "にもつ",
+      "zh": "行李",
+      "kind": "suitcase",
+      "color": "#b88f62",
+      "category": "物品与细节",
+      "example": "これは荷物です。",
+      "translation": "这是行李。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "ryokan-007",
+      "jp": "客室",
+      "reading": "きゃくしつ",
+      "zh": "客房",
+      "kind": "room-sign",
+      "category": "空间与设施",
+      "example": "ここは客室です。",
+      "translation": "这里是客房。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "ryokan-008",
+      "jp": "畳",
+      "reading": "たたみ",
+      "zh": "榻榻米",
+      "kind": "tatami",
+      "color": "#bdc69c",
+      "size": [
+        5.0,
+        0.1,
+        5.6
+      ],
+      "category": "空间与设施",
+      "example": "これは畳です。",
+      "translation": "这是榻榻米。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-009",
+      "jp": "障子",
+      "reading": "しょうじ",
+      "zh": "障子纸拉门",
+      "kind": "shoji",
+      "color": "#e8e3c7",
+      "size": [
+        5.0,
+        2.8,
+        0.07
+      ],
+      "category": "物品与细节",
+      "example": "これは障子です。",
+      "translation": "这是障子纸拉门。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-010",
+      "jp": "襖",
+      "reading": "ふすま",
+      "zh": "不透光隔扇",
+      "kind": "fusuma",
+      "color": "#c6bd9e",
+      "size": [
+        0.07,
+        2.4,
+        3.0
+      ],
+      "category": "物品与细节",
+      "example": "これは襖です。",
+      "translation": "这是不透光隔扇。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-011",
+      "jp": "床の間",
+      "reading": "とこのま",
+      "zh": "壁龛",
+      "kind": "alcove",
+      "category": "物品与细节",
+      "example": "これは床の間です。",
+      "translation": "这是壁龛。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-012",
+      "jp": "掛け軸",
+      "reading": "かけじく",
+      "zh": "挂轴",
+      "kind": "scroll",
+      "category": "物品与细节",
+      "example": "これは掛け軸です。",
+      "translation": "这是挂轴。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-013",
+      "jp": "花瓶",
+      "reading": "かびん",
+      "zh": "花瓶",
+      "kind": "vase",
+      "color": "#90a798",
+      "category": "物品与细节",
+      "example": "これは花瓶です。",
+      "translation": "这是花瓶。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-014",
+      "jp": "座卓",
+      "reading": "ざたく",
+      "zh": "矮桌",
+      "kind": "lowtable",
+      "color": "#a67d4d",
+      "category": "物品与细节",
+      "example": "これは座卓です。",
+      "translation": "这是矮桌。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-015",
+      "jp": "座布団",
+      "reading": "ざぶとん",
+      "zh": "坐垫",
+      "kind": "cushion",
+      "color": "#aa8c94",
+      "category": "物品与细节",
+      "example": "これは座布団です。",
+      "translation": "这是坐垫。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-016",
+      "jp": "急須",
+      "reading": "きゅうす",
+      "zh": "茶壶",
+      "kind": "teapot",
+      "color": "#89a17d",
+      "category": "物品与细节",
+      "example": "これは急須です。",
+      "translation": "这是茶壶。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-017",
+      "jp": "湯飲み",
+      "reading": "ゆのみ",
+      "zh": "茶杯",
+      "kind": "cup",
+      "color": "#a0b7a1",
+      "category": "物品与细节",
+      "example": "これは湯飲みです。",
+      "translation": "这是茶杯。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "ryokan-018",
+      "jp": "茶菓子",
+      "reading": "ちゃがし",
+      "zh": "茶点",
+      "kind": "sweet",
+      "category": "物品与细节",
+      "example": "これは茶菓子です。",
+      "translation": "这是茶点。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-019",
+      "jp": "布団",
+      "reading": "ふとん",
+      "zh": "寝具",
+      "kind": "futon",
+      "color": "#c1d3c5",
+      "category": "物品与细节",
+      "example": "これは布団です。",
+      "translation": "这是寝具。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-020",
+      "jp": "枕",
+      "reading": "まくら",
+      "zh": "枕头",
+      "kind": "pillow",
+      "category": "物品与细节",
+      "example": "これは枕です。",
+      "translation": "这是枕头。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-021",
+      "jp": "浴衣",
+      "reading": "ゆかた",
+      "zh": "浴衣",
+      "kind": "kimono",
+      "color": "#789c9f",
+      "category": "物品与细节",
+      "example": "これは浴衣です。",
+      "translation": "这是浴衣。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-022",
+      "jp": "帯",
+      "reading": "おび",
+      "zh": "腰带",
+      "kind": "belt",
+      "color": "#a388a1",
+      "category": "物品与细节",
+      "example": "これは帯です。",
+      "translation": "这是腰带。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-023",
+      "jp": "羽織",
+      "reading": "はおり",
+      "zh": "羽织外套",
+      "kind": "jacket",
+      "color": "#5c7689",
+      "category": "物品与细节",
+      "example": "これは羽織です。",
+      "translation": "这是羽织外套。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "ryokan-024",
+      "jp": "タオル",
+      "reading": "タオル",
+      "zh": "毛巾",
+      "kind": "towel",
+      "category": "物品与细节",
+      "example": "これはタオルです。",
+      "translation": "这是毛巾。",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "id": "ryokan-025",
+      "jp": "脱衣かご",
+      "reading": "だついかご",
+      "zh": "脱衣篮",
+      "kind": "basket",
+      "color": "#b79b6b",
+      "category": "物品与细节",
+      "example": "これは脱衣かごです。",
+      "translation": "这是脱衣篮。",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "id": "ryokan-026",
+      "jp": "大浴場",
+      "reading": "だいよくじょう",
+      "zh": "公共大浴场",
+      "kind": "room-sign",
+      "category": "空间与设施",
+      "example": "ここは大浴場です。",
+      "translation": "这里是公共大浴场。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "ryokan-027",
+      "jp": "湯船",
+      "reading": "ゆぶね",
+      "zh": "浴池",
+      "kind": "pool",
+      "color": "#8ebcba",
+      "size": [
+        3.8,
+        0.6,
+        4.7
+      ],
+      "category": "空间与设施",
+      "example": "ここは湯船です。",
+      "translation": "这里是浴池。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "ryokan-028",
+      "jp": "桶",
+      "reading": "おけ",
+      "zh": "浴桶",
+      "kind": "bucket",
+      "color": "#cbb47c",
+      "category": "物品与细节",
+      "example": "これは桶です。",
+      "translation": "这是浴桶。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "ryokan-029",
+      "jp": "風呂椅子",
+      "reading": "ふろいす",
+      "zh": "浴室凳",
+      "kind": "stool",
+      "color": "#d1bc83",
+      "category": "物品与细节",
+      "example": "これは風呂椅子です。",
+      "translation": "这是浴室凳。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "ryokan-030",
+      "jp": "シャワー",
+      "reading": "シャワー",
+      "zh": "淋浴",
+      "kind": "shower",
+      "category": "物品与细节",
+      "example": "これはシャワーです。",
+      "translation": "这是淋浴。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "ryokan-031",
+      "jp": "石鹸",
+      "reading": "せっけん",
+      "zh": "肥皂",
+      "kind": "smallblock",
+      "color": "#d5c4c2",
+      "size": [
+        0.17,
+        0.07,
+        0.12
+      ],
+      "category": "物品与细节",
+      "example": "これは石鹸です。",
+      "translation": "这是肥皂。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "ryokan-032",
+      "jp": "洗面器",
+      "reading": "せんめんき",
+      "zh": "脸盆",
+      "kind": "bowl",
+      "color": "#c6d6cb",
+      "category": "物品与细节",
+      "example": "これは洗面器です。",
+      "translation": "这是脸盆。",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "id": "ryokan-033",
+      "jp": "露天風呂",
+      "reading": "ろてんぶろ",
+      "zh": "露天浴池",
+      "kind": "pond",
+      "color": "#88b7b2",
+      "size": [
+        3.0,
+        0.3,
+        1.8
+      ],
+      "category": "物品与细节",
+      "example": "これは露天風呂です。",
+      "translation": "这是露天浴池。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "ryokan-034",
+      "jp": "石灯籠",
+      "reading": "いしどうろう",
+      "zh": "石灯笼",
+      "kind": "stone-lantern",
+      "category": "物品与细节",
+      "example": "これは石灯籠です。",
+      "translation": "这是石灯笼。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "ryokan-035",
+      "jp": "庭",
+      "reading": "にわ",
+      "zh": "庭院",
+      "kind": "garden",
+      "color": "#9cb489",
+      "size": [
+        1.5,
+        0.03,
+        2.0
+      ],
+      "category": "空间与设施",
+      "example": "ここは庭です。",
+      "translation": "这里是庭院。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "ryokan-036",
+      "jp": "竹",
+      "reading": "たけ",
+      "zh": "竹子",
+      "kind": "bamboo",
+      "category": "物品与细节",
+      "example": "これは竹です。",
+      "translation": "这是竹子。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "ryokan-037",
+      "jp": "自動販売機",
+      "reading": "じどうはんばいき",
+      "zh": "自动售货机",
+      "kind": "vending",
+      "category": "物品与细节",
+      "example": "これは自動販売機です。",
+      "translation": "这是自动售货机。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "ryokan-038",
+      "jp": "牛乳瓶",
+      "reading": "ぎゅうにゅうびん",
+      "zh": "牛奶瓶",
+      "kind": "bottle",
+      "color": "#d9e0c8",
+      "category": "物品与细节",
+      "example": "これは牛乳瓶です。",
+      "translation": "这是牛奶瓶。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "ryokan-042",
+      "jp": "壁",
+      "reading": "かべ",
+      "zh": "墙壁",
+      "kind": "wall-shell",
+      "category": "空间与设施",
+      "example": "これは壁です。",
+      "translation": "这是墙壁。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "ryokan-043",
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空间与设施",
+      "example": "これは窓です。",
+      "translation": "这是窗户。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "ryokan-044",
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "置物架",
+      "kind": "shelf-support",
+      "category": "空间与设施",
+      "example": "これは棚です。",
+      "translation": "这是置物架。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "ryokan-045",
+      "jp": "電気",
+      "reading": "でんき",
+      "zh": "灯；照明",
+      "kind": "lighting-shell",
+      "category": "空间与设施",
+      "example": "電気をつけます。",
+      "translation": "开灯。",
+      "note": "这里指照明；「電気」也有电、电力的意思。",
+      "zone": 0
+    },
+    {
+      "jp": "歯ブラシ",
+      "reading": "はブラシ",
+      "zh": "牙刷",
+      "kind": "toothbrush",
+      "category": "日用品",
+      "art": [
+        "care",
+        0
+      ],
+      "id": "ryokan-046",
+      "example": "歯ブラシを見てみましょう。",
+      "translation": "看看牙刷吧。",
+      "zone": 5
+    },
+    {
+      "jp": "歯磨き粉",
+      "reading": "はみがきこ",
+      "zh": "牙膏",
+      "kind": "tube",
+      "category": "日用品",
+      "art": [
+        "care",
+        1
+      ],
+      "id": "ryokan-047",
+      "example": "歯磨き粉を見てみましょう。",
+      "translation": "看看牙膏吧。",
+      "zone": 5
+    },
+    {
+      "jp": "シャンプー",
+      "reading": "シャンプー",
+      "zh": "洗发水",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        2
+      ],
+      "id": "ryokan-048",
+      "example": "シャンプーを見てみましょう。",
+      "translation": "看看洗发水吧。",
+      "zone": 3
+    },
+    {
+      "jp": "コンディショナー",
+      "reading": "コンディショナー",
+      "zh": "护发素",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        3
+      ],
+      "id": "ryokan-049",
+      "example": "コンディショナーを見てみましょう。",
+      "translation": "看看护发素吧。",
+      "zone": 3
+    },
+    {
+      "jp": "石けん",
+      "reading": "せっけん",
+      "zh": "香皂",
+      "kind": "smallblock",
+      "category": "日用品",
+      "art": [
+        "care",
+        4
+      ],
+      "id": "ryokan-050",
+      "example": "石けんを見てみましょう。",
+      "translation": "看看香皂吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ボディーソープ",
+      "reading": "ボディーソープ",
+      "zh": "沐浴液",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        5
+      ],
+      "id": "ryokan-051",
+      "example": "ボディーソープを見てみましょう。",
+      "translation": "看看沐浴液吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ティッシュ",
+      "reading": "ティッシュ",
+      "zh": "纸巾",
+      "kind": "tissue",
+      "category": "日用品",
+      "art": [
+        "care",
+        6
+      ],
+      "id": "ryokan-052",
+      "example": "ティッシュを見てみましょう。",
+      "translation": "看看纸巾吧。",
+      "zone": 1
+    },
+    {
+      "jp": "トイレットペーパー",
+      "reading": "トイレットペーパー",
+      "zh": "卫生纸",
+      "kind": "paperroll",
+      "category": "日用品",
+      "art": [
+        "care",
+        7
+      ],
+      "id": "ryokan-053",
+      "example": "トイレットペーパーを見てみましょう。",
+      "translation": "看看卫生纸吧。",
+      "zone": 5
+    },
+    {
+      "jp": "箸",
+      "reading": "はし",
+      "zh": "筷子",
+      "kind": "chopsticks",
+      "category": "食器・設備",
+      "id": "ryokan-055",
+      "example": "箸を見てみましょう。",
+      "translation": "看看筷子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "箸置き",
+      "reading": "はしおき",
+      "zh": "筷架",
+      "kind": "smallblock",
+      "category": "食器・設備",
+      "id": "ryokan-056",
+      "example": "箸置きを見てみましょう。",
+      "translation": "看看筷架吧。",
+      "zone": 1
+    },
+    {
+      "jp": "スプーン",
+      "reading": "スプーン",
+      "zh": "勺子",
+      "kind": "ladle",
+      "category": "食器・設備",
+      "id": "ryokan-057",
+      "example": "スプーンを見てみましょう。",
+      "translation": "看看勺子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "フォーク",
+      "reading": "フォーク",
+      "zh": "叉子",
+      "kind": "knife",
+      "category": "食器・設備",
+      "id": "ryokan-058",
+      "example": "フォークを見てみましょう。",
+      "translation": "看看叉子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ナイフ",
+      "reading": "ナイフ",
+      "zh": "餐刀",
+      "kind": "knife",
+      "category": "食器・設備",
+      "id": "ryokan-059",
+      "example": "ナイフを見てみましょう。",
+      "translation": "看看餐刀吧。",
+      "zone": 2
+    },
+    {
+      "jp": "皿",
+      "reading": "さら",
+      "zh": "盘子",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "ryokan-060",
+      "example": "皿を見てみましょう。",
+      "translation": "看看盘子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "取り皿",
+      "reading": "とりざら",
+      "zh": "分餐小碟",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "ryokan-061",
+      "example": "取り皿を見てみましょう。",
+      "translation": "看看分餐小碟吧。",
+      "zone": 2
+    },
+    {
+      "jp": "茶碗",
+      "reading": "ちゃわん",
+      "zh": "饭碗",
+      "kind": "bowl",
+      "category": "食器・設備",
+      "id": "ryokan-062",
+      "example": "茶碗を見てみましょう。",
+      "translation": "看看饭碗吧。",
+      "zone": 2
+    },
+    {
+      "jp": "湯のみ",
+      "reading": "ゆのみ",
+      "zh": "日式茶杯",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "ryokan-063",
+      "example": "湯のみを見てみましょう。",
+      "translation": "看看日式茶杯吧。",
+      "zone": 2
+    },
+    {
+      "jp": "コップ",
+      "reading": "コップ",
+      "zh": "杯子",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "ryokan-064",
+      "example": "コップを見てみましょう。",
+      "translation": "看看杯子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "おしぼり",
+      "reading": "おしぼり",
+      "zh": "擦手巾",
+      "kind": "towel",
+      "category": "食器・設備",
+      "id": "ryokan-065",
+      "example": "おしぼりを見てみましょう。",
+      "translation": "看看擦手巾吧。",
+      "zone": 2
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "ryokan-066",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "ryokan-069",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "ryokan-070",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "ryokan-071",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "ryokan-072",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "ryokan-073",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "ryokan-074",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 4
+    },
+    {
+      "id": "ryokan-detail-0070",
+      "jp": "押し入れ",
+      "reading": "おしいれ",
+      "zh": "壁橱",
+      "kind": "oshiire",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは押し入れです。",
+      "translation": "这是壁橱。"
+    },
+    {
+      "id": "ryokan-detail-0071",
+      "jp": "敷布団",
+      "reading": "しきぶとん",
+      "zh": "铺在下面的褥子",
+      "kind": "floor-mattress",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは敷布団です。",
+      "translation": "这是铺在下面的褥子。"
+    },
+    {
+      "id": "ryokan-detail-0072",
+      "jp": "掛け布団",
+      "reading": "かけぶとん",
+      "zh": "被子",
+      "kind": "blanket",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは掛け布団です。",
+      "translation": "这是被子。"
+    },
+    {
+      "id": "ryokan-detail-0073",
+      "jp": "敷居",
+      "reading": "しきい",
+      "zh": "推拉门下框",
+      "kind": "threshold",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは敷居です。",
+      "translation": "这是推拉门下框。"
+    },
+    {
+      "id": "ryokan-detail-0074",
+      "jp": "鴨居",
+      "reading": "かもい",
+      "zh": "推拉门上框",
+      "kind": "lintel",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは鴨居です。",
+      "translation": "这是推拉门上框。"
+    },
+    {
+      "id": "ryokan-detail-0075",
+      "jp": "旅館の案内",
+      "reading": "りょかんのあんない",
+      "zh": "旅馆介绍册",
+      "kind": "book",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは旅館の案内です。",
+      "translation": "这是旅馆介绍册。"
+    },
+    {
+      "id": "ryokan-detail-0076",
+      "jp": "茶びつ",
+      "reading": "ちゃびつ",
+      "zh": "茶具收纳盒",
+      "kind": "tea-chest",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは茶びつです。",
+      "translation": "这是茶具收纳盒。"
+    },
+    {
+      "id": "ryokan-detail-0077",
+      "jp": "座椅子",
+      "reading": "ざいす",
+      "zh": "和式无腿靠背椅",
+      "kind": "floor-chair",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは座椅子です。",
+      "translation": "这是和式无腿靠背椅。"
+    },
+    {
+      "id": "ryokan-detail-0078",
+      "jp": "脱衣棚",
+      "reading": "だついだな",
+      "zh": "更衣架",
+      "kind": "shelf",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これは脱衣棚です。",
+      "translation": "这是更衣架。"
+    },
+    {
+      "id": "ryokan-detail-0079",
+      "jp": "洗面台",
+      "reading": "せんめんだい",
+      "zh": "洗漱台",
+      "kind": "sink",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これは洗面台です。",
+      "translation": "这是洗漱台。"
+    },
+    {
+      "id": "ryokan-detail-0080",
+      "jp": "ドライヤー",
+      "reading": "ドライヤー",
+      "zh": "吹风机",
+      "kind": "hairdryer",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これはドライヤーです。",
+      "translation": "这是吹风机。"
+    },
+    {
+      "id": "ryokan-detail-0081",
+      "jp": "体重計",
+      "reading": "たいじゅうけい",
+      "zh": "体重秤",
+      "kind": "scale",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これは体重計です。",
+      "translation": "这是体重秤。"
+    },
+    {
+      "id": "ryokan-detail-0082",
+      "jp": "綿棒",
+      "reading": "めんぼう",
+      "zh": "棉签",
+      "kind": "swabs",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これは綿棒です。",
+      "translation": "这是棉签。"
+    },
+    {
+      "id": "ryokan-detail-0083",
+      "jp": "くし",
+      "reading": "くし",
+      "zh": "梳子",
+      "kind": "comb",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これはくしです。",
+      "translation": "这是梳子。"
+    },
+    {
+      "id": "ryokan-detail-0084",
+      "jp": "縁側",
+      "reading": "えんがわ",
+      "zh": "和式房屋缘侧",
+      "kind": "engawa",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これは縁側です。",
+      "translation": "这是和式房屋缘侧。"
+    },
+    {
+      "id": "ryokan-detail-0085",
+      "jp": "廊下",
+      "reading": "ろうか",
+      "zh": "走廊",
+      "kind": "floor",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これは廊下です。",
+      "translation": "这是走廊。"
+    },
+    {
+      "id": "ryokan-detail-0086",
+      "jp": "行灯",
+      "reading": "あんどん",
+      "zh": "日式纸罩灯",
+      "kind": "andon",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これは行灯です。",
+      "translation": "这是日式纸罩灯。"
+    },
+    {
+      "id": "ryokan-detail-0087",
+      "jp": "雨戸",
+      "reading": "あまど",
+      "zh": "防雨窗板",
+      "kind": "shutter",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これは雨戸です。",
+      "translation": "这是防雨窗板。"
+    },
+    {
+      "id": "ryokan-detail-0088",
+      "jp": "すだれ",
+      "reading": "すだれ",
+      "zh": "竹帘",
+      "kind": "bamboo-blind",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これはすだれです。",
+      "translation": "这是竹帘。"
+    },
+    {
+      "id": "ryokan-detail-0089",
+      "jp": "庭石",
+      "reading": "にわいし",
+      "zh": "庭园石",
+      "kind": "rock",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これは庭石です。",
+      "translation": "这是庭园石。"
+    },
+    {
+      "id": "ryokan-detail-0090",
+      "jp": "飛び石",
+      "reading": "とびいし",
+      "zh": "踏步石",
+      "kind": "stepping-stones",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これは飛び石です。",
+      "translation": "这是踏步石。"
+    },
+    {
+      "id": "ryokan-detail-0091",
+      "jp": "上がり框",
+      "reading": "あがりかまち",
+      "zh": "玄关上室内地板的高沿",
+      "kind": "threshold",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは上がり框です。",
+      "translation": "这是玄关上室内地板的高沿。"
+    },
+    {
+      "id": "ryokan-detail-0092",
+      "jp": "靴べら",
+      "reading": "くつべら",
+      "zh": "鞋拔",
+      "kind": "shoehorn",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは靴べらです。",
+      "translation": "这是鞋拔。"
+    },
+    {
+      "id": "ryokan-detail-0093",
+      "jp": "靴箱",
+      "reading": "くつばこ",
+      "zh": "鞋柜",
+      "kind": "cabinet",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは靴箱です。",
+      "translation": "这是鞋柜。"
+    },
+    {
+      "id": "ryokan-specific-01",
+      "jp": "電気ケトル",
+      "reading": "でんきケトル",
+      "zh": "电热水壶",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "電気ケトルはここにあります。",
+      "detail": {
+        "type": "kettle",
+        "color": "#a5b6ac"
+      },
+      "translation": "电热水壶在这里。"
+    },
+    {
+      "id": "ryokan-specific-02",
+      "jp": "作務衣",
+      "reading": "さむえ",
+      "zh": "日式居家服",
+      "kind": "pajamas",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "作務衣はここにあります。",
+      "translation": "日式居家服在这里。"
+    },
+    {
+      "id": "ryokan-specific-03",
+      "jp": "足袋ソックス",
+      "reading": "たびソックス",
+      "zh": "分趾袜",
+      "kind": "socks",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "足袋ソックスはここにあります。",
+      "translation": "分趾袜在这里。"
+    },
+    {
+      "id": "ryokan-specific-04",
+      "jp": "湯かご",
+      "reading": "ゆかご",
+      "zh": "洗浴篮",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "湯かごはここにあります。",
+      "detail": {
+        "type": "basket",
+        "color": "#c1ac81"
+      },
+      "translation": "洗浴篮在这里。"
+    },
+    {
+      "id": "ryokan-specific-05",
+      "jp": "お茶請け",
+      "reading": "おちゃうけ",
+      "zh": "配茶点心",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "お茶請けはここにあります。",
+      "detail": {
+        "type": "dish",
+        "color": "#caac83",
+        "shape": "pieces"
+      },
+      "translation": "配茶点心在这里。"
+    },
+    {
+      "id": "ryokan-specific-06",
+      "jp": "館内利用案内",
+      "reading": "かんないりようあんない",
+      "zh": "馆内使用说明",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "館内利用案内はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#bac3a5"
+      },
+      "translation": "馆内使用说明在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 20,
+  "district": 3,
+  "sceneReference": "https://hoshinoresorts.com/ja/brands/kai/sp/amenities/",
+  "venueRole": {
+    "id": "ryokan-venue-worker",
+    "jp": "旅館の係",
+    "reading": "りょかんのかかり",
+    "zone": 0,
+    "activity": "館内の案内をしています。",
+    "readingLine": "かんないの あんないを しています。",
+    "verb": "案内する → 案内している",
+    "grammar": "お客様【に】館内【を】案内する。",
+    "reply": "お部屋に茶器をご用意しています。大浴場には湯かごをお持ちください。",
+    "tools": [
+      "館内利用案内",
+      "電気ケトル",
+      "湯かご"
+    ]
+  }
+}

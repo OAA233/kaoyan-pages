@@ -1,0 +1,1234 @@
+{
+  "id": "netcafe",
+  "title": "网咖",
+  "jp": "ネットカフェ",
+  "reading": "ネットカフェ",
+  "layout": "netcafe",
+  "zones": [
+    {
+      "jp": "受付",
+      "zh": "前台"
+    },
+    {
+      "jp": "コミックラウンジ",
+      "zh": "漫画休闲区"
+    },
+    {
+      "jp": "鍵付き個室・フラット",
+      "zh": "带锁平躺垫席包间"
+    },
+    {
+      "jp": "鍵付き個室・リクライニング",
+      "zh": "带锁躺椅包间"
+    },
+    {
+      "jp": "ドリンクバー",
+      "zh": "自助饮料区"
+    },
+    {
+      "jp": "シャワー・洗面",
+      "zh": "淋浴与洗漱"
+    },
+    {
+      "jp": "ランドリー・貸出",
+      "zh": "洗衣与借用品"
+    }
+  ],
+  "items": [
+    {
+      "jp": "パソコン",
+      "reading": "パソコン",
+      "zh": "电脑",
+      "kind": "computer",
+      "category": "機器",
+      "id": "netcafe-001",
+      "example": "パソコンを見てみましょう。",
+      "translation": "看看电脑吧。",
+      "zone": 2
+    },
+    {
+      "jp": "モニター",
+      "reading": "モニター",
+      "zh": "显示器",
+      "kind": "monitor",
+      "category": "機器",
+      "id": "netcafe-002",
+      "example": "モニターを見てみましょう。",
+      "translation": "看看显示器吧。",
+      "zone": 2
+    },
+    {
+      "jp": "キーボード",
+      "reading": "キーボード",
+      "zh": "键盘",
+      "kind": "keyboard",
+      "category": "機器",
+      "id": "netcafe-003",
+      "example": "キーボードを見てみましょう。",
+      "translation": "看看键盘吧。",
+      "zone": 2
+    },
+    {
+      "jp": "マウス",
+      "reading": "マウス",
+      "zh": "鼠标",
+      "kind": "mouse",
+      "category": "機器",
+      "id": "netcafe-004",
+      "example": "マウスを見てみましょう。",
+      "translation": "看看鼠标吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ヘッドホン",
+      "reading": "ヘッドホン",
+      "zh": "耳机",
+      "kind": "headphones",
+      "category": "機器",
+      "id": "netcafe-005",
+      "example": "ヘッドホンを見てみましょう。",
+      "translation": "看看耳机吧。",
+      "zone": 1
+    },
+    {
+      "jp": "マイク",
+      "reading": "マイク",
+      "zh": "麦克风",
+      "kind": "microphone",
+      "category": "機器",
+      "id": "netcafe-006",
+      "example": "マイクを見てみましょう。",
+      "translation": "看看麦克风吧。",
+      "zone": 2
+    },
+    {
+      "jp": "充電器",
+      "reading": "じゅうでんき",
+      "zh": "充电器",
+      "kind": "charger",
+      "category": "機器",
+      "id": "netcafe-007",
+      "example": "充電器を見てみましょう。",
+      "translation": "看看充电器吧。",
+      "zone": 2
+    },
+    {
+      "jp": "コンセント",
+      "reading": "コンセント",
+      "zh": "插座",
+      "kind": "outlet",
+      "category": "機器",
+      "id": "netcafe-008",
+      "example": "コンセントを見てみましょう。",
+      "translation": "看看插座吧。",
+      "zone": 2
+    },
+    {
+      "jp": "電池",
+      "reading": "でんち",
+      "zh": "电池",
+      "kind": "battery",
+      "category": "機器",
+      "id": "netcafe-009",
+      "example": "電池を見てみましょう。",
+      "translation": "看看电池吧。",
+      "zone": 2
+    },
+    {
+      "jp": "タブレット",
+      "reading": "タブレット",
+      "zh": "平板电脑",
+      "kind": "tablet",
+      "category": "機器",
+      "id": "netcafe-010",
+      "example": "タブレットを見てみましょう。",
+      "translation": "看看平板电脑吧。",
+      "zone": 2
+    },
+    {
+      "jp": "プリンター",
+      "reading": "プリンター",
+      "zh": "打印机",
+      "kind": "copier",
+      "category": "機器",
+      "id": "netcafe-011",
+      "example": "プリンターを見てみましょう。",
+      "translation": "看看打印机吧。",
+      "zone": 1
+    },
+    {
+      "jp": "リモコン",
+      "reading": "リモコン",
+      "zh": "遥控器",
+      "kind": "remote",
+      "category": "機器",
+      "id": "netcafe-012",
+      "example": "リモコンを見てみましょう。",
+      "translation": "看看遥控器吧。",
+      "zone": 2
+    },
+    {
+      "jp": "スピーカー",
+      "reading": "スピーカー",
+      "zh": "扬声器",
+      "kind": "speaker",
+      "category": "機器",
+      "id": "netcafe-013",
+      "example": "スピーカーを見てみましょう。",
+      "translation": "看看扬声器吧。",
+      "zone": 2
+    },
+    {
+      "jp": "防犯カメラ",
+      "reading": "ぼうはんカメラ",
+      "zh": "监控摄像头",
+      "kind": "camera",
+      "category": "機器",
+      "id": "netcafe-014",
+      "example": "防犯カメラを見てみましょう。",
+      "translation": "看看监控摄像头吧。",
+      "zone": 0
+    },
+    {
+      "jp": "時計",
+      "reading": "とけい",
+      "zh": "时钟",
+      "kind": "clock",
+      "category": "機器",
+      "id": "netcafe-015",
+      "example": "時計を見てみましょう。",
+      "translation": "看看时钟吧。",
+      "zone": 2
+    },
+    {
+      "jp": "携帯電話",
+      "reading": "けいたいでんわ",
+      "zh": "手机",
+      "kind": "tablet",
+      "category": "機器",
+      "id": "netcafe-016",
+      "example": "携帯電話を見てみましょう。",
+      "translation": "看看手机吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ファイル",
+      "reading": "ファイル",
+      "zh": "文件夹",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "netcafe-017",
+      "example": "ファイルを見てみましょう。",
+      "translation": "看看文件夹吧。",
+      "zone": 1
+    },
+    {
+      "jp": "地図",
+      "reading": "ちず",
+      "zh": "地图",
+      "kind": "menu",
+      "category": "文具・本",
+      "id": "netcafe-018",
+      "example": "地図を見てみましょう。",
+      "translation": "看看地图吧。",
+      "zone": 0
+    },
+    {
+      "jp": "新聞",
+      "reading": "しんぶん",
+      "zh": "报纸",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "netcafe-019",
+      "example": "新聞を見てみましょう。",
+      "translation": "看看报纸吧。",
+      "zone": 1
+    },
+    {
+      "jp": "雑誌",
+      "reading": "ざっし",
+      "zh": "杂志",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "netcafe-020",
+      "example": "雑誌を見てみましょう。",
+      "translation": "看看杂志吧。",
+      "zone": 1
+    },
+    {
+      "jp": "小説",
+      "reading": "しょうせつ",
+      "zh": "小说",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "netcafe-021",
+      "example": "小説を見てみましょう。",
+      "translation": "看看小说吧。",
+      "zone": 1
+    },
+    {
+      "jp": "漫画",
+      "reading": "まんが",
+      "zh": "漫画",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "netcafe-022",
+      "example": "漫画を見てみましょう。",
+      "translation": "看看漫画吧。",
+      "zone": 1
+    },
+    {
+      "jp": "絵本",
+      "reading": "えほん",
+      "zh": "绘本",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "netcafe-023",
+      "example": "絵本を見てみましょう。",
+      "translation": "看看绘本吧。",
+      "zone": 1
+    },
+    {
+      "jp": "参考書",
+      "reading": "さんこうしょ",
+      "zh": "参考书",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "netcafe-024",
+      "example": "参考書を見てみましょう。",
+      "translation": "看看参考书吧。",
+      "zone": 1
+    },
+    {
+      "jp": "緑茶",
+      "reading": "りょくちゃ",
+      "zh": "绿茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        0
+      ],
+      "id": "netcafe-025",
+      "example": "緑茶を見てみましょう。",
+      "translation": "看看绿茶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ウーロン茶",
+      "reading": "ウーロンちゃ",
+      "zh": "乌龙茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        1
+      ],
+      "id": "netcafe-026",
+      "example": "ウーロン茶を見てみましょう。",
+      "translation": "看看乌龙茶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "コーヒー",
+      "reading": "コーヒー",
+      "zh": "咖啡",
+      "kind": "mug",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        2
+      ],
+      "id": "netcafe-027",
+      "example": "コーヒーを見てみましょう。",
+      "translation": "看看咖啡吧。",
+      "zone": 4
+    },
+    {
+      "jp": "紅茶",
+      "reading": "こうちゃ",
+      "zh": "红茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        3
+      ],
+      "id": "netcafe-028",
+      "example": "紅茶を見てみましょう。",
+      "translation": "看看红茶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "オレンジジュース",
+      "reading": "オレンジジュース",
+      "zh": "橙汁",
+      "kind": "cup",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        4
+      ],
+      "id": "netcafe-029",
+      "example": "オレンジジュースを見てみましょう。",
+      "translation": "看看橙汁吧。",
+      "zone": 4
+    },
+    {
+      "jp": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "zh": "牛奶",
+      "kind": "bottle",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        5
+      ],
+      "id": "netcafe-030",
+      "example": "牛乳を見てみましょう。",
+      "translation": "看看牛奶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "個室",
+      "reading": "こしつ",
+      "zh": "单人包间",
+      "kind": "private-room",
+      "category": "ネットカフェ",
+      "id": "netcafe-031",
+      "example": "個室を見てみましょう。",
+      "translation": "看看单人包间吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ブース",
+      "reading": "ブース",
+      "zh": "隔间",
+      "kind": "private-room",
+      "category": "ネットカフェ",
+      "id": "netcafe-032",
+      "example": "ブースを見てみましょう。",
+      "translation": "看看隔间吧。",
+      "zone": 3
+    },
+    {
+      "jp": "リクライニングシート",
+      "reading": "リクライニングシート",
+      "zh": "可躺座椅",
+      "kind": "recliner",
+      "category": "ネットカフェ",
+      "id": "netcafe-033",
+      "example": "リクライニングシートを見てみましょう。",
+      "translation": "看看可躺座椅吧。",
+      "zone": 3
+    },
+    {
+      "jp": "会員証",
+      "reading": "かいいんしょう",
+      "zh": "会员卡",
+      "kind": "card",
+      "category": "ネットカフェ",
+      "id": "netcafe-034",
+      "example": "会員証を見てみましょう。",
+      "translation": "看看会员卡吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ドリンクバー",
+      "reading": "ドリンクバー",
+      "zh": "自助饮料区",
+      "kind": "coffee-machine",
+      "category": "ネットカフェ",
+      "id": "netcafe-036",
+      "example": "ドリンクバーを見てみましょう。",
+      "translation": "看看自助饮料区吧。",
+      "zone": 4
+    },
+    {
+      "jp": "本棚",
+      "reading": "ほんだな",
+      "zh": "书架",
+      "kind": "bookshelf",
+      "category": "ネットカフェ",
+      "id": "netcafe-037",
+      "example": "本棚を見てみましょう。",
+      "translation": "看看书架吧。",
+      "zone": 1
+    },
+    {
+      "jp": "受付",
+      "reading": "うけつけ",
+      "zh": "前台",
+      "kind": "counter",
+      "category": "ネットカフェ",
+      "id": "netcafe-038",
+      "example": "受付を見てみましょう。",
+      "translation": "看看前台吧。",
+      "zone": 0
+    },
+    {
+      "jp": "スリッパ",
+      "reading": "スリッパ",
+      "zh": "拖鞋",
+      "kind": "slippers",
+      "category": "ネットカフェ",
+      "id": "netcafe-039",
+      "example": "スリッパを見てみましょう。",
+      "translation": "看看拖鞋吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ブランケット",
+      "reading": "ブランケット",
+      "zh": "毯子",
+      "kind": "blanket",
+      "category": "ネットカフェ",
+      "id": "netcafe-040",
+      "example": "ブランケットを見てみましょう。",
+      "translation": "看看毯子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "netcafe-041",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "netcafe-044",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "netcafe-046",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 4
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "netcafe-047",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "netcafe-048",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "netcafe-049",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "netcafe-050",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "netcafe-051",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "netcafe-052",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 4
+    },
+    {
+      "jp": "コロッケ",
+      "reading": "コロッケ",
+      "zh": "可乐饼",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        14
+      ],
+      "category": "料理",
+      "example": "コロッケをください。",
+      "translation": "请给我可乐饼。",
+      "id": "netcafe-menu-14",
+      "zone": 4
+    },
+    {
+      "jp": "たこ焼き",
+      "reading": "たこやき",
+      "zh": "章鱼烧",
+      "kind": "fried",
+      "art": [
+        "meals",
+        1
+      ],
+      "category": "料理",
+      "example": "たこ焼きをください。",
+      "translation": "请给我章鱼烧。",
+      "id": "netcafe-menu-17",
+      "zone": 4
+    },
+    {
+      "jp": "フライドポテト",
+      "reading": "フライドポテト",
+      "zh": "炸薯条",
+      "kind": "fried",
+      "art": [
+        "meals",
+        7
+      ],
+      "category": "料理",
+      "example": "フライドポテトをください。",
+      "translation": "请给我炸薯条。",
+      "id": "netcafe-menu-23",
+      "zone": 4
+    },
+    {
+      "jp": "チャーハン",
+      "reading": "チャーハン",
+      "zh": "炒饭",
+      "kind": "rice",
+      "art": [
+        "meals",
+        9
+      ],
+      "category": "料理",
+      "example": "チャーハンをください。",
+      "translation": "请给我炒饭。",
+      "id": "netcafe-menu-25",
+      "zone": 4
+    },
+    {
+      "jp": "牛丼",
+      "reading": "ぎゅうどん",
+      "zh": "牛肉盖饭",
+      "kind": "rice",
+      "art": [
+        "meals",
+        10
+      ],
+      "category": "料理",
+      "example": "牛丼をください。",
+      "translation": "请给我牛肉盖饭。",
+      "id": "netcafe-menu-26",
+      "zone": 4
+    },
+    {
+      "jp": "ホットケーキ",
+      "reading": "ホットケーキ",
+      "zh": "松饼",
+      "kind": "sweet",
+      "art": [
+        "meals",
+        15
+      ],
+      "category": "料理",
+      "example": "ホットケーキをください。",
+      "translation": "请给我松饼。",
+      "id": "netcafe-menu-31",
+      "zone": 4
+    },
+    {
+      "id": "netcafe-detail-0001",
+      "jp": "フラット席",
+      "reading": "フラットせき",
+      "zh": "平躺垫席",
+      "kind": "floor-mattress",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これはフラット席です。",
+      "translation": "这是平躺垫席。"
+    },
+    {
+      "id": "netcafe-detail-0002",
+      "jp": "マット",
+      "reading": "マット",
+      "zh": "地垫",
+      "kind": "floor-mattress",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これはマットです。",
+      "translation": "这是地垫。"
+    },
+    {
+      "id": "netcafe-detail-0003",
+      "jp": "枕",
+      "reading": "まくら",
+      "zh": "枕头",
+      "kind": "pillow",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは枕です。",
+      "translation": "这是枕头。"
+    },
+    {
+      "id": "netcafe-detail-0004",
+      "jp": "鍵",
+      "reading": "かぎ",
+      "zh": "钥匙",
+      "kind": "key",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは鍵です。",
+      "translation": "这是钥匙。"
+    },
+    {
+      "id": "netcafe-detail-0005",
+      "jp": "鍵付き個室",
+      "reading": "かぎつきこしつ",
+      "zh": "带锁独立包间",
+      "kind": "private-room",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは鍵付き個室です。",
+      "translation": "这是带锁独立包间。"
+    },
+    {
+      "id": "netcafe-detail-0006",
+      "jp": "カードキー",
+      "reading": "カードキー",
+      "zh": "房卡",
+      "kind": "card",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これはカードキーです。",
+      "translation": "这是房卡。"
+    },
+    {
+      "id": "netcafe-detail-0007",
+      "jp": "電子錠",
+      "reading": "でんしじょう",
+      "zh": "电子门锁",
+      "kind": "keypad",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは電子錠です。",
+      "translation": "这是电子门锁。"
+    },
+    {
+      "id": "netcafe-detail-0008",
+      "jp": "内線電話",
+      "reading": "ないせんでんわ",
+      "zh": "内线电话",
+      "kind": "telephone",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは内線電話です。",
+      "translation": "这是内线电话。"
+    },
+    {
+      "id": "netcafe-detail-0009",
+      "jp": "USBポート",
+      "reading": "ユーエスビーポート",
+      "zh": "USB接口",
+      "kind": "outlet",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これはUSBポートです。",
+      "translation": "这是USB接口。"
+    },
+    {
+      "id": "netcafe-detail-0010",
+      "jp": "読書灯",
+      "reading": "どくしょとう",
+      "zh": "阅读灯",
+      "kind": "reading-lamp",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは読書灯です。",
+      "translation": "这是阅读灯。"
+    },
+    {
+      "id": "netcafe-detail-0011",
+      "jp": "靴置き",
+      "reading": "くつおき",
+      "zh": "放鞋处",
+      "kind": "shoe-tray",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは靴置きです。",
+      "translation": "这是放鞋处。"
+    },
+    {
+      "id": "netcafe-detail-0012",
+      "jp": "ハンガー",
+      "reading": "ハンガー",
+      "zh": "衣架",
+      "kind": "hanger",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これはハンガーです。",
+      "translation": "这是衣架。"
+    },
+    {
+      "id": "netcafe-detail-0013",
+      "jp": "換気口",
+      "reading": "かんきこう",
+      "zh": "通风口",
+      "kind": "vent",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは換気口です。",
+      "translation": "这是通风口。"
+    },
+    {
+      "id": "netcafe-detail-0014",
+      "jp": "荷物置き",
+      "reading": "にもつおき",
+      "zh": "行李架",
+      "kind": "luggage-rack",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは荷物置きです。",
+      "translation": "这是行李架。"
+    },
+    {
+      "id": "netcafe-detail-0015",
+      "jp": "リクライニングチェア",
+      "reading": "リクライニングチェア",
+      "zh": "可躺式座椅",
+      "kind": "recliner",
+      "zone": 3,
+      "category": "场所细节",
+      "example": "これはリクライニングチェアです。",
+      "translation": "这是可躺式座椅。"
+    },
+    {
+      "id": "netcafe-detail-0016",
+      "jp": "フットレスト",
+      "reading": "フットレスト",
+      "zh": "搁脚凳",
+      "kind": "footrest",
+      "zone": 3,
+      "category": "场所细节",
+      "example": "これはフットレストです。",
+      "translation": "这是搁脚凳。"
+    },
+    {
+      "id": "netcafe-detail-0017",
+      "jp": "サイドテーブル",
+      "reading": "サイドテーブル",
+      "zh": "边桌",
+      "kind": "table",
+      "zone": 3,
+      "category": "场所细节",
+      "example": "これはサイドテーブルです。",
+      "translation": "这是边桌。"
+    },
+    {
+      "id": "netcafe-detail-0018",
+      "jp": "ひざ掛け",
+      "reading": "ひざかけ",
+      "zh": "膝毯",
+      "kind": "blanket",
+      "zone": 3,
+      "category": "场所细节",
+      "example": "これはひざ掛けです。",
+      "translation": "这是膝毯。"
+    },
+    {
+      "id": "netcafe-detail-0019",
+      "jp": "仕切り壁",
+      "reading": "しきりかべ",
+      "zh": "隔间墙",
+      "kind": "partition",
+      "zone": 3,
+      "category": "场所细节",
+      "example": "これは仕切り壁です。",
+      "translation": "这是隔间墙。"
+    },
+    {
+      "id": "netcafe-detail-0020",
+      "jp": "シャワーブース",
+      "reading": "シャワーブース",
+      "zh": "独立淋浴间",
+      "kind": "shower-booth",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これはシャワーブースです。",
+      "translation": "这是独立淋浴间。"
+    },
+    {
+      "id": "netcafe-detail-0021",
+      "jp": "バスタオル",
+      "reading": "バスタオル",
+      "zh": "浴巾",
+      "kind": "towel",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これはバスタオルです。",
+      "translation": "这是浴巾。"
+    },
+    {
+      "id": "netcafe-detail-0022",
+      "jp": "バスマット",
+      "reading": "バスマット",
+      "zh": "浴室脚垫",
+      "kind": "mat",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これはバスマットです。",
+      "translation": "这是浴室脚垫。"
+    },
+    {
+      "id": "netcafe-detail-0023",
+      "jp": "ドライヤー",
+      "reading": "ドライヤー",
+      "zh": "吹风机",
+      "kind": "hairdryer",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これはドライヤーです。",
+      "translation": "这是吹风机。"
+    },
+    {
+      "id": "netcafe-detail-0024",
+      "jp": "洗面台",
+      "reading": "せんめんだい",
+      "zh": "洗漱台",
+      "kind": "sink",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これは洗面台です。",
+      "translation": "这是洗漱台。"
+    },
+    {
+      "id": "netcafe-detail-0025",
+      "jp": "シャンプー",
+      "reading": "シャンプー",
+      "zh": "洗发水",
+      "kind": "pumpbottle",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これはシャンプーです。",
+      "translation": "这是洗发水。"
+    },
+    {
+      "id": "netcafe-detail-0026",
+      "jp": "ボディーソープ",
+      "reading": "ボディーソープ",
+      "zh": "沐浴露",
+      "kind": "pumpbottle",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これはボディーソープです。",
+      "translation": "这是沐浴露。"
+    },
+    {
+      "id": "netcafe-detail-0027",
+      "jp": "歯ブラシ",
+      "reading": "はブラシ",
+      "zh": "牙刷",
+      "kind": "toothbrush",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これは歯ブラシです。",
+      "translation": "这是牙刷。"
+    },
+    {
+      "id": "netcafe-detail-0028",
+      "jp": "歯磨き粉",
+      "reading": "はみがきこ",
+      "zh": "牙膏",
+      "kind": "tube",
+      "zone": 5,
+      "category": "场所细节",
+      "example": "これは歯磨き粉です。",
+      "translation": "这是牙膏。"
+    },
+    {
+      "id": "netcafe-detail-0029",
+      "jp": "コインランドリー",
+      "reading": "コインランドリー",
+      "zh": "投币洗衣区",
+      "kind": "washer",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これはコインランドリーです。",
+      "translation": "这是投币洗衣区。"
+    },
+    {
+      "id": "netcafe-detail-0030",
+      "jp": "乾燥機",
+      "reading": "かんそうき",
+      "zh": "烘干机",
+      "kind": "dryer",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これは乾燥機です。",
+      "translation": "这是烘干机。"
+    },
+    {
+      "id": "netcafe-detail-0031",
+      "jp": "洗剤",
+      "reading": "せんざい",
+      "zh": "洗衣液",
+      "kind": "pumpbottle",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これは洗剤です。",
+      "translation": "这是洗衣液。"
+    },
+    {
+      "id": "netcafe-detail-0032",
+      "jp": "洗濯かご",
+      "reading": "せんたくかご",
+      "zh": "洗衣篮",
+      "kind": "basket",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これは洗濯かごです。",
+      "translation": "这是洗衣篮。"
+    },
+    {
+      "id": "netcafe-detail-0033",
+      "jp": "貸出棚",
+      "reading": "かしだしだな",
+      "zh": "借用品架",
+      "kind": "shelf",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これは貸出棚です。",
+      "translation": "这是借用品架。"
+    },
+    {
+      "id": "netcafe-detail-0034",
+      "jp": "延長コード",
+      "reading": "えんちょうコード",
+      "zh": "延长插线板",
+      "kind": "powerstrip",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これは延長コードです。",
+      "translation": "这是延长插线板。"
+    },
+    {
+      "id": "netcafe-detail-0035",
+      "jp": "使い捨てスリッパ",
+      "reading": "つかいすてスリッパ",
+      "zh": "一次性拖鞋",
+      "kind": "slippers",
+      "zone": 6,
+      "category": "场所细节",
+      "example": "これは使い捨てスリッパです。",
+      "translation": "这是一次性拖鞋。"
+    },
+    {
+      "id": "netcafe-detail-0036",
+      "jp": "受付端末",
+      "reading": "うけつけたんまつ",
+      "zh": "登记终端",
+      "kind": "terminal",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは受付端末です。",
+      "translation": "这是登记终端。"
+    },
+    {
+      "id": "netcafe-detail-0037",
+      "jp": "精算機",
+      "reading": "せいさんき",
+      "zh": "自助结算机",
+      "kind": "ticket-machine",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは精算機です。",
+      "translation": "这是自助结算机。"
+    },
+    {
+      "id": "netcafe-detail-0038",
+      "jp": "利用明細",
+      "reading": "りようめいさい",
+      "zh": "消费明细",
+      "kind": "paper",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは利用明細です。",
+      "translation": "这是消费明细。"
+    },
+    {
+      "id": "netcafe-specific-01",
+      "jp": "ソフトクリームマシン",
+      "reading": "ソフトクリームマシン",
+      "zh": "软冰淇淋机",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "ソフトクリームマシンはここにあります。",
+      "detail": {
+        "type": "softserve-machine",
+        "color": "#d1c6af"
+      },
+      "translation": "软冰淇淋机在这里。"
+    },
+    {
+      "id": "netcafe-specific-02",
+      "jp": "ティーバッグ",
+      "reading": "ティーバッグ",
+      "zh": "茶包",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "ティーバッグはここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#bbbd93"
+      },
+      "translation": "茶包在这里。"
+    },
+    {
+      "id": "netcafe-specific-03",
+      "jp": "インスタントみそ汁",
+      "reading": "インスタントみそしる",
+      "zh": "即冲味噌汤",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "インスタントみそ汁はここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#c6a988"
+      },
+      "translation": "即冲味噌汤在这里。"
+    },
+    {
+      "id": "netcafe-specific-04",
+      "jp": "シャワー利用券",
+      "reading": "シャワーりようけん",
+      "zh": "淋浴券",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "シャワー利用券はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#b1c8c4",
+        "place": [
+          2,
+          0.94,
+          1.7,
+          0.85
+        ]
+      },
+      "translation": "淋浴券在这里。"
+    },
+    {
+      "id": "netcafe-specific-05",
+      "jp": "貸出受付票",
+      "reading": "かしだしうけつけひょう",
+      "zh": "借用登记单",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "貸出受付票はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#bfd0b8"
+      },
+      "translation": "借用登记单在这里。"
+    },
+    {
+      "id": "netcafe-specific-06",
+      "jp": "使い捨て耳栓",
+      "reading": "つかいすてみみせん",
+      "zh": "一次性耳塞",
+      "kind": "specific-object",
+      "zone": 6,
+      "category": "場所ならではのもの",
+      "example": "使い捨て耳栓はここにあります。",
+      "detail": {
+        "type": "earplugs",
+        "color": "#dab68f"
+      },
+      "translation": "一次性耳塞在这里。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "飲み物",
+      "items": [
+        "netcafe-025",
+        "netcafe-026",
+        "netcafe-027",
+        "netcafe-028",
+        "netcafe-029",
+        "netcafe-030",
+        "netcafe-menu-14",
+        "netcafe-menu-17",
+        "netcafe-menu-23",
+        "netcafe-menu-25",
+        "netcafe-menu-26",
+        "netcafe-menu-31"
+      ]
+    }
+  ],
+  "npc": 24,
+  "district": 3,
+  "sceneReference": "https://www.kaikatsu.jp/facility/",
+  "venueRole": {
+    "id": "netcafe-venue-worker",
+    "jp": "フロントの店員",
+    "reading": "フロントのてんいん",
+    "zone": 0,
+    "activity": "会員証を確認しています。",
+    "readingLine": "かいいんしょうを かくにんしています。",
+    "verb": "確認する → 確認している",
+    "grammar": "会員証【を】確認する。",
+    "reply": "フラット席とリクライニング席がございます。",
+    "tools": [
+      "会員証",
+      "フラット席",
+      "リクライニングチェア",
+      "シャワー利用券"
+    ]
+  }
+}

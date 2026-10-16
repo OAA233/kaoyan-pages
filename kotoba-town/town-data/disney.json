@@ -1,0 +1,726 @@
+{
+  "id": "disney",
+  "title": "东京迪士尼乐园",
+  "jp": "東京ディズニーランド",
+  "reading": "とうきょうディズニーランド",
+  "zones": [
+    {
+      "jp": "ワールドバザール",
+      "zh": "世界集市"
+    },
+    {
+      "jp": "アドベンチャーランド",
+      "zh": "探险乐园"
+    },
+    {
+      "jp": "ウエスタンランド",
+      "zh": "西部乐园"
+    },
+    {
+      "jp": "クリッターカントリー",
+      "zh": "动物天地"
+    },
+    {
+      "jp": "ファンタジーランド",
+      "zh": "梦幻乐园"
+    },
+    {
+      "jp": "トゥーンタウン",
+      "zh": "卡通城"
+    },
+    {
+      "jp": "トゥモローランド",
+      "zh": "明日乐园"
+    }
+  ],
+  "layout": "park",
+  "items": [
+    {
+      "id": "disney-001",
+      "jp": "入場券",
+      "reading": "にゅうじょうけん",
+      "zh": "入场券",
+      "kind": "card",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "入場券を見てみましょう。",
+      "translation": "来看看入场券吧。"
+    },
+    {
+      "id": "disney-002",
+      "jp": "地図",
+      "reading": "ちず",
+      "zh": "地图",
+      "kind": "menu",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "地図を見てみましょう。",
+      "translation": "来看看地图吧。"
+    },
+    {
+      "id": "disney-003",
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "入口を見てみましょう。",
+      "translation": "来看看入口吧。"
+    },
+    {
+      "id": "disney-005",
+      "jp": "案内所",
+      "reading": "あんないじょ",
+      "zh": "服务中心",
+      "kind": "room-sign",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "案内所を見てみましょう。",
+      "translation": "来看看服务中心吧。"
+    },
+    {
+      "id": "disney-006",
+      "jp": "お土産",
+      "reading": "おみやげ",
+      "zh": "伴手礼",
+      "kind": "gift",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "お土産を見てみましょう。",
+      "translation": "来看看伴手礼吧。"
+    },
+    {
+      "id": "disney-007",
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银台",
+      "kind": "register",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "レジを見てみましょう。",
+      "translation": "来看看收银台吧。"
+    },
+    {
+      "id": "disney-008",
+      "jp": "売店",
+      "reading": "ばいてん",
+      "zh": "小卖部",
+      "kind": "stall",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "売店を見てみましょう。",
+      "translation": "来看看小卖部吧。"
+    },
+    {
+      "id": "disney-009",
+      "jp": "レストラン",
+      "reading": "レストラン",
+      "zh": "餐厅",
+      "kind": "shop",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "レストランを見てみましょう。",
+      "translation": "来看看餐厅吧。"
+    },
+    {
+      "id": "disney-010",
+      "jp": "トイレ",
+      "reading": "トイレ",
+      "zh": "洗手间",
+      "kind": "room-sign",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "トイレを見てみましょう。",
+      "translation": "来看看洗手间吧。"
+    },
+    {
+      "id": "disney-011",
+      "jp": "ロッカー",
+      "reading": "ロッカー",
+      "zh": "储物柜",
+      "kind": "locker",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "ロッカーを見てみましょう。",
+      "translation": "来看看储物柜吧。"
+    },
+    {
+      "id": "disney-012",
+      "jp": "ベビーカー",
+      "reading": "ベビーカー",
+      "zh": "婴儿车",
+      "kind": "stroller",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "ベビーカーを見てみましょう。",
+      "translation": "来看看婴儿车吧。"
+    },
+    {
+      "id": "disney-013",
+      "jp": "ポップコーン",
+      "reading": "ポップコーン",
+      "zh": "爆米花",
+      "kind": "popcorn",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "ポップコーンを見てみましょう。",
+      "translation": "来看看爆米花吧。"
+    },
+    {
+      "id": "disney-014",
+      "jp": "飲み物",
+      "reading": "のみもの",
+      "zh": "饮品",
+      "kind": "bottle",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "飲み物を見てみましょう。",
+      "translation": "来看看饮品吧。"
+    },
+    {
+      "id": "disney-015",
+      "jp": "風船",
+      "reading": "ふうせん",
+      "zh": "气球",
+      "kind": "balloon",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "風船を見てみましょう。",
+      "translation": "来看看气球吧。"
+    },
+    {
+      "id": "disney-016",
+      "jp": "列",
+      "reading": "れつ",
+      "zh": "队列",
+      "kind": "queue",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "列を見てみましょう。",
+      "translation": "来看看队列吧。"
+    },
+    {
+      "id": "disney-017",
+      "jp": "待ち時間",
+      "reading": "まちじかん",
+      "zh": "等候时间",
+      "kind": "clock",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "待ち時間を見てみましょう。",
+      "translation": "来看看等候时间吧。"
+    },
+    {
+      "id": "disney-018",
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "ベンチを見てみましょう。",
+      "translation": "来看看长椅吧。"
+    },
+    {
+      "id": "disney-019",
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "来看看垃圾桶吧。"
+    },
+    {
+      "id": "disney-020",
+      "jp": "写真",
+      "reading": "しゃしん",
+      "zh": "照片",
+      "kind": "card",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "写真を見てみましょう。",
+      "translation": "来看看照片吧。"
+    },
+    {
+      "id": "disney-021",
+      "jp": "船",
+      "reading": "ふね",
+      "zh": "船",
+      "kind": "boat",
+      "zone": 1,
+      "category": "遊園地のことば",
+      "example": "船を見てみましょう。",
+      "translation": "来看看船吧。"
+    },
+    {
+      "id": "disney-022",
+      "jp": "舵",
+      "reading": "かじ",
+      "zh": "船舵",
+      "kind": "ring",
+      "zone": 1,
+      "category": "遊園地のことば",
+      "example": "舵を見てみましょう。",
+      "translation": "来看看船舵吧。"
+    },
+    {
+      "id": "disney-023",
+      "jp": "帆",
+      "reading": "ほ",
+      "zh": "船帆",
+      "kind": "sail",
+      "zone": 1,
+      "category": "遊園地のことば",
+      "example": "帆を見てみましょう。",
+      "translation": "来看看船帆吧。"
+    },
+    {
+      "id": "disney-024",
+      "jp": "樽",
+      "reading": "たる",
+      "zh": "木桶",
+      "kind": "barrel",
+      "zone": 1,
+      "category": "遊園地のことば",
+      "example": "樽を見てみましょう。",
+      "translation": "来看看木桶吧。"
+    },
+    {
+      "id": "disney-025",
+      "jp": "滝",
+      "reading": "たき",
+      "zh": "瀑布",
+      "kind": "waterfall",
+      "zone": 3,
+      "category": "遊園地のことば",
+      "example": "滝を見てみましょう。",
+      "translation": "来看看瀑布吧。"
+    },
+    {
+      "id": "disney-026",
+      "jp": "川",
+      "reading": "かわ",
+      "zh": "河流",
+      "kind": "river",
+      "zone": 3,
+      "category": "遊園地のことば",
+      "example": "川を見てみましょう。",
+      "translation": "来看看河流吧。"
+    },
+    {
+      "id": "disney-027",
+      "jp": "丸太",
+      "reading": "まるた",
+      "zh": "原木",
+      "kind": "log",
+      "zone": 3,
+      "category": "遊園地のことば",
+      "example": "丸太を見てみましょう。",
+      "translation": "来看看原木吧。"
+    },
+    {
+      "id": "disney-028",
+      "jp": "山",
+      "reading": "やま",
+      "zh": "山",
+      "kind": "mountain",
+      "zone": 3,
+      "category": "遊園地のことば",
+      "example": "山を見てみましょう。",
+      "translation": "来看看山吧。"
+    },
+    {
+      "id": "disney-029",
+      "jp": "汽車",
+      "reading": "きしゃ",
+      "zh": "蒸汽火车",
+      "kind": "steamtrain",
+      "zone": 2,
+      "category": "遊園地のことば",
+      "example": "汽車を見てみましょう。",
+      "translation": "来看看蒸汽火车吧。"
+    },
+    {
+      "id": "disney-030",
+      "jp": "線路",
+      "reading": "せんろ",
+      "zh": "铁轨",
+      "kind": "tracks",
+      "zone": 2,
+      "category": "遊園地のことば",
+      "example": "線路を見てみましょう。",
+      "translation": "来看看铁轨吧。"
+    },
+    {
+      "id": "disney-031",
+      "jp": "駅",
+      "reading": "えき",
+      "zh": "车站",
+      "kind": "station-sign",
+      "zone": 2,
+      "category": "遊園地のことば",
+      "example": "駅を見てみましょう。",
+      "translation": "来看看车站吧。"
+    },
+    {
+      "id": "disney-032",
+      "jp": "岩",
+      "reading": "いわ",
+      "zh": "岩石",
+      "kind": "rock",
+      "zone": 2,
+      "category": "遊園地のことば",
+      "example": "岩を見てみましょう。",
+      "translation": "来看看岩石吧。"
+    },
+    {
+      "id": "disney-033",
+      "jp": "カヌー",
+      "reading": "カヌー",
+      "zh": "独木舟",
+      "kind": "boat",
+      "zone": 2,
+      "category": "遊園地のことば",
+      "example": "カヌーを見てみましょう。",
+      "translation": "来看看独木舟吧。"
+    },
+    {
+      "id": "disney-034",
+      "jp": "城",
+      "reading": "しろ",
+      "zh": "城堡",
+      "kind": "castle",
+      "zone": 4,
+      "category": "遊園地のことば",
+      "example": "城を見てみましょう。",
+      "translation": "来看看城堡吧。"
+    },
+    {
+      "id": "disney-035",
+      "jp": "塔",
+      "reading": "とう",
+      "zh": "塔",
+      "kind": "tower",
+      "zone": 4,
+      "category": "遊園地のことば",
+      "example": "塔を見てみましょう。",
+      "translation": "来看看塔吧。"
+    },
+    {
+      "id": "disney-036",
+      "jp": "旗",
+      "reading": "はた",
+      "zh": "旗帜",
+      "kind": "flag",
+      "zone": 4,
+      "category": "遊園地のことば",
+      "example": "旗を見てみましょう。",
+      "translation": "来看看旗帜吧。"
+    },
+    {
+      "id": "disney-037",
+      "jp": "メリーゴーランド",
+      "reading": "メリーゴーランド",
+      "zh": "旋转木马",
+      "kind": "carousel",
+      "zone": 4,
+      "category": "遊園地のことば",
+      "example": "メリーゴーランドを見てみましょう。",
+      "translation": "来看看旋转木马吧。"
+    },
+    {
+      "id": "disney-038",
+      "jp": "馬",
+      "reading": "うま",
+      "zh": "马",
+      "kind": "horse",
+      "zone": 4,
+      "category": "遊園地のことば",
+      "example": "馬を見てみましょう。",
+      "translation": "来看看马吧。"
+    },
+    {
+      "id": "disney-039",
+      "jp": "橋",
+      "reading": "はし",
+      "zh": "桥",
+      "kind": "bridge",
+      "zone": 4,
+      "category": "遊園地のことば",
+      "example": "橋を見てみましょう。",
+      "translation": "来看看桥吧。"
+    },
+    {
+      "id": "disney-040",
+      "jp": "家",
+      "reading": "いえ",
+      "zh": "房屋",
+      "kind": "shop",
+      "zone": 5,
+      "category": "遊園地のことば",
+      "example": "家を見てみましょう。",
+      "translation": "来看看房屋吧。"
+    },
+    {
+      "id": "disney-041",
+      "jp": "郵便ポスト",
+      "reading": "ゆうびんポスト",
+      "zh": "邮筒",
+      "kind": "postbox",
+      "zone": 5,
+      "category": "遊園地のことば",
+      "example": "郵便ポストを見てみましょう。",
+      "translation": "来看看邮筒吧。"
+    },
+    {
+      "id": "disney-042",
+      "jp": "噴水",
+      "reading": "ふんすい",
+      "zh": "喷泉",
+      "kind": "fountain",
+      "zone": 5,
+      "category": "遊園地のことば",
+      "example": "噴水を見てみましょう。",
+      "translation": "来看看喷泉吧。"
+    },
+    {
+      "id": "disney-043",
+      "jp": "車",
+      "reading": "くるま",
+      "zh": "汽车",
+      "kind": "car",
+      "zone": 5,
+      "category": "遊園地のことば",
+      "example": "車を見てみましょう。",
+      "translation": "来看看汽车吧。"
+    },
+    {
+      "id": "disney-044",
+      "jp": "道路",
+      "reading": "どうろ",
+      "zh": "道路",
+      "kind": "road",
+      "zone": 5,
+      "category": "遊園地のことば",
+      "example": "道路を見てみましょう。",
+      "translation": "来看看道路吧。"
+    },
+    {
+      "id": "disney-045",
+      "jp": "ロケット",
+      "reading": "ロケット",
+      "zh": "火箭",
+      "kind": "rocket",
+      "zone": 6,
+      "category": "遊園地のことば",
+      "example": "ロケットを見てみましょう。",
+      "translation": "来看看火箭吧。"
+    },
+    {
+      "id": "disney-046",
+      "jp": "宇宙船",
+      "reading": "うちゅうせん",
+      "zh": "宇宙飞船",
+      "kind": "spaceship",
+      "zone": 6,
+      "category": "遊園地のことば",
+      "example": "宇宙船を見てみましょう。",
+      "translation": "来看看宇宙飞船吧。"
+    },
+    {
+      "id": "disney-047",
+      "jp": "星",
+      "reading": "ほし",
+      "zh": "星星",
+      "kind": "star",
+      "zone": 6,
+      "category": "遊園地のことば",
+      "example": "星を見てみましょう。",
+      "translation": "来看看星星吧。"
+    },
+    {
+      "id": "disney-048",
+      "jp": "操縦席",
+      "reading": "そうじゅうせき",
+      "zh": "驾驶舱座位",
+      "kind": "chair",
+      "zone": 6,
+      "category": "遊園地のことば",
+      "example": "操縦席を見てみましょう。",
+      "translation": "来看看驾驶舱座位吧。"
+    },
+    {
+      "id": "disney-049",
+      "jp": "望遠鏡",
+      "reading": "ぼうえんきょう",
+      "zh": "望远镜",
+      "kind": "telescope",
+      "zone": 6,
+      "category": "遊園地のことば",
+      "example": "望遠鏡を見てみましょう。",
+      "translation": "来看看望远镜吧。"
+    },
+    {
+      "id": "disney-detail-0210",
+      "jp": "手荷物検査台",
+      "reading": "てにもつけんさだい",
+      "zh": "行李检查台",
+      "kind": "counter",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは手荷物検査台です。",
+      "translation": "这是行李检查台。"
+    },
+    {
+      "id": "disney-detail-0211",
+      "jp": "待ち時間の表示",
+      "reading": "まちじかんのひょうじ",
+      "zh": "等待时间显示牌",
+      "kind": "sign",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは待ち時間の表示です。",
+      "translation": "这是等待时间显示牌。"
+    },
+    {
+      "id": "disney-detail-0212",
+      "jp": "レインポンチョ",
+      "reading": "レインポンチョ",
+      "zh": "雨披",
+      "kind": "apron",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはレインポンチョです。",
+      "translation": "这是雨披。"
+    },
+    {
+      "id": "disney-specific-01",
+      "jp": "ポップコーンバケット",
+      "reading": "ポップコーンバケット",
+      "zh": "爆米花桶",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "ポップコーンバケットはここにあります。",
+      "detail": {
+        "type": "snack",
+        "color": "#dab773",
+        "place": [
+          -3.6,
+          1.15,
+          3.2,
+          1
+        ]
+      },
+      "translation": "爆米花桶在这里。"
+    },
+    {
+      "id": "disney-specific-02",
+      "jp": "ポップコーンリフィル",
+      "reading": "ポップコーンリフィル",
+      "zh": "爆米花续装",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "ポップコーンリフィルはここにあります。",
+      "detail": {
+        "type": "snack",
+        "color": "#bfaa91",
+        "place": [
+          -2.6,
+          1.15,
+          3.2,
+          1
+        ]
+      },
+      "translation": "爆米花续装在这里。"
+    },
+    {
+      "id": "disney-specific-03",
+      "jp": "キャラメルポップコーン",
+      "reading": "キャラメルポップコーン",
+      "zh": "焦糖爆米花",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "キャラメルポップコーンはここにあります。",
+      "detail": {
+        "type": "snack",
+        "color": "#bf9568"
+      },
+      "translation": "焦糖爆米花在这里。"
+    },
+    {
+      "id": "disney-specific-04",
+      "jp": "ベビーカーレンタル票",
+      "reading": "ベビーカーレンタルひょう",
+      "zh": "童车租借单",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "ベビーカーレンタル票はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#c2cbb7"
+      },
+      "translation": "童车租借单在这里。"
+    },
+    {
+      "id": "disney-specific-05",
+      "jp": "記念写真の台紙",
+      "reading": "きねんしゃしんのだいし",
+      "zh": "纪念照相框纸",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "記念写真の台紙はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#d0bccf"
+      },
+      "translation": "纪念照相框纸在这里。"
+    },
+    {
+      "id": "disney-specific-06",
+      "jp": "お土産用ショッピングバッグ",
+      "reading": "おみやげようショッピングバッグ",
+      "zh": "伴手礼购物袋",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "お土産用ショッピングバッグはここにあります。",
+      "detail": {
+        "type": "bag",
+        "color": "#c0b4cf"
+      },
+      "translation": "伴手礼购物袋在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 34,
+  "district": 3,
+  "note": "参考真实园区主题，按日语学习重新安排的简化空间。",
+  "sources": [
+    "https://www.tokyodisneyresort.jp/tdr/facility/themeland"
+  ],
+  "sceneReference": "https://www.tokyodisneyresort.jp/tdl/food/popcorn/",
+  "venueRole": {
+    "id": "disney-venue-worker",
+    "jp": "売店の係",
+    "reading": "ばいてんのかかり",
+    "zone": 0,
+    "activity": "ポップコーンを入れています。",
+    "readingLine": "ポップコーンを いれています。",
+    "verb": "入れる → 入れている",
+    "grammar": "ポップコーン【を】バケット【に】入れる。",
+    "reply": "バケットはお持ちですか。",
+    "tools": [
+      "ポップコーンバケット",
+      "ポップコーンリフィル",
+      "キャラメルポップコーン"
+    ]
+  }
+}

@@ -1,0 +1,934 @@
+{
+  "id": "ramen",
+  "title": "拉面店",
+  "jp": "ラーメン屋",
+  "reading": "ラーメンや",
+  "layout": "restaurant",
+  "zones": [
+    {
+      "jp": "券売機",
+      "zh": "券売機"
+    },
+    {
+      "jp": "カウンター席",
+      "zh": "カウンター席"
+    },
+    {
+      "jp": "セルフサービスの水",
+      "zh": "セルフサービスの水"
+    },
+    {
+      "jp": "テーブル席",
+      "zh": "テーブル席"
+    }
+  ],
+  "items": [
+    {
+      "jp": "メニュー",
+      "reading": "メニュー",
+      "zh": "菜单",
+      "kind": "menu",
+      "category": "食器・設備",
+      "id": "ramen-001",
+      "example": "メニューを見てみましょう。",
+      "translation": "看看菜单吧。",
+      "zone": 0
+    },
+    {
+      "jp": "箸",
+      "reading": "はし",
+      "zh": "筷子",
+      "kind": "chopsticks",
+      "category": "食器・設備",
+      "id": "ramen-002",
+      "example": "箸を見てみましょう。",
+      "translation": "看看筷子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "箸置き",
+      "reading": "はしおき",
+      "zh": "筷架",
+      "kind": "smallblock",
+      "category": "食器・設備",
+      "id": "ramen-003",
+      "example": "箸置きを見てみましょう。",
+      "translation": "看看筷架吧。",
+      "zone": 3
+    },
+    {
+      "jp": "スプーン",
+      "reading": "スプーン",
+      "zh": "勺子",
+      "kind": "spoon",
+      "category": "食器・設備",
+      "id": "ramen-004",
+      "example": "スプーンを見てみましょう。",
+      "translation": "看看勺子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "皿",
+      "reading": "さら",
+      "zh": "盘子",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "ramen-007",
+      "example": "皿を見てみましょう。",
+      "translation": "看看盘子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "取り皿",
+      "reading": "とりざら",
+      "zh": "分餐小碟",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "ramen-008",
+      "example": "取り皿を見てみましょう。",
+      "translation": "看看分餐小碟吧。",
+      "zone": 3
+    },
+    {
+      "jp": "茶碗",
+      "reading": "ちゃわん",
+      "zh": "饭碗",
+      "kind": "bowl",
+      "category": "食器・設備",
+      "id": "ramen-009",
+      "example": "茶碗を見てみましょう。",
+      "translation": "看看饭碗吧。",
+      "zone": 3
+    },
+    {
+      "jp": "湯のみ",
+      "reading": "ゆのみ",
+      "zh": "日式茶杯",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "ramen-010",
+      "example": "湯のみを見てみましょう。",
+      "translation": "看看日式茶杯吧。",
+      "zone": 3
+    },
+    {
+      "jp": "コップ",
+      "reading": "コップ",
+      "zh": "杯子",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "ramen-011",
+      "example": "コップを見てみましょう。",
+      "translation": "看看杯子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "おしぼり",
+      "reading": "おしぼり",
+      "zh": "擦手巾",
+      "kind": "towel",
+      "category": "食器・設備",
+      "id": "ramen-012",
+      "example": "おしぼりを見てみましょう。",
+      "translation": "看看擦手巾吧。",
+      "zone": 3
+    },
+    {
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银机",
+      "kind": "register",
+      "category": "食器・設備",
+      "id": "ramen-027",
+      "example": "レジを見てみましょう。",
+      "translation": "看看收银机吧。",
+      "zone": 0
+    },
+    {
+      "jp": "レシート",
+      "reading": "レシート",
+      "zh": "购物小票",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "ramen-028",
+      "example": "レシートを見てみましょう。",
+      "translation": "看看购物小票吧。",
+      "zone": 0
+    },
+    {
+      "jp": "お釣り",
+      "reading": "おつり",
+      "zh": "找零",
+      "kind": "coins",
+      "category": "食器・設備",
+      "id": "ramen-029",
+      "example": "お釣りを見てみましょう。",
+      "translation": "看看找零吧。",
+      "zone": 0
+    },
+    {
+      "jp": "伝票",
+      "reading": "でんぴょう",
+      "zh": "账单",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "ramen-030",
+      "example": "伝票を見てみましょう。",
+      "translation": "看看账单吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ラーメン",
+      "reading": "ラーメン",
+      "zh": "拉面",
+      "kind": "ramen-bowl",
+      "category": "料理",
+      "id": "ramen-031",
+      "example": "ラーメンを見てみましょう。",
+      "translation": "看看拉面吧。",
+      "zone": 3
+    },
+    {
+      "jp": "唐揚げ",
+      "reading": "からあげ",
+      "zh": "日式炸鸡",
+      "kind": "fried",
+      "category": "料理",
+      "art": [
+        "foods",
+        1
+      ],
+      "id": "ramen-032",
+      "example": "唐揚げを見てみましょう。",
+      "translation": "看看日式炸鸡吧。",
+      "zone": 3
+    },
+    {
+      "jp": "緑茶",
+      "reading": "りょくちゃ",
+      "zh": "绿茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        0
+      ],
+      "id": "ramen-033",
+      "example": "緑茶を見てみましょう。",
+      "translation": "看看绿茶吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ウーロン茶",
+      "reading": "ウーロンちゃ",
+      "zh": "乌龙茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        1
+      ],
+      "id": "ramen-034",
+      "example": "ウーロン茶を見てみましょう。",
+      "translation": "看看乌龙茶吧。",
+      "zone": 1
+    },
+    {
+      "jp": "オレンジジュース",
+      "reading": "オレンジジュース",
+      "zh": "橙汁",
+      "kind": "cup",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        4
+      ],
+      "id": "ramen-037",
+      "example": "オレンジジュースを見てみましょう。",
+      "translation": "看看橙汁吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ビール",
+      "reading": "ビール",
+      "zh": "啤酒",
+      "kind": "beer",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        6
+      ],
+      "id": "ramen-039",
+      "example": "ビールを見てみましょう。",
+      "translation": "看看啤酒吧。",
+      "zone": 1
+    },
+    {
+      "jp": "日本酒",
+      "reading": "にほんしゅ",
+      "zh": "日本清酒",
+      "kind": "sakeflask",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        7
+      ],
+      "id": "ramen-040",
+      "example": "日本酒を見てみましょう。",
+      "translation": "看看日本清酒吧。",
+      "zone": 1
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "ramen-041",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "cup-shelf",
+      "category": "空間・設備",
+      "id": "ramen-044",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 2,
+      "noteJa": "給水機のそばにある棚です。コップを置きます。"
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "ramen-046",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 3
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "ramen-047",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "ramen-048",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "ramen-049",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "ramen-050",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 3
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "ramen-051",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "ramen-052",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 3
+    },
+    {
+      "jp": "餃子",
+      "reading": "ぎょうざ",
+      "zh": "饺子",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        13
+      ],
+      "category": "料理",
+      "example": "餃子をください。",
+      "translation": "请给我饺子。",
+      "id": "ramen-menu-13",
+      "zone": 3
+    },
+    {
+      "jp": "冷ややっこ",
+      "reading": "ひややっこ",
+      "zh": "凉拌豆腐",
+      "kind": "tofu",
+      "art": [
+        "meals",
+        4
+      ],
+      "category": "料理",
+      "example": "冷ややっこをください。",
+      "translation": "请给我凉拌豆腐。",
+      "id": "ramen-menu-20",
+      "zone": 3
+    },
+    {
+      "jp": "漬物",
+      "reading": "つけもの",
+      "zh": "腌菜",
+      "kind": "pickles",
+      "art": [
+        "meals",
+        5
+      ],
+      "category": "料理",
+      "example": "漬物をください。",
+      "translation": "请给我腌菜。",
+      "id": "ramen-menu-21",
+      "zone": 3
+    },
+    {
+      "jp": "チャーハン",
+      "reading": "チャーハン",
+      "zh": "炒饭",
+      "kind": "rice",
+      "art": [
+        "meals",
+        9
+      ],
+      "category": "料理",
+      "example": "チャーハンをください。",
+      "translation": "请给我炒饭。",
+      "id": "ramen-menu-25",
+      "zone": 3
+    },
+    {
+      "id": "ramen-detail-0110",
+      "jp": "調味料入れ",
+      "reading": "ちょうみりょういれ",
+      "zh": "调味罐",
+      "kind": "jar",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは調味料入れです。",
+      "translation": "这是调味罐。"
+    },
+    {
+      "id": "ramen-detail-0111",
+      "jp": "コショウ",
+      "reading": "コショウ",
+      "zh": "胡椒",
+      "kind": "jar",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これはコショウです。",
+      "translation": "这是胡椒。"
+    },
+    {
+      "id": "ramen-detail-0112",
+      "jp": "紅しょうが",
+      "reading": "べにしょうが",
+      "zh": "红姜丝",
+      "kind": "ginger",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは紅しょうがです。",
+      "translation": "这是红姜丝。"
+    },
+    {
+      "id": "ramen-detail-0113",
+      "jp": "食券",
+      "reading": "しょっけん",
+      "zh": "餐券",
+      "kind": "card",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは食券です。",
+      "translation": "这是餐券。"
+    },
+    {
+      "id": "ramen-shop-001",
+      "jp": "券売機",
+      "reading": "けんばいき",
+      "zh": "自动售票机",
+      "kind": "ticket-machine",
+      "zone": 0,
+      "category": "店内のことば",
+      "example": "券売機を見てみましょう。",
+      "translation": "一起看看自动售票机吧。"
+    },
+    {
+      "id": "ramen-shop-002",
+      "jp": "給水機",
+      "reading": "きゅうすいき",
+      "zh": "饮水机",
+      "kind": "water-dispenser",
+      "zone": 2,
+      "category": "店内のことば",
+      "example": "給水機を見てみましょう。",
+      "translation": "一起看看饮水机吧。"
+    },
+    {
+      "id": "ramen-shop-003",
+      "jp": "レンゲ",
+      "reading": "レンゲ",
+      "zh": "汤匙",
+      "kind": "spoon",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "レンゲを見てみましょう。",
+      "translation": "一起看看汤匙吧。"
+    },
+    {
+      "id": "ramen-shop-004",
+      "jp": "カウンター",
+      "reading": "カウンター",
+      "zh": "吧台",
+      "kind": "counter",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "カウンターを見てみましょう。",
+      "translation": "一起看看吧台吧。"
+    },
+    {
+      "id": "ramen-shop-005",
+      "jp": "お冷",
+      "reading": "おひや",
+      "zh": "凉水",
+      "kind": "cup",
+      "zone": 2,
+      "category": "店内のことば",
+      "example": "お冷を見てみましょう。",
+      "translation": "一起看看凉水吧。"
+    },
+    {
+      "id": "ramen-shop-006",
+      "jp": "ティッシュ",
+      "reading": "ティッシュ",
+      "zh": "纸巾",
+      "kind": "tissue",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "ティッシュを見てみましょう。",
+      "translation": "一起看看纸巾吧。"
+    },
+    {
+      "id": "ramen-shop-007",
+      "jp": "荷物置き",
+      "reading": "にもつおき",
+      "zh": "行李架",
+      "kind": "luggage-basket",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "荷物をかごに入れます。",
+      "translation": "把随身物品放进篮子里。",
+      "noteJa": "荷物は席のそばのかごに入れます。食べ物を置くカウンターには置きません。"
+    },
+    {
+      "id": "ramen-shop-008",
+      "jp": "醤油ラーメン",
+      "reading": "しょうゆラーメン",
+      "zh": "酱油拉面",
+      "kind": "ramen-bowl",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "醤油ラーメンを注文します。",
+      "translation": "点一份酱油拉面。",
+      "menuGroup": "ラーメン"
+    },
+    {
+      "id": "ramen-shop-009",
+      "jp": "味噌ラーメン",
+      "reading": "みそラーメン",
+      "zh": "味噌拉面",
+      "kind": "ramen-bowl",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "味噌ラーメンを注文します。",
+      "translation": "点一份味噌拉面。",
+      "menuGroup": "ラーメン"
+    },
+    {
+      "id": "ramen-shop-010",
+      "jp": "塩ラーメン",
+      "reading": "しおラーメン",
+      "zh": "盐味拉面",
+      "kind": "ramen-bowl",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "塩ラーメンを注文します。",
+      "translation": "点一份盐味拉面。",
+      "menuGroup": "ラーメン"
+    },
+    {
+      "id": "ramen-shop-011",
+      "jp": "豚骨ラーメン",
+      "reading": "とんこつラーメン",
+      "zh": "豚骨拉面",
+      "kind": "ramen-bowl",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "豚骨ラーメンを注文します。",
+      "translation": "点一份豚骨拉面。",
+      "menuGroup": "ラーメン"
+    },
+    {
+      "id": "ramen-work-52",
+      "jp": "ゆで麺機",
+      "reading": "ゆでめんき",
+      "zh": "煮面机",
+      "category": "店の仕事",
+      "kind": "noodle-boiler",
+      "zone": 1,
+      "example": "ゆで麺機で麺をゆでます。",
+      "noteJa": "麺をゆでるための機械です。「で」は道具を表します。",
+      "workPosition": [
+        -7.3,
+        0,
+        -9.8
+      ],
+      "workScale": 1,
+      "translation": "用煮面机煮面。"
+    },
+    {
+      "id": "ramen-detail-0108",
+      "jp": "寸胴鍋",
+      "reading": "ずんどうなべ",
+      "zh": "高汤深锅",
+      "kind": "stockpot",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "寸胴鍋でスープを作ります。",
+      "translation": "用深汤锅熬汤。",
+      "noteJa": "",
+      "workPosition": [
+        -4.8,
+        1.2,
+        -9.8
+      ],
+      "workScale": 1.45
+    },
+    {
+      "jp": "お玉",
+      "reading": "おたま",
+      "zh": "汤勺",
+      "kind": "soup-ladle",
+      "category": "食器・設備",
+      "id": "ramen-019",
+      "example": "お玉でスープをすくいます。",
+      "translation": "用汤勺舀汤。",
+      "zone": 1,
+      "noteJa": "",
+      "workPosition": [
+        -3.8,
+        1.4,
+        -9.5
+      ],
+      "workScale": 1
+    },
+    {
+      "id": "ramen-detail-0109",
+      "jp": "湯切りざる",
+      "reading": "ゆきりざる",
+      "zh": "滤面笊篱",
+      "kind": "noodle-strainer",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "ざるで麺の湯を切ります。",
+      "translation": "用滤篮沥干面条的水。",
+      "noteJa": "ゆでた麺の水分を切ります。ラーメン店では「てぼ」とも呼ばれます。",
+      "workPosition": [
+        -2.85,
+        1.15,
+        -7.95
+      ],
+      "workScale": 1
+    },
+    {
+      "id": "ramen-work-56",
+      "jp": "麺",
+      "reading": "めん",
+      "zh": "面条",
+      "category": "店の仕事",
+      "kind": "raw-noodles",
+      "zone": 1,
+      "example": "麺をゆでています。",
+      "noteJa": "「ゆでる → ゆでている」。今、している動作を表します。",
+      "workPosition": [
+        -1.9,
+        1.22,
+        -9.8
+      ],
+      "workScale": 1,
+      "translation": "正在煮面条。"
+    },
+    {
+      "id": "ramen-work-57",
+      "jp": "薬味",
+      "reading": "やくみ",
+      "zh": "佐料",
+      "category": "店の仕事",
+      "kind": "topping-pans",
+      "zone": 1,
+      "example": "ラーメンに薬味をのせます。",
+      "noteJa": "",
+      "workPosition": [
+        -0.35,
+        1.22,
+        -9.8
+      ],
+      "workScale": 1,
+      "translation": "在拉面上放佐料。"
+    },
+    {
+      "id": "ramen-work-58",
+      "jp": "どんぶり",
+      "reading": "どんぶり",
+      "zh": "大碗",
+      "category": "店の仕事",
+      "kind": "bowl-stack",
+      "zone": 1,
+      "example": "どんぶりにスープを入れます。",
+      "noteJa": "",
+      "workPosition": [
+        1.3,
+        1.22,
+        -9.8
+      ],
+      "workScale": 1,
+      "translation": "把汤倒进大碗里。"
+    },
+    {
+      "jp": "流し台",
+      "reading": "ながしだい",
+      "zh": "水槽台",
+      "kind": "work-sink",
+      "category": "食器・設備",
+      "id": "ramen-025",
+      "example": "流し台で道具を洗います。",
+      "translation": "在水槽里清洗工具。",
+      "zone": 1,
+      "noteJa": "",
+      "workPosition": [
+        -9.65,
+        0,
+        -8.4
+      ],
+      "workScale": 0.8
+    },
+    {
+      "id": "ramen-work-60",
+      "jp": "換気扇",
+      "reading": "かんきせん",
+      "zh": "换气扇",
+      "category": "店の仕事",
+      "kind": "wall-vent",
+      "zone": 1,
+      "example": "換気扇を回します。",
+      "noteJa": "",
+      "workPosition": [
+        -6.5,
+        2.75,
+        -11.15
+      ],
+      "workScale": 1,
+      "translation": "打开换气扇。"
+    },
+    {
+      "id": "ramen-specific-menu-01",
+      "jp": "味玉",
+      "reading": "あじたま",
+      "zh": "溏心卤蛋",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "味玉を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "egg",
+        "color": "#d6b475",
+        "leaf": false
+      },
+      "reference": "https://zh-cht.ichiran.com/column/clmn-005047.html",
+      "translation": "请给我一份溏心卤蛋。"
+    },
+    {
+      "id": "ramen-specific-menu-02",
+      "jp": "チャーシュー",
+      "reading": "チャーシュー",
+      "zh": "叉烧",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "チャーシューを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "pork-slices",
+        "color": "#bd9786",
+        "leaf": false
+      },
+      "reference": "https://zh-cht.ichiran.com/column/clmn-005047.html",
+      "translation": "请给我一份叉烧。"
+    },
+    {
+      "id": "ramen-specific-menu-03",
+      "jp": "メンマ",
+      "reading": "メンマ",
+      "zh": "笋干",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "メンマを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "strips",
+        "color": "#be9a68",
+        "leaf": false
+      },
+      "reference": "https://zh-cht.ichiran.com/column/clmn-005047.html",
+      "translation": "请给我一份笋干。"
+    },
+    {
+      "id": "ramen-specific-menu-04",
+      "jp": "替え玉",
+      "reading": "かえだま",
+      "zh": "加面",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "替え玉を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "noodles",
+        "color": "#e2cfa6",
+        "leaf": false
+      },
+      "reference": "https://zh-cht.ichiran.com/column/clmn-005047.html",
+      "translation": "请给我一份加面。"
+    },
+    {
+      "id": "ramen-specific-menu-05",
+      "jp": "ねぎ",
+      "reading": "ねぎ",
+      "zh": "葱",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "ねぎを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "onion",
+        "color": "#94b985",
+        "leaf": false
+      },
+      "reference": "https://zh-cht.ichiran.com/column/clmn-005047.html",
+      "translation": "请给我一份葱。"
+    },
+    {
+      "id": "ramen-specific-menu-06",
+      "jp": "きくらげ",
+      "reading": "きくらげ",
+      "zh": "木耳",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "きくらげを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "strips",
+        "color": "#66584a",
+        "leaf": false
+      },
+      "reference": "https://zh-cht.ichiran.com/column/clmn-005047.html",
+      "translation": "请给我一份木耳。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "お店の料理を選ぶ",
+      "items": [
+        "ramen-specific-menu-01",
+        "ramen-specific-menu-02",
+        "ramen-specific-menu-03",
+        "ramen-specific-menu-04",
+        "ramen-specific-menu-05",
+        "ramen-specific-menu-06"
+      ]
+    },
+    {
+      "name": "ラーメン",
+      "items": [
+        "ramen-shop-008",
+        "ramen-shop-009",
+        "ramen-shop-010",
+        "ramen-shop-011"
+      ]
+    },
+    {
+      "name": "料理・軽食",
+      "items": [
+        "ramen-031",
+        "ramen-032",
+        "ramen-menu-13",
+        "ramen-menu-20",
+        "ramen-menu-21",
+        "ramen-menu-25"
+      ]
+    },
+    {
+      "name": "飲み物",
+      "items": [
+        "ramen-033",
+        "ramen-034",
+        "ramen-037",
+        "ramen-039",
+        "ramen-040"
+      ]
+    }
+  ],
+  "npc": 5,
+  "district": 1,
+  "sceneReference": "https://zh-cht.ichiran.com/column/clmn-005047.html"
+}

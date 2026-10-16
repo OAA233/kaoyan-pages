@@ -1,0 +1,204 @@
+{
+  "id": "tobita",
+  "title": "飞田新地街景",
+  "jp": "飛田新地",
+  "reading": "とびたしんち",
+  "layout": "district",
+  "zones": [
+    {
+      "jp": "鯛よし百番",
+      "zh": "鲷吉百番外观"
+    },
+    {
+      "jp": "街区の中心",
+      "zh": "街区中心"
+    },
+    {
+      "jp": "大門跡",
+      "zh": "旧大门附近"
+    },
+    {
+      "jp": "北門跡",
+      "zh": "旧北门附近"
+    },
+    {
+      "jp": "東側の路地",
+      "zh": "东侧小巷"
+    }
+  ],
+  "npc": 0,
+  "noNpc": true,
+  "district": 5,
+  "items": [
+    {
+      "id": "tobita-hyakuban",
+      "key": "hyakuban",
+      "jp": "鯛よし百番",
+      "reading": "たいよしひゃくばん",
+      "zh": "鲷吉百番",
+      "kind": "architecture",
+      "architecture": true,
+      "zone": 0,
+      "example": "角の玄関、瓦屋根、赤い高欄が特徴です。",
+      "translation": "转角的玄关、瓦屋顶和红色栏杆是这座建筑的特点。",
+      "note": "参考官方外观和文化厅建筑记录：切角入口、瓦顶与红栏杆。",
+      "related": [
+        "tobita-lattice",
+        "tobita-roof",
+        "tobita-eaves",
+        "tobita-balcony",
+        "tobita-lantern"
+      ],
+      "reference": "https://hyakuban.jp/"
+    },
+    {
+      "id": "tobita-building",
+      "key": "building",
+      "jp": "建物",
+      "reading": "たてもの",
+      "zh": "建筑",
+      "kind": "architecture",
+      "architecture": true,
+      "zone": 1,
+      "example": "道路と建物の輪郭は公開地図をもとにしています。",
+      "translation": "道路和建筑轮廓以公开地图为基础。",
+      "note": "道路和建筑轮廓取自公开地图，外墙和细部是卡通化近似。",
+      "related": [
+        "tobita-lattice",
+        "tobita-roof",
+        "tobita-eaves"
+      ]
+    },
+    {
+      "id": "tobita-lattice",
+      "key": "lattice",
+      "jp": "格子",
+      "reading": "こうし",
+      "zh": "格栅",
+      "kind": "architecture",
+      "architecture": true,
+      "zone": 0,
+      "example": "窓に格子があります。",
+      "translation": "窗户上有格栅。"
+    },
+    {
+      "id": "tobita-lantern",
+      "key": "lantern",
+      "jp": "提灯",
+      "reading": "ちょうちん",
+      "zh": "灯笼",
+      "kind": "architecture",
+      "architecture": true,
+      "zone": 0,
+      "example": "軒下に提灯が並んでいます。",
+      "translation": "屋檐下排列着灯笼。"
+    },
+    {
+      "id": "tobita-eaves",
+      "key": "eaves",
+      "jp": "軒",
+      "reading": "のき",
+      "zh": "屋檐",
+      "kind": "architecture",
+      "architecture": true,
+      "zone": 0,
+      "example": "軒の下に立ちます。",
+      "translation": "站在屋檐下。"
+    },
+    {
+      "id": "tobita-roof",
+      "key": "roof",
+      "jp": "瓦屋根",
+      "reading": "かわらやね",
+      "zh": "瓦屋顶",
+      "kind": "architecture",
+      "architecture": true,
+      "zone": 0,
+      "example": "瓦屋根の建物を見ます。",
+      "translation": "看瓦屋顶的建筑。"
+    },
+    {
+      "id": "tobita-balcony",
+      "key": "balcony",
+      "jp": "高欄",
+      "reading": "こうらん",
+      "zh": "栏杆",
+      "kind": "architecture",
+      "architecture": true,
+      "zone": 0,
+      "example": "二階に赤い高欄があります。",
+      "translation": "二楼有红色栏杆。"
+    },
+    {
+      "id": "tobita-gate",
+      "key": "gate",
+      "jp": "大門跡",
+      "reading": "おおもんあと",
+      "zh": "大门遗址",
+      "kind": "architecture",
+      "architecture": true,
+      "zone": 2,
+      "example": "かつての入口の跡です。",
+      "translation": "这里是从前入口的遗址。",
+      "note": "旧入口的遗址。这里只作地点标记，不虚构已消失的大门。"
+    },
+    {
+      "id": "tobita-north",
+      "key": "north",
+      "jp": "北門跡",
+      "reading": "きたもんあと",
+      "zh": "北门遗址",
+      "kind": "architecture",
+      "architecture": true,
+      "zone": 3,
+      "example": "北側の路地を歩きます。",
+      "translation": "沿北侧的小巷步行。"
+    },
+    {
+      "id": "tobita-shrine",
+      "key": "shrine",
+      "jp": "地蔵尊",
+      "reading": "じぞうそん",
+      "zh": "地藏像",
+      "kind": "architecture",
+      "architecture": true,
+      "zone": 4,
+      "example": "道のそばに小さな祠があります。",
+      "translation": "路旁有一座小祠。外形为示意。"
+    },
+    {
+      "id": "tobita-canopy",
+      "key": "canopy",
+      "jp": "屋根",
+      "reading": "やね",
+      "zh": "屋顶／顶棚",
+      "kind": "architecture",
+      "architecture": true,
+      "zone": 3,
+      "example": "屋根の下を通ります。",
+      "translation": "从顶棚下面经过。地图标作顶棚的部分保持下方可通行。",
+      "note": "从顶棚下面经过。地图标作顶棚的部分保持下方可通行。"
+    }
+  ],
+  "references": [
+    {
+      "label": "鯛よし百番 · 公式外観資料",
+      "url": "https://hyakuban.jp/"
+    },
+    {
+      "label": "文化庁 · 登録建築資料",
+      "url": "https://kunishitei.bunka.go.jp/bsys/maindetails/101/00001527"
+    },
+    {
+      "label": "© OpenStreetMap contributors · ODbL",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "label": "地図データをダウンロード（ODbL 1.0）",
+      "url": "./tobita-map.json",
+      "download": true
+    }
+  ],
+  "referenceNote": "道路・建物の輪郭は公開地図をもとにした参考再現です。外壁・屋根・色・高さの一部は近似です。",
+  "referenceZh": "433处建筑及顶棚轮廓、106条道路采用公开地图坐标；192处使用地图高度标注。鯛よし百番参考官方照片，其余立面、门窗、屋顶、颜色、电线与缺失高度为卡通化近似，并非测绘级逐栋复刻。地图提取日期：2026-10-03。"
+}

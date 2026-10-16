@@ -1,0 +1,577 @@
+{
+  "id": "post",
+  "title": "邮局",
+  "jp": "郵便局",
+  "reading": "ゆうびんきょく",
+  "layout": "service",
+  "zones": [
+    {
+      "jp": "窓口",
+      "zh": "办理窗口"
+    },
+    {
+      "jp": "記入台",
+      "zh": "填写区"
+    },
+    {
+      "jp": "小包",
+      "zh": "包裹区"
+    },
+    {
+      "jp": "郵便",
+      "zh": "邮寄区"
+    }
+  ],
+  "items": [
+    {
+      "jp": "鉛筆",
+      "reading": "えんぴつ",
+      "zh": "铅笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "post-001",
+      "example": "鉛筆を見てみましょう。",
+      "translation": "看看铅笔吧。",
+      "zone": 1
+    },
+    {
+      "jp": "消しゴム",
+      "reading": "けしゴム",
+      "zh": "橡皮",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "post-002",
+      "example": "消しゴムを見てみましょう。",
+      "translation": "看看橡皮吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ボールペン",
+      "reading": "ボールペン",
+      "zh": "圆珠笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "post-003",
+      "example": "ボールペンを見てみましょう。",
+      "translation": "看看圆珠笔吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ノート",
+      "reading": "ノート",
+      "zh": "笔记本",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "post-004",
+      "example": "ノートを見てみましょう。",
+      "translation": "看看笔记本吧。",
+      "zone": 1
+    },
+    {
+      "jp": "定規",
+      "reading": "じょうぎ",
+      "zh": "尺子",
+      "kind": "ruler",
+      "category": "文具・本",
+      "id": "post-007",
+      "example": "定規を見てみましょう。",
+      "translation": "看看尺子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "はさみ",
+      "reading": "はさみ",
+      "zh": "剪刀",
+      "kind": "scissors",
+      "category": "文具・本",
+      "id": "post-008",
+      "example": "はさみを見てみましょう。",
+      "translation": "看看剪刀吧。",
+      "zone": 1
+    },
+    {
+      "jp": "のり",
+      "reading": "のり",
+      "zh": "胶水",
+      "kind": "tube",
+      "category": "文具・本",
+      "id": "post-009",
+      "example": "のりを見てみましょう。",
+      "translation": "看看胶水吧。",
+      "zone": 1
+    },
+    {
+      "jp": "付箋",
+      "reading": "ふせん",
+      "zh": "便签",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "post-012",
+      "example": "付箋を見てみましょう。",
+      "translation": "看看便签吧。",
+      "zone": 1
+    },
+    {
+      "jp": "クリップ",
+      "reading": "クリップ",
+      "zh": "回形针",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "post-013",
+      "example": "クリップを見てみましょう。",
+      "translation": "看看回形针吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ホチキス",
+      "reading": "ホチキス",
+      "zh": "订书机",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "post-014",
+      "example": "ホチキスを見てみましょう。",
+      "translation": "看看订书机吧。",
+      "zone": 1
+    },
+    {
+      "jp": "封筒",
+      "reading": "ふうとう",
+      "zh": "信封",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "post-015",
+      "example": "封筒を見てみましょう。",
+      "translation": "看看信封吧。",
+      "zone": 3
+    },
+    {
+      "jp": "便箋",
+      "reading": "びんせん",
+      "zh": "信纸",
+      "kind": "paper",
+      "category": "文具・本",
+      "id": "post-016",
+      "example": "便箋を見てみましょう。",
+      "translation": "看看信纸吧。",
+      "zone": 1
+    },
+    {
+      "jp": "切手",
+      "reading": "きって",
+      "zh": "邮票",
+      "kind": "stamp",
+      "category": "文具・本",
+      "id": "post-017",
+      "example": "切手を見てみましょう。",
+      "translation": "看看邮票吧。",
+      "zone": 3
+    },
+    {
+      "jp": "はがき",
+      "reading": "はがき",
+      "zh": "明信片",
+      "kind": "card",
+      "category": "文具・本",
+      "id": "post-018",
+      "example": "はがきを見てみましょう。",
+      "translation": "看看明信片吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ファイル",
+      "reading": "ファイル",
+      "zh": "文件夹",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "post-019",
+      "example": "ファイルを見てみましょう。",
+      "translation": "看看文件夹吧。",
+      "zone": 1
+    },
+    {
+      "jp": "地図",
+      "reading": "ちず",
+      "zh": "地图",
+      "kind": "menu",
+      "category": "文具・本",
+      "id": "post-020",
+      "example": "地図を見てみましょう。",
+      "translation": "看看地图吧。",
+      "zone": 1
+    },
+    {
+      "jp": "郵便ポスト",
+      "reading": "ゆうびんポスト",
+      "zh": "邮筒",
+      "kind": "mailbox",
+      "category": "郵便",
+      "id": "post-027",
+      "example": "郵便ポストを見てみましょう。",
+      "translation": "看看邮筒吧。",
+      "zone": 0
+    },
+    {
+      "jp": "郵便受け",
+      "reading": "ゆうびんうけ",
+      "zh": "信箱",
+      "kind": "mailbox",
+      "category": "郵便",
+      "id": "post-028",
+      "example": "郵便受けを見てみましょう。",
+      "translation": "看看信箱吧。",
+      "zone": 0
+    },
+    {
+      "jp": "小包",
+      "reading": "こづつみ",
+      "zh": "包裹",
+      "kind": "parcel",
+      "category": "郵便",
+      "id": "post-029",
+      "example": "小包を見てみましょう。",
+      "translation": "看看包裹吧。",
+      "zone": 0
+    },
+    {
+      "jp": "段ボール箱",
+      "reading": "だんボールばこ",
+      "zh": "纸箱",
+      "kind": "parcel",
+      "category": "郵便",
+      "id": "post-030",
+      "example": "段ボール箱を見てみましょう。",
+      "translation": "看看纸箱吧。",
+      "zone": 0
+    },
+    {
+      "jp": "宛名",
+      "reading": "あてな",
+      "zh": "收件人姓名",
+      "kind": "paper",
+      "category": "郵便",
+      "id": "post-031",
+      "example": "宛名を見てみましょう。",
+      "translation": "看看收件人姓名吧。",
+      "zone": 0
+    },
+    {
+      "jp": "住所",
+      "reading": "じゅうしょ",
+      "zh": "地址",
+      "kind": "paper",
+      "category": "郵便",
+      "id": "post-032",
+      "example": "住所を見てみましょう。",
+      "translation": "看看地址吧。",
+      "zone": 0
+    },
+    {
+      "jp": "郵便番号",
+      "reading": "ゆうびんばんごう",
+      "zh": "邮政编码",
+      "kind": "card",
+      "category": "郵便",
+      "id": "post-033",
+      "example": "郵便番号を見てみましょう。",
+      "translation": "看看邮政编码吧。",
+      "zone": 0
+    },
+    {
+      "jp": "送り状",
+      "reading": "おくりじょう",
+      "zh": "快递运单",
+      "kind": "paper",
+      "category": "郵便",
+      "id": "post-034",
+      "example": "送り状を見てみましょう。",
+      "translation": "看看快递运单吧。",
+      "zone": 0
+    },
+    {
+      "jp": "窓口",
+      "reading": "まどぐち",
+      "zh": "办理窗口",
+      "kind": "counter",
+      "category": "郵便",
+      "id": "post-035",
+      "example": "窓口を見てみましょう。",
+      "translation": "看看办理窗口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "番号札",
+      "reading": "ばんごうふだ",
+      "zh": "号码牌",
+      "kind": "card",
+      "category": "郵便",
+      "id": "post-036",
+      "example": "番号札を見てみましょう。",
+      "translation": "看看号码牌吧。",
+      "zone": 0
+    },
+    {
+      "jp": "秤",
+      "reading": "はかり",
+      "zh": "秤",
+      "kind": "scale",
+      "category": "郵便",
+      "id": "post-037",
+      "example": "秤を見てみましょう。",
+      "translation": "看看秤吧。",
+      "zone": 2
+    },
+    {
+      "jp": "印鑑",
+      "reading": "いんかん",
+      "zh": "印章",
+      "kind": "stamp",
+      "category": "郵便",
+      "id": "post-038",
+      "example": "印鑑を見てみましょう。",
+      "translation": "看看印章吧。",
+      "zone": 0
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "post-039",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "post-042",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "post-044",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 3
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "post-045",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "post-046",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "post-047",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "post-048",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 3
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "post-049",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "post-050",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 3
+    },
+    {
+      "id": "post-detail-0190",
+      "jp": "記入台",
+      "reading": "きにゅうだい",
+      "zh": "填单台",
+      "kind": "table",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは記入台です。",
+      "translation": "这是填单台。"
+    },
+    {
+      "id": "post-detail-0191",
+      "jp": "宛名ラベル",
+      "reading": "あてなラベル",
+      "zh": "收件地址标签",
+      "kind": "paper",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは宛名ラベルです。",
+      "translation": "这是收件地址标签。"
+    },
+    {
+      "id": "post-detail-0192",
+      "jp": "料金秤",
+      "reading": "りょうきんばかり",
+      "zh": "邮费计价秤",
+      "kind": "scale",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは料金秤です。",
+      "translation": "这是邮费计价秤。"
+    },
+    {
+      "id": "post-specific-01",
+      "jp": "レターパックライト",
+      "reading": "レターパックライト",
+      "zh": "Letter Pack Light",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "レターパックライトはここにあります。",
+      "detail": {
+        "type": "envelope",
+        "color": "#8eb0ca"
+      },
+      "translation": "Letter Pack Light在这里。"
+    },
+    {
+      "id": "post-specific-02",
+      "jp": "レターパックプラス",
+      "reading": "レターパックプラス",
+      "zh": "Letter Pack Plus",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "レターパックプラスはここにあります。",
+      "detail": {
+        "type": "envelope",
+        "color": "#d78f85"
+      },
+      "translation": "Letter Pack Plus在这里。"
+    },
+    {
+      "id": "post-specific-03",
+      "jp": "スマートレター",
+      "reading": "スマートレター",
+      "zh": "Smart Letter",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "スマートレターはここにあります。",
+      "detail": {
+        "type": "envelope",
+        "color": "#c9b27f"
+      },
+      "translation": "Smart Letter在这里。"
+    },
+    {
+      "id": "post-specific-04",
+      "jp": "ゆうパックラベル",
+      "reading": "ゆうパックラベル",
+      "zh": "邮包运单",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "ゆうパックラベルはここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#adbed1"
+      },
+      "translation": "邮包运单在这里。"
+    },
+    {
+      "id": "post-specific-05",
+      "jp": "梱包テープ",
+      "reading": "こんぽうテープ",
+      "zh": "打包胶带",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "梱包テープはここにあります。",
+      "detail": {
+        "type": "tape-roll",
+        "color": "#c0a87e"
+      },
+      "translation": "打包胶带在这里。"
+    },
+    {
+      "id": "post-specific-06",
+      "jp": "緩衝材",
+      "reading": "かんしょうざい",
+      "zh": "缓冲材料",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "緩衝材はここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#c6d7ce"
+      },
+      "translation": "缓冲材料在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 28,
+  "district": 4,
+  "sceneReference": "https://www.post.japanpost.jp/service/send/domestic/mail/letterpack/",
+  "venueRole": {
+    "id": "post-venue-worker",
+    "jp": "郵便局員",
+    "reading": "ゆうびんきょくいん",
+    "zone": 2,
+    "activity": "荷物の重さを量っています。",
+    "readingLine": "にもつの おもさを はかっています。",
+    "verb": "量る → 量っている",
+    "grammar": "秤【で】荷物の重さ【を】量る。",
+    "reply": "お荷物はこちらにお載せください。",
+    "tools": [
+      "料金秤",
+      "ゆうパックラベル",
+      "梱包テープ"
+    ]
+  }
+}

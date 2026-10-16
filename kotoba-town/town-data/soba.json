@@ -1,0 +1,841 @@
+{
+  "id": "soba",
+  "title": "荞麦与乌冬面店",
+  "jp": "そば・うどん屋",
+  "reading": "そば・うどんや",
+  "layout": "restaurant",
+  "zones": [
+    {
+      "jp": "テーブル席",
+      "zh": "テーブル席"
+    },
+    {
+      "jp": "座敷",
+      "zh": "座敷"
+    },
+    {
+      "jp": "カウンター席",
+      "zh": "カウンター席"
+    },
+    {
+      "jp": "会計・玄関",
+      "zh": "会計・玄関"
+    }
+  ],
+  "items": [
+    {
+      "jp": "メニュー",
+      "reading": "メニュー",
+      "zh": "菜单",
+      "kind": "menu",
+      "category": "食器・設備",
+      "id": "soba-001",
+      "example": "メニューを見てみましょう。",
+      "translation": "看看菜单吧。",
+      "zone": 0
+    },
+    {
+      "jp": "箸",
+      "reading": "はし",
+      "zh": "筷子",
+      "kind": "chopsticks",
+      "category": "食器・設備",
+      "id": "soba-002",
+      "example": "箸を見てみましょう。",
+      "translation": "看看筷子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "箸置き",
+      "reading": "はしおき",
+      "zh": "筷架",
+      "kind": "smallblock",
+      "category": "食器・設備",
+      "id": "soba-003",
+      "example": "箸置きを見てみましょう。",
+      "translation": "看看筷架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "スプーン",
+      "reading": "スプーン",
+      "zh": "勺子",
+      "kind": "spoon",
+      "category": "食器・設備",
+      "id": "soba-004",
+      "example": "スプーンを見てみましょう。",
+      "translation": "看看勺子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "皿",
+      "reading": "さら",
+      "zh": "盘子",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "soba-007",
+      "example": "皿を見てみましょう。",
+      "translation": "看看盘子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "取り皿",
+      "reading": "とりざら",
+      "zh": "分餐小碟",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "soba-008",
+      "example": "取り皿を見てみましょう。",
+      "translation": "看看分餐小碟吧。",
+      "zone": 0
+    },
+    {
+      "jp": "茶碗",
+      "reading": "ちゃわん",
+      "zh": "饭碗",
+      "kind": "bowl",
+      "category": "食器・設備",
+      "id": "soba-009",
+      "example": "茶碗を見てみましょう。",
+      "translation": "看看饭碗吧。",
+      "zone": 0
+    },
+    {
+      "jp": "湯のみ",
+      "reading": "ゆのみ",
+      "zh": "日式茶杯",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "soba-010",
+      "example": "湯のみを見てみましょう。",
+      "translation": "看看日式茶杯吧。",
+      "zone": 0
+    },
+    {
+      "jp": "コップ",
+      "reading": "コップ",
+      "zh": "杯子",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "soba-011",
+      "example": "コップを見てみましょう。",
+      "translation": "看看杯子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "おしぼり",
+      "reading": "おしぼり",
+      "zh": "擦手巾",
+      "kind": "towel",
+      "category": "食器・設備",
+      "id": "soba-012",
+      "example": "おしぼりを見てみましょう。",
+      "translation": "看看擦手巾吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ざる",
+      "reading": "ざる",
+      "zh": "滤篮",
+      "kind": "bamboo-tray",
+      "category": "食器・設備",
+      "id": "soba-020",
+      "example": "ざるを見てみましょう。",
+      "translation": "看看滤篮吧。",
+      "zone": 0
+    },
+    {
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银机",
+      "kind": "register",
+      "category": "食器・設備",
+      "id": "soba-027",
+      "example": "レジを見てみましょう。",
+      "translation": "看看收银机吧。",
+      "zone": 3
+    },
+    {
+      "jp": "レシート",
+      "reading": "レシート",
+      "zh": "购物小票",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "soba-028",
+      "example": "レシートを見てみましょう。",
+      "translation": "看看购物小票吧。",
+      "zone": 3
+    },
+    {
+      "jp": "お釣り",
+      "reading": "おつり",
+      "zh": "找零",
+      "kind": "coins",
+      "category": "食器・設備",
+      "id": "soba-029",
+      "example": "お釣りを見てみましょう。",
+      "translation": "看看找零吧。",
+      "zone": 3
+    },
+    {
+      "jp": "伝票",
+      "reading": "でんぴょう",
+      "zh": "账单",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "soba-030",
+      "example": "伝票を見てみましょう。",
+      "translation": "看看账单吧。",
+      "zone": 3
+    },
+    {
+      "jp": "うどん",
+      "reading": "うどん",
+      "zh": "乌冬面",
+      "kind": "bowl",
+      "category": "料理",
+      "art": [
+        "foods",
+        9
+      ],
+      "id": "soba-031",
+      "example": "うどんを見てみましょう。",
+      "translation": "看看乌冬面吧。",
+      "zone": 0
+    },
+    {
+      "jp": "そば",
+      "reading": "そば",
+      "zh": "荞麦面",
+      "kind": "bowl",
+      "category": "料理",
+      "art": [
+        "foods",
+        10
+      ],
+      "id": "soba-032",
+      "example": "そばを見てみましょう。",
+      "translation": "看看荞麦面吧。",
+      "zone": 1
+    },
+    {
+      "jp": "緑茶",
+      "reading": "りょくちゃ",
+      "zh": "绿茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        0
+      ],
+      "id": "soba-033",
+      "example": "緑茶を見てみましょう。",
+      "translation": "看看绿茶吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ウーロン茶",
+      "reading": "ウーロンちゃ",
+      "zh": "乌龙茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        1
+      ],
+      "id": "soba-034",
+      "example": "ウーロン茶を見てみましょう。",
+      "translation": "看看乌龙茶吧。",
+      "zone": 0
+    },
+    {
+      "jp": "団子",
+      "reading": "だんご",
+      "zh": "团子",
+      "kind": "skewer",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        8
+      ],
+      "id": "soba-037",
+      "example": "団子を見てみましょう。",
+      "translation": "看看团子吧。",
+      "zone": 1,
+      "detail": {
+        "type": "dish",
+        "shape": "skewer",
+        "color": "#c5a177"
+      }
+    },
+    {
+      "jp": "大福",
+      "reading": "だいふく",
+      "zh": "大福点心",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        9
+      ],
+      "id": "soba-038",
+      "example": "大福を見てみましょう。",
+      "translation": "看看大福点心吧。",
+      "zone": 2,
+      "detail": {
+        "type": "dish",
+        "shape": "sweets",
+        "color": "#e2d4ba"
+      }
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "soba-039",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "soba-042",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "soba-044",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 3
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "soba-045",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "soba-046",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "soba-047",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "soba-048",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 3
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "soba-049",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "soba-050",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 3
+    },
+    {
+      "jp": "味噌汁",
+      "reading": "みそしる",
+      "zh": "味噌汤",
+      "kind": "soup",
+      "art": [
+        "dishes",
+        10
+      ],
+      "category": "料理",
+      "example": "味噌汁をください。",
+      "translation": "请给我味噌汤。",
+      "id": "soba-menu-10",
+      "zone": 0
+    },
+    {
+      "jp": "茶碗蒸し",
+      "reading": "ちゃわんむし",
+      "zh": "日式蒸蛋",
+      "kind": "bowl",
+      "art": [
+        "dishes",
+        11
+      ],
+      "category": "料理",
+      "example": "茶碗蒸しをください。",
+      "translation": "请给我日式蒸蛋。",
+      "id": "soba-menu-11",
+      "zone": 1
+    },
+    {
+      "jp": "天ぷら",
+      "reading": "てんぷら",
+      "zh": "天妇罗",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        12
+      ],
+      "category": "料理",
+      "example": "天ぷらをください。",
+      "translation": "请给我天妇罗。",
+      "id": "soba-menu-12",
+      "zone": 2
+    },
+    {
+      "jp": "冷ややっこ",
+      "reading": "ひややっこ",
+      "zh": "凉拌豆腐",
+      "kind": "tofu",
+      "art": [
+        "meals",
+        4
+      ],
+      "category": "料理",
+      "example": "冷ややっこをください。",
+      "translation": "请给我凉拌豆腐。",
+      "id": "soba-menu-20",
+      "zone": 0
+    },
+    {
+      "jp": "漬物",
+      "reading": "つけもの",
+      "zh": "腌菜",
+      "kind": "pickles",
+      "art": [
+        "meals",
+        5
+      ],
+      "category": "料理",
+      "example": "漬物をください。",
+      "translation": "请给我腌菜。",
+      "id": "soba-menu-21",
+      "zone": 1
+    },
+    {
+      "jp": "焼き魚",
+      "reading": "やきざかな",
+      "zh": "烤鱼",
+      "kind": "fish",
+      "art": [
+        "meals",
+        8
+      ],
+      "category": "料理",
+      "example": "焼き魚をください。",
+      "translation": "请给我烤鱼。",
+      "id": "soba-menu-24",
+      "zone": 2,
+      "detail": {
+        "type": "dish",
+        "shape": "fish",
+        "color": "#c5a177"
+      }
+    },
+    {
+      "jp": "親子丼",
+      "reading": "おやこどん",
+      "zh": "鸡肉鸡蛋盖饭",
+      "kind": "rice",
+      "art": [
+        "meals",
+        11
+      ],
+      "category": "料理",
+      "example": "親子丼をください。",
+      "translation": "请给我鸡肉鸡蛋盖饭。",
+      "id": "soba-menu-27",
+      "zone": 0
+    },
+    {
+      "jp": "カツ丼",
+      "reading": "カツどん",
+      "zh": "猪排盖饭",
+      "kind": "rice",
+      "art": [
+        "meals",
+        12
+      ],
+      "category": "料理",
+      "example": "カツ丼をください。",
+      "translation": "请给我猪排盖饭。",
+      "id": "soba-menu-28",
+      "zone": 1
+    },
+    {
+      "id": "soba-detail-0114",
+      "jp": "そばちょこ",
+      "reading": "そばちょこ",
+      "zh": "荞麦面蘸汁杯",
+      "kind": "cup",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはそばちょこです。",
+      "translation": "这是荞麦面蘸汁杯。"
+    },
+    {
+      "id": "soba-detail-0115",
+      "jp": "つゆ",
+      "reading": "つゆ",
+      "zh": "蘸汁",
+      "kind": "soup",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはつゆです。",
+      "translation": "这是蘸汁。"
+    },
+    {
+      "id": "soba-detail-0116",
+      "jp": "薬味",
+      "reading": "やくみ",
+      "zh": "配料佐料",
+      "kind": "small-dish",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは薬味です。",
+      "translation": "这是配料佐料。"
+    },
+    {
+      "id": "soba-detail-0117",
+      "jp": "そば湯",
+      "reading": "そばゆ",
+      "zh": "荞麦面汤",
+      "kind": "teapot",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはそば湯です。",
+      "translation": "这是荞麦面汤。"
+    },
+    {
+      "id": "soba-shop-001",
+      "jp": "畳",
+      "reading": "たたみ",
+      "zh": "榻榻米",
+      "kind": "tatami",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "畳を見てみましょう。",
+      "translation": "一起看看榻榻米吧。"
+    },
+    {
+      "id": "soba-shop-002",
+      "jp": "座布団",
+      "reading": "ざぶとん",
+      "zh": "坐垫",
+      "kind": "cushion",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "座布団を見てみましょう。",
+      "translation": "一起看看坐垫吧。"
+    },
+    {
+      "id": "soba-shop-003",
+      "jp": "座卓",
+      "reading": "ざたく",
+      "zh": "矮桌",
+      "kind": "lowtable",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "座卓を見てみましょう。",
+      "translation": "一起看看矮桌吧。"
+    },
+    {
+      "id": "soba-shop-004",
+      "jp": "障子",
+      "reading": "しょうじ",
+      "zh": "障子门",
+      "kind": "shoji",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "障子を見てみましょう。",
+      "translation": "一起看看障子门吧。"
+    },
+    {
+      "id": "soba-shop-005",
+      "jp": "下駄箱",
+      "reading": "げたばこ",
+      "zh": "鞋柜",
+      "kind": "shoe-cabinet",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "靴を脱いで、下駄箱に入れます。",
+      "translation": "脱下鞋子，放进鞋柜里。"
+    },
+    {
+      "id": "soba-shop-006",
+      "jp": "靴",
+      "reading": "くつ",
+      "zh": "鞋",
+      "kind": "shoes",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "座敷に上がる前に靴を脱ぎます。",
+      "translation": "进入日式座席区前脱鞋。",
+      "noteJa": "脱いだ靴は下駄箱に入れます。テーブル席では、靴を履いたまま座れる店もあります。"
+    },
+    {
+      "id": "soba-shop-007",
+      "jp": "上がり框",
+      "reading": "あがりかまち",
+      "zh": "脱鞋台阶",
+      "kind": "entry-step",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "上がり框を見てみましょう。",
+      "translation": "一起看看脱鞋台阶吧。"
+    },
+    {
+      "id": "soba-shop-008",
+      "jp": "ざるそば",
+      "reading": "ざるそば",
+      "zh": "笊篱荞麦面",
+      "kind": "soba-tray",
+      "zone": 2,
+      "category": "店内のことば",
+      "example": "ざるそばを見てみましょう。",
+      "translation": "一起看看笊篱荞麦面吧。",
+      "menuGroup": "そば・うどん"
+    },
+    {
+      "id": "soba-shop-009",
+      "jp": "かけそば",
+      "reading": "かけそば",
+      "zh": "热汤荞麦面",
+      "kind": "ramen-bowl",
+      "zone": 0,
+      "category": "店内のことば",
+      "example": "かけそばを見てみましょう。",
+      "translation": "一起看看热汤荞麦面吧。",
+      "menuGroup": "そば・うどん"
+    },
+    {
+      "id": "soba-shop-010",
+      "jp": "天ざるそば",
+      "reading": "てんざるそば",
+      "zh": "天妇罗凉荞麦面",
+      "kind": "soba-tray",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "天ざるそばを見てみましょう。",
+      "translation": "一起看看天妇罗凉荞麦面吧。",
+      "menuGroup": "そば・うどん"
+    },
+    {
+      "id": "soba-specific-menu-01",
+      "jp": "釜揚げうどん",
+      "reading": "かまあげうどん",
+      "zh": "釜扬乌冬",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "釜揚げうどんを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "noodles",
+        "color": "#e4d9bb",
+        "leaf": false
+      },
+      "reference": "https://jp.marugame.com/menu/tempura/",
+      "translation": "请给我一份釜扬乌冬。"
+    },
+    {
+      "id": "soba-specific-menu-02",
+      "jp": "ぶっかけうどん",
+      "reading": "ぶっかけうどん",
+      "zh": "浇汁乌冬",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "ぶっかけうどんを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "noodles",
+        "color": "#ab865b",
+        "leaf": false
+      },
+      "reference": "https://jp.marugame.com/menu/tempura/",
+      "translation": "请给我一份浇汁乌冬。"
+    },
+    {
+      "id": "soba-specific-menu-03",
+      "jp": "きつねうどん",
+      "reading": "きつねうどん",
+      "zh": "油豆腐乌冬",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "きつねうどんを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "noodles",
+        "color": "#c79c61",
+        "leaf": false
+      },
+      "reference": "https://jp.marugame.com/menu/tempura/",
+      "translation": "请给我一份油豆腐乌冬。"
+    },
+    {
+      "id": "soba-specific-menu-04",
+      "jp": "かしわ天",
+      "reading": "かしわてん",
+      "zh": "鸡肉天妇罗",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "かしわ天を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "pieces",
+        "color": "#d6b474",
+        "leaf": false
+      },
+      "reference": "https://jp.marugame.com/menu/tempura/",
+      "translation": "请给我一份鸡肉天妇罗。"
+    },
+    {
+      "id": "soba-specific-menu-05",
+      "jp": "野菜かき揚げ",
+      "reading": "やさいかきあげ",
+      "zh": "蔬菜什锦天妇罗",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "野菜かき揚げを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "pieces",
+        "color": "#bdaf72",
+        "leaf": false
+      },
+      "reference": "https://jp.marugame.com/menu/tempura/",
+      "translation": "请给我一份蔬菜什锦天妇罗。"
+    },
+    {
+      "id": "soba-specific-menu-06",
+      "jp": "えび天",
+      "reading": "えびてん",
+      "zh": "虾天妇罗",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "えび天を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "pieces",
+        "color": "#d3ac72",
+        "leaf": false
+      },
+      "reference": "https://jp.marugame.com/menu/tempura/",
+      "translation": "请给我一份虾天妇罗。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "お店の料理を選ぶ",
+      "items": [
+        "soba-specific-menu-01",
+        "soba-specific-menu-02",
+        "soba-specific-menu-03",
+        "soba-specific-menu-04",
+        "soba-specific-menu-05",
+        "soba-specific-menu-06"
+      ]
+    },
+    {
+      "name": "そば・うどん",
+      "items": [
+        "soba-shop-008",
+        "soba-shop-009",
+        "soba-shop-010"
+      ]
+    },
+    {
+      "name": "料理・軽食",
+      "items": [
+        "soba-031",
+        "soba-032",
+        "soba-menu-10",
+        "soba-menu-11",
+        "soba-menu-12",
+        "soba-menu-20",
+        "soba-menu-21",
+        "soba-menu-24",
+        "soba-menu-27",
+        "soba-menu-28"
+      ]
+    },
+    {
+      "name": "飲み物",
+      "items": [
+        "soba-033",
+        "soba-034"
+      ]
+    },
+    {
+      "name": "甘味",
+      "items": [
+        "soba-037",
+        "soba-038"
+      ]
+    }
+  ],
+  "npc": 6,
+  "district": 1,
+  "sceneReference": "https://jp.marugame.com/menu/tempura/"
+}

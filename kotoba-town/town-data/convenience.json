@@ -1,0 +1,2158 @@
+{
+  "id": "convenience",
+  "title": "便利店",
+  "jp": "コンビニ",
+  "reading": "コンビニ",
+  "layout": "retail",
+  "zones": [
+    {
+      "jp": "弁当・チルド",
+      "zh": "便当区"
+    },
+    {
+      "jp": "お菓子・食品",
+      "zh": "零食区"
+    },
+    {
+      "jp": "冷たい飲み物",
+      "zh": "饮品区"
+    },
+    {
+      "jp": "日用品",
+      "zh": "日用品区"
+    },
+    {
+      "jp": "レジ・サービス",
+      "zh": "收银区"
+    },
+    {
+      "jp": "アイス・冷凍食品",
+      "zh": "冰淇淋与冷冻食品"
+    },
+    {
+      "jp": "トイレ",
+      "zh": "厕所"
+    }
+  ],
+  "items": [
+    {
+      "id": "convenience-001",
+      "jp": "自動ドア",
+      "reading": "じどうドア",
+      "zh": "自动门",
+      "kind": "door",
+      "color": "#5fa595",
+      "category": "空间与设施",
+      "example": "これは自動ドアです。",
+      "translation": "这是自动门。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-002",
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银机",
+      "kind": "register",
+      "category": "物品与细节",
+      "example": "これはレジです。",
+      "translation": "这是收银机。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-003",
+      "jp": "カウンター",
+      "reading": "カウンター",
+      "zh": "柜台",
+      "kind": "counter",
+      "color": "#6daca3",
+      "size": [
+        4.0,
+        1.0,
+        0.9
+      ],
+      "category": "物品与细节",
+      "example": "これはカウンターです。",
+      "translation": "这是柜台。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-004",
+      "jp": "買い物かご",
+      "reading": "かいものかご",
+      "zh": "购物篮",
+      "kind": "basket",
+      "color": "#649783",
+      "category": "物品与细节",
+      "example": "これは買い物かごです。",
+      "translation": "这是购物篮。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-005",
+      "jp": "買い物袋",
+      "reading": "かいものぶくろ",
+      "zh": "购物袋",
+      "kind": "shoppingbag",
+      "category": "物品与细节",
+      "example": "これは買い物袋です。",
+      "translation": "这是购物袋。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-006",
+      "jp": "レシート",
+      "reading": "レシート",
+      "zh": "收据",
+      "kind": "paper",
+      "category": "物品与细节",
+      "example": "これはレシートです。",
+      "translation": "这是收据。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-007",
+      "jp": "小銭",
+      "reading": "こぜに",
+      "zh": "零钱",
+      "kind": "coins",
+      "category": "物品与细节",
+      "example": "これは小銭です。",
+      "translation": "这是零钱。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-008",
+      "jp": "電子マネー",
+      "reading": "でんしマネー",
+      "zh": "电子支付",
+      "kind": "payment-terminal",
+      "category": "物品与细节",
+      "example": "これは電子マネーです。",
+      "translation": "这是电子支付。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-009",
+      "jp": "ATM",
+      "reading": "エーティーエム",
+      "zh": "自动取款机",
+      "kind": "atm",
+      "category": "物品与细节",
+      "example": "これはATMです。",
+      "translation": "这是自动取款机。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-010",
+      "jp": "コピー機",
+      "reading": "コピーき",
+      "zh": "复印机",
+      "kind": "copier",
+      "category": "物品与细节",
+      "example": "これはコピー機です。",
+      "translation": "这是复印机。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-011",
+      "jp": "宅配便の箱",
+      "reading": "たくはいびんのはこ",
+      "zh": "快递箱",
+      "kind": "parcel",
+      "category": "物品与细节",
+      "example": "これは宅配便の箱です。",
+      "translation": "这是快递箱。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-012",
+      "jp": "店内ポスト",
+      "reading": "てんないポスト",
+      "zh": "邮筒",
+      "kind": "indoor-postbox",
+      "category": "物品与细节",
+      "example": "店内ポストに手紙を入れます。",
+      "translation": "把信投进店内邮筒。",
+      "note": "",
+      "zone": 4,
+      "noteJa": "店内にポストがあるコンビニもあります。すべての店舗にあるわけではありません。"
+    },
+    {
+      "id": "convenience-013",
+      "jp": "電子レンジ",
+      "reading": "でんしレンジ",
+      "zh": "微波炉",
+      "kind": "microwave",
+      "category": "物品与细节",
+      "example": "これは電子レンジです。",
+      "translation": "这是微波炉。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-014",
+      "jp": "電気ポット",
+      "reading": "でんきポット",
+      "zh": "电热水壶",
+      "kind": "kettle",
+      "category": "物品与细节",
+      "example": "これは電気ポットです。",
+      "translation": "这是电热水壶。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-015",
+      "jp": "コーヒーマシン",
+      "reading": "コーヒーマシン",
+      "zh": "咖啡机",
+      "kind": "coffee-machine",
+      "category": "物品与细节",
+      "example": "これはコーヒーマシンです。",
+      "translation": "这是咖啡机。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-016",
+      "jp": "紙コップ",
+      "reading": "かみコップ",
+      "zh": "纸杯",
+      "kind": "cup",
+      "color": "#f1e5c6",
+      "category": "物品与细节",
+      "example": "これは紙コップです。",
+      "translation": "这是纸杯。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-017",
+      "jp": "ストロー",
+      "reading": "ストロー",
+      "zh": "吸管",
+      "kind": "straw",
+      "category": "物品与细节",
+      "example": "これはストローです。",
+      "translation": "这是吸管。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-018",
+      "jp": "おにぎり",
+      "reading": "おにぎり",
+      "zh": "饭团",
+      "kind": "onigiri",
+      "category": "物品与细节",
+      "example": "これはおにぎりです。",
+      "translation": "这是饭团。",
+      "note": "",
+      "art": [
+        "foods",
+        7
+      ],
+      "zone": 0
+    },
+    {
+      "id": "convenience-019",
+      "jp": "弁当",
+      "reading": "べんとう",
+      "zh": "便当",
+      "kind": "bento",
+      "category": "物品与细节",
+      "example": "これは弁当です。",
+      "translation": "这是便当。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-020",
+      "jp": "サンドイッチ",
+      "reading": "サンドイッチ",
+      "zh": "三明治",
+      "kind": "sandwich",
+      "category": "物品与细节",
+      "example": "これはサンドイッチです。",
+      "translation": "这是三明治。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-021",
+      "jp": "パン",
+      "reading": "パン",
+      "zh": "面包",
+      "kind": "bread",
+      "category": "物品与细节",
+      "example": "これはパンです。",
+      "translation": "这是面包。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "convenience-022",
+      "jp": "カップ麺",
+      "reading": "カップめん",
+      "zh": "杯面",
+      "kind": "cupnoodle",
+      "category": "物品与细节",
+      "example": "これはカップ麺です。",
+      "translation": "这是杯面。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "convenience-023",
+      "jp": "お菓子",
+      "reading": "おかし",
+      "zh": "零食",
+      "kind": "packet",
+      "color": "#d9aa65",
+      "category": "物品与细节",
+      "example": "これはお菓子です。",
+      "translation": "这是零食。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "convenience-024",
+      "jp": "チョコレート",
+      "reading": "チョコレート",
+      "zh": "巧克力",
+      "kind": "chocolate",
+      "category": "物品与细节",
+      "example": "これはチョコレートです。",
+      "translation": "这是巧克力。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "convenience-025",
+      "jp": "ガム",
+      "reading": "ガム",
+      "zh": "口香糖",
+      "kind": "packet",
+      "color": "#79a899",
+      "category": "物品与细节",
+      "example": "これはガムです。",
+      "translation": "这是口香糖。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "convenience-026",
+      "jp": "飴",
+      "reading": "あめ",
+      "zh": "糖果",
+      "kind": "candy",
+      "category": "物品与细节",
+      "example": "これは飴です。",
+      "translation": "这是糖果。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "convenience-027",
+      "jp": "水",
+      "reading": "みず",
+      "zh": "水",
+      "kind": "bottle",
+      "color": "#87bad0",
+      "category": "物品与细节",
+      "example": "これは水です。",
+      "translation": "这是水。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "convenience-028",
+      "jp": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "zh": "牛奶",
+      "kind": "carton",
+      "category": "物品与细节",
+      "example": "これは牛乳です。",
+      "translation": "这是牛奶。",
+      "note": "",
+      "art": [
+        "drinks",
+        5
+      ],
+      "zone": 2
+    },
+    {
+      "id": "convenience-029",
+      "jp": "ジュース",
+      "reading": "ジュース",
+      "zh": "果汁",
+      "kind": "carton",
+      "color": "#e9b659",
+      "category": "物品与细节",
+      "example": "これはジュースです。",
+      "translation": "这是果汁。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "convenience-030",
+      "jp": "ヨーグルト",
+      "reading": "ヨーグルト",
+      "zh": "酸奶",
+      "kind": "yogurt",
+      "category": "物品与细节",
+      "example": "これはヨーグルトです。",
+      "translation": "这是酸奶。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-031",
+      "jp": "アイスクリーム",
+      "reading": "アイスクリーム",
+      "zh": "冰激凌",
+      "kind": "ice-cup",
+      "category": "物品与细节",
+      "example": "これはアイスクリームです。",
+      "translation": "这是冰激凌。",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "id": "convenience-032",
+      "jp": "冷凍庫",
+      "reading": "れいとうこ",
+      "zh": "冷冻柜",
+      "kind": "chest-freezer",
+      "color": "#82bac4",
+      "category": "物品与细节",
+      "example": "これは冷凍庫です。",
+      "translation": "这是冷冻柜。",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "id": "convenience-033",
+      "jp": "冷蔵ケース",
+      "reading": "れいぞうケース",
+      "zh": "冷藏柜",
+      "kind": "beverage-cooler",
+      "color": "#79a3a8",
+      "size": [
+        1.5,
+        2.2,
+        4.0
+      ],
+      "category": "物品与细节",
+      "example": "これは冷蔵ケースです。",
+      "translation": "这是冷藏柜。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "convenience-034",
+      "jp": "おでん",
+      "reading": "おでん",
+      "zh": "关东煮",
+      "kind": "oden",
+      "category": "物品与细节",
+      "example": "これはおでんです。",
+      "translation": "这是关东煮。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-035",
+      "jp": "肉まん",
+      "reading": "にくまん",
+      "zh": "肉包",
+      "kind": "bun",
+      "category": "物品与细节",
+      "example": "これは肉まんです。",
+      "translation": "这是肉包。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-036",
+      "jp": "雑誌",
+      "reading": "ざっし",
+      "zh": "杂志",
+      "kind": "book",
+      "color": "#97a2bd",
+      "category": "物品与细节",
+      "example": "これは雑誌です。",
+      "translation": "这是杂志。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-037",
+      "jp": "新聞",
+      "reading": "しんぶん",
+      "zh": "报纸",
+      "kind": "paper",
+      "category": "物品与细节",
+      "example": "これは新聞です。",
+      "translation": "这是报纸。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-038",
+      "jp": "電池",
+      "reading": "でんち",
+      "zh": "电池",
+      "kind": "battery",
+      "category": "物品与细节",
+      "example": "これは電池です。",
+      "translation": "这是电池。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "convenience-039",
+      "jp": "歯ブラシ",
+      "reading": "はブラシ",
+      "zh": "牙刷",
+      "kind": "toothbrush",
+      "category": "物品与细节",
+      "example": "これは歯ブラシです。",
+      "translation": "这是牙刷。",
+      "note": "",
+      "art": [
+        "care",
+        0
+      ],
+      "zone": 3
+    },
+    {
+      "id": "convenience-040",
+      "jp": "ティッシュ",
+      "reading": "ティッシュ",
+      "zh": "纸巾",
+      "kind": "tissue",
+      "category": "物品与细节",
+      "example": "これはティッシュです。",
+      "translation": "这是纸巾。",
+      "note": "",
+      "art": [
+        "care",
+        6
+      ],
+      "zone": 3
+    },
+    {
+      "id": "convenience-041",
+      "jp": "マスク",
+      "reading": "マスク",
+      "zh": "口罩",
+      "kind": "mask",
+      "category": "物品与细节",
+      "example": "これはマスクです。",
+      "translation": "这是口罩。",
+      "note": "",
+      "art": [
+        "care",
+        8
+      ],
+      "zone": 3
+    },
+    {
+      "id": "convenience-043",
+      "jp": "壁",
+      "reading": "かべ",
+      "zh": "墙壁",
+      "kind": "wall-shell",
+      "category": "空间与设施",
+      "example": "これは壁です。",
+      "translation": "这是墙壁。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-044",
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空间与设施",
+      "example": "これは窓です。",
+      "translation": "这是窗户。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-045",
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "置物架",
+      "kind": "shelf-support",
+      "category": "空间与设施",
+      "example": "これは棚です。",
+      "translation": "这是置物架。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "convenience-046",
+      "jp": "電気",
+      "reading": "でんき",
+      "zh": "灯；照明",
+      "kind": "lighting-shell",
+      "category": "空间与设施",
+      "example": "電気をつけます。",
+      "translation": "开灯。",
+      "note": "这里指照明；「電気」也有电、电力的意思。",
+      "zone": 0
+    },
+    {
+      "id": "convenience-047",
+      "jp": "キャベツ",
+      "reading": "キャベツ",
+      "zh": "卷心菜",
+      "kind": "cabbage",
+      "category": "物品与细节",
+      "example": "これはキャベツです。",
+      "translation": "这是卷心菜。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-048",
+      "jp": "にんじん",
+      "reading": "にんじん",
+      "zh": "胡萝卜",
+      "kind": "carrot",
+      "category": "物品与细节",
+      "example": "これはにんじんです。",
+      "translation": "这是胡萝卜。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-049",
+      "jp": "じゃがいも",
+      "reading": "じゃがいも",
+      "zh": "土豆",
+      "kind": "potato",
+      "category": "物品与细节",
+      "example": "これはじゃがいもです。",
+      "translation": "这是土豆。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-050",
+      "jp": "玉ねぎ",
+      "reading": "たまねぎ",
+      "zh": "洋葱",
+      "kind": "onion",
+      "category": "物品与细节",
+      "example": "これは玉ねぎです。",
+      "translation": "这是洋葱。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-051",
+      "jp": "トマト",
+      "reading": "トマト",
+      "zh": "番茄",
+      "kind": "tomato",
+      "category": "物品与细节",
+      "example": "これはトマトです。",
+      "translation": "这是番茄。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-052",
+      "jp": "りんご",
+      "reading": "りんご",
+      "zh": "苹果",
+      "kind": "apple",
+      "category": "物品与细节",
+      "example": "これはりんごです。",
+      "translation": "这是苹果。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-053",
+      "jp": "バナナ",
+      "reading": "バナナ",
+      "zh": "香蕉",
+      "kind": "banana",
+      "category": "物品与细节",
+      "example": "これはバナナです。",
+      "translation": "这是香蕉。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-054",
+      "jp": "ぶどう",
+      "reading": "ぶどう",
+      "zh": "葡萄",
+      "kind": "grapes",
+      "category": "物品与细节",
+      "example": "これはぶどうです。",
+      "translation": "这是葡萄。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-055",
+      "jp": "いちご",
+      "reading": "いちご",
+      "zh": "草莓",
+      "kind": "strawberry",
+      "category": "物品与细节",
+      "example": "これはいちごです。",
+      "translation": "这是草莓。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-060",
+      "jp": "卵",
+      "reading": "たまご",
+      "zh": "鸡蛋",
+      "kind": "eggs",
+      "category": "物品与细节",
+      "example": "これは卵です。",
+      "translation": "这是鸡蛋。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-061",
+      "jp": "豆腐",
+      "reading": "とうふ",
+      "zh": "豆腐",
+      "kind": "tofu",
+      "category": "物品与细节",
+      "example": "これは豆腐です。",
+      "translation": "这是豆腐。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-062",
+      "jp": "チーズ",
+      "reading": "チーズ",
+      "zh": "奶酪",
+      "kind": "cheese",
+      "category": "物品与细节",
+      "example": "これはチーズです。",
+      "translation": "这是奶酪。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "convenience-063",
+      "jp": "米",
+      "reading": "こめ",
+      "zh": "大米",
+      "kind": "ricebag",
+      "category": "物品与细节",
+      "example": "これは米です。",
+      "translation": "这是大米。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "convenience-064",
+      "jp": "油",
+      "reading": "あぶら",
+      "zh": "食用油",
+      "kind": "bottle",
+      "color": "#c6b566",
+      "category": "物品与细节",
+      "example": "これは油です。",
+      "translation": "这是食用油。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "convenience-065",
+      "jp": "醤油",
+      "reading": "しょうゆ",
+      "zh": "酱油",
+      "kind": "bottle",
+      "color": "#72523d",
+      "category": "物品与细节",
+      "example": "これは醤油です。",
+      "translation": "这是酱油。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "jp": "緑茶",
+      "reading": "りょくちゃ",
+      "zh": "绿茶",
+      "kind": "bottle",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        0
+      ],
+      "id": "convenience-066",
+      "example": "緑茶を見てみましょう。",
+      "translation": "看看绿茶吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ウーロン茶",
+      "reading": "ウーロンちゃ",
+      "zh": "乌龙茶",
+      "kind": "bottle",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        1
+      ],
+      "id": "convenience-067",
+      "example": "ウーロン茶を見てみましょう。",
+      "translation": "看看乌龙茶吧。",
+      "zone": 2
+    },
+    {
+      "jp": "コーヒー",
+      "reading": "コーヒー",
+      "zh": "咖啡",
+      "kind": "bottle",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        2
+      ],
+      "id": "convenience-068",
+      "example": "コーヒーを見てみましょう。",
+      "translation": "看看咖啡吧。",
+      "zone": 2
+    },
+    {
+      "jp": "紅茶",
+      "reading": "こうちゃ",
+      "zh": "红茶",
+      "kind": "bottle",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        3
+      ],
+      "id": "convenience-069",
+      "example": "紅茶を見てみましょう。",
+      "translation": "看看红茶吧。",
+      "zone": 2
+    },
+    {
+      "jp": "オレンジジュース",
+      "reading": "オレンジジュース",
+      "zh": "橙汁",
+      "kind": "carton",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        4
+      ],
+      "id": "convenience-070",
+      "example": "オレンジジュースを見てみましょう。",
+      "translation": "看看橙汁吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ビール",
+      "reading": "ビール",
+      "zh": "啤酒",
+      "kind": "beer",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        6
+      ],
+      "id": "convenience-071",
+      "example": "ビールを見てみましょう。",
+      "translation": "看看啤酒吧。",
+      "zone": 2
+    },
+    {
+      "jp": "日本酒",
+      "reading": "にほんしゅ",
+      "zh": "日本清酒",
+      "kind": "bottle",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        7
+      ],
+      "id": "convenience-072",
+      "example": "日本酒を見てみましょう。",
+      "translation": "看看日本清酒吧。",
+      "zone": 2
+    },
+    {
+      "jp": "団子",
+      "reading": "だんご",
+      "zh": "团子",
+      "kind": "skewer",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        8
+      ],
+      "id": "convenience-073",
+      "example": "団子を見てみましょう。",
+      "translation": "看看团子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "大福",
+      "reading": "だいふく",
+      "zh": "大福点心",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        9
+      ],
+      "id": "convenience-074",
+      "example": "大福を見てみましょう。",
+      "translation": "看看大福点心吧。",
+      "zone": 1
+    },
+    {
+      "jp": "どら焼き",
+      "reading": "どらやき",
+      "zh": "铜锣烧",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        10
+      ],
+      "id": "convenience-075",
+      "example": "どら焼きを見てみましょう。",
+      "translation": "看看铜锣烧吧。",
+      "zone": 1
+    },
+    {
+      "jp": "たい焼き",
+      "reading": "たいやき",
+      "zh": "鲷鱼烧",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        11
+      ],
+      "id": "convenience-076",
+      "example": "たい焼きを見てみましょう。",
+      "translation": "看看鲷鱼烧吧。",
+      "zone": 1
+    },
+    {
+      "jp": "プリン",
+      "reading": "プリン",
+      "zh": "布丁",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        12
+      ],
+      "id": "convenience-077",
+      "example": "プリンを見てみましょう。",
+      "translation": "看看布丁吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ケーキ",
+      "reading": "ケーキ",
+      "zh": "蛋糕",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        13
+      ],
+      "id": "convenience-078",
+      "example": "ケーキを見てみましょう。",
+      "translation": "看看蛋糕吧。",
+      "zone": 1
+    },
+    {
+      "jp": "かき氷",
+      "reading": "かきごおり",
+      "zh": "刨冰",
+      "kind": "ice",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        15
+      ],
+      "id": "convenience-079",
+      "example": "かき氷を見てみましょう。",
+      "translation": "看看刨冰吧。",
+      "zone": 5
+    },
+    {
+      "jp": "ポテトチップス",
+      "reading": "ポテトチップス",
+      "zh": "薯片",
+      "kind": "packet",
+      "category": "お菓子",
+      "id": "convenience-080",
+      "example": "ポテトチップスを見てみましょう。",
+      "translation": "看看薯片吧。",
+      "zone": 1
+    },
+    {
+      "jp": "せんべい",
+      "reading": "せんべい",
+      "zh": "米饼",
+      "kind": "sweet",
+      "category": "お菓子",
+      "id": "convenience-081",
+      "example": "せんべいを見てみましょう。",
+      "translation": "看看米饼吧。",
+      "zone": 1
+    },
+    {
+      "jp": "クッキー",
+      "reading": "クッキー",
+      "zh": "饼干",
+      "kind": "sweet",
+      "category": "お菓子",
+      "id": "convenience-082",
+      "example": "クッキーを見てみましょう。",
+      "translation": "看看饼干吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ラムネ",
+      "reading": "ラムネ",
+      "zh": "弹珠汽水",
+      "kind": "bottle",
+      "category": "お菓子",
+      "id": "convenience-083",
+      "example": "ラムネを見てみましょう。",
+      "translation": "看看弹珠汽水吧。",
+      "zone": 2
+    },
+    {
+      "jp": "駄菓子",
+      "reading": "だがし",
+      "zh": "廉价小零食",
+      "kind": "candy",
+      "category": "お菓子",
+      "id": "convenience-084",
+      "example": "駄菓子を見てみましょう。",
+      "translation": "看看廉价小零食吧。",
+      "zone": 1
+    },
+    {
+      "jp": "金平糖",
+      "reading": "こんぺいとう",
+      "zh": "金平糖",
+      "kind": "candy",
+      "category": "お菓子",
+      "id": "convenience-085",
+      "example": "金平糖を見てみましょう。",
+      "translation": "看看金平糖吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ゼリー",
+      "reading": "ゼリー",
+      "zh": "果冻",
+      "kind": "yogurt",
+      "category": "お菓子",
+      "id": "convenience-086",
+      "example": "ゼリーを見てみましょう。",
+      "translation": "看看果冻吧。",
+      "zone": 1
+    },
+    {
+      "jp": "アイスキャンディー",
+      "reading": "アイスキャンディー",
+      "zh": "冰棒",
+      "kind": "wrapped-ice",
+      "category": "お菓子",
+      "id": "convenience-087",
+      "example": "アイスキャンディーを見てみましょう。",
+      "translation": "看看冰棒吧。",
+      "zone": 5
+    },
+    {
+      "jp": "たこ焼き",
+      "reading": "たこやき",
+      "zh": "章鱼烧",
+      "kind": "fried",
+      "category": "お菓子",
+      "id": "convenience-088",
+      "example": "たこ焼きを見てみましょう。",
+      "translation": "看看章鱼烧吧。",
+      "zone": 1
+    },
+    {
+      "jp": "焼きそば",
+      "reading": "やきそば",
+      "zh": "日式炒面",
+      "kind": "bowl",
+      "category": "お菓子",
+      "id": "convenience-089",
+      "example": "焼きそばを見てみましょう。",
+      "translation": "看看日式炒面吧。",
+      "zone": 1
+    },
+    {
+      "jp": "お好み焼き",
+      "reading": "おこのみやき",
+      "zh": "大阪烧",
+      "kind": "plate",
+      "category": "お菓子",
+      "id": "convenience-090",
+      "example": "お好み焼きを見てみましょう。",
+      "translation": "看看大阪烧吧。",
+      "zone": 1
+    },
+    {
+      "jp": "歯磨き粉",
+      "reading": "はみがきこ",
+      "zh": "牙膏",
+      "kind": "tube",
+      "category": "日用品",
+      "art": [
+        "care",
+        1
+      ],
+      "id": "convenience-093",
+      "example": "歯磨き粉を見てみましょう。",
+      "translation": "看看牙膏吧。",
+      "zone": 3
+    },
+    {
+      "jp": "シャンプー",
+      "reading": "シャンプー",
+      "zh": "洗发水",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        2
+      ],
+      "id": "convenience-094",
+      "example": "シャンプーを見てみましょう。",
+      "translation": "看看洗发水吧。",
+      "zone": 3
+    },
+    {
+      "jp": "コンディショナー",
+      "reading": "コンディショナー",
+      "zh": "护发素",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        3
+      ],
+      "id": "convenience-095",
+      "example": "コンディショナーを見てみましょう。",
+      "translation": "看看护发素吧。",
+      "zone": 3
+    },
+    {
+      "jp": "石けん",
+      "reading": "せっけん",
+      "zh": "香皂",
+      "kind": "smallblock",
+      "category": "日用品",
+      "art": [
+        "care",
+        4
+      ],
+      "id": "convenience-096",
+      "example": "石けんを見てみましょう。",
+      "translation": "看看香皂吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ボディーソープ",
+      "reading": "ボディーソープ",
+      "zh": "沐浴液",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        5
+      ],
+      "id": "convenience-097",
+      "example": "ボディーソープを見てみましょう。",
+      "translation": "看看沐浴液吧。",
+      "zone": 3
+    },
+    {
+      "jp": "トイレットペーパー",
+      "reading": "トイレットペーパー",
+      "zh": "卫生纸",
+      "kind": "paperroll",
+      "category": "日用品",
+      "art": [
+        "care",
+        7
+      ],
+      "id": "convenience-098",
+      "example": "トイレットペーパーを見てみましょう。",
+      "translation": "看看卫生纸吧。",
+      "zone": 3
+    },
+    {
+      "jp": "絆創膏",
+      "reading": "ばんそうこう",
+      "zh": "创可贴",
+      "kind": "bandage-strip",
+      "category": "日用品",
+      "art": [
+        "care",
+        9
+      ],
+      "id": "convenience-099",
+      "example": "絆創膏を見てみましょう。",
+      "translation": "看看创可贴吧。",
+      "zone": 3
+    },
+    {
+      "jp": "体温計",
+      "reading": "たいおんけい",
+      "zh": "体温计",
+      "kind": "thermometer",
+      "category": "日用品",
+      "art": [
+        "care",
+        10
+      ],
+      "id": "convenience-100",
+      "example": "体温計を見てみましょう。",
+      "translation": "看看体温计吧。",
+      "zone": 3
+    },
+    {
+      "jp": "目薬",
+      "reading": "めぐすり",
+      "zh": "眼药水",
+      "kind": "eyedrops",
+      "category": "日用品",
+      "art": [
+        "care",
+        11
+      ],
+      "id": "convenience-101",
+      "example": "目薬を見てみましょう。",
+      "translation": "看看眼药水吧。",
+      "zone": 3
+    },
+    {
+      "jp": "化粧水",
+      "reading": "けしょうすい",
+      "zh": "化妆水",
+      "kind": "bottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        12
+      ],
+      "id": "convenience-102",
+      "example": "化粧水を見てみましょう。",
+      "translation": "看看化妆水吧。",
+      "zone": 3
+    },
+    {
+      "jp": "乳液",
+      "reading": "にゅうえき",
+      "zh": "乳液",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        13
+      ],
+      "id": "convenience-103",
+      "example": "乳液を見てみましょう。",
+      "translation": "看看乳液吧。",
+      "zone": 3
+    },
+    {
+      "jp": "日焼け止め",
+      "reading": "ひやけどめ",
+      "zh": "防晒用品",
+      "kind": "tube",
+      "category": "日用品",
+      "art": [
+        "care",
+        14
+      ],
+      "id": "convenience-104",
+      "example": "日焼け止めを見てみましょう。",
+      "translation": "看看防晒用品吧。",
+      "zone": 3
+    },
+    {
+      "jp": "洗剤",
+      "reading": "せんざい",
+      "zh": "清洁剂",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        15
+      ],
+      "id": "convenience-105",
+      "example": "洗剤を見てみましょう。",
+      "translation": "看看清洁剂吧。",
+      "zone": 3
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "convenience-106",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 4
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "convenience-109",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "convenience-110",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "convenience-111",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "convenience-112",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "convenience-113",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "convenience-114",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 4
+    },
+    {
+      "id": "convenience-detail-0132",
+      "jp": "おでん鍋",
+      "reading": "おでんなべ",
+      "zh": "关东煮保温锅",
+      "kind": "oden-pot",
+      "zone": 4,
+      "category": "场所细节",
+      "example": "これはおでん鍋です。",
+      "translation": "这是关东煮保温锅。"
+    },
+    {
+      "id": "convenience-detail-0133",
+      "jp": "ホットスナックケース",
+      "reading": "ホットスナックケース",
+      "zh": "热食柜",
+      "kind": "hot-case",
+      "zone": 4,
+      "category": "场所细节",
+      "example": "これはホットスナックケースです。",
+      "translation": "这是热食柜。"
+    },
+    {
+      "id": "convenience-detail-0134",
+      "jp": "宅配便の伝票",
+      "reading": "たくはいびんのでんぴょう",
+      "zh": "快递单",
+      "kind": "paper",
+      "zone": 4,
+      "category": "场所细节",
+      "example": "これは宅配便の伝票です。",
+      "translation": "这是快递单。"
+    },
+    {
+      "id": "convenience-detail-0135",
+      "jp": "レジ袋",
+      "reading": "レジぶくろ",
+      "zh": "购物塑料袋",
+      "kind": "shoppingbag",
+      "zone": 4,
+      "category": "场所细节",
+      "example": "これはレジ袋です。",
+      "translation": "这是购物塑料袋。"
+    },
+    {
+      "id": "convenience-cold-001",
+      "jp": "冷蔵ショーケース",
+      "reading": "れいぞうショーケース",
+      "zh": "冷藏展示柜",
+      "kind": "chilled-case",
+      "zone": 0,
+      "category": "店内のもの",
+      "example": "これは冷蔵ショーケースです。",
+      "translation": "这是冷藏展示柜。"
+    },
+    {
+      "id": "convenience-cold-002",
+      "jp": "アイスケース",
+      "reading": "アイスケース",
+      "zh": "冰淇淋柜",
+      "kind": "ice-freezer",
+      "zone": 5,
+      "category": "店内のもの",
+      "example": "これはアイスケースです。",
+      "translation": "这是冰淇淋柜。"
+    },
+    {
+      "id": "convenience-cold-003",
+      "jp": "冷凍食品",
+      "reading": "れいとうしょくひん",
+      "zh": "冷冻食品",
+      "kind": "frozen-pack",
+      "zone": 5,
+      "category": "店内のもの",
+      "example": "これは冷凍食品です。",
+      "translation": "这是冷冻食品。"
+    },
+    {
+      "id": "convenience-cold-004",
+      "jp": "冷凍餃子",
+      "reading": "れいとうぎょうざ",
+      "zh": "冷冻饺子",
+      "kind": "frozen-pack",
+      "zone": 5,
+      "category": "店内のもの",
+      "example": "これは冷凍餃子です。",
+      "translation": "这是冷冻饺子。"
+    },
+    {
+      "id": "convenience-cold-005",
+      "jp": "冷凍チャーハン",
+      "reading": "れいとうチャーハン",
+      "zh": "冷冻炒饭",
+      "kind": "frozen-pack",
+      "zone": 5,
+      "category": "店内のもの",
+      "example": "これは冷凍チャーハンです。",
+      "translation": "这是冷冻炒饭。"
+    },
+    {
+      "id": "convenience-cold-006",
+      "jp": "冷凍うどん",
+      "reading": "れいとううどん",
+      "zh": "冷冻乌冬面",
+      "kind": "frozen-pack",
+      "zone": 5,
+      "category": "店内のもの",
+      "example": "これは冷凍うどんです。",
+      "translation": "这是冷冻乌冬面。"
+    },
+    {
+      "id": "convenience-cold-007",
+      "jp": "冷凍ピザ",
+      "reading": "れいとうピザ",
+      "zh": "冷冻比萨",
+      "kind": "frozen-pack",
+      "zone": 5,
+      "category": "店内のもの",
+      "example": "これは冷凍ピザです。",
+      "translation": "这是冷冻比萨。"
+    },
+    {
+      "id": "convenience-cold-008",
+      "jp": "トイレ",
+      "reading": "トイレ",
+      "zh": "厕所",
+      "kind": "sign",
+      "zone": 6,
+      "category": "店内のもの",
+      "example": "これはトイレです。",
+      "translation": "这是厕所。"
+    },
+    {
+      "id": "convenience-cold-009",
+      "jp": "便器",
+      "reading": "べんき",
+      "zh": "便器",
+      "kind": "toilet",
+      "zone": 6,
+      "category": "店内のもの",
+      "example": "これは便器です。",
+      "translation": "这是便器。"
+    },
+    {
+      "id": "convenience-cold-010",
+      "jp": "温水洗浄便座の操作パネル",
+      "reading": "おんすいせんじょうべんざのそうさパネル",
+      "zh": "温水洗净便座控制面板",
+      "kind": "remote",
+      "zone": 6,
+      "category": "店内のもの",
+      "example": "これは温水洗浄便座の操作パネルです。",
+      "translation": "这是温水洗净便座控制面板。"
+    },
+    {
+      "id": "convenience-cold-011",
+      "jp": "トイレットペーパー",
+      "reading": "トイレットペーパー",
+      "zh": "卫生纸",
+      "kind": "paperroll",
+      "zone": 6,
+      "category": "店内のもの",
+      "example": "これはトイレットペーパーです。",
+      "translation": "这是卫生纸。"
+    },
+    {
+      "id": "convenience-cold-012",
+      "jp": "洗面台",
+      "reading": "せんめんだい",
+      "zh": "洗手台",
+      "kind": "sink",
+      "zone": 6,
+      "category": "店内のもの",
+      "example": "これは洗面台です。",
+      "translation": "这是洗手台。"
+    },
+    {
+      "id": "convenience-cold-013",
+      "jp": "鏡",
+      "reading": "かがみ",
+      "zh": "镜子",
+      "kind": "mirror",
+      "zone": 6,
+      "category": "店内のもの",
+      "example": "これは鏡です。",
+      "translation": "这是镜子。"
+    },
+    {
+      "id": "convenience-cold-014",
+      "jp": "ハンドソープ",
+      "reading": "ハンドソープ",
+      "zh": "洗手液",
+      "kind": "pumpbottle",
+      "zone": 6,
+      "category": "店内のもの",
+      "example": "これはハンドソープです。",
+      "translation": "这是洗手液。"
+    },
+    {
+      "id": "convenience-cold-015",
+      "jp": "ペーパータオル",
+      "reading": "ペーパータオル",
+      "zh": "擦手纸",
+      "kind": "tissue",
+      "zone": 6,
+      "category": "店内のもの",
+      "example": "これはペーパータオルです。",
+      "translation": "这是擦手纸。"
+    },
+    {
+      "id": "convenience-cold-016",
+      "jp": "サニタリーボックス",
+      "reading": "サニタリーボックス",
+      "zh": "卫生废物桶",
+      "kind": "trash",
+      "zone": 6,
+      "category": "店内のもの",
+      "example": "これはサニタリーボックスです。",
+      "translation": "这是卫生废物桶。"
+    },
+    {
+      "id": "convenience-cold-017",
+      "jp": "鍵",
+      "reading": "かぎ",
+      "zh": "锁",
+      "kind": "key",
+      "zone": 6,
+      "category": "店内のもの",
+      "example": "これは鍵です。",
+      "translation": "这是锁。"
+    },
+    {
+      "id": "convenience-cold-018",
+      "jp": "トイレのドア",
+      "reading": "トイレのドア",
+      "zh": "厕所门",
+      "kind": "door",
+      "zone": 6,
+      "category": "店内のもの",
+      "example": "これはトイレのドアです。",
+      "translation": "这是厕所门。"
+    },
+    {
+      "id": "convenience-product-oreo",
+      "jp": "オレオ バニラクリーム 10枚入",
+      "reading": "おれお ばにらくりーむ じゅうまいいり",
+      "zh": "饼干",
+      "kind": "retail-product",
+      "color": "#167cd0",
+      "zone": 1,
+      "category": "商品",
+      "example": "クッキーを探しています。",
+      "noteJa": "クリームをはさんだクッキー。「10枚入」は、十枚入っているという意味です。",
+      "product": {
+        "key": "oreo",
+        "generic": "クッキー",
+        "genericReading": "くっきー",
+        "brand": "モンデリーズ",
+        "shape": "box",
+        "source": "https://shop.aeon.com/netsuper/01050000052540/1M.html?sort=recommend",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "OREO",
+        "imageSource": "https://www.aeonnetshop.com/img/goods/0105/00000000000000/PC/S/4547894660515.jpg",
+        "image": "./assets/products/oreo.jpg"
+      },
+      "translation": "正在找饼干。"
+    },
+    {
+      "id": "convenience-product-pocky",
+      "jp": "ポッキーチョコレート 2袋入",
+      "reading": "ぽっきーちょこれーと ふたふくろいり",
+      "zh": "巧克力点心",
+      "kind": "retail-product",
+      "color": "#cd3137",
+      "zone": 1,
+      "category": "商品",
+      "example": "チョコレート菓子を探しています。",
+      "noteJa": "細い棒の形のお菓子。「袋」は、ふくろと読みます。",
+      "product": {
+        "key": "pocky",
+        "generic": "チョコレート菓子",
+        "genericReading": "ちょこれーとがし",
+        "brand": "グリコ",
+        "shape": "box",
+        "source": "https://shop.aeon.com/netsuper/01050000052540/1M.html?sort=recommend",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "Pocky",
+        "imageSource": "https://www.aeonnetshop.com/img/goods/0105/00000000000000/PC/S/4901005009158.jpg",
+        "image": "./assets/products/pocky.jpg"
+      },
+      "translation": "正在找巧克力点心。"
+    },
+    {
+      "id": "convenience-product-happyturn",
+      "jp": "ハッピーターン 96g",
+      "reading": "はっぴーたーん",
+      "zh": "米饼",
+      "kind": "retail-product",
+      "color": "#f28d32",
+      "zone": 1,
+      "category": "商品",
+      "example": "米菓を探しています。",
+      "noteJa": "米を使ったお菓子を「米菓」と呼びます。",
+      "product": {
+        "key": "happyturn",
+        "generic": "米菓",
+        "genericReading": "べいか",
+        "brand": "亀田製菓",
+        "shape": "bag",
+        "source": "https://shop.aeon.com/netsuper/01050000052540/1M.html?sort=recommend",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "ハッピーターン",
+        "imageSource": "https://www.aeonnetshop.com/img/goods/0105/00000000000000/PC/S/4901313207871.jpg",
+        "image": "./assets/products/happyturn.jpg"
+      },
+      "translation": "正在找米饼。"
+    },
+    {
+      "id": "convenience-product-sapporo",
+      "jp": "サッポロポテト つぶつぶベジタブル 72g",
+      "reading": "さっぽろぽてと つぶつぶべじたぶる",
+      "zh": "膨化零食",
+      "kind": "retail-product",
+      "color": "#5eab50",
+      "zone": 1,
+      "category": "商品",
+      "example": "スナック菓子を探しています。",
+      "noteJa": "袋入りのスナック菓子です。",
+      "product": {
+        "key": "sapporo",
+        "generic": "スナック菓子",
+        "genericReading": "すなっくがし",
+        "brand": "カルビー",
+        "shape": "bag",
+        "source": "https://shop.aeon.com/netsuper/01050000052540/1M.html?sort=recommend",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "サッポロポテト",
+        "imageSource": "https://www.aeonnetshop.com/img/goods/0105/00000000000000/PC/S/4901330123321.jpg",
+        "image": "./assets/products/sapporo.jpg"
+      },
+      "translation": "正在找膨化零食。"
+    },
+    {
+      "id": "convenience-product-alfort",
+      "jp": "アルフォート 9枚入",
+      "reading": "あるふぉーと きゅうまいいり",
+      "zh": "饼干",
+      "kind": "retail-product",
+      "color": "#254d9e",
+      "zone": 1,
+      "category": "商品",
+      "example": "ビスケットを探しています。",
+      "noteJa": "ビスケットとチョコレートを組み合わせたお菓子です。",
+      "product": {
+        "key": "alfort",
+        "generic": "ビスケット",
+        "genericReading": "びすけっと",
+        "brand": "ブルボン",
+        "shape": "box",
+        "source": "https://shop.aeon.com/netsuper/01050000052540/1M.html?sort=recommend",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "アルフォート",
+        "imageSource": "https://www.aeonnetshop.com/img/goods/0105/00000000000000/PC/S/4901360360796.jpg",
+        "image": "./assets/products/alfort.jpg"
+      },
+      "translation": "正在找饼干。"
+    },
+    {
+      "id": "convenience-product-calbee",
+      "jp": "ポテトチップス うすしお味 55g",
+      "reading": "ぽてとちっぷす うすしおあじ",
+      "zh": "薯片",
+      "kind": "retail-product",
+      "color": "#f5d765",
+      "zone": 1,
+      "category": "商品",
+      "example": "ポテトチップスを探しています。",
+      "noteJa": "「うすしお」は、薄い塩味のことです。",
+      "product": {
+        "key": "calbee",
+        "generic": "ポテトチップス",
+        "genericReading": "ぽてとちっぷす",
+        "brand": "カルビー",
+        "shape": "bag",
+        "source": "https://shop.aeon.com/netsuper/10000000029570/87.html",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "Calbee うすしお"
+      },
+      "translation": "正在找薯片。"
+    },
+    {
+      "id": "convenience-product-seven-salt",
+      "jp": "７Ｐ ポテトチップス うすしお味 50g",
+      "reading": "せぶんぷれみあむ ぽてとちっぷす うすしおあじ",
+      "zh": "薯片",
+      "kind": "retail-product",
+      "color": "#f2ddb7",
+      "zone": 1,
+      "category": "商品",
+      "example": "ポテトチップスを探しています。",
+      "noteJa": "「うすしお味」は味の名前です。",
+      "product": {
+        "key": "seven-salt",
+        "generic": "ポテトチップス",
+        "genericReading": "ぽてとちっぷす",
+        "brand": "セブンプレミアム",
+        "shape": "bag",
+        "source": "https://www.sej.co.jp/products/a/item/330720/",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "７Ｐ うすしお"
+      },
+      "translation": "正在找薯片。"
+    },
+    {
+      "id": "convenience-product-seven-nori",
+      "jp": "７プレミアム 厚切りポテト 贅沢のりしお味",
+      "reading": "せぶんぷれみあむ あつぎりぽてと ぜいたくのりしおあじ",
+      "zh": "薯片",
+      "kind": "retail-product",
+      "color": "#4f875b",
+      "zone": 1,
+      "category": "商品",
+      "example": "ポテトチップスを探しています。",
+      "noteJa": "「厚切り」は厚く切ること。「のりしお」は、のりと塩の味です。",
+      "product": {
+        "key": "seven-nori",
+        "generic": "ポテトチップス",
+        "genericReading": "ぽてとちっぷす",
+        "brand": "セブンプレミアム",
+        "shape": "bag",
+        "source": "https://www.sej.co.jp/products/a/item/330797/",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "７Ｐ のりしお"
+      },
+      "translation": "正在找薯片。"
+    },
+    {
+      "id": "convenience-product-lawson-potato",
+      "jp": "ザクッとポテト こだわりの塩味",
+      "reading": "ざくっとぽてと こだわりのしおあじ",
+      "zh": "薯片",
+      "kind": "retail-product",
+      "color": "#80bad1",
+      "zone": 1,
+      "category": "商品",
+      "example": "ポテトチップスを探しています。",
+      "noteJa": "「ザクッと」は、かんだときの食感を表します。",
+      "product": {
+        "key": "lawson-potato",
+        "generic": "ポテトチップス",
+        "genericReading": "ぽてとちっぷす",
+        "brand": "ローソン",
+        "shape": "bag",
+        "source": "https://www.lawson.co.jp/recommend/original/select/snack/index.html",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "ザクッとポテト"
+      },
+      "translation": "正在找薯片。"
+    },
+    {
+      "id": "convenience-product-lawson-popcorn",
+      "jp": "瀬戸内産の塩だけで味付けしたポップコーン",
+      "reading": "せとうちさんのしおだけであじつけしたぽっぷこーん",
+      "zh": "爆米花",
+      "kind": "retail-product",
+      "color": "#e4c580",
+      "zone": 1,
+      "category": "商品",
+      "example": "ポップコーンを探しています。",
+      "noteJa": "「塩だけで」は、塩のみで、という意味です。",
+      "product": {
+        "key": "lawson-popcorn",
+        "generic": "ポップコーン",
+        "genericReading": "ぽっぷこーん",
+        "brand": "ローソン",
+        "shape": "bag",
+        "source": "https://www.lawson.co.jp/recommend/original/select/snack/index.html",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "ポップコーン"
+      },
+      "translation": "正在找爆米花。"
+    },
+    {
+      "id": "convenience-product-lawson-castella",
+      "jp": "北海道産牛乳使用 鈴カステラ",
+      "reading": "ほっかいどうさんぎゅうにゅうしよう すずかすてら",
+      "zh": "长崎蛋糕",
+      "kind": "retail-product",
+      "color": "#ad723b",
+      "zone": 1,
+      "category": "商品",
+      "example": "カステラを探しています。",
+      "noteJa": "丸い形のカステラです。「使用」は、使っているという意味です。",
+      "product": {
+        "key": "lawson-castella",
+        "generic": "カステラ",
+        "genericReading": "かすてら",
+        "brand": "ローソン",
+        "shape": "bag",
+        "source": "https://www.lawson.co.jp/recommend/original/select/snack/index.html",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "鈴カステラ"
+      },
+      "translation": "正在找长崎蛋糕。"
+    },
+    {
+      "id": "convenience-product-umaibo",
+      "jp": "うまい棒 コーンポタージュ味",
+      "reading": "うまいぼう こーんぽたーじゅあじ",
+      "zh": "小零食",
+      "kind": "retail-product",
+      "color": "#e6cd4b",
+      "zone": 1,
+      "category": "商品",
+      "example": "駄菓子を探しています。",
+      "noteJa": "一本ずつ包まれた、棒の形のスナックです。",
+      "product": {
+        "key": "umaibo",
+        "generic": "駄菓子",
+        "genericReading": "だがし",
+        "brand": "やおきん",
+        "shape": "stick",
+        "source": "https://www.yaokin.com/products_search/umaibo",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "うまい棒"
+      },
+      "translation": "正在找零食。"
+    },
+    {
+      "id": "convenience-product-cupnoodle",
+      "jp": "カップヌードル",
+      "reading": "かっぷぬーどる",
+      "zh": "杯面",
+      "kind": "retail-product",
+      "color": "#efe3c1",
+      "zone": 1,
+      "category": "商品",
+      "example": "カップ麺を探しています。",
+      "noteJa": "容器に入った麺。「カップ麺」は商品の種類、「カップヌードル」は商品名です。",
+      "product": {
+        "key": "cupnoodle",
+        "generic": "カップ麺",
+        "genericReading": "かっぷめん",
+        "brand": "日清食品",
+        "shape": "cup",
+        "source": "https://www.nissin.com/jp/product/brands/cupnoodle/",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "CUP NOODLE"
+      },
+      "translation": "正在找杯面。"
+    },
+    {
+      "id": "convenience-product-tea",
+      "jp": "お〜いお茶 緑茶 600ml",
+      "reading": "おーいおちゃ りょくちゃ",
+      "zh": "绿茶",
+      "kind": "retail-product",
+      "color": "#80a351",
+      "zone": 2,
+      "category": "商品",
+      "example": "緑茶を探しています。",
+      "noteJa": "ペットボトル入りの緑茶です。",
+      "product": {
+        "key": "tea",
+        "generic": "緑茶",
+        "genericReading": "りょくちゃ",
+        "brand": "伊藤園",
+        "shape": "bottle",
+        "source": "https://shop.aeon.com/netsuper/01050000003240/010500000032404901085003800.html",
+        "checked": "2026-10-01",
+        "action": "drink",
+        "label": "お〜いお茶"
+      },
+      "translation": "正在找绿茶。"
+    },
+    {
+      "id": "convenience-product-milk",
+      "jp": "明治おいしい牛乳 200ml",
+      "reading": "めいじおいしいぎゅうにゅう",
+      "zh": "牛奶",
+      "kind": "retail-product",
+      "color": "#e8f0ed",
+      "zone": 0,
+      "category": "商品",
+      "example": "牛乳を探しています。",
+      "noteJa": "紙パックに入った牛乳。冷蔵売り場に置きます。",
+      "product": {
+        "key": "milk",
+        "generic": "牛乳",
+        "genericReading": "ぎゅうにゅう",
+        "brand": "明治",
+        "shape": "carton",
+        "source": "https://www.meiji.co.jp/products/milk_drink/49721119.html",
+        "checked": "2026-10-01",
+        "action": "drink",
+        "label": "おいしい牛乳"
+      },
+      "translation": "正在找牛奶。"
+    },
+    {
+      "id": "convenience-product-mono",
+      "jp": "モノ消しゴム",
+      "reading": "ものけしごむ",
+      "zh": "橡皮",
+      "kind": "retail-product",
+      "color": "#e5e7e1",
+      "zone": 3,
+      "category": "商品",
+      "example": "消しゴムを探しています。",
+      "noteJa": "鉛筆で書いた文字を消すものです。",
+      "product": {
+        "key": "mono",
+        "generic": "消しゴム",
+        "genericReading": "けしごむ",
+        "brand": "トンボ鉛筆",
+        "shape": "eraser",
+        "source": "https://www.tombow.com/products/mono/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "MONO",
+        "image": "./assets/products/mono.png",
+        "imageSource": "https://www.tombow.com/files/2012/12/mono_main.png"
+      },
+      "translation": "正在找橡皮。"
+    },
+    {
+      "id": "convenience-specific-01",
+      "jp": "マルチコピー機",
+      "reading": "マルチコピーき",
+      "zh": "多功能复印机",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "マルチコピー機はここにあります。",
+      "detail": {
+        "type": "terminal",
+        "color": "#c4d0c7",
+        "floor": [
+          -4.8,
+          2.4
+        ]
+      },
+      "translation": "多功能复印机在这里。"
+    },
+    {
+      "id": "convenience-specific-02",
+      "jp": "宅配便受付票",
+      "reading": "たくはいびんうけつけひょう",
+      "zh": "快递受理单",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "宅配便受付票はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#a8bf9b"
+      },
+      "translation": "快递受理单在这里。"
+    },
+    {
+      "id": "convenience-specific-03",
+      "jp": "公共料金払込票",
+      "reading": "こうきょうりょうきんはらいこみひょう",
+      "zh": "公共事业缴费单",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "公共料金払込票はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#dbbb93"
+      },
+      "translation": "公共事业缴费单在这里。"
+    },
+    {
+      "id": "convenience-specific-04",
+      "jp": "コーヒー用カップのふた",
+      "reading": "コーヒーようカップのふた",
+      "zh": "咖啡杯盖",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "コーヒー用カップのふたはここにあります。",
+      "detail": {
+        "type": "cup-lid",
+        "color": "#c2b397"
+      },
+      "translation": "咖啡杯盖在这里。"
+    },
+    {
+      "id": "convenience-specific-05",
+      "jp": "レジ横の紙ナプキン",
+      "reading": "レジよこのかみナプキン",
+      "zh": "收银旁餐巾纸",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "レジ横の紙ナプキンはここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#d0bea5"
+      },
+      "translation": "收银旁餐巾纸在这里。"
+    },
+    {
+      "id": "convenience-specific-06",
+      "jp": "割り箸の袋",
+      "reading": "わりばしのふくろ",
+      "zh": "一次性筷子包装",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "割り箸の袋はここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#e0c78f"
+      },
+      "translation": "一次性筷子包装在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 10,
+  "district": 2,
+  "sceneReference": null,
+  "venueRole": {
+    "id": "convenience-venue-worker",
+    "jp": "レジの店員",
+    "reading": "レジのてんいん",
+    "zone": 4,
+    "activity": "お弁当を温めています。",
+    "readingLine": "おべんとうを あたためています。",
+    "verb": "温める → 温めている",
+    "grammar": "電子レンジ【で】お弁当【を】温める。",
+    "reply": "お弁当は温めますか。お箸はお付けしますか。",
+    "tools": [
+      "弁当",
+      "電子レンジ",
+      "レジ袋"
+    ]
+  }
+}

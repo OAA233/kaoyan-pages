@@ -1,0 +1,1020 @@
+{
+  "id": "clinic",
+  "title": "医院与药局",
+  "jp": "病院と薬局",
+  "reading": "びょういんとやっきょく",
+  "layout": "clinic",
+  "zones": [
+    {
+      "jp": "受付",
+      "zh": "挂号"
+    },
+    {
+      "jp": "待合室",
+      "zh": "候诊室"
+    },
+    {
+      "jp": "診察室",
+      "zh": "诊室"
+    },
+    {
+      "jp": "検査室",
+      "zh": "检查室"
+    },
+    {
+      "jp": "薬局",
+      "zh": "药局"
+    }
+  ],
+  "items": [
+    {
+      "id": "clinic-001",
+      "jp": "受付",
+      "reading": "うけつけ",
+      "zh": "接待处",
+      "kind": "counter",
+      "color": "#80b3ac",
+      "size": [
+        4.0,
+        1.0,
+        0.8
+      ],
+      "category": "物品与细节",
+      "example": "これは受付です。",
+      "translation": "这是接待处。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-002",
+      "jp": "診察券",
+      "reading": "しんさつけん",
+      "zh": "就诊卡",
+      "kind": "card",
+      "category": "物品与细节",
+      "example": "これは診察券です。",
+      "translation": "这是就诊卡。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-003",
+      "jp": "保険証",
+      "reading": "ほけんしょう",
+      "zh": "健康保险证",
+      "kind": "card",
+      "color": "#c1cfa4",
+      "category": "物品与细节",
+      "example": "これは保険証です。",
+      "translation": "这是健康保险证。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-004",
+      "jp": "問診票",
+      "reading": "もんしんひょう",
+      "zh": "问诊表",
+      "kind": "paper",
+      "category": "物品与细节",
+      "example": "これは問診票です。",
+      "translation": "这是问诊表。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-005",
+      "jp": "ボールペン",
+      "reading": "ボールペン",
+      "zh": "圆珠笔",
+      "kind": "pen",
+      "category": "物品与细节",
+      "example": "これはボールペンです。",
+      "translation": "这是圆珠笔。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-006",
+      "jp": "番号札",
+      "reading": "ばんごうふだ",
+      "zh": "号码牌",
+      "kind": "card",
+      "color": "#b2c9d6",
+      "category": "物品与细节",
+      "example": "これは番号札です。",
+      "translation": "这是号码牌。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-007",
+      "jp": "待合室",
+      "reading": "まちあいしつ",
+      "zh": "候诊室",
+      "kind": "room-sign",
+      "category": "空间与设施",
+      "example": "ここは待合室です。",
+      "translation": "这里是候诊室。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-008",
+      "jp": "長椅子",
+      "reading": "ながいす",
+      "zh": "长椅",
+      "kind": "bench",
+      "color": "#82a4ac",
+      "category": "物品与细节",
+      "example": "これは長椅子です。",
+      "translation": "这是长椅。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "clinic-009",
+      "jp": "車椅子",
+      "reading": "くるまいす",
+      "zh": "轮椅",
+      "kind": "wheelchair",
+      "category": "物品与细节",
+      "example": "これは車椅子です。",
+      "translation": "这是轮椅。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-010",
+      "jp": "杖",
+      "reading": "つえ",
+      "zh": "拐杖",
+      "kind": "cane",
+      "category": "物品与细节",
+      "example": "これは杖です。",
+      "translation": "这是拐杖。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-011",
+      "jp": "診察室",
+      "reading": "しんさつしつ",
+      "zh": "诊室",
+      "kind": "room-sign",
+      "category": "空间与设施",
+      "example": "ここは診察室です。",
+      "translation": "这里是诊室。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-012",
+      "jp": "診察台",
+      "reading": "しんさつだい",
+      "zh": "诊查床",
+      "kind": "exam-bed",
+      "category": "物品与细节",
+      "example": "これは診察台です。",
+      "translation": "这是诊查床。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "clinic-013",
+      "jp": "聴診器",
+      "reading": "ちょうしんき",
+      "zh": "听诊器",
+      "kind": "stethoscope",
+      "category": "物品与细节",
+      "example": "これは聴診器です。",
+      "translation": "这是听诊器。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "clinic-014",
+      "jp": "体温計",
+      "reading": "たいおんけい",
+      "zh": "体温计",
+      "kind": "thermometer",
+      "category": "物品与细节",
+      "example": "これは体温計です。",
+      "translation": "这是体温计。",
+      "note": "",
+      "art": [
+        "care",
+        10
+      ],
+      "zone": 3
+    },
+    {
+      "id": "clinic-015",
+      "jp": "血圧計",
+      "reading": "けつあつけい",
+      "zh": "血压计",
+      "kind": "bloodpressure",
+      "category": "物品与细节",
+      "example": "これは血圧計です。",
+      "translation": "这是血压计。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-016",
+      "jp": "注射器",
+      "reading": "ちゅうしゃき",
+      "zh": "注射器",
+      "kind": "syringe",
+      "category": "物品与细节",
+      "example": "これは注射器です。",
+      "translation": "这是注射器。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "clinic-017",
+      "jp": "包帯",
+      "reading": "ほうたい",
+      "zh": "绷带",
+      "kind": "bandage",
+      "category": "物品与细节",
+      "example": "これは包帯です。",
+      "translation": "这是绷带。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "clinic-018",
+      "jp": "ガーゼ",
+      "reading": "ガーゼ",
+      "zh": "纱布",
+      "kind": "towel",
+      "category": "物品与细节",
+      "example": "これはガーゼです。",
+      "translation": "这是纱布。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "clinic-019",
+      "jp": "絆創膏",
+      "reading": "ばんそうこう",
+      "zh": "创可贴",
+      "kind": "bandage-strip",
+      "category": "物品与细节",
+      "example": "これは絆創膏です。",
+      "translation": "这是创可贴。",
+      "note": "",
+      "art": [
+        "care",
+        9
+      ],
+      "zone": 4
+    },
+    {
+      "id": "clinic-020",
+      "jp": "消毒液",
+      "reading": "しょうどくえき",
+      "zh": "消毒液",
+      "kind": "pumpbottle",
+      "color": "#88b7bc",
+      "category": "物品与细节",
+      "example": "これは消毒液です。",
+      "translation": "这是消毒液。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "clinic-021",
+      "jp": "マスク",
+      "reading": "マスク",
+      "zh": "口罩",
+      "kind": "mask",
+      "category": "物品与细节",
+      "example": "これはマスクです。",
+      "translation": "这是口罩。",
+      "note": "",
+      "art": [
+        "care",
+        8
+      ],
+      "zone": 0
+    },
+    {
+      "id": "clinic-022",
+      "jp": "手袋",
+      "reading": "てぶくろ",
+      "zh": "手套",
+      "kind": "gloves",
+      "color": "#bdcfcb",
+      "category": "物品与细节",
+      "example": "これは手袋です。",
+      "translation": "这是手套。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "clinic-023",
+      "jp": "点滴",
+      "reading": "てんてき",
+      "zh": "静脉滴注",
+      "kind": "ivstand",
+      "category": "物品与细节",
+      "example": "これは点滴です。",
+      "translation": "这是静脉滴注。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "clinic-024",
+      "jp": "カーテン",
+      "reading": "カーテン",
+      "zh": "帘子",
+      "kind": "curtain",
+      "color": "#aac9c6",
+      "category": "物品与细节",
+      "example": "これはカーテンです。",
+      "translation": "这是帘子。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-025",
+      "jp": "身長計",
+      "reading": "しんちょうけい",
+      "zh": "身高计",
+      "kind": "heightmeter",
+      "category": "物品与细节",
+      "example": "これは身長計です。",
+      "translation": "这是身高计。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-026",
+      "jp": "体重計",
+      "reading": "たいじゅうけい",
+      "zh": "体重秤",
+      "kind": "scale",
+      "category": "物品与细节",
+      "example": "これは体重計です。",
+      "translation": "这是体重秤。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "clinic-027",
+      "jp": "視力表",
+      "reading": "しりょくひょう",
+      "zh": "视力表",
+      "kind": "eye-chart",
+      "category": "物品与细节",
+      "example": "これは視力表です。",
+      "translation": "这是视力表。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-028",
+      "jp": "レントゲン写真",
+      "reading": "レントゲンしゃしん",
+      "zh": "X光片",
+      "kind": "xray",
+      "category": "物品与细节",
+      "example": "これはレントゲン写真です。",
+      "translation": "这是X光片。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-029",
+      "jp": "薬局",
+      "reading": "やっきょく",
+      "zh": "药局",
+      "kind": "sign",
+      "color": "#75a397",
+      "category": "空间与设施",
+      "example": "これは薬局です。",
+      "translation": "这是药局。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "clinic-030",
+      "jp": "処方箋",
+      "reading": "しょほうせん",
+      "zh": "处方",
+      "kind": "paper",
+      "category": "物品与细节",
+      "example": "これは処方箋です。",
+      "translation": "这是处方。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-031",
+      "jp": "薬",
+      "reading": "くすり",
+      "zh": "药",
+      "kind": "medicine",
+      "category": "物品与细节",
+      "example": "これは薬です。",
+      "translation": "这是药。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "clinic-032",
+      "jp": "錠剤",
+      "reading": "じょうざい",
+      "zh": "药片",
+      "kind": "pills",
+      "category": "物品与细节",
+      "example": "これは錠剤です。",
+      "translation": "这是药片。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "clinic-033",
+      "jp": "カプセル",
+      "reading": "カプセル",
+      "zh": "胶囊",
+      "kind": "capsules",
+      "category": "物品与细节",
+      "example": "これはカプセルです。",
+      "translation": "这是胶囊。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-034",
+      "jp": "薬袋",
+      "reading": "くすりぶくろ",
+      "zh": "药袋",
+      "kind": "packet",
+      "color": "#dfd8b6",
+      "category": "物品与细节",
+      "example": "これは薬袋です。",
+      "translation": "这是药袋。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "clinic-035",
+      "jp": "目薬",
+      "reading": "めぐすり",
+      "zh": "眼药水",
+      "kind": "eyedrops",
+      "category": "物品与细节",
+      "example": "これは目薬です。",
+      "translation": "这是眼药水。",
+      "note": "",
+      "art": [
+        "care",
+        11
+      ],
+      "zone": 4
+    },
+    {
+      "id": "clinic-036",
+      "jp": "軟膏",
+      "reading": "なんこう",
+      "zh": "软膏",
+      "kind": "tube",
+      "category": "物品与细节",
+      "example": "これは軟膏です。",
+      "translation": "这是软膏。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-037",
+      "jp": "お薬手帳",
+      "reading": "おくすりてちょう",
+      "zh": "用药手册",
+      "kind": "book",
+      "color": "#a6c6b4",
+      "category": "物品与细节",
+      "example": "これはお薬手帳です。",
+      "translation": "这是用药手册。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-039",
+      "jp": "壁",
+      "reading": "かべ",
+      "zh": "墙壁",
+      "kind": "wall-shell",
+      "category": "空间与设施",
+      "example": "これは壁です。",
+      "translation": "这是墙壁。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "clinic-040",
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空间与设施",
+      "example": "これは窓です。",
+      "translation": "这是窗户。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "clinic-041",
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "置物架",
+      "kind": "shelf-support",
+      "category": "空间与设施",
+      "example": "これは棚です。",
+      "translation": "这是置物架。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "clinic-042",
+      "jp": "電気",
+      "reading": "でんき",
+      "zh": "灯；照明",
+      "kind": "lighting-shell",
+      "category": "空间与设施",
+      "example": "電気をつけます。",
+      "translation": "开灯。",
+      "note": "这里指照明；「電気」也有电、电力的意思。",
+      "zone": 0
+    },
+    {
+      "jp": "歯ブラシ",
+      "reading": "はブラシ",
+      "zh": "牙刷",
+      "kind": "toothbrush",
+      "category": "日用品",
+      "art": [
+        "care",
+        0
+      ],
+      "id": "clinic-043",
+      "example": "歯ブラシを見てみましょう。",
+      "translation": "看看牙刷吧。",
+      "zone": 0
+    },
+    {
+      "jp": "歯磨き粉",
+      "reading": "はみがきこ",
+      "zh": "牙膏",
+      "kind": "tube",
+      "category": "日用品",
+      "art": [
+        "care",
+        1
+      ],
+      "id": "clinic-044",
+      "example": "歯磨き粉を見てみましょう。",
+      "translation": "看看牙膏吧。",
+      "zone": 0
+    },
+    {
+      "jp": "石けん",
+      "reading": "せっけん",
+      "zh": "香皂",
+      "kind": "smallblock",
+      "category": "日用品",
+      "art": [
+        "care",
+        4
+      ],
+      "id": "clinic-047",
+      "example": "石けんを見てみましょう。",
+      "translation": "看看香皂吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ティッシュ",
+      "reading": "ティッシュ",
+      "zh": "纸巾",
+      "kind": "tissue",
+      "category": "日用品",
+      "art": [
+        "care",
+        6
+      ],
+      "id": "clinic-049",
+      "example": "ティッシュを見てみましょう。",
+      "translation": "看看纸巾吧。",
+      "zone": 0
+    },
+    {
+      "jp": "トイレットペーパー",
+      "reading": "トイレットペーパー",
+      "zh": "卫生纸",
+      "kind": "paperroll",
+      "category": "日用品",
+      "art": [
+        "care",
+        7
+      ],
+      "id": "clinic-050",
+      "example": "トイレットペーパーを見てみましょう。",
+      "translation": "看看卫生纸吧。",
+      "zone": 0
+    },
+    {
+      "jp": "鏡",
+      "reading": "かがみ",
+      "zh": "镜子",
+      "kind": "mirror",
+      "category": "日用品",
+      "id": "clinic-062",
+      "example": "鏡を見てみましょう。",
+      "translation": "看看镜子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "くし",
+      "reading": "くし",
+      "zh": "梳子",
+      "kind": "brush",
+      "category": "日用品",
+      "id": "clinic-063",
+      "example": "くしを見てみましょう。",
+      "translation": "看看梳子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "綿棒",
+      "reading": "めんぼう",
+      "zh": "棉签",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "clinic-065",
+      "example": "綿棒を見てみましょう。",
+      "translation": "看看棉签吧。",
+      "zone": 0
+    },
+    {
+      "jp": "コットン",
+      "reading": "コットン",
+      "zh": "化妆棉",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "clinic-066",
+      "example": "コットンを見てみましょう。",
+      "translation": "看看化妆棉吧。",
+      "zone": 0
+    },
+    {
+      "jp": "デンタルフロス",
+      "reading": "デンタルフロス",
+      "zh": "牙线",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "clinic-069",
+      "example": "デンタルフロスを見てみましょう。",
+      "translation": "看看牙线吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ウェットティッシュ",
+      "reading": "ウェットティッシュ",
+      "zh": "湿纸巾",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "clinic-076",
+      "example": "ウェットティッシュを見てみましょう。",
+      "translation": "看看湿纸巾吧。",
+      "zone": 0
+    },
+    {
+      "jp": "生理用品",
+      "reading": "せいりようひん",
+      "zh": "生理卫生用品",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "clinic-078",
+      "example": "生理用品を見てみましょう。",
+      "translation": "看看生理卫生用品吧。",
+      "zone": 0
+    },
+    {
+      "jp": "おむつ",
+      "reading": "おむつ",
+      "zh": "尿布",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "clinic-079",
+      "example": "おむつを見てみましょう。",
+      "translation": "看看尿布吧。",
+      "zone": 0
+    },
+    {
+      "jp": "粉薬",
+      "reading": "こなぐすり",
+      "zh": "药粉",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "clinic-080",
+      "example": "粉薬を見てみましょう。",
+      "translation": "看看药粉吧。",
+      "zone": 4
+    },
+    {
+      "jp": "湿布",
+      "reading": "しっぷ",
+      "zh": "贴膏",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "clinic-081",
+      "example": "湿布を見てみましょう。",
+      "translation": "看看贴膏吧。",
+      "zone": 4
+    },
+    {
+      "jp": "松葉杖",
+      "reading": "まつばづえ",
+      "zh": "拐杖",
+      "kind": "pole",
+      "category": "医療用品",
+      "id": "clinic-084",
+      "example": "松葉杖を見てみましょう。",
+      "translation": "看看拐杖吧。",
+      "zone": 0
+    },
+    {
+      "jp": "白衣",
+      "reading": "はくい",
+      "zh": "白大褂",
+      "kind": "coat",
+      "category": "医療用品",
+      "id": "clinic-085",
+      "example": "白衣を見てみましょう。",
+      "translation": "看看白大褂吧。",
+      "zone": 2
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "clinic-086",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "clinic-089",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "clinic-090",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "clinic-091",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "clinic-092",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "clinic-093",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "clinic-094",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 4
+    },
+    {
+      "id": "clinic-detail-0187",
+      "jp": "受付番号",
+      "reading": "うけつけばんごう",
+      "zh": "排队号",
+      "kind": "ticket-number",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは受付番号です。",
+      "translation": "这是排队号。"
+    },
+    {
+      "id": "clinic-detail-0188",
+      "jp": "番号表示機",
+      "reading": "ばんごうひょうじき",
+      "zh": "叫号显示器",
+      "kind": "monitor",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは番号表示機です。",
+      "translation": "这是叫号显示器。"
+    },
+    {
+      "id": "clinic-product-band-aid",
+      "jp": "バンドエイド キズパワーパッド ふつうサイズ",
+      "reading": "ばんどえいど きずぱわーぱっど ふつうさいず",
+      "zh": "创可贴",
+      "kind": "retail-product",
+      "color": "#cebd8d",
+      "zone": 4,
+      "category": "商品",
+      "example": "絆創膏を探しています。",
+      "noteJa": "パッケージで「ふつうサイズ」と「大きめサイズ」を見分けます。",
+      "product": {
+        "key": "band-aid",
+        "generic": "絆創膏",
+        "genericReading": "ばんそうこう",
+        "brand": "バンドエイド",
+        "shape": "box",
+        "source": "https://www.band-aid.jp/lineup/medicaltools/regular",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "キズパワーパッド",
+        "image": "./assets/products/band-aid.jpg",
+        "imageSource": "https://images.ctfassets.net/p9hrd7f8bkc6/42qewLMlPgr5yrHIqndh2R/02059cb4d468632b5ec5992112836d1d/kpp_regular-ja-jp?fm=jpg&w=1920&q=80"
+      },
+      "translation": "正在找创可贴。"
+    },
+    {
+      "id": "clinic-product-omron",
+      "jp": "オムロン 電子体温計 MC-681 けんおんくん",
+      "reading": "おむろん でんしたいおんけい けんおんくん",
+      "zh": "体温计",
+      "kind": "retail-product",
+      "color": "#b4d8e7",
+      "zone": 4,
+      "category": "商品",
+      "example": "体温計を探しています。",
+      "noteJa": "「電子体温計」は、でんしたいおんけいと読みます。「MC-681」は型番です。",
+      "product": {
+        "key": "omron",
+        "generic": "体温計",
+        "genericReading": "たいおんけい",
+        "brand": "オムロン",
+        "shape": "box",
+        "source": "https://store.healthcare.omron.co.jp/support/download/manual/mc/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "けんおんくん"
+      },
+      "translation": "正在找体温计。"
+    },
+    {
+      "id": "clinic-specific-01",
+      "jp": "血圧計のカフ",
+      "reading": "けつあつけいのカフ",
+      "zh": "血压计袖带",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "血圧計のカフはここにあります。",
+      "detail": {
+        "type": "bloodpressure",
+        "color": "#a6c0c5"
+      },
+      "translation": "血压计袖带在这里。"
+    },
+    {
+      "id": "clinic-specific-02",
+      "jp": "お薬カレンダー",
+      "reading": "おくすりカレンダー",
+      "zh": "药品日历",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "お薬カレンダーはここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#c4d2b6"
+      },
+      "translation": "药品日历在这里。"
+    },
+    {
+      "id": "clinic-specific-03",
+      "jp": "服薬説明書",
+      "reading": "ふくやくせつめいしょ",
+      "zh": "用药说明单",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "服薬説明書はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#bdd0b5"
+      },
+      "translation": "用药说明单在这里。"
+    },
+    {
+      "id": "clinic-specific-04",
+      "jp": "検査の受付票",
+      "reading": "けんさのうけつけひょう",
+      "zh": "检查受理单",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "検査の受付票はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#b5c8d2"
+      },
+      "translation": "检查受理单在这里。"
+    },
+    {
+      "id": "clinic-specific-05",
+      "jp": "診療案内パンフレット",
+      "reading": "しんりょうあんないパンフレット",
+      "zh": "就诊说明册",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "診療案内パンフレットはここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#c0d0bb"
+      },
+      "translation": "就诊说明册在这里。"
+    },
+    {
+      "id": "clinic-specific-06",
+      "jp": "処方箋受付トレー",
+      "reading": "しょほうせんうけつけトレー",
+      "zh": "处方接收托盘",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "処方箋受付トレーはここにあります。",
+      "detail": {
+        "type": "basket",
+        "color": "#adc6b8"
+      },
+      "translation": "处方接收托盘在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 26,
+  "district": 4,
+  "sceneReference": null,
+  "venueRole": {
+    "id": "clinic-venue-worker",
+    "jp": "薬剤師",
+    "reading": "やくざいし",
+    "zone": 4,
+    "activity": "お薬手帳を確認しています。",
+    "readingLine": "おくすりてちょうを かくにんしています。",
+    "verb": "確認する → 確認している",
+    "grammar": "お薬手帳【を】確認する。",
+    "reply": "お薬手帳はお持ちですか。こちらが服薬説明書です。",
+    "tools": [
+      "お薬手帳",
+      "服薬説明書",
+      "処方箋受付トレー"
+    ]
+  }
+}

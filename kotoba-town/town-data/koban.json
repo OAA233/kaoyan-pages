@@ -1,0 +1,445 @@
+{
+  "id": "koban",
+  "title": "交番",
+  "jp": "交番",
+  "reading": "こうばん",
+  "layout": "service",
+  "zones": [
+    {
+      "jp": "受付",
+      "zh": "问询台"
+    },
+    {
+      "jp": "地図",
+      "zh": "地图区"
+    },
+    {
+      "jp": "落とし物",
+      "zh": "失物区"
+    },
+    {
+      "jp": "道路",
+      "zh": "门前道路"
+    }
+  ],
+  "items": [
+    {
+      "jp": "交番",
+      "reading": "こうばん",
+      "zh": "警察岗亭",
+      "kind": "room-sign",
+      "category": "道案内",
+      "id": "koban-001",
+      "example": "交番を見てみましょう。",
+      "translation": "看看警察岗亭吧。",
+      "zone": 0
+    },
+    {
+      "jp": "地図",
+      "reading": "ちず",
+      "zh": "地图",
+      "kind": "menu",
+      "category": "道案内",
+      "id": "koban-002",
+      "example": "地図を見てみましょう。",
+      "translation": "看看地图吧。",
+      "zone": 1
+    },
+    {
+      "jp": "落とし物",
+      "reading": "おとしもの",
+      "zh": "遗失物",
+      "kind": "gift",
+      "category": "道案内",
+      "id": "koban-003",
+      "example": "落とし物を見てみましょう。",
+      "translation": "看看遗失物吧。",
+      "zone": 2
+    },
+    {
+      "jp": "財布",
+      "reading": "さいふ",
+      "zh": "钱包",
+      "kind": "wallet",
+      "category": "道案内",
+      "id": "koban-004",
+      "example": "財布を見てみましょう。",
+      "translation": "看看钱包吧。",
+      "zone": 2
+    },
+    {
+      "jp": "鍵",
+      "reading": "かぎ",
+      "zh": "钥匙",
+      "kind": "key",
+      "category": "道案内",
+      "id": "koban-005",
+      "example": "鍵を見てみましょう。",
+      "translation": "看看钥匙吧。",
+      "zone": 2
+    },
+    {
+      "jp": "傘",
+      "reading": "かさ",
+      "zh": "雨伞",
+      "kind": "umbrella",
+      "category": "道案内",
+      "id": "koban-006",
+      "example": "傘を見てみましょう。",
+      "translation": "看看雨伞吧。",
+      "zone": 2
+    },
+    {
+      "jp": "自転車",
+      "reading": "じてんしゃ",
+      "zh": "自行车",
+      "kind": "bicycle",
+      "category": "道案内",
+      "id": "koban-007",
+      "example": "自転車を見てみましょう。",
+      "translation": "看看自行车吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ヘルメット",
+      "reading": "ヘルメット",
+      "zh": "头盔",
+      "kind": "helmet",
+      "category": "道案内",
+      "id": "koban-008",
+      "example": "ヘルメットを見てみましょう。",
+      "translation": "看看头盔吧。",
+      "zone": 3
+    },
+    {
+      "jp": "手帳",
+      "reading": "てちょう",
+      "zh": "记事本",
+      "kind": "book",
+      "category": "道案内",
+      "id": "koban-009",
+      "example": "手帳を見てみましょう。",
+      "translation": "看看记事本吧。",
+      "zone": 0
+    },
+    {
+      "jp": "無線機",
+      "reading": "むせんき",
+      "zh": "无线电对讲机",
+      "kind": "remote",
+      "category": "道案内",
+      "id": "koban-010",
+      "example": "無線機を見てみましょう。",
+      "translation": "看看无线电对讲机吧。",
+      "zone": 0
+    },
+    {
+      "jp": "横断歩道",
+      "reading": "おうだんほどう",
+      "zh": "人行横道",
+      "kind": "crosswalk",
+      "category": "道案内",
+      "id": "koban-012",
+      "example": "横断歩道を見てみましょう。",
+      "translation": "看看人行横道吧。",
+      "zone": 3
+    },
+    {
+      "jp": "信号",
+      "reading": "しんごう",
+      "zh": "信号灯",
+      "kind": "trafficlight",
+      "category": "道案内",
+      "id": "koban-013",
+      "example": "信号を見てみましょう。",
+      "translation": "看看信号灯吧。",
+      "zone": 3
+    },
+    {
+      "jp": "道路",
+      "reading": "どうろ",
+      "zh": "道路",
+      "kind": "path",
+      "category": "道案内",
+      "id": "koban-014",
+      "example": "道路を見てみましょう。",
+      "translation": "看看道路吧。",
+      "zone": 3
+    },
+    {
+      "jp": "歩道",
+      "reading": "ほどう",
+      "zh": "人行道",
+      "kind": "path",
+      "category": "道案内",
+      "id": "koban-015",
+      "example": "歩道を見てみましょう。",
+      "translation": "看看人行道吧。",
+      "zone": 3
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "koban-016",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "koban-019",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "koban-021",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 0
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "koban-022",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "koban-023",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "koban-024",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "koban-025",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 0
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "koban-026",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "koban-027",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 1
+    },
+    {
+      "id": "koban-detail-0193",
+      "jp": "落とし物棚",
+      "reading": "おとしものだな",
+      "zh": "失物保管架",
+      "kind": "shelf",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは落とし物棚です。",
+      "translation": "这是失物保管架。"
+    },
+    {
+      "id": "koban-detail-0194",
+      "jp": "反射ベスト",
+      "reading": "はんしゃベスト",
+      "zh": "反光背心",
+      "kind": "apron",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは反射ベストです。",
+      "translation": "这是反光背心。"
+    },
+    {
+      "id": "koban-detail-0195",
+      "jp": "警棒",
+      "reading": "けいぼう",
+      "zh": "警棍",
+      "kind": "baton",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは警棒です。",
+      "translation": "这是警棍。"
+    },
+    {
+      "id": "koban-detail-0196",
+      "jp": "懐中電灯",
+      "reading": "かいちゅうでんとう",
+      "zh": "手电筒",
+      "kind": "flashlight",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは懐中電灯です。",
+      "translation": "这是手电筒。"
+    },
+    {
+      "id": "koban-detail-0197",
+      "jp": "巡回地図",
+      "reading": "じゅんかいちず",
+      "zh": "巡查地图",
+      "kind": "route-map",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは巡回地図です。",
+      "translation": "这是巡查地图。"
+    },
+    {
+      "id": "koban-specific-01",
+      "jp": "遺失届",
+      "reading": "いしつとどけ",
+      "zh": "遗失申报单",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "遺失届はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#bacaba"
+      },
+      "translation": "遗失申报单在这里。"
+    },
+    {
+      "id": "koban-specific-02",
+      "jp": "拾得物の受理票",
+      "reading": "しゅうとくぶつのじゅりひょう",
+      "zh": "拾得物受理单",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "拾得物の受理票はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#b2c1cf"
+      },
+      "translation": "拾得物受理单在这里。"
+    },
+    {
+      "id": "koban-specific-03",
+      "jp": "落とし物保管袋",
+      "reading": "おとしものほかんぶくろ",
+      "zh": "失物保管袋",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "落とし物保管袋はここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#c5d3c3"
+      },
+      "translation": "失物保管袋在这里。"
+    },
+    {
+      "id": "koban-specific-04",
+      "jp": "自転車の鍵",
+      "reading": "じてんしゃのかぎ",
+      "zh": "自行车钥匙",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "自転車の鍵はここにあります。",
+      "detail": {
+        "type": "key",
+        "color": "#a0b6ba"
+      },
+      "translation": "自行车钥匙在这里。"
+    },
+    {
+      "id": "koban-specific-05",
+      "jp": "案内用の地図",
+      "reading": "あんないようのちず",
+      "zh": "指路地图",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "案内用の地図はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#adc3a0"
+      },
+      "translation": "指路地图在这里。"
+    },
+    {
+      "id": "koban-specific-06",
+      "jp": "反射材",
+      "reading": "はんしゃざい",
+      "zh": "反光材料",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "反射材はここにあります。",
+      "detail": {
+        "type": "band",
+        "color": "#dac480"
+      },
+      "translation": "反光材料在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 29,
+  "district": 4,
+  "sceneReference": "https://www.police.pref.kanagawa.jp/tetsuzuki/otoshimono/mesa1900.html",
+  "venueRole": {
+    "id": "koban-venue-worker",
+    "jp": "警察官",
+    "reading": "けいさつかん",
+    "zone": 0,
+    "activity": "落とし物の話を聞いています。",
+    "readingLine": "おとしものの はなしを きいています。",
+    "verb": "聞く → 聞いている",
+    "grammar": "落とした場所【を】聞く。",
+    "reply": "いつ、どこでなくしましたか。",
+    "tools": [
+      "遺失届",
+      "落とし物保管袋",
+      "案内用の地図"
+    ]
+  }
+}

@@ -1,0 +1,498 @@
+{
+  "id": "laundry",
+  "title": "自助洗衣店",
+  "jp": "コインランドリー",
+  "reading": "コインランドリー",
+  "layout": "laundry",
+  "zones": [
+    {
+      "jp": "洗濯",
+      "zh": "洗衣区"
+    },
+    {
+      "jp": "乾燥",
+      "zh": "烘干区"
+    },
+    {
+      "jp": "折り畳み",
+      "zh": "叠衣台"
+    },
+    {
+      "jp": "待合",
+      "zh": "等候区"
+    }
+  ],
+  "items": [
+    {
+      "jp": "洗剤",
+      "reading": "せんざい",
+      "zh": "清洁剂",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        15
+      ],
+      "id": "laundry-001",
+      "example": "洗剤を見てみましょう。",
+      "translation": "看看清洁剂吧。",
+      "zone": 0
+    },
+    {
+      "jp": "洗濯洗剤",
+      "reading": "せんたくせんざい",
+      "zh": "洗衣液或洗衣粉",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "id": "laundry-002",
+      "example": "洗濯洗剤を見てみましょう。",
+      "translation": "看看洗衣液或洗衣粉吧。",
+      "zone": 0
+    },
+    {
+      "jp": "柔軟剤",
+      "reading": "じゅうなんざい",
+      "zh": "衣物柔顺剂",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "id": "laundry-003",
+      "example": "柔軟剤を見てみましょう。",
+      "translation": "看看衣物柔顺剂吧。",
+      "zone": 0
+    },
+    {
+      "jp": "漂白剤",
+      "reading": "ひょうはくざい",
+      "zh": "漂白剂",
+      "kind": "bottle",
+      "category": "日用品",
+      "id": "laundry-004",
+      "example": "漂白剤を見てみましょう。",
+      "translation": "看看漂白剂吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ゴム手袋",
+      "reading": "ゴムてぶくろ",
+      "zh": "橡胶手套",
+      "kind": "gloves",
+      "category": "日用品",
+      "id": "laundry-006",
+      "example": "ゴム手袋を見てみましょう。",
+      "translation": "看看橡胶手套吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ごみ袋",
+      "reading": "ごみぶくろ",
+      "zh": "垃圾袋",
+      "kind": "shoppingbag",
+      "category": "日用品",
+      "id": "laundry-007",
+      "example": "ごみ袋を見てみましょう。",
+      "translation": "看看垃圾袋吧。",
+      "zone": 0
+    },
+    {
+      "jp": "洗濯機",
+      "reading": "せんたくき",
+      "zh": "洗衣机",
+      "kind": "washer",
+      "category": "洗濯",
+      "id": "laundry-008",
+      "example": "洗濯機を見てみましょう。",
+      "translation": "看看洗衣机吧。",
+      "zone": 0
+    },
+    {
+      "jp": "乾燥機",
+      "reading": "かんそうき",
+      "zh": "烘干机",
+      "kind": "dryer",
+      "category": "洗濯",
+      "id": "laundry-009",
+      "example": "乾燥機を見てみましょう。",
+      "translation": "看看烘干机吧。",
+      "zone": 0
+    },
+    {
+      "jp": "洗濯かご",
+      "reading": "せんたくかご",
+      "zh": "洗衣篮",
+      "kind": "basket",
+      "category": "洗濯",
+      "id": "laundry-010",
+      "example": "洗濯かごを見てみましょう。",
+      "translation": "看看洗衣篮吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ハンガー",
+      "reading": "ハンガー",
+      "zh": "衣架",
+      "kind": "hanger",
+      "category": "洗濯",
+      "id": "laundry-011",
+      "example": "ハンガーを見てみましょう。",
+      "translation": "看看衣架吧。",
+      "zone": 1
+    },
+    {
+      "jp": "洗濯ばさみ",
+      "reading": "せんたくばさみ",
+      "zh": "晾衣夹",
+      "kind": "smallblock",
+      "category": "洗濯",
+      "id": "laundry-012",
+      "example": "洗濯ばさみを見てみましょう。",
+      "translation": "看看晾衣夹吧。",
+      "zone": 0
+    },
+    {
+      "jp": "物干し竿",
+      "reading": "ものほしざお",
+      "zh": "晾衣杆",
+      "kind": "clothesrack",
+      "category": "洗濯",
+      "id": "laundry-013",
+      "example": "物干し竿を見てみましょう。",
+      "translation": "看看晾衣杆吧。",
+      "zone": 1
+    },
+    {
+      "jp": "タオル",
+      "reading": "タオル",
+      "zh": "毛巾",
+      "kind": "towel",
+      "category": "洗濯",
+      "id": "laundry-014",
+      "example": "タオルを見てみましょう。",
+      "translation": "看看毛巾吧。",
+      "zone": 2
+    },
+    {
+      "jp": "シーツ",
+      "reading": "シーツ",
+      "zh": "床单",
+      "kind": "sheet",
+      "category": "洗濯",
+      "id": "laundry-015",
+      "example": "シーツを見てみましょう。",
+      "translation": "看看床单吧。",
+      "zone": 2
+    },
+    {
+      "jp": "毛布",
+      "reading": "もうふ",
+      "zh": "毛毯",
+      "kind": "blanket",
+      "category": "洗濯",
+      "id": "laundry-016",
+      "example": "毛布を見てみましょう。",
+      "translation": "看看毛毯吧。",
+      "zone": 2
+    },
+    {
+      "jp": "両替機",
+      "reading": "りょうがえき",
+      "zh": "换币机",
+      "kind": "atm",
+      "category": "洗濯",
+      "id": "laundry-017",
+      "example": "両替機を見てみましょう。",
+      "translation": "看看换币机吧。",
+      "zone": 0
+    },
+    {
+      "jp": "洗濯ネット",
+      "reading": "せんたくネット",
+      "zh": "洗衣网袋",
+      "kind": "mesh-bag",
+      "category": "洗濯",
+      "id": "laundry-019",
+      "example": "洗濯ネットを見てみましょう。",
+      "translation": "看看洗衣网袋吧。",
+      "zone": 0
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "laundry-020",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "laundry-023",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "laundry-025",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 3
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "laundry-026",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "laundry-027",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "laundry-028",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "laundry-029",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 3
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "laundry-030",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "laundry-031",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 3
+    },
+    {
+      "id": "laundry-detail-0198",
+      "jp": "洗濯物",
+      "reading": "せんたくもの",
+      "zh": "待洗衣物",
+      "kind": "clothes-pile",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは洗濯物です。",
+      "translation": "这是待洗衣物。"
+    },
+    {
+      "id": "laundry-detail-0199",
+      "jp": "畳み台",
+      "reading": "たたみだい",
+      "zh": "叠衣台",
+      "kind": "table",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは畳み台です。",
+      "translation": "这是叠衣台。"
+    },
+    {
+      "id": "laundry-detail-0200",
+      "jp": "料金投入口",
+      "reading": "りょうきんとうにゅうぐち",
+      "zh": "投币口",
+      "kind": "slot",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは料金投入口です。",
+      "translation": "这是投币口。"
+    },
+    {
+      "id": "laundry-product-attack",
+      "jp": "アタックZERO",
+      "reading": "あたっくぜろ",
+      "zh": "洗衣用清洁剂",
+      "kind": "retail-product",
+      "color": "#e5e9e5",
+      "zone": 2,
+      "category": "商品",
+      "example": "洗濯洗剤を探しています。",
+      "noteJa": "衣類を洗うときの洗剤です。「洗濯」は、せんたくと読みます。",
+      "product": {
+        "key": "attack",
+        "generic": "洗濯洗剤",
+        "genericReading": "せんたくせんざい",
+        "brand": "花王",
+        "shape": "pump",
+        "source": "https://www.kao-kirei.com/jp/en/brand/khg/attack/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "アタック ZERO",
+        "image": "./assets/products/attack.jpg",
+        "imageSource": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-kirei-com/jp/ja/item/khg/attack/25339233/GG01.jpg"
+      },
+      "translation": "正在找洗衣液。"
+    },
+    {
+      "id": "laundry-specific-01",
+      "jp": "スニーカー洗濯機",
+      "reading": "スニーカーせんたくき",
+      "zh": "球鞋洗衣机",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "スニーカー洗濯機はここにあります。",
+      "detail": {
+        "type": "shoe-washer",
+        "color": "#b9d0bc",
+        "floor": [
+          -5,
+          1
+        ]
+      },
+      "translation": "球鞋洗衣机在这里。"
+    },
+    {
+      "id": "laundry-specific-02",
+      "jp": "スニーカー乾燥機",
+      "reading": "スニーカーかんそうき",
+      "zh": "球鞋烘干机",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "スニーカー乾燥機はここにあります。",
+      "detail": {
+        "type": "appliance",
+        "color": "#c9bda5",
+        "floor": [
+          -5,
+          1
+        ]
+      },
+      "translation": "球鞋烘干机在这里。"
+    },
+    {
+      "id": "laundry-specific-03",
+      "jp": "洗濯乾燥機",
+      "reading": "せんたくかんそうき",
+      "zh": "洗烘一体机",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "洗濯乾燥機はここにあります。",
+      "detail": {
+        "type": "appliance",
+        "color": "#a7c1c4",
+        "floor": [
+          0,
+          1
+        ]
+      },
+      "translation": "洗烘一体机在这里。"
+    },
+    {
+      "id": "laundry-specific-04",
+      "jp": "大型ランドリーバッグ",
+      "reading": "おおがたランドリーバッグ",
+      "zh": "大型洗衣袋",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "大型ランドリーバッグはここにあります。",
+      "detail": {
+        "type": "bag",
+        "color": "#bdd0b3"
+      },
+      "translation": "大型洗衣袋在这里。"
+    },
+    {
+      "id": "laundry-specific-05",
+      "jp": "乾燥機用シート",
+      "reading": "かんそうきようシート",
+      "zh": "烘干柔顺片",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "乾燥機用シートはここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#ccc1a0"
+      },
+      "translation": "烘干柔顺片在这里。"
+    },
+    {
+      "id": "laundry-specific-06",
+      "jp": "洗濯表示",
+      "reading": "せんたくひょうじ",
+      "zh": "洗涤标志",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "洗濯表示はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#b9c6b6"
+      },
+      "translation": "洗涤标志在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 30,
+  "district": 4,
+  "sceneReference": "https://corporate.wash-house.jp/about/businessmodel.php",
+  "venueRole": {
+    "id": "laundry-venue-worker",
+    "jp": "洗濯をする人",
+    "reading": "せんたくをするひと",
+    "zone": 0,
+    "activity": "洗濯物を入れています。",
+    "readingLine": "せんたくものを いれています。",
+    "verb": "入れる → 入れている",
+    "grammar": "洗濯物【を】洗濯機【に】入れる。",
+    "reply": "洗濯表示を見てから、機械を選びます。",
+    "tools": [
+      "洗濯乾燥機",
+      "スニーカー洗濯機",
+      "洗濯表示"
+    ]
+  }
+}

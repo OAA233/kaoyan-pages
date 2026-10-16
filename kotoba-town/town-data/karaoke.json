@@ -1,0 +1,1033 @@
+{
+  "id": "karaoke",
+  "title": "卡拉OK",
+  "jp": "カラオケ",
+  "reading": "カラオケ",
+  "layout": "karaoke",
+  "zones": [
+    {
+      "jp": "受付",
+      "zh": "前台"
+    },
+    {
+      "jp": "個室",
+      "zh": "包间"
+    },
+    {
+      "jp": "ドリンク",
+      "zh": "饮品区"
+    },
+    {
+      "jp": "待合",
+      "zh": "等候区"
+    }
+  ],
+  "items": [
+    {
+      "jp": "パソコン",
+      "reading": "パソコン",
+      "zh": "电脑",
+      "kind": "tv",
+      "category": "機器",
+      "id": "karaoke-001",
+      "example": "パソコンを見てみましょう。",
+      "translation": "看看电脑吧。",
+      "zone": 1
+    },
+    {
+      "jp": "モニター",
+      "reading": "モニター",
+      "zh": "显示器",
+      "kind": "tv",
+      "category": "機器",
+      "id": "karaoke-002",
+      "example": "モニターを見てみましょう。",
+      "translation": "看看显示器吧。",
+      "zone": 1
+    },
+    {
+      "jp": "キーボード",
+      "reading": "キーボード",
+      "zh": "键盘",
+      "kind": "tablet",
+      "category": "機器",
+      "id": "karaoke-003",
+      "example": "キーボードを見てみましょう。",
+      "translation": "看看键盘吧。",
+      "zone": 1
+    },
+    {
+      "jp": "マウス",
+      "reading": "マウス",
+      "zh": "鼠标",
+      "kind": "smallblock",
+      "category": "機器",
+      "id": "karaoke-004",
+      "example": "マウスを見てみましょう。",
+      "translation": "看看鼠标吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ヘッドホン",
+      "reading": "ヘッドホン",
+      "zh": "耳机",
+      "kind": "headphones",
+      "category": "機器",
+      "id": "karaoke-005",
+      "example": "ヘッドホンを見てみましょう。",
+      "translation": "看看耳机吧。",
+      "zone": 1
+    },
+    {
+      "jp": "マイク",
+      "reading": "マイク",
+      "zh": "麦克风",
+      "kind": "microphone",
+      "category": "機器",
+      "id": "karaoke-006",
+      "example": "マイクを見てみましょう。",
+      "translation": "看看麦克风吧。",
+      "zone": 1
+    },
+    {
+      "jp": "充電器",
+      "reading": "じゅうでんき",
+      "zh": "充电器",
+      "kind": "smallblock",
+      "category": "機器",
+      "id": "karaoke-007",
+      "example": "充電器を見てみましょう。",
+      "translation": "看看充电器吧。",
+      "zone": 1
+    },
+    {
+      "jp": "コンセント",
+      "reading": "コンセント",
+      "zh": "插座",
+      "kind": "outlet",
+      "category": "機器",
+      "id": "karaoke-008",
+      "example": "コンセントを見てみましょう。",
+      "translation": "看看插座吧。",
+      "zone": 1
+    },
+    {
+      "jp": "電池",
+      "reading": "でんち",
+      "zh": "电池",
+      "kind": "battery",
+      "category": "機器",
+      "id": "karaoke-009",
+      "example": "電池を見てみましょう。",
+      "translation": "看看电池吧。",
+      "zone": 1
+    },
+    {
+      "jp": "タブレット",
+      "reading": "タブレット",
+      "zh": "平板电脑",
+      "kind": "tablet",
+      "category": "機器",
+      "id": "karaoke-010",
+      "example": "タブレットを見てみましょう。",
+      "translation": "看看平板电脑吧。",
+      "zone": 1
+    },
+    {
+      "jp": "リモコン",
+      "reading": "リモコン",
+      "zh": "遥控器",
+      "kind": "remote",
+      "category": "機器",
+      "id": "karaoke-012",
+      "example": "リモコンを見てみましょう。",
+      "translation": "看看遥控器吧。",
+      "zone": 1
+    },
+    {
+      "jp": "スピーカー",
+      "reading": "スピーカー",
+      "zh": "扬声器",
+      "kind": "speaker",
+      "category": "機器",
+      "id": "karaoke-013",
+      "example": "スピーカーを見てみましょう。",
+      "translation": "看看扬声器吧。",
+      "zone": 1
+    },
+    {
+      "jp": "防犯カメラ",
+      "reading": "ぼうはんカメラ",
+      "zh": "监控摄像头",
+      "kind": "camera",
+      "category": "機器",
+      "id": "karaoke-014",
+      "example": "防犯カメラを見てみましょう。",
+      "translation": "看看监控摄像头吧。",
+      "zone": 1
+    },
+    {
+      "jp": "時計",
+      "reading": "とけい",
+      "zh": "时钟",
+      "kind": "clock",
+      "category": "機器",
+      "id": "karaoke-015",
+      "example": "時計を見てみましょう。",
+      "translation": "看看时钟吧。",
+      "zone": 1
+    },
+    {
+      "jp": "携帯電話",
+      "reading": "けいたいでんわ",
+      "zh": "手机",
+      "kind": "tablet",
+      "category": "機器",
+      "id": "karaoke-016",
+      "example": "携帯電話を見てみましょう。",
+      "translation": "看看手机吧。",
+      "zone": 1
+    },
+    {
+      "jp": "緑茶",
+      "reading": "りょくちゃ",
+      "zh": "绿茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        0
+      ],
+      "id": "karaoke-017",
+      "example": "緑茶を見てみましょう。",
+      "translation": "看看绿茶吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ウーロン茶",
+      "reading": "ウーロンちゃ",
+      "zh": "乌龙茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        1
+      ],
+      "id": "karaoke-018",
+      "example": "ウーロン茶を見てみましょう。",
+      "translation": "看看乌龙茶吧。",
+      "zone": 2
+    },
+    {
+      "jp": "コーヒー",
+      "reading": "コーヒー",
+      "zh": "咖啡",
+      "kind": "mug",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        2
+      ],
+      "id": "karaoke-019",
+      "example": "コーヒーを見てみましょう。",
+      "translation": "看看咖啡吧。",
+      "zone": 2
+    },
+    {
+      "jp": "紅茶",
+      "reading": "こうちゃ",
+      "zh": "红茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        3
+      ],
+      "id": "karaoke-020",
+      "example": "紅茶を見てみましょう。",
+      "translation": "看看红茶吧。",
+      "zone": 2
+    },
+    {
+      "jp": "オレンジジュース",
+      "reading": "オレンジジュース",
+      "zh": "橙汁",
+      "kind": "cup",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        4
+      ],
+      "id": "karaoke-021",
+      "example": "オレンジジュースを見てみましょう。",
+      "translation": "看看橙汁吧。",
+      "zone": 2
+    },
+    {
+      "jp": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "zh": "牛奶",
+      "kind": "bottle",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        5
+      ],
+      "id": "karaoke-022",
+      "example": "牛乳を見てみましょう。",
+      "translation": "看看牛奶吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ビール",
+      "reading": "ビール",
+      "zh": "啤酒",
+      "kind": "beer",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        6
+      ],
+      "id": "karaoke-023",
+      "example": "ビールを見てみましょう。",
+      "translation": "看看啤酒吧。",
+      "zone": 2
+    },
+    {
+      "jp": "日本酒",
+      "reading": "にほんしゅ",
+      "zh": "日本清酒",
+      "kind": "sakeflask",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        7
+      ],
+      "id": "karaoke-024",
+      "example": "日本酒を見てみましょう。",
+      "translation": "看看日本清酒吧。",
+      "zone": 2
+    },
+    {
+      "jp": "団子",
+      "reading": "だんご",
+      "zh": "团子",
+      "kind": "skewer",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        8
+      ],
+      "id": "karaoke-025",
+      "example": "団子を見てみましょう。",
+      "translation": "看看团子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "大福",
+      "reading": "だいふく",
+      "zh": "大福点心",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        9
+      ],
+      "id": "karaoke-026",
+      "example": "大福を見てみましょう。",
+      "translation": "看看大福点心吧。",
+      "zone": 2
+    },
+    {
+      "jp": "どら焼き",
+      "reading": "どらやき",
+      "zh": "铜锣烧",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        10
+      ],
+      "id": "karaoke-027",
+      "example": "どら焼きを見てみましょう。",
+      "translation": "看看铜锣烧吧。",
+      "zone": 2
+    },
+    {
+      "jp": "たい焼き",
+      "reading": "たいやき",
+      "zh": "鲷鱼烧",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        11
+      ],
+      "id": "karaoke-028",
+      "example": "たい焼きを見てみましょう。",
+      "translation": "看看鲷鱼烧吧。",
+      "zone": 2
+    },
+    {
+      "jp": "プリン",
+      "reading": "プリン",
+      "zh": "布丁",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        12
+      ],
+      "id": "karaoke-029",
+      "example": "プリンを見てみましょう。",
+      "translation": "看看布丁吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ケーキ",
+      "reading": "ケーキ",
+      "zh": "蛋糕",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        13
+      ],
+      "id": "karaoke-030",
+      "example": "ケーキを見てみましょう。",
+      "translation": "看看蛋糕吧。",
+      "zone": 2
+    },
+    {
+      "jp": "アイスクリーム",
+      "reading": "アイスクリーム",
+      "zh": "冰淇淋",
+      "kind": "icecream",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        14
+      ],
+      "id": "karaoke-031",
+      "example": "アイスクリームを見てみましょう。",
+      "translation": "看看冰淇淋吧。",
+      "zone": 2
+    },
+    {
+      "jp": "かき氷",
+      "reading": "かきごおり",
+      "zh": "刨冰",
+      "kind": "ice",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        15
+      ],
+      "id": "karaoke-032",
+      "example": "かき氷を見てみましょう。",
+      "translation": "看看刨冰吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ポテトチップス",
+      "reading": "ポテトチップス",
+      "zh": "薯片",
+      "kind": "packet",
+      "category": "お菓子",
+      "id": "karaoke-033",
+      "example": "ポテトチップスを見てみましょう。",
+      "translation": "看看薯片吧。",
+      "zone": 0
+    },
+    {
+      "jp": "せんべい",
+      "reading": "せんべい",
+      "zh": "米饼",
+      "kind": "sweet",
+      "category": "お菓子",
+      "id": "karaoke-034",
+      "example": "せんべいを見てみましょう。",
+      "translation": "看看米饼吧。",
+      "zone": 0
+    },
+    {
+      "jp": "飴",
+      "reading": "あめ",
+      "zh": "糖果",
+      "kind": "candy",
+      "category": "お菓子",
+      "id": "karaoke-035",
+      "example": "飴を見てみましょう。",
+      "translation": "看看糖果吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ガム",
+      "reading": "ガム",
+      "zh": "口香糖",
+      "kind": "packet",
+      "category": "お菓子",
+      "id": "karaoke-036",
+      "example": "ガムを見てみましょう。",
+      "translation": "看看口香糖吧。",
+      "zone": 0
+    },
+    {
+      "jp": "チョコレート",
+      "reading": "チョコレート",
+      "zh": "巧克力",
+      "kind": "chocolate",
+      "category": "お菓子",
+      "id": "karaoke-037",
+      "example": "チョコレートを見てみましょう。",
+      "translation": "看看巧克力吧。",
+      "zone": 0
+    },
+    {
+      "jp": "クッキー",
+      "reading": "クッキー",
+      "zh": "饼干",
+      "kind": "sweet",
+      "category": "お菓子",
+      "id": "karaoke-038",
+      "example": "クッキーを見てみましょう。",
+      "translation": "看看饼干吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ラムネ",
+      "reading": "ラムネ",
+      "zh": "弹珠汽水",
+      "kind": "bottle",
+      "category": "お菓子",
+      "id": "karaoke-039",
+      "example": "ラムネを見てみましょう。",
+      "translation": "看看弹珠汽水吧。",
+      "zone": 0
+    },
+    {
+      "jp": "駄菓子",
+      "reading": "だがし",
+      "zh": "廉价小零食",
+      "kind": "candy",
+      "category": "お菓子",
+      "id": "karaoke-040",
+      "example": "駄菓子を見てみましょう。",
+      "translation": "看看廉价小零食吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ゼリー",
+      "reading": "ゼリー",
+      "zh": "果冻",
+      "kind": "yogurt",
+      "category": "お菓子",
+      "id": "karaoke-042",
+      "example": "ゼリーを見てみましょう。",
+      "translation": "看看果冻吧。",
+      "zone": 0
+    },
+    {
+      "jp": "アイスキャンディー",
+      "reading": "アイスキャンディー",
+      "zh": "冰棒",
+      "kind": "icecream",
+      "category": "お菓子",
+      "id": "karaoke-043",
+      "example": "アイスキャンディーを見てみましょう。",
+      "translation": "看看冰棒吧。",
+      "zone": 0
+    },
+    {
+      "jp": "たこ焼き",
+      "reading": "たこやき",
+      "zh": "章鱼烧",
+      "kind": "fried",
+      "category": "お菓子",
+      "id": "karaoke-044",
+      "example": "たこ焼きを見てみましょう。",
+      "translation": "看看章鱼烧吧。",
+      "zone": 0,
+      "art": [
+        "meals",
+        1
+      ]
+    },
+    {
+      "jp": "焼きそば",
+      "reading": "やきそば",
+      "zh": "日式炒面",
+      "kind": "bowl",
+      "category": "お菓子",
+      "id": "karaoke-045",
+      "example": "焼きそばを見てみましょう。",
+      "translation": "看看日式炒面吧。",
+      "zone": 0
+    },
+    {
+      "jp": "お好み焼き",
+      "reading": "おこのみやき",
+      "zh": "大阪烧",
+      "kind": "plate",
+      "category": "お菓子",
+      "id": "karaoke-046",
+      "example": "お好み焼きを見てみましょう。",
+      "translation": "看看大阪烧吧。",
+      "zone": 0
+    },
+    {
+      "jp": "予約",
+      "reading": "よやく",
+      "zh": "预约",
+      "kind": "card",
+      "category": "歌う",
+      "id": "karaoke-051",
+      "example": "予約を見てみましょう。",
+      "translation": "看看预约吧。",
+      "zone": 0
+    },
+    {
+      "jp": "音量",
+      "reading": "おんりょう",
+      "zh": "音量",
+      "kind": "remote",
+      "category": "歌う",
+      "id": "karaoke-052",
+      "example": "音量を見てみましょう。",
+      "translation": "看看音量吧。",
+      "zone": 1
+    },
+    {
+      "jp": "選曲",
+      "reading": "せんきょく",
+      "zh": "选曲",
+      "kind": "tablet",
+      "category": "歌う",
+      "id": "karaoke-053",
+      "example": "選曲を見てみましょう。",
+      "translation": "看看选曲吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ソファ",
+      "reading": "ソファ",
+      "zh": "沙发",
+      "kind": "sofa",
+      "category": "歌う",
+      "id": "karaoke-054",
+      "example": "ソファを見てみましょう。",
+      "translation": "看看沙发吧。",
+      "zone": 3
+    },
+    {
+      "jp": "タンバリン",
+      "reading": "タンバリン",
+      "zh": "铃鼓",
+      "kind": "tambourine",
+      "category": "歌う",
+      "id": "karaoke-055",
+      "example": "タンバリンを見てみましょう。",
+      "translation": "看看铃鼓吧。",
+      "zone": 1
+    },
+    {
+      "jp": "マラカス",
+      "reading": "マラカス",
+      "zh": "沙锤",
+      "kind": "shaker",
+      "category": "歌う",
+      "id": "karaoke-056",
+      "example": "マラカスを見てみましょう。",
+      "translation": "看看沙锤吧。",
+      "zone": 0
+    },
+    {
+      "jp": "受付",
+      "reading": "うけつけ",
+      "zh": "前台",
+      "kind": "counter",
+      "category": "場面のことば",
+      "area": 0,
+      "id": "karaoke-057",
+      "example": "受付を見てみましょう。",
+      "translation": "看看前台吧。",
+      "zone": 0
+    },
+    {
+      "jp": "雑誌",
+      "reading": "ざっし",
+      "zh": "杂志",
+      "kind": "book",
+      "category": "場面のことば",
+      "area": 3,
+      "id": "karaoke-060",
+      "example": "雑誌を見てみましょう。",
+      "translation": "看看杂志吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ハンガー",
+      "reading": "ハンガー",
+      "zh": "衣架",
+      "kind": "hanger",
+      "category": "場面のことば",
+      "area": 3,
+      "id": "karaoke-061",
+      "example": "ハンガーを見てみましょう。",
+      "translation": "看看衣架吧。",
+      "zone": 3
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "karaoke-062",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "karaoke-065",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "karaoke-067",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 3
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "karaoke-068",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "karaoke-069",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "karaoke-070",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "karaoke-071",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 3
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "karaoke-072",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "karaoke-073",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 3
+    },
+    {
+      "jp": "コロッケ",
+      "reading": "コロッケ",
+      "zh": "可乐饼",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        14
+      ],
+      "category": "料理",
+      "example": "コロッケをください。",
+      "translation": "请给我可乐饼。",
+      "id": "karaoke-menu-14",
+      "zone": 2
+    },
+    {
+      "jp": "フライドポテト",
+      "reading": "フライドポテト",
+      "zh": "炸薯条",
+      "kind": "fried",
+      "art": [
+        "meals",
+        7
+      ],
+      "category": "料理",
+      "example": "フライドポテトをください。",
+      "translation": "请给我炸薯条。",
+      "id": "karaoke-menu-23",
+      "zone": 2
+    },
+    {
+      "jp": "チャーハン",
+      "reading": "チャーハン",
+      "zh": "炒饭",
+      "kind": "rice",
+      "art": [
+        "meals",
+        9
+      ],
+      "category": "料理",
+      "example": "チャーハンをください。",
+      "translation": "请给我炒饭。",
+      "id": "karaoke-menu-25",
+      "zone": 2
+    },
+    {
+      "id": "karaoke-detail-0178",
+      "jp": "デンモク",
+      "reading": "デンモク",
+      "zh": "点歌遥控器",
+      "kind": "tablet",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これはデンモクです。",
+      "translation": "这是点歌遥控器。"
+    },
+    {
+      "id": "karaoke-detail-0179",
+      "jp": "マイクスタンド",
+      "reading": "マイクスタンド",
+      "zh": "麦克风支架",
+      "kind": "mic-stand",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これはマイクスタンドです。",
+      "translation": "这是麦克风支架。"
+    },
+    {
+      "id": "karaoke-detail-0180",
+      "jp": "防音扉",
+      "reading": "ぼうおんとびら",
+      "zh": "隔音门",
+      "kind": "door",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは防音扉です。",
+      "translation": "这是隔音门。"
+    },
+    {
+      "id": "karaoke-detail-0181",
+      "jp": "呼び出し電話",
+      "reading": "よびだしでんわ",
+      "zh": "呼叫电话",
+      "kind": "telephone",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは呼び出し電話です。",
+      "translation": "这是呼叫电话。"
+    },
+    {
+      "id": "karaoke-specific-01",
+      "jp": "デュアルモニター",
+      "reading": "デュアルモニター",
+      "zh": "双屏显示器",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "デュアルモニターはここにあります。",
+      "detail": {
+        "type": "dual-monitor",
+        "color": "#b4adcd",
+        "floor": [
+          5.8,
+          -2.0
+        ],
+        "width": 3.1,
+        "depth": 0.6
+      },
+      "translation": "双屏显示器在这里。"
+    },
+    {
+      "id": "karaoke-specific-02",
+      "jp": "マイク充電器",
+      "reading": "マイクじゅうでんき",
+      "zh": "麦克风充电座",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "マイク充電器はここにあります。",
+      "detail": {
+        "type": "mic-charger",
+        "color": "#a5aebd"
+      },
+      "translation": "麦克风充电座在这里。"
+    },
+    {
+      "id": "karaoke-specific-03",
+      "jp": "ドリンクディスペンサー",
+      "reading": "ドリンクディスペンサー",
+      "zh": "饮料机",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "ドリンクディスペンサーはここにあります。",
+      "detail": {
+        "type": "dispenser",
+        "color": "#abbcaf"
+      },
+      "translation": "饮料机在这里。"
+    },
+    {
+      "id": "karaoke-specific-04",
+      "jp": "曲の予約リスト",
+      "reading": "きょくのよやくリスト",
+      "zh": "点歌列表",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "曲の予約リストはここにあります。",
+      "detail": {
+        "type": "tablet",
+        "color": "#c3b7d1"
+      },
+      "translation": "点歌列表在这里。"
+    },
+    {
+      "id": "karaoke-specific-05",
+      "jp": "マイクカバー",
+      "reading": "マイクカバー",
+      "zh": "麦套",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "マイクカバーはここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#cbbfd4"
+      },
+      "translation": "麦套在这里。"
+    },
+    {
+      "id": "karaoke-specific-06",
+      "jp": "フード注文タブレット",
+      "reading": "フードちゅうもんタブレット",
+      "zh": "点餐平板",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "フード注文タブレットはここにあります。",
+      "detail": {
+        "type": "tablet",
+        "color": "#b5c1ba"
+      },
+      "translation": "点餐平板在这里。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "料理・軽食",
+      "items": [
+        "karaoke-033",
+        "karaoke-034",
+        "karaoke-035",
+        "karaoke-036",
+        "karaoke-037",
+        "karaoke-038",
+        "karaoke-039",
+        "karaoke-040",
+        "karaoke-042",
+        "karaoke-043",
+        "karaoke-044",
+        "karaoke-045",
+        "karaoke-046",
+        "karaoke-menu-14",
+        "karaoke-menu-23",
+        "karaoke-menu-25"
+      ]
+    },
+    {
+      "name": "飲み物",
+      "items": [
+        "karaoke-017",
+        "karaoke-018",
+        "karaoke-019",
+        "karaoke-020",
+        "karaoke-021",
+        "karaoke-022",
+        "karaoke-023",
+        "karaoke-024"
+      ]
+    },
+    {
+      "name": "甘味",
+      "items": [
+        "karaoke-025",
+        "karaoke-026",
+        "karaoke-027",
+        "karaoke-028",
+        "karaoke-029",
+        "karaoke-030",
+        "karaoke-031",
+        "karaoke-032"
+      ]
+    }
+  ],
+  "npc": 23,
+  "district": 3,
+  "sceneReference": "https://big-echo.jp/faq/qa-025/",
+  "venueRole": {
+    "id": "karaoke-venue-worker",
+    "jp": "受付の店員",
+    "reading": "うけつけのてんいん",
+    "zone": 0,
+    "activity": "お客様を部屋に案内しています。",
+    "readingLine": "おきゃくさまを へやに あんないしています。",
+    "verb": "案内する → 案内している",
+    "grammar": "お客様【を】部屋【に】案内する。",
+    "reply": "何名様ですか。ご利用時間をお選びください。",
+    "tools": [
+      "デンモク",
+      "曲の予約リスト",
+      "マイク充電器"
+    ]
+  }
+}

@@ -1,0 +1,2102 @@
+{
+  "id": "aeon",
+  "title": "永旺风格大型超市",
+  "jp": "イオン",
+  "reading": "イオン",
+  "layout": "retail",
+  "zones": [
+    {
+      "jp": "青果",
+      "zh": "青果"
+    },
+    {
+      "jp": "鮮魚",
+      "zh": "鮮魚"
+    },
+    {
+      "jp": "精肉",
+      "zh": "精肉"
+    },
+    {
+      "jp": "冷凍・乳製品",
+      "zh": "冷凍・乳製品"
+    },
+    {
+      "jp": "惣菜",
+      "zh": "惣菜"
+    },
+    {
+      "jp": "ベーカリー",
+      "zh": "ベーカリー"
+    },
+    {
+      "jp": "食品・調味料",
+      "zh": "食品・調味料"
+    },
+    {
+      "jp": "飲み物・お菓子",
+      "zh": "飲み物・お菓子"
+    },
+    {
+      "jp": "日用品",
+      "zh": "日用品"
+    },
+    {
+      "jp": "衣料品",
+      "zh": "衣料品"
+    },
+    {
+      "jp": "文房具・家庭用品",
+      "zh": "文房具・家庭用品"
+    },
+    {
+      "jp": "化粧品・衛生用品",
+      "zh": "化粧品・衛生用品"
+    },
+    {
+      "jp": "レジ・サービス",
+      "zh": "レジ・サービス"
+    }
+  ],
+  "items": [
+    {
+      "id": "aeon-001",
+      "jp": "りんご",
+      "reading": "りんご",
+      "zh": "苹果",
+      "kind": "apple",
+      "category": "物品与细节",
+      "example": "りんごはどこですか。",
+      "translation": "苹果在哪里？",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aeon-002",
+      "jp": "みかん",
+      "reading": "みかん",
+      "zh": "橘子",
+      "kind": "orange",
+      "category": "物品与细节",
+      "example": "みかんはどこですか。",
+      "translation": "橘子在哪里？",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aeon-003",
+      "jp": "バナナ",
+      "reading": "バナナ",
+      "zh": "香蕉",
+      "kind": "banana",
+      "category": "物品与细节",
+      "example": "バナナはどこですか。",
+      "translation": "香蕉在哪里？",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aeon-004",
+      "jp": "ぶどう",
+      "reading": "ぶどう",
+      "zh": "葡萄",
+      "kind": "grapes",
+      "category": "物品与细节",
+      "example": "ぶどうはどこですか。",
+      "translation": "葡萄在哪里？",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aeon-005",
+      "jp": "いちご",
+      "reading": "いちご",
+      "zh": "草莓",
+      "kind": "strawberry",
+      "category": "物品与细节",
+      "example": "いちごはどこですか。",
+      "translation": "草莓在哪里？",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aeon-006",
+      "jp": "トマト",
+      "reading": "トマト",
+      "zh": "番茄",
+      "kind": "tomato",
+      "category": "物品与细节",
+      "example": "トマトはどこですか。",
+      "translation": "番茄在哪里？",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aeon-007",
+      "jp": "にんじん",
+      "reading": "にんじん",
+      "zh": "胡萝卜",
+      "kind": "carrot",
+      "category": "物品与细节",
+      "example": "にんじんはどこですか。",
+      "translation": "胡萝卜在哪里？",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aeon-008",
+      "jp": "玉ねぎ",
+      "reading": "たまねぎ",
+      "zh": "洋葱",
+      "kind": "onion",
+      "category": "物品与细节",
+      "example": "玉ねぎはどこですか。",
+      "translation": "洋葱在哪里？",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aeon-009",
+      "jp": "じゃがいも",
+      "reading": "じゃがいも",
+      "zh": "土豆",
+      "kind": "potato",
+      "category": "物品与细节",
+      "example": "じゃがいもはどこですか。",
+      "translation": "土豆在哪里？",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aeon-010",
+      "jp": "キャベツ",
+      "reading": "キャベツ",
+      "zh": "卷心菜",
+      "kind": "cabbage",
+      "category": "物品与细节",
+      "example": "キャベツはどこですか。",
+      "translation": "卷心菜在哪里？",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aeon-011",
+      "jp": "きゅうり",
+      "reading": "きゅうり",
+      "zh": "黄瓜",
+      "kind": "cucumber",
+      "category": "物品与细节",
+      "example": "きゅうりはどこですか。",
+      "translation": "黄瓜在哪里？",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aeon-012",
+      "jp": "大根",
+      "reading": "だいこん",
+      "zh": "白萝卜",
+      "kind": "daikon",
+      "category": "物品与细节",
+      "example": "大根はどこですか。",
+      "translation": "白萝卜在哪里？",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aeon-013",
+      "jp": "まぐろ",
+      "reading": "まぐろ",
+      "zh": "金枪鱼",
+      "kind": "sushi",
+      "color": "#bd4f52",
+      "category": "物品与细节",
+      "example": "まぐろはどこですか。",
+      "translation": "金枪鱼在哪里？",
+      "note": "",
+      "art": [
+        "foods",
+        5
+      ],
+      "zone": 1
+    },
+    {
+      "id": "aeon-014",
+      "jp": "サーモン",
+      "reading": "サーモン",
+      "zh": "三文鱼",
+      "kind": "sushi",
+      "color": "#eb935c",
+      "category": "物品与细节",
+      "example": "サーモンはどこですか。",
+      "translation": "三文鱼在哪里？",
+      "note": "",
+      "art": [
+        "foods",
+        4
+      ],
+      "zone": 1
+    },
+    {
+      "id": "aeon-015",
+      "jp": "えび",
+      "reading": "えび",
+      "zh": "虾",
+      "kind": "sushi",
+      "category": "物品与细节",
+      "example": "えびはどこですか。",
+      "translation": "虾在哪里？",
+      "note": "",
+      "zone": 1,
+      "art": [
+        "dishes",
+        3
+      ]
+    },
+    {
+      "id": "aeon-016",
+      "jp": "いか",
+      "reading": "いか",
+      "zh": "鱿鱼",
+      "kind": "sushi",
+      "category": "物品与细节",
+      "example": "いかはどこですか。",
+      "translation": "鱿鱼在哪里？",
+      "note": "",
+      "zone": 1,
+      "art": [
+        "dishes",
+        7
+      ]
+    },
+    {
+      "id": "aeon-017",
+      "jp": "たこ",
+      "reading": "たこ",
+      "zh": "章鱼",
+      "kind": "octopus",
+      "category": "物品与细节",
+      "example": "たこはどこですか。",
+      "translation": "章鱼在哪里？",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "jp": "ほたて",
+      "reading": "ほたて",
+      "zh": "扇贝",
+      "kind": "sushi",
+      "art": [
+        "dishes",
+        5
+      ],
+      "category": "料理",
+      "example": "ほたてはどこですか。",
+      "translation": "扇贝在哪里？",
+      "id": "aeon-018",
+      "zone": 1
+    },
+    {
+      "id": "aeon-019",
+      "jp": "魚",
+      "reading": "さかな",
+      "zh": "鱼",
+      "kind": "fish",
+      "color": "#e4bc59",
+      "category": "物品与细节",
+      "example": "魚はどこですか。",
+      "translation": "鱼在哪里？",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "jp": "刺身",
+      "reading": "さしみ",
+      "zh": "生鱼片",
+      "kind": "sashimi",
+      "category": "料理",
+      "art": [
+        "foods",
+        3
+      ],
+      "id": "aeon-020",
+      "example": "刺身はどこですか。",
+      "translation": "生鱼片在哪里？",
+      "zone": 1
+    },
+    {
+      "jp": "牛肉",
+      "reading": "ぎゅうにく",
+      "zh": "牛肉",
+      "kind": "meat",
+      "category": "料理",
+      "art": [
+        "foods",
+        12
+      ],
+      "id": "aeon-021",
+      "example": "牛肉はどこですか。",
+      "translation": "牛肉在哪里？",
+      "zone": 2
+    },
+    {
+      "jp": "豚肉",
+      "reading": "ぶたにく",
+      "zh": "猪肉",
+      "kind": "meat",
+      "category": "料理",
+      "art": [
+        "foods",
+        13
+      ],
+      "id": "aeon-022",
+      "example": "豚肉はどこですか。",
+      "translation": "猪肉在哪里？",
+      "zone": 2
+    },
+    {
+      "jp": "鶏肉",
+      "reading": "とりにく",
+      "zh": "鸡肉",
+      "kind": "meat",
+      "category": "料理",
+      "art": [
+        "foods",
+        14
+      ],
+      "id": "aeon-023",
+      "example": "鶏肉はどこですか。",
+      "translation": "鸡肉在哪里？",
+      "zone": 2
+    },
+    {
+      "id": "aeon-024",
+      "jp": "卵",
+      "reading": "たまご",
+      "zh": "鸡蛋",
+      "kind": "eggs",
+      "category": "物品与细节",
+      "example": "卵はどこですか。",
+      "translation": "鸡蛋在哪里？",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "jp": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "zh": "牛奶",
+      "kind": "bottle",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        5
+      ],
+      "id": "aeon-025",
+      "example": "牛乳はどこですか。",
+      "translation": "牛奶在哪里？",
+      "zone": 3
+    },
+    {
+      "id": "aeon-026",
+      "jp": "ヨーグルト",
+      "reading": "ヨーグルト",
+      "zh": "酸奶",
+      "kind": "yogurt",
+      "category": "物品与细节",
+      "example": "ヨーグルトはどこですか。",
+      "translation": "酸奶在哪里？",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "aeon-027",
+      "jp": "チーズ",
+      "reading": "チーズ",
+      "zh": "奶酪",
+      "kind": "cheese",
+      "category": "物品与细节",
+      "example": "チーズはどこですか。",
+      "translation": "奶酪在哪里？",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "aeon-028",
+      "jp": "バター",
+      "reading": "バター",
+      "zh": "黄油",
+      "kind": "smallblock",
+      "color": "#ebd783",
+      "size": [
+        0.35,
+        0.14,
+        0.2
+      ],
+      "category": "物品与细节",
+      "example": "バターはどこですか。",
+      "translation": "黄油在哪里？",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "jp": "アイスクリーム",
+      "reading": "アイスクリーム",
+      "zh": "冰淇淋",
+      "kind": "icecream",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        14
+      ],
+      "id": "aeon-029",
+      "example": "アイスクリームはどこですか。",
+      "translation": "冰淇淋在哪里？",
+      "zone": 3
+    },
+    {
+      "id": "aeon-030",
+      "jp": "冷凍食品",
+      "reading": "れいとうしょくひん",
+      "zh": "冷冻食品",
+      "kind": "packet",
+      "color": "#a8c8d6",
+      "category": "物品与细节",
+      "example": "冷凍食品はどこですか。",
+      "translation": "冷冻食品在哪里？",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "jp": "おにぎり",
+      "reading": "おにぎり",
+      "zh": "饭团",
+      "kind": "onigiri",
+      "category": "料理",
+      "art": [
+        "foods",
+        7
+      ],
+      "id": "aeon-031",
+      "example": "おにぎりはどこですか。",
+      "translation": "饭团在哪里？",
+      "zone": 4
+    },
+    {
+      "id": "aeon-032",
+      "jp": "弁当",
+      "reading": "べんとう",
+      "zh": "便当",
+      "kind": "bento",
+      "category": "物品与细节",
+      "example": "弁当はどこですか。",
+      "translation": "便当在哪里？",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "aeon-033",
+      "jp": "唐揚げ",
+      "reading": "からあげ",
+      "zh": "日式炸鸡",
+      "kind": "fried",
+      "category": "物品与细节",
+      "example": "唐揚げはどこですか。",
+      "translation": "日式炸鸡在哪里？",
+      "note": "",
+      "art": [
+        "foods",
+        1
+      ],
+      "zone": 4
+    },
+    {
+      "jp": "コロッケ",
+      "reading": "コロッケ",
+      "zh": "可乐饼",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        14
+      ],
+      "category": "料理",
+      "example": "コロッケはどこですか。",
+      "translation": "可乐饼在哪里？",
+      "id": "aeon-034",
+      "zone": 4
+    },
+    {
+      "id": "aeon-035",
+      "jp": "寿司",
+      "reading": "すし",
+      "zh": "寿司",
+      "kind": "sushi",
+      "color": "#d87356",
+      "category": "物品与细节",
+      "example": "寿司はどこですか。",
+      "translation": "寿司在哪里？",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "jp": "天ぷら",
+      "reading": "てんぷら",
+      "zh": "天妇罗",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        12
+      ],
+      "category": "料理",
+      "example": "天ぷらはどこですか。",
+      "translation": "天妇罗在哪里？",
+      "id": "aeon-036",
+      "zone": 4
+    },
+    {
+      "id": "aeon-037",
+      "jp": "パン",
+      "reading": "パン",
+      "zh": "面包",
+      "kind": "bread",
+      "category": "物品与细节",
+      "example": "パンはどこですか。",
+      "translation": "面包在哪里？",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "jp": "トング",
+      "reading": "トング",
+      "zh": "食品夹",
+      "kind": "chopsticks",
+      "category": "食器・設備",
+      "id": "aeon-038",
+      "example": "トングはどこですか。",
+      "translation": "食品夹在哪里？",
+      "zone": 5
+    },
+    {
+      "id": "aeon-039",
+      "jp": "米",
+      "reading": "こめ",
+      "zh": "大米",
+      "kind": "ricebag",
+      "category": "物品与细节",
+      "example": "米はどこですか。",
+      "translation": "大米在哪里？",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "jp": "そば",
+      "reading": "そば",
+      "zh": "荞麦面",
+      "kind": "bowl",
+      "category": "料理",
+      "art": [
+        "foods",
+        10
+      ],
+      "id": "aeon-040",
+      "example": "そばはどこですか。",
+      "translation": "荞麦面在哪里？",
+      "zone": 6
+    },
+    {
+      "jp": "うどん",
+      "reading": "うどん",
+      "zh": "乌冬面",
+      "kind": "bowl",
+      "category": "料理",
+      "art": [
+        "foods",
+        9
+      ],
+      "id": "aeon-041",
+      "example": "うどんはどこですか。",
+      "translation": "乌冬面在哪里？",
+      "zone": 6
+    },
+    {
+      "id": "aeon-042",
+      "jp": "カップ麺",
+      "reading": "カップめん",
+      "zh": "杯面",
+      "kind": "cupnoodle",
+      "category": "物品与细节",
+      "example": "カップ麺はどこですか。",
+      "translation": "杯面在哪里？",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "aeon-043",
+      "jp": "醤油",
+      "reading": "しょうゆ",
+      "zh": "酱油",
+      "kind": "bottle",
+      "color": "#654630",
+      "category": "物品与细节",
+      "example": "醤油はどこですか。",
+      "translation": "酱油在哪里？",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "aeon-044",
+      "jp": "味噌",
+      "reading": "みそ",
+      "zh": "味噌",
+      "kind": "tub",
+      "color": "#a68459",
+      "category": "物品与细节",
+      "example": "味噌はどこですか。",
+      "translation": "味噌在哪里？",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "aeon-045",
+      "jp": "塩",
+      "reading": "しお",
+      "zh": "盐",
+      "kind": "shaker",
+      "category": "物品与细节",
+      "example": "塩はどこですか。",
+      "translation": "盐在哪里？",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "aeon-046",
+      "jp": "砂糖",
+      "reading": "さとう",
+      "zh": "糖",
+      "kind": "packet",
+      "color": "#ede9d6",
+      "category": "物品与细节",
+      "example": "砂糖はどこですか。",
+      "translation": "糖在哪里？",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "aeon-047",
+      "jp": "酢",
+      "reading": "す",
+      "zh": "醋",
+      "kind": "bottle",
+      "color": "#c7b371",
+      "category": "物品与细节",
+      "example": "酢はどこですか。",
+      "translation": "醋在哪里？",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "aeon-048",
+      "jp": "油",
+      "reading": "あぶら",
+      "zh": "食用油",
+      "kind": "bottle",
+      "color": "#c6b566",
+      "category": "物品与细节",
+      "example": "油はどこですか。",
+      "translation": "食用油在哪里？",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "jp": "水",
+      "reading": "みず",
+      "zh": "水",
+      "kind": "cup",
+      "category": "場面のことば",
+      "area": 3,
+      "id": "aeon-049",
+      "example": "水はどこですか。",
+      "translation": "水在哪里？",
+      "zone": 7
+    },
+    {
+      "jp": "緑茶",
+      "reading": "りょくちゃ",
+      "zh": "绿茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        0
+      ],
+      "id": "aeon-050",
+      "example": "緑茶はどこですか。",
+      "translation": "绿茶在哪里？",
+      "zone": 7
+    },
+    {
+      "jp": "コーヒー",
+      "reading": "コーヒー",
+      "zh": "咖啡",
+      "kind": "mug",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        2
+      ],
+      "id": "aeon-051",
+      "example": "コーヒーはどこですか。",
+      "translation": "咖啡在哪里？",
+      "zone": 7
+    },
+    {
+      "jp": "紅茶",
+      "reading": "こうちゃ",
+      "zh": "红茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        3
+      ],
+      "id": "aeon-052",
+      "example": "紅茶はどこですか。",
+      "translation": "红茶在哪里？",
+      "zone": 7
+    },
+    {
+      "id": "aeon-053",
+      "jp": "ジュース",
+      "reading": "ジュース",
+      "zh": "果汁",
+      "kind": "carton",
+      "color": "#e9b659",
+      "category": "物品与细节",
+      "example": "ジュースはどこですか。",
+      "translation": "果汁在哪里？",
+      "note": "",
+      "zone": 7
+    },
+    {
+      "jp": "ビール",
+      "reading": "ビール",
+      "zh": "啤酒",
+      "kind": "beer",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        6
+      ],
+      "id": "aeon-054",
+      "example": "ビールはどこですか。",
+      "translation": "啤酒在哪里？",
+      "zone": 7
+    },
+    {
+      "id": "aeon-055",
+      "jp": "お茶",
+      "reading": "おちゃ",
+      "zh": "茶",
+      "kind": "tea",
+      "category": "物品与细节",
+      "example": "お茶はどこですか。",
+      "translation": "茶在哪里？",
+      "note": "",
+      "zone": 7
+    },
+    {
+      "id": "aeon-056",
+      "jp": "チョコレート",
+      "reading": "チョコレート",
+      "zh": "巧克力",
+      "kind": "chocolate",
+      "category": "物品与细节",
+      "example": "チョコレートはどこですか。",
+      "translation": "巧克力在哪里？",
+      "note": "",
+      "zone": 7
+    },
+    {
+      "jp": "クッキー",
+      "reading": "クッキー",
+      "zh": "饼干",
+      "kind": "sweet",
+      "category": "お菓子",
+      "id": "aeon-057",
+      "example": "クッキーはどこですか。",
+      "translation": "饼干在哪里？",
+      "zone": 7
+    },
+    {
+      "jp": "ポテトチップス",
+      "reading": "ポテトチップス",
+      "zh": "薯片",
+      "kind": "packet",
+      "category": "お菓子",
+      "id": "aeon-058",
+      "example": "ポテトチップスはどこですか。",
+      "translation": "薯片在哪里？",
+      "zone": 7
+    },
+    {
+      "id": "aeon-059",
+      "jp": "飴",
+      "reading": "あめ",
+      "zh": "糖果",
+      "kind": "candy",
+      "category": "物品与细节",
+      "example": "飴はどこですか。",
+      "translation": "糖果在哪里？",
+      "note": "",
+      "zone": 7
+    },
+    {
+      "jp": "洗剤",
+      "reading": "せんざい",
+      "zh": "清洁剂",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        15
+      ],
+      "id": "aeon-060",
+      "example": "洗剤はどこですか。",
+      "translation": "清洁剂在哪里？",
+      "zone": 8
+    },
+    {
+      "jp": "柔軟剤",
+      "reading": "じゅうなんざい",
+      "zh": "衣物柔顺剂",
+      "kind": "bottle",
+      "category": "日用品",
+      "id": "aeon-061",
+      "example": "柔軟剤はどこですか。",
+      "translation": "衣物柔顺剂在哪里？",
+      "zone": 8
+    },
+    {
+      "id": "aeon-062",
+      "jp": "ティッシュ",
+      "reading": "ティッシュ",
+      "zh": "纸巾",
+      "kind": "tissue",
+      "category": "物品与细节",
+      "example": "ティッシュはどこですか。",
+      "translation": "纸巾在哪里？",
+      "note": "",
+      "art": [
+        "care",
+        6
+      ],
+      "zone": 8
+    },
+    {
+      "jp": "トイレットペーパー",
+      "reading": "トイレットペーパー",
+      "zh": "卫生纸",
+      "kind": "paperroll",
+      "category": "日用品",
+      "art": [
+        "care",
+        7
+      ],
+      "id": "aeon-063",
+      "example": "トイレットペーパーはどこですか。",
+      "translation": "卫生纸在哪里？",
+      "zone": 8
+    },
+    {
+      "jp": "スポンジ",
+      "reading": "スポンジ",
+      "zh": "海绵",
+      "kind": "smallblock",
+      "category": "日用品",
+      "id": "aeon-064",
+      "example": "スポンジはどこですか。",
+      "translation": "海绵在哪里？",
+      "zone": 8
+    },
+    {
+      "jp": "ごみ袋",
+      "reading": "ごみぶくろ",
+      "zh": "垃圾袋",
+      "kind": "shoppingbag",
+      "category": "日用品",
+      "id": "aeon-065",
+      "example": "ごみ袋はどこですか。",
+      "translation": "垃圾袋在哪里？",
+      "zone": 8
+    },
+    {
+      "id": "aeon-066",
+      "jp": "ラップ",
+      "reading": "ラップ",
+      "zh": "保鲜膜",
+      "kind": "wrap-roll",
+      "zone": 8,
+      "category": "场所细节",
+      "example": "ラップはどこですか。",
+      "translation": "保鲜膜在哪里？"
+    },
+    {
+      "jp": "電池",
+      "reading": "でんち",
+      "zh": "电池",
+      "kind": "battery",
+      "category": "機器",
+      "id": "aeon-067",
+      "example": "電池はどこですか。",
+      "translation": "电池在哪里？",
+      "zone": 8
+    },
+    {
+      "id": "aeon-068",
+      "jp": "タオル",
+      "reading": "タオル",
+      "zh": "毛巾",
+      "kind": "towel",
+      "category": "物品与细节",
+      "example": "タオルはどこですか。",
+      "translation": "毛巾在哪里？",
+      "note": "",
+      "zone": 8
+    },
+    {
+      "id": "aeon-069",
+      "jp": "シャツ",
+      "reading": "シャツ",
+      "zh": "衬衫",
+      "kind": "shirt",
+      "color": "#b7cfcb",
+      "category": "物品与细节",
+      "example": "シャツはどこですか。",
+      "translation": "衬衫在哪里？",
+      "note": "",
+      "zone": 9
+    },
+    {
+      "id": "aeon-070",
+      "jp": "ズボン",
+      "reading": "ズボン",
+      "zh": "裤子",
+      "kind": "pants",
+      "color": "#879592",
+      "category": "物品与细节",
+      "example": "ズボンはどこですか。",
+      "translation": "裤子在哪里？",
+      "note": "",
+      "zone": 9
+    },
+    {
+      "id": "aeon-071",
+      "jp": "スカート",
+      "reading": "スカート",
+      "zh": "裙子",
+      "kind": "skirt",
+      "color": "#8f9fba",
+      "category": "物品与细节",
+      "example": "スカートはどこですか。",
+      "translation": "裙子在哪里？",
+      "note": "",
+      "zone": 9
+    },
+    {
+      "id": "aeon-072",
+      "jp": "ワンピース",
+      "reading": "ワンピース",
+      "zh": "连衣裙",
+      "kind": "dress",
+      "color": "#b7889b",
+      "category": "物品与细节",
+      "example": "ワンピースはどこですか。",
+      "translation": "连衣裙在哪里？",
+      "note": "",
+      "zone": 9
+    },
+    {
+      "id": "aeon-073",
+      "jp": "靴下",
+      "reading": "くつした",
+      "zh": "袜子",
+      "kind": "socks",
+      "color": "#bcb786",
+      "category": "物品与细节",
+      "example": "靴下はどこですか。",
+      "translation": "袜子在哪里？",
+      "note": "",
+      "zone": 9
+    },
+    {
+      "id": "aeon-074",
+      "jp": "下着",
+      "reading": "したぎ",
+      "zh": "内衣",
+      "kind": "underwear",
+      "color": "#d5b7af",
+      "category": "物品与细节",
+      "example": "下着はどこですか。",
+      "translation": "内衣在哪里？",
+      "note": "",
+      "zone": 9
+    },
+    {
+      "id": "aeon-075",
+      "jp": "帽子",
+      "reading": "ぼうし",
+      "zh": "帽子",
+      "kind": "hat",
+      "color": "#bda274",
+      "category": "物品与细节",
+      "example": "帽子はどこですか。",
+      "translation": "帽子在哪里？",
+      "note": "",
+      "zone": 9
+    },
+    {
+      "id": "aeon-076",
+      "jp": "靴",
+      "reading": "くつ",
+      "zh": "鞋子",
+      "kind": "shoes",
+      "category": "物品与细节",
+      "example": "靴はどこですか。",
+      "translation": "鞋子在哪里？",
+      "note": "",
+      "zone": 9
+    },
+    {
+      "id": "aeon-077",
+      "jp": "スリッパ",
+      "reading": "スリッパ",
+      "zh": "拖鞋",
+      "kind": "slippers",
+      "category": "物品与细节",
+      "example": "スリッパはどこですか。",
+      "translation": "拖鞋在哪里？",
+      "note": "",
+      "zone": 9
+    },
+    {
+      "id": "aeon-078",
+      "jp": "パジャマ",
+      "reading": "パジャマ",
+      "zh": "睡衣",
+      "kind": "pajamas",
+      "color": "#afc1b4",
+      "category": "物品与细节",
+      "example": "パジャマはどこですか。",
+      "translation": "睡衣在哪里？",
+      "note": "",
+      "zone": 9
+    },
+    {
+      "jp": "ノート",
+      "reading": "ノート",
+      "zh": "笔记本",
+      "kind": "book",
+      "category": "文具・本",
+      "id": "aeon-079",
+      "example": "ノートはどこですか。",
+      "translation": "笔记本在哪里？",
+      "zone": 10
+    },
+    {
+      "jp": "鉛筆",
+      "reading": "えんぴつ",
+      "zh": "铅笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "aeon-080",
+      "example": "鉛筆はどこですか。",
+      "translation": "铅笔在哪里？",
+      "zone": 10
+    },
+    {
+      "jp": "消しゴム",
+      "reading": "けしゴム",
+      "zh": "橡皮",
+      "kind": "smallblock",
+      "category": "文具・本",
+      "id": "aeon-081",
+      "example": "消しゴムはどこですか。",
+      "translation": "橡皮在哪里？",
+      "zone": 10
+    },
+    {
+      "jp": "ボールペン",
+      "reading": "ボールペン",
+      "zh": "圆珠笔",
+      "kind": "pen",
+      "category": "文具・本",
+      "id": "aeon-082",
+      "example": "ボールペンはどこですか。",
+      "translation": "圆珠笔在哪里？",
+      "zone": 10
+    },
+    {
+      "jp": "はさみ",
+      "reading": "はさみ",
+      "zh": "剪刀",
+      "kind": "scissors",
+      "category": "文具・本",
+      "id": "aeon-083",
+      "example": "はさみはどこですか。",
+      "translation": "剪刀在哪里？",
+      "zone": 10
+    },
+    {
+      "jp": "定規",
+      "reading": "じょうぎ",
+      "zh": "尺子",
+      "kind": "ruler",
+      "category": "文具・本",
+      "id": "aeon-084",
+      "example": "定規はどこですか。",
+      "translation": "尺子在哪里？",
+      "zone": 10
+    },
+    {
+      "jp": "のり",
+      "reading": "のり",
+      "zh": "胶水",
+      "kind": "tube",
+      "category": "文具・本",
+      "id": "aeon-085",
+      "example": "のりはどこですか。",
+      "translation": "胶水在哪里？",
+      "zone": 10
+    },
+    {
+      "jp": "コップ",
+      "reading": "コップ",
+      "zh": "杯子",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "aeon-086",
+      "example": "コップはどこですか。",
+      "translation": "杯子在哪里？",
+      "zone": 10
+    },
+    {
+      "id": "aeon-087",
+      "jp": "皿",
+      "reading": "さら",
+      "zh": "盘子",
+      "kind": "plate",
+      "color": "#bcd2d0",
+      "category": "物品与细节",
+      "example": "皿はどこですか。",
+      "translation": "盘子在哪里？",
+      "note": "",
+      "zone": 10
+    },
+    {
+      "id": "aeon-088",
+      "jp": "箸",
+      "reading": "はし",
+      "zh": "筷子",
+      "kind": "chopsticks",
+      "category": "物品与细节",
+      "example": "箸はどこですか。",
+      "translation": "筷子在哪里？",
+      "note": "",
+      "zone": 10
+    },
+    {
+      "jp": "フライパン",
+      "reading": "フライパン",
+      "zh": "平底锅",
+      "kind": "pan",
+      "category": "食器・設備",
+      "id": "aeon-089",
+      "example": "フライパンはどこですか。",
+      "translation": "平底锅在哪里？",
+      "zone": 10
+    },
+    {
+      "jp": "鍋",
+      "reading": "なべ",
+      "zh": "锅",
+      "kind": "pot",
+      "category": "食器・設備",
+      "id": "aeon-090",
+      "example": "鍋はどこですか。",
+      "translation": "锅在哪里？",
+      "zone": 10
+    },
+    {
+      "jp": "シャンプー",
+      "reading": "シャンプー",
+      "zh": "洗发水",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        2
+      ],
+      "id": "aeon-091",
+      "example": "シャンプーはどこですか。",
+      "translation": "洗发水在哪里？",
+      "zone": 11
+    },
+    {
+      "id": "aeon-092",
+      "jp": "石鹸",
+      "reading": "せっけん",
+      "zh": "肥皂",
+      "kind": "smallblock",
+      "color": "#d5c4c2",
+      "size": [
+        0.17,
+        0.07,
+        0.12
+      ],
+      "category": "物品与细节",
+      "example": "石鹸はどこですか。",
+      "translation": "肥皂在哪里？",
+      "note": "",
+      "zone": 11
+    },
+    {
+      "id": "aeon-093",
+      "jp": "歯ブラシ",
+      "reading": "はブラシ",
+      "zh": "牙刷",
+      "kind": "toothbrush",
+      "category": "物品与细节",
+      "example": "歯ブラシはどこですか。",
+      "translation": "牙刷在哪里？",
+      "note": "",
+      "art": [
+        "care",
+        0
+      ],
+      "zone": 11
+    },
+    {
+      "jp": "歯磨き粉",
+      "reading": "はみがきこ",
+      "zh": "牙膏",
+      "kind": "tube",
+      "category": "日用品",
+      "art": [
+        "care",
+        1
+      ],
+      "id": "aeon-094",
+      "example": "歯磨き粉はどこですか。",
+      "translation": "牙膏在哪里？",
+      "zone": 11
+    },
+    {
+      "id": "aeon-095",
+      "jp": "マスク",
+      "reading": "マスク",
+      "zh": "口罩",
+      "kind": "mask",
+      "category": "物品与细节",
+      "example": "マスクはどこですか。",
+      "translation": "口罩在哪里？",
+      "note": "",
+      "art": [
+        "care",
+        8
+      ],
+      "zone": 11
+    },
+    {
+      "jp": "日焼け止め",
+      "reading": "ひやけどめ",
+      "zh": "防晒用品",
+      "kind": "tube",
+      "category": "日用品",
+      "art": [
+        "care",
+        14
+      ],
+      "id": "aeon-096",
+      "example": "日焼け止めはどこですか。",
+      "translation": "防晒用品在哪里？",
+      "zone": 11
+    },
+    {
+      "jp": "ハンドクリーム",
+      "reading": "ハンドクリーム",
+      "zh": "护手霜",
+      "kind": "tube",
+      "category": "日用品",
+      "id": "aeon-097",
+      "example": "ハンドクリームはどこですか。",
+      "translation": "护手霜在哪里？",
+      "zone": 11
+    },
+    {
+      "jp": "化粧水",
+      "reading": "けしょうすい",
+      "zh": "化妆水",
+      "kind": "bottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        12
+      ],
+      "id": "aeon-098",
+      "example": "化粧水はどこですか。",
+      "translation": "化妆水在哪里？",
+      "zone": 11
+    },
+    {
+      "id": "aeon-099",
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银机",
+      "kind": "register",
+      "category": "物品与细节",
+      "example": "レジはどこですか。",
+      "translation": "收银机在哪里？",
+      "note": "",
+      "zone": 12
+    },
+    {
+      "id": "aeon-100",
+      "jp": "セルフレジ",
+      "reading": "セルフレジ",
+      "zh": "自助收银机",
+      "kind": "selfcheckout",
+      "category": "物品与细节",
+      "example": "セルフレジはどこですか。",
+      "translation": "自助收银机在哪里？",
+      "note": "",
+      "zone": 12
+    },
+    {
+      "id": "aeon-101",
+      "jp": "カート",
+      "reading": "カート",
+      "zh": "购物车",
+      "kind": "cart",
+      "zone": 12,
+      "category": "遊園地のことば",
+      "example": "カートはどこですか。",
+      "translation": "购物车在哪里？"
+    },
+    {
+      "jp": "レシート",
+      "reading": "レシート",
+      "zh": "购物小票",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "aeon-102",
+      "example": "レシートはどこですか。",
+      "translation": "购物小票在哪里？",
+      "zone": 12
+    },
+    {
+      "id": "aeon-103",
+      "jp": "袋",
+      "reading": "ふくろ",
+      "zh": "袋子",
+      "kind": "shoppingbag",
+      "category": "物品与细节",
+      "example": "袋はどこですか。",
+      "translation": "袋子在哪里？",
+      "note": "",
+      "zone": 12
+    },
+    {
+      "id": "aeon-104",
+      "jp": "財布",
+      "reading": "さいふ",
+      "zh": "钱包",
+      "kind": "wallet",
+      "color": "#856952",
+      "category": "物品与细节",
+      "example": "財布はどこですか。",
+      "translation": "钱包在哪里？",
+      "note": "",
+      "zone": 12
+    },
+    {
+      "id": "aeon-105",
+      "jp": "ショッピングカート",
+      "reading": "ショッピングカート",
+      "zh": "购物车",
+      "kind": "cart",
+      "zone": 12,
+      "category": "店内のもの",
+      "example": "これはショッピングカートです。",
+      "translation": "这是购物车。"
+    },
+    {
+      "id": "aeon-106",
+      "jp": "買い物かご",
+      "reading": "かいものかご",
+      "zh": "购物篮",
+      "kind": "basket",
+      "zone": 12,
+      "category": "店内のもの",
+      "example": "これは買い物かごです。",
+      "translation": "这是购物篮。"
+    },
+    {
+      "id": "aeon-107",
+      "jp": "サービスカウンター",
+      "reading": "サービスカウンター",
+      "zh": "服务台",
+      "kind": "counter",
+      "zone": 12,
+      "category": "店内のもの",
+      "example": "これはサービスカウンターです。",
+      "translation": "这是服务台。"
+    },
+    {
+      "id": "aeon-108",
+      "jp": "ポイントカード",
+      "reading": "ポイントカード",
+      "zh": "积分卡",
+      "kind": "card",
+      "zone": 12,
+      "category": "店内のもの",
+      "example": "これはポイントカードです。",
+      "translation": "这是积分卡。"
+    },
+    {
+      "id": "aeon-109",
+      "jp": "値札",
+      "reading": "ねふだ",
+      "zh": "价签",
+      "kind": "price",
+      "zone": 0,
+      "category": "店内のもの",
+      "example": "これは値札です。",
+      "translation": "这是价签。"
+    },
+    {
+      "id": "aeon-110",
+      "jp": "エコバッグ",
+      "reading": "エコバッグ",
+      "zh": "环保购物袋",
+      "kind": "shoppingbag",
+      "zone": 12,
+      "category": "店内のもの",
+      "example": "これはエコバッグです。",
+      "translation": "这是环保购物袋。"
+    },
+    {
+      "id": "aeon-111",
+      "jp": "鮮魚",
+      "reading": "せんぎょ",
+      "zh": "鲜鱼",
+      "kind": "fish",
+      "zone": 1,
+      "category": "店内のもの",
+      "example": "これは鮮魚です。",
+      "translation": "这是鲜鱼。"
+    },
+    {
+      "id": "aeon-product-oreo",
+      "jp": "オレオ バニラクリーム 10枚入",
+      "reading": "おれお ばにらくりーむ じゅうまいいり",
+      "zh": "饼干",
+      "kind": "retail-product",
+      "color": "#167cd0",
+      "zone": 7,
+      "category": "商品",
+      "example": "クッキーを探しています。",
+      "noteJa": "クリームをはさんだクッキー。「10枚入」は、十枚入っているという意味です。",
+      "product": {
+        "key": "oreo",
+        "generic": "クッキー",
+        "genericReading": "くっきー",
+        "brand": "モンデリーズ",
+        "shape": "box",
+        "source": "https://shop.aeon.com/netsuper/01050000052540/1M.html?sort=recommend",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "OREO",
+        "imageSource": "https://www.aeonnetshop.com/img/goods/0105/00000000000000/PC/S/4547894660515.jpg",
+        "image": "./assets/products/oreo.jpg"
+      },
+      "translation": "正在找饼干。"
+    },
+    {
+      "id": "aeon-product-pocky",
+      "jp": "ポッキーチョコレート 2袋入",
+      "reading": "ぽっきーちょこれーと ふたふくろいり",
+      "zh": "巧克力点心",
+      "kind": "retail-product",
+      "color": "#cd3137",
+      "zone": 7,
+      "category": "商品",
+      "example": "チョコレート菓子を探しています。",
+      "noteJa": "細い棒の形のお菓子。「袋」は、ふくろと読みます。",
+      "product": {
+        "key": "pocky",
+        "generic": "チョコレート菓子",
+        "genericReading": "ちょこれーとがし",
+        "brand": "グリコ",
+        "shape": "box",
+        "source": "https://shop.aeon.com/netsuper/01050000052540/1M.html?sort=recommend",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "Pocky",
+        "imageSource": "https://www.aeonnetshop.com/img/goods/0105/00000000000000/PC/S/4901005009158.jpg",
+        "image": "./assets/products/pocky.jpg"
+      },
+      "translation": "正在找巧克力点心。"
+    },
+    {
+      "id": "aeon-product-chocopie",
+      "jp": "チョコパイ パーティーパック 9個入",
+      "reading": "ちょこぱい ぱーてぃーぱっく きゅうこいり",
+      "zh": "巧克力派",
+      "kind": "retail-product",
+      "color": "#912c35",
+      "zone": 7,
+      "category": "商品",
+      "example": "チョコパイを探しています。",
+      "noteJa": "ロッテの商品です。「個包装」は、一つずつ包んであることです。",
+      "product": {
+        "key": "chocopie",
+        "generic": "チョコパイ",
+        "genericReading": "ちょこぱい",
+        "brand": "ロッテ",
+        "shape": "bag",
+        "source": "https://shop.aeon.com/netsuper/01050000052540/1M.html?sort=recommend",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "チョコパイ",
+        "imageSource": "https://www.aeonnetshop.com/img/goods/0105/00000000000000/PC/S/4903333264230.jpg",
+        "image": "./assets/products/chocopie.jpg"
+      },
+      "translation": "正在找巧克力派。"
+    },
+    {
+      "id": "aeon-product-happyturn",
+      "jp": "ハッピーターン 96g",
+      "reading": "はっぴーたーん",
+      "zh": "米饼",
+      "kind": "retail-product",
+      "color": "#f28d32",
+      "zone": 7,
+      "category": "商品",
+      "example": "米菓を探しています。",
+      "noteJa": "米を使ったお菓子を「米菓」と呼びます。",
+      "product": {
+        "key": "happyturn",
+        "generic": "米菓",
+        "genericReading": "べいか",
+        "brand": "亀田製菓",
+        "shape": "bag",
+        "source": "https://shop.aeon.com/netsuper/01050000052540/1M.html?sort=recommend",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "ハッピーターン",
+        "imageSource": "https://www.aeonnetshop.com/img/goods/0105/00000000000000/PC/S/4901313207871.jpg",
+        "image": "./assets/products/happyturn.jpg"
+      },
+      "translation": "正在找米饼。"
+    },
+    {
+      "id": "aeon-product-sapporo",
+      "jp": "サッポロポテト つぶつぶベジタブル 72g",
+      "reading": "さっぽろぽてと つぶつぶべじたぶる",
+      "zh": "膨化零食",
+      "kind": "retail-product",
+      "color": "#5eab50",
+      "zone": 7,
+      "category": "商品",
+      "example": "スナック菓子を探しています。",
+      "noteJa": "袋入りのスナック菓子です。",
+      "product": {
+        "key": "sapporo",
+        "generic": "スナック菓子",
+        "genericReading": "すなっくがし",
+        "brand": "カルビー",
+        "shape": "bag",
+        "source": "https://shop.aeon.com/netsuper/01050000052540/1M.html?sort=recommend",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "サッポロポテト",
+        "imageSource": "https://www.aeonnetshop.com/img/goods/0105/00000000000000/PC/S/4901330123321.jpg",
+        "image": "./assets/products/sapporo.jpg"
+      },
+      "translation": "正在找膨化零食。"
+    },
+    {
+      "id": "aeon-product-alfort",
+      "jp": "アルフォート 9枚入",
+      "reading": "あるふぉーと きゅうまいいり",
+      "zh": "饼干",
+      "kind": "retail-product",
+      "color": "#254d9e",
+      "zone": 7,
+      "category": "商品",
+      "example": "ビスケットを探しています。",
+      "noteJa": "ビスケットとチョコレートを組み合わせたお菓子です。",
+      "product": {
+        "key": "alfort",
+        "generic": "ビスケット",
+        "genericReading": "びすけっと",
+        "brand": "ブルボン",
+        "shape": "box",
+        "source": "https://shop.aeon.com/netsuper/01050000052540/1M.html?sort=recommend",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "アルフォート",
+        "imageSource": "https://www.aeonnetshop.com/img/goods/0105/00000000000000/PC/S/4901360360796.jpg",
+        "image": "./assets/products/alfort.jpg"
+      },
+      "translation": "正在找饼干。"
+    },
+    {
+      "id": "aeon-product-tvchips",
+      "jp": "トップバリュ ポテトチップス しお味 160g",
+      "reading": "とっぷばりゅ ぽてとちっぷす しおあじ",
+      "zh": "薯片",
+      "kind": "retail-product",
+      "color": "#efcb43",
+      "zone": 7,
+      "category": "商品",
+      "example": "ポテトチップスを探しています。",
+      "noteJa": "「しお味」は、塩の味のことです。",
+      "product": {
+        "key": "tvchips",
+        "generic": "ポテトチップス",
+        "genericReading": "ぽてとちっぷす",
+        "brand": "トップバリュ",
+        "shape": "bag",
+        "source": "https://shop.aeon.com/netsuper/01050000052540/1M.html?sort=recommend",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "TOPVALU しお味",
+        "imageSource": "https://www.aeonnetshop.com/img/goods/0105/00000000000000/PC/S/4549414002980.jpg",
+        "image": "./assets/products/tvchips.jpg"
+      },
+      "translation": "正在找薯片。"
+    },
+    {
+      "id": "aeon-product-calbee",
+      "jp": "ポテトチップス うすしお味 55g",
+      "reading": "ぽてとちっぷす うすしおあじ",
+      "zh": "薯片",
+      "kind": "retail-product",
+      "color": "#f5d765",
+      "zone": 7,
+      "category": "商品",
+      "example": "ポテトチップスを探しています。",
+      "noteJa": "「うすしお」は、薄い塩味のことです。",
+      "product": {
+        "key": "calbee",
+        "generic": "ポテトチップス",
+        "genericReading": "ぽてとちっぷす",
+        "brand": "カルビー",
+        "shape": "bag",
+        "source": "https://shop.aeon.com/netsuper/10000000029570/87.html",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "Calbee うすしお"
+      },
+      "translation": "正在找薯片。"
+    },
+    {
+      "id": "aeon-product-umaibo",
+      "jp": "うまい棒 コーンポタージュ味",
+      "reading": "うまいぼう こーんぽたーじゅあじ",
+      "zh": "小零食",
+      "kind": "retail-product",
+      "color": "#e6cd4b",
+      "zone": 7,
+      "category": "商品",
+      "example": "駄菓子を探しています。",
+      "noteJa": "一本ずつ包まれた、棒の形のスナックです。",
+      "product": {
+        "key": "umaibo",
+        "generic": "駄菓子",
+        "genericReading": "だがし",
+        "brand": "やおきん",
+        "shape": "stick",
+        "source": "https://www.yaokin.com/products_search/umaibo",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "うまい棒"
+      },
+      "translation": "正在找零食。"
+    },
+    {
+      "id": "aeon-product-cupnoodle",
+      "jp": "カップヌードル",
+      "reading": "かっぷぬーどる",
+      "zh": "杯面",
+      "kind": "retail-product",
+      "color": "#efe3c1",
+      "zone": 6,
+      "category": "商品",
+      "example": "カップ麺を探しています。",
+      "noteJa": "容器に入った麺。「カップ麺」は商品の種類、「カップヌードル」は商品名です。",
+      "product": {
+        "key": "cupnoodle",
+        "generic": "カップ麺",
+        "genericReading": "かっぷめん",
+        "brand": "日清食品",
+        "shape": "cup",
+        "source": "https://www.nissin.com/jp/product/brands/cupnoodle/",
+        "checked": "2026-10-01",
+        "action": "eat",
+        "label": "CUP NOODLE"
+      },
+      "translation": "正在找杯面。"
+    },
+    {
+      "id": "aeon-product-tea",
+      "jp": "お〜いお茶 緑茶 600ml",
+      "reading": "おーいおちゃ りょくちゃ",
+      "zh": "绿茶",
+      "kind": "retail-product",
+      "color": "#80a351",
+      "zone": 7,
+      "category": "商品",
+      "example": "緑茶を探しています。",
+      "noteJa": "ペットボトル入りの緑茶です。",
+      "product": {
+        "key": "tea",
+        "generic": "緑茶",
+        "genericReading": "りょくちゃ",
+        "brand": "伊藤園",
+        "shape": "bottle",
+        "source": "https://shop.aeon.com/netsuper/01050000003240/010500000032404901085003800.html",
+        "checked": "2026-10-01",
+        "action": "drink",
+        "label": "お〜いお茶"
+      },
+      "translation": "正在找绿茶。"
+    },
+    {
+      "id": "aeon-product-milk",
+      "jp": "明治おいしい牛乳 200ml",
+      "reading": "めいじおいしいぎゅうにゅう",
+      "zh": "牛奶",
+      "kind": "retail-product",
+      "color": "#e8f0ed",
+      "zone": 3,
+      "category": "商品",
+      "example": "牛乳を探しています。",
+      "noteJa": "紙パックに入った牛乳。冷蔵売り場に置きます。",
+      "product": {
+        "key": "milk",
+        "generic": "牛乳",
+        "genericReading": "ぎゅうにゅう",
+        "brand": "明治",
+        "shape": "carton",
+        "source": "https://www.meiji.co.jp/products/milk_drink/49721119.html",
+        "checked": "2026-10-01",
+        "action": "drink",
+        "label": "おいしい牛乳"
+      },
+      "translation": "正在找牛奶。"
+    },
+    {
+      "id": "aeon-product-biore",
+      "jp": "ビオレu 泡ハンドソープ",
+      "reading": "びおれゆー あわはんどそーぷ",
+      "zh": "洗手液",
+      "kind": "retail-product",
+      "color": "#e5edeb",
+      "zone": 11,
+      "category": "商品",
+      "example": "ハンドソープを探しています。",
+      "noteJa": "手を洗うときに使うもの。「泡」は、あわと読みます。",
+      "product": {
+        "key": "biore",
+        "generic": "ハンドソープ",
+        "genericReading": "はんどそーぷ",
+        "brand": "花王",
+        "shape": "pump",
+        "source": "https://www.kao.co.jp/bioreu/family/hand/handsoap/",
+        "checked": "2026-10-01",
+        "action": "wash",
+        "label": "ビオレu"
+      },
+      "translation": "正在找洗手液。"
+    },
+    {
+      "id": "aeon-product-essential",
+      "jp": "エッセンシャル ふんわりうるツヤ シャンプー",
+      "reading": "えっせんしゃる ふんわりうるつや しゃんぷー",
+      "zh": "洗发水",
+      "kind": "retail-product",
+      "color": "#e6b499",
+      "zone": 11,
+      "category": "商品",
+      "example": "シャンプーを探しています。",
+      "noteJa": "髪を洗うためのもの。「詰め替え用」は、中身を移して使う商品です。",
+      "product": {
+        "key": "essential",
+        "generic": "シャンプー",
+        "genericReading": "しゃんぷー",
+        "brand": "花王",
+        "shape": "pump",
+        "source": "https://www.kao-kirei.com/jp/en/brand/khg/essential/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "Essential",
+        "image": "./assets/products/essential.jpg",
+        "imageSource": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-kirei-com/jp/ja/item/khg/essential/25502827/GG01.jpg"
+      },
+      "translation": "正在找洗发水。"
+    },
+    {
+      "id": "aeon-product-attack",
+      "jp": "アタックZERO",
+      "reading": "あたっくぜろ",
+      "zh": "洗衣用清洁剂",
+      "kind": "retail-product",
+      "color": "#e5e9e5",
+      "zone": 8,
+      "category": "商品",
+      "example": "洗濯洗剤を探しています。",
+      "noteJa": "衣類を洗うときの洗剤です。「洗濯」は、せんたくと読みます。",
+      "product": {
+        "key": "attack",
+        "generic": "洗濯洗剤",
+        "genericReading": "せんたくせんざい",
+        "brand": "花王",
+        "shape": "pump",
+        "source": "https://www.kao-kirei.com/jp/en/brand/khg/attack/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "アタック ZERO",
+        "image": "./assets/products/attack.jpg",
+        "imageSource": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-kirei-com/jp/ja/item/khg/attack/25339233/GG01.jpg"
+      },
+      "translation": "正在找洗衣液。"
+    },
+    {
+      "id": "aeon-product-cucute",
+      "jp": "キュキュット ハンドマイルド カモミールの香り",
+      "reading": "きゅきゅっと はんどまいるど かもみーるのかおり",
+      "zh": "洗洁精",
+      "kind": "retail-product",
+      "color": "#eec3a7",
+      "zone": 8,
+      "category": "商品",
+      "example": "食器用洗剤を探しています。",
+      "noteJa": "皿やコップを洗うときの洗剤です。「香り」は、かおりと読みます。",
+      "product": {
+        "key": "cucute",
+        "generic": "食器用洗剤",
+        "genericReading": "しょっきようせんざい",
+        "brand": "花王",
+        "shape": "bottle",
+        "source": "https://www.kao-kirei.com/ja/brand/khg/kyukyutto/?intcmp=mykao",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "キュキュット",
+        "image": "./assets/products/cucute.jpg",
+        "imageSource": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-kirei-com/jp/ja/item/khg/kyukyutto/25501934/GG01.jpg"
+      },
+      "translation": "正在找洗洁精。"
+    },
+    {
+      "id": "aeon-product-band-aid",
+      "jp": "バンドエイド キズパワーパッド ふつうサイズ",
+      "reading": "ばんどえいど きずぱわーぱっど ふつうさいず",
+      "zh": "创可贴",
+      "kind": "retail-product",
+      "color": "#cebd8d",
+      "zone": 11,
+      "category": "商品",
+      "example": "絆創膏を探しています。",
+      "noteJa": "パッケージで「ふつうサイズ」と「大きめサイズ」を見分けます。",
+      "product": {
+        "key": "band-aid",
+        "generic": "絆創膏",
+        "genericReading": "ばんそうこう",
+        "brand": "バンドエイド",
+        "shape": "box",
+        "source": "https://www.band-aid.jp/lineup/medicaltools/regular",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "キズパワーパッド",
+        "image": "./assets/products/band-aid.jpg",
+        "imageSource": "https://images.ctfassets.net/p9hrd7f8bkc6/42qewLMlPgr5yrHIqndh2R/02059cb4d468632b5ec5992112836d1d/kpp_regular-ja-jp?fm=jpg&w=1920&q=80"
+      },
+      "translation": "正在找创可贴。"
+    },
+    {
+      "id": "aeon-product-campus",
+      "jp": "キャンパスノート（ドット入り罫線）",
+      "reading": "きゃんぱすのーと どっといりけいせん",
+      "zh": "笔记本",
+      "kind": "retail-product",
+      "color": "#dda899",
+      "zone": 10,
+      "category": "商品",
+      "example": "ノートを探しています。",
+      "noteJa": "「罫線」はノートの線。「ドット入り」は、小さな点があるという意味です。",
+      "product": {
+        "key": "campus",
+        "generic": "ノート",
+        "genericReading": "のーと",
+        "brand": "コクヨ",
+        "shape": "book",
+        "source": "https://www.kokuyo.com/stationery/series/campus/campus-notebook/dot-ruled/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "Campus",
+        "image": "./assets/products/campus.jpg",
+        "imageSource": "https://www.kokuyo.com/system/files/SHA14073.jpg"
+      },
+      "translation": "正在找笔记本。"
+    },
+    {
+      "id": "aeon-product-mono",
+      "jp": "モノ消しゴム",
+      "reading": "ものけしごむ",
+      "zh": "橡皮",
+      "kind": "retail-product",
+      "color": "#e5e7e1",
+      "zone": 10,
+      "category": "商品",
+      "example": "消しゴムを探しています。",
+      "noteJa": "鉛筆で書いた文字を消すものです。",
+      "product": {
+        "key": "mono",
+        "generic": "消しゴム",
+        "genericReading": "けしごむ",
+        "brand": "トンボ鉛筆",
+        "shape": "eraser",
+        "source": "https://www.tombow.com/products/mono/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "MONO",
+        "image": "./assets/products/mono.png",
+        "imageSource": "https://www.tombow.com/files/2012/12/mono_main.png"
+      },
+      "translation": "正在找橡皮。"
+    },
+    {
+      "id": "aeon-specific-01",
+      "jp": "量り売りの袋",
+      "reading": "はかりうりのふくろ",
+      "zh": "称重袋",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "量り売りの袋はここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#c9d4ad"
+      },
+      "translation": "称重袋在这里。"
+    },
+    {
+      "id": "aeon-specific-02",
+      "jp": "鮭の切り身",
+      "reading": "さけのきりみ",
+      "zh": "三文鱼切片",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "鮭の切り身はここにあります。",
+      "detail": {
+        "type": "dish",
+        "color": "#e1a07f",
+        "shape": "fish",
+        "raw": true
+      },
+      "translation": "三文鱼切片在这里。"
+    },
+    {
+      "id": "aeon-specific-03",
+      "jp": "牛ひき肉",
+      "reading": "ぎゅうひきにく",
+      "zh": "牛肉馅",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "牛ひき肉はここにあります。",
+      "detail": {
+        "type": "dish",
+        "color": "#b48278",
+        "shape": "pieces",
+        "raw": true
+      },
+      "translation": "牛肉馅在这里。"
+    },
+    {
+      "id": "aeon-specific-04",
+      "jp": "塩パン",
+      "reading": "しおパン",
+      "zh": "盐面包",
+      "kind": "specific-object",
+      "zone": 5,
+      "category": "場所ならではのもの",
+      "example": "塩パンはここにあります。",
+      "detail": {
+        "type": "dish",
+        "color": "#c7a568",
+        "shape": "pieces"
+      },
+      "translation": "盐面包在这里。"
+    },
+    {
+      "id": "aeon-specific-05",
+      "jp": "クロワッサン",
+      "reading": "クロワッサン",
+      "zh": "可颂",
+      "kind": "specific-object",
+      "zone": 5,
+      "category": "場所ならではのもの",
+      "example": "クロワッサンはここにあります。",
+      "detail": {
+        "type": "dish",
+        "color": "#c4985d",
+        "shape": "croissant",
+        "place": [
+          2,
+          1,
+          1.85,
+          1
+        ]
+      },
+      "translation": "可颂在这里。"
+    },
+    {
+      "id": "aeon-specific-06",
+      "jp": "サービスカウンター受付票",
+      "reading": "サービスカウンターうけつけひょう",
+      "zh": "服务台凭单",
+      "kind": "specific-object",
+      "zone": 12,
+      "category": "場所ならではのもの",
+      "example": "サービスカウンター受付票はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#acbdc3"
+      },
+      "translation": "服务台凭单在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 4,
+  "district": 2,
+  "sceneReference": null,
+  "venueRole": {
+    "id": "aeon-venue-worker",
+    "jp": "売り場の店員",
+    "reading": "うりばのてんいん",
+    "zone": 5,
+    "activity": "パンを並べています。",
+    "readingLine": "パンを ならべています。",
+    "verb": "並べる → 並べている",
+    "grammar": "パン【を】棚【に】並べる。",
+    "reply": "焼きたてのパンはこちらです。トレーをご利用ください。",
+    "tools": [
+      "塩パン",
+      "クロワッサン",
+      "パン"
+    ]
+  }
+}

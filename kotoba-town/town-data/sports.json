@@ -1,0 +1,1298 @@
+{
+  "id": "sports",
+  "title": "市民体育中心",
+  "jp": "スポーツセンター",
+  "reading": "スポーツセンター",
+  "layout": "sports",
+  "zones": [
+    {
+      "jp": "受付",
+      "zh": "接待大厅"
+    },
+    {
+      "jp": "有酸素トレーニング",
+      "zh": "有氧训练区"
+    },
+    {
+      "jp": "バスケットコート",
+      "zh": "篮球场"
+    },
+    {
+      "jp": "バレーコート",
+      "zh": "排球场"
+    },
+    {
+      "jp": "バドミントンコート",
+      "zh": "羽毛球场"
+    },
+    {
+      "jp": "卓球室",
+      "zh": "乒乓球室"
+    },
+    {
+      "jp": "プール",
+      "zh": "游泳池"
+    },
+    {
+      "jp": "更衣室",
+      "zh": "更衣室"
+    },
+    {
+      "jp": "サッカー場",
+      "zh": "足球场"
+    },
+    {
+      "jp": "トラック",
+      "zh": "跑道"
+    },
+    {
+      "jp": "休憩所",
+      "zh": "休息区"
+    },
+    {
+      "jp": "フリーウェイト",
+      "zh": "自由重量区"
+    },
+    {
+      "jp": "マシントレーニング",
+      "zh": "力量器械区"
+    },
+    {
+      "jp": "ストレッチ",
+      "zh": "拉伸与瑜伽区"
+    }
+  ],
+  "items": [
+    {
+      "id": "sports-001",
+      "jp": "受付",
+      "reading": "うけつけ",
+      "zh": "接待处",
+      "kind": "counter",
+      "color": "#5c9d9e",
+      "size": [
+        3.0,
+        1.0,
+        0.8
+      ],
+      "category": "物品与细节",
+      "example": "これは受付です。",
+      "translation": "这是接待处。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sports-002",
+      "jp": "会員証",
+      "reading": "かいいんしょう",
+      "zh": "会员卡",
+      "kind": "card",
+      "category": "物品与细节",
+      "example": "これは会員証です。",
+      "translation": "这是会员卡。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sports-003",
+      "jp": "券売機",
+      "reading": "けんばいき",
+      "zh": "自动售票机",
+      "kind": "ticket-machine",
+      "category": "物品与细节",
+      "example": "これは券売機です。",
+      "translation": "这是自动售票机。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sports-004",
+      "jp": "靴箱",
+      "reading": "くつばこ",
+      "zh": "鞋柜",
+      "kind": "locker",
+      "category": "物品与细节",
+      "example": "これは靴箱です。",
+      "translation": "这是鞋柜。",
+      "note": "",
+      "zone": 7
+    },
+    {
+      "id": "sports-005",
+      "jp": "ロッカー",
+      "reading": "ロッカー",
+      "zh": "储物柜",
+      "kind": "locker",
+      "color": "#82a3bd",
+      "category": "物品与细节",
+      "example": "これはロッカーです。",
+      "translation": "这是储物柜。",
+      "note": "",
+      "zone": 7
+    },
+    {
+      "id": "sports-006",
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "color": "#ddb46c",
+      "category": "物品与细节",
+      "example": "これはベンチです。",
+      "translation": "这是长椅。",
+      "note": "",
+      "zone": 10
+    },
+    {
+      "id": "sports-007",
+      "jp": "更衣室",
+      "reading": "こういしつ",
+      "zh": "更衣室",
+      "kind": "room-sign",
+      "color": "#547b98",
+      "category": "空间与设施",
+      "example": "ここは更衣室です。",
+      "translation": "这里是更衣室。",
+      "note": "",
+      "zone": 7
+    },
+    {
+      "id": "sports-008",
+      "jp": "タオル",
+      "reading": "タオル",
+      "zh": "毛巾",
+      "kind": "towel",
+      "category": "物品与细节",
+      "example": "これはタオルです。",
+      "translation": "这是毛巾。",
+      "note": "",
+      "zone": 10
+    },
+    {
+      "id": "sports-009",
+      "jp": "水筒",
+      "reading": "すいとう",
+      "zh": "水壶",
+      "kind": "bottle",
+      "color": "#658eaf",
+      "category": "物品与细节",
+      "example": "これは水筒です。",
+      "translation": "这是水壶。",
+      "note": "",
+      "zone": 10
+    },
+    {
+      "id": "sports-010",
+      "jp": "ダンベル",
+      "reading": "ダンベル",
+      "zh": "哑铃",
+      "kind": "dumbbell",
+      "category": "物品与细节",
+      "example": "これはダンベルです。",
+      "translation": "这是哑铃。",
+      "note": "",
+      "zone": 11
+    },
+    {
+      "id": "sports-011",
+      "jp": "バーベル",
+      "reading": "バーベル",
+      "zh": "杠铃",
+      "kind": "barbell",
+      "category": "物品与细节",
+      "example": "これはバーベルです。",
+      "translation": "这是杠铃。",
+      "note": "",
+      "zone": 11
+    },
+    {
+      "id": "sports-012",
+      "jp": "トレーニングベンチ",
+      "reading": "トレーニングベンチ",
+      "zh": "训练凳",
+      "kind": "weight-bench",
+      "color": "#597488",
+      "category": "物品与细节",
+      "example": "これはトレーニングベンチです。",
+      "translation": "这是训练凳。",
+      "note": "",
+      "zone": 11
+    },
+    {
+      "id": "sports-013",
+      "jp": "ランニングマシン",
+      "reading": "ランニングマシン",
+      "zh": "跑步机",
+      "kind": "treadmill",
+      "category": "物品与细节",
+      "example": "これはランニングマシンです。",
+      "translation": "这是跑步机。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sports-014",
+      "jp": "エアロバイク",
+      "reading": "エアロバイク",
+      "zh": "健身单车",
+      "kind": "spin-bike",
+      "category": "物品与细节",
+      "example": "これはエアロバイクです。",
+      "translation": "这是健身单车。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sports-015",
+      "jp": "マット",
+      "reading": "マット",
+      "zh": "运动垫",
+      "kind": "mat",
+      "color": "#85b695",
+      "size": [
+        1,
+        0.035,
+        2
+      ],
+      "category": "物品与细节",
+      "example": "これはマットです。",
+      "translation": "这是运动垫。",
+      "note": "",
+      "zone": 13
+    },
+    {
+      "id": "sports-016",
+      "jp": "体重計",
+      "reading": "たいじゅうけい",
+      "zh": "体重秤",
+      "kind": "scale",
+      "category": "物品与细节",
+      "example": "これは体重計です。",
+      "translation": "这是体重秤。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sports-017",
+      "jp": "バスケットボール",
+      "reading": "バスケットボール",
+      "zh": "篮球",
+      "kind": "basketball",
+      "category": "物品与细节",
+      "example": "これはバスケットボールです。",
+      "translation": "这是篮球。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "sports-018",
+      "jp": "バスケットゴール",
+      "reading": "バスケットゴール",
+      "zh": "篮球架",
+      "kind": "basketgoal",
+      "category": "物品与细节",
+      "example": "これはバスケットゴールです。",
+      "translation": "这是篮球架。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "sports-019",
+      "jp": "ボールかご",
+      "reading": "ボールかご",
+      "zh": "球筐",
+      "kind": "basket",
+      "color": "#cbad63",
+      "category": "物品与细节",
+      "example": "これはボールかごです。",
+      "translation": "这是球筐。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sports-020",
+      "jp": "バドミントンのラケット",
+      "reading": "バドミントンのラケット",
+      "zh": "羽毛球拍",
+      "kind": "racket",
+      "category": "物品与细节",
+      "example": "これはバドミントンのラケットです。",
+      "translation": "这是羽毛球拍。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "sports-021",
+      "jp": "シャトル",
+      "reading": "シャトル",
+      "zh": "羽毛球",
+      "kind": "shuttle",
+      "category": "物品与细节",
+      "example": "これはシャトルです。",
+      "translation": "这是羽毛球。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "sports-022",
+      "jp": "ネット",
+      "reading": "ネット",
+      "zh": "球网",
+      "kind": "net",
+      "color": "#8eaaa5",
+      "size": [
+        3.0,
+        1.4,
+        0.07
+      ],
+      "category": "物品与细节",
+      "example": "これはネットです。",
+      "translation": "这是球网。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "sports-023",
+      "jp": "卓球台",
+      "reading": "たっきゅうだい",
+      "zh": "乒乓球台",
+      "kind": "pingpong",
+      "category": "物品与细节",
+      "example": "これは卓球台です。",
+      "translation": "这是乒乓球台。",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "id": "sports-024",
+      "jp": "卓球のラケット",
+      "reading": "たっきゅうのラケット",
+      "zh": "乒乓球拍",
+      "kind": "paddle",
+      "category": "物品与细节",
+      "example": "これは卓球のラケットです。",
+      "translation": "这是乒乓球拍。",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "id": "sports-025",
+      "jp": "卓球のボール",
+      "reading": "たっきゅうのボール",
+      "zh": "乒乓球",
+      "kind": "ball",
+      "color": "#fff4d0",
+      "size": [
+        0.035,
+        0.035,
+        0.035
+      ],
+      "category": "物品与细节",
+      "example": "これは卓球のボールです。",
+      "translation": "这是乒乓球。",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "id": "sports-026",
+      "jp": "プール",
+      "reading": "プール",
+      "zh": "游泳池",
+      "kind": "pool",
+      "color": "#4dabc2",
+      "size": [
+        3.4,
+        0.3,
+        7.0
+      ],
+      "category": "空间与设施",
+      "example": "ここはプールです。",
+      "translation": "这里是游泳池。",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "sports-027",
+      "jp": "水着",
+      "reading": "みずぎ",
+      "zh": "泳衣",
+      "kind": "swimsuit",
+      "color": "#d87872",
+      "category": "物品与细节",
+      "example": "これは水着です。",
+      "translation": "这是泳衣。",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "sports-028",
+      "jp": "水泳帽",
+      "reading": "すいえいぼう",
+      "zh": "泳帽",
+      "kind": "cap",
+      "color": "#e2ad54",
+      "category": "物品与细节",
+      "example": "これは水泳帽です。",
+      "translation": "这是泳帽。",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "sports-029",
+      "jp": "ゴーグル",
+      "reading": "ゴーグル",
+      "zh": "泳镜",
+      "kind": "goggles",
+      "category": "物品与细节",
+      "example": "これはゴーグルです。",
+      "translation": "这是泳镜。",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "sports-030",
+      "jp": "ビート板",
+      "reading": "ビートばん",
+      "zh": "浮板",
+      "kind": "floatboard",
+      "color": "#edc759",
+      "category": "物品与细节",
+      "example": "これはビート板です。",
+      "translation": "这是浮板。",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "sports-031",
+      "jp": "浮き輪",
+      "reading": "うきわ",
+      "zh": "游泳圈",
+      "kind": "lifering",
+      "color": "#e99a59",
+      "category": "物品与细节",
+      "example": "これは浮き輪です。",
+      "translation": "这是游泳圈。",
+      "note": "",
+      "zone": 6
+    },
+    {
+      "id": "sports-032",
+      "jp": "はしご",
+      "reading": "はしご",
+      "zh": "梯子",
+      "kind": "ladder",
+      "category": "物品与细节",
+      "example": "これははしごです。",
+      "translation": "这是梯子。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sports-033",
+      "jp": "シャワー",
+      "reading": "シャワー",
+      "zh": "淋浴",
+      "kind": "shower",
+      "category": "物品与细节",
+      "example": "これはシャワーです。",
+      "translation": "这是淋浴。",
+      "note": "",
+      "zone": 7
+    },
+    {
+      "id": "sports-034",
+      "jp": "笛",
+      "reading": "ふえ",
+      "zh": "哨子",
+      "kind": "whistle",
+      "category": "物品与细节",
+      "example": "これは笛です。",
+      "translation": "这是哨子。",
+      "note": "",
+      "zone": 9
+    },
+    {
+      "id": "sports-035",
+      "jp": "ストップウォッチ",
+      "reading": "ストップウォッチ",
+      "zh": "秒表",
+      "kind": "stopwatch",
+      "category": "物品与细节",
+      "example": "これはストップウォッチです。",
+      "translation": "这是秒表。",
+      "note": "",
+      "zone": 9
+    },
+    {
+      "id": "sports-036",
+      "jp": "得点板",
+      "reading": "とくてんばん",
+      "zh": "计分牌",
+      "kind": "scoreboard",
+      "category": "物品与细节",
+      "example": "これは得点板です。",
+      "translation": "这是计分牌。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "sports-037",
+      "jp": "時計",
+      "reading": "とけい",
+      "zh": "时钟",
+      "kind": "clock",
+      "category": "物品与细节",
+      "example": "これは時計です。",
+      "translation": "这是时钟。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sports-038",
+      "jp": "運動靴",
+      "reading": "うんどうぐつ",
+      "zh": "运动鞋",
+      "kind": "shoes",
+      "category": "物品与细节",
+      "example": "これは運動靴です。",
+      "translation": "这是运动鞋。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sports-039",
+      "jp": "救急箱",
+      "reading": "きゅうきゅうばこ",
+      "zh": "急救箱",
+      "kind": "firstaid",
+      "category": "物品与细节",
+      "example": "これは救急箱です。",
+      "translation": "这是急救箱。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sports-041",
+      "jp": "壁",
+      "reading": "かべ",
+      "zh": "墙壁",
+      "kind": "wall-shell",
+      "category": "空间与设施",
+      "example": "これは壁です。",
+      "translation": "这是墙壁。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sports-042",
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空间与设施",
+      "example": "これは窓です。",
+      "translation": "这是窗户。",
+      "note": "",
+      "zone": 10
+    },
+    {
+      "id": "sports-043",
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "置物架",
+      "kind": "shelf-support",
+      "category": "空间与设施",
+      "example": "これは棚です。",
+      "translation": "这是置物架。",
+      "note": "",
+      "zone": 10
+    },
+    {
+      "id": "sports-044",
+      "jp": "電気",
+      "reading": "でんき",
+      "zh": "灯；照明",
+      "kind": "lighting-shell",
+      "category": "空间与设施",
+      "example": "電気をつけます。",
+      "translation": "开灯。",
+      "note": "这里指照明；「電気」也有电、电力的意思。",
+      "zone": 0
+    },
+    {
+      "jp": "バレーボール",
+      "reading": "バレーボール",
+      "zh": "排球",
+      "kind": "ball",
+      "category": "運動",
+      "id": "sports-045",
+      "example": "バレーボールを見てみましょう。",
+      "translation": "看看排球吧。",
+      "zone": 3
+    },
+    {
+      "jp": "サッカーボール",
+      "reading": "サッカーボール",
+      "zh": "足球",
+      "kind": "soccerball",
+      "category": "運動",
+      "id": "sports-046",
+      "example": "サッカーボールを見てみましょう。",
+      "translation": "看看足球吧。",
+      "zone": 8
+    },
+    {
+      "jp": "ゴール",
+      "reading": "ゴール",
+      "zh": "球门",
+      "kind": "net",
+      "category": "運動",
+      "id": "sports-047",
+      "example": "ゴールを見てみましょう。",
+      "translation": "看看球门吧。",
+      "zone": 8
+    },
+    {
+      "jp": "芝生",
+      "reading": "しばふ",
+      "zh": "草坪",
+      "kind": "garden",
+      "category": "運動",
+      "id": "sports-048",
+      "example": "芝生を見てみましょう。",
+      "translation": "看看草坪吧。",
+      "zone": 8
+    },
+    {
+      "jp": "観客席",
+      "reading": "かんきゃくせき",
+      "zh": "观众席",
+      "kind": "bench",
+      "category": "運動",
+      "id": "sports-049",
+      "example": "観客席を見てみましょう。",
+      "translation": "看看观众席吧。",
+      "zone": 10
+    },
+    {
+      "jp": "審判台",
+      "reading": "しんぱんだい",
+      "zh": "裁判台",
+      "kind": "chair",
+      "category": "運動",
+      "id": "sports-050",
+      "example": "審判台を見てみましょう。",
+      "translation": "看看裁判台吧。",
+      "zone": 3
+    },
+    {
+      "jp": "スポーツドリンク",
+      "reading": "スポーツドリンク",
+      "zh": "运动饮料",
+      "kind": "bottle",
+      "category": "運動",
+      "id": "sports-051",
+      "example": "スポーツドリンクを見てみましょう。",
+      "translation": "看看运动饮料吧。",
+      "zone": 10
+    },
+    {
+      "jp": "ランニングシューズ",
+      "reading": "ランニングシューズ",
+      "zh": "跑鞋",
+      "kind": "shoes",
+      "category": "運動",
+      "id": "sports-052",
+      "example": "ランニングシューズを見てみましょう。",
+      "translation": "看看跑鞋吧。",
+      "zone": 9
+    },
+    {
+      "jp": "ヨガマット",
+      "reading": "ヨガマット",
+      "zh": "瑜伽垫",
+      "kind": "mat",
+      "category": "運動",
+      "id": "sports-053",
+      "example": "ヨガマットを見てみましょう。",
+      "translation": "看看瑜伽垫吧。",
+      "zone": 13
+    },
+    {
+      "jp": "ストレッチポール",
+      "reading": "ストレッチポール",
+      "zh": "拉伸滚筒",
+      "kind": "log",
+      "category": "運動",
+      "id": "sports-054",
+      "example": "ストレッチポールを見てみましょう。",
+      "translation": "看看拉伸滚筒吧。",
+      "zone": 13
+    },
+    {
+      "jp": "ラケット",
+      "reading": "ラケット",
+      "zh": "球拍",
+      "kind": "racket",
+      "category": "場面のことば",
+      "area": 4,
+      "id": "sports-055",
+      "example": "ラケットを見てみましょう。",
+      "translation": "看看球拍吧。",
+      "zone": 4
+    },
+    {
+      "jp": "バドミントンコート",
+      "reading": "バドミントンコート",
+      "zh": "羽毛球场",
+      "kind": "court",
+      "category": "場面のことば",
+      "area": 4,
+      "id": "sports-056",
+      "example": "バドミントンコートを見てみましょう。",
+      "translation": "看看羽毛球场吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ピンポン球",
+      "reading": "ピンポンだま",
+      "zh": "乒乓球",
+      "kind": "ball",
+      "category": "場面のことば",
+      "area": 5,
+      "id": "sports-057",
+      "example": "ピンポン球を見てみましょう。",
+      "translation": "看看乒乓球吧。",
+      "zone": 5
+    },
+    {
+      "jp": "トラック",
+      "reading": "トラック",
+      "zh": "跑道",
+      "kind": "court",
+      "category": "場面のことば",
+      "area": 9,
+      "id": "sports-058",
+      "example": "トラックを見てみましょう。",
+      "translation": "看看跑道吧。",
+      "zone": 9
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "sports-059",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "sports-062",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 10
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "sports-063",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 10
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "sports-064",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 10
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "sports-065",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 10
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "sports-066",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "id": "sports-detail-0039",
+      "jp": "パワーラック",
+      "reading": "パワーラック",
+      "zh": "深蹲训练架",
+      "kind": "power-rack",
+      "zone": 11,
+      "category": "场所细节",
+      "example": "これはパワーラックです。",
+      "translation": "这是深蹲训练架。"
+    },
+    {
+      "id": "sports-detail-0040",
+      "jp": "ダンベルラック",
+      "reading": "ダンベルラック",
+      "zh": "哑铃架",
+      "kind": "dumbbell-rack",
+      "zone": 11,
+      "category": "场所细节",
+      "example": "これはダンベルラックです。",
+      "translation": "这是哑铃架。"
+    },
+    {
+      "id": "sports-detail-0041",
+      "jp": "ウェイトプレート",
+      "reading": "ウェイトプレート",
+      "zh": "杠铃片",
+      "kind": "weight-plate",
+      "zone": 11,
+      "category": "场所细节",
+      "example": "これはウェイトプレートです。",
+      "translation": "这是杠铃片。"
+    },
+    {
+      "id": "sports-detail-0042",
+      "jp": "プレートラック",
+      "reading": "プレートラック",
+      "zh": "杠铃片架",
+      "kind": "plate-rack",
+      "zone": 11,
+      "category": "场所细节",
+      "example": "これはプレートラックです。",
+      "translation": "这是杠铃片架。"
+    },
+    {
+      "id": "sports-detail-0043",
+      "jp": "ベンチプレス",
+      "reading": "ベンチプレス",
+      "zh": "卧推架",
+      "kind": "bench-press",
+      "zone": 11,
+      "category": "场所细节",
+      "example": "これはベンチプレスです。",
+      "translation": "这是卧推架。"
+    },
+    {
+      "id": "sports-detail-0044",
+      "jp": "ケトルベル",
+      "reading": "ケトルベル",
+      "zh": "壶铃",
+      "kind": "kettlebell",
+      "zone": 11,
+      "category": "场所细节",
+      "example": "これはケトルベルです。",
+      "translation": "这是壶铃。"
+    },
+    {
+      "id": "sports-detail-0045",
+      "jp": "カラー",
+      "reading": "カラー",
+      "zh": "杠铃锁扣",
+      "kind": "weight-collar",
+      "zone": 11,
+      "category": "场所细节",
+      "example": "これはカラーです。",
+      "translation": "这是杠铃锁扣。"
+    },
+    {
+      "id": "sports-detail-0046",
+      "jp": "トレーニングベルト",
+      "reading": "トレーニングベルト",
+      "zh": "健身腰带",
+      "kind": "belt",
+      "zone": 11,
+      "category": "场所细节",
+      "example": "これはトレーニングベルトです。",
+      "translation": "这是健身腰带。"
+    },
+    {
+      "id": "sports-detail-0047",
+      "jp": "ラットプルダウン",
+      "reading": "ラットプルダウン",
+      "zh": "高位下拉器",
+      "kind": "lat-pulldown",
+      "zone": 12,
+      "category": "场所细节",
+      "example": "これはラットプルダウンです。",
+      "translation": "这是高位下拉器。"
+    },
+    {
+      "id": "sports-detail-0048",
+      "jp": "ケーブルマシン",
+      "reading": "ケーブルマシン",
+      "zh": "拉索训练器",
+      "kind": "cable-machine",
+      "zone": 12,
+      "category": "场所细节",
+      "example": "これはケーブルマシンです。",
+      "translation": "这是拉索训练器。"
+    },
+    {
+      "id": "sports-detail-0049",
+      "jp": "レッグプレス",
+      "reading": "レッグプレス",
+      "zh": "腿举机",
+      "kind": "leg-press",
+      "zone": 12,
+      "category": "场所细节",
+      "example": "これはレッグプレスです。",
+      "translation": "这是腿举机。"
+    },
+    {
+      "id": "sports-detail-0050",
+      "jp": "チェストプレス",
+      "reading": "チェストプレス",
+      "zh": "推胸机",
+      "kind": "chest-press",
+      "zone": 12,
+      "category": "场所细节",
+      "example": "これはチェストプレスです。",
+      "translation": "这是推胸机。"
+    },
+    {
+      "id": "sports-detail-0051",
+      "jp": "ウェイトスタック",
+      "reading": "ウェイトスタック",
+      "zh": "配重片组",
+      "kind": "weight-stack",
+      "zone": 12,
+      "category": "场所细节",
+      "example": "これはウェイトスタックです。",
+      "translation": "这是配重片组。"
+    },
+    {
+      "id": "sports-detail-0052",
+      "jp": "グリップ",
+      "reading": "グリップ",
+      "zh": "握把",
+      "kind": "grip",
+      "zone": 12,
+      "category": "场所细节",
+      "example": "これはグリップです。",
+      "translation": "这是握把。"
+    },
+    {
+      "id": "sports-detail-0053",
+      "jp": "調整ピン",
+      "reading": "ちょうせいピン",
+      "zh": "调节插销",
+      "kind": "pin",
+      "zone": 12,
+      "category": "场所细节",
+      "example": "これは調整ピンです。",
+      "translation": "这是调节插销。"
+    },
+    {
+      "id": "sports-detail-0054",
+      "jp": "クロストレーナー",
+      "reading": "クロストレーナー",
+      "zh": "椭圆机",
+      "kind": "elliptical",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これはクロストレーナーです。",
+      "translation": "这是椭圆机。"
+    },
+    {
+      "id": "sports-detail-0055",
+      "jp": "ローイングマシン",
+      "reading": "ローイングマシン",
+      "zh": "划船机",
+      "kind": "rower",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これはローイングマシンです。",
+      "translation": "这是划船机。"
+    },
+    {
+      "id": "sports-detail-0056",
+      "jp": "安全クリップ",
+      "reading": "あんぜんクリップ",
+      "zh": "跑步机安全夹",
+      "kind": "clip",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは安全クリップです。",
+      "translation": "这是跑步机安全夹。"
+    },
+    {
+      "id": "sports-detail-0057",
+      "jp": "操作パネル",
+      "reading": "そうさパネル",
+      "zh": "操作面板",
+      "kind": "tablet",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは操作パネルです。",
+      "translation": "这是操作面板。"
+    },
+    {
+      "id": "sports-detail-0058",
+      "jp": "給水機",
+      "reading": "きゅうすいき",
+      "zh": "饮水机",
+      "kind": "water-dispenser",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは給水機です。",
+      "translation": "这是饮水机。"
+    },
+    {
+      "id": "sports-detail-0059",
+      "jp": "除菌シート",
+      "reading": "じょきんシート",
+      "zh": "消毒湿巾",
+      "kind": "tissue",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは除菌シートです。",
+      "translation": "这是消毒湿巾。"
+    },
+    {
+      "id": "sports-detail-0060",
+      "jp": "バランスボール",
+      "reading": "バランスボール",
+      "zh": "瑜伽球",
+      "kind": "balance-ball",
+      "zone": 13,
+      "category": "场所细节",
+      "example": "これはバランスボールです。",
+      "translation": "这是瑜伽球。"
+    },
+    {
+      "id": "sports-detail-0061",
+      "jp": "フォームローラー",
+      "reading": "フォームローラー",
+      "zh": "泡沫轴",
+      "kind": "foam-roller",
+      "zone": 13,
+      "category": "场所细节",
+      "example": "これはフォームローラーです。",
+      "translation": "这是泡沫轴。"
+    },
+    {
+      "id": "sports-detail-0062",
+      "jp": "ヨガブロック",
+      "reading": "ヨガブロック",
+      "zh": "瑜伽砖",
+      "kind": "yoga-block",
+      "zone": 13,
+      "category": "场所细节",
+      "example": "これはヨガブロックです。",
+      "translation": "这是瑜伽砖。"
+    },
+    {
+      "id": "sports-detail-0063",
+      "jp": "トレーニングチューブ",
+      "reading": "トレーニングチューブ",
+      "zh": "弹力带",
+      "kind": "resistance-band",
+      "zone": 13,
+      "category": "场所细节",
+      "example": "これはトレーニングチューブです。",
+      "translation": "这是弹力带。"
+    },
+    {
+      "id": "sports-detail-0064",
+      "jp": "ストレッチマット",
+      "reading": "ストレッチマット",
+      "zh": "拉伸垫",
+      "kind": "mat",
+      "zone": 13,
+      "category": "场所细节",
+      "example": "これはストレッチマットです。",
+      "translation": "这是拉伸垫。"
+    },
+    {
+      "id": "sports-detail-0065",
+      "jp": "全身鏡",
+      "reading": "ぜんしんかがみ",
+      "zh": "全身镜",
+      "kind": "mirror",
+      "zone": 13,
+      "category": "场所细节",
+      "example": "これは全身鏡です。",
+      "translation": "这是全身镜。"
+    },
+    {
+      "id": "sports-detail-0066",
+      "jp": "ロッカーキー",
+      "reading": "ロッカーキー",
+      "zh": "储物柜钥匙",
+      "kind": "key",
+      "zone": 7,
+      "category": "场所细节",
+      "example": "これはロッカーキーです。",
+      "translation": "这是储物柜钥匙。"
+    },
+    {
+      "id": "sports-detail-0067",
+      "jp": "脱衣かご",
+      "reading": "だついかご",
+      "zh": "衣物篮",
+      "kind": "basket",
+      "zone": 7,
+      "category": "场所细节",
+      "example": "これは脱衣かごです。",
+      "translation": "这是衣物篮。"
+    },
+    {
+      "id": "sports-detail-0068",
+      "jp": "シャワーブース",
+      "reading": "シャワーブース",
+      "zh": "淋浴隔间",
+      "kind": "shower-booth",
+      "zone": 7,
+      "category": "场所细节",
+      "example": "これはシャワーブースです。",
+      "translation": "这是淋浴隔间。"
+    },
+    {
+      "id": "sports-detail-0069",
+      "jp": "体組成計",
+      "reading": "たいそせいけい",
+      "zh": "体脂秤",
+      "kind": "scale",
+      "zone": 7,
+      "category": "场所细节",
+      "example": "これは体組成計です。",
+      "translation": "这是体脂秤。"
+    },
+    {
+      "id": "sports-specific-01",
+      "jp": "AED",
+      "reading": "エーイーディー",
+      "zh": "自动体外除颤器",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "AEDはここにあります。",
+      "detail": {
+        "type": "aed",
+        "color": "#cf9788"
+      },
+      "translation": "自动体外除颤器在这里。"
+    },
+    {
+      "id": "sports-specific-02",
+      "jp": "ビブス",
+      "reading": "ビブス",
+      "zh": "分队背心",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "ビブスはここにあります。",
+      "detail": {
+        "type": "bib",
+        "color": "#debc74"
+      },
+      "translation": "分队背心在这里。"
+    },
+    {
+      "id": "sports-specific-03",
+      "jp": "作戦ボード",
+      "reading": "さくせんボード",
+      "zh": "战术板",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "作戦ボードはここにあります。",
+      "detail": {
+        "type": "tablet",
+        "color": "#bad1b8"
+      },
+      "translation": "战术板在这里。"
+    },
+    {
+      "id": "sports-specific-04",
+      "jp": "消毒スプレー",
+      "reading": "しょうどくスプレー",
+      "zh": "消毒喷雾",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "消毒スプレーはここにあります。",
+      "detail": {
+        "type": "spray",
+        "color": "#a1c3b6"
+      },
+      "translation": "消毒喷雾在这里。"
+    },
+    {
+      "id": "sports-specific-05",
+      "jp": "タイマー",
+      "reading": "タイマー",
+      "zh": "计时器",
+      "kind": "specific-object",
+      "zone": 5,
+      "category": "場所ならではのもの",
+      "example": "タイマーはここにあります。",
+      "detail": {
+        "type": "tablet",
+        "color": "#c9b99e"
+      },
+      "translation": "计时器在这里。"
+    },
+    {
+      "id": "sports-specific-06",
+      "jp": "プロテインシェイカー",
+      "reading": "プロテインシェイカー",
+      "zh": "蛋白粉摇摇杯",
+      "kind": "specific-object",
+      "zone": 10,
+      "category": "場所ならではのもの",
+      "example": "プロテインシェイカーはここにあります。",
+      "detail": {
+        "type": "shaker",
+        "color": "#9bb8c3"
+      },
+      "translation": "蛋白粉摇摇杯在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 1,
+  "district": 0,
+  "sceneReference": "https://www.konami.com/sportsclub/fitness/machine/index.html",
+  "venueRole": {
+    "id": "sports-venue-worker",
+    "jp": "トレーナー",
+    "reading": "トレーナー",
+    "zone": 11,
+    "activity": "ダンベルを持ち上げています。",
+    "readingLine": "ダンベルを もちあげています。",
+    "verb": "持ち上げる → 持ち上げている",
+    "grammar": "ダンベル【を】持ち上げる。",
+    "reply": "ここでは器具の名前と使う動詞を見てみましょう。",
+    "tools": [
+      "ダンベル",
+      "バーベル",
+      "トレーニングベンチ"
+    ]
+  }
+}

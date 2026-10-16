@@ -1,0 +1,772 @@
+{
+  "id": "station",
+  "title": "车站与电车",
+  "jp": "駅と電車",
+  "reading": "えきとでんしゃ",
+  "layout": "station",
+  "zones": [
+    {
+      "jp": "駅前",
+      "zh": "站前"
+    },
+    {
+      "jp": "切符売り場",
+      "zh": "售票区"
+    },
+    {
+      "jp": "改札",
+      "zh": "检票口"
+    },
+    {
+      "jp": "ホーム",
+      "zh": "站台"
+    },
+    {
+      "jp": "車内",
+      "zh": "电车内"
+    }
+  ],
+  "items": [
+    {
+      "id": "station-001",
+      "jp": "駅",
+      "reading": "えき",
+      "zh": "车站",
+      "kind": "station-sign",
+      "color": "#4e998e",
+      "category": "物品与细节",
+      "example": "ここは駅です。",
+      "translation": "这里是车站。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-002",
+      "jp": "券売機",
+      "reading": "けんばいき",
+      "zh": "自动售票机",
+      "kind": "ticket-machine",
+      "category": "物品与细节",
+      "example": "これは券売機です。",
+      "translation": "这是自动售票机。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "station-003",
+      "jp": "切符",
+      "reading": "きっぷ",
+      "zh": "车票",
+      "kind": "card",
+      "category": "物品与细节",
+      "example": "これは切符です。",
+      "translation": "这是车票。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "station-004",
+      "jp": "ICカード",
+      "reading": "アイシーカード",
+      "zh": "交通IC卡",
+      "kind": "card",
+      "color": "#a7c5a3",
+      "category": "物品与细节",
+      "example": "これはICカードです。",
+      "translation": "这是交通IC卡。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-005",
+      "jp": "改札口",
+      "reading": "かいさつぐち",
+      "zh": "检票口",
+      "kind": "ticketgate",
+      "category": "物品与细节",
+      "example": "これは改札口です。",
+      "translation": "这是检票口。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "station-006",
+      "jp": "定期券",
+      "reading": "ていきけん",
+      "zh": "月票；定期通票",
+      "kind": "card",
+      "color": "#c9b684",
+      "category": "物品与细节",
+      "example": "これは定期券です。",
+      "translation": "这是月票；定期通票。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "station-007",
+      "jp": "窓口",
+      "reading": "まどぐち",
+      "zh": "服务窗口",
+      "kind": "counter",
+      "color": "#6d9caa",
+      "size": [
+        2.0,
+        1.0,
+        0.8
+      ],
+      "category": "物品与细节",
+      "example": "これは窓口です。",
+      "translation": "这是服务窗口。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "station-008",
+      "jp": "路線図",
+      "reading": "ろせんず",
+      "zh": "线路图",
+      "kind": "route-map",
+      "category": "物品与细节",
+      "example": "これは路線図です。",
+      "translation": "这是线路图。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-009",
+      "jp": "時刻表",
+      "reading": "じこくひょう",
+      "zh": "时刻表",
+      "kind": "schedule",
+      "category": "物品与细节",
+      "example": "これは時刻表です。",
+      "translation": "这是时刻表。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-010",
+      "jp": "電光掲示板",
+      "reading": "でんこうけいじばん",
+      "zh": "电子显示屏",
+      "kind": "departure-board",
+      "category": "物品与细节",
+      "example": "これは電光掲示板です。",
+      "translation": "这是电子显示屏。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "station-011",
+      "jp": "ホーム",
+      "reading": "ホーム",
+      "zh": "站台",
+      "kind": "platform",
+      "color": "#d1c6a6",
+      "size": [
+        2.5,
+        0.15,
+        9.0
+      ],
+      "category": "物品与细节",
+      "example": "これはホームです。",
+      "translation": "这是站台。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "station-012",
+      "jp": "黄色い線",
+      "reading": "きいろいせん",
+      "zh": "黄色警戒线",
+      "kind": "line",
+      "color": "#e5c24b",
+      "size": [
+        0.15,
+        0.02,
+        9.0
+      ],
+      "category": "物品与细节",
+      "example": "これは黄色い線です。",
+      "translation": "这是黄色警戒线。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "station-013",
+      "jp": "点字ブロック",
+      "reading": "てんじブロック",
+      "zh": "盲道砖",
+      "kind": "tactile",
+      "color": "#e2c64e",
+      "size": [
+        0.7,
+        0.05,
+        8.0
+      ],
+      "category": "物品与细节",
+      "example": "これは点字ブロックです。",
+      "translation": "这是盲道砖。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-014",
+      "jp": "線路",
+      "reading": "せんろ",
+      "zh": "铁轨",
+      "kind": "tracks",
+      "color": "#85948e",
+      "size": [
+        2.0,
+        0.1,
+        10.0
+      ],
+      "category": "空间与设施",
+      "example": "これは線路です。",
+      "translation": "这是铁轨。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "station-015",
+      "jp": "電車",
+      "reading": "でんしゃ",
+      "zh": "电车",
+      "kind": "train",
+      "color": "#6daca9",
+      "size": [
+        2.4,
+        2.6,
+        9.0
+      ],
+      "category": "空间与设施",
+      "example": "これは電車です。",
+      "translation": "这是电车。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "station-016",
+      "jp": "ドア",
+      "reading": "ドア",
+      "zh": "车门",
+      "kind": "train-door",
+      "color": "#afcaca",
+      "category": "物品与细节",
+      "example": "これはドアです。",
+      "translation": "这是车门。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "station-017",
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "车窗",
+      "kind": "train-window",
+      "color": "#c4e1dd",
+      "category": "物品与细节",
+      "example": "これは窓です。",
+      "translation": "这是车窗。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "station-018",
+      "jp": "座席",
+      "reading": "ざせき",
+      "zh": "座席",
+      "kind": "train-seat",
+      "color": "#7699b4",
+      "category": "物品与细节",
+      "example": "これは座席です。",
+      "translation": "这是座席。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "station-019",
+      "jp": "優先席",
+      "reading": "ゆうせんせき",
+      "zh": "优先座席",
+      "kind": "train-seat",
+      "color": "#c98770",
+      "category": "物品与细节",
+      "example": "これは優先席です。",
+      "translation": "这是优先座席。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "station-020",
+      "jp": "つり革",
+      "reading": "つりかわ",
+      "zh": "吊环",
+      "kind": "strap",
+      "category": "物品与细节",
+      "example": "これはつり革です。",
+      "translation": "这是吊环。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "station-021",
+      "jp": "手すり",
+      "reading": "てすり",
+      "zh": "扶手",
+      "kind": "pole",
+      "category": "物品与细节",
+      "example": "これは手すりです。",
+      "translation": "这是扶手。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "station-022",
+      "jp": "荷物棚",
+      "reading": "にもつだな",
+      "zh": "行李架",
+      "kind": "luggage-rack",
+      "category": "物品与细节",
+      "example": "これは荷物棚です。",
+      "translation": "这是行李架。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "station-023",
+      "jp": "網棚",
+      "reading": "あみだな",
+      "zh": "网状行李架",
+      "kind": "luggage-rack",
+      "category": "物品与细节",
+      "example": "これは網棚です。",
+      "translation": "这是网状行李架。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "station-024",
+      "jp": "非常ボタン",
+      "reading": "ひじょうボタン",
+      "zh": "紧急按钮",
+      "kind": "button",
+      "color": "#bd6954",
+      "category": "物品与细节",
+      "example": "これは非常ボタンです。",
+      "translation": "这是紧急按钮。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "station-025",
+      "jp": "車内広告",
+      "reading": "しゃないこうこく",
+      "zh": "车内广告",
+      "kind": "poster",
+      "color": "#c3b883",
+      "category": "物品与细节",
+      "example": "これは車内広告です。",
+      "translation": "这是车内广告。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "station-026",
+      "jp": "スーツケース",
+      "reading": "スーツケース",
+      "zh": "行李箱",
+      "kind": "suitcase",
+      "color": "#b6865c",
+      "category": "物品与细节",
+      "example": "これはスーツケースです。",
+      "translation": "这是行李箱。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-027",
+      "jp": "リュック",
+      "reading": "リュック",
+      "zh": "背包",
+      "kind": "backpack",
+      "color": "#bc915a",
+      "category": "物品与细节",
+      "example": "これはリュックです。",
+      "translation": "这是背包。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-028",
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "color": "#95a7a0",
+      "category": "物品与细节",
+      "example": "これはベンチです。",
+      "translation": "这是长椅。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "station-029",
+      "jp": "自動販売機",
+      "reading": "じどうはんばいき",
+      "zh": "自动售货机",
+      "kind": "vending",
+      "category": "物品与细节",
+      "example": "これは自動販売機です。",
+      "translation": "这是自动售货机。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-030",
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "物品与细节",
+      "example": "これはごみ箱です。",
+      "translation": "这是垃圾桶。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-031",
+      "jp": "階段",
+      "reading": "かいだん",
+      "zh": "楼梯",
+      "kind": "steps",
+      "color": "#b4c4bf",
+      "category": "物品与细节",
+      "example": "これは階段です。",
+      "translation": "这是楼梯。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-032",
+      "jp": "エレベーター",
+      "reading": "エレベーター",
+      "zh": "电梯",
+      "kind": "elevator",
+      "color": "#a4b8b6",
+      "category": "物品与细节",
+      "example": "これはエレベーターです。",
+      "translation": "这是电梯。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-033",
+      "jp": "コインロッカー",
+      "reading": "コインロッカー",
+      "zh": "投币储物柜",
+      "kind": "locker",
+      "color": "#8da9a3",
+      "category": "物品与细节",
+      "example": "これはコインロッカーです。",
+      "translation": "这是投币储物柜。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-034",
+      "jp": "案内所",
+      "reading": "あんないじょ",
+      "zh": "问讯处",
+      "kind": "room-sign",
+      "category": "空间与设施",
+      "example": "ここは案内所です。",
+      "translation": "这里是问讯处。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-036",
+      "jp": "乗り換え",
+      "reading": "のりかえ",
+      "zh": "换乘",
+      "kind": "sign",
+      "color": "#668eaf",
+      "category": "空间与设施",
+      "example": "これは乗り換えです。",
+      "translation": "这是换乘。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-037",
+      "jp": "運賃表",
+      "reading": "うんちんひょう",
+      "zh": "票价表",
+      "kind": "schedule",
+      "category": "物品与细节",
+      "example": "これは運賃表です。",
+      "translation": "这是票价表。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "station-038",
+      "jp": "時計",
+      "reading": "とけい",
+      "zh": "时钟",
+      "kind": "clock",
+      "category": "物品与细节",
+      "example": "これは時計です。",
+      "translation": "这是时钟。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-039",
+      "jp": "傘",
+      "reading": "かさ",
+      "zh": "雨伞",
+      "kind": "umbrella",
+      "color": "#7c96ad",
+      "category": "物品与细节",
+      "example": "これは傘です。",
+      "translation": "这是雨伞。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-040",
+      "jp": "落とし物",
+      "reading": "おとしもの",
+      "zh": "失物",
+      "kind": "gift",
+      "category": "物品与细节",
+      "example": "これは落とし物です。",
+      "translation": "这是失物。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-042",
+      "jp": "壁",
+      "reading": "かべ",
+      "zh": "墙壁",
+      "kind": "wall-shell",
+      "category": "空间与设施",
+      "example": "これは壁です。",
+      "translation": "这是墙壁。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-043",
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "置物架",
+      "kind": "shelf-support",
+      "category": "空间与设施",
+      "example": "これは棚です。",
+      "translation": "这是置物架。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "station-044",
+      "jp": "電気",
+      "reading": "でんき",
+      "zh": "灯；照明",
+      "kind": "lighting-shell",
+      "category": "空间与设施",
+      "example": "電気をつけます。",
+      "translation": "开灯。",
+      "note": "这里指照明；「電気」也有电、电力的意思。",
+      "zone": 0
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "station-045",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "station-047",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "station-048",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "station-049",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "station-050",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "id": "station-detail-0189",
+      "jp": "精算機",
+      "reading": "せいさんき",
+      "zh": "补票机",
+      "kind": "ticket-machine",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは精算機です。",
+      "translation": "这是补票机。"
+    },
+    {
+      "id": "station-specific-01",
+      "jp": "指定席券売機",
+      "reading": "していせきけんばいき",
+      "zh": "指定席售票机",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "指定席券売機はここにあります。",
+      "detail": {
+        "type": "terminal",
+        "color": "#a9c5ac",
+        "floor": [
+          -5.4,
+          0.3
+        ]
+      },
+      "translation": "指定席售票机在这里。"
+    },
+    {
+      "id": "station-specific-02",
+      "jp": "ICカードチャージ機",
+      "reading": "アイシーカードチャージき",
+      "zh": "交通卡充值机",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "ICカードチャージ機はここにあります。",
+      "detail": {
+        "type": "terminal",
+        "color": "#b7c4c5",
+        "floor": [
+          5.4,
+          0.3
+        ]
+      },
+      "translation": "交通卡充值机在这里。"
+    },
+    {
+      "id": "station-specific-03",
+      "jp": "手荷物一時預かり票",
+      "reading": "てにもついちじあずかりひょう",
+      "zh": "行李暂存单",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "手荷物一時預かり票はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#c9b591"
+      },
+      "translation": "行李暂存单在这里。"
+    },
+    {
+      "id": "station-specific-04",
+      "jp": "乗車位置案内",
+      "reading": "じょうしゃいちあんない",
+      "zh": "候车位置指示",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "乗車位置案内はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#b4caa1"
+      },
+      "translation": "候车位置指示在这里。"
+    },
+    {
+      "id": "station-specific-05",
+      "jp": "忘れ物問合せ票",
+      "reading": "わすれものといあわせひょう",
+      "zh": "失物查询单",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "忘れ物問合せ票はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#b6c6b7"
+      },
+      "translation": "失物查询单在这里。"
+    },
+    {
+      "id": "station-specific-06",
+      "jp": "駅のスタンプ",
+      "reading": "えきのスタンプ",
+      "zh": "车站纪念印章",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "駅のスタンプはここにあります。",
+      "detail": {
+        "type": "stamp",
+        "color": "#c79887"
+      },
+      "translation": "车站纪念印章在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 27,
+  "district": 4,
+  "sceneReference": "https://www.jreast.co.jp/estation/",
+  "venueRole": {
+    "id": "station-venue-worker",
+    "jp": "駅員",
+    "reading": "えきいん",
+    "zone": 1,
+    "activity": "券売機の使い方を説明しています。",
+    "readingLine": "けんばいきの つかいかたを せつめいしています。",
+    "verb": "説明する → 説明している",
+    "grammar": "お客様【に】使い方【を】説明する。",
+    "reply": "きっぷはこちらの券売機でお求めください。",
+    "tools": [
+      "指定席券売機",
+      "ICカードチャージ機",
+      "路線図"
+    ]
+  }
+}

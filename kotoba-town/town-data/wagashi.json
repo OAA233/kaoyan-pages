@@ -1,0 +1,800 @@
+{
+  "id": "wagashi",
+  "title": "和菓子店与甘味处",
+  "jp": "和菓子屋",
+  "reading": "わがしや",
+  "layout": "restaurant",
+  "zones": [
+    {
+      "jp": "菓子のショーケース",
+      "zh": "菓子のショーケース"
+    },
+    {
+      "jp": "茶席",
+      "zh": "茶席"
+    },
+    {
+      "jp": "包装カウンター",
+      "zh": "包装カウンター"
+    },
+    {
+      "jp": "会計",
+      "zh": "会計"
+    }
+  ],
+  "items": [
+    {
+      "jp": "包装紙",
+      "reading": "ほうそうし",
+      "zh": "包装纸",
+      "kind": "paper",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "wagashi-001",
+      "example": "包装紙を見てみましょう。",
+      "translation": "看看包装纸吧。",
+      "zone": 2
+    },
+    {
+      "jp": "箱",
+      "reading": "はこ",
+      "zh": "盒子",
+      "kind": "packet",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "wagashi-002",
+      "example": "箱を見てみましょう。",
+      "translation": "看看盒子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "紙袋",
+      "reading": "かみぶくろ",
+      "zh": "纸袋",
+      "kind": "shoppingbag",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "wagashi-003",
+      "example": "紙袋を見てみましょう。",
+      "translation": "看看纸袋吧。",
+      "zone": 2
+    },
+    {
+      "jp": "リボン",
+      "reading": "リボン",
+      "zh": "缎带",
+      "kind": "ribbon",
+      "category": "場面のことば",
+      "area": 2,
+      "id": "wagashi-004",
+      "example": "リボンを見てみましょう。",
+      "translation": "看看缎带吧。",
+      "zone": 2
+    },
+    {
+      "jp": "メニュー",
+      "reading": "メニュー",
+      "zh": "菜单",
+      "kind": "menu",
+      "category": "食器・設備",
+      "id": "wagashi-005",
+      "example": "メニューを見てみましょう。",
+      "translation": "看看菜单吧。",
+      "zone": 0
+    },
+    {
+      "jp": "箸",
+      "reading": "はし",
+      "zh": "筷子",
+      "kind": "chopsticks",
+      "category": "食器・設備",
+      "id": "wagashi-006",
+      "example": "箸を見てみましょう。",
+      "translation": "看看筷子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "箸置き",
+      "reading": "はしおき",
+      "zh": "筷架",
+      "kind": "smallblock",
+      "category": "食器・設備",
+      "id": "wagashi-007",
+      "example": "箸置きを見てみましょう。",
+      "translation": "看看筷架吧。",
+      "zone": 1
+    },
+    {
+      "jp": "スプーン",
+      "reading": "スプーン",
+      "zh": "勺子",
+      "kind": "spoon",
+      "category": "食器・設備",
+      "id": "wagashi-008",
+      "example": "スプーンを見てみましょう。",
+      "translation": "看看勺子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "フォーク",
+      "reading": "フォーク",
+      "zh": "叉子",
+      "kind": "fork",
+      "category": "食器・設備",
+      "id": "wagashi-009",
+      "example": "フォークを見てみましょう。",
+      "translation": "看看叉子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ナイフ",
+      "reading": "ナイフ",
+      "zh": "餐刀",
+      "kind": "knife",
+      "category": "食器・設備",
+      "id": "wagashi-010",
+      "example": "ナイフを見てみましょう。",
+      "translation": "看看餐刀吧。",
+      "zone": 2
+    },
+    {
+      "jp": "皿",
+      "reading": "さら",
+      "zh": "盘子",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "wagashi-011",
+      "example": "皿を見てみましょう。",
+      "translation": "看看盘子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "取り皿",
+      "reading": "とりざら",
+      "zh": "分餐小碟",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "wagashi-012",
+      "example": "取り皿を見てみましょう。",
+      "translation": "看看分餐小碟吧。",
+      "zone": 1
+    },
+    {
+      "jp": "茶碗",
+      "reading": "ちゃわん",
+      "zh": "饭碗",
+      "kind": "bowl",
+      "category": "食器・設備",
+      "id": "wagashi-013",
+      "example": "茶碗を見てみましょう。",
+      "translation": "看看饭碗吧。",
+      "zone": 0
+    },
+    {
+      "jp": "湯のみ",
+      "reading": "ゆのみ",
+      "zh": "日式茶杯",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "wagashi-014",
+      "example": "湯のみを見てみましょう。",
+      "translation": "看看日式茶杯吧。",
+      "zone": 1
+    },
+    {
+      "jp": "コップ",
+      "reading": "コップ",
+      "zh": "杯子",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "wagashi-015",
+      "example": "コップを見てみましょう。",
+      "translation": "看看杯子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "おしぼり",
+      "reading": "おしぼり",
+      "zh": "擦手巾",
+      "kind": "towel",
+      "category": "食器・設備",
+      "id": "wagashi-016",
+      "example": "おしぼりを見てみましょう。",
+      "translation": "看看擦手巾吧。",
+      "zone": 1
+    },
+    {
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银机",
+      "kind": "register",
+      "category": "食器・設備",
+      "id": "wagashi-031",
+      "example": "レジを見てみましょう。",
+      "translation": "看看收银机吧。",
+      "zone": 3
+    },
+    {
+      "jp": "レシート",
+      "reading": "レシート",
+      "zh": "购物小票",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "wagashi-032",
+      "example": "レシートを見てみましょう。",
+      "translation": "看看购物小票吧。",
+      "zone": 3
+    },
+    {
+      "jp": "お釣り",
+      "reading": "おつり",
+      "zh": "找零",
+      "kind": "coins",
+      "category": "食器・設備",
+      "id": "wagashi-033",
+      "example": "お釣りを見てみましょう。",
+      "translation": "看看找零吧。",
+      "zone": 3
+    },
+    {
+      "jp": "伝票",
+      "reading": "でんぴょう",
+      "zh": "账单",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "wagashi-034",
+      "example": "伝票を見てみましょう。",
+      "translation": "看看账单吧。",
+      "zone": 3
+    },
+    {
+      "jp": "緑茶",
+      "reading": "りょくちゃ",
+      "zh": "绿茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        0
+      ],
+      "id": "wagashi-035",
+      "example": "緑茶を見てみましょう。",
+      "translation": "看看绿茶吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ウーロン茶",
+      "reading": "ウーロンちゃ",
+      "zh": "乌龙茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        1
+      ],
+      "id": "wagashi-036",
+      "example": "ウーロン茶を見てみましょう。",
+      "translation": "看看乌龙茶吧。",
+      "zone": 1
+    },
+    {
+      "jp": "団子",
+      "reading": "だんご",
+      "zh": "团子",
+      "kind": "skewer",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        8
+      ],
+      "id": "wagashi-037",
+      "example": "団子を見てみましょう。",
+      "translation": "看看团子吧。",
+      "zone": 0,
+      "detail": {
+        "type": "dish",
+        "shape": "skewer",
+        "color": "#c5a177"
+      }
+    },
+    {
+      "jp": "大福",
+      "reading": "だいふく",
+      "zh": "大福点心",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        9
+      ],
+      "id": "wagashi-038",
+      "example": "大福を見てみましょう。",
+      "translation": "看看大福点心吧。",
+      "zone": 0,
+      "detail": {
+        "type": "dish",
+        "shape": "sweets",
+        "color": "#e2d4ba"
+      }
+    },
+    {
+      "jp": "どら焼き",
+      "reading": "どらやき",
+      "zh": "铜锣烧",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        10
+      ],
+      "id": "wagashi-039",
+      "example": "どら焼きを見てみましょう。",
+      "translation": "看看铜锣烧吧。",
+      "zone": 0,
+      "detail": {
+        "type": "dish",
+        "shape": "sweets",
+        "color": "#c0a173"
+      }
+    },
+    {
+      "jp": "たい焼き",
+      "reading": "たいやき",
+      "zh": "鲷鱼烧",
+      "kind": "sweet",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        11
+      ],
+      "id": "wagashi-040",
+      "example": "たい焼きを見てみましょう。",
+      "translation": "看看鲷鱼烧吧。",
+      "zone": 0
+    },
+    {
+      "jp": "アイスクリーム",
+      "reading": "アイスクリーム",
+      "zh": "冰淇淋",
+      "kind": "icecream",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        14
+      ],
+      "id": "wagashi-043",
+      "example": "アイスクリームを見てみましょう。",
+      "translation": "看看冰淇淋吧。",
+      "zone": 0
+    },
+    {
+      "jp": "かき氷",
+      "reading": "かきごおり",
+      "zh": "刨冰",
+      "kind": "ice",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        15
+      ],
+      "id": "wagashi-044",
+      "example": "かき氷を見てみましょう。",
+      "translation": "看看刨冰吧。",
+      "zone": 0
+    },
+    {
+      "jp": "金平糖",
+      "reading": "こんぺいとう",
+      "zh": "金平糖",
+      "kind": "candy",
+      "category": "お菓子",
+      "id": "wagashi-045",
+      "example": "金平糖を見てみましょう。",
+      "translation": "看看金平糖吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ゼリー",
+      "reading": "ゼリー",
+      "zh": "果冻",
+      "kind": "yogurt",
+      "category": "お菓子",
+      "id": "wagashi-046",
+      "example": "ゼリーを見てみましょう。",
+      "translation": "看看果冻吧。",
+      "zone": 0
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "wagashi-047",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "wagashi-050",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "wagashi-052",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 3
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "wagashi-053",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "wagashi-054",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "wagashi-055",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "wagashi-056",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 3
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "wagashi-057",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "wagashi-058",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 3
+    },
+    {
+      "id": "wagashi-detail-0127",
+      "jp": "茶筅",
+      "reading": "ちゃせん",
+      "zh": "抹茶茶筅",
+      "kind": "tea-whisk",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは茶筅です。",
+      "translation": "这是抹茶茶筅。"
+    },
+    {
+      "id": "wagashi-detail-0128",
+      "jp": "抹茶茶碗",
+      "reading": "まっちゃぢゃわん",
+      "zh": "抹茶碗",
+      "kind": "bowl",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは抹茶茶碗です。",
+      "translation": "这是抹茶碗。"
+    },
+    {
+      "id": "wagashi-detail-0129",
+      "jp": "懐紙",
+      "reading": "かいし",
+      "zh": "和式点心用纸",
+      "kind": "paper",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは懐紙です。",
+      "translation": "这是和式点心用纸。"
+    },
+    {
+      "id": "wagashi-detail-0130",
+      "jp": "菓子切り",
+      "reading": "かしきり",
+      "zh": "点心叉",
+      "kind": "rice-paddle",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは菓子切りです。",
+      "translation": "这是点心叉。"
+    },
+    {
+      "id": "wagashi-detail-0131",
+      "jp": "茶筒",
+      "reading": "ちゃづつ",
+      "zh": "茶叶罐",
+      "kind": "tea-caddy",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは茶筒です。",
+      "translation": "这是茶叶罐。"
+    },
+    {
+      "id": "wagashi-shop-001",
+      "jp": "羊羹",
+      "reading": "ようかん",
+      "zh": "羊羹",
+      "kind": "sweet",
+      "zone": 0,
+      "category": "店内のことば",
+      "example": "羊羹を見てみましょう。",
+      "translation": "一起看看羊羹吧。",
+      "menuGroup": "和菓子",
+      "detail": {
+        "type": "dish",
+        "shape": "sweets",
+        "color": "#815951"
+      }
+    },
+    {
+      "id": "wagashi-shop-002",
+      "jp": "最中",
+      "reading": "もなか",
+      "zh": "最中饼",
+      "kind": "sweet",
+      "zone": 0,
+      "category": "店内のことば",
+      "example": "最中を見てみましょう。",
+      "translation": "一起看看最中饼吧。",
+      "menuGroup": "和菓子",
+      "detail": {
+        "type": "dish",
+        "shape": "sweets",
+        "color": "#c0a173"
+      }
+    },
+    {
+      "id": "wagashi-shop-003",
+      "jp": "桜餅",
+      "reading": "さくらもち",
+      "zh": "樱饼",
+      "kind": "sweet",
+      "zone": 0,
+      "category": "店内のことば",
+      "example": "桜餅を見てみましょう。",
+      "translation": "一起看看樱饼吧。",
+      "menuGroup": "和菓子",
+      "detail": {
+        "type": "dish",
+        "shape": "sweets",
+        "color": "#d6a2ae"
+      }
+    },
+    {
+      "id": "wagashi-specific-menu-01",
+      "jp": "水羊羹",
+      "reading": "みずようかん",
+      "zh": "水羊羹",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "水羊羹を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "sweets",
+        "color": "#865c55",
+        "leaf": false
+      },
+      "reference": "https://www.toraya-group.co.jp/products",
+      "translation": "请给我一份水羊羹。"
+    },
+    {
+      "id": "wagashi-specific-menu-02",
+      "jp": "練り切り",
+      "reading": "ねりきり",
+      "zh": "练切",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "練り切りを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "sweets",
+        "color": "#ddadb1",
+        "leaf": false
+      },
+      "reference": "https://www.toraya-group.co.jp/products",
+      "translation": "请给我一份练切。"
+    },
+    {
+      "id": "wagashi-specific-menu-03",
+      "jp": "お汁粉",
+      "reading": "おしるこ",
+      "zh": "红豆年糕汤",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "お汁粉を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "soup",
+        "color": "#8d5b55",
+        "leaf": false
+      },
+      "reference": "https://www.toraya-group.co.jp/products",
+      "translation": "请给我一份红豆年糕汤。"
+    },
+    {
+      "id": "wagashi-specific-menu-04",
+      "jp": "柏餅",
+      "reading": "かしわもち",
+      "zh": "柏叶饼",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "柏餅を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "sweets",
+        "color": "#e2ddc9",
+        "leaf": true
+      },
+      "reference": "https://www.toraya-group.co.jp/products",
+      "translation": "请给我一份柏叶饼。"
+    },
+    {
+      "id": "wagashi-specific-menu-05",
+      "jp": "栗饅頭",
+      "reading": "くりまんじゅう",
+      "zh": "栗子馒头",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "栗饅頭を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "sweets",
+        "color": "#c4a075",
+        "leaf": false
+      },
+      "reference": "https://www.toraya-group.co.jp/products",
+      "translation": "请给我一份栗子馒头。"
+    },
+    {
+      "id": "wagashi-specific-menu-06",
+      "jp": "干菓子",
+      "reading": "ひがし",
+      "zh": "干和果子",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "干菓子を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "sweets",
+        "color": "#dbbdb2",
+        "leaf": false
+      },
+      "reference": "https://www.toraya-group.co.jp/products",
+      "translation": "请给我一份干和果子。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "すべて",
+      "items": [
+        "wagashi-specific-menu-01",
+        "wagashi-specific-menu-02",
+        "wagashi-specific-menu-03",
+        "wagashi-specific-menu-04",
+        "wagashi-specific-menu-05",
+        "wagashi-specific-menu-06",
+        "wagashi-shop-001",
+        "wagashi-shop-002",
+        "wagashi-shop-003",
+        "wagashi-045",
+        "wagashi-046",
+        "wagashi-035",
+        "wagashi-036",
+        "wagashi-037",
+        "wagashi-038",
+        "wagashi-039",
+        "wagashi-040",
+        "wagashi-043",
+        "wagashi-044"
+      ]
+    },
+    {
+      "name": "お店の料理を選ぶ",
+      "items": [
+        "wagashi-specific-menu-01",
+        "wagashi-specific-menu-02",
+        "wagashi-specific-menu-03",
+        "wagashi-specific-menu-04",
+        "wagashi-specific-menu-05",
+        "wagashi-specific-menu-06"
+      ]
+    },
+    {
+      "name": "和菓子",
+      "items": [
+        "wagashi-shop-001",
+        "wagashi-shop-002",
+        "wagashi-shop-003"
+      ]
+    },
+    {
+      "name": "料理・軽食",
+      "items": [
+        "wagashi-045",
+        "wagashi-046"
+      ]
+    },
+    {
+      "name": "飲み物",
+      "items": [
+        "wagashi-035",
+        "wagashi-036"
+      ]
+    },
+    {
+      "name": "甘味",
+      "items": [
+        "wagashi-037",
+        "wagashi-038",
+        "wagashi-039",
+        "wagashi-040",
+        "wagashi-043",
+        "wagashi-044"
+      ]
+    }
+  ],
+  "npc": 9,
+  "district": 1,
+  "sceneReference": "https://www.toraya-group.co.jp/products"
+}

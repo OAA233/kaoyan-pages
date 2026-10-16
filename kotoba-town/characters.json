@@ -1,0 +1,501 @@
+[
+ {
+  "id": "anon",
+  "name": "千早愛音",
+  "work": "mygo",
+  "color": "#e493b7",
+  "colorName": "爱音粉",
+  "image": "./assets/characters/anon.webp"
+ },
+ {
+  "id": "tomori",
+  "name": "高松燈",
+  "work": "mygo",
+  "color": "#8dbbd3",
+  "colorName": "灯浅蓝",
+  "jp": "自分のペースで進もう。",
+  "kana": "じぶんの ペースで すすもう。",
+  "zh": "按自己的节奏前进吧。",
+  "image": "./assets/characters/tomori.webp"
+ },
+ {
+  "id": "rana",
+  "name": "要楽奈",
+  "work": "mygo",
+  "color": "#85b99d",
+  "colorName": "乐奈绿",
+  "jp": "面白い言葉を見つけた。",
+  "kana": "おもしろい ことばを みつけた。",
+  "zh": "发现了一个有趣的词。",
+  "image": "./assets/characters/rana.webp"
+ },
+ {
+  "id": "soyo",
+  "name": "長崎そよ",
+  "work": "mygo",
+  "color": "#e9c080",
+  "colorName": "爽世奶茶",
+  "jp": "もう一度、一緒に聞こう。",
+  "kana": "もう いちど、いっしょに きこう。",
+  "zh": "再一起听一遍吧。",
+  "image": "./assets/characters/soyo.webp"
+ },
+ {
+  "id": "taki",
+  "name": "椎名立希",
+  "work": "mygo",
+  "color": "#b796c9",
+  "colorName": "立希紫",
+  "jp": "毎日少しずつ練習しよう。",
+  "kana": "まいにち すこしずつ れんしゅうしよう。",
+  "zh": "每天一点点地练习吧。",
+  "image": "./assets/characters/taki.webp"
+ },
+ {
+  "id": "sakiko",
+  "name": "豊川祥子",
+  "work": "mujica",
+  "color": "#99a7df",
+  "colorName": "祥子绣球",
+  "jp": "準備ができたら始めましょう。",
+  "kana": "じゅんびが できたら はじめましょう。",
+  "zh": "准备好了就开始吧。",
+  "image": "./assets/characters/sakiko.webp"
+ },
+ {
+  "id": "mutsumi",
+  "name": "若葉睦",
+  "work": "mujica",
+  "color": "#9dbba0",
+  "colorName": "睦若叶绿",
+  "jp": "静かに音を聞いてみよう。",
+  "kana": "しずかに おとを きいてみよう。",
+  "zh": "试着安静地听听声音吧。",
+  "image": "./assets/characters/mutsumi.webp"
+ },
+ {
+  "id": "uika",
+  "name": "三角初華",
+  "work": "mujica",
+  "color": "#e0bd83",
+  "colorName": "初华金",
+  "jp": "今日も会えてうれしい。",
+  "kana": "きょうも あえて うれしい。",
+  "zh": "今天也能见到你，真开心。",
+  "image": "./assets/characters/uika.webp"
+ },
+ {
+  "id": "umiri",
+  "name": "八幡海鈴",
+  "work": "mujica",
+  "color": "#79a6ad",
+  "colorName": "海铃青",
+  "jp": "短い時間でも続けよう。",
+  "kana": "みじかい じかんでも つづけよう。",
+  "zh": "时间虽短，也坚持下去吧。",
+  "image": "./assets/characters/umiri.webp"
+ },
+ {
+  "id": "nyamu",
+  "name": "祐天寺にゃむ",
+  "work": "mujica",
+  "color": "#c291bf",
+  "colorName": "喵梦莓紫",
+  "jp": "新しい表現を覚えよう。",
+  "kana": "あたらしい ひょうげんを おぼえよう。",
+  "zh": "记一个新表达吧。",
+  "image": "./assets/characters/nyamu.webp"
+ },
+ {
+  "id": "hitori",
+  "name": "後藤ひとり",
+  "work": "bocchi",
+  "color": "#efa6c2",
+  "colorName": "波奇粉",
+  "jp": "小さな一歩から始めよう。",
+  "kana": "ちいさな いっぽから はじめよう。",
+  "zh": "从小小的一步开始吧。",
+  "image": "./assets/characters/hitori.webp"
+ },
+ {
+  "id": "nijika",
+  "name": "伊地知虹夏",
+  "work": "bocchi",
+  "color": "#e2bc50",
+  "colorName": "虹夏黄",
+  "jp": "できたことを数えてみよう。",
+  "kana": "できたことを かぞえてみよう。",
+  "zh": "数一数已经做到的事吧。",
+  "image": "./assets/characters/nijika.webp"
+ },
+ {
+  "id": "ryo",
+  "name": "山田リョウ",
+  "work": "bocchi",
+  "color": "#8fabc9",
+  "colorName": "凉蓝",
+  "jp": "この音、よく聞いてみて。",
+  "kana": "この おと、よく きいてみて。",
+  "zh": "仔细听听这个声音。",
+  "image": "./assets/characters/ryo.webp"
+ },
+ {
+  "id": "kita",
+  "name": "喜多郁代",
+  "work": "bocchi",
+  "color": "#dc8c87",
+  "colorName": "喜多红",
+  "jp": "声に出すと覚えやすいよ。",
+  "kana": "こえに だすと おぼえやすいよ。",
+  "zh": "说出声来会更容易记住哦。",
+  "image": "./assets/characters/kita.webp"
+ },
+ {
+  "id": "nina",
+  "name": "井芹仁菜",
+  "work": "gbc",
+  "color": "#da9399",
+  "colorName": "仁菜绯红",
+  "jp": "分からなくても、もう一回！",
+  "kana": "わからなくても、もう いっかい！",
+  "zh": "即使没听懂，也再来一次！",
+  "image": "./assets/characters/nina.webp"
+ },
+ {
+  "id": "momoka",
+  "name": "河原木桃香",
+  "work": "gbc",
+  "color": "#aed0b7",
+  "colorName": "桃香薄荷",
+  "jp": "まずは楽しんでみよう。",
+  "kana": "まずは たのしんでみよう。",
+  "zh": "先试着享受其中吧。",
+  "image": "./assets/characters/momoka.webp"
+ },
+ {
+  "id": "subaru",
+  "name": "安和すばる",
+  "work": "gbc",
+  "color": "#dfb585",
+  "colorName": "昴杏橙",
+  "jp": "今日はどんな言葉を覚えた？",
+  "kana": "きょうは どんな ことばを おぼえた？",
+  "zh": "今天记住了什么词？",
+  "image": "./assets/characters/subaru.webp"
+ },
+ {
+  "id": "tomo",
+  "name": "海老塚智",
+  "work": "gbc",
+  "color": "#98b6cc",
+  "colorName": "智冰蓝",
+  "jp": "意味を確かめてから聞こう。",
+  "kana": "いみを たしかめてから きこう。",
+  "zh": "确认意思后再听吧。",
+  "image": "./assets/characters/tomo.webp"
+ },
+ {
+  "id": "rupa",
+  "name": "ルパ",
+  "work": "gbc",
+  "color": "#b89abd",
+  "colorName": "Rupa葡萄紫",
+  "jp": "ひと休みしても大丈夫。",
+  "kana": "ひとやすみしても だいじょうぶ。",
+  "zh": "休息一会儿也没关系。",
+  "image": "./assets/characters/rupa.webp"
+ },
+ {
+  "id": "kaguya",
+  "name": "かぐや",
+  "work": "kaguya",
+  "color": "#dfa8dc",
+  "colorName": "辉夜梦粉",
+  "jp": "知らない言葉に出会った！",
+  "kana": "しらない ことばに であった！",
+  "zh": "遇到了一个没学过的词！",
+  "image": "./assets/characters/kaguya.webp"
+ },
+ {
+  "id": "iroha",
+  "name": "酒寄彩葉",
+  "work": "kaguya",
+  "color": "#b5a1d1",
+  "colorName": "彩叶藤紫",
+  "jp": "一つずつ、丁寧に覚えよう。",
+  "kana": "ひとつずつ、ていねいに おぼえよう。",
+  "zh": "一个一个认真地记吧。",
+  "image": "./assets/characters/iroha.webp"
+ },
+ {
+  "id": "yachiyo",
+  "name": "月見ヤチヨ",
+  "work": "kaguya",
+  "color": "#8dbdd5",
+  "colorName": "Yachiyo月蓝",
+  "jp": "言葉で世界が広がるね。",
+  "kana": "ことばで せかいが ひろがるね。",
+  "zh": "语言让世界变得更广阔呢。",
+  "image": "./assets/characters/yachiyo.webp"
+ },
+ {
+  "id": "anna",
+  "name": "八奈見杏菜",
+  "work": "season01",
+  "color": "#89b7da",
+  "colorName": "杏菜水蓝",
+  "jp": "おいしいものの話をしよう。",
+  "kana": "おいしい ものの はなしを しよう。",
+  "zh": "聊聊好吃的东西吧。",
+  "image": "./assets/characters/anna.webp"
+ },
+ {
+  "id": "lemon",
+  "name": "焼塩檸檬",
+  "work": "season01",
+  "color": "#e6b359",
+  "colorName": "柠檬橙",
+  "jp": "元気に、もう一度！",
+  "kana": "げんきに、もう いちど！",
+  "zh": "打起精神，再来一遍！",
+  "image": "./assets/characters/lemon.webp"
+ },
+ {
+  "id": "komari",
+  "name": "小鞠知花",
+  "work": "season01",
+  "color": "#d69b8a",
+  "colorName": "小鞠珊瑚",
+  "jp": "好きな物語から学ぼう。",
+  "kana": "すきな ものがたりから まなぼう。",
+  "zh": "从喜欢的故事里学习吧。",
+  "image": "./assets/characters/komari.webp"
+ },
+ {
+  "id": "kazuhiko",
+  "name": "温水和彦",
+  "work": "season01",
+  "color": "#9faeb8",
+  "colorName": "温水雾灰",
+  "jp": "前後の会話も聞いてみよう。",
+  "kana": "ぜんごの かいわも きいてみよう。",
+  "zh": "前后的对话也听听看吧。",
+  "image": "./assets/characters/kazuhiko.webp"
+ },
+ {
+  "id": "gojo",
+  "name": "五条悟",
+  "work": "jujutsu",
+  "color": "#77ade0",
+  "colorName": "五条悟蓝",
+  "image": "./assets/characters/gojo.webp"
+ },
+ {
+  "id": "yukino",
+  "name": "雪ノ下雪乃",
+  "work": "oregairu",
+  "color": "#8d9bbd",
+  "colorName": "雪乃冰蓝",
+  "image": "./assets/characters/yukino.webp"
+ },
+ {
+  "id": "yui",
+  "name": "由比ヶ浜結衣",
+  "work": "oregairu",
+  "color": "#e8aa8f",
+  "colorName": "结衣桃橙",
+  "image": "./assets/characters/yui.webp"
+ },
+ {
+  "id": "frieren",
+  "name": "フリーレン",
+  "work": "frieren-s2",
+  "color": "#a9c0b2",
+  "colorName": "芙莉莲银绿",
+  "image": "./assets/characters/frieren.webp"
+ },
+ {
+  "id": "fern",
+  "name": "フェルン",
+  "work": "frieren-s2",
+  "color": "#a18abb",
+  "colorName": "菲伦紫",
+  "image": "./assets/characters/fern.webp"
+ },
+ {
+  "id": "ai",
+  "name": "アイ",
+  "work": "oshi",
+  "color": "#b28bbf",
+  "colorName": "爱星紫",
+  "image": "./assets/characters/ai.webp"
+ },
+ {
+  "id": "ruby",
+  "name": "ルビー",
+  "work": "oshi",
+  "color": "#dfa0b4",
+  "colorName": "露比粉",
+  "image": "./assets/characters/ruby.webp"
+ },
+ {
+  "id": "kana",
+  "name": "有馬かな",
+  "work": "oshi",
+  "color": "#cf8583",
+  "colorName": "加奈红",
+  "image": "./assets/characters/kana.webp"
+ },
+ {
+  "id": "akane",
+  "name": "黒川あかね",
+  "work": "oshi",
+  "color": "#80a9c2",
+  "colorName": "茜浅蓝",
+  "image": "./assets/characters/akane.webp"
+ },
+ {
+  "id": "chisa",
+  "name": "古手川千紗",
+  "work": "grandblue",
+  "color": "#e2a77c",
+  "colorName": "千纱橙",
+  "image": "./assets/characters/chisa.webp"
+ },
+ {
+  "id": "light",
+  "name": "夜神月",
+  "work": "deathnote",
+  "color": "#b59a82",
+  "colorName": "月棕",
+  "image": "./assets/characters/light.webp"
+ },
+ {
+  "id": "kumiko",
+  "name": "黄前久美子",
+  "work": "hibike",
+  "color": "#d1a478",
+  "colorName": "久美子暖棕",
+  "image": "./assets/characters/kumiko.webp"
+ },
+ {
+  "id": "reina",
+  "name": "高坂麗奈",
+  "work": "hibike",
+  "color": "#9d8bbd",
+  "colorName": "丽奈紫",
+  "image": "./assets/characters/reina.webp"
+ },
+ {
+  "id": "hibike-asuka",
+  "name": "田中あすか",
+  "work": "hibike",
+  "color": "#84aaa6",
+  "colorName": "明日香墨绿",
+  "image": "./assets/characters/hibike-asuka.webp"
+ },
+ {
+  "id": "fatezero-saber",
+  "name": "セイバー",
+  "work": "fatezero",
+  "color": "#8eabc0",
+  "colorName": "Saber蓝",
+  "image": "./assets/characters/fatezero-saber.webp"
+ },
+ {
+  "id": "setsuna-ogiso",
+  "name": "小木曽雪菜",
+  "work": "white-album-2",
+  "color": "#c29a6a",
+  "colorName": "雪菜暖金",
+  "image": "./assets/assets/characters/cdn/setsuna-480.c46a10966baa.webp"
+ },
+ {
+  "id": "kazusa-touma",
+  "name": "冬馬かずさ",
+  "work": "white-album-2",
+  "color": "#7e8aa8",
+  "colorName": "和纱深蓝",
+  "image": "./assets/assets/characters/cdn/kazusa-480.045da01b7e9f.webp"
+ },
+ {
+  "id": "kiyotaka-ayanokoji",
+  "name": "綾小路清隆",
+  "work": "classroom-elite-2017",
+  "color": "#b57269",
+  "colorName": "清隆绯红",
+  "image": "./assets/assets/characters/cdn/ayanokoji-480.642436dd4bbf.webp"
+ },
+ {
+  "id": "senku-ishigami",
+  "name": "石神千空",
+  "work": "dr-stone",
+  "color": "#8baa87",
+  "colorName": "千空石绿",
+  "image": "./assets/assets/characters/cdn/senku-480.0b0057972b11.webp"
+ },
+ {
+  "id": "aoba-suzukaze",
+  "name": "涼風青葉",
+  "work": "new-game",
+  "color": "#b19ccf",
+  "colorName": "青叶薰衣草",
+  "image": "./assets/assets/characters/cdn/aoba-480.3b2c28a5a629.webp"
+ },
+ {
+  "id": "migi",
+  "name": "ミギー",
+  "work": "kiseijuu",
+  "color": "#c7ab89",
+  "colorName": "小右暖杏",
+  "image": "./assets/assets/characters/cdn/migi-480.ed64a34bd026.webp"
+ },
+ {
+  "id": "gilgamesh",
+  "name": "ギルガメッシュ",
+  "work": "fatezero",
+  "color": "#d5b05d",
+  "colorName": "英雄王金",
+  "image": "./assets/assets/characters/cdn/gilgamesh-480.73cc8be4f887.webp"
+ },
+ {
+  "id": "rin-tohsaka",
+  "name": "遠坂凛",
+  "work": "fate-stay-night",
+  "color": "#c17c87",
+  "colorName": "远坂凛红",
+  "image": "./assets/assets/characters/cdn/rin-480.0b61dc08da7b.webp"
+ },
+ {
+  "id": "sakura-matou",
+  "name": "間桐桜",
+  "work": "fate-stay-night",
+  "color": "#af97c2",
+  "colorName": "间桐樱紫",
+  "image": "./assets/assets/characters/cdn/sakura-480.71f121ca21e7.webp"
+ },
+ {
+  "id": "akane-tsunemori",
+  "name": "常守朱",
+  "work": "psycho-pass",
+  "color": "#93a9b2",
+  "colorName": "常守朱雾蓝",
+  "image": "./assets/assets/characters/cdn/akane-480.e6cac4eb6a99.webp"
+ },
+ {
+  "id": "aoi-miyamori",
+  "name": "宮森あおい",
+  "work": "shirobako",
+  "color": "#86a7ba",
+  "colorName": "宫森葵晴蓝",
+  "image": "./assets/assets/characters/cdn/aoi-480.af359f68b982.webp"
+ },
+ {
+  "id": "ema-yasuhara",
+  "name": "安原絵麻",
+  "work": "shirobako",
+  "color": "#96b09e",
+  "colorName": "绘麻青绿",
+  "image": "./assets/assets/characters/cdn/ema-480.ac71492ffaf4.webp"
+ }
+]

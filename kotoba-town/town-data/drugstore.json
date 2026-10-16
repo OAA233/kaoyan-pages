@@ -1,0 +1,1159 @@
+{
+  "id": "drugstore",
+  "title": "药妆店",
+  "jp": "ドラッグストア",
+  "reading": "ドラッグストア",
+  "layout": "retail",
+  "zones": [
+    {
+      "jp": "スキンケア",
+      "zh": "护肤区"
+    },
+    {
+      "jp": "ヘアケア",
+      "zh": "洗护区"
+    },
+    {
+      "jp": "オーラルケア",
+      "zh": "口腔护理区"
+    },
+    {
+      "jp": "衛生用品",
+      "zh": "卫生用品区"
+    },
+    {
+      "jp": "洗剤・紙",
+      "zh": "清洁纸品区"
+    },
+    {
+      "jp": "薬",
+      "zh": "药品区"
+    },
+    {
+      "jp": "レジ・お会計",
+      "zh": "收银区"
+    }
+  ],
+  "items": [
+    {
+      "jp": "歯ブラシ",
+      "reading": "はブラシ",
+      "zh": "牙刷",
+      "kind": "toothbrush",
+      "category": "日用品",
+      "art": [
+        "care",
+        0
+      ],
+      "id": "drugstore-001",
+      "example": "歯ブラシを見てみましょう。",
+      "translation": "看看牙刷吧。",
+      "zone": 2
+    },
+    {
+      "jp": "歯磨き粉",
+      "reading": "はみがきこ",
+      "zh": "牙膏",
+      "kind": "tube",
+      "category": "日用品",
+      "art": [
+        "care",
+        1
+      ],
+      "id": "drugstore-002",
+      "example": "歯磨き粉を見てみましょう。",
+      "translation": "看看牙膏吧。",
+      "zone": 2
+    },
+    {
+      "jp": "シャンプー",
+      "reading": "シャンプー",
+      "zh": "洗发水",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        2
+      ],
+      "id": "drugstore-003",
+      "example": "シャンプーを見てみましょう。",
+      "translation": "看看洗发水吧。",
+      "zone": 1
+    },
+    {
+      "jp": "コンディショナー",
+      "reading": "コンディショナー",
+      "zh": "护发素",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        3
+      ],
+      "id": "drugstore-004",
+      "example": "コンディショナーを見てみましょう。",
+      "translation": "看看护发素吧。",
+      "zone": 1
+    },
+    {
+      "jp": "石けん",
+      "reading": "せっけん",
+      "zh": "香皂",
+      "kind": "smallblock",
+      "category": "日用品",
+      "art": [
+        "care",
+        4
+      ],
+      "id": "drugstore-005",
+      "example": "石けんを見てみましょう。",
+      "translation": "看看香皂吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ボディーソープ",
+      "reading": "ボディーソープ",
+      "zh": "沐浴液",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        5
+      ],
+      "id": "drugstore-006",
+      "example": "ボディーソープを見てみましょう。",
+      "translation": "看看沐浴液吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ティッシュ",
+      "reading": "ティッシュ",
+      "zh": "纸巾",
+      "kind": "tissue",
+      "category": "日用品",
+      "art": [
+        "care",
+        6
+      ],
+      "id": "drugstore-007",
+      "example": "ティッシュを見てみましょう。",
+      "translation": "看看纸巾吧。",
+      "zone": 4
+    },
+    {
+      "jp": "トイレットペーパー",
+      "reading": "トイレットペーパー",
+      "zh": "卫生纸",
+      "kind": "paperroll",
+      "category": "日用品",
+      "art": [
+        "care",
+        7
+      ],
+      "id": "drugstore-008",
+      "example": "トイレットペーパーを見てみましょう。",
+      "translation": "看看卫生纸吧。",
+      "zone": 3
+    },
+    {
+      "jp": "マスク",
+      "reading": "マスク",
+      "zh": "口罩",
+      "kind": "mask",
+      "category": "日用品",
+      "art": [
+        "care",
+        8
+      ],
+      "id": "drugstore-009",
+      "example": "マスクを見てみましょう。",
+      "translation": "看看口罩吧。",
+      "zone": 3
+    },
+    {
+      "jp": "絆創膏",
+      "reading": "ばんそうこう",
+      "zh": "创可贴",
+      "kind": "bandage-strip",
+      "category": "日用品",
+      "art": [
+        "care",
+        9
+      ],
+      "id": "drugstore-010",
+      "example": "絆創膏を見てみましょう。",
+      "translation": "看看创可贴吧。",
+      "zone": 3
+    },
+    {
+      "jp": "体温計",
+      "reading": "たいおんけい",
+      "zh": "体温计",
+      "kind": "thermometer",
+      "category": "日用品",
+      "art": [
+        "care",
+        10
+      ],
+      "id": "drugstore-011",
+      "example": "体温計を見てみましょう。",
+      "translation": "看看体温计吧。",
+      "zone": 3
+    },
+    {
+      "jp": "目薬",
+      "reading": "めぐすり",
+      "zh": "眼药水",
+      "kind": "eyedrops",
+      "category": "日用品",
+      "art": [
+        "care",
+        11
+      ],
+      "id": "drugstore-012",
+      "example": "目薬を見てみましょう。",
+      "translation": "看看眼药水吧。",
+      "zone": 5
+    },
+    {
+      "jp": "化粧水",
+      "reading": "けしょうすい",
+      "zh": "化妆水",
+      "kind": "bottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        12
+      ],
+      "id": "drugstore-013",
+      "example": "化粧水を見てみましょう。",
+      "translation": "看看化妆水吧。",
+      "zone": 1
+    },
+    {
+      "jp": "乳液",
+      "reading": "にゅうえき",
+      "zh": "乳液",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        13
+      ],
+      "id": "drugstore-014",
+      "example": "乳液を見てみましょう。",
+      "translation": "看看乳液吧。",
+      "zone": 1
+    },
+    {
+      "jp": "日焼け止め",
+      "reading": "ひやけどめ",
+      "zh": "防晒用品",
+      "kind": "tube",
+      "category": "日用品",
+      "art": [
+        "care",
+        14
+      ],
+      "id": "drugstore-015",
+      "example": "日焼け止めを見てみましょう。",
+      "translation": "看看防晒用品吧。",
+      "zone": 0
+    },
+    {
+      "jp": "洗剤",
+      "reading": "せんざい",
+      "zh": "清洁剂",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "art": [
+        "care",
+        15
+      ],
+      "id": "drugstore-016",
+      "example": "洗剤を見てみましょう。",
+      "translation": "看看清洁剂吧。",
+      "zone": 4
+    },
+    {
+      "jp": "洗顔料",
+      "reading": "せんがんりょう",
+      "zh": "洁面产品",
+      "kind": "tube",
+      "category": "日用品",
+      "id": "drugstore-017",
+      "example": "洗顔料を見てみましょう。",
+      "translation": "看看洁面产品吧。",
+      "zone": 0
+    },
+    {
+      "jp": "クリーム",
+      "reading": "クリーム",
+      "zh": "面霜",
+      "kind": "yogurt",
+      "category": "日用品",
+      "id": "drugstore-018",
+      "example": "クリームを見てみましょう。",
+      "translation": "看看面霜吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ハンドクリーム",
+      "reading": "ハンドクリーム",
+      "zh": "护手霜",
+      "kind": "tube",
+      "category": "日用品",
+      "id": "drugstore-019",
+      "example": "ハンドクリームを見てみましょう。",
+      "translation": "看看护手霜吧。",
+      "zone": 0
+    },
+    {
+      "jp": "リップクリーム",
+      "reading": "リップクリーム",
+      "zh": "润唇膏",
+      "kind": "tube",
+      "category": "日用品",
+      "id": "drugstore-020",
+      "example": "リップクリームを見てみましょう。",
+      "translation": "看看润唇膏吧。",
+      "zone": 0
+    },
+    {
+      "jp": "口紅",
+      "reading": "くちべに",
+      "zh": "口红",
+      "kind": "tube",
+      "category": "日用品",
+      "id": "drugstore-021",
+      "example": "口紅を見てみましょう。",
+      "translation": "看看口红吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ファンデーション",
+      "reading": "ファンデーション",
+      "zh": "粉底",
+      "kind": "yogurt",
+      "category": "日用品",
+      "id": "drugstore-022",
+      "example": "ファンデーションを見てみましょう。",
+      "translation": "看看粉底吧。",
+      "zone": 0
+    },
+    {
+      "jp": "マスカラ",
+      "reading": "マスカラ",
+      "zh": "睫毛膏",
+      "kind": "tube",
+      "category": "日用品",
+      "id": "drugstore-023",
+      "example": "マスカラを見てみましょう。",
+      "translation": "看看睫毛膏吧。",
+      "zone": 0
+    },
+    {
+      "jp": "鏡",
+      "reading": "かがみ",
+      "zh": "镜子",
+      "kind": "mirror",
+      "category": "日用品",
+      "id": "drugstore-024",
+      "example": "鏡を見てみましょう。",
+      "translation": "看看镜子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "くし",
+      "reading": "くし",
+      "zh": "梳子",
+      "kind": "brush",
+      "category": "日用品",
+      "id": "drugstore-025",
+      "example": "くしを見てみましょう。",
+      "translation": "看看梳子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ブラシ",
+      "reading": "ブラシ",
+      "zh": "刷子",
+      "kind": "brush",
+      "category": "日用品",
+      "id": "drugstore-026",
+      "example": "ブラシを見てみましょう。",
+      "translation": "看看刷子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "綿棒",
+      "reading": "めんぼう",
+      "zh": "棉签",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "drugstore-027",
+      "example": "綿棒を見てみましょう。",
+      "translation": "看看棉签吧。",
+      "zone": 0
+    },
+    {
+      "jp": "コットン",
+      "reading": "コットン",
+      "zh": "化妆棉",
+      "kind": "cotton-box",
+      "category": "日用品",
+      "id": "drugstore-028",
+      "example": "コットンを見てみましょう。",
+      "translation": "看看化妆棉吧。",
+      "zone": 1
+    },
+    {
+      "jp": "爪切り",
+      "reading": "つめきり",
+      "zh": "指甲剪",
+      "kind": "smallblock",
+      "category": "日用品",
+      "id": "drugstore-029",
+      "example": "爪切りを見てみましょう。",
+      "translation": "看看指甲剪吧。",
+      "zone": 3
+    },
+    {
+      "jp": "かみそり",
+      "reading": "かみそり",
+      "zh": "剃须刀",
+      "kind": "smallblock",
+      "category": "日用品",
+      "id": "drugstore-030",
+      "example": "かみそりを見てみましょう。",
+      "translation": "看看剃须刀吧。",
+      "zone": 0
+    },
+    {
+      "jp": "デンタルフロス",
+      "reading": "デンタルフロス",
+      "zh": "牙线",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "drugstore-031",
+      "example": "デンタルフロスを見てみましょう。",
+      "translation": "看看牙线吧。",
+      "zone": 2
+    },
+    {
+      "jp": "洗濯洗剤",
+      "reading": "せんたくせんざい",
+      "zh": "洗衣液或洗衣粉",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "id": "drugstore-032",
+      "example": "洗濯洗剤を見てみましょう。",
+      "translation": "看看洗衣液或洗衣粉吧。",
+      "zone": 4
+    },
+    {
+      "jp": "柔軟剤",
+      "reading": "じゅうなんざい",
+      "zh": "衣物柔顺剂",
+      "kind": "bottle",
+      "category": "日用品",
+      "id": "drugstore-033",
+      "example": "柔軟剤を見てみましょう。",
+      "translation": "看看衣物柔顺剂吧。",
+      "zone": 4
+    },
+    {
+      "jp": "漂白剤",
+      "reading": "ひょうはくざい",
+      "zh": "漂白剂",
+      "kind": "bottle",
+      "category": "日用品",
+      "id": "drugstore-034",
+      "example": "漂白剤を見てみましょう。",
+      "translation": "看看漂白剂吧。",
+      "zone": 4
+    },
+    {
+      "jp": "食器用洗剤",
+      "reading": "しょっきようせんざい",
+      "zh": "餐具清洁剂",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "id": "drugstore-035",
+      "example": "食器用洗剤を見てみましょう。",
+      "translation": "看看餐具清洁剂吧。",
+      "zone": 4
+    },
+    {
+      "jp": "スポンジ",
+      "reading": "スポンジ",
+      "zh": "海绵",
+      "kind": "smallblock",
+      "category": "日用品",
+      "id": "drugstore-036",
+      "example": "スポンジを見てみましょう。",
+      "translation": "看看海绵吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ゴム手袋",
+      "reading": "ゴムてぶくろ",
+      "zh": "橡胶手套",
+      "kind": "gloves",
+      "category": "日用品",
+      "id": "drugstore-037",
+      "example": "ゴム手袋を見てみましょう。",
+      "translation": "看看橡胶手套吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ウェットティッシュ",
+      "reading": "ウェットティッシュ",
+      "zh": "湿纸巾",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "drugstore-038",
+      "example": "ウェットティッシュを見てみましょう。",
+      "translation": "看看湿纸巾吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ袋",
+      "reading": "ごみぶくろ",
+      "zh": "垃圾袋",
+      "kind": "shoppingbag",
+      "category": "日用品",
+      "id": "drugstore-039",
+      "example": "ごみ袋を見てみましょう。",
+      "translation": "看看垃圾袋吧。",
+      "zone": 4
+    },
+    {
+      "jp": "生理用品",
+      "reading": "せいりようひん",
+      "zh": "生理卫生用品",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "drugstore-040",
+      "example": "生理用品を見てみましょう。",
+      "translation": "看看生理卫生用品吧。",
+      "zone": 3
+    },
+    {
+      "jp": "おむつ",
+      "reading": "おむつ",
+      "zh": "尿布",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "drugstore-041",
+      "example": "おむつを見てみましょう。",
+      "translation": "看看尿布吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ガーゼ",
+      "reading": "ガーゼ",
+      "zh": "纱布",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "drugstore-042",
+      "example": "ガーゼを見てみましょう。",
+      "translation": "看看纱布吧。",
+      "zone": 3
+    },
+    {
+      "jp": "包帯",
+      "reading": "ほうたい",
+      "zh": "绷带",
+      "kind": "paperroll",
+      "category": "日用品",
+      "id": "drugstore-043",
+      "example": "包帯を見てみましょう。",
+      "translation": "看看绷带吧。",
+      "zone": 3
+    },
+    {
+      "jp": "消毒液",
+      "reading": "しょうどくえき",
+      "zh": "消毒液",
+      "kind": "pumpbottle",
+      "category": "日用品",
+      "id": "drugstore-044",
+      "example": "消毒液を見てみましょう。",
+      "translation": "看看消毒液吧。",
+      "zone": 3
+    },
+    {
+      "jp": "薬",
+      "reading": "くすり",
+      "zh": "药",
+      "kind": "medicine",
+      "category": "日用品",
+      "id": "drugstore-045",
+      "example": "薬を見てみましょう。",
+      "translation": "看看药吧。",
+      "zone": 5
+    },
+    {
+      "jp": "錠剤",
+      "reading": "じょうざい",
+      "zh": "药片",
+      "kind": "medicine",
+      "category": "日用品",
+      "id": "drugstore-046",
+      "example": "錠剤を見てみましょう。",
+      "translation": "看看药片吧。",
+      "zone": 5
+    },
+    {
+      "jp": "粉薬",
+      "reading": "こなぐすり",
+      "zh": "药粉",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "drugstore-047",
+      "example": "粉薬を見てみましょう。",
+      "translation": "看看药粉吧。",
+      "zone": 5
+    },
+    {
+      "jp": "湿布",
+      "reading": "しっぷ",
+      "zh": "贴膏",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "drugstore-048",
+      "example": "湿布を見てみましょう。",
+      "translation": "看看贴膏吧。",
+      "zone": 5
+    },
+    {
+      "jp": "薬袋",
+      "reading": "やくたい",
+      "zh": "药袋",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "drugstore-049",
+      "example": "薬袋を見てみましょう。",
+      "translation": "看看药袋吧。",
+      "zone": 5
+    },
+    {
+      "jp": "処方箋",
+      "reading": "しょほうせん",
+      "zh": "处方笺",
+      "kind": "paper",
+      "category": "日用品",
+      "id": "drugstore-050",
+      "example": "処方箋を見てみましょう。",
+      "translation": "看看处方笺吧。",
+      "zone": 5
+    },
+    {
+      "jp": "お薬手帳",
+      "reading": "おくすりてちょう",
+      "zh": "用药记录本",
+      "kind": "book",
+      "category": "日用品",
+      "id": "drugstore-051",
+      "example": "お薬手帳を見てみましょう。",
+      "translation": "看看用药记录本吧。",
+      "zone": 5
+    },
+    {
+      "jp": "詰め替え用",
+      "reading": "つめかえよう",
+      "zh": "补充装",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "drugstore-052",
+      "example": "詰め替え用を見てみましょう。",
+      "translation": "看看补充装吧。",
+      "zone": 3
+    },
+    {
+      "jp": "携帯用",
+      "reading": "けいたいよう",
+      "zh": "便携装",
+      "kind": "packet",
+      "category": "日用品",
+      "id": "drugstore-053",
+      "example": "携帯用を見てみましょう。",
+      "translation": "看看便携装吧。",
+      "zone": 3
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "drugstore-054",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "drugstore-057",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 6
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "drugstore-059",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 6
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "drugstore-060",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 6
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "drugstore-061",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 6
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "drugstore-062",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 6
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "drugstore-063",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 6
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "drugstore-064",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "drugstore-065",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 6
+    },
+    {
+      "id": "drugstore-detail-0154",
+      "jp": "洗顔フォーム",
+      "reading": "せんがんフォーム",
+      "zh": "洗面奶",
+      "kind": "tube",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは洗顔フォームです。",
+      "translation": "这是洗面奶。"
+    },
+    {
+      "id": "drugstore-detail-0155",
+      "jp": "詰め替え用パック",
+      "reading": "つめかえようパック",
+      "zh": "补充装",
+      "kind": "refill-pouch",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは詰め替え用パックです。",
+      "translation": "这是补充装。"
+    },
+    {
+      "id": "drugstore-detail-0156",
+      "jp": "試供品",
+      "reading": "しきょうひん",
+      "zh": "试用装",
+      "kind": "tube",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは試供品です。",
+      "translation": "这是试用装。"
+    },
+    {
+      "id": "drugstore-product-biore",
+      "jp": "ビオレu 泡ハンドソープ",
+      "reading": "びおれゆー あわはんどそーぷ",
+      "zh": "洗手液",
+      "kind": "retail-product",
+      "color": "#e5edeb",
+      "zone": 3,
+      "category": "商品",
+      "example": "ハンドソープを探しています。",
+      "noteJa": "手を洗うときに使うもの。「泡」は、あわと読みます。",
+      "product": {
+        "key": "biore",
+        "generic": "ハンドソープ",
+        "genericReading": "はんどそーぷ",
+        "brand": "花王",
+        "shape": "pump",
+        "source": "https://www.kao.co.jp/bioreu/family/hand/handsoap/",
+        "checked": "2026-10-01",
+        "action": "wash",
+        "label": "ビオレu"
+      },
+      "translation": "正在找洗手液。"
+    },
+    {
+      "id": "drugstore-product-essential",
+      "jp": "エッセンシャル ふんわりうるツヤ シャンプー",
+      "reading": "えっせんしゃる ふんわりうるつや しゃんぷー",
+      "zh": "洗发水",
+      "kind": "retail-product",
+      "color": "#e6b499",
+      "zone": 1,
+      "category": "商品",
+      "example": "シャンプーを探しています。",
+      "noteJa": "髪を洗うためのもの。「詰め替え用」は、中身を移して使う商品です。",
+      "product": {
+        "key": "essential",
+        "generic": "シャンプー",
+        "genericReading": "しゃんぷー",
+        "brand": "花王",
+        "shape": "pump",
+        "source": "https://www.kao-kirei.com/jp/en/brand/khg/essential/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "Essential",
+        "image": "./assets/products/essential.jpg",
+        "imageSource": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-kirei-com/jp/ja/item/khg/essential/25502827/GG01.jpg"
+      },
+      "translation": "正在找洗发水。"
+    },
+    {
+      "id": "drugstore-product-attack",
+      "jp": "アタックZERO",
+      "reading": "あたっくぜろ",
+      "zh": "洗衣用清洁剂",
+      "kind": "retail-product",
+      "color": "#e5e9e5",
+      "zone": 4,
+      "category": "商品",
+      "example": "洗濯洗剤を探しています。",
+      "noteJa": "衣類を洗うときの洗剤です。「洗濯」は、せんたくと読みます。",
+      "product": {
+        "key": "attack",
+        "generic": "洗濯洗剤",
+        "genericReading": "せんたくせんざい",
+        "brand": "花王",
+        "shape": "pump",
+        "source": "https://www.kao-kirei.com/jp/en/brand/khg/attack/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "アタック ZERO",
+        "image": "./assets/products/attack.jpg",
+        "imageSource": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-kirei-com/jp/ja/item/khg/attack/25339233/GG01.jpg"
+      },
+      "translation": "正在找洗衣液。"
+    },
+    {
+      "id": "drugstore-product-cucute",
+      "jp": "キュキュット ハンドマイルド カモミールの香り",
+      "reading": "きゅきゅっと はんどまいるど かもみーるのかおり",
+      "zh": "洗洁精",
+      "kind": "retail-product",
+      "color": "#eec3a7",
+      "zone": 4,
+      "category": "商品",
+      "example": "食器用洗剤を探しています。",
+      "noteJa": "皿やコップを洗うときの洗剤です。「香り」は、かおりと読みます。",
+      "product": {
+        "key": "cucute",
+        "generic": "食器用洗剤",
+        "genericReading": "しょっきようせんざい",
+        "brand": "花王",
+        "shape": "bottle",
+        "source": "https://www.kao-kirei.com/ja/brand/khg/kyukyutto/?intcmp=mykao",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "キュキュット",
+        "image": "./assets/products/cucute.jpg",
+        "imageSource": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-kirei-com/jp/ja/item/khg/kyukyutto/25501934/GG01.jpg"
+      },
+      "translation": "正在找洗洁精。"
+    },
+    {
+      "id": "drugstore-product-band-aid",
+      "jp": "バンドエイド キズパワーパッド ふつうサイズ",
+      "reading": "ばんどえいど きずぱわーぱっど ふつうさいず",
+      "zh": "创可贴",
+      "kind": "retail-product",
+      "color": "#cebd8d",
+      "zone": 3,
+      "category": "商品",
+      "example": "絆創膏を探しています。",
+      "noteJa": "パッケージで「ふつうサイズ」と「大きめサイズ」を見分けます。",
+      "product": {
+        "key": "band-aid",
+        "generic": "絆創膏",
+        "genericReading": "ばんそうこう",
+        "brand": "バンドエイド",
+        "shape": "box",
+        "source": "https://www.band-aid.jp/lineup/medicaltools/regular",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "キズパワーパッド",
+        "image": "./assets/products/band-aid.jpg",
+        "imageSource": "https://images.ctfassets.net/p9hrd7f8bkc6/42qewLMlPgr5yrHIqndh2R/02059cb4d468632b5ec5992112836d1d/kpp_regular-ja-jp?fm=jpg&w=1920&q=80"
+      },
+      "translation": "正在找创可贴。"
+    },
+    {
+      "id": "drugstore-product-omron",
+      "jp": "オムロン 電子体温計 MC-681 けんおんくん",
+      "reading": "おむろん でんしたいおんけい けんおんくん",
+      "zh": "体温计",
+      "kind": "retail-product",
+      "color": "#b4d8e7",
+      "zone": 3,
+      "category": "商品",
+      "example": "体温計を探しています。",
+      "noteJa": "「電子体温計」は、でんしたいおんけいと読みます。「MC-681」は型番です。",
+      "product": {
+        "key": "omron",
+        "generic": "体温計",
+        "genericReading": "たいおんけい",
+        "brand": "オムロン",
+        "shape": "box",
+        "source": "https://store.healthcare.omron.co.jp/support/download/manual/mc/",
+        "checked": "2026-10-01",
+        "action": "",
+        "label": "けんおんくん"
+      },
+      "translation": "正在找体温计。"
+    },
+    {
+      "id": "drugstore-checkout-counter",
+      "jp": "レジカウンター",
+      "reading": "レジカウンター",
+      "zh": "收银台",
+      "kind": "counter",
+      "category": "会計",
+      "zone": 6,
+      "example": "レジカウンターはここです。",
+      "translation": "收银台在这里。"
+    },
+    {
+      "id": "drugstore-checkout-pos",
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银机",
+      "kind": "checkout-pos",
+      "category": "会計",
+      "zone": 6,
+      "example": "レジはここです。",
+      "translation": "收银机在这里。"
+    },
+    {
+      "id": "drugstore-checkout-scanner",
+      "jp": "バーコードリーダー",
+      "reading": "バーコードリーダー",
+      "zh": "条码扫描器",
+      "kind": "checkout-scanner",
+      "category": "会計",
+      "zone": 6,
+      "example": "バーコードリーダーはここです。",
+      "translation": "条码扫描器在这里。"
+    },
+    {
+      "id": "drugstore-checkout-tray",
+      "jp": "会計トレー",
+      "reading": "かいけいトレー",
+      "zh": "付款托盘",
+      "kind": "cash-tray",
+      "category": "会計",
+      "zone": 6,
+      "example": "会計トレーはここです。",
+      "translation": "付款托盘在这里。"
+    },
+    {
+      "id": "drugstore-checkout-terminal",
+      "jp": "決済端末",
+      "reading": "けっさいたんまつ",
+      "zh": "支付终端",
+      "kind": "checkout-terminal",
+      "category": "会計",
+      "zone": 6,
+      "example": "カードで支払います。",
+      "translation": "用卡付款。"
+    },
+    {
+      "id": "drugstore-checkout-receipt",
+      "jp": "レシート",
+      "reading": "レシート",
+      "zh": "小票",
+      "kind": "checkout-receipt",
+      "category": "会計",
+      "zone": 6,
+      "example": "レシートをください。",
+      "translation": "请给我小票。"
+    },
+    {
+      "id": "drugstore-checkout-bag",
+      "jp": "レジ袋",
+      "reading": "レジぶくろ",
+      "zh": "购物袋",
+      "kind": "shoppingbag",
+      "category": "会計",
+      "zone": 6,
+      "example": "レジ袋を一枚ください。",
+      "translation": "请给我一个购物袋。"
+    },
+    {
+      "id": "drugstore-checkout-change",
+      "jp": "お釣り",
+      "reading": "おつり",
+      "zh": "找零",
+      "kind": "coins",
+      "category": "会計",
+      "zone": 6,
+      "example": "お釣りを受け取ります。",
+      "translation": "接过找零。"
+    },
+    {
+      "id": "drugstore-checkout-basket",
+      "jp": "買い物かご",
+      "reading": "かいものかご",
+      "zh": "购物篮",
+      "kind": "basket",
+      "category": "会計",
+      "zone": 6,
+      "example": "買い物かごはここです。",
+      "translation": "购物篮在这里。"
+    },
+    {
+      "id": "drugstore-specific-01",
+      "jp": "試供品トレー",
+      "reading": "しきょうひんトレー",
+      "zh": "试用品托盘",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "試供品トレーはここにあります。",
+      "detail": {
+        "type": "basket",
+        "color": "#d5c2aa"
+      },
+      "translation": "试用品托盘在这里。"
+    },
+    {
+      "id": "drugstore-specific-02",
+      "jp": "ポイントカード",
+      "reading": "ポイントカード",
+      "zh": "积分卡",
+      "kind": "specific-object",
+      "zone": 6,
+      "category": "場所ならではのもの",
+      "example": "ポイントカードはここにあります。",
+      "detail": {
+        "type": "card",
+        "color": "#b3c8a8"
+      },
+      "translation": "积分卡在这里。"
+    },
+    {
+      "id": "drugstore-specific-03",
+      "jp": "詰め替えパック",
+      "reading": "つめかえパック",
+      "zh": "补充装",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "場所ならではのもの",
+      "example": "詰め替えパックはここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#abd1ba"
+      },
+      "translation": "补充装在这里。"
+    },
+    {
+      "id": "drugstore-specific-04",
+      "jp": "入浴剤",
+      "reading": "にゅうよくざい",
+      "zh": "入浴剂",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "入浴剤はここにあります。",
+      "detail": {
+        "type": "box-product",
+        "color": "#b6bad5"
+      },
+      "translation": "入浴剂在这里。"
+    },
+    {
+      "id": "drugstore-specific-05",
+      "jp": "除菌シート",
+      "reading": "じょきんシート",
+      "zh": "除菌湿巾",
+      "kind": "specific-object",
+      "zone": 3,
+      "category": "場所ならではのもの",
+      "example": "除菌シートはここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#a1bfca"
+      },
+      "translation": "除菌湿巾在这里。"
+    },
+    {
+      "id": "drugstore-specific-06",
+      "jp": "歯間ブラシ",
+      "reading": "しかんブラシ",
+      "zh": "牙间刷",
+      "kind": "toothbrush",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "歯間ブラシはここにあります。",
+      "translation": "牙间刷在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 15,
+  "district": 2,
+  "sceneReference": null
+}

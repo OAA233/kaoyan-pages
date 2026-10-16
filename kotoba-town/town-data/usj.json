@@ -1,0 +1,832 @@
+{
+  "id": "usj",
+  "title": "日本环球影城 USJ",
+  "jp": "ユニバーサル・スタジオ・ジャパン",
+  "reading": "ユニバーサル・スタジオ・ジャパン",
+  "zones": [
+    {
+      "jp": "ハリウッド・エリア",
+      "zh": "好莱坞"
+    },
+    {
+      "jp": "ニューヨーク・エリア",
+      "zh": "纽约"
+    },
+    {
+      "jp": "サンフランシスコ・エリア",
+      "zh": "旧金山"
+    },
+    {
+      "jp": "アミティ・ビレッジ",
+      "zh": "亲善村"
+    },
+    {
+      "jp": "ジュラシック・パーク",
+      "zh": "侏罗纪公园"
+    },
+    {
+      "jp": "ウィザーディング・ワールド",
+      "zh": "魔法世界"
+    },
+    {
+      "jp": "ミニオン・パーク",
+      "zh": "小黄人乐园"
+    },
+    {
+      "jp": "ユニバーサル・ワンダーランド",
+      "zh": "环球奇境"
+    },
+    {
+      "jp": "スーパー・ニンテンドー・ワールド",
+      "zh": "超级任天堂世界"
+    },
+    {
+      "jp": "ウォーターワールド",
+      "zh": "水世界"
+    }
+  ],
+  "layout": "park",
+  "items": [
+    {
+      "id": "usj-001",
+      "jp": "入場券",
+      "reading": "にゅうじょうけん",
+      "zh": "入场券",
+      "kind": "card",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "入場券を見てみましょう。",
+      "translation": "来看看入场券吧。"
+    },
+    {
+      "id": "usj-002",
+      "jp": "地図",
+      "reading": "ちず",
+      "zh": "地图",
+      "kind": "menu",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "地図を見てみましょう。",
+      "translation": "来看看地图吧。"
+    },
+    {
+      "id": "usj-003",
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "入口を見てみましょう。",
+      "translation": "来看看入口吧。"
+    },
+    {
+      "id": "usj-005",
+      "jp": "案内所",
+      "reading": "あんないじょ",
+      "zh": "服务中心",
+      "kind": "room-sign",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "案内所を見てみましょう。",
+      "translation": "来看看服务中心吧。"
+    },
+    {
+      "id": "usj-006",
+      "jp": "お土産",
+      "reading": "おみやげ",
+      "zh": "伴手礼",
+      "kind": "gift",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "お土産を見てみましょう。",
+      "translation": "来看看伴手礼吧。"
+    },
+    {
+      "id": "usj-007",
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银台",
+      "kind": "register",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "レジを見てみましょう。",
+      "translation": "来看看收银台吧。"
+    },
+    {
+      "id": "usj-008",
+      "jp": "売店",
+      "reading": "ばいてん",
+      "zh": "小卖部",
+      "kind": "stall",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "売店を見てみましょう。",
+      "translation": "来看看小卖部吧。"
+    },
+    {
+      "id": "usj-009",
+      "jp": "レストラン",
+      "reading": "レストラン",
+      "zh": "餐厅",
+      "kind": "shop",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "レストランを見てみましょう。",
+      "translation": "来看看餐厅吧。"
+    },
+    {
+      "id": "usj-010",
+      "jp": "トイレ",
+      "reading": "トイレ",
+      "zh": "洗手间",
+      "kind": "room-sign",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "トイレを見てみましょう。",
+      "translation": "来看看洗手间吧。"
+    },
+    {
+      "id": "usj-011",
+      "jp": "ロッカー",
+      "reading": "ロッカー",
+      "zh": "储物柜",
+      "kind": "locker",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "ロッカーを見てみましょう。",
+      "translation": "来看看储物柜吧。"
+    },
+    {
+      "id": "usj-012",
+      "jp": "ベビーカー",
+      "reading": "ベビーカー",
+      "zh": "婴儿车",
+      "kind": "stroller",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "ベビーカーを見てみましょう。",
+      "translation": "来看看婴儿车吧。"
+    },
+    {
+      "id": "usj-013",
+      "jp": "ポップコーン",
+      "reading": "ポップコーン",
+      "zh": "爆米花",
+      "kind": "popcorn",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "ポップコーンを見てみましょう。",
+      "translation": "来看看爆米花吧。"
+    },
+    {
+      "id": "usj-014",
+      "jp": "飲み物",
+      "reading": "のみもの",
+      "zh": "饮品",
+      "kind": "bottle",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "飲み物を見てみましょう。",
+      "translation": "来看看饮品吧。"
+    },
+    {
+      "id": "usj-015",
+      "jp": "風船",
+      "reading": "ふうせん",
+      "zh": "气球",
+      "kind": "balloon",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "風船を見てみましょう。",
+      "translation": "来看看气球吧。"
+    },
+    {
+      "id": "usj-016",
+      "jp": "列",
+      "reading": "れつ",
+      "zh": "队列",
+      "kind": "queue",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "列を見てみましょう。",
+      "translation": "来看看队列吧。"
+    },
+    {
+      "id": "usj-017",
+      "jp": "待ち時間",
+      "reading": "まちじかん",
+      "zh": "等候时间",
+      "kind": "clock",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "待ち時間を見てみましょう。",
+      "translation": "来看看等候时间吧。"
+    },
+    {
+      "id": "usj-018",
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "ベンチを見てみましょう。",
+      "translation": "来看看长椅吧。"
+    },
+    {
+      "id": "usj-019",
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "来看看垃圾桶吧。"
+    },
+    {
+      "id": "usj-020",
+      "jp": "写真",
+      "reading": "しゃしん",
+      "zh": "照片",
+      "kind": "card",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "写真を見てみましょう。",
+      "translation": "来看看照片吧。"
+    },
+    {
+      "id": "usj-021",
+      "jp": "地球儀",
+      "reading": "ちきゅうぎ",
+      "zh": "地球仪",
+      "kind": "globe",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "地球儀を見てみましょう。",
+      "translation": "来看看地球仪吧。"
+    },
+    {
+      "id": "usj-022",
+      "jp": "映画",
+      "reading": "えいが",
+      "zh": "电影",
+      "kind": "film",
+      "zone": 0,
+      "category": "遊園地のことば",
+      "example": "映画を見てみましょう。",
+      "translation": "来看看电影吧。"
+    },
+    {
+      "id": "usj-023",
+      "jp": "カメラ",
+      "reading": "カメラ",
+      "zh": "摄影机",
+      "kind": "camera",
+      "zone": 1,
+      "category": "遊園地のことば",
+      "example": "カメラを見てみましょう。",
+      "translation": "来看看摄影机吧。"
+    },
+    {
+      "id": "usj-024",
+      "jp": "建物",
+      "reading": "たてもの",
+      "zh": "建筑物",
+      "kind": "shop",
+      "zone": 1,
+      "category": "遊園地のことば",
+      "example": "建物を見てみましょう。",
+      "translation": "来看看建筑物吧。"
+    },
+    {
+      "id": "usj-025",
+      "jp": "階段",
+      "reading": "かいだん",
+      "zh": "楼梯",
+      "kind": "steps",
+      "zone": 1,
+      "category": "遊園地のことば",
+      "example": "階段を見てみましょう。",
+      "translation": "来看看楼梯吧。"
+    },
+    {
+      "id": "usj-027",
+      "jp": "港",
+      "reading": "みなと",
+      "zh": "港口",
+      "kind": "harbor",
+      "zone": 2,
+      "category": "遊園地のことば",
+      "example": "港を見てみましょう。",
+      "translation": "来看看港口吧。"
+    },
+    {
+      "id": "usj-028",
+      "jp": "貨物",
+      "reading": "かもつ",
+      "zh": "货物",
+      "kind": "parcel",
+      "zone": 2,
+      "category": "遊園地のことば",
+      "example": "貨物を見てみましょう。",
+      "translation": "来看看货物吧。"
+    },
+    {
+      "id": "usj-029",
+      "jp": "倉庫",
+      "reading": "そうこ",
+      "zh": "仓库",
+      "kind": "shop",
+      "zone": 2,
+      "category": "遊園地のことば",
+      "example": "倉庫を見てみましょう。",
+      "translation": "来看看仓库吧。"
+    },
+    {
+      "id": "usj-030",
+      "jp": "桟橋",
+      "reading": "さんばし",
+      "zh": "栈桥",
+      "kind": "deck",
+      "zone": 2,
+      "category": "遊園地のことば",
+      "example": "桟橋を見てみましょう。",
+      "translation": "来看看栈桥吧。"
+    },
+    {
+      "id": "usj-031",
+      "jp": "船",
+      "reading": "ふね",
+      "zh": "船",
+      "kind": "boat",
+      "zone": 3,
+      "category": "遊園地のことば",
+      "example": "船を見てみましょう。",
+      "translation": "来看看船吧。"
+    },
+    {
+      "id": "usj-032",
+      "jp": "サメ",
+      "reading": "サメ",
+      "zh": "鲨鱼",
+      "kind": "shark",
+      "zone": 3,
+      "category": "遊園地のことば",
+      "example": "サメを見てみましょう。",
+      "translation": "来看看鲨鱼吧。"
+    },
+    {
+      "id": "usj-033",
+      "jp": "浮き輪",
+      "reading": "うきわ",
+      "zh": "救生圈",
+      "kind": "lifering",
+      "zone": 3,
+      "category": "遊園地のことば",
+      "example": "浮き輪を見てみましょう。",
+      "translation": "来看看救生圈吧。"
+    },
+    {
+      "id": "usj-034",
+      "jp": "網",
+      "reading": "あみ",
+      "zh": "渔网",
+      "kind": "net",
+      "zone": 3,
+      "category": "遊園地のことば",
+      "example": "網を見てみましょう。",
+      "translation": "来看看渔网吧。"
+    },
+    {
+      "id": "usj-035",
+      "jp": "恐竜",
+      "reading": "きょうりゅう",
+      "zh": "恐龙",
+      "kind": "dinosaur",
+      "zone": 4,
+      "category": "遊園地のことば",
+      "example": "恐竜を見てみましょう。",
+      "translation": "来看看恐龙吧。"
+    },
+    {
+      "id": "usj-036",
+      "jp": "ジェットコースター",
+      "reading": "ジェットコースター",
+      "zh": "过山车",
+      "kind": "coaster",
+      "zone": 4,
+      "category": "遊園地のことば",
+      "example": "ジェットコースターを見てみましょう。",
+      "translation": "来看看过山车吧。"
+    },
+    {
+      "id": "usj-037",
+      "jp": "安全バー",
+      "reading": "あんぜんバー",
+      "zh": "安全压杆",
+      "kind": "rail",
+      "zone": 4,
+      "category": "遊園地のことば",
+      "example": "安全バーを見てみましょう。",
+      "translation": "来看看安全压杆吧。"
+    },
+    {
+      "id": "usj-038",
+      "jp": "ジャングル",
+      "reading": "ジャングル",
+      "zh": "丛林",
+      "kind": "tree",
+      "zone": 4,
+      "category": "遊園地のことば",
+      "example": "ジャングルを見てみましょう。",
+      "translation": "来看看丛林吧。"
+    },
+    {
+      "id": "usj-039",
+      "jp": "城",
+      "reading": "しろ",
+      "zh": "城堡",
+      "kind": "castle",
+      "zone": 5,
+      "category": "遊園地のことば",
+      "example": "城を見てみましょう。",
+      "translation": "来看看城堡吧。"
+    },
+    {
+      "id": "usj-040",
+      "jp": "杖",
+      "reading": "つえ",
+      "zh": "魔杖、手杖",
+      "kind": "wand",
+      "zone": 5,
+      "category": "遊園地のことば",
+      "example": "杖を見てみましょう。",
+      "translation": "来看看魔杖、手杖吧。"
+    },
+    {
+      "id": "usj-041",
+      "jp": "フクロウ",
+      "reading": "フクロウ",
+      "zh": "猫头鹰",
+      "kind": "owl",
+      "zone": 5,
+      "category": "遊園地のことば",
+      "example": "フクロウを見てみましょう。",
+      "translation": "来看看猫头鹰吧。"
+    },
+    {
+      "id": "usj-042",
+      "jp": "本",
+      "reading": "ほん",
+      "zh": "书",
+      "kind": "book",
+      "zone": 5,
+      "category": "遊園地のことば",
+      "example": "本を見てみましょう。",
+      "translation": "来看看书吧。"
+    },
+    {
+      "id": "usj-043",
+      "jp": "ほうき",
+      "reading": "ほうき",
+      "zh": "扫帚",
+      "kind": "broom",
+      "zone": 5,
+      "category": "遊園地のことば",
+      "example": "ほうきを見てみましょう。",
+      "translation": "来看看扫帚吧。"
+    },
+    {
+      "id": "usj-044",
+      "jp": "バナナ",
+      "reading": "バナナ",
+      "zh": "香蕉",
+      "kind": "banana",
+      "zone": 6,
+      "category": "遊園地のことば",
+      "example": "バナナを見てみましょう。",
+      "translation": "来看看香蕉吧。"
+    },
+    {
+      "id": "usj-045",
+      "jp": "ゴーグル",
+      "reading": "ゴーグル",
+      "zh": "护目镜",
+      "kind": "goggles",
+      "zone": 6,
+      "category": "遊園地のことば",
+      "example": "ゴーグルを見てみましょう。",
+      "translation": "来看看护目镜吧。"
+    },
+    {
+      "id": "usj-046",
+      "jp": "アイスクリーム",
+      "reading": "アイスクリーム",
+      "zh": "冰淇淋",
+      "kind": "icecream",
+      "zone": 6,
+      "category": "遊園地のことば",
+      "example": "アイスクリームを見てみましょう。",
+      "translation": "来看看冰淇淋吧。"
+    },
+    {
+      "id": "usj-047",
+      "jp": "ぬいぐるみ",
+      "reading": "ぬいぐるみ",
+      "zh": "毛绒玩具",
+      "kind": "plush",
+      "zone": 6,
+      "category": "遊園地のことば",
+      "example": "ぬいぐるみを見てみましょう。",
+      "translation": "来看看毛绒玩具吧。"
+    },
+    {
+      "id": "usj-048",
+      "jp": "滑り台",
+      "reading": "すべりだい",
+      "zh": "滑梯",
+      "kind": "slide",
+      "zone": 7,
+      "category": "遊園地のことば",
+      "example": "滑り台を見てみましょう。",
+      "translation": "来看看滑梯吧。"
+    },
+    {
+      "id": "usj-049",
+      "jp": "メリーゴーランド",
+      "reading": "メリーゴーランド",
+      "zh": "旋转木马",
+      "kind": "carousel",
+      "zone": 7,
+      "category": "遊園地のことば",
+      "example": "メリーゴーランドを見てみましょう。",
+      "translation": "来看看旋转木马吧。"
+    },
+    {
+      "id": "usj-050",
+      "jp": "風車",
+      "reading": "かざぐるま",
+      "zh": "纸风车",
+      "kind": "pinwheel",
+      "zone": 7,
+      "category": "遊園地のことば",
+      "example": "風車を見てみましょう。",
+      "translation": "来看看纸风车吧。"
+    },
+    {
+      "id": "usj-051",
+      "jp": "コイン",
+      "reading": "コイン",
+      "zh": "金币、硬币",
+      "kind": "coins",
+      "zone": 8,
+      "category": "遊園地のことば",
+      "example": "コインを見てみましょう。",
+      "translation": "来看看金币、硬币吧。"
+    },
+    {
+      "id": "usj-052",
+      "jp": "キノコ",
+      "reading": "キノコ",
+      "zh": "蘑菇",
+      "kind": "mushroom",
+      "zone": 8,
+      "category": "遊園地のことば",
+      "example": "キノコを見てみましょう。",
+      "translation": "来看看蘑菇吧。"
+    },
+    {
+      "id": "usj-053",
+      "jp": "カート",
+      "reading": "カート",
+      "zh": "卡丁车",
+      "kind": "kart",
+      "zone": 8,
+      "category": "遊園地のことば",
+      "example": "カートを見てみましょう。",
+      "translation": "来看看卡丁车吧。"
+    },
+    {
+      "id": "usj-054",
+      "jp": "ブロック",
+      "reading": "ブロック",
+      "zh": "方块",
+      "kind": "block",
+      "zone": 8,
+      "category": "遊園地のことば",
+      "example": "ブロックを見てみましょう。",
+      "translation": "来看看方块吧。"
+    },
+    {
+      "id": "usj-055",
+      "jp": "舞台",
+      "reading": "ぶたい",
+      "zh": "舞台",
+      "kind": "stage",
+      "zone": 9,
+      "category": "遊園地のことば",
+      "example": "舞台を見てみましょう。",
+      "translation": "来看看舞台吧。"
+    },
+    {
+      "id": "usj-056",
+      "jp": "観客席",
+      "reading": "かんきゃくせき",
+      "zh": "观众席",
+      "kind": "bench",
+      "zone": 9,
+      "category": "遊園地のことば",
+      "example": "観客席を見てみましょう。",
+      "translation": "来看看观众席吧。"
+    },
+    {
+      "id": "usj-057",
+      "jp": "水しぶき",
+      "reading": "みずしぶき",
+      "zh": "水花",
+      "kind": "splash",
+      "zone": 9,
+      "category": "遊園地のことば",
+      "example": "水しぶきを見てみましょう。",
+      "translation": "来看看水花吧。"
+    },
+    {
+      "id": "usj-058",
+      "jp": "救命胴衣",
+      "reading": "きゅうめいどうい",
+      "zh": "救生衣",
+      "kind": "jacket",
+      "zone": 9,
+      "category": "遊園地のことば",
+      "example": "救命胴衣を見てみましょう。",
+      "translation": "来看看救生衣吧。"
+    },
+    {
+      "id": "usj-detail-0213",
+      "jp": "リストバンド",
+      "reading": "リストバンド",
+      "zh": "手环",
+      "kind": "weight-collar",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはリストバンドです。",
+      "translation": "这是手环。"
+    },
+    {
+      "id": "usj-detail-0214",
+      "jp": "コインロッカー",
+      "reading": "コインロッカー",
+      "zh": "投币储物柜",
+      "kind": "locker",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これはコインロッカーです。",
+      "translation": "这是投币储物柜。"
+    },
+    {
+      "id": "usj-detail-0215",
+      "jp": "整理券",
+      "reading": "せいりけん",
+      "zh": "入场整理券",
+      "kind": "card",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは整理券です。",
+      "translation": "这是入场整理券。"
+    },
+    {
+      "id": "usj-detail-0216",
+      "jp": "案内カウンター",
+      "reading": "あんないカウンター",
+      "zh": "咨询柜台",
+      "kind": "counter",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは案内カウンターです。",
+      "translation": "这是咨询柜台。"
+    },
+    {
+      "id": "usj-specific-01",
+      "jp": "パワーアップバンド",
+      "reading": "パワーアップバンド",
+      "zh": "能量提升手环",
+      "kind": "specific-object",
+      "zone": 8,
+      "category": "場所ならではのもの",
+      "example": "パワーアップバンドはここにあります。",
+      "detail": {
+        "type": "band",
+        "color": "#ce9b86"
+      },
+      "translation": "能量提升手环在这里。"
+    },
+    {
+      "id": "usj-specific-02",
+      "jp": "スーパーキノコ・ピッツァボウル",
+      "reading": "スーパーキノコ ピッツァボウル",
+      "zh": "蘑菇披萨碗",
+      "kind": "specific-object",
+      "zone": 8,
+      "category": "場所ならではのもの",
+      "example": "スーパーキノコ・ピッツァボウルはここにあります。",
+      "detail": {
+        "type": "dish",
+        "color": "#d69880",
+        "shape": "mushroom-bowl"
+      },
+      "translation": "蘑菇披萨碗在这里。"
+    },
+    {
+      "id": "usj-specific-03",
+      "jp": "エリア入場整理券",
+      "reading": "エリアにゅうじょうせいりけん",
+      "zh": "园区入场整理券",
+      "kind": "specific-object",
+      "zone": 8,
+      "category": "場所ならではのもの",
+      "example": "エリア入場整理券はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#c3bc92"
+      },
+      "translation": "园区入场整理券在这里。"
+    },
+    {
+      "id": "usj-specific-04",
+      "jp": "グッズのショッピングバッグ",
+      "reading": "グッズのショッピングバッグ",
+      "zh": "周边购物袋",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "グッズのショッピングバッグはここにあります。",
+      "detail": {
+        "type": "bag",
+        "color": "#a9bfc9"
+      },
+      "translation": "周边购物袋在这里。"
+    },
+    {
+      "id": "usj-specific-05",
+      "jp": "アトラクション案内カード",
+      "reading": "アトラクションあんないカード",
+      "zh": "游乐设施说明卡",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "アトラクション案内カードはここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#c3cba5"
+      },
+      "translation": "游乐设施说明卡在这里。"
+    },
+    {
+      "id": "usj-specific-06",
+      "jp": "コインロッカー利用票",
+      "reading": "コインロッカーりようひょう",
+      "zh": "寄物柜凭单",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "コインロッカー利用票はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#bbafc9",
+        "place": [
+          3.1,
+          1.36,
+          1.5,
+          0.85
+        ]
+      },
+      "translation": "寄物柜凭单在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 35,
+  "district": 3,
+  "note": "参考真实园区主题，按日语学习重新安排的简化空间。",
+  "sources": [
+    "https://www.usj.co.jp/web/ja/jp/areas"
+  ],
+  "sceneReference": "https://www.usj.co.jp/web/ja/jp/areas/super-nintendo-world",
+  "venueRole": {
+    "id": "usj-venue-worker",
+    "jp": "エリアの係",
+    "reading": "エリアのかかり",
+    "zone": 8,
+    "activity": "入場の案内をしています。",
+    "readingLine": "にゅうじょうの あんないを しています。",
+    "verb": "案内する → 案内している",
+    "grammar": "お客様【に】入場方法【を】案内する。",
+    "reply": "こちらの案内をご確認ください。",
+    "tools": [
+      "パワーアップバンド",
+      "エリア入場整理券",
+      "アトラクション案内カード"
+    ]
+  }
+}

@@ -1,0 +1,724 @@
+{
+  "id": "shrine",
+  "title": "日式神社",
+  "jp": "神社",
+  "reading": "じんじゃ",
+  "layout": "temple",
+  "zones": [
+    {
+      "jp": "鳥居",
+      "zh": "鸟居"
+    },
+    {
+      "jp": "参道",
+      "zh": "参道"
+    },
+    {
+      "jp": "拝殿",
+      "zh": "拜殿"
+    },
+    {
+      "jp": "手水舎",
+      "zh": "净手区"
+    },
+    {
+      "jp": "授与所",
+      "zh": "授与所"
+    }
+  ],
+  "items": [
+    {
+      "id": "shrine-001",
+      "jp": "鳥居",
+      "reading": "とりい",
+      "zh": "鸟居",
+      "kind": "torii",
+      "color": "#bb6b50",
+      "category": "空间与设施",
+      "example": "これは鳥居です。",
+      "translation": "这是鸟居。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-002",
+      "jp": "参道",
+      "reading": "さんどう",
+      "zh": "参道",
+      "kind": "path",
+      "color": "#c7bda3",
+      "size": [
+        2.0,
+        0.05,
+        6.0
+      ],
+      "category": "空间与设施",
+      "example": "これは参道です。",
+      "translation": "这是参道。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-003",
+      "jp": "拝殿",
+      "reading": "はいでん",
+      "zh": "拜殿",
+      "kind": "shrinehall",
+      "color": "#a2774f",
+      "category": "空间与设施",
+      "example": "ここは拝殿です。",
+      "translation": "这里是拜殿。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "shrine-004",
+      "jp": "本殿",
+      "reading": "ほんでん",
+      "zh": "本殿",
+      "kind": "shrinehall",
+      "color": "#9c714c",
+      "size": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "category": "空间与设施",
+      "example": "ここは本殿です。",
+      "translation": "这里是本殿。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "shrine-005",
+      "jp": "屋根",
+      "reading": "やね",
+      "zh": "屋顶",
+      "kind": "roof",
+      "color": "#6d8077",
+      "size": [
+        6.0,
+        1.0,
+        3.0
+      ],
+      "category": "物品与细节",
+      "example": "これは屋根です。",
+      "translation": "这是屋顶。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-006",
+      "jp": "注連縄",
+      "reading": "しめなわ",
+      "zh": "注连绳",
+      "kind": "sacredrope",
+      "category": "物品与细节",
+      "example": "これは注連縄です。",
+      "translation": "这是注连绳。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "shrine-007",
+      "jp": "紙垂",
+      "reading": "しで",
+      "zh": "垂挂的折纸",
+      "kind": "paper-streamer",
+      "category": "物品与细节",
+      "example": "これは紙垂です。",
+      "translation": "这是垂挂的折纸。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-008",
+      "jp": "鈴",
+      "reading": "すず",
+      "zh": "铃铛",
+      "kind": "bell",
+      "color": "#c5a563",
+      "category": "物品与细节",
+      "example": "これは鈴です。",
+      "translation": "这是铃铛。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "shrine-009",
+      "jp": "鈴緒",
+      "reading": "すずお",
+      "zh": "摇铃绳",
+      "kind": "bellrope",
+      "color": "#c9ac6d",
+      "category": "物品与细节",
+      "example": "これは鈴緒です。",
+      "translation": "这是摇铃绳。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "shrine-010",
+      "jp": "賽銭箱",
+      "reading": "さいせんばこ",
+      "zh": "香火钱箱",
+      "kind": "offering",
+      "color": "#a88254",
+      "category": "物品与细节",
+      "example": "これは賽銭箱です。",
+      "translation": "这是香火钱箱。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "shrine-011",
+      "jp": "賽銭",
+      "reading": "さいせん",
+      "zh": "香火钱",
+      "kind": "coins",
+      "category": "物品与细节",
+      "example": "これは賽銭です。",
+      "translation": "这是香火钱。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-012",
+      "jp": "狛犬",
+      "reading": "こまいぬ",
+      "zh": "狛犬石像",
+      "kind": "stone-dog",
+      "category": "物品与细节",
+      "example": "これは狛犬です。",
+      "translation": "这是狛犬石像。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-013",
+      "jp": "台座",
+      "reading": "だいざ",
+      "zh": "底座",
+      "kind": "plinth",
+      "color": "#a2a698",
+      "category": "物品与细节",
+      "example": "これは台座です。",
+      "translation": "这是底座。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-014",
+      "jp": "手水舎",
+      "reading": "ちょうずや",
+      "zh": "净手亭",
+      "kind": "bellhouse",
+      "color": "#a38564",
+      "category": "物品与细节",
+      "example": "これは手水舎です。",
+      "translation": "这是净手亭。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-015",
+      "jp": "手水鉢",
+      "reading": "ちょうずばち",
+      "zh": "净手水钵",
+      "kind": "basin",
+      "color": "#a5b2a2",
+      "category": "物品与细节",
+      "example": "これは手水鉢です。",
+      "translation": "这是净手水钵。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "shrine-016",
+      "jp": "柄杓",
+      "reading": "ひしゃく",
+      "zh": "长柄水勺",
+      "kind": "dipper",
+      "category": "物品与细节",
+      "example": "これは柄杓です。",
+      "translation": "这是长柄水勺。",
+      "note": "",
+      "zone": 3,
+      "detail": {
+        "type": "ladle"
+      }
+    },
+    {
+      "id": "shrine-017",
+      "jp": "竹",
+      "reading": "たけ",
+      "zh": "竹子",
+      "kind": "bamboo",
+      "category": "物品与细节",
+      "example": "これは竹です。",
+      "translation": "这是竹子。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "shrine-018",
+      "jp": "石灯籠",
+      "reading": "いしどうろう",
+      "zh": "石灯笼",
+      "kind": "stone-lantern",
+      "category": "物品与细节",
+      "example": "これは石灯籠です。",
+      "translation": "这是石灯笼。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "shrine-019",
+      "jp": "玉砂利",
+      "reading": "たまじゃり",
+      "zh": "圆砾石",
+      "kind": "gravel",
+      "color": "#c5bea7",
+      "size": [
+        2.0,
+        0.04,
+        2.0
+      ],
+      "category": "物品与细节",
+      "example": "これは玉砂利です。",
+      "translation": "这是圆砾石。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "shrine-020",
+      "jp": "御神木",
+      "reading": "ごしんぼく",
+      "zh": "神木",
+      "kind": "tree",
+      "color": "#719260",
+      "category": "物品与细节",
+      "example": "これは御神木です。",
+      "translation": "这是神木。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "shrine-021",
+      "jp": "御守り",
+      "reading": "おまもり",
+      "zh": "护身符",
+      "kind": "amulet",
+      "color": "#b3849d",
+      "category": "物品与细节",
+      "example": "これは御守りです。",
+      "translation": "这是护身符。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "shrine-022",
+      "jp": "お札",
+      "reading": "おふだ",
+      "zh": "神符",
+      "kind": "woodtablet",
+      "category": "物品与细节",
+      "example": "これはお札です。",
+      "translation": "这是神符。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-023",
+      "jp": "おみくじ",
+      "reading": "おみくじ",
+      "zh": "神签",
+      "kind": "fortune",
+      "category": "物品与细节",
+      "example": "これはおみくじです。",
+      "translation": "这是神签。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-024",
+      "jp": "おみくじ箱",
+      "reading": "おみくじばこ",
+      "zh": "神签筒",
+      "kind": "fortunebox",
+      "category": "物品与细节",
+      "example": "これはおみくじ箱です。",
+      "translation": "这是神签筒。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-025",
+      "jp": "絵馬",
+      "reading": "えま",
+      "zh": "绘马",
+      "kind": "ema",
+      "category": "物品与细节",
+      "example": "これは絵馬です。",
+      "translation": "这是绘马。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "shrine-026",
+      "jp": "絵馬掛け",
+      "reading": "えまかけ",
+      "zh": "绘马架",
+      "kind": "emarack",
+      "category": "物品与细节",
+      "example": "これは絵馬掛けです。",
+      "translation": "这是绘马架。",
+      "note": "",
+      "zone": 0,
+      "detail": {
+        "type": "ema-rack",
+        "floor": [
+          5.3,
+          2,
+          1
+        ],
+        "width": 2.7,
+        "depth": 0.7
+      }
+    },
+    {
+      "id": "shrine-027",
+      "jp": "御朱印帳",
+      "reading": "ごしゅいんちょう",
+      "zh": "御朱印册",
+      "kind": "book",
+      "color": "#ad9cb7",
+      "category": "物品与细节",
+      "example": "これは御朱印帳です。",
+      "translation": "这是御朱印册。",
+      "note": "",
+      "zone": 0,
+      "detail": {
+        "type": "goshuin-book"
+      }
+    },
+    {
+      "id": "shrine-028",
+      "jp": "授与所",
+      "reading": "じゅよしょ",
+      "zh": "授与所",
+      "kind": "stall",
+      "color": "#c19d74",
+      "size": [
+        3.0,
+        1.0,
+        1.4
+      ],
+      "category": "物品与细节",
+      "example": "ここは授与所です。",
+      "translation": "这里是授与所。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-029",
+      "jp": "榊",
+      "reading": "さかき",
+      "zh": "榊树枝",
+      "kind": "branch",
+      "category": "物品与细节",
+      "example": "これは榊です。",
+      "translation": "这是榊树枝。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-030",
+      "jp": "三方",
+      "reading": "さんぼう",
+      "zh": "供品台",
+      "kind": "offeringtray",
+      "color": "#ccad74",
+      "category": "物品与细节",
+      "example": "これは三方です。",
+      "translation": "这是供品台。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-031",
+      "jp": "鏡",
+      "reading": "かがみ",
+      "zh": "镜子",
+      "kind": "roundmirror",
+      "category": "物品与细节",
+      "example": "これは鏡です。",
+      "translation": "这是镜子。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-032",
+      "jp": "太鼓",
+      "reading": "たいこ",
+      "zh": "太鼓",
+      "kind": "drum",
+      "category": "物品与细节",
+      "example": "これは太鼓です。",
+      "translation": "这是太鼓。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-033",
+      "jp": "旗",
+      "reading": "はた",
+      "zh": "旗帜",
+      "kind": "flag",
+      "color": "#b87561",
+      "category": "物品与细节",
+      "example": "これは旗です。",
+      "translation": "这是旗帜。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-034",
+      "jp": "石碑",
+      "reading": "せきひ",
+      "zh": "石碑",
+      "kind": "monument",
+      "category": "物品与细节",
+      "example": "これは石碑です。",
+      "translation": "这是石碑。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-036",
+      "jp": "池",
+      "reading": "いけ",
+      "zh": "池塘",
+      "kind": "pond",
+      "color": "#8dbcb3",
+      "size": [
+        2.5,
+        0.1,
+        2.0
+      ],
+      "category": "物品与细节",
+      "example": "これは池です。",
+      "translation": "这是池塘。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "shrine-037",
+      "jp": "鯉",
+      "reading": "こい",
+      "zh": "锦鲤",
+      "kind": "fish",
+      "color": "#dc9b69",
+      "category": "物品与细节",
+      "example": "これは鯉です。",
+      "translation": "这是锦鲤。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "shrine-038",
+      "jp": "橋",
+      "reading": "はし",
+      "zh": "桥",
+      "kind": "bridge",
+      "color": "#b27855",
+      "category": "物品与细节",
+      "example": "これは橋です。",
+      "translation": "这是桥。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "shrine-039",
+      "jp": "落ち葉",
+      "reading": "おちば",
+      "zh": "落叶",
+      "kind": "petals",
+      "color": "#bd8f5e",
+      "category": "物品与细节",
+      "example": "これは落ち葉です。",
+      "translation": "这是落叶。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "shrine-040",
+      "jp": "地面",
+      "reading": "じめん",
+      "zh": "地面",
+      "kind": "ground",
+      "category": "空间与设施",
+      "example": "これは地面です。",
+      "translation": "这是地面。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "shrine-041",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "shrine-044",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "shrine-046",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 4
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "shrine-047",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "shrine-048",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "shrine-049",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "shrine-050",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "shrine-051",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "shrine-052",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 4
+    },
+    {
+      "id": "shrine-specific-03",
+      "jp": "破魔矢",
+      "reading": "はまや",
+      "zh": "破魔箭",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "参拝の道具",
+      "detail": {
+        "type": "arrow",
+        "place": [
+          -2.8,
+          0.68,
+          2.1,
+          1
+        ]
+      },
+      "example": "破魔矢を見てみましょう。",
+      "translation": "一起看看破魔箭吧。"
+    },
+    {
+      "id": "shrine-specific-04",
+      "jp": "神札",
+      "reading": "しんさつ",
+      "zh": "神符",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "参拝の道具",
+      "detail": {
+        "type": "form",
+        "place": [
+          -4.6,
+          0.67,
+          2.3,
+          1
+        ]
+      },
+      "example": "神札を見てみましょう。",
+      "translation": "一起看看神符吧。"
+    },
+    {
+      "id": "shrine-specific-06",
+      "jp": "おみくじ筒",
+      "reading": "おみくじづつ",
+      "zh": "抽签筒",
+      "kind": "specific-object",
+      "zone": 4,
+      "category": "参拝の道具",
+      "detail": {
+        "type": "omikuji"
+      },
+      "example": "おみくじ筒を見てみましょう。",
+      "translation": "一起看看抽签筒吧。"
+    }
+  ],
+  "menus": [],
+  "npc": 19,
+  "district": 3,
+  "sceneReference": "https://www.meijijingu.or.jp/guide/"
+}

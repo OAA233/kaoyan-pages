@@ -1,0 +1,1073 @@
+{
+  "id": "teishoku",
+  "title": "定食屋",
+  "jp": "定食屋",
+  "reading": "ていしょくや",
+  "layout": "restaurant",
+  "zones": [
+    {
+      "jp": "テーブル席",
+      "zh": "テーブル席"
+    },
+    {
+      "jp": "窓際の席",
+      "zh": "窓際の席"
+    },
+    {
+      "jp": "カウンター席",
+      "zh": "カウンター席"
+    },
+    {
+      "jp": "会計",
+      "zh": "会計"
+    }
+  ],
+  "items": [
+    {
+      "jp": "メニュー",
+      "reading": "メニュー",
+      "zh": "菜单",
+      "kind": "menu",
+      "category": "食器・設備",
+      "id": "teishoku-001",
+      "example": "メニューを見てみましょう。",
+      "translation": "看看菜单吧。",
+      "zone": 0
+    },
+    {
+      "jp": "箸",
+      "reading": "はし",
+      "zh": "筷子",
+      "kind": "chopsticks",
+      "category": "食器・設備",
+      "id": "teishoku-002",
+      "example": "箸を見てみましょう。",
+      "translation": "看看筷子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "箸置き",
+      "reading": "はしおき",
+      "zh": "筷架",
+      "kind": "smallblock",
+      "category": "食器・設備",
+      "id": "teishoku-003",
+      "example": "箸置きを見てみましょう。",
+      "translation": "看看筷架吧。",
+      "zone": 1
+    },
+    {
+      "jp": "スプーン",
+      "reading": "スプーン",
+      "zh": "勺子",
+      "kind": "spoon",
+      "category": "食器・設備",
+      "id": "teishoku-004",
+      "example": "スプーンを見てみましょう。",
+      "translation": "看看勺子吧。",
+      "zone": 2
+    },
+    {
+      "jp": "フォーク",
+      "reading": "フォーク",
+      "zh": "叉子",
+      "kind": "fork",
+      "category": "食器・設備",
+      "id": "teishoku-005",
+      "example": "フォークを見てみましょう。",
+      "translation": "看看叉子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ナイフ",
+      "reading": "ナイフ",
+      "zh": "餐刀",
+      "kind": "knife",
+      "category": "食器・設備",
+      "id": "teishoku-006",
+      "example": "ナイフを見てみましょう。",
+      "translation": "看看餐刀吧。",
+      "zone": 1
+    },
+    {
+      "jp": "皿",
+      "reading": "さら",
+      "zh": "盘子",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "teishoku-007",
+      "example": "皿を見てみましょう。",
+      "translation": "看看盘子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "取り皿",
+      "reading": "とりざら",
+      "zh": "分餐小碟",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "teishoku-008",
+      "example": "取り皿を見てみましょう。",
+      "translation": "看看分餐小碟吧。",
+      "zone": 1
+    },
+    {
+      "jp": "茶碗",
+      "reading": "ちゃわん",
+      "zh": "饭碗",
+      "kind": "bowl",
+      "category": "食器・設備",
+      "id": "teishoku-009",
+      "example": "茶碗を見てみましょう。",
+      "translation": "看看饭碗吧。",
+      "zone": 2
+    },
+    {
+      "jp": "湯のみ",
+      "reading": "ゆのみ",
+      "zh": "日式茶杯",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "teishoku-010",
+      "example": "湯のみを見てみましょう。",
+      "translation": "看看日式茶杯吧。",
+      "zone": 0
+    },
+    {
+      "jp": "コップ",
+      "reading": "コップ",
+      "zh": "杯子",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "teishoku-011",
+      "example": "コップを見てみましょう。",
+      "translation": "看看杯子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "おしぼり",
+      "reading": "おしぼり",
+      "zh": "擦手巾",
+      "kind": "towel",
+      "category": "食器・設備",
+      "id": "teishoku-012",
+      "example": "おしぼりを見てみましょう。",
+      "translation": "看看擦手巾吧。",
+      "zone": 0
+    },
+    {
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银机",
+      "kind": "register",
+      "category": "食器・設備",
+      "id": "teishoku-027",
+      "example": "レジを見てみましょう。",
+      "translation": "看看收银机吧。",
+      "zone": 3
+    },
+    {
+      "jp": "レシート",
+      "reading": "レシート",
+      "zh": "购物小票",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "teishoku-028",
+      "example": "レシートを見てみましょう。",
+      "translation": "看看购物小票吧。",
+      "zone": 3
+    },
+    {
+      "jp": "お釣り",
+      "reading": "おつり",
+      "zh": "找零",
+      "kind": "coins",
+      "category": "食器・設備",
+      "id": "teishoku-029",
+      "example": "お釣りを見てみましょう。",
+      "translation": "看看找零吧。",
+      "zone": 3
+    },
+    {
+      "jp": "伝票",
+      "reading": "でんぴょう",
+      "zh": "账单",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "teishoku-030",
+      "example": "伝票を見てみましょう。",
+      "translation": "看看账单吧。",
+      "zone": 3
+    },
+    {
+      "jp": "枝豆",
+      "reading": "えだまめ",
+      "zh": "毛豆",
+      "kind": "edamame",
+      "category": "料理",
+      "art": [
+        "foods",
+        0
+      ],
+      "id": "teishoku-031",
+      "example": "枝豆を見てみましょう。",
+      "translation": "看看毛豆吧。",
+      "zone": 1
+    },
+    {
+      "jp": "唐揚げ",
+      "reading": "からあげ",
+      "zh": "日式炸鸡",
+      "kind": "fried",
+      "category": "料理",
+      "art": [
+        "foods",
+        1
+      ],
+      "id": "teishoku-032",
+      "example": "唐揚げを見てみましょう。",
+      "translation": "看看日式炸鸡吧。",
+      "zone": 0
+    },
+    {
+      "jp": "焼き鳥",
+      "reading": "やきとり",
+      "zh": "烤鸡肉串",
+      "kind": "skewer",
+      "category": "料理",
+      "art": [
+        "foods",
+        2
+      ],
+      "id": "teishoku-033",
+      "example": "焼き鳥を見てみましょう。",
+      "translation": "看看烤鸡肉串吧。",
+      "zone": 1,
+      "detail": {
+        "type": "dish",
+        "shape": "skewer",
+        "color": "#c5a177"
+      }
+    },
+    {
+      "jp": "刺身",
+      "reading": "さしみ",
+      "zh": "生鱼片",
+      "kind": "sashimi",
+      "category": "料理",
+      "art": [
+        "foods",
+        3
+      ],
+      "id": "teishoku-034",
+      "example": "刺身を見てみましょう。",
+      "translation": "看看生鱼片吧。",
+      "zone": 2
+    },
+    {
+      "jp": "カレーライス",
+      "reading": "カレーライス",
+      "zh": "咖喱饭",
+      "kind": "rice",
+      "category": "料理",
+      "art": [
+        "foods",
+        11
+      ],
+      "id": "teishoku-035",
+      "example": "カレーライスを見てみましょう。",
+      "translation": "看看咖喱饭吧。",
+      "zone": 0
+    },
+    {
+      "jp": "緑茶",
+      "reading": "りょくちゃ",
+      "zh": "绿茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        0
+      ],
+      "id": "teishoku-036",
+      "example": "緑茶を見てみましょう。",
+      "translation": "看看绿茶吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ウーロン茶",
+      "reading": "ウーロンちゃ",
+      "zh": "乌龙茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        1
+      ],
+      "id": "teishoku-037",
+      "example": "ウーロン茶を見てみましょう。",
+      "translation": "看看乌龙茶吧。",
+      "zone": 0
+    },
+    {
+      "jp": "コーヒー",
+      "reading": "コーヒー",
+      "zh": "咖啡",
+      "kind": "mug",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        2
+      ],
+      "id": "teishoku-038",
+      "example": "コーヒーを見てみましょう。",
+      "translation": "看看咖啡吧。",
+      "zone": 1
+    },
+    {
+      "jp": "紅茶",
+      "reading": "こうちゃ",
+      "zh": "红茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        3
+      ],
+      "id": "teishoku-039",
+      "example": "紅茶を見てみましょう。",
+      "translation": "看看红茶吧。",
+      "zone": 2
+    },
+    {
+      "jp": "オレンジジュース",
+      "reading": "オレンジジュース",
+      "zh": "橙汁",
+      "kind": "cup",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        4
+      ],
+      "id": "teishoku-040",
+      "example": "オレンジジュースを見てみましょう。",
+      "translation": "看看橙汁吧。",
+      "zone": 0
+    },
+    {
+      "jp": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "zh": "牛奶",
+      "kind": "bottle",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        5
+      ],
+      "id": "teishoku-041",
+      "example": "牛乳を見てみましょう。",
+      "translation": "看看牛奶吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ビール",
+      "reading": "ビール",
+      "zh": "啤酒",
+      "kind": "beer",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        6
+      ],
+      "id": "teishoku-042",
+      "example": "ビールを見てみましょう。",
+      "translation": "看看啤酒吧。",
+      "zone": 0
+    },
+    {
+      "jp": "日本酒",
+      "reading": "にほんしゅ",
+      "zh": "日本清酒",
+      "kind": "sakeflask",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        7
+      ],
+      "id": "teishoku-043",
+      "example": "日本酒を見てみましょう。",
+      "translation": "看看日本清酒吧。",
+      "zone": 1
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "teishoku-044",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 0
+    },
+    {
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "架子",
+      "kind": "bookshelf",
+      "category": "空間・設備",
+      "id": "teishoku-047",
+      "example": "棚を見てみましょう。",
+      "translation": "看看架子吧。",
+      "zone": 3
+    },
+    {
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空間・設備",
+      "id": "teishoku-049",
+      "example": "窓を見てみましょう。",
+      "translation": "看看窗户吧。",
+      "zone": 3
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "teishoku-050",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "teishoku-051",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 0
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "teishoku-052",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 3
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "teishoku-053",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 3
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "teishoku-054",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "teishoku-055",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 3
+    },
+    {
+      "jp": "味噌汁",
+      "reading": "みそしる",
+      "zh": "味噌汤",
+      "kind": "soup",
+      "art": [
+        "dishes",
+        10
+      ],
+      "category": "料理",
+      "example": "味噌汁をください。",
+      "translation": "请给我味噌汤。",
+      "id": "teishoku-menu-10",
+      "zone": 1
+    },
+    {
+      "jp": "茶碗蒸し",
+      "reading": "ちゃわんむし",
+      "zh": "日式蒸蛋",
+      "kind": "bowl",
+      "art": [
+        "dishes",
+        11
+      ],
+      "category": "料理",
+      "example": "茶碗蒸しをください。",
+      "translation": "请给我日式蒸蛋。",
+      "id": "teishoku-menu-11",
+      "zone": 2
+    },
+    {
+      "jp": "天ぷら",
+      "reading": "てんぷら",
+      "zh": "天妇罗",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        12
+      ],
+      "category": "料理",
+      "example": "天ぷらをください。",
+      "translation": "请给我天妇罗。",
+      "id": "teishoku-menu-12",
+      "zone": 0
+    },
+    {
+      "jp": "餃子",
+      "reading": "ぎょうざ",
+      "zh": "饺子",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        13
+      ],
+      "category": "料理",
+      "example": "餃子をください。",
+      "translation": "请给我饺子。",
+      "id": "teishoku-menu-13",
+      "zone": 1
+    },
+    {
+      "jp": "コロッケ",
+      "reading": "コロッケ",
+      "zh": "可乐饼",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        14
+      ],
+      "category": "料理",
+      "example": "コロッケをください。",
+      "translation": "请给我可乐饼。",
+      "id": "teishoku-menu-14",
+      "zone": 0,
+      "detail": {
+        "type": "dish",
+        "shape": "cutlet",
+        "color": "#c5a177"
+      }
+    },
+    {
+      "jp": "とんかつ",
+      "reading": "とんかつ",
+      "zh": "炸猪排",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        15
+      ],
+      "category": "料理",
+      "example": "とんかつをください。",
+      "translation": "请给我炸猪排。",
+      "id": "teishoku-menu-15",
+      "zone": 1,
+      "detail": {
+        "type": "dish",
+        "shape": "cutlet",
+        "color": "#c5a177"
+      }
+    },
+    {
+      "jp": "冷ややっこ",
+      "reading": "ひややっこ",
+      "zh": "凉拌豆腐",
+      "kind": "tofu",
+      "art": [
+        "meals",
+        4
+      ],
+      "category": "料理",
+      "example": "冷ややっこをください。",
+      "translation": "请给我凉拌豆腐。",
+      "id": "teishoku-menu-20",
+      "zone": 2
+    },
+    {
+      "jp": "漬物",
+      "reading": "つけもの",
+      "zh": "腌菜",
+      "kind": "pickles",
+      "art": [
+        "meals",
+        5
+      ],
+      "category": "料理",
+      "example": "漬物をください。",
+      "translation": "请给我腌菜。",
+      "id": "teishoku-menu-21",
+      "zone": 0
+    },
+    {
+      "jp": "ポテトサラダ",
+      "reading": "ポテトサラダ",
+      "zh": "土豆沙拉",
+      "kind": "vegetables",
+      "art": [
+        "meals",
+        6
+      ],
+      "category": "料理",
+      "example": "ポテトサラダをください。",
+      "translation": "请给我土豆沙拉。",
+      "id": "teishoku-menu-22",
+      "zone": 1
+    },
+    {
+      "jp": "焼き魚",
+      "reading": "やきざかな",
+      "zh": "烤鱼",
+      "kind": "fish",
+      "art": [
+        "meals",
+        8
+      ],
+      "category": "料理",
+      "example": "焼き魚をください。",
+      "translation": "请给我烤鱼。",
+      "id": "teishoku-menu-24",
+      "zone": 0,
+      "detail": {
+        "type": "dish",
+        "shape": "fish",
+        "color": "#c5a177"
+      }
+    },
+    {
+      "jp": "チャーハン",
+      "reading": "チャーハン",
+      "zh": "炒饭",
+      "kind": "rice",
+      "art": [
+        "meals",
+        9
+      ],
+      "category": "料理",
+      "example": "チャーハンをください。",
+      "translation": "请给我炒饭。",
+      "id": "teishoku-menu-25",
+      "zone": 1
+    },
+    {
+      "jp": "牛丼",
+      "reading": "ぎゅうどん",
+      "zh": "牛肉盖饭",
+      "kind": "rice",
+      "art": [
+        "meals",
+        10
+      ],
+      "category": "料理",
+      "example": "牛丼をください。",
+      "translation": "请给我牛肉盖饭。",
+      "id": "teishoku-menu-26",
+      "zone": 0
+    },
+    {
+      "jp": "親子丼",
+      "reading": "おやこどん",
+      "zh": "鸡肉鸡蛋盖饭",
+      "kind": "rice",
+      "art": [
+        "meals",
+        11
+      ],
+      "category": "料理",
+      "example": "親子丼をください。",
+      "translation": "请给我鸡肉鸡蛋盖饭。",
+      "id": "teishoku-menu-27",
+      "zone": 1
+    },
+    {
+      "jp": "カツ丼",
+      "reading": "カツどん",
+      "zh": "猪排盖饭",
+      "kind": "rice",
+      "art": [
+        "meals",
+        12
+      ],
+      "category": "料理",
+      "example": "カツ丼をください。",
+      "translation": "请给我猪排盖饭。",
+      "id": "teishoku-menu-28",
+      "zone": 2
+    },
+    {
+      "jp": "鍋料理",
+      "reading": "なべりょうり",
+      "zh": "日式火锅",
+      "kind": "pot",
+      "art": [
+        "meals",
+        13
+      ],
+      "category": "料理",
+      "example": "鍋料理をください。",
+      "translation": "请给我日式火锅。",
+      "id": "teishoku-menu-29",
+      "zone": 0
+    },
+    {
+      "id": "teishoku-detail-0118",
+      "jp": "お盆",
+      "reading": "おぼん",
+      "zh": "托盘",
+      "kind": "tray",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これはお盆です。",
+      "translation": "这是托盘。"
+    },
+    {
+      "id": "teishoku-detail-0119",
+      "jp": "漬物鉢",
+      "reading": "つけものばち",
+      "zh": "腌菜小钵",
+      "kind": "bowl",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは漬物鉢です。",
+      "translation": "这是腌菜小钵。"
+    },
+    {
+      "id": "teishoku-detail-0120",
+      "jp": "ご飯茶碗",
+      "reading": "ごはんぢゃわん",
+      "zh": "饭碗",
+      "kind": "rice",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これはご飯茶碗です。",
+      "translation": "这是饭碗。"
+    },
+    {
+      "id": "teishoku-detail-0121",
+      "jp": "味噌汁椀",
+      "reading": "みそしるわん",
+      "zh": "味噌汤碗",
+      "kind": "soup",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは味噌汁椀です。",
+      "translation": "这是味噌汤碗。"
+    },
+    {
+      "id": "teishoku-detail-0122",
+      "jp": "水差し",
+      "reading": "みずさし",
+      "zh": "水壶",
+      "kind": "pitcher",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは水差しです。",
+      "translation": "这是水壶。"
+    },
+    {
+      "id": "teishoku-shop-001",
+      "jp": "唐揚げ定食",
+      "reading": "からあげていしょく",
+      "zh": "炸鸡定食",
+      "kind": "set-meal",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "唐揚げ定食を見てみましょう。",
+      "translation": "一起看看炸鸡定食吧。",
+      "menuGroup": "定食"
+    },
+    {
+      "id": "teishoku-shop-002",
+      "jp": "焼き魚定食",
+      "reading": "やきざかなていしょく",
+      "zh": "烤鱼定食",
+      "kind": "set-meal",
+      "zone": 0,
+      "category": "店内のことば",
+      "example": "焼き魚定食を見てみましょう。",
+      "translation": "一起看看烤鱼定食吧。",
+      "menuGroup": "定食"
+    },
+    {
+      "id": "teishoku-shop-003",
+      "jp": "とんかつ定食",
+      "reading": "とんかつていしょく",
+      "zh": "炸猪排定食",
+      "kind": "set-meal",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "とんかつ定食を見てみましょう。",
+      "translation": "一起看看炸猪排定食吧。",
+      "menuGroup": "定食"
+    },
+    {
+      "id": "teishoku-shop-004",
+      "jp": "ご飯",
+      "reading": "ごはん",
+      "zh": "米饭",
+      "kind": "rice",
+      "zone": 0,
+      "category": "店内のことば",
+      "example": "ご飯を見てみましょう。",
+      "translation": "一起看看米饭吧。"
+    },
+    {
+      "id": "teishoku-shop-005",
+      "jp": "定食",
+      "reading": "ていしょく",
+      "zh": "定食",
+      "kind": "set-meal",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "定食を見てみましょう。",
+      "translation": "一起看看定食吧。"
+    },
+    {
+      "id": "teishoku-specific-menu-01",
+      "jp": "鶏と野菜の黒酢あん",
+      "reading": "とりとやさいのくろずあん",
+      "zh": "黑醋鸡肉蔬菜",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "鶏と野菜の黒酢あんを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "pieces",
+        "color": "#b98355",
+        "leaf": false
+      },
+      "reference": "https://ootoya-web2.ootoya.com/menu/A/index.html",
+      "translation": "请给我一份黑醋鸡肉蔬菜。"
+    },
+    {
+      "id": "teishoku-specific-menu-02",
+      "jp": "しまほっけの炭火焼き",
+      "reading": "しまほっけのすみびやき",
+      "zh": "炭烤花鱼（单鳍多线鱼）",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "しまほっけの炭火焼きを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "fish",
+        "color": "#b4a276",
+        "leaf": false
+      },
+      "reference": "https://ootoya-web2.ootoya.com/menu/A/index.html",
+      "translation": "请给我一份炭烤花鱼（单鳍多线鱼）。"
+    },
+    {
+      "id": "teishoku-specific-menu-03",
+      "jp": "豚の生姜焼き",
+      "reading": "ぶたのしょうがやき",
+      "zh": "姜烧猪肉",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "豚の生姜焼きを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "pieces",
+        "color": "#c19379",
+        "leaf": false
+      },
+      "reference": "https://ootoya-web2.ootoya.com/menu/A/index.html",
+      "translation": "请给我一份姜烧猪肉。"
+    },
+    {
+      "id": "teishoku-specific-menu-04",
+      "jp": "チキン南蛮",
+      "reading": "チキンなんばん",
+      "zh": "南蛮鸡",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "チキン南蛮を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "cutlet",
+        "color": "#c8a260",
+        "leaf": false
+      },
+      "reference": "https://ootoya-web2.ootoya.com/menu/A/index.html",
+      "translation": "请给我一份南蛮鸡。"
+    },
+    {
+      "id": "teishoku-specific-menu-05",
+      "jp": "ロースかつ",
+      "reading": "ロースかつ",
+      "zh": "炸里脊猪排",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "ロースかつを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "cutlet",
+        "color": "#c89f62",
+        "leaf": false
+      },
+      "reference": "https://ootoya-web2.ootoya.com/menu/A/index.html",
+      "translation": "请给我一份炸里脊猪排。"
+    },
+    {
+      "id": "teishoku-specific-menu-06",
+      "jp": "五穀ご飯",
+      "reading": "ごこくごはん",
+      "zh": "五谷饭",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "五穀ご飯を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "rice",
+        "color": "#b99d8c",
+        "leaf": false
+      },
+      "reference": "https://ootoya-web2.ootoya.com/menu/A/index.html",
+      "translation": "请给我一份五谷饭。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "すべて",
+      "items": [
+        "teishoku-specific-menu-01",
+        "teishoku-specific-menu-02",
+        "teishoku-specific-menu-03",
+        "teishoku-specific-menu-04",
+        "teishoku-specific-menu-05",
+        "teishoku-specific-menu-06",
+        "teishoku-shop-001",
+        "teishoku-shop-002",
+        "teishoku-shop-003",
+        "teishoku-031",
+        "teishoku-032",
+        "teishoku-033",
+        "teishoku-034",
+        "teishoku-035",
+        "teishoku-menu-10",
+        "teishoku-menu-11",
+        "teishoku-menu-12",
+        "teishoku-menu-13",
+        "teishoku-menu-14",
+        "teishoku-menu-15",
+        "teishoku-menu-20",
+        "teishoku-menu-21",
+        "teishoku-menu-22",
+        "teishoku-menu-24",
+        "teishoku-menu-25",
+        "teishoku-menu-26",
+        "teishoku-menu-27",
+        "teishoku-menu-28",
+        "teishoku-menu-29",
+        "teishoku-036",
+        "teishoku-037",
+        "teishoku-038",
+        "teishoku-039",
+        "teishoku-040",
+        "teishoku-041",
+        "teishoku-042",
+        "teishoku-043"
+      ]
+    },
+    {
+      "name": "お店の料理を選ぶ",
+      "items": [
+        "teishoku-specific-menu-01",
+        "teishoku-specific-menu-02",
+        "teishoku-specific-menu-03",
+        "teishoku-specific-menu-04",
+        "teishoku-specific-menu-05",
+        "teishoku-specific-menu-06"
+      ]
+    },
+    {
+      "name": "定食",
+      "items": [
+        "teishoku-shop-001",
+        "teishoku-shop-002",
+        "teishoku-shop-003"
+      ]
+    },
+    {
+      "name": "料理・軽食",
+      "items": [
+        "teishoku-031",
+        "teishoku-032",
+        "teishoku-033",
+        "teishoku-034",
+        "teishoku-035",
+        "teishoku-menu-10",
+        "teishoku-menu-11",
+        "teishoku-menu-12",
+        "teishoku-menu-13",
+        "teishoku-menu-14",
+        "teishoku-menu-15",
+        "teishoku-menu-20",
+        "teishoku-menu-21",
+        "teishoku-menu-22",
+        "teishoku-menu-24",
+        "teishoku-menu-25",
+        "teishoku-menu-26",
+        "teishoku-menu-27",
+        "teishoku-menu-28",
+        "teishoku-menu-29"
+      ]
+    },
+    {
+      "name": "飲み物",
+      "items": [
+        "teishoku-036",
+        "teishoku-037",
+        "teishoku-038",
+        "teishoku-039",
+        "teishoku-040",
+        "teishoku-041",
+        "teishoku-042",
+        "teishoku-043"
+      ]
+    }
+  ],
+  "npc": 7,
+  "district": 1,
+  "sceneReference": "https://ootoya-web2.ootoya.com/menu/A/index.html"
+}

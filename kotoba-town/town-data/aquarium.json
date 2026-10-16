@@ -1,0 +1,1039 @@
+{
+  "id": "aquarium",
+  "title": "水族馆",
+  "jp": "水族館",
+  "reading": "すいぞくかん",
+  "layout": "aquarium",
+  "zones": [
+    {
+      "jp": "入口",
+      "zh": "入口"
+    },
+    {
+      "jp": "大水槽",
+      "zh": "大型水槽"
+    },
+    {
+      "jp": "海の無脊椎動物",
+      "zh": "海洋生物"
+    },
+    {
+      "jp": "ペンギン・アザラシ",
+      "zh": "企鹅区"
+    },
+    {
+      "jp": "売店",
+      "zh": "纪念品店"
+    },
+    {
+      "jp": "サンゴ礁の魚",
+      "zh": "珊瑚礁鱼类"
+    },
+    {
+      "jp": "砂底の小さな魚",
+      "zh": "沙底的小鱼"
+    },
+    {
+      "jp": "川の魚",
+      "zh": "淡水鱼"
+    }
+  ],
+  "items": [
+    {
+      "id": "aquarium-001",
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "color": "#438a9c",
+      "category": "空间与设施",
+      "example": "これは入口です。",
+      "translation": "这是入口。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aquarium-002",
+      "jp": "チケット",
+      "reading": "チケット",
+      "zh": "门票",
+      "kind": "card",
+      "category": "物品与细节",
+      "example": "これはチケットです。",
+      "translation": "这是门票。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aquarium-003",
+      "jp": "チケット売り場",
+      "reading": "チケットうりば",
+      "zh": "售票处",
+      "kind": "counter",
+      "color": "#4d8195",
+      "size": [
+        2.0,
+        1.0,
+        0.9
+      ],
+      "category": "物品与细节",
+      "example": "これはチケット売り場です。",
+      "translation": "这是售票处。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aquarium-005",
+      "jp": "パンフレット",
+      "reading": "パンフレット",
+      "zh": "宣传册",
+      "kind": "book",
+      "color": "#68a4c0",
+      "category": "物品与细节",
+      "example": "これはパンフレットです。",
+      "translation": "这是宣传册。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aquarium-006",
+      "jp": "水槽",
+      "reading": "すいそう",
+      "zh": "水槽",
+      "kind": "tank",
+      "color": "#4595ad",
+      "size": [
+        8.0,
+        3.0,
+        2.0
+      ],
+      "category": "物品与细节",
+      "example": "これは水槽です。",
+      "translation": "这是水槽。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "aquarium-007",
+      "jp": "ガラス",
+      "reading": "ガラス",
+      "zh": "玻璃",
+      "kind": "glass",
+      "color": "#a3dadd",
+      "size": [
+        7.8,
+        2.6,
+        0.025
+      ],
+      "category": "物品与细节",
+      "example": "これはガラスです。",
+      "translation": "这是玻璃。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "aquarium-008",
+      "jp": "魚",
+      "reading": "さかな",
+      "zh": "鱼",
+      "kind": "fish",
+      "color": "#e4bc59",
+      "category": "物品与细节",
+      "example": "これは魚です。",
+      "translation": "这是鱼。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "aquarium-009",
+      "jp": "サメ",
+      "reading": "サメ",
+      "zh": "鲨鱼",
+      "kind": "shark",
+      "category": "物品与细节",
+      "example": "これはサメです。",
+      "translation": "这是鲨鱼。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "aquarium-010",
+      "jp": "エイ",
+      "reading": "エイ",
+      "zh": "鳐鱼",
+      "kind": "ray",
+      "category": "物品与细节",
+      "example": "これはエイです。",
+      "translation": "这是鳐鱼。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "aquarium-011",
+      "jp": "ウミガメ",
+      "reading": "ウミガメ",
+      "zh": "海龟",
+      "kind": "turtle",
+      "category": "物品与细节",
+      "example": "これはウミガメです。",
+      "translation": "这是海龟。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "aquarium-012",
+      "jp": "クラゲ",
+      "reading": "クラゲ",
+      "zh": "水母",
+      "kind": "jellyfish",
+      "category": "物品与细节",
+      "example": "これはクラゲです。",
+      "translation": "这是水母。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "aquarium-013",
+      "jp": "タツノオトシゴ",
+      "reading": "タツノオトシゴ",
+      "zh": "海马",
+      "kind": "seahorse",
+      "category": "物品与细节",
+      "example": "これはタツノオトシゴです。",
+      "translation": "这是海马。",
+      "note": "",
+      "zone": 5
+    },
+    {
+      "id": "aquarium-014",
+      "jp": "カクレクマノミ",
+      "reading": "かくれくまのみ",
+      "zh": "小丑鱼",
+      "kind": "clownfish",
+      "category": "物品与细节",
+      "example": "カクレクマノミの白い帯を見てみましょう。",
+      "translation": "看看小丑鱼身上的白色条纹吧。",
+      "note": "",
+      "zone": 5,
+      "species": {
+        "variant": "clownfish",
+        "source": "https://www.kaiyukan.com/press/160519_gyugyuttocute.pdf",
+        "habitat": "海水・サンゴ礁"
+      },
+      "noteJa": "海水・サンゴ礁。オレンジ色の体に白い帯がある魚です。"
+    },
+    {
+      "id": "aquarium-015",
+      "jp": "チンアナゴ",
+      "reading": "チンアナゴ",
+      "zh": "花园鳗",
+      "kind": "garden-eel",
+      "category": "物品与细节",
+      "example": "これはチンアナゴです。",
+      "translation": "这是花园鳗。",
+      "note": "",
+      "zone": 6,
+      "species": {
+        "variant": "garden-eel",
+        "source": "https://www.kaiyukan.com/connect/encyclopedia/205.html",
+        "habitat": "海水・砂底"
+      },
+      "noteJa": "砂から顔を出す細長い魚。白い体に黒い点があります。"
+    },
+    {
+      "id": "aquarium-016",
+      "jp": "タコ",
+      "reading": "タコ",
+      "zh": "章鱼",
+      "kind": "octopus",
+      "category": "物品与细节",
+      "example": "これはタコです。",
+      "translation": "这是章鱼。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "aquarium-017",
+      "jp": "イカ",
+      "reading": "イカ",
+      "zh": "鱿鱼",
+      "kind": "squid",
+      "category": "物品与细节",
+      "example": "これはイカです。",
+      "translation": "这是鱿鱼。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "aquarium-018",
+      "jp": "カニ",
+      "reading": "カニ",
+      "zh": "螃蟹",
+      "kind": "crab",
+      "category": "物品与细节",
+      "example": "これはカニです。",
+      "translation": "这是螃蟹。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "aquarium-019",
+      "jp": "エビ",
+      "reading": "エビ",
+      "zh": "虾",
+      "kind": "shrimp",
+      "category": "物品与细节",
+      "example": "これはエビです。",
+      "translation": "这是虾。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "aquarium-020",
+      "jp": "ヒトデ",
+      "reading": "ヒトデ",
+      "zh": "海星",
+      "kind": "starfish",
+      "category": "物品与细节",
+      "example": "これはヒトデです。",
+      "translation": "这是海星。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "aquarium-021",
+      "jp": "ウニ",
+      "reading": "ウニ",
+      "zh": "海胆",
+      "kind": "urchin",
+      "category": "物品与细节",
+      "example": "これはウニです。",
+      "translation": "这是海胆。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "aquarium-022",
+      "jp": "貝",
+      "reading": "かい",
+      "zh": "贝壳",
+      "kind": "shell",
+      "category": "物品与细节",
+      "example": "これは貝です。",
+      "translation": "这是贝壳。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "aquarium-023",
+      "jp": "サンゴ",
+      "reading": "サンゴ",
+      "zh": "珊瑚",
+      "kind": "coral",
+      "color": "#d67d92",
+      "category": "物品与细节",
+      "example": "これはサンゴです。",
+      "translation": "这是珊瑚。",
+      "note": "",
+      "zone": 5,
+      "aquatic": true
+    },
+    {
+      "id": "aquarium-024",
+      "jp": "海藻",
+      "reading": "かいそう",
+      "zh": "海藻",
+      "kind": "seaweed",
+      "category": "物品与细节",
+      "example": "これは海藻です。",
+      "translation": "这是海藻。",
+      "note": "",
+      "zone": 5,
+      "aquatic": true
+    },
+    {
+      "id": "aquarium-025",
+      "jp": "岩",
+      "reading": "いわ",
+      "zh": "岩石",
+      "kind": "rock",
+      "color": "#829a9b",
+      "category": "物品与细节",
+      "example": "これは岩です。",
+      "translation": "这是岩石。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "aquarium-026",
+      "jp": "砂",
+      "reading": "すな",
+      "zh": "沙子",
+      "kind": "sand",
+      "color": "#ded2a2",
+      "size": [
+        7.0,
+        0.1,
+        1.7
+      ],
+      "category": "物品与细节",
+      "example": "これは砂です。",
+      "translation": "这是沙子。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "aquarium-027",
+      "jp": "ペンギン",
+      "reading": "ペンギン",
+      "zh": "企鹅",
+      "kind": "penguin",
+      "category": "物品与细节",
+      "example": "これはペンギンです。",
+      "translation": "这是企鹅。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "aquarium-028",
+      "jp": "アザラシ",
+      "reading": "アザラシ",
+      "zh": "海豹",
+      "kind": "seal",
+      "category": "物品与细节",
+      "example": "これはアザラシです。",
+      "translation": "这是海豹。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "aquarium-029",
+      "jp": "足跡",
+      "reading": "あしあと",
+      "zh": "脚印",
+      "kind": "footprints",
+      "category": "物品与细节",
+      "example": "これは足跡です。",
+      "translation": "这是脚印。",
+      "note": "",
+      "zone": 3
+    },
+    {
+      "id": "aquarium-030",
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "color": "#759aaf",
+      "category": "物品与细节",
+      "example": "これはベンチです。",
+      "translation": "这是长椅。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "aquarium-032",
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明灯",
+      "kind": "lamp",
+      "color": "#93bfd1",
+      "category": "物品与细节",
+      "example": "これは照明です。",
+      "translation": "这是照明灯。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "aquarium-033",
+      "jp": "記念スタンプ",
+      "reading": "きねんスタンプ",
+      "zh": "纪念印章",
+      "kind": "stamp",
+      "category": "物品与细节",
+      "example": "これは記念スタンプです。",
+      "translation": "这是纪念印章。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "aquarium-034",
+      "jp": "お土産",
+      "reading": "おみやげ",
+      "zh": "伴手礼",
+      "kind": "gift",
+      "category": "物品与细节",
+      "example": "これはお土産です。",
+      "translation": "这是伴手礼。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "aquarium-035",
+      "jp": "ぬいぐるみ",
+      "reading": "ぬいぐるみ",
+      "zh": "毛绒玩具",
+      "kind": "plush",
+      "color": "#6298b4",
+      "category": "物品与细节",
+      "example": "これはぬいぐるみです。",
+      "translation": "这是毛绒玩具。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "aquarium-036",
+      "jp": "ポストカード",
+      "reading": "ポストカード",
+      "zh": "明信片",
+      "kind": "card",
+      "category": "物品与细节",
+      "example": "これはポストカードです。",
+      "translation": "这是明信片。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "aquarium-038",
+      "jp": "手すり",
+      "reading": "てすり",
+      "zh": "扶手",
+      "kind": "rail",
+      "color": "#a7c1c1",
+      "size": [
+        3.0,
+        1.0,
+        0.05
+      ],
+      "category": "物品与细节",
+      "example": "これは手すりです。",
+      "translation": "这是扶手。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aquarium-039",
+      "jp": "通路",
+      "reading": "つうろ",
+      "zh": "通道",
+      "kind": "path",
+      "color": "#78a6b4",
+      "size": [
+        2.0,
+        0.02,
+        5.0
+      ],
+      "category": "空间与设施",
+      "example": "これは通路です。",
+      "translation": "这是通道。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aquarium-040",
+      "jp": "トイレ",
+      "reading": "トイレ",
+      "zh": "卫生间",
+      "kind": "room-sign",
+      "category": "空间与设施",
+      "example": "ここはトイレです。",
+      "translation": "这里是卫生间。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aquarium-042",
+      "jp": "壁",
+      "reading": "かべ",
+      "zh": "墙壁",
+      "kind": "wall-shell",
+      "category": "空间与设施",
+      "example": "これは壁です。",
+      "translation": "这是墙壁。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "aquarium-043",
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空间与设施",
+      "example": "これは窓です。",
+      "translation": "这是窗户。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "aquarium-044",
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "置物架",
+      "kind": "shelf-support",
+      "category": "空间与设施",
+      "example": "これは棚です。",
+      "translation": "这是置物架。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "aquarium-045",
+      "jp": "電気",
+      "reading": "でんき",
+      "zh": "灯；照明",
+      "kind": "lighting-shell",
+      "category": "空间与设施",
+      "example": "電気をつけます。",
+      "translation": "开灯。",
+      "note": "这里指照明；「電気」也有电、电力的意思。",
+      "zone": 0
+    },
+    {
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "category": "空間・設備",
+      "id": "aquarium-046",
+      "example": "椅子を見てみましょう。",
+      "translation": "看看椅子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "category": "空間・設備",
+      "id": "aquarium-047",
+      "example": "テーブルを見てみましょう。",
+      "translation": "看看桌子吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "aquarium-048",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "aquarium-049",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "id": "aquarium-detail-0162",
+      "jp": "音声ガイド",
+      "reading": "おんせいガイド",
+      "zh": "语音导览机",
+      "kind": "remote",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは音声ガイドです。",
+      "translation": "这是语音导览机。"
+    },
+    {
+      "id": "aquarium-detail-0163",
+      "jp": "案内パンフレット",
+      "reading": "あんないパンフレット",
+      "zh": "导览册",
+      "kind": "book",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは案内パンフレットです。",
+      "translation": "这是导览册。"
+    },
+    {
+      "id": "aquarium-detail-0164",
+      "jp": "休憩ベンチ",
+      "reading": "きゅうけいベンチ",
+      "zh": "休息长椅",
+      "kind": "bench",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは休憩ベンチです。",
+      "translation": "这是休息长椅。"
+    },
+    {
+      "id": "aquarium-detail-0165",
+      "jp": "観察窓",
+      "reading": "かんさつまど",
+      "zh": "观察窗",
+      "kind": "window-shell",
+      "zone": 0,
+      "category": "场所细节",
+      "example": "これは観察窓です。",
+      "translation": "这是观察窗。"
+    },
+    {
+      "id": "aquarium-species-blue-tang",
+      "jp": "ナンヨウハギ",
+      "reading": "なんようはぎ",
+      "zh": "蓝吊鱼（拟刺尾鲷）",
+      "kind": "aquarium-fish",
+      "zone": 5,
+      "category": "魚類",
+      "example": "ナンヨウハギはどこにいますか。",
+      "noteJa": "海水・サンゴ礁。青い体と黄色い尾びれが目印です。",
+      "species": {
+        "variant": "blue-tang",
+        "source": "https://aquarium.co.jp/picturebook/paracanthurus-hepathus.html",
+        "habitat": "海水・サンゴ礁",
+        "checked": "2026-10-01"
+      },
+      "translation": "蓝吊鱼（拟刺尾鲷）在哪里？"
+    },
+    {
+      "id": "aquarium-species-boxfish",
+      "jp": "ハコフグ（幼魚）",
+      "reading": "はこふぐ ようぎょ",
+      "zh": "箱鲀（幼鱼）",
+      "kind": "aquarium-fish",
+      "zone": 5,
+      "category": "魚類",
+      "example": "ハコフグ（幼魚）はどこにいますか。",
+      "noteJa": "海水・岩礁。箱のような体の形をしています。ここでは小さな幼魚を見ます。",
+      "species": {
+        "variant": "boxfish",
+        "source": "https://aquarium.co.jp/picturebook/ostracion-immaculatus.html",
+        "habitat": "海水・岩礁",
+        "checked": "2026-10-01"
+      },
+      "translation": "箱鲀（幼鱼）在哪里？"
+    },
+    {
+      "id": "aquarium-species-lionfish",
+      "jp": "ミノカサゴ",
+      "reading": "みのかさご",
+      "zh": "蓑鲉",
+      "kind": "aquarium-fish",
+      "zone": 5,
+      "category": "魚類",
+      "example": "ミノカサゴはどこにいますか。",
+      "noteJa": "海水・岩礁。大きく広がるひれが特徴です。しま模様を探してみましょう。",
+      "species": {
+        "variant": "lionfish",
+        "source": "https://aquarium.co.jp/picturebook/pterois-lunulata.html",
+        "habitat": "海水・岩礁",
+        "checked": "2026-10-01"
+      },
+      "translation": "蓑鲉在哪里？"
+    },
+    {
+      "id": "aquarium-species-puffer",
+      "jp": "ハリセンボン",
+      "reading": "はりせんぼん",
+      "zh": "刺鲀",
+      "kind": "aquarium-fish",
+      "zone": 5,
+      "category": "魚類",
+      "example": "ハリセンボンはどこにいますか。",
+      "noteJa": "海水。体にとげがある魚です。丸い形に注目しましょう。",
+      "species": {
+        "variant": "puffer",
+        "source": "https://aquarium.co.jp/diary/2019/09/43528",
+        "habitat": "海水",
+        "checked": "2026-10-01"
+      },
+      "translation": "刺鲀在哪里？"
+    },
+    {
+      "id": "aquarium-species-cleaner",
+      "jp": "ホンソメワケベラ",
+      "reading": "ほんそめわけべら",
+      "zh": "清洁鱼（裂唇鱼）",
+      "kind": "aquarium-fish",
+      "zone": 5,
+      "category": "魚類",
+      "example": "ホンソメワケベラはどこにいますか。",
+      "noteJa": "海水・サンゴ礁。体の横に黒い線があります。ほかの魚の体を掃除する魚です。",
+      "species": {
+        "variant": "cleaner",
+        "source": "https://www.kaiyukan.com/connect/encyclopedia/145.html",
+        "habitat": "海水・サンゴ礁",
+        "checked": "2026-10-01"
+      },
+      "translation": "清洁鱼（裂唇鱼）在哪里？"
+    },
+    {
+      "id": "aquarium-species-snapper",
+      "jp": "ヨスジフエダイ",
+      "reading": "よすじふえだい",
+      "zh": "四线笛鲷",
+      "kind": "aquarium-fish",
+      "zone": 5,
+      "category": "魚類",
+      "example": "ヨスジフエダイはどこにいますか。",
+      "noteJa": "海水・サンゴ礁。黄色い体に青い線があります。「すじ」は線のことです。",
+      "species": {
+        "variant": "snapper",
+        "source": "https://www.kaiyukan.com/connect/encyclopedia/189.html",
+        "habitat": "海水・サンゴ礁",
+        "checked": "2026-10-01"
+      },
+      "translation": "四线笛鲷在哪里？"
+    },
+    {
+      "id": "aquarium-species-angelfish",
+      "jp": "ニシキヤッコ",
+      "reading": "にしきやっこ",
+      "zh": "双棘甲尻鱼",
+      "kind": "aquarium-fish",
+      "zone": 5,
+      "category": "魚類",
+      "example": "ニシキヤッコはどこにいますか。",
+      "noteJa": "海水・サンゴ礁。黄色と青のしま模様がある、サンゴ礁の魚です。",
+      "species": {
+        "variant": "angelfish",
+        "source": "https://www.marinepia.or.jp/picturebook/fish/entry-11621.html",
+        "habitat": "海水・サンゴ礁",
+        "checked": "2026-10-01"
+      },
+      "translation": "双棘甲尻鱼在哪里？"
+    },
+    {
+      "id": "aquarium-species-orange-eel",
+      "jp": "ニシキアナゴ",
+      "reading": "にしきあなご",
+      "zh": "橙带园鳗",
+      "kind": "aquarium-fish",
+      "zone": 6,
+      "category": "魚類",
+      "example": "ニシキアナゴはどこにいますか。",
+      "noteJa": "海水・砂底。オレンジ色と白のしま模様。チンアナゴと見比べましょう。",
+      "species": {
+        "variant": "orange-eel",
+        "source": "https://aquarium.co.jp/diary/2020/02/44888",
+        "habitat": "海水・砂底",
+        "checked": "2026-10-01"
+      },
+      "translation": "橙带园鳗在哪里？"
+    },
+    {
+      "id": "aquarium-species-arowana",
+      "jp": "シルバーアロワナ",
+      "reading": "しるばーあろわな",
+      "zh": "银龙鱼",
+      "kind": "aquarium-fish",
+      "zone": 7,
+      "category": "魚類",
+      "example": "シルバーアロワナはどこにいますか。",
+      "noteJa": "淡水。銀色の細長い体をした、川の魚です。",
+      "species": {
+        "variant": "arowana",
+        "source": "https://aquarium.co.jp/picturebook/osteoglossum-bicirrhosum.html",
+        "habitat": "淡水",
+        "checked": "2026-10-01"
+      },
+      "translation": "银龙鱼在哪里？"
+    },
+    {
+      "id": "aquarium-species-neon",
+      "jp": "ネオンテトラ",
+      "reading": "ねおんてとら",
+      "zh": "霓虹灯鱼",
+      "kind": "aquarium-fish",
+      "zone": 7,
+      "category": "魚類",
+      "example": "ネオンテトラはどこにいますか。",
+      "noteJa": "淡水。小さな淡水魚。体の横に青い線と赤い部分があります。",
+      "species": {
+        "variant": "neon",
+        "source": "https://spectrumbrands.jp/fishes/freshwater03/",
+        "habitat": "淡水",
+        "checked": "2026-10-01"
+      },
+      "translation": "霓虹灯鱼在哪里？"
+    },
+    {
+      "id": "aquarium-species-pirarucu",
+      "jp": "ピラルク",
+      "reading": "ぴらるく",
+      "zh": "巨骨舌鱼",
+      "kind": "aquarium-fish",
+      "zone": 7,
+      "category": "魚類",
+      "example": "ピラルクはどこにいますか。",
+      "noteJa": "淡水。大きな淡水魚です。水面に口を出して呼吸します。",
+      "species": {
+        "variant": "pirarucu",
+        "source": "https://www.kaiyukan.com/connect/encyclopedia/192.html",
+        "habitat": "淡水",
+        "checked": "2026-10-01"
+      },
+      "translation": "巨骨舌鱼在哪里？"
+    },
+    {
+      "id": "aquarium-species-hammerhead",
+      "jp": "アカシュモクザメ",
+      "reading": "あかしゅもくざめ",
+      "zh": "路氏双髻鲨",
+      "kind": "aquarium-fish",
+      "zone": 1,
+      "category": "魚類",
+      "example": "アカシュモクザメはどこにいますか。",
+      "noteJa": "海水。頭が横に広がった、T字の形をしています。",
+      "species": {
+        "variant": "hammerhead",
+        "source": "https://www.kaiyukan.com/connect/encyclopedia/49.html",
+        "habitat": "海水",
+        "checked": "2026-10-01"
+      },
+      "translation": "路氏双髻鲨在哪里？"
+    },
+    {
+      "id": "aquarium-species-whaleshark",
+      "jp": "ジンベエザメ",
+      "reading": "じんべえざめ",
+      "zh": "鲸鲨",
+      "kind": "aquarium-fish",
+      "zone": 1,
+      "category": "魚類",
+      "example": "ジンベエザメはどこにいますか。",
+      "noteJa": "海水。大きな体のサメ。体の白い点を探してみましょう。",
+      "species": {
+        "variant": "whaleshark",
+        "source": "https://www.kaiyukan.com/connect/encyclopedia/48.html",
+        "habitat": "海水",
+        "checked": "2026-10-01"
+      },
+      "translation": "鲸鲨在哪里？"
+    },
+    {
+      "id": "aquarium-species-sunfish",
+      "jp": "マンボウ",
+      "reading": "まんぼう",
+      "zh": "翻车鱼",
+      "kind": "aquarium-fish",
+      "zone": 1,
+      "category": "魚類",
+      "example": "マンボウはどこにいますか。",
+      "noteJa": "海水。平たく丸い体に、上下へ伸びるひれがあります。",
+      "species": {
+        "variant": "sunfish",
+        "source": "https://www.kaiyukan.com/connect/encyclopedia/82.html",
+        "habitat": "海水",
+        "checked": "2026-10-01"
+      },
+      "translation": "翻车鱼在哪里？"
+    },
+    {
+      "id": "aquarium-specific-01",
+      "jp": "給餌用バケツ",
+      "reading": "きゅうじようバケツ",
+      "zh": "喂食桶",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "給餌用バケツはここにあります。",
+      "detail": {
+        "type": "bucket",
+        "color": "#a2bfb5"
+      },
+      "translation": "喂食桶在这里。"
+    },
+    {
+      "id": "aquarium-specific-02",
+      "jp": "魚の餌",
+      "reading": "さかなのえさ",
+      "zh": "鱼饲料",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "魚の餌はここにあります。",
+      "detail": {
+        "type": "packet",
+        "color": "#cbb491"
+      },
+      "translation": "鱼饲料在这里。"
+    },
+    {
+      "id": "aquarium-specific-03",
+      "jp": "水温計",
+      "reading": "すいおんけい",
+      "zh": "水温计",
+      "kind": "specific-object",
+      "zone": 6,
+      "category": "場所ならではのもの",
+      "example": "水温計はここにあります。",
+      "detail": {
+        "type": "water-thermometer",
+        "color": "#bfd4cf"
+      },
+      "translation": "水温计在这里。"
+    },
+    {
+      "id": "aquarium-specific-04",
+      "jp": "観察ノート",
+      "reading": "かんさつノート",
+      "zh": "观察笔记本",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "観察ノートはここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#bfd4ae"
+      },
+      "translation": "观察笔记本在这里。"
+    },
+    {
+      "id": "aquarium-specific-05",
+      "jp": "飼育員の長靴",
+      "reading": "しいくいんのながぐつ",
+      "zh": "饲养员雨靴",
+      "kind": "boots",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "飼育員の長靴はここにあります。",
+      "translation": "饲养员雨靴在这里。"
+    },
+    {
+      "id": "aquarium-specific-06",
+      "jp": "生きもの解説パネル",
+      "reading": "いきものかいせつパネル",
+      "zh": "生物解说牌",
+      "kind": "specific-object",
+      "zone": 5,
+      "category": "場所ならではのもの",
+      "example": "生きもの解説パネルはここにあります。",
+      "detail": {
+        "type": "tablet",
+        "color": "#a9c7bf"
+      },
+      "translation": "生物解说牌在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 17,
+  "district": 3,
+  "sceneReference": null,
+  "venueRole": {
+    "id": "aquarium-venue-worker",
+    "jp": "飼育員",
+    "reading": "しいくいん",
+    "zone": 0,
+    "activity": "魚の餌を用意しています。",
+    "readingLine": "さかなの えさを よういしています。",
+    "verb": "用意する → 用意している",
+    "grammar": "魚の餌【を】用意する。",
+    "reply": "魚の形や模様を見比べてみましょう。",
+    "tools": [
+      "魚の餌",
+      "給餌用バケツ",
+      "観察ノート"
+    ]
+  }
+}

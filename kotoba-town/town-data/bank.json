@@ -1,0 +1,592 @@
+{
+  "id": "bank",
+  "title": "三菱UFJ风格银行",
+  "jp": "三菱UFJ銀行",
+  "reading": "みつびしユーエフジェイぎんこう",
+  "layout": "service",
+  "zones": [
+    {
+      "jp": "ATM",
+      "zh": "自动柜员机"
+    },
+    {
+      "jp": "窓口",
+      "zh": "办理窗口"
+    },
+    {
+      "jp": "待合・記入台",
+      "zh": "等候与填单"
+    },
+    {
+      "jp": "相談コーナー",
+      "zh": "咨询区"
+    }
+  ],
+  "items": [
+    {
+      "id": "bank-001",
+      "jp": "ATM",
+      "reading": "エーティーエム",
+      "zh": "自动柜员机",
+      "kind": "atm",
+      "zone": 0,
+      "category": "銀行のもの",
+      "example": "これはATMです。",
+      "translation": "这是自动柜员机。"
+    },
+    {
+      "id": "bank-002",
+      "jp": "キャッシュカード",
+      "reading": "キャッシュカード",
+      "zh": "银行卡",
+      "kind": "card",
+      "zone": 0,
+      "category": "銀行のもの",
+      "example": "これはキャッシュカードです。",
+      "translation": "这是银行卡。"
+    },
+    {
+      "id": "bank-003",
+      "jp": "通帳",
+      "reading": "つうちょう",
+      "zh": "存折",
+      "kind": "book",
+      "zone": 0,
+      "category": "銀行のもの",
+      "example": "これは通帳です。",
+      "translation": "这是存折。"
+    },
+    {
+      "id": "bank-004",
+      "jp": "現金",
+      "reading": "げんきん",
+      "zh": "现金",
+      "kind": "coins",
+      "zone": 0,
+      "category": "銀行のもの",
+      "example": "これは現金です。",
+      "translation": "这是现金。"
+    },
+    {
+      "id": "bank-005",
+      "jp": "硬貨",
+      "reading": "こうか",
+      "zh": "硬币",
+      "kind": "coins",
+      "zone": 0,
+      "category": "銀行のもの",
+      "example": "これは硬貨です。",
+      "translation": "这是硬币。"
+    },
+    {
+      "id": "bank-006",
+      "jp": "紙幣",
+      "reading": "しへい",
+      "zh": "纸币",
+      "kind": "paper",
+      "zone": 0,
+      "category": "銀行のもの",
+      "example": "これは紙幣です。",
+      "translation": "这是纸币。"
+    },
+    {
+      "id": "bank-007",
+      "jp": "利用明細票",
+      "reading": "りようめいさいひょう",
+      "zh": "交易明细单",
+      "kind": "paper",
+      "zone": 0,
+      "category": "銀行のもの",
+      "example": "これは利用明細票です。",
+      "translation": "这是交易明细单。"
+    },
+    {
+      "id": "bank-008",
+      "jp": "画面",
+      "reading": "がめん",
+      "zh": "屏幕",
+      "kind": "tablet",
+      "zone": 0,
+      "category": "銀行のもの",
+      "example": "これは画面です。",
+      "translation": "这是屏幕。"
+    },
+    {
+      "id": "bank-009",
+      "jp": "ボタン",
+      "reading": "ボタン",
+      "zh": "按钮",
+      "kind": "button",
+      "zone": 0,
+      "category": "銀行のもの",
+      "example": "これはボタンです。",
+      "translation": "这是按钮。"
+    },
+    {
+      "id": "bank-010",
+      "jp": "封筒",
+      "reading": "ふうとう",
+      "zh": "信封",
+      "kind": "paper",
+      "zone": 0,
+      "category": "銀行のもの",
+      "example": "これは封筒です。",
+      "translation": "这是信封。"
+    },
+    {
+      "id": "bank-011",
+      "jp": "窓口",
+      "reading": "まどぐち",
+      "zh": "服务窗口",
+      "kind": "counter",
+      "zone": 1,
+      "category": "銀行のもの",
+      "example": "これは窓口です。",
+      "translation": "这是服务窗口。"
+    },
+    {
+      "id": "bank-012",
+      "jp": "申込書",
+      "reading": "もうしこみしょ",
+      "zh": "申请表",
+      "kind": "paper",
+      "zone": 1,
+      "category": "銀行のもの",
+      "example": "これは申込書です。",
+      "translation": "这是申请表。"
+    },
+    {
+      "id": "bank-013",
+      "jp": "届出印",
+      "reading": "とどけでいん",
+      "zh": "预留印章",
+      "kind": "stamp",
+      "zone": 1,
+      "category": "銀行のもの",
+      "example": "これは届出印です。",
+      "translation": "这是预留印章。"
+    },
+    {
+      "id": "bank-014",
+      "jp": "本人確認書類",
+      "reading": "ほんにんかくにんしょるい",
+      "zh": "身份证明材料",
+      "kind": "card",
+      "zone": 1,
+      "category": "銀行のもの",
+      "example": "これは本人確認書類です。",
+      "translation": "这是身份证明材料。"
+    },
+    {
+      "id": "bank-015",
+      "jp": "振込依頼書",
+      "reading": "ふりこみいらいしょ",
+      "zh": "转账申请表",
+      "kind": "paper",
+      "zone": 1,
+      "category": "銀行のもの",
+      "example": "これは振込依頼書です。",
+      "translation": "这是转账申请表。"
+    },
+    {
+      "id": "bank-016",
+      "jp": "出金伝票",
+      "reading": "しゅっきんでんぴょう",
+      "zh": "取款凭条",
+      "kind": "paper",
+      "zone": 1,
+      "category": "銀行のもの",
+      "example": "これは出金伝票です。",
+      "translation": "这是取款凭条。"
+    },
+    {
+      "id": "bank-017",
+      "jp": "入金伝票",
+      "reading": "にゅうきんでんぴょう",
+      "zh": "存款凭条",
+      "kind": "paper",
+      "zone": 1,
+      "category": "銀行のもの",
+      "example": "これは入金伝票です。",
+      "translation": "这是存款凭条。"
+    },
+    {
+      "id": "bank-018",
+      "jp": "印鑑",
+      "reading": "いんかん",
+      "zh": "印章",
+      "kind": "stamp",
+      "zone": 1,
+      "category": "銀行のもの",
+      "example": "これは印鑑です。",
+      "translation": "这是印章。"
+    },
+    {
+      "id": "bank-019",
+      "jp": "朱肉",
+      "reading": "しゅにく",
+      "zh": "印泥",
+      "kind": "smallblock",
+      "zone": 1,
+      "category": "銀行のもの",
+      "example": "これは朱肉です。",
+      "translation": "这是印泥。"
+    },
+    {
+      "id": "bank-020",
+      "jp": "ペン",
+      "reading": "ペン",
+      "zh": "笔",
+      "kind": "pen",
+      "zone": 1,
+      "category": "銀行のもの",
+      "example": "これはペンです。",
+      "translation": "这是笔。"
+    },
+    {
+      "id": "bank-021",
+      "jp": "カウンター",
+      "reading": "カウンター",
+      "zh": "柜台",
+      "kind": "counter",
+      "zone": 1,
+      "category": "銀行のもの",
+      "example": "これはカウンターです。",
+      "translation": "这是柜台。"
+    },
+    {
+      "id": "bank-022",
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "chair",
+      "zone": 1,
+      "category": "銀行のもの",
+      "example": "これは椅子です。",
+      "translation": "这是椅子。"
+    },
+    {
+      "id": "bank-023",
+      "jp": "番号札発券機",
+      "reading": "ばんごうふだはっけんき",
+      "zh": "取号机",
+      "kind": "ticket-machine",
+      "zone": 2,
+      "category": "銀行のもの",
+      "example": "これは番号札発券機です。",
+      "translation": "这是取号机。"
+    },
+    {
+      "id": "bank-024",
+      "jp": "番号札",
+      "reading": "ばんごうふだ",
+      "zh": "号码票",
+      "kind": "paper",
+      "zone": 2,
+      "category": "銀行のもの",
+      "example": "これは番号札です。",
+      "translation": "这是号码票。"
+    },
+    {
+      "id": "bank-025",
+      "jp": "記入台",
+      "reading": "きにゅうだい",
+      "zh": "填单台",
+      "kind": "table",
+      "zone": 2,
+      "category": "銀行のもの",
+      "example": "これは記入台です。",
+      "translation": "这是填单台。"
+    },
+    {
+      "id": "bank-026",
+      "jp": "ボールペン",
+      "reading": "ボールペン",
+      "zh": "圆珠笔",
+      "kind": "pen",
+      "zone": 2,
+      "category": "銀行のもの",
+      "example": "これはボールペンです。",
+      "translation": "这是圆珠笔。"
+    },
+    {
+      "id": "bank-027",
+      "jp": "老眼鏡",
+      "reading": "ろうがんきょう",
+      "zh": "老花镜",
+      "kind": "glasses",
+      "zone": 2,
+      "category": "銀行のもの",
+      "example": "これは老眼鏡です。",
+      "translation": "这是老花镜。"
+    },
+    {
+      "id": "bank-028",
+      "jp": "ソファ",
+      "reading": "ソファ",
+      "zh": "沙发",
+      "kind": "sofa",
+      "zone": 2,
+      "category": "銀行のもの",
+      "example": "これはソファです。",
+      "translation": "这是沙发。"
+    },
+    {
+      "id": "bank-029",
+      "jp": "時計",
+      "reading": "とけい",
+      "zh": "时钟",
+      "kind": "clock",
+      "zone": 2,
+      "category": "銀行のもの",
+      "example": "これは時計です。",
+      "translation": "这是时钟。"
+    },
+    {
+      "id": "bank-030",
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "zone": 2,
+      "category": "銀行のもの",
+      "example": "これは傘立てです。",
+      "translation": "这是伞架。"
+    },
+    {
+      "id": "bank-032",
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "zone": 2,
+      "category": "銀行のもの",
+      "example": "これはごみ箱です。",
+      "translation": "这是垃圾桶。"
+    },
+    {
+      "id": "bank-033",
+      "jp": "パンフレット",
+      "reading": "パンフレット",
+      "zh": "宣传册",
+      "kind": "book",
+      "zone": 3,
+      "category": "銀行のもの",
+      "example": "これはパンフレットです。",
+      "translation": "这是宣传册。"
+    },
+    {
+      "id": "bank-034",
+      "jp": "電卓",
+      "reading": "でんたく",
+      "zh": "计算器",
+      "kind": "calculator",
+      "zone": 3,
+      "category": "銀行のもの",
+      "example": "これは電卓です。",
+      "translation": "这是计算器。"
+    },
+    {
+      "id": "bank-035",
+      "jp": "筆談ボード",
+      "reading": "ひつだんボード",
+      "zh": "笔谈板",
+      "kind": "board",
+      "zone": 3,
+      "category": "銀行のもの",
+      "example": "これは筆談ボードです。",
+      "translation": "这是笔谈板。"
+    },
+    {
+      "id": "bank-036",
+      "jp": "予約票",
+      "reading": "よやくひょう",
+      "zh": "预约单",
+      "kind": "paper",
+      "zone": 3,
+      "category": "銀行のもの",
+      "example": "これは予約票です。",
+      "translation": "这是预约单。"
+    },
+    {
+      "id": "bank-037",
+      "jp": "書類",
+      "reading": "しょるい",
+      "zh": "文件",
+      "kind": "paper",
+      "zone": 3,
+      "category": "銀行のもの",
+      "example": "これは書類です。",
+      "translation": "这是文件。"
+    },
+    {
+      "id": "bank-038",
+      "jp": "ファイル",
+      "reading": "ファイル",
+      "zh": "文件夹",
+      "kind": "book",
+      "zone": 3,
+      "category": "銀行のもの",
+      "example": "これはファイルです。",
+      "translation": "这是文件夹。"
+    },
+    {
+      "id": "bank-039",
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "zone": 3,
+      "category": "銀行のもの",
+      "example": "これはテーブルです。",
+      "translation": "这是桌子。"
+    },
+    {
+      "id": "bank-040",
+      "jp": "観葉植物",
+      "reading": "かんようしょくぶつ",
+      "zh": "观叶植物",
+      "kind": "flowerpot",
+      "zone": 3,
+      "category": "銀行のもの",
+      "example": "これは観葉植物です。",
+      "translation": "这是观叶植物。"
+    },
+    {
+      "id": "bank-041",
+      "jp": "パソコン",
+      "reading": "パソコン",
+      "zh": "电脑",
+      "kind": "computer",
+      "zone": 3,
+      "category": "銀行のもの",
+      "example": "これはパソコンです。",
+      "translation": "这是电脑。"
+    },
+    {
+      "id": "bank-042",
+      "jp": "電話",
+      "reading": "でんわ",
+      "zh": "电话",
+      "kind": "telephone",
+      "zone": 3,
+      "category": "銀行のもの",
+      "example": "これは電話です。",
+      "translation": "这是电话。"
+    },
+    {
+      "id": "bank-specific-01",
+      "jp": "通帳繰越機",
+      "reading": "つうちょうくりこしき",
+      "zh": "存折换本机",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "通帳繰越機はここにあります。",
+      "detail": {
+        "type": "terminal",
+        "color": "#bf9c92",
+        "floor": [
+          5.2,
+          1.5
+        ]
+      },
+      "translation": "存折换本机在这里。"
+    },
+    {
+      "id": "bank-specific-02",
+      "jp": "振込カード",
+      "reading": "ふりこみカード",
+      "zh": "汇款卡",
+      "kind": "specific-object",
+      "zone": 1,
+      "category": "場所ならではのもの",
+      "example": "振込カードはここにあります。",
+      "detail": {
+        "type": "card",
+        "color": "#c5afa0"
+      },
+      "translation": "汇款卡在这里。"
+    },
+    {
+      "id": "bank-specific-03",
+      "jp": "受付番号表示機",
+      "reading": "うけつけばんごうひょうじき",
+      "zh": "叫号显示器",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "受付番号表示機はここにあります。",
+      "detail": {
+        "type": "tablet",
+        "color": "#bdc9ba"
+      },
+      "translation": "叫号显示器在这里。"
+    },
+    {
+      "id": "bank-specific-04",
+      "jp": "キャッシュカード挿入口",
+      "reading": "キャッシュカードそうにゅうぐち",
+      "zh": "银行卡插入口",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "キャッシュカード挿入口はここにあります。",
+      "detail": {
+        "type": "tablet",
+        "color": "#adbfc6"
+      },
+      "translation": "银行卡插入口在这里。"
+    },
+    {
+      "id": "bank-specific-05",
+      "jp": "通帳記入欄",
+      "reading": "つうちょうきにゅうらん",
+      "zh": "存折打印栏",
+      "kind": "specific-object",
+      "zone": 0,
+      "category": "場所ならではのもの",
+      "example": "通帳記入欄はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#bfbaa0"
+      },
+      "translation": "存折打印栏在这里。"
+    },
+    {
+      "id": "bank-specific-06",
+      "jp": "書類記入見本",
+      "reading": "しょるいきにゅうみほん",
+      "zh": "填表示例",
+      "kind": "specific-object",
+      "zone": 2,
+      "category": "場所ならではのもの",
+      "example": "書類記入見本はここにあります。",
+      "detail": {
+        "type": "form",
+        "color": "#c6cfb1"
+      },
+      "translation": "填表示例在这里。"
+    }
+  ],
+  "menus": [],
+  "npc": 19,
+  "district": 4,
+  "sceneReference": "https://www.bk.mufg.jp/tsukau/atm_con/atm/btm_btm.html",
+  "venueRole": {
+    "id": "bank-venue-worker",
+    "jp": "窓口の係",
+    "reading": "まどぐちのかかり",
+    "zone": 1,
+    "activity": "書類を確認しています。",
+    "readingLine": "しょるいを かくにんしています。",
+    "verb": "確認する → 確認している",
+    "grammar": "書類【を】確認する。",
+    "reply": "こちらの見本を見ながらご記入ください。",
+    "tools": [
+      "振込依頼書",
+      "書類記入見本",
+      "通帳繰越機"
+    ]
+  }
+}

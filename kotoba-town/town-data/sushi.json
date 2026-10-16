@@ -1,0 +1,1306 @@
+{
+  "id": "sushi",
+  "title": "寿司屋",
+  "jp": "寿司屋",
+  "reading": "すしや",
+  "layout": "restaurant",
+  "zones": [
+    {
+      "jp": "カウンター席",
+      "zh": "カウンター席"
+    },
+    {
+      "jp": "テーブル席",
+      "zh": "テーブル席"
+    },
+    {
+      "jp": "座敷",
+      "zh": "座敷"
+    },
+    {
+      "jp": "ネタケース",
+      "zh": "ネタケース"
+    },
+    {
+      "jp": "会計",
+      "zh": "会計"
+    }
+  ],
+  "items": [
+    {
+      "id": "sushi-001",
+      "jp": "カウンター",
+      "reading": "カウンター",
+      "zh": "吧台",
+      "kind": "counter",
+      "color": "#b28250",
+      "size": [
+        7.0,
+        1.0,
+        0.9
+      ],
+      "category": "物品与细节",
+      "example": "これはカウンターです。",
+      "translation": "这是吧台。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sushi-002",
+      "jp": "椅子",
+      "reading": "いす",
+      "zh": "椅子",
+      "kind": "stool",
+      "color": "#94694b",
+      "category": "物品与细节",
+      "example": "これは椅子です。",
+      "translation": "这是椅子。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sushi-003",
+      "jp": "暖簾",
+      "reading": "のれん",
+      "zh": "门帘",
+      "kind": "noren",
+      "color": "#244c67",
+      "category": "物品与细节",
+      "example": "これは暖簾です。",
+      "translation": "这是门帘。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sushi-005",
+      "jp": "メニュー",
+      "reading": "メニュー",
+      "zh": "菜单",
+      "kind": "menu",
+      "color": "#526c60",
+      "category": "物品与细节",
+      "example": "これはメニューです。",
+      "translation": "这是菜单。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sushi-006",
+      "jp": "注文用のタブレット",
+      "reading": "ちゅうもんようのタブレット",
+      "zh": "点餐平板",
+      "kind": "tablet",
+      "category": "物品与细节",
+      "example": "これは注文用のタブレットです。",
+      "translation": "这是点餐平板。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sushi-007",
+      "jp": "湯飲み",
+      "reading": "ゆのみ",
+      "zh": "茶杯",
+      "kind": "cup",
+      "color": "#809c83",
+      "category": "物品与细节",
+      "example": "これは湯飲みです。",
+      "translation": "这是茶杯。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "sushi-008",
+      "jp": "急須",
+      "reading": "きゅうす",
+      "zh": "茶壶",
+      "kind": "teapot",
+      "color": "#72896c",
+      "category": "物品与细节",
+      "example": "これは急須です。",
+      "translation": "这是茶壶。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sushi-009",
+      "jp": "お茶",
+      "reading": "おちゃ",
+      "zh": "茶",
+      "kind": "tea",
+      "category": "物品与细节",
+      "example": "これはお茶です。",
+      "translation": "这是茶。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "sushi-010",
+      "jp": "箸",
+      "reading": "はし",
+      "zh": "筷子",
+      "kind": "chopsticks",
+      "category": "物品与细节",
+      "example": "これは箸です。",
+      "translation": "这是筷子。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sushi-011",
+      "jp": "箸置き",
+      "reading": "はしおき",
+      "zh": "筷架",
+      "kind": "smallblock",
+      "color": "#819a9b",
+      "size": [
+        0.18,
+        0.06,
+        0.08
+      ],
+      "category": "物品与细节",
+      "example": "これは箸置きです。",
+      "translation": "这是筷架。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "sushi-012",
+      "jp": "醤油",
+      "reading": "しょうゆ",
+      "zh": "酱油",
+      "kind": "bottle",
+      "color": "#654630",
+      "category": "物品与细节",
+      "example": "これは醤油です。",
+      "translation": "这是酱油。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sushi-013",
+      "jp": "醤油皿",
+      "reading": "しょうゆざら",
+      "zh": "酱油碟",
+      "kind": "plate",
+      "color": "#d3dfd6",
+      "category": "物品与细节",
+      "example": "これは醤油皿です。",
+      "translation": "这是酱油碟。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sushi-014",
+      "jp": "わさび",
+      "reading": "わさび",
+      "zh": "芥末",
+      "kind": "paste",
+      "color": "#8caf4b",
+      "category": "物品与细节",
+      "example": "これはわさびです。",
+      "translation": "这是芥末。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "sushi-015",
+      "jp": "ガリ",
+      "reading": "ガリ",
+      "zh": "寿司配的腌姜片",
+      "kind": "ginger",
+      "color": "#e5b09a",
+      "category": "物品与细节",
+      "example": "これはガリです。",
+      "translation": "这是寿司配的腌姜片。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sushi-016",
+      "jp": "おしぼり",
+      "reading": "おしぼり",
+      "zh": "擦手巾",
+      "kind": "towel",
+      "color": "#eee7d4",
+      "category": "物品与细节",
+      "example": "これはおしぼりです。",
+      "translation": "这是擦手巾。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "sushi-017",
+      "jp": "寿司",
+      "reading": "すし",
+      "zh": "寿司",
+      "kind": "sushi",
+      "color": "#d87356",
+      "category": "物品与细节",
+      "example": "これは寿司です。",
+      "translation": "这是寿司。",
+      "note": "",
+      "zone": 0,
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#d1a28b"
+      }
+    },
+    {
+      "id": "sushi-018",
+      "jp": "まぐろ",
+      "reading": "まぐろ",
+      "zh": "金枪鱼",
+      "kind": "sushi",
+      "color": "#bd4f52",
+      "category": "物品与细节",
+      "example": "これはまぐろです。",
+      "translation": "这是金枪鱼。",
+      "note": "",
+      "art": [
+        "foods",
+        5
+      ],
+      "zone": 3,
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#c27d78"
+      }
+    },
+    {
+      "id": "sushi-019",
+      "jp": "サーモン",
+      "reading": "サーモン",
+      "zh": "三文鱼",
+      "kind": "sushi",
+      "color": "#eb935c",
+      "category": "物品与细节",
+      "example": "これはサーモンです。",
+      "translation": "这是三文鱼。",
+      "note": "",
+      "art": [
+        "foods",
+        4
+      ],
+      "zone": 3,
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#df9c78"
+      }
+    },
+    {
+      "id": "sushi-020",
+      "jp": "えび",
+      "reading": "えび",
+      "zh": "虾寿司",
+      "kind": "sushi",
+      "category": "物品与细节",
+      "example": "これはえびです。",
+      "translation": "这是虾。",
+      "note": "",
+      "zone": 3,
+      "art": [
+        "dishes",
+        3
+      ],
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#e0b19a"
+      }
+    },
+    {
+      "id": "sushi-021",
+      "jp": "いか",
+      "reading": "いか",
+      "zh": "鱿鱼寿司",
+      "kind": "sushi",
+      "category": "物品与细节",
+      "example": "これはいかです。",
+      "translation": "这是鱿鱼。",
+      "note": "",
+      "zone": 3,
+      "art": [
+        "dishes",
+        7
+      ],
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#ede3c9"
+      }
+    },
+    {
+      "id": "sushi-022",
+      "jp": "たこ",
+      "reading": "たこ",
+      "zh": "章鱼",
+      "kind": "octopus",
+      "category": "物品与细节",
+      "example": "これはたこです。",
+      "translation": "这是章鱼。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sushi-023",
+      "jp": "いくら",
+      "reading": "いくら",
+      "zh": "鲑鱼籽",
+      "kind": "roe",
+      "category": "物品与细节",
+      "example": "これはいくらです。",
+      "translation": "这是鲑鱼籽。",
+      "note": "",
+      "zone": 2,
+      "art": [
+        "dishes",
+        1
+      ],
+      "detail": {
+        "type": "dish",
+        "shape": "gunkan",
+        "color": "#d5905c"
+      }
+    },
+    {
+      "id": "sushi-024",
+      "jp": "海苔巻き",
+      "reading": "のりまき",
+      "zh": "紫菜卷",
+      "kind": "roll",
+      "category": "物品与细节",
+      "example": "これは海苔巻きです。",
+      "translation": "这是紫菜卷。",
+      "note": "",
+      "zone": 1,
+      "detail": {
+        "type": "dish",
+        "shape": "roll",
+        "color": "#99b786"
+      }
+    },
+    {
+      "id": "sushi-025",
+      "jp": "玉子焼き",
+      "reading": "たまごやき",
+      "zh": "日式煎蛋卷",
+      "kind": "eggroll",
+      "category": "物品与细节",
+      "example": "これは玉子焼きです。",
+      "translation": "这是日式煎蛋卷。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "sushi-026",
+      "jp": "海苔",
+      "reading": "のり",
+      "zh": "紫菜",
+      "kind": "sheet",
+      "color": "#354a3a",
+      "category": "物品与细节",
+      "example": "これは海苔です。",
+      "translation": "这是紫菜。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sushi-027",
+      "jp": "ご飯",
+      "reading": "ごはん",
+      "zh": "米饭",
+      "kind": "rice",
+      "category": "物品与细节",
+      "example": "これはご飯です。",
+      "translation": "这是米饭。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "sushi-029",
+      "jp": "きゅうり",
+      "reading": "きゅうり",
+      "zh": "黄瓜",
+      "kind": "cucumber",
+      "category": "物品与细节",
+      "example": "これはきゅうりです。",
+      "translation": "这是黄瓜。",
+      "note": "",
+      "zone": 0
+    },
+    {
+      "id": "sushi-030",
+      "jp": "生姜",
+      "reading": "しょうが",
+      "zh": "生姜",
+      "kind": "ginger",
+      "category": "物品与细节",
+      "example": "これは生姜です。",
+      "translation": "这是生姜。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sushi-035",
+      "jp": "ショーケース",
+      "reading": "ショーケース",
+      "zh": "展示柜",
+      "kind": "display",
+      "color": "#96beb7",
+      "size": [
+        1.6,
+        1.0,
+        4.5
+      ],
+      "category": "物品与细节",
+      "example": "これはショーケースです。",
+      "translation": "这是展示柜。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "sushi-037",
+      "jp": "レジ",
+      "reading": "レジ",
+      "zh": "收银机",
+      "kind": "register",
+      "category": "物品与细节",
+      "example": "これはレジです。",
+      "translation": "这是收银机。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "sushi-038",
+      "jp": "伝票",
+      "reading": "でんぴょう",
+      "zh": "账单",
+      "kind": "paper",
+      "category": "物品与细节",
+      "example": "これは伝票です。",
+      "translation": "这是账单。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "sushi-039",
+      "jp": "お盆",
+      "reading": "おぼん",
+      "zh": "托盘",
+      "kind": "tray",
+      "category": "物品与细节",
+      "example": "これはお盆です。",
+      "translation": "这是托盘。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sushi-040",
+      "jp": "テーブル",
+      "reading": "テーブル",
+      "zh": "桌子",
+      "kind": "table",
+      "color": "#ae845c",
+      "category": "物品与细节",
+      "example": "これはテーブルです。",
+      "translation": "这是桌子。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sushi-041",
+      "jp": "皿",
+      "reading": "さら",
+      "zh": "盘子",
+      "kind": "plate",
+      "color": "#bcd2d0",
+      "category": "物品与细节",
+      "example": "これは皿です。",
+      "translation": "这是盘子。",
+      "note": "",
+      "zone": 2
+    },
+    {
+      "id": "sushi-042",
+      "jp": "味噌汁",
+      "reading": "みそしる",
+      "zh": "味噌汤",
+      "kind": "soup",
+      "color": "#8b5144",
+      "category": "物品与细节",
+      "example": "これは味噌汁です。",
+      "translation": "这是味噌汤。",
+      "note": "",
+      "zone": 0,
+      "art": [
+        "dishes",
+        10
+      ]
+    },
+    {
+      "id": "sushi-044",
+      "jp": "壁",
+      "reading": "かべ",
+      "zh": "墙壁",
+      "kind": "wall-shell",
+      "category": "空间与设施",
+      "example": "これは壁です。",
+      "translation": "这是墙壁。",
+      "note": "",
+      "zone": 1
+    },
+    {
+      "id": "sushi-045",
+      "jp": "窓",
+      "reading": "まど",
+      "zh": "窗户",
+      "kind": "window-shell",
+      "category": "空间与设施",
+      "example": "これは窓です。",
+      "translation": "这是窗户。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "sushi-046",
+      "jp": "棚",
+      "reading": "たな",
+      "zh": "置物架",
+      "kind": "shelf-support",
+      "category": "空间与设施",
+      "example": "これは棚です。",
+      "translation": "这是置物架。",
+      "note": "",
+      "zone": 4
+    },
+    {
+      "id": "sushi-047",
+      "jp": "電気",
+      "reading": "でんき",
+      "zh": "灯；照明",
+      "kind": "lighting-shell",
+      "category": "空间与设施",
+      "example": "電気をつけます。",
+      "translation": "开灯。",
+      "note": "这里指照明；「電気」也有电、电力的意思。",
+      "zone": 1
+    },
+    {
+      "jp": "食材ケース",
+      "reading": "しょくざいケース",
+      "zh": "食材展示柜",
+      "kind": "display",
+      "category": "場面のことば",
+      "area": 3,
+      "id": "sushi-048",
+      "example": "食材ケースを見てみましょう。",
+      "translation": "看看食材展示柜吧。",
+      "zone": 3
+    },
+    {
+      "jp": "スプーン",
+      "reading": "スプーン",
+      "zh": "勺子",
+      "kind": "spoon",
+      "category": "食器・設備",
+      "id": "sushi-049",
+      "example": "スプーンを見てみましょう。",
+      "translation": "看看勺子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "取り皿",
+      "reading": "とりざら",
+      "zh": "分餐小碟",
+      "kind": "plate",
+      "category": "食器・設備",
+      "id": "sushi-052",
+      "example": "取り皿を見てみましょう。",
+      "translation": "看看分餐小碟吧。",
+      "zone": 2
+    },
+    {
+      "jp": "茶碗",
+      "reading": "ちゃわん",
+      "zh": "饭碗",
+      "kind": "bowl",
+      "category": "食器・設備",
+      "id": "sushi-053",
+      "example": "茶碗を見てみましょう。",
+      "translation": "看看饭碗吧。",
+      "zone": 1
+    },
+    {
+      "jp": "湯のみ",
+      "reading": "ゆのみ",
+      "zh": "日式茶杯",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "sushi-054",
+      "example": "湯のみを見てみましょう。",
+      "translation": "看看日式茶杯吧。",
+      "zone": 2
+    },
+    {
+      "jp": "コップ",
+      "reading": "コップ",
+      "zh": "杯子",
+      "kind": "cup",
+      "category": "食器・設備",
+      "id": "sushi-055",
+      "example": "コップを見てみましょう。",
+      "translation": "看看杯子吧。",
+      "zone": 1
+    },
+    {
+      "jp": "レシート",
+      "reading": "レシート",
+      "zh": "购物小票",
+      "kind": "paper",
+      "category": "食器・設備",
+      "id": "sushi-067",
+      "example": "レシートを見てみましょう。",
+      "translation": "看看购物小票吧。",
+      "zone": 4
+    },
+    {
+      "jp": "お釣り",
+      "reading": "おつり",
+      "zh": "找零",
+      "kind": "coins",
+      "category": "食器・設備",
+      "id": "sushi-068",
+      "example": "お釣りを見てみましょう。",
+      "translation": "看看找零吧。",
+      "zone": 4
+    },
+    {
+      "jp": "枝豆",
+      "reading": "えだまめ",
+      "zh": "毛豆",
+      "kind": "edamame",
+      "category": "料理",
+      "art": [
+        "foods",
+        0
+      ],
+      "id": "sushi-069",
+      "example": "枝豆を見てみましょう。",
+      "translation": "看看毛豆吧。",
+      "zone": 2
+    },
+    {
+      "jp": "刺身",
+      "reading": "さしみ",
+      "zh": "生鱼片",
+      "kind": "sashimi",
+      "category": "料理",
+      "art": [
+        "foods",
+        3
+      ],
+      "id": "sushi-070",
+      "example": "刺身を見てみましょう。",
+      "translation": "看看生鱼片吧。",
+      "zone": 0
+    },
+    {
+      "jp": "かっぱ巻き",
+      "reading": "かっぱまき",
+      "zh": "黄瓜寿司卷",
+      "kind": "roll",
+      "category": "料理",
+      "art": [
+        "foods",
+        6
+      ],
+      "id": "sushi-071",
+      "example": "かっぱ巻きを見てみましょう。",
+      "translation": "看看黄瓜寿司卷吧。",
+      "zone": 1,
+      "detail": {
+        "type": "dish",
+        "shape": "roll",
+        "color": "#99b786"
+      }
+    },
+    {
+      "jp": "おにぎり",
+      "reading": "おにぎり",
+      "zh": "饭团",
+      "kind": "onigiri",
+      "category": "料理",
+      "art": [
+        "foods",
+        7
+      ],
+      "id": "sushi-072",
+      "example": "おにぎりを見てみましょう。",
+      "translation": "看看饭团吧。",
+      "zone": 2
+    },
+    {
+      "jp": "緑茶",
+      "reading": "りょくちゃ",
+      "zh": "绿茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        0
+      ],
+      "id": "sushi-073",
+      "example": "緑茶を見てみましょう。",
+      "translation": "看看绿茶吧。",
+      "zone": 1
+    },
+    {
+      "jp": "ウーロン茶",
+      "reading": "ウーロンちゃ",
+      "zh": "乌龙茶",
+      "kind": "tea",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        1
+      ],
+      "id": "sushi-074",
+      "example": "ウーロン茶を見てみましょう。",
+      "translation": "看看乌龙茶吧。",
+      "zone": 2
+    },
+    {
+      "jp": "ビール",
+      "reading": "ビール",
+      "zh": "啤酒",
+      "kind": "beer",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        6
+      ],
+      "id": "sushi-075",
+      "example": "ビールを見てみましょう。",
+      "translation": "看看啤酒吧。",
+      "zone": 0
+    },
+    {
+      "jp": "日本酒",
+      "reading": "にほんしゅ",
+      "zh": "日本清酒",
+      "kind": "sakeflask",
+      "category": "飲み物・甘味",
+      "art": [
+        "drinks",
+        7
+      ],
+      "id": "sushi-076",
+      "example": "日本酒を見てみましょう。",
+      "translation": "看看日本清酒吧。",
+      "zone": 1
+    },
+    {
+      "jp": "入口",
+      "reading": "いりぐち",
+      "zh": "入口",
+      "kind": "door",
+      "category": "空間・設備",
+      "id": "sushi-077",
+      "example": "入口を見てみましょう。",
+      "translation": "看看入口吧。",
+      "zone": 2
+    },
+    {
+      "jp": "照明",
+      "reading": "しょうめい",
+      "zh": "照明",
+      "kind": "lamp",
+      "category": "空間・設備",
+      "id": "sushi-080",
+      "example": "照明を見てみましょう。",
+      "translation": "看看照明吧。",
+      "zone": 4
+    },
+    {
+      "jp": "ごみ箱",
+      "reading": "ごみばこ",
+      "zh": "垃圾桶",
+      "kind": "trash",
+      "category": "空間・設備",
+      "id": "sushi-081",
+      "example": "ごみ箱を見てみましょう。",
+      "translation": "看看垃圾桶吧。",
+      "zone": 4
+    },
+    {
+      "jp": "傘立て",
+      "reading": "かさたて",
+      "zh": "伞架",
+      "kind": "umbrella-stand",
+      "category": "空間・設備",
+      "id": "sushi-082",
+      "example": "傘立てを見てみましょう。",
+      "translation": "看看伞架吧。",
+      "zone": 0
+    },
+    {
+      "jp": "ベンチ",
+      "reading": "ベンチ",
+      "zh": "长椅",
+      "kind": "bench",
+      "category": "空間・設備",
+      "id": "sushi-083",
+      "example": "ベンチを見てみましょう。",
+      "translation": "看看长椅吧。",
+      "zone": 4
+    },
+    {
+      "jp": "うに",
+      "reading": "うに",
+      "zh": "海胆军舰寿司",
+      "kind": "sushi",
+      "art": [
+        "dishes",
+        0
+      ],
+      "category": "料理",
+      "example": "うにをください。",
+      "translation": "请给我海胆军舰寿司。",
+      "id": "sushi-menu-00",
+      "zone": 1,
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#cda859"
+      }
+    },
+    {
+      "jp": "玉子",
+      "reading": "たまご",
+      "zh": "玉子寿司",
+      "kind": "sushi",
+      "art": [
+        "dishes",
+        2
+      ],
+      "category": "料理",
+      "example": "玉子をください。",
+      "translation": "请给我玉子寿司。",
+      "id": "sushi-menu-02",
+      "zone": 2,
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#dec582"
+      }
+    },
+    {
+      "jp": "うなぎ",
+      "reading": "うなぎ",
+      "zh": "鳗鱼寿司",
+      "kind": "sushi",
+      "art": [
+        "dishes",
+        4
+      ],
+      "category": "料理",
+      "example": "うなぎをください。",
+      "translation": "请给我鳗鱼寿司。",
+      "id": "sushi-menu-04",
+      "zone": 1,
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#a87d56"
+      }
+    },
+    {
+      "jp": "ほたて",
+      "reading": "ほたて",
+      "zh": "扇贝寿司",
+      "kind": "sushi",
+      "art": [
+        "dishes",
+        5
+      ],
+      "category": "料理",
+      "example": "ほたてをください。",
+      "translation": "请给我扇贝寿司。",
+      "id": "sushi-menu-05",
+      "zone": 2,
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#e5d4b9"
+      }
+    },
+    {
+      "jp": "さば",
+      "reading": "さば",
+      "zh": "鲭鱼寿司",
+      "kind": "sushi",
+      "art": [
+        "dishes",
+        6
+      ],
+      "category": "料理",
+      "example": "さばをください。",
+      "translation": "请给我鲭鱼寿司。",
+      "id": "sushi-menu-06",
+      "zone": 0,
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#abb8ba"
+      }
+    },
+    {
+      "jp": "アボカド巻き",
+      "reading": "アボカドまき",
+      "zh": "牛油果寿司卷",
+      "kind": "roll",
+      "art": [
+        "dishes",
+        8
+      ],
+      "category": "料理",
+      "example": "アボカド巻きをください。",
+      "translation": "请给我牛油果寿司卷。",
+      "id": "sushi-menu-08",
+      "zone": 1,
+      "detail": {
+        "type": "dish",
+        "shape": "roll",
+        "color": "#99b786"
+      }
+    },
+    {
+      "jp": "いくら丼",
+      "reading": "いくらどん",
+      "zh": "鲑鱼子盖饭",
+      "kind": "rice",
+      "art": [
+        "dishes",
+        9
+      ],
+      "category": "料理",
+      "example": "いくら丼をください。",
+      "translation": "请给我鲑鱼子盖饭。",
+      "id": "sushi-menu-09",
+      "zone": 2
+    },
+    {
+      "jp": "茶碗蒸し",
+      "reading": "ちゃわんむし",
+      "zh": "日式蒸蛋",
+      "kind": "bowl",
+      "art": [
+        "dishes",
+        11
+      ],
+      "category": "料理",
+      "example": "茶碗蒸しをください。",
+      "translation": "请给我日式蒸蛋。",
+      "id": "sushi-menu-11",
+      "zone": 1
+    },
+    {
+      "jp": "天ぷら",
+      "reading": "てんぷら",
+      "zh": "天妇罗",
+      "kind": "fried",
+      "art": [
+        "dishes",
+        12
+      ],
+      "category": "料理",
+      "example": "天ぷらをください。",
+      "translation": "请给我天妇罗。",
+      "id": "sushi-menu-12",
+      "zone": 2
+    },
+    {
+      "jp": "漬物",
+      "reading": "つけもの",
+      "zh": "腌菜",
+      "kind": "pickles",
+      "art": [
+        "meals",
+        5
+      ],
+      "category": "料理",
+      "example": "漬物をください。",
+      "translation": "请给我腌菜。",
+      "id": "sushi-menu-21",
+      "zone": 0
+    },
+    {
+      "id": "sushi-detail-0096",
+      "jp": "寿司桶",
+      "reading": "すしおけ",
+      "zh": "寿司木桶",
+      "kind": "sushi-tub",
+      "zone": 1,
+      "category": "场所细节",
+      "example": "これは寿司桶です。",
+      "translation": "这是寿司木桶。"
+    },
+    {
+      "id": "sushi-detail-0098",
+      "jp": "酢飯",
+      "reading": "すめし",
+      "zh": "寿司醋饭",
+      "kind": "rice",
+      "zone": 2,
+      "category": "场所细节",
+      "example": "これは酢飯です。",
+      "translation": "这是寿司醋饭。"
+    },
+    {
+      "id": "sushi-shop-001",
+      "jp": "畳",
+      "reading": "たたみ",
+      "zh": "榻榻米",
+      "kind": "tatami",
+      "zone": 2,
+      "category": "店内のことば",
+      "example": "畳を見てみましょう。",
+      "translation": "一起看看榻榻米吧。"
+    },
+    {
+      "id": "sushi-shop-002",
+      "jp": "座布団",
+      "reading": "ざぶとん",
+      "zh": "坐垫",
+      "kind": "cushion",
+      "zone": 1,
+      "category": "店内のことば",
+      "example": "座布団を見てみましょう。",
+      "translation": "一起看看坐垫吧。"
+    },
+    {
+      "id": "sushi-shop-003",
+      "jp": "座卓",
+      "reading": "ざたく",
+      "zh": "矮桌",
+      "kind": "lowtable",
+      "zone": 2,
+      "category": "店内のことば",
+      "example": "座卓を見てみましょう。",
+      "translation": "一起看看矮桌吧。"
+    },
+    {
+      "id": "sushi-shop-004",
+      "jp": "障子",
+      "reading": "しょうじ",
+      "zh": "障子门",
+      "kind": "shoji",
+      "zone": 2,
+      "category": "店内のことば",
+      "example": "障子を見てみましょう。",
+      "translation": "一起看看障子门吧。"
+    },
+    {
+      "id": "sushi-shop-005",
+      "jp": "下駄箱",
+      "reading": "げたばこ",
+      "zh": "鞋柜",
+      "kind": "shoe-cabinet",
+      "zone": 2,
+      "category": "店内のことば",
+      "example": "靴を脱いで、下駄箱に入れます。",
+      "translation": "脱下鞋子，放进鞋柜里。"
+    },
+    {
+      "id": "sushi-shop-006",
+      "jp": "靴",
+      "reading": "くつ",
+      "zh": "鞋",
+      "kind": "shoes",
+      "zone": 2,
+      "category": "店内のことば",
+      "example": "座敷に上がる前に靴を脱ぎます。",
+      "translation": "进入日式座席区前脱鞋。",
+      "noteJa": "脱いだ靴は下駄箱に入れます。テーブル席では、靴を履いたまま座れる店もあります。"
+    },
+    {
+      "id": "sushi-shop-007",
+      "jp": "上がり框",
+      "reading": "あがりかまち",
+      "zh": "脱鞋台阶",
+      "kind": "entry-step",
+      "zone": 2,
+      "category": "店内のことば",
+      "example": "上がり框を見てみましょう。",
+      "translation": "一起看看脱鞋台阶吧。"
+    },
+    {
+      "id": "sushi-specific-menu-01",
+      "jp": "中とろ",
+      "reading": "ちゅうとろ",
+      "zh": "中腹金枪鱼",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "中とろを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#cb9e92",
+        "leaf": false
+      },
+      "reference": "https://www.kurasushi.co.jp/takeout/",
+      "translation": "请给我一份中腹金枪鱼。"
+    },
+    {
+      "id": "sushi-specific-menu-02",
+      "jp": "はまち",
+      "reading": "はまち",
+      "zh": "鰤鱼",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "はまちを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#dfc4a9",
+        "leaf": false
+      },
+      "reference": "https://www.kurasushi.co.jp/takeout/",
+      "translation": "请给我一份鰤鱼。"
+    },
+    {
+      "id": "sushi-specific-menu-03",
+      "jp": "真鯛",
+      "reading": "まだい",
+      "zh": "真鲷",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "真鯛を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#e3c5b3",
+        "leaf": false
+      },
+      "reference": "https://www.kurasushi.co.jp/takeout/",
+      "translation": "请给我一份真鲷。"
+    },
+    {
+      "id": "sushi-specific-menu-04",
+      "jp": "えんがわ",
+      "reading": "えんがわ",
+      "zh": "鱼鳍边肉",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "えんがわを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "sushi",
+        "color": "#e8dfc1",
+        "leaf": false
+      },
+      "reference": "https://www.kurasushi.co.jp/takeout/",
+      "translation": "请给我一份鱼鳍边肉。"
+    },
+    {
+      "id": "sushi-specific-menu-05",
+      "jp": "ねぎまぐろ軍艦",
+      "reading": "ねぎまぐろぐんかん",
+      "zh": "葱花金枪鱼军舰",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "ねぎまぐろ軍艦を一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "gunkan",
+        "color": "#c88680",
+        "leaf": false
+      },
+      "reference": "https://www.kurasushi.co.jp/takeout/",
+      "translation": "请给我一份葱花金枪鱼军舰。"
+    },
+    {
+      "id": "sushi-specific-menu-06",
+      "jp": "鉄火巻き",
+      "reading": "てっかまき",
+      "zh": "金枪鱼卷",
+      "kind": "specific-dish",
+      "zone": 0,
+      "category": "具体的な料理",
+      "menuOnly": true,
+      "example": "鉄火巻きを一つください。",
+      "detail": {
+        "type": "dish",
+        "shape": "roll",
+        "color": "#ba7a70",
+        "leaf": false
+      },
+      "reference": "https://www.kurasushi.co.jp/takeout/",
+      "translation": "请给我一份金枪鱼卷。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "お店の料理を選ぶ",
+      "items": [
+        "sushi-specific-menu-01",
+        "sushi-specific-menu-02",
+        "sushi-specific-menu-03",
+        "sushi-specific-menu-04",
+        "sushi-specific-menu-05",
+        "sushi-specific-menu-06"
+      ]
+    },
+    {
+      "name": "料理・軽食",
+      "items": [
+        "sushi-018",
+        "sushi-019",
+        "sushi-069",
+        "sushi-070",
+        "sushi-071",
+        "sushi-072",
+        "sushi-menu-00",
+        "sushi-023",
+        "sushi-menu-02",
+        "sushi-020",
+        "sushi-menu-04",
+        "sushi-menu-05",
+        "sushi-menu-06",
+        "sushi-021",
+        "sushi-menu-08",
+        "sushi-menu-09",
+        "sushi-042",
+        "sushi-menu-11",
+        "sushi-menu-12",
+        "sushi-menu-21"
+      ]
+    },
+    {
+      "name": "飲み物",
+      "items": [
+        "sushi-073",
+        "sushi-074",
+        "sushi-075",
+        "sushi-076"
+      ]
+    }
+  ],
+  "npc": 2,
+  "district": 1,
+  "sceneReference": "https://www.kurasushi.co.jp/takeout/"
+}
