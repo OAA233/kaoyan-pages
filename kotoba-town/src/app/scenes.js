@@ -5,6 +5,7 @@ import { closePanel, closeWord } from './panels.js';
 import { openNPC, openStaff, updateTaskHUD } from './tasks.js';
 import { showWord } from './words.js';
 import { joinRoom, openPeerCard } from './online.js';
+import { prefetchVenueAudio } from './speech.js';
 
 export function getCharacter() {
   return app.characters.find((c) => c.id === state.character) || app.characters[0];
@@ -124,6 +125,7 @@ export async function enter(id = 'town', push = true) {
       );
       $('talk-button').textContent = app.npc.name + 'と話す';
       if (app.data.layout === 'district') $('place-description').textContent = '街並みを歩いて、建物のことばに出会おう。';
+      prefetchVenueAudio(app.data);
     }
     if (push) {
       const url = new URL(location);

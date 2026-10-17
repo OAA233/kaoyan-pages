@@ -38,20 +38,51 @@ async function sha12(text) {
 async function playFile(dir, text, rate) {
   const name = await sha12(text);
   const url = './audio/' + dir + '/' + name + '.mp3';
-  try {
-    const head = await fetch(url, { method: 'HEAD' });
-    if (!head.ok) return false;
-  } catch {
-    return false;
+  // 两次机会：网络抖动时重试一次
+  for (let i = 0; i < 2; i++) {
+    try {
+      const head = await fetch(url, { method: 'HEAD' });
+      if (!head.ok) {
+        if (i) return false;
+        continue;
+      }
+    } catch {
+      if (i) return false;
+      continue;
+    }
+    const a = new Audio(url);
+    a.playbackRate = rate;
+    currentAudio = a;
+    try {
+      await a.play();
+      return true;
+    } catch {
+      if (i) return false;
+    }
   }
-  const a = new Audio(url);
-  a.playbackRate = rate;
-  currentAudio = a;
-  try {
-    await a.play();
-    return true;
-  } catch {
-    return false;
+  return false;
+}
+
+// —— 进场馆预加载：把该场所全部词条/例句/英文音频拉进浏览器缓存 ——
+const prefetched = new Set();
+let enLookup = null;
+export function setEnLookup(fn) {
+  enLookup = fn;
+}
+export async function prefetchVenueAudio(data) {
+  if (!data?.items || prefetched.has(data.id)) return;
+  prefetched.add(data.id);
+  const texts = [];
+  for (const it of data.items) {
+    if (it.jp) texts.push(['ja', it.jp]);
+    if (it.example) texts.push(['ja', it.example]);
+    const en = enLookup ? enLookup(it.jp) : '';
+    if (en) texts.push(['en', en]);
+  }
+  // 小队列串行，避免瞬时几十个请求；失败静默（点击时还有重试）
+  for (const [dir, text] of texts) {
+    const name = await sha12(text);
+    fetch('./audio/' + dir + '/' + name + '.mp3').catch(() => {});
   }
 }
 

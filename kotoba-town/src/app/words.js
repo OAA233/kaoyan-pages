@@ -3,7 +3,7 @@ import { actionChinese, actionGrammarChinese } from '../learning-zh.js';
 import { $, app, chinese, node, state, toast } from './context.js';
 import { closePanel, collectionOpen, syncCollectionSelection } from './panels.js';
 import { advanceTask } from './tasks.js';
-import { speakJa, speakEn, warmUpVoices, vvStatus } from './speech.js';
+import { speakJa, speakEn, warmUpVoices, vvStatus, setEnLookup } from './speech.js';
 
 // 日英对照数据（jp -> English）
 let enMap = null;
@@ -20,7 +20,7 @@ async function ensureEn() {
 function hiraToKata(s) {
   return s.replace(/[\u3041-\u3096]/g, (c) => String.fromCharCode(c.charCodeAt(0) + 0x60));
 }
-ensureEn();
+ensureEn().then(() => setEnLookup((jp) => enMap[jp] || ''));
 warmUpVoices();
 
 export function artFor(w, target) {
