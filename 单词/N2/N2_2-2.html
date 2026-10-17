@@ -1225,7 +1225,7 @@ let nextId = Math.max(0, ...DATA.map(d => d.id || 0)) + 1;
 let editing = false, dragD = null, saveTimer = null;
 
 function save(){
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify({page: 'N2_1-2', data: DATA})); } catch(e) {}
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify({page: 'N2_2-2', data: DATA})); } catch(e) {}
 }
 function saveSoon(){
   clearTimeout(saveTimer);
@@ -1648,11 +1648,11 @@ list.addEventListener('click', e => {
 
 /* 导出 JSON 功能 */
 function exportData(){
-  const dataStr = JSON.stringify({page: 'N2_1-2', data: DATA}, null, 2);
+  const dataStr = JSON.stringify({page: 'N2_2-2', data: DATA}, null, 2);
   const blob = new Blob([dataStr], {type: 'application/json'});
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = 'N2_1-2_layout.json';
+  a.download = 'N2_2-2_layout.json';
   a.click();
 
   document.getElementById('exportText').value = dataStr;

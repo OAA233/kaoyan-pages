@@ -413,10 +413,10 @@ list.addEventListener('click', e => {
 });
 
 function exportData(){
-  const blob = new Blob([JSON.stringify({page: 'N1_1-1', data: DATA}, null, 1)], {type: 'application/json'});
+  const blob = new Blob([JSON.stringify({page: 'N1_1-2', data: DATA}, null, 1)], {type: 'application/json'});
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = 'N1_1-1_layout.json';
+  a.download = 'N1_1-2_layout.json';
   a.click();
 }
 
