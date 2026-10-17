@@ -3,7 +3,7 @@ import { actionChinese, actionGrammarChinese } from '../learning-zh.js';
 import { $, app, chinese, node, state, toast } from './context.js';
 import { closePanel, collectionOpen, syncCollectionSelection } from './panels.js';
 import { advanceTask } from './tasks.js';
-import { speakJa, speakEn, warmUpVoices, vvStatus, setEnLookup } from './speech.js';
+import { speakJa, speakEn, warmUpVoices, vvStatus, setEnLookup, cleanEn } from './speech.js';
 
 // 日英对照数据（jp -> English）
 let enMap = null;
@@ -80,7 +80,7 @@ export function showWord(w) {
   $('word-reading').textContent = w.reading;
   $('word-zh').textContent = w.zh || '';
   $('word-zh').hidden = !w.zh;
-  const en = enMap ? enMap[w.jp] || '' : '';
+  const en = enMap ? cleanEn(enMap[w.jp] || '') : '';
   $('word-en').textContent = en;
   $('word-en').hidden = !en;
   // 无图标：点日文重读日语，点英文读英文；开卡自动读音

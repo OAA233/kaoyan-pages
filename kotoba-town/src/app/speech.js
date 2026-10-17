@@ -38,26 +38,28 @@ async function sha12(text) {
 async function playFile(dir, text, rate) {
   const name = await sha12(text);
   const url = './audio/' + dir + '/' + name + '.mp3';
-  // 两次机会：网络抖动时重试一次
-  for (let i = 0; i < 2; i++) {
-    try {
-      const head = await fetch(url, { method: 'HEAD' });
-      if (!head.ok) {
-        if (i) return false;
-        continue;
-      }
-    } catch {
+  // 预加载缓存里有的直接播；否则 HEAD 确认 + 两次机会重试
+  if (!cachedUrls.has(url)) {
+    for (let i = 0; i < 2; i++) {
+      try {
+        const head = await fetch(url, { method: 'HEAD' });
+        if (head.ok) break;
+      } catch {}
       if (i) return false;
-      continue;
+      await new Promise((r) => setTimeout(r, 300));
     }
+  }
+  for (let i = 0; i < 2; i++) {
     const a = new Audio(url);
     a.playbackRate = rate;
     currentAudio = a;
     try {
       await a.play();
+      cachedUrls.add(url);
       return true;
     } catch {
       if (i) return false;
+      await new Promise((r) => setTimeout(r, 300));
     }
   }
   return false;
@@ -65,6 +67,7 @@ async function playFile(dir, text, rate) {
 
 // —— 进场馆预加载：把该场所全部词条/例句/英文音频拉进浏览器缓存 ——
 const prefetched = new Set();
+const cachedUrls = new Set(); // 预加载成功过的 URL，播放时跳过 HEAD 检查
 let enLookup = null;
 export function setEnLookup(fn) {
   enLookup = fn;
@@ -82,7 +85,11 @@ export async function prefetchVenueAudio(data) {
   // 小队列串行，避免瞬时几十个请求；失败静默（点击时还有重试）
   for (const [dir, text] of texts) {
     const name = await sha12(text);
-    fetch('./audio/' + dir + '/' + name + '.mp3').catch(() => {});
+    const url = './audio/' + dir + '/' + name + '.mp3';
+    try {
+      const r = await fetch(url);
+      if (r.ok) cachedUrls.add(url);
+    } catch {}
   }
 }
 
